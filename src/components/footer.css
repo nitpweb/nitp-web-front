@@ -1,0 +1,23 @@
+.foot-col-4{
+    color:white;
+    background: #CD5A2F;
+    width:30%;
+    padding-left: 5vw;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
+.foot-row{
+    background: #2D2D2D;
+    margin-top: 5vh;
+}
+.foot-col-8{
+    width:70%;
+}
+@media(max-width:768px){
+    .foot-col-4{
+        width:100%;
+    }
+    .foot-col-8{
+        width:100%;
+    }
+}
