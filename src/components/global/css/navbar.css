@@ -1,17 +1,22 @@
+ *{
+    transition: all 0s;}
 .nav-row{
     display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  max-width: 100%;
+  width: 100vw;
   height:10vh;
   padding-left: 3vw;
+  position: fixed;
+  background-color: #f7f7f7;
+  z-index: 1;
 }
 .logobadge{
   position: relative;
   background-color: #E47F40;
-  border-radius: 0px 0px 50% 50%;
-  max-height: 23vh;
+  border-radius: 0px 0px 40% 40%;
+  max-height: 22vh;
 }
 .logobadge>h4{
   font-family: 'Mangal';
@@ -39,21 +44,40 @@
 .nav-col>h4{
   font-family: 'Mangal';
   font-size: 0.9vw;
+  line-height: 0.6rem;
 }
 .mobilelogo{
   display: none;
 }
+.nav-toggle{
+    display: none;
+  }
 @media(max-width:768px){
   .nav-col{
     width:70%;
+    max-width: 70vw;
     color: #313131;
   }
   .nav-col>h2{
     font-size: 2.6vw;
   }
+  .nav-toggle{
+    display: block;
+    position: relative;
+    max-width:10%;
+    border: none;
+    background:transparent;
+    max-height: 10vh;
+    padding: 0px 0px 0px 0px;
+    }
+    .nav-toggle>img{
+      max-height:10vh;
+      max-width: 10vw;
+    }
   .nav-col>h4{
     font-size: 1.8vw;
   }
+ 
   .mobilelogo{
     display: block;
     padding-right: 10px;
@@ -66,5 +90,16 @@
   }
   .nav-row{
     align-items: center;
+  }
+}
+@media(max-width:500px){
+    .nav-col>h4{
+    font-size: 1.5vw;
+  }
+   .nav-col>h2{
+    font-size: 2vw;
+  }
+  .nav-col{
+    width:60%;
   }
 }

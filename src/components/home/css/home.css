@@ -1,3 +1,4 @@
+
 .nitpbackimg{
     width:100%;
     max-height: 90vw;
@@ -9,4 +10,5 @@
     max-height:90vh;
     z-index: -1;
     position: relative;
+    padding-top: 10vh;
 }
