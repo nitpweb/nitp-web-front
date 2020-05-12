@@ -1,0 +1,70 @@
+.nav-row{
+    display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height:10vh;
+  padding-left: 3vw;
+}
+.logobadge{
+  position: relative;
+  background-color: #E47F40;
+  border-radius: 0px 0px 50% 50%;
+  max-height: 23vh;
+}
+.logobadge>h4{
+  font-family: 'Mangal';
+  color: white;
+  margin-bottom: 0px;
+  line-height: 1;
+  margin-left: 1.2vh;
+  font-weight: normal;
+  font-size: 2vh;
+}
+.logobadge>img{
+  max-height: 15vh;
+  border:1.5vh solid #E47F40;
+  border-radius: 50%;
+}
+.nav-col{
+  width:42%;
+  max-height: 10vh;
+}
+.nav-col>h2{
+  margin-bottom: 0;
+  font-size: 1.3vw;
+  line-height: 0.6rem;
+}
+.nav-col>h4{
+  font-family: 'Mangal';
+  font-size: 0.9vw;
+}
+.mobilelogo{
+  display: none;
+}
+@media(max-width:768px){
+  .nav-col{
+    width:70%;
+    color: #313131;
+  }
+  .nav-col>h2{
+    font-size: 2.6vw;
+  }
+  .nav-col>h4{
+    font-size: 1.8vw;
+  }
+  .mobilelogo{
+    display: block;
+    padding-right: 10px;
+  }
+  .mobilelogo>img{
+    max-height: 8vh;
+  }
+  .logobadge{
+    display: none;
+  }
+  .nav-row{
+    align-items: center;
+  }
+}
