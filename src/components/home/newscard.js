@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/newscard.css';
-import newspic from './img/image 2.png'
+import newspic from './img/image 2.png';
 
 const Newscard=(inf)=>{
     return (

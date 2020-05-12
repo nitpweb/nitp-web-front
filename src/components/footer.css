@@ -17,6 +17,12 @@
     .foot-col-4{
         width:100%;
     }
+    .foot-col-4>h1{
+        font-size: 1rem;
+    }
+    .foot-col-4>h3{
+        font-size: 0.8rem;
+    }
     .foot-col-8{
         width:100%;
     }

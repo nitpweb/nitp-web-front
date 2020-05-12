@@ -16,8 +16,7 @@ const Importantlink=()=>{
                     <div className="implink">
                         <img className="linkimg" src={chanakya} alt="chanakya" />
                         <h3>CHANAKYA</h3></div>
-                </a>
-               
+                </a>           
                 <div className="implink">
                     <img className="linkimg" src={corona} alt="corona" />
                     <h3>CORONA</h3></div>

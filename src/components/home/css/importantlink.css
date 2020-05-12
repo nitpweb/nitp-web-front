@@ -31,6 +31,12 @@
     align-items:center;
     color:#696969;
 }
+.implink>h3{
+    font-size: 1vw;
+}
+.link-col>a{
+    text-decoration: none;
+}
 .linkimg{
     margin-top: 10%;
     height:45%;
