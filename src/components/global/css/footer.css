@@ -5,13 +5,16 @@
     padding-left: 5vw;
     padding-bottom: 5vh;
     padding-top: 5vh;
+    max-width: 95vw;
 }
 .foot-row{
     background: #2D2D2D;
     margin-top: 5vh;
+    max-width: 100vw;
 }
 .foot-col-8{
     width:70%;
+    max-width: 100vw;
 }
 @media(max-width:768px){
     .foot-col-4{
