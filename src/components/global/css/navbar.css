@@ -1,5 +1,3 @@
- *{
-    transition: all 0s;}
 .nav-row{
     display: -ms-flexbox;
   display: flex;
@@ -7,10 +5,22 @@
   flex-wrap: wrap;
   width: 100vw;
   height:10vh;
-  padding-left: 3vw;
   position: fixed;
   background-color: #f7f7f7;
   z-index: 1;
+}
+.nav-link-row{
+    display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  margin-top:10vh;
+  flex-wrap: wrap;
+  width: 100vw;
+  height:7vh;
+  padding-left: 3vw;
+  background-color: black;
+  opacity: 0.5;
+  position: fixed;
 }
 .logobadge{
   position: relative;
@@ -35,6 +45,8 @@
 .nav-col{
   width:42%;
   max-height: 10vh;
+ padding-left: 3vw;
+padding-top: 1vh;
 }
 .nav-col>h2{
   margin-bottom: 0;
@@ -60,6 +72,9 @@
   }
   .nav-col>h2{
     font-size: 2.6vw;
+  }
+  .nav-link-row{
+    display: none;
   }
   .nav-toggle{
     display: block;
