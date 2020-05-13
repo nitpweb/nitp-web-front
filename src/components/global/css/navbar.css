@@ -83,7 +83,6 @@ padding-top: 1vh;
     border: none;
     background:transparent;
     max-height: 10vh;
-    padding: 0px 0px 0px 0px;
     }
     .nav-toggle>img{
       max-height:10vh;
@@ -118,3 +117,16 @@ padding-top: 1vh;
     width:60%;
   }
 }
+.nav-sidebar{
+  display: none;
+  min-height: 100vh;
+  position: absolute;
+  top:0;
+  float: right;
+  z-index: 7;
+  background: #fff;
+  min-width: 300px;
+  width:300px;
+  max-width:90vw;
+}
+
