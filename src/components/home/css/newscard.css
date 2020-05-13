@@ -1,26 +1,31 @@
-.box{
+.newscard-box{
 width: 265px;
 height: 350px;
+min-width: 265px;
+min-height: 350px;
 overflow: hidden;
 box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.28);
+margin-left:40px;
 border-radius: 20px;}
 .card-img{
     height:60%;
     position: relative;
-    z-index: -1;
 }
 .read{
 width: 90.6px;
 height: 19.07px;
 float:right;
-margin-top:-5%;
-margin-right:5%;
+margin-top:-15px;
+margin-right:13px;
 background: #CD5A2F;
 border-radius: 11px;
 color:white;
 font-size: 0.8em;
 display: flex;
 justify-content: center;
+align-items: center;
+position: relative;
+z-index: 1;
 }
 .head{
     font-size:1.3rem;
@@ -41,7 +46,7 @@ color: #4B4B4B;
 .readmore{
     position: relative;
     float: right;
-    margin-top: -5%;
+    margin-top: -15px;
     color: #CD5A2F;
     font-family: Roboto;
     font-size: 11.5px;
