@@ -7,7 +7,7 @@
   height:10vh;
   position: fixed;
   background-color: #f7f7f7;
-  z-index: 1;
+  z-index: 5;
 }
 .nav-link-row{
     display: -ms-flexbox;

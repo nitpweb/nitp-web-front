@@ -11,7 +11,7 @@ border-radius: 20px;}
     height:60%;
     position: relative;
 }
-.read{
+.news-read{
 width: 90.6px;
 height: 19.07px;
 float:right;
@@ -27,23 +27,23 @@ align-items: center;
 position: relative;
 z-index: 1;
 }
-.head{
+.newscard-head{
     font-size:1.3rem;
-    margin-top: -8%;
+    margin-top: -20px;
     padding-left: 5%;
 }
-.head>h4{
+.newscard-head>h4{
    font-family: Source Sans Pro; 
    font-style: normal;
 font-weight: bold;
 line-height: 24px;
 color: #4B4B4B;
 }
-.head>h6{
-    margin-top:-8%;
+.newscard-head>h6{
+    margin-top:-20px;
     color: rgba(0, 0, 0, 0.51);
 }
-.readmore{
+.newscard-readmore{
     position: relative;
     float: right;
     margin-top: -15px;
