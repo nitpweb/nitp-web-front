@@ -5,7 +5,6 @@ import toggle from '../assets/toggle.svg';
 
 const Navbar=()=>{
   window.onscroll = function () { scrollFunction() };
-
   function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       document.querySelector(".nav-col>h2").style.lineHeight = "0.3rem";
@@ -49,10 +48,9 @@ const Navbar=()=>{
       document.querySelector(".mobilelogo>img").style.transition = "1s";
       document.querySelector(".nav-link-row").style.opacity = "0.5";
       document.querySelector(".nav-col").style.paddingTop = "1vh";
-
-
     }
   } 
+ 
     return (
       <>
       <div className="nav-row">
@@ -69,7 +67,15 @@ const Navbar=()=>{
           <h4>श्रमोऽनवरत चेष्टाय</h4>
           <img src={logo} alt="NIT PATNA" />
         </div>
-        <button className="nav-toggle"><img src={toggle} alt="menu" /></button>
+          <span className="nav-toggle" onClick={function(){
+            var x = document.querySelector(".nav-sidebar");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }}><img src={toggle} alt="menu" /></span>
+        <div className="nav-sidebar"></div>
       </div>
       </>
     );
