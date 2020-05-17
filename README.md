@@ -12,6 +12,7 @@ Visual Studio Code is code editor built on open-source which is fully customizab
 
 ## Basic elements of Web Development
 ### HTML
+
 [Mozilla docs for complete HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
 [W3Schools resource for HTML](https://www.w3schools.com/html/default.asp)
