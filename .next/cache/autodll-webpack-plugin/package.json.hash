@@ -1,0 +1,1 @@
+{"name":"learn-starter","version":"0.1.0","private":true,"scripts":{"dev":"next dev","build":"next build","start":"next start"},"dependencies":{"@zeit/next-css":"^1.0.1","next":"9.3.5","next-images":"^1.4.0","react":"16.13.1","react-dom":"16.13.1","ssr-window":"^2.0.0","styled-jsx":"^3.3.0"},"readme":"ERROR: No README data found!","_id":"learn-starter@0.1.0"}

@@ -1,0 +1,73 @@
+
+.nitpbackimg{
+    width:100%;
+    max-height: 90vw;
+}
+
+.bgimgwrap{
+    overflow:hidden;
+    min-width:100vw;
+    max-height:90vh;
+    position: relative;
+    padding-top: 10vh;
+}
+.news-head{
+    width: 271px;
+    height: 52px;
+    background: #FFFFFF;
+    box-shadow: 7px 7px 26px rgba(207, 207, 207, 0.39);
+    border-radius: 16px;
+    margin-left:8vw;
+    margin-bottom: -26px;
+    z-index: 1;
+    position: relative;
+    font-size: 28px;
+    line-height: 35px;
+    color: #F37023;
+    display: flex;
+    align-items: center;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    padding-left: 18px;
+}
+.news-head>p{
+    color:#3e3e3e;
+    font-size: 1rem;
+    margin-left: 122px;
+}
+.news-row{
+    display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100vw;
+  height:350px;
+  background-color: #ffffff;
+  width:90vw;
+  z-index: -1;
+  margin-right: 5vw;
+  padding-top: calc(4vh + 26px);
+  padding-bottom: 6vh;
+  box-shadow: 7px 7px 26px rgba(207, 207, 207, 0.36);
+  margin-left: 5vw;
+  border-radius: 33px;
+  display: flex;
+  justify-content: center;
+}
+.news-viewbox::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+.news-viewbox{
+    overflow: hidden;
+    min-width:95%;
+    height:calc(350px + 5vh);
+    max-height: calc(350px + 5vh);
+    max-width: 90%;
+    overflow-x: scroll;
+    scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+    display: flex;
+border-radius: 20px;
+background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 6.98%);
+}
