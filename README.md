@@ -39,6 +39,12 @@ React is a JS library created by Facebook for building UI.
 
 https://www.taniarascia.com/getting-started-with-react/
 
+## Nextjs
+
+Nextjs is built on top of react for creating server-side rendered apps.
+
+https://nextjs.org/learn/basics/create-nextjs-app
+
 
 ## GIT AND GITHUB
 Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
@@ -58,12 +64,8 @@ https://git-hint.netlify.app/
 Node.js is an open source server environment and allows to run JavaScript on the server.
 
 https://nodejs.dev/
+
 https://www.w3schools.com/nodejs/
-
-## Gatsby
-Gatsby is a free and open source framework based on React that helps developers build blazing fast websites and apps.
-
-https://www.gatsbyjs.org/docs/
 
 ## REST API
 REST is acronym for REpresentational State Transfer.
