@@ -88,12 +88,16 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "KqAr");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./node_modules/next/dist/build/webpack/loaders/next-plugin-loader.js?middleware=on-error-server!./");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "KqAr":
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-plugin-loader.js?middleware=on-error-server!./":
+/*!*******************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-plugin-loader.js?middleware=on-error-server ***!
+  \*******************************************************************************************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -109,3 +113,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
+//# sourceMappingURL=on-error-server.js.map

@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../assets/logo512.png';
 import { window, document } from 'ssr-window';
 import 'next-images';
 
@@ -55,7 +54,7 @@ const Navbar=()=>{
       <>
       <div className="nav-row">
         <div className="mobilelogo">
-          <img src={logo} alt="NIT PATNA" />
+          <img src="/logo512.png" alt="NIT PATNA" />
         </div>
         <div className="nav-col">
           <h2>NATIONAL INSTITUTE OF TECHNOLOGY PATNA</h2>
@@ -65,7 +64,7 @@ const Navbar=()=>{
 
         <div className="logobadge">
           <h4>श्रमोऽनवरत चेष्टाय</h4>
-          <img src={logo} alt="NIT PATNA" />
+          <img src="/logo512.png" alt="NIT PATNA" />
         </div>
           <span className="nav-toggle" onClick={function(){
             var x = document.querySelector(".nav-sidebar");
@@ -74,25 +73,7 @@ const Navbar=()=>{
             } else {
               x.style.display = "none";
             }
-          }}><svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g filter="url(#filter0_d)">
-                <rect x="13" y="13" width="36" height="36" rx="4" fill="white" />
-              </g>
-              <line x1="20" y1="22.5" x2="42" y2="22.5" stroke="#E47F40" />
-              <line x1="20" y1="30.5" x2="42" y2="30.5" stroke="#DB713A" />
-              <line x1="20" y1="38.5" x2="42" y2="38.5" stroke="#CE5B30" />
-              <defs>
-                <filter id="filter0_d" x="0" y="0" width="62" height="62" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                  <feOffset />
-                  <feGaussianBlur stdDeviation="6.5" />
-                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-                </filter>
-              </defs>
-            </svg>
+          }}><img src="/toggle.svg"/>
 </span>
         <div className="nav-sidebar"></div>
       </div>

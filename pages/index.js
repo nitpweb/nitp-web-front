@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
@@ -13,6 +14,10 @@ export const Index = () => {
    */
   return (
     <div className="app">
+      <Head>
+        <title>National Institute of Technology Patna</title>
+        <link rel="/favicon.ico" />
+      </Head>
       <Navbar />
       <Home/>
       <Footer />

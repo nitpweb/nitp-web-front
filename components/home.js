@@ -1,12 +1,11 @@
 import React from 'react';
 import Newscard from './home/newscard';
-import nitpimg from '../assets/img/nitp.png';
 import Importantlink from './home/importantlink';
 const Home=()=>{
     return (
         <div>
             <div>
-                <div className="bgimgwrap"><img className="nitpbackimg" src={nitpimg} alt="NATIONAL INSTITUTE OF TECHNOLOGY PATNA" /></div>
+                <div className="bgimgwrap"><img className="nitpbackimg" src="/home/img/nitp.png" alt="NATIONAL INSTITUTE OF TECHNOLOGY PATNA" /></div>
             </div>
             <Importantlink/>
             <div className="news-head">

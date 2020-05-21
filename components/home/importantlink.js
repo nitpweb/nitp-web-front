@@ -1,11 +1,4 @@
 import React from 'react';
-import Ieee from '../../assets/img/ieee';
-import Corona from '../../assets/img/corona';
-import Nss from '../../assets/img/nss';
-import Josaa from '../../assets/img/josaa';
-import Asme from '../../assets/img/asme';
-import Teqip from '../../assets/img/teqip';
-import Chanakya from '../../assets/img/chanakya';
 
 const Importantlink=()=>{
     return(
@@ -13,39 +6,32 @@ const Importantlink=()=>{
             <div className="link-col">
                 <a href="http://exam.nitp.ac.in/">
                     <div className="implink">
-                    <Chanakya />
+                        <img className="linkimg" src="/home/img/chanakya.svg" alt="chanakya" />
                         <h3>CHANAKYA</h3></div>
                 </a>           
                 <div className="implink">
-                <Corona />
-
+                    <img className="linkimg" src="/home/img/corona.svg" alt="corona" />
                     <h3>CORONA</h3></div>
                     <div className="implink">
-                    <Nss />
-
+                    <img className="linkimg" src="/home/img/nss.svg" alt="nss" />
                     <h3>NSS</h3></div>
                     <div className="implink">
-                    <Josaa />
-
+                    <img className="linkimg" src="/home/img/josaa.svg" alt="josaa" />
                     <h3>JOSAA</h3></div>
 
             </div>
             <div className="link-col">
                 <div className="implink">
-                    <Asme />
-
+                    <img className="linkimg" src="/home/img/asme.svg" alt="asme" />
                     <h3>ASME</h3></div>
                     <div className="implink">
-                    <Teqip />
-
+                    <img className="linkimg" src="/home/img/teqip.svg" alt="teqip" />
                     <h3>TEQIP</h3></div>
                     <div className="implink">
-                    <Ieee />
-
+                    <img className="linkimg" src="/home/img/ieee.svg" alt="ieee" />
                     <h3>IEEE</h3></div>
                     <div className="implink">
-                    <Chanakya />
-
+                    <img className="linkimg" src="/home/img/chanakya.svg" alt="chanakya" />
                     <h3>CHANAKYA</h3></div>
             </div>
         </div>
