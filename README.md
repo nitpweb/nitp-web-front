@@ -1,68 +1,137 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# NITP WEBSITE
+This is the repository of website of National Institute of Technology Patna.
 
-## Available Scripts
+The current repo is live at https://nitpweb.netlify.app .
 
-In the project directory, you can run:
+# Courses
+These are some of the courses for beginners to get started with the technologies used for building this website.
 
-### `npm start`
+### VSCODE
+Visual Studio Code is code editor built on open-source which is fully customizable and has many features helping in development.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Udemy course for Visual Studio Code](https://www.udemy.com/course/beginner-vs-code/)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Basic elements of Web Development
+### HTML
 
-### `npm test`
+[Mozilla docs for complete HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[W3Schools resource for HTML](https://www.w3schools.com/html/default.asp)
 
-### `npm run build`
+### CSS
+[Mozilla docs for css](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[W3Schools resource for CSS](https://www.w3schools.com/css/default.asp)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### JS
+[Mozilla docs for JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[W3Schools resource for JS](https://www.w3schools.com/js/default.asp)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### DOM
+[Mozilla docs for DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## React
+React is a JS library created by Facebook for building UI.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[next.tech course for react](https://next.tech/catalog/beginning-react?skill=web-development)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[W3Schools resource for react](https://www.w3schools.com/react/default.asp)
 
-## Learn More
+https://www.taniarascia.com/getting-started-with-react/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Gatsby
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Gatsby in-depth tutorial](https://www.gatsbyjs.org/tutorial/)
 
-### Code Splitting
+## GIT AND GITHUB
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+GitHub is a United States-based global company that provides hosting for software development version control using Git.
 
-### Analyzing the Bundle Size
+ 
+https://guides.github.com/introduction/git-handbook/
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+https://lab.github.com/
 
-### Making a Progressive Web App
+[Cheatsheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+https://git-hint.netlify.app/
 
-### Advanced Configuration
+## Node JS
+Node.js is an open source server environment and allows to run JavaScript on the server.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+https://nodejs.dev/
 
-### Deployment
+https://www.w3schools.com/nodejs/
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## REST API
+REST is acronym for REpresentational State Transfer.
 
-### `npm run build` fails to minify
+https://www.restapitutorial.com/
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## NPM(Node Package Module)
+npm is the world’s largest software registry. Open source developers from every continent use npm to share and borrow packages, and many organizations use npm to manage private development as well.
+
+https://docs.npmjs.com
+
+https://medium.com/beginners-guide-to-mobile-web-development/introduction-to-npm-and-basic-npm-commands-18aa16f69f6b
+
+# Available Scripts
+
+1.  **Start developing.**
+
+    Navigate into your new site’s directory and start it up.
+
+    ```shell
+    cd nitp-web-front/
+    gatsby develop
+    ```
+
+2.  **Open the source code and start editing!**
+
+    Your site is now running at `http://localhost:8000`!
+
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+
+
+## 🧐 What's inside?
+
+A quick look at the top-level files and directories of our project.
+
+    .
+    ├── node_modules
+    ├── src
+    ├── .gitignore
+    ├── .prettierrc
+    ├── gatsby-browser.js
+    ├── gatsby-config.js
+    ├── gatsby-node.js
+    ├── gatsby-ssr.js
+    ├── LICENSE
+    ├── package-lock.json
+    ├── package.json
+    └── README.md
+
+3.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+
+4.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+
+5.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+
+6.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+
+7.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+
+8.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+
+9.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+
+10.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+
+11. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+
+12. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+
+13. **`README.md`**: A text file containing useful reference information about your project.
