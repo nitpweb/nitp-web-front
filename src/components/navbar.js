@@ -2,6 +2,7 @@ import React from 'react';
 import './global/css/navbar.css';
 import logo from './global/img/logo512.png';
 import toggle from '../assets/toggle.svg';
+import {window} from 'ssr-window';
 
 const Navbar=()=>{
   window.onscroll = function () { scrollFunction() };
