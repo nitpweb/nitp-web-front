@@ -4,6 +4,9 @@ var plugins = [{
     },{
       plugin: require('D:/github/nitp-web-front/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"national-institute-of-technology-patna","short_name":"nitpatna","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/assets/logo512.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"48e913bde2323ac62a1dab5ffae7d2c5"},
+    },{
+      plugin: require('D:/github/nitp-web-front/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

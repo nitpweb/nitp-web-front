@@ -4,62 +4,67 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 100vw;
-  height:10vh;
+  height:4.8vw;
   position: fixed;
   background-color: #f7f7f7;
   z-index: 5;
 }
 .nav-link-row{
-    display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  margin-top:10vh;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);;
+  margin-top:4.8vw;
   width: 100vw;
-  height:7vh;
+  height:3vw;
   padding-left: 3vw;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.8;
   position: fixed;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
 }
+
 .logobadge{
   position: relative;
   background-color: #E47F40;
   border-radius: 0px 0px 40% 40%;
-  max-height: 22vh;
+  max-height: 11vw;
 }
 .logobadge>h4{
+  display: flex;
+  justify-content: center;
   font-family: 'Mangal';
   color: white;
   margin-bottom: 0px;
   line-height: 1;
-  margin-left: 1.2vh;
   font-weight: normal;
-  font-size: 2vh;
+  font-size: 1vw;
 }
-.logobadge>img{
-  max-height: 15vh;
-  border:1.5vh solid #E47F40;
+.logobadge>div>img{
+  max-height: 8vw;
+  border:0.5vw solid #E47F40;
   border-radius: 50%;
+  display: flex;
+  box-shadow:inset 0px 40px 50px rgba(0, 0, 0, 0.25);
 }
 .nav-col{
   width:42%;
-  max-height: 10vh;
+  height: 4vw;
+  max-height: 4vw;
  padding-left: 3vw;
-padding-top: 1vh;
+padding-top: 0.5vw;
 }
 .nav-col>h2{
   margin-bottom: 0;
   font-size: 1.3vw;
-  line-height: 0.6rem;
+  line-height: 0.3rem;
 }
 .nav-col>h4{
   font-family: 'Mangal';
   font-size: 0.9vw;
-  line-height: 0.6rem;
+  line-height: 0.3rem;
 }
 .mobilelogo{
   display: none;
+  margin-left: 10px;
 }
 .nav-toggle{
     display: none;
@@ -125,8 +130,14 @@ padding-top: 1vh;
   float: right;
   z-index: 7;
   background: #fff;
-  min-width: 300px;
-  width:300px;
+  min-width: 280px;
+  width:280px;
   max-width:90vw;
+  justify-content: center;
+  padding-top: 10px;
 }
 
+.nav-sidebar>div{
+  display: flex;
+  justify-content: center;
+}
