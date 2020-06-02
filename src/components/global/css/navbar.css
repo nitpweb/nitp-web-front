@@ -18,15 +18,19 @@
   padding-left: 3vw;
   background-color: black;
   opacity: 0.8;
+  z-index: 1;
   position: fixed;
   box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
 }
-
+.nav-row{
+  min-height:8vh;
+}
 .logobadge{
   position: relative;
   background-color: #E47F40;
   border-radius: 0px 0px 40% 40%;
   max-height: 11vw;
+  z-index: 5;
 }
 .logobadge>h4{
   display: flex;
@@ -37,6 +41,7 @@
   line-height: 1;
   font-weight: normal;
   font-size: 1vw;
+  z-index: 5;
 }
 .logobadge>div>img{
   max-height: 8vw;
@@ -44,6 +49,7 @@
   border-radius: 50%;
   display: flex;
   box-shadow:inset 0px 40px 50px rgba(0, 0, 0, 0.25);
+  z-index: 5;
 }
 .nav-col{
   width:42%;
