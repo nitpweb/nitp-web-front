@@ -91,23 +91,23 @@ const Navbar=()=>{
             <Link css={Rowlink} to="/">
               Home
             </Link>
-            <Link css={Rowlink} to="/">
+            <Link css={Rowlink} to="/about">
               About Us
             </Link>
-            <Link css={Rowlink} to="/">
+            <Link css={Rowlink} to="/administration">
               Administration
             </Link>
             <Link css={Rowlink} to="/">
               Academics
             </Link>
             <div></div>
-            <Link css={Rowlink} to="/">
+            <Link css={Rowlink} to="/csedepartment">
               Departments
             </Link>
-            <Link css={Rowlink} to="/">
+            <Link css={Rowlink} to="/facilities">
               Facilities
             </Link>
-            <Link css={Rowlink} to="/">
+            <Link css={Rowlink} to="/student/">
               Students
             </Link>
             <Link css={Rowlink} to="/">
@@ -135,17 +135,13 @@ const Navbar=()=>{
             <img src={toggle} alt="menu" />
           </span>
           <div className="nav-sidebar">
-            <div>
+            <div css={css`display:flex;justify-content:center;align-items:center`}>
               <img
                 src={logo}
                 css={`
-                  height: 60px;
+                  height: 60px;margin:5px;
                 `}
-                alt="NIT PATNA"
-              />
-            </div>
-            <div>
-              <p>NIT PATNA</p>
+                alt="NIT PATNA"/><h4>NATIONAL INSTITUTE OF TECHNOLOGY PATNA</h4>
             </div>
             <div>
               <Link css={Li} to="/">
@@ -153,12 +149,12 @@ const Navbar=()=>{
               </Link>
             </div>
             <div>
-              <Link css={Li} to="/">
+              <Link css={Li} to="/about">
                 About Us
               </Link>
             </div>
             <div>
-              <Link css={Li} to="/">
+              <Link css={Li} to="/administration">
                 Administration
               </Link>
             </div>
@@ -168,17 +164,17 @@ const Navbar=()=>{
               </Link>
             </div>
             <div>
-              <Link css={Li} to="/">
+              <Link css={Li} to="/csedepartment">
                 Departments
               </Link>
             </div>
             <div>
-              <Link css={Li} to="/">
+              <Link css={Li} to="/facilities">
                 Facilities
               </Link>
             </div>
             <div>
-              <Link css={Li} to="/">
+              <Link css={Li} to="/student/">
                 Students
               </Link>
             </div>
