@@ -139,7 +139,7 @@ const Navbar=()=>{
               <img
                 src={logo}
                 css={`
-                  height: 60px;margin:5px;
+                  height: 50px;margin:5px;
                 `}
                 alt="NIT PATNA"/><h4>NATIONAL INSTITUTE OF TECHNOLOGY PATNA</h4>
             </div>
