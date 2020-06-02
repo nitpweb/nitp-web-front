@@ -14,7 +14,7 @@ const Home=()=>{
                 <div className="bgimgwrap"><img className="nitpbackimg" src={nitpimg} alt="NATIONAL INSTITUTE OF TECHNOLOGY PATNA" loading="lazy"/></div>
             </div>
             <Importantlink />
-            <div css={css`display:flex`}>
+            <div css={css`display:flex;@media(max-width:768px){display:block}`}>
             <div>
             <div className="news-head">
                         Notice
