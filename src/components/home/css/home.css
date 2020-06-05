@@ -10,7 +10,6 @@
     max-height:90vh;
     z-index: -1;
     position: relative;
-    padding-top: 4.8vw;
 }
 .notice-row{
     display: -ms-flexbox;
