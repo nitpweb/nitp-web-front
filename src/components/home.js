@@ -41,7 +41,6 @@ const Home=()=>{
                         <Eventcard detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...." time="2 hours ago" />
                         <Eventcard detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...." time="2 hours ago" />
                         <Eventcard detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...." time="2 hours ago" />
-                        <Eventcard detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...." time="2 hours ago" />
 
                 </div>
             </div>

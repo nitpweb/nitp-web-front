@@ -23,3 +23,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.row{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.col-6{
+  width:50%;}
+  @media(max-width:768px){
+    .col-6{width: 100%;}}
