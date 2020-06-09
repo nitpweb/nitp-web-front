@@ -29,7 +29,7 @@ const Studentpage = () =>{
                 <h2 css={css`color:#606060;font-weight:bold`}>- APJ Abdul Kalam</h2></div>  
         </div>
         </div>
-        <div className="smainrow">
+        <div className="smainrow" css={css`@media(max-width:768px){flex-direction:column;}`}>
             <div css={css`align-items:center;`} className="col-6">
                 <div className="row">
                     <h1>Student Activity Center</h1></div>
@@ -55,8 +55,8 @@ const Studentpage = () =>{
             </div>
         </div>
         <div className="smainrow">
-            <div css={css`justify-content:center;`} className="col-6">
-                <img src={exchange} css={css`height:90%;margin-left:10%`} />
+            <div css={css`display:flex;justify-content:center;display:flex;flex-direction:column;`} className="col-6">
+                <img src={exchange} css={css`max-width:100%;height:auto`} />
             </div>
             <div css={css`align-items:center;`} className="col-6">
                 <div className="row">
@@ -69,8 +69,8 @@ const Studentpage = () =>{
             </div>
         </div>
         <div id="sfoot" className="smainrow">
-            <img src={antiragging} css={css`margin-right:5%;height:98%;max-width:40%`}/>
-            <img src={first} css={css`margin-left:5%;height:98%;max-width:40%`}/>
+            <img src={antiragging} css={css`margin-left:5%;margin-right:5%;height:98%;max-width:40%`}/>
+            <img src={first} css={css`margin-left:5%;margin-right:5%;height:98%;max-width:40%`}/>
         </div>
     </div>)
 

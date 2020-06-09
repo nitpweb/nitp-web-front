@@ -20,8 +20,16 @@
 .studentsection>.smainrow:nth-of-type(2n+1)>.col-6:nth-child(1){
 justify-content:center;
 }
+.studentsection>.smainrow>.col-6{
+  padding: 3vw;
+}
 @media(max-width:768px){
     .smainrow{flex-direction:column-reverse};
+    .col-6{
+  padding: 1vw;
+}
+.smainrow>.col-6>div>h1{
+  font-weight:bold;color: #161616;font-size:2rem;
+}
   }
-
-  #sfoot{justify-content:center;padding-bottom:5vh;height:25vh;padding-top:5vh}
+#sfoot{justify-content:center;padding-bottom:5vh;height:25vh;padding-top:5vh}

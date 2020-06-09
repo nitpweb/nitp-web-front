@@ -10,6 +10,7 @@
 .foot-row{
     background: #2D2D2D;
     max-width: 100vw;
+    font-family:"Source Sans Pro";
 }
 .foot-col-8{
     width:70%;
