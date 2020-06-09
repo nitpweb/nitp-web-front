@@ -24,7 +24,7 @@ const medicaldetail = " Two permanent doctor has a fixed chamber within the inst
 const emudetail ="To provide Electric power supply to the Institute. EMU maintains all electrical equipment such as Lights, Fans, AC, etc. which are installed in NIT Patna campus. EMU is having an 11KV/415V Electrical Substation (commonly Known as POWER HOUSE), equipped with 02 Nos. 1250KVA Transformer, 02 Nos. 750 KVA Diesel Generator and Separate Electricals Panels for each feeder pillars/Buildings. <br/><br/>Land line- 0612-2371715 Extension No.-116 <br/>br/>For any type of Electrical Complaint kindly fill the form.";
 const Facilitiespage = () => {
     return (<div className="facilities">
-        <div className="facilityrow">
+        <div className="facilityrow" css={css`@media(max-width:768px){flex-direction:column;}`}>
             <div css={css`align-items:center;display:flex;flex-direction:column;justify-content:center`} className="col-6">
                 <div className="row">
                     <h1 css={css`font-weight:bold;color: #161616;font-size:3rem`}>Facilities</h1>
@@ -34,7 +34,7 @@ const Facilitiespage = () => {
                 <img src={main} css={css`max-width:100%;height:auto`} />
             </div>
         </div>
-        <div className="facilityrow" css={css`@media(max-width:768px){flex-direction:column;}`}>
+        <div className="facilityrow">
             <div css={css`display:flex;justify-content:center;`} className="col-6">
                 <img src={cc} css={css`max-width:100%;height:auto`} />
             </div>
@@ -46,7 +46,7 @@ const Facilitiespage = () => {
                 </div>
             </div>
         </div>
-        <div className="facilityrow">
+        <div className="facilityrow" css={css`@media(max-width:768px){flex-direction:column;}`}>
             <div css={css`align-items:center;`} className="col-6">
                 <div className="row">
                     <h1>Library</h1></div>
@@ -99,7 +99,7 @@ const Facilitiespage = () => {
                 <img src={dummy} css={css`max-width:100%;height:auto`} />
             </div>
         </div>
-        <div className="facilityrow" css={css`@media(max-width:768px){flex-direction:column;}`}>
+        <div className="facilityrow">
             <div css={css`display:flex;justify-content:center;`} className="col-6">
                 <img src={medical} css={css`max-width:100%;height:auto`} />
             </div>
@@ -123,7 +123,7 @@ const Facilitiespage = () => {
                 </div>
             </div>
         </div>
-        <div className="facilityrow">
+        <div className="facilityrow" css={css`@media(max-width:768px){flex-direction:column;}`}>
             <div css={css`align-items:center;`} className="col-6">
                 <div className="row">
                     <h1>Sport Facilities</h1></div>
@@ -137,7 +137,7 @@ const Facilitiespage = () => {
                 <img src={dummy} css={css`max-width:100%;height:auto`} />
             </div>
         </div>
-        <div className="facilityrow" css={css`@media(max-width:768px){flex-direction:column;}`}>
+        <div className="facilityrow">
             <div css={css`display:flex;justify-content:center;`} className="col-6">
                 <img src={dummy} css={css`max-width:100%;height:auto`} />
             </div>
@@ -149,7 +149,7 @@ const Facilitiespage = () => {
                 </div>
             </div>
         </div>
-        <div className="facilityrow">
+        <div className="facilityrow" css={css`@media(max-width:768px){flex-direction:column;}`}>
             <div css={css`align-items:center;`} className="col-6">
                 <div className="row">
                     <h1>Laboratories</h1></div>
@@ -172,7 +172,7 @@ const Facilitiespage = () => {
                 <img src={dummy} css={css`max-width:100%;height:auto`} />
             </div>
         </div>
-        <div className="facilityrow" css={css`@media(max-width:768px){flex-direction:column;}`}>
+        <div className="facilityrow">
             <div css={css`display:flex;justify-content:center;`} className="col-6">
                 <img src={wifi} css={css`max-width:100%;height:auto`} />
             </div>
@@ -184,7 +184,7 @@ const Facilitiespage = () => {
                 </div>
             </div>
         </div>
-        <div className="facilityrow">
+        <div className="facilityrow" css={css`@media(max-width:768px){flex-direction:column;}`}>
            
             <div css={css`align-items:center;`} className="col-6">
                 <div className="row">
@@ -199,7 +199,7 @@ const Facilitiespage = () => {
                 <img src={bank} css={css`max-width:100%;height:auto`} />
             </div>
         </div>
-        <div className="facilityrow" css={css`@media(max-width:768px){flex-direction:column;}`}>
+        <div className="facilityrow" >
             <div css={css`display:flex;justify-content:center;`} className="col-6">
                 <img src={security} css={css`max-width:100%;height:auto`} />
             </div>
@@ -211,7 +211,7 @@ const Facilitiespage = () => {
                 </div>
             </div>
         </div>
-        <div className="facilityrow"> 
+        <div className="facilityrow" css={css`@media(max-width:768px){flex-direction:column;}`}> 
             <div css={css`align-items:center;`} className="col-6">
                 <div className="row">
                     <h1>Woman Cell</h1></div>
@@ -225,7 +225,7 @@ const Facilitiespage = () => {
                 <img src={woman} css={css`max-width:100%;height:auto`} />
             </div>
         </div>
-        <div className="facilityrow" css={css`@media(max-width:768px){flex-direction:column;}`}>
+        <div className="facilityrow">
             <div css={css`display:flex;justify-content:center;`} className="col-6">
                 <img src={electric} css={css`max-width:100%;height:auto`} />
             </div>
