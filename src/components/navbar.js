@@ -1,5 +1,6 @@
 import React from 'react';
 import './global/css/navbar.css';
+import './global/css/dropdown.css';
 import logo from './global/img/logo512.png';
 import toggle from '../assets/toggle.svg';
 import {window} from 'ssr-window';
@@ -10,21 +11,18 @@ import {Link} from 'gatsby';
 const Li=css`
   text-decoration: none;
   color: #000;
-  font-family: "Quicksand";
+  font-family:"Source Sans Pro";
   font-size: 20px;
   line-height: 1.6;`
 
 const Rowlink=css`text-decoration: none;
   color: #fff;
   font-family: "Source Sans Pro";
-  font-size: 21px;
+  font-size: 20px;
   font-weight:600;
   line-height: 1.6;
   display:flex;
-  align-items:center;
-  @media(max-width:1500px){
-    font-size:16px;
-  }
+  margin-top:0.5vw;
    @media(max-width:1500px){
     font-size:14px;
   }
@@ -100,10 +98,18 @@ const Navbar=()=>{
             <Link css={Rowlink} to="/">
               Academics
             </Link>
-            <div></div>
-            <Link css={Rowlink} to="/csedepartment">
-              Departments
+            <div>
+            </div>
+            <div className="dropdown">
+              <button className="dropbtn" css={Rowlink}>Departments</button>
+              <div className="dropdown-content">
+                <Link css={Rowlink} to="/csedepartment">
+                  Computer Science and Engineering
             </Link>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
             <Link css={Rowlink} to="/facilities">
               Facilities
             </Link>
@@ -114,6 +120,7 @@ const Navbar=()=>{
               Placements
             </Link>
           </div>
+          
           <div css={css`position:absolute;min-width:100%;display:flex;justify-content:center`}>
           <div className="logobadge">
             <h4>श्रमोऽनवरत चेष्टाय</h4>
@@ -178,6 +185,7 @@ const Navbar=()=>{
                 Students
               </Link>
             </div>
+            
             <div>
               <Link css={Li} to="/">
                 Placements
@@ -185,6 +193,8 @@ const Navbar=()=>{
             </div>
           </div>
         </div>
+        
+
       </>
     )
 }
