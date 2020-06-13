@@ -1,4 +1,4 @@
-.smainrow{
+.dmainrow{
     display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -8,27 +8,27 @@
                     padding-bottom: 10vh;
                     font-family:'Source Sans Pro'
 }
-.smainrow>.col-6>div>h3{
+.dmainrow>.col-6>div>h3{
   color:#656565;
 }
-.smainrow>.col-6>div>h1{
+.dmainrow>.col-6>div>h1{
   font-weight:bold;color: #161616;font-size:3rem;
 }
-.studentsection>.smainrow:nth-of-type(2n+1){
+.depsection>.dmainrow:nth-of-type(2n+1){
   background-color:#F7F7F7;
 }
-.studentsection>.smainrow:nth-of-type(2n+1)>.col-6:nth-child(1){
+.depsection>.dmainrow:nth-of-type(2n+1)>.col-6:nth-child(1){
 justify-content:center;
 }
-.studentsection>.smainrow>.col-6{
+.depsection>.dmainrow>.col-6{
   padding: 3vw;
 }
 @media(max-width:768px){
-    .smainrow{flex-direction:column-reverse};
+    .dmainrow{flex-direction:column-reverse};
     .col-6{
   padding: 1vw;
 }
-.smainrow>.col-6>div>h1{
+.dmainrow>.col-6>div>h1{
   font-weight:bold;color: #161616;font-size:2rem;
 }
   }

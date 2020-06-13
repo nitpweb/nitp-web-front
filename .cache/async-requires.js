@@ -8,8 +8,11 @@ exports.components = {
   "component---src-pages-administration-js": () => import("./../src/pages/administration.js" /* webpackChunkName: "component---src-pages-administration-js" */),
   "component---src-pages-csehome-js": () => import("./../src/pages/csehome.js" /* webpackChunkName: "component---src-pages-csehome-js" */),
   "component---src-pages-ecehome-js": () => import("./../src/pages/ecehome.js" /* webpackChunkName: "component---src-pages-ecehome-js" */),
+  "component---src-pages-eehome-js": () => import("./../src/pages/eehome.js" /* webpackChunkName: "component---src-pages-eehome-js" */),
   "component---src-pages-facilities-js": () => import("./../src/pages/facilities.js" /* webpackChunkName: "component---src-pages-facilities-js" */),
+  "component---src-pages-hsshome-js": () => import("./../src/pages/hsshome.js" /* webpackChunkName: "component---src-pages-hsshome-js" */),
   "component---src-pages-index-js": () => import("./../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
+  "component---src-pages-mehome-js": () => import("./../src/pages/mehome.js" /* webpackChunkName: "component---src-pages-mehome-js" */),
   "component---src-pages-student-js": () => import("./../src/pages/student.js" /* webpackChunkName: "component---src-pages-student-js" */)
 }
 
