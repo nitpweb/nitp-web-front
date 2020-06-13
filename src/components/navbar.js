@@ -118,6 +118,9 @@ const Navbar=()=>{
                 <Link css={Rowlink} to="/hsshome">
                   Humanities & Social Sciences
             </Link>
+                <Link css={Rowlink} to="/archhome">
+                  Architecture
+            </Link>
               </div>
             </div>
             <Link css={Rowlink} to="/facilities">
