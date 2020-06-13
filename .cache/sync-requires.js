@@ -9,6 +9,7 @@ exports.components = {
   "component---src-pages-404-js": hot(preferDefault(require("D:\\github\\nitp-web-front\\src\\pages\\404.js"))),
   "component---src-pages-about-js": hot(preferDefault(require("D:\\github\\nitp-web-front\\src\\pages\\about.js"))),
   "component---src-pages-administration-js": hot(preferDefault(require("D:\\github\\nitp-web-front\\src\\pages\\administration.js"))),
+  "component---src-pages-archhome-js": hot(preferDefault(require("D:\\github\\nitp-web-front\\src\\pages\\archhome.js"))),
   "component---src-pages-csehome-js": hot(preferDefault(require("D:\\github\\nitp-web-front\\src\\pages\\csehome.js"))),
   "component---src-pages-ecehome-js": hot(preferDefault(require("D:\\github\\nitp-web-front\\src\\pages\\ecehome.js"))),
   "component---src-pages-eehome-js": hot(preferDefault(require("D:\\github\\nitp-web-front\\src\\pages\\eehome.js"))),
