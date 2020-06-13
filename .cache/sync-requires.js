@@ -18,6 +18,7 @@ exports.components = {
   "component---src-pages-hsshome-js": hot(preferDefault(require("D:\\github\\nitp-web-front\\src\\pages\\hsshome.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("D:\\github\\nitp-web-front\\src\\pages\\index.js"))),
   "component---src-pages-mehome-js": hot(preferDefault(require("D:\\github\\nitp-web-front\\src\\pages\\mehome.js"))),
+  "component---src-pages-physicshome-js": hot(preferDefault(require("D:\\github\\nitp-web-front\\src\\pages\\physicshome.js"))),
   "component---src-pages-student-js": hot(preferDefault(require("D:\\github\\nitp-web-front\\src\\pages\\student.js")))
 }
 
