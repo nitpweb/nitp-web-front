@@ -15,6 +15,7 @@ exports.components = {
   "component---src-pages-facilities-js": () => import("./../src/pages/facilities.js" /* webpackChunkName: "component---src-pages-facilities-js" */),
   "component---src-pages-hsshome-js": () => import("./../src/pages/hsshome.js" /* webpackChunkName: "component---src-pages-hsshome-js" */),
   "component---src-pages-index-js": () => import("./../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
+  "component---src-pages-mathhome-js": () => import("./../src/pages/mathhome.js" /* webpackChunkName: "component---src-pages-mathhome-js" */),
   "component---src-pages-mehome-js": () => import("./../src/pages/mehome.js" /* webpackChunkName: "component---src-pages-mehome-js" */),
   "component---src-pages-physicshome-js": () => import("./../src/pages/physicshome.js" /* webpackChunkName: "component---src-pages-physicshome-js" */),
   "component---src-pages-student-js": () => import("./../src/pages/student.js" /* webpackChunkName: "component---src-pages-student-js" */)

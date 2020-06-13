@@ -9,12 +9,12 @@ import '../css/home.css';
 
 const Imgstyle = css`display: flexbox; justify-content: center; flex-direction: column; align-items: center`;
 
-const Chemhomepage = () => {
+const Mathhomepage = () => {
     return (<div className="depsection">
         <div className="dmainrow" css={css`@media(max-width:768px){flex-direction:column;}`}>
             <div css={css`align-items:center;display:flex;flex-direction:column;justify-content:center`} className="col-6">
                 <div className="row">
-                    <h1 css={css`font-weight:bold;color: #161616;font-size:3rem`}>Chemistry Department</h1></div>
+                    <h1 css={css`font-weight:bold;color: #161616;font-size:3rem`}>Mathematics Department</h1></div>
                 <div className="row">
                     <h2 css={css`color:#656565;`}>“The computer was born to solve problems
                     that did not exist before.”</h2></div>
@@ -30,7 +30,10 @@ const Chemhomepage = () => {
                 <div className="row" css={css`display:flex;justify-content:center;align-items:center;`}>
                     <h1>About</h1></div>
                 <div className="row" css={css`display:flex;justify-content:center;align-items:center;color: #606060;`}>
-                    <h3>The Chemistry department was established in 1924, at the same time the institute was founded. Until recently the department has been an auxiliary department with limited capacity, running a modest Ph.D. program and offering B. Tech. chemistry course to UG students. In the past 3-4 years the department has seen a lot of expansion, and with increasing faculty strength the number of UG courses offered to B. Tech students has increased. Also, the department's own teaching program, 5 year Integrated M.Sc. in Chemistry, has been started in the current academic year (2015-16), and research activity is gradually being expanded. The department has been and will remain committed to quality teaching and research with a conscious effort to achieve excellence.
+                    <h3>The Department of Mathematics was established in 1924 and department offer several courses that support other engineering departments.
+                    <br/><br/>Recently a new program Integrated M. Sc. in Mathematics is started and running successfully from the academic year 2015-2016.
+                    <br/><br/>Current faculty strength of the department is nine and they are experienced in teaching and research in several branches of Mathematics.
+                    <br/><br/>Department of Mathematics is one of the backbone of the Institution as it is an essential department for engineering courses up to Ph.D level. 
 </h3>
                 </div>
             </div>
@@ -44,10 +47,8 @@ const Chemhomepage = () => {
                     <h1>Mission</h1></div>
                 <div className="row" css={css`margin-right:3vw;`}>
                     <h3>
-                        To develop and promote innovations in Education at all levels, and generate fundamental and applied knowledge by engaging in scientific research by adopting suitable steps.
-                        <br/><br/>To promote academic growth by offering state-of-the-art education in undergraduate, postgraduate and doctoral programmes.
-                        <br/><br/>To pursue quality research output by developing necessary and adequate research facilities and undertaking collaborative / sponsored research projects.
-                        <br/><br/>Maintaining and enhancing the diversity of students, staff, faculty and curricula.
+                        The Department of Mathematics will offer courses and programs of study that will ensure that the student learner will be able to contribute to today's society. The students will obtain abilities to critically assess numerical and graphical information; learn to formulate strategies for solving problems; and acknowledge the importance of being intellectually curious throughout their adult lives. The Department, through its faculty, will continue to contribute to the body of knowledge of the discipline, whether in traditional research, applied research, or research in the teaching of mathematics.
+                        <br/><br/>The main mission of the Department of Mathematics is to offer high quality instruction in mathematics, statistics and the applied sciences to all students that it serves. The department strives to teach the main ideas and methods of mathematics and to build up the students reasoning and analytical skills. The department maintains programs and teaching practices that match those at most Undergraduate/Postgraduate programs at Institute. As the department offers core courses and in addition support other engineering degree programs, our mission is to make sure that these courses are taught at a high standard and meet the needs of those programs. For its majors, the department mission is to provide students with a number of degree programs and a wide spectrum of courses, and to offer them a rigorous training that enables them to pursue graduate degrees or work in jobs that require a high degree of mathematical skills.
                         </h3>
                 </div>
             </div>
@@ -57,8 +58,7 @@ const Chemhomepage = () => {
                 <div className="row">
                     <h1>Vision</h1></div>
                 <div className="row" css={css`margin-right:3vw;`}>
-                    <h3>	To serve the country through this institution by pursuing excellence in scientific and technical education and research.
-                            <br/><br/>To make this department a center of excellence for cutting edge fundamental and applied research.</h3>
+                    <h3>The vision of the Department is to achieve excellence in undergraduate and postgraduate education and research through a synergic combination and thereby lead to development of new knowledge.</h3>
                 </div>
             </div>
             <div css={Imgstyle} className="col-6">
@@ -74,10 +74,12 @@ const Chemhomepage = () => {
                     <h1>Contact</h1></div>
                 <div className="row" css={css`margin-right:3vw;`}>
                     <h3>
-                        Department of Chemistry,
+                        Department of Mathematics,
                         <br/><br/>National Institute Of Technology Patna,
-                        Ashok Rajpath, Patna - 800005.
-                        <br/><br/>Email: head.ch@nitp.ac.in 
+                        <br/>Ashok Rajpath, Patna - 800005.
+                        <br/><br/>Email: head.ma@nitp.ac.in
+                        <br/><br/>Extn: +91-612-(2371715/2715/2371929/
+                        <br/>2370419/2370843/2371930) * 117 
                     </h3>
                 </div>
             </div>
@@ -87,4 +89,4 @@ const Chemhomepage = () => {
 
 }
 
-export default Chemhomepage
+export default Mathhomepage

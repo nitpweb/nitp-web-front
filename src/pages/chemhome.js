@@ -5,7 +5,7 @@ import Chemhomepage from "../components/departments/chem/chemhome";
 
 const Chemhome = () => (
     <Layout>
-        <SEO title="Physics" />
+        <SEO title="Chemistry" />
         <Chemhomepage />
     </Layout>
 )
