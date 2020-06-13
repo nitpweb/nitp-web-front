@@ -7,6 +7,7 @@ exports.components = {
   "component---src-pages-about-js": () => import("./../src/pages/about.js" /* webpackChunkName: "component---src-pages-about-js" */),
   "component---src-pages-administration-js": () => import("./../src/pages/administration.js" /* webpackChunkName: "component---src-pages-administration-js" */),
   "component---src-pages-archhome-js": () => import("./../src/pages/archhome.js" /* webpackChunkName: "component---src-pages-archhome-js" */),
+  "component---src-pages-cehome-js": () => import("./../src/pages/cehome.js" /* webpackChunkName: "component---src-pages-cehome-js" */),
   "component---src-pages-csehome-js": () => import("./../src/pages/csehome.js" /* webpackChunkName: "component---src-pages-csehome-js" */),
   "component---src-pages-ecehome-js": () => import("./../src/pages/ecehome.js" /* webpackChunkName: "component---src-pages-ecehome-js" */),
   "component---src-pages-eehome-js": () => import("./../src/pages/eehome.js" /* webpackChunkName: "component---src-pages-eehome-js" */),

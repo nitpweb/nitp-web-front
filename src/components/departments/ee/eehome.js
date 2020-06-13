@@ -78,7 +78,7 @@ const Eehomepage = () => {
                         Department of Electronics & Communications Engg.,
                         <br/><br/>National Institute Of Technology Patna,
                         <br/>Ashok Rajpath, Patna - 800005.
-                        <br/>Email: head.ec@nitp.ac.in
+                        <br/><br/>Email: head.ec@nitp.ac.in
                         <br/><br/>Extn: +91-612-(2371715/2715/2371929/
                         <br/>2370419/2370843/2371930) * 177 
                     </h3>
