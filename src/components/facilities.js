@@ -11,6 +11,8 @@ import electric from './facilities/img/electric.svg';
 import main from './facilities/img/main.png';
 import './facilities/css/facilities.css';
 
+const Imgstyle = css`display: flexbox; justify-content: center; flex-direction: column; align-items: center`;
+
 const ccdetail ="A state-of-the-art Computer Centre started its operation on 27th November 2011. It serves as the central computing facility for the students, research scholars and teachers of the institute. The Centre is well equipped with modern Computers (190 in number), air conditioned labs and stabilized uninterrupted power supply among the other facilities. The Centre has seven labs for all the students and one lab exclusively for PhD scholars of the institute. All labs are equipped with IP cameras to monitor the activities remotely. The Centre has 1 Gbps, 24x7 internet connectivity on optical fiber under National Knowledge Network, Govt. of India.The Centre also has a Virtual Class Room and Desktop VideoConferencing facility. It operates from 8:30 AM to 5:30 PM.";
 const libdetail = "The Central library of the institute owns a vast stock of over 75,000 books catering to the needs of all the relevant fields of engineering. It has a resourceful stock of over 10,000 computer related books and clearly demarcated section for every engineering branch and architecture. In addition to the engineering pertinent books, the central library is self-sufficient in a vivid category of other business and current affairs related magazines, pamphlets and journals which includes TIME and NEWSWEEK.The Central Library is fully automated and all operations are performed with the help of Libsys - Library Automation Software.The students can issue a sufficient no.of books for use throughout the semester and an additional no.of books for special reference.";
 const sports ="A healthy mind resides in a healthy body. The students are encouraged to take up sports actively. A huge ground is maintained meticulously for playing cricket and football. A Tennis court, Basketball court and Badminton court are also present. Several other sports such as Table Tennis, Athletics, Volleyball and others are also conducted. Students of the institute have taken part in various Inter-College tournaments and matches and have shown exemplary performance. They are trained by an experienced coach. An intramural Sports meet allows them to show their mettle and broaden their horizons. The institute believes that playing sports helps the students to build a spirit of teamwork and sportsmanship which will help them to lead better lives. ";
@@ -25,17 +27,17 @@ const emudetail ="To provide Electric power supply to the Institute. EMU maintai
 const Facilitiespage = () => {
     return (<div className="facilities">
         <div className="facilityrow" css={css`@media(max-width:768px){flex-direction:column;}`}>
-            <div css={css`align-items:center;display:flex;flex-direction:column;justify-content:center`} className="col-6">
+            <div css={Imgstyle} className="col-6">
                 <div className="row">
                     <h1 css={css`font-weight:bold;color: #161616;font-size:3rem`}>Facilities</h1>
                 </div>
             </div>
-            <div css={css`display:flex;justify-content:center;display:flex;flex-direction:column;justify-content:center`} className="col-6">
+            <div css={css`display:flex;justify-content:center;display:flexbox;flex-direction:column;justify-content:center`} className="col-6">
                 <img src={main} css={css`max-width:100%;height:auto`} />
             </div>
         </div>
         <div className="facilityrow">
-            <div css={css`display:flex;justify-content:center;`} className="col-6">
+            <div css={Imgstyle} className="col-6">
                 <img src={cc} css={css`max-width:100%;height:auto`} />
             </div>
             <div css={css`align-items:center;`} className="col-6">
@@ -56,10 +58,10 @@ const Facilitiespage = () => {
                     </h3>
                 </div>
             </div>
-            <div css={css`display:flex;justify-content:center;`} className="col-6">
+            <div css={Imgstyle} className="col-6">
                 <img src={dummy} css={css`max-width:100%;height:auto`} />
             </div>
-            <div css={css`display:flex;justify-content:center;`} className="col-6">
+            <div css={Imgstyle} className="col-6">
                 <img src={dummy} css={css`max-width:100%;height:auto`} />
             </div>
             <div css={css`align-items:center;`} className="col-6">
@@ -95,12 +97,12 @@ const Facilitiespage = () => {
                     </h3>
                 </div>
             </div>
-            <div css={css`display:flex;justify-content:center;`} className="col-6">
+            <div css={Imgstyle} className="col-6">
                 <img src={dummy} css={css`max-width:100%;height:auto`} />
             </div>
         </div>
         <div className="facilityrow">
-            <div css={css`display:flex;justify-content:center;`} className="col-6">
+            <div css={Imgstyle} className="col-6">
                 <img src={medical} css={css`max-width:100%;height:auto`} />
             </div>
             <div css={css`align-items:center;`} className="col-6">
@@ -133,12 +135,12 @@ const Facilitiespage = () => {
                     </h3>
                 </div>
             </div>
-            <div css={css`display:flex;justify-content:center;`} className="col-6">
+            <div css={Imgstyle} className="col-6">
                 <img src={dummy} css={css`max-width:100%;height:auto`} />
             </div>
         </div>
         <div className="facilityrow">
-            <div css={css`display:flex;justify-content:center;`} className="col-6">
+            <div css={Imgstyle} className="col-6">
                 <img src={dummy} css={css`max-width:100%;height:auto`} />
             </div>
             <div css={css`align-items:center;`} className="col-6">
@@ -168,12 +170,12 @@ const Facilitiespage = () => {
                     </h3>
                 </div>
             </div>
-            <div css={css`display:flex;justify-content:center;`} className="col-6">
+            <div css={Imgstyle} className="col-6">
                 <img src={dummy} css={css`max-width:100%;height:auto`} />
             </div>
         </div>
         <div className="facilityrow">
-            <div css={css`display:flex;justify-content:center;`} className="col-6">
+            <div css={Imgstyle} className="col-6">
                 <img src={wifi} css={css`max-width:100%;height:auto`} />
             </div>
             <div css={css`align-items:center;`} className="col-6">
@@ -195,12 +197,12 @@ const Facilitiespage = () => {
                     </h3>
                 </div>
             </div>
-            <div css={css`display:flex;justify-content:center;display:flex;flex-direction:column;`} className="col-6">
+            <div css={Imgstyle} className="col-6">
                 <img src={bank} css={css`max-width:100%;height:auto`} />
             </div>
         </div>
         <div className="facilityrow" >
-            <div css={css`display:flex;justify-content:center;`} className="col-6">
+            <div css={Imgstyle} className="col-6">
                 <img src={security} css={css`max-width:100%;height:auto`} />
             </div>
             <div css={css`align-items:center;`} className="col-6">
@@ -221,12 +223,12 @@ const Facilitiespage = () => {
                     </h3>
                 </div>
             </div>
-            <div css={css`display:flex;justify-content:center;display:flex;flex-direction:column;`} className="col-6">
+            <div css={Imgstyle} className="col-6">
                 <img src={woman} css={css`max-width:100%;height:auto`} />
             </div>
         </div>
         <div className="facilityrow">
-            <div css={css`display:flex;justify-content:center;`} className="col-6">
+            <div css={Imgstyle} className="col-6">
                 <img src={electric} css={css`max-width:100%;height:auto`} />
             </div>
             <div css={css`align-items:center;`} className="col-6">
