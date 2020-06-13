@@ -109,8 +109,11 @@ const Navbar=()=>{
                 <Link css={Rowlink} to="/ecehome">
                   Electronics and Communication Engineering
             </Link>
-                <Link css={Rowlink} to="/ecehome">
+                <Link css={Rowlink} to="/eehome">
                   Electrical Engineering
+            </Link>
+                <Link css={Rowlink} to="/mehome">
+                  Mechanical Engineering
             </Link>
               </div>
             </div>
