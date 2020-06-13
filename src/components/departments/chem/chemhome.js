@@ -14,7 +14,7 @@ const Physicshomepage = () => {
         <div className="dmainrow" css={css`@media(max-width:768px){flex-direction:column;}`}>
             <div css={css`align-items:center;display:flex;flex-direction:column;justify-content:center`} className="col-6">
                 <div className="row">
-                    <h1 css={css`font-weight:bold;color: #161616;font-size:3rem`}>Physics Department</h1></div>
+                    <h1 css={css`font-weight:bold;color: #161616;font-size:3rem`}>Chemistry Department</h1></div>
                 <div className="row">
                     <h2 css={css`color:#656565;`}>“The computer was born to solve problems
                     that did not exist before.”</h2></div>
@@ -30,9 +30,7 @@ const Physicshomepage = () => {
                 <div className="row" css={css`display:flex;justify-content:center;align-items:center;`}>
                     <h1>About</h1></div>
                 <div className="row" css={css`display:flex;justify-content:center;align-items:center;color: #606060;`}>
-                    <h3>The Department of Physics was established in 1924 and since then has been functioning as an important part of the institute. As of now, the Department has eight faculty members and four support staffs at different levels.
-                    <br/><br/>At present, there are 12 students enrolled in Integrated M. Sc. And 8 students enrolled in the Ph. D. program.
-                    <br/><br/>The Department is mentored by Prof. K.L.Chopra ,Ex-Director,IIT Kharagpur.
+                    <h3>The Chemistry department was established in 1924, at the same time the institute was founded. Until recently the department has been an auxiliary department with limited capacity, running a modest Ph.D. program and offering B. Tech. chemistry course to UG students. In the past 3-4 years the department has seen a lot of expansion, and with increasing faculty strength the number of UG courses offered to B. Tech students has increased. Also, the department's own teaching program, 5 year Integrated M.Sc. in Chemistry, has been started in the current academic year (2015-16), and research activity is gradually being expanded. The department has been and will remain committed to quality teaching and research with a conscious effort to achieve excellence.
 </h3>
                 </div>
             </div>
@@ -46,10 +44,10 @@ const Physicshomepage = () => {
                     <h1>Mission</h1></div>
                 <div className="row" css={css`margin-right:3vw;`}>
                     <h3>
-                        To train the students to be lifelong learners who will contribute to the creation of new knowledge, new technology, and innovation through excellence in research in emerging areas and disciplines.
-                       <br/><br/>To educate students to be future leaders in science, technology, industry, education and other professions and succeed in a globally competitive environment.
-                       <br/><br/>To create National and International collaborations for research engagement in strategic areas of research
-                       <br/><br/>To create National and International collaborations for research engagement in strategic areas of research
+                        To develop and promote innovations in Education at all levels, and generate fundamental and applied knowledge by engaging in scientific research by adopting suitable steps.
+                        <br/><br/>To promote academic growth by offering state-of-the-art education in undergraduate, postgraduate and doctoral programmes.
+                        <br/><br/>To pursue quality research output by developing necessary and adequate research facilities and undertaking collaborative / sponsored research projects.
+                        <br/><br/>Maintaining and enhancing the diversity of students, staff, faculty and curricula.
                         </h3>
                 </div>
             </div>
@@ -59,7 +57,8 @@ const Physicshomepage = () => {
                 <div className="row">
                     <h1>Vision</h1></div>
                 <div className="row" css={css`margin-right:3vw;`}>
-                    <h3>The vision of the Department is to achieve excellence in undergraduate and postgraduate education and research through a synergic combination and thereby lead to development of new knowledge.</h3>
+                    <h3>	To serve the country through this institution by pursuing excellence in scientific and technical education and research.
+                            <br/><br/>To make this department a center of excellence for cutting edge fundamental and applied research.</h3>
                 </div>
             </div>
             <div css={Imgstyle} className="col-6">
@@ -75,12 +74,10 @@ const Physicshomepage = () => {
                     <h1>Contact</h1></div>
                 <div className="row" css={css`margin-right:3vw;`}>
                     <h3>
-                        Department of Physics,
+                        Department of Chemistry,
                         <br/><br/>National Institute Of Technology Patna,
-                        <br/>Ashok Rajpath, Patna - 800005.
-                        <br/><br/>Email: head.ph@nitp.ac.in
-                        <br/><br/>Extn: +91-612-(2371715/2715/2371929/
-                        <br/>2370419/2370843/2371930) * 163 
+                        Ashok Rajpath, Patna - 800005.
+                        <br/><br/>Email: head.ch@nitp.ac.in 
                     </h3>
                 </div>
             </div>
