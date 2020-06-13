@@ -103,11 +103,15 @@ const Navbar=()=>{
             <div className="dropdown">
               <button className="dropbtn" css={Rowlink}>Departments</button>
               <div className="dropdown-content">
-                <Link css={Rowlink} to="/csedepartment">
+                <Link css={Rowlink} to="/csehome">
                   Computer Science and Engineering
             </Link>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <Link css={Rowlink} to="/ecehome">
+                  Electronics and Communication Engineering
+            </Link>
+                <Link css={Rowlink} to="/ecehome">
+                  Electrical Engineering
+            </Link>
               </div>
             </div>
             <Link css={Rowlink} to="/facilities">
@@ -171,7 +175,7 @@ const Navbar=()=>{
               </Link>
             </div>
             <div>
-              <Link css={Li} to="/csedepartment">
+              <Link css={Li} to="/csehome">
                 Departments
               </Link>
             </div>

@@ -5,7 +5,7 @@ import Facilitiespage from '../components/facilities';
 
 const Facilities = () => (
     <Layout>
-        <SEO title="Students" />
+        <SEO title="Facilities" />
         <Facilitiespage/>
     </Layout>
 )

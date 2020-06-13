@@ -8,6 +8,8 @@ import './student/css/student.css';
 import first from './student/img/firstyear.svg';
 import antiragging from './student/img/antiragging.svg';
 
+const Imgstyle = css`display: flexbox; justify-content: center; flex-direction: column; align-items: center`;
+
 const sacinfo ="The Student Activity Centre (SAC) was built with the vision to provide support for multiple kinds of student activities. It was initiated by the honorable Director of NIT Patna, Prof. Asok De to encourage participation in extra-curricular activities to promote overall grooming of personality of the students. Various cultural activities and indoor games are conducted in the SAC. This enormous building has numerous rooms each of which is dedicated to activities related to sports and extra-curricular activities. Student offices for the same are also hosted in the SAC. Also, many open spaces have been specifically designed in the SAC to promote community interaction. A huge stadium adjoins the SAC in which football and cricket matches are held. The administration believes that these activities will help the students to provide a dynamic edge to their performances in the professional world and build a truly multi-faceted personality.";
 
 const coronainfo = "The annual technical fest of NIT Patna has become one of the biggest technical fest of the country. The last edition attracted participants from over 150 institutes from across the country, thus making it the largest technical fest of Bihar and Jharkhand. Aimed at providing a platform for showcasing the best and the latest innovations in the world of technology, various events such as robotics, circuit designing, programming, presentations etc. gives the students to showcase their talent and their practical skills to use.";
@@ -17,7 +19,7 @@ const studentexchange = " National Institute of Technology (NIT), Patna has rece
 const Studentpage = () =>{
     return (<div className="studentsection">
         <div className="smainrow">
-        <div css={css`display:flex;justify-content:center;display:flex;flex-direction:column;justify-content:center`} className="col-6">
+        <div css={Imgstyle} className="col-6">
             <img src={bag} css={css`max-width:100%;height:auto`}/>
         </div>
         <div css={css`align-items:center;display:flex;flex-direction:column;justify-content:center`} className="col-6">
@@ -37,12 +39,12 @@ const Studentpage = () =>{
                     <h3>{sacinfo}</h3>
                     </div>
                     </div>
-            <div css={css`display:flex;justify-content:center;`} className="col-6">
+            <div css={Imgstyle} className="col-6">
                 <img src={sac} css={css`max-width:100%;height:auto`} />
             </div>
         </div>
         <div className="smainrow">
-            <div className="col-6">
+            <div className="col-6" css={Imgstyle}>
                 <img src={coronapic} css={css`width:80%;height:auto;margin-left:10%`} />
             </div>
             <div css={css`align-items:center;`} className="col-6">
@@ -55,7 +57,7 @@ const Studentpage = () =>{
             </div>
         </div>
         <div className="smainrow">
-            <div css={css`display:flex;justify-content:center;display:flex;flex-direction:column;`} className="col-6">
+            <div css={Imgstyle} className="col-6">
                 <img src={exchange} css={css`max-width:100%;height:auto`} />
             </div>
             <div css={css`align-items:center;`} className="col-6">
