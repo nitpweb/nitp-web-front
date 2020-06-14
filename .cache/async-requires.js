@@ -18,6 +18,7 @@ exports.components = {
   "component---src-pages-mathhome-js": () => import("./../src/pages/mathhome.js" /* webpackChunkName: "component---src-pages-mathhome-js" */),
   "component---src-pages-mehome-js": () => import("./../src/pages/mehome.js" /* webpackChunkName: "component---src-pages-mehome-js" */),
   "component---src-pages-physicshome-js": () => import("./../src/pages/physicshome.js" /* webpackChunkName: "component---src-pages-physicshome-js" */),
+  "component---src-pages-placements-js": () => import("./../src/pages/placements.js" /* webpackChunkName: "component---src-pages-placements-js" */),
   "component---src-pages-student-js": () => import("./../src/pages/student.js" /* webpackChunkName: "component---src-pages-student-js" */)
 }
 

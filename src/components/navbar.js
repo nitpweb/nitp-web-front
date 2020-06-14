@@ -141,7 +141,7 @@ const Navbar=()=>{
             <Link css={Rowlink} to="/student/">
               Students
             </Link>
-            <Link css={Rowlink} to="/">
+            <Link css={Rowlink} to="/placements">
               Placements
             </Link>
           </div>
@@ -212,7 +212,7 @@ const Navbar=()=>{
             </div>
             
             <div>
-              <Link css={Li} to="/">
+              <Link css={Li} to="/placements">
                 Placements
               </Link>
             </div>

@@ -21,6 +21,7 @@ exports.components = {
   "component---src-pages-mathhome-js": hot(preferDefault(require("D:\\github\\nitp-web-front\\src\\pages\\mathhome.js"))),
   "component---src-pages-mehome-js": hot(preferDefault(require("D:\\github\\nitp-web-front\\src\\pages\\mehome.js"))),
   "component---src-pages-physicshome-js": hot(preferDefault(require("D:\\github\\nitp-web-front\\src\\pages\\physicshome.js"))),
+  "component---src-pages-placements-js": hot(preferDefault(require("D:\\github\\nitp-web-front\\src\\pages\\placements.js"))),
   "component---src-pages-student-js": hot(preferDefault(require("D:\\github\\nitp-web-front\\src\\pages\\student.js")))
 }
 
