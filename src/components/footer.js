@@ -42,7 +42,7 @@ const Footer=()=>{
                 </div>
             </div>
         </div>
-            <div css={css`display:flex;justify-content:center;align-items:center;width:100%;font-family:'Source Sans Pro';color: #2D2D2D;`}><h5>National Institute of Technology Patna-800005,Bihar,INDIA© 2015 NIT Patna</h5></div>
+            <div css={css`display:flex;justify-content:center;align-items:center;width:100%;font-family:'Source Sans Pro';color: #2D2D2D;`}><h5>National Institute of Technology Patna-800005,Bihar,INDIA© 2020 NIT Patna</h5></div>
         </>
     )
 }
