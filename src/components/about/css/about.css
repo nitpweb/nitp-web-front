@@ -1,11 +1,11 @@
 .mainrow{
-    display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  width: 100%; 
-                    padding-top: 10vh;
-                    font-family:'Source Sans Pro'
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	width: 100%; 
+        padding-top: 10vh;
+        font-family:'Source Sans Pro'
 }
 @media(max-width:768px){
-    .mainrow{flex-direction:column-reverse};}
+	.mainrow{flex-direction:column-reverse};}
