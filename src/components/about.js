@@ -1,5 +1,4 @@
 import React from 'react';
-import styled,{css} from 'styled-components';
 import first from "./about/img/first.svg";
 import second from './about/img/second.svg';
 import third from './about/img/third.svg';
@@ -26,101 +25,99 @@ const valuesinfo6 = "An unfettered spirit of explorating, rationality and enterp
 
 const campusinfo = "NIT Patna is situated on the South bank of river Ganges behind Gandhi Ghat, one of the most important and sacred places of Patna . The Institute campus is 8 Km from the Patna junction railway station and 20 Km from the Jai Prakash Narayan International Airport, Patna . The entrance to the institute is from Ashok Rajpath and it is about 3Km from the famous Gandhi Maidan. The Institute is residential in nature and provides residential facilities to its students as well as teachers as per availability. Its large campus has a picturesque river view with eyecatching historic buildings presenting a spectacle of architectural and natural beauty.";
 
-const Studentpage = () =>{
-    return (<div className="studentsection">
-        <div className="smainrow" css={css`@media(max-width:768px){flex-direction:column;}`}>
-            <div css={css`align-items:center;`} className="col-6">
-                <div className="row">
-                    <h1>About Us</h1></div>
-                <div className="row">
-                    <h3>{aboutusinfo1}</h3>
-                    </div>
-                <div className="row">
-                    <h3>{aboutusinfo2}</h3>
-                    </div>
-                <div className="row">
-                    <h3>{aboutusinfo3}</h3>
-                    </div>
-                <div className="row">
-                    <h3>{aboutusinfo4}</h3>
-                    </div>
-                    </div>
-            <div css={css`display:flex;justify-content:center;`} className="col-6">
-                <img src={first} css={css`max-width:100%;height:auto`} />
-            </div>
+const Aboutpage = () => {
+  return (
+    <div className="studentsection">
+      <div className="smainrow">
+        <div className="col-6">
+          <div className="row">
+            <h1>About Us</h1>
+          </div>
+          <div className="row">
+            <h3>{aboutusinfo1}</h3>
+          </div>
+          <div className="row">
+            <h3>{aboutusinfo2}</h3>
+          </div>
+          <div className="row">
+            <h3>{aboutusinfo3}</h3>
+          </div>
+          <div className="row">
+            <h3>{aboutusinfo4}</h3>
+          </div>
         </div>
-        <div className="smainrow">
-            <div className="col-6">
-                <img src={second} css={css`width:80%;height:auto;margin-left:10%`} />
-            </div>
-            <div css={css`align-items:center;`} className="col-6">
-                <div className="row">
-                    <h1>Mission & Vision</h1></div>
-                <div className="row" css={css`margin-right:3vw;`}>
-                    <h3>{missioninfo1}
-                    </h3>
-                </div>
-                <div className="row" css={css`margin-right:3vw;`}>
-                    <h3>{missioninfo2}
-                    </h3>
-                </div>
-                <div className="row" css={css`margin-right:3vw;`}>
-                    <h3>{missioninfo3}
-                    </h3>
-                </div>
-                <div className="row" css={css`margin-right:3vw;`}>
-                    <h3>{missioninfo4}
-                    </h3>
-                </div>
-                <div className="row" css={css`margin-right:3vw;`}>
-                    <h3>{missioninfo5}
-                    </h3>
-                </div>
-            </div>
+        <div className="col-6 imgcolstyle">
+          <img src={first} className="img-fluid" />
         </div>
-        <div className="smainrow" css={css`@media(max-width:768px){flex-direction:column;}`}>
-            <div css={css`align-items:center;`} className="col-6">
-                <div className="row">
-                    <h1>Values</h1></div>
-                <div className="row">
-                    <h3>{valuesinfo1}</h3>
-                    </div>
-                <div className="row">
-                    <h3>{valuesinfo2}</h3>
-                    </div>
-                <div className="row">
-                    <h3>{valuesinfo3}</h3>
-                    </div>
-                <div className="row">
-                    <h3>{valuesinfo4}</h3>
-                    </div>
-                <div className="row">
-                    <h3>{valuesinfo5}</h3>
-                    </div>
-                <div className="row">
-                    <h3>{valuesinfo6}</h3>
-                    </div>
-                    </div>
-            <div css={css`display:flex;justify-content:center;`} className="col-6">
-                <img src={third} css={css`max-width:100%;height:auto`} />
-            </div>
+      </div>
+      <div className="smainrow smainrow1">
+        <div className="col-6 imgcolstyle">
+          <img src={second} className="img-fluid" />
         </div>
-        <div className="smainrow">
-            <div css={css`display:flex;justify-content:center;display:flex;flex-direction:column;`} className="col-6">
-                <img src={fourth} css={css`max-width:100%;height:auto`} />
-            </div>
-            <div css={css`align-items:center;`} className="col-6">
-                <div className="row">
-                    <h1>Campus</h1></div>
-                <div className="row" css={css`margin-right:3vw;`}>
-                    <h3>
-                    {campusinfo}
-                    </h3>
-                </div>
-            </div>
+        <div className="col-6">
+          <div className="row">
+            <h1>Mission & Vision</h1>
+          </div>
+          <div className="row rowmarr3">
+            <h3>{missioninfo1}</h3>
+          </div>
+          <div className="row rowmarr3">
+            <h3>{missioninfo2}</h3>
+          </div>
+          <div className="row rowmarr3">
+            <h3>{missioninfo3}</h3>
+          </div>
+          <div className="row rowmarr3">
+            <h3>{missioninfo4}</h3>
+          </div>
+          <div className="row rowmarr3">
+            <h3>{missioninfo5}</h3>
+          </div>
         </div>
-    </div>)
-
+      </div>
+      <div className="smainrow">
+        <div className="col-6">
+          <div className="row">
+            <h1>Values</h1>
+          </div>
+          <div className="row">
+            <h3>{valuesinfo1}</h3>
+          </div>
+          <div className="row">
+            <h3>{valuesinfo2}</h3>
+          </div>
+          <div className="row">
+            <h3>{valuesinfo3}</h3>
+          </div>
+          <div className="row">
+            <h3>{valuesinfo4}</h3>
+          </div>
+          <div className="row">
+            <h3>{valuesinfo5}</h3>
+          </div>
+          <div className="row">
+            <h3>{valuesinfo6}</h3>
+          </div>
+        </div>
+        <div className="col-6 imgcolstyle">
+          <img src={third} className="img-fluid" />
+        </div>
+      </div>
+      <div className="smainrow smainrow1">
+        <div className="col-6 imgcolstyle">
+          <img src={fourth} className="img-fluid" />
+        </div>
+        <div className="col-6">
+          <div className="row">
+            <h1>Campus</h1>
+          </div>
+          <div className="row rowmarr3">
+            <h3>{campusinfo}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
 
-export default Studentpage
+export default Aboutpage
