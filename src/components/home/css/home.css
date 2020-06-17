@@ -1,43 +1,23 @@
-
-.nitpbackimg{
-    width:100%;
-    max-height: 90vw;
+.nitpbackimg {
+  width: 100%;
+  max-height: 90vw;
 }
 
-.bgimgwrap{
-    overflow:hidden;
-    width:100%;
-    max-height:90vh;
-    z-index: -1;
-    position: relative;
-}
-.notice-row{
-    display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  width: 100vw;
-  background-color: #ffffff;
-  width:35vw;
+.bgimgwrap {
+  overflow: hidden;
+  width: 100%;
+  max-height: 90vh;
   z-index: -1;
-  margin-right: 5vw;
-  padding-top: calc(4vh + 26px);
-  padding-bottom: 6vh;
-  box-shadow: 7px 7px 26px rgba(207, 207, 207, 0.36);
-  margin-left: 5vw;
-  margin-bottom: 5vh;
-  border-radius: 33px;
-  display: flex;
-  justify-content: center;
+  position: relative;
 }
-.event-row{
+.notice-row {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 100vw;
   background-color: #ffffff;
-  width:45vw;
+  width: 35vw;
   z-index: -1;
   margin-right: 5vw;
   padding-top: calc(4vh + 26px);
@@ -49,47 +29,81 @@
   display: flex;
   justify-content: center;
 }
-@media(max-width:768px){
-    .notice-row{
-  width:90vw;
-}
-.event-row{
-  width: 90vw;
-}
-}
-.news-head{
-    width: 271px;
-    height: 52px;
-    background: #FFFFFF;
-    box-shadow: 7px 7px 26px rgba(207, 207, 207, 0.39);
-    border-radius: 16px;
-    margin-left:8vw;
-    margin-bottom: -26px;
-    z-index: 1;
-    position: relative;
-    font-size: 28px;
-    line-height: 35px;
-    color: #F37023;
-    display: flex;
-    align-items: center;
-    font-family: 'Quicksand';
-    font-weight: bold;
-    padding-left: 18px;
-}
-.news-head>p{
-    color:#3e3e3e;
-    font-size: 1rem;
-    display: flex;
-}
-.news-row{
-    display: -ms-flexbox;
+.event-row {
+  display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 100vw;
-  height:350px;
   background-color: #ffffff;
-  width:90vw;
+  width: 45vw;
+  z-index: -1;
+  margin-right: 5vw;
+  padding-top: calc(4vh + 26px);
+  padding-bottom: 6vh;
+  box-shadow: 7px 7px 26px rgba(207, 207, 207, 0.36);
+  margin-left: 5vw;
+  margin-bottom: 5vh;
+  border-radius: 33px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .notice-row {
+    width: 90vw;
+  }
+  .event-row {
+    width: 90vw;
+  }
+}
+.news-head,
+.notice-head,
+.event-head {
+  width: 271px;
+  height: 52px;
+  background: #ffffff;
+  box-shadow: 7px 7px 26px rgba(207, 207, 207, 0.39);
+  border-radius: 16px;
+  margin-left: 8vw;
+  margin-bottom: -26px;
+  z-index: 1;
+  position: relative;
+  font-size: 28px;
+  line-height: 35px;
+  color: #f37023;
+  display: flex;
+  align-items: center;
+  font-family: "Quicksand";
+  font-weight: bold;
+  padding-left: 18px;
+}
+.notice-head > p {
+  color: #3e3e3e;
+  font-size: 1rem;
+  display: flex;
+  margin-left: 110px;
+}
+.event-head > p {
+  color: #3e3e3e;
+  font-size: 1rem;
+  display: flex;
+  margin-left: 110px;
+}
+.news-head > p {
+  color: #3e3e3e;
+  font-size: 1rem;
+  display: flex;
+  margin-left: 122px;
+}
+.news-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 350px;
+  background-color: #ffffff;
+  width: 90vw;
   z-index: -1;
   margin-right: 5vw;
   padding-top: calc(4vh + 26px);
@@ -101,19 +115,27 @@
   justify-content: center;
 }
 .news-viewbox::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }
-.news-viewbox{
-    overflow: hidden;
-    min-width:95%;
-    height:calc(350px + 5vh);
-    max-height: calc(350px + 5vh);
-    max-width: 90%;
-    overflow-x: scroll;
-    scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE 10+ */
-    display: flex;
-    border-radius: 20px;
-    background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 6.98%);
+.news-viewbox {
+  overflow: hidden;
+  min-width: 95%;
+  height: calc(350px + 5vh);
+  max-height: calc(350px + 5vh);
+  max-width: 90%;
+  overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  display: flex;
+  border-radius: 20px;
+  background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 6.98%);
+}
+#noticewrap {
+  display: flex;
+}
+@media (max-width: 768px) {
+  #notiicewrap {
+    display: block;
+  }
 }

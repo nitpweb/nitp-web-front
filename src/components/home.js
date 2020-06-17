@@ -22,24 +22,11 @@ const Home = () => {
         </div>
       </div>
       <Importantlink />
-      <div
-        css={css`
-          display: flex;
-          @media (max-width: 768px) {
-            display: block;
-          }
-        `}
-      >
+      <div id="noticewrap">
         <div>
-          <div className="news-head">
+          <div className="notice-head">
             Notice
-            <p
-              css={css`
-                margin-left: 110px;
-              `}
-            >
-              view all
-            </p>
+            <p>view all</p>
           </div>
           <div className="notice-row">
             <Notice
@@ -65,15 +52,9 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <div className="news-head">
+          <div className="event-head">
             Events
-            <p
-              css={css`
-                margin-left: 110px;
-              `}
-            >
-              view all
-            </p>
+            <p>view all</p>
           </div>
           <div className="event-row">
             <Eventcard
@@ -101,13 +82,7 @@ const Home = () => {
       </div>
       <div className="news-head">
         News
-        <p
-          css={css`
-            margin-left: 122px;
-          `}
-        >
-          view all
-        </p>
+        <p>view all</p>
       </div>
 
       <div className="news-row">

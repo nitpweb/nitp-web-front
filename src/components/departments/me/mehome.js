@@ -7,109 +7,34 @@ import map from "../img/map.svg"
 import lens from "../img/lens.svg"
 import "../css/home.css"
 
-const Imgstyle = css`
-  display: flexbox;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-`
-
 const Mehomepage = () => {
   return (
     <div className="depsection">
-      <div
-        className="dmainrow"
-        css={css`
-          @media (max-width: 768px) {
-            flex-direction: column;
-          }
-        `}
-      >
-        <div
-          css={css`
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-          `}
-          className="col-6"
-        >
+      <div className="dmainrow dmainrowmain">
+        <div className="col-6">
           <div className="row">
-            <h1
-              css={css`
-                font-weight: bold;
-                color: #161616;
-                font-size: 3rem;
-              `}
-            >
-              Mechanical Engineering
-            </h1>
+            <h1>Mechanical Engineering</h1>
           </div>
           <div className="row">
-            <h2
-              css={css`
-                color: #656565;
-              `}
-            >
+            <h2>
               “The computer was born to solve problems that did not exist
               before.”
             </h2>
           </div>
           <div className="row">
-            <h2
-              css={css`
-                color: #606060;
-                font-weight: bold;
-              `}
-            >
-              — Bill Gates
-            </h2>
+            <h2 id="aut">— Bill Gates</h2>
           </div>
         </div>
-        <div css={Imgstyle} className="col-6">
-          <img
-            src={main}
-            css={css`
-              max-width: 100%;
-              height: auto;
-            `}
-          />
+        <div className="col-6 imgcolstyle">
+          <img src={main} className="img-fluid" />
         </div>
       </div>
-      <div
-        className="dmainrow"
-        css={css`
-          @media (max-width: 768px) {
-            flex-direction: column;
-          }
-        `}
-      >
-        <div
-          css={css`
-            align-items: center;
-            margin-left: 8%;
-            margin-right: 8%;
-          `}
-        >
-          <div
-            className="row"
-            css={css`
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            `}
-          >
+      <div className="dmainrow">
+        <div className="depabout">
+          <div className="row">
             <h1>About</h1>
           </div>
-          <div
-            className="row"
-            css={css`
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              color: #606060;
-            `}
-          >
+          <div className="row">
             <h3>
               Bihar College of Engineering (BCE) was established in 1924 and it
               is the sixth oldest Engineering College in India. The Department
@@ -123,31 +48,15 @@ const Mehomepage = () => {
           </div>
         </div>
       </div>
-      <div className="dmainrow">
-        <div className="col-6" css={Imgstyle}>
-          <img
-            src={mountain}
-            css={css`
-              max-width: 100%;
-              height: auto;
-            `}
-          />
+      <div className="dmainrow dmainrow1">
+        <div className="col-6 imgcolstyle">
+          <img src={mountain} className="img-fluid" />
         </div>
-        <div
-          css={css`
-            align-items: center;
-          `}
-          className="col-6"
-        >
+        <div className="col-6">
           <div className="row">
             <h1>Mission</h1>
           </div>
-          <div
-            className="row"
-            css={css`
-              margin-right: 3vw;
-            `}
-          >
+          <div className="row rowmarr3">
             <h3>
               To provide a high-quality educational experience for undergraduate
               and graduate students that enables them to become leaders in their
@@ -163,29 +72,12 @@ const Mehomepage = () => {
           </div>
         </div>
       </div>
-      <div
-        className="dmainrow"
-        css={css`
-          @media (max-width: 768px) {
-            flex-direction: column;
-          }
-        `}
-      >
-        <div
-          css={css`
-            align-items: center;
-          `}
-          className="col-6"
-        >
+      <div className="dmainrow">
+        <div className="col-6">
           <div className="row">
             <h1>Vision</h1>
           </div>
-          <div
-            className="row"
-            css={css`
-              margin-right: 3vw;
-            `}
-          >
+          <div className="row rowmarr3">
             <h3>
               To contribute to the society through excellence in scientific and
               technical education and research
@@ -203,41 +95,19 @@ const Mehomepage = () => {
             </h3>
           </div>
         </div>
-        <div css={Imgstyle} className="col-6">
-          <img
-            src={lens}
-            css={css`
-              max-width: 100%;
-              height: auto;
-            `}
-          />
+        <div className="col-6 imgcolstyle">
+          <img src={lens} className="img-fluid" />
         </div>
       </div>
-      <div className="dmainrow">
-        <div css={Imgstyle} className="col-6">
-          <img
-            src={map}
-            css={css`
-              max-width: 100%;
-              height: auto;
-            `}
-          />
+      <div className="dmainrow dmainrow1">
+        <div className="col-6 imgcolstyle">
+          <img src={map} className="img-fluid" />
         </div>
-        <div
-          css={css`
-            align-items: center;
-          `}
-          className="col-6"
-        >
+        <div className="col-6">
           <div className="row">
             <h1>Contact</h1>
           </div>
-          <div
-            className="row"
-            css={css`
-              margin-right: 3vw;
-            `}
-          >
+          <div className="row rowmarr3">
             <h3>
               Department of Mechanical Engg.,
               <br />
