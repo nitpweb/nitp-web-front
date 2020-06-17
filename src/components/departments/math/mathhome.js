@@ -1,5 +1,4 @@
 import React from "react"
-import styled, { css } from "styled-components"
 import main from "../img/main.png"
 import pc from "../img/pc.svg"
 import mountain from "../img/mountain.svg"

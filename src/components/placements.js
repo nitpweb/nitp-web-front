@@ -1,5 +1,4 @@
 import React from "react"
-import { css } from "styled-components"
 import tandpcell from "./placements/img/tandpcell.jpg"
 import "./placements/css/placements.css"
 

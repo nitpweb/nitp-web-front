@@ -1,5 +1,4 @@
 import React from "react"
-import styled, { css } from "styled-components"
 import bag from "./student/img/bag.svg"
 import sac from "./student/img/sac.png"
 import coronapic from "./student/img/coronapic.png"
