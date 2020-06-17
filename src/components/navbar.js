@@ -4,7 +4,7 @@ import "./global/css/dropdown.css"
 import logo from "./global/img/logo512.png"
 import toggle from "../assets/toggle.svg"
 import { window } from "ssr-window"
-import styled, { css } from "styled-components"
+import { css } from "styled-components"
 import { Link } from "gatsby"
 
 const Li = css`

@@ -3,109 +3,34 @@ import { css } from "styled-components"
 import tandpcell from "./placements/img/tandpcell.jpg"
 import "./placements/css/placements.css"
 
-const Imgstyle = css`
-  display: flexbox;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-`
-
 const Placementpage = () => {
   return (
-    <div className="depsection">
-      <div
-        className="dmainrow"
-        css={css`
-          @media (max-width: 768px) {
-            flex-direction: column;
-          }
-        `}
-      >
-        <div
-          css={css`
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-          `}
-          className="col-6"
-        >
+    <div className="placsection">
+      <div className="pmainrow pmainrowmain">
+        <div className="col-6">
           <div className="row">
-            <h1
-              css={css`
-                font-weight: bold;
-                color: #161616;
-                font-size: 3rem;
-              `}
-            >
-              Placements
-            </h1>
+            <h1>Placements</h1>
           </div>
           <div className="row">
-            <h2
-              css={css`
-                color: #656565;
-              `}
-            >
+            <h2>
               “The computer was born to solve problems that did not exist
               before.”
             </h2>
           </div>
           <div className="row">
-            <h2
-              css={css`
-                color: #606060;
-                font-weight: bold;
-              `}
-            >
-              — Bill Gates
-            </h2>
+            <h2 id="aut">— Bill Gates</h2>
           </div>
         </div>
-        <div css={Imgstyle} className="col-6">
-          <img
-            src={tandpcell}
-            css={css`
-              max-width: 100%;
-              height: auto;
-            `}
-          />
+        <div className="col-6 imgcolstyle">
+          <img src={tandpcell} className="img-fluid" />
         </div>
       </div>
-      <div
-        className="dmainrow"
-        css={css`
-          @media (max-width: 768px) {
-            flex-direction: column;
-          }
-        `}
-      >
-        <div
-          css={css`
-            align-items: center;
-            margin-left: 8%;
-            margin-right: 8%;
-          `}
-        >
-          <div
-            className="row"
-            css={css`
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            `}
-          >
+      <div className="pmainrow">
+        <div className="placabout">
+          <div className="row">
             <h1>About</h1>
           </div>
-          <div
-            className="row"
-            css={css`
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              color: #606060;
-            `}
-          >
+          <div className="row">
             <h3>
               The Training and Placement cell of NIT PATNA forms an integral
               part in shaping the careers of the students of the institute. It
@@ -133,31 +58,15 @@ const Placementpage = () => {
           </div>
         </div>
       </div>
-      <div className="dmainrow">
-        <div className="col-6" css={Imgstyle}>
-          <img
-            src={tandpcell}
-            css={css`
-              max-width: 100%;
-              height: auto;
-            `}
-          />
+      <div className="pmainrow">
+        <div className="col-6 imgcolstyle">
+          <img src={tandpcell} className="img-fluid" />
         </div>
-        <div
-          css={css`
-            align-items: center;
-          `}
-          className="col-6"
-        >
+        <div className="col-6">
           <div className="row">
             <h1>Director's Message</h1>
           </div>
-          <div
-            className="row"
-            css={css`
-              margin-right: 3vw;
-            `}
-          >
+          <div className="row rowmarr3">
             <h3>
               It is my pleasure to introduce one of the oldest Technological
               Institutes of North India National Institute of Technology Patna
@@ -223,29 +132,12 @@ const Placementpage = () => {
           </div>
         </div>
       </div>
-      <div
-        className="dmainrow"
-        css={css`
-          @media (max-width: 768px) {
-            flex-direction: column;
-          }
-        `}
-      >
-        <div
-          css={css`
-            align-items: center;
-          `}
-          className="col-6"
-        >
+      <div className="pmainrow">
+        <div className="col-6">
           <div className="row">
             <h1>TPO Message</h1>
           </div>
-          <div
-            className="row"
-            css={css`
-              margin-right: 3vw;
-            `}
-          >
+          <div className="row rowmarr3">
             <h3>
               The National Institute of Technology Patna, the eighteenth of the
               thirty member NIT fraternity started functioning in 2004. In this
@@ -326,40 +218,16 @@ const Placementpage = () => {
             </h3>
           </div>
         </div>
-        <div css={Imgstyle} className="col-6">
-          <img
-            src={tandpcell}
-            css={css`
-              max-width: 100%;
-              height: auto;
-            `}
-          />
+        <div className="col-6 imgcolstyle">
+          <img src={tandpcell} className="img-fluid" />
         </div>
       </div>
-      <div className="dmainrow">
-        <div
-          className="row"
-          css={css`
-            padding: 0vw 0vw 0vw 3vw;
-          `}
-        >
-          <h1
-            css={css`
-              font-weight: bold;
-              color: #161616;
-              font-size: 3rem;
-            `}
-          >
-            Placement Officers
-          </h1>
+      <div className="pmainrow pfoot">
+        <div className="row">
+          <h1>Placement Officers</h1>
         </div>
         <div className="col-6">
-          <div
-            className="row"
-            css={css`
-              margin-right: 3vw;
-            `}
-          >
+          <div className="row rowmarr3">
             <h3>
               Dr. Samrat Mukherjee
               <br />
@@ -387,12 +255,7 @@ const Placementpage = () => {
           </div>
         </div>
         <div className="col-6">
-          <div
-            className="row"
-            css={css`
-              margin-right: 3vw;
-            `}
-          >
+          <div className="row rowmarr3">
             <h3>
               Dr. Subrata Das
               <br />
