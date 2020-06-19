@@ -1,12 +1,12 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-
+import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Aboutpage from '../components/about';
 const About = () => (
-  <Layout>
-    <SEO title="Students" />
-    <h1>HI</h1>
-  </Layout>
+    <Layout>
+        <SEO title="About Us" />
+        <Aboutpage />
+    </Layout>
 )
 
 export default About
