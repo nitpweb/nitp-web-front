@@ -1,4 +1,4 @@
-.smainrow {
+.amainrow {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -24,28 +24,28 @@
   font-weight: bold;
 }
 
-.smainrow > .col-6 > div > p {
+.amainrow > .col-6 > div > p {
   color: #656565;
   font-weight: 600;
   font-size: 1.13rem
 }
-.smainrow > .col-6 > div > h1 {
+.amainrow > .col-6 > div > h1 {
   font-weight: bold;
   color: #161616;
   font-size: 3rem;
 }
-.aboutsection > .smainrow:nth-of-type(2n + 1) {
+.aboutsection > .amainrow:nth-of-type(2n + 1) {
   background-color: #f7f7f7;
 }
-.aboutsection > .smainrow:nth-of-type(2n + 1) > .col-6:nth-child(1) {
+.aboutsection > .amainrow:nth-of-type(2n + 1) > .col-6:nth-child(1) {
   justify-content: center;
 }
-.aboutsection > .smainrow > .col-6 {
+.aboutsection > .amainrow > .col-6 {
   padding: 3vw;
 }
 @media (max-width: 768px) {
-  .smainrow,
-  .smainrow1 {
+  .amainrow,
+  .amainrow1 {
     flex-direction: column-reverse;
   }
   .col-6 {
