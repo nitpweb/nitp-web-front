@@ -22,6 +22,26 @@
   position: fixed;
   box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
 }
+.nav-link-item {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Source Sans Pro";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+  display: flex;
+  margin-top: 0.5vw;
+  height: 2vw;
+}
+.nav-link-item > span:hover {
+  border: 3px solid white;
+  border-width: 0px 0px 3px 0px;
+  transition: 0.1s;
+}
+.nav-link-item-active > span {
+  border: 3px solid white;
+  border-width: 0px 0px 3px 0px;
+}
 .nav-row {
   min-height: 8vh;
 }
@@ -53,8 +73,6 @@
 }
 .nav-col {
   width: 42%;
-  height: 4vw;
-  max-height: 4vw;
   padding-left: 3vw;
   padding-top: 0.5vw;
 }
@@ -77,6 +95,9 @@
 .nav-toggle {
   display: none;
 }
+.nav-sidebar > div:nth-of-type(2n + 1) {
+  background-color: #f7f7f7;
+}
 @media (max-width: 768px) {
   .nav-col {
     width: 70%;
@@ -84,7 +105,7 @@
     color: #313131;
   }
   .nav-col > h2 {
-    font-size: 2.6vw;
+    font-size: 10px;
   }
   .nav-link-row {
     display: none;
@@ -97,20 +118,22 @@
     background: transparent;
     max-height: 10vh;
   }
-  .nav-toggle > img {
-    max-height: 10vh;
-    max-width: 10vw;
-  }
   .nav-col > h4 {
     font-size: 1.8vw;
   }
-
+  .nav-side-link {
+    text-decoration: none;
+    color: #000;
+    font-family: "Source Sans Pro";
+    font-size: 20px;
+    line-height: 1.6;
+  }
   .mobilelogo {
     display: block;
     padding-right: 10px;
   }
   .mobilelogo > img {
-    max-height: 8vh;
+    max-height: 6vh;
   }
   .logobadge {
     display: none;
@@ -121,10 +144,13 @@
 }
 @media (max-width: 500px) {
   .nav-col > h4 {
-    font-size: 1.5vw;
+    font-size: 10px;
+  }
+  .nav-row {
+    align-items: center;
   }
   .nav-col > h2 {
-    font-size: 2vw;
+    font-size: 10px;
   }
   .nav-col {
     width: 60%;
@@ -147,5 +173,5 @@
 
 .nav-sidebar > div {
   display: flex;
-  justify-content: center;
+  margin-left: 25px;
 }

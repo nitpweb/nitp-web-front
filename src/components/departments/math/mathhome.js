@@ -25,7 +25,7 @@ const Mathhomepage = () => {
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={main} className="img-fluid" />
+          <img src={main} className="img-fluid" loading="lazy" />
         </div>
       </div>
       <div className="dmainrow">
@@ -58,7 +58,7 @@ const Mathhomepage = () => {
       </div>
       <div className="dmainrow dmainrow1">
         <div className="col-6 imgcolstyle">
-          <img src={mountain} className="img-fluid" />
+          <img src={mountain} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
           <div className="row">
@@ -112,12 +112,12 @@ const Mathhomepage = () => {
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={lens} className="img-fluid" />
+          <img src={lens} className="img-fluid" loading="lazy" />
         </div>
       </div>
       <div className="dmainrow dmainrow1">
         <div className="col-6 imgcolstyle">
-          <img src={map} className="img-fluid" />
+          <img src={map} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
           <div className="row">

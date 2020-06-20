@@ -37,10 +37,32 @@
   display: flex;
   width: 66%;
 }
+.footdetail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: "Source Sans Pro";
+  color: #2d2d2d;
+}
+.footdetail > p {
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
 @media (max-width: 768px) {
   .foot-row {
     display: flex;
     flex-direction: column;
+  }
+  .footdetail > p {
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9px;
   }
   .foot-col-8 {
     display: block;

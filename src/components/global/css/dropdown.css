@@ -1,8 +1,15 @@
 .dropbtn {
   background: transparent;
-  color: white;
-  font-size: 16px;
   border: none;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Source Sans Pro";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+  height: 2vw;
+  display: flex;
+  margin-top: 0.5vw;
 }
 
 .dropdown {
@@ -28,15 +35,17 @@
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
-  color: #000;
+  border-width: 0px 0px 3px 0px;
+  transition: 0.05s;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+  transition: 0.05s;
 }
 
 .dropdown:hover .dropbtn {
-  background-color: white;
-  color: #000;
+  border: 3px solid white;
+  border-width: 0px 0px 3px 0px;
+  transition: 0.05s;
 }

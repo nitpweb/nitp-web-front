@@ -21,7 +21,7 @@ const Studentpage = () => {
     <div className="studentsection">
       <div className="smainrow smainrowmain">
         <div className="col-6 imgcolstyle">
-          <img src={bag} className="img-fluid" />
+          <img src={bag} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
           <div className="row">
@@ -45,12 +45,12 @@ const Studentpage = () => {
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={sac} className="img-fluid" />
+          <img src={sac} className="img-fluid" loading="lazy" />
         </div>
       </div>
       <div className="smainrow smainrow1">
         <div className="col-6 imgcolstyle">
-          <img src={coronapic} className="img-fluid" />
+          <img src={coronapic} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
           <div className="row">
@@ -63,7 +63,7 @@ const Studentpage = () => {
       </div>
       <div className="smainrow smainrow1">
         <div className="col-6 imgcolstyle">
-          <img src={exchange} className="img-fluid" />
+          <img src={exchange} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
           <div className="row">
@@ -75,8 +75,8 @@ const Studentpage = () => {
         </div>
       </div>
       <div id="sfoot" className="smainrow">
-        <img src={antiragging} id="sfimg1" />
-        <img src={first} id="sfimg2" />
+        <img src={antiragging} id="sfimg1" loading="lazy" />
+        <img src={first} id="sfimg2" loading="lazy" />
       </div>
     </div>
   )
