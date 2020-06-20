@@ -15,7 +15,14 @@ const Eventcard = props => {
         display: flex;
       `}
     >
-      <img src={cal} alt="calendar" />
+      <div
+        css={css`
+          width: 77px;
+          height: 80px;
+        `}
+      >
+        <img src={cal} alt="calendar" loading="lazy" />
+      </div>
       <h4
         css={css`
           margin-left: 5%;
