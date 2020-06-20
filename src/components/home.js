@@ -16,12 +16,12 @@ const Home = () => {
             className="nitpbackimg"
             src={nitpimg}
             alt="NATIONAL INSTITUTE OF TECHNOLOGY PATNA"
-            loading="lazy"
+            loading="eager"
           />
         </div>
       </div>
       <Importantlink />
-      <div id="noticewrap">
+      <div className="noticewrap">
         <div>
           <div className="notice-head">
             Notice

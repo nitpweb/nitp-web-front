@@ -21,7 +21,7 @@ const Placementpage = () => {
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={tandpcell} className="img-fluid" />
+          <img src={tandpcell} className="img-fluid" loading="lazy" />
         </div>
       </div>
       <div className="pmainrow">
@@ -59,7 +59,7 @@ const Placementpage = () => {
       </div>
       <div className="pmainrow">
         <div className="col-6 imgcolstyle">
-          <img src={tandpcell} className="img-fluid" />
+          <img src={tandpcell} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
           <div className="row">
@@ -218,7 +218,7 @@ const Placementpage = () => {
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={tandpcell} className="img-fluid" />
+          <img src={tandpcell} className="img-fluid" loading="lazy" />
         </div>
       </div>
       <div className="pmainrow pfoot">
