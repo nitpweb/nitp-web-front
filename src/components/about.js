@@ -34,7 +34,7 @@ const campusinfo = "NIT Patna is situated on the South bank of river Ganges behi
 const Aboutpage = () => {
   return (
     <div className="aboutsection">
-      <div className="amainrow amainrow1">
+      <div className="amainrow">
         <div className="col-6">
           <div className="row">
             <h1>About Us</h1>
@@ -51,7 +51,7 @@ const Aboutpage = () => {
           <img src={first} className="img-fluid" />
         </div>
       </div>
-      <div className="amainrow">
+      <div className="amainrow amainrow1">
         <div className="col-6 imgcolstyle">
           <img src={second} className="img-fluid" />
         </div>
@@ -68,7 +68,7 @@ const Aboutpage = () => {
 	  }
         </div>
       </div>
-      <div className="amainrow amainrow1">
+      <div className="amainrow">
         <div className="col-6">
           <div className="row">
             <h1>Values</h1>
@@ -85,7 +85,7 @@ const Aboutpage = () => {
           <img src={third} className="img-fluid" />
         </div>
       </div>
-      <div className="amainrow">
+      <div className="amainrow amainrow1">
         <div className="col-6 imgcolstyle">
           <img src={fourth} className="img-fluid" />
         </div>
