@@ -42,12 +42,12 @@ const Facilitiespage = () => {
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={main} className="img-fluid" />
+          <img src={main} className="img-fluid" loading="lazy" />
         </div>
       </div>
       <div className="facilityrow facilityrow1">
         <div className="col-6 imgcolstyle">
-          <img src={cc} className="img-fluid" />
+          <img src={cc} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
           <div className="row">
@@ -68,10 +68,10 @@ const Facilitiespage = () => {
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={dummy} className="img-fluid" />
+          <img src={dummy} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={dummy} className="img-fluid" />
+          <img src={dummy} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
           <div className="row">
@@ -128,12 +128,12 @@ const Facilitiespage = () => {
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={dummy} className="img-fluid" />
+          <img src={dummy} className="img-fluid" loading="lazy" />
         </div>
       </div>
       <div className="facilityrow facilityrow1">
         <div className="col-6 imgcolstyle">
-          <img src={medical} className="img-fluid" />
+          <img src={medical} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
           <div className="row">
@@ -192,12 +192,12 @@ const Facilitiespage = () => {
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={dummy} className="img-fluid" />
+          <img src={dummy} className="img-fluid" loading="lazy" />
         </div>
       </div>
       <div className="facilityrow facilityrow1">
         <div className="col-6 imgcolstyle">
-          <img src={dummy} className="img-fluid" />
+          <img src={dummy} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
           <div className="row">
@@ -239,12 +239,12 @@ const Facilitiespage = () => {
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={dummy} className="img-fluid" />
+          <img src={dummy} className="img-fluid" loading="lazy" />
         </div>
       </div>
       <div className="facilityrow facilityrow1">
         <div className="col-6 imgcolstyle">
-          <img src={wifi} className="img-fluid" />
+          <img src={wifi} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
           <div className="row">
@@ -265,12 +265,12 @@ const Facilitiespage = () => {
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={bank} className="img-fluid" />
+          <img src={bank} className="img-fluid" loading="lazy" />
         </div>
       </div>
       <div className="facilityrow facilityrow1">
         <div className="col-6 imgcolstyle">
-          <img src={security} className="img-fluid" />
+          <img src={security} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
           <div className="row">
@@ -291,12 +291,12 @@ const Facilitiespage = () => {
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={woman} className="img-fluid" />
+          <img src={woman} className="img-fluid" loading="lazy" />
         </div>
       </div>
       <div className="facilityrow facilityrow1">
         <div className="col-6 imgcolstyle">
-          <img src={electric} className="img-fluid" />
+          <img src={electric} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
           <div className="row">
