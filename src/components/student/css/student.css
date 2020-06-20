@@ -1,35 +1,81 @@
-.smainrow{
-    display: -ms-flexbox;
+.smainrow {
+  display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 100%; 
-                    padding-top: 10vh;
-                    padding-bottom: 10vh;
-                    font-family:'Source Sans Pro'
+  width: 100%;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  font-family: "Source Sans Pro";
 }
-.smainrow>.col-6>div>h3{
-  color:#656565;
+.smainrowmain > .col-6 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.smainrow>.col-6>div>h1{
-  font-weight:bold;color: #161616;font-size:3rem;
+.smainrowmain > .col-6 > .row > h1 {
+  font-weight: bold;
+  color: #161616;
+  font-size: 3rem;
 }
-.studentsection>.smainrow:nth-of-type(2n+1){
-  background-color:#F7F7F7;
+.smainrowmain > .col-6 > .row > #aut {
+  color: #606060;
+  font-weight: bold;
 }
-.studentsection>.smainrow:nth-of-type(2n+1)>.col-6:nth-child(1){
-justify-content:center;
+.smainrowmain > .col-6 > .row > h2 {
+  color: #656565;
 }
-.studentsection>.smainrow>.col-6{
+.smainrow > .col-6 > div > h3 {
+  color: #656565;
+}
+.smainrow > .col-6 > div > h1 {
+  font-weight: bold;
+  color: #161616;
+  font-size: 3rem;
+}
+.studentsection > .smainrow:nth-of-type(2n + 1) {
+  background-color: #f7f7f7;
+}
+.studentsection > .smainrow:nth-of-type(2n + 1) > .col-6:nth-child(1) {
+  justify-content: center;
+}
+.studentsection > .smainrow > .col-6 {
   padding: 3vw;
 }
-@media(max-width:768px){
-    .smainrow{flex-direction:column-reverse};
-    .col-6{
-  padding: 1vw;
+.rowmarr3 {
+  margin-right: 3vw;
 }
-.smainrow>.col-6>div>h1{
-  font-weight:bold;color: #161616;font-size:2rem;
-}
+@media (max-width: 768px) {
+  .smainrow,
+  .smainrow1 {
+    flex-direction: column-reverse;
   }
-#sfoot{justify-content:center;padding-bottom:5vh;height:25vh;padding-top:5vh}
+  .col-6 {
+    padding: 1vw;
+  }
+  .smainrow > .col-6 > div > h1 {
+    font-weight: bold;
+    color: #161616;
+    font-size: 2rem;
+  }
+}
+
+#sfoot {
+  justify-content: center;
+  padding-bottom: 5vh;
+  height: 25vh;
+  padding-top: 5vh;
+}
+#sfoot > #sfimg1 {
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 98%;
+  max-width: 40%;
+}
+#sfoot > #sfimg2 {
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 98%;
+  max-width: 40%;
+}

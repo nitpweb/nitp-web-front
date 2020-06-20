@@ -1,35 +1,80 @@
-.dmainrow{
-    display: -ms-flexbox;
+.dmainrow {
+  display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 100%; 
-                    padding-top: 10vh;
-                    padding-bottom: 10vh;
-                    font-family:'Source Sans Pro'
+  width: 100%;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  font-family: "Source Sans Pro";
 }
-.dmainrow>.col-6>div>h3{
-  color:#656565;
+.dmainrowmain > .col-6 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.dmainrow>.col-6>div>h1{
-  font-weight:bold;color: #161616;font-size:3rem;
+.dmainrowmain > .col-6 > .row > h1 {
+  font-weight: bold;
+  color: #161616;
+  font-size: 3rem;
 }
-.depsection>.dmainrow:nth-of-type(2n+1){
-  background-color:#F7F7F7;
+.dmainrowmain > .col-6 > .row > #aut {
+  color: #606060;
+  font-weight: bold;
 }
-.depsection>.dmainrow:nth-of-type(2n+1)>.col-6:nth-child(1){
-justify-content:center;
+.dmainrowmain > .col-6 > .row > h2 {
+  color: #656565;
 }
-.depsection>.dmainrow>.col-6{
+.dmainrow > .col-6 > div > h3 {
+  color: #656565;
+}
+.dmainrow > .col-6 > div > h1 {
+  font-weight: bold;
+  color: #161616;
+  font-size: 3rem;
+}
+.depsection > .dmainrow:nth-of-type(2n + 1) {
+  background-color: #f7f7f7;
+}
+.depsection > .dmainrow:nth-of-type(2n + 1) > .col-6:nth-child(1) {
+  justify-content: center;
+}
+.depsection > .dmainrow > .col-6 {
   padding: 3vw;
 }
-@media(max-width:768px){
-    .dmainrow{flex-direction:column-reverse};
-    .col-6{
-  padding: 1vw;
+.depabout {
+  align-items: center;
+  margin-left: 8%;
+  margin-right: 8%;
 }
-.dmainrow>.col-6>div>h1{
-  font-weight:bold;color: #161616;font-size:2rem;
+.depabout > .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.depabout > .row > h3 {
+  color: #606060;
+}
+.rowmarr3 {
+  margin-right: 3vw;
+}
+@media (max-width: 768px) {
+  .dmainrow1 {
+    flex-direction: column-reverse;
   }
-#sfoot{justify-content:center;padding-bottom:5vh;height:25vh;padding-top:5vh}
+  .col-6 {
+    padding: 1vw;
+  }
+  .dmainrow > .col-6 > div > h1 {
+    font-weight: bold;
+    color: #161616;
+    font-size: 2rem;
+  }
+}
+#sfoot {
+  justify-content: center;
+  padding-bottom: 5vh;
+  height: 25vh;
+  padding-top: 5vh;
+}

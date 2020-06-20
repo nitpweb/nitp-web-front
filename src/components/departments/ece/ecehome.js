@@ -1,5 +1,4 @@
 import React from "react"
-import styled, { css } from "styled-components"
 import main from "../img/main.png"
 import pc from "../img/pc.svg"
 import mountain from "../img/mountain.svg"
@@ -7,114 +6,35 @@ import map from "../img/map.svg"
 import lens from "../img/lens.svg"
 import "../css/home.css"
 
-const Imgstyle = css`
-  display: flexbox;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-`
-
 const Ecehomepage = () => {
   return (
     <div className="depsection">
-      <div
-        className="dmainrow"
-        css={css`
-          @media (max-width: 768px) {
-            flex-direction: column;
-          }
-        `}
-      >
-        <div
-          css={css`
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-          `}
-          className="col-6"
-        >
+      <div className="dmainrow dmainrowmain">
+        <div className="col-6">
           <div className="row">
-            <h1
-              css={css`
-                font-weight: bold;
-                color: #161616;
-                font-size: 3rem;
-              `}
-            >
-              Electronics and Communication Engineering
-            </h1>
+            <h1>Electronics and Communication Engineering</h1>
           </div>
           <div className="row">
-            <h2
-              css={css`
-                color: #656565;
-              `}
-            >
+            <h2>
               “The computer was born to solve problems that did not exist
               before.”
             </h2>
           </div>
           <div className="row">
-            <h2
-              css={css`
-                color: #606060;
-                font-weight: bold;
-              `}
-            >
-              — Bill Gates
-            </h2>
+            <h2 id="aut">— Bill Gates</h2>
           </div>
         </div>
-        <div css={Imgstyle} className="col-6">
-          <img
-            src={main}
-            css={css`
-              max-width: 100%;
-              height: auto;
-            `}
-          />
+        <div className="col-6 imgcolstyle">
+          <img src={main} className="img-fluid" />
         </div>
       </div>
-      <div
-        className="dmainrow"
-        css={css`
-          @media (max-width: 768px) {
-            flex-direction: column;
-          }
-        `}
-      >
-        <div
-          css={css`
-            align-items: center;
-            margin-left: 8%;
-            margin-right: 8%;
-          `}
-        >
-          <div
-            className="row"
-            css={css`
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            `}
-          >
+      <div className="dmainrow">
+        <div className="depabout">
+          <div className="row">
             <h1>About</h1>
           </div>
-          <div
-            className="row"
-            css={css`
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              color: #606060;
-            `}
-          >
-            <h3
-              css={css`
-                line-height: 1.2;
-              `}
-            >
+          <div className="row">
+            <h3>
               The Department of Electronics and Communication Engineering is one
               of the established and largest department in the institute. It was
               established in the year 1978 with an intake of 10 students only.
@@ -217,31 +137,15 @@ const Ecehomepage = () => {
           </div>
         </div>
       </div>
-      <div className="dmainrow">
-        <div className="col-6" css={Imgstyle}>
-          <img
-            src={mountain}
-            css={css`
-              max-width: 100%;
-              height: auto;
-            `}
-          />
+      <div className="dmainrow dmainrow1">
+        <div className="col-6 imgcolstyle">
+          <img src={mountain} className="img-fluid" />
         </div>
-        <div
-          css={css`
-            align-items: center;
-          `}
-          className="col-6"
-        >
+        <div className="col-6">
           <div className="row">
             <h1>Mission</h1>
           </div>
-          <div
-            className="row"
-            css={css`
-              margin-right: 3vw;
-            `}
-          >
+          <div className="row rowmarr3">
             <h3>
               To become a centre of excellence to impart up-to-date technical
               education, which will let our students to attain their maximum
@@ -251,29 +155,12 @@ const Ecehomepage = () => {
           </div>
         </div>
       </div>
-      <div
-        className="dmainrow"
-        css={css`
-          @media (max-width: 768px) {
-            flex-direction: column;
-          }
-        `}
-      >
-        <div
-          css={css`
-            align-items: center;
-          `}
-          className="col-6"
-        >
+      <div className="dmainrow">
+        <div className="col-6">
           <div className="row">
             <h1>Vision</h1>
           </div>
-          <div
-            className="row"
-            css={css`
-              margin-right: 3vw;
-            `}
-          >
+          <div className="row rowmarr3">
             <h3>
               To provide globally competitive and high quality human resource by
               preparing students with broad-based / specialized technical
@@ -289,41 +176,19 @@ const Ecehomepage = () => {
             </h3>
           </div>
         </div>
-        <div css={Imgstyle} className="col-6">
-          <img
-            src={lens}
-            css={css`
-              max-width: 100%;
-              height: auto;
-            `}
-          />
+        <div className="col-6 imgcolstyle">
+          <img src={lens} className="img-fluid" />
         </div>
       </div>
-      <div className="dmainrow">
-        <div css={Imgstyle} className="col-6">
-          <img
-            src={map}
-            css={css`
-              max-width: 100%;
-              height: auto;
-            `}
-          />
+      <div className="dmainrow dmainrow1">
+        <div className="col-6 imgcolstyle">
+          <img src={map} className="img-fluid" />
         </div>
-        <div
-          css={css`
-            align-items: center;
-          `}
-          className="col-6"
-        >
+        <div className="col-6">
           <div className="row">
             <h1>Contact</h1>
           </div>
-          <div
-            className="row"
-            css={css`
-              margin-right: 3vw;
-            `}
-          >
+          <div className="row rowmarr3">
             <h3>
               <br />
               Department of Electronics & Communications Engg.,

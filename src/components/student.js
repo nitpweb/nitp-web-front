@@ -1,5 +1,4 @@
 import React from "react"
-import styled, { css } from "styled-components"
 import bag from "./student/img/bag.svg"
 import sac from "./student/img/sac.png"
 import coronapic from "./student/img/coronapic.png"
@@ -7,13 +6,6 @@ import exchange from "./student/img/exchange.svg"
 import "./student/css/student.css"
 import first from "./student/img/firstyear.svg"
 import antiragging from "./student/img/antiragging.svg"
-
-const Imgstyle = css`
-  display: flexbox;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-`
 
 const sacinfo =
   "The Student Activity Centre (SAC) was built with the vision to provide support for multiple kinds of student activities. It was initiated by the honorable Director of NIT Patna, Prof. Asok De to encourage participation in extra-curricular activities to promote overall grooming of personality of the students. Various cultural activities and indoor games are conducted in the SAC. This enormous building has numerous rooms each of which is dedicated to activities related to sports and extra-curricular activities. Student offices for the same are also hosted in the SAC. Also, many open spaces have been specifically designed in the SAC to promote community interaction. A huge stadium adjoins the SAC in which football and cricket matches are held. The administration believes that these activities will help the students to provide a dynamic edge to their performances in the professional world and build a truly multi-faceted personality."
@@ -27,71 +19,24 @@ const studentexchange =
 const Studentpage = () => {
   return (
     <div className="studentsection">
-      <div className="smainrow">
-        <div css={Imgstyle} className="col-6">
-          <img
-            src={bag}
-            css={css`
-              max-width: 100%;
-              height: auto;
-            `}
-          />
+      <div className="smainrow smainrowmain">
+        <div className="col-6 imgcolstyle">
+          <img src={bag} className="img-fluid" />
         </div>
-        <div
-          css={css`
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-          `}
-          className="col-6"
-        >
+        <div className="col-6">
           <div className="row">
-            <h1
-              css={css`
-                font-weight: bold;
-                color: #161616;
-                font-size: 3rem;
-              `}
-            >
-              Students
-            </h1>
+            <h1>Students</h1>
           </div>
           <div className="row">
-            <h2
-              css={css`
-                color: #656565;
-              `}
-            >
-              “You have to dream before your dreams can come true.”
-            </h2>
+            <h2>“You have to dream before your dreams can come true.”</h2>
           </div>
           <div className="row">
-            <h2
-              css={css`
-                color: #606060;
-                font-weight: bold;
-              `}
-            >
-              - APJ Abdul Kalam
-            </h2>
+            <h2 id="aut">- APJ Abdul Kalam</h2>
           </div>
         </div>
       </div>
-      <div
-        className="smainrow"
-        css={css`
-          @media (max-width: 768px) {
-            flex-direction: column;
-          }
-        `}
-      >
-        <div
-          css={css`
-            align-items: center;
-          `}
-          className="col-6"
-        >
+      <div className="smainrow">
+        <div className="col-6">
           <div className="row">
             <h1>Student Activity Center</h1>
           </div>
@@ -99,94 +44,39 @@ const Studentpage = () => {
             <h3>{sacinfo}</h3>
           </div>
         </div>
-        <div css={Imgstyle} className="col-6">
-          <img
-            src={sac}
-            css={css`
-              max-width: 100%;
-              height: auto;
-            `}
-          />
+        <div className="col-6 imgcolstyle">
+          <img src={sac} className="img-fluid" />
         </div>
       </div>
-      <div className="smainrow">
-        <div className="col-6" css={Imgstyle}>
-          <img
-            src={coronapic}
-            css={css`
-              width: 80%;
-              height: auto;
-              margin-left: 10%;
-            `}
-          />
+      <div className="smainrow smainrow1">
+        <div className="col-6 imgcolstyle">
+          <img src={coronapic} className="img-fluid" />
         </div>
-        <div
-          css={css`
-            align-items: center;
-          `}
-          className="col-6"
-        >
+        <div className="col-6">
           <div className="row">
             <h1>Annual Tech-Fest of NIT Patna</h1>
           </div>
-          <div
-            className="row"
-            css={css`
-              margin-right: 3vw;
-            `}
-          >
+          <div className="row rowmarr3">
             <h3>{coronainfo}</h3>
           </div>
         </div>
       </div>
-      <div className="smainrow">
-        <div css={Imgstyle} className="col-6">
-          <img
-            src={exchange}
-            css={css`
-              max-width: 100%;
-              height: auto;
-            `}
-          />
+      <div className="smainrow smainrow1">
+        <div className="col-6 imgcolstyle">
+          <img src={exchange} className="img-fluid" />
         </div>
-        <div
-          css={css`
-            align-items: center;
-          `}
-          className="col-6"
-        >
+        <div className="col-6">
           <div className="row">
             <h1>Student Exchange Program</h1>
           </div>
-          <div
-            className="row"
-            css={css`
-              margin-right: 3vw;
-            `}
-          >
+          <div className="row rowmarr3">
             <h3>{studentexchange}</h3>
           </div>
         </div>
       </div>
       <div id="sfoot" className="smainrow">
-        <img
-          src={antiragging}
-          css={css`
-            margin-left: 5%;
-            margin-right: 5%;
-            height: 98%;
-            max-width: 40%;
-          `}
-        />
-        <img
-          src={first}
-          css={css`
-            margin-left: 5%;
-            margin-right: 5%;
-            height: 98%;
-            max-width: 40%;
-          `}
-        />
+        <img src={antiragging} id="sfimg1" />
+        <img src={first} id="sfimg2" />
       </div>
     </div>
   )
