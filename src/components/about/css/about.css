@@ -44,7 +44,6 @@
   padding: 3vw;
 }
 @media (max-width: 768px) {
-  .amainrow,
   .amainrow1 {
     flex-direction: column-reverse;
   }
