@@ -97,6 +97,7 @@
   }
   .foot-col-4 {
     width: 100%;
+    padding-left: 5%;
   }
   .foot-col-4 > h1 {
     font-size: 1rem;
