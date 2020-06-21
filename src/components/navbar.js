@@ -226,7 +226,7 @@ const Navbar = () => {
             <div className="navsideicondiv">
               <img src={acadicon} alt="" />
             </div>
-            <Link className="nav-side-link" to="/">
+            <Link className="nav-side-link" to="/academics">
               Academics
             </Link>
           </div>

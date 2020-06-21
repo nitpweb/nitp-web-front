@@ -19,8 +19,8 @@ const Eventcard = props => {
       <div className="eventcarddetailsection">
         <p className="eventcarddetail">
           {props.detail}...<a href="#">read more</a>
-        </p>
-        <div id="eventdtp">
+        </p> <div id="eventdtp">
+       
           <div>
             <img src={eventclock} alt="c" />
             <p className="efp">{props.time}</p>
