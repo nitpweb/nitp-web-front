@@ -5,7 +5,7 @@ const Notice = props => {
   return (
     <>
       <div className="noticecard">
-        <h4>{props.detail}</h4>
+        <p className="noticecarddetail">{props.detail}</p>
         <p id="fp">{props.time}</p>
       </div>
     </>

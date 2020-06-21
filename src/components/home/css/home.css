@@ -49,9 +49,11 @@
 @media (max-width: 768px) {
   .notice-row {
     width: 90vw;
+    margin-left:5vw;
   }
   .event-row {
     width: 90vw;
+    margin-left: 5vw;
   }
   .notiicewrap {
     display: block;

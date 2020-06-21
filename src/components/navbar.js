@@ -4,15 +4,15 @@ import "./global/css/dropdown.css"
 import logo from "./global/img/logo512.png"
 import toggle from "../assets/toggle.svg"
 import { window } from "ssr-window"
-import { css } from "styled-components"
 import { Link } from "gatsby"
-import { acadicon } from "./global/sideicons/acad.svg"
-import { administrationicon } from "./global/sideicons/administration.svg"
-import { abouticon } from "./global/sideicons/bulb.svg"
-import { facilityicon } from "./global/sideicons/facility.svg"
-import { homeicon } from "./global/sideicons/home.svg"
-import { studenticon } from "./global/sideicons/student.svg"
-import { placementicon } from "./global/sideicons/placements.svg"
+import acadicon from "./global/sideicons/acad.svg"
+import administrationicon from "./global/sideicons/administration.svg"
+import abouticon from "./global/sideicons/bulb.svg"
+import facilityicon from "./global/sideicons/facility.svg"
+import homeicon from "./global/sideicons/home.svg"
+import studenticon from "./global/sideicons/student.svg"
+import placementicon from "./global/sideicons/placements.svg"
+import sidedropicon from "./home/img/dropdown.svg"
 
 const Navbar = () => {
   window.onscroll = function () {
@@ -25,7 +25,6 @@ const Navbar = () => {
     ) {
       document.querySelector(".nav-col>h2").style.lineHeight = "0.2rem"
       document.querySelector(".nav-col>h4").style.lineHeight = "0.2rem"
-      document.querySelector(".nav-row").style.height = "4vw"
       document.querySelector(".nav-link-row").style.height = "2.5vw"
       document.querySelector(".nav-link-row").style.backgroundColor = "black"
       document.querySelector(".nav-link-row").style.marginTop = "4vw"
@@ -45,7 +44,6 @@ const Navbar = () => {
     } else {
       document.querySelector(".nav-col>h2").style.lineHeight = "0.3rem"
       document.querySelector(".nav-col>h4").style.lineHeight = "0.3rem"
-      document.querySelector(".nav-row").style.height = "4.8vw"
       document.querySelector(".nav-link-row").style.height = "3vw"
       document.querySelector(".nav-link-row").style.backgroundColor = "black"
       document.querySelector(".nav-link-row").style.marginTop = "4.8vw"
@@ -196,50 +194,149 @@ const Navbar = () => {
           <img src={toggle} alt="menu" />
         </span>
         <div className="nav-sidebar">
+          <div className="navsidetop">
+            <img src={logo} alt="logo" />
+            <p>NIT PATNA</p>
+          </div>
           <div>
-            <img src={homeicon} alt="" />
+            <div className="navsideicondiv">
+              <img src={homeicon} alt="" />
+            </div>
             <Link className="nav-side-link" to="/">
               Home
             </Link>
           </div>
           <div>
-            <img src={abouticon} alt="" />
+            <div className="navsideicondiv">
+              <img src={abouticon} alt="" />
+            </div>
             <Link className="nav-side-link" to="/about">
               About Us
             </Link>
           </div>
           <div>
-            <img src={administrationicon} alt="" />
+            <div className="navsideicondiv">
+              <img src={administrationicon} alt="" />
+            </div>
             <Link className="nav-side-link" to="/administration">
               Administration
             </Link>
           </div>
           <div>
-            <img src={acadicon} alt="" />
+            <div className="navsideicondiv">
+              <img src={acadicon} alt="" />
+            </div>
             <Link className="nav-side-link" to="/">
               Academics
             </Link>
           </div>
           <div>
-            <Link className="nav-side-link" to="/csehome">
-              Departments
-            </Link>
+            <div className="navsideicondiv">
+              <img src={sidedropicon} id="departdropicon" alt="" />
+            </div>
+            <span
+              className="navsidedepart"
+              onClick={function () {
+                var y = document.querySelector("#departdropicon")
+                var x = document.querySelector(".departsidedrop")
+                if (x.style.display === "none") {
+                  x.style.display = "block"
+                  y.style.transform = "rotate(180deg)"
+                } else {
+                  x.style.display = "none"
+                  y.style.transform = "rotate(0deg)"
+                }
+              }}
+            >
+              <span className="nav-side-link">Departments</span>
+            </span>
           </div>
           <div>
-            <img src={facilityicon} alt="" />
+            <div className="departsidedrop">
+              <div>
+                <div className="navsideicondiv"></div>
+                <Link className="nav-side-link" to="/csehome">
+                  <span>Computer Science and Engineering</span>
+                </Link>
+              </div>
+              <div>
+                <div className="navsideicondiv"></div>
+                <Link className="nav-side-link" to="/ecehome">
+                  <span>Electronics and Communication Engineering</span>
+                </Link>
+              </div>
+              <div>
+                <div className="navsideicondiv"></div>
+                <Link className="nav-side-link" to="/eehome">
+                  <span>Electrical Engineering</span>
+                </Link>
+              </div>
+              <div>
+                <div className="navsideicondiv"></div>
+                <Link className="nav-side-link" to="/mehome">
+                  <span>Mechanical Engineering</span>
+                </Link>
+              </div>
+              <div>
+                <div className="navsideicondiv"></div>
+                <Link className="nav-side-link" to="/cehome">
+                  <span>Civil Engineering</span>
+                </Link>
+              </div>
+              <div>
+                <div className="navsideicondiv"></div>
+                <Link className="nav-side-link" to="/hsshome">
+                  <span>Humanities & Social Sciences</span>
+                </Link>
+              </div>
+              <div>
+                <div className="navsideicondiv"></div>
+                <Link className="nav-side-link" to="/archhome">
+                  <span>Architecture</span>
+                </Link>
+              </div>
+              <div>
+                {" "}
+                <div className="navsideicondiv"></div>
+                <Link className="nav-side-link" to="/physicshome">
+                  <span>Physics</span>
+                </Link>
+              </div>
+              <div>
+                <div className="navsideicondiv"></div>
+                <Link className="nav-side-link" to="/chemhome">
+                  <span>Chemistry</span>
+                </Link>
+              </div>
+              <div>
+                <div className="navsideicondiv"></div>
+                <Link className="nav-side-link" to="/mathhome">
+                  <span>Mathematics</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="navsideicondiv">
+              <img src={facilityicon} alt="" />
+            </div>
             <Link className="nav-side-link" to="/facilities">
               Facilities
             </Link>
           </div>
           <div>
-            <img src={studenticon} alt="" />
-            <Link className="nav-side-link" to="/student/">
+            <div className="navsideicondiv">
+              <img src={studenticon} alt="" />
+            </div>
+            <Link className="nav-side-link" to="/student">
               Students
             </Link>
           </div>
 
           <div>
-            <img src={placementicon} alt="" />
+            <div className="navsideicondiv">
+              <img src={placementicon} alt="" />
+            </div>
             <Link className="nav-side-link" to="/placements">
               Placements
             </Link>
