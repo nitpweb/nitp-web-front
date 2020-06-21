@@ -1,0 +1,88 @@
+.eventcardwrap{
+    width: 93%;
+    padding: 10px;
+    background: #ffffff;
+    box-shadow: 0px 0px 26px rgba(207, 207, 207, 0.36);
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+}
+.eventcarddetailsection{
+    width: 93%;
+}
+.eventdtdiv{
+    width:80px;
+    height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+    max-height: 80px;
+    max-width: 80px;
+}
+.eventdtdiv > img{
+position: absolute;
+z-index: 0;
+}
+#eventmonth{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+}
+#eventdate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:60px;
+}
+#eventdate > p {
+    position: relative;
+    color: #cd5a2f;
+    font-size: 36px;
+    line-height: 0;
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+}
+.eventdtdiv > #eventmonth > p {
+    line-height: 0.1;
+    color: #ffffff;
+    font-family: "Source Sans Pro";
+    position: relative;
+    z-index: 2;
+}
+#eventdtp{
+    display:flex;
+    justify-content:flex-end;
+}
+.eventcarddetail > a{
+text-decoration: none;
+color: #cd5a2f;
+font-weight: 600;
+}
+#eventdtp >div {
+    display: flex;
+    align-items: center;
+    margin-right:20px;
+}
+#eventdtp > div >img {
+    height: 14px;
+}
+.efp {
+    position: relative;
+  bottom: 0;
+  margin-bottom: 5px;
+  color: #cd5a2f;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: right;
+  font-family: "Source Sans Pro";
+}
+.eventcarddetail{
+    margin-left: 5%;
+}
+@media(max-width:768px){
+    .efp{
+        font-size: 10px;
+    }
+    #eventdtp > div >img {
+        height: 12px;
+    }
+}

@@ -4,7 +4,6 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 100vw;
-  height: 4.8vw;
   position: fixed;
   background-color: #f7f7f7;
   z-index: 5;
@@ -27,23 +26,20 @@
   color: #fff;
   font-family: "Source Sans Pro";
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.6;
   display: flex;
   margin-top: 0.5vw;
-  height: 2vw;
+  height: 35px;
 }
 .nav-link-item > span:hover {
   border: 3px solid white;
   border-width: 0px 0px 3px 0px;
-  transition: 0.1s;
+  transition: 0.1s ease-in-out;
 }
 .nav-link-item-active > span {
   border: 3px solid white;
   border-width: 0px 0px 3px 0px;
-}
-.nav-row {
-  min-height: 8vh;
 }
 .logobadge {
   position: relative;
@@ -98,6 +94,38 @@
 .nav-sidebar > div:nth-of-type(2n + 1) {
   background-color: #f7f7f7;
 }
+@media(max-width:1200px){
+  .nav-link-item {
+  font-size: 18px;
+  height: 28px;
+  font-weight: 300;
+}
+.nav-link-item > span:hover {
+  border: 2px solid white;
+  border-width: 0px 0px 3px 0px;
+  transition: 0.1s;
+}
+.nav-link-item-active > span {
+  border: 2px solid white;
+  border-width: 0px 0px 3px 0px;
+}
+}
+@media(max-width:1000px){
+  .nav-link-item {
+  font-size: 14px;
+  height: 22px;
+  font-weight: 300;
+}
+.nav-link-item > span:hover {
+  border: 1px solid white;
+  border-width: 0px 0px 3px 0px;
+  transition: 0.1s;
+}
+.nav-link-item-active > span {
+  border: 1px solid white;
+  border-width: 0px 0px 3px 0px;
+}
+}
 @media (max-width: 768px) {
   .nav-col {
     width: 70%;
@@ -125,9 +153,16 @@
     text-decoration: none;
     color: #000;
     font-family: "Source Sans Pro";
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.6;
   }
+  .departsidedrop >div:nth-of-type(2n) {
+  background-color: #fff;
+}
+.departsidedrop{
+  display: none;
+  transition:0.1s;
+}
   .mobilelogo {
     display: block;
     padding-right: 10px;
@@ -174,4 +209,29 @@
 .nav-sidebar > div {
   display: flex;
   margin-left: 25px;
+  align-items: center;
+  padding-top:5px;
+  padding-bottom: 5px;
+
+}
+.navsideicondiv{
+  width:15%;
+}
+.navsidetop{
+  display: flex;
+  align-items: center;
+}
+.navsidetop > p{
+  margin-left:20px ;
+  font-family: "Source Sans Pro";
+  font-weight: bold;
+}
+.navsidetop > img{
+  width:50px;
+  height:50px;
+  margin-top:10px;
+  margin-bottom: 15px;
+}
+#sidedropicon{
+  transition: 0.01s ease-in-out;
 }

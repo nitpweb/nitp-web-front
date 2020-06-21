@@ -49,3 +49,31 @@
   border-width: 0px 0px 3px 0px;
   transition: 0.05s;
 }
+@media(max-width:1200px) {
+  .dropbtn {
+  font-size: 18px;
+  height: 28px;
+  font-weight: 300;
+}
+.dropbtn:hover .dropbtn {
+  border: 2px solid white;
+  border-width: 0px 0px 3px 0px;
+  transition: 0.1s;
+}
+}
+@media(max-width:1000px) {
+  .dropbtn {
+  font-size: 14px;
+  height: 22px;
+  font-weight: 300;
+}
+.dropbtn:hover .dropbtn {
+  border: 1px solid white;
+  border-width: 0px 0px 3px 0px;
+  transition: 0.1s;
+}
+.dropbtn:hover .dropbtn {
+  border: 1px solid white;
+  border-width: 0px 0px 3px 0px;
+}
+}
