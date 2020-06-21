@@ -1,35 +1,35 @@
 import React from "react"
 import cal from "./img/calendar.svg"
 import { css } from "styled-components"
+import "./css/eventcard.css"
+import eventclock from "./img/eventclock.svg"
+import eventlocation from "./img/eventlocation.svg"
 
 const Eventcard = props => {
   return (
-    <div
-      css={css`
-        width: 93%;
-        padding: 10px;
-        background: #ffffff;
-        box-shadow: 0px 0px 26px rgba(207, 207, 207, 0.36);
-        border-radius: 20px;
-        margin-top: 20px;
-        display: flex;
-      `}
-    >
-      <div
-        css={css`
-          width: 77px;
-          height: 80px;
-        `}
-      >
+    <div className="eventcardwrap">
+      <div className="eventdtdiv">
         <img src={cal} alt="calendar" loading="lazy" />
+        <div id="eventmonth">
+        <p>{props.month}</p>
+        </div>
+        <div id="eventdate">
+        <p>{props.date}</p>
+        </div>
       </div>
-      <h4
-        css={css`
-          margin-left: 5%;
-        `}
-      >
-        {props.detail}
-      </h4>
+      <div className="eventcarddetailsection">
+        <p className="eventcarddetail">{props.detail}...<a href="#">read more</a></p>
+        <div id="eventdtp">
+          <div>
+          <img src={eventclock} alt="c" />
+          <p className="efp">{props.time}</p>
+          </div>
+          <div>
+          <img src={eventlocation} alt="c" />
+          <p className="efp">{props.location}</p>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

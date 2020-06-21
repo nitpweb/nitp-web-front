@@ -48,6 +48,10 @@ const Home = () => {
               detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
               time="2 hours ago"
             />
+            <Notice
+              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
+              time="2 hours ago"
+            />
           </div>
         </div>
         <div>
@@ -58,23 +62,38 @@ const Home = () => {
           <div className="event-row">
             <Eventcard
               detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="2 hours ago"
+              time="12DEC 15DEC 2020"
+              date="15"
+              month="DEC"
+              location="JC BOSE HALL"
             />
             <Eventcard
               detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="2 hours ago"
+              time="12DEC 15DEC 2020"
+              date="15"
+              month="DEC"
+              location="JC BOSE HALL"
             />
             <Eventcard
               detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="2 hours ago"
+              time="12DEC 15DEC 2020"
+              date="15"
+              month="DEC"
+              location="JC BOSE HALL"
             />
             <Eventcard
               detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="2 hours ago"
+              time="12DEC 15DEC 2020"
+              date="15"
+              month="DEC"
+              location="JC BOSE HALL"
             />
             <Eventcard
               detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="2 hours ago"
+              time="12DEC 15DEC 2020"
+              date="15"
+              month="DEC"
+              location="JC BOSE HALL"
             />
           </div>
         </div>
