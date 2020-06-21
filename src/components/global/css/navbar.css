@@ -98,7 +98,7 @@
   .nav-link-item {
   font-size: 18px;
   height: 28px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .nav-link-item > span:hover {
   border: 2px solid white;
@@ -208,7 +208,7 @@
 
 .nav-sidebar > div {
   display: flex;
-  margin-left: 25px;
+  padding-left: 25px;
   align-items: center;
   padding-top:5px;
   padding-bottom: 5px;

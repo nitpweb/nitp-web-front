@@ -56,11 +56,11 @@ const Importantlink = () => {
             <h3>IEEE</h3>
           </div>
         </a>
-      <a href="https://tcfnitp.tech/">
-        <div className="implink">
-          <img className="linkimg" src={chanakya} alt="chanakya" />
-          <h3>CHANAKYA</h3>
-        </div>
+        <a href="https://tcfnitp.tech/">
+          <div className="implink">
+            <img className="linkimg" src={chanakya} alt="chanakya" />
+            <h3>CHANAKYA</h3>
+          </div>
         </a>
       </div>
     </div>

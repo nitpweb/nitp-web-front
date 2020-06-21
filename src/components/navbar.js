@@ -4,7 +4,6 @@ import "./global/css/dropdown.css"
 import logo from "./global/img/logo512.png"
 import toggle from "../assets/toggle.svg"
 import { window } from "ssr-window"
-import { css } from "styled-components"
 import { Link } from "gatsby"
 import acadicon from "./global/sideicons/acad.svg"
 import administrationicon from "./global/sideicons/administration.svg"
@@ -321,7 +320,7 @@ const Navbar = () => {
             <div className="navsideicondiv">
               <img src={facilityicon} alt="" />
             </div>
-            <Link className="nav-side-link" to="/facilties">
+            <Link className="nav-side-link" to="/facilities">
               Facilities
             </Link>
           </div>
