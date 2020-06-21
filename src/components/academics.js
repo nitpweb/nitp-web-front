@@ -5,7 +5,7 @@ import paper from "./academics/img/paper.svg"
 import test from "./academics/img/test.svg"
 import "./academics/css/academics.css"
 import Acadnotice from "./academics/acadnotice"
-import {Acadnoticeb} from "./academics/acadnotice"
+import { Acadnoticeb } from "./academics/acadnotice"
 
 const Academicspage = () => {
   return (
