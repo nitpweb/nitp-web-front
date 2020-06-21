@@ -46,6 +46,9 @@
 .rowmarr3 {
   margin-right: 3vw;
 }
+.rowmarl3{
+  margin-left:6vw;
+}
 @media (max-width: 768px) {
   .acmainrow1 {
     flex-direction: column-reverse;
@@ -58,4 +61,8 @@
     color: #161616;
     font-size: 2rem;
   }
+  .rowmarl3{
+    margin-left:0px;
+  }
 }
+

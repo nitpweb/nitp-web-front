@@ -1,7 +1,11 @@
 .acadnoticecard {
-  width: 100%;
+  width: 90%;
   padding: 5px 15px 5px 15px;
   margin-top: 10px;
+  background-color: #ffffff;
+}
+.acadnoticecard1{
+  background-color: #f7f7f7;
 }
 .acadnoticecard > #fp {
   position: relative;
@@ -48,7 +52,7 @@ justify-content: flex-end;
 #acadnotdate > div {
     display: flex;
     align-items: flex-end;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 #acaddownimg{
     margin-right: 8px;
