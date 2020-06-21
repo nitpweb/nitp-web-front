@@ -1,0 +1,68 @@
+.acadnoticecard {
+  width: 90%;
+  padding: 5px 15px 5px 15px;
+  margin-top: 10px;
+  background-color: #ffffff;
+}
+.acadnoticecard1{
+  background-color: #f7f7f7;
+}
+.acadnoticecard > #fp {
+  position: relative;
+  bottom: 0;
+  margin-bottom: 5px;
+  color: #cd5a2f;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: right;
+  font-family: "Source Sans Pro";
+}
+.acadcarddetail{
+  font-size: 16px;
+  font-family: "Source Sans Pro";
+  font-weight: 500;
+}
+.acadt{
+    position: relative;
+  bottom: 0;
+  margin-bottom: 5px;
+  color: #7B7B7B;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: right;
+  font-family: "Source Sans Pro"; 
+  line-height: 0;
+}
+.acaddown {
+    text-decoration: none;
+    position: relative;
+  bottom: 0;
+  margin-bottom: 5px;
+  color: #cd5a2f;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: right;
+  font-family: "Source Sans Pro";
+  line-height: 0;
+}
+#acadnotdate{
+display: flex;
+justify-content: flex-end;
+}
+#acadnotdate > div {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 20px;
+}
+#acaddownimg{
+    margin-right: 8px;
+    height: 14px;
+}
+@media(max-width:768px){
+  .acadcarddetail{
+    font-size: 14px;
+  }
+  .acadnoticecard > #fp {
+    font-size: 12px;
+  }
+}
