@@ -59,6 +59,9 @@
     display: block;
   }
 }
+.bgimgwrap{
+  margin-top:5vh;
+}
 .news-head,
 .notice-head,
 .event-head {
@@ -137,5 +140,8 @@
 @media (min-width: 768px) {
   .noticewrap {
     display: flex;
+  }
+  .bgimgwrap{
+    margin-top: 0;
   }
 }

@@ -62,23 +62,29 @@ font-weight: 600;
     align-items: center;
     margin-right:20px;
 }
-#eventdtp > div >img {
+#eventdtp > div > img {
     height: 14px;
 }
 .efp {
     position: relative;
-  bottom: 0;
-  margin-bottom: 5px;
-  color: #cd5a2f;
-  font-size: 12px;
-  font-weight: 600;
-  text-align: right;
-  font-family: "Source Sans Pro";
+    bottom: 0;
+    margin-bottom: 5px;
+    color: #cd5a2f;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: right;
+    font-family: "Source Sans Pro";
+    margin-left: 5px;
 }
 .eventcarddetail{
     margin-left: 5%;
+    font-size:16px;
+    font-family: "Source Sans Pro";
 }
 @media(max-width:768px){
+    .eventcarddetail{
+        font-size:14px;
+    }
     .efp{
         font-size: 10px;
     }
