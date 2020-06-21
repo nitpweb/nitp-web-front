@@ -1,9 +1,8 @@
 import React from "react"
 import Newscard from "./home/newscard"
-
 import "./home/css/home.css"
 import Importantlink from "./home/importantlink"
-import nitpimg from "./home/img/nitp.svg"
+import nitpimg from "./home/img/nitp.png"
 import Notice from "./home/notice"
 import Eventcard from "./home/eventcard"
 

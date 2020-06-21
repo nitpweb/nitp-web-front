@@ -2,7 +2,7 @@
   color: white;
   background: #cd5a2f;
   width: 25%;
-  padding-left: 5vw;
+  padding-left: 1%;
   padding-bottom: 2vh;
   padding-top: 2vh;
   max-width: 95vw;
@@ -51,6 +51,34 @@
   justify-content: center;
   align-items: center;
   font-size: 14px;
+}
+@media(max-width:1500px){
+  .foot-col-3 > h1 {
+    font-size: 1.5rem;
+  }
+  .foot-col-3>a>h3{
+    font-size: 1.2rem;
+  }
+  .foot-col-4>h1{
+    font-size: 1.5rem;
+  }
+  .foot-col-4>h3{
+    font-size: 1.2rem;
+  }
+}
+@media(max-width:1000px){
+  .foot-col-3 > h1 {
+    font-size: 1rem;
+  }
+  .foot-col-3>a>h3{
+    font-size: 0.8rem;
+  }
+  .foot-col-4>h1{
+    font-size: 1rem;
+  }
+  .foot-col-4>h3{
+    font-size: 0.8rem;
+  }
 }
 @media (max-width: 768px) {
   .foot-row {
