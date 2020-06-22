@@ -1,8 +1,8 @@
 import React from "react"
-import first from "./about/img/first.svg"
-import second from "./about/img/second.svg"
-import third from "./about/img/third.svg"
-import fourth from "./about/img/fourth.svg"
+import bulb from "./about/img/bulb.svg"
+import mission from "./about/img/mission.svg"
+import clock from "./about/img/clock.svg"
+import map from "./about/img/map.svg"
 import "./about/css/about.css"
 
 const aboutusinfo = [
@@ -37,32 +37,32 @@ const Aboutpage = () => {
     <div className="aboutsection">
       <div className="amainrow">
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarl3">
             <h1>About Us</h1>
           </div>
           {aboutusinfo.map(elem => {
             return (
-              <div className="row">
+              <div className="row rowmarl3">
                 <p>{elem}</p>
               </div>
             )
           })}
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={first} className="img-fluid" />
+          <img src={bulb} className="img-fluid" />
         </div>
       </div>
       <div className="amainrow amainrow1">
         <div className="col-6 imgcolstyle">
-          <img src={second} className="img-fluid" />
+          <img src={mission} className="img-fluid" />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Mission & Vision</h1>
           </div>
           {missioninfo.map(elem => {
             return (
-              <div className="row">
+              <div className="row rowmarr3">
                 <p>{elem}</p>
               </div>
             )
@@ -71,30 +71,30 @@ const Aboutpage = () => {
       </div>
       <div className="amainrow">
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarl3">
             <h1>Values</h1>
           </div>
           {valuesinfo.map(elem => {
             return (
-              <div className="row">
+              <div className="row rowmarl3">
                 <p>{elem}</p>
               </div>
             )
           })}
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={third} className="img-fluid" />
+          <img src={clock} className="img-fluid" />
         </div>
       </div>
       <div className="amainrow amainrow1">
         <div className="col-6 imgcolstyle">
-          <img src={fourth} className="img-fluid" />
+          <img src={map} className="img-fluid" />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Campus</h1>
           </div>
-          <div className="row">
+          <div className="row rowmarr3">
             <p>{campusinfo}</p>
           </div>
         </div>

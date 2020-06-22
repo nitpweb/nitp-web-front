@@ -5,12 +5,13 @@ module.exports = {
     author: `NITP WEB TEAM`,
   },
   plugins: [
+    `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/assets`,
+        path: `${__dirname}/src/components`,
       },
     },
     `gatsby-transformer-sharp`,

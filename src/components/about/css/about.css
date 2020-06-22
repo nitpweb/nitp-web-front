@@ -16,7 +16,7 @@
 }
 .col-6 > .row > h1 {
   font-weight: bold;
-  color: #161616;
+  color: #2b2b2b;
   font-size: 3rem;
 }
 .col-6 > .row > #aut {
@@ -25,17 +25,17 @@
 }
 
 .amainrow > .col-6 > div > p {
-  color: #656565;
-  font-weight: 600;
-  font-size: 1.13rem
+  color: #454545;
+  font-weight: 500;
+  font-size: 1.3rem
 }
 .amainrow > .col-6 > div > h1 {
   font-weight: bold;
-  color: #161616;
-  font-size: 3rem;
+  color: #2b2b2b;
+  font-size: 2.5rem;
 }
 .aboutsection > .amainrow:nth-of-type(2n + 1) {
-  background-color: #f7f7f7;
+  background-color: #fcfcfc;
 }
 .aboutsection > .amainrow:nth-of-type(2n + 1) > .col-6:nth-child(1) {
   justify-content: center;
@@ -49,5 +49,11 @@
   }
   .col-6 {
     padding: 1vw;
+  }
+  .amainrow > .col-6 > div > h1 {
+    font-size: 1.8rem;
+  }
+  .amainrow >.col-6>div>p{
+    font-size: 1rem;
   }
 }

@@ -1,24 +1,15 @@
 .acadnoticecard {
   width: 90%;
-  padding: 5px 15px 5px 15px;
+  padding: 1px 15px 15px 15px;
   margin-top: 10px;
   background-color: #ffffff;
 }
 .acadnoticecard1{
   background-color: #f7f7f7;
 }
-.acadnoticecard > #fp {
-  position: relative;
-  bottom: 0;
-  margin-bottom: 5px;
-  color: #cd5a2f;
-  font-size: 12px;
-  font-weight: 600;
-  text-align: right;
-  font-family: "Source Sans Pro";
-}
+
 .acadcarddetail{
-  font-size: 16px;
+  font-size: 17px;
   font-family: "Source Sans Pro";
   font-weight: 500;
 }

@@ -30,7 +30,7 @@ const Placementpage = () => {
             <h1>About</h1>
           </div>
           <div className="row">
-            <h3>
+            <p>
               The Training and Placement cell of NIT PATNA forms an integral
               part in shaping the careers of the students of the institute. It
               organizes and coordinates campus placement program to fulfill its
@@ -53,7 +53,7 @@ const Placementpage = () => {
               <br />
               Mettl is our official online assessment partner for placements,
               conducting Mettl's Employability Test in our campus.{" "}
-            </h3>
+            </p>
           </div>
         </div>
       </div>
@@ -62,11 +62,11 @@ const Placementpage = () => {
           <img src={tandpcell} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Director's Message</h1>
           </div>
           <div className="row rowmarr3">
-            <h3>
+            <p>
               It is my pleasure to introduce one of the oldest Technological
               Institutes of North India National Institute of Technology Patna
               whose history goes back to 1876 when four survey schools were
@@ -127,17 +127,17 @@ const Placementpage = () => {
               <br />
               <br />
               <strong>Director, NIT Patna</strong>
-            </h3>
+            </p>
           </div>
         </div>
       </div>
       <div className="pmainrow">
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarl3">
             <h1>TPO Message</h1>
           </div>
-          <div className="row rowmarr3">
-            <h3>
+          <div className="row rowmarl3">
+            <p>
               The National Institute of Technology Patna, the eighteenth of the
               thirty member NIT fraternity started functioning in 2004. In this
               short span of time, NIT Patna has established itself as a premier
@@ -214,7 +214,7 @@ const Placementpage = () => {
               <br />
               <br />
               email: samrat@nitp.ac.in{" "}
-            </h3>
+            </p>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
@@ -222,12 +222,12 @@ const Placementpage = () => {
         </div>
       </div>
       <div className="pmainrow pfoot">
-        <div className="row">
+        <div className="row rowmarl3">
           <h1>Placement Officers</h1>
         </div>
         <div className="col-6">
-          <div className="row rowmarr3">
-            <h3>
+          <div className="row rowmarl3">
+            <p>
               Dr. Samrat Mukherjee
               <br />
               <br />
@@ -250,12 +250,12 @@ const Placementpage = () => {
               <br />
               <br />
               Mob: +91-9973791523
-            </h3>
+            </p>
           </div>
         </div>
         <div className="col-6">
           <div className="row rowmarr3">
-            <h3>
+            <p>
               Dr. Subrata Das
               <br />
               <br />
@@ -275,7 +275,7 @@ const Placementpage = () => {
               <br />
               <br />
               Mob: +91-7070093212
-            </h3>
+            </p>
           </div>
         </div>
       </div>

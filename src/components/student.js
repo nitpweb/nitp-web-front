@@ -1,11 +1,11 @@
 import React from "react"
 import bag from "./student/img/bag.svg"
-import sac from "./student/img/sac.png"
-import coronapic from "./student/img/coronapic.png"
 import exchange from "./student/img/exchange.svg"
 import "./student/css/student.css"
 import first from "./student/img/firstyear.svg"
 import antiragging from "./student/img/antiragging.svg"
+import Coronapic from "./student/img/coronapic"
+import Sacimg from "./student/img/sacpic"
 
 const sacinfo =
   "The Student Activity Centre (SAC) was built with the vision to provide support for multiple kinds of student activities. It was initiated by the honorable Director of NIT Patna, Prof. Asok De to encourage participation in extra-curricular activities to promote overall grooming of personality of the students. Various cultural activities and indoor games are conducted in the SAC. This enormous building has numerous rooms each of which is dedicated to activities related to sports and extra-curricular activities. Student offices for the same are also hosted in the SAC. Also, many open spaces have been specifically designed in the SAC to promote community interaction. A huge stadium adjoins the SAC in which football and cricket matches are held. The administration believes that these activities will help the students to provide a dynamic edge to their performances in the professional world and build a truly multi-faceted personality."
@@ -37,27 +37,27 @@ const Studentpage = () => {
       </div>
       <div className="smainrow">
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarl3">
             <h1>Student Activity Center</h1>
           </div>
-          <div className="row">
-            <h3>{sacinfo}</h3>
+          <div className="row rowmarl3">
+            <p>{sacinfo}</p>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={sac} className="img-fluid" loading="lazy" />
+          <Sacimg />
         </div>
       </div>
       <div className="smainrow smainrow1">
         <div className="col-6 imgcolstyle">
-          <img src={coronapic} className="img-fluid" loading="lazy" />
+          <Coronapic />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Annual Tech-Fest of NIT Patna</h1>
           </div>
           <div className="row rowmarr3">
-            <h3>{coronainfo}</h3>
+            <p>{coronainfo}</p>
           </div>
         </div>
       </div>
@@ -66,17 +66,27 @@ const Studentpage = () => {
           <img src={exchange} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Student Exchange Program</h1>
           </div>
           <div className="row rowmarr3">
-            <h3>{studentexchange}</h3>
+            <p>{studentexchange}</p>
           </div>
         </div>
       </div>
       <div id="sfoot" className="smainrow">
-        <img src={antiragging} id="sfimg1" loading="lazy" />
-        <img src={first} id="sfimg2" loading="lazy" />
+        <a
+          id="sfimg1"
+          href="http://www.nitp.ac.in/uploads/Anti-ragging_Committee_2019.pdf"
+        >
+          <img src={antiragging} loading="lazy" />
+        </a>
+        <a
+          id="sfimg2"
+          href="http://www.nitp.ac.in/uploads/Orientation_Programe_2018.pdf"
+        >
+          <img src={first} loading="lazy" />
+        </a>
       </div>
     </div>
   )

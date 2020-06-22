@@ -11,16 +11,16 @@ const Ecehomepage = () => {
     <div className="depsection">
       <div className="dmainrow dmainrowmain">
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarl3">
             <h1>Electronics and Communication Engineering</h1>
           </div>
-          <div className="row">
+          <div className="row rowmarl3">
             <h2>
               “The computer was born to solve problems that did not exist
               before.”
             </h2>
           </div>
-          <div className="row">
+          <div className="row rowmarl3">
             <h2 id="aut">— Bill Gates</h2>
           </div>
         </div>
@@ -34,7 +34,7 @@ const Ecehomepage = () => {
             <h1>About</h1>
           </div>
           <div className="row">
-            <h3>
+            <p>
               The Department of Electronics and Communication Engineering is one
               of the established and largest department in the institute. It was
               established in the year 1978 with an intake of 10 students only.
@@ -133,7 +133,7 @@ const Ecehomepage = () => {
               Start-up Company with the help of institute's incubation centre.
               In all courses, the Department has built an excellent reputation
               for its graduates in terms of placements.
-            </h3>
+            </p>
           </div>
         </div>
       </div>
@@ -142,26 +142,26 @@ const Ecehomepage = () => {
           <img src={mountain} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Mission</h1>
           </div>
           <div className="row rowmarr3">
-            <h3>
+            <p>
               To become a centre of excellence to impart up-to-date technical
               education, which will let our students to attain their maximum
               technical potential, managerial capability, be competitive in the
               job market and to emerge as a leading research hub.
-            </h3>
+            </p>
           </div>
         </div>
       </div>
       <div className="dmainrow">
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarl3">
             <h1>Vision</h1>
           </div>
-          <div className="row rowmarr3">
-            <h3>
+          <div className="row rowmarl3">
+            <p>
               To provide globally competitive and high quality human resource by
               preparing students with broad-based / specialized technical
               education at UG, PG, and Ph.D. levels.
@@ -173,7 +173,7 @@ const Ecehomepage = () => {
               To contribute to the country and the society at large by
               strengthening the interaction between academia and industries for
               addressing the need of the mankind.
-            </h3>
+            </p>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
@@ -185,11 +185,11 @@ const Ecehomepage = () => {
           <img src={map} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Contact</h1>
           </div>
           <div className="row rowmarr3">
-            <h3>
+            <p>
               <br />
               Department of Electronics & Communications Engg.,
               <br />
@@ -205,7 +205,7 @@ const Ecehomepage = () => {
               Extn: +91-612-(2371715/2715/2371929/
               <br />
               2370419/2370843/2371930) * 177
-            </h3>
+            </p>
           </div>
         </div>
       </div>

@@ -11,16 +11,16 @@ const Hsshomepage = () => {
     <div className="depsection">
       <div className="dmainrow dmainrowmain">
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarl3">
             <h1>Humanities & Social Sciences</h1>
           </div>
-          <div className="row">
+          <div className="row rowmarl3">
             <h2>
               “The computer was born to solve problems that did not exist
               before.”
             </h2>
           </div>
-          <div className="row">
+          <div className="row rowmarl3">
             <h2 id="aut">— Bill Gates</h2>
           </div>
         </div>
@@ -34,7 +34,7 @@ const Hsshomepage = () => {
             <h1>About</h1>
           </div>
           <div className="row">
-            <h3>
+            <p>
               With an interdisciplinary perspective at the heart of its
               approach, the Department of Humanities and Social Sciences at NIT
               Patna provides intellectual and cultural foundations for the study
@@ -48,7 +48,7 @@ const Hsshomepage = () => {
               humanities and social sciences especially in English, Economics,
               Sociology and Human resource management besides elective courses
               for the undergraduate programmes of the institute.
-            </h3>
+            </p>
           </div>
         </div>
       </div>
@@ -57,33 +57,33 @@ const Hsshomepage = () => {
           <img src={mountain} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Mission</h1>
           </div>
           <div className="row rowmarr3">
-            <h3>
+            <p>
               To provide quality teaching, learning, and research in the field
               of Humanities and Social Sciences by
               creating,preserving,transmitting and utilizing knowledge
               especially to engineering students so that intellectually capable
               and imaginatively gifted leaders can emerge in the technical
               education and industry.
-            </h3>
+            </p>
           </div>
         </div>
       </div>
       <div className="dmainrow">
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarl3">
             <h1>Vision</h1>
           </div>
-          <div className="row rowmarr3">
-            <h3>
+          <div className="row rowmarl3">
+            <p>
               The Department aspires to be a national exemplar in undergraduate
               teaching and research in the humanities and social sciences. Upon
               completion of the program, the students will be prepared to
               compete, sustain and advance their communities and the world.
-            </h3>
+            </p>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
@@ -95,11 +95,11 @@ const Hsshomepage = () => {
           <img src={map} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Contact</h1>
           </div>
           <div className="row rowmarr3">
-            <h3>
+            <p>
               Department of Humanities & Social Sciences
               <br />
               <br />
@@ -112,7 +112,7 @@ const Hsshomepage = () => {
               <br />
               <br />
               Contact no: +91-9934065068
-            </h3>
+            </p>
           </div>
         </div>
       </div>

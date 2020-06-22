@@ -11,16 +11,16 @@ const Csehomepage = () => {
     <div className="depsection">
       <div className="dmainrow dmainrowmain">
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarl3">
             <h1>Computer Science & Engineering</h1>
           </div>
-          <div className="row">
+          <div className="row rowmarl3">
             <h2>
               “The computer was born to solve problems that did not exist
               before.”
             </h2>
           </div>
-          <div className="row">
+          <div className="row rowmarl3">
             <h2 id="aut">— Bill Gates</h2>
           </div>
         </div>
@@ -34,7 +34,7 @@ const Csehomepage = () => {
             <h1>About</h1>
           </div>
           <div className="row">
-            <h3>
+            <p>
               Computer Science and Engineering branch of NIT Patna offers
               courses leading to Bachelor of Technology in Computer Science and
               Engineering. The department has a very good infrastructure and
@@ -53,7 +53,7 @@ const Csehomepage = () => {
               Wireless Computing, Real-time Systems, Cryptography, Genetic
               Algorithm and Artificial Intelligence. Apart from these, students
               are also offered a wide variety of electives.
-            </h3>
+            </p>
           </div>
         </div>
       </div>
@@ -62,26 +62,26 @@ const Csehomepage = () => {
           <img src={mountain} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Mission</h1>
           </div>
           <div className="row rowmarr3">
-            <h3>
+            <p>
               To formulate up-to-date and flexible technical programs which will
               allow our graduates to attain their maximum technical potential,
               managerial capability, be competitive in the job market and to
               emerge as a centre of excellence.
-            </h3>
+            </p>
           </div>
         </div>
       </div>
       <div className="dmainrow">
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarl3">
             <h1>Vision</h1>
           </div>
-          <div className="row rowmarr3">
-            <h3>
+          <div className="row rowmarl3">
+            <p>
               To impart high quality of Under-graduate and Post-graduate
               education in all Computer related fields to increase the
               employability.
@@ -92,7 +92,7 @@ const Csehomepage = () => {
               <br />
               To conduct high standard technical research for betterment of the
               society.
-            </h3>
+            </p>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
@@ -104,11 +104,11 @@ const Csehomepage = () => {
           <img src={map} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Contact</h1>
           </div>
           <div className="row rowmarr3">
-            <h3>
+            <p>
               Department of Computer Science & Engg.,
               <br />
               National Institute Of Technology Patna,
@@ -122,7 +122,7 @@ const Csehomepage = () => {
               Extn: +91-612-(2371715/2715/2371929/
               <br />
               2370419/2370843/2371930) 201
-            </h3>
+            </p>
           </div>
         </div>
       </div>
