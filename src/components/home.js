@@ -2,21 +2,16 @@ import React from "react"
 import Newscard from "./home/newscard"
 import "./home/css/home.css"
 import Importantlink from "./home/importantlink"
-import nitpimg from "./home/img/nitp.png"
 import Notice from "./home/notice"
 import Eventcard from "./home/eventcard"
+import { Nitpbackimg } from "./home/nitpimg"
 
 const Home = () => {
   return (
     <div>
       <div>
         <div className="bgimgwrap">
-          <img
-            className="nitpbackimg"
-            src={nitpimg}
-            alt="NATIONAL INSTITUTE OF TECHNOLOGY PATNA"
-            loading="eager"
-          />
+          <Nitpbackimg />
         </div>
       </div>
       <Importantlink />

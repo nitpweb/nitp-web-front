@@ -34,7 +34,7 @@ const Academicspage = () => {
           <img src={test} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Admissions</h1>
           </div>
           <div className="row rowmarr3">
@@ -47,11 +47,6 @@ const Academicspage = () => {
               <Acadnoticeb
                 detail="Online Next-Generation Semiconductor Devices for high-end applications"
                 time="21 June 2020"
-                url="http://www.nitp.ac.in/uploads/Online_FDP_Nextgen_Devices.pdf"
-              />
-              <Acadnoticeb
-                detail="Online Next-Generation Semiconductor Devices for high-end applications"
-                time="20 June 2020"
                 url="http://www.nitp.ac.in/uploads/Online_FDP_Nextgen_Devices.pdf"
               />
               <Acadnoticeb
@@ -85,11 +80,6 @@ const Academicspage = () => {
                 time="20 June 2020"
                 url="http://www.nitp.ac.in/uploads/Online_FDP_Nextgen_Devices.pdf"
               />
-              <Acadnotice
-                detail="Online Next-Generation Semiconductor Devices for high-end applications"
-                time="20 June 2020"
-                url="http://www.nitp.ac.in/uploads/Online_FDP_Nextgen_Devices.pdf"
-              />
             </div>
           </div>
         </div>
@@ -102,7 +92,7 @@ const Academicspage = () => {
           <img src={mail} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6 imgcolstyle">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Notice</h1>
           </div>
           <div className="row rowmarr3">
@@ -115,11 +105,6 @@ const Academicspage = () => {
               <Acadnoticeb
                 detail="Online Next-Generation Semiconductor Devices for high-end applications"
                 time="21 June 2020"
-                url="http://www.nitp.ac.in/uploads/Online_FDP_Nextgen_Devices.pdf"
-              />
-              <Acadnoticeb
-                detail="Online Next-Generation Semiconductor Devices for high-end applications"
-                time="20 June 2020"
                 url="http://www.nitp.ac.in/uploads/Online_FDP_Nextgen_Devices.pdf"
               />
               <Acadnoticeb

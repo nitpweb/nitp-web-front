@@ -1,14 +1,15 @@
 import React from "react"
 import bank from "./facilities/img/bank.svg"
-import cc from "./facilities/img/cc.png"
 import dummy from "./facilities/img/dummy.png"
 import medical from "./facilities/img/medical.svg"
 import security from "./facilities/img/security.svg"
 import wifi from "./facilities/img/wifi.svg"
 import woman from "./facilities/img/woman.svg"
 import electric from "./facilities/img/electric.svg"
-import main from "./facilities/img/main.png"
 import "./facilities/css/facilities.css"
+import Facilitymain from "./facilities/img/facilitymainimg"
+import Ccimg from "./facilities/img/ccimg"
+import Dummyimg from "./facilities/img/dummy"
 
 const ccdetail =
   "A state-of-the-art Computer Centre started its operation on 27th November 2011. It serves as the central computing facility for the students, research scholars and teachers of the institute. The Centre is well equipped with modern Computers (190 in number), air conditioned labs and stabilized uninterrupted power supply among the other facilities. The Centre has seven labs for all the students and one lab exclusively for PhD scholars of the institute. All labs are equipped with IP cameras to monitor the activities remotely. The Centre has 1 Gbps, 24x7 internet connectivity on optical fiber under National Knowledge Network, Govt. of India.The Centre also has a Virtual Class Room and Desktop VideoConferencing facility. It operates from 8:30 AM to 5:30 PM."
@@ -37,45 +38,45 @@ const Facilitiespage = () => {
     <div className="facilities">
       <div className="facilityrow facilityrowmain">
         <div className="col-6 imgcolstyle">
-          <div className="row">
+          <div className="row rowmarl3">
             <h1>Facilities</h1>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={main} className="img-fluid" loading="lazy" />
+          <Facilitymain />
         </div>
       </div>
       <div className="facilityrow facilityrow1">
         <div className="col-6 imgcolstyle">
-          <img src={cc} className="img-fluid" loading="lazy" />
+          <Ccimg />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Computer Centre</h1>
           </div>
-          <div className="row">
-            <h3>{ccdetail}</h3>
+          <div className="row rowmarr3">
+            <p>{ccdetail}</p>
           </div>
         </div>
       </div>
       <div className="facilityrow">
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarl3">
             <h1>Library</h1>
           </div>
-          <div className="row rowmarr3">
-            <h3>{libdetail}</h3>
+          <div className="row rowmarl3">
+            <p>{libdetail}</p>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={dummy} className="img-fluid" loading="lazy" />
+          <Dummyimg />
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={dummy} className="img-fluid" loading="lazy" />
+          <Dummyimg />
         </div>
         <div className="col-6">
-          <div className="row">
-            <h3>
+          <div className="row rowmarr3">
+            <p>
               <strong>E-RESOURCE SECTION</strong>
               <br />
               <br />
@@ -103,12 +104,12 @@ const Facilitiespage = () => {
               E-Resource Section numbers to more than 2700 of diverse
               categories. This section is mainly used for vital information
               access and research.
-            </h3>
+            </p>
           </div>
         </div>
         <div className="col-6">
-          <div className="row">
-            <h3>
+          <div className="row rowmarl3">
+            <p>
               <strong>Special features of Central Library</strong>
               <br />
               <br />
@@ -124,23 +125,23 @@ const Facilitiespage = () => {
               Centrally air-conditioned.
               <br />
               Library is the member of INDEST and DELNET.
-            </h3>
+            </p>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={dummy} className="img-fluid" loading="lazy" />
+          <Dummyimg />
         </div>
       </div>
       <div className="facilityrow facilityrow1">
         <div className="col-6 imgcolstyle">
-          <img src={medical} className="img-fluid" loading="lazy" />
+          <Dummyimg />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Medical Facilities</h1>
           </div>
-          <div className="row">
-            <h3>
+          <div className="row rowmarr3">
+            <p>
               Two permanent doctor has a fixed chamber within the institute
               premises. He can be consulted by the students and employees for
               any health related problems on every working day free of cost.
@@ -173,48 +174,43 @@ const Facilitiespage = () => {
               The institute also maintains a 24x7 ambulance which is used for
               transferring patients from the institute to Patna Medical College
               and Hospital(PMCH) in case of any emergency.
-            </h3>
+            </p>
           </div>
         </div>
       </div>
       <div className="facilityrow">
-        <div
-          css={css`
-            align-items: center;
-          `}
-          className="col-6"
-        >
-          <div className="row">
+        <div className="col-6">
+          <div className="row rowmarl3">
             <h1>Sport Facilities</h1>
           </div>
-          <div className="row rowmarr3">
-            <h3>{sports}</h3>
+          <div className="row rowmarl3">
+            <p>{sports}</p>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={dummy} className="img-fluid" loading="lazy" />
+          <Dummyimg />
         </div>
       </div>
       <div className="facilityrow facilityrow1">
         <div className="col-6 imgcolstyle">
-          <img src={dummy} className="img-fluid" loading="lazy" />
+          <Dummyimg />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Hostel & Mess</h1>
           </div>
-          <div className="row">
-            <h3>{hostel}</h3>
+          <div className="row rowmarr3">
+            <p>{hostel}</p>
           </div>
         </div>
       </div>
       <div className="facilityrow">
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarl3">
             <h1>Laboratories</h1>
           </div>
-          <div className="row rowmarr3">
-            <h3>
+          <div className="row rowmarl3">
+            <p>
               Technical knowledge is of no worth without practical
               approach.Every department has laboratories which provide practical
               experience related to the subjects studied. The students are
@@ -235,11 +231,11 @@ const Facilitiespage = () => {
               carpentry, blacksmithy, foundry, fitting etc.is carried out.All
               the activities are carried out under the vigilance and guidance of
               experienced instructors.
-            </h3>
+            </p>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={dummy} className="img-fluid" loading="lazy" />
+          <Dummyimg />
         </div>
       </div>
       <div className="facilityrow facilityrow1">
@@ -247,21 +243,21 @@ const Facilitiespage = () => {
           <img src={wifi} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Wifi</h1>
           </div>
-          <div className="row">
-            <h3>{wifidetail}</h3>
+          <div className="row rowmarr3">
+            <p>{wifidetail}</p>
           </div>
         </div>
       </div>
       <div className="facilityrow">
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarl3">
             <h1>Bank</h1>
           </div>
-          <div className="row rowmarr3">
-            <h3>{bankdetail}</h3>
+          <div className="row rowmarl3">
+            <p>{bankdetail}</p>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
@@ -273,21 +269,21 @@ const Facilitiespage = () => {
           <img src={security} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Security</h1>
           </div>
-          <div className="row">
-            <h3>{securitydetail}</h3>
+          <div className="row rowmarr3">
+            <p>{securitydetail}</p>
           </div>
         </div>
       </div>
       <div className="facilityrow">
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarl3">
             <h1>Woman Cell</h1>
           </div>
-          <div className="row rowmarr3">
-            <h3>{womancell}</h3>
+          <div className="row rowmarl3">
+            <p>{womancell}</p>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
@@ -299,11 +295,11 @@ const Facilitiespage = () => {
           <img src={electric} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Electrical Maintainance Unit (EMU)</h1>
           </div>
-          <div className="row">
-            <h3>
+          <div className="row rowmarr3">
+            <p>
               To provide Electric power supply to the Institute. EMU maintains
               all electrical equipment such as Lights, Fans, AC, etc. which are
               installed in NIT Patna campus. EMU is having an 11KV/415V
@@ -316,7 +312,7 @@ const Facilitiespage = () => {
               <br />
               <br />
               For any type of Electrical Complaint kindly fill the form.
-            </h3>
+            </p>
           </div>
         </div>
       </div>
