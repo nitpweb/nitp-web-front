@@ -16,7 +16,7 @@
 }
 .pmainrowmain > .col-6 > .row > h1 {
   font-weight: bold;
-  color: #161616;
+  color: #2b2b2b;
   font-size: 3rem;
 }
 .pmainrowmain > .col-6 > .row > #aut {
@@ -24,18 +24,20 @@
   font-weight: bold;
 }
 .pmainrowmain > .col-6 > .row > h2 {
-  color: #656565;
+  color: #2b2b2b;
 }
-.pmainrow > .col-6 > div > h3 {
-  color: #656565;
+.pmainrow > .col-6 > div > p {
+  color: #454545;
+  font-weight: 500;
+  font-size: 1.3rem;
 }
 .pmainrow > .col-6 > div > h1 {
   font-weight: bold;
-  color: #161616;
-  font-size: 3rem;
+  color: #2b2b2b;
+  font-size: 2.5rem;
 }
 .placsection > .pmainrow:nth-of-type(2n + 1) {
-  background-color: #f7f7f7;
+  background-color: #fcfcfc;
 }
 .placsection > .pmainrow:nth-of-type(2n + 1) > .col-6:nth-child(1) {
   justify-content: center;
@@ -53,11 +55,10 @@
   justify-content: center;
   align-items: center;
 }
-.placabout > .row > h3 {
-  color: #606060;
-}
-.rowmarr3 {
-  margin-right: 3vw;
+.placabout > .row > p {
+  color: #454545;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 @media (max-width: 768px) {
   .pmainrow1 {
@@ -66,17 +67,21 @@
   .col-6 {
     padding: 1vw;
   }
-  .pmainrow > .col-6 > div > h1 {
-    font-weight: bold;
-    color: #161616;
-    font-size: 2rem;
-  }
+  .pmainrow > .col-6 > div > p {
+  font-size: 1rem;
+}
+.placabout>.row>p{
+  font-weight: 1rem;
+}
+.pmainrow > .col-6 > div > h1 {
+  font-size: 1.8rem;
+}
 }
 .pfoot > .row {
   padding: 0vw 0vw 0vw 3vw;
 }
 .pfoot > .row > h1 {
   font-weight: bold;
-  color: #161616;
+  color: #2b2b2b;
   font-size: 3rem;
 }

@@ -16,7 +16,7 @@
 }
 .dmainrowmain > .col-6 > .row > h1 {
   font-weight: bold;
-  color: #161616;
+  color: #2b2b2b;
   font-size: 3rem;
 }
 .dmainrowmain > .col-6 > .row > #aut {
@@ -26,16 +26,18 @@
 .dmainrowmain > .col-6 > .row > h2 {
   color: #656565;
 }
-.dmainrow > .col-6 > div > h3 {
-  color: #947272;
+.dmainrow > .col-6 > div > p {
+  color: #454545;
+  font-weight: 500;
+  font-size: 1.3rem;
 }
 .dmainrow > .col-6 > div > h1 {
   font-weight: bold;
-  color: #161616;
+  color: #2b2b2b;
   font-size: 3rem;
 }
 .depsection > .dmainrow:nth-of-type(2n + 1) {
-  background-color: #f7f7f7;
+  background-color: #fcfcfc;
 }
 .depsection > .dmainrow:nth-of-type(2n + 1) > .col-6:nth-child(1) {
   justify-content: center;
@@ -53,11 +55,15 @@
   justify-content: center;
   align-items: center;
 }
-.depabout > .row > h3 {
-  color: #606060;
+.depabout > .row > p {
+  color: #454545;
+  font-weight:500;
+  font-size:1.3rem;
 }
-.rowmarr3 {
-  margin-right: 3vw;
+.depabout > .row > h1{
+  font-weight: bold;
+  color: #2b2b2b;
+  font-size: 3rem;
 }
 @media (max-width: 768px) {
   .dmainrow1 {
@@ -66,9 +72,19 @@
   .col-6 {
     padding: 1vw;
   }
+  .dmainrowmain > .col-6 > .row > h1 {
+  font-size: 2.5rem;
+}
   .dmainrow > .col-6 > div > h1 {
-    font-weight: bold;
-    color: #161616;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
+  .dmainrow > .col-6 > div > p {
+    font-size: 1rem;
+  }
+  .depabout>.row>h1{
+    font-size: 1.8rem;
+  }
+  .depabout > .row > p {
+  font-size:1rem;
+}
 }

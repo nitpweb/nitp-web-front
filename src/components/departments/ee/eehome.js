@@ -11,16 +11,16 @@ const Eehomepage = () => {
     <div className="depsection">
       <div className="dmainrow dmainrowmain">
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarl3">
             <h1>Electrical Engineering</h1>
           </div>
-          <div className="row">
+          <div className="row rowmarl3">
             <h2>
               “The computer was born to solve problems that did not exist
               before.”
             </h2>
           </div>
-          <div className="row">
+          <div className="row rowmarl3">
             <h2 id="aut">— Bill Gates</h2>
           </div>
         </div>
@@ -34,7 +34,7 @@ const Eehomepage = () => {
             <h1>About</h1>
           </div>
           <div className="row">
-            <h3>
+            <p>
               The Department of Electrical Engineering was established in 1945
               under Patna University with an intake of 20 students leading to
               Bachelor of Science(Engineering) degree of four year duration.The
@@ -79,7 +79,7 @@ const Eehomepage = () => {
               Till date the department has produces five Ph. Ds under Patna
               University. From 2009 Doctoral program started under NIT Act 2007
               and students have been admitted and are continuing research.{" "}
-            </h3>
+            </p>
           </div>
         </div>
       </div>
@@ -88,25 +88,25 @@ const Eehomepage = () => {
           <img src={mountain} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3 ">
             <h1>Mission</h1>
           </div>
           <div className="row rowmarr3">
-            <h3>
+            <p>
               To create and maintain a sustainable development in
               infrastructure, academic environment human resources and
               governance.
-            </h3>
+            </p>
           </div>
         </div>
       </div>
       <div className="dmainrow">
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarl3">
             <h1>Vision</h1>
           </div>
-          <div className="row rowmarr3">
-            <h3>
+          <div className="row rowmarl3">
+            <p>
               <br />
               To offer quality education for Under-Graduate, Post-Graduate and
               Doctoral programmes in electrical engineering.
@@ -129,7 +129,7 @@ const Eehomepage = () => {
               education, profession and life
               <br />
               To instill moral and ethical values among the faculty and students
-            </h3>
+            </p>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
@@ -141,11 +141,11 @@ const Eehomepage = () => {
           <img src={map} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Contact</h1>
           </div>
           <div className="row rowmarr3">
-            <h3>
+            <p>
               Department of Electronics & Communications Engg.,
               <br />
               <br />
@@ -160,7 +160,7 @@ const Eehomepage = () => {
               Extn: +91-612-(2371715/2715/2371929/
               <br />
               2370419/2370843/2371930) * 177
-            </h3>
+            </p>
           </div>
         </div>
       </div>

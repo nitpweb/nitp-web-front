@@ -34,7 +34,7 @@ const Chemhomepage = () => {
             <h1>About</h1>
           </div>
           <div className="row">
-            <h3>
+            <p>
               The Chemistry department was established in 1924, at the same time
               the institute was founded. Until recently the department has been
               an auxiliary department with limited capacity, running a modest
@@ -47,7 +47,7 @@ const Chemhomepage = () => {
               (2015-16), and research activity is gradually being expanded. The
               department has been and will remain committed to quality teaching
               and research with a conscious effort to achieve excellence.
-            </h3>
+            </p>
           </div>
         </div>
       </div>
@@ -56,11 +56,11 @@ const Chemhomepage = () => {
           <img src={mountain} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Mission</h1>
           </div>
           <div className="row rowmarr3">
-            <h3>
+            <p>
               To develop and promote innovations in Education at all levels, and
               generate fundamental and applied knowledge by engaging in
               scientific research by adopting suitable steps.
@@ -77,17 +77,17 @@ const Chemhomepage = () => {
               <br />
               Maintaining and enhancing the diversity of students, staff,
               faculty and curricula.
-            </h3>
+            </p>
           </div>
         </div>
       </div>
       <div className="dmainrow">
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarl3">
             <h1>Vision</h1>
           </div>
-          <div className="row rowmarr3">
-            <h3>
+          <div className="row rowmarl3">
+            <p>
               {" "}
               To serve the country through this institution by pursuing
               excellence in scientific and technical education and research.
@@ -95,7 +95,7 @@ const Chemhomepage = () => {
               <br />
               To make this department a center of excellence for cutting edge
               fundamental and applied research.
-            </h3>
+            </p>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
@@ -107,11 +107,11 @@ const Chemhomepage = () => {
           <img src={map} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Contact</h1>
           </div>
           <div className="row rowmarr3">
-            <h3>
+            <p>
               Department of Chemistry,
               <br />
               <br />
@@ -120,7 +120,7 @@ const Chemhomepage = () => {
               <br />
               <br />
               Email: head.ch@nitp.ac.in
-            </h3>
+            </p>
           </div>
         </div>
       </div>

@@ -11,16 +11,16 @@ const Archhomepage = () => {
     <div className="depsection">
       <div className="dmainrow dmainrowmain">
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarl3">
             <h1>Architecture Department</h1>
           </div>
-          <div className="row">
+          <div className="row rowmarl3">
             <h2>
               “The computer was born to solve problems that did not exist
               before.”
             </h2>
           </div>
-          <div className="row">
+          <div className="row rowmarl3">
             <h2 id="aut">— Bill Gates</h2>
           </div>
         </div>
@@ -34,7 +34,7 @@ const Archhomepage = () => {
             <h1>About</h1>
           </div>
           <div className="row">
-            <h3>
+            <p>
               The Department of Architecture is one of the oldest Department of
               the Institute, which was established in the year 1979. The
               Department offers undergraduate program in architecture, Post
@@ -51,7 +51,7 @@ const Archhomepage = () => {
               objectives, architecture is taught as a serious, exploratory and
               creative attempt that embraces both the humanities and the
               sciences.
-            </h3>
+            </p>
           </div>
         </div>
       </div>
@@ -60,11 +60,11 @@ const Archhomepage = () => {
           <img src={mountain} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Mission</h1>
           </div>
           <div className="row rowmarr3">
-            <h3>
+            <p>
               To generate intellectual capital by engaging in cutting-edge
               research and to promote academic growth by offering
               state-of-the-art undergraduate, postgraduate and doctoral
@@ -88,21 +88,21 @@ const Archhomepage = () => {
               To develop human potential to its fullest extent so that
               intellectually capable and imaginatively gifted leaders can emerge
               in a range of ethical professions.
-            </h3>
+            </p>
           </div>
         </div>
       </div>
       <div className="dmainrow">
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarl3">
             <h1>Vision</h1>
           </div>
-          <div className="row rowmarr3">
-            <h3>
+          <div className="row rowmarl3">
+            <p>
               To become a center of excellence to inspire, innovate and
               transform the knowledge to create a sustainable built environment
               for improved quality of life on the earth.
-            </h3>
+            </p>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
@@ -114,11 +114,11 @@ const Archhomepage = () => {
           <img src={map} className="img-fluid" loading="lazy" />
         </div>
         <div className="col-6">
-          <div className="row">
+          <div className="row rowmarr3">
             <h1>Contact</h1>
           </div>
           <div className="row rowmarr3">
-            <h3>
+            <p>
               Department of Architecture,
               <br />
               <br />
@@ -133,7 +133,7 @@ const Archhomepage = () => {
               Extn: +91-612-(2371715/2715/2371929/
               <br />
               2370419/2370843/2371930) * 199
-            </h3>
+            </p>
           </div>
         </div>
       </div>
