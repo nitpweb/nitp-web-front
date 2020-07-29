@@ -53,7 +53,7 @@
 @media(max-width:1200px) {
   .dropbtn {
   font-size: 18px;
-  height: 28px;
+  height: 35px;
   font-weight: 400;
 }
 .dropbtn:hover .dropbtn {
@@ -77,4 +77,8 @@
   border: 1px solid white;
   border-width: 0px 0px 3px 0px;
 }
+}
+.dropdown-content>.nav-link-item{
+  font-size: 16px;
+  height: 20px;
 }

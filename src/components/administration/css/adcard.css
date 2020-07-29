@@ -1,0 +1,44 @@
+.adcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 380px;
+    height: 150px;
+    overflow: hidden;
+    box-shadow: 5px 10px 19px rgba(193,104,0,0.25);
+    box-shadow: 5px 10px 19px rgba(193,104,0,0.25) unset;
+
+}
+.adcard > .type {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    justify-self: flex-end;
+    justify-content: flex-end;
+    width:90%;
+}
+.adcard>.adrow{
+    display: flex;
+    width:94%;
+    justify-content: center;
+    align-items: center;
+}
+
+.adcard >.type>span{
+    color:#9c0613;
+    font-weight: bold;
+    font-family: 'Source Sans Pro';
+}
+.adcard>.adname{
+    font-size: 30;
+    line-height: 1.2;
+    font-weight:bold;
+    font-family: 'Source Sans Pro';
+}
+.adcard>.designation{
+    font-size: 26;
+    line-height: 1.3;
+    font-family: 'Source Sans Pro';
+}
