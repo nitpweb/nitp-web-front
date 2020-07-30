@@ -12,29 +12,36 @@ const Archhomepage = () => {
       <div className="dmainrow dmainrowmain">
         <div className="col-6">
           <div className="row rowmarl3">
-            <h1>Architecture Department</h1>
+            <h1 data-aos="zoom-in-right">Architecture Department</h1>
           </div>
           <div className="row rowmarl3">
-            <h2>
+            <h2 data-aos="zoom-in-right">
               “The computer was born to solve problems that did not exist
               before.”
             </h2>
           </div>
           <div className="row rowmarl3">
-            <h2 id="aut">— Bill Gates</h2>
+            <h2 data-aos="zoom-in-right" id="aut">
+              — Bill Gates
+            </h2>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={main} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={main}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
       </div>
       <div className="dmainrow dmainrow1">
         <div className="depabout">
           <div className="row">
-            <h1>About</h1>
+            <h1 data-aos="zoom-in">About</h1>
           </div>
           <div className="row">
-            <p>
+            <p data-aos="zoom-in">
               The Department of Architecture is one of the oldest Department of
               the Institute, which was established in the year 1979. The
               Department offers undergraduate program in architecture, Post
@@ -57,14 +64,19 @@ const Archhomepage = () => {
       </div>
       <div className="dmainrow dmainrow1">
         <div className="col-6 imgcolstyle">
-          <img src={mountain} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={mountain}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
         <div className="col-6">
           <div className="row rowmarr3">
-            <h1>Mission</h1>
+            <h1 data-aos="zoom-in-left">Mission</h1>
           </div>
           <div className="row rowmarr3">
-            <p>
+            <p data-aos="zoom-in-left">
               To generate intellectual capital by engaging in cutting-edge
               research and to promote academic growth by offering
               state-of-the-art undergraduate, postgraduate and doctoral
@@ -95,10 +107,10 @@ const Archhomepage = () => {
       <div className="dmainrow">
         <div className="col-6">
           <div className="row rowmarl3">
-            <h1>Vision</h1>
+            <h1 data-aos="zoom-in-right">Vision</h1>
           </div>
           <div className="row rowmarl3">
-            <p>
+            <p data-aos="zoom-in-right">
               To become a center of excellence to inspire, innovate and
               transform the knowledge to create a sustainable built environment
               for improved quality of life on the earth.
@@ -106,19 +118,29 @@ const Archhomepage = () => {
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={lens} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={lens}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
       </div>
       <div className="dmainrow dmainrow1">
         <div className="col-6 imgcolstyle">
-          <img src={map} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={map}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
         <div className="col-6">
           <div className="row rowmarr3">
-            <h1>Contact</h1>
+            <h1 data-aos="zoom-in-left">Contact</h1>
           </div>
           <div className="row rowmarr3">
-            <p>
+            <p data-aos="zoom-in-left">
               Department of Architecture,
               <br />
               <br />

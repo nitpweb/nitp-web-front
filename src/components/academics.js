@@ -13,29 +13,41 @@ const Academicspage = () => {
       <div className="acmainrow acmainrowmain">
         <div className="col-6">
           <div className="row rowmarl3">
-            <h1>Academics</h1>
+            <h1 data-aos="zoom-in-right">Academics</h1>
           </div>
           <div className="row rowmarl3">
-            <h2>
+            <h2 data-aos="zoom-in-right">
               “Education is not the learning of facts, but the training of minds
               to think”
             </h2>
           </div>
           <div className="row rowmarl3">
-            <h2 id="aut">- Albert Einstein</h2>
+            <h2 data-aos="zoom-in-right" id="aut">
+              - Albert Einstein
+            </h2>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={acadscholar} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={acadscholar}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
       </div>
       <div className="acmainrow acmainrow1">
         <div className="col-6 imgcolstyle">
-          <img src={test} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={test}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
         <div className="col-6">
           <div className="row rowmarr3">
-            <h1>Admissions</h1>
+            <h1 data-aos="zoom-in-left">Admissions</h1>
           </div>
           <div className="row rowmarr3">
             <div>
@@ -61,7 +73,7 @@ const Academicspage = () => {
       <div className="acmainrow">
         <div className="col-6">
           <div className="row rowmarl3">
-            <h1>Formats</h1>
+            <h1 data-aos="zoom-in-right">Formats</h1>
           </div>
           <div className="row rowmarl3">
             <div>
@@ -84,16 +96,26 @@ const Academicspage = () => {
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={paper} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={paper}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
       </div>
       <div className="acmainrow acmainrow1">
         <div className="col-6 imgcolstyle">
-          <img src={mail} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={mail}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
         <div className="col-6 imgcolstyle">
           <div className="row rowmarr3">
-            <h1>Notice</h1>
+            <h1 data-aos="zoom-in-left">Notice</h1>
           </div>
           <div className="row rowmarr3">
             <div>

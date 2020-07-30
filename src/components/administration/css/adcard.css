@@ -13,8 +13,9 @@
 }
 .adcard > .type {
     display: flex;
-    position: relative;
+    position: fixed;
     bottom: 0;
+    margin-bottom:15px;
     justify-self: flex-end;
     justify-content: flex-end;
     width:90%;

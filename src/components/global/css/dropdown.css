@@ -4,13 +4,11 @@
   text-decoration: none;
   color: #fff;
   font-family: "Source Sans Pro";
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.6;
-  height: 2vw;
-  display: flex;
-  margin-top: 0.5vw;
+  font-size: 1.4vw;
   font-weight: 500;
+  line-height: 1.6;
+  display: flex;
+  align-items:center;
 }
 
 .dropdown {
@@ -51,11 +49,6 @@
   transition: 0.05s;
 }
 @media(max-width:1200px) {
-  .dropbtn {
-  font-size: 18px;
-  height: 35px;
-  font-weight: 400;
-}
 .dropbtn:hover .dropbtn {
   border: 2px solid white;
   border-width: 0px 0px 3px 0px;
@@ -63,11 +56,6 @@
 }
 }
 @media(max-width:1000px) {
-  .dropbtn {
-  font-size: 14px;
-  height: 22px;
-  font-weight: 300;
-}
 .dropbtn:hover .dropbtn {
   border: 1px solid white;
   border-width: 0px 0px 3px 0px;

@@ -12,29 +12,36 @@ const Hsshomepage = () => {
       <div className="dmainrow dmainrowmain">
         <div className="col-6">
           <div className="row rowmarl3">
-            <h1>Humanities & Social Sciences</h1>
+            <h1 data-aos="zoom-in-right">Humanities & Social Sciences</h1>
           </div>
           <div className="row rowmarl3">
-            <h2>
+            <h2 data-aos="zoom-in-right">
               “The computer was born to solve problems that did not exist
               before.”
             </h2>
           </div>
           <div className="row rowmarl3">
-            <h2 id="aut">— Bill Gates</h2>
+            <h2 data-aos="zoom-in-right" id="aut">
+              — Bill Gates
+            </h2>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={main} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={main}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
       </div>
       <div className="dmainrow">
         <div className="depabout">
           <div className="row">
-            <h1>About</h1>
+            <h1 data-aos="zoom-in">About</h1>
           </div>
           <div className="row">
-            <p>
+            <p data-aos="zoom-in">
               With an interdisciplinary perspective at the heart of its
               approach, the Department of Humanities and Social Sciences at NIT
               Patna provides intellectual and cultural foundations for the study
@@ -54,14 +61,19 @@ const Hsshomepage = () => {
       </div>
       <div className="dmainrow dmainrow1">
         <div className="col-6 imgcolstyle">
-          <img src={mountain} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={mountain}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
         <div className="col-6">
           <div className="row rowmarr3">
-            <h1>Mission</h1>
+            <h1 data-aos="zoom-in-left">Mission</h1>
           </div>
           <div className="row rowmarr3">
-            <p>
+            <p data-aos="zoom-in-left">
               To provide quality teaching, learning, and research in the field
               of Humanities and Social Sciences by
               creating,preserving,transmitting and utilizing knowledge
@@ -75,10 +87,10 @@ const Hsshomepage = () => {
       <div className="dmainrow">
         <div className="col-6">
           <div className="row rowmarl3">
-            <h1>Vision</h1>
+            <h1 data-aos="zoom-in-right">Vision</h1>
           </div>
           <div className="row rowmarl3">
-            <p>
+            <p data-aos="zoom-in-right">
               The Department aspires to be a national exemplar in undergraduate
               teaching and research in the humanities and social sciences. Upon
               completion of the program, the students will be prepared to
@@ -87,19 +99,29 @@ const Hsshomepage = () => {
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={lens} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={lens}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
       </div>
       <div className="dmainrow dmainrow1">
         <div className="col-6 imgcolstyle">
-          <img src={map} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={map}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
         <div className="col-6">
           <div className="row rowmarr3">
-            <h1>Contact</h1>
+            <h1 data-aos="zoom-in-left">Contact</h1>
           </div>
           <div className="row rowmarr3">
-            <p>
+            <p data-aos="zoom-in-left">
               Department of Humanities & Social Sciences
               <br />
               <br />

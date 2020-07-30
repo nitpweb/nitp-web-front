@@ -46,7 +46,7 @@ const Navbar = () => {
       document.querySelector(".nav-col>h4").style.lineHeight = "0.3rem"
       document.querySelector(".nav-link-row").style.height = "3vw"
       document.querySelector(".nav-link-row").style.backgroundColor = "black"
-      document.querySelector(".nav-link-row").style.marginTop = "4.8vw"
+      document.querySelector(".nav-link-row").style.marginTop = "4.7vw"
       document.querySelector(".logobadge>h4").style.display = "flex"
       document.querySelector(".logobadge>div>img").style.maxHeight = "8vw"
       document.querySelector(".logobadge>div>img").style.borderWidth = "0.5vw"
@@ -74,36 +74,38 @@ const Navbar = () => {
         </div>
         <div className="nav-link-row">
           <Link
-            className="nav-link-item"
+            className="nav-link-item nav-link-div"
             activeClassName="nav-link-item-active"
             to="/"
           >
             <span>Home</span>
           </Link>
           <Link
-            className="nav-link-item"
+            className="nav-link-item nav-link-div"
             activeClassName="nav-link-item-active"
             to="/about"
           >
             <span>About Us</span>
           </Link>
           <Link
-            className="nav-link-item"
+            className="nav-link-item nav-link-div"
             activeClassName="nav-link-item-active"
             to="/administration"
           >
             <span>Administration</span>
           </Link>
           <Link
-            className="nav-link-item"
+            className="nav-link-item nav-link-div"
             activeClassName="nav-link-item-active"
             to="/academics"
           >
             <span>Academics</span>
           </Link>
-          <div></div>
-          <div className="dropdown">
-            <button className="dropbtn">Departments</button>
+          <div id="navblank"></div>
+          <div className="dropdown nav-link-div">
+            <button className="dropbtn nav-link-div nav-link-item">
+              Departments
+            </button>
             <div className="dropdown-content">
               <Link className="nav-link-item" to="/csehome">
                 <span>Computer Science and Engineering</span>
@@ -138,21 +140,21 @@ const Navbar = () => {
             </div>
           </div>
           <Link
-            className="nav-link-item"
+            className="nav-link-item nav-link-div"
             activeClassName="nav-link-item-active"
             to="/facilities"
           >
             <span>Facilities</span>
           </Link>
           <Link
-            className="nav-link-item"
+            className="nav-link-item nav-link-div"
             activeClassName="nav-link-item-active"
             to="/student/"
           >
             <span>Students</span>
           </Link>
           <Link
-            className="nav-link-item"
+            className="nav-link-item nav-link-div"
             activeClassName="nav-link-item-active"
             to="/placements"
           >
@@ -160,22 +162,10 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div
-          css={css`
-            position: absolute;
-            min-width: 100%;
-            display: flex;
-            justify-content: center;
-          `}
-        >
+        <div id="logowr1">
           <div className="logobadge">
             <h4>श्रमोऽनवरत चेष्टाय</h4>
-            <div
-              css={css`
-                display: flex;
-                justify-content: center;
-              `}
-            >
+            <div id="logowr2">
               <img src={logo} alt="NIT PATNA" />
             </div>
           </div>

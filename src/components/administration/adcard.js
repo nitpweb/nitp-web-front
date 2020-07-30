@@ -4,7 +4,7 @@ import "./css/adcard.css"
 const Adcard = props => {
   return (
     <>
-      <div className="adcard">
+      <div data-aos="zoom-in" className="adcard">
         <div className="row adrow adname">
           <span>{props.name}</span>
         </div>

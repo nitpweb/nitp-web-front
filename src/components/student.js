@@ -21,27 +21,36 @@ const Studentpage = () => {
     <div className="studentsection">
       <div className="smainrow smainrowmain">
         <div className="col-6 imgcolstyle">
-          <img src={bag} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={bag}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
         <div className="col-6">
           <div className="row">
-            <h1>Students</h1>
+            <h1 data-aos="zoom-in-left">Students</h1>
           </div>
           <div className="row">
-            <h2>“You have to dream before your dreams can come true.”</h2>
+            <h2 data-aos="zoom-in-left">
+              “You have to dream before your dreams can come true.”
+            </h2>
           </div>
           <div className="row">
-            <h2 id="aut">- APJ Abdul Kalam</h2>
+            <h2 data-aos="zoom-in-left" id="aut">
+              - APJ Abdul Kalam
+            </h2>
           </div>
         </div>
       </div>
       <div className="smainrow">
         <div className="col-6">
           <div className="row rowmarl3">
-            <h1>Student Activity Center</h1>
+            <h1 data-aos="zoom-in-right">Student Activity Center</h1>
           </div>
           <div className="row rowmarl3">
-            <p>{sacinfo}</p>
+            <p data-aos="zoom-in-right">{sacinfo}</p>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
@@ -54,23 +63,28 @@ const Studentpage = () => {
         </div>
         <div className="col-6">
           <div className="row rowmarr3">
-            <h1>Annual Tech-Fest of NIT Patna</h1>
+            <h1 data-aos="zoom-in-left">Annual Tech-Fest of NIT Patna</h1>
           </div>
           <div className="row rowmarr3">
-            <p>{coronainfo}</p>
+            <p data-aos="zoom-in-left">{coronainfo}</p>
           </div>
         </div>
       </div>
       <div className="smainrow smainrow1">
         <div className="col-6 imgcolstyle">
-          <img src={exchange} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={exchange}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
         <div className="col-6">
           <div className="row rowmarr3">
-            <h1>Student Exchange Program</h1>
+            <h1 data-aos="zoom-in-right">Student Exchange Program</h1>
           </div>
           <div className="row rowmarr3">
-            <p>{studentexchange}</p>
+            <p data-aos="zoom-in-right">{studentexchange}</p>
           </div>
         </div>
       </div>
@@ -79,13 +93,13 @@ const Studentpage = () => {
           id="sfimg1"
           href="http://www.nitp.ac.in/uploads/Anti-ragging_Committee_2019.pdf"
         >
-          <img src={antiragging} loading="lazy" />
+          <img data-aos="zoom-in" src={antiragging} loading="lazy" />
         </a>
         <a
           id="sfimg2"
           href="http://www.nitp.ac.in/uploads/Orientation_Programe_2018.pdf"
         >
-          <img src={first} loading="lazy" />
+          <img data-aos="zoom-in" src={first} loading="lazy" />
         </a>
       </div>
     </div>

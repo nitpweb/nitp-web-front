@@ -38,32 +38,32 @@ const Aboutpage = () => {
       <div className="amainrow">
         <div className="col-6">
           <div className="row rowmarl3">
-            <h1>About Us</h1>
+            <h1 data-aos="zoom-in-right">About Us</h1>
           </div>
           {aboutusinfo.map(elem => {
             return (
               <div className="row rowmarl3">
-                <p>{elem}</p>
+                <p data-aos="zoom-in-right">{elem}</p>
               </div>
             )
           })}
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={bulb} className="img-fluid" />
+          <img data-aos="zoom-in" src={bulb} className="img-fluid" />
         </div>
       </div>
       <div className="amainrow amainrow1">
         <div className="col-6 imgcolstyle">
-          <img src={mission} className="img-fluid" />
+          <img data-aos="zoom-in" src={mission} className="img-fluid" />
         </div>
         <div className="col-6">
           <div className="row rowmarr3">
-            <h1>Mission & Vision</h1>
+            <h1 data-aos="zoom-in-left">Mission & Vision</h1>
           </div>
           {missioninfo.map(elem => {
             return (
               <div className="row rowmarr3">
-                <p>{elem}</p>
+                <p data-aos="zoom-in-left">{elem}</p>
               </div>
             )
           })}
@@ -72,12 +72,12 @@ const Aboutpage = () => {
       <div className="amainrow">
         <div className="col-6">
           <div className="row rowmarl3">
-            <h1>Values</h1>
+            <h1 data-aos="zoom-in-right">Values</h1>
           </div>
           {valuesinfo.map(elem => {
             return (
               <div className="row rowmarl3">
-                <p>{elem}</p>
+                <p data-aos="zoom-in-right">{elem}</p>
               </div>
             )
           })}
@@ -88,14 +88,14 @@ const Aboutpage = () => {
       </div>
       <div className="amainrow amainrow1">
         <div className="col-6 imgcolstyle">
-          <img src={map} className="img-fluid" />
+          <img data-aos="zoom-in" src={map} className="img-fluid" />
         </div>
         <div className="col-6">
           <div className="row rowmarr3">
-            <h1>Campus</h1>
+            <h1 data-aos="zoom-in-left">Campus</h1>
           </div>
           <div className="row rowmarr3">
-            <p>{campusinfo}</p>
+            <p data-aos="zoom-in-left">{campusinfo}</p>
           </div>
         </div>
       </div>

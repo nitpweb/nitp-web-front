@@ -39,7 +39,7 @@ const Facilitiespage = () => {
       <div className="facilityrow facilityrowmain">
         <div className="col-6 imgcolstyle">
           <div className="row rowmarl3">
-            <h1>Facilities</h1>
+            <h1 data-aos="zoom-in-right">Facilities</h1>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
@@ -52,20 +52,20 @@ const Facilitiespage = () => {
         </div>
         <div className="col-6">
           <div className="row rowmarr3">
-            <h1>Computer Centre</h1>
+            <h1 data-aos="zoom-in-left">Computer Centre</h1>
           </div>
           <div className="row rowmarr3">
-            <p>{ccdetail}</p>
+            <p data-aos="zoom-in-left">{ccdetail}</p>
           </div>
         </div>
       </div>
       <div className="facilityrow">
         <div className="col-6">
           <div className="row rowmarl3">
-            <h1>Library</h1>
+            <h1 data-aos="zoom-in-right">Library</h1>
           </div>
           <div className="row rowmarl3">
-            <p>{libdetail}</p>
+            <p data-aos="zoom-in-right">{libdetail}</p>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
@@ -76,7 +76,7 @@ const Facilitiespage = () => {
         </div>
         <div className="col-6">
           <div className="row rowmarr3">
-            <p>
+            <p data-aos="zoom-in-left">
               <strong>E-RESOURCE SECTION</strong>
               <br />
               <br />
@@ -109,7 +109,7 @@ const Facilitiespage = () => {
         </div>
         <div className="col-6">
           <div className="row rowmarl3">
-            <p>
+            <p data-aos="zoom-in-right">
               <strong>Special features of Central Library</strong>
               <br />
               <br />
@@ -138,10 +138,10 @@ const Facilitiespage = () => {
         </div>
         <div className="col-6">
           <div className="row rowmarr3">
-            <h1>Medical Facilities</h1>
+            <h1 data-aos="zoom-in-left">Medical Facilities</h1>
           </div>
           <div className="row rowmarr3">
-            <p>
+            <p data-aos="zoom-in-left">
               Two permanent doctor has a fixed chamber within the institute
               premises. He can be consulted by the students and employees for
               any health related problems on every working day free of cost.
@@ -181,10 +181,10 @@ const Facilitiespage = () => {
       <div className="facilityrow">
         <div className="col-6">
           <div className="row rowmarl3">
-            <h1>Sport Facilities</h1>
+            <h1 data-aos="zoom-in-right">Sport Facilities</h1>
           </div>
           <div className="row rowmarl3">
-            <p>{sports}</p>
+            <p data-aos="zoom-in-right">{sports}</p>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
@@ -197,20 +197,20 @@ const Facilitiespage = () => {
         </div>
         <div className="col-6">
           <div className="row rowmarr3">
-            <h1>Hostel & Mess</h1>
+            <h1 data-aos="zoom-in-left">Hostel & Mess</h1>
           </div>
           <div className="row rowmarr3">
-            <p>{hostel}</p>
+            <p data-aos="zoom-in-left">{hostel}</p>
           </div>
         </div>
       </div>
       <div className="facilityrow">
         <div className="col-6">
           <div className="row rowmarl3">
-            <h1>Laboratories</h1>
+            <h1 data-aos="zoom-in-right">Laboratories</h1>
           </div>
           <div className="row rowmarl3">
-            <p>
+            <p data-aos="zoom-in-right">
               Technical knowledge is of no worth without practical
               approach.Every department has laboratories which provide practical
               experience related to the subjects studied. The students are
@@ -240,66 +240,91 @@ const Facilitiespage = () => {
       </div>
       <div className="facilityrow facilityrow1">
         <div className="col-6 imgcolstyle">
-          <img src={wifi} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={wifi}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
         <div className="col-6">
           <div className="row rowmarr3">
-            <h1>Wifi</h1>
+            <h1 data-aos="zoom-in-left">Wifi</h1>
           </div>
           <div className="row rowmarr3">
-            <p>{wifidetail}</p>
+            <p data-aos="zoom-in-left">{wifidetail}</p>
           </div>
         </div>
       </div>
       <div className="facilityrow">
         <div className="col-6">
           <div className="row rowmarl3">
-            <h1>Bank</h1>
+            <h1 data-aos="zoom-in-right">Bank</h1>
           </div>
           <div className="row rowmarl3">
-            <p>{bankdetail}</p>
+            <p data-aos="zoom-in-right">{bankdetail}</p>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={bank} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={bank}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
       </div>
       <div className="facilityrow facilityrow1">
         <div className="col-6 imgcolstyle">
-          <img src={security} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={security}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
         <div className="col-6">
           <div className="row rowmarr3">
-            <h1>Security</h1>
+            <h1 data-aos="zoom-in-left">Security</h1>
           </div>
           <div className="row rowmarr3">
-            <p>{securitydetail}</p>
+            <p data-aos="zoom-in-left">{securitydetail}</p>
           </div>
         </div>
       </div>
       <div className="facilityrow">
         <div className="col-6">
           <div className="row rowmarl3">
-            <h1>Woman Cell</h1>
+            <h1 data-aos="zoom-in-right">Woman Cell</h1>
           </div>
           <div className="row rowmarl3">
-            <p>{womancell}</p>
+            <p data-aos="zoom-in-right">{womancell}</p>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={woman} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={woman}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
       </div>
       <div className="facilityrow facilityrow1">
         <div className="col-6 imgcolstyle">
-          <img src={electric} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={electric}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
         <div className="col-6">
           <div className="row rowmarr3">
-            <h1>Electrical Maintainance Unit (EMU)</h1>
+            <h1 data-aos="zoom-in-left">Electrical Maintainance Unit (EMU)</h1>
           </div>
           <div className="row rowmarr3">
-            <p>
+            <p data-aos="zoom-in-left">
               To provide Electric power supply to the Institute. EMU maintains
               all electrical equipment such as Lights, Fans, AC, etc. which are
               installed in NIT Patna campus. EMU is having an 11KV/415V

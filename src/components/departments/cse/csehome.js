@@ -12,29 +12,36 @@ const Csehomepage = () => {
       <div className="dmainrow dmainrowmain">
         <div className="col-6">
           <div className="row rowmarl3">
-            <h1>Computer Science & Engineering</h1>
+            <h1 data-aos="zoom-in-right">Computer Science & Engineering</h1>
           </div>
           <div className="row rowmarl3">
-            <h2>
+            <h2 data-aos="zoom-in-right">
               “The computer was born to solve problems that did not exist
               before.”
             </h2>
           </div>
           <div className="row rowmarl3">
-            <h2 id="aut">— Bill Gates</h2>
+            <h2 data-aos="zoom-in-right" id="aut">
+              — Bill Gates
+            </h2>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={main} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={main}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
       </div>
       <div className="dmainrow">
         <div className="depabout">
           <div className="row">
-            <h1>About</h1>
+            <h1 data-aos="zoom-in">About</h1>
           </div>
           <div className="row">
-            <p>
+            <p data-aos="zoom-in">
               Computer Science and Engineering branch of NIT Patna offers
               courses leading to Bachelor of Technology in Computer Science and
               Engineering. The department has a very good infrastructure and
@@ -59,14 +66,19 @@ const Csehomepage = () => {
       </div>
       <div className="dmainrow dmainrow1">
         <div className="col-6 imgcolstyle">
-          <img src={mountain} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={mountain}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
         <div className="col-6">
           <div className="row rowmarr3">
-            <h1>Mission</h1>
+            <h1 data-aos="zoom-in-left">Mission</h1>
           </div>
           <div className="row rowmarr3">
-            <p>
+            <p data-aos="zoom-in-left">
               To formulate up-to-date and flexible technical programs which will
               allow our graduates to attain their maximum technical potential,
               managerial capability, be competitive in the job market and to
@@ -78,10 +90,10 @@ const Csehomepage = () => {
       <div className="dmainrow">
         <div className="col-6">
           <div className="row rowmarl3">
-            <h1>Vision</h1>
+            <h1 data-aos="zoom-in-right">Vision</h1>
           </div>
           <div className="row rowmarl3">
-            <p>
+            <p data-aos="zoom-in-right">
               To impart high quality of Under-graduate and Post-graduate
               education in all Computer related fields to increase the
               employability.
@@ -96,19 +108,29 @@ const Csehomepage = () => {
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={lens} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={lens}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
       </div>
       <div className="dmainrow dmainrow1">
         <div className="col-6 imgcolstyle">
-          <img src={map} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={map}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
         <div className="col-6">
           <div className="row rowmarr3">
-            <h1>Contact</h1>
+            <h1 data-aos="zoom-in-left">Contact</h1>
           </div>
           <div className="row rowmarr3">
-            <p>
+            <p data-aos="zoom-in-left">
               Department of Computer Science & Engg.,
               <br />
               National Institute Of Technology Patna,
