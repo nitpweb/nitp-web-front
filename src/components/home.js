@@ -17,7 +17,11 @@ const Home = () => {
       <Importantlink />
       <div className="noticewrap">
         <div>
-          <div className="notice-head">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="200"
+            className="notice-head"
+          >
             Notice
             <p>view all</p>
           </div>
@@ -49,7 +53,11 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <div className="event-head">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="200"
+            className="event-head"
+          >
             Events
             <p>view all</p>
           </div>
@@ -92,7 +100,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="news-head">
+      <div data-aos="zoom-in" data-aos-duration="200" className="news-head">
         News
         <p>view all</p>
       </div>

@@ -4,7 +4,7 @@ import newspic from "./img/image 2.png"
 
 const Newscard = inf => {
   return (
-    <div className="newscard-box">
+    <div data-aos="flip-left" className="newscard-box">
       <img src={newspic} alt="Hello" className="card-img" loading="lazy"></img>
       <div className="news-read">2 days ago..</div>
       <div className="newscard-head">

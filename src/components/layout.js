@@ -5,6 +5,9 @@ import Navbar from "./navbar"
 import Footer from "./footer"
 import { css } from "styled-components"
 import "./layout.css"
+import AOS from "aos"
+import "aos/dist/aos.css"
+AOS.init()
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

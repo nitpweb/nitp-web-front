@@ -8,29 +8,36 @@ const Placementpage = () => {
       <div className="pmainrow pmainrowmain">
         <div className="col-6">
           <div className="row">
-            <h1>Placements</h1>
+            <h1 data-aos="zoom-in-right">Placements</h1>
           </div>
           <div className="row">
-            <h2>
+            <h2 data-aos="zoom-in-right">
               “The computer was born to solve problems that did not exist
               before.”
             </h2>
           </div>
           <div className="row">
-            <h2 id="aut">— Bill Gates</h2>
+            <h2 data-aos="zoom-in-right" id="aut">
+              — Bill Gates
+            </h2>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={tandpcell} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={tandpcell}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
       </div>
       <div className="pmainrow">
         <div className="placabout">
           <div className="row">
-            <h1>About</h1>
+            <h1 data-aos="zoom-in">About</h1>
           </div>
           <div className="row">
-            <p>
+            <p data-aos="zoom-in">
               The Training and Placement cell of NIT PATNA forms an integral
               part in shaping the careers of the students of the institute. It
               organizes and coordinates campus placement program to fulfill its
@@ -59,14 +66,19 @@ const Placementpage = () => {
       </div>
       <div className="pmainrow">
         <div className="col-6 imgcolstyle">
-          <img src={tandpcell} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={tandpcell}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
         <div className="col-6">
           <div className="row rowmarr3">
-            <h1>Director's Message</h1>
+            <h1 data-aos="zoom-in-left">Director's Message</h1>
           </div>
           <div className="row rowmarr3">
-            <p>
+            <p data-aos="zoom-in-left">
               It is my pleasure to introduce one of the oldest Technological
               Institutes of North India National Institute of Technology Patna
               whose history goes back to 1876 when four survey schools were
@@ -134,10 +146,10 @@ const Placementpage = () => {
       <div className="pmainrow">
         <div className="col-6">
           <div className="row rowmarl3">
-            <h1>TPO Message</h1>
+            <h1 data-aos="zoom-in-right">TPO Message</h1>
           </div>
           <div className="row rowmarl3">
-            <p>
+            <p data-aos="zoom-in-right">
               The National Institute of Technology Patna, the eighteenth of the
               thirty member NIT fraternity started functioning in 2004. In this
               short span of time, NIT Patna has established itself as a premier
@@ -218,16 +230,21 @@ const Placementpage = () => {
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={tandpcell} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={tandpcell}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
       </div>
       <div className="pmainrow pfoot">
         <div className="row rowmarl3">
-          <h1>Placement Officers</h1>
+          <h1 data-aos="zoom-in-right">Placement Officers</h1>
         </div>
         <div className="col-6">
           <div className="row rowmarl3">
-            <p>
+            <p data-aos="zoom-in-right">
               Dr. Samrat Mukherjee
               <br />
               <br />
@@ -255,7 +272,7 @@ const Placementpage = () => {
         </div>
         <div className="col-6">
           <div className="row rowmarr3">
-            <p>
+            <p data-aos="zoom-in-left">
               Dr. Subrata Das
               <br />
               <br />

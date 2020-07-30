@@ -15,7 +15,7 @@ const Dummyimg = () => {
     }
   `)
   return (
-    <div className="imgwrap">
+    <div data-aos="zoom-in" className="imgwrap">
       <Img fluid={data.main.childImageSharp.fluid} />
     </div>
   )

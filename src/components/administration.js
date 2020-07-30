@@ -10,25 +10,32 @@ const Administrationpage = () => {
       <div className="admainrow admainrowmain">
         <div className="col-6">
           <div className="row rowmarl3">
-            <h1>Administration</h1>
+            <h1 data-aos="zoom-in-right">Administration</h1>
           </div>
           <div className="row rowmarl3">
-            <h2>
+            <h2 data-aos="zoom-in-right">
               “Education is not the learning of facts, but the training of minds
               to think”
             </h2>
           </div>
           <div className="row rowmarl3">
-            <h2 id="aut">- Albert Einstein</h2>
+            <h2 data-aos="zoom-in-right" id="aut">
+              - Albert Einstein
+            </h2>
           </div>
         </div>
         <div className="col-6 imgcolstyle">
-          <img src={adminpic} className="img-fluid" loading="lazy" />
+          <img
+            data-aos="zoom-in"
+            src={adminpic}
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
       </div>
       <div className="admainrow addeanrow">
         <div className="row rowmarl3">
-          <h1>Deans</h1>
+          <h1 data-aos="zoom-in-right">Deans</h1>
         </div>
         {Deansinfo.map(item => (
           <div className="col-4">
@@ -42,7 +49,7 @@ const Administrationpage = () => {
       </div>
       <div className="admainrow addeanrow">
         <div className="row rowmarl3">
-          <h1>Board of Directors</h1>
+          <h1 data-aos="zoom-in-right">Board of Directors</h1>
         </div>
         {BOD.map(item => (
           <div className="col-4">
@@ -56,7 +63,7 @@ const Administrationpage = () => {
       </div>
       <div className="admainrow addeanrow">
         <div className="row rowmarl3">
-          <h1>Building and Works Committee</h1>
+          <h1 data-aos="zoom-in-right">Building and Works Committee</h1>
         </div>
         {BWC.map(item => (
           <div className="col-4">
@@ -70,7 +77,7 @@ const Administrationpage = () => {
       </div>
       <div className="admainrow addeanrow">
         <div className="row rowmarl3">
-          <h1>Institute DIsciplinary Committeee</h1>
+          <h1 data-aos="zoom-in-right">Institute Disciplinary Committeee</h1>
         </div>
         {IDC.map(item => (
           <div className="col-4">
@@ -84,7 +91,7 @@ const Administrationpage = () => {
       </div>
       <div className="admainrow addeanrow">
         <div className="row rowmarl3">
-          <h1>Finance Committee</h1>
+          <h1 data-aos="zoom-in-right">Finance Committee</h1>
         </div>
         {FC.map(item => (
           <div className="col-4">
