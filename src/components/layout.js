@@ -1,27 +1,45 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import Navbar from "./navbar"
 import Footer from "./footer"
 import { css } from "styled-components"
 import "./layout.css"
-import AOS from "aos"
 import "aos/dist/aos.css"
-AOS.init()
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
+class Layout extends React.Component{
+  constructor(props){
+    super();
+    if(typeof window !== `undefined`){
+      const AOS = require("aos");
+      AOS.init();
     }
-  `)
-
-  return (
-    <>
+  }
+    ComponentDidMount(){
+      if(typeof window !== `undefined`){
+      const AOS = require("aos");
+      AOS.init();
+    }
+    }
+    componentDidUpdate() {
+      if(typeof window !== `undefined`){
+        const AOS = require("aos");
+        AOS.refresh();
+      }}
+    render(){
+      const children=this.props.children;
+      return(<StaticQuery
+        query={graphql`
+          query SiteTitleQuery {
+            site {
+              siteMetadata {
+                title
+              }
+            }
+          }
+        `}
+        render={data => (
+            <>
       <Navbar></Navbar>
       <div
         css={css`
@@ -32,11 +50,8 @@ const Layout = ({ children }) => {
         <Footer></Footer>
       </div>
     </>
-  )
+        )}
+      />)   
 }
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
-
 export default Layout
