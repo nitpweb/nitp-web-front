@@ -7,28 +7,30 @@ import { css } from "styled-components"
 import "./layout.css"
 import "aos/dist/aos.css"
 
-class Layout extends React.Component{
-  constructor(props){
-    super();
-    if(typeof window !== `undefined`){
-      const AOS = require("aos");
-      AOS.init();
+class Layout extends React.Component {
+  constructor(props) {
+    super()
+    if (typeof window !== `undefined`) {
+      const AOS = require("aos")
+      AOS.init()
     }
   }
-    ComponentDidMount(){
-      if(typeof window !== `undefined`){
-      const AOS = require("aos");
-      AOS.init();
+  ComponentDidMount() {
+    if (typeof window !== `undefined`) {
+      const AOS = require("aos")
+      AOS.init()
     }
+  }
+  componentDidUpdate() {
+    if (typeof window !== `undefined`) {
+      const AOS = require("aos")
+      AOS.refresh()
     }
-    componentDidUpdate() {
-      if(typeof window !== `undefined`){
-        const AOS = require("aos");
-        AOS.refresh();
-      }}
-    render(){
-      const children=this.props.children;
-      return(<StaticQuery
+  }
+  render() {
+    const children = this.props.children
+    return (
+      <StaticQuery
         query={graphql`
           query SiteTitleQuery {
             site {
@@ -39,19 +41,20 @@ class Layout extends React.Component{
           }
         `}
         render={data => (
-            <>
-      <Navbar></Navbar>
-      <div
-        css={css`
-          padding-top: 4.8vw;
-        `}
-      >
-        <main>{children}</main>
-        <Footer></Footer>
-      </div>
-    </>
+          <>
+            <Navbar></Navbar>
+            <div
+              css={css`
+                padding-top: 4.8vw;
+              `}
+            >
+              <main>{children}</main>
+              <Footer></Footer>
+            </div>
+          </>
         )}
-      />)   
-}
+      />
+    )
+  }
 }
 export default Layout

@@ -25,7 +25,27 @@ const Home = () => {
             Notice
             <p>view all</p>
           </div>
-          <div className="notice-row">
+          <div className="notice-row" data-aos="fade-up">
+            <Notice
+              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
+              time="2 hours ago"
+            />
+            <Notice
+              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
+              time="2 hours ago"
+            />
+            <Notice
+              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
+              time="2 hours ago"
+            />
+            <Notice
+              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
+              time="2 hours ago"
+            />
+            <Notice
+              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
+              time="2 hours ago"
+            />
             <Notice
               detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
               time="2 hours ago"
@@ -62,6 +82,41 @@ const Home = () => {
             <p>view all</p>
           </div>
           <div className="event-row">
+            <Eventcard
+              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
+              time="12DEC 15DEC 2020"
+              date="15"
+              month="DEC"
+              location="JC BOSE HALL"
+            />
+            <Eventcard
+              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
+              time="12DEC 15DEC 2020"
+              date="15"
+              month="DEC"
+              location="JC BOSE HALL"
+            />
+            <Eventcard
+              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
+              time="12DEC 15DEC 2020"
+              date="15"
+              month="DEC"
+              location="JC BOSE HALL"
+            />
+            <Eventcard
+              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
+              time="12DEC 15DEC 2020"
+              date="15"
+              month="DEC"
+              location="JC BOSE HALL"
+            />
+            <Eventcard
+              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
+              time="12DEC 15DEC 2020"
+              date="15"
+              month="DEC"
+              location="JC BOSE HALL"
+            />
             <Eventcard
               detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
               time="12DEC 15DEC 2020"

@@ -15,9 +15,9 @@
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 100vw;
   background-color: #ffffff;
   width: 35vw;
+  height:700px;
   z-index: -1;
   padding-top: calc(4vh + 26px);
   padding-bottom: 6vh;
@@ -27,13 +27,15 @@
   border-radius: 33px;
   display: flex;
   justify-content: center;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
 }
 .event-row {
   display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 100vw;
   background-color: #ffffff;
   width: 45vw;
   z-index: -1;
@@ -45,6 +47,11 @@
   border-radius: 33px;
   display: flex;
   justify-content: center;
+  height:700px;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
 }
 @media (max-width: 768px) {
   .notice-row {
