@@ -5,6 +5,7 @@ import Importantlink from "./home/importantlink"
 import Notice from "./home/notice"
 import Eventcard from "./home/eventcard"
 import { Nitpbackimg } from "./home/nitpimg"
+import { Noticelist } from "./home/noticelist"
 
 const Home = () => {
   return (
@@ -26,50 +27,9 @@ const Home = () => {
             <p>view all</p>
           </div>
           <div className="notice-row" data-aos="fade-up">
-            <Notice
-              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="2 hours ago"
-            />
-            <Notice
-              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="2 hours ago"
-            />
-            <Notice
-              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="2 hours ago"
-            />
-            <Notice
-              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="2 hours ago"
-            />
-            <Notice
-              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="2 hours ago"
-            />
-            <Notice
-              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="2 hours ago"
-            />
-            <Notice
-              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="2 hours ago"
-            />
-            <Notice
-              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="2 hours ago"
-            />
-            <Notice
-              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="2 hours ago"
-            />
-            <Notice
-              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="2 hours ago"
-            />
-            <Notice
-              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="2 hours ago"
-            />
+            {Noticelist.map(item => (
+              <Notice detail={item.detail} time={item.time} url={item.url} />
+            ))}
           </div>
         </div>
         <div>

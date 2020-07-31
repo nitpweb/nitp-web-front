@@ -91,7 +91,7 @@ const Academicspage = () => {
             <h1 data-aos="zoom-in-right">Formats</h1>
           </div>
           <div className="row rowmarl3">
-          <div id="acadnoticewrap">
+            <div id="acadnoticewrap">
               <Acadnotice
                 detail="Online Next-Generation Semiconductor Devices for high-end applications"
                 time="22 June,2020"
@@ -107,17 +107,17 @@ const Academicspage = () => {
                 time="20 June 2020"
                 url="http://www.nitp.ac.in/uploads/Online_FDP_Nextgen_Devices.pdf"
               />
-                            <Acadnotice
+              <Acadnotice
                 detail="Online Next-Generation Semiconductor Devices for high-end applications"
                 time="20 June 2020"
                 url="http://www.nitp.ac.in/uploads/Online_FDP_Nextgen_Devices.pdf"
               />
-                            <Acadnotice
+              <Acadnotice
                 detail="Online Next-Generation Semiconductor Devices for high-end applications"
                 time="20 June 2020"
                 url="http://www.nitp.ac.in/uploads/Online_FDP_Nextgen_Devices.pdf"
               />
-                            <Acadnotice
+              <Acadnotice
                 detail="Online Next-Generation Semiconductor Devices for high-end applications"
                 time="20 June 2020"
                 url="http://www.nitp.ac.in/uploads/Online_FDP_Nextgen_Devices.pdf"
@@ -148,7 +148,7 @@ const Academicspage = () => {
             <h1 data-aos="zoom-in-left">Notice</h1>
           </div>
           <div className="row rowmarr3">
-          <div id="acadnoticewrap">
+            <div id="acadnoticewrap">
               <Acadnoticeb
                 detail="Online Next-Generation Semiconductor Devices for high-end applications"
                 time="22 June,2020"
