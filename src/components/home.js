@@ -81,7 +81,7 @@ const Home = () => {
             Events
             <p>view all</p>
           </div>
-          <div className="event-row">
+          <div className="event-row" data-aos="fade-up">
             <Eventcard
               detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
               time="12DEC 15DEC 2020"

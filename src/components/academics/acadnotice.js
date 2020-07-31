@@ -5,7 +5,7 @@ import downimg from "./img/download.svg"
 const Acadnotice = props => {
   return (
     <>
-      <div data-aos="fade-up" className="acadnoticecard">
+      <div className="acadnoticecard">
         <p className="acadcarddetail">{props.detail}</p>
         <div id="acadnotdate">
           <div>
@@ -26,7 +26,7 @@ const Acadnotice = props => {
 export const Acadnoticeb = props => {
   return (
     <>
-      <div data-aos="fade-up" className="acadnoticecard acadnoticecard1">
+      <div className="acadnoticecard acadnoticecard1">
         <p className="acadcarddetail">{props.detail}</p>
         <div id="acadnotdate">
           <div>

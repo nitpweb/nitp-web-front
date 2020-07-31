@@ -23,7 +23,7 @@
   height: 10vw;
   background: #ffffff;
   box-shadow: 7px 7px 26px rgba(207, 207, 207, 0.36);
-  border-radius: 19px;
+  border-radius:5px;
   margin-left: 1vw;
   display: flex;
   flex-direction: column;
@@ -53,6 +53,5 @@
     width: 20vw;
     height: 20vw;
     margin-right: 2vw;
-    border-radius: 10px;
   }
 }

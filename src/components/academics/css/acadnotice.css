@@ -14,7 +14,7 @@
   font-weight: 500;
 }
 .acadt{
-    position: relative;
+  position: relative;
   bottom: 0;
   margin-bottom: 5px;
   color: #7B7B7B;
@@ -25,8 +25,8 @@
   line-height: 0;
 }
 .acaddown {
-    text-decoration: none;
-    position: relative;
+  text-decoration: none;
+  position: relative;
   bottom: 0;
   margin-bottom: 5px;
   color: #cd5a2f;
@@ -37,17 +37,17 @@
   line-height: 0;
 }
 #acadnotdate{
-display: flex;
-justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 #acadnotdate > div {
-    display: flex;
-    align-items: flex-end;
-    margin-left: 20px;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 20px;
 }
 #acaddownimg{
-    margin-right: 8px;
-    height: 14px;
+  margin-right: 8px;
+  height: 14px;
 }
 @media(max-width:768px){
   .acadcarddetail{
