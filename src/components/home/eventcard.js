@@ -6,7 +6,7 @@ import eventlocation from "./img/eventlocation.svg"
 
 const Eventcard = props => {
   return (
-    <div data-aos="fade-up" className="eventcardwrap">
+    <div className="eventcardwrap">
       <div className="eventdtdiv">
         <img src={cal} alt="calendar" loading="lazy" />
         <div id="eventmonth">
@@ -19,7 +19,7 @@ const Eventcard = props => {
       <div className="eventcarddetailsection">
         <p className="eventcarddetail">
           {props.detail}...<a href="#">read more</a>
-        </p>{" "}
+        </p>
         <div id="eventdtp">
           <div>
             <img src={eventclock} alt="c" />
