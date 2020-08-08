@@ -15,8 +15,19 @@ const Home = () => {
           <Nitpbackimg />
         </div>
       </div>
+      <div className="row tablinkcover">
+        <div className="col-4 tablink">
+          <a href="#notice">Notice</a>
+        </div>
+        <div className="col-4 tablink">
+          <a href="#events">Events</a>
+        </div>
+        <div className="col-4 tablink">
+          <a href="#news">News</a>
+        </div>
+      </div>
       <Importantlink />
-      <div className="noticewrap">
+      <div className="noticewrap" id="notice">
         <div>
           <div
             data-aos="zoom-in"
@@ -32,7 +43,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-        <div>
+        <div id="events">
           <div
             data-aos="zoom-in"
             data-aos-duration="200"
@@ -115,7 +126,12 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div data-aos="zoom-in" data-aos-duration="200" className="news-head">
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="200"
+        className="news-head"
+        id="news"
+      >
         News
         <p>view all</p>
       </div>
