@@ -170,13 +170,14 @@
     font-size: 16px;
     line-height: 1.6;
   }
-  .departsidedrop >div:nth-of-type(2n) {
+  .departsidedrop >div:nth-of-type(2n+1) {
   background-color: #fff;
 }
 .departsidedrop{
   display: none;
   transition:0.1s;
 }
+
   .mobilelogo {
     display: block;
     padding-right: 10px;
@@ -248,4 +249,11 @@
 }
 #sidedropicon{
   transition: 0.01s ease-in-out;
+}
+#departsidedropwrap{
+  display: none;
+  padding-left: 0px;
+}
+.departsidedrop>div{
+  padding-left:25px;
 }

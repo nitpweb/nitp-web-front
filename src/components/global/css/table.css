@@ -1,0 +1,14 @@
+.tablewrap {
+  overflow: hidden;
+  min-width: 95%;
+  max-width: 90%;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  display: flex;
+  font-family: 'Source Sans Pro';
+}
+.tablewrap:-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}

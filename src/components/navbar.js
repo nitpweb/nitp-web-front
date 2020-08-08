@@ -229,11 +229,14 @@ const Navbar = () => {
               onClick={function () {
                 var y = document.querySelector("#departdropicon")
                 var x = document.querySelector(".departsidedrop")
+                var z = document.querySelector("#departsidedropwrap")
                 if (x.style.display === "none") {
                   x.style.display = "block"
+                  z.style.display = "flex"
                   y.style.transform = "rotate(180deg)"
                 } else {
                   x.style.display = "none"
+                  z.style.display = "none"
                   y.style.transform = "rotate(0deg)"
                 }
               }}
@@ -241,65 +244,54 @@ const Navbar = () => {
               <span className="nav-side-link">Departments</span>
             </span>
           </div>
-          <div>
+          <div id="departsidedropwrap">
             <div className="departsidedrop">
               <div>
-                <div className="navsideicondiv"></div>
                 <Link className="nav-side-link" to="/csehome">
                   <span>Computer Science and Engineering</span>
                 </Link>
               </div>
               <div>
-                <div className="navsideicondiv"></div>
                 <Link className="nav-side-link" to="/ecehome">
                   <span>Electronics and Communication Engineering</span>
                 </Link>
               </div>
               <div>
-                <div className="navsideicondiv"></div>
                 <Link className="nav-side-link" to="/eehome">
                   <span>Electrical Engineering</span>
                 </Link>
               </div>
               <div>
-                <div className="navsideicondiv"></div>
                 <Link className="nav-side-link" to="/mehome">
                   <span>Mechanical Engineering</span>
                 </Link>
               </div>
               <div>
-                <div className="navsideicondiv"></div>
                 <Link className="nav-side-link" to="/cehome">
                   <span>Civil Engineering</span>
                 </Link>
               </div>
               <div>
-                <div className="navsideicondiv"></div>
                 <Link className="nav-side-link" to="/hsshome">
                   <span>Humanities & Social Sciences</span>
                 </Link>
               </div>
               <div>
-                <div className="navsideicondiv"></div>
                 <Link className="nav-side-link" to="/archhome">
                   <span>Architecture</span>
                 </Link>
               </div>
               <div>
-                {" "}
-                <div className="navsideicondiv"></div>
                 <Link className="nav-side-link" to="/physicshome">
                   <span>Physics</span>
                 </Link>
               </div>
               <div>
-                <div className="navsideicondiv"></div>
                 <Link className="nav-side-link" to="/chemhome">
                   <span>Chemistry</span>
                 </Link>
               </div>
               <div>
-                <div className="navsideicondiv"></div>
                 <Link className="nav-side-link" to="/mathhome">
                   <span>Mathematics</span>
                 </Link>

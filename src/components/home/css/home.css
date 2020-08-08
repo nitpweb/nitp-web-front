@@ -2,6 +2,28 @@
   width: 100%;
   max-height: 90vw;
 }
+.tablinkcover {
+  display: none;
+  width: 100%;
+}
+.tablink {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  box-shadow: 7px 7px 26px rgba(207, 207, 207, 0.36);
+  height: 25px;
+  font-family: "Source Sans Pro";
+  color: #f37023;
+  text-decoration: none;
+}
+
+.tablink>a{
+    text-decoration: none;
+    color:#f37023;
+    font-size:14px;
+    font-weight: bold;
+}
 
 .bgimgwrap {
   overflow: hidden;
@@ -17,7 +39,7 @@
   flex-wrap: wrap;
   background-color: #ffffff;
   width: 35vw;
-  height:700px;
+  height: 700px;
   z-index: -1;
   padding-top: calc(4vh + 26px);
   padding-bottom: 6vh;
@@ -47,7 +69,7 @@
   border-radius: 33px;
   display: flex;
   justify-content: center;
-  height:700px;
+  height: 700px;
   overflow: hidden;
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
@@ -56,7 +78,7 @@
 @media (max-width: 768px) {
   .notice-row {
     width: 90vw;
-    margin-left:5vw;
+    margin-left: 5vw;
   }
   .event-row {
     width: 90vw;
@@ -65,9 +87,13 @@
   .notiicewrap {
     display: block;
   }
+  .tablinkcover,
+  .tablink {
+    display: flex;
+  }
 }
-.bgimgwrap{
-  margin-top:5vh;
+.bgimgwrap {
+  margin-top: 5vh;
 }
 .news-head,
 .notice-head,
@@ -148,7 +174,7 @@
   .noticewrap {
     display: flex;
   }
-  .bgimgwrap{
+  .bgimgwrap {
     margin-top: 0;
   }
 }

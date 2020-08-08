@@ -22,7 +22,7 @@ export const PhyCourseStructure = [
   {
     sem_elect: `1`,
     course_code: `MA101`,
-    coursetitle: `Engineering Mathematics – I`,
+    coursetitle: `Engineering Mathematics ï¿½ I`,
     l: `3`,
     t: `1`,
     p: `0`,
@@ -112,7 +112,7 @@ export const PhyCourseStructure = [
   {
     sem_elect: `2`,
     course_code: `2MA102`,
-    coursetitle: `Engineering Mathematics –II`,
+    coursetitle: `Engineering Mathematics ï¿½II`,
     l: `3`,
     t: `1`,
     p: `0`,
