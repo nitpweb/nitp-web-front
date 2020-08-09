@@ -25,7 +25,6 @@ const Navbar = () => {
     ) {
       document.querySelector(".nav-col>h2").style.lineHeight = "0.2rem"
       document.querySelector(".nav-col>h4").style.lineHeight = "0.2rem"
-      document.querySelector(".nav-link-row").style.height = "2.5vw"
       document.querySelector(".nav-link-row").style.backgroundColor = "black"
       document.querySelector(".nav-link-row").style.marginTop = "4vw"
       document.querySelector(".logobadge>h4").style.display = "none"
@@ -44,7 +43,6 @@ const Navbar = () => {
     } else {
       document.querySelector(".nav-col>h2").style.lineHeight = "0.3rem"
       document.querySelector(".nav-col>h4").style.lineHeight = "0.3rem"
-      document.querySelector(".nav-link-row").style.height = "3vw"
       document.querySelector(".nav-link-row").style.backgroundColor = "black"
       document.querySelector(".nav-link-row").style.marginTop = "4.7vw"
       document.querySelector(".logobadge>h4").style.display = "flex"
@@ -65,9 +63,9 @@ const Navbar = () => {
   return (
     <>
       <div className="nav-row">
-        <div className="mobilelogo" data-aos="zoom-in">
+        <Link className="mobilelogo" data-aos="zoom-in" to="/">
           <img src={logo} alt="NIT PATNA" />
-        </div>
+        </Link>
         <div className="nav-col">
           <h2>NATIONAL INSTITUTE OF TECHNOLOGY PATNA</h2>
           <h4>राष्ट्रीय प्रौद्योगिकी संस्थान, पटना</h4>
@@ -162,14 +160,14 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div id="logowr1">
+        <Link id="logowr1" to="/">
           <div className="logobadge" data-aos="fade-down">
             <h4>श्रमोऽनवरत चेष्टाय</h4>
             <div id="logowr2">
               <img src={logo} alt="NIT PATNA" />
             </div>
           </div>
-        </div>
+        </Link>
         <span
           className="nav-toggle"
           onClick={function () {
@@ -181,12 +179,14 @@ const Navbar = () => {
             }
           }}
         >
-          <img src={toggle} alt="menu" />
+          <img src={toggle} data-aos="zoom-in" alt="menu" />
         </span>
         <div className="nav-sidebar">
           <div className="navsidetop">
-            <img src={logo} alt="logo" />
-            <p>NIT PATNA</p>
+            <Link className="navsidetop" to="/">
+              <img src={logo} alt="logo" />
+              <p>NIT PATNA</p>
+            </Link>
           </div>
           <div>
             <div className="navsideicondiv">
