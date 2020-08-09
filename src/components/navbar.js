@@ -65,7 +65,7 @@ const Navbar = () => {
   return (
     <>
       <div className="nav-row">
-        <div className="mobilelogo">
+        <div className="mobilelogo" data-aos="zoom-in">
           <img src={logo} alt="NIT PATNA" />
         </div>
         <div className="nav-col">
@@ -163,7 +163,7 @@ const Navbar = () => {
         </div>
 
         <div id="logowr1">
-          <div className="logobadge">
+          <div className="logobadge" data-aos="fade-down">
             <h4>श्रमोऽनवरत चेष्टाय</h4>
             <div id="logowr2">
               <img src={logo} alt="NIT PATNA" />
