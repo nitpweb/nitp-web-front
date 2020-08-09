@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/layout"
+import Deplayout from "../components/deplayout"
 import SEO from "../components/seo"
 import Physicshomepage from "../components/departments/physics/physicshome"
 

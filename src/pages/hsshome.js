@@ -1,5 +1,5 @@
 import React from "react"
-import Deplayout from "../components/Deplayout"
+import Deplayout from "../components/deplayout"
 import SEO from "../components/seo"
 import Hsshomepage from "../components/departments/hss/hsshome"
 
