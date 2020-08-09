@@ -1,13 +1,13 @@
 import React from "react"
-import Layout from "../components/layout"
+import Deplayout from "../components/deplayout"
 import SEO from "../components/seo"
 import Mehomepage from "../components/departments/me/mehome"
 
 const Mehome = () => (
-  <Layout>
+  <Deplayout>
     <SEO title="ME" />
     <Mehomepage />
-  </Layout>
+  </Deplayout>
 )
 
 export default Mehome

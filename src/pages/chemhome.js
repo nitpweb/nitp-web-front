@@ -1,13 +1,13 @@
 import React from "react"
-import Layout from "../components/layout"
+import Deplayout from "../components/Deplayout"
 import SEO from "../components/seo"
 import Chemhomepage from "../components/departments/chem/chemhome"
 
 const Chemhome = () => (
-  <Layout>
+  <Deplayout>
     <SEO title="Chemistry" />
     <Chemhomepage />
-  </Layout>
+  </Deplayout>
 )
 
 export default Chemhome

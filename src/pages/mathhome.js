@@ -1,13 +1,13 @@
 import React from "react"
-import Layout from "../components/layout"
+import Deplayout from "../components/Deplayout"
 import SEO from "../components/seo"
 import Mathhomepage from "../components/departments/math/mathhome"
 
 const Mathhome = () => (
-  <Layout>
+  <Deplayout>
     <SEO title="Mathematics" />
     <Mathhomepage />
-  </Layout>
+  </Deplayout>
 )
 
 export default Mathhome

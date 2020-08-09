@@ -1,13 +1,13 @@
 import React from "react"
-import Layout from "../components/layout"
+import Deplayout from "../components/deplayout"
 import SEO from "../components/seo"
 import Archhomepage from "../components/departments/arch/archhome"
 
 const Archhome = () => (
-  <Layout>
+  <Deplayout>
     <SEO title="Architecture" />
     <Archhomepage />
-  </Layout>
+  </Deplayout>
 )
 
 export default Archhome

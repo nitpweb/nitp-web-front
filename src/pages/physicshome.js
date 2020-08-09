@@ -4,10 +4,10 @@ import SEO from "../components/seo"
 import Physicshomepage from "../components/departments/physics/physicshome"
 
 const Physicshome = () => (
-  <Layout>
+  <Deplayout>
     <SEO title="Physics" />
     <Physicshomepage />
-  </Layout>
+  </Deplayout>
 )
 
 export default Physicshome

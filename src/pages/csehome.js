@@ -1,13 +1,13 @@
 import React from "react"
-import Layout from "../components/layout"
+import Deplayout from "../components/Deplayout"
 import SEO from "../components/seo"
 import Csehomepage from "../components/departments/cse/csehome"
 
 const Csehome = () => (
-  <Layout>
+  <Deplayout>
     <SEO title="CSE" />
     <Csehomepage />
-  </Layout>
+  </Deplayout>
 )
 
 export default Csehome

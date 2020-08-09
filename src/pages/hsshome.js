@@ -1,13 +1,13 @@
 import React from "react"
-import Layout from "../components/layout"
+import Deplayout from "../components/Deplayout"
 import SEO from "../components/seo"
 import Hsshomepage from "../components/departments/hss/hsshome"
 
 const Hsshome = () => (
-  <Layout>
+  <Deplayout>
     <SEO title="HSS" />
     <Hsshomepage />
-  </Layout>
+  </Deplayout>
 )
 
 export default Hsshome

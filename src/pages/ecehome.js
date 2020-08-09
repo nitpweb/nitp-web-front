@@ -1,13 +1,13 @@
 import React from "react"
-import Layout from "../components/layout"
+import Deplayout from "../components/deplayout"
 import SEO from "../components/seo"
 import Ecehomepage from "../components/departments/ece/ecehome"
 
 const Ecehome = () => (
-  <Layout>
+  <Deplayout>
     <SEO title="ECE" />
     <Ecehomepage />
-  </Layout>
+  </Deplayout>
 )
 
 export default Ecehome
