@@ -2,18 +2,6 @@ import React from "react"
 
 export const MEBTechCourseStructure = [
   {
-    deptt: `Deptt.`,
-    sem_elect: `Sem/Electives`,
-    course_code: `Course Code`,
-    course_title: `Course Title`,
-    l: `L`,
-    t: `T`,
-    p: `P`,
-    credits: `Credits`,
-    dept: `Dept.`,
-  },
-
-  {
     deptt: `MEUG`,
     sem_elect: `3`,
     course_code: `ME 3804`,
@@ -987,3 +975,5 @@ export const MEBTechCourseStructure = [
     dept: `ME`,
   },
 ]
+
+export default MEBTechCourseStructure
