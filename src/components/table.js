@@ -1,11 +1,13 @@
 import React from "react"
-import "./global/table.css"
+import "./global/css/table.css"
 
 const Table = ({ children }) => {
   return (
     <>
-      <div className="tablewrap">
-        <main>{children}</main>
+      <div className="table-t">
+        <div className="tablewrap">
+          <div>{children}</div>
+        </div>
       </div>
     </>
   )
