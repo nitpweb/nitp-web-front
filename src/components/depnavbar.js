@@ -352,7 +352,7 @@ const Depnavbar = () => {
             </div>
           </div>
           <div>
-            <Link className="nav-side-link" to={`${pathname}/syllabus`}>
+            <Link className="nav-side-link" to={`/${pathname}/syllabus`}>
               Syllabus
             </Link>
           </div>

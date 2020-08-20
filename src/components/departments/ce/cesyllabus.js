@@ -39,7 +39,7 @@ const Cesyllabus = props => {
           {Course.map(elem => (
             <tr className="syllabus-table-row">
               <td>{elem.dept}</td>
-              <td>{elem.sem_elect}</td>
+              <td>{elem.sem_elective}</td>
               <td>{elem.coursecode}</td>
               <td>
                 <a href={elem.url}>{elem.coursetitle}</a>
