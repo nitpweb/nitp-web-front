@@ -1,6 +1,6 @@
 import React from "react"
 
-export const ChemElectives = [
+const ChemElectives = [
   {
     course_code: `  `,
     course_title: ` Group 1(Physical Chemistry): `,
@@ -134,3 +134,5 @@ export const ChemElectives = [
     credits: ` 3 `,
   },
 ]
+
+export default ChemElectives

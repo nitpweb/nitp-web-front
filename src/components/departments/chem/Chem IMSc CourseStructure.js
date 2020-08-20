@@ -1,6 +1,6 @@
 import React from "react"
 
-export const ChemCourseStructure = [
+const ChemCourseStructure = [
   {
     semester: `semester `,
     course_code: `Course code `,
@@ -819,3 +819,5 @@ export const ChemCourseStructure = [
     credit: `200 `,
   },
 ]
+
+export default ChemCourseStructure

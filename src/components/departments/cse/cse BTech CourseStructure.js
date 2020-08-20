@@ -1,6 +1,6 @@
 import React from "react"
 
-export const CSEBtechCourseStructure = [
+const CSEBtechCourseStructure = [
   {
     dept: `Deptt`,
     sem_elect: `Sem/Electives`,
@@ -1312,3 +1312,5 @@ export const CSEBtechCourseStructure = [
     credits: `4`,
   },
 ]
+
+export default CSEBtechCourseStructure

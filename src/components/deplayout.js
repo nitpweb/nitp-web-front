@@ -8,7 +8,7 @@ import "./layout.css"
 import "aos/dist/aos.css"
 
 class Deplayout extends React.Component {
-  constructor(props) {
+  constructor() {
     super()
     if (typeof window !== `undefined`) {
       const AOS = require("aos")

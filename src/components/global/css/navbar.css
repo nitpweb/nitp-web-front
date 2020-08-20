@@ -16,9 +16,30 @@
   padding-left: 3vw;
   background-color: black;
   opacity: 0.8;
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
+}
+.dep-link-item{
+  text-decoration: none;
+  color:#fff;
+}
+.dep-nav-row{
+  display:flex;
+  width:100vw;
+  background-color:#d45628;
+  font-family: 'Source Sans Pro';
+  color: #fff;
+  padding-top: 2px;
+  letter-spacing: 0.2rem;
+  padding-bottom: 2px;
+  position:fixed;
+  margin-top: 7vw;
+  z-index: 1;
+}
+.dep-nav-col{
+  width:40%;
+  text-align: center;
 }
 #navblank {
   width: 9vw;
@@ -153,6 +174,11 @@
   .nav-link-row {
     display: none;
   }
+
+  .dep-nav-row{
+    display: none;
+  }
+
   .nav-toggle {
     display: block;
     position: relative;

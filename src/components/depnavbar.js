@@ -5,6 +5,7 @@ import logo from "./global/img/logo512.png"
 import toggle from "../assets/toggle.svg"
 import { window } from "ssr-window"
 import { Link } from "gatsby"
+import Deplist from "./global/deplist"
 import acadicon from "./global/sideicons/acad.svg"
 import administrationicon from "./global/sideicons/administration.svg"
 import abouticon from "./global/sideicons/bulb.svg"
@@ -15,6 +16,7 @@ import placementicon from "./global/sideicons/placements.svg"
 import sidedropicon from "./home/img/dropdown.svg"
 
 const Depnavbar = () => {
+  const pathname = window.location.pathname.split("/")[1]
   window.onscroll = function () {
     scrollFunction()
   }
@@ -27,6 +29,7 @@ const Depnavbar = () => {
       document.querySelector(".nav-col>h4").style.lineHeight = "0.2rem"
       document.querySelector(".nav-link-row").style.backgroundColor = "black"
       document.querySelector(".nav-link-row").style.marginTop = "4vw"
+      document.querySelector(".dep-nav-row").style.marginTop = "6.3vw"
       document.querySelector(".logobadge>h4").style.display = "none"
       document.querySelector(".logobadge>div>img").style.maxHeight = "5vw"
       document.querySelector(".logobadge>div>img").style.borderWidth = "0px"
@@ -45,6 +48,7 @@ const Depnavbar = () => {
       document.querySelector(".nav-col>h4").style.lineHeight = "0.3rem"
       document.querySelector(".nav-link-row").style.backgroundColor = "black"
       document.querySelector(".nav-link-row").style.marginTop = "4.7vw"
+      document.querySelector(".dep-nav-row").style.marginTop = "7vw"
       document.querySelector(".logobadge>h4").style.display = "flex"
       document.querySelector(".logobadge>div>img").style.maxHeight = "8vw"
       document.querySelector(".logobadge>div>img").style.borderWidth = "0.5vw"
@@ -70,6 +74,7 @@ const Depnavbar = () => {
           <h2>NATIONAL INSTITUTE OF TECHNOLOGY PATNA</h2>
           <h4>राष्ट्रीय प्रौद्योगिकी संस्थान, पटना</h4>
         </div>
+
         <div className="nav-link-row">
           <Link
             className="nav-link-item nav-link-div"
@@ -159,6 +164,15 @@ const Depnavbar = () => {
             <span>Placements</span>
           </Link>
         </div>
+        <div className="dep-nav-row">
+          <div className="dep-nav-col">{Deplist[pathname]}</div>
+          <div style={{ width: `20%` }}></div>
+          <div className="dep-nav-col">
+            <Link to={`/${pathname}/syllabus`} className="dep-link-item">
+              Syllabus
+            </Link>
+          </div>
+        </div>
 
         <Link id="logowr1" to="/">
           <div className="logobadge" data-aos="fade-down">
@@ -185,7 +199,7 @@ const Depnavbar = () => {
           <div className="navsidetop">
             <Link className="navsidetop" to="/">
               <img src={logo} alt="logo" />
-              <p>NIT PATNA</p>
+              <p>{Deplist[pathname]}</p>
             </Link>
           </div>
           <div>
@@ -338,7 +352,7 @@ const Depnavbar = () => {
             </div>
           </div>
           <div>
-            <Link className="nav-side-link" to="/me/syllabus">
+            <Link className="nav-side-link" to={`${pathname}/syllabus`}>
               Syllabus
             </Link>
           </div>
