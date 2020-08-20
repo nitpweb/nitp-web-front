@@ -1,15 +1,6 @@
 import React from "react"
 
-export const PhyCourseStructure = [
-  {
-    sem_elect: `Sem/Electives`,
-    course_code: `Course Code`,
-    coursetitle: `Course Title`,
-    l: `L`,
-    t: `T`,
-    p: `P`,
-    credits: `Credits`,
-  },
+const PhyCourseStructure = [
   {
     sem_elect: `1`,
     course_code: `1HS101`,
@@ -837,3 +828,4 @@ export const PhyCourseStructure = [
     credits: `3`,
   },
 ]
+export default PhyCourseStructure
