@@ -801,7 +801,6 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    
   },
   {
     sem_elect: "EL",
@@ -820,7 +819,6 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    
   },
   {
     sem_elect: "EL",
@@ -896,7 +894,6 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    
   },
   {
     sem_elect: "EL",
@@ -916,7 +913,6 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    
   },
   {
     sem_elect: "EL",
@@ -1002,7 +998,6 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    
   },
   {
     sem_elect: "EL",
@@ -1021,7 +1016,6 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    
   },
   {
     sem_elect: "EL",
