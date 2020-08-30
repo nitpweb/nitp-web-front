@@ -8,13 +8,19 @@ const Notice = props => {
         <p className="noticecarddetail">{props.detail}</p>
         <div id="notdate">
           <div>
-            <p className="notet">{props.time}</p>
+            <p className="notet">{props.time} hours ago</p>
           </div>
           <div>
-            <img id="notdownimg" src={downimg} alt="c" />
-            <a className="notdown" href={props.url} target="blank">
-              Download
-            </a>
+            {props.attachments.map(elem => {
+              return (
+                <>
+                  <img id="notdownimg" src={downimg} alt="c" />
+                  <a className="notdown" href={elem.url} target="blank">
+                    {elem.caption}
+                  </a>
+                </>
+              )
+            })}
           </div>
         </div>
       </div>

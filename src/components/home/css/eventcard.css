@@ -6,17 +6,18 @@
     border-radius: 5px;
     margin-top: 20px;
     display: flex;
+    max-height: 110px;
 }
 .eventcarddetailsection{
     width: 93%;
 }
 .eventdtdiv{
-    width:80px;
+    width:77px;
     height: 80px;
-    min-width: 80px;
+    min-width: 77px;
     min-height: 80px;
     max-height: 80px;
-    max-width: 80px;
+    max-width: 77px;
 }
 .eventdtdiv > img{
 position: absolute;
