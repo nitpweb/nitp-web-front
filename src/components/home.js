@@ -9,19 +9,34 @@ import { Noticelist } from "./home/noticelist"
 import { graphql, useStaticQuery } from "gatsby"
 
 const Home = () => {
-  const noticeData = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
       allNotice {
         totalCount
         edges {
           node {
             id
-            openDate
             parent {
               id
             }
             timestamp
-            closeDate
+            title
+            attachments {
+              caption
+              url
+            }
+          }
+        }
+      }
+      allEvent {
+        totalCount
+        edges {
+          node {
+            id
+            parent {
+              id
+            }
+            timestamp
             title
             attachments {
               caption
@@ -32,6 +47,7 @@ const Home = () => {
       }
     }
   `)
+
   return (
     <div>
       <div>
@@ -62,13 +78,16 @@ const Home = () => {
             <p>view all</p>
           </div>
           <div className="notice-row" data-aos="fade-up">
-            {noticeData.allNotice.edges.map((notice, i) => {
+            {data.allNotice.edges.map((notice, i) => {
               const item = notice.node
+              const newtime = new Date().getTime()
+
+              const d = new Date(newtime - item.timestamp).getHours()
               return (
                 <Notice
                   detail={item.title}
-                  time={item.timestamp}
-                  url={item.attachments.url}
+                  time={d}
+                  attachments={item.attachments}
                 />
               )
             })}
@@ -84,76 +103,25 @@ const Home = () => {
             <p>view all</p>
           </div>
           <div className="event-row" data-aos="fade-up">
-            <Eventcard
-              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="12DEC 15DEC 2020"
-              date="15"
-              month="DEC"
-              location="JC BOSE HALL"
-            />
-            <Eventcard
-              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="12DEC 15DEC 2020"
-              date="15"
-              month="DEC"
-              location="JC BOSE HALL"
-            />
-            <Eventcard
-              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="12DEC 15DEC 2020"
-              date="15"
-              month="DEC"
-              location="JC BOSE HALL"
-            />
-            <Eventcard
-              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="12DEC 15DEC 2020"
-              date="15"
-              month="DEC"
-              location="JC BOSE HALL"
-            />
-            <Eventcard
-              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="12DEC 15DEC 2020"
-              date="15"
-              month="DEC"
-              location="JC BOSE HALL"
-            />
-            <Eventcard
-              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="12DEC 15DEC 2020"
-              date="15"
-              month="DEC"
-              location="JC BOSE HALL"
-            />
-            <Eventcard
-              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="12DEC 15DEC 2020"
-              date="15"
-              month="DEC"
-              location="JC BOSE HALL"
-            />
-            <Eventcard
-              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="12DEC 15DEC 2020"
-              date="15"
-              month="DEC"
-              location="JC BOSE HALL"
-            />
-            <Eventcard
-              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="12DEC 15DEC 2020"
-              date="15"
-              month="DEC"
-              location="JC BOSE HALL"
-            />
-            <Eventcard
-              detail="Seating Plan for 20-12-2020 AN for the xyzuibj students of UG/PG...."
-              time="12DEC 15DEC 2020"
-              date="15"
-              month="DEC"
-              location="JC BOSE HALL"
-            />
+            {data.allEvent.edges.map((event, i) => {
+              const item = event.node
+              const date = new Date(item.timestamp)
+              const day = date.getDate()
+              const month = date.getMonth()
+              const year = date.getFullYear()
+              const monthname = date
+                .toLocaleString("default", { month: "short" })
+                .toUpperCase()
+              return (
+                <Eventcard
+                  detail={item.title}
+                  time={`${day}-${month}-${year}`}
+                  date={day}
+                  month={monthname}
+                  attachments={item.attachments}
+                />
+              )
+            })}
           </div>
         </div>
       </div>
