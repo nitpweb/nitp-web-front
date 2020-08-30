@@ -19,6 +19,7 @@
     "gatsby-plugin-transition-link": "^1.19.2",
     "gatsby-source-filesystem": "^2.3.4",
     "gatsby-source-graphql": "^2.7.2",
+    "gatsby-source-multi-api": "^1.0.5",
     "gatsby-source-mysql": "^2.2.3",
     "gatsby-transformer-sharp": "^2.5.2",
     "gsap": "^3.3.4",

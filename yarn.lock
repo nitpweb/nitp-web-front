@@ -6768,6 +6768,11 @@ gatsby-source-graphql@^2.7.2:
     node-fetch "^1.7.3"
     uuid "^8.3.0"
 
+gatsby-source-multi-api@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/gatsby-source-multi-api/-/gatsby-source-multi-api-1.0.5.tgz#c1e8c5c5dcc023b1d2e6244404e83973333c274a"
+  integrity sha512-jmZmWy1gdaUpk8tKMwi3YwoRVGHhcIF/KRqbLN2xvZ5EXilmijTrtJdNjNI1Il9bG9oCqGPopVSPvig+7NaLEQ==
+
 gatsby-source-mysql@^2.2.3:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/gatsby-source-mysql/-/gatsby-source-mysql-2.2.3.tgz#66c28523a12eeded07630650d59dba30c550ac73"
