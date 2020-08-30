@@ -10,8 +10,8 @@ import { graphql, useStaticQuery } from "gatsby"
 
 const Home = () => {
   const data = useStaticQuery(graphql`
-    query {
-      allNotice {
+    {
+      allEvent {
         totalCount
         edges {
           node {
@@ -28,16 +28,13 @@ const Home = () => {
           }
         }
       }
-      allEvent {
+      allNotice {
         totalCount
         edges {
           node {
-            id
-            parent {
-              id
-            }
             timestamp
             title
+            id
             attachments {
               caption
               url
