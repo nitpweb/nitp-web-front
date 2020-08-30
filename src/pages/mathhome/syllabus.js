@@ -1,13 +1,13 @@
 import React from "react"
 import Deplayout from "../../components/deplayout"
 import SEO from "../../components/seo"
-import Mesyllabus from "../../components/departments/me/mesyllabus"
+import Mathsyllabus from "../../components/departments/math/mathsyllabus"
 
-const Mesyllabuspage = () => (
+const Mathsyllabuspage = () => (
   <Deplayout>
     <SEO title="Mathematics|Syllabus" />
-    <Mesyllabus />
+    <Mathsyllabus />
   </Deplayout>
 )
 
-export default Mesyllabuspage
+export default Mathsyllabuspage

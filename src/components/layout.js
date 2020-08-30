@@ -13,23 +13,6 @@ class Layout extends React.Component {
     if (typeof window !== `undefined`) {
       const AOS = require("aos")
       AOS.init()
-      window.scroll({
-        top: 2500,
-        left: 0,
-        behavior: "smooth",
-      })
-
-      // Scroll certain amounts from current position
-      window.scrollBy({
-        top: 100, // could be negative value
-        left: 0,
-        behavior: "smooth",
-      })
-
-      // Scroll to a certain element
-      document.querySelector("#___gatsby").scrollIntoView({
-        behavior: "smooth",
-      })
     }
   }
   ComponentDidMount() {
@@ -37,46 +20,12 @@ class Layout extends React.Component {
       const AOS = require("aos")
       AOS.init()
     }
-    window.scroll({
-      top: 500,
-      left: 0,
-      behavior: "smooth",
-    })
-
-    // Scroll certain amounts from current position
-    window.scrollBy({
-      top: 100, // could be negative value
-      left: 0,
-      behavior: "smooth",
-    })
-
-    // Scroll to a certain element
-    document.querySelector("#___gatsby").scrollIntoView({
-      behavior: "smooth",
-    })
   }
   componentDidUpdate() {
     if (typeof window !== `undefined`) {
       const AOS = require("aos")
       AOS.refresh()
     }
-    window.scroll({
-      top: 500,
-      left: 0,
-      behavior: "smooth",
-    })
-
-    // Scroll certain amounts from current position
-    window.scrollBy({
-      top: 100, // could be negative value
-      left: 0,
-      behavior: "smooth",
-    })
-
-    // Scroll to a certain element
-    document.querySelector("#___gatsby").scrollIntoView({
-      behavior: "smooth",
-    })
   }
   render() {
     const children = this.props.children

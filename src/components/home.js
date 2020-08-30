@@ -6,8 +6,32 @@ import Notice from "./home/notice"
 import Eventcard from "./home/eventcard"
 import { Nitpbackimg } from "./home/nitpimg"
 import { Noticelist } from "./home/noticelist"
+import { graphql, useStaticQuery } from "gatsby"
 
 const Home = () => {
+  const noticeData = useStaticQuery(graphql`
+    query {
+      allNotice {
+        totalCount
+        edges {
+          node {
+            id
+            openDate
+            parent {
+              id
+            }
+            timestamp
+            closeDate
+            title
+            attachments {
+              caption
+              url
+            }
+          }
+        }
+      }
+    }
+  `)
   return (
     <div>
       <div>
@@ -38,9 +62,16 @@ const Home = () => {
             <p>view all</p>
           </div>
           <div className="notice-row" data-aos="fade-up">
-            {Noticelist.map(item => (
-              <Notice detail={item.detail} time={item.time} url={item.url} />
-            ))}
+            {noticeData.allNotice.edges.map((notice, i) => {
+              const item = notice.node
+              return (
+                <Notice
+                  detail={item.title}
+                  time={item.timestamp}
+                  url={item.attachments.url}
+                />
+              )
+            })}
           </div>
         </div>
         <div id="events">

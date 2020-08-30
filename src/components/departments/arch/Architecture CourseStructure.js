@@ -1,19 +1,6 @@
 import React from "react"
 
-export const ArchitectureCourse = [
-  {
-    deptt: `Deptt.`,
-    sem_elect: `Sem/Electives`,
-    course_code: `Course Code`,
-    course_title: `Course Title`,
-    l: `L`,
-    t: `T`,
-    p: `P`,
-    credits: `Credits`,
-    
-  },
-
-  
+const ArchitectureCourse = [
   {
     deptt: `ARUG`,
     sem_elect: `1`,
@@ -23,7 +10,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `1`,
     credits: `0`,
-    
   },
   {
     deptt: `ARUG`,
@@ -35,9 +21,8 @@ export const ArchitectureCourse = [
     t: `1`,
     p: `0`,
     credits: `3`,
-    
   },
- 
+
   {
     deptt: `ARUG`,
     sem_elect: `1`,
@@ -48,7 +33,6 @@ export const ArchitectureCourse = [
     t: `1`,
     p: `0`,
     credits: `4`,
-    
   },
   {
     deptt: `ARUG`,
@@ -60,7 +44,6 @@ export const ArchitectureCourse = [
     t: `1`,
     p: `0`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -72,9 +55,8 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `3`,
     credits: `1`,
-	
-    },
-{
+  },
+  {
     deptt: `ARUG`,
     sem_elect: `1`,
     course_code: `1ME102`,
@@ -84,9 +66,8 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `3`,
     credits: `1`,
-	
-    },
-{
+  },
+  {
     deptt: `ARUG`,
     sem_elect: `1`,
     course_code: `1AR101`,
@@ -96,9 +77,8 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `4`,
     credits: `3`,
-	
-    },
-{
+  },
+  {
     deptt: `ARUG`,
     sem_elect: `1`,
     course_code: `1AR102`,
@@ -108,9 +88,8 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `6`,
     credits: `3`,
-	
-    },
-{
+  },
+  {
     deptt: `ARUG`,
     sem_elect: `1`,
     course_code: `1AR103`,
@@ -120,9 +99,8 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `2`,
     credits: `3`,
-    },
+  },
 
- 
   {
     deptt: `ARUG`,
     sem_elect: `2`,
@@ -133,7 +111,6 @@ export const ArchitectureCourse = [
     t: `1`,
     p: `3`,
     credits: `2`,
-    
   },
   {
     deptt: `ARUG`,
@@ -145,7 +122,6 @@ export const ArchitectureCourse = [
     t: `1`,
     p: `0`,
     credits: `4`,
-    
   },
   {
     deptt: `ARUG`,
@@ -157,7 +133,6 @@ export const ArchitectureCourse = [
     t: `1`,
     p: `0`,
     credits: `2`,
-    
   },
   {
     deptt: `ARUG`,
@@ -169,7 +144,6 @@ export const ArchitectureCourse = [
     t: `1`,
     p: `6`,
     credits: `4`,
-    
   },
   {
     deptt: `ARUG`,
@@ -181,19 +155,17 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `6`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
     sem_elect: `2`,
-	course_code: `2AR113`,
+    course_code: `2AR113`,
     url: `./archi/AR113.docx`,
     course_title: `Architectural workshop`,
     l: `0`,
     t: `0`,
     p: `4`,
     credits: `1`,
-    
   },
   {
     deptt: `ARUG`,
@@ -205,9 +177,8 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `2`,
     credits: `3`,
-	
-   },
-{
+  },
+  {
     deptt: `ARUG`,
     sem_elect: `2`,
     course_code: `2AR115`,
@@ -217,10 +188,9 @@ export const ArchitectureCourse = [
     t: `1`,
     p: `0`,
     credits: `3`,
-	
-   },
+  },
 
-{
+  {
     deptt: `ARUG`,
     sem_elect: `2`,
     course_code: `2AR119`,
@@ -230,10 +200,9 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `0`,
-	
-   },
+  },
 
-{
+  {
     deptt: `ARUG`,
     sem_elect: `2`,
     course_code: `2GE105`,
@@ -243,7 +212,7 @@ export const ArchitectureCourse = [
     p: `1`,
     credits: `0`,
   },
- 
+
   {
     deptt: `ARUG`,
     sem_elect: `3`,
@@ -254,7 +223,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `6`,
     credits: `5`,
-    
   },
   {
     deptt: `ARUG`,
@@ -266,7 +234,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `4`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -278,7 +245,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `2`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -290,7 +256,6 @@ export const ArchitectureCourse = [
     t: `1`,
     p: `0`,
     credits: `2`,
-    
   },
   {
     deptt: `ARUG`,
@@ -302,7 +267,6 @@ export const ArchitectureCourse = [
     t: `1`,
     p: `0`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -314,9 +278,8 @@ export const ArchitectureCourse = [
     t: `1`,
     p: `0`,
     credits: `3`,
-	
-    },
-{
+  },
+  {
     deptt: `ARUG`,
     sem_elect: `3`,
     course_code: `3AR126`,
@@ -326,10 +289,9 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `4`,
     credits: `1`,
-	
-    },
+  },
 
-{
+  {
     deptt: `ARUG`,
     sem_elect: `3`,
     course_code: `3CH104`,
@@ -339,10 +301,9 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `3`,
-	
-},
+  },
 
-{
+  {
     deptt: `ARUG`,
     sem_elect: `3`,
     course_code: `3GE105`,
@@ -351,10 +312,9 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `1`,
     credits: `0`,
-    : `23`,
-},
-  
- {
+  },
+
+  {
     deptt: `ARUG`,
     sem_elect: `4`,
     course_code: `4AR131`,
@@ -364,7 +324,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `6`,
     credits: `5`,
-    
   },
   {
     deptt: `ARUG`,
@@ -376,7 +335,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `4`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -388,7 +346,6 @@ export const ArchitectureCourse = [
     t: `1`,
     p: `0`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -400,7 +357,6 @@ export const ArchitectureCourse = [
     t: `1`,
     p: `0`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -412,7 +368,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `1`,
     credits: `0`,
-    
   },
   {
     deptt: `ARUG`,
@@ -424,7 +379,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `3`,
     credits: `4`,
-    
   },
   {
     deptt: `ARUG`,
@@ -436,9 +390,8 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `3`,
-	
-    },
- {
+  },
+  {
     deptt: `ARUG`,
     sem_elect: `4`,
     course_code: `4CH105`,
@@ -447,10 +400,9 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `3`,
-	
-    },
+  },
 
- {
+  {
     deptt: `ARUG`,
     sem_elect: `4`,
     course_code: `GE105`,
@@ -460,7 +412,7 @@ export const ArchitectureCourse = [
     p: `1`,
     credits: `0`,
   },
-  
+
   {
     deptt: `ARUG`,
     sem_elect: `5`,
@@ -471,7 +423,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `6`,
     credits: `5`,
-    
   },
   {
     deptt: `ARUG`,
@@ -483,7 +434,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `4`,
     credits: `2`,
-    
   },
   {
     deptt: `ARUG`,
@@ -495,7 +445,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -507,7 +456,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -519,7 +467,6 @@ export const ArchitectureCourse = [
     t: `1`,
     p: `0`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -531,10 +478,9 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `3`,
-    
   },
-  
- {
+
+  {
     deptt: `ARUG`,
     sem_elect: `5`,
     course_code: `5CE203`,
@@ -544,8 +490,9 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `3`,
-	
-{
+  },
+
+  {
     deptt: `ARUG`,
     sem_elect: `5`,
     course_code: `GE105`,
@@ -555,7 +502,7 @@ export const ArchitectureCourse = [
     p: `3`,
     credits: `0`,
   },
-  
+
   {
     deptt: `ARUG`,
     sem_elect: `6`,
@@ -566,7 +513,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `6`,
     credits: `5`,
-    
   },
   {
     deptt: `ARUG`,
@@ -578,7 +524,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `4`,
     credits: `2`,
-    
   },
   {
     deptt: `ARUG`,
@@ -590,7 +535,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `2`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -602,7 +546,6 @@ export const ArchitectureCourse = [
     t: `1`,
     p: `0`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -614,7 +557,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -626,7 +568,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `2`,
-    
   },
   {
     deptt: `ARUG`,
@@ -638,7 +579,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `2`,
     credits: `1`,
-	
   },
   {
     deptt: `ARUG`,
@@ -650,9 +590,8 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `3`,
-	
-	},
-{
+  },
+  {
     deptt: `ARUG`,
     sem_elect: `6`,
     course_code: `GE106`,
@@ -673,7 +612,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `6`,
     credits: `5`,
-    
   },
   {
     deptt: `ARUG`,
@@ -685,7 +623,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `4`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -697,7 +634,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `2`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -709,7 +645,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `3`,
     credits: `4`,
-    
   },
   {
     deptt: `ARUG`,
@@ -721,7 +656,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -733,7 +667,7 @@ export const ArchitectureCourse = [
     p: `0`,
     credits: `3`,
   },
-  
+
   {
     deptt: `ARUG`,
     sem_elect: `8`,
@@ -744,7 +678,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `6`,
     credits: `5`,
-    
   },
   {
     deptt: `ARUG`,
@@ -756,7 +689,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `4`,
     credits: `2`,
-    
   },
   {
     deptt: `ARUG`,
@@ -768,7 +700,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `2`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -780,7 +711,6 @@ export const ArchitectureCourse = [
     t: `1`,
     p: `0`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -791,7 +721,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -803,7 +732,6 @@ export const ArchitectureCourse = [
     t: `1`,
     p: `0`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -814,9 +742,8 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `3`,
-    
   },
-   {
+  {
     deptt: `ARUG`,
     sem_elect: `8`,
     course_code: `GE107`,
@@ -826,7 +753,6 @@ export const ArchitectureCourse = [
     p: `0`,
     credits: `0`,
   },
-
 
   {
     deptt: `ARUG`,
@@ -838,9 +764,8 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `60`,
     credits: `20`,
-    : `20`,
   },
-  
+
   {
     deptt: `ARUG`,
     sem_elect: `10`,
@@ -850,8 +775,7 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `60`,
     credits: `20`,
-    
-},
+  },
   {
     deptt: `ARUG`,
     sem_elect: `10`,
@@ -862,9 +786,8 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `3`,
-    
-},
-	{
+  },
+  {
     deptt: `ARUG`,
     sem_elect: `10`,
     course_code: `AR2XX`,
@@ -873,8 +796,8 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `3`,
-},
-    
+  },
+
   {
     deptt: `ARUG`,
     sem_elect: `EL I`,
@@ -885,7 +808,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -897,7 +819,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -909,7 +830,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -921,7 +841,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -933,7 +852,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -945,7 +863,6 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `3`,
-    
   },
   {
     deptt: `ARUG`,
@@ -957,138 +874,127 @@ export const ArchitectureCourse = [
     t: `0`,
     p: `0`,
     credits: `3`,
-    
-  },
- {
-   deptt: `ARUG`,
-   sem_elect: `EL III`,
-   course_code: `AR214`,
-   url: `./archi/Ar214.docx`,
-   course_title: `Modular Co-ordination`,
-   l: `3`,
-   t: `0`,
-   p: `0`,
-   credits: `3`,
-   
-  },
-   {
-   deptt: `ARUG`,
-   sem_elect: `EL III`,
-   course_code: `AR215`,
-   url: `./archi/AR215.docx`,
-   course_title: `Facility planning and Specialized Building Design`,
-   l: `3`,
-   t: `0`,
-   p: `0`,
-   credits: `3`,
-   
-  },
-   {
-   deptt: `ARUG`,
-   sem_elect: `EL III`,
-   course_code: `AR221`,
-   url: `./archi/AR221.docx`,
-   course_title: `Interior Design`,
-   l: `3`,
-   t: `0`,
-   p: `0`,
-   credits: `3`,
-   
   },
   {
-   deptt: `ARUG`,
-   sem_elect: `EL III`,
-   course_code: `AR222`,
-   url: `./archi/AR222.docx`,
-   course_title: `Intelligent Buildings`,
-   l: `3`,
-   t: `0`,
-   p: `0`,
-   credits: `3`,
-   
+    deptt: `ARUG`,
+    sem_elect: `EL III`,
+    course_code: `AR214`,
+    url: `./archi/Ar214.docx`,
+    course_title: `Modular Co-ordination`,
+    l: `3`,
+    t: `0`,
+    p: `0`,
+    credits: `3`,
   },
   {
-   deptt: `ARUG`,
-   sem_elect: `EL III`,
-   course_code: `AR223`,
-   url: `./archi/AR223.docx`,
-   course_title: `Building Automation and Management System`,
-   l: `3`,
-   t: `0`,
-   p: `0`,
-   credits: `3`,
-   
+    deptt: `ARUG`,
+    sem_elect: `EL III`,
+    course_code: `AR215`,
+    url: `./archi/AR215.docx`,
+    course_title: `Facility planning and Specialized Building Design`,
+    l: `3`,
+    t: `0`,
+    p: `0`,
+    credits: `3`,
   },
   {
-   deptt: `ARUG`,
-   sem_elect: `EL III`,
-   course_code: `AR224`,
-   url: `./archi/AR224.docx`,
-   course_title: `Behavioral Studies in Architecture`,
-   l: `3`,
-   t: `0`,
-   p: `0`,
-   credits: `3`,
-   
+    deptt: `ARUG`,
+    sem_elect: `EL III`,
+    course_code: `AR221`,
+    url: `./archi/AR221.docx`,
+    course_title: `Interior Design`,
+    l: `3`,
+    t: `0`,
+    p: `0`,
+    credits: `3`,
   },
   {
-   deptt: `ARUG`,
-   sem_elect: `EL III`,
-   course_code: `AR225`,
-   url: `./archi/AR225.docx`,
-   course_title: `Ergonomics and Product Design`,
-   l: `3`,
-   t: `0`,
-   p: `0`,
-   credits: `3`,
-   
+    deptt: `ARUG`,
+    sem_elect: `EL III`,
+    course_code: `AR222`,
+    url: `./archi/AR222.docx`,
+    course_title: `Intelligent Buildings`,
+    l: `3`,
+    t: `0`,
+    p: `0`,
+    credits: `3`,
   },
   {
-   deptt: `ARUG`,
-   sem_elect: `EL IV`,
-   course_code: `AR231`,
-   url: `./archi/AR231.docx`,
-   course_title: `Energy Conscious Architecture`,
-   l: `3`,
-   t: `0`,
-   p: `0`,
-   credits: `3`,
-   
+    deptt: `ARUG`,
+    sem_elect: `EL III`,
+    course_code: `AR223`,
+    url: `./archi/AR223.docx`,
+    course_title: `Building Automation and Management System`,
+    l: `3`,
+    t: `0`,
+    p: `0`,
+    credits: `3`,
   },
   {
-   deptt: `ARUG`,
-   sem_elect: `EL IV`,
-   course_code: `AR232`,
-   url: `./archi/AR232.docx`,
-   course_title: `Appropriate Building Technology`,
-   l: `3`,
-   t: `0`,
-   p: `0`,
-   credits: `3`,
-   
+    deptt: `ARUG`,
+    sem_elect: `EL III`,
+    course_code: `AR224`,
+    url: `./archi/AR224.docx`,
+    course_title: `Behavioral Studies in Architecture`,
+    l: `3`,
+    t: `0`,
+    p: `0`,
+    credits: `3`,
   },
   {
-   deptt: `ARUG`,
-   sem_elect: `EL IV`,
-   course_code: `AR233`,
-   url: `./archi/AR233.docx`,
-   course_title: `Futuristic Architecture`,
-   l: `3`,
-   t: `0`,
-   p: `0`,
-   credits: `3`,
-   
+    deptt: `ARUG`,
+    sem_elect: `EL III`,
+    course_code: `AR225`,
+    url: `./archi/AR225.docx`,
+    course_title: `Ergonomics and Product Design`,
+    l: `3`,
+    t: `0`,
+    p: `0`,
+    credits: `3`,
   },
   {
-   deptt: `ARUG`,
-   sem_elect: `EL III`,
-   course_code: `AR234`,
-   url: `./archi/AR234.docx`,
-   course_title: `Marketing skill`,
-   l: `3`,
-   t: `0`,
-   p: `0`,
-   credits: `3`,
-   
+    deptt: `ARUG`,
+    sem_elect: `EL IV`,
+    course_code: `AR231`,
+    url: `./archi/AR231.docx`,
+    course_title: `Energy Conscious Architecture`,
+    l: `3`,
+    t: `0`,
+    p: `0`,
+    credits: `3`,
   },
- ]
+  {
+    deptt: `ARUG`,
+    sem_elect: `EL IV`,
+    course_code: `AR232`,
+    url: `./archi/AR232.docx`,
+    course_title: `Appropriate Building Technology`,
+    l: `3`,
+    t: `0`,
+    p: `0`,
+    credits: `3`,
+  },
+  {
+    deptt: `ARUG`,
+    sem_elect: `EL IV`,
+    course_code: `AR233`,
+    url: `./archi/AR233.docx`,
+    course_title: `Futuristic Architecture`,
+    l: `3`,
+    t: `0`,
+    p: `0`,
+    credits: `3`,
+  },
+  {
+    deptt: `ARUG`,
+    sem_elect: `EL III`,
+    course_code: `AR234`,
+    url: `./archi/AR234.docx`,
+    course_title: `Marketing skill`,
+    l: `3`,
+    t: `0`,
+    p: `0`,
+    credits: `3`,
+  },
+]
+export default ArchitectureCourse
