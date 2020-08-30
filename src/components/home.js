@@ -11,30 +11,25 @@ import { graphql, useStaticQuery } from "gatsby"
 const Home = () => {
   const data = useStaticQuery(graphql`
     {
-      allEvent {
-        totalCount
+      allUndefinedEventActive {
         edges {
           node {
-            id
-            parent {
-              id
-            }
-            timestamp
-            title
             attachments {
               caption
               url
             }
-          }
-        }
-      }
-      allNotice {
-        totalCount
-        edges {
-          node {
             timestamp
             title
             id
+          }
+        }
+      }
+      allUndefinedNoticeActive {
+        edges {
+          node {
+            id
+            timestamp
+            title
             attachments {
               caption
               url
@@ -75,7 +70,7 @@ const Home = () => {
             <p>view all</p>
           </div>
           <div className="notice-row" data-aos="fade-up">
-            {data.allNotice.edges.map((notice, i) => {
+            {data.allUndefinedNoticeActive.edges.map((notice, i) => {
               const item = notice.node
               const newtime = new Date().getTime()
 
@@ -100,7 +95,7 @@ const Home = () => {
             <p>view all</p>
           </div>
           <div className="event-row" data-aos="fade-up">
-            {data.allEvent.edges.map((event, i) => {
+            {data.allUndefinedEventActive.edges.map((event, i) => {
               const item = event.node
               const date = new Date(item.timestamp)
               const day = date.getDate()
