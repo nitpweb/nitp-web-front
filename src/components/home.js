@@ -11,7 +11,7 @@ import { graphql, useStaticQuery } from "gatsby"
 const Home = () => {
   const data = useStaticQuery(graphql`
     {
-      allUndefinedEventActive {
+      allNotice {
         edges {
           node {
             attachments {
@@ -24,7 +24,7 @@ const Home = () => {
           }
         }
       }
-      allUndefinedNoticeActive {
+      allEvent {
         edges {
           node {
             id
@@ -70,18 +70,20 @@ const Home = () => {
             <p>view all</p>
           </div>
           <div className="notice-row" data-aos="fade-up">
-            {data.allUndefinedNoticeActive.edges.map((notice, i) => {
+            {data.allNotice.edges.map((notice, i) => {
               const item = notice.node
               const newtime = new Date().getTime()
 
               const d = new Date(newtime - item.timestamp).getHours()
-              return (
-                <Notice
-                  detail={item.title}
-                  time={d}
-                  attachments={item.attachments}
-                />
-              )
+              if (item.title != "") {
+                return (
+                  <Notice
+                    detail={item.title}
+                    time={d}
+                    attachments={item.attachments}
+                  />
+                )
+              }
             })}
           </div>
         </div>
@@ -95,7 +97,7 @@ const Home = () => {
             <p>view all</p>
           </div>
           <div className="event-row" data-aos="fade-up">
-            {data.allUndefinedEventActive.edges.map((event, i) => {
+            {data.allEvent.edges.map((event, i) => {
               const item = event.node
               const date = new Date(item.timestamp)
               const day = date.getDate()
@@ -104,15 +106,17 @@ const Home = () => {
               const monthname = date
                 .toLocaleString("default", { month: "short" })
                 .toUpperCase()
-              return (
-                <Eventcard
-                  detail={item.title}
-                  time={`${day}-${month}-${year}`}
-                  date={day}
-                  month={monthname}
-                  attachments={item.attachments}
-                />
-              )
+              if (item.title != "") {
+                return (
+                  <Eventcard
+                    detail={item.title}
+                    time={`${day}-${month}-${year}`}
+                    date={day}
+                    month={monthname}
+                    attachments={item.attachments}
+                  />
+                )
+              }
             })}
           </div>
         </div>

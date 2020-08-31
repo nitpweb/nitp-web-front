@@ -28,15 +28,15 @@ module.exports = {
         icon: `src/assets/logo512.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: 'gatsby-source-multi-api',
-      options: {
-        apis: [{
-          baseUrl:"https://nitpadmin.herokuapp.com/api/",
-          endpoints:["notice/active","event/active","notice","event","event/archive","notice/archive"]
-        }],
-      },
-    },
+    // {
+    //   resolve: 'gatsby-source-multi-api',
+    //   options: {
+    //     apis: [{
+    //       baseUrl:"https://nitpadmin.herokuapp.com/api/",
+    //       endpoints:["notice/active","event/active","notice","event","event/archive","notice/archive"]
+    //     }],
+    //   },
+    // },
     `gatsby-plugin-styled-components`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
