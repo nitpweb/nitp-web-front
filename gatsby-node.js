@@ -6,7 +6,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
   const noticedummy = {
     id: "dummy",
     title: "",
-    timestamp: 0,
+    timestamp: 1598791602278,
     important: "",
     attachments: [{ caption: "", url: "" }],
   }
@@ -27,7 +27,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
   const eventdummy = {
     id: "dummy",
     title: "",
-    timestamp: 0,
+    timestamp: 1598791602278,
     attachments: [{ caption: "", url: "" }],
   }
   const eventdummyContent = JSON.stringify(eventdummy)
