@@ -1,7 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
 /.pnp
 .pnp.js
 /.cache
@@ -10,7 +9,6 @@
 /coverage
 
 # production
-/public
 
 # misc
 .DS_Store
@@ -24,3 +22,4 @@ yarn-debug.log*
 yarn-error.log*
 firebase.json
 .firebaserc
+node_modules
