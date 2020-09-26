@@ -46,7 +46,7 @@
   box-shadow: 7px 7px 26px rgba(207, 207, 207, 0.36);
   margin-left: 8vw;
   margin-bottom: 5vh;
-  border-radius: 33px;
+  border-radius: 3px;
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -66,7 +66,7 @@
   box-shadow: 7px 7px 26px rgba(207, 207, 207, 0.36);
   margin-left: 5vw;
   margin-bottom: 5vh;
-  border-radius: 33px;
+  border-radius: 3px;
   display: flex;
   justify-content: center;
   height: 700px;
@@ -102,7 +102,7 @@
   height: 52px;
   background: #ffffff;
   box-shadow: 7px 7px 26px rgba(207, 207, 207, 0.39);
-  border-radius: 16px;
+  border-radius: 2px;
   margin-left: 8vw;
   margin-bottom: -26px;
   z-index: 2;
@@ -167,7 +167,7 @@
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE 10+ */
   display: flex;
-  border-radius: 20px;
+  border-radius: 5px;
   background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 6.98%);
 }
 @media (min-width: 768px) {

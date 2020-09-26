@@ -6,6 +6,7 @@
     border-radius: 5px;
     margin-top: 20px;
     display: flex;
+    align-items: center;
     max-height: 110px;
 }
 .eventcarddetailsection{
@@ -17,7 +18,9 @@
     min-width: 77px;
     min-height: 80px;
     max-height: 80px;
+    border-radius: 2px;
     max-width: 77px;
+    background-color: #cd5a2f;
 }
 .eventdtdiv > img{
 position: absolute;
@@ -36,7 +39,7 @@ z-index: 0;
 }
 #eventdate > p {
     position: relative;
-    color: #cd5a2f;
+    color: #fff;
     font-size: 36px;
     line-height: 0;
     font-family: "Source Sans Pro";

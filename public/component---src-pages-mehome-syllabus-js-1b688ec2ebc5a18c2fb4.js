@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[30],{wplw:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),l=t.n(a),r=t("xVFz"),u=t("vrFN"),c=t("hI39");n.default=function(){return l.a.createElement(r.a,null,l.a.createElement(u.a,{title:"ME|Syllabus"}),l.a.createElement(c.a,null))}}}]);
-//# sourceMappingURL=component---src-pages-mehome-syllabus-js-1b688ec2ebc5a18c2fb4.js.map

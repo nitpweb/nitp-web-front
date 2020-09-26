@@ -6,7 +6,7 @@
   overflow: hidden;
   box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.28);
   margin-left: 40px;
-  border-radius: 20px;
+  border-radius: 2px;
 }
 .card-img {
   height: 60%;
@@ -19,7 +19,7 @@
   margin-top: -15px;
   margin-right: 13px;
   background: #cd5a2f;
-  border-radius: 11px;
+  border-radius: 3px;
   color: white;
   font-size: 0.8em;
   display: flex;

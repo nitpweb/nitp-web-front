@@ -18,9 +18,9 @@ import sidedropicon from "./home/img/dropdown.svg"
 const Depnavbar = () => {
   const pathname = window.location.pathname.split("/")[1]
   window.onscroll = function () {
-    scrollFunction()
+    scrollF()
   }
-  function scrollFunction() {
+  function scrollF() {
     if (
       document.body.scrollTop > 80 ||
       document.documentElement.scrollTop > 80
