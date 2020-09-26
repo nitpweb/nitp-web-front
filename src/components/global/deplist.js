@@ -10,6 +10,7 @@ const Deplist = {
   physicshome: "Physics",
   mathhome: "Mathematics",
   eehome: "Electrical Engineering",
+  mehome:"Mechanical Engineering"
 }
 
 export default Deplist

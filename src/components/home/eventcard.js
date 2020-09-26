@@ -1,5 +1,4 @@
 import React from "react"
-import cal from "./img/calendar.svg"
 import "./css/eventcard.css"
 import eventclock from "./img/eventclock.svg"
 import eventlocation from "./img/eventlocation.svg"
@@ -8,7 +7,6 @@ const Eventcard = props => {
   return (
     <div className="eventcardwrap">
       <div className="eventdtdiv">
-        <img src={cal} alt="calendar" loading="lazy" />
         <div id="eventmonth">
           <p>{props.month}</p>
         </div>
