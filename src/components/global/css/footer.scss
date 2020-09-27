@@ -21,18 +21,20 @@
 }
 .foot-col-3 {
   width: 33%;
+  h1 {
+    color: #fff;
+  }
+  a {
+    text-decoration: none;
+    color: #cd5a2f;
+    line-height: 1;
+  }
 }
-.foot-col-3 > h1 {
-  color: #fff;
-}
+
 .footsec > .foot-col-3 {
   width: 50%;
 }
-.foot-col-3 > a {
-  text-decoration: none;
-  color: #cd5a2f;
-  line-height: 1;
-}
+
 .footsec {
   display: flex;
   width: 66%;
@@ -44,40 +46,53 @@
   width: 100%;
   font-family: "Source Sans Pro";
   color: #2d2d2d;
-}
-.footdetail > p {
-  font-weight: bolder;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
-}
-@media(max-width:1500px){
-  .foot-col-3 > h1 {
-    font-size: 1.5rem;
-  }
-  .foot-col-3>a>h3{
-    font-size: 1.2rem;
-  }
-  .foot-col-4>h1{
-    font-size: 1.5rem;
-  }
-  .foot-col-4>h3{
-    font-size: 1.2rem;
+  p {
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
   }
 }
-@media(max-width:1000px){
-  .foot-col-3 > h1 {
-    font-size: 1rem;
+
+@media (max-width: 1500px) {
+  .foot-col-3 {
+    h1 {
+      font-size: 1.5rem;
+    }
+    a {
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
   }
-  .foot-col-3>a>h3{
-    font-size: 0.8rem;
+  .foot-col-4 {
+    h1 {
+      font-size: 1.5rem;
+    }
+    h3 {
+      font-size: 1.2rem;
+    }
   }
-  .foot-col-4>h1{
-    font-size: 1rem;
+}
+@media (max-width: 1000px) {
+  .foot-col-3 {
+    h1 {
+      font-size: 1rem;
+    }
+    a {
+      h3 {
+        font-size: 0.8rem;
+      }
+    }
   }
-  .foot-col-4>h3{
-    font-size: 0.8rem;
+  .foot-col-4 {
+    h1 {
+      font-size: 1rem;
+    }
+    h3 {
+      font-size: 0.8rem;
+    }
   }
 }
 @media (max-width: 768px) {
@@ -98,28 +113,28 @@
   .foot-col-4 {
     width: 100%;
     padding-left: 5%;
+    h1 {
+      font-size: 1rem;
+    }
+    h3 {
+      font-size: 0.8rem;
+    }
   }
-  .foot-col-4 > h1 {
-    font-size: 1rem;
-  }
-  .foot-col-4 > h3 {
-    font-size: 0.8rem;
-  }
-  .foot-col-3 > h1 {
-    font-size: 1rem;
-  }
-  .foot-col-3 > a {
-    font-size: 0.8rem;
-  }
+
   .footsec {
     width: 100%;
+    .foot-col-3 {
+      width: 45%;
+
+      h1 {
+        font-size: 1rem;
+      }
+      a {
+        font-size: 0.8rem;
+      }
+    }
   }
-  .foot-col-3 {
-    width: 45%;
-  }
-  .footsec > .foot-col-3 {
-    width: 45%;
-  }
+
   .foot-col-8 {
     width: 100%;
   }
