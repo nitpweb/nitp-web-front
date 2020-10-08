@@ -46,7 +46,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
   createNode(eventdummynode)
   const fetchNotice = () => {
     axios
-      .get(`https://nitpadmin.herokuapp.com/api/notice/active`)
+      .get(`https://nitpadmin.herokuapp.com/api/notice`)
       .then(res => {
         // map into these results and create nodes
         res.data.map((notice, i) => {
