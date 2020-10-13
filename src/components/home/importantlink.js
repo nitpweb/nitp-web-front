@@ -7,6 +7,7 @@ import josaa from "./img/josaa.svg"
 import asme from "./img/asme.svg"
 import teqip from "./img/teqip.svg"
 import chanakya from "./img/chanakya.svg"
+import firstyear from "./img/firstyear.svg"
 
 const Importantlink = () => {
   return (
@@ -56,10 +57,10 @@ const Importantlink = () => {
             <h3>IEEE</h3>
           </div>
         </a>
-        <a href="https://tcfnitp.tech/">
+        <a href="http://www.nitp.ac.in/uploads/Orientation_Programe_2018.pdf">
           <div data-aos="zoom-in" data-aos-duration="200" className="implink">
-            <img className="linkimg" src={chanakya} alt="chanakya" />
-            <h3>CHANAKYA</h3>
+            <img className="linkimg" src={firstyear} alt="chanakya" />
+            <h3>First Year</h3>
           </div>
         </a>
       </div>
