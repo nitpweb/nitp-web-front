@@ -31,30 +31,18 @@ const Importantlink = () => {
             <h3>NSS</h3>
           </div>
         </a>
+      </div>
+      <div className="link-col">
         <a href="https://josaa.nic.in/webinfocms/Public/home.aspx">
           <div data-aos="zoom-in" data-aos-duration="200" className="implink">
             <img className="linkimg" src={josaa} alt="josaa" />
             <h3>JOSAA</h3>
           </div>
         </a>
-      </div>
-      <div className="link-col">
-        <a href="http://www.nitp.ac.in/asme/index.html">
-          <div data-aos="zoom-in" data-aos-duration="200" className="implink">
-            <img className="linkimg" src={asme} alt="asme" />
-            <h3>ASME</h3>
-          </div>
-        </a>
         <a href="https://www.teqip.in/">
           <div data-aos="zoom-in" data-aos-duration="200" className="implink">
             <img className="linkimg" src={teqip} alt="teqip" />
             <h3>TEQIP</h3>
-          </div>
-        </a>
-        <a href="http://ieee.nitp.ac.in/new/index.html">
-          <div data-aos="zoom-in" data-aos-duration="200" className="implink">
-            <img className="linkimg" src={ieee} alt="ieee" />
-            <h3>IEEE</h3>
           </div>
         </a>
         <a href="http://www.nitp.ac.in/uploads/Orientation_Programe_2018.pdf">
