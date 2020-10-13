@@ -14,13 +14,13 @@
   width: 50%;
   display: flex;
   height: 100%;
-  justify-content: center;
+  justify-content: space-around;
   padding-top: 2vh;
   padding-bottom: 2vh;
 }
 .implink {
-  width: 10vw;
-  height: 10vw;
+  width: 12vw;
+  height: 12vw;
   background: #ffffff;
   box-shadow: 7px 7px 26px rgba(207, 207, 207, 0.36);
   border-radius:5px;
