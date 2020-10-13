@@ -7,7 +7,6 @@ import Notice from "./home/notice"
 import Eventcard from "./home/eventcard"
 import { Nitpbackimg } from "./home/nitpimg"
 import { Noticelist } from "./home/noticelist"
-import { graphql, useStaticQuery } from "gatsby"
 
 class Home extends React.Component {
   constructor(props){
@@ -27,14 +26,12 @@ class Home extends React.Component {
     {
       const event=res.data;
       this.setState({events:event});
-      console.log(event)
     }).catch(e=>{console.log(e)});
     axios
       .get(noticesUrl)
       .then(res => {
         const notice = res.data
         this.setState({ notices: notice })
-        console.log(notice);
       })
       .catch(e => {
         console.log(e)
@@ -60,7 +57,7 @@ class Home extends React.Component {
             <a href="#news">News</a>
           </div>
         </div>
-        <Importantlink />
+         <Importantlink /> 
         <div className="noticewrap" id="notice">
           <div>
             <div
