@@ -1,7 +1,7 @@
 import React from "react"
 import Table from "../../table"
 import Course from "./Architecture CourseStructure"
-import main from "../img/main.png"
+import main from "../img/book.svg"
 
 const Archsyllabus = props => {
   return (
