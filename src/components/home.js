@@ -9,24 +9,26 @@ import { Nitpbackimg } from "./home/nitpimg"
 import { Noticelist } from "./home/noticelist"
 
 class Home extends React.Component {
-  constructor(props){
-    super(props);
+  constructor(props) {
+    super(props)
     this.state = {
-       events: [],
-       notices: [],
-     }
+      events: [],
+      notices: [],
+    }
   }
- 
 
-  
-  componentDidMount(){
-    let eventsUrl=`https://nitpadmin.herokuapp.com/api/event`;
-    let noticesUrl = `https://nitpadmin.herokuapp.com/api/notice`;
-    axios.get(eventsUrl).then(res=>
-    {
-      const event=res.data;
-      this.setState({events:event});
-    }).catch(e=>{console.log(e)});
+  componentDidMount() {
+    let eventsUrl = `http://beta.nitp.ac.in:3000/api/event`
+    let noticesUrl = `http://beta.nitp.ac.in:3000/api/notice`
+    axios
+      .get(eventsUrl)
+      .then(res => {
+        const event = res.data
+        this.setState({ events: event })
+      })
+      .catch(e => {
+        console.log(e)
+      })
     axios
       .get(noticesUrl)
       .then(res => {
@@ -57,7 +59,7 @@ class Home extends React.Component {
             <a href="#news">News</a>
           </div>
         </div>
-         <Importantlink /> 
+        <Importantlink />
         <div className="noticewrap" id="notice">
           <div>
             <div
@@ -69,10 +71,19 @@ class Home extends React.Component {
               <p>view all</p>
             </div>
             <div className="notice-row" data-aos="fade-up">
-              {this.state.notices.map((notice) => {
+              {this.state.notices.map(notice => {
                 const newtime = new Date().getTime()
 
-                const d = new Date(newtime - notice.timestamp).getHours()
+                let d = Math.round((newtime - notice.timestamp) / 3600000)
+                if (d > 24) {
+                  d = `${Math.round(d / 24)} days ago`
+                } else if (d < 1) {
+                  d = `Just now`
+                } else if (d < 2) {
+                  d = `${d} hour ago`
+                } else {
+                  d = `${d} hours ago`
+                }
                 if (notice.title != "") {
                   return (
                     <Notice
@@ -95,7 +106,7 @@ class Home extends React.Component {
               <p>view all</p>
             </div>
             <div className="event-row" data-aos="fade-up">
-              {this.state.events.map((event) => {
+              {this.state.events.map(event => {
                 const date = new Date(event.timestamp)
                 const day = date.getDate()
                 const month = date.getMonth()
@@ -111,6 +122,7 @@ class Home extends React.Component {
                       date={day}
                       month={monthname}
                       attachments={event.attachments}
+                      location={event.venue}
                     />
                   )
                 }
