@@ -1,7 +1,7 @@
 import React from "react"
 import Table from "../../table"
 import Course from "./Mech BTech CourseStructure"
-import main from "../img/main.png"
+import main from "../img/book.svg"
 
 const Mesyllabus = props => {
   return (
