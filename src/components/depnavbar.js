@@ -166,10 +166,15 @@ const Depnavbar = () => {
         </div>
         <div className="dep-nav-row">
           <div className="dep-nav-col">{Deplist[pathname]}</div>
-          <div style={{ width: `20%` }}></div>
+          <div style={{ width: `30%` }}></div>
           <div className="dep-nav-col">
             <Link to={`/${pathname}/syllabus`} className="dep-link-item">
               Syllabus
+            </Link>
+          </div>
+          <div className="dep-nav-col">
+            <Link to={`/${pathname}/faculty`} className="dep-link-item">
+              Faculty
             </Link>
           </div>
         </div>

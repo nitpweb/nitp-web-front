@@ -12,10 +12,16 @@ const Acadnotice = props => {
             <p className="acadt">{props.time}</p>
           </div>
           <div>
-            <img id="acaddownimg" src={downimg} alt="c" />
-            <a className="acaddown" href={props.url}>
-              Download
-            </a>
+            {props.attachments.map(elem => {
+              return (
+                <>
+                  <img id="acaddownimg" src={downimg} alt="c" />
+                  <a className="acaddown" href={elem.url} target="blank">
+                    {elem.caption}
+                  </a>
+                </>
+              )
+            })}
           </div>
         </div>
       </div>
@@ -33,10 +39,16 @@ export const Acadnoticeb = props => {
             <p className="acadt">{props.time}</p>
           </div>
           <div>
-            <img id="acaddownimg" src={downimg} alt="c" />
-            <a className="acaddown" href={props.url}>
-              Download
-            </a>
+            {props.attachments.map(elem => {
+              return (
+                <>
+                  <img id="acaddownimg" src={downimg} alt="c" />
+                  <a className="acaddown" href={elem.url} target="blank">
+                    {elem.caption}
+                  </a>
+                </>
+              )
+            })}
           </div>
         </div>
       </div>

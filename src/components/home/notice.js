@@ -8,7 +8,7 @@ const Notice = props => {
         <p className="noticecarddetail">{props.detail}</p>
         <div id="notdate">
           <div>
-            <p className="notet">{props.time} hours ago</p>
+            <p className="notet">{props.time}</p>
           </div>
           <div>
             {props.attachments.map(elem => {

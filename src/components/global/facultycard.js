@@ -1,27 +1,32 @@
 import React from "react"
 import newspic from "../home/img/image 2.png"
 import "./css/facultycard.scss"
-const Facultycard=()=>{
-return (
-  <>
-    <div className="facultycard">
-      <div className="faculty1">
-        <p className="extn">Extn:225</p>
-        <div className="row fimg">
-          <img src={newspic} alt="" />
-          <h1>Abhay Kumar</h1>
-          <h2>Assistant Professor</h2>
-          <p>abhay.kumar@nitp.ac.in</p>
+const Facultycard = props => {
+  let faculty = []
+  if (props.research != null) {
+    faculty = props.research.split(",")
+  }
+
+  return (
+    <>
+      <div className="facultycard">
+        <div className="faculty1">
+          <p className="extn">Extn:{props.extn}</p>
+          <div className="row fimg">
+            <img src={props.image} alt="" />
+            <h1>{props.name}</h1>
+            <h2>{props.desg}</h2>
+            <p>{props.email}</p>
+          </div>
+        </div>
+        <div className="faculty2">
+          <p>Research Interests:-</p>
+          {faculty.map(item => {
+            return <p>{item}</p>
+          })}
         </div>
       </div>
-      <div className="faculty2">
-        <p>Computer</p>
-        <p>IOT</p>
-        <p>AI</p>
-        <p>ML</p>
-      </div>
-    </div>
-  </>
-)
+    </>
+  )
 }
 export default Facultycard
