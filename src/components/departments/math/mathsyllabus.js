@@ -1,6 +1,7 @@
 import React from "react"
 import Table from "../../table"
 import Course from "./math course array"
+import Elect from "./math elective array"
 import main from "../img/book.svg"
 
 const Mathsyllabus = props => {
