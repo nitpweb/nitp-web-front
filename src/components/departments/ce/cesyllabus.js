@@ -3,7 +3,7 @@ import Table from "../../table"
 import Course from "./Civil BTech CourseStructure"
 import Cephd from "./cephd"
 import Cemtech from "./cemtech"
-import main from "../img/main.png"
+import main from "../img/book.svg"
 
 const Cesyllabus = props => {
   return (
