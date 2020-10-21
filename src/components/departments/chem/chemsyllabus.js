@@ -2,7 +2,7 @@ import React from "react"
 import Table from "../../table"
 import Courseelect from "./Chem IMSc Electives"
 import Course from "./Chem IMSc CourseStructure"
-import main from "../img/main.png"
+import main from "../img/book.svg"
 
 const Csesyllabus = props => {
   return (
