@@ -7,7 +7,7 @@
 .cache/
 # testing
 /coverage
-
+public
 # production
 
 # misc
