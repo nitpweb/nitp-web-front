@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[34],{V8Ay:function(t,e,n){"use strict";n.r(e);var a=n("nKUr"),r=(n("q1tI"),n("xVFz")),c=n("vrFN"),s=n("EG3k");e.default=function(t){var e=t.location;return e.state?Object(a.jsxs)(r.a,{children:[Object(a.jsx)(c.a,{title:"EE|Faculty Profile"}),Object(a.jsx)(s.a,{url:e.state.url})]}):null}}}]);
+//# sourceMappingURL=component---src-pages-eehome-facultyprofile-js-d29da01c1a5e6f6f11a4.js.map

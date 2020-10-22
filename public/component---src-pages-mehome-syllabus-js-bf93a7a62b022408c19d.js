@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[51],{wplw:function(t,n,e){"use strict";e.r(n);var s=e("nKUr"),c=(e("q1tI"),e("xVFz")),a=e("vrFN"),r=e("hI39");n.default=function(){return Object(s.jsxs)(c.a,{children:[Object(s.jsx)(a.a,{title:"ME|Syllabus"}),Object(s.jsx)(r.a,{})]})}}}]);
+//# sourceMappingURL=component---src-pages-mehome-syllabus-js-bf93a7a62b022408c19d.js.map

@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[45],{IZ5P:function(t,a,e){"use strict";e.r(a);var n=e("nKUr"),r=(e("q1tI"),e("xVFz")),c=e("vrFN"),s=e("EG3k");a.default=function(t){var a=t.location;return a.state?Object(n.jsxs)(r.a,{children:[Object(n.jsx)(c.a,{title:"Math|Faculty Profile"}),Object(n.jsx)(s.a,{url:a.state.url})]}):null}}}]);
+//# sourceMappingURL=component---src-pages-mathhome-facultyprofile-js-608debfa3f10e1436337.js.map
