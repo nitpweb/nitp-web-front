@@ -5,7 +5,7 @@ import Archfaculty from "../../components/departments/arch/archfaculty"
 
 const Archfacultypage = () => (
   <Deplayout>
-    <SEO title="CSE|Faculty" />
+    <SEO title="Architecture|Faculty" />
     <Archfaculty />
   </Deplayout>
 )
