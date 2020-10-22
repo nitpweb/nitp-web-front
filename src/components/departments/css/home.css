@@ -88,3 +88,9 @@
   font-size:1rem;
 }
 }
+#depnoticewrap{
+  height: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
