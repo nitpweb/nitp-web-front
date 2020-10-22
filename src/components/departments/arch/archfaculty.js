@@ -18,7 +18,6 @@ class Archfacultypage extends React.Component {
       .then(res => {
         const faculty = res.data.faculties
         this.setState({ faculties: faculty })
-        console.log(this.state.faculties)
       })
       .catch(e => {
         console.log(e)
@@ -59,6 +58,7 @@ class Archfacultypage extends React.Component {
                   name={faculty.name}
                   email={faculty.email}
                   extn={faculty.ext_no}
+                  id={faculty.id}
                   research={faculty.research_interest}
                   image={`${domainUrl}/${faculty.imgUrl}`}
                 />
