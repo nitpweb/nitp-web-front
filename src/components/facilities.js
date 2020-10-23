@@ -10,7 +10,8 @@ import "./facilities/css/facilities.css"
 import Facilitymain from "./facilities/img/facilitymainimg"
 import Ccimg from "./facilities/img/ccimg"
 import Dummyimg from "./facilities/img/dummy"
-
+import FLoatmenu from "./facilities/floatmenu"
+import Floatmenu from "./facilities/floatmenu"
 const ccdetail =
   "A state-of-the-art Computer Centre started its operation on 27th November 2011. It serves as the central computing facility for the students, research scholars and teachers of the institute. The Centre is well equipped with modern Computers (190 in number), air conditioned labs and stabilized uninterrupted power supply among the other facilities. The Centre has seven labs for all the students and one lab exclusively for PhD scholars of the institute. All labs are equipped with IP cameras to monitor the activities remotely. The Centre has 1 Gbps, 24x7 internet connectivity on optical fiber under National Knowledge Network, Govt. of India.The Centre also has a Virtual Class Room and Desktop VideoConferencing facility. It operates from 8:30 AM to 5:30 PM."
 const libdetail =
@@ -36,7 +37,8 @@ const emudetail =
 const Facilitiespage = () => {
   return (
     <div className="facilities">
-      <div className="facilityrow facilityrowmain">
+      <Floatmenu />
+      <div className="facilityrow facilityrowmain" id="home">
         <div className="col-6 imgcolstyle">
           <div className="row rowmarl3">
             <h1 data-aos="zoom-in-right">Facilities</h1>
@@ -46,7 +48,7 @@ const Facilitiespage = () => {
           <Facilitymain />
         </div>
       </div>
-      <div className="facilityrow facilityrow1">
+      <div className="facilityrow facilityrow1" id="cc">
         <div className="col-6 imgcolstyle">
           <Ccimg />
         </div>
@@ -59,7 +61,7 @@ const Facilitiespage = () => {
           </div>
         </div>
       </div>
-      <div className="facilityrow">
+      <div className="facilityrow" id="lib">
         <div className="col-6">
           <div className="row rowmarl3">
             <h1 data-aos="zoom-in-right">Library</h1>
@@ -132,7 +134,7 @@ const Facilitiespage = () => {
           <Dummyimg />
         </div>
       </div>
-      <div className="facilityrow facilityrow1">
+      <div className="facilityrow facilityrow1" id="med">
         <div className="col-6 imgcolstyle">
           <Dummyimg />
         </div>
@@ -178,7 +180,7 @@ const Facilitiespage = () => {
           </div>
         </div>
       </div>
-      <div className="facilityrow">
+      <div className="facilityrow" id="sport">
         <div className="col-6">
           <div className="row rowmarl3">
             <h1 data-aos="zoom-in-right">Sport Facilities</h1>
@@ -191,7 +193,7 @@ const Facilitiespage = () => {
           <Dummyimg />
         </div>
       </div>
-      <div className="facilityrow facilityrow1">
+      <div className="facilityrow facilityrow1" id="hostel">
         <div className="col-6 imgcolstyle">
           <Dummyimg />
         </div>
@@ -204,7 +206,7 @@ const Facilitiespage = () => {
           </div>
         </div>
       </div>
-      <div className="facilityrow">
+      <div className="facilityrow" id="lab">
         <div className="col-6">
           <div className="row rowmarl3">
             <h1 data-aos="zoom-in-right">Laboratories</h1>
@@ -238,7 +240,7 @@ const Facilitiespage = () => {
           <Dummyimg />
         </div>
       </div>
-      <div className="facilityrow facilityrow1">
+      <div className="facilityrow facilityrow1" id="wifi">
         <div className="col-6 imgcolstyle">
           <img
             data-aos="zoom-in"
@@ -256,7 +258,7 @@ const Facilitiespage = () => {
           </div>
         </div>
       </div>
-      <div className="facilityrow">
+      <div className="facilityrow" id="bank">
         <div className="col-6">
           <div className="row rowmarl3">
             <h1 data-aos="zoom-in-right">Bank</h1>
@@ -274,7 +276,7 @@ const Facilitiespage = () => {
           />
         </div>
       </div>
-      <div className="facilityrow facilityrow1">
+      <div className="facilityrow facilityrow1" id="security">
         <div className="col-6 imgcolstyle">
           <img
             data-aos="zoom-in"
@@ -292,7 +294,7 @@ const Facilitiespage = () => {
           </div>
         </div>
       </div>
-      <div className="facilityrow">
+      <div className="facilityrow" id="wc">
         <div className="col-6">
           <div className="row rowmarl3">
             <h1 data-aos="zoom-in-right">Woman Cell</h1>
@@ -310,7 +312,7 @@ const Facilitiespage = () => {
           />
         </div>
       </div>
-      <div className="facilityrow facilityrow1">
+      <div className="facilityrow facilityrow1" id="electric">
         <div className="col-6 imgcolstyle">
           <img
             data-aos="zoom-in"
