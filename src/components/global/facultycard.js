@@ -19,8 +19,8 @@ class Facultycard extends React.Component {
             <p className="extn">Extn:{this.props.extn}</p>
             <div className="row fimg">
               <img src={this.props.image} alt="" />
-              <h1>{this.props.name}</h1>
-              <h2>{this.props.desg}</h2>
+              <h2>{this.props.name}</h2>
+              <h3>{this.props.desg}</h3>
               <p>{this.props.email}</p>
             </div>
           </div>

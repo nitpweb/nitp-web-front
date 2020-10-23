@@ -9,9 +9,6 @@ const Depnotice = props => {
         <p className="depcarddetail">{props.detail}</p>
         <div id="depnotdate">
           <div>
-            <p className="dept">{props.time}</p>
-          </div>
-          <div>
             {props.attachments.map(elem => {
               return (
                 <>
@@ -22,6 +19,9 @@ const Depnotice = props => {
                 </>
               )
             })}
+          </div>
+          <div>
+            <p className="dept">{props.time}</p>
           </div>
         </div>
       </div>

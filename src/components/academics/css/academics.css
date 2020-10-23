@@ -11,6 +11,7 @@
 #acadnoticewrap{
   height: 400px;
   overflow: hidden;
+  min-width: 80%;
   overflow-y: scroll;
   scrollbar-width: none;
 }

@@ -7,7 +7,7 @@ const Mathfacultyprofilepage = ({ location }) => {
   if (location.state) {
     return (
       <Deplayout>
-        <SEO title="Math|Faculty Profile" />
+        <SEO title="Mathematics|Faculty Profile" />
         <Mathfacultyprofile url={location.state.url} />
       </Deplayout>
     )

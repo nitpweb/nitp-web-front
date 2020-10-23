@@ -60,6 +60,7 @@ class Eefacultypage extends React.Component {
                   id={faculty.id}
                   research={faculty.research_interest}
                   image={`${domainUrl}/${faculty.imgUrl}`}
+                  desg={faculty.designation}
                 />
               )
             })}

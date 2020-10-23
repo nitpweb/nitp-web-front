@@ -9,9 +9,6 @@ const Acadnotice = props => {
         <p className="acadcarddetail">{props.detail}</p>
         <div id="acadnotdate">
           <div>
-            <p className="acadt">{props.time}</p>
-          </div>
-          <div>
             {props.attachments.map(elem => {
               return (
                 <>
@@ -22,6 +19,9 @@ const Acadnotice = props => {
                 </>
               )
             })}
+          </div>
+          <div>
+            <p className="acadt">{props.time}</p>
           </div>
         </div>
       </div>
@@ -36,9 +36,6 @@ export const Acadnoticeb = props => {
         <p className="acadcarddetail">{props.detail}</p>
         <div id="acadnotdate">
           <div>
-            <p className="acadt">{props.time}</p>
-          </div>
-          <div>
             {props.attachments.map(elem => {
               return (
                 <>
@@ -49,6 +46,9 @@ export const Acadnoticeb = props => {
                 </>
               )
             })}
+          </div>
+          <div>
+            <p className="acadt">{props.time}</p>
           </div>
         </div>
       </div>

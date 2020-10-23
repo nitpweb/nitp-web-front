@@ -9,8 +9,8 @@
   .faculty1 {
     width: 320px;
     height: 380px;
-    position:absolute;
-    z-index:1;
+    position: absolute;
+    z-index: 1;
   }
   .faculty2 {
     width: 320px;
@@ -27,9 +27,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    p{
-      font-size:18px;
-      font-family: 'Source Sans Pro';
+    p {
+      font-size: 18px;
+      font-family: "Source Sans Pro";
       font-weight: bold;
       line-height: 0.1;
     }
@@ -54,7 +54,7 @@
     width: 126px;
     height: 126px;
   }
-  h2 {
+  h3 {
     color: #4e4e4e;
     line-height: 0.1;
   }

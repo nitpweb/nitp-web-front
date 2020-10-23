@@ -5,7 +5,7 @@ import Mathfaculty from "../../components/departments/math/mathfaculty"
 
 const Mathfacultypage = () => (
   <Deplayout>
-    <SEO title="HSS|Faculty" />
+    <SEO title="Mathematics|Faculty" />
     <Mathfaculty />
   </Deplayout>
 )
