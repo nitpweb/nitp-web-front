@@ -31,7 +31,7 @@ class Chemhomepage extends React.Component {
     return (
       <div className="depsection">
         <Floatmenu />
-        <div className="dmainrow dmainrowmain">
+        <div className="dmainrow dmainrowmain" id="home">
           <div className="col-6">
             <div className="row">
               <h1 data-aos="zoom-in-right">Chemistry Department</h1>

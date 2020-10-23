@@ -3,11 +3,12 @@ import adminpic from "./administration/img/main.svg"
 import Adcard from "./administration/adcard"
 import "./administration/css/administration.css"
 import { Deansinfo, BOD, BWC, IDC, FC } from "./administration/const"
-
+import Floatmenu from "./administration/floatmenu"
 const Administrationpage = () => {
   return (
     <div className="adminsection">
-      <div className="admainrow admainrowmain">
+      <Floatmenu />
+      <div className="admainrow admainrowmain" id="home">
         <div className="col-6">
           <div className="row rowmarl3">
             <h1 data-aos="zoom-in-right">Administration</h1>
@@ -33,7 +34,7 @@ const Administrationpage = () => {
           />
         </div>
       </div>
-      <div className="admainrow addeanrow">
+      <div className="admainrow addeanrow" id="dean">
         <div className="row rowmarl3">
           <h1 data-aos="zoom-in-right">Deans</h1>
         </div>
@@ -47,7 +48,7 @@ const Administrationpage = () => {
           </div>
         ))}
       </div>
-      <div className="admainrow addeanrow">
+      <div className="admainrow addeanrow" id="bod">
         <div className="row rowmarl3">
           <h1 data-aos="zoom-in-right">Board of Directors</h1>
         </div>
@@ -61,7 +62,7 @@ const Administrationpage = () => {
           </div>
         ))}
       </div>
-      <div className="admainrow addeanrow">
+      <div className="admainrow addeanrow" id="bwc">
         <div className="row rowmarl3">
           <h1 data-aos="zoom-in-right">Building and Works Committee</h1>
         </div>
@@ -75,9 +76,9 @@ const Administrationpage = () => {
           </div>
         ))}
       </div>
-      <div className="admainrow addeanrow">
+      <div className="admainrow addeanrow" id="idc">
         <div className="row rowmarl3">
-          <h1 data-aos="zoom-in-right">Institute Disciplinary Committeee</h1>
+          <h1 data-aos="zoom-in-right">Institute Disciplinary Committee</h1>
         </div>
         {IDC.map(item => (
           <div className="col-4">
@@ -89,7 +90,7 @@ const Administrationpage = () => {
           </div>
         ))}
       </div>
-      <div className="admainrow addeanrow">
+      <div className="admainrow addeanrow" id="fc">
         <div className="row rowmarl3">
           <h1 data-aos="zoom-in-right">Finance Committee</h1>
         </div>

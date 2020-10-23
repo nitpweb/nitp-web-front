@@ -6,6 +6,7 @@ import first from "./student/img/firstyear.svg"
 import antiragging from "./student/img/antiragging.svg"
 import Coronapic from "./student/img/coronapic"
 import Sacimg from "./student/img/sacpic"
+import Floatmenu from "./student/floatmenu"
 
 const sacinfo =
   "The Student Activity Centre (SAC) was built with the vision to provide support for multiple kinds of student activities. It was initiated by the honorable Director of NIT Patna, Prof. Asok De to encourage participation in extra-curricular activities to promote overall grooming of personality of the students. Various cultural activities and indoor games are conducted in the SAC. This enormous building has numerous rooms each of which is dedicated to activities related to sports and extra-curricular activities. Student offices for the same are also hosted in the SAC. Also, many open spaces have been specifically designed in the SAC to promote community interaction. A huge stadium adjoins the SAC in which football and cricket matches are held. The administration believes that these activities will help the students to provide a dynamic edge to their performances in the professional world and build a truly multi-faceted personality."
@@ -19,7 +20,8 @@ const studentexchange =
 const Studentpage = () => {
   return (
     <div className="studentsection">
-      <div className="smainrow smainrowmain">
+      <Floatmenu/>
+      <div className="smainrow smainrowmain" id="home">
         <div className="col-6 imgcolstyle">
           <img
             data-aos="zoom-in"
@@ -44,7 +46,7 @@ const Studentpage = () => {
           </div>
         </div>
       </div>
-      <div className="smainrow">
+      <div className="smainrow" id="sac">
         <div className="col-6">
           <div className="row rowmarl3">
             <h1 data-aos="zoom-in-right">Student Activity Center</h1>
@@ -57,7 +59,7 @@ const Studentpage = () => {
           <Sacimg />
         </div>
       </div>
-      <div className="smainrow smainrow1">
+      <div className="smainrow smainrow1" id="tcf">
         <div className="col-6 imgcolstyle">
           <Coronapic />
         </div>
@@ -70,7 +72,7 @@ const Studentpage = () => {
           </div>
         </div>
       </div>
-      <div className="smainrow smainrow1">
+      <div className="smainrow smainrow1" id="sep">
         <div className="col-6 imgcolstyle">
           <img
             data-aos="zoom-in"
