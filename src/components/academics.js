@@ -87,7 +87,7 @@ class Academicspage extends React.Component {
                   }
                   if (notice.title != "") {
                     return (
-                      <Acadnoticeb
+                      <Acadnotice
                         detail={notice.title}
                         time={d}
                         attachments={notice.attachments}
@@ -121,7 +121,7 @@ class Academicspage extends React.Component {
                   }
                   if (notice.title != "") {
                     return (
-                      <Acadnotice
+                      <Acadnoticeb
                         detail={notice.title}
                         time={d}
                         attachments={notice.attachments}
@@ -171,7 +171,7 @@ class Academicspage extends React.Component {
                   }
                   if (notice.title != "") {
                     return (
-                      <Acadnoticeb
+                      <Acadnotice
                         detail={notice.title}
                         time={d}
                         attachments={notice.attachments}
