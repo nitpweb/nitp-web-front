@@ -6,7 +6,8 @@ import map from "../img/map.svg"
 import lens from "../img/lens.svg"
 import "../css/home.css"
 import Floatmenu from "../floatmenu"
-
+import Depnotice from "../depnotice"
+import axios from "axios"
 class Eehomepage extends React.Component {
   constructor(props) {
     super(props)
