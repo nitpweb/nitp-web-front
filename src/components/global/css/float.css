@@ -34,3 +34,8 @@
 #float-menu{
   display: none;
 }
+@media(max-width:768px){
+  .float{
+    display: none;
+  }
+} 
