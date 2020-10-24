@@ -1,12 +1,13 @@
 import axios from "axios"
 import React from "react"
 import Newscard from "./home/newscard"
-import "./home/css/home.css"
+import "./home/css/home.scss"
 import Importantlink from "./home/importantlink"
 import Notice from "./home/notice"
 import Eventcard from "./home/eventcard"
 import { Nitpbackimg } from "./home/nitpimg"
 import { Noticelist } from "./home/noticelist"
+import {Link} from "gatsby"
 
 class Home extends React.Component {
   constructor(props) {
@@ -68,7 +69,7 @@ class Home extends React.Component {
               className="notice-head"
             >
               Notice
-              <p>view all</p>
+              <Link id="notice-head-p" to="/notice">view all</Link>
             </div>
             <div className="notice-row" data-aos="fade-up">
               {this.state.notices.map(notice => {
@@ -103,7 +104,7 @@ class Home extends React.Component {
               className="event-head"
             >
               Events
-              <p>view all</p>
+              <Link id="event-head-p" to="/event">view all</Link>
             </div>
             <div className="event-row" data-aos="fade-up">
               {this.state.events.map(event => {
@@ -137,7 +138,7 @@ class Home extends React.Component {
           id="news"
         >
           News
-          <p>view all</p>
+          <p id="news-head-p">view all</p>
         </div>
 
         <div className="news-row">

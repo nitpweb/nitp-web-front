@@ -117,17 +117,19 @@
   margin-top: 5vh;
 }
 
-.notice-head > p {
+#notice-head-p {
   color: #3e3e3e;
   font-size: 1rem;
   display: flex;
+  text-decoration: none;
 }
-.event-head > p {
+#event-head-p {
   color: #3e3e3e;
   font-size: 1rem;
   display: flex;
+  text-decoration:none;
 }
-.news-head > p {
+#news-head-p {
   color: #3e3e3e;
   font-size: 1rem;
   display: flex;
