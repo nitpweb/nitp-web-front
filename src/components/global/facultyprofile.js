@@ -44,19 +44,6 @@ class Facultyprofile extends React.Component {
           workExperience: detail.workExperience,
           phdCandidates: detail.phdCandidates,
         })
-        console.log(this.state.profile)
-        console.log(this.statesubjects)
-        console.log(this.state.memberships)
-        console.log(this.state.qualification)
-        console.log(this.state.currResponsibility)
-        console.log(this.state.pastreponsibility)
-        console.log(this.state.books)
-        console.log(this.state.journals)
-        console.log(this.state.conferences)
-        console.log(this.state.projects)
-        console.log(this.state.services)
-        console.log(this.state.workExperience)
-        console.log(this.state.phdCandidate)
       })
       .catch(e => {
         console.log(e)

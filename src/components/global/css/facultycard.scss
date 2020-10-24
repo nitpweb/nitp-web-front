@@ -11,6 +11,8 @@
     height: 380px;
     position: absolute;
     z-index: 1;
+    display: flex;
+    align-items: center;
   }
   .faculty2 {
     width: 320px;
@@ -39,20 +41,28 @@
   }
 }
 .extn {
+  align-self: flex-start;
+  position: absolute;
+  right: 0;
   text-align: end;
   margin-right: 15px;
 }
+
 .fimg {
+  font-family: "Source Sans Pro";
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.fimg {
-  font-family: "Source Sans Pro";
-  img {
+  position: absolute;
+  .facimg{
+    overflow: hidden;
     border-radius: 50%;
     width: 126px;
     height: 126px;
+  }
+  img {
+    width: 100%;
+    height: auto;
   }
   h3 {
     color: #4e4e4e;

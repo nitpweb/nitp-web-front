@@ -35,6 +35,12 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    #dir{
+      line-height: 1.5;
+      letter-spacing: 1px;
+      padding-right: 3vw;
+      padding-top: 50px;
+    }
     .fac-card {
       width: 90%;
       margin-top: 3vh;

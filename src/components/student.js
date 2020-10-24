@@ -20,7 +20,7 @@ const studentexchange =
 const Studentpage = () => {
   return (
     <div className="studentsection">
-      <Floatmenu/>
+      <Floatmenu />
       <div className="smainrow smainrowmain" id="home">
         <div className="col-6 imgcolstyle">
           <img
