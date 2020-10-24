@@ -68,10 +68,10 @@ const Footer = () => {
             </a> */}
             <Link to="/terms">
               <h3>Terms of Use</h3>
-            </a>
+            </Link>
             <a href="http://www.nitp.ac.in/downloads/annual_report/Annual%20Report%20Hindi.pdf">
               <h3>Annual Reports</h3>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
