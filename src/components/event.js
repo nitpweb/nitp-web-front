@@ -31,10 +31,14 @@ class Event extends React.Component {
             <h1>Events</h1>
             <div className="fac-card" data-aos="fade-up">
               {this.state.events.map(event => {
-                const date = new Date(event.timestamp)
+                const date = new Date(event.openDate)
                 const day = date.getDate()
                 const month = date.getMonth()
-                const year = date.getFullYear()
+                const year = date.getFullYear() 
+                const cdate = new Date(event.closeDate)
+                const cday = cdate.getDate()
+                const cmonth = cdate.getMonth()
+                const cyear = cdate.getFullYear()
                 const monthname = date
                   .toLocaleString("default", { month: "short" })
                   .toUpperCase()
@@ -42,7 +46,7 @@ class Event extends React.Component {
                   return (
                     <Eventcard
                       detail={event.title}
-                      time={`${day}-${month}-${year}`}
+                      time={`${day}-${month}-${year} - ${cday}-${cmonth}-${cyear}`}
                       date={day}
                       month={monthname}
                       attachments={event.attachments}
