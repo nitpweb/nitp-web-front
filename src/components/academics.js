@@ -30,7 +30,7 @@ class Academicspage extends React.Component {
   render() {
     return (
       <div className="acadsection">
-        <Floatmenu/>
+        <Floatmenu />
         <div className="acmainrow acmainrowmain" id="home">
           <div className="col-6">
             <div className="row rowmarl3">
