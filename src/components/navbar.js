@@ -192,25 +192,25 @@ const Navbar = () => {
             <div className="navsideicondiv">
               <img src={homeicon} alt="" />
             </div>
-            <p >Home</p>
+            <p>Home</p>
           </Link>
           <Link className="nav-sidebar-div" to="/about">
             <div className="navsideicondiv">
               <img src={abouticon} alt="" />
             </div>
-            <p >About Us</p>
+            <p>About Us</p>
           </Link>
           <Link className="nav-sidebar-div" to="/administration">
             <div className="navsideicondiv">
               <img src={administrationicon} alt="" />
             </div>
-            <p >Administration</p>
+            <p>Administration</p>
           </Link>
           <Link className="nav-sidebar-div" to="/academics">
             <div className="navsideicondiv">
               <img src={acadicon} alt="" />
             </div>
-            <p >Academics</p>
+            <p>Academics</p>
           </Link>
           <div
             className="nav-sidebar-div"
@@ -233,58 +233,58 @@ const Navbar = () => {
               <img src={sidedropicon} id="departdropicon" alt="" />
             </div>
             <p className="navsidedepart">
-              <span >Departments</span>
+              <span>Departments</span>
             </p>
           </div>
           <div id="departsidedropwrap">
             <div className="departsidedrop">
               <Link to="/csehome" className="nav-sidebar-div">
-                <p >
+                <p>
                   <span>Computer Science and Engineering</span>
                 </p>
               </Link>
               <Link to="/ecehome" className="nav-sidebar-div">
-                <p >
+                <p>
                   <span>Electronics and Communication Engineering</span>
                 </p>
               </Link>
               <Link to="/eehome" className="nav-sidebar-div">
-                <p >
+                <p>
                   <span>Electrical Engineering</span>
                 </p>
               </Link>
               <Link to="/mehome" className="nav-sidebar-div">
-                <p >
+                <p>
                   <span>Mechanical Engineering</span>
                 </p>
               </Link>
               <Link to="/cehome" className="nav-sidebar-div">
-                <p >
+                <p>
                   <span>Civil Engineering</span>
                 </p>
               </Link>
               <Link to="/hsshome" className="nav-sidebar-div">
-                <p >
+                <p>
                   <span>Humanities & Social Sciences</span>
                 </p>
               </Link>
               <Link to="/archhome" className="nav-sidebar-div">
-                <p >
+                <p>
                   <span>Architecture</span>
                 </p>
               </Link>
               <Link to="/physicshome" className="nav-sidebar-div">
-                <p >
+                <p>
                   <span>Physics</span>
                 </p>
               </Link>
               <Link to="/chemhome" className="nav-sidebar-div">
-                <p >
+                <p>
                   <span>Chemistry</span>
                 </p>
               </Link>
               <Link to="/mathhome" className="nav-sidebar-div">
-                <p >
+                <p>
                   <span>Mathematics</span>
                 </p>
               </Link>
@@ -294,13 +294,13 @@ const Navbar = () => {
             <div className="navsideicondiv">
               <img src={facilityicon} alt="" />
             </div>
-            <p >Facilities</p>
+            <p>Facilities</p>
           </Link>
           <Link to="/student" className="nav-sidebar-div">
             <div className="navsideicondiv">
               <img src={studenticon} alt="" />
             </div>
-            <p >Students</p>
+            <p>Students</p>
           </Link>
 
           <Link to="/placements" className="nav-sidebar-div">
