@@ -1,5 +1,5 @@
 import React from "react"
-import "./css/eventcard.css"
+import "./css/eventcard.scss"
 import eventclock from "./img/eventclock.svg"
 import eventlocation from "./img/eventlocation.svg"
 

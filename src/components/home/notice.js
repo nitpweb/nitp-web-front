@@ -1,5 +1,5 @@
 import React from "react"
-import "./css/notice.css"
+import "./css/notice.scss"
 import downimg from "./img/download.svg"
 const Notice = props => {
   return (

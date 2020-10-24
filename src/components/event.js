@@ -1,6 +1,6 @@
 import React from "react"
 import axios from "axios"
-import "./global/css/facultyprofile.scss"
+import "./global/css/cards.scss"
 import Eventcard from "./home/eventcard"
 
 class Event extends React.Component {
@@ -26,8 +26,8 @@ class Event extends React.Component {
   render() {
     return (
       <>
-        <div className="facultypage row">
-          <div className="faculty-details-row">
+        <div className="cardpage row">
+          <div className="card-details-row">
             <h1>Events</h1>
             <div className="fac-card" data-aos="fade-up">
               {this.state.events.map(event => {

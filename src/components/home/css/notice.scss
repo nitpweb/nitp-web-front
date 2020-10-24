@@ -3,26 +3,40 @@
   padding: 5px 15px 5px 15px;
   background: #fafafa;
   margin-top: 10px;
+  .noticecarddetail {
+    font-size: 16px;
+    font-family: "Source Sans Pro";
+    font-weight: 500;
+    color: #4d4d4d;
+  }
+  #notdate {
+    display: flex;
+    justify-content: flex-end;
+    div {
+      display: flex;
+      align-items: flex-end;
+      margin-left: 20px;
+      img {
+        margin-right: 8px;
+        height: 14px;
+      }
+    }
+  }
 }
-.noticecarddetail{
-  font-size: 16px;
-  font-family: "Source Sans Pro";
-  font-weight: 500;
-  color:#4D4D4D;
-}
-@media(max-width:768px){
-  .noticecarddetail{
+
+@media (max-width: 768px) {
+  .noticecarddetail {
     font-size: 14px;
   }
   .noticecard > #fp {
     font-size: 12px;
   }
 }
-.notet{
+.notet {
   position: relative;
   bottom: 0;
   margin-bottom: 5px;
-  color: #7B7B7B;
+  color: #7b7b7b;
   font-size: 14px;
   font-weight: 600;
   text-align: right;
@@ -40,17 +54,4 @@
   text-align: right;
   font-family: "Source Sans Pro";
   line-height: 0;
-}
-#notdate{
-  display: flex;
-  justify-content: flex-end;
-}
-#notdate > div {
-  display: flex;
-  align-items: flex-end;
-  margin-left: 20px;
-}
-#notdownimg{
-  margin-right: 8px;
-  height: 14px;
 }

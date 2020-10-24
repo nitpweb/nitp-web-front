@@ -1,6 +1,6 @@
 import React from "react"
 import axios from "axios"
-import "./global/css/facultyprofile.scss"
+import "./global/css/cards.scss"
 import Noticecard from "./home/notice"
 
 class Notice extends React.Component {
@@ -25,8 +25,8 @@ class Notice extends React.Component {
   render() {
     return (
       <>
-        <div className="facultypage row">
-          <div className="faculty-details-row">
+        <div className="cardpage row">
+          <div className="card-details-row">
             <h1>Notices</h1>
             <div className="fac-card" data-aos="fade-up">
               {this.state.notices.map(notice => {
