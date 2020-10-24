@@ -70,12 +70,11 @@
   height: 35px;
 }
 .nav-link-item > span:hover {
-  border: 3px solid white;
-  border-width: 0px 0px 3px 0px;
+  color: #FFE657;
   transition: 0.1s ease-in-out;
 }
 .nav-link-item-active > span {
-  border: 3px solid white;
+  color: #FFE657;
   border-width: 0px 0px 3px 0px;
 }
 .logobadge {
@@ -128,7 +127,7 @@
 .nav-toggle {
   display: none;
 }
-.nav-sidebar > div:nth-of-type(2n + 1) {
+.nav-sidebar > .nav-sidebar-div:nth-of-type(2n + 1) {
   background-color: #f7f7f7;
 }
 #logowr1 {
@@ -147,29 +146,11 @@
     height: 28px;
     font-weight: 400;
   }
-  .nav-link-item > span:hover {
-    border: 2px solid white;
-    border-width: 0px 0px 3px 0px;
-    transition: 0.1s;
-  }
-  .nav-link-item-active > span {
-    border: 2px solid white;
-    border-width: 0px 0px 3px 0px;
-  }
 }
 @media (max-width: 1000px) {
   .nav-link-item {
     height: 22px;
     font-weight: 300;
-  }
-  .nav-link-item > span:hover {
-    border: 1px solid white;
-    border-width: 0px 0px 3px 0px;
-    transition: 0.1s;
-  }
-  .nav-link-item-active > span {
-    border: 1px solid white;
-    border-width: 0px 0px 3px 0px;
   }
 }
 @media (max-width: 768px) {
@@ -200,17 +181,11 @@
   .nav-col > h4 {
     font-size: 1.8vw;
   }
-  .nav-side-link {
-    text-decoration: none;
-    color: #000;
-    font-family: "Source Sans Pro";
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  .departsidedrop > div:nth-of-type(2n + 1) {
+
+  .departsidedrop > .nav-sidebar-div:nth-of-type(2n + 1) {
     background-color: #fff;
   }
-  .mainsidedrop > div:nth-of-type(2n + 1) {
+  .mainsidedrop > .nav-sidebar-div:nth-of-type(2n + 1) {
     background-color: #fff;
   }
   .departsidedrop,
@@ -251,6 +226,10 @@
   display: none;
   min-height: 100vh;
   position: absolute;
+  height:100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: thin;
   top: 0;
   float: right;
   z-index: 7;
@@ -262,10 +241,15 @@
   padding-top: 10px;
 }
 
-.nav-sidebar > div {
+.nav-sidebar-div {
   display: flex;
   padding-left: 25px;
   align-items: center;
+  text-decoration: none;
+  color: #000;
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  line-height: 1;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -275,6 +259,7 @@
 .navsidetop {
   display: flex;
   align-items: center;
+  margin-left: 5px;
   text-decoration: none;
 }
 .navsidetop > p {
@@ -296,10 +281,10 @@
   display: none;
   padding-left: 0px;
 }
-.departsidedrop > div {
+.departsidedrop > .nav-sidebar-div {
   padding-left: 25px;
 }
-.mainsidedrop > div {
+.mainsidedrop > .nav-sidebar-div {
   display: flex;
 }
 #maindropwrap {

@@ -1,5 +1,5 @@
 import React from "react"
-import "./global/css/navbar.css"
+import "./global/css/navbar.scss"
 import "./global/css/dropdown.css"
 import logo from "./global/img/logo512.png"
 import toggle from "../assets/toggle.svg"
@@ -188,141 +188,127 @@ const Navbar = () => {
               <p>NIT PATNA</p>
             </Link>
           </div>
-          <div>
+          <Link className="nav-sidebar-div" to="/">
             <div className="navsideicondiv">
               <img src={homeicon} alt="" />
             </div>
-            <Link className="nav-side-link" to="/">
-              Home
-            </Link>
-          </div>
-          <div>
+            <p >Home</p>
+          </Link>
+          <Link className="nav-sidebar-div" to="/about">
             <div className="navsideicondiv">
               <img src={abouticon} alt="" />
             </div>
-            <Link className="nav-side-link" to="/about">
-              About Us
-            </Link>
-          </div>
-          <div>
+            <p >About Us</p>
+          </Link>
+          <Link className="nav-sidebar-div" to="/administration">
             <div className="navsideicondiv">
               <img src={administrationicon} alt="" />
             </div>
-            <Link className="nav-side-link" to="/administration">
-              Administration
-            </Link>
-          </div>
-          <div>
+            <p >Administration</p>
+          </Link>
+          <Link className="nav-sidebar-div" to="/academics">
             <div className="navsideicondiv">
               <img src={acadicon} alt="" />
             </div>
-            <Link className="nav-side-link" to="/academics">
-              Academics
-            </Link>
-          </div>
-          <div>
+            <p >Academics</p>
+          </Link>
+          <div
+            className="nav-sidebar-div"
+            onClick={function () {
+              var y = document.querySelector("#departdropicon")
+              var x = document.querySelector(".departsidedrop")
+              var z = document.querySelector("#departsidedropwrap")
+              if (x.style.display === "none") {
+                x.style.display = "block"
+                z.style.display = "flex"
+                y.style.transform = "rotate(180deg)"
+              } else {
+                x.style.display = "none"
+                z.style.display = "none"
+                y.style.transform = "rotate(0deg)"
+              }
+            }}
+          >
             <div className="navsideicondiv">
               <img src={sidedropicon} id="departdropicon" alt="" />
             </div>
-            <span
-              className="navsidedepart"
-              onClick={function () {
-                var y = document.querySelector("#departdropicon")
-                var x = document.querySelector(".departsidedrop")
-                var z = document.querySelector("#departsidedropwrap")
-                if (x.style.display === "none") {
-                  x.style.display = "block"
-                  z.style.display = "flex"
-                  y.style.transform = "rotate(180deg)"
-                } else {
-                  x.style.display = "none"
-                  z.style.display = "none"
-                  y.style.transform = "rotate(0deg)"
-                }
-              }}
-            >
-              <span className="nav-side-link">Departments</span>
-            </span>
+            <p className="navsidedepart">
+              <span >Departments</span>
+            </p>
           </div>
           <div id="departsidedropwrap">
             <div className="departsidedrop">
-              <div>
-                <Link className="nav-side-link" to="/csehome">
+              <Link to="/csehome" className="nav-sidebar-div">
+                <p >
                   <span>Computer Science and Engineering</span>
-                </Link>
-              </div>
-              <div>
-                <Link className="nav-side-link" to="/ecehome">
+                </p>
+              </Link>
+              <Link to="/ecehome" className="nav-sidebar-div">
+                <p >
                   <span>Electronics and Communication Engineering</span>
-                </Link>
-              </div>
-              <div>
-                <Link className="nav-side-link" to="/eehome">
+                </p>
+              </Link>
+              <Link to="/eehome" className="nav-sidebar-div">
+                <p >
                   <span>Electrical Engineering</span>
-                </Link>
-              </div>
-              <div>
-                <Link className="nav-side-link" to="/mehome">
+                </p>
+              </Link>
+              <Link to="/mehome" className="nav-sidebar-div">
+                <p >
                   <span>Mechanical Engineering</span>
-                </Link>
-              </div>
-              <div>
-                <Link className="nav-side-link" to="/cehome">
+                </p>
+              </Link>
+              <Link to="/cehome" className="nav-sidebar-div">
+                <p >
                   <span>Civil Engineering</span>
-                </Link>
-              </div>
-              <div>
-                <Link className="nav-side-link" to="/hsshome">
+                </p>
+              </Link>
+              <Link to="/hsshome" className="nav-sidebar-div">
+                <p >
                   <span>Humanities & Social Sciences</span>
-                </Link>
-              </div>
-              <div>
-                <Link className="nav-side-link" to="/archhome">
+                </p>
+              </Link>
+              <Link to="/archhome" className="nav-sidebar-div">
+                <p >
                   <span>Architecture</span>
-                </Link>
-              </div>
-              <div>
-                <Link className="nav-side-link" to="/physicshome">
+                </p>
+              </Link>
+              <Link to="/physicshome" className="nav-sidebar-div">
+                <p >
                   <span>Physics</span>
-                </Link>
-              </div>
-              <div>
-                <Link className="nav-side-link" to="/chemhome">
+                </p>
+              </Link>
+              <Link to="/chemhome" className="nav-sidebar-div">
+                <p >
                   <span>Chemistry</span>
-                </Link>
-              </div>
-              <div>
-                <Link className="nav-side-link" to="/mathhome">
+                </p>
+              </Link>
+              <Link to="/mathhome" className="nav-sidebar-div">
+                <p >
                   <span>Mathematics</span>
-                </Link>
-              </div>
+                </p>
+              </Link>
             </div>
           </div>
-          <div>
+          <Link to="/facilities" className="nav-sidebar-div">
             <div className="navsideicondiv">
               <img src={facilityicon} alt="" />
             </div>
-            <Link className="nav-side-link" to="/facilities">
-              Facilities
-            </Link>
-          </div>
-          <div>
+            <p >Facilities</p>
+          </Link>
+          <Link to="/student" className="nav-sidebar-div">
             <div className="navsideicondiv">
               <img src={studenticon} alt="" />
             </div>
-            <Link className="nav-side-link" to="/student">
-              Students
-            </Link>
-          </div>
+            <p >Students</p>
+          </Link>
 
-          <div>
+          <Link to="/placements" className="nav-sidebar-div">
             <div className="navsideicondiv">
               <img src={placementicon} alt="" />
             </div>
-            <Link className="nav-side-link" to="/placements">
-              Placements
-            </Link>
-          </div>
+            <p>Placements</p>
+          </Link>
         </div>
       </div>
     </>
