@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[50],{JS8K:function(t,e,n){"use strict";n.r(e);var a=n("nKUr"),r=(n("q1tI"),n("xVFz")),c=n("vrFN"),s=n("EG3k");e.default=function(t){var e=t.location;return e.state?Object(a.jsxs)(r.a,{children:[Object(a.jsx)(c.a,{title:"ME|Faculty Profile"}),Object(a.jsx)(s.a,{url:e.state.url})]}):null}}}]);
+//# sourceMappingURL=component---src-pages-mehome-facultyprofile-js-1e33e5729c3cf820d233.js.map
