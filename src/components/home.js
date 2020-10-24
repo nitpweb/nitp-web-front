@@ -69,7 +69,9 @@ class Home extends React.Component {
               className="notice-head"
             >
               Notice
-              <Link id="notice-head-p" to="/notice">view all</Link>
+              <Link id="notice-head-p" to="/notice">
+                view all
+              </Link>
             </div>
             <div className="notice-row" data-aos="fade-up">
               {this.state.notices.map(notice => {
@@ -104,14 +106,20 @@ class Home extends React.Component {
               className="event-head"
             >
               Events
-              <Link id="event-head-p" to="/event">view all</Link>
+              <Link id="event-head-p" to="/event">
+                view all
+              </Link>
             </div>
             <div className="event-row" data-aos="fade-up">
               {this.state.events.map(event => {
-                const date = new Date(event.timestamp)
+                const date = new Date(event.openDate)
                 const day = date.getDate()
                 const month = date.getMonth()
                 const year = date.getFullYear()
+                const cdate = new Date(event.closeDate)
+                const cday = cdate.getDate()
+                const cmonth = cdate.getMonth()
+                const cyear = cdate.getFullYear()
                 const monthname = date
                   .toLocaleString("default", { month: "short" })
                   .toUpperCase()
@@ -119,7 +127,7 @@ class Home extends React.Component {
                   return (
                     <Eventcard
                       detail={event.title}
-                      time={`${day}-${month}-${year}`}
+                      time={`${day}-${month}-${year} - ${cday}-${cmonth}-${cyear}`}
                       date={day}
                       month={monthname}
                       attachments={event.attachments}
