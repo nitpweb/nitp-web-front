@@ -66,12 +66,12 @@ const Footer = () => {
             {/* <a href="http://www.nitp.ac.in/php/refund-policy.php">
               <h3>Refund Rules</h3>
             </a> */}
-            <a href="http://www.nitp.ac.in/php/termsofuse.php">
+            <Link to="/terms">
               <h3>Terms of Use</h3>
             </a>
             <a href="http://www.nitp.ac.in/downloads/annual_report/Annual%20Report%20Hindi.pdf">
               <h3>Annual Reports</h3>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
