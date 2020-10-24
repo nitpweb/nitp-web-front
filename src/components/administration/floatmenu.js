@@ -22,12 +22,12 @@ const Floatmenu = () => (
         </div>
         <div className="float-card">
           <a href="#bwc">
-            <h3>Building and Works Committee</h3>
+            <h4>Building and Works Committee</h4>
           </a>
         </div>
         <div className="float-card">
           <a href="#idc">
-            <h3>Institute Discplinary Committee</h3>
+            <h4>Institute Discplinary Committee</h4>
           </a>
         </div>
         <div className="float-card">
