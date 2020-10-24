@@ -6,7 +6,7 @@
   margin-top: 20px;
   display: flex;
   align-items: center;
-  max-height: 110px;
+  min-height: 110px;
   .eventdtdiv {
     width: 77px;
     height: 80px;
@@ -81,11 +81,20 @@
 }
 
 @media (max-width: 768px) {
-  .eventcarddetail {
-    font-size: 14px;
+  .eventcarddetailsection {
+    .eventcarddetail {
+      font-size: 14px;
+    }
   }
-  .efp {
-    font-size: 10px;
+  .eventcardwrap {
+    width: 98%;
+  }
+  #eventdtp {
+    div {
+      .efp {
+        font-size: 12px;
+      }
+    }
   }
   #eventdtp > div > img {
     height: 12px;

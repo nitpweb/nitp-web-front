@@ -25,11 +25,13 @@
 }
 
 @media (max-width: 768px) {
-  .noticecarddetail {
-    font-size: 14px;
-  }
-  .noticecard > #fp {
-    font-size: 12px;
+  .noticecard {
+    #fp {
+      font-size: 12px;
+    }
+    .noticecarddetail {
+      font-size: 14px;
+    }
   }
 }
 .notet {
