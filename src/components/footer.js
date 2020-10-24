@@ -1,6 +1,6 @@
 import React from "react"
 import "./global/css/footer.scss"
-
+import { Link } from "gatsby"
 const Footer = () => {
   return (
     <>
@@ -16,9 +16,9 @@ const Footer = () => {
           <div className="footsec">
             <div className="foot-col-3">
               <h1>Know Us</h1>
-              <a href="http://www.nitp.ac.in/php/dir_desk.php">
+              <Link to="/director">
                 <h3>Director’s Desk</h3>
-              </a>
+              </Link>
               <a href="http://www.nitp.ac.in/php/howtoreach.php">
                 <h3>How to Reach</h3>
               </a>
@@ -34,20 +34,24 @@ const Footer = () => {
             </div>
             <div className="foot-col-3">
               <h1>Important Links</h1>
-              <a href="http://www.nitp.ac.in/php/officeorder.php">
+              {/* <a href="http://www.nitp.ac.in/php/officeorder.php">
                 <h3>BOG/FC/BWC Minutes</h3>
-              </a>
-              <a href="http://www.nitp.ac.in/php/senatemins.php">
+              </a> */}
+              {/* <a href="http://www.nitp.ac.in/php/senatemins.php">
                 <h3>Senate Minutes</h3>
-              </a>
-              <a href="http://www.nitp.ac.in/php/annual_report.php">
-                <h3>Annual Reports</h3>
-              </a>
+              </a> */}
+
               <a href="http://www.nitp.ac.in/php/downloads/Grievance%20Cell%20Constituted%20by%20Council%20of%20NITs.pdf">
                 <h3>Grievance Cell</h3>
               </a>
-              <a href="http://www.nitp.ac.in/php/nit_act.php">
+              <a href="http://www.nitp.ac.in/downloads/NIT_Act/Amendments_First_Statutes.pdf">
                 <h3>NIT Act and Statutes</h3>
+              </a>
+              <a href="http://www.nitp.ac.in/php/staffclaim_form.php">
+                <h3>Staff Claim Form</h3>
+              </a>
+              <a href="http://beta.nitp.ac.in:3000">
+                <h3>Faculty Login</h3>
               </a>
             </div>
           </div>
@@ -59,19 +63,16 @@ const Footer = () => {
             <a href="http://www.nitp.ac.in/php/privacy.php">
               <h3>Privacy Policy</h3>
             </a>
-            <a href="http://www.nitp.ac.in/php/refund-policy.php">
+            {/* <a href="http://www.nitp.ac.in/php/refund-policy.php">
               <h3>Refund Rules</h3>
-            </a>
+            </a> */}
             <a href="http://www.nitp.ac.in/php/termsofuse.php">
               <h3>Terms of Use</h3>
             </a>
-            <a href="http://www.nitp.ac.in/php/staffclaim_form.php">
-              <h3>Staff Claim Form</h3>
-            </a>
-            <a href="http://www.nitp.ac.in/php/addprofile.php">
-              <h3>Faculty Login</h3>
-            </a>
           </div>
+          <a href="http://www.nitp.ac.in/downloads/annual_report/Annual%20Report%20Hindi.pdf">
+            <h3>Annual Reports</h3>
+          </a>
         </div>
       </div>
       <div className="footdetail">
