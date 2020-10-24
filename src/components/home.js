@@ -61,7 +61,7 @@ class Home extends React.Component {
           </div>
         </div>
         <Importantlink />
-        <div className="noticewrap" id="notice">
+        <div id="notice">
           <div>
             <div
               data-aos="zoom-in"
