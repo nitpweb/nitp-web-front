@@ -19,8 +19,8 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    let eventsUrl = `http://beta.nitp.ac.in:3000/api/event`
-    let noticesUrl = `http://beta.nitp.ac.in:3000/api/notice`
+    let eventsUrl = `http://beta.nitp.ac.in:3000/api/event/active`
+    let noticesUrl = `http://beta.nitp.ac.in:3000/api/notice/active`
     axios
       .get(eventsUrl)
       .then(res => {
