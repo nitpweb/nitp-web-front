@@ -7,7 +7,7 @@ import Notice from "./home/notice"
 import Eventcard from "./home/eventcard"
 import { Nitpbackimg } from "./home/nitpimg"
 import { Noticelist } from "./home/noticelist"
-import {Link} from "gatsby"
+import { Link } from "gatsby"
 
 class Home extends React.Component {
   constructor(props) {
@@ -15,12 +15,14 @@ class Home extends React.Component {
     this.state = {
       events: [],
       notices: [],
+      news: [],
     }
   }
 
   componentDidMount() {
     let eventsUrl = `http://beta.nitp.ac.in:3000/api/event/active`
     let noticesUrl = `http://beta.nitp.ac.in:3000/api/notice/active`
+    let newsUrl = `http://beta.nitp.ac.in:3000/api/news`
     axios
       .get(eventsUrl)
       .then(res => {
@@ -35,6 +37,15 @@ class Home extends React.Component {
       .then(res => {
         const notice = res.data
         this.setState({ notices: notice })
+      })
+      .catch(e => {
+        console.log(e)
+      })
+    axios
+      .get(newsUrl)
+      .then(res => {
+        const news = res.data
+        this.setState({ news: news })
       })
       .catch(e => {
         console.log(e)
@@ -146,43 +157,31 @@ class Home extends React.Component {
           id="news"
         >
           News
-              <Link id="news-head-p" to="/news">view all</Link>
+          <Link id="news-head-p" to="/news">
+            view all
+          </Link>
         </div>
 
         <div className="news-row">
           <div className="news-viewbox">
-            <Newscard
-              head="Workshop organised"
-              detail="IEEE organised a Workshop for the students of 1st and 2nd year on the grand.."
-            />
-            <Newscard
-              head="Workshop organised"
-              detail="IEEE organised a Workshop for the students of 1st and 2nd year on the grand.."
-            />
-            <Newscard
-              head="Workshop organised"
-              detail="IEEE organised a Workshop for the students of 1st and 2nd year on the grand.."
-            />
-            <Newscard
-              head="Workshop organised"
-              detail="IEEE organised a Workshop for the students of 1st and 2nd year on the grand.."
-            />
-            <Newscard
-              head="Workshop organised"
-              detail="IEEE organised a Workshop for the students of 1st and 2nd year on the grand.."
-            />
-            <Newscard
-              head="Workshop organised"
-              detail="IEEE organised a Workshop for the students of 1st and 2nd year on the grand.."
-            />
-            <Newscard
-              head="Workshop organised"
-              detail="IEEE organised a Workshop for the students of 1st and 2nd year on the grand.."
-            />
-            <Newscard
-              head="Workshop organised"
-              detail="IEEE organised a Workshop for the students of 1st and 2nd year on the grand.."
-            />
+            {this.state.news.map(news => {
+              const newtime = new Date().getTime()
+
+              var d = Math.round((newtime - news.openDate) / 3600000)
+              if (d > 24) {
+                d = `${Math.round(d / 24)} days ago`
+              } else if (d < 1) {
+                d = `Just now`
+              } else if (d < 2) {
+                d = `${d} hour ago`
+              } else {
+                d = `${d} hours ago`
+              }
+              var desc=String(news.description).substr(0,170)
+              if (news.title != "") {
+                return <Newscard time={d} head={news.title} detail={desc} />
+              }
+            })}
           </div>
         </div>
       </div>
