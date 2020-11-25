@@ -7,10 +7,14 @@
   box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.28);
   margin-left: 40px;
   border-radius: 2px;
-}
-.card-img {
-  height: 60%;
-  position: relative;
+  .news-img-wrap{
+    height: 60%;
+    overflow: hidden;
+    .card-img{
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 .news-read {
   width: 90.6px;
@@ -47,11 +51,7 @@
   font-family: "Source Sans Pro";
 }
 .newscard-readmore {
-  position: relative;
-  float: right;
-  margin-top: -20px;
   color: #cd5a2f;
   font-family: "Source Sans Pro";
-  font-size: 11.5px;
-  margin-right: 10%;
+  text-decoration: none;
 }
