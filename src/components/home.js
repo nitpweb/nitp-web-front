@@ -146,7 +146,7 @@ class Home extends React.Component {
           id="news"
         >
           News
-          <p id="news-head-p">view all</p>
+              <Link id="news-head-p" to="/news">view all</Link>
         </div>
 
         <div className="news-row">
