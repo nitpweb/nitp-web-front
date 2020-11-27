@@ -4,6 +4,7 @@ import Adcard from "./administration/adcard"
 import "./administration/css/administration.css"
 import { Deansinfo, BOD, BWC, IDC, FC } from "./administration/const"
 import Floatmenu from "./administration/floatmenu"
+import Director from "./director"
 const Administrationpage = () => {
   return (
     <div className="adminsection">
@@ -34,6 +35,7 @@ const Administrationpage = () => {
           />
         </div>
       </div>
+      <Director id="director"/>
       <div className="admainrow addeanrow" id="dean">
         <div className="row rowmarl3">
           <h1 data-aos="zoom-in-right">Deans</h1>

@@ -12,6 +12,9 @@
   overflow-y: scroll;
   scrollbar-width: none;
 }
+#float-menu::-webkit-scrollbar{
+  display: none;
+}
 #floatimg{
   align-self: flex-start;
 }
