@@ -11,6 +11,11 @@ const Floatmenu = () => (
           </a>
         </div>
         <div className="float-card">
+          <a href="#director">
+            <h3>Director</h3>
+          </a>
+        </div>
+        <div className="float-card">
           <a href="#dean">
             <h3>Deans</h3>
           </a>

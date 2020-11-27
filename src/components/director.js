@@ -30,6 +30,10 @@ class Director extends React.Component {
     return (
       <>
         <div className="facultypage row">
+          <div className="row rowmarl3">
+            <h1>Our Director</h1>
+          </div>
+
           <div className="faculty-img-row">
             <div className="faculty-img-wrap">
               <img
