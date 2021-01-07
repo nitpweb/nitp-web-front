@@ -6,7 +6,7 @@
   "author": "NITP WEB TEAM",
   "dependencies": {
     "aos": "^2.3.4",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "babel-plugin-styled-components": "^1.10.7",
     "crypto": "^1.0.1",
     "gatsby": "^2.24.84",
