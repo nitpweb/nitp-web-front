@@ -30,6 +30,11 @@ const Eesyllabus = props => {
             />
           </div>
         </div>
+        <div className="dmainrow">
+          <h1 className="rowmarl3" data-aos="zoom-in-right">
+            B.Tech Course Structure
+          </h1>
+        </div>
         <Table>
           <tr className="syllabus-table-head">
             <th>Dept.</th>
