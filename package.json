@@ -24,11 +24,11 @@
     "gatsby-source-mysql": "^2.2.3",
     "gatsby-transformer-sharp": "^2.5.19",
     "gsap": "^3.5.1",
-    "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-helmet": "^6.0.0",
+    "sass": "^1.32.8",
     "ssr-window": "^2.0.0",
     "styled-components": "^5.2.0"
   },
