@@ -50,9 +50,7 @@ class Newspage extends React.Component {
                   </div>
                   <div className="news-details">
                     <h1>{news.title}</h1>
-                    <p>
-                      {news.description}
-                    </p>
+                    <p>{news.description}</p>
                   </div>
                 </div>
               )
