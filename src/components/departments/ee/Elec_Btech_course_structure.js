@@ -102,7 +102,7 @@ export const EECourseStructure = [
   {
     deptt: `-`,
     sem_elect: `1`,
-    course_code: `TOTAL`,
+    course_code: <strong>Total</strong>,
     course_title: `-`,
     l: `-`,
     t: `-`,
@@ -212,7 +212,7 @@ export const EECourseStructure = [
   {
     deptt: `-`,
     sem_elect: `2`,
-    course_code: `TOTAL`,
+    course_code: <strong>Total</strong>,
     course_title: `-`,
     l: `-`,
     t: `-`,
@@ -312,7 +312,7 @@ export const EECourseStructure = [
   {
     deptt: `-`,
     sem_elect: `3`,
-    course_code: `TOTAL`,
+    course_code: <strong>Total</strong>,
     course_title: `-`,
     l: `-`,
     t: `-`,
@@ -412,7 +412,7 @@ export const EECourseStructure = [
   {
     deptt: `-`,
     sem_elect: `4`,
-    course_code: `TOTAL`,
+    course_code: <strong>Total</strong>,
     course_title: `-`,
     l: `-`,
     t: `-`,
@@ -522,7 +522,7 @@ export const EECourseStructure = [
   {
     deptt: `-`,
     sem_elect: `5`,
-    course_code: `TOTAL`,
+    course_code: <strong>Total</strong>,
     course_title: `-`,
     l: `-`,
     t: `-`,
@@ -642,7 +642,7 @@ export const EECourseStructure = [
   {
     deptt: `-`,
     sem_elect: `6`,
-    course_code: `TOTAL`,
+    course_code: <strong>Total</strong>,
     course_title: `-`,
     l: `-`,
     t: `-`,
@@ -742,7 +742,7 @@ export const EECourseStructure = [
   {
     deptt: `-`,
     sem_elect: `7`,
-    course_code: `TOTAL`,
+    course_code: <strong>Total</strong>,
     course_title: `-`,
     l: `-`,
     t: `-`,
@@ -812,7 +812,7 @@ export const EECourseStructure = [
   {
     deptt: `-`,
     sem_elect: `8`,
-    course_code: `TOTAL`,
+    course_code: <strong>Total</strong>,
     course_title: `-`,
     l: `-`,
     t: `-`,
