@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[16],{"zE+c":function(t,e,c){"use strict";c.r(e);var r=c("nKUr"),n=(c("q1tI"),c("xVFz")),a=c("vrFN"),s=c("EG3k");e.default=function(t){var e=t.location;return e.state?Object(r.jsxs)(n.a,{children:[Object(r.jsx)(a.a,{title:"Architecture|Faculty Profile"}),Object(r.jsx)(s.a,{url:e.state.url})]}):null}}}]);
+//# sourceMappingURL=component---src-pages-archhome-facultyprofile-js-b09a0184bf2ee0ff97fe.js.map
