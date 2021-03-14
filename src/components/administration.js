@@ -35,7 +35,7 @@ const Administrationpage = () => {
           />
         </div>
       </div>
-      <Director id="director"/>
+      <Director id="director" />
       <div className="admainrow addeanrow" id="dean">
         <div className="row rowmarl3">
           <h1 data-aos="zoom-in-right">Deans</h1>

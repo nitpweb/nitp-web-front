@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import "./global/css/navbar.scss"
 import "./global/css/dropdown.scss"
 import logo from "./global/img/logo512.png"
@@ -17,53 +17,52 @@ import sidedropicon from "./home/img/dropdown.svg"
 
 const Depnavbar = () => {
   const pathname = window.location.pathname.split("/")[1]
-  window.onscroll = function () {
-    scrollF()
-  }
-  function scrollF() {
-    if (
-      document.body.scrollTop > 80 ||
-      document.documentElement.scrollTop > 80
-    ) {
-      document.querySelector(".nav-col>h2").style.lineHeight = "0.2rem"
-      document.querySelector(".nav-col>h4").style.lineHeight = "0.2rem"
-      document.querySelector(".nav-link-row").style.backgroundColor = "black"
-      document.querySelector(".nav-link-row").style.marginTop = "4vw"
-      document.querySelector(".dep-nav-row").style.marginTop = "6.3vw"
-      document.querySelector(".logobadge>h4").style.display = "none"
-      document.querySelector(".logobadge>div>img").style.maxHeight = "5vw"
-      document.querySelector(".logobadge>div>img").style.borderWidth = "0px"
-      document.querySelector(".logobadge").style.backgroundColor = "transparent"
-      document.querySelector(".logobadge>div>img").style.marginTop = "1.5vw"
-      document.querySelector(".logobadge").style.paddingLeft = "0"
-      document.querySelector(".mobilelogo>img").style.maxHeight = "5vh"
-      document.querySelector(".logobadge").style.transition = "1s"
-      document.querySelector(".logobadge>h4").style.transition = "1s"
-      document.querySelector(".logobadge>div>img").style.transition = "1s"
-      document.querySelector(".mobilelogo>img").style.transition = "1s"
-      document.querySelector(".nav-link-row").style.opacity = "1"
-      document.querySelector(".nav-col").style.paddingTop = "0.2vw"
-    } else {
-      document.querySelector(".nav-col>h2").style.lineHeight = "0.3rem"
-      document.querySelector(".nav-col>h4").style.lineHeight = "0.3rem"
-      document.querySelector(".nav-link-row").style.backgroundColor = "black"
-      document.querySelector(".nav-link-row").style.marginTop = "4.7vw"
-      document.querySelector(".dep-nav-row").style.marginTop = "7vw"
-      document.querySelector(".logobadge>h4").style.display = "flex"
-      document.querySelector(".logobadge>div>img").style.maxHeight = "8vw"
-      document.querySelector(".logobadge>div>img").style.borderWidth = "0.5vw"
-      document.querySelector(".logobadge").style.backgroundColor = "#E47F40"
-      document.querySelector(".logobadge>div>img").style.marginTop = "0px"
-      document.querySelector(".logobadge").style.paddingLeft = "0"
-      document.querySelector(".mobilelogo>img").style.maxHeight = "7vh"
-      document.querySelector(".logobadge").style.transition = "1s"
-      document.querySelector(".logobadge>h4").style.transition = "1s"
-      document.querySelector(".logobadge>div>img").style.transition = "1s"
-      document.querySelector(".mobilelogo>img").style.transition = "1s"
-      document.querySelector(".nav-link-row").style.opacity = "0.8"
-      document.querySelector(".nav-col").style.paddingTop = "0.5vw"
-    }
-  }
+  useEffect(() => {
+    document.addEventListener("scroll", e => {
+      let scrolled = document.scrollingElement.scrollTop
+      if (scrolled >= 80) {
+        document.querySelector(".nav-col>h2").style.lineHeight = "0.2rem"
+        document.querySelector(".nav-col>h4").style.lineHeight = "0.2rem"
+        document.querySelector(".nav-link-row").style.backgroundColor = "black"
+        document.querySelector(".nav-link-row").style.marginTop = "4vw"
+        document.querySelector(".dep-nav-row").style.marginTop = "6.3vw"
+        document.querySelector(".logobadge>h4").style.display = "none"
+        document.querySelector(".logobadge>div>img").style.maxHeight = "5vw"
+        document.querySelector(".logobadge>div>img").style.borderWidth = "0px"
+        document.querySelector(".logobadge").style.backgroundColor =
+          "transparent"
+        document.querySelector(".logobadge>div>img").style.marginTop = "1.5vw"
+        document.querySelector(".logobadge").style.paddingLeft = "0"
+        document.querySelector(".mobilelogo>img").style.maxHeight = "5vh"
+        document.querySelector(".logobadge").style.transition = "1s"
+        document.querySelector(".logobadge>h4").style.transition = "1s"
+        document.querySelector(".logobadge>div>img").style.transition = "1s"
+        document.querySelector(".mobilelogo>img").style.transition = "1s"
+        document.querySelector(".nav-link-row").style.opacity = "1"
+        document.querySelector(".nav-col").style.paddingTop = "0.2vw"
+      } else {
+        document.querySelector(".nav-col>h2").style.lineHeight = "0.3rem"
+        document.querySelector(".nav-col>h4").style.lineHeight = "0.3rem"
+        document.querySelector(".nav-link-row").style.backgroundColor = "black"
+        document.querySelector(".nav-link-row").style.marginTop = "4.7vw"
+        document.querySelector(".dep-nav-row").style.marginTop = "7vw"
+        document.querySelector(".logobadge>h4").style.display = "flex"
+        document.querySelector(".logobadge>div>img").style.maxHeight = "8vw"
+        document.querySelector(".logobadge>div>img").style.borderWidth = "0.5vw"
+        document.querySelector(".logobadge").style.backgroundColor = "#E47F40"
+        document.querySelector(".logobadge>div>img").style.marginTop = "0px"
+        document.querySelector(".logobadge").style.paddingLeft = "0"
+        document.querySelector(".mobilelogo>img").style.maxHeight = "7vh"
+        document.querySelector(".logobadge").style.transition = "1s"
+        document.querySelector(".logobadge>h4").style.transition = "1s"
+        document.querySelector(".logobadge>div>img").style.transition = "1s"
+        document.querySelector(".mobilelogo>img").style.transition = "1s"
+        document.querySelector(".nav-link-row").style.opacity = "0.8"
+        document.querySelector(".nav-col").style.paddingTop = "0.5vw"
+      }
+    })
+  }, [])
+
   return (
     <>
       <div className="nav-row">
