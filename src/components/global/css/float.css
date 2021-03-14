@@ -6,16 +6,16 @@
   z-index: 10;
   transition: all 1s;
 }
-#float-menu{
+#float-menu {
   max-height: 30vh;
   overflow: hidden;
   overflow-y: scroll;
   scrollbar-width: none;
 }
-#float-menu::-webkit-scrollbar{
+#float-menu::-webkit-scrollbar {
   display: none;
 }
-#floatimg{
+#floatimg {
   align-self: flex-start;
 }
 .float-card {
@@ -30,15 +30,15 @@
   margin-bottom: 10px;
   transition: all 1s;
 }
-.float-card>a{
+.float-card > a {
   text-decoration: none;
-  color: #ffffff; 
+  color: #ffffff;
 }
-#float-menu{
+#float-menu {
   display: none;
 }
-@media(max-width:768px){
-  .float{
+@media (max-width: 768px) {
+  .float {
     display: none;
   }
-} 
+}
