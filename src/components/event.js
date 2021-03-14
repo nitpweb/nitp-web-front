@@ -7,21 +7,20 @@ class Event extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      events: []
+      events: [],
     }
   }
   componentDidMount() {
-   let eventsUrl = `http://beta.nitp.ac.in:3000/api/event`
-   axios
-     .get(eventsUrl)
-     .then(res => {
-       const event = res.data
-       this.setState({ events: event })
-     })
-     .catch(e => {
-       console.log(e)
-     })
-  
+    let eventsUrl = `http://beta.nitp.ac.in:3000/api/event`
+    axios
+      .get(eventsUrl)
+      .then(res => {
+        const event = res.data
+        this.setState({ events: event })
+      })
+      .catch(e => {
+        console.log(e)
+      })
   }
   render() {
     return (
@@ -34,7 +33,7 @@ class Event extends React.Component {
                 const date = new Date(event.openDate)
                 const day = date.getDate()
                 const month = date.getMonth()
-                const year = date.getFullYear() 
+                const year = date.getFullYear()
                 const cdate = new Date(event.closeDate)
                 const cday = cdate.getDate()
                 const cmonth = cdate.getMonth()

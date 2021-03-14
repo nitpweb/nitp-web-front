@@ -177,7 +177,7 @@ class Home extends React.Component {
               } else {
                 d = `${d} hours ago`
               }
-              var desc=String(news.description).substr(0,170)
+              var desc = String(news.description).substr(0, 170)
               if (news.title != "") {
                 return <Newscard time={d} head={news.title} detail={desc} />
               }
