@@ -1,0 +1,186 @@
+.innovation {
+  width: 100vw;
+  height: 450px;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(#363636));
+  background: linear-gradient(0deg, black, #363636);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.innovation #head {
+  position: absolute;
+  color: white;
+  left: 11%;
+  top: 15%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 30px;
+  margin: 0;
+}
+
+.innovation #one {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 200px;
+}
+
+.innovation #two {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+  top: 5%;
+  width: 100px;
+}
+
+.innovation #three {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 90px;
+  height: auto;
+}
+
+.innovation #four {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: auto;
+}
+
+.innovation .child {
+  background: rgba(0, 0, 0, 0.2);
+  height: 200px;
+  margin: 2vw;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: scroll;
+}
+
+.innovation .child::-webkit-scrollbar {
+  display: none;
+}
+
+.innovation .child .card {
+  height: 200px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 2rem;
+}
+
+.innovation .child .card .part1 {
+  width: 100%;
+  height: 65%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.innovation .child .card .part2 {
+  width: 100%;
+  height: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: white;
+  overflow: hidden;
+}
+
+.innovation .child .card .part2 .text {
+  width: 75%;
+  padding: 0.5rem;
+  font-size: .75rem;
+}
+
+.innovation .child .card .part2 .text #heading {
+  font-weight: 600;
+  margin: 0;
+}
+
+.innovation .child .card .part2 .pic {
+  width: 25%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.innovation .child1 {
+  background: rgba(0, 0, 0, 0.2);
+  width: 4%;
+  height: 200px;
+  margin: 2vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.innovation .child1:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#C4C4C4), to(rgba(196, 196, 196, 0)));
+  background: linear-gradient(90deg, #C4C4C4 0%, rgba(196, 196, 196, 0) 100%);
+}
+
+.innovation .child1 img {
+  width: 35px;
+  height: auto;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .innovation .child1 {
+    display: none;
+  }
+  .innovation .child {
+    width: 90%;
+  }
+}
+
+@media (min-width: 481px) {
+  .innovation .child1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .innovation .child {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

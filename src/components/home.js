@@ -8,6 +8,7 @@ import Eventcard from "./home/eventcard"
 import { Nitpbackimg } from "./home/nitpimg"
 import { Noticelist } from "./home/noticelist"
 import { Link } from "gatsby"
+import Innovation from "./innovation/Innovation"
 
 class Home extends React.Component {
   constructor(props) {
@@ -184,6 +185,7 @@ class Home extends React.Component {
             })}
           </div>
         </div>
+        <Innovation/>
       </div>
     )
   }
