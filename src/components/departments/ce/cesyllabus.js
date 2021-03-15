@@ -2,7 +2,15 @@ import React from "react"
 import Table from "../../table"
 import Course from "./Civil BTech CourseStructure"
 import Cephd from "./cephd"
-import Cemtech from "./cemtech"
+import {
+  StructuralEngg,
+  TransPortEngineering,
+  RiverEngg,
+  EnvEngg,
+  GeoEngg,
+  WaterRes,
+} from "./cemtech"
+
 import main from "../img/book.svg"
 
 const Cesyllabus = props => {
@@ -60,7 +68,7 @@ const Cesyllabus = props => {
         </Table>
         <div className="dmainrow">
           <h1 className="rowmarl3" data-aos="zoom-in-right">
-            M.Tech Course Structure
+            Course Structure for M. Tech (Civil Engg.) in Structural Engineering
           </h1>
         </div>
         <Table>
@@ -76,7 +84,186 @@ const Cesyllabus = props => {
             <th>P</th>
             <th>Total</th>
           </tr>
-          {Cemtech.map(elem => (
+          {StructuralEngg.map(elem => (
+            <tr className="syllabus-table-row">
+              <td>{elem.prog}</td>
+              <td>{elem.ccmt}</td>
+              <td>{elem.grp}</td>
+              <td>{elem.sem}</td>
+              <td>{elem.course_code}</td>
+              <td>
+                <a href={elem.url}>{elem.course_title}</a>
+              </td>
+              <td>{elem.l}</td>
+              <td>{elem.t}</td>
+              <td>{elem.p}</td>
+              <td>{elem.credits}</td>
+            </tr>
+          ))}
+        </Table>
+        <div className="dmainrow">
+          <h1 className="rowmarl3" data-aos="zoom-in-right">
+            Course Structure for M. Tech (Civil Engg.) in Geotechnical
+            Engineering{" "}
+          </h1>
+        </div>
+        <Table>
+          <tr className="syllabus-table-head">
+            <th>Prog</th>
+            <th>CCMT Code</th>
+            <th>Group</th>
+            <th>Sem</th>
+            <th>Course Code</th>
+            <th>Course Title</th>
+            <th>L</th>
+            <th>T</th>
+            <th>P</th>
+            <th>Total</th>
+          </tr>
+          {GeoEngg.map(elem => (
+            <tr className="syllabus-table-row">
+              <td>{elem.prog}</td>
+              <td>{elem.ccmt}</td>
+              <td>{elem.grp}</td>
+              <td>{elem.sem}</td>
+              <td>{elem.course_code}</td>
+              <td>
+                <a href={elem.url}>{elem.course_title}</a>
+              </td>
+              <td>{elem.l}</td>
+              <td>{elem.t}</td>
+              <td>{elem.p}</td>
+              <td>{elem.credits}</td>
+            </tr>
+          ))}
+        </Table>
+        <div className="dmainrow">
+          <h1 className="rowmarl3" data-aos="zoom-in-right">
+            Course Structure for M. Tech (Civil Engg.) in Transportation
+            Engineering
+          </h1>
+        </div>
+        <Table>
+          <tr className="syllabus-table-head">
+            <th>Prog</th>
+            <th>CCMT Code</th>
+            <th>Group</th>
+            <th>Sem</th>
+            <th>Course Code</th>
+            <th>Course Title</th>
+            <th>L</th>
+            <th>T</th>
+            <th>P</th>
+            <th>Total</th>
+          </tr>
+          {TransPortEngineering.map(elem => (
+            <tr className="syllabus-table-row">
+              <td>{elem.prog}</td>
+              <td>{elem.ccmt}</td>
+              <td>{elem.grp}</td>
+              <td>{elem.sem}</td>
+              <td>{elem.course_code}</td>
+              <td>
+                <a href={elem.url}>{elem.course_title}</a>
+              </td>
+              <td>{elem.l}</td>
+              <td>{elem.t}</td>
+              <td>{elem.p}</td>
+              <td>{elem.credits}</td>
+            </tr>
+          ))}
+        </Table>
+        <div className="dmainrow">
+          <h1 className="rowmarl3" data-aos="zoom-in-right">
+            Course Structure for M. Tech (Civil Engg.) in Water Resource
+            Engineering
+          </h1>
+        </div>
+        <Table>
+          <tr className="syllabus-table-head">
+            <th>Prog</th>
+            <th>CCMT Code</th>
+            <th>Group</th>
+            <th>Sem</th>
+            <th>Course Code</th>
+            <th>Course Title</th>
+            <th>L</th>
+            <th>T</th>
+            <th>P</th>
+            <th>Total</th>
+          </tr>
+          {WaterRes.map(elem => (
+            <tr className="syllabus-table-row">
+              <td>{elem.prog}</td>
+              <td>{elem.ccmt}</td>
+              <td>{elem.grp}</td>
+              <td>{elem.sem}</td>
+              <td>{elem.course_code}</td>
+              <td>
+                <a href={elem.url}>{elem.course_title}</a>
+              </td>
+              <td>{elem.l}</td>
+              <td>{elem.t}</td>
+              <td>{elem.p}</td>
+              <td>{elem.credits}</td>
+            </tr>
+          ))}
+        </Table>
+        <div className="dmainrow">
+          <h1 className="rowmarl3" data-aos="zoom-in-right">
+            Course Structure for M. Tech (Civil Engg.) in Environmental
+            Engineering
+          </h1>
+        </div>
+        <Table>
+          <tr className="syllabus-table-head">
+            <th>Prog</th>
+            <th>CCMT Code</th>
+            <th>Group</th>
+            <th>Sem</th>
+            <th>Course Code</th>
+            <th>Course Title</th>
+            <th>L</th>
+            <th>T</th>
+            <th>P</th>
+            <th>Total</th>
+          </tr>
+          {EnvEngg.map(elem => (
+            <tr className="syllabus-table-row">
+              <td>{elem.prog}</td>
+              <td>{elem.ccmt}</td>
+              <td>{elem.grp}</td>
+              <td>{elem.sem}</td>
+              <td>{elem.course_code}</td>
+              <td>
+                <a href={elem.url}>{elem.course_title}</a>
+              </td>
+              <td>{elem.l}</td>
+              <td>{elem.t}</td>
+              <td>{elem.p}</td>
+              <td>{elem.credits}</td>
+            </tr>
+          ))}
+        </Table>
+        <div className="dmainrow">
+          <h1 className="rowmarl3" data-aos="zoom-in-right">
+            Course Structure for M. Tech (Civil Engg.) in River Engineering
+          </h1>
+        </div>
+        <Table>
+          <tr className="syllabus-table-head">
+            <th>Prog</th>
+            <th>CCMT Code</th>
+            <th>Group</th>
+            <th>Sem</th>
+            <th>Course Code</th>
+            <th>Course Title</th>
+            <th>L</th>
+            <th>T</th>
+            <th>P</th>
+            <th>Total</th>
+          </tr>
+          {RiverEngg.map(elem => (
             <tr className="syllabus-table-row">
               <td>{elem.prog}</td>
               <td>{elem.ccmt}</td>
@@ -111,9 +298,9 @@ const Cesyllabus = props => {
           {Cephd.map(elem => (
             <tr className="syllabus-table-row">
               <td>{elem.type}</td>
-              <td>{elem.coursecode}</td>
+              <td>{elem.course_code}</td>
               <td>
-                <a href={elem.url}>{elem.coursetitle}</a>
+                <a href={elem.url}>{elem.course_title}</a>
               </td>
               <td>{elem.l}</td>
               <td>{elem.t}</td>
