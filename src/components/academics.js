@@ -8,6 +8,7 @@ import "./academics/css/academics.css"
 import Acadnotice from "./academics/acadnotice"
 import { Acadnoticeb } from "./academics/acadnotice"
 import Floatmenu from "./academics/floatmenu"
+
 class Academicspage extends React.Component {
   constructor(props) {
     super(props)
@@ -150,6 +151,7 @@ class Academicspage extends React.Component {
               loading="lazy"
             />
           </div>
+        
           <div className="col-6 imgcolstyle">
             <div className="row rowmarr3">
               <h1 data-aos="zoom-in-left">Notice</h1>
