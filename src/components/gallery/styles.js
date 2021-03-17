@@ -71,20 +71,17 @@ export const Gallery = styled.div`
     img {
       filter: blur(30px);
     }
-    p {
+    a {
       font-family: Source Sans Pro;
       position: absolute;
       font-style: normal;
       font-weight: 600;
       font-size: 15px;
       line-height: 19px;
+      padding: 10px;
       text-align: center;
       color: #fff;
     }
-  }
-  img {
-    width: 100%;
-    height: 100%;
   }
 
   .tempimg {
@@ -92,4 +89,79 @@ export const Gallery = styled.div`
     width: 100%;
     height: 100%;
   }
+  @media only screen and (max-width: 768px) {
+    height: 250px;
+  }
+  @media only screen and (max-width: 426px) {
+    height: 100%;
+    flex-direction: column;
+    .first-div {
+      margin-left: 0;
+      width: 100%;
+    }
+    .second-div {
+      flex-direction: row;
+      width: 100%;
+      margin-bottom: 15px;
+      .first-child-div,
+      .second-child-div {
+        width: 50%;
+        height: 100%;
+      }
+      .first-child-div {
+        margin-right: 15px;
+        margin-top: 0;
+      }
+    }
+    .third-div,
+    .fourth-div {
+      display: none;
+    }
+    .fifth-div {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 0;
+      height: 100px;
+    }
+  }
+`
+export const MainGallery = styled.div`
+  padding: 0 1rem;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .column {
+    width: 25%;
+    max-width: 25%;
+    height: 100%;
+    padding: 0 4px;
+    box-sizing: border-box;
+
+    img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+`
+export const GallertHead = styled.h1`
+  font-family: "Source Sans Pro";
+  font-size: 3.5rem;
+  color: #f37023;
+  text-align: center;
+  padding-top: 10vw;
 `

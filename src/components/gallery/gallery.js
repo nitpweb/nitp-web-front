@@ -2,11 +2,12 @@ import React from "react"
 import { Gallery } from "./styles"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 const TempImg = () => {
   const data = useStaticQuery(graphql`
     query {
-      main: file(relativePath: { eq: "gallery/600911.jpg" }) {
+      main: file(relativePath: { eq: "gallery/images/600911.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 700) {
             ...GatsbyImageSharpFluid
@@ -77,7 +78,9 @@ const GalleryComp = () => {
         </div>
         <div className="fifth-div">
           <TempImg />
-          <p>See More</p>
+          <Link to="/gallery">
+            <p>See More</p>
+          </Link>
         </div>
       </Gallery>
     </div>
