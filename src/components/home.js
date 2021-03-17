@@ -6,9 +6,10 @@ import Importantlink from "./home/importantlink"
 import Notice from "./home/notice"
 import Eventcard from "./home/eventcard"
 import { Nitpbackimg } from "./home/nitpimg"
-import { Gallery } from "./styles"
+
 import { Noticelist } from "./home/noticelist"
 import { Link } from "gatsby"
+import GalleryComp from "./gallery/gallery"
 
 class Home extends React.Component {
   constructor(props) {
@@ -185,63 +186,7 @@ class Home extends React.Component {
             })}
           </div>
         </div>
-        <div>
-          <div
-            data-aos="zoom-in"
-            data-aos-duration="200"
-            className="gallery-head"
-          >
-            Gallery
-          </div>
-          <Gallery>
-            <div className="first-div">
-              <img src="/images/600911.jpg" />
-            </div>
-            <div className="second-div">
-              <div className="first-child-div">
-                <img src="/images/600911.jpg" />
-              </div>
-              <div className="second-child-div">
-                <img src="/images/600911.jpg" />
-              </div>
-            </div>
-            <div className="third-div">
-              <div className="first-child-div">
-                <img src="/images/600911.jpg" />
-              </div>
-              <div className="second-child-div">
-                <img src="/images/600911.jpg" />
-              </div>
-            </div>{" "}
-            <div className="fourth-div">
-              <div className="first-child-div">
-                <div className="short-row-1">
-                  <div className="first">
-                    <img src="/images/600911.jpg" />
-                  </div>
-                  <div className="second">
-                    <img src="/images/600911.jpg" />
-                  </div>
-                </div>
-                <div className="short-row-2">
-                  <div className="third">
-                    <img src="/images/600911.jpg" />
-                  </div>
-                  <div className="fourth">
-                    <img src="/images/600911.jpg" />
-                  </div>
-                </div>
-              </div>
-              <div className="second-child-div">
-                <img src="/images/600911.jpg" />
-              </div>
-            </div>
-            <div className="fifth-div">
-              <img src="/images/600911.jpg" />
-              <p>See More</p>
-            </div>
-          </Gallery>
-        </div>
+        <GalleryComp />
       </div>
     )
   }

@@ -9,6 +9,8 @@
 /coverage
 # production
 
+
+
 # misc
 .DS_Store
 .env.local
@@ -22,3 +24,4 @@ yarn-error.log*
 firebase.json
 .firebaserc
 node_modules
+public
