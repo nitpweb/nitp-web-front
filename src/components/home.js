@@ -9,6 +9,7 @@ import { Nitpbackimg } from "./home/nitpimg"
 
 import { Noticelist } from "./home/noticelist"
 import { Link } from "gatsby"
+import Innovation from "./innovation/Innovation"
 import GalleryComp from "./gallery/gallery"
 
 class Home extends React.Component {
@@ -186,6 +187,7 @@ class Home extends React.Component {
             })}
           </div>
         </div>
+<Innovation/>
         <GalleryComp />
       </div>
     )
