@@ -72,6 +72,7 @@
 }
 
 .news-head,
+.gallery-head,
 .notice-head,
 .event-head {
   height: 52px;
@@ -110,6 +111,17 @@
 }
 .news-head {
   margin-right: 5vw;
+}
+
+.gallery-head{
+  margin-left: 8vw;
+  margin-right: 5vw;
+}
+.gallery{
+  margin-left: 8vw;
+  margin-right: 5vw;
+  display: flex;
+  height: 400px;
 }
 .event-head {
   margin-left: 5vw;
