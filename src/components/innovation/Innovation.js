@@ -9,6 +9,10 @@ import Incard from './InCard';
 
 const Innovation = () => {
 
+    function scroll() {  
+        console.log("hello");
+      }
+
     return (
         <>
         <div className="innovation">
@@ -24,9 +28,9 @@ const Innovation = () => {
         <Incard/>
         <Incard/>
         <Incard/>
+        <div className="child1" onClick={scroll}>
+        <img id="arrow" src={Arrow}/>
         </div>
-        <div className="child1">
-        <img src={Arrow}/>
         </div>
         </div>
         </>
