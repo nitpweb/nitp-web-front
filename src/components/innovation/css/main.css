@@ -1,6 +1,6 @@
 .innovation {
   width: 100vw;
-  height: 600px;
+  height: 580px;
   background: -webkit-gradient(linear, left bottom, left top, from(black), to(#363636));
   background: linear-gradient(0deg, black, #363636);
   display: -webkit-box;
@@ -22,8 +22,8 @@
 .innovation #head {
   position: absolute;
   color: white;
-  left: 11%;
-  top: 15%;
+  left: 10%;
+  top: 18%;
   font-family: 'Nunito', sans-serif;
   font-size: 30px;
   margin: 0;
@@ -105,9 +105,14 @@
 .innovation .child .card .part1 {
   width: 100%;
   height: 65%;
-  -o-object-fit: cover;
-     object-fit: cover;
   overflow: hidden;
+}
+
+.innovation .child .card .part1 img {
+  width: 300px;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .innovation .child .card .part2 {
@@ -140,6 +145,12 @@
   display: -ms-grid;
   display: grid;
   place-items: center;
+}
+
+.innovation .child .card .part2 .pic img {
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
 }
 
 .innovation .child .child1 {
