@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import "./css/main.css";
 import Union1 from "./img/Union1.svg";
 import Union from "./img/Union.svg";
@@ -46,18 +46,59 @@ const Innovation = () => {
             heading: "Giving Robots Human-Like Perception of Their Physical Environments",
             date: "Dec 15, 2020 | Technology"
         },
+        {
+            link1: "https://cdn.lanetaneta.com/wp-content/uploads/2019/05/1558383420_%C2%BFPor-qu%C3%A9-Facebook-est%C3%A1-haciendo-investigaci%C3%B3n-rob%C3%B3tica-390x220.jpg",
+            link2: "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
+            heading: "Giving Robots Human-Like Perception of Their Physical Environments",
+            date: "Dec 15, 2020 | Technology"
+        },
+        {
+            link1: "https://cdn.lanetaneta.com/wp-content/uploads/2019/05/1558383420_%C2%BFPor-qu%C3%A9-Facebook-est%C3%A1-haciendo-investigaci%C3%B3n-rob%C3%B3tica-390x220.jpg",
+            link2: "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
+            heading: "Giving Robots Human-Like Perception of Their Physical Environments",
+            date: "Dec 15, 2020 | Technology"
+        },
+        {
+            link1: "https://cdn.lanetaneta.com/wp-content/uploads/2019/05/1558383420_%C2%BFPor-qu%C3%A9-Facebook-est%C3%A1-haciendo-investigaci%C3%B3n-rob%C3%B3tica-390x220.jpg",
+            link2: "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
+            heading: "Giving Robots Human-Like Perception of Their Physical Environments",
+            date: "Dec 15, 2020 | Technology"
+        },
+        {
+            link1: "https://cdn.lanetaneta.com/wp-content/uploads/2019/05/1558383420_%C2%BFPor-qu%C3%A9-Facebook-est%C3%A1-haciendo-investigaci%C3%B3n-rob%C3%B3tica-390x220.jpg",
+            link2: "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
+            heading: "Giving Robots Human-Like Perception of Their Physical Environments",
+            date: "Dec 15, 2020 | Technology"
+        },
+        {
+            link1: "https://cdn.lanetaneta.com/wp-content/uploads/2019/05/1558383420_%C2%BFPor-qu%C3%A9-Facebook-est%C3%A1-haciendo-investigaci%C3%B3n-rob%C3%B3tica-390x220.jpg",
+            link2: "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
+            heading: "Giving Robots Human-Like Perception of Their Physical Environments",
+            date: "Dec 15, 2020 | Technology"
+        },
     ]
-    function Card(val) {
+    const[x,setX]=useState(0)
+    function Card(val,index) {
         return(
             <InCard
             link1={val.link1}
             link2={val.link2}
             heading={val.heading}
-            date={val.data}/>
+            date={val.data}
+            key={index}
+            trans={x}/>
         )
     }
+    
     function scroll() {
-        console.log("hello");
+        if(x+900<(data.length)*300){
+            setX(x+300);
+            
+        }
+        else{
+            setX(0)
+            console.log(data.length);
+        }
     }
 
     return (
