@@ -1,11 +1,10 @@
 import React from 'react';
-import Innovation from './Innovation'
 
 const Incard = (props) => {
 
     return (
         <>
-            <div className="card" key={props.key} style={{transform:`translateX(-${props.trans}px)`}}>
+            <div className="card" key={props.key} style={{transform:`translateX(${props.trans}px)`}} data-aos="fade">
                 <div className="part1">
                     <img src={props.link1} alt="img" />
                 </div>

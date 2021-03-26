@@ -11,72 +11,73 @@ const Innovation = () => {
 
     const data = [
         {
-            link1: "https://cdn.lanetaneta.com/wp-content/uploads/2019/05/1558383420_%C2%BFPor-qu%C3%A9-Facebook-est%C3%A1-haciendo-investigaci%C3%B3n-rob%C3%B3tica-390x220.jpg",
+            link1: "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/sales-and-tech-header.jpg",
             link2: "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
             heading: "Giving Robots Human-Like Perception of Their Physical Environments",
             date: "Dec 15, 2020 | Technology"
         },
         {
-            link1: "https://cdn.lanetaneta.com/wp-content/uploads/2019/05/1558383420_%C2%BFPor-qu%C3%A9-Facebook-est%C3%A1-haciendo-investigaci%C3%B3n-rob%C3%B3tica-390x220.jpg",
+            link1: "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/sales-and-tech-header.jpg",
             link2: "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
             heading: "Giving Robots Human-Like Perception of Their Physical Environments",
             date: "Dec 15, 2020 | Technology"
         },
         {
-            link1: "https://cdn.lanetaneta.com/wp-content/uploads/2019/05/1558383420_%C2%BFPor-qu%C3%A9-Facebook-est%C3%A1-haciendo-investigaci%C3%B3n-rob%C3%B3tica-390x220.jpg",
+            link1: "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/sales-and-tech-header.jpg",
             link2: "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
             heading: "Giving Robots Human-Like Perception of Their Physical Environments",
             date: "Dec 15, 2020 | Technology"
         },
         {
-            link1: "https://cdn.lanetaneta.com/wp-content/uploads/2019/05/1558383420_%C2%BFPor-qu%C3%A9-Facebook-est%C3%A1-haciendo-investigaci%C3%B3n-rob%C3%B3tica-390x220.jpg",
+            link1: "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/sales-and-tech-header.jpg",
             link2: "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
             heading: "Giving Robots Human-Like Perception of Their Physical Environments",
             date: "Dec 15, 2020 | Technology"
         },
         {
-            link1: "https://cdn.lanetaneta.com/wp-content/uploads/2019/05/1558383420_%C2%BFPor-qu%C3%A9-Facebook-est%C3%A1-haciendo-investigaci%C3%B3n-rob%C3%B3tica-390x220.jpg",
+            link1: "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/sales-and-tech-header.jpg",
             link2: "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
             heading: "Giving Robots Human-Like Perception of Their Physical Environments",
             date: "Dec 15, 2020 | Technology"
         },
         {
-            link1: "https://cdn.lanetaneta.com/wp-content/uploads/2019/05/1558383420_%C2%BFPor-qu%C3%A9-Facebook-est%C3%A1-haciendo-investigaci%C3%B3n-rob%C3%B3tica-390x220.jpg",
+            link1: "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/sales-and-tech-header.jpg",
             link2: "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
             heading: "Giving Robots Human-Like Perception of Their Physical Environments",
             date: "Dec 15, 2020 | Technology"
         },
         {
-            link1: "https://cdn.lanetaneta.com/wp-content/uploads/2019/05/1558383420_%C2%BFPor-qu%C3%A9-Facebook-est%C3%A1-haciendo-investigaci%C3%B3n-rob%C3%B3tica-390x220.jpg",
+            link1: "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/sales-and-tech-header.jpg",
             link2: "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
             heading: "Giving Robots Human-Like Perception of Their Physical Environments",
             date: "Dec 15, 2020 | Technology"
         },
         {
-            link1: "https://cdn.lanetaneta.com/wp-content/uploads/2019/05/1558383420_%C2%BFPor-qu%C3%A9-Facebook-est%C3%A1-haciendo-investigaci%C3%B3n-rob%C3%B3tica-390x220.jpg",
+            link1: "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/sales-and-tech-header.jpg",
             link2: "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
             heading: "Giving Robots Human-Like Perception of Their Physical Environments",
             date: "Dec 15, 2020 | Technology"
         },
         {
-            link1: "https://cdn.lanetaneta.com/wp-content/uploads/2019/05/1558383420_%C2%BFPor-qu%C3%A9-Facebook-est%C3%A1-haciendo-investigaci%C3%B3n-rob%C3%B3tica-390x220.jpg",
+            link1: "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/sales-and-tech-header.jpg",
             link2: "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
             heading: "Giving Robots Human-Like Perception of Their Physical Environments",
             date: "Dec 15, 2020 | Technology"
         },
         {
-            link1: "https://cdn.lanetaneta.com/wp-content/uploads/2019/05/1558383420_%C2%BFPor-qu%C3%A9-Facebook-est%C3%A1-haciendo-investigaci%C3%B3n-rob%C3%B3tica-390x220.jpg",
+            link1: "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/sales-and-tech-header.jpg",
             link2: "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
             heading: "Giving Robots Human-Like Perception of Their Physical Environments",
             date: "Dec 15, 2020 | Technology"
         },
         {
-            link1: "https://cdn.lanetaneta.com/wp-content/uploads/2019/05/1558383420_%C2%BFPor-qu%C3%A9-Facebook-est%C3%A1-haciendo-investigaci%C3%B3n-rob%C3%B3tica-390x220.jpg",
+            link1: "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/sales-and-tech-header.jpg",
             link2: "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
             heading: "Giving Robots Human-Like Perception of Their Physical Environments",
             date: "Dec 15, 2020 | Technology"
         },
     ]
+    data.reverse();
     const[x,setX]=useState(0)
     function Card(val,index) {
         return(
@@ -91,7 +92,7 @@ const Innovation = () => {
     }
     
     function scroll() {
-        if(x+900<(data.length)*300){
+        if(x+900<=(data.length)*300){
             setX(x+300);
             
         }
