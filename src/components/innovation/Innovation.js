@@ -85,7 +85,7 @@ const Innovation = () => {
             link1={val.link1}
             link2={val.link2}
             heading={val.heading}
-            date={val.data}
+            date={val.date}
             key={index}
             trans={x}/>
         )
