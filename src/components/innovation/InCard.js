@@ -10,7 +10,7 @@ const Incard = (props) => {
                 </div>
                 <div className="part2">
                     <div className="text"><p id="heading">{props.heading}</p>
-                        <p>{props.date}</p>
+                        <p id="time">{props.date}</p>
                     </div>
                     <div className="pic">
                         <img src={props.link2} alt="img" />

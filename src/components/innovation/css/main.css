@@ -139,13 +139,19 @@
 
 .innovation .child .card .part2 .text {
   width: 75%;
-  padding: 0.5rem;
-  font-size: .75rem;
+  padding: 8px;
+  font-size: 11.5px;
+  font-family: 'Nunito', sans-serif;
 }
 
 .innovation .child .card .part2 .text #heading {
   font-weight: 600;
   margin: 0;
+}
+.innovation .child .card .part2 .text #time {
+  font-weight: 500;
+  margin: 0;
+  padding-top: 8px;
 }
 
 .innovation .child .card .part2 .pic {
