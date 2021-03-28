@@ -4,7 +4,7 @@ import Union1 from "./img/Union1.svg";
 import Union from "./img/Union.svg";
 import Group444 from "./img/Group444.svg";
 import Group445 from "./img/Group445.svg";
-import Arrow from "./img/Arrow.png"
+import Arrow from "./img/Arrow.svg"
 import InCard from './InCard';
 
 const Innovation = () => {
@@ -75,7 +75,7 @@ const Innovation = () => {
             link2: "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
             heading: "Giving Robots Human-Like Perception of Their Physical Environments",
             date: "Dec 15, 2020 | Technology"
-        },
+        }
     ]
     data.reverse();
     const[x,setX]=useState(0)

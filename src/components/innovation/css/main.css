@@ -82,7 +82,6 @@
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  position: relative;
 }
 
 .innovation .child::-webkit-scrollbar {
@@ -174,7 +173,9 @@
           justify-content: center;
   cursor: pointer;
   position: absolute;
-  right: 0%;
+  left: 90%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   z-index: 2;
 }
 
@@ -184,10 +185,11 @@
 }
 
 .innovation .child .child1 #arrow {
-  width: 30px;
+  width: 28px;
   height: auto;
-  color: white;
-  padding: 10px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  padding: 5px;
 }
 
 @media (max-width: 480px) {
