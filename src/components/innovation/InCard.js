@@ -1,21 +1,19 @@
 import React from 'react';
-import Ellipse from "./img/Ellipse.png"
-import Rectangle from "./img/Rectangle.png"
 
-const Incard = () => {
+const Incard = (props) => {
 
     return (
         <>
-            <div className="card">
+            <div className="card" key={props.key} style={{transform:`translateX(${props.trans}px)`}} data-aos="fade">
                 <div className="part1">
-                    <img src={Rectangle} alt="img" />
+                    <img src={props.link1} alt="img" />
                 </div>
                 <div className="part2">
-                    <div className="text"><p id="heading">Giving Robots Human-Like Perception of Their Physical Environments</p>
-                        <p>Dec 15, 2020 | Technology</p>
+                    <div className="text"><p id="heading">{props.heading}</p>
+                        <p id="time">{props.date}</p>
                     </div>
                     <div className="pic">
-                        <img src={Ellipse} alt="img" />
+                        <img src={props.link2} alt="img" />
                     </div>
                 </div>
             </div>
