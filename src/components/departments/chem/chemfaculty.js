@@ -12,7 +12,7 @@ class Chefacultypage extends React.Component {
     }
   }
   componentDidMount() {
-    let facultiesUrl = `${process.env.GATSBY_API_URL}/faculty/che`
+    let facultiesUrl = `${process.env.GATSBY_API_URL}/api/faculty/che`
     axios
       .get(facultiesUrl)
       .then(res => {
@@ -26,7 +26,7 @@ class Chefacultypage extends React.Component {
   }
 
   render() {
-    let domainUrl = `http://beta.nitp.ac.in:3000`
+    let domainUrl = `${process.env.GATSBY_API_URL}`
 
     return (
       <>

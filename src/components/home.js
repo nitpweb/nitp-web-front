@@ -23,9 +23,9 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    let eventsUrl = `${process.env.GATSBY_API_URL}/event/active`
-    let noticesUrl = `${process.env.GATSBY_API_URL}/notice/active`
-    let newsUrl = `${process.env.GATSBY_API_URL}/news`
+    let eventsUrl = `${process.env.GATSBY_API_URL}/api/event/active`
+    let noticesUrl = `${process.env.GATSBY_API_URL}/api/notice/active`
+    let newsUrl = `${process.env.GATSBY_API_URL}/api/news`
     axios
       .get(eventsUrl)
       .then(res => {

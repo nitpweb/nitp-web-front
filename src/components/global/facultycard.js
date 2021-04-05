@@ -22,6 +22,7 @@ class Facultycard extends React.Component {
             <div className="row fimg">
               <div className="facimg">
                 <img src={this.props.image} alt="" />
+                <img src="/faculty.png" alt=" " style={{width:'100%'}}/>
               </div>
               <h2>{this.props.name}</h2>
               <h3>{this.props.desg}</h3>

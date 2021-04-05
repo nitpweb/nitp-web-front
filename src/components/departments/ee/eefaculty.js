@@ -12,7 +12,7 @@ class Eefacultypage extends React.Component {
     }
   }
   componentDidMount() {
-    let facultiesUrl = `${process.env.GATSBY_API_URL}/faculty/ee`
+    let facultiesUrl = `${process.env.GATSBY_API_URL}/api/faculty/ee`
     axios
       .get(facultiesUrl)
       .then(res => {

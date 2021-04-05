@@ -12,7 +12,7 @@ class Mathfacultypage extends React.Component {
     }
   }
   componentDidMount() {
-    let facultiesUrl = `${process.env.GATSBY_API_URL}/faculty/maths`
+    let facultiesUrl = `${process.env.GATSBY_API_URL}/api/faculty/maths`
     axios
       .get(facultiesUrl)
       .then(res => {

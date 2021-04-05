@@ -12,7 +12,7 @@ class Archfacultypage extends React.Component {
     }
   }
   componentDidMount() {
-    let facultiesUrl = `${process.env.GATSBY_API_URL}/faculty/arch`
+    let facultiesUrl = `${process.env.GATSBY_API_URL}/api/faculty/arch`
     axios
       .get(facultiesUrl)
       .then(res => {
