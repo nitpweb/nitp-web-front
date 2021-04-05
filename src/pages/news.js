@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import Newspage from "../components/global/newspage"
 const News = () => (
   <Layout>
-    <SEO title="About Us" />
+    <SEO title="News" />
     <Newspage />
   </Layout>
 )

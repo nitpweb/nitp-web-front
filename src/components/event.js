@@ -11,7 +11,7 @@ class Event extends React.Component {
     }
   }
   componentDidMount() {
-    let eventsUrl = `${process.env.GATSBY_API_URL}/event`
+    let eventsUrl = `${process.env.GATSBY_API_URL}/api/event`
     axios
       .get(eventsUrl)
       .then(res => {
