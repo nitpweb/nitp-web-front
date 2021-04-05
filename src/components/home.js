@@ -9,8 +9,8 @@ import { Nitpbackimg } from "./home/nitpimg"
 
 import { Noticelist } from "./home/noticelist"
 import { Link } from "gatsby"
-import Innovation from "./innovation/Innovation"
-import GalleryComp from "./gallery/gallery"
+import Innovation from "./home/Innovation"
+import GalleryComp from "./home/gallery"
 
 class Home extends React.Component {
   constructor(props) {
@@ -88,7 +88,7 @@ class Home extends React.Component {
               </Link>
             </div>
             <div className="notice-row" data-aos="fade-up">
-              {this.state.notices.map(notice => {
+              {this.state.notices!=undefined?this.state.notices.map(notice => {
                 const newtime = new Date().getTime()
 
                 let d = Math.round((newtime - notice.timestamp) / 3600000)
@@ -110,7 +110,7 @@ class Home extends React.Component {
                     />
                   )
                 }
-              })}
+              }):null}
             </div>
           </div>
           <div id="events">
@@ -125,7 +125,7 @@ class Home extends React.Component {
               </Link>
             </div>
             <div className="event-row" data-aos="fade-up">
-              {this.state.events.map(event => {
+              {this.state.events!=undefined?this.state.events.map(event => {
                 const date = new Date(event.openDate)
                 const day = date.getDate()
                 const month = date.getMonth()
@@ -149,10 +149,11 @@ class Home extends React.Component {
                     />
                   )
                 }
-              })}
+              }):null}
             </div>
           </div>
         </div>
+        <Innovation />
         <div
           data-aos="zoom-in"
           data-aos-duration="200"
@@ -167,7 +168,7 @@ class Home extends React.Component {
 
         <div className="news-row">
           <div className="news-viewbox">
-            {this.state.news.map(news => {
+            {this.state.news!=undefined?this.state.news.map(news => {
               const newtime = new Date().getTime()
 
               var d = Math.round((newtime - news.openDate) / 3600000)
@@ -184,10 +185,10 @@ class Home extends React.Component {
               if (news.title != "") {
                 return <Newscard time={d} head={news.title} detail={desc} />
               }
-            })}
+            }):null}
           </div>
         </div>
-        <Innovation />
+
         <GalleryComp />
       </div>
     )

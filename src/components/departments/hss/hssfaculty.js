@@ -53,19 +53,21 @@ class Hssfacultypage extends React.Component {
             </div>
           </div>
           <div className="row facultyrow">
-            {this.state.faculties.map(faculty => {
-              return (
-                <Facultycard
-                  name={faculty.name}
-                  email={faculty.email}
-                  extn={faculty.ext_no}
-                  id={faculty.id}
-                  research={faculty.research_interest}
-                  image={`${domainUrl}/${faculty.imgUrl}`}
-                  desg={faculty.designation}
-                />
-              )
-            })}
+            {this.state.faculties != undefined
+              ? this.state.faculties.map(faculty => {
+                  return (
+                    <Facultycard
+                      name={faculty.name}
+                      email={faculty.email}
+                      extn={faculty.ext_no}
+                      id={faculty.id}
+                      research={faculty.research_interest}
+                      image={`${domainUrl}/${faculty.imgUrl}`}
+                      desg={faculty.designation}
+                    />
+                  )
+                })
+              : null}
           </div>
         </div>
       </>

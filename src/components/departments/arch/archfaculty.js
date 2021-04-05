@@ -52,7 +52,7 @@ class Archfacultypage extends React.Component {
             </div>
           </div>
           <div className="row facultyrow">
-            {this.state.faculties.map(faculty => {
+            {this.state.faculties!=undefined?this.state.faculties.map(faculty => {
               return (
                 <Facultycard
                   name={faculty.name}
@@ -64,7 +64,7 @@ class Archfacultypage extends React.Component {
                   desg={faculty.designation}
                 />
               )
-            })}
+            }):null}
           </div>
         </div>
       </>

@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import MainGallery from "../components/gallery/Extendedgallery"
+import MainGallery from "../components/home/Extendedgallery"
 
 const ExtendedGallery = () => {
   return (

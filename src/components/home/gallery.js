@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 const TempImg = () => {
   const data = useStaticQuery(graphql`
     query {
-      main: file(relativePath: { eq: "gallery/images/600911.jpg" }) {
+      main: file(relativePath: { eq: "home/images/600911.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 700) {
             ...GatsbyImageSharpFluid
