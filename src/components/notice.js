@@ -11,7 +11,7 @@ class Notice extends React.Component {
     }
   }
   componentDidMount() {
-    let noticesUrl = `${process.env.GATSBY_API_URL}/notice`
+    let noticesUrl = `${process.env.GATSBY_API_URL}/api/notice`
     axios
       .get(noticesUrl)
       .then(res => {
