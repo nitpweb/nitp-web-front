@@ -23,9 +23,9 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    let eventsUrl = `http://beta.nitp.ac.in:3000/api/event/active`
-    let noticesUrl = `http://beta.nitp.ac.in:3000/api/notice/active`
-    let newsUrl = `http://beta.nitp.ac.in:3000/api/news`
+    let eventsUrl = `${process.env.GATSBY_API_URL}/event/active`
+    let noticesUrl = `${process.env.GATSBY_API_URL}/notice/active`
+    let newsUrl = `${process.env.GATSBY_API_URL}/news`
     axios
       .get(eventsUrl)
       .then(res => {
@@ -187,7 +187,7 @@ class Home extends React.Component {
             })}
           </div>
         </div>
-<Innovation/>
+        <Innovation />
         <GalleryComp />
       </div>
     )

@@ -12,7 +12,7 @@ class Chefacultypage extends React.Component {
     }
   }
   componentDidMount() {
-    let facultiesUrl = `http://beta.nitp.ac.in:3000/api/faculty/che`
+    let facultiesUrl = `${process.env.GATSBY_API_URL}/faculty/che`
     axios
       .get(facultiesUrl)
       .then(res => {
