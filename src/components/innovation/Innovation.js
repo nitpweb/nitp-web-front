@@ -92,8 +92,8 @@ const Innovation = () => {
     }
     
     function scroll() {
-        if(x+900<=(data.length)*300){
-            setX(x+300);
+        if(x-900!=(data.length)*(-300)){
+            setX(x-300);
             
         }
         else{
