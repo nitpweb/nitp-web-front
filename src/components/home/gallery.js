@@ -13,7 +13,7 @@ const GalleryComp = () => {
         nodes {
           id
           childImageSharp {
-            fluid {
+            fluid(maxWidth: 1920) {
               ...GatsbyImageSharpFluid
             }
           }

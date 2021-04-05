@@ -10,7 +10,7 @@ const Extendedgallery = () => {
         nodes {
           id
           childImageSharp {
-            fluid {
+            fluid(maxWidth: 1920) {
               ...GatsbyImageSharpFluid
             }
           }
