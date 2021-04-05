@@ -4,8 +4,6 @@ import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
 
-
- 
 const GalleryComp = () => {
   const data = useStaticQuery(graphql`
     query {
