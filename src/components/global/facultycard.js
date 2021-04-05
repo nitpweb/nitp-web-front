@@ -37,7 +37,7 @@ class Facultycard extends React.Component {
               <Link
                 to="../facultyprofile"
                 state={{
-                  url: `http://beta.nitp.ac.in:3000/api/faculty/profile?id=${this.props.id}`,
+                  url: `${process.env.GATSBY_API_URL}/faculty/profile?id=${this.props.id}`,
                 }}
               >
                 View Full Profile
