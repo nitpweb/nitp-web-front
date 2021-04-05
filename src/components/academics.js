@@ -17,7 +17,7 @@ class Academicspage extends React.Component {
     }
   }
   componentDidMount() {
-    let noticesUrl = `http://beta.nitp.ac.in:3000/api/notice`
+    let noticesUrl = `${process.env.GATSBY_API_URL}/api/notice`
     axios
       .get(noticesUrl)
       .then(res => {
@@ -73,7 +73,7 @@ class Academicspage extends React.Component {
             </div>
             <div className="row rowmarr3">
               <div id="acadnoticewrap">
-                {this.state.notices.map(notice => {
+                {this.state.notices!=undefined?this.state.notices.map(notice => {
                   const newtime = new Date().getTime()
 
                   let d = Math.round((newtime - notice.timestamp) / 3600000)
@@ -95,7 +95,7 @@ class Academicspage extends React.Component {
                       />
                     )
                   }
-                })}
+                }):null}
               </div>
             </div>
           </div>
@@ -107,7 +107,7 @@ class Academicspage extends React.Component {
             </div>
             <div className="row rowmarl3">
               <div id="acadnoticewrap">
-                {this.state.notices.map(notice => {
+                {this.state.notices!=undefined?this.state.notices.map(notice => {
                   const newtime = new Date().getTime()
 
                   let d = Math.round((newtime - notice.timestamp) / 3600000)
@@ -129,7 +129,7 @@ class Academicspage extends React.Component {
                       />
                     )
                   }
-                })}
+                }):null}
               </div>
             </div>
           </div>
@@ -158,7 +158,7 @@ class Academicspage extends React.Component {
             </div>
             <div className="row rowmarr3">
               <div id="acadnoticewrap">
-                {this.state.notices.map(notice => {
+                {this.state.notices!=undefined?this.state.notices.map(notice => {
                   const newtime = new Date().getTime()
 
                   let d = Math.round((newtime - notice.timestamp) / 3600000)
@@ -180,7 +180,7 @@ class Academicspage extends React.Component {
                       />
                     )
                   }
-                })}
+                }):null}
               </div>
             </div>
           </div>
