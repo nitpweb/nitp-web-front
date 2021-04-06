@@ -11,7 +11,7 @@ class Newspage extends React.Component {
     }
   }
   componentDidMount() {
-    let noticesUrl = `http://beta.nitp.ac.in:3000/api/news`
+    let noticesUrl = `${process.env.GATSBY_API_URL}/api/news`
     axios
       .get(noticesUrl)
       .then(res => {

@@ -8,6 +8,7 @@ import "./academics/css/academics.css"
 import Acadnotice from "./academics/acadnotice"
 import { Acadnoticeb } from "./academics/acadnotice"
 import Floatmenu from "./academics/floatmenu"
+
 class Academicspage extends React.Component {
   constructor(props) {
     super(props)
@@ -16,7 +17,7 @@ class Academicspage extends React.Component {
     }
   }
   componentDidMount() {
-    let noticesUrl = `http://beta.nitp.ac.in:3000/api/notice`
+    let noticesUrl = `${process.env.GATSBY_API_URL}/api/notice`
     axios
       .get(noticesUrl)
       .then(res => {
@@ -72,29 +73,31 @@ class Academicspage extends React.Component {
             </div>
             <div className="row rowmarr3">
               <div id="acadnoticewrap">
-                {this.state.notices.map(notice => {
-                  const newtime = new Date().getTime()
+                {this.state.notices != undefined
+                  ? this.state.notices.map(notice => {
+                      const newtime = new Date().getTime()
 
-                  let d = Math.round((newtime - notice.timestamp) / 3600000)
-                  if (d > 24) {
-                    d = `${Math.round(d / 24)} days ago`
-                  } else if (d < 1) {
-                    d = `Just now`
-                  } else if (d < 2) {
-                    d = `${d} hour ago`
-                  } else {
-                    d = `${d} hours ago`
-                  }
-                  if (notice.title != "") {
-                    return (
-                      <Acadnotice
-                        detail={notice.title}
-                        time={d}
-                        attachments={notice.attachments}
-                      />
-                    )
-                  }
-                })}
+                      let d = Math.round((newtime - notice.timestamp) / 3600000)
+                      if (d > 24) {
+                        d = `${Math.round(d / 24)} days ago`
+                      } else if (d < 1) {
+                        d = `Just now`
+                      } else if (d < 2) {
+                        d = `${d} hour ago`
+                      } else {
+                        d = `${d} hours ago`
+                      }
+                      if (notice.title != "") {
+                        return (
+                          <Acadnotice
+                            detail={notice.title}
+                            time={d}
+                            attachments={notice.attachments}
+                          />
+                        )
+                      }
+                    })
+                  : null}
               </div>
             </div>
           </div>
@@ -106,29 +109,31 @@ class Academicspage extends React.Component {
             </div>
             <div className="row rowmarl3">
               <div id="acadnoticewrap">
-                {this.state.notices.map(notice => {
-                  const newtime = new Date().getTime()
+                {this.state.notices != undefined
+                  ? this.state.notices.map(notice => {
+                      const newtime = new Date().getTime()
 
-                  let d = Math.round((newtime - notice.timestamp) / 3600000)
-                  if (d > 24) {
-                    d = `${Math.round(d / 24)} days ago`
-                  } else if (d < 1) {
-                    d = `Just now`
-                  } else if (d < 2) {
-                    d = `${d} hour ago`
-                  } else {
-                    d = `${d} hours ago`
-                  }
-                  if (notice.title != "") {
-                    return (
-                      <Acadnoticeb
-                        detail={notice.title}
-                        time={d}
-                        attachments={notice.attachments}
-                      />
-                    )
-                  }
-                })}
+                      let d = Math.round((newtime - notice.timestamp) / 3600000)
+                      if (d > 24) {
+                        d = `${Math.round(d / 24)} days ago`
+                      } else if (d < 1) {
+                        d = `Just now`
+                      } else if (d < 2) {
+                        d = `${d} hour ago`
+                      } else {
+                        d = `${d} hours ago`
+                      }
+                      if (notice.title != "") {
+                        return (
+                          <Acadnoticeb
+                            detail={notice.title}
+                            time={d}
+                            attachments={notice.attachments}
+                          />
+                        )
+                      }
+                    })
+                  : null}
               </div>
             </div>
           </div>
@@ -150,35 +155,38 @@ class Academicspage extends React.Component {
               loading="lazy"
             />
           </div>
+
           <div className="col-6 imgcolstyle">
             <div className="row rowmarr3">
               <h1 data-aos="zoom-in-left">Notice</h1>
             </div>
             <div className="row rowmarr3">
               <div id="acadnoticewrap">
-                {this.state.notices.map(notice => {
-                  const newtime = new Date().getTime()
+                {this.state.notices != undefined
+                  ? this.state.notices.map(notice => {
+                      const newtime = new Date().getTime()
 
-                  let d = Math.round((newtime - notice.timestamp) / 3600000)
-                  if (d > 24) {
-                    d = `${Math.round(d / 24)} days ago`
-                  } else if (d < 1) {
-                    d = `Just now`
-                  } else if (d < 2) {
-                    d = `${d} hour ago`
-                  } else {
-                    d = `${d} hours ago`
-                  }
-                  if (notice.title != "") {
-                    return (
-                      <Acadnotice
-                        detail={notice.title}
-                        time={d}
-                        attachments={notice.attachments}
-                      />
-                    )
-                  }
-                })}
+                      let d = Math.round((newtime - notice.timestamp) / 3600000)
+                      if (d > 24) {
+                        d = `${Math.round(d / 24)} days ago`
+                      } else if (d < 1) {
+                        d = `Just now`
+                      } else if (d < 2) {
+                        d = `${d} hour ago`
+                      } else {
+                        d = `${d} hours ago`
+                      }
+                      if (notice.title != "") {
+                        return (
+                          <Acadnotice
+                            detail={notice.title}
+                            time={d}
+                            attachments={notice.attachments}
+                          />
+                        )
+                      }
+                    })
+                  : null}
               </div>
             </div>
           </div>
