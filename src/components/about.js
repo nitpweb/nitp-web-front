@@ -91,7 +91,7 @@ const Aboutpage = () => {
       </div>
       <div className="amainrow amainrow1" id="campus">
         <div className="col-6 imgcolstyle">
-          <img data-aos="zoom-in" src={map} className="img-fluid" />
+          <a href="https://www.google.com/maps/place/National+Institute+of+Technology+Patna/@25.6207241,85.170702,17z/data=!4m5!3m4!1s0x39ed58dce6732867:0x4059f39a1ac82f06!8m2!3d25.6207241!4d85.1728907" target="_blank"><img data-aos="zoom-in" src={map} className="img-fluid" /></a>
         </div>
         <div className="col-6">
           <div className="row rowmarr3">
