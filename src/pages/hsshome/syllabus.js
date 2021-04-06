@@ -1,12 +1,12 @@
 import React from "react"
 import Deplayout from "../../components/deplayout"
 import SEO from "../../components/seo"
-import Mesyllabus from "../../components/departments/me/mesyllabus"
+import Hsssyllabus from "../../components/departments/hss/hssCourseStructure"
 
 const Mesyllabuspage = () => (
   <Deplayout>
     <SEO title="HSS|Syllabus" />
-    <Mesyllabus />
+    <Hsssyllabus />
   </Deplayout>
 )
 
