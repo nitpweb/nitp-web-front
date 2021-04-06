@@ -18,13 +18,13 @@ const Extendedgallery = () => {
       }
     }
   `)
-
+  const imagelength = data.images.nodes.length
   return (
     <>
-      <GallertHead>Gallery</GallertHead>
+      <GallertHead>Gallery {imagelength}</GallertHead>
       <MainGallery>
         <div className="column">
-          {data.images.nodes.slice(0, 7).map(image => {
+          {data.images.nodes.slice(0, imagelength / 4).map(image => {
             return (
               <div data-aos="zoom-in">
                 <Img
@@ -36,62 +36,44 @@ const Extendedgallery = () => {
           })}
         </div>
         <div className="column">
-          {data.images.nodes.slice(7, 13).map(image => {
-            return (
-              <div data-aos="zoom-in">
+          {data.images.nodes
+            .slice(imagelength / 4, imagelength / 2)
+            .map(image => {
+              return (
+                <div data-aos="zoom-in">
+                  <Img
+                    fluid={image.childImageSharp.fluid}
+                    imgStyle={{ verticalAlign: `middle`, width: `100%` }}
+                  />
+                </div>
+              )
+            })}
+        </div>
+        <div className="column">
+          {data.images.nodes
+            .slice(imagelength / 2, (imagelength * 3) / 4)
+            .map(image => {
+              return (
+                <div data-aos="zoom-in">
+                  <Img
+                    fluid={image.childImageSharp.fluid}
+                    imgStyle={{ verticalAlign: `middle`, width: `100%` }}
+                  />
+                </div>
+              )
+            })}
+        </div>
+        <div className="column">
+          {data.images.nodes
+            .slice((imagelength * 3) / 4, imagelength)
+            .map(image => {
+              return (
                 <Img
                   fluid={image.childImageSharp.fluid}
                   imgStyle={{ verticalAlign: `middle`, width: `100%` }}
                 />
-              </div>
-            )
-          })}
-        </div>
-        <div className="column">
-          {data.images.nodes.slice(13, 19).map(image => {
-            return (
-              <div data-aos="zoom-in">
-                <Img
-                  fluid={image.childImageSharp.fluid}
-                  imgStyle={{ verticalAlign: `middle`, width: `100%` }}
-                />
-              </div>
-            )
-          })}
-        </div>
-        <div className="column">
-          {data.images.nodes.slice(19, 25).map(image => {
-            return (
-              <Img
-                fluid={image.childImageSharp.fluid}
-                imgStyle={{ verticalAlign: `middle`, width: `100%` }}
-              />
-            )
-          })}
-        </div>
-        <div className="column">
-          {data.images.nodes.slice(25, 32).map(image => {
-            return (
-              <div data-aos="zoom-in">
-                <Img
-                  fluid={image.childImageSharp.fluid}
-                  imgStyle={{ verticalAlign: `middle`, width: `100%` }}
-                />
-              </div>
-            )
-          })}
-        </div>
-        <div className="column">
-          {data.images.nodes.slice(32, 39).map(image => {
-            return (
-              <div data-aos="zoom-in">
-                <Img
-                  fluid={image.childImageSharp.fluid}
-                  imgStyle={{ verticalAlign: `middle`, width: `100%` }}
-                />
-              </div>
-            )
-          })}
+              )
+            })}
         </div>
       </MainGallery>
     </>

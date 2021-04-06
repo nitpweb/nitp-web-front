@@ -69,11 +69,11 @@
   height: 35px;
 }
 .nav-link-item > span:hover {
-  color: #FFE657;
+  color: #ffe657;
   transition: 0.1s ease-in-out;
 }
 .nav-link-item-active > span {
-  color: #FFE657;
+  color: #ffe657;
   border-width: 0px 0px 3px 0px;
 }
 .logobadge {
@@ -225,7 +225,7 @@
   display: none;
   min-height: 100vh;
   position: absolute;
-  height:100vh;
+  height: 100vh;
   overflow: hidden;
   overflow-y: scroll;
   scrollbar-width: thin;
@@ -238,6 +238,7 @@
   max-width: 90vw;
   justify-content: center;
   padding-top: 10px;
+  transition: all ease-in 0.5s;
 }
 
 .nav-sidebar-div {
