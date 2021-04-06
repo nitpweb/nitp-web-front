@@ -1,16 +1,17 @@
 import React from "react"
 
 const Incard = props => {
+  // console.log(props.link1)
   return (
     <>
       <div
         className="card"
-        key={props.key}
+        id={props.id}
         style={{ transform: `translateX(${props.trans}px)` }}
         data-aos="fade"
       >
         <div className="part1">
-          <img src={props.link1} alt="img" />
+          <img src={`https://drive.google.com/thumbnail?id=${props.link1}`} alt="img" />
         </div>
         <div className="part2">
           <div className="text">
@@ -18,7 +19,7 @@ const Incard = props => {
             <p id="time">{props.date}</p>
           </div>
           <div className="pic">
-            <img src={props.link2} alt="img" />
+            <img src={`https://drive.google.com/thumbnail?id=${props.link2}`} alt="img" />
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import "./css/main.css"
 import Union1 from "./img/Union1.svg"
 import Union from "./img/Union.svg"
@@ -6,118 +6,40 @@ import Group444 from "./img/Group444.svg"
 import Group445 from "./img/Group445.svg"
 import Arrow from "./img/Arrow.svg"
 import InCard from "./InCard"
+import axios from "axios"
 
 const Innovation = () => {
-  const data = [
-    {
-      link1:
-        "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/sales-and-tech-header.jpg",
-      link2:
-        "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
-      heading:
-        "Giving Robots Human-Like Perception of Their Physical Environments",
-      date: "Dec 15, 2020 | Technology",
-    },
-    {
-      link1:
-        "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/sales-and-tech-header.jpg",
-      link2:
-        "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
-      heading:
-        "Giving Robots Human-Like Perception of Their Physical Environments",
-      date: "Dec 15, 2020 | Technology",
-    },
-    {
-      link1:
-        "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/sales-and-tech-header.jpg",
-      link2:
-        "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
-      heading:
-        "Giving Robots Human-Like Perception of Their Physical Environments",
-      date: "Dec 15, 2020 | Technology",
-    },
-    {
-      link1:
-        "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/sales-and-tech-header.jpg",
-      link2:
-        "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
-      heading:
-        "Giving Robots Human-Like Perception of Their Physical Environments",
-      date: "Dec 15, 2020 | Technology",
-    },
-    {
-      link1:
-        "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/sales-and-tech-header.jpg",
-      link2:
-        "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
-      heading:
-        "Giving Robots Human-Like Perception of Their Physical Environments",
-      date: "Dec 15, 2020 | Technology",
-    },
-    {
-      link1:
-        "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/sales-and-tech-header.jpg",
-      link2:
-        "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
-      heading:
-        "Giving Robots Human-Like Perception of Their Physical Environments",
-      date: "Dec 15, 2020 | Technology",
-    },
-    {
-      link1:
-        "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/sales-and-tech-header.jpg",
-      link2:
-        "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
-      heading:
-        "Giving Robots Human-Like Perception of Their Physical Environments",
-      date: "Dec 15, 2020 | Technology",
-    },
-    {
-      link1:
-        "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/sales-and-tech-header.jpg",
-      link2:
-        "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
-      heading:
-        "Giving Robots Human-Like Perception of Their Physical Environments",
-      date: "Dec 15, 2020 | Technology",
-    },
-    {
-      link1:
-        "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/sales-and-tech-header.jpg",
-      link2:
-        "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
-      heading:
-        "Giving Robots Human-Like Perception of Their Physical Environments",
-      date: "Dec 15, 2020 | Technology",
-    },
-    {
-      link1:
-        "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/sales-and-tech-header.jpg",
-      link2:
-        "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
-      heading:
-        "Giving Robots Human-Like Perception of Their Physical Environments",
-      date: "Dec 15, 2020 | Technology",
-    },
-    {
-      link1:
-        "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/sales-and-tech-header.jpg",
-      link2:
-        "https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png",
-      heading:
-        "Giving Robots Human-Like Perception of Their Physical Environments",
-      date: "Dec 15, 2020 | Technology",
-    },
-  ]
-  data.reverse()
+
+  const [data, setData] = useState([]);
+  
+  useEffect(()=>{
+    loadData();
+  },[])
+
+  const loadData= () => {
+    const url = `${process.env.GATSBY_API_URL}/api/innovation`
+    axios
+      .get(url)
+      .then(res => setData([...res.data]))
+      .catch(e => {
+        // console.log(e)
+      })
+
+  }
+  const link= (k) =>{
+    k=k.substr(0,k.length-18);
+    k=k.substr(32, k.length);
+    return(k);
+  }
   const [x, setX] = useState(0)
-  function Card(val, index) {
+  function Card(val,index) {
+    if(val.attachments[0] && val.attachments[1])
     return (
       <InCard
-        link1={val.link1}
-        link2={val.link2}
-        heading={val.heading}
-        date={val.date}
+        link1={link(val.attachments[0].url)}
+        link2={link(val.attachments[1].url)}
+        heading={val.title}
+        date={new Date(val.closeDate).toLocaleString()}
         key={index}
         trans={x}
       />
