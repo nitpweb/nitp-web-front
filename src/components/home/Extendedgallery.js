@@ -21,7 +21,7 @@ const Extendedgallery = () => {
   const imagelength = data.images.nodes.length
   return (
     <>
-      <GallertHead>Gallery {imagelength}</GallertHead>
+      <GallertHead>Gallery</GallertHead>
       <MainGallery>
         <div className="column">
           {data.images.nodes.slice(0, imagelength / 4).map(image => {
