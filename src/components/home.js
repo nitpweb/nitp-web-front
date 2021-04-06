@@ -6,8 +6,11 @@ import Importantlink from "./home/importantlink"
 import Notice from "./home/notice"
 import Eventcard from "./home/eventcard"
 import { Nitpbackimg } from "./home/nitpimg"
+
 import { Noticelist } from "./home/noticelist"
 import { Link } from "gatsby"
+import Innovation from "./home/Innovation"
+import GalleryComp from "./home/gallery"
 
 class Home extends React.Component {
   constructor(props) {
@@ -20,9 +23,9 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    let eventsUrl = `http://beta.nitp.ac.in:3000/api/event/active`
-    let noticesUrl = `http://beta.nitp.ac.in:3000/api/notice/active`
-    let newsUrl = `http://beta.nitp.ac.in:3000/api/news`
+    let eventsUrl = `${process.env.GATSBY_API_URL}/api/event/active`
+    let noticesUrl = `${process.env.GATSBY_API_URL}/api/notice/active`
+    let newsUrl = `${process.env.GATSBY_API_URL}/api/news`
     axios
       .get(eventsUrl)
       .then(res => {
@@ -85,29 +88,31 @@ class Home extends React.Component {
               </Link>
             </div>
             <div className="notice-row" data-aos="fade-up">
-              {this.state.notices.map(notice => {
-                const newtime = new Date().getTime()
+              {this.state.notices != undefined
+                ? this.state.notices.map(notice => {
+                    const newtime = new Date().getTime()
 
-                let d = Math.round((newtime - notice.timestamp) / 3600000)
-                if (d > 24) {
-                  d = `${Math.round(d / 24)} days ago`
-                } else if (d < 1) {
-                  d = `Just now`
-                } else if (d < 2) {
-                  d = `${d} hour ago`
-                } else {
-                  d = `${d} hours ago`
-                }
-                if (notice.title != "") {
-                  return (
-                    <Notice
-                      detail={notice.title}
-                      time={d}
-                      attachments={notice.attachments}
-                    />
-                  )
-                }
-              })}
+                    let d = Math.round((newtime - notice.timestamp) / 3600000)
+                    if (d > 24) {
+                      d = `${Math.round(d / 24)} days ago`
+                    } else if (d < 1) {
+                      d = `Just now`
+                    } else if (d < 2) {
+                      d = `${d} hour ago`
+                    } else {
+                      d = `${d} hours ago`
+                    }
+                    if (notice.title != "") {
+                      return (
+                        <Notice
+                          detail={notice.title}
+                          time={d}
+                          attachments={notice.attachments}
+                        />
+                      )
+                    }
+                  })
+                : null}
             </div>
           </div>
           <div id="events">
@@ -122,34 +127,37 @@ class Home extends React.Component {
               </Link>
             </div>
             <div className="event-row" data-aos="fade-up">
-              {this.state.events.map(event => {
-                const date = new Date(event.openDate)
-                const day = date.getDate()
-                const month = date.getMonth()
-                const year = date.getFullYear()
-                const cdate = new Date(event.closeDate)
-                const cday = cdate.getDate()
-                const cmonth = cdate.getMonth()
-                const cyear = cdate.getFullYear()
-                const monthname = date
-                  .toLocaleString("default", { month: "short" })
-                  .toUpperCase()
-                if (event.title != "") {
-                  return (
-                    <Eventcard
-                      detail={event.title}
-                      time={`${day}-${month}-${year} - ${cday}-${cmonth}-${cyear}`}
-                      date={day}
-                      month={monthname}
-                      attachments={event.attachments}
-                      location={event.venue}
-                    />
-                  )
-                }
-              })}
+              {this.state.events != undefined
+                ? this.state.events.map(event => {
+                    const date = new Date(event.openDate)
+                    const day = date.getDate()
+                    const month = date.getMonth()
+                    const year = date.getFullYear()
+                    const cdate = new Date(event.closeDate)
+                    const cday = cdate.getDate()
+                    const cmonth = cdate.getMonth()
+                    const cyear = cdate.getFullYear()
+                    const monthname = date
+                      .toLocaleString("default", { month: "short" })
+                      .toUpperCase()
+                    if (event.title != "") {
+                      return (
+                        <Eventcard
+                          detail={event.title}
+                          time={`${day}-${month}-${year} - ${cday}-${cmonth}-${cyear}`}
+                          date={day}
+                          month={monthname}
+                          attachments={event.attachments}
+                          location={event.venue}
+                        />
+                      )
+                    }
+                  })
+                : null}
             </div>
           </div>
         </div>
+        <Innovation />
         <div
           data-aos="zoom-in"
           data-aos-duration="200"
@@ -164,26 +172,30 @@ class Home extends React.Component {
 
         <div className="news-row">
           <div className="news-viewbox">
-            {this.state.news.map(news => {
-              const newtime = new Date().getTime()
+            {this.state.news != undefined
+              ? this.state.news.map(news => {
+                  const newtime = new Date().getTime()
 
-              var d = Math.round((newtime - news.openDate) / 3600000)
-              if (d > 24) {
-                d = `${Math.round(d / 24)} days ago`
-              } else if (d < 1) {
-                d = `Just now`
-              } else if (d < 2) {
-                d = `${d} hour ago`
-              } else {
-                d = `${d} hours ago`
-              }
-              var desc = String(news.description).substr(0, 170)
-              if (news.title != "") {
-                return <Newscard time={d} head={news.title} detail={desc} />
-              }
-            })}
+                  var d = Math.round((newtime - news.openDate) / 3600000)
+                  if (d > 24) {
+                    d = `${Math.round(d / 24)} days ago`
+                  } else if (d < 1) {
+                    d = `Just now`
+                  } else if (d < 2) {
+                    d = `${d} hour ago`
+                  } else {
+                    d = `${d} hours ago`
+                  }
+                  var desc = String(news.description).substr(0, 170)
+                  if (news.title != "") {
+                    return <Newscard time={d} head={news.title} detail={desc} />
+                  }
+                })
+              : null}
           </div>
         </div>
+
+        <GalleryComp />
       </div>
     )
   }

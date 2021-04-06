@@ -56,7 +56,7 @@ class Facultyprofile extends React.Component {
           <div className="faculty-img-row">
             <div className="faculty-img-wrap">
               <img
-                src={`http://beta.nitp.ac.in:3000/profile/image?id=${this.state.profile.id}`}
+                src={`${process.env.GATSBY_API_URL}/profile/image?id=${this.state.profile.id}`}
                 className="facultypic"
               />
             </div>

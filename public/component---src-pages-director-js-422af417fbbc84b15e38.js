@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[31],{ZzBN:function(t,e,n){"use strict";n.r(e);var s=n("nKUr"),c=(n("q1tI"),n("Bl7J")),r=n("vrFN"),i=n("VLh1");e.default=function(){return Object(s.jsxs)(c.a,{children:[Object(s.jsx)(r.a,{title:"Director's Desk"}),Object(s.jsx)(i.a,{})]})}}}]);
-//# sourceMappingURL=component---src-pages-director-js-422af417fbbc84b15e38.js.map

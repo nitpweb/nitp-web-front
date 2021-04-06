@@ -12,7 +12,7 @@ class Csefacultypage extends React.Component {
     }
   }
   componentDidMount() {
-    let facultiesUrl = `http://beta.nitp.ac.in:3000/api/faculty/cse`
+    let facultiesUrl = `${process.env.GATSBY_API_URL}/api/faculty/cse`
     axios
       .get(facultiesUrl)
       .then(res => {
@@ -25,7 +25,7 @@ class Csefacultypage extends React.Component {
   }
 
   render() {
-    let domainUrl = `http://beta.nitp.ac.in:3000`
+    let domainUrl = `${process.env.GATSBY_API_URL}`
 
     return (
       <>
@@ -52,19 +52,21 @@ class Csefacultypage extends React.Component {
             </div>
           </div>
           <div className="row facultyrow">
-            {this.state.faculties.map(faculty => {
-              return (
-                <Facultycard
-                  name={faculty.name}
-                  email={faculty.email}
-                  id={faculty.id}
-                  extn={faculty.ext_no}
-                  research={faculty.research_interest}
-                  image={`${domainUrl}/${faculty.imgUrl}`}
-                  desg={faculty.designation}
-                />
-              )
-            })}
+            {this.state.faculties != undefined
+              ? this.state.faculties.map(faculty => {
+                  return (
+                    <Facultycard
+                      name={faculty.name}
+                      email={faculty.email}
+                      extn={faculty.ext_no}
+                      id={faculty.id}
+                      research={faculty.research_interest}
+                      image={`${domainUrl}/${faculty.imgUrl}`}
+                      desg={faculty.designation}
+                    />
+                  )
+                })
+              : null}
           </div>
         </div>
       </>

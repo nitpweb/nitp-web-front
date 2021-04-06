@@ -1,0 +1,237 @@
+.innovation {
+  width: 100vw;
+  height: 580px;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(#363636));
+  background: linear-gradient(0deg, black, #363636);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.innovation #head {
+  position: absolute;
+  color: white;
+  left: 10%;
+  top: 18%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 30px;
+  margin: 0;
+}
+
+.innovation #one {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 200px;
+}
+
+.innovation #two {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+  top: 5%;
+  width: 100px;
+}
+
+.innovation #three {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 90px;
+  height: auto;
+}
+
+.innovation #four {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: auto;
+}
+
+.innovation .child {
+  background: rgba(0, 0, 0, 0.2);
+  height: 200px;
+  margin: 2vw;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      /* -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; */
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.innovation .child::-webkit-scrollbar {
+  display: none;
+}
+
+.innovation .child .card {
+  height: 200px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 2rem;
+}
+
+.innovation .child .card .part1 {
+  width: 300px;
+  height: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.innovation .child .card .part1 img {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.innovation .child .card .part2 {
+  width: 100%;
+  height: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: white;
+  overflow: hidden;
+}
+
+.innovation .child .card .part2 .text {
+  width: 75%;
+  padding: 8px;
+  font-size: 11.5px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.innovation .child .card .part2 .text #heading {
+  font-weight: 600;
+  margin: 0;
+}
+.innovation .child .card .part2 .text #time {
+  font-weight: 500;
+  margin: 0;
+  padding-top: 8px;
+}
+
+.innovation .child .card .part2 .pic {
+  width: 25%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.innovation .child .card .part2 .pic img {
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+}
+
+.innovation .child .child1 {
+  background: rgba(0, 0, 0, 0.4);
+  width: auto;
+  height: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  z-index: 2;
+}
+.innovation .child .child2 {
+  background: rgba(0, 0, 0, 0.4);
+  width: auto;
+  height: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  margin-left:38px;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  z-index: 2;
+}
+.innovation .child .child1:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#C4C4C4), to(rgba(196, 196, 196, 0)));
+  background: linear-gradient(-90deg, #C4C4C4 0%, rgba(196, 196, 196, 0) 100%);
+}
+.innovation .child .child2:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#C4C4C4), to(rgba(196, 196, 196, 0)));
+  background: linear-gradient(90deg, #C4C4C4 0%, rgba(196, 196, 196, 0) 100%);
+}
+.innovation .child .child1 #arrow {
+  width: 28px;
+  height: auto;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  padding: 5px;
+}
+
+@media (max-width: 480px) {
+  .innovation .child1 {
+    display: none;
+  }
+  .innovation .child {
+    width: 95%;
+  }
+}
+
+@media (min-width: 481px) {
+  .innovation .child1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .innovation .child {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
