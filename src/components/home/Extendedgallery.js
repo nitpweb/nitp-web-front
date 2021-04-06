@@ -69,6 +69,30 @@ const Extendedgallery = () => {
             )
           })}
         </div>
+        <div className="column">
+          {data.images.nodes.slice(25, 32).map(image => {
+            return (
+              <div data-aos="zoom-in">
+                <Img
+                  fluid={image.childImageSharp.fluid}
+                  imgStyle={{ verticalAlign: `middle`, width: `100%` }}
+                />
+              </div>
+            )
+          })}
+        </div>
+        <div className="column">
+          {data.images.nodes.slice(32, 39).map(image => {
+            return (
+              <div data-aos="zoom-in">
+                <Img
+                  fluid={image.childImageSharp.fluid}
+                  imgStyle={{ verticalAlign: `middle`, width: `100%` }}
+                />
+              </div>
+            )
+          })}
+        </div>
       </MainGallery>
     </>
     //  <div>
