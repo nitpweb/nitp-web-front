@@ -26,7 +26,9 @@ const Innovation = () => {
       })
 
   }
-
+  const filtered = data.filter(function (el) {
+    return el.attachments.length == 2;
+  });
   const link = (k) => {
     k = k.substr(0, k.length - 18);
     k = k.substr(32, k.length);
@@ -44,17 +46,17 @@ const Innovation = () => {
     const cday = cdate.getDate()
     const cmonth = cdate.getMonth() + 1
     const cyear = cdate.getFullYear()
-    if (val.attachments[0] && val.attachments[1]){
-      return (
-        <InCard
-          link1={link(val.attachments[0].url)}
-          link2={link(val.attachments[1].url)}
-          heading={`${val.title.slice(0,72)} ....`}
-          date={`${day}/${month}/${year} - ${cday}/${cmonth}/${cyear}`}
-          key={index}
-          trans={x}
-        />
-      )}
+
+    return (
+      <InCard
+        link1={link(val.attachments[0].url)}
+        link2={link(val.attachments[1].url)}
+        heading={`${val.title.slice(0, 72)} ....`}
+        date={`${day}/${month}/${year} - ${cday}/${cmonth}/${cyear}`}
+        key={index}
+        trans={x}
+      />
+    )
   }
   return (
     <>
@@ -69,18 +71,18 @@ const Innovation = () => {
             <div
               className="child1 child2"
               onClick={() => {
-                x < 0 ? setX(x + 300) : setX((data.length-5) * -300 + 900)
+                x < 0 ? setX(x + 300) : setX((filtered.length) * -300 + 900)
               }}
             >
               <img id="arrow" src={Arrow} style={{ rotate: "180deg" }} />
             </div>
           ) : null}
-          {data.map(Card)}
+          {filtered.map(Card)}
           <div
             className="child1"
             style={{ left: "90%" }}
             onClick={() => {
-              x > (data.length-5) * -300 + 900 ? setX(x - 300) : setX(0)
+              x > (filtered.length) * -300 + 900 ? setX(x - 300) : setX(0)
             }}
           >
             <img id="arrow" src={Arrow} />
