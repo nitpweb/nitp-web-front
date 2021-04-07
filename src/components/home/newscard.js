@@ -16,7 +16,7 @@ const Newscard = inf => {
       </div>
       <div className="news-read">{inf.time}</div>
       <div className="newscard-head">
-        <h4 style={{fontSize:"15px"}}>{inf.head}</h4>
+        <h4>{inf.head}</h4>
         <h6>
           {inf.detail}
           <Link to="/news" className="newscard-readmore">
