@@ -8,7 +8,7 @@ const Newscard = inf => {
     <div data-aos="flip-left" className="newscard-box">
       <div className="news-img-wrap">
         <img
-          src={newspic}
+          src={`https://drive.google.com/thumbnail?id=${inf.url}`}
           alt="Hello"
           className="card-img"
           loading="lazy"
@@ -16,7 +16,7 @@ const Newscard = inf => {
       </div>
       <div className="news-read">{inf.time}</div>
       <div className="newscard-head">
-        <h4>{inf.head}</h4>
+        <h4 style={{fontSize:"15px"}}>{inf.head}</h4>
         <h6>
           {inf.detail}
           <Link to="/news" className="newscard-readmore">
