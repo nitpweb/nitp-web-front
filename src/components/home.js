@@ -54,7 +54,11 @@ class Home extends React.Component {
         console.log(e)
       })
   }
-
+   link = (k) => {
+    k = k.substr(0, k.length - 18);
+    k = k.substr(32, k.length);
+    return (k);
+  }
   render() {
     return (
       <div>
@@ -187,8 +191,8 @@ class Home extends React.Component {
                     d = `${d} hours ago`
                   }
                   var desc = String(news.description).substr(0, 170)
-                  if (news.title != "") {
-                    return <Newscard time={d} head={news.title} detail={desc} />
+                  if (news.title != "" && news.attachments[0]) {
+                    return <Newscard url={this.link(news.attachments[0].url)} time={d} head={news.title} detail={desc.slice(0,100)} />
                   }
                 })
               : null}

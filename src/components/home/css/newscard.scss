@@ -10,8 +10,12 @@
   .news-img-wrap{
     height: 60%;
     overflow: hidden;
+    display: grid;
+    place-items: center;
     .card-img{
-      width: 100%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
       height: auto;
     }
   }
@@ -36,10 +40,10 @@
 .newscard-head {
   font-size: 1.3rem;
   margin-top: -20px;
-  padding-left: 5%;
+  padding: 5%;
 }
 .newscard-head > h4 {
-  font-family: Source Sans Pro;
+  font-Size:15px;
   font-style: normal;
   font-weight: bold;
   color: #4b4b4b;
