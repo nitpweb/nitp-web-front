@@ -22,6 +22,11 @@ class Newspage extends React.Component {
         console.log(e)
       })
   }
+     link = (k) => {
+    k = k.substr(0, k.length - 18);
+    k = k.substr(32, k.length);
+    return (k);
+  }
   render() {
     return (
       <>
@@ -31,7 +36,7 @@ class Newspage extends React.Component {
           </div>
           {this.state.news.map(news => {
             const newtime = new Date().getTime()
-
+            
             let d = Math.round((newtime - news.openDate) / 3600000)
             if (d > 24) {
               d = `${Math.round(d / 24)} days ago`
@@ -42,11 +47,11 @@ class Newspage extends React.Component {
             } else {
               d = `${d} hours ago`
             }
-            if (news.title != "") {
+            if (news.title != "" && news.attachments.length!=0) {
               return (
                 <div className="newscard row">
                   <div className="news-img-wrap">
-                    <img src={newspic} alt="Hello" loading="lazy"></img>
+                    <img src={`https://drive.google.com/thumbnail?id=${this.link(news.attachments[0].url)}`} alt="Hello" loading="lazy"></img>
                   </div>
                   <div className="news-details">
                     <h1>{news.title}</h1>
