@@ -1,7 +1,7 @@
-import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import { MainGallery, GallertHead } from "./styles"
+import React from "react"
+import { GallertHead } from "./styles"
 
 const Extendedgallery = () => {
   const data = useStaticQuery(graphql`
@@ -22,67 +22,29 @@ const Extendedgallery = () => {
   return (
     <>
       <GallertHead>Gallery</GallertHead>
-      <MainGallery>
-        <div className="column">
-          {data.images.nodes.slice(0, imagelength / 4).map(image => {
-            return (
-              <div data-aos="zoom-in">
-                <Img
-                  fluid={image.childImageSharp.fluid}
-                  imgStyle={{ verticalAlign: `middle`, width: `100%` }}
-                />
-              </div>
-            )
-          })}
-        </div>
-        <div className="column">
-          {data.images.nodes
-            .slice(imagelength / 4, imagelength / 2)
-            .map(image => {
-              return (
-                <div data-aos="zoom-in">
-                  <Img
-                    fluid={image.childImageSharp.fluid}
-                    imgStyle={{ verticalAlign: `middle`, width: `100%` }}
-                  />
-                </div>
-              )
-            })}
-        </div>
-        <div className="column">
-          {data.images.nodes
-            .slice(imagelength / 2, (imagelength * 3) / 4)
-            .map(image => {
-              return (
-                <div data-aos="zoom-in">
-                  <Img
-                    fluid={image.childImageSharp.fluid}
-                    imgStyle={{ verticalAlign: `middle`, width: `100%` }}
-                  />
-                </div>
-              )
-            })}
-        </div>
-        <div className="column">
-          {data.images.nodes
-            .slice((imagelength * 3) / 4, imagelength)
-            .map(image => {
-              return (
-                <Img
-                  fluid={image.childImageSharp.fluid}
-                  imgStyle={{ verticalAlign: `middle`, width: `100%` }}
-                />
-              )
-            })}
-        </div>
-      </MainGallery>
+      <div
+        style={{
+          display: `flex`,
+          flexWrap: `wrap`,
+          flexDirection: `row`,
+          padding: `2vw`,
+        }}
+      >
+        {data.images.nodes.map(image => {
+          return (
+            <Img
+              fluid={image.childImageSharp.fluid}
+              style={{
+                flexGrow: 1,
+                width: `${image.childImageSharp.fluid.aspectRatio * 250}px`,
+                boxSizing: `border-box`,
+              }}
+              imgStyle={{ width: `100%`, objectFit: `cover`, padding: `8px` }}
+            />
+          )
+        })}
+      </div>
     </>
-    //  <div>
-    //    <h1>You hit the gallery component</h1>
-    // {data.images.nodes.map(image => {
-    //   return <Img fluid={image.childImageSharp.fluid} />
-    // })}
-    //  </div>
   )
 }
 
