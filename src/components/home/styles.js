@@ -125,39 +125,41 @@ export const Gallery = styled.div`
     }
   }
 `
-export const MainGallery = styled.div`
-  padding: 0 1rem;
-  padding-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
 
-  .column {
-    width: 25%;
-    max-width: 25%;
-    height: 100%;
-    padding: 0 4px;
-    box-sizing: border-box;
+// export const MainGallery = styled.div`
+//   padding: 0 1rem;
+//   padding-top: 50px;
+//   display: flex;
+//   flex-wrap: wrap;
 
-    img {
-      margin-top: 8px;
-      vertical-align: middle;
-      width: 100%;
-    }
-  }
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
+//   .column {
+//     width: 25%;
+//     max-width: 25%;
+//     height: 100%;
+//     padding: 0 4px;
+//     box-sizing: border-box;
 
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-`
+//     img {
+//       margin-top: 8px;
+//       vertical-align: middle;
+//       width: 100%;
+//     }
+//   }
+//   @media screen and (max-width: 800px) {
+//     .column {
+//       flex: 50%;
+//       max-width: 50%;
+//     }
+//   }
+
+//   @media screen and (max-width: 600px) {
+//     .column {
+//       flex: 100%;
+//       max-width: 100%;
+//     }
+//   }
+// `
+
 export const GallertHead = styled.h1`
   font-family: "Source Sans Pro";
   font-size: 3.5rem;
