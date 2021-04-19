@@ -5,6 +5,7 @@ import "./administration/css/administration.css"
 import { Deansinfo, BOD, BWC, IDC, FC } from "./administration/const"
 import Floatmenu from "./administration/floatmenu"
 import Director from "./director"
+
 const Administrationpage = () => {
   return (
     <div className="adminsection">
