@@ -6,7 +6,7 @@ import { GallertHead } from "./styles"
 const Extendedgallery = () => {
   const data = useStaticQuery(graphql`
     query {
-      images: allFile(filter: { relativeDirectory: { eq: "gallery/images" } }) {
+      images: allFile(filter: { relativeDirectory: { eq: "home/images" } }) {
         nodes {
           id
           childImageSharp {
