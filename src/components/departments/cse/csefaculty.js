@@ -16,7 +16,8 @@ class Csefacultypage extends React.Component {
     axios
       .get(facultiesUrl)
       .then(res => {
-        const faculty = res.data.faculties
+        const faculty = res.data;
+        console.log(res);
         this.setState({ faculties: faculty })
       })
       .catch(e => {
@@ -59,9 +60,9 @@ class Csefacultypage extends React.Component {
                       name={faculty.name}
                       email={faculty.email}
                       extn={faculty.ext_no}
-                      id={faculty.id}
+                      id={faculty.email}
                       research={faculty.research_interest}
-                      image={`${domainUrl}/${faculty.imgUrl}`}
+                      // image={`${domainUrl}/${faculty.imgUrl}`}
                       desg={faculty.designation}
                     />
                   )

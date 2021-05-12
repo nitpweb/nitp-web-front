@@ -58,7 +58,7 @@ class Cefacultypage extends React.Component {
                       name={faculty.name}
                       email={faculty.email}
                       extn={faculty.ext_no}
-                      id={faculty.id}
+                      id={faculty.email}
                       research={faculty.research_interest}
                       image={`${domainUrl}/${faculty.imgUrl}`}
                       desg={faculty.designation}

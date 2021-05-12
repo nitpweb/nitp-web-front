@@ -29,6 +29,7 @@ class Facultyprofile extends React.Component {
       .get(url)
       .then(res => {
         const detail = res.data
+        console.log(res);
         this.setState({
           profile: detail.profile,
           subjects: detail.subjects,
@@ -56,7 +57,7 @@ class Facultyprofile extends React.Component {
           <div className="faculty-img-row">
             <div className="faculty-img-wrap">
               <img
-                src={`${process.env.GATSBY_API_URL}/profile/image?id=${this.state.profile.id}`}
+                // src={`${process.env.GATSBY_API_URL}/profile/image?id=${this.state.profile.id}`}
                 className="facultypic"
               />
             </div>
@@ -77,7 +78,7 @@ class Facultyprofile extends React.Component {
               <h3>Phone:-</h3>
               <p>{this.state.profile.ext_no}</p>
             </div>
-            {this.state.subjects.length != 0 ? (
+            {this.state.subjects ? (
               <div className="fac-card" data-aos="fade-up">
                 <h3>Subjects</h3>
                 {this.state.subjects.map(item => {
@@ -85,7 +86,7 @@ class Facultyprofile extends React.Component {
                 })}
               </div>
             ) : null}
-            {this.state.memberships.length != 0 ? (
+            {this.state.memberships? (
               <div className="fac-card" data-aos="fade-up">
                 <h3>Memberships & Society</h3>
                 <div className="factable">
@@ -114,7 +115,7 @@ class Facultyprofile extends React.Component {
                 </div>
               </div>
             ) : null}
-            {this.state.qualification.length != 0 ? (
+            {this.state.qualification ? (
               <div className="fac-card" data-aos="fade-up">
                 <h3>Educational Qualification</h3>
                 <div className="factable">
@@ -149,7 +150,7 @@ class Facultyprofile extends React.Component {
                 </div>
               </div>
             ) : null}
-            {this.state.currResponsibility.length != 0 ? (
+            {this.state.currResponsibility? (
               <div className="fac-card" data-aos="fade-up">
                 <h3>Current Administrative Responsibility</h3>
                 {this.state.currResponsibility.map(item => {
@@ -157,7 +158,7 @@ class Facultyprofile extends React.Component {
                 })}
               </div>
             ) : null}
-            {this.state.pastreponsibility.length != 0 ? (
+            {this.state.pastreponsibility? (
               <div className="fac-card" data-aos="fade-up">
                 <h3>Past Administrative Responsibility</h3>
                 {this.state.pastreponsibility.map(item => {
@@ -165,7 +166,7 @@ class Facultyprofile extends React.Component {
                 })}
               </div>
             ) : null}
-            {this.state.workExperience.length != 0 ? (
+            {this.state.workExperience? (
               <div className="fac-card" data-aos="fade-up">
                 <h3>Work Experiences</h3>
                 {this.state.workExperience.map(item => {
@@ -173,7 +174,7 @@ class Facultyprofile extends React.Component {
                 })}
               </div>
             ) : null}
-            {this.state.services.length != 0 ? (
+            {this.state.services ? (
               <div className="fac-card" data-aos="fade-up">
                 <h3>Professional Services</h3>
                 {this.state.services.map(item => {
@@ -181,7 +182,7 @@ class Facultyprofile extends React.Component {
                 })}
               </div>
             ) : null}
-            {this.state.projects.length != 0 ? (
+            {this.state.projects  ? (
               <div className="fac-card" data-aos="fade-up">
                 <h3>Projects</h3>
                 {this.state.projects.map(item => {
@@ -189,7 +190,7 @@ class Facultyprofile extends React.Component {
                 })}
               </div>
             ) : null}
-            {this.state.phdCandidates.length != 0 ? (
+            {this.state.phdCandidates ? (
               <div className="fac-card" data-aos="fade-up">
                 <h3>Phd Candidates</h3>
                 {this.state.phdCandidates.map(item => {

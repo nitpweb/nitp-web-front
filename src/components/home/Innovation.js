@@ -17,7 +17,7 @@ const Innovation = () => {
   }, [])
 
   const loadData = () => {
-    const url = `${process.env.GATSBY_API_URL}/api/innovation`
+    const url = `${process.env.GATSBY_API_URL}/api/innovation/all`
     axios
       .get(url)
       .then(res => setData([...res.data]))
