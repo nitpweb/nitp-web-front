@@ -19,7 +19,8 @@ const Incard = props => {
             <p id="time">{props.date}</p>
           </div>
           <div className="pic">
-            <img src={`https://drive.google.com/thumbnail?id=${props.link2}`} alt="img" />
+
+            <img src={props.link2!=undefined?`https://drive.google.com/thumbnail?id=${props.link2}`:"/faculty.png"} alt="img" />
           </div>
         </div>
       </div>
