@@ -16,7 +16,7 @@ class Hssfacultypage extends React.Component {
     axios
       .get(facultiesUrl)
       .then(res => {
-        const faculty = res.data.faculties
+        const faculty = res.data
         this.setState({ faculties: faculty })
         console.log(this.state.faculties)
       })
@@ -26,8 +26,6 @@ class Hssfacultypage extends React.Component {
   }
 
   render() {
-    let domainUrl = `${process.env.GATSBY_API_URL}`
-
     return (
       <>
         <div style={{ marginTop: `10vh`, marginBottom: `15vh` }}>

@@ -21,8 +21,7 @@ class Facultycard extends React.Component {
             ) : null}
             <div className="row fimg">
               <div className="facimg">
-                <img src={this.props.image} alt="" />
-                <img src="/faculty.png" alt=" " style={{ width: "100%" }} />
+                <img src={this.props.image!=undefined?`${this.props.image}`:"/faculty.png"} alt="" />
               </div>
               <h2>{this.props.name}</h2>
               <h3>{this.props.desg}</h3>
@@ -38,7 +37,7 @@ class Facultycard extends React.Component {
               <Link
                 to="../facultyprofile"
                 state={{
-                  url: `${process.env.GATSBY_API_URL}/api/faculty/${this.props.id}`,
+                  url: `${process.env.GATSBY_API_URL}/api/faculty/${this.props.email}`,
                 }}
               >
                 View Full Profile

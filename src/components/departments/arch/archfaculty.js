@@ -16,7 +16,7 @@ class Archfacultypage extends React.Component {
     axios
       .get(facultiesUrl)
       .then(res => {
-        const faculty = res.data.faculties
+        const faculty = res.data
         this.setState({ faculties: faculty })
       })
       .catch(e => {
@@ -25,7 +25,6 @@ class Archfacultypage extends React.Component {
   }
 
   render() {
-    let domainUrl = `${process.env.GATSBY_API_URL}`
 
     return (
       <>
