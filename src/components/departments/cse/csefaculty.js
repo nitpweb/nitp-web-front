@@ -62,7 +62,7 @@ class Csefacultypage extends React.Component {
                       extn={faculty.ext_no}
                       id={faculty.email}
                       research={faculty.research_interest}
-                      // image={`${domainUrl}/${faculty.imgUrl}`}
+                      image={faculty.image}
                       desg={faculty.designation}
                     />
                   )
