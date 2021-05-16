@@ -86,7 +86,7 @@ class Facultyprofile extends React.Component {
               <div className="fac-card" data-aos="fade-up">
                 <h3>Subjects</h3>
                 {this.state.subjects.map(item => {
-                  return <li>{item}</li>
+                  return <li>{item.subject}</li>
                 })}
               </div>
             ) : null}
@@ -158,7 +158,7 @@ class Facultyprofile extends React.Component {
               <div className="fac-card" data-aos="fade-up">
                 <h3>Current Administrative Responsibility</h3>
                 {this.state.currResponsibility.map(item => {
-                  return <li>{item}</li>
+                  return <li>{item.curr_responsibility}</li>
                 })}
               </div>
             ) : null}
@@ -166,7 +166,7 @@ class Facultyprofile extends React.Component {
               <div className="fac-card" data-aos="fade-up">
                 <h3>Past Administrative Responsibility</h3>
                 {this.state.pastreponsibility.map(item => {
-                  return <li>{item}</li>
+                  return <li>{item.past_responsibility}</li>
                 })}
               </div>
             ) : null}
@@ -174,7 +174,7 @@ class Facultyprofile extends React.Component {
               <div className="fac-card" data-aos="fade-up">
                 <h3>Work Experiences</h3>
                 {this.state.workExperience.map(item => {
-                  return <li>{item}</li>
+                  return <li>{item.work_experiences}</li>
                 })}
               </div>
             ) : null}
@@ -182,7 +182,7 @@ class Facultyprofile extends React.Component {
               <div className="fac-card" data-aos="fade-up">
                 <h3>Professional Services</h3>
                 {this.state.services.map(item => {
-                  return <li>{item}</li>
+                  return <li>{item.services}</li>
                 })}
               </div>
             ) : null}
@@ -190,7 +190,7 @@ class Facultyprofile extends React.Component {
               <div className="fac-card" data-aos="fade-up">
                 <h3>Projects</h3>
                 {this.state.projects.map(item => {
-                  return <li>{item}</li>
+                  return <li>{item.project}</li>
                 })}
               </div>
             ) : null}
