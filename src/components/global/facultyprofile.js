@@ -29,7 +29,7 @@ class Facultyprofile extends React.Component {
       .get(url)
       .then(res => {
         const detail = res.data
-        console.log(res);
+        console.log(res)
         this.setState({
           profile: detail.profile,
           subjects: detail.subjects_teaching,
@@ -57,7 +57,11 @@ class Facultyprofile extends React.Component {
           <div className="faculty-img-row">
             <div className="faculty-img-wrap">
               <img
-                src={this.state.profile.image!=undefined?`${this.state.profile.image}`:"/faculty.png"}
+                src={
+                  this.state.profile.image != undefined
+                    ? `${this.state.profile.image}`
+                    : "/faculty.png"
+                }
                 className="facultypic"
               />
             </div>
@@ -86,7 +90,7 @@ class Facultyprofile extends React.Component {
                 })}
               </div>
             ) : null}
-            {this.state.memberships? (
+            {this.state.memberships ? (
               <div className="fac-card" data-aos="fade-up">
                 <h3>Memberships & Society</h3>
                 <div className="factable">
@@ -150,7 +154,7 @@ class Facultyprofile extends React.Component {
                 </div>
               </div>
             ) : null}
-            {this.state.currResponsibility? (
+            {this.state.currResponsibility ? (
               <div className="fac-card" data-aos="fade-up">
                 <h3>Current Administrative Responsibility</h3>
                 {this.state.currResponsibility.map(item => {
@@ -158,7 +162,7 @@ class Facultyprofile extends React.Component {
                 })}
               </div>
             ) : null}
-            {this.state.pastreponsibility? (
+            {this.state.pastreponsibility ? (
               <div className="fac-card" data-aos="fade-up">
                 <h3>Past Administrative Responsibility</h3>
                 {this.state.pastreponsibility.map(item => {
@@ -166,7 +170,7 @@ class Facultyprofile extends React.Component {
                 })}
               </div>
             ) : null}
-            {this.state.workExperience? (
+            {this.state.workExperience ? (
               <div className="fac-card" data-aos="fade-up">
                 <h3>Work Experiences</h3>
                 {this.state.workExperience.map(item => {
@@ -182,7 +186,7 @@ class Facultyprofile extends React.Component {
                 })}
               </div>
             ) : null}
-            {this.state.projects  ? (
+            {this.state.projects ? (
               <div className="fac-card" data-aos="fade-up">
                 <h3>Projects</h3>
                 {this.state.projects.map(item => {
@@ -193,38 +197,44 @@ class Facultyprofile extends React.Component {
             {this.state.phdCandidates ? (
               <div className="fac-card" data-aos="fade-up">
                 <h3>Phd Candidates</h3>
-                 <div className="factable">
+                <div className="factable">
                   <table>
                     <tbody>
-                  <tr>
-                    <td>
-                      <h4>Student Name</h4>
-                    </td>
-                    <td>
-                      <h4>Thesis Topic</h4>
-                    </td>
-                    <td>
-                      <h4>Start Year</h4>
-                    </td>
-                    <td>
-                      <h4>Completion Year</h4>
-                    </td>
-                  </tr>
-                {this.state.phdCandidates.map(item => {
-                  return <tr>
-                          <td>
-                            <li>{item.phd_student_name}</li>
-                          </td>
-                          <td>
-                            <li>{item.thesis_topic}</li>
-                          </td>
-                          <td>
-                            <li>{item.start_year}</li>
-                          </td>
-                          <td>
-                            <li>{item.completion_year}</li>
-                          </td></tr>
-                })}</tbody></table>
+                      <tr>
+                        <td>
+                          <h4>Student Name</h4>
+                        </td>
+                        <td>
+                          <h4>Thesis Topic</h4>
+                        </td>
+                        <td>
+                          <h4>Start Year</h4>
+                        </td>
+                        <td>
+                          <h4>Completion Year</h4>
+                        </td>
+                      </tr>
+                      {this.state.phdCandidates.map(item => {
+                        return (
+                          <tr>
+                            <td>
+                              <li>{item.phd_student_name}</li>
+                            </td>
+                            <td>
+                              <li>{item.thesis_topic}</li>
+                            </td>
+                            <td>
+                              <li>{item.start_year}</li>
+                            </td>
+                            <td>
+                              <li>{item.completion_year}</li>
+                            </td>
+                          </tr>
+                        )
+                      })}
+                    </tbody>
+                  </table>
+                </div>
               </div>
             ) : null}
           </div>
