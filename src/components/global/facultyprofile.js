@@ -193,9 +193,38 @@ class Facultyprofile extends React.Component {
             {this.state.phdCandidates ? (
               <div className="fac-card" data-aos="fade-up">
                 <h3>Phd Candidates</h3>
+                 <div className="factable">
+                  <table>
+                    <tbody>
+                  <tr>
+                    <td>
+                      <h4>Student Name</h4>
+                    </td>
+                    <td>
+                      <h4>Thesis Topic</h4>
+                    </td>
+                    <td>
+                      <h4>Start Year</h4>
+                    </td>
+                    <td>
+                      <h4>Completion Year</h4>
+                    </td>
+                  </tr>
                 {this.state.phdCandidates.map(item => {
-                  return <li>{item}</li>
-                })}
+                  return <tr>
+                          <td>
+                            <li>{item.phd_student_name}</li>
+                          </td>
+                          <td>
+                            <li>{item.thesis_topic}</li>
+                          </td>
+                          <td>
+                            <li>{item.start_year}</li>
+                          </td>
+                          <td>
+                            <li>{item.completion_year}</li>
+                          </td></tr>
+                })}</tbody></table>
               </div>
             ) : null}
           </div>
