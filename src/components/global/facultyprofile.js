@@ -32,18 +32,18 @@ class Facultyprofile extends React.Component {
         console.log(res);
         this.setState({
           profile: detail.profile,
-          subjects: detail.subjects,
+          subjects: detail.subjects_teaching,
           memberships: detail.memberships,
           qualification: detail.qualification,
-          currResponsibility: detail.currResponsibility,
-          pastreponsibility: detail.pastreponsibility,
+          currResponsibility: detail.curr_admin_responsibility,
+          pastreponsibility: detail.past_admin_reponsibility,
           books: detail.books,
           journals: detail.journals,
           conferences: detail.conferences,
           projects: detail.projects,
           services: detail.services,
-          workExperience: detail.workExperience,
-          phdCandidates: detail.phdCandidates,
+          workExperience: detail.work_experience,
+          phdCandidates: detail.phd_candidates,
         })
       })
       .catch(e => {
