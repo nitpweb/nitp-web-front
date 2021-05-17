@@ -27,7 +27,7 @@ const Innovation = () => {
 
   }
   const filtered = data.filter(function (el) {
-    return el.attachments.length!=0;
+    return el.image.length!=0;
   });
   const link = (k) => {
     k = k.substr(0, k.length - 18);
