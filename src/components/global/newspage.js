@@ -47,11 +47,11 @@ class Newspage extends React.Component {
             } else {
               d = `${d} hours ago`
             }
-            if (news.title != "" && news.attachments.length!=0) {
+            if (news.title != "" && news.image.length!=0) {
               return (
                 <div className="newscard row">
                   <div className="news-img-wrap">
-                    <img src={`https://drive.google.com/thumbnail?id=${this.link(news.attachments[0].url)}`} alt="Hello" loading="lazy"></img>
+                    <img src={news.image[0].url} alt="Hello" loading="lazy"></img>
                   </div>
                   <div className="news-details">
                     <h1>{news.title}</h1>

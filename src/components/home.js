@@ -191,8 +191,8 @@ class Home extends React.Component {
                     d = `${d} hours ago`
                   }
                   var desc = String(news.description).substr(0, 170)
-                  if (news.title != "" && news.attachments[0]) {
-                    return <Newscard url={this.link(news.attachments[0].url)} time={d} head={`${news.title.slice(0,92)}...`} detail={desc.slice(0,100)} />
+                  if (news.title != "" && news.image[0]) {
+                    return <Newscard url={this.link(news.image[0].url)} time={d} head={`${news.title.slice(0,92)}...`} detail={desc.slice(0,100)} />
                   }
                 })
               : null}
