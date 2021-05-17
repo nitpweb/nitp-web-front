@@ -49,8 +49,8 @@ const Innovation = () => {
 
     return (
       <InCard
-        link1={link(val.attachments[0].url)}
-        link2={val.attachments[1]?link(val.attachments[1].url):null}
+        link1={link(val.image[0].url)}
+        link2={val.image[1]?link(val.image[1].url):null}
         heading={`${val.title.slice(0, 72)}....`}
         date={`${day}/${month}/${year} - ${cday}/${cmonth}/${cyear}`}
         key={index}
