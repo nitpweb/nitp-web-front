@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import Img from "./Img"
 import "./css/slide.css"
 
 const StudentSlide = () => {
@@ -34,17 +33,18 @@ const StudentSlide = () => {
       url:
         "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
     },
-    {
-      url:
-        "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
-    },
-    {
-      url:
-        "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
-    },
   ]
-  let count = 0
-  const [x, setX] = useState(0)
+  let count = 1
+  const Slide=(k)=>{
+  if(k<1){
+    count=7
+  }
+  if(k>7){
+    count=1
+  }
+  const select=document.getElementById(`s${count}`);
+  select.checked=true;
+  }
   // const [data, setData] = useState([]);
 
   // useEffect(() => {
@@ -61,35 +61,50 @@ const StudentSlide = () => {
   //     })
 
   // }
+
   return (
     <>
-      <div>
-        <div className="main col-12" data-aos="fade">
-          <div
-            className="move"
-            onClick={() => {
-                x < 0 ? setX(x + 250) : setX((data.length) * -250 + 750)
-            }}
-          >
-            <i class="arrow left"></i>
-          </div>
-          <div className="part1">
-            {data.map((item, index) => (
-              <Img url={item.url} id={++count} key={index} trans={x} />
-            ))}
-          </div>
-          <div
-            className="move"
-            onClick={() => {
-                x > (data.length) * -250 + 750 ? setX(x - 250) : setX(0)
-            }}
-          >
-            <i class="arrow right"></i>
-          </div>
+      <div className="main" data-aos="fade">
+        <div className="move" onClick={()=>{Slide(--count)}}>
+          <i class="arrow left"></i>
         </div>
-        <div className="info col-12">
-          <p data-aos="zoom-in-left">{text}</p>
+        <div id="slider">
+          <input type="radio" name="slider" id="s1" checked />
+          <input type="radio" name="slider" id="s2" />
+          <input type="radio" name="slider" id="s3" />
+          <input type="radio" name="slider" id="s4" />
+          <input type="radio" name="slider" id="s5" />
+          <input type="radio" name="slider" id="s6" />
+          <input type="radio" name="slider" id="s7" />
+
+          <label for="s1" id="slide1">
+            <img className="pic" src={data[0].url} alt=""></img>
+          </label>
+          <label for="s2" id="slide2">
+            <img className="pic" src={data[1].url} alt=""></img>
+          </label>
+          <label for="s3" id="slide3">
+            <img className="pic" src={data[2].url} alt=""></img>
+          </label>
+          <label for="s4" id="slide4">
+            <img className="pic" src={data[3].url} alt=""></img>
+          </label>
+          <label for="s5" id="slide5">
+            <img className="pic" src={data[4].url} alt=""></img>
+          </label>
+          <label for="s5" id="slide6">
+            <img className="pic" src={data[5].url} alt=""></img>
+          </label>
+          <label for="s5" id="slide7">
+            <img className="pic" src={data[6].url} alt=""></img>
+          </label>
         </div>
+        <div className="move" onClick={()=>{Slide(++count)}}>
+          <i class="arrow right"></i>
+        </div>
+      </div>
+      <div className="info col-12">
+      <p data-aos="zoom-in-left">{text}</p>
       </div>
     </>
   )
