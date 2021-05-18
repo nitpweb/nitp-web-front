@@ -51,7 +51,7 @@ class Newspage extends React.Component {
               return (
                 <div className="newscard row">
                   <div className="news-img-wrap">
-                    <img src={news.image[0].url} alt="Hello" loading="lazy"></img>
+                    <img src={`https://drive.google.com/thumbnail?id=${news.image[0].url}`} alt="Hello" loading="lazy"></img>
                   </div>
                   <div className="news-details">
                     <h1>{news.title}</h1>
