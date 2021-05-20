@@ -16,7 +16,7 @@ const Floatmenu = () => (
           </a>
         </div>
         <div className="float-card">
-          <a href="#main">
+          <a href="#clubsection">
             <h3>Clubs</h3>
           </a>
         </div>

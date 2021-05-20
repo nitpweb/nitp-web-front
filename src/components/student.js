@@ -60,11 +60,15 @@ const Studentpage = () => {
           <Sacimg />
         </div>
       </div>
+      <div className="smainrowmain">
+        <div className="row smainrow clubsection" id="clubsection" data-aos="fade">
+          <div className="row rowmarl3">
+            <h1 data-aos="zoom-in-right" style={{color:`white`}}>Clubs</h1>
+          </div>
+          <StudentSlide />
+        </div>
+      </div>
 
-  <div className="main" id="main" data-aos="fade">
-  <StudentSlide/>
-  </div>
-      
       <div className="smainrow smainrow1" id="tcf">
         <div className="col-6 imgcolstyle">
           <Coronapic />
