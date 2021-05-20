@@ -1,15 +1,33 @@
 .main{
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-evenly;
-  background-color: rgb(41, 33, 33);
+  background: linear-gradient(#1F1B24 221px,#ebe7e7 221px);
+  position: relative;
+}
+.club{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  flex-wrap: wrap;
+}
+.club a{
+  text-decoration: none;
+  color: white;
+  padding-top: 5px;
+  font-size: larger;
+  width: 120px;
+  text-align: center;
 }
 #slider {
   position: relative;
-  width: 333px;
-  height: 250px;
+  min-width: 300px;
+  height: 262px;
   margin: 30px;
-  perspective: 1500px;
+  perspective: 2000px;
   transform-style: preserve-3d;
 }
 
@@ -78,33 +96,50 @@ input[type=radio]:checked {
   box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2);
   transform: translate3d(-30%, 0, -150px);
 }
-.arrow {
-  border: solid black;
-  border-width: 0 5px 5px 0;
-  display: inline-block;
-  padding: 5px;
+
+.slide{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
 }
 
 .right {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  border-left: solid black;
+  border-right: solid white;
+  border-top: solid black;
+  border-bottom: solid black;
+  border-width: 0 8px 8px 0;
+  display: inline-block;
+  padding: 8px;
+  transform: rotate(135deg) scale(-1);
+  -webkit-transform: rotate(135deg) scale(-1);
 }
 
 .left {
+  border-left: solid black;
+  border-right: solid black;
+  border-top: solid black;
+  border-bottom: solid white;
+  border-width: 0 8px 8px 0;
+  display: inline-block;
+  padding: 8px;
+  transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
 }
 .main .move {
-  background-color: white;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   z-index: 5;
+  padding: 1rem;
 }
 .main .move:hover{
     transform: scale(0.9);
+    background-color: rgba(235, 231, 231,0.5);
 }
 .info
 {
@@ -114,27 +149,16 @@ input[type=radio]:checked {
     text-align: justify;
     font-family: "Source Sans Pro";
     color: #454545;
-    padding-top: 2%;
     padding-bottom: 2%;
 }
 
 @media (max-width: 480px) {
-  .main .move {
-    width: 50px;
-    height: 50px;
-    margin: 8px;
-  }
   .info{
     font-size: 16px;
 }
 }
 
 @media (min-width: 481px) {
-  .main .move {
-    width: 60px;
-    height: 60px;
-    margin: 12px;
-  }
   .info{
     font-size: 21px;
 }

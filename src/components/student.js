@@ -61,8 +61,9 @@ const Studentpage = () => {
         </div>
       </div>
 
-
+  <div className="main" id="main" data-aos="fade">
   <StudentSlide/>
+  </div>
       
       <div className="smainrow smainrow1" id="tcf">
         <div className="col-6 imgcolstyle">
