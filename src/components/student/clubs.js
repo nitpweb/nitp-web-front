@@ -8,7 +8,7 @@ export const clubs = [
   },
   {
     url:
-      "https://media-exp1.licdn.com/dms/image/C560BAQHKugR2AeIHjw/company-logo_200_200/0/1599988506291?e=1629331200&v=beta&t=KLVlP24BbPYKi1oJA9VsLXrq3D_GjdxS3BO3uYwgU88",
+      "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_1080,q_100,w_1080/v1/gcs/platform-data-dsc/chapter_banners/Frame%201%20%281%29.png",
     Title: "DSC",
     description:
       "Developer Student Clubs (DSC) is a Google Developers program that intends to bring together young enthusiasts who want to acquire development skills. It's a matter of grandeur and pride that in 2020 NIT Patna has its First Developer Student Club with a core team of 20 members. It is a community where students collaborate with each other to learn and work together using several Google developer resources. The DSC organizes numerous events ranging from small meetups for working on projects to large-scale hackathons. The club is open to anyone in the university who wants to work and learn together, be it a fresher or a senior who wants to brush up his/her developing abilities.",
