@@ -63,7 +63,7 @@ const Studentpage = () => {
       <div className="smainrowmain">
         <div className="row smainrow clubsection" id="clubsection" data-aos="fade">
           <div className="row rowmarl3">
-            <h1 data-aos="zoom-in-right" style={{color:`white`}}>Clubs</h1>
+            <h1 data-aos="zoom-in-right" style={{color:`white`, paddingLeft:`1rem`,margin:`0px`}}>Our Clubs</h1>
           </div>
           <StudentSlide />
         </div>
