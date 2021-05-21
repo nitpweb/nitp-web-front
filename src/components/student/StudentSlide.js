@@ -5,8 +5,14 @@ import "./css/slide.css"
 const StudentSlide = () => {
   const [data, setData] = useState(clubs)
   const [count, setCount] = useState(1)
+  const [initial, setInitial] = useState(0)
 
   useEffect(() => {
+    if(initial==0){
+      const temp = document.getElementById(`s${count}`)
+      temp.checked = true
+      setInitial(1)
+    }
     const interval = setInterval(() => {
       setCount(1 + (count % 7))
       const temp = document.getElementById(`s${count}`)
