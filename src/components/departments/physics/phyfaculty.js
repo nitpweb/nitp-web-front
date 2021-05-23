@@ -57,8 +57,8 @@ class Phyfacultypage extends React.Component {
                       email={faculty.email}
                       extn={faculty.ext_no}
                       id={faculty.email}
-                      research={faculty.image}
-                      image={`${domainUrl}/${faculty.imgUrl}`}
+                      research={faculty.research_interest}
+                      image={faculty.image}
                       desg={faculty.designation}
                     />
                   )

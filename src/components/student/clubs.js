@@ -15,15 +15,15 @@ export const clubs = [
     link: "#",
   },
   {
-    url:
-      "https://media-exp1.licdn.com/dms/image/C4E1BAQH0q5R-37O-SA/company-background_10000/0/1609000671607?e=1621634400&v=beta&t=PNtgqkOHghovcd0foc2aLLopXH-J4RoEL-JHKquEl5s",
+    url: "https://roboticsnitp.co.in/assets/logo1.png",
     Title: "Robotics Club",
     description:
       "Robotics club has been embodiment of innovation at NIT Patna. Being formed in year 2015-16 by Nripendra Saroj Sir ,our club boasts a glorious legacy. With our members ranging from seasoned coders to brilliant designers to hardware scientists, Our members have also represented our college at Smart India hackathon,headed by our current Captain Dheeraj Kumar Sir.We have been constantly working to enhance the students’ technical skills and making them aware of the fascinating world of automation,robotics and electronics which surrounds us.Boasting of a huge roster of exciting and engaging events, This year’s techno-cultural fest was nothing less than a rollercoaster ride for us. ",
     link: "https://roboticsnitp.co.in/",
   },
   {
-    url: "https://media-exp1.licdn.com/dms/image/C510BAQF7oBRmY3nP-Q/company-logo_200_200/0/1587022038940?e=2159024400&v=beta&t=DhomKeI4bLF5_J0Xj2hSqzqACq8nWqhK8lFLOsrWKC4",
+    url:
+      "https://media-exp1.licdn.com/dms/image/C510BAQF7oBRmY3nP-Q/company-logo_200_200/0/1587022038940?e=2159024400&v=beta&t=DhomKeI4bLF5_J0Xj2hSqzqACq8nWqhK8lFLOsrWKC4",
     Title: "IEEE",
     description:
       "IEEE Student Branch, NIT Patna was established with an enthusiastic initiative of 13 students of NIT Patna enrolled in B.Tech programme of Electrical Engineering and Electronics and Communication Engineering under the leadership of Prof Kumar Abhishek, Assistant professor of Computer Science and Engineering.",

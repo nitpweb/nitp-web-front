@@ -36,7 +36,7 @@ class Archfacultypage extends React.Component {
               </div>
               <div className="row rowmarl3">
                 <h1 data-aos="zoom-in-right">
-                  -Computer Science and Engineering
+                  -Architecture
                 </h1>
               </div>
             </div>
