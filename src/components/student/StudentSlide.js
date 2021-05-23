@@ -21,7 +21,7 @@ const StudentSlide = () => {
       // console.log(count)
     }, 3000)
     return () => clearInterval(interval)
-  }, [count])
+  }, [count])  
 
   return (
     <>
@@ -102,7 +102,7 @@ const StudentSlide = () => {
       <div className="club" data-aos="zoom-in-right">
         <a href={data[count - 1].link}>{data[count - 1].Title}</a>
       </div>
-        <p data-aos="zoom-in-left">{`${data[count - 1].description.slice(0, 300)} ....`}</p>
+        <p data-aos="zoom-in-left">{data[count - 1].description}</p>
       </div>
     </>
   )
