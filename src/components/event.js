@@ -32,11 +32,11 @@ class Event extends React.Component {
               {this.state.events.map(event => {
                 const date = new Date(event.openDate)
                 const day = date.getDate()
-                const month = date.getMonth()
+                const month = date.getMonth() + 1
                 const year = date.getFullYear()
                 const cdate = new Date(event.closeDate)
                 const cday = cdate.getDate()
-                const cmonth = cdate.getMonth()
+                const cmonth = cdate.getMonth() + 1
                 const cyear = cdate.getFullYear()
                 const monthname = date
                   .toLocaleString("default", { month: "short" })
