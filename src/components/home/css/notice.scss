@@ -1,5 +1,6 @@
 .noticecard {
   width: 90%;
+  height: fit-content;
   padding: 5px 15px 5px 15px;
   background: #fafafa;
   margin-top: 10px;
@@ -16,6 +17,7 @@
       display: flex;
       align-items: flex-end;
       margin-left: 20px;
+      padding-bottom: 10px;
       img {
         margin-right: 8px;
         height: 14px;

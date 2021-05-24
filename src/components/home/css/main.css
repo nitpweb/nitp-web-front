@@ -17,6 +17,7 @@
       -ms-flex-direction: row;
           flex-direction: row;
   position: relative;
+  margin-top: 4vh;
 }
 
 .innovation #head {

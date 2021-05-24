@@ -36,41 +36,49 @@
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  flex-direction: row;
   background-color: #ffffff;
   width: 40vw;
-  height: 700px;
+  height: 500px;
   z-index: 1;
-  padding-bottom: 6vh;
+  // padding-bottom: 6vh;
   margin-left: 8vw;
-  margin-bottom: 5vh;
+  // margin-bottom: 5vh;
   border-radius: 3px;
   display: flex;
-  justify-content: center;
-  overflow: hidden;
-  overflow-y: scroll;
+  justify-content: flex-start;
+  overflow-x: hidden;
+  overflow-y: auto;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE 10+ */
+}
+.notice-row::-webkit-scrollbar{
+  display: none;
 }
 .event-row {
   display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  flex-direction: column;
   background-color: #ffffff;
   width: 40vw;
+  height: 500px;
   z-index: 1;
-  padding-bottom: 6vh;
+  // padding-bottom: 6vh;
   margin-left: 5vw;
-  margin-bottom: 5vh;
+  // margin-bottom: 5vh;
   border-radius: 3px;
   display: flex;
-  justify-content: center;
-  height: 700px;
-  overflow: hidden;
-  overflow-y: scroll;
+  justify-content: flex-start;
+  overflow-x: hidden;
+  overflow-y: auto;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE 10+ */
 }
-
+.event-row::-webkit-scrollbar{
+  display: none;
+}
 .news-head,
 .gallery-head,
 .notice-head,

@@ -32,8 +32,9 @@
       border-radius: 5px;
       img {
         width: 100%;
-        height: auto;
+        height: 100%;
         align-self: center;
+        object-fit: contain;
       }
     }
     .news-details{

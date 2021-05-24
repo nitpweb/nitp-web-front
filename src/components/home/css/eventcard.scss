@@ -3,10 +3,10 @@
   padding: 5px 15px 5px 15px;
   background: #fafafa;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
-  min-height: 110px;
+  height: fit-content;
   .eventdtdiv {
     width: 77px;
     height: 80px;
@@ -65,7 +65,7 @@
   div {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-left: 20px;
     img {
       height: 16px;
     }
@@ -73,6 +73,7 @@
       position: relative;
       color: #7b7b7b;
       font-size: 14px;
+      width: max-content;
       text-align: right;
       font-family: "Source Sans Pro";
       margin-left: 5px;
