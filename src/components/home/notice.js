@@ -9,6 +9,7 @@ const Notice = props => {
         <div id="notdate">
           <div>
             {props.attachments.map(elem => {
+              if(elem.url)
               return (
                 <>
                   <img id="notdownimg" src={downimg} alt="c" />
