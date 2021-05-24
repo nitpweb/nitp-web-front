@@ -50,6 +50,7 @@ class Event extends React.Component {
                       month={monthname}
                       attachments={event.attachments}
                       location={event.venue}
+                      link={event.attachments.length!=0 ?event.attachments[0].url:""}
                     />
                   )
                 }
