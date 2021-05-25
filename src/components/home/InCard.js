@@ -8,7 +8,7 @@ const Incard = props => {
         className="card"
         id={props.id}
         style={{ transform: `translateX(${props.trans}px)` }}
-        data-aos="fade"
+        data-aos="zoom"
       >
         <div className="part1">
           <img src={`https://drive.google.com/thumbnail?id=${props.link1}`} alt="img" />

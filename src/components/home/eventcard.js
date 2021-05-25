@@ -4,6 +4,7 @@ import eventclock from "./img/eventclock.svg"
 import eventlocation from "./img/eventlocation.svg"
 
 const Eventcard = props => {
+  console.log(props.link)
   return (
     <div className="eventcardwrap">
       <div className="eventdtdiv">
@@ -16,8 +17,7 @@ const Eventcard = props => {
       </div>
       <div className="eventcarddetailsection">
         <p className="eventcarddetail">
-          {props.detail}
-          {/* ...<a href="#">read more</a> */}
+          <a href={props.link}>{props.detail}</a>
         </p>
         <div id="eventdtp">
           <div>

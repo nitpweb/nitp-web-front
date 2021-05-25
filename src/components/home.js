@@ -59,6 +59,7 @@ class Home extends React.Component {
     k = k.substr(32, k.length);
     return (k);
   }
+
   render() {
     return (
       <div>
@@ -130,16 +131,16 @@ class Home extends React.Component {
                 view all
               </Link>
             </div>
-            <div className="event-row" data-aos="fade-up">
+            <div className="event-row">
               {this.state.events != undefined
                 ? this.state.events.map(event => {
                     const date = new Date(event.openDate)
                     const day = date.getDate()
-                    const month = date.getMonth()
+                    const month = date.getMonth()+1
                     const year = date.getFullYear()
                     const cdate = new Date(event.closeDate)
                     const cday = cdate.getDate()
-                    const cmonth = cdate.getMonth()
+                    const cmonth = cdate.getMonth()+1
                     const cyear = cdate.getFullYear()
                     const monthname = date
                       .toLocaleString("default", { month: "short" })
@@ -153,6 +154,7 @@ class Home extends React.Component {
                           month={monthname}
                           attachments={event.attachments}
                           location={event.venue}
+                          link={event.attachments.length!=0 ?event.attachments[0].url:""}
                         />
                       )
                     }
