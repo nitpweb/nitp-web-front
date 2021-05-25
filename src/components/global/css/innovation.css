@@ -1,0 +1,31 @@
+.parentdiv {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+  background-color: #e6e3e3;
+}
+.innonationcard {
+  padding: 2rem;
+  display: flex;
+  font-family: 'Nunito', sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #f7f7f7;
+  margin-bottom: 1rem;
+  box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+.innovation-details h2{
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .innonationcard {
+    width: 90%;
+  }
+}
+@media (min-width: 481px) {
+  .innonationcard {
+    width: 80%;
+  }
+}

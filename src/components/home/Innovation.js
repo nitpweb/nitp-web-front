@@ -7,6 +7,7 @@ import Group445 from "./img/Group445.svg"
 import Arrow from "./img/Arrow.svg"
 import InCard from "./InCard"
 import axios from "axios"
+import { Link } from "gatsby"
 
 const Innovation = () => {
   const [data, setData] = useState([])
@@ -64,6 +65,9 @@ const Innovation = () => {
         data-aos-anchor-placement="center-bottom"
       >
         <p id="head">Innovation</p>
+        <Link id="loadMore" to="/Innovationp">
+          view all
+        </Link>
         <img src={Union1} id="one" />
         <img src={Union} id="two" />
         <img src={Group445} id="three" />

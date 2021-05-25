@@ -238,4 +238,12 @@
     width: 80%;
   }
 }
+#loadMore{
+  font-family: 'Nunito', sans-serif;
+  position: absolute;
+  color: white;
+  bottom: 25%;
+  right: 10%;
+  text-decoration: none;
+  }
 /*# sourceMappingURL=main.css.map */
