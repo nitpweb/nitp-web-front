@@ -94,9 +94,9 @@
   justify-content: space-between;
   font-family: "Quicksand";
   font-weight: bold;
-  padding-left: 18px;
+  // padding-left: 18px;
   align-items: center;
-  padding: 2vw;
+  // padding: 2vw;
   #notice-head-p,
   #event-head-p {
     color: #3e3e3e;
@@ -107,7 +107,7 @@
 
   #news-head-p {
     color: #3e3e3e;
-    font-size: 1rem;
+    font-size: 1rem; 
     display: flex;
     margin-left: 122px;
     text-decoration: none;

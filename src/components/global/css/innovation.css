@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   padding-top: 4rem;
-  background-color: #e6e3e3;
+  background: #ffffff;
 }
 .innonationcard {
   padding: 2rem;
@@ -11,10 +11,10 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: #f7f7f7;
+  background: #ffffff;
   margin-bottom: 1rem;
-  box-shadow: inset -3px -3px 7px #ffffff73,
-    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+  box-shadow: 0px 0px 18px rgba(156, 156, 156, 0.38);
+  border-radius: 5px;
 }
 .innovation-details h2{
   text-align: center;

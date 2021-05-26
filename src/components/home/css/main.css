@@ -18,6 +18,7 @@
           flex-direction: row;
   position: relative;
   margin-top: 4vh;
+  margin-bottom: 4vh;
 }
 
 .innovation #head {
@@ -150,12 +151,17 @@
   font-weight: 600;
   margin: 0;
 }
+.innovation .child .card .part2 .text #heading #loadmore{
+  text-decoration: none;
+  color: #363636;
+}
 .innovation .child .card .part2 .text #time {
   font-weight: 600;
   margin: 0;
   padding-bottom: 5px;
   position: absolute;
   bottom: 0;
+  color: #363636;
 }
 
 .innovation .child .card .part2 .pic {
