@@ -17,6 +17,7 @@ class Facultyprofile extends React.Component {
       books: [],
       journals: [],
       conferences: [],
+      article: [],
       projects: [],
       services: [],
       workExperience: [],
@@ -24,7 +25,7 @@ class Facultyprofile extends React.Component {
     }
   }
   componentDidMount() {
-    const url = this.props.url
+    const url =this.props.url
     axios
       .get(url)
       .then(res => {
@@ -39,7 +40,12 @@ class Facultyprofile extends React.Component {
           pastreponsibility: detail.past_admin_reponsibility,
           books: detail.books,
           journals: detail.journals,
-          conferences: detail.conferences,
+          conferences: JSON.parse(detail.publications[0].publications).filter(
+            x => x.type === "conference"
+          ),
+          article: JSON.parse(detail.publications[0].publications).filter(
+            x => x.type === "article"
+          ),
           projects: detail.projects,
           services: detail.services,
           workExperience: detail.work_experience,
@@ -154,6 +160,103 @@ class Facultyprofile extends React.Component {
                 </div>
               </div>
             ) : null}
+
+            {(this.state.article&&this.state.article.length!=0) ? (
+              <div className="fac-card" data-aos="fade-up">
+                <h3>Articles</h3>
+                <div className="factable">
+                  <table>
+                    <tr>
+                      <td>
+                        <h4>Title</h4>
+                      </td>
+                      <td>
+                        <h4>Authors</h4>
+                      </td>
+                      <td>
+                        <h4>Journal Name</h4>
+                      </td>
+                      <td>
+                        <h4>Year</h4>
+                      </td>
+                      <td>
+                        <h4>Citation</h4>
+                      </td>
+                    </tr>
+                    {this.state.article.map(item => {
+                      return (
+                        <tr>
+                          <td>
+                            <li>{item.title}</li>
+                          </td>
+                          <td>
+                            <li>{item.authors}</li>
+                          </td>
+                          <td>
+                            <li>{item.booktitle}</li>
+                          </td>
+                          <td>
+                            <li>{item.year}</li>
+                          </td>
+                          <td>
+                            <li>{item.citation_key}</li>
+                          </td>
+                        </tr>
+                      )
+                    })}
+                  </table>
+                </div>
+              </div>
+            ) : null}
+
+{(this.state.conferences&&this.state.conferences.length!=0) ? (
+              <div className="fac-card" data-aos="fade-up">
+                <h3>Conferences</h3>
+                <div className="factable">
+                  <table>
+                    <tr>
+                      <td>
+                        <h4>Title</h4>
+                      </td>
+                      <td>
+                        <h4>Authors</h4>
+                      </td>
+                      <td>
+                        <h4>Journal Name</h4>
+                      </td>
+                      <td>
+                        <h4>Year</h4>
+                      </td>
+                      <td>
+                        <h4>Citation</h4>
+                      </td>
+                    </tr>
+                    {this.state.conferences.map(item => {
+                      return (
+                        <tr>
+                          <td>
+                            <li>{item.title}</li>
+                          </td>
+                          <td>
+                            <li>{item.authors}</li>
+                          </td>
+                          <td>
+                            <li>{item.booktitle}</li>
+                          </td>
+                          <td>
+                            <li>{item.year}</li>
+                          </td>
+                          <td>
+                            <li>{item.citation_key}</li>
+                          </td>
+                        </tr>
+                      )
+                    })}
+                  </table>
+                </div>
+              </div>
+            ) : null}
+
             {this.state.currResponsibility ? (
               <div className="fac-card" data-aos="fade-up">
                 <h3>Current Administrative Responsibility</h3>
