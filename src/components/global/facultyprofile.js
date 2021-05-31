@@ -40,12 +40,17 @@ class Facultyprofile extends React.Component {
           pastreponsibility: detail.past_admin_reponsibility,
           books: detail.books,
           journals: detail.journals,
-          conferences: JSON.parse(detail.publications[0].publications).filter(
-            x => x.type === "conference"
-          ),
-          article: JSON.parse(detail.publications[0].publications).filter(
-            x => x.type === "article"
-          ),
+
+          conferences:
+            detail.publications != undefined &&
+            JSON.parse(detail.publications[0].publications).filter(
+              x => x.type === "conference"
+            ),
+          article:
+            detail.publications != undefined &&
+            JSON.parse(detail.publications[0].publications).filter(
+              x => x.type === "article"
+            ),
           projects: detail.projects,
           services: detail.services,
           workExperience: detail.work_experience,
