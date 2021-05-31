@@ -48,14 +48,17 @@ const Innovationpage = () => {
                         ></img>
                     </div>
                     <div className="innovation-details">
-                        <h2>{val.title}</h2>
+                        <h1>{val.title}</h1>
                         <p>{val.description}</p>
                     </div>
                 </div>
             </div>
         )
     }
-    return <>{filtered.map(Card)}</>
+    return <>
+    <div id="Innhead"><h1>Innovation</h1></div>
+    {filtered.map(Card)}
+    </>
 }
 
 export default Innovationpage

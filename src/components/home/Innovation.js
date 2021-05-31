@@ -65,7 +65,7 @@ const Innovation = () => {
         data-aos-anchor-placement="center-bottom"
       >
         <p id="head">Innovation</p>
-        <Link id="loadMore" to="/Innovationp">
+        <Link id="loadMore" to="/Innovation">
           view all
         </Link>
         <img src={Union1} id="one" />
