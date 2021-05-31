@@ -13,7 +13,7 @@ class Facultyprofile extends React.Component {
       memberships: [],
       qualification: [],
       currResponsibility: [],
-      pastreponsibility: [],
+      pastReponsibility: [],
       books: [],
       journals: [],
       conferences: [],
@@ -37,10 +37,9 @@ class Facultyprofile extends React.Component {
           memberships: detail.memberships,
           qualification: detail.qualification,
           currResponsibility: detail.curr_admin_responsibility,
-          pastreponsibility: detail.past_admin_reponsibility,
+          pastResponsibility: detail.past_admin_responsibility,
           books: detail.books,
           journals: detail.journals,
-
           conferences:
             detail.publications != undefined &&
             JSON.parse(detail.publications[0].publications).filter(
@@ -51,8 +50,8 @@ class Facultyprofile extends React.Component {
             JSON.parse(detail.publications[0].publications).filter(
               x => x.type === "article"
             ),
-          projects: detail.projects,
-          services: detail.services,
+          projects: detail.project,
+          services: detail.professional_service,
           workExperience: detail.work_experience,
           phdCandidates: detail.phd_candidates,
         })
@@ -272,11 +271,11 @@ class Facultyprofile extends React.Component {
                 })}
               </div>
             ) : null}
-            {this.state.pastreponsibility &&
-            this.state.pastreponsibility.length != 0 ? (
+            {this.state.pastResponsibility &&
+            this.state.pastResponsibility.length != 0 ? (
               <div className="fac-card" data-aos="fade-up">
                 <h3>Past Administrative Responsibility</h3>
-                {this.state.pastreponsibility.map(item => {
+                {this.state.pastResponsibility.map(item => {
                   return <li>{item.past_responsibility}</li>
                 })}
               </div>
