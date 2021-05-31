@@ -35,10 +35,7 @@ class Facultycard extends React.Component {
             })}
             <p>
               <Link
-                to="../facultyprofile"
-                state={{
-                  url: `${process.env.GATSBY_API_URL}/api/faculty/${this.props.email}`,
-                }}
+                to={`../facultyprofile?id=${this.props.email}`}
               >
                 View Full Profile
               </Link>

@@ -12,7 +12,7 @@ class Director extends React.Component {
     }
   }
   componentDidMount() {
-    const url = `${process.env.GATSBY_API_URL}/faculty/profile?id=1128`
+    const url = `${process.env.GATSBY_API_URL}/api/faculty/profile/pkjain@nitp.ac.in`
     axios
       .get(url)
       .then(res => {
@@ -37,7 +37,11 @@ class Director extends React.Component {
           <div className="faculty-img-row">
             <div className="faculty-img-wrap">
               <img
-                src={`${process.env.GATSBY_API_URL}/profile/image?id=1128`}
+                src={
+                  this.state.profile.image != undefined
+                    ? `${this.state.profile.image}`
+                    : "/faculty.png"
+                }
                 className="facultypic"
               />
             </div>

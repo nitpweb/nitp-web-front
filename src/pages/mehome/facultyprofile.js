@@ -1,19 +1,21 @@
 import React from "react"
 import Deplayout from "../../components/deplayout"
 import SEO from "../../components/seo"
-import Mefacultyprofile from "../../components/global/facultyprofile"
+import MEfacultyprofile from "../../components/global/facultyprofile"
+import { useQueryParam, NumberParam, StringParam } from "use-query-params"
 
-const Mefacultyprofilepage = ({ location }) => {
-  if (location.state) {
-    return (
-      <Deplayout>
-        <SEO title="ME|Faculty Profile" />
-        <Mefacultyprofile url={location.state.url} />
-      </Deplayout>
-    )
-  } else {
-    return null
-  }
+const MEfacultyprofilepage = () => {
+  const [id, setNum] = useQueryParam("id", StringParam)
+  console.log(id)
+  return (
+    <Deplayout>
+      <SEO title="ME|Faculty Profile" />
+      {id}
+      <MEfacultyprofile
+        url={`${process.env.GATSBY_API_URL}/api/faculty/${id}`}
+      />
+    </Deplayout>
+  )
 }
 
-export default Mefacultyprofilepage
+export default MEfacultyprofilepage

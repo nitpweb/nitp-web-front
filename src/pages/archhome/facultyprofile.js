@@ -2,18 +2,20 @@ import React from "react"
 import Deplayout from "../../components/deplayout"
 import SEO from "../../components/seo"
 import Archfacultyprofile from "../../components/global/facultyprofile"
+import { useQueryParam, NumberParam, StringParam } from "use-query-params"
 
-const Archfacultyprofilepage = ({ location }) => {
-  if (location.state) {
-    return (
-      <Deplayout>
-        <SEO title="Architecture|Faculty Profile" />
-        <Archfacultyprofile url={location.state.url} />
-      </Deplayout>
-    )
-  } else {
-    return null
-  }
+const Archfacultyprofilepage = () => {
+  const [id, setNum] = useQueryParam("id", StringParam)
+  console.log(id)
+  return (
+    <Deplayout>
+      <SEO title="Arch|Faculty Profile" />
+      {id}
+      <Archfacultyprofile
+        url={`${process.env.GATSBY_API_URL}/api/faculty/${id}`}
+      />
+    </Deplayout>
+  )
 }
 
 export default Archfacultyprofilepage
