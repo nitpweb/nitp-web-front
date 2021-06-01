@@ -25,7 +25,6 @@ class Archfacultypage extends React.Component {
   }
 
   render() {
-
     return (
       <>
         <div style={{ marginTop: `10vh`, marginBottom: `15vh` }}>

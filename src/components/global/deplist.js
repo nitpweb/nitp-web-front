@@ -1,6 +1,4 @@
-import React from "react"
-
-const Deplist = {
+export const Deplist = {
   csehome: "Computer Science and Engineering",
   ecehome: "Electronics and Communication Engineering",
   chemhome: "Chemistry",
@@ -13,4 +11,15 @@ const Deplist = {
   mehome: "Mechanical Engineering",
 }
 
-export default Deplist
+export const DepListr = {
+  "Computer Science and Engineering": "csehome",
+  "Electronics and Communication Engineering": "ecehome",
+  Chemistry: "chemhome",
+  Architecture: "archhome",
+  "Civil Engineering": "cehome",
+  "Humanities and Social Sciences": "hsshome",
+  Physics: "physicshome",
+  Mathematics: "mathhome",
+  "Electrical Engineering": "eehome",
+  "Mechanical Engineering": "mehome",
+}

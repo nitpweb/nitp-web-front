@@ -5,7 +5,7 @@ import logo from "./global/img/logo512.png"
 import toggle from "../assets/toggle.svg"
 import { window } from "ssr-window"
 import { Link } from "gatsby"
-import Deplist from "./global/deplist"
+import { Deplist, DepListr } from "./global/deplist"
 import acadicon from "./global/sideicons/acad.svg"
 import administrationicon from "./global/sideicons/administration.svg"
 import abouticon from "./global/sideicons/bulb.svg"
@@ -15,7 +15,7 @@ import studenticon from "./global/sideicons/student.svg"
 import placementicon from "./global/sideicons/placements.svg"
 import sidedropicon from "./home/img/dropdown.svg"
 
-const Depnavbar = () => {
+const Depnavbar = props => {
   const pathname = window.location.pathname.split("/")[1]
   useEffect(() => {
     document.addEventListener("scroll", e => {
@@ -164,17 +164,30 @@ const Depnavbar = () => {
           </Link>
         </div>
         <div className="dep-nav-row">
-          <Link className="dep-nav-col dep-link-item" to={`/${pathname}`}>
-            {Deplist[pathname]}
+          <Link
+            className="dep-nav-col dep-link-item"
+            to={`/${props.department ? DepListr[props.department] : pathname}`}
+          >
+            {props.department ? props.department : Deplist[pathname]}
           </Link>
           <div style={{ width: `30%` }}></div>
           <div className="dep-nav-col-2">
-            <Link to={`/${pathname}/syllabus`} className="dep-link-item">
+            <Link
+              to={`/${
+                props.department ? DepListr[props.department] : pathname
+              }/syllabus`}
+              className="dep-link-item"
+            >
               Syllabus
             </Link>
           </div>
           <div className="dep-nav-col">
-            <Link to={`/${pathname}/faculty`} className="dep-link-item">
+            <Link
+              to={`/${
+                props.department ? DepListr[props.department] : pathname
+              }/faculty`}
+              className="dep-link-item"
+            >
               Faculty
             </Link>
           </div>
@@ -203,9 +216,14 @@ const Depnavbar = () => {
         </span>
         <div className="nav-sidebar">
           <div className="navsidetop">
-            <Link className="navsidetop" to={`/${pathname}`}>
+            <Link
+              className="navsidetop"
+              to={`/${
+                props.department ? DepListr[props.department] : pathname
+              }`}
+            >
               <img src={logo} alt="logo" />
-              <p>{Deplist[pathname]}</p>
+              <p>{props.department ? props.department : Deplist[pathname]}</p>
             </Link>
           </div>
           <div
@@ -348,14 +366,18 @@ const Depnavbar = () => {
           </div>
           <Link
             className="nav-side-link nav-sidebar-div"
-            to={`/${pathname}/syllabus`}
+            to={`/${
+              props.department ? DepListr[props.department] : pathname
+            }/syllabus`}
           >
             <p>Syllabus</p>
           </Link>
 
           <Link
             className="nav-side-link nav-sidebar-div"
-            to={`/${pathname}/faculty`}
+            to={`/${
+              props.department ? DepListr[props.department] : pathname
+            }/faculty`}
           >
             <p>Faculty</p>
           </Link>

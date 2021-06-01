@@ -35,7 +35,7 @@ class Facultycard extends React.Component {
             })}
             <p>
               <Link
-                to={`../facultyprofile?id=${this.props.email}`}
+                to={`/profile?id=${this.props.email}`}
               >
                 View Full Profile
               </Link>

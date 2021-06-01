@@ -8,8 +8,8 @@ import "./layout.css"
 import "aos/dist/aos.css"
 
 class Deplayout extends React.Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props);
     if (typeof window !== `undefined`) {
       const AOS = require("aos")
       AOS.init()
@@ -42,7 +42,7 @@ class Deplayout extends React.Component {
         `}
         render={data => (
           <>
-            <Depnavbar></Depnavbar>
+            <Depnavbar department={this.props.department}></Depnavbar>
             <div
               css={css`
                 padding-top: 4.8vw;
