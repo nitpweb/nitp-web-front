@@ -113,6 +113,8 @@ class Home extends React.Component {
                           detail={notice.title}
                           time={d}
                           attachments={notice.attachments}
+                          imp={notice.important}
+                          link={(notice.notice_link&&JSON.parse(notice.notice_link).url)?JSON.parse(notice.notice_link).url:""}
                         />
                       )
                     }
