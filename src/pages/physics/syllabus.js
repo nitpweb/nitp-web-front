@@ -1,7 +1,7 @@
 import React from "react"
 import Deplayout from "../../components/deplayout"
 import SEO from "../../components/seo"
-import Physicssyllabus from "../../components/departments/physics/physicssyllabus"
+import Physicssyllabus from "../../components/departments/phy/physicssyllabus"
 
 const Physicssyllabuspage = () => (
   <Deplayout>

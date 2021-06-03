@@ -1,7 +1,7 @@
 import React from "react"
 import Deplayout from "../../components/deplayout"
 import SEO from "../../components/seo"
-import Phyfaculty from "../../components/departments/physics/phyfaculty"
+import Phyfaculty from "../../components/departments/phy/phyfaculty"
 
 const Phyfacultypage = () => (
   <Deplayout>
