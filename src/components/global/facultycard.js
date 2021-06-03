@@ -36,10 +36,10 @@ class Facultycard extends React.Component {
             </div>
           </div>
           <div className="faculty2">
-        {faculty.length!=0&&<p>Research Interests:-</p>}
-            {faculty.map(item => {
-              return <p>{item}</p>
-            })}
+            {faculty.length != 0 && <p>Research Interests:-</p>}
+            {faculty.map(item => (
+              <p>{item}</p>
+            ))}
             <p>
               <Link to={`/profile?id=${this.props.email}`}>
                 View Full Profile
