@@ -1,5 +1,5 @@
 import "../components/global/css/faculty.css"
-import faculty from "../components/departments/img/faculty.svg"
+import web from "../components/global/img/web.svg"
 import Layout from "../components/layout"
 import weblist from "../../static/weblist"
 import Webcard from "../components/global/webcard"
@@ -25,7 +25,7 @@ const Webteam = () => {
             <div className="col-6 imgcolstyle">
               <img
                 data-aos="zoom-in"
-                src={faculty}
+                src={web}
                 className="img-fluid"
                 style={{ maxHeight: `50vh` }}
                 loading="lazy"
