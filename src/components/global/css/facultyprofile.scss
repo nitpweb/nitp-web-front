@@ -57,24 +57,27 @@
       }
       .factable {
         overflow: hidden;
-        max-width: 90%;
+        max-width: 100%;
         overflow-x: scroll;
         scrollbar-width: none;
         -ms-overflow-style: none;
         
+        &::-webkit-scrollbar{
+          display: none;
+        }
+        p{
+          width: 200px;
+          min-width: 48px;
+        }
         td{
-          border: 1px solid #ddd;
+          text-align: left;
           padding: 8px;
         }
         th {
           text-align: left;
-          background-color:#d45628;
-          color: white;
-          border: 1px solid #ddd;
           padding: 8px;
         }
-        tr:nth-child(odd){background-color: #eefff0;}
-        tr:hover {background-color: #ddd;}
+        tr:nth-child(odd){background-color:#FAFAFA;}
       }
       .factable:-webkit-scrollbar {
         width: 0px;
@@ -84,7 +87,11 @@
         min-width: 90%;
         width: 100%;
         border-collapse: collapse;
+
       }
     }
   }
+}
+@media (max-width: 480px) {
+
 }
