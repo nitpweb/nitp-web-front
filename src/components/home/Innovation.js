@@ -61,8 +61,8 @@ const Innovation = () => {
     <>
       <div
         className="innovation"
-        data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom"
+        // data-aos="fade-up"
+        // data-aos-anchor-placement="center-bottom"
       >
         <p id="head">Innovation</p>
         <Link id="loadMore" to="/Innovation">
