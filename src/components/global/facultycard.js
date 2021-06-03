@@ -29,10 +29,11 @@ class Facultycard extends React.Component {
             </div>
           </div>
           <div className="faculty2">
-            <p>Research Interests:-</p>
+            { faculty&&faculty.length!=0?<> <p>Research Interests:-</p>
             {faculty.map(item => {
+              console.log(item)
               return <p>{item}</p>
-            })}
+            })}</>:null }
             <p>
               <Link
                 to={`/profile?id=${this.props.email}`}
