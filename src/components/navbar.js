@@ -104,34 +104,34 @@ const Navbar = () => {
               Departments
             </button>
             <div className="dropdown-content">
-              <Link className="nav-link-item" to="/csehome">
+              <Link className="nav-link-item" to="/cse">
                 <span>Computer Science and Engineering</span>
               </Link>
-              <Link className="nav-link-item" to="/ecehome">
+              <Link className="nav-link-item" to="/ece">
                 <span>Electronics and Communication Engineering</span>
               </Link>
-              <Link className="nav-link-item" to="/eehome">
+              <Link className="nav-link-item" to="/ee">
                 <span>Electrical Engineering</span>
               </Link>
-              <Link className="nav-link-item" to="/mehome">
+              <Link className="nav-link-item" to="/me">
                 <span>Mechanical Engineering</span>
               </Link>
-              <Link className="nav-link-item" to="/cehome">
+              <Link className="nav-link-item" to="/ce">
                 <span>Civil Engineering</span>
               </Link>
-              <Link className="nav-link-item" to="/hsshome">
+              <Link className="nav-link-item" to="/hss">
                 <span>Humanities & Social Sciences</span>
               </Link>
-              <Link className="nav-link-item" to="/archhome">
+              <Link className="nav-link-item" to="/arch">
                 <span>Architecture</span>
               </Link>
-              <Link className="nav-link-item" to="/physicshome">
+              <Link className="nav-link-item" to="/physics">
                 <span>Physics</span>
               </Link>
-              <Link className="nav-link-item" to="/chemhome">
+              <Link className="nav-link-item" to="/chem">
                 <span>Chemistry</span>
               </Link>
-              <Link className="nav-link-item" to="/mathhome">
+              <Link className="nav-link-item" to="/math">
                 <span>Mathematics</span>
               </Link>
             </div>
@@ -237,52 +237,52 @@ const Navbar = () => {
           </div>
           <div id="departsidedropwrap">
             <div className="departsidedrop">
-              <Link to="/csehome" className="nav-sidebar-div">
+              <Link to="/cse" className="nav-sidebar-div">
                 <p>
                   <span>Computer Science and Engineering</span>
                 </p>
               </Link>
-              <Link to="/ecehome" className="nav-sidebar-div">
+              <Link to="/ece" className="nav-sidebar-div">
                 <p>
                   <span>Electronics and Communication Engineering</span>
                 </p>
               </Link>
-              <Link to="/eehome" className="nav-sidebar-div">
+              <Link to="/ee" className="nav-sidebar-div">
                 <p>
                   <span>Electrical Engineering</span>
                 </p>
               </Link>
-              <Link to="/mehome" className="nav-sidebar-div">
+              <Link to="/me" className="nav-sidebar-div">
                 <p>
                   <span>Mechanical Engineering</span>
                 </p>
               </Link>
-              <Link to="/cehome" className="nav-sidebar-div">
+              <Link to="/ce" className="nav-sidebar-div">
                 <p>
                   <span>Civil Engineering</span>
                 </p>
               </Link>
-              <Link to="/hsshome" className="nav-sidebar-div">
+              <Link to="/hss" className="nav-sidebar-div">
                 <p>
                   <span>Humanities & Social Sciences</span>
                 </p>
               </Link>
-              <Link to="/archhome" className="nav-sidebar-div">
+              <Link to="/arch" className="nav-sidebar-div">
                 <p>
                   <span>Architecture</span>
                 </p>
               </Link>
-              <Link to="/physicshome" className="nav-sidebar-div">
+              <Link to="/physics" className="nav-sidebar-div">
                 <p>
                   <span>Physics</span>
                 </p>
               </Link>
-              <Link to="/chemhome" className="nav-sidebar-div">
+              <Link to="/chem" className="nav-sidebar-div">
                 <p>
                   <span>Chemistry</span>
                 </p>
               </Link>
-              <Link to="/mathhome" className="nav-sidebar-div">
+              <Link to="/math" className="nav-sidebar-div">
                 <p>
                   <span>Mathematics</span>
                 </p>
