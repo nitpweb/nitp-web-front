@@ -3,11 +3,11 @@ import newspic from "../home/img/image 2.png"
 import "./css/facultycard.scss"
 import { Link } from "gatsby"
 
-const Facultycard = props => {
-  const [research, setResearch] = useState()
+const Webcard = props => {
+  const [interests, setInterests] = useState()
   useEffect(() => {
-    if (props.research != null) {
-      setResearch(props.research.split(","))
+    if (props.interests != null) {
+      setInterests(props.interests.split(","))
     }
   }, {})
 
@@ -15,9 +15,7 @@ const Facultycard = props => {
     <>
       <div className="facultycard">
         <div className="faculty1">
-          {props.extn != 0 ? (
-            <p className="extn">Extn:{props.extn}</p>
-          ) : null}
+          {props.extn != 0 ? <p className="extn">{props.extn}</p> : null}
           <div className="row fimg">
             <div className="facimg">
               <img
@@ -33,14 +31,14 @@ const Facultycard = props => {
           </div>
         </div>
         <div className="faculty2">
-          {research && <p>Research Interests:-</p>}
-          {research && research.map(item => <p>{item}</p>)}
+          {interests && <p>Interests:-</p>}
+          {interests && interests.map(item => <p>{item}</p>)}
           <p>
-            <Link to={`/profile?id=${props.email}`}>View Profile</Link>
+            <a href={props.url}>View Profile</a>
           </p>
         </div>
       </div>
     </>
   )
 }
-export default Facultycard
+export default Webcard

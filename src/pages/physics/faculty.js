@@ -1,12 +1,12 @@
 import React from "react"
 import Deplayout from "../../components/deplayout"
 import SEO from "../../components/seo"
-import Phyfaculty from "../../components/departments/phy/phyfaculty"
+import Facultypage from "../../components/departments/faculty"
 
 const Phyfacultypage = () => (
   <Deplayout>
     <SEO title="Physics|Faculty" />
-    <Phyfaculty />
+    <Facultypage url="phy" dept="Physics Department" />
   </Deplayout>
 )
 

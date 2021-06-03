@@ -47,12 +47,15 @@ const Footer = () => {
               <a href="http://www.nitp.ac.in/downloads/NIT_Act/Amendments_First_Statutes.pdf">
                 <h3>NIT Act and Statutes</h3>
               </a>
-              <a href="http://www.nitp.ac.in/php/staffclaim_form.php">
+              {/* <a href="http://www.nitp.ac.in/php/staffclaim_form.php">
                 <h3>Staff Claim Form</h3>
-              </a>
-              <a href="http://beta.nitp.ac.in:3000">
+              </a> */}
+              <a href="http://beta.nitp.ac.in:81">
                 <h3>Faculty Login</h3>
               </a>
+              <Link to="/webteam">
+                <h3>Web Team</h3>
+              </Link>
             </div>
           </div>
           <div className="foot-col-3">
