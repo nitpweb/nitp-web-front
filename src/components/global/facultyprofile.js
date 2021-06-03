@@ -31,7 +31,6 @@ class Facultyprofile extends React.Component {
       .get(url)
       .then(res => {
         const detail = res.data
-        console.log(detail.publications[0].publications)
         this.setState({
           profile: detail.profile,
           subjects: detail.subjects_teaching,
