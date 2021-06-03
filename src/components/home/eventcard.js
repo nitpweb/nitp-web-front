@@ -4,7 +4,7 @@ import eventclock from "./img/eventclock.svg"
 import eventlocation from "./img/eventlocation.svg"
 
 const Eventcard = props => {
-  console.log(props.link)
+
   return (
     <div className="eventcardwrap">
       <div className="eventdtdiv">
