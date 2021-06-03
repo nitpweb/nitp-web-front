@@ -20,7 +20,6 @@ const Newscard = inf => {
         <h6>
           {inf.detail}
           <Link to={`/news#${inf.id}`} className="newscard-readmore">
-            {" "}
             Read more..
           </Link>
         </h6>

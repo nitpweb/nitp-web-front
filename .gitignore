@@ -10,6 +10,7 @@
 # production
 
 
+/static/weblist.js
 
 # misc
 .DS_Store
