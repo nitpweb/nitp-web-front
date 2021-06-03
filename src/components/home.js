@@ -97,7 +97,7 @@ class Home extends React.Component {
                 ? this.state.notices.map(notice => {
                     const newtime = new Date().getTime()
 
-                    let d = Math.round((newtime - notice.timestamp) / 3600000)
+                    let d = Math.round((newtime - notice.openDate) / 3600000)
                     if (d > 24) {
                       d = `${Math.round(d / 24)} days ago`
                     } else if (d < 1) {
