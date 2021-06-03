@@ -61,6 +61,20 @@
         overflow-x: scroll;
         scrollbar-width: none;
         -ms-overflow-style: none;
+        
+        td{
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+        th {
+          text-align: left;
+          background-color:#d45628;
+          color: white;
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+        tr:nth-child(odd){background-color: #eefff0;}
+        tr:hover {background-color: #ddd;}
       }
       .factable:-webkit-scrollbar {
         width: 0px;
@@ -68,7 +82,8 @@
       }
       table {
         min-width: 90%;
-        width: 90%;
+        width: 100%;
+        border-collapse: collapse;
       }
     }
   }
