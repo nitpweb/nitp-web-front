@@ -1,11 +1,12 @@
 import React from "react"
 import "./css/notice.scss"
 import downimg from "./img/download.svg"
+import flag from "./img/flag.svg"
 const Notice = props => {
   return (
     <>
       <div className="noticecard">
-        <p className="noticecarddetail">{props.detail}</p>
+        <p className="noticecarddetail"><a href={props.link}>{props.imp==1?<img id="flag" src={flag} alt="f" />:""}{" "}{props.detail}</a></p>
         <div id="notdate">
           <div>
             {props.attachments.map(elem => {
