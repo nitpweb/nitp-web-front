@@ -6,7 +6,7 @@ const Notice = props => {
   return (
     <>
       <div className="noticecard">
-        <p className="noticecarddetail"><a href={props.link}>{props.imp==1?<img id="flag" src={flag} alt="f" />:""}{" "}{props.detail}</a></p>
+        <p className="noticecarddetail">{props.imp==1?<img id="flag" src={flag} alt="f" />:""}<a href={props.link} target="_blank">{" "}{props.detail}</a></p>
         <div id="notdate">
           <div>
             {props.attachments.map(elem => {

@@ -11,11 +11,12 @@ import { Link } from "gatsby"
 
 const Innovation = () => {
   const [data, setData] = useState([])
+  const [x, setX] = useState(0)
 
   useEffect(() => {
     loadData()
+    setX(-300)
   }, [])
-
   const loadData = () => {
     const url = `${process.env.GATSBY_API_URL}/api/innovation/all`
     axios
@@ -33,8 +34,12 @@ const Innovation = () => {
     k = k.substr(32, k.length)
     return k
   }
-
-  const [x, setX] = useState(0)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      x > filtered.length * -300 + 900 ? setX(x - 300) : setX(0)
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [x]);
 
   function Card(val, index) {
     const date = new Date(val.openDate)
@@ -59,11 +64,7 @@ const Innovation = () => {
   }
   return (
     <>
-      <div
-        className="innovation"
-        // data-aos="fade-up"
-        // data-aos-anchor-placement="center-bottom"
-      >
+      <div className="innovation">
         <p id="head">Innovation</p>
         <Link id="loadMore" to="/Innovation">
           view all
