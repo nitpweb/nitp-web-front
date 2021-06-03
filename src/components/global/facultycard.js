@@ -21,7 +21,14 @@ class Facultycard extends React.Component {
             ) : null}
             <div className="row fimg">
               <div className="facimg">
-                <img src={this.props.image!=undefined?`${this.props.image}`:"/faculty.png"} alt="" />
+                <img
+                  src={
+                    this.props.image != undefined
+                      ? `${this.props.image}`
+                      : "/faculty.png"
+                  }
+                  alt=""
+                />
               </div>
               <h2>{this.props.name}</h2>
               <h3>{this.props.desg}</h3>
@@ -29,14 +36,12 @@ class Facultycard extends React.Component {
             </div>
           </div>
           <div className="faculty2">
-            <p>Research Interests:-</p>
+            {faculty.length != 0 && <p>Research Interests:-</p>}
             {faculty.map(item => {
               return <p>{item}</p>
             })}
             <p>
-              <Link
-                to={`/profile?id=${this.props.email}`}
-              >
+              <Link to={`/profile?id=${this.props.email}`}>
                 View Full Profile
               </Link>
             </p>
