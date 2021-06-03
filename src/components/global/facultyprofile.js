@@ -4,7 +4,6 @@ import "./css/facultyprofile.scss"
 import mail from "./img/mail.svg"
 import Deplayout from "../deplayout"
 
-
 class Facultyprofile extends React.Component {
   constructor(props) {
     super(props)
@@ -32,15 +31,19 @@ class Facultyprofile extends React.Component {
       .get(url)
       .then(res => {
         const detail = res.data
-        console.log(res)
+        console.log(detail.publications[0].publications)
         this.setState({
           profile: detail.profile,
           subjects: detail.subjects_teaching,
           memberships: detail.memberships,
-          qualification: detail.qualification,
+          qualification: detail.education,
           currResponsibility: detail.curr_admin_responsibility,
           pastResponsibility: detail.past_admin_responsibility,
-          books: detail.books,
+          books:
+            detail.publications != undefined &&
+            JSON.parse(detail.publications[0].publications).filter(
+              x => x.type === "book"
+            ),
           journals: detail.journals,
           conferences:
             detail.publications != undefined &&
@@ -95,35 +98,46 @@ class Facultyprofile extends React.Component {
                 <h3>Phone:-</h3>
                 <p>{this.state.profile.ext_no}</p>
               </div>
+
               {this.state.subjects && this.state.subjects.length != 0 ? (
                 <div className="fac-card" data-aos="fade-up">
                   <h3>Subjects</h3>
-                  {this.state.subjects.map(item => {
-                    return <li>{item.subject}</li>
-                  })}
-                </div>
-              ) : null}
-              {this.state.memberships && this.state.memberships.length != 0 ? (
-                <div className="fac-card" data-aos="fade-up">
-                  <h3>Memberships & Society</h3>
                   <div className="factable">
                     <table>
                       <tr>
-                        <td>
-                          <h4>Membership</h4>
-                        </td>
-                        <td>
-                          <h4>Membership Society</h4>
-                        </td>
+                        <th>
+                          <h4>Subject Code</h4>
+                        </th>
+                        <th>
+                          <h4>Subject Name</h4>
+                        </th>
+                        <th>
+                          <h4>Start-Date</h4>
+                        </th>
+                        <th>
+                          <h4>End-Date</h4>
+                        </th>
                       </tr>
-                      {this.state.memberships.map(item => {
+                      {this.state.subjects.map(item => {
                         return (
                           <tr>
                             <td>
-                              <li>{item.membership_id}</li>
+                              <p>{item.code}</p>
                             </td>
                             <td>
-                              <li>{item.membership_society}</li>
+                              <p>{item.name}</p>
+                            </td>
+                            <td>
+                              <p>
+                                {new Date(item.start).getMonth() + 1} /{" "}
+                                {new Date(item.start).getFullYear()}
+                              </p>
+                            </td>
+                            <td>
+                              <p>
+                                {new Date(item.end).getMonth() + 1} /{" "}
+                                {new Date(item.end).getFullYear()}
+                              </p>
                             </td>
                           </tr>
                         )
@@ -132,6 +146,55 @@ class Facultyprofile extends React.Component {
                   </div>
                 </div>
               ) : null}
+
+              {this.state.memberships && this.state.memberships.length != 0 ? (
+                <div className="fac-card" data-aos="fade-up">
+                  <h3>Memberships & Society</h3>
+                  <div className="factable">
+                    <table>
+                      <tr>
+                        <th>
+                          <h4>Membership Id</h4>
+                        </th>
+                        <th>
+                          <h4>Membership Society</h4>
+                        </th>
+                        <th>
+                          <h4>Start-Date</h4>
+                        </th>
+                        <th>
+                          <h4>End-Date</h4>
+                        </th>
+                      </tr>
+                      {this.state.memberships.map(item => {
+                        return (
+                          <tr>
+                            <td>
+                              <p>{item.membership_id}</p>
+                            </td>
+                            <td>
+                              <p>{item.membership_society}</p>
+                            </td>
+                            <td>
+                              <p>
+                                {new Date(item.start).getMonth() + 1} /{" "}
+                                {new Date(item.start).getFullYear()}
+                              </p>
+                            </td>
+                            <td>
+                              <p>
+                                {new Date(item.end).getMonth() + 1} /{" "}
+                                {new Date(item.end).getFullYear()}
+                              </p>
+                            </td>
+                          </tr>
+                        )
+                      })}
+                    </table>
+                  </div>
+                </div>
+              ) : null}
+
               {this.state.qualification &&
               this.state.qualification.length != 0 ? (
                 <div className="fac-card" data-aos="fade-up">
@@ -139,27 +202,27 @@ class Facultyprofile extends React.Component {
                   <div className="factable">
                     <table>
                       <tr>
-                        <td>
+                        <th>
                           <h4>Certification</h4>
-                        </td>
-                        <td>
+                        </th>
+                        <th>
                           <h4>Institute Name</h4>
-                        </td>
-                        <td>
+                        </th>
+                        <th>
                           <h4>Passing Year</h4>
-                        </td>
+                        </th>
                       </tr>
                       {this.state.qualification.map(item => {
                         return (
                           <tr>
                             <td>
-                              <li>{item.certification}</li>
+                              <p>{item.certification}</p>
                             </td>
                             <td>
-                              <li>{item.institution}</li>
+                              <p>{item.institution}</p>
                             </td>
                             <td>
-                              <li>{item.passing_year}</li>
+                              <p>{item.passing_year}</p>
                             </td>
                           </tr>
                         )
@@ -175,39 +238,33 @@ class Facultyprofile extends React.Component {
                   <div className="factable">
                     <table>
                       <tr>
-                        <td>
+                        <th>
                           <h4>Title</h4>
-                        </td>
-                        <td>
+                        </th>
+                        <th>
                           <h4>Authors</h4>
-                        </td>
-                        <td>
-                          <h4>Journal Name</h4>
-                        </td>
-                        <td>
+                        </th>
+                        <th>
                           <h4>Year</h4>
-                        </td>
-                        <td>
+                        </th>
+                        <th>
                           <h4>Citation</h4>
-                        </td>
+                        </th>
                       </tr>
                       {this.state.article.map(item => {
                         return (
                           <tr>
                             <td>
-                              <li>{item.title}</li>
+                              <p>{item.title}</p>
                             </td>
                             <td>
-                              <li>{item.authors}</li>
+                              <p>{item.authors}</p>
                             </td>
                             <td>
-                              <li>{item.booktitle}</li>
+                              <p>{item.year}</p>
                             </td>
                             <td>
-                              <li>{item.year}</li>
-                            </td>
-                            <td>
-                              <li>{item.citation_key}</li>
+                              <p>{item.citation_key}</p>
                             </td>
                           </tr>
                         )
@@ -223,39 +280,93 @@ class Facultyprofile extends React.Component {
                   <div className="factable">
                     <table>
                       <tr>
-                        <td>
+                        <th>
                           <h4>Title</h4>
-                        </td>
-                        <td>
+                        </th>
+                        <th>
                           <h4>Authors</h4>
-                        </td>
-                        <td>
+                        </th>
+                        <th>
                           <h4>Journal Name</h4>
-                        </td>
-                        <td>
+                        </th>
+                        <th>
                           <h4>Year</h4>
-                        </td>
-                        <td>
+                        </th>
+                        <th>
                           <h4>Citation</h4>
-                        </td>
+                        </th>
                       </tr>
                       {this.state.conferences.map(item => {
                         return (
                           <tr>
                             <td>
-                              <li>{item.title}</li>
+                              <p>{item.title}</p>
                             </td>
                             <td>
-                              <li>{item.authors}</li>
+                              <p>{item.authors}</p>
                             </td>
                             <td>
-                              <li>{item.booktitle}</li>
+                              <p>{item.booktitle}</p>
                             </td>
                             <td>
-                              <li>{item.year}</li>
+                              <p>{item.year}</p>
                             </td>
                             <td>
-                              <li>{item.citation_key}</li>
+                              <p>{item.citation_key}</p>
+                            </td>
+                          </tr>
+                        )
+                      })}
+                    </table>
+                  </div>
+                </div>
+              ) : null}
+
+              {this.state.books && this.state.books.length != 0 ? (
+                <div className="fac-card" data-aos="fade-up">
+                  <h3>Books</h3>
+                  <div className="factable">
+                    <table>
+                      <tr>
+                        <th>
+                          <h4>Title</h4>
+                        </th>
+                        <th>
+                          <h4>Authors</h4>
+                        </th>
+                        <th>
+                          <h4>Editors</h4>
+                        </th>
+                        <th>
+                          <h4>Publisher</h4>
+                        </th>
+                        <th>
+                          <h4>Year</h4>
+                        </th>
+                        <th>
+                          <h4>Citation</h4>
+                        </th>
+                      </tr>
+                      {this.state.books.map(item => {
+                        return (
+                          <tr>
+                            <td>
+                              <p>{item.title}</p>
+                            </td>
+                            <td>
+                              <p>{item.authors}</p>
+                            </td>
+                            <td>
+                              <p>{item.editors}</p>
+                            </td>
+                            <td>
+                              <p>{item.publisher}</p>
+                            </td>
+                            <td>
+                              <p>{item.year}</p>
+                            </td>
+                            <td>
+                              <p>{item.citation_key}</p>
                             </td>
                           </tr>
                         )
@@ -269,29 +380,128 @@ class Facultyprofile extends React.Component {
               this.state.currResponsibility.length != 0 ? (
                 <div className="fac-card" data-aos="fade-up">
                   <h3>Current Administrative Responsibility</h3>
-                  {this.state.currResponsibility.map(item => {
-                    return <li>{item.curr_responsibility}</li>
-                  })}
+                  <div className="factable">
+                    <table>
+                      <tr>
+                        <th>
+                          <h4>Post</h4>
+                        </th>
+                        <th>
+                          <h4>Start-Date</h4>
+                        </th>
+                      </tr>
+                      {this.state.currResponsibility.map(item => {
+                        return (
+                          <tr>
+                            <td>
+                              <p>{item.curr_responsibility}</p>
+                            </td>
+                            <td>
+                              <p>
+                                {new Date(item.start).getMonth() + 1} /{" "}
+                                {new Date(item.start).getFullYear()}
+                              </p>
+                            </td>
+                          </tr>
+                        )
+                      })}
+                    </table>
+                  </div>
                 </div>
               ) : null}
+
               {this.state.pastResponsibility &&
               this.state.pastResponsibility.length != 0 ? (
                 <div className="fac-card" data-aos="fade-up">
                   <h3>Past Administrative Responsibility</h3>
-                  {this.state.pastResponsibility.map(item => {
-                    return <li>{item.past_responsibility}</li>
-                  })}
+                  <div className="factable">
+                    <table>
+                      <tr>
+                        <th>
+                          <h4>Post</h4>
+                        </th>
+                        <th>
+                          <h4>Start-Date</h4>
+                        </th>
+                        <th>
+                          <h4>End-Date</h4>
+                        </th>
+                      </tr>
+                      {this.state.pastResponsibility.map(item => {
+                        return (
+                          <tr>
+                            <td>
+                              <p>{item.past_responsibility}</p>
+                            </td>
+                            <td>
+                              <p>
+                                {new Date(item.start).getMonth() + 1} /{" "}
+                                {new Date(item.start).getFullYear()}
+                              </p>
+                            </td>
+                            <td>
+                              <p>
+                                {new Date(item.end).getMonth() + 1} /{" "}
+                                {new Date(item.end).getFullYear()}
+                              </p>
+                            </td>
+                          </tr>
+                        )
+                      })}
+                    </table>
+                  </div>
                 </div>
               ) : null}
+
               {this.state.workExperience &&
               this.state.workExperience.length != 0 ? (
                 <div className="fac-card" data-aos="fade-up">
                   <h3>Work Experiences</h3>
-                  {this.state.workExperience.map(item => {
-                    return <li>{item.work_experiences}</li>
-                  })}
+                  <div className="factable">
+                    <table>
+                      <tr>
+                        <th>
+                          <h4>Designation</h4>
+                        </th>
+                        <th>
+                          <h4>Institute/Company</h4>
+                        </th>
+                        <th>
+                          <h4>Start-Date</h4>
+                        </th>
+                        <th>
+                          <h4>End-Date</h4>
+                        </th>
+                      </tr>
+                      {this.state.workExperience.map(item => {
+                        return (
+                          <tr>
+                            <td>
+                              <p>{item.work_experiences}</p>
+                            </td>
+                            <td>
+                              <p>{item.institute}</p>
+                            </td>
+                            <td>
+                              <p>
+                                {new Date(item.start).getMonth() + 1} /{" "}
+                                {new Date(item.start).getFullYear()}
+                              </p>
+                            </td>
+                            <td>
+                              <p>
+                                {new Date(item.end).getMonth() + 1} /{" "}
+                                {new Date(item.end).getFullYear()}
+                              </p>
+                            </td>
+                          </tr>
+                        )
+                      })}
+                    </table>
+                  </div>
                 </div>
               ) : null}
+
               {this.state.services && this.state.services.length != 0 ? (
                 <div className="fac-card" data-aos="fade-up">
                   <h3>Professional Services</h3>
@@ -300,14 +510,69 @@ class Facultyprofile extends React.Component {
                   })}
                 </div>
               ) : null}
-              {this.state.projects && this.state.projects.length != 0 ? (
+              {/* {this.state.projects && this.state.projects.length != 0 ? (
                 <div className="fac-card" data-aos="fade-up">
                   <h3>Projects</h3>
                   {this.state.projects.map(item => {
                     return <li>{item.project}</li>
                   })}
                 </div>
+              ) : null} */}
+
+              {this.state.projects && this.state.projects.length != 0 ? (
+                <div className="fac-card" data-aos="fade-up">
+                  <h3>Projects</h3>
+                  <div className="factable">
+                    <table>
+                      <tr>
+                        <th>
+                          <h4>Title</h4>
+                        </th>
+                        <th>
+                          <h4>Sponsoring Agency</h4>
+                        </th>
+                        <th>
+                          <h4>Amount</h4>
+                        </th>
+                        <th>
+                          <h4>Start-Date</h4>
+                        </th>
+                        <th>
+                          <h4>End-Date</h4>
+                        </th>
+                      </tr>
+                      {this.state.projects.map(item => {
+                        return (
+                          <tr>
+                            <td>
+                              <p>{item.project}</p>
+                            </td>
+                            <td>
+                              <p>{item.sponsor}</p>
+                            </td>
+                            <td>
+                              <p>{item.amount}</p>
+                            </td>
+                            <td>
+                              <p>
+                                {new Date(item.start).getMonth() + 1} /{" "}
+                                {new Date(item.start).getFullYear()}
+                              </p>
+                            </td>
+                            <td>
+                              <p>
+                                {new Date(item.end).getMonth() + 1} /{" "}
+                                {new Date(item.end).getFullYear()}
+                              </p>
+                            </td>
+                          </tr>
+                        )
+                      })}
+                    </table>
+                  </div>
+                </div>
               ) : null}
+
               {this.state.phdCandidates &&
               this.state.phdCandidates.length != 0 ? (
                 <div className="fac-card" data-aos="fade-up">
@@ -316,33 +581,33 @@ class Facultyprofile extends React.Component {
                     <table>
                       <tbody>
                         <tr>
-                          <td>
+                          <th>
                             <h4>Student Name</h4>
-                          </td>
-                          <td>
+                          </th>
+                          <th>
                             <h4>Thesis Topic</h4>
-                          </td>
-                          <td>
+                          </th>
+                          <th>
                             <h4>Start Year</h4>
-                          </td>
-                          <td>
+                          </th>
+                          <th>
                             <h4>Completion Year</h4>
-                          </td>
+                          </th>
                         </tr>
                         {this.state.phdCandidates.map(item => {
                           return (
                             <tr>
                               <td>
-                                <li>{item.phd_student_name}</li>
+                                <p>{item.phd_student_name}</p>
                               </td>
                               <td>
-                                <li>{item.thesis_topic}</li>
+                                <p>{item.thesis_topic}</p>
                               </td>
                               <td>
-                                <li>{item.start_year}</li>
+                                <p>{item.start_year}</p>
                               </td>
                               <td>
-                                <li>{item.completion_year}</li>
+                                <p>{item.completion_year}</p>
                               </td>
                             </tr>
                           )
