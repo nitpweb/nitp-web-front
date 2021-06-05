@@ -1,23 +1,17 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import axios from "axios"
 import "./global/css/facultyprofile.scss"
 import mail from "./global/img/mail.svg"
 
-class Director extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      profile: [],
-      qualification: [],
-    }
-  }
-  componentDidMount() {
-    const url = `${process.env.GATSBY_API_URL}/api/faculty/profile/pkjain@nitp.ac.in`
+const Director = () => {
+  const [data, setData] = useState()
+  useEffect(() => {
+    const url = `${process.env.GATSBY_API_URL}/api/faculty/pkjain@nitp.ac.in`
     axios
       .get(url)
       .then(res => {
         const detail = res.data
-        this.setState({
+        setData({
           profile: detail.profile,
           qualification: detail.education,
         })
@@ -25,10 +19,11 @@ class Director extends React.Component {
       .catch(e => {
         console.log(e)
       })
-  }
-  render() {
-    return (
-      <>
+  }, [data])
+
+  return (
+    <>
+      {data && (
         <div className="facultypage row">
           <div className="row rowmarl3">
             <h1>Our Director</h1>
@@ -38,17 +33,17 @@ class Director extends React.Component {
             <div className="faculty-img-wrap">
               <img
                 src={
-                  this.state.profile.image != undefined
-                    ? `${this.state.profile.image}`
+                  data.profile.image != undefined
+                    ? `${data.profile.image}`
                     : "/faculty.png"
                 }
                 className="facultypic"
               />
             </div>
-            <a href={`mailto:${this.state.profile.email}`} target="blank">
+            <a href={`mailto:${data.profile.email}`} target="blank">
               <img src={mail} className="img-fluid facmail" />
             </a>
-            <h2>{this.state.profile.name}</h2>
+            <h2>{data.profile.name}</h2>
             <h3>Director</h3>
           </div>
 
@@ -56,13 +51,14 @@ class Director extends React.Component {
             <h1>His Profile</h1>
             <div className="fac-card" data-aos="fade-up">
               <h3>Research Interest:-</h3>
-              <p>{this.state.profile.research_interest}</p>
+              <p>{data.profile.research_interest}</p>
               <h3>Email:-</h3>
-              <p>{this.state.profile.email}</p>
+              <p>{data.profile.email}</p>
               <h3>Phone:-</h3>
-              <p>{this.state.profile.ext_no}</p>
+              <p>{data.profile.ext_no}</p>
             </div>
-            {this.state.qualification && this.state.qualification.length != 0 ? (
+            {data.qualification &&
+            data.qualification.length != 0 ? (
               <div className="fac-card" data-aos="fade-up">
                 <h3>Educational Qualification</h3>
                 <div className="factable">
@@ -78,7 +74,7 @@ class Director extends React.Component {
                         <h4>Passing Year</h4>
                       </td>
                     </tr>
-                    {this.state.qualification.map(item => {
+                    {data.qualification.map(item => {
                       return (
                         <tr>
                           <td>
@@ -143,9 +139,9 @@ class Director extends React.Component {
             </div>
           </div>
         </div>
-      </>
-    )
-  }
+      )}
+    </>
+  )
 }
 
 export default Director
