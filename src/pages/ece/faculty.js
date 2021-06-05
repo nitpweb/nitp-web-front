@@ -5,9 +5,8 @@ import Facultypage from "../../components/departments/faculty"
 
 const Ecefacultypage = () => (
   <Deplayout>
-    <SEO title="ECE|Faculty" />
+    <SEO title="ECE | Faculty" />
     <Facultypage url="ece" dept="Electronics and Communication Engineering" />
-    <Ecefaculty />
   </Deplayout>
 )
 
