@@ -62,7 +62,7 @@ class Director extends React.Component {
               <h3>Phone:-</h3>
               <p>{this.state.profile.ext_no}</p>
             </div>
-            {this.state.qualification.length != 0 ? (
+            {this.state.qualification && this.state.qualification.length != 0 ? (
               <div className="fac-card" data-aos="fade-up">
                 <h3>Educational Qualification</h3>
                 <div className="factable">
