@@ -4,10 +4,10 @@ import pc from "./img/pc.svg"
 import mountain from "./img/mountain.svg"
 import map from "./img/map.svg"
 import lens from "./img/lens.svg"
-import "./css/home.css"
 import Floatmenu from "./floatmenu"
 import axios from "axios"
 import Notice from "../home/notice"
+import { PageLayout } from "../styles/pagelayout"
 const Dephomepage = ({
   routeName,
   title,
@@ -34,9 +34,9 @@ const Dephomepage = ({
     { notices }
   )
   return (
-    <div className="depsection">
+    <PageLayout>
       <Floatmenu />
-      <div className="dmainrow dmainrowmain" id="home">
+      <div className="layoutrow layoutrowmain" id="home">
         <div className="col-6">
           <div className="row rowmarl3">
             <h1 data-aos="zoom-in-right">{title}</h1>
@@ -52,8 +52,8 @@ const Dephomepage = ({
           />
         </div>
       </div>
-      <div className="dmainrow" id="about">
-        <div className="depabout">
+      <div className="layoutrow" id="about">
+        <div className="layoutabout">
           <div className="row">
             <h1 data-aos="zoom-in">About</h1>
           </div>
@@ -62,7 +62,7 @@ const Dephomepage = ({
           </div>
         </div>
       </div>
-      <div className="dmainrow" id="happening">
+      <div className="layoutrow" id="happening">
         <div className="col-6">
           <div className="row rowmarl3">
             <h1 data-aos="zoom-in-right">Happenings</h1>
@@ -107,7 +107,7 @@ const Dephomepage = ({
         </div>
       </div>
 
-      <div className="dmainrow dmainrow1" id="mission">
+      <div className="layoutrow layoutrow1" id="mission">
         <div className="col-6 imgcolstyle">
           <img
             data-aos="zoom-in"
@@ -125,7 +125,7 @@ const Dephomepage = ({
           </div>
         </div>
       </div>
-      <div className="dmainrow" id="vision">
+      <div className="layoutrow" id="vision">
         <div className="col-6">
           <div className="row rowmarl3">
             <h1 data-aos="zoom-in-right">Vision</h1>
@@ -143,7 +143,7 @@ const Dephomepage = ({
           />
         </div>
       </div>
-      <div className="dmainrow dmainrow1" id="contact">
+      <div className="layoutrow layoutrow1" id="contact">
         <div className="col-6 imgcolstyle">
           <img
             data-aos="zoom-in"
@@ -161,7 +161,7 @@ const Dephomepage = ({
           </div>
         </div>
       </div>
-    </div>
+    </PageLayout>
   )
 }
 

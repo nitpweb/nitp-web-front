@@ -6,6 +6,7 @@ import map from "./about/img/map.svg"
 import "./about/css/about.css"
 import FLoatmenu from "./about/floatmenu"
 import Floatmenu from "./about/floatmenu"
+import { PageLayout } from "./styles/pagelayout"
 
 const aboutusinfo = [
   "National Institute of Technology Patna is the 18th National Institute of Technology created by the Ministry of H.R.D. Government of India after rechristening the erstwhile Bihar College of Engineering Patna on 28. 01. 2004. NIT Patna marked its humble beginning in 1886 with the establishment of pleaders survey training school which was subsequently promoted of Bihar College of Engineering Patna in 1924. This made this institute the 6th Oldest Engineering Institute of India. The graduate level curriculum was later elevated to the post graduate level in 1978. The institute is situated on the south bank of holy river Ganges behind Gandhi Ghat, one of the most important and reverential place of Patna. The Gandhi Ghat is associated with the immersion of ashes of father of the Nation Mahatma Gandhi in the river Ganges. The campus has a picturesque river view with historic building presenting a spectacle of architectural delight and natural beauty.",
@@ -36,9 +37,9 @@ const campusinfo =
 
 const Aboutpage = () => {
   return (
-    <div className="aboutsection">
+    <PageLayout>
       <Floatmenu />
-      <div className="amainrow" id="home">
+      <div className="layoutrow" id="home">
         <div className="col-6">
           <div className="row rowmarl3">
             <h1 data-aos="zoom-in-right">About Us</h1>
@@ -55,7 +56,7 @@ const Aboutpage = () => {
           <img data-aos="zoom-in" src={bulb} className="img-fluid" />
         </div>
       </div>
-      <div className="amainrow amainrow1" id="mission">
+      <div className="layoutrow layoutrow1" id="mission">
         <div className="col-6 imgcolstyle">
           <img data-aos="zoom-in" src={mission} className="img-fluid" />
         </div>
@@ -72,7 +73,7 @@ const Aboutpage = () => {
           })}
         </div>
       </div>
-      <div className="amainrow" id="values">
+      <div className="layoutrow" id="values">
         <div className="col-6">
           <div className="row rowmarl3">
             <h1 data-aos="zoom-in-right">Values</h1>
@@ -89,7 +90,7 @@ const Aboutpage = () => {
           <img src={clock} className="img-fluid" />
         </div>
       </div>
-      <div className="amainrow amainrow1" id="campus">
+      <div className="layoutrow layoutrow1" id="campus">
         <div className="col-6 imgcolstyle">
           <a href="https://www.google.com/maps/place/National+Institute+of+Technology+Patna/@25.6207241,85.170702,17z/data=!4m5!3m4!1s0x39ed58dce6732867:0x4059f39a1ac82f06!8m2!3d25.6207241!4d85.1728907" target="_blank"><img data-aos="zoom-in" src={map} className="img-fluid" /></a>
         </div>
@@ -102,7 +103,7 @@ const Aboutpage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </PageLayout>
   )
 }
 

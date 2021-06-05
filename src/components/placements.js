@@ -1,11 +1,12 @@
 import React from "react"
 import tandpcell from "./placements/img/tandpcell.jpg"
-import "./placements/css/placements.css"
+import { PageLayout } from "./styles/pagelayout"
 
 const Placementpage = () => {
+  const Placement = PageLayout;
   return (
-    <div className="placsection">
-      <div className="pmainrow pmainrowmain">
+    <Placement>
+      <div className="layoutrow layoutrowmain">
         <div className="col-6">
           <div className="row">
             <h1 data-aos="zoom-in-right">Placements</h1>
@@ -31,8 +32,8 @@ const Placementpage = () => {
           />
         </div>
       </div>
-      <div className="pmainrow">
-        <div className="placabout">
+      <div className="layoutrow">
+        <div className="layoutabout">
           <div className="row">
             <h1 data-aos="zoom-in">About</h1>
           </div>
@@ -64,7 +65,7 @@ const Placementpage = () => {
           </div>
         </div>
       </div>
-      <div className="pmainrow">
+      <div className="layoutrow">
         <div className="col-6 imgcolstyle">
           <img
             data-aos="zoom-in"
@@ -143,7 +144,7 @@ const Placementpage = () => {
           </div>
         </div>
       </div>
-      <div className="pmainrow">
+      <div className="layoutrow">
         <div className="col-6">
           <div className="row rowmarl3">
             <h1 data-aos="zoom-in-right">TPO Message</h1>
@@ -238,7 +239,7 @@ const Placementpage = () => {
           />
         </div>
       </div>
-      <div className="pmainrow pfoot">
+      <div className="layoutrow layoutfoot">
         <div className="row rowmarl3">
           <h1 data-aos="zoom-in-right">Placement Officers</h1>
         </div>
@@ -296,7 +297,7 @@ const Placementpage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Placement>
   )
 }
 

@@ -17,7 +17,7 @@ class Academicspage extends React.Component {
     }
   }
   componentDidMount() {
-    let noticesUrl = `${process.env.GATSBY_API_URL}/api/notice`
+    let noticesUrl = `${process.env.GATSBY_API_URL}/api/notice/all`
     axios
       .get(noticesUrl)
       .then(res => {

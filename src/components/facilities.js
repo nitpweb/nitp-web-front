@@ -6,12 +6,14 @@ import security from "./facilities/img/security.svg"
 import wifi from "./facilities/img/wifi.svg"
 import woman from "./facilities/img/woman.svg"
 import electric from "./facilities/img/electric.svg"
-import "./facilities/css/facilities.css"
+// import "./facilities/css/facilities.css"
 import Facilitymain from "./facilities/img/facilitymainimg"
 import Ccimg from "./facilities/img/ccimg"
 import Dummyimg from "./facilities/img/dummy"
 import FLoatmenu from "./facilities/floatmenu"
 import Floatmenu from "./facilities/floatmenu"
+import styled from "styled-components"
+import { PageLayout } from "./styles/pagelayout"
 const ccdetail =
   "A state-of-the-art Computer Centre started its operation on 27th November 2011. It serves as the central computing facility for the students, research scholars and teachers of the institute. The Centre is well equipped with modern Computers (190 in number), air conditioned labs and stabilized uninterrupted power supply among the other facilities. The Centre has seven labs for all the students and one lab exclusively for PhD scholars of the institute. All labs are equipped with IP cameras to monitor the activities remotely. The Centre has 1 Gbps, 24x7 internet connectivity on optical fiber under National Knowledge Network, Govt. of India.The Centre also has a Virtual Class Room and Desktop VideoConferencing facility. It operates from 8:30 AM to 5:30 PM."
 const libdetail =
@@ -34,11 +36,13 @@ const medicaldetail =
   " Two permanent doctor has a fixed chamber within the institute premises. He can be consulted by the students and employees for any health related problems on every working day free of cost.<br/><br/>Profile of the health consultants:<br/>Dr.Vikas Kumar Raj<br/>Senior Medical Officer<br/>MBBS, MD, MBA(HCA)<br/>PGD in DP & R and Family Medicine<br/>PGC in Hospital Management Dr.V K Raj<br/><br/>Dr.Santosh Kumar Sudhakar<br/>Medical Officer<br/>MBBS<br/>Ex - Resident of DR.RML Hospital<br/>New Delhi Dr.S K Sudhakar<br/><br/>The institute also maintains a 24x7 ambulance which is used for transferring patients from the institute to Patna Medical College and Hospital(PMCH) in case of any emergency."
 const emudetail =
   "To provide Electric power supply to the Institute. EMU maintains all electrical equipment such as Lights, Fans, AC, etc. which are installed in NIT Patna campus. EMU is having an 11KV/415V Electrical Substation (commonly Known as POWER HOUSE), equipped with 02 Nos. 1250KVA Transformer, 02 Nos. 750 KVA Diesel Generator and Separate Electricals Panels for each feeder pillars/Buildings. <br/><br/>Land line- 0612-2371715 Extension No.-116 <br/>br/>For any type of Electrical Complaint kindly fill the form."
+
 const Facilitiespage = () => {
+  const Facility = PageLayout
   return (
-    <div className="facilities">
+    <Facility>
       <Floatmenu />
-      <div className="facilityrow facilityrowmain" id="home">
+      <div className="layoutrow layoutrowmain" id="home">
         <div className="col-6 imgcolstyle">
           <div className="row rowmarl3">
             <h1 data-aos="zoom-in-right">Facilities</h1>
@@ -48,7 +52,7 @@ const Facilitiespage = () => {
           <Facilitymain />
         </div>
       </div>
-      <div className="facilityrow facilityrow1" id="cc">
+      <div className="layoutrow layoutrow1" id="cc">
         <div className="col-6 imgcolstyle">
           <Ccimg />
         </div>
@@ -61,7 +65,7 @@ const Facilitiespage = () => {
           </div>
         </div>
       </div>
-      <div className="facilityrow" id="lib">
+      <div className="layoutrow" id="lib">
         <div className="col-6">
           <div className="row rowmarl3">
             <h1 data-aos="zoom-in-right">Library</h1>
@@ -343,7 +347,7 @@ const Facilitiespage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Facility>
   )
 }
 
