@@ -19,7 +19,7 @@ class Director extends React.Component {
         const detail = res.data
         this.setState({
           profile: detail.profile,
-          qualification: detail.qualification,
+          qualification: detail.education,
         })
       })
       .catch(e => {
