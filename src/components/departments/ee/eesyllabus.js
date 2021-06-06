@@ -7,12 +7,13 @@ import {
   EEMtechSyllabuspower as EeMtechPower,
 } from "./Elec_MTECH_syllabus"
 import { EEPhdCourse } from "./Elelc_phd"
+import { PageLayout } from "../../styles/pagelayout"
 
 const Eesyllabus = props => {
   return (
     <>
-      <div style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
-        <div className="dmainrow dmainrowmain">
+      <PageLayout style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
+        <div className="layoutrow layoutrowmain">
           <div className="col-6">
             <div className="row rowmarl3">
               <h1 data-aos="zoom-in-right">Syllabus</h1>
@@ -30,7 +31,7 @@ const Eesyllabus = props => {
             />
           </div>
         </div>
-        <div className="dmainrow">
+        <div className="layoutrow">
           <h1 className="rowmarl3" data-aos="zoom-in-right">
             B.Tech Course Structure
           </h1>
@@ -59,7 +60,7 @@ const Eesyllabus = props => {
             </tr>
           ))}
         </Table>
-        <div className="dmainrow">
+        <div className="layoutrow">
           <h1 className="rowmarl3" data-aos="zoom-in-right">
             Course Structure for M. Tech (Electrical Engineering) in Control
             System Engineering
@@ -93,7 +94,7 @@ const Eesyllabus = props => {
             </tr>
           ))}
         </Table>
-        <div className="dmainrow">
+        <div className="layoutrow">
           <h1 className="rowmarl3" data-aos="zoom-in-right">
             Course Structure for M. Tech (Electrical Engineering) in Power
             System Engineering
@@ -127,7 +128,7 @@ const Eesyllabus = props => {
             </tr>
           ))}
         </Table>
-        <div className="dmainrow">
+        <div className="layoutrow">
           <h1 className="rowmarl3" data-aos="zoom-in-right">
             PhD Course Structure
           </h1>
@@ -154,7 +155,7 @@ const Eesyllabus = props => {
             </tr>
           ))}
         </Table>
-      </div>
+      </PageLayout>
     </>
   )
 }

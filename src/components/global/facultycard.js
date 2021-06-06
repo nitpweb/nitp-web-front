@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react"
-import newspic from "../home/img/image 2.png"
-import "./css/facultycard.scss"
+import { useEffect, useState } from "react"
 import { Link } from "gatsby"
+import { FacultyCard } from "../styles/facultycard"
 
 const Facultycard = props => {
   const [research, setResearch] = useState()
@@ -13,7 +12,7 @@ const Facultycard = props => {
 
   return (
     <>
-      <div className="facultycard">
+      <FacultyCard>
         <div className="faculty1">
           {props.extn != 0 ? (
             <p className="extn">Extn:{props.extn}</p>
@@ -39,7 +38,7 @@ const Facultycard = props => {
             <Link to={`/profile?id=${props.email}`}>View Profile</Link>
           </p>
         </div>
-      </div>
+      </FacultyCard>
     </>
   )
 }

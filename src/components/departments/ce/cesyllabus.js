@@ -12,12 +12,13 @@ import {
 } from "./cemtech"
 
 import main from "../img/book.svg"
+import { PageLayout } from "../../styles/pagelayout"
 
 const Cesyllabus = props => {
   return (
     <>
-      <div style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
-        <div className="dmainrow dmainrowmain">
+      <PageLayout style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
+        <div className="layoutrow layoutrowmain">
           <div className="col-6">
             <div className="row rowmarl3">
               <h1 data-aos="zoom-in-right">Syllabus</h1>
@@ -35,7 +36,7 @@ const Cesyllabus = props => {
             />
           </div>
         </div>
-        <div className="dmainrow">
+        <div className="layoutrow">
           <h1 className="rowmarl3" data-aos="zoom-in-right">
             B.Tech Course Structure
           </h1>
@@ -66,7 +67,7 @@ const Cesyllabus = props => {
             </tr>
           ))}
         </Table>
-        <div className="dmainrow">
+        <div className="layoutrow">
           <h1 className="rowmarl3" data-aos="zoom-in-right">
             Course Structure for M. Tech (Civil Engg.) in Structural Engineering
           </h1>
@@ -101,7 +102,7 @@ const Cesyllabus = props => {
             </tr>
           ))}
         </Table>
-        <div className="dmainrow">
+        <div className="layoutrow">
           <h1 className="rowmarl3" data-aos="zoom-in-right">
             Course Structure for M. Tech (Civil Engg.) in Geotechnical
             Engineering{" "}
@@ -137,7 +138,7 @@ const Cesyllabus = props => {
             </tr>
           ))}
         </Table>
-        <div className="dmainrow">
+        <div className="layoutrow">
           <h1 className="rowmarl3" data-aos="zoom-in-right">
             Course Structure for M. Tech (Civil Engg.) in Transportation
             Engineering
@@ -173,7 +174,7 @@ const Cesyllabus = props => {
             </tr>
           ))}
         </Table>
-        <div className="dmainrow">
+        <div className="layoutrow">
           <h1 className="rowmarl3" data-aos="zoom-in-right">
             Course Structure for M. Tech (Civil Engg.) in Water Resource
             Engineering
@@ -209,7 +210,7 @@ const Cesyllabus = props => {
             </tr>
           ))}
         </Table>
-        <div className="dmainrow">
+        <div className="layoutrow">
           <h1 className="rowmarl3" data-aos="zoom-in-right">
             Course Structure for M. Tech (Civil Engg.) in Environmental
             Engineering
@@ -245,7 +246,7 @@ const Cesyllabus = props => {
             </tr>
           ))}
         </Table>
-        <div className="dmainrow">
+        <div className="layoutrow">
           <h1 className="rowmarl3" data-aos="zoom-in-right">
             Course Structure for M. Tech (Civil Engg.) in River Engineering
           </h1>
@@ -280,7 +281,7 @@ const Cesyllabus = props => {
             </tr>
           ))}
         </Table>
-        <div className="dmainrow">
+        <div className="layoutrow">
           <h1 className="rowmarl3" data-aos="zoom-in-right">
             PhD Course Structure
           </h1>
@@ -309,7 +310,7 @@ const Cesyllabus = props => {
             </tr>
           ))}
         </Table>
-      </div>
+      </PageLayout>
     </>
   )
 }

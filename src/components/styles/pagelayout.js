@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const PageLayout = styled.div`
   .layoutrowmain {
@@ -70,7 +70,7 @@ export const PageLayout = styled.div`
       }
     }
   }
-
+  
   .layoutfoot {
     .row {
       padding: 0vw 0vw 0vw 3vw;

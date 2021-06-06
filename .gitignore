@@ -11,7 +11,7 @@
 
 
 /static/weblist.js
-/pages/webteam.js
+/src/pages/webteam.js
 
 # misc
 .DS_Store
