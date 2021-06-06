@@ -71,7 +71,7 @@ const Depnavbar = props => {
         </Link>
         <div className="nav-col">
           <h2>NATIONAL INSTITUTE OF TECHNOLOGY PATNA</h2>
-          <h4>राष्ट्रीय प्रौद्योगिकी संस्थान, पटना</h4>
+          <h4>राष्ट्रीय प्रौद्योगिकी संस्थान पटना</h4>
         </div>
 
         <div className="nav-link-row">
