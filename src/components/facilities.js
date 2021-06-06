@@ -138,7 +138,7 @@ const Facilitiespage = () => {
           <Dummyimg />
         </div>
       </div>
-      <div className="facilityrow facilityrow1" id="med">
+      <div className="layoutrow layoutrow1" id="med">
         <div className="col-6 imgcolstyle">
           <Dummyimg />
         </div>
@@ -184,7 +184,7 @@ const Facilitiespage = () => {
           </div>
         </div>
       </div>
-      <div className="facilityrow" id="sport">
+      <div className="layoutrow" id="sport">
         <div className="col-6">
           <div className="row rowmarl3">
             <h1 data-aos="zoom-in-right">Sport Facilities</h1>
@@ -197,7 +197,7 @@ const Facilitiespage = () => {
           <Dummyimg />
         </div>
       </div>
-      <div className="facilityrow facilityrow1" id="hostel">
+      <div className="layoutrow layoutrow1" id="hostel">
         <div className="col-6 imgcolstyle">
           <Dummyimg />
         </div>
@@ -210,7 +210,7 @@ const Facilitiespage = () => {
           </div>
         </div>
       </div>
-      <div className="facilityrow" id="lab">
+      <div className="layoutrow" id="lab">
         <div className="col-6">
           <div className="row rowmarl3">
             <h1 data-aos="zoom-in-right">Laboratories</h1>
@@ -244,7 +244,7 @@ const Facilitiespage = () => {
           <Dummyimg />
         </div>
       </div>
-      <div className="facilityrow facilityrow1" id="wifi">
+      <div className="layoutrow layoutrow1" id="wifi">
         <div className="col-6 imgcolstyle">
           <img
             data-aos="zoom-in"
@@ -262,7 +262,7 @@ const Facilitiespage = () => {
           </div>
         </div>
       </div>
-      <div className="facilityrow" id="bank">
+      <div className="layoutrow" id="bank">
         <div className="col-6">
           <div className="row rowmarl3">
             <h1 data-aos="zoom-in-right">Bank</h1>
@@ -280,7 +280,7 @@ const Facilitiespage = () => {
           />
         </div>
       </div>
-      <div className="facilityrow facilityrow1" id="security">
+      <div className="layoutrow layoutrow1" id="security">
         <div className="col-6 imgcolstyle">
           <img
             data-aos="zoom-in"
@@ -298,7 +298,7 @@ const Facilitiespage = () => {
           </div>
         </div>
       </div>
-      <div className="facilityrow" id="wc">
+      <div className="layoutrow" id="wc">
         <div className="col-6">
           <div className="row rowmarl3">
             <h1 data-aos="zoom-in-right">Woman Cell</h1>
@@ -316,7 +316,7 @@ const Facilitiespage = () => {
           />
         </div>
       </div>
-      <div className="facilityrow facilityrow1" id="electric">
+      <div className="layoutrow layoutrow1" id="electric">
         <div className="col-6 imgcolstyle">
           <img
             data-aos="zoom-in"
