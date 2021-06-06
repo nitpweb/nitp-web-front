@@ -41,6 +41,13 @@ export const PageLayout = styled.div`
     .col-6 {
       padding: 3vw;
       div {
+        #layoutnoticewrap {
+          height: 400px;
+          overflow: hidden;
+          min-width: 80%;
+          overflow-y: scroll;
+          scrollbar-width: none;
+        }
         p {
           color: #454545;
           font-size: 1.3rem;
@@ -70,7 +77,7 @@ export const PageLayout = styled.div`
       }
     }
   }
-  
+
   .layoutfoot {
     .row {
       padding: 0vw 0vw 0vw 3vw;
