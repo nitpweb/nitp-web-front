@@ -18,6 +18,11 @@ const Facultyprofile = ({ url }) => {
           qualification: detail.education,
           currResponsibility: detail.curr_admin_responsibility,
           pastResponsibility: detail.past_admin_responsibility,
+          patents:
+            detail.publications != undefined &&
+            JSON.parse(detail.publications[0].publications).filter(
+              x => x.type === "patent"
+            ),
           books:
             detail.publications != undefined &&
             JSON.parse(detail.publications[0].publications).filter(
@@ -92,10 +97,10 @@ const Facultyprofile = ({ url }) => {
                           <h4>Subject Name</h4>
                         </th>
                         <th>
-                          <h4>Start-Date</h4>
+                          <h4>Session</h4>
                         </th>
                         <th>
-                          <h4>End-Date</h4>
+                          <h4>Year</h4>
                         </th>
                       </tr>
                       {data.subjects.map(item => {
@@ -108,16 +113,10 @@ const Facultyprofile = ({ url }) => {
                               <p>{item.name}</p>
                             </td>
                             <td>
-                              <p>
-                                {new Date(item.start).getMonth() + 1} /{" "}
-                                {new Date(item.start).getFullYear()}
-                              </p>
+                              <p>{item.start}</p>
                             </td>
                             <td>
-                              <p>
-                                {new Date(item.end).getMonth() + 1} /{" "}
-                                {new Date(item.end).getFullYear()}
-                              </p>
+                              <p>{new Date(item.end).getFullYear()}</p>
                             </td>
                           </tr>
                         )
@@ -215,9 +214,9 @@ const Facultyprofile = ({ url }) => {
                   <>
                     <h3>Articles</h3>
                     {data.article.map(item => (
-                      <li>
-                        <p>{`${item.authors}, "${item.title}", ${item.journal_name} (${item.year})`}</p>
-                      </li>
+                      <p>
+                        <li>{`${item.authors}, "${item.title}", ${item.journal_name} (${item.year})`}</li>
+                      </p>
                     ))}
                   </>
                 )}
@@ -225,9 +224,9 @@ const Facultyprofile = ({ url }) => {
                   <>
                     <h3>Conferences</h3>
                     {data.conferences.map(item => (
-                      <li>
-                        <p>{`${item.authors}, "${item.title}", ${item.booktitle},${item.citation_key} (${item.year})`}</p>
-                      </li>
+                      <p>
+                        <li>{`${item.authors}, "${item.title}", ${item.booktitle},${item.citation_key} (${item.year})`}</li>
+                      </p>
                     ))}
                   </>
                 )}
@@ -275,6 +274,54 @@ const Facultyprofile = ({ url }) => {
                             </td>
                             <td>
                               <p>{item.year}</p>
+                            </td>
+                            <td>
+                              <p>{item.citation_key}</p>
+                            </td>
+                          </tr>
+                        )
+                      })}
+                    </table>
+                  </div>
+                </div>
+              )}
+
+              {data.patents && data.patents.length != 0 && (
+                <div className="fac-card" data-aos="fade-up">
+                  <h3>Patents</h3>
+                  <div className="factable">
+                    <table>
+                      <tr>
+                        <th>
+                          <h4>Year</h4>
+                        </th>
+                        <th>
+                          <h4>Year Filed</h4>
+                        </th>
+                        <th>
+                          <h4>Nationality</h4>
+                        </th>
+                        <th>
+                          <h4>Number</h4>
+                        </th>
+                        <th>
+                          <h4>Citation Key</h4>
+                        </th>
+                      </tr>
+                      {data.patents.map(item => {
+                        return (
+                          <tr>
+                            <td>
+                              <p>{item.year}</p>
+                            </td>
+                            <td>
+                              <p>{item.yearfiled}</p>
+                            </td>
+                            <td>
+                              <p>{item.nationality}</p>
+                            </td>
+                            <td>
+                              <p>{item.number}</p>
                             </td>
                             <td>
                               <p>{item.citation_key}</p>
