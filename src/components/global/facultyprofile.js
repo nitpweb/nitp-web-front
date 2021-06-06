@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
-import "./css/facultyprofile.scss"
 import mail from "./img/mail.svg"
 import Deplayout from "../deplayout"
+import { FacultyProfile } from "../styles/facultyprofile"
 
 const Facultyprofile = ({ url }) => {
   const [data, setData] = useState()
@@ -54,7 +54,7 @@ const Facultyprofile = ({ url }) => {
     <>
       {data && (
         <Deplayout department={data.profile.department}>
-          <div className="facultypage row">
+          <FacultyProfile className="row">
             <div className="faculty-img-row">
               <div className="faculty-img-wrap">
                 <img
@@ -209,28 +209,31 @@ const Facultyprofile = ({ url }) => {
                   </div>
                 </div>
               )}
-              <div className="fac-card" data-aos="fade-up">
-                {data.article && data.article.length != 0 && (
-                  <>
+
+              {data.article && data.article.length != 0 && (
+                <>
+                  <div className="fac-card" data-aos="fade-up">
                     <h3>Articles</h3>
                     {data.article.map(item => (
-                      <p>
+                      <p style={{ maxWidth: `1000px` }}>
                         <li>{`${item.authors}, "${item.title}", ${item.journal_name} (${item.year})`}</li>
                       </p>
                     ))}
-                  </>
-                )}
-                {data.conferences && data.conferences.length != 0 && (
-                  <>
+                  </div>
+                </>
+              )}
+              {data.conferences && data.conferences.length != 0 && (
+                <>
+                  <div className="fac-card" data-aos="fade-up">
                     <h3>Conferences</h3>
                     {data.conferences.map(item => (
-                      <p>
+                      <p style={{ maxWidth: `1000px` }}>
                         <li>{`${item.authors}, "${item.title}", ${item.booktitle},${item.citation_key} (${item.year})`}</li>
                       </p>
                     ))}
-                  </>
-                )}
-              </div>
+                  </div>
+                </>
+              )}
 
               {data.books && data.books.length != 0 && (
                 <div className="fac-card" data-aos="fade-up">
@@ -572,7 +575,7 @@ const Facultyprofile = ({ url }) => {
                 </div>
               )}
             </div>
-          </div>
+          </FacultyProfile>
         </Deplayout>
       )}
     </>

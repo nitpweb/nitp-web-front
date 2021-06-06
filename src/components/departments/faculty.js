@@ -1,8 +1,9 @@
 import axios from "axios"
 import React, { useEffect, useState } from "react"
-import "../global/css/faculty.css"
 import Facultycard from "../global/facultycard"
 import faculty from "./img/faculty.svg"
+import { PageLayout } from "../styles/pagelayout"
+import styled from "styled-components"
 
 const Facultypage = ({ url, dept }) => {
   const [faculties, setFaculties] = useState()
@@ -20,13 +21,15 @@ const Facultypage = ({ url, dept }) => {
           console.log(e)
         })
     },
-    { faculties }
+    []
   )
+
+  const FacultyStyle = PageLayout
 
   return (
     <>
-      <div style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
-        <div className="dmainrow dmainrowmain">
+      <FacultyStyle style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
+        <div className="layoutrow layoutrowmain">
           <div className="col-6">
             <div className="row rowmarl3">
               <h1 data-aos="zoom-in-right">Faculties</h1>
@@ -61,7 +64,7 @@ const Facultypage = ({ url, dept }) => {
               )
             })}
         </div>
-      </div>
+      </FacultyStyle>
     </>
   )
 }

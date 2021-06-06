@@ -1,10 +1,12 @@
-.facultypage {
+import styled from "styled-components"
+
+export const FacultyProfile = styled.div`
   font-family: "Source Sans Pro";
   margin-top: 10vw;
   display: flex;
   justify-content: space-evenly;
   .faculty-img-row {
-      margin-top: 5vh;
+    margin-top: 5vh;
     justify-content: center;
     text-align: center;
     .facmail {
@@ -35,7 +37,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    #dir{
+    #dir {
       line-height: 1.5;
       letter-spacing: 1px;
       padding-right: 3vw;
@@ -55,7 +57,7 @@
       h3 {
         color: #2f2f2f;
       }
-      p{
+      p {
         max-width: 95%;
       }
       .factable {
@@ -64,15 +66,15 @@
         overflow-x: scroll;
         scrollbar-width: none;
         -ms-overflow-style: none;
-        
-        &::-webkit-scrollbar{
+
+        &::-webkit-scrollbar {
           display: none;
         }
-        p{
+        p {
           width: 200px;
           min-width: 48px;
         }
-        td{
+        td {
           text-align: left;
           padding: 8px;
         }
@@ -80,7 +82,9 @@
           text-align: left;
           padding: 8px;
         }
-        tr:nth-child(odd){background-color:#FAFAFA;}
+        tr:nth-child(odd) {
+          background-color: #fafafa;
+        }
       }
       .factable:-webkit-scrollbar {
         width: 0px;
@@ -90,11 +94,7 @@
         min-width: 90%;
         width: 100%;
         border-collapse: collapse;
-
       }
     }
   }
-}
-@media (max-width: 480px) {
-
-}
+`

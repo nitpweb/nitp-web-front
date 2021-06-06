@@ -1,5 +1,7 @@
-.facultycard {
-  width: 320px;
+import styled from "styled-components";
+
+export const FacultyCard = styled.div`
+width: 320px;
   height: 380px;
   margin: auto;
   margin-top: 40px;
@@ -71,5 +73,4 @@
   p {
     color: #d33a00;
     line-height: 0.1;
-  }
-}
+  }`

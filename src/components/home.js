@@ -1,36 +1,28 @@
 import axios from "axios"
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Newscard from "./home/newscard"
 import "./home/css/home.scss"
 import Importantlink from "./home/importantlink"
 import Notice from "./home/notice"
 import Eventcard from "./home/eventcard"
 import { Nitpbackimg } from "./home/nitpimg"
-
-import { Noticelist } from "./home/noticelist"
 import { Link } from "gatsby"
 import Innovation from "./home/Innovation"
 import GalleryComp from "./home/gallery"
 
-class Home extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      events: [],
-      notices: [],
-      news: [],
-    }
-  }
+const Home = () => {
+  const [events, setEvents] = useState()
+  const [notices, setNotices] = useState()
+  const [news, setNews] = useState()
 
-  componentDidMount() {
+  useEffect(() => {
     let eventsUrl = `${process.env.GATSBY_API_URL}/api/events/active`
     let noticesUrl = `${process.env.GATSBY_API_URL}/api/notice/active`
     let newsUrl = `${process.env.GATSBY_API_URL}/api/news/all`
     axios
       .get(eventsUrl)
       .then(res => {
-        const event = res.data
-        this.setState({ events: event })
+        setEvents(res.data)
       })
       .catch(e => {
         console.log(e)
@@ -38,8 +30,7 @@ class Home extends React.Component {
     axios
       .get(noticesUrl)
       .then(res => {
-        const notice = res.data
-        this.setState({ notices: notice })
+        setNotices(res.data)
       })
       .catch(e => {
         console.log(e)
@@ -47,144 +38,56 @@ class Home extends React.Component {
     axios
       .get(newsUrl)
       .then(res => {
-        const news = res.data
-        this.setState({ news: news })
+        setNews(res.data)
       })
       .catch(e => {
         console.log(e)
       })
-  }
-   link = (k) => {
-    k = k.substr(0, k.length - 18);
-    k = k.substr(32, k.length);
-    return (k);
+  }, [])
+
+  const link = k => {
+    k = k.substr(0, k.length - 18)
+    k = k.substr(32, k.length)
+    return k
   }
 
-  render() {
-    return (
+  return (
+    <div>
       <div>
+        <div className="bgimgwrap">
+          <Nitpbackimg />
+        </div>
+      </div>
+      <div className="row tablinkcover">
+        <div className="col-4 tablink">
+          <a href="#notice">Notice</a>
+        </div>
+        <div className="col-4 tablink">
+          <a href="#events">Events</a>
+        </div>
+        <div className="col-4 tablink">
+          <a href="#news">News</a>
+        </div>
+      </div>
+      <Importantlink />
+      <div id="notice">
         <div>
-          <div className="bgimgwrap">
-            <Nitpbackimg />
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="200"
+            className="notice-head"
+          >
+            Notice
+            <Link id="notice-head-p" to="/notice">
+              view all
+            </Link>
           </div>
-        </div>
-        <div className="row tablinkcover">
-          <div className="col-4 tablink">
-            <a href="#notice">Notice</a>
-          </div>
-          <div className="col-4 tablink">
-            <a href="#events">Events</a>
-          </div>
-          <div className="col-4 tablink">
-            <a href="#news">News</a>
-          </div>
-        </div>
-        <Importantlink />
-        <div id="notice">
-          <div>
-            <div
-              data-aos="zoom-in"
-              data-aos-duration="200"
-              className="notice-head"
-            >
-              Notice
-              <Link id="notice-head-p" to="/notice">
-                view all
-              </Link>
-            </div>
-            <div className="notice-row" data-aos="fade-up">
-              {this.state.notices != undefined
-                ? this.state.notices.map(notice => {
-                    const newtime = new Date().getTime()
-
-                    let d = Math.round((newtime - notice.openDate) / 3600000)
-                    if (d > 24) {
-                      d = `${Math.round(d / 24)} days ago`
-                    } else if (d < 1) {
-                      d = `Just now`
-                    } else if (d < 2) {
-                      d = `${d} hour ago`
-                    } else {
-                      d = `${d} hours ago`
-                    }
-                    if (notice.title != "") {
-                      return (
-                        <Notice
-                          detail={notice.title}
-                          time={d}
-                          attachments={notice.attachments}
-                          imp={notice.important}
-                          link={(notice.notice_link&&JSON.parse(notice.notice_link).url)?JSON.parse(notice.notice_link).url:""}
-                        />
-                      )
-                    }
-                  })
-                : null}
-            </div>
-          </div>
-          <div id="events">
-            <div
-              data-aos="zoom-in"
-              data-aos-duration="200"
-              className="event-head"
-            >
-              Events
-              <Link id="event-head-p" to="/event">
-                view all
-              </Link>
-            </div>
-            <div className="event-row">
-              {this.state.events != undefined
-                ? this.state.events.map(event => {
-                    const date = new Date(event.openDate)
-                    const day = date.getDate()
-                    const month = date.getMonth()+1
-                    const year = date.getFullYear()
-                    const cdate = new Date(event.closeDate)
-                    const cday = cdate.getDate()
-                    const cmonth = cdate.getMonth()+1
-                    const cyear = cdate.getFullYear()
-                    const monthname = date
-                      .toLocaleString("default", { month: "short" })
-                      .toUpperCase()
-                    if (event.title != "") {
-                      return (
-                        <Eventcard
-                          detail={event.title}
-                          time={`${day}-${month}-${year} - ${cday}-${cmonth}-${cyear}`}
-                          date={day}
-                          month={monthname}
-                          attachments={event.attachments}
-                          location={event.venue}
-                          link={event.attachments.length!=0 ?event.attachments[0].url:""}
-                        />
-                      )
-                    }
-                  })
-                : null}
-            </div>
-          </div>
-        </div>
-        <Innovation />
-        <div
-          data-aos="zoom-in"
-          data-aos-duration="200"
-          className="news-head"
-          id="news"
-        >
-          News
-          <Link id="news-head-p" to="/news">
-            view all
-          </Link>
-        </div>
-
-        <div className="news-row">
-          <div className="news-viewbox">
-            {this.state.news != undefined
-              ? this.state.news.map(news => {
+          <div className="notice-row" data-aos="fade-up">
+            {notices &&
+               notices.map(notice => {
                   const newtime = new Date().getTime()
 
-                  var d = Math.round((newtime - news.openDate) / 3600000)
+                  let d = Math.round((newtime - notice.openDate) / 3600000)
                   if (d > 24) {
                     d = `${Math.round(d / 24)} days ago`
                   } else if (d < 1) {
@@ -194,19 +97,122 @@ class Home extends React.Component {
                   } else {
                     d = `${d} hours ago`
                   }
-                  var desc = String(news.description).substr(0, 170)
-                  if (news.title != "" && news.image[0]) {
-                    return <Newscard url={this.link(news.image[0].url)} id={news.id} time={d} head={`${news.title.slice(0,92)}...`} detail={desc.slice(0,100)} />
+                  if (notice.title != "") {
+                    return (
+                      <Notice
+                        detail={notice.title}
+                        time={d}
+                        key={notice.id}
+                        attachments={notice.attachments}
+                        imp={notice.important}
+                        link={
+                          notice.notice_link &&
+                          JSON.parse(notice.notice_link).url
+                            ? JSON.parse(notice.notice_link).url
+                            : ""
+                        }
+                      />
+                    )
                   }
                 })
-              : null}
+              }
           </div>
         </div>
-
-        <GalleryComp />
+        <div id="events">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="200"
+            className="event-head"
+          >
+            Events
+            <Link id="event-head-p" to="/event">
+              view all
+            </Link>
+          </div>
+          <div className="event-row">
+            {events &&
+               events.map(event => {
+                  const date = new Date(event.openDate)
+                  const day = date.getDate()
+                  const month = date.getMonth() + 1
+                  const year = date.getFullYear()
+                  const cdate = new Date(event.closeDate)
+                  const cday = cdate.getDate()
+                  const cmonth = cdate.getMonth() + 1
+                  const cyear = cdate.getFullYear()
+                  const monthname = date
+                    .toLocaleString("default", { month: "short" })
+                    .toUpperCase()
+                  if (event.title != "") {
+                    return (
+                      <Eventcard
+                        detail={event.title}
+                        time={`${day}-${month}-${year} - ${cday}-${cmonth}-${cyear}`}
+                        date={day}
+                        month={monthname}
+                        attachments={event.attachments}
+                        location={event.venue}
+                        link={
+                          event.attachments.length != 0
+                            ? event.attachments[0].url
+                            : ""
+                        }
+                      />
+                    )
+                  }
+                })
+              }
+          </div>
+        </div>
       </div>
-    )
-  }
+      <Innovation />
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="200"
+        className="news-head"
+        id="news"
+      >
+        News
+        <Link id="news-head-p" to="/news">
+          view all
+        </Link>
+      </div>
+
+      <div className="news-row">
+        <div className="news-viewbox">
+          {news && news.map(news => {
+                const newtime = new Date().getTime()
+
+                var d = Math.round((newtime - news.openDate) / 3600000)
+                if (d > 24) {
+                  d = `${Math.round(d / 24)} days ago`
+                } else if (d < 1) {
+                  d = `Just now`
+                } else if (d < 2) {
+                  d = `${d} hour ago`
+                } else {
+                  d = `${d} hours ago`
+                }
+                var desc = String(news.description).substr(0, 170)
+                if (news.title != "" && news.image[0]) {
+                  return (
+                    <Newscard
+                      url={link(news.image[0].url)}
+                      id={news.id}
+                      time={d}
+                      head={`${news.title.slice(0, 92)}...`}
+                      detail={desc.slice(0, 100)}
+                    />
+                  )
+                }
+              })
+            }
+        </div>
+      </div>
+
+      <GalleryComp />
+    </div>
+  )
 }
 
 export default Home

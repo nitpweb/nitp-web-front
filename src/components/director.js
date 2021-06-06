@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
-import "./global/css/facultyprofile.scss"
 import mail from "./global/img/mail.svg"
+import { FacultyProfile } from "./styles/facultyprofile"
 
 const Director = () => {
   const [data, setData] = useState()
@@ -24,7 +24,7 @@ const Director = () => {
   return (
     <>
       {data && (
-        <div className="facultypage row">
+        <FacultyProfile className="facultypage row">
           <div className="row rowmarl3">
             <h1>Our Director</h1>
           </div>
@@ -138,7 +138,7 @@ const Director = () => {
               <h4>NIT Patna</h4>
             </div>
           </div>
-        </div>
+        </FacultyProfile>
       )}
     </>
   )

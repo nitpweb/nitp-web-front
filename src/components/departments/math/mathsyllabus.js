@@ -3,12 +3,13 @@ import Table from "../../table"
 import Course from "./math course array"
 import Elect from "./math elective array"
 import main from "../img/book.svg"
+import { PageLayout } from "../../styles/pagelayout"
 
 const Mathsyllabus = props => {
   return (
     <>
-      <div style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
-        <div className="dmainrow dmainrowmain">
+      <PageLayout style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
+        <div className="layoutrow layoutrowmain">
           <div className="col-6">
             <div className="row rowmarl3">
               <h1 data-aos="zoom-in-right">Syllabus</h1>
@@ -26,7 +27,7 @@ const Mathsyllabus = props => {
             />
           </div>
         </div>
-        <div className="dmainrow">
+        <div className="layoutrow">
           <h1 className="rowmarl3" data-aos="zoom-in-right">
             Course Structure
           </h1>
@@ -57,7 +58,7 @@ const Mathsyllabus = props => {
             </tr>
           ))}
         </Table>
-        <div className="dmainrow">
+        <div className="layoutrow">
           <h1 className="rowmarl3" data-aos="zoom-in-right">
             Electives
           </h1>
@@ -84,7 +85,7 @@ const Mathsyllabus = props => {
             </tr>
           ))}
         </Table>
-      </div>
+      </PageLayout>
     </>
   )
 }

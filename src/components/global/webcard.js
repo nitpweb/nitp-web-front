@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from "react"
-import newspic from "../home/img/image 2.png"
-import "./css/facultycard.scss"
-import { Link } from "gatsby"
+import { useEffect, useState } from "react"
+import { FacultyCard } from "../styles/facultycard"
 
 const Webcard = props => {
   const [interests, setInterests] = useState()
@@ -13,7 +11,7 @@ const Webcard = props => {
 
   return (
     <>
-      <div className="facultycard">
+      <FacultyCard>
         <div className="faculty1">
           {props.extn != 0 ? <p className="extn">{props.extn}</p> : null}
           <div className="row fimg">
@@ -37,7 +35,7 @@ const Webcard = props => {
             <a href={props.url}>View Profile</a>
           </p>
         </div>
-      </div>
+      </FacultyCard>
     </>
   )
 }
