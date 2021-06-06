@@ -68,7 +68,7 @@ const Dephomepage = ({
             <h1 data-aos="zoom-in-right">Happenings</h1>
           </div>
           <div className="row rowmarl3">
-            <div id="depnoticewrap">
+            <div id="layoutnoticewrap">
               {notices &&
                 notices.length != 0 &&
                 notices.map(notice => {
