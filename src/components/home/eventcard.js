@@ -1,12 +1,12 @@
 import React from "react"
-import "./css/eventcard.scss"
+import { EventCardStyle } from "../styles/eventcard"
 import eventclock from "./img/eventclock.svg"
 import eventlocation from "./img/eventlocation.svg"
 
 const Eventcard = props => {
 
   return (
-    <div className="eventcardwrap">
+    <EventCardStyle>
       <div className="eventdtdiv">
         <div id="eventmonth">
           <p>{props.month}</p>
@@ -30,7 +30,7 @@ const Eventcard = props => {
           </div>
         </div>
       </div>
-    </div>
+    </EventCardStyle>
   )
 }
 export default Eventcard
