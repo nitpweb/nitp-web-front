@@ -1,15 +1,15 @@
 import React from "react"
-import "./css/importantlink.css"
 import corona from "./img/corona.svg"
 import nss from "./img/nss.svg"
 import josaa from "./img/josaa.svg"
 import teqip from "./img/teqip.svg"
 import chanakya from "./img/chanakya.svg"
 import firstyear from "./img/firstyear.svg"
+import { ImportantLinkStyle } from "../styles/home/importantlink"
 
 const Importantlink = () => {
   return (
-    <div className="link-row">
+    <ImportantLinkStyle>
       <div className="link-col">
         <a href="http://exam.nitp.ac.in/">
           <div data-aos="zoom-in" data-aos-duration="200" className="implink">
@@ -74,7 +74,7 @@ const Importantlink = () => {
           </div>
         </a>
       </div>
-    </div>
+    </ImportantLinkStyle>
   )
 }
 export default Importantlink
