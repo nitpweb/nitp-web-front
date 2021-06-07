@@ -1,11 +1,11 @@
 import React from "react"
-import "./css/notice.scss"
+import { NoticeStyle } from "../styles/notice"
 import downimg from "./img/download.svg"
 import flag from "./img/flag.svg"
 const Notice = props => {
   return (
     <>
-      <div className="noticecard">
+      <NoticeStyle>
         <p className="noticecarddetail">{props.imp==1?<img id="flag" src={flag} alt="f" />:""}<a href={props.link} target="_blank">{" "}{props.detail}</a></p>
         <div id="notdate">
           <div>
@@ -25,7 +25,7 @@ const Notice = props => {
             <p className="notet">{props.time}</p>
           </div>
         </div>
-      </div>
+      </NoticeStyle>
     </>
   )
 }

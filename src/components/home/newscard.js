@@ -1,11 +1,11 @@
 import React from "react"
-import "./css/newscard.scss"
 import newspic from "../global/img/news.jpg"
 import { Link } from "gatsby"
+import { NewsCardStyle } from "../styles/newscard"
 
 const Newscard = inf => {
   return (
-    <div data-aos="flip-left" className="newscard-box">
+    <NewsCardStyle data-aos="flip-left">
       <div className="news-img-wrap">
         <img
           src={`https://drive.google.com/thumbnail?id=${inf.url}`}
@@ -24,7 +24,7 @@ const Newscard = inf => {
           </Link>
         </h6>
       </div>
-    </div>
+    </NewsCardStyle>
   )
 }
 export default Newscard

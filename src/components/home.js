@@ -1,7 +1,6 @@
 import axios from "axios"
 import React, { useEffect, useState } from "react"
 import Newscard from "./home/newscard"
-import "./home/css/home.scss"
 import Importantlink from "./home/importantlink"
 import Notice from "./home/notice"
 import Eventcard from "./home/eventcard"
@@ -9,6 +8,7 @@ import { Nitpbackimg } from "./home/nitpimg"
 import { Link } from "gatsby"
 import Innovation from "./home/Innovation"
 import GalleryComp from "./home/gallery"
+import { HomeStyle } from "./styles/home"
 
 const Home = () => {
   const [events, setEvents] = useState()
@@ -52,7 +52,7 @@ const Home = () => {
   }
 
   return (
-    <div>
+    <HomeStyle>
       <div>
         <div className="bgimgwrap">
           <Nitpbackimg />
@@ -211,7 +211,7 @@ const Home = () => {
       </div>
 
       <GalleryComp />
-    </div>
+    </HomeStyle>
   )
 }
 
