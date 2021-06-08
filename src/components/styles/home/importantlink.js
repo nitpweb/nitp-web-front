@@ -49,7 +49,7 @@ export const ImportantLinkStyle = styled.div`
           p {
             margin: 0;
             color: #808080;
-            font-size: 10px;
+            font-size: 0.5vw;
             word-wrap: break-word;
             padding: 0 0.5rem 0 0.5rem;
             font-family: Source Sans Pro;
