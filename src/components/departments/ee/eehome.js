@@ -111,3 +111,25 @@ export const contact = () => {
     </>
   )
 }
+export const datalist = [
+  {
+    title: "About",
+    data: "about",
+    img: "/department/about.svg",
+  },
+  {
+    title: "Mission & Vision",
+    data: "missionvision",
+    img: "/department/mission.svg",
+  },
+  {
+    title: "Happenings",
+    data: "happening",
+    img: "/department/activities.svg",
+  },
+  {
+    title: "Contact",
+    data: "contact",
+    img: "/department/contact.svg",
+  },
+]

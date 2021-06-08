@@ -10,6 +10,7 @@ import {
   mission,
   vision,
   contact,
+  datalist
 } from "../../components/departments/chem/chemhome"
 const Chemistry = () => (
   <Deplayout>
@@ -22,6 +23,7 @@ const Chemistry = () => (
       Mission={mission}
       Vision={vision}
       Contact={contact}
+      datalist={datalist}
     />
   </Deplayout>
 )

@@ -10,6 +10,7 @@ import {
   mission,
   vision,
   contact,
+  datalist
 } from "../../components/departments/hss/hsshome"
 const Hss = () => (
   <Deplayout>
@@ -22,6 +23,7 @@ const Hss = () => (
       Mission={mission}
       Vision={vision}
       Contact={contact}
+      datalist={datalist}
     />
   </Deplayout>
 )

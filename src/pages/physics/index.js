@@ -10,6 +10,7 @@ import {
   mission,
   vision,
   contact,
+  datalist
 } from "../../components/departments/phy/phyhome"
 const Phy = () => (
   <Deplayout>
@@ -22,6 +23,7 @@ const Phy = () => (
       Mission={mission}
       Vision={vision}
       Contact={contact}
+      datalist={datalist}
     />
   </Deplayout>
 )

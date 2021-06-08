@@ -10,6 +10,7 @@ import {
   mission,
   vision,
   contact,
+  datalist
 } from "../../components/departments/ce/cehome"
 const Ce = () => (
   <Deplayout>
@@ -22,6 +23,7 @@ const Ce = () => (
       Mission={mission}
       Vision={vision}
       Contact={contact}
+      datalist={datalist}
     />
   </Deplayout>
 )

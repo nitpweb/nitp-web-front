@@ -6,11 +6,12 @@ const Navigate = ({callback,data}) => {
     <NavigateStyle>
       {data.map(item => (
         <button className="childLink" onClick={() => callback(item.data)}>
-          {item.img?<img src={item.img} alt=""></img>:null}
+          {item.img ? (
+            <object type="image/svg+xml" data={item.img} className="image"></object>
+          ) : null}
           <p>{item.title}</p>
         </button>
       ))}
-
     </NavigateStyle>
   )
 }

@@ -10,6 +10,7 @@ import {
   mission,
   vision,
   contact,
+  datalist
 } from "../../components/departments/ece/ecehome"
 const Ece = () => (
   <Deplayout>
@@ -22,6 +23,7 @@ const Ece = () => (
       Mission={mission}
       Vision={vision}
       Contact={contact}
+      datalist={datalist}
     />
   </Deplayout>
 )
