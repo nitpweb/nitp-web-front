@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const ImportantLinkStyle = styled.div`
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
   display: -ms-flexbox;
   display: flex;
   flex-direction: column;
@@ -42,20 +42,19 @@ scroll-behavior: smooth;
           max-width: 70%;
         }
         .lead {
-          width: 170px;
+          max-width: 95%;
           height: 54px;
           text-align: center;
           font-weight: 600;
           p {
             margin: 0;
             color: #808080;
-            font-size: 1vw;
+            font-size: 10px;
             word-wrap: break-word;
-            padding:0 0.5rem 0 0.5rem;
-            &:hover {
-              color: salmon;
-            }
+            padding: 0 0.5rem 0 0.5rem;
+            font-family: Source Sans Pro;
           }
+          
         }
         h3 {
           font-size: 1.75vw;
@@ -66,18 +65,21 @@ scroll-behavior: smooth;
         }
       }
     }
+    .implink:hover>.lead>p{
+      color: salmon;
+    }
   }
 
   @media (max-width: 768px) {
-      .link-col {
-        width: 100%;
-        .implink {
-          width: 20vw;
-          height: 20vw;
-          .lead p {
-            display: none;
-          }
+    .link-col {
+      width: 100%;
+      .implink {
+        width: 20vw;
+        height: 20vw;
+        .lead p {
+          display: none;
         }
       }
+    }
   }
 `
