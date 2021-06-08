@@ -82,8 +82,8 @@ export const NavigateStyle = styled.div`
           color: #cf5d31;
         }
       }
-      img {
-        max-height: 40%;
+      object {
+        max-height: 50%;
         width: auto;
         display: none;
       }
