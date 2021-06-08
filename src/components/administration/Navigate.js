@@ -5,10 +5,10 @@ const Navigate = ({callback,data}) => {
   return (
     <NavigateStyle>
       {data.map(item => (
-        <div className="childLink" onClick={() => callback(item.data)}>
+        <button className="childLink" onClick={() => callback(item.data)}>
           {item.img?<img src={item.img} alt=""></img>:null}
           <p>{item.title}</p>
-        </div>
+        </button>
       ))}
 
     </NavigateStyle>
