@@ -88,7 +88,10 @@ const Home = () => {
                   const newtime = new Date().getTime()
 
                   let d = Math.round((newtime - notice.openDate) / 3600000)
-                  if (d > 24) {
+                  if(d>48){
+                    d=new Date(notice.openDate).toLocaleDateString();
+                  }
+                  else if (d > 24) {
                     d = `${Math.round(d / 24)} days ago`
                   } else if (d < 1) {
                     d = `Just now`
