@@ -3,7 +3,7 @@ import axios from "axios"
 import mail from "./global/img/mail.svg"
 import { FacultyProfile } from "./styles/facultyprofile"
 
-const Director = () => {
+const Directorpage = () => {
   const [data, setData] = useState()
   useEffect(() => {
     const url = `${process.env.GATSBY_API_URL}/api/faculty/pkjain@nitp.ac.in`
@@ -144,4 +144,4 @@ const Director = () => {
   )
 }
 
-export default Director
+export default Directorpage

@@ -41,9 +41,14 @@ export const NavigateStyle = styled.div`
       p {
         color: white;
       }
+      object {
+        color: white;
+        filter: invert(100%) sepia(0%) saturate(7473%) hue-rotate(163deg)
+          brightness(108%) contrast(108%);
+      }
     }
-    img {
-      max-height: 40%;
+    object {
+      max-height: 50%;
       width: auto;
     }
   }
@@ -56,32 +61,32 @@ export const NavigateStyle = styled.div`
     justify-content: center;
     margin: 0;
     .childLink {
-    width: 105px;
-    min-height: 35px;
-    height: 35px;
-    padding: 0 0.5rem;
-    margin: 0.2rem 0.2rem;
-    background-color: #cf5d31;
-    border-radius: 2rem;
-    p {
-      font-size: 12px;
-      color: white;
-      font-weight: normal;
-      padding: 0;
-    }
-    &:focus {
-      background-color: white;
-      transform: scale(1.05);
-      margin: 0 0.15rem;
+      width: 105px;
+      min-height: 35px;
+      height: 35px;
+      padding: 0 0.5rem;
+      margin: 0.2rem 0.2rem;
+      background-color: #cf5d31;
+      border-radius: 2rem;
       p {
-        color: #cf5d31;
+        font-size: 12px;
+        color: white;
+        font-weight: normal;
+        padding: 0;
+      }
+      &:focus {
+        background-color: white;
+        transform: scale(1.05);
+        margin: 0 0.15rem;
+        p {
+          color: #cf5d31;
+        }
+      }
+      img {
+        max-height: 40%;
+        width: auto;
+        display: none;
       }
     }
-    img {
-      max-height: 40%;
-      width: auto;
-      display: none;
-    }
-  }
   }
 `

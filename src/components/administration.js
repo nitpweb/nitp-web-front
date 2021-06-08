@@ -1,11 +1,10 @@
 import React, { useState } from "react"
 // import adminpic from "./administration/img/main.svg"
 import Adcard from "./administration/adcard"
-import "./administration/css/administration.css"
 // import Floatmenu from "./administration/floatmenu"
 import Director from "./Director"
 import { AdminStyle } from "./styles/AdminStyle"
-import Navigate from "./administration/Navigate"
+import Navigate from "./global/Navigate"
 import AdministrationData from "./administration/const"
 
 const Administrationpage = () => {
