@@ -19,17 +19,17 @@ const Director = () => {
       .catch(e => {
         console.log(e)
       })
-  }, [data])
+  }, [])
 
   return (
     <>
       {data && (
         <FacultyProfile className="facultypage row">
-          <div className="row rowmarl3">
+          <div className="row" style={{margin:`-8rem 0 0 2rem`}}>
             <h1>Our Director</h1>
           </div>
 
-          <div className="faculty-img-row">
+          <div className="faculty-img-row" style={{position:`relative`}}>
             <div className="faculty-img-wrap">
               <img
                 src={
@@ -41,15 +41,15 @@ const Director = () => {
               />
             </div>
             <a href={`mailto:${data.profile.email}`} target="blank">
-              <img src={mail} className="img-fluid facmail" />
+              <img src={mail} className="img-fluid facmail" style={{position:`absolute`}}/>
             </a>
             <h2>{data.profile.name}</h2>
             <h3>Director</h3>
           </div>
 
-          <div className="faculty-details-row">
+          <div className="faculty-details-row" style={{width:`95%`,margin:`0`}}>
             <h1>His Profile</h1>
-            <div className="fac-card" data-aos="fade-up">
+            <div className="fac-card" data-aos="">
               <h3>Research Interest:-</h3>
               <p>{data.profile.research_interest}</p>
               <h3>Email:-</h3>
@@ -59,7 +59,7 @@ const Director = () => {
             </div>
             {data.qualification &&
             data.qualification.length != 0 ? (
-              <div className="fac-card" data-aos="fade-up">
+              <div className="fac-card" data-aos="">
                 <h3>Educational Qualification</h3>
                 <div className="factable">
                   <table>
@@ -94,8 +94,8 @@ const Director = () => {
               </div>
             ) : null}
             <h1>What He Says?</h1>
-            <div className="fac-card" data-aos="fade-up">
-              <p id="dir">
+            <div className="fac-card" data-aos="">
+              <p id="dir" style={{textAlign:`justify`}}>
                 It is my pleasure to introduce one of the oldest Technological
                 Institutes of North India, National Institute of Technology
                 Patna, whose history goes back to 1876 when four survey schools

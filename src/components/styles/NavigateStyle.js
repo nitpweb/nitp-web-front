@@ -11,7 +11,8 @@ export const NavigateStyle = styled.div`
   .childLink {
     margin-top: 0;
     width: 120px;
-    height: 76px;
+    min-height: 50px;
+    max-height: 78px;
     background-color: white;
     border: 1px solid lightgrey;
     display: grid;
@@ -20,20 +21,20 @@ export const NavigateStyle = styled.div`
     padding: 0;
     transition: all 0.3s ease;
     background: white;
-
+    cursor: pointer;
+    outline: none;
     p {
       font-size: 14px;
-      font-weight: bold;
+      font-weight: 600;
       color: #cf5d31;
       text-align: center;
       transition: all 1s ease;
       text-rendering: optimizeLegibility;
       font-family: Source Sans Pro;
-      cursor: pointer;
       margin: 0;
-      padding: 0;
+      padding: 0 0.2rem;
     }
-    &:hover {
+    &:focus {
       background-color: #cf5d31;
       transform: scale(1.05);
       margin: 0.15rem 0;
@@ -56,6 +57,7 @@ export const NavigateStyle = styled.div`
     margin: 0;
     .childLink {
     width: 105px;
+    min-height: 35px;
     height: 35px;
     padding: 0 0.5rem;
     margin: 0.2rem 0.2rem;
@@ -65,8 +67,9 @@ export const NavigateStyle = styled.div`
       font-size: 12px;
       color: white;
       font-weight: normal;
+      padding: 0;
     }
-    &:hover {
+    &:focus {
       background-color: white;
       transform: scale(1.05);
       margin: 0 0.15rem;
