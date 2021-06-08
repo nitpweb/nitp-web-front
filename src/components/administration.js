@@ -1,9 +1,9 @@
 import React, { useState } from "react"
-import adminpic from "./administration/img/main.svg"
+// import adminpic from "./administration/img/main.svg"
 import Adcard from "./administration/adcard"
 import "./administration/css/administration.css"
-import Floatmenu from "./administration/floatmenu"
-import Director from "./director"
+// import Floatmenu from "./administration/floatmenu"
+import Director from "./Director"
 import { AdminStyle } from "./styles/AdminStyle"
 import Navigate from "./administration/Navigate"
 import AdministrationData from "./administration/const"
@@ -14,25 +14,30 @@ const Administrationpage = () => {
   function getView(callback) {
     setView(callback)
   }
+  console.log()
   return (
-    <AdminStyle>
-      <Navigate data={AdministrationData} callback={getView} />
+    <>
+      <AdminStyle>
+        <Navigate data={AdministrationData} callback={getView} />
 
-      <div className="mainDiv">
-        {view &&
-          view.map(item => {
-            return (
-              <div className="col-4">
-                <Adcard
-                  name={item.name}
-                  designation={item.designation}
-                  type={item.type}
-                />
-              </div>
-            )
-          })}
-      </div>
-    </AdminStyle>
+        <div className="mainDiv">
+          {view.length!=0 && view[0].name
+            ? view.map(item => {
+                return (
+                  <div className="col-4">
+                    <Adcard
+                      name={item.name}
+                      designation={item.designation}
+                      type={item.type}
+                    />
+                  </div>
+                )
+              })
+            : <Director id="director" />}
+        </div>
+      </AdminStyle>
+      {/* <Director/> */}
+    </>
     // <div className="adminsection">
     //   <Floatmenu />
     //   <div className="admainrow admainrowmain" id="home">

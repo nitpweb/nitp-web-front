@@ -36,12 +36,13 @@ export const FacultyProfile = styled.div`
     width: 80%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     #dir {
       line-height: 1.5;
       letter-spacing: 1px;
       padding-right: 3vw;
-      padding-top: 50px;
+      padding-top: 25px;
     }
     .fac-card {
       width: 90%;

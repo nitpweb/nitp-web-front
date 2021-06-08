@@ -203,8 +203,16 @@ const FC = [
     type: "Secretary",
   },
 ]
-
+const director=[
+  {
+   "director":"something"
+  }
+]
 const AdministrationData=[
+  {
+    "title":"Our Director",
+    "data":director
+  },
   {
     "title":"Deans",
     "data":Deansinfo
