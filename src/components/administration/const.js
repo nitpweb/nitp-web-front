@@ -1,6 +1,6 @@
 import React from "react"
 
-export const Deansinfo = [
+const Deansinfo = [
   {
     name: "Prof. Pradip Kumar Jain",
     designation: "Chairman, Board of Governors",
@@ -37,8 +37,7 @@ export const Deansinfo = [
     type: "Registrar",
   },
 ]
-
-export const BOD = [
+const BOG = [
   {
     name: "Prof. Pradip Kumar Jain",
     designation: "Chairperson(Actg.) BOG, Ex-Officio Member, NIT Patna",
@@ -93,8 +92,7 @@ export const BOD = [
     type: "Member",
   },
 ]
-
-export const BWC = [
+const BWC = [
   {
     name: "Prof. Pradip Kumar Jain",
     designation: "Director, NIT Patna",
@@ -140,7 +138,7 @@ BCD, Govt. of Bihar`,
   },
 ]
 
-export const IDC = [
+const IDC = [
   {
     name: "Prof. Prakash Chandra",
     designation: "Dean(Student Welfare)",
@@ -178,7 +176,7 @@ export const IDC = [
     type: "Member Secretary",
   },
 ]
-export const FC = [
+const FC = [
   {
     name: "Prof. Pradip Kumar Jain",
     designation: "Director, NIT Patna",
@@ -205,3 +203,24 @@ export const FC = [
     type: "Secretary",
   },
 ]
+
+const AdministrationData=[
+  {
+    "title":"Deans",
+    "data":Deansinfo
+  },{
+    "title":"Board of Governors",
+    "data":BOG
+  },{
+    "title":"Building and Works Committee",
+    "data":BWC
+  },{
+    "title":"Institute Disciplinary Committee",
+    "data":IDC
+    },{
+      "title":"Finance Committee",
+      "data":FC
+    }
+]
+
+export default AdministrationData

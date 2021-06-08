@@ -4,16 +4,17 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    width: 380px;
+    width: 300px;
     height: 150px;
     overflow: hidden;
     box-shadow: 5px 10px 19px rgba(193,104,0,0.25);
     box-shadow: 5px 10px 19px rgba(193,104,0,0.25) unset;
-
+    position: relative;
+    margin: 1rem;
 }
 .adcard > .type {
     display: flex;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     margin-bottom:15px;
     justify-self: flex-end;
