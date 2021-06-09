@@ -1,13 +1,13 @@
 import React from "react"
-import Deplayout from "../../components/deplayout"
+import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import Archsyllabus from "../../components/departments/arch/archsyllabus"
 
 const Archsyllabuspage = () => (
-  <Deplayout>
+  <Layout>
     <SEO title="Architecture|Syllabus" />
     <Archsyllabus />
-  </Deplayout>
+  </Layout>
 )
 
 export default Archsyllabuspage

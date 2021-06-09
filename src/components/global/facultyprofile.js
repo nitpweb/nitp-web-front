@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
 import mail from "./img/mail.svg"
-import Deplayout from "../deplayout"
+import Layout from "../layout"
 import { FacultyProfile } from "../styles/facultyprofile"
 
 const Facultyprofile = ({ url }) => {
@@ -53,7 +53,7 @@ const Facultyprofile = ({ url }) => {
   return (
     <>
       {data && (
-        <Deplayout department={data.profile.department}>
+        <Layout department={data.profile.department}>
           <FacultyProfile className="row">
             <div className="faculty-img-row">
               <div className="faculty-img-wrap">
@@ -576,7 +576,7 @@ const Facultyprofile = ({ url }) => {
               )}
             </div>
           </FacultyProfile>
-        </Deplayout>
+        </Layout>
       )}
     </>
   )

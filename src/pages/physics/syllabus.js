@@ -1,13 +1,13 @@
 import React from "react"
-import Deplayout from "../../components/deplayout"
 import SEO from "../../components/seo"
 import Physicssyllabus from "../../components/departments/phy/physicssyllabus"
+import Layout from "../../components/layout"
 
 const Physicssyllabuspage = () => (
-  <Deplayout>
+  <Layout>
     <SEO title="Physics|Syllabus" />
     <Physicssyllabus />
-  </Deplayout>
+  </Layout>
 )
 
 export default Physicssyllabuspage

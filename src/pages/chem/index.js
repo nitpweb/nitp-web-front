@@ -1,5 +1,5 @@
 import React from "react"
-import Deplayout from "../../components/deplayout"
+import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import Dephomepage from "../../components/departments/dephome"
 import {
@@ -13,7 +13,7 @@ import {
   datalist
 } from "../../components/departments/chem/chemhome"
 const Chemistry = () => (
-  <Deplayout>
+  <Layout>
     <SEO title="Chemistry" />
     <Dephomepage
       routeName={routeName}
@@ -25,7 +25,7 @@ const Chemistry = () => (
       Contact={contact}
       datalist={datalist}
     />
-  </Deplayout>
+  </Layout>
 )
 
 export default Chemistry

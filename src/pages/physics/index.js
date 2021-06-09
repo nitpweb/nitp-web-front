@@ -1,5 +1,4 @@
 import React from "react"
-import Deplayout from "../../components/deplayout"
 import SEO from "../../components/seo"
 import Dephomepage from "../../components/departments/dephome"
 import {
@@ -12,8 +11,9 @@ import {
   contact,
   datalist
 } from "../../components/departments/phy/phyhome"
+import Layout from "../../components/layout"
 const Phy = () => (
-  <Deplayout>
+  <Layout>
     <SEO title="Physics" />
     <Dephomepage
       routeName={routeName}
@@ -25,7 +25,7 @@ const Phy = () => (
       Contact={contact}
       datalist={datalist}
     />
-  </Deplayout>
+  </Layout>
 )
 
 export default Phy

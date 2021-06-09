@@ -1,13 +1,13 @@
 import React from "react"
-import Deplayout from "../../components/deplayout"
 import SEO from "../../components/seo"
 import Facultypage from "../../components/departments/faculty"
+import Layout from "../../components/layout"
 
 const Phyfacultypage = () => (
-  <Deplayout>
+  <Layout>
     <SEO title="Physics|Faculty" />
     <Facultypage url="phy" dept="Physics Department" />
-  </Deplayout>
+  </Layout>
 )
 
 export default Phyfacultypage

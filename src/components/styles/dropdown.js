@@ -7,7 +7,7 @@ export const DropdownStyle = styled.div`
     text-decoration: none;
     color: #fff;
     font-family: "Source Sans Pro";
-    font-size: 1.4vw;
+    font-size: 1vw;
     font-weight: 500;
     line-height: 1.6;
     display: flex;

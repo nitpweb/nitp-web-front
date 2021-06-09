@@ -1,13 +1,13 @@
 import React from "react"
-import Deplayout from "../../components/deplayout"
+import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import Hsssyllabus from "../../components/departments/hss/hsssyllabus"
 
 const Hsssyllabuspage = () => (
-  <Deplayout>
+  <Layout>
     <SEO title="HSS|Syllabus" />
     <Hsssyllabus />
-  </Deplayout>
+  </Layout>
 )
 
 export default Hsssyllabuspage
