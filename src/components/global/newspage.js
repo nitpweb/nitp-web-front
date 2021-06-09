@@ -1,7 +1,7 @@
 import React from "react"
-import "./css/newspage.scss"
 import newspic from "./img/news.jpg"
 import axios from "axios"
+import { NewspageStyle } from "../styles/newspage"
 
 class Newspage extends React.Component {
   constructor(props) {
@@ -30,7 +30,7 @@ class Newspage extends React.Component {
   render() {
     return (
       <>
-        <div className="newspage row">
+        <NewspageStyle className="row">
           <div className="head row">
             <h1>News</h1>
           </div>
@@ -67,7 +67,7 @@ class Newspage extends React.Component {
               )
             }
           })}
-        </div>
+        </NewspageStyle>
       </>
     )
   }

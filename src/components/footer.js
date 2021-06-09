@@ -1,9 +1,9 @@
 import React from "react"
-import "./global/css/footer.scss"
 import { Link } from "gatsby"
+import { FooterStyle } from "./styles/footer"
 const Footer = () => {
   return (
-    <>
+    <FooterStyle>
       <div className="foot-row" style={{ marginTop: `70px` }}>
         <div className="foot-col-4">
           <h1>Contact Us</h1>
@@ -84,7 +84,7 @@ const Footer = () => {
           Patna
         </p>
       </div>
-    </>
+    </FooterStyle>
   )
 }
 export default Footer

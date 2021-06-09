@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
-import "./css/newspage.scss"
+import { NewspageStyle } from "../styles/newspage"
 
 const Innovationpage = () => {
   const [data, setData] = useState([])
@@ -55,12 +55,12 @@ const Innovationpage = () => {
   }
   return (
     <>
-      <div className="newspage row">
+      <NewspageStyle className="newspage row">
         <div className="head row">
           <h1>Innovation</h1>
         </div>
         {filtered.map(Card)}
-      </div>
+      </NewspageStyle>
     </>
   )
 }
