@@ -155,7 +155,6 @@ export const NavbarStyle = styled.div`
     padding-left: 3vw;
     padding-top: 0.5vw;
     display:flex;
-    align-items: center;
     flex-direction: column;
     justify-content: center;
     h2 {
