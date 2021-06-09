@@ -1,6 +1,6 @@
 <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d)">
-<rect x="13" y="13" width="36" height="36" rx="4" fill="white"/>
+<rect x="13" y="13" width="36" height="36" rx="4" fill="none" stroke="#E47F40"/>
 </g>
 <line x1="20" y1="22.5" x2="42" y2="22.5" stroke="#E47F40"/>
 <line x1="20" y1="30.5" x2="42" y2="30.5" stroke="#DB713A"/>
