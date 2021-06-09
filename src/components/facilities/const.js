@@ -23,18 +23,21 @@ export const FacilityList = [
     title: "Laboratories",
     data: "lab",
   },
-    { title: "WiFi", data: "wifi" },
-    {
-        title: "Bank",
-        data:"bank"
-    }, {
-        title: "Security",
-        data:"security"
-    }, {
-        title: "Woman Cell",
-        data:"womancell"
-    }, {
-        title: "Electric Maintainence Unit (EMU)",
-        data:"emu"
-    }
+  { title: "WiFi", data: "wifi" },
+  {
+    title: "Bank",
+    data: "bank",
+  },
+  {
+    title: "Security",
+    data: "security",
+  },
+  {
+    title: "Woman Cell",
+    data: "womancell",
+  },
+  {
+    title: "Electric Maintainence Unit (EMU)",
+    data: "emu",
+  },
 ]
