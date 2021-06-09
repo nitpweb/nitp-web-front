@@ -1,7 +1,6 @@
 import React from "react"
 import bag from "./student/img/bag.svg"
 import exchange from "./student/img/exchange.svg"
-import "./student/css/student.css"
 import first from "./student/img/firstyear.svg"
 import antiragging from "./student/img/antiragging.svg"
 import Coronapic from "./student/img/coronapic"
@@ -62,13 +61,9 @@ const Studentpage = () => {
         </div>
       </div>
       <div className="layoutrowmain">
-        <div className="row layoutrow clubsection" id="clubsection" data-aos="fade">
-          <div className="row rowmarl3">
-            <h1 data-aos="zoom-in-right" style={{color:`white`, paddingLeft:`1rem`,margin:`0px`}}>Our Clubs</h1>
-          </div>
-          <StudentSlide />
-        </div>
-      </div>
+        <StudentSlide />
+
+       </div>
 
       <div className="layoutrow layoutrow1" id="tcf">
         <div className="col-6 imgcolstyle">

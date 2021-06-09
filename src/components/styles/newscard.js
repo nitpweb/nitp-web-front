@@ -4,6 +4,7 @@ export const NewsCardStyle = styled.div`
   width: 265px;
   height: 350px;
   min-width: 265px;
+  background-color: ${props => props.theme.backgroundSecColor};
   min-height: 350px;
   overflow: hidden;
   box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.28);
@@ -27,7 +28,7 @@ export const NewsCardStyle = styled.div`
     float: right;
     margin-top: -15px;
     margin-right: 13px;
-    background: #cd5a2f;
+    background: ${props => props.theme.primaryColor};
     border-radius: 3px;
     color: white;
     font-size: 0.8em;
@@ -39,6 +40,7 @@ export const NewsCardStyle = styled.div`
     font-family: "Source Sans Pro";
   }
   .newscard-head {
+    background-color: ${props => props.theme.backgroundSecColor};
     font-size: 1.3rem;
     margin-top: -20px;
     padding: 5%;
@@ -46,15 +48,17 @@ export const NewsCardStyle = styled.div`
       font-size: 15px;
       font-style: normal;
       font-weight: bold;
-      color: #4b4b4b;
+      color: ${props => props.theme.textColor};
       font-family: "Source Sans Pro";
     }
     h6 {
       margin-top: -20px;
       color: rgba(0, 0, 0, 0.51);
+      color: ${props => props.theme.secondaryTextColor};
       font-family: "Source Sans Pro";
+      font-weight: 300;
       .newscard-readmore {
-        color: #cd5a2f;
+        color: ${props => props.theme.primaryColor};
         font-family: "Source Sans Pro";
         text-decoration: none;
       }

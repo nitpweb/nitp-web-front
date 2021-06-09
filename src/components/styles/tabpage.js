@@ -7,12 +7,14 @@ export const TabPage = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 4rem;
+  padding-top: 4rem;
   text-rendering: optimizeLegibility;
+  background: ${props => props.theme.backgroundColor};
+
   .mainDiv {
     display: flex;
     width: 75vw;
-    margin: 2vw 0 0 0;
+    margin: 2vw 0 2vw 0;
     padding: 1rem;
     height: 80vh;
     box-shadow: -3px -3px 12px #ffffff73, 3px 3px 12px rgba(94, 104, 121, 0.288);
@@ -20,6 +22,7 @@ export const TabPage = styled.div`
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: ${props => props.theme.backgroundColor};
     overflow: scroll;
     align-content: flex-start;
     -ms-overflow-style: none;
@@ -29,11 +32,15 @@ export const TabPage = styled.div`
         .row {
           h1 {
             font-weight: bold;
-            color: #2b2b2b;
+            color: ${props => props.theme.textColor};
             font-size: 3rem;
           }
           h2 {
-            color: #656565;
+            p {
+              color: ${props => props.theme.textColor};
+              font-size: 1.3rem;
+              font-weight: 500;
+            }
           }
           #aut {
             color: #606060;
@@ -56,29 +63,32 @@ export const TabPage = styled.div`
       padding-bottom: 10vh;
       font-family: "Source Sans Pro";
       .layoutrow:nth-of-type(2n + 1) {
-        background-color: #fcfcfc;
         .col-6:nth-child(1) {
           justify-content: center;
         }
       }
       .col-6 {
         padding: 3vw;
-        div {
+        .row {
           #layoutnoticewrap {
             height: 400px;
             overflow: hidden;
             min-width: 80%;
             overflow-y: scroll;
             scrollbar-width: none;
+            div {
+              p {
+                font-size: 1rem;
+              }
+            }
           }
           p {
-            color: #454545;
-            font-size: 1.3rem;
+            color: ${props => props.theme.textColor};
             font-weight: 500;
           }
           h1 {
             font-weight: bold;
-            color: #2b2b2b;
+            color: ${props => props.theme.textColor};
             font-size: 2.5rem;
           }
         }
@@ -93,8 +103,12 @@ export const TabPage = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+
+        h1 {
+          color: ${props => props.theme.textColor};
+        }
         p {
-          color: #454545;
+          color: ${props => props.theme.textColor};
           font-size: 1.3rem;
           font-weight: 500;
         }
@@ -106,7 +120,7 @@ export const TabPage = styled.div`
         padding: 0vw 0vw 0vw 3vw;
         h1 {
           font-weight: bold;
-          color: #2b2b2b;
+          color: ${props => props.theme.textColor};
           font-size: 3rem;
         }
       }
@@ -116,9 +130,8 @@ export const TabPage = styled.div`
     }
   }
   @media (max-width: 768px) {
-    margin-top: 10.5rem;
+    padding-top: 10.5rem;
     .mainDiv {
-      margin-top: 50px;
       width: 80vw;
       .layoutrow1 {
         flex-direction: column-reverse;

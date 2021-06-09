@@ -4,20 +4,19 @@ export const NoticeStyle = styled.div`
   width: 90%;
   height: fit-content;
   padding: 5px 15px 5px 15px;
-  background: #fafafa;
+  background: ${props => props.theme.backgroundSecColor};
   margin-top: 10px;
 
   .noticecarddetail {
     font-size: 16px;
     font-family: "Source Sans Pro";
-    font-weight: 500;
-    color: #4d4d4d;
+    a {
+      text-decoration: none;
+      color: ${props => props.theme.textColor};
+      font-weight: 500;
+    }
   }
-  a {
-    text-decoration: none;
-    color: #4d4d4d;
-    font-weight: 500;
-  }
+
   #flag {
     height: 16px;
   }
@@ -38,7 +37,7 @@ export const NoticeStyle = styled.div`
         position: relative;
         bottom: 0;
         margin-bottom: 5px;
-        color: #cd5a2f;
+        color: ${props => props.theme.primaryColor};
         font-size: 14px;
         font-weight: 600;
         text-align: right;
@@ -62,7 +61,7 @@ export const NoticeStyle = styled.div`
     position: relative;
     bottom: 0;
     margin-bottom: 5px;
-    color: #7b7b7b;
+    color: ${props => props.theme.secondaryTextColor};
     font-size: 14px;
     font-weight: 600;
     text-align: right;

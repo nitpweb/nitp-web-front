@@ -4,7 +4,7 @@ import { FooterStyle } from "./styles/footer"
 const Footer = () => {
   return (
     <FooterStyle>
-      <div className="foot-row" style={{ marginTop: `70px` }}>
+      <div className="foot-row">
         <div className="foot-col-4">
           <h1>Contact Us</h1>
           <h3>National Institute of Technology Patna</h3>

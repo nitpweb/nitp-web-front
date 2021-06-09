@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const FooterStyle = styled.div`
   .foot-col-4 {
     color: white;
-    background: #cd5a2f;
+    background: ${props => props.theme.primaryColor};
     width: 25%;
     padding-left: 1%;
     padding-bottom: 2vh;
@@ -11,26 +11,40 @@ export const FooterStyle = styled.div`
     max-width: 95vw;
   }
   .foot-row {
-    background: #2d2d2d;
+    background: ${props => props.theme.backgroundSecColor};
     max-width: 100vw;
     font-family: "Source Sans Pro";
     display: flex;
   }
+
   .foot-col-8 {
     width: 75%;
     max-width: 95vw;
     display: flex;
     margin-left: 2vh;
   }
+
+  .foot-col-4 {
+    h1 {
+      font-size: 1.2rem;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+  }
   .foot-col-3 {
     width: 33%;
     h1 {
-      color: #fff;
+      color: ${props => props.theme.textColor};
+      font-size: 1.2rem;
     }
     a {
       text-decoration: none;
-      color: #cd5a2f;
+      color: ${props => props.theme.primaryColor};
       line-height: 1;
+      h3 {
+        font-size: 1rem;
+      }
     }
   }
 
@@ -48,7 +62,8 @@ export const FooterStyle = styled.div`
     align-items: center;
     width: 100%;
     font-family: "Source Sans Pro";
-    color: #2d2d2d;
+    color: ${props => props.theme.primaryTextColor};
+    background-color: ${props => props.theme.backgroundColor};
     p {
       font-weight: bolder;
       display: flex;
@@ -61,20 +76,20 @@ export const FooterStyle = styled.div`
   @media (max-width: 1500px) {
     .foot-col-3 {
       h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       }
       a {
         h3 {
-          font-size: 1.2rem;
+          font-size: 1rem;
         }
       }
     }
     .foot-col-4 {
       h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       }
       h3 {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
     }
   }

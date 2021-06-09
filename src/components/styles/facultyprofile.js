@@ -2,9 +2,12 @@ import styled from "styled-components"
 
 export const FacultyProfile = styled.div`
   font-family: "Source Sans Pro";
-  margin-top: 10vw;
+  padding-top: 10vw;
   display: flex;
   justify-content: space-evenly;
+  color: ${props => props.theme.textColor};
+  background: ${props => props.theme.backgroundColor};
+
   .faculty-img-row {
     margin-top: 5vh;
     justify-content: center;
@@ -15,7 +18,7 @@ export const FacultyProfile = styled.div`
       margin-left: 60px;
     }
     h3 {
-      color: #4e4e4e;
+      color: ${props => props.theme.textColor};
     }
     font-family: "Source Sans Pro";
     .faculty-img-wrap {
@@ -48,7 +51,7 @@ export const FacultyProfile = styled.div`
       width: 90%;
       margin-top: 3vh;
       margin-bottom: 3vh;
-      background: #ffffff;
+      background: ${props => props.theme.backgroundSecColor};
       box-shadow: 0px 0px 18px rgba(156, 156, 156, 0.38);
       border-radius: 5px;
       padding-left: 5%;
@@ -56,7 +59,7 @@ export const FacultyProfile = styled.div`
       font-family: "Source Sans Pro";
       list-style: disc;
       h3 {
-        color: #2f2f2f;
+        color: ${props => props.theme.textColor};
       }
       p {
         max-width: 95%;
@@ -82,9 +85,6 @@ export const FacultyProfile = styled.div`
         th {
           text-align: left;
           padding: 8px;
-        }
-        tr:nth-child(odd) {
-          background-color: #fafafa;
         }
       }
       .factable:-webkit-scrollbar {

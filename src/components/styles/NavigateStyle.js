@@ -7,27 +7,28 @@ export const NavigateStyle = styled.div`
   top: 50%;
   left: 0%;
   transform: translateY(-50%);
-  margin: 0 0 0 3vw;
+  margin: 0 0 0 7vw;
+  background: ${props => props.theme.backgroundColor};
   .childLink {
     margin-top: 0;
     width: 120px;
-    max-height:78px;
-    background-color: white;
+    max-height: 90px;
     border: 1px solid lightgrey;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0.2rem 0;
     transition: all 0.3s ease;
     background: white;
     cursor: pointer;
     outline: none;
+    background-color: ${props => props.theme.backgroundSecColor};
     p {
       font-size: 14px;
       font-weight: 600;
-      color: #cf5d31;
+      color: ${props => props.theme.primaryTextColor};
       text-align: center;
       transition: all 1s ease;
       text-rendering: optimizeLegibility;
@@ -36,27 +37,27 @@ export const NavigateStyle = styled.div`
       padding: 0 0.2rem;
     }
     &:focus {
-      background-color: #cf5d31;
-      transform: scale(1.1);
-      margin: 0.25rem 0;
+      background-color: ${props => props.theme.primaryColor};
+      padding: 10px 0px 10px 0px;
       p {
         color: white;
       }
       .image {
         color: white;
-        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(200%) contrast(200%);
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg)
+          brightness(200%) contrast(200%);
       }
     }
     &:hover {
-      background-color: #cf5d31;
-      transform: scale(1.1);
-      margin: 0.25rem 0;
+      background-color: ${props => props.theme.primaryColor};
+      padding: 10px 0px 10px 0px;
       p {
         color: white;
       }
       .image {
         color: white;
-        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(200%) contrast(200%);
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg)
+          brightness(200%) contrast(200%);
       }
     }
     .image {
@@ -70,6 +71,7 @@ export const NavigateStyle = styled.div`
     align-content: flex-start;
     align-items: center;
     top: 0%;
+    position: relative;
     justify-content: center;
     margin: 0;
     .childLink {
@@ -78,7 +80,7 @@ export const NavigateStyle = styled.div`
       height: 35px;
       padding: 0 0.5rem;
       margin: 0.2rem 0.2rem;
-      background-color: #cf5d31;
+      background-color: ${props => props.theme.primaryColor};
       border-radius: 2rem;
       p {
         font-size: 12px;
@@ -91,7 +93,7 @@ export const NavigateStyle = styled.div`
         transform: scale(1.05);
         margin: 0 0.15rem;
         p {
-          color: #cf5d31;
+          color: ${props => props.theme.primaryColor};
         }
       }
       .image {

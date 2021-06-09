@@ -30,9 +30,12 @@ export const DropdownStyle = styled.div`
 
   .dropdown-content a {
     color: #fff;
-    padding: 8px 10px;
+    padding: 8px 2px;
     text-decoration: none;
     display: block;
+    font-size:1vw;
+    overflow: hidden;
+    max-height: 1vw;
   }
 
   .dropdown-content a:hover {
@@ -50,7 +53,6 @@ export const DropdownStyle = styled.div`
     transition: 0.05s;
   }
   .dropdown-content > .nav-link-item {
-    font-size: 16px;
-    height: 20px;
+    font-size: 1vw;
   }
 `
