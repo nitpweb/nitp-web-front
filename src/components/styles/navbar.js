@@ -63,6 +63,7 @@ export const NavbarStyle = styled.div`
     .col-6 {
       width: 50%;
       justify-content: space-evenly;
+      align-items: center;
       flex-direction: row;
       display: flex;
       .nav-link-item-active > span {
@@ -78,7 +79,6 @@ export const NavbarStyle = styled.div`
         line-height: 1.6;
         display: flex;
         align-items: center;
-        height: 35px;
         span:hover {
           color: #ffe657;
           transition: 0.1s ease-in-out;

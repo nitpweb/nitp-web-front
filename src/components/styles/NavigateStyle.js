@@ -7,12 +7,13 @@ export const NavigateStyle = styled.div`
   top: 50%;
   left: 0%;
   transform: translateY(-50%);
-  margin: 0 0 0 7vw;
+  margin: 0 0 0 6vw;
   background: ${props => props.theme.backgroundColor};
   .childLink {
     margin-top: 0;
     width: 120px;
     max-height: 90px;
+    max-height: 10vh;
     border: 1px solid lightgrey;
     display: flex;
     flex-direction: column;
@@ -61,7 +62,7 @@ export const NavigateStyle = styled.div`
       }
     }
     .image {
-      max-height: 40px;
+      max-height: 3vh;
       width: auto;
     }
   }
