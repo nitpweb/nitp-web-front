@@ -38,7 +38,7 @@ export const TabPage = styled.div`
           h2 {
             p {
               color: ${props => props.theme.textColor};
-              font-size: 1.3rem;
+              font-size: 1rem;
               font-weight: 500;
             }
           }
@@ -109,7 +109,7 @@ export const TabPage = styled.div`
         }
         p {
           color: ${props => props.theme.textColor};
-          font-size: 1.3rem;
+          font-size: 1rem;
           font-weight: 500;
         }
       }

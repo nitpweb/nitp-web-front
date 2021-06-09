@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const FacultyCard = styled.div`
 width: 320px;
@@ -6,7 +6,7 @@ width: 320px;
   margin: auto;
   margin-top: 40px;
   margin-bottom: 40px;
-  background: #fcfcfc;
+  background: ${props => props.theme.backgroundSecColor};
   box-shadow: 0 0 21px rgba(0, 0, 0, 0.25);
   .faculty1 {
     width: 320px;
@@ -21,9 +21,9 @@ width: 320px;
     height: 380px;
     background: linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.89) 0%,
+      ${props => props.theme.backgroundColor} 0%,
       #fbe5d9 100%
-    );
+    ) 10%;
     opacity: 0;
     position: absolute;
     z-index: 2;
@@ -61,13 +61,16 @@ width: 320px;
     border-radius: 50%;
     width: 126px;
     height: 126px;
-  }
-  img {
+     img {
     width: 100%;
     height: auto;
   }
+  }
+ h2{
+   color:${props => props.theme.primaryTextColor}
+ }
   h3 {
-    color: #4e4e4e;
+    color: ${props => props.theme.textColor};
     line-height: 0.1;
   }
   p {

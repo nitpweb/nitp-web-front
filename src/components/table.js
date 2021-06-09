@@ -1,15 +1,15 @@
 import React from "react"
-import "./global/css/table.css"
+import { TableStyle } from "./styles/table"
 
 const Table = ({ children }) => {
   return (
-    <>
+    <TableStyle>
       <div className="table-t">
         <div className="tablewrap">
           <div>{children}</div>
         </div>
       </div>
-    </>
+    </TableStyle>
   )
 }
 
