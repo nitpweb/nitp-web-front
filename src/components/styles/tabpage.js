@@ -116,7 +116,7 @@ export const TabPage = styled.div`
     }
   }
   @media (max-width: 768px) {
-    margin-top: 7rem;
+    margin-top: 10.5rem;
     .mainDiv {
       margin-top: 50px;
       width: 80vw;

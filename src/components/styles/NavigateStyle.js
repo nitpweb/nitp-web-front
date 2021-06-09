@@ -11,16 +11,15 @@ export const NavigateStyle = styled.div`
   .childLink {
     margin-top: 0;
     width: 120px;
-    height:70px;
-    min-height:50px;
+    max-height:78px;
     background-color: white;
     border: 1px solid lightgrey;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     margin: 0;
-    padding: 0;
+    padding: 0.2rem 0;
     transition: all 0.3s ease;
     background: white;
     cursor: pointer;
@@ -61,7 +60,8 @@ export const NavigateStyle = styled.div`
       }
     }
     .image {
-      max-height: 50%;
+      max-height: 40px;
+      width: auto;
     }
   }
   @media (max-width: 768px) {
