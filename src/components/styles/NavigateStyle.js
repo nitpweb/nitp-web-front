@@ -11,12 +11,14 @@ export const NavigateStyle = styled.div`
   .childLink {
     margin-top: 0;
     width: 120px;
-    min-height: 50px;
-    max-height: 78px;
+    height:70px;
+    min-height:50px;
     background-color: white;
     border: 1px solid lightgrey;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
     transition: all 0.3s ease;
@@ -36,20 +38,30 @@ export const NavigateStyle = styled.div`
     }
     &:focus {
       background-color: #cf5d31;
-      transform: scale(1.05);
-      margin: 0.15rem 0;
+      transform: scale(1.1);
+      margin: 0.25rem 0;
       p {
         color: white;
       }
-      object {
+      .image {
         color: white;
-        filter: invert(100%) sepia(0%) saturate(7473%) hue-rotate(163deg)
-          brightness(108%) contrast(108%);
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(200%) contrast(200%);
       }
     }
-    object {
+    &:hover {
+      background-color: #cf5d31;
+      transform: scale(1.1);
+      margin: 0.25rem 0;
+      p {
+        color: white;
+      }
+      .image {
+        color: white;
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(200%) contrast(200%);
+      }
+    }
+    .image {
       max-height: 50%;
-      width: auto;
     }
   }
   @media (max-width: 768px) {
@@ -61,7 +73,7 @@ export const NavigateStyle = styled.div`
     justify-content: center;
     margin: 0;
     .childLink {
-      width: 105px;
+      width: 125px;
       min-height: 35px;
       height: 35px;
       padding: 0 0.5rem;
@@ -82,7 +94,7 @@ export const NavigateStyle = styled.div`
           color: #cf5d31;
         }
       }
-      object {
+      .image {
         max-height: 50%;
         width: auto;
         display: none;
