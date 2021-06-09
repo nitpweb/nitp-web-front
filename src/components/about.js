@@ -3,8 +3,6 @@ import bulb from "./about/img/bulb.svg"
 import mission from "./about/img/mission.svg"
 import clock from "./about/img/clock.svg"
 import map from "./about/img/map.svg"
-import "./about/css/about.css"
-import FLoatmenu from "./about/floatmenu"
 import Floatmenu from "./about/floatmenu"
 import { PageLayout } from "./styles/pagelayout"
 
