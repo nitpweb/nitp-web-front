@@ -19,12 +19,14 @@ export const NavbarStyle = styled.div`
       flex-direction: row;
       justify-content: flex-start;
       padding-left: 2vw;
+      align-items: center;
       width: 50%;
     }
     .end {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
+      align-items: center;
       width: 50%;
       padding-right: 2vw;
       .themebtn {
@@ -152,6 +154,10 @@ export const NavbarStyle = styled.div`
     width: 42%;
     padding-left: 3vw;
     padding-top: 0.5vw;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     h2 {
       margin-bottom: 0;
       font-size: 1.3vw;
