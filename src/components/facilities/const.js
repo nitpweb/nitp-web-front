@@ -34,7 +34,7 @@ export const FacilityList = [
         title: "Woman Cell",
         data:"womancell"
     }, {
-        title: "Electric Maintainence Unit (EMU)",
+        title: "Electric Maintainence Unit",
         data:"emu"
     }
 ]
