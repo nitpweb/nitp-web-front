@@ -13,7 +13,7 @@ const Administrationpage = () => {
   function getView(callback) {
     setView(callback)
   }
-  console.log()
+  
   return (
     <>
       <AdminStyle>
