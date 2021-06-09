@@ -10,7 +10,7 @@ export const NavbarStyle = styled.div`
   z-index: 5;
   .nav-head-row {
     height: 24px;
-    background-color: #941b0c;
+    background-color: ${props => props.theme.primaryColor};
     z-index: 5;
     width: 100vw;
     display: flex;
@@ -35,7 +35,13 @@ export const NavbarStyle = styled.div`
     }
   }
   .nav-title-row {
-    background-color: ${props=>props.theme.primaryColor};
+    background-color: ${props => props.theme.backgroundColor};
+    .nav-col {
+      h2,
+      h4 {
+        color: ${props => props.theme.textColor};
+      }
+    }
     .mobilelogo {
       display: none;
       margin-left: 10px;
@@ -87,7 +93,7 @@ export const NavbarStyle = styled.div`
     user-select: none;
     .logobadge {
       position: relative;
-      background-color: #941b0c;
+      background-color: ${props => props.theme.primaryColor};
       border-radius: 0px 0px 40% 40%;
       max-height: 11vw;
       text-decoration: none;
@@ -108,7 +114,7 @@ export const NavbarStyle = styled.div`
         justify-content: center;
         img {
           max-height: 8vw;
-          border: 0.5vw solid #941b0c;
+          border: 0.5vw solid ${props => props.theme.primaryColor};
           border-radius: 50%;
           display: flex;
           box-shadow: inset 0px 40px 50px rgba(0, 0, 0, 0.25);
@@ -123,7 +129,7 @@ export const NavbarStyle = styled.div`
     width: 100vw;
     background-color: #d45628;
     font-family: "Source Sans Pro";
-    color: #fff;
+    color: ${props => props.theme.backgroundColor};
     padding-top: 2px;
     letter-spacing: 0.2rem;
     padding-bottom: 2px;
@@ -136,7 +142,7 @@ export const NavbarStyle = styled.div`
       align-items: center;
       .dep-link-item {
         text-decoration: none;
-        color: #fff;
+        color: ${props => props.theme.backgroundColor};
         font-size: 0.8vw;
       }
     }
@@ -160,7 +166,7 @@ export const NavbarStyle = styled.div`
     }
   }
   .nav-sidebar > .nav-sidebar-div:nth-of-type(2n + 1) {
-    background-color: #f7f7f7;
+    background-color: ${props => props.theme.backgroundSecColor};
   }
 
   @media (max-width: 1200px) {
@@ -176,10 +182,29 @@ export const NavbarStyle = styled.div`
     }
   }
   @media (max-width: 768px) {
+    .nav-title-row {
+      .mobilelogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 10px;
+        img {
+          max-height: 6vh;
+        }
+      }
+      .nav-toggle {
+        display: block;
+        position: relative;
+        max-width: 10%;
+        border: none;
+        background: transparent;
+        max-height: 10vh;
+      }
+    }
     .nav-col {
       width: 70%;
       max-width: 70vw;
-      color: #313131;
+      color: ${props => props.theme.backgroundColor};
       h2 {
         font-size: 10px;
       }
@@ -190,35 +215,17 @@ export const NavbarStyle = styled.div`
     }
 
     .departsidedrop > .nav-sidebar-div:nth-of-type(2n + 1) {
-      background-color: #fff;
+      background-color: ${props => props.theme.backgroundSecColor};
     }
     .mainsidedrop > .nav-sidebar-div:nth-of-type(2n + 1) {
-      background-color: #fff;
+      background-color: ${props => props.theme.backgroundSecColor};
     }
     .departsidedrop,
     .mainsidedrop {
       display: none;
       transition: 0.1s;
     }
-    .nav-title-row {
-      .mobilelogo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-right: 10px;
-        img {
-          max-height: 6vh;
-        }
-        .nav-toggle {
-          display: block;
-          position: relative;
-          max-width: 10%;
-          border: none;
-          background: transparent;
-          max-height: 10vh;
-        }
-      }
-    }
+
     .logobadge {
       display: none;
     }
@@ -251,7 +258,7 @@ export const NavbarStyle = styled.div`
     top: 0;
     float: right;
     z-index: 7;
-    background: #fff;
+    background: ${props => props.theme.backgroundColor};
     min-width: 280px;
     width: 280px;
     max-width: 90vw;
@@ -265,7 +272,7 @@ export const NavbarStyle = styled.div`
     padding-left: 25px;
     align-items: center;
     text-decoration: none;
-    color: #000;
+    color: ${props => props.theme.textColor};
     font-family: "Source Sans Pro";
     font-size: 16px;
     line-height: 1;
@@ -285,7 +292,7 @@ export const NavbarStyle = styled.div`
     margin-left: 20px;
     font-family: "Source Sans Pro";
     font-weight: bold;
-    color: #000;
+    color: ${props => props.theme.textColor};
   }
   .navsidetop > img {
     width: 50px;

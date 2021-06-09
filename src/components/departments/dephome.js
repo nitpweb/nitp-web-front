@@ -43,17 +43,17 @@ const Dephomepage = ({
     <TabPage>
       <Navigate data={datalist} callback={getView} />
       <div className="mainDiv">
-        <PageLayout>
+        <>
           {/* <div className="layoutrow layoutrowmain" id="home">
             <div className="col-6">
               <div className="row rowmarl3">
-                <h1 data-aos="zoom-in-right">{title}</h1>
+                <h1 >{title}</h1>
               </div>
               {TitleDescription()}
             </div>
             <div className="col-6 imgcolstyle">
               <img
-                data-aos="zoom-in"
+                
                 src={main}
                 className="img-fluid"
                 loading="lazy"
@@ -64,10 +64,10 @@ const Dephomepage = ({
             <div className="layoutrow" id="about">
               <div className="layoutabout">
                 <div className="row">
-                  <h1 data-aos="zoom-in">About</h1>
+                  <h1>About</h1>
                 </div>
                 <div className="row">
-                  <p data-aos="zoom-in">{About()}</p>
+                  <p>{About()}</p>
                 </div>
               </div>
             </div>
@@ -76,13 +76,13 @@ const Dephomepage = ({
             <div className="layoutrow" id="happening">
               <div className="col-6">
                 <div className="row">
-                  <h1 data-aos="zoom-in-right">Happenings</h1>
+                  <h1>Happenings</h1>
                 </div>
                 <div className="row">
                   <div id="layoutnoticewrap">
                     {notices &&
                       notices.length != 0 &&
-                      notices.map(notice => { 
+                      notices.map(notice => {
                         if (notice.title != "") {
                           return (
                             <Notice
@@ -106,12 +106,7 @@ const Dephomepage = ({
                 </div>
               </div>
               <div className="col-6 imgcolstyle">
-                <img
-                  data-aos="zoom-in"
-                  src={pc}
-                  className="img-fluid"
-                  loading="lazy"
-                />
+                <img src={pc} className="img-fluid" loading="lazy" />
               </div>
             </div>
           )}
@@ -120,19 +115,14 @@ const Dephomepage = ({
             <>
               <div className="layoutrow layoutrow1" id="mission">
                 <div className="col-6 imgcolstyle">
-                  <img
-                    data-aos="zoom-in"
-                    src={mountain}
-                    className="img-fluid"
-                    loading="lazy"
-                  />
+                  <img src={mountain} className="img-fluid" loading="lazy" />
                 </div>
                 <div className="col-6">
                   <div className="row rowmarr3">
-                    <h1 >Mission</h1>
+                    <h1>Mission</h1>
                   </div>
                   <div className="row rowmarr3">
-                    <p >{Mission()}</p>
+                    <p>{Mission()}</p>
                   </div>
                 </div>
               </div>
@@ -146,11 +136,7 @@ const Dephomepage = ({
                   </div>
                 </div>
                 <div className="col-6 imgcolstyle">
-                  <img
-                    src={lens}
-                    className="img-fluid"
-                    loading="lazy"
-                  />
+                  <img src={lens} className="img-fluid" loading="lazy" />
                 </div>
               </div>
             </>
@@ -158,24 +144,19 @@ const Dephomepage = ({
           {view == "contact" && (
             <div className="layoutrow layoutrow1" id="contact">
               <div className="col-6 imgcolstyle">
-                <img
-                  data-aos="zoom-in"
-                  src={map}
-                  className="img-fluid"
-                  loading="lazy"
-                />
+                <img src={map} className="img-fluid" loading="lazy" />
               </div>
               <div className="col-6">
                 <div className="row rowmarr3">
-                  <h1 data-aos="zoom-in-left">Contact</h1>
+                  <h1>Contact</h1>
                 </div>
                 <div className="row rowmarr3">
-                  <p data-aos="zoom-in-left">{Contact()}</p>
+                  <p>{Contact()}</p>
                 </div>
               </div>
             </div>
           )}
-        </PageLayout>
+        </>
       </div>
     </TabPage>
   )

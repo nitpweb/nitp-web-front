@@ -1,20 +1,26 @@
 import styled from "styled-components"
 
 export const PageLayout = styled.div`
-width: 100%;
+  width: 100%;
+  background: ${props => props.theme.backgroundColor};
+
   .layoutrowmain {
     .col-6 {
       .row {
         h1 {
           font-weight: bold;
-          color: #2b2b2b;
+          color: ${props => props.theme.textColor};
           font-size: 3rem;
         }
         h2 {
-          color: #656565;
+          p {
+            color: ${props => props.theme.textColor};
+            font-size: 1.3rem;
+            font-weight: 500;
+          }
         }
         #aut {
-          color: #606060;
+          color: ${props => props.theme.textColor};
           font-weight: bold;
         }
       }
@@ -34,7 +40,6 @@ width: 100%;
     padding-bottom: 10vh;
     font-family: "Source Sans Pro";
     .layoutrow:nth-of-type(2n + 1) {
-      background-color: #fcfcfc;
       .col-6:nth-child(1) {
         justify-content: center;
       }
@@ -48,19 +53,19 @@ width: 100%;
           min-width: 80%;
           overflow-y: scroll;
           scrollbar-width: none;
-          div{
-            p{
+          div {
+            p {
               font-size: 1rem;
             }
           }
         }
         p {
-          color: #454545;
+          color: ${props => props.theme.textColor};
           font-weight: 500;
         }
         h1 {
           font-weight: bold;
-          color: #2b2b2b;
+          color: ${props => props.theme.textColor};
           font-size: 2.5rem;
         }
       }
@@ -75,8 +80,12 @@ width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+
+      h1 {
+        color: ${props => props.theme.textColor};
+      }
       p {
-        color: #454545;
+        color: ${props => props.theme.textColor};
         font-size: 1.3rem;
         font-weight: 500;
       }
@@ -88,11 +97,12 @@ width: 100%;
       padding: 0vw 0vw 0vw 3vw;
       h1 {
         font-weight: bold;
-        color: #2b2b2b;
+        color: ${props => props.theme.textColor};
         font-size: 3rem;
       }
     }
   }
+
   @media (max-width: 768px) {
     .layoutrow1 {
       flex-direction: column-reverse;

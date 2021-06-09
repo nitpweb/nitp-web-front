@@ -19,7 +19,7 @@ const Importantlink = () => {
   }, [])
   return (
     <ImportantLinkStyle
-      style={{ transform: `translateY(${offsetY * -0.2}px)` }}
+      style={{ transform: `translateY(${offsetY * -0.1}px)` }}
     >
       <div className="link-col">
         <a href="http://exam.nitp.ac.in/">

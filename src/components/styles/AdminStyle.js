@@ -7,13 +7,15 @@ export const AdminStyle = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 4rem;
+  padding-top: 4rem;
   text-rendering: optimizeLegibility;
+  background: ${props => props.theme.backgroundColor};
+
   .mainDiv {
     display: flex;
     width: 75vw;
     margin: 2vw 0 0 0;
-    padding:1rem;
+    padding: 1rem;
     height: 80vh;
     box-shadow: -3px -3px 12px #ffffff73, 3px 3px 12px rgba(94, 104, 121, 0.288);
     align-items: flex-start;
@@ -23,16 +25,17 @@ export const AdminStyle = styled.div`
     overflow: scroll;
     align-content: flex-start;
     -ms-overflow-style: none;
+    background: ${props => props.theme.backgroundColor};
     scrollbar-width: none;
     &::-webkit-scrollbar {
-  display: none;
-}
+      display: none;
+    }
   }
   @media (max-width: 768px) {
-      margin-top: 7rem;
-      .mainDiv{
-          margin-top: 50px;
-          width: 80vw;
-      }
+    margin-top: 7rem;
+    .mainDiv {
+      margin-top: 50px;
+      width: 80vw;
+    }
   }
 `

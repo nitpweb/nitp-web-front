@@ -75,7 +75,7 @@ const Navbar = ({ theme, changeTheme, department }) => {
           </button>
         </div>
       </div>
-      <div className="nav-title-row row">
+      <div className="row nav-title-row">
         <Link className="mobilelogo" data-aos="zoom-in" to="/">
           <img src={logo} alt="NIT PATNA" />
         </Link>

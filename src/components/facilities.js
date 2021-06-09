@@ -326,7 +326,7 @@ const Facilitiespage = () => {
               </div>
             </div>
           )}
-          {view == "woman" && (
+          {view == "womancell" && (
             <div className="layoutrow" id="wc">
               <div className="col-6">
                 <div className="row rowmarl3">

@@ -1,10 +1,9 @@
 import React from "react"
-import "./css/adcard.css"
+import { AdCardStyle } from "../styles/adcard"
 
 const Adcard = props => {
   return (
-    <>
-      <div className="adcard">
+      <AdCardStyle>
         <div className="row adrow adname">
           <span>{props.name}</span>
         </div>
@@ -14,8 +13,7 @@ const Adcard = props => {
         <div className="row type">
           <span>{props.type}</span>
         </div>
-      </div>
-    </>
+      </AdCardStyle>
   )
 }
 

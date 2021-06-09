@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const HomeStyle = styled.div`
+
+  background-color: ${props => props.theme.backgroundColor};
   .nitpbackimg {
     width: 100%;
     max-height: 90vw;
@@ -16,11 +18,11 @@ export const HomeStyle = styled.div`
       box-shadow: 7px 7px 26px rgba(207, 207, 207, 0.36);
       height: 25px;
       font-family: "Source Sans Pro";
-      color: #f37023;
+      color: ${props => props.theme.primaryTextColor};
       text-decoration: none;
       a {
         text-decoration: none;
-        color: #f37023;
+        color: ${props => props.theme.primaryTextColor};
         font-size: 14px;
         font-weight: bold;
       }
@@ -31,7 +33,6 @@ export const HomeStyle = styled.div`
     overflow: hidden;
     width: 100%;
     max-height: 90vh;
-    z-index: -1;
     position: relative;
   }
   .notice-row {
@@ -40,7 +41,6 @@ export const HomeStyle = styled.div`
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: ${props=>props.theme.primaryColor};
     width: 40vw;
     height: 500px;
     z-index: 1;
@@ -64,7 +64,6 @@ export const HomeStyle = styled.div`
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: #ffffff;
     width: 40vw;
     height: 500px;
     z-index: 1;
@@ -87,12 +86,11 @@ export const HomeStyle = styled.div`
   .notice-head,
   .event-head {
     height: 52px;
-    background: #ffffff;
     border-radius: 2px;
     z-index: 2;
     font-size: 28px;
     line-height: 35px;
-    color: #f37023;
+    color: ${props => props.theme.primaryTextColor};
     display: flex;
     justify-content: space-between;
     font-family: "Quicksand";
@@ -102,14 +100,14 @@ export const HomeStyle = styled.div`
     // padding: 2vw;
     #notice-head-p,
     #event-head-p {
-      color: #3e3e3e;
+      color: ${props => props.theme.textColor};
       font-size: 1rem;
       display: flex;
       text-decoration: none;
     }
 
     #news-head-p {
-      color: #3e3e3e;
+      color: ${props => props.theme.textColor};
       font-size: 1rem;
       display: flex;
       margin-left: 122px;
@@ -161,7 +159,6 @@ export const HomeStyle = styled.div`
     flex-wrap: wrap;
     width: 100vw;
     height: 350px;
-    background-color: #ffffff;
     width: 90vw;
     z-index: -1;
     margin-right: 5vw;
@@ -189,7 +186,7 @@ export const HomeStyle = styled.div`
     border-radius: 5px;
     background: linear-gradient(
       270deg,
-      #ffffff 0%,
+      ${props => props.theme.backgroundColor} 0%,
       rgba(255, 255, 255, 0) 6.98%
     );
   }

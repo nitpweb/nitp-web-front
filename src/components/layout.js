@@ -39,11 +39,16 @@ const Layout = props => {
         }
       `}
       render={data => (
-        <ThemeProvider theme={lightTheme?light:dark}>
-          <Navbar theme={lightTheme} changeTheme={changeTheme} department={props.department}></Navbar>
+        <ThemeProvider theme={lightTheme ? light : dark}>
+          <Navbar
+            theme={lightTheme}
+            changeTheme={changeTheme}
+            department={props.department}
+          ></Navbar>
           <div
             css={css`
               padding-top: 4.8vw;
+              background-color: ${props => props.theme.backgroundColor};
             `}
           >
             <main>{children}</main>
