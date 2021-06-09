@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react"
-import "./global/css/navbar.scss"
-import "./global/css/dropdown.scss"
 import logo from "./global/img/logo512.png"
 import toggle from "../assets/toggle.svg"
 import { window } from "ssr-window"
@@ -14,6 +12,9 @@ import homeicon from "./global/sideicons/home.svg"
 import studenticon from "./global/sideicons/student.svg"
 import placementicon from "./global/sideicons/placements.svg"
 import sidedropicon from "./home/img/dropdown.svg"
+import { NavbarStyle } from "./styles/navbar"
+import { Dropdown } from "./global/dropdown"
+import Navlist from "./global/navlist"
 
 const Depnavbar = props => {
   const pathname = window.location.pathname.split("/")[1]
@@ -64,7 +65,7 @@ const Depnavbar = props => {
   }, [])
 
   return (
-    <>
+    <NavbarStyle>
       <div className="nav-row">
         <Link className="mobilelogo" data-aos="zoom-in" to="/">
           <img src={logo} alt="NIT PATNA" />
@@ -104,43 +105,7 @@ const Depnavbar = props => {
             <span>Academics</span>
           </Link>
           <div id="navblank"></div>
-          <div className="dropdown nav-link-div">
-            <button className="dropbtn nav-link-div nav-link-item">
-              Departments
-            </button>
-            <div className="dropdown-content">
-              <Link className="nav-link-item" to="/cse">
-                <span>Computer Science and Engineering</span>
-              </Link>
-              <Link className="nav-link-item" to="/ece">
-                <span>Electronics and Communication Engineering</span>
-              </Link>
-              <Link className="nav-link-item" to="/ee">
-                <span>Electrical Engineering</span>
-              </Link>
-              <Link className="nav-link-item" to="/me">
-                <span>Mechanical Engineering</span>
-              </Link>
-              <Link className="nav-link-item" to="/ce">
-                <span>Civil Engineering</span>
-              </Link>
-              <Link className="nav-link-item" to="/hss">
-                <span>Humanities & Social Sciences</span>
-              </Link>
-              <Link className="nav-link-item" to="/arch">
-                <span>Architecture</span>
-              </Link>
-              <Link className="nav-link-item" to="/physics">
-                <span>Physics</span>
-              </Link>
-              <Link className="nav-link-item" to="/chem">
-                <span>Chemistry</span>
-              </Link>
-              <Link className="nav-link-item" to="/math">
-                <span>Mathematics</span>
-              </Link>
-            </div>
-          </div>
+          <Dropdown title="Departments" list={Navlist.departments} />
           <Link
             className="nav-link-item nav-link-div"
             activeClassName="nav-link-item-active"
@@ -292,56 +257,13 @@ const Depnavbar = props => {
             </div>
             <div id="departsidedropwrap">
               <div className="departsidedrop">
-                <Link to="/cse" className="nav-sidebar-div">
-                  <p>
-                    <span>Computer Science and Engineering</span>
-                  </p>
-                </Link>
-                <Link to="/ece" className="nav-sidebar-div">
-                  <p>
-                    <span>Electronics and Communication Engineering</span>
-                  </p>
-                </Link>
-                <Link to="/ee" className="nav-sidebar-div">
-                  <p>
-                    <span>Electrical Engineering</span>
-                  </p>
-                </Link>
-                <Link to="/me" className="nav-sidebar-div">
-                  <p>
-                    <span>Mechanical Engineering</span>
-                  </p>
-                </Link>
-                <Link to="/ce" className="nav-sidebar-div">
-                  <p>
-                    <span>Civil Engineering</span>
-                  </p>
-                </Link>
-                <Link to="/hss" className="nav-sidebar-div">
-                  <p>
-                    <span>Humanities & Social Sciences</span>
-                  </p>
-                </Link>
-                <Link to="/arch" className="nav-sidebar-div">
-                  <p>
-                    <span>Architecture</span>
-                  </p>
-                </Link>
-                <Link to="/physics" className="nav-sidebar-div">
-                  <p>
-                    <span>Physics</span>
-                  </p>
-                </Link>
-                <Link to="/chem" className="nav-sidebar-div">
-                  <p>
-                    <span>Chemistry</span>
-                  </p>
-                </Link>
-                <Link to="/math" className="nav-sidebar-div">
-                  <p>
-                    <span>Mathematics</span>
-                  </p>
-                </Link>
+                {Navlist.departments.map(item => (
+                  <Link to={item.url} className="nav-sidebar-div">
+                    <p>
+                      <span>{item.title}</span>
+                    </p>
+                  </Link>
+                ))}
               </div>
             </div>
             <Link to="/facilities" className="nav-sidebar-div">
@@ -383,7 +305,7 @@ const Depnavbar = props => {
           </Link>
         </div>
       </div>
-    </>
+    </NavbarStyle>
   )
 }
 

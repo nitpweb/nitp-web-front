@@ -3,6 +3,20 @@ import { NoticeStyle } from "../styles/notice"
 import downimg from "./img/download.svg"
 import flag from "./img/flag.svg"
 const Notice = props => {
+   const newtime = new Date().getTime()
+
+   let d = Math.round((newtime - props.time) / 3600000)
+   if (d > 48) {
+     d = new Date(props.time).toLocaleDateString()
+   } else if (d > 24) {
+     d = `${Math.round(d / 24)} days ago`
+   } else if (d < 1) {
+     d = `Just now`
+   } else if (d < 2) {
+     d = `${d} hour ago`
+   } else {
+     d = `${d} hours ago`
+   }
   return (
     <>
       <NoticeStyle>
@@ -22,7 +36,7 @@ const Notice = props => {
             })}
           </div>
           <div>
-            <p className="notet">{props.time}</p>
+            <p className="notet">{d}</p>
           </div>
         </div>
       </NoticeStyle>

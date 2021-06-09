@@ -1,4 +1,6 @@
-.newspage {
+import styled from "styled-components";
+
+export const NewspageStyle = styled.div`
   font-family: "Source Sans Pro";
   margin-top: 10vw;
   justify-content: space-evenly;
@@ -44,4 +46,4 @@
       color: #4b4b4b;
     }
   }
-}
+`

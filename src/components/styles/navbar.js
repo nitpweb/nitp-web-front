@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Navbar = styled.div`
+export const NavbarStyle = styled.div`
   .nav-row {
     display: -ms-flexbox;
     display: flex;

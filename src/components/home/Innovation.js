@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react"
-import "./css/main.css"
 import Union1 from "./img/Union1.svg"
 import Union from "./img/Union.svg"
 import Group444 from "./img/Group444.svg"
@@ -8,6 +7,7 @@ import Arrow from "./img/Arrow.svg"
 import InCard from "./InCard"
 import axios from "axios"
 import { Link } from "gatsby"
+import { InnovationStyle } from "../styles/home/innovation"
 
 const Innovation = () => {
   const [data, setData] = useState([])
@@ -64,7 +64,7 @@ const Innovation = () => {
   }
   return (
     <>
-      <div className="innovation">
+      <InnovationStyle>
         <p id="head">Innovation</p>
         <Link id="loadMore" to="/Innovation">
           view all
@@ -95,7 +95,7 @@ const Innovation = () => {
             <img id="arrow" src={Arrow} />
           </div>
         </div>
-      </div>
+      </InnovationStyle>
     </>
   )
 }

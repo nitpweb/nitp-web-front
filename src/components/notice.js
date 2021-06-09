@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
-import "./global/css/cards.scss"
 import Noticecard from "./home/notice"
+import { CardsStyle } from "./styles/cards"
 
 const Notice = () => {
   const [notices, setNotices] = useState()
@@ -20,28 +20,17 @@ const Notice = () => {
 
   return (
     <>
-      <div className="cardpage row">
+      <CardsStyle className="row">
         <div className="card-details-row">
           <h1>Notices</h1>
           <div className="fac-card" data-aos="fade-up">
             {notices && notices.map(notice => {
               const newtime = new Date().getTime()
-
-              let d = Math.round((newtime - notice.timestamp) / 3600000)
-              if (d > 24) {
-                d = `${Math.round(d / 24)} days ago`
-              } else if (d < 1) {
-                d = `Just now`
-              } else if (d < 2) {
-                d = `${d} hour ago`
-              } else {
-                d = `${d} hours ago`
-              }
               if (notice.title != "") {
                 return (
                   <Noticecard
                     detail={notice.title}
-                    time={d}
+                    time={notice.openDate}
                     key={notice.id}
                     attachments={notice.attachments}
                     imp={notice.important}
@@ -56,7 +45,7 @@ const Notice = () => {
             })}
           </div>
         </div>
-      </div>
+      </CardsStyle>
     </>
   )
 }

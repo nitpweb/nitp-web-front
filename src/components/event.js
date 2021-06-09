@@ -1,7 +1,7 @@
 import React from "react"
 import axios from "axios"
-import "./global/css/cards.scss"
 import Eventcard from "./home/eventcard"
+import { CardsStyle } from "./styles/cards"
 
 class Event extends React.Component {
   constructor(props) {
@@ -25,7 +25,7 @@ class Event extends React.Component {
   render() {
     return (
       <>
-        <div className="cardpage row">
+        <CardsStyle className="row">
           <div className="card-details-row">
             <h1>Events</h1>
             <div className="fac-card" data-aos="fade-up">
@@ -57,7 +57,7 @@ class Event extends React.Component {
               })}
             </div>
           </div>
-        </div>
+        </CardsStyle>
       </>
     )
   }

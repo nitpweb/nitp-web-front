@@ -1,10 +1,12 @@
-.cardpage {
+import styled from "styled-components"
+
+export const CardsStyle = styled.div`
   font-family: "Source Sans Pro";
   margin-top: 10vw;
   display: flex;
   justify-content: space-evenly;
   .card-img-row {
-      margin-top: 5vh;
+    margin-top: 5vh;
     justify-content: center;
     text-align: center;
     .facmail {
@@ -35,7 +37,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    #dir{
+    #dir {
       line-height: 1.5;
       letter-spacing: 1px;
       padding-right: 3vw;
@@ -72,10 +74,13 @@
       }
     }
   }
-}
-@media(max-width:768px){
-  .cardpage>.card-details-row{
-    width: 100%;
-    .fac-card{width: 98%;padding-left: 0;}
+  @media (max-width: 768px) {
+    .card-details-row {
+      width: 100%;
+      .fac-card {
+        width: 98%;
+        padding-left: 0;
+      }
+    }
   }
-}
+`

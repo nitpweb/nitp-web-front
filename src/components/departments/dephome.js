@@ -82,27 +82,22 @@ const Dephomepage = ({
                   <div id="layoutnoticewrap">
                     {notices &&
                       notices.length != 0 &&
-                      notices.map(notice => {
-                        const newtime = new Date().getTime()
-
-                        let d = Math.round(
-                          (newtime - notice.openDate) / 3600000
-                        )
-                        if (d > 24) {
-                          d = `${Math.round(d / 24)} days ago`
-                        } else if (d < 1) {
-                          d = `Just now`
-                        } else if (d < 2) {
-                          d = `${d} hour ago`
-                        } else {
-                          d = `${d} hours ago`
-                        }
+                      notices.map(notice => { 
                         if (notice.title != "") {
                           return (
                             <Notice
                               detail={notice.title}
-                              time={d}
+                              time={notice.openDate}
                               attachments={notice.attachments}
+                              key={notice.id}
+                              attachments={notice.attachments}
+                              imp={notice.important}
+                              link={
+                                notice.notice_link &&
+                                JSON.parse(notice.notice_link).url
+                                  ? JSON.parse(notice.notice_link).url
+                                  : ""
+                              }
                             />
                           )
                         }

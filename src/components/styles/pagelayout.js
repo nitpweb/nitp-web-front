@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const PageLayout = styled.div`
+width: 100%;
   .layoutrowmain {
     .col-6 {
       .row {
@@ -40,17 +41,21 @@ export const PageLayout = styled.div`
     }
     .col-6 {
       padding: 3vw;
-      div {
+      .row {
         #layoutnoticewrap {
           height: 400px;
           overflow: hidden;
           min-width: 80%;
           overflow-y: scroll;
           scrollbar-width: none;
+          div{
+            p{
+              font-size: 1rem;
+            }
+          }
         }
         p {
           color: #454545;
-          font-size: 1.3rem;
           font-weight: 500;
         }
         h1 {

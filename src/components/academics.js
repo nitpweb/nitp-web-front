@@ -4,10 +4,9 @@ import acadscholar from "./academics/img/acadscholar.svg"
 import mail from "./academics/img/mail.svg"
 import paper from "./academics/img/paper.svg"
 import test from "./academics/img/test.svg"
-import "./academics/css/academics.css"
-import Acadnotice from "./academics/acadnotice"
-import { Acadnoticeb } from "./academics/acadnotice"
 import Floatmenu from "./academics/floatmenu"
+import { PageLayout } from "./styles/pagelayout"
+import Notice from "./home/notice"
 
 class Academicspage extends React.Component {
   constructor(props) {
@@ -30,9 +29,9 @@ class Academicspage extends React.Component {
   }
   render() {
     return (
-      <div className="acadsection">
+      <PageLayout>
         <Floatmenu />
-        <div className="acmainrow acmainrowmain" id="home">
+        <div className="layoutrow layoutrowmain" id="home">
           <div className="col-6">
             <div className="row rowmarl3">
               <h1 data-aos="zoom-in-right">Academics</h1>
@@ -58,7 +57,7 @@ class Academicspage extends React.Component {
             />
           </div>
         </div>
-        <div className="acmainrow acmainrow1" id="admission">
+        <div className="layoutrow layoutrow1" id="admission">
           <div className="col-6 imgcolstyle">
             <img
               data-aos="zoom-in"
@@ -72,26 +71,15 @@ class Academicspage extends React.Component {
               <h1 data-aos="zoom-in-left">Admissions</h1>
             </div>
             <div className="row rowmarr3">
-              <div id="acadnoticewrap">
+              <div id="layoutnoticewrap">
                 {this.state.notices != undefined
                   ? this.state.notices.map(notice => {
-                      const newtime = new Date().getTime()
-
-                      let d = Math.round((newtime - notice.timestamp) / 3600000)
-                      if (d > 24) {
-                        d = `${Math.round(d / 24)} days ago`
-                      } else if (d < 1) {
-                        d = `Just now`
-                      } else if (d < 2) {
-                        d = `${d} hour ago`
-                      } else {
-                        d = `${d} hours ago`
-                      }
+                     
                       if (notice.title != "") {
                         return (
-                          <Acadnotice
+                          <Notice
                             detail={notice.title}
-                            time={d}
+                            time={notice.openDate}
                             attachments={notice.attachments}
                           />
                         )
@@ -102,32 +90,21 @@ class Academicspage extends React.Component {
             </div>
           </div>
         </div>
-        <div className="acmainrow" id="format">
+        <div className="layoutrow" id="format">
           <div className="col-6">
             <div className="row rowmarl3">
               <h1 data-aos="zoom-in-right">Formats</h1>
             </div>
             <div className="row rowmarl3">
-              <div id="acadnoticewrap">
+              <div id="layoutnoticewrap">
                 {this.state.notices != undefined
                   ? this.state.notices.map(notice => {
-                      const newtime = new Date().getTime()
-
-                      let d = Math.round((newtime - notice.timestamp) / 3600000)
-                      if (d > 24) {
-                        d = `${Math.round(d / 24)} days ago`
-                      } else if (d < 1) {
-                        d = `Just now`
-                      } else if (d < 2) {
-                        d = `${d} hour ago`
-                      } else {
-                        d = `${d} hours ago`
-                      }
+                     
                       if (notice.title != "") {
                         return (
-                          <Acadnoticeb
+                          <Notice
                             detail={notice.title}
-                            time={d}
+                            time={notice.openDate}
                             attachments={notice.attachments}
                           />
                         )
@@ -146,7 +123,7 @@ class Academicspage extends React.Component {
             />
           </div>
         </div>
-        <div className="acmainrow acmainrow1" id="notice">
+        <div className="layoutrow layoutrow1" id="notice">
           <div className="col-6 imgcolstyle">
             <img
               data-aos="zoom-in"
@@ -161,26 +138,15 @@ class Academicspage extends React.Component {
               <h1 data-aos="zoom-in-left">Notice</h1>
             </div>
             <div className="row rowmarr3">
-              <div id="acadnoticewrap">
+              <div id="layoutnoticewrap">
                 {this.state.notices != undefined
                   ? this.state.notices.map(notice => {
-                      const newtime = new Date().getTime()
-
-                      let d = Math.round((newtime - notice.timestamp) / 3600000)
-                      if (d > 24) {
-                        d = `${Math.round(d / 24)} days ago`
-                      } else if (d < 1) {
-                        d = `Just now`
-                      } else if (d < 2) {
-                        d = `${d} hour ago`
-                      } else {
-                        d = `${d} hours ago`
-                      }
+                     
                       if (notice.title != "") {
                         return (
-                          <Acadnotice
+                          <Notice
                             detail={notice.title}
-                            time={d}
+                            time={notice.openDate}
                             attachments={notice.attachments}
                           />
                         )
@@ -191,7 +157,7 @@ class Academicspage extends React.Component {
             </div>
           </div>
         </div>
-      </div>
+      </PageLayout>
     )
   }
 }

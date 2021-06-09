@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import bank from "./facilities/img/bank.svg"
 import dummy from "./facilities/img/dummy.png"
 import medical from "./facilities/img/medical.svg"
@@ -6,14 +6,13 @@ import security from "./facilities/img/security.svg"
 import wifi from "./facilities/img/wifi.svg"
 import woman from "./facilities/img/woman.svg"
 import electric from "./facilities/img/electric.svg"
-// import "./facilities/css/facilities.css"
 import Facilitymain from "./facilities/img/facilitymainimg"
 import Ccimg from "./facilities/img/ccimg"
 import Dummyimg from "./facilities/img/dummy"
-import FLoatmenu from "./facilities/floatmenu"
-import Floatmenu from "./facilities/floatmenu"
-import styled from "styled-components"
 import { PageLayout } from "./styles/pagelayout"
+import { TabPage } from "./styles/tabpage"
+import { ComputerCentre, FacilityList } from "./facilities/const"
+import Navigate from "./global/Navigate"
 const ccdetail =
   "A state-of-the-art Computer Centre started its operation on 27th November 2011. It serves as the central computing facility for the students, research scholars and teachers of the institute. The Centre is well equipped with modern Computers (190 in number), air conditioned labs and stabilized uninterrupted power supply among the other facilities. The Centre has seven labs for all the students and one lab exclusively for PhD scholars of the institute. All labs are equipped with IP cameras to monitor the activities remotely. The Centre has 1 Gbps, 24x7 internet connectivity on optical fiber under National Knowledge Network, Govt. of India.The Centre also has a Virtual Class Room and Desktop VideoConferencing facility. It operates from 8:30 AM to 5:30 PM."
 const libdetail =
@@ -38,316 +37,354 @@ const emudetail =
   "To provide Electric power supply to the Institute. EMU maintains all electrical equipment such as Lights, Fans, AC, etc. which are installed in NIT Patna campus. EMU is having an 11KV/415V Electrical Substation (commonly Known as POWER HOUSE), equipped with 02 Nos. 1250KVA Transformer, 02 Nos. 750 KVA Diesel Generator and Separate Electricals Panels for each feeder pillars/Buildings. <br/><br/>Land line- 0612-2371715 Extension No.-116 <br/>br/>For any type of Electrical Complaint kindly fill the form."
 
 const Facilitiespage = () => {
-  const Facility = PageLayout
+  const [view, setView] = useState("cc")
+  function getView(callback) {
+    setView(callback)
+  }
   return (
-    <Facility>
-      <Floatmenu />
-      <div className="layoutrow layoutrowmain" id="home">
-        <div className="col-6 imgcolstyle">
-          <div className="row rowmarl3">
-            <h1 data-aos="zoom-in-right">Facilities</h1>
-          </div>
-        </div>
-        <div className="col-6 imgcolstyle">
-          <Facilitymain />
-        </div>
+    <TabPage>
+      <Navigate data={FacilityList} callback={getView} />
+      {/* <Floatmenu /> */}
+      <div className="mainDiv">
+        <PageLayout>
+          {/* <div className="layoutrow layoutrowmain" id="home">
+            <div className="col-6 imgcolstyle">
+              <div className="row rowmarl3">
+                <h1 data-aos="zoom-in-right">Facilities</h1>
+              </div>
+            </div>
+            <div className="col-6 imgcolstyle">
+              <Facilitymain />
+            </div>
+          </div> */}
+          {view == "cc" && (
+            <div className="layoutrow layoutrow1" id="cc">
+              <div className="col-6 imgcolstyle">
+                <Ccimg />
+              </div>
+              <div className="col-6">
+                <div className="row rowmarr3">
+                  <h1 data-aos="zoom-in-left">Computer Centre</h1>
+                </div>
+                <div className="row rowmarr3">
+                  <p data-aos="zoom-in-left">{ccdetail}</p>
+                </div>
+              </div>
+            </div>
+          )}
+          {view == "library" && (
+            <div className="layoutrow" id="lib">
+              <div className="col-6">
+                <div className="row rowmarl3">
+                  <h1 data-aos="zoom-in-right">Library</h1>
+                </div>
+                <div className="row rowmarl3">
+                  <p data-aos="zoom-in-right">{libdetail}</p>
+                </div>
+              </div>
+              <div className="col-6 imgcolstyle">
+                <Dummyimg />
+              </div>
+              <div className="col-6 imgcolstyle">
+                <Dummyimg />
+              </div>
+              <div className="col-6">
+                <div className="row rowmarr3">
+                  <p data-aos="zoom-in-left">
+                    <strong>E-RESOURCE SECTION</strong>
+                    <br />
+                    <br />
+                    It also maintains an E-Resource Section which subscribes and
+                    maintains a wide collection of highly acclaimed e-journals
+                    published by some big names like:
+                    <br />
+                    AMERICAN SOCIETY OF CIVIL ENGINEERS(ASCE)
+                    <br />
+                    AMERICAN SOCIETY OF MECHANICAL ENGINEERS(ASME)
+                    <br />
+                    IEL
+                    <br />
+                    IEEE
+                    <br />
+                    NATURE
+                    <br />
+                    ACM
+                    <br />
+                    INDIAN STANDARD
+                    <br />
+                    SPRINGER
+                    <br />
+                    ...and many more. The total collection of e-journals in the
+                    E-Resource Section numbers to more than 2700 of diverse
+                    categories. This section is mainly used for vital
+                    information access and research.
+                  </p>
+                </div>
+              </div>
+              <div className="col-6">
+                <div className="row rowmarl3">
+                  <p data-aos="zoom-in-right">
+                    <strong>Special features of Central Library</strong>
+                    <br />
+                    <br />
+                    Separate zones for every department.
+                    <br />
+                    Separate section for SC/ST under the name of B.R. Ambedkar
+                    section.
+                    <br />
+                    Separate section for e-journals called the E-Resource
+                    Section.
+                    <br />
+                    Calm milieu and spacious studying facility within the
+                    library.
+                    <br />
+                    Centrally air-conditioned.
+                    <br />
+                    Library is the member of INDEST and DELNET.
+                  </p>
+                </div>
+              </div>
+              <div className="col-6 imgcolstyle">
+                <Dummyimg />
+              </div>
+            </div>
+          )}
+          {view == "medical" && (
+            <div className="layoutrow layoutrow1" id="med">
+              <div className="col-6 imgcolstyle">
+                <Dummyimg />
+              </div>
+              <div className="col-6">
+                <div className="row rowmarr3">
+                  <h1 data-aos="zoom-in-left">Medical Facilities</h1>
+                </div>
+                <div className="row rowmarr3">
+                  <p data-aos="zoom-in-left">
+                    Two permanent doctor has a fixed chamber within the
+                    institute premises. He can be consulted by the students and
+                    employees for any health related problems on every working
+                    day free of cost.
+                    <br />
+                    <br />
+                    Profile of the health consultants:
+                    <br />
+                    Dr.Vikas Kumar Raj
+                    <br />
+                    Senior Medical Officer
+                    <br />
+                    MBBS, MD, MBA(HCA)
+                    <br />
+                    PGD in DP & R and Family Medicine
+                    <br />
+                    PGC in Hospital Management Dr.V K Raj
+                    <br />
+                    <br />
+                    Dr.Santosh Kumar Sudhakar
+                    <br />
+                    Medical Officer
+                    <br />
+                    MBBS
+                    <br />
+                    Ex - Resident of DR.RML Hospital
+                    <br />
+                    New Delhi Dr.S K Sudhakar
+                    <br />
+                    <br />
+                    The institute also maintains a 24x7 ambulance which is used
+                    for transferring patients from the institute to Patna
+                    Medical College and Hospital(PMCH) in case of any emergency.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+          {view == "sports" && (
+            <div className="layoutrow" id="sport">
+              <div className="col-6">
+                <div className="row rowmarl3">
+                  <h1 data-aos="zoom-in-right">Sport Facilities</h1>
+                </div>
+                <div className="row rowmarl3">
+                  <p data-aos="zoom-in-right">{sports}</p>
+                </div>
+              </div>
+              <div className="col-6 imgcolstyle">
+                <Dummyimg />
+              </div>
+            </div>
+          )}
+          {view == "hostel" && (
+            <div className="layoutrow layoutrow1" id="hostel">
+              <div className="col-6 imgcolstyle">
+                <Dummyimg />
+              </div>
+              <div className="col-6">
+                <div className="row rowmarr3">
+                  <h1 data-aos="zoom-in-left">Hostel & Mess</h1>
+                </div>
+                <div className="row rowmarr3">
+                  <p data-aos="zoom-in-left">{hostel}</p>
+                </div>
+              </div>
+            </div>
+          )}
+          {view == "lab" && (
+            <div className="layoutrow" id="lab">
+              <div className="col-6">
+                <div className="row rowmarl3">
+                  <h1 data-aos="zoom-in-right">Laboratories</h1>
+                </div>
+                <div className="row rowmarl3">
+                  <p data-aos="zoom-in-right">
+                    Technical knowledge is of no worth without practical
+                    approach.Every department has laboratories which provide
+                    practical experience related to the subjects studied. The
+                    students are expected to take the lab courses for better
+                    learning. Various instruments, machines and computers are
+                    provided in the labs to facilitate the lab work. Lab
+                    assistants and Professor in-charge effectively guide the
+                    students through their practical work. Every department has
+                    an operational computer lab of its own to sharpen
+                    programming skills and to get hands - on experience with the
+                    use of the softwares required in their respective fields of
+                    concern. The labs are equipped with the latest technology
+                    and are periodically updated.
+                    <br />
+                    <br />
+                    <strong>Workshops</strong>
+                    <br /> A huge workshop with all required equipments,
+                    machines and tools is spread over a large area in the
+                    college.Work related to carpentry, blacksmithy, foundry,
+                    fitting etc.is carried out.All the activities are carried
+                    out under the vigilance and guidance of experienced
+                    instructors.
+                  </p>
+                </div>
+              </div>
+              <div className="col-6 imgcolstyle">
+                <Dummyimg />
+              </div>
+            </div>
+          )}
+          {view == "wifi" && (
+            <div className="layoutrow layoutrow1" id="wifi">
+              <div className="col-6 imgcolstyle">
+                <img
+                  data-aos="zoom-in"
+                  src={wifi}
+                  className="img-fluid"
+                  loading="lazy"
+                />
+              </div>
+              <div className="col-6">
+                <div className="row rowmarr3">
+                  <h1 data-aos="zoom-in-left">Wifi</h1>
+                </div>
+                <div className="row rowmarr3">
+                  <p data-aos="zoom-in-left">{wifidetail}</p>
+                </div>
+              </div>
+            </div>
+          )}
+          {view == "bank" && (
+            <div className="layoutrow" id="bank">
+              <div className="col-6">
+                <div className="row rowmarl3">
+                  <h1 data-aos="zoom-in-right">Bank</h1>
+                </div>
+                <div className="row rowmarl3">
+                  <p data-aos="zoom-in-right">{bankdetail}</p>
+                </div>
+              </div>
+              <div className="col-6 imgcolstyle">
+                <img
+                  data-aos="zoom-in"
+                  src={bank}
+                  className="img-fluid"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          )}
+          {view == "security" && (
+            <div className="layoutrow layoutrow1" id="security">
+              <div className="col-6 imgcolstyle">
+                <img
+                  data-aos="zoom-in"
+                  src={security}
+                  className="img-fluid"
+                  loading="lazy"
+                />
+              </div>
+              <div className="col-6">
+                <div className="row rowmarr3">
+                  <h1 data-aos="zoom-in-left">Security</h1>
+                </div>
+                <div className="row rowmarr3">
+                  <p data-aos="zoom-in-left">{securitydetail}</p>
+                </div>
+              </div>
+            </div>
+          )}
+          {view == "woman" && (
+            <div className="layoutrow" id="wc">
+              <div className="col-6">
+                <div className="row rowmarl3">
+                  <h1 data-aos="zoom-in-right">Woman Cell</h1>
+                </div>
+                <div className="row rowmarl3">
+                  <p data-aos="zoom-in-right">{womancell}</p>
+                </div>
+              </div>
+              <div className="col-6 imgcolstyle">
+                <img
+                  data-aos="zoom-in"
+                  src={woman}
+                  className="img-fluid"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          )}
+          {view == "emu" && (
+            <div className="layoutrow layoutrow1" id="electric">
+              <div className="col-6 imgcolstyle">
+                <img
+                  data-aos="zoom-in"
+                  src={electric}
+                  className="img-fluid"
+                  loading="lazy"
+                />
+              </div>
+              <div className="col-6">
+                <div className="row rowmarr3">
+                  <h1 data-aos="zoom-in-left">
+                    Electrical Maintainance Unit (EMU)
+                  </h1>
+                </div>
+                <div className="row rowmarr3">
+                  <p data-aos="zoom-in-left">
+                    To provide Electric power supply to the Institute. EMU
+                    maintains all electrical equipment such as Lights, Fans, AC,
+                    etc. which are installed in NIT Patna campus. EMU is having
+                    an 11KV/415V Electrical Substation (commonly Known as POWER
+                    HOUSE), equipped with 02 Nos. 1250KVA Transformer, 02 Nos.
+                    750 KVA Diesel Generator and Separate Electricals Panels for
+                    each feeder pillars/Buildings.
+                    <br />
+                    <br />
+                    Land line- 0612-2371715 Extension No.-116
+                    <br />
+                    <br />
+                    For any type of Electrical Complaint kindly fill the form.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+        </PageLayout>
       </div>
-      <div className="layoutrow layoutrow1" id="cc">
-        <div className="col-6 imgcolstyle">
-          <Ccimg />
-        </div>
-        <div className="col-6">
-          <div className="row rowmarr3">
-            <h1 data-aos="zoom-in-left">Computer Centre</h1>
-          </div>
-          <div className="row rowmarr3">
-            <p data-aos="zoom-in-left">{ccdetail}</p>
-          </div>
-        </div>
-      </div>
-      <div className="layoutrow" id="lib">
-        <div className="col-6">
-          <div className="row rowmarl3">
-            <h1 data-aos="zoom-in-right">Library</h1>
-          </div>
-          <div className="row rowmarl3">
-            <p data-aos="zoom-in-right">{libdetail}</p>
-          </div>
-        </div>
-        <div className="col-6 imgcolstyle">
-          <Dummyimg />
-        </div>
-        <div className="col-6 imgcolstyle">
-          <Dummyimg />
-        </div>
-        <div className="col-6">
-          <div className="row rowmarr3">
-            <p data-aos="zoom-in-left">
-              <strong>E-RESOURCE SECTION</strong>
-              <br />
-              <br />
-              It also maintains an E-Resource Section which subscribes and
-              maintains a wide collection of highly acclaimed e-journals
-              published by some big names like:
-              <br />
-              AMERICAN SOCIETY OF CIVIL ENGINEERS(ASCE)
-              <br />
-              AMERICAN SOCIETY OF MECHANICAL ENGINEERS(ASME)
-              <br />
-              IEL
-              <br />
-              IEEE
-              <br />
-              NATURE
-              <br />
-              ACM
-              <br />
-              INDIAN STANDARD
-              <br />
-              SPRINGER
-              <br />
-              ...and many more. The total collection of e-journals in the
-              E-Resource Section numbers to more than 2700 of diverse
-              categories. This section is mainly used for vital information
-              access and research.
-            </p>
-          </div>
-        </div>
-        <div className="col-6">
-          <div className="row rowmarl3">
-            <p data-aos="zoom-in-right">
-              <strong>Special features of Central Library</strong>
-              <br />
-              <br />
-              Separate zones for every department.
-              <br />
-              Separate section for SC/ST under the name of B.R. Ambedkar
-              section.
-              <br />
-              Separate section for e-journals called the E-Resource Section.
-              <br />
-              Calm milieu and spacious studying facility within the library.
-              <br />
-              Centrally air-conditioned.
-              <br />
-              Library is the member of INDEST and DELNET.
-            </p>
-          </div>
-        </div>
-        <div className="col-6 imgcolstyle">
-          <Dummyimg />
-        </div>
-      </div>
-      <div className="layoutrow layoutrow1" id="med">
-        <div className="col-6 imgcolstyle">
-          <Dummyimg />
-        </div>
-        <div className="col-6">
-          <div className="row rowmarr3">
-            <h1 data-aos="zoom-in-left">Medical Facilities</h1>
-          </div>
-          <div className="row rowmarr3">
-            <p data-aos="zoom-in-left">
-              Two permanent doctor has a fixed chamber within the institute
-              premises. He can be consulted by the students and employees for
-              any health related problems on every working day free of cost.
-              <br />
-              <br />
-              Profile of the health consultants:
-              <br />
-              Dr.Vikas Kumar Raj
-              <br />
-              Senior Medical Officer
-              <br />
-              MBBS, MD, MBA(HCA)
-              <br />
-              PGD in DP & R and Family Medicine
-              <br />
-              PGC in Hospital Management Dr.V K Raj
-              <br />
-              <br />
-              Dr.Santosh Kumar Sudhakar
-              <br />
-              Medical Officer
-              <br />
-              MBBS
-              <br />
-              Ex - Resident of DR.RML Hospital
-              <br />
-              New Delhi Dr.S K Sudhakar
-              <br />
-              <br />
-              The institute also maintains a 24x7 ambulance which is used for
-              transferring patients from the institute to Patna Medical College
-              and Hospital(PMCH) in case of any emergency.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="layoutrow" id="sport">
-        <div className="col-6">
-          <div className="row rowmarl3">
-            <h1 data-aos="zoom-in-right">Sport Facilities</h1>
-          </div>
-          <div className="row rowmarl3">
-            <p data-aos="zoom-in-right">{sports}</p>
-          </div>
-        </div>
-        <div className="col-6 imgcolstyle">
-          <Dummyimg />
-        </div>
-      </div>
-      <div className="layoutrow layoutrow1" id="hostel">
-        <div className="col-6 imgcolstyle">
-          <Dummyimg />
-        </div>
-        <div className="col-6">
-          <div className="row rowmarr3">
-            <h1 data-aos="zoom-in-left">Hostel & Mess</h1>
-          </div>
-          <div className="row rowmarr3">
-            <p data-aos="zoom-in-left">{hostel}</p>
-          </div>
-        </div>
-      </div>
-      <div className="layoutrow" id="lab">
-        <div className="col-6">
-          <div className="row rowmarl3">
-            <h1 data-aos="zoom-in-right">Laboratories</h1>
-          </div>
-          <div className="row rowmarl3">
-            <p data-aos="zoom-in-right">
-              Technical knowledge is of no worth without practical
-              approach.Every department has laboratories which provide practical
-              experience related to the subjects studied. The students are
-              expected to take the lab courses for better learning. Various
-              instruments, machines and computers are provided in the labs to
-              facilitate the lab work. Lab assistants and Professor in-charge
-              effectively guide the students through their practical work. Every
-              department has an operational computer lab of its own to sharpen
-              programming skills and to get hands - on experience with the use
-              of the softwares required in their respective fields of concern.
-              The labs are equipped with the latest technology and are
-              periodically updated.
-              <br />
-              <br />
-              <strong>Workshops</strong>
-              <br /> A huge workshop with all required equipments, machines and
-              tools is spread over a large area in the college.Work related to
-              carpentry, blacksmithy, foundry, fitting etc.is carried out.All
-              the activities are carried out under the vigilance and guidance of
-              experienced instructors.
-            </p>
-          </div>
-        </div>
-        <div className="col-6 imgcolstyle">
-          <Dummyimg />
-        </div>
-      </div>
-      <div className="layoutrow layoutrow1" id="wifi">
-        <div className="col-6 imgcolstyle">
-          <img
-            data-aos="zoom-in"
-            src={wifi}
-            className="img-fluid"
-            loading="lazy"
-          />
-        </div>
-        <div className="col-6">
-          <div className="row rowmarr3">
-            <h1 data-aos="zoom-in-left">Wifi</h1>
-          </div>
-          <div className="row rowmarr3">
-            <p data-aos="zoom-in-left">{wifidetail}</p>
-          </div>
-        </div>
-      </div>
-      <div className="layoutrow" id="bank">
-        <div className="col-6">
-          <div className="row rowmarl3">
-            <h1 data-aos="zoom-in-right">Bank</h1>
-          </div>
-          <div className="row rowmarl3">
-            <p data-aos="zoom-in-right">{bankdetail}</p>
-          </div>
-        </div>
-        <div className="col-6 imgcolstyle">
-          <img
-            data-aos="zoom-in"
-            src={bank}
-            className="img-fluid"
-            loading="lazy"
-          />
-        </div>
-      </div>
-      <div className="layoutrow layoutrow1" id="security">
-        <div className="col-6 imgcolstyle">
-          <img
-            data-aos="zoom-in"
-            src={security}
-            className="img-fluid"
-            loading="lazy"
-          />
-        </div>
-        <div className="col-6">
-          <div className="row rowmarr3">
-            <h1 data-aos="zoom-in-left">Security</h1>
-          </div>
-          <div className="row rowmarr3">
-            <p data-aos="zoom-in-left">{securitydetail}</p>
-          </div>
-        </div>
-      </div>
-      <div className="layoutrow" id="wc">
-        <div className="col-6">
-          <div className="row rowmarl3">
-            <h1 data-aos="zoom-in-right">Woman Cell</h1>
-          </div>
-          <div className="row rowmarl3">
-            <p data-aos="zoom-in-right">{womancell}</p>
-          </div>
-        </div>
-        <div className="col-6 imgcolstyle">
-          <img
-            data-aos="zoom-in"
-            src={woman}
-            className="img-fluid"
-            loading="lazy"
-          />
-        </div>
-      </div>
-      <div className="layoutrow layoutrow1" id="electric">
-        <div className="col-6 imgcolstyle">
-          <img
-            data-aos="zoom-in"
-            src={electric}
-            className="img-fluid"
-            loading="lazy"
-          />
-        </div>
-        <div className="col-6">
-          <div className="row rowmarr3">
-            <h1 data-aos="zoom-in-left">Electrical Maintainance Unit (EMU)</h1>
-          </div>
-          <div className="row rowmarr3">
-            <p data-aos="zoom-in-left">
-              To provide Electric power supply to the Institute. EMU maintains
-              all electrical equipment such as Lights, Fans, AC, etc. which are
-              installed in NIT Patna campus. EMU is having an 11KV/415V
-              Electrical Substation (commonly Known as POWER HOUSE), equipped
-              with 02 Nos. 1250KVA Transformer, 02 Nos. 750 KVA Diesel Generator
-              and Separate Electricals Panels for each feeder pillars/Buildings.
-              <br />
-              <br />
-              Land line- 0612-2371715 Extension No.-116
-              <br />
-              <br />
-              For any type of Electrical Complaint kindly fill the form.
-            </p>
-          </div>
-        </div>
-      </div>
-    </Facility>
+    </TabPage>
   )
 }
 
