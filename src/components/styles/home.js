@@ -40,7 +40,7 @@ export const HomeStyle = styled.div`
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: #ffffff;
+    background-color: ${props=>props.theme.primaryColor};
     width: 40vw;
     height: 500px;
     z-index: 1;

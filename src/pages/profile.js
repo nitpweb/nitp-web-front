@@ -1,5 +1,4 @@
 import React from "react"
-// import Deplayout from "../components/deplayout"
 import SEO from "../components/seo"
 import Facultyprofile from "../components/global/facultyprofile"
 import { useQueryParam, NumberParam, StringParam } from "use-query-params"
