@@ -7,7 +7,7 @@ const Navigate = ({callback,data}) => {
       {data.map(item => (
         <button className="childLink" onClick={() => callback(item.data)}>
           {item.img ? (
-            <object type="image/svg+xml" data={item.img} className="image"></object>
+            <img src={item.img} className="image" alt=""></img>
           ) : null}
           <p>{item.title}</p>
         </button>
