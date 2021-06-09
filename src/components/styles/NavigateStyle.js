@@ -73,7 +73,7 @@ export const NavigateStyle = styled.div`
     justify-content: center;
     margin: 0;
     .childLink {
-      width: 105px;
+      width: 125px;
       min-height: 35px;
       height: 35px;
       padding: 0 0.5rem;
