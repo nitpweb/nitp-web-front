@@ -142,7 +142,7 @@ export const NavbarStyle = styled.div`
       align-items: center;
       .dep-link-item {
         text-decoration: none;
-        color: ${props => props.theme.backgroundColor};
+        color:#fff;
         font-size: 0.8vw;
       }
     }

@@ -10,7 +10,7 @@ import { dark, light } from "./global/theme"
 
 const Layout = props => {
   const [lightTheme, setLightTheme] = useState(true)
-  
+
   function changeTheme() {
     setLightTheme(!lightTheme)
     localStorage.setItem("lightTheme", !lightTheme)
@@ -22,6 +22,15 @@ const Layout = props => {
       setLightTheme(JSON.parse(localStorageLayout))
     }
     if (typeof window !== `undefined`) {
+     window
+       .matchMedia("(prefers-color-scheme: dark)")
+       .addEventListener("change", event => {
+         if (event.matches) {
+           setLightTheme(false)
+         } else {
+           setLightTheme(true)
+         }
+       })
       const AOS = require("aos")
       AOS.init()
     }
