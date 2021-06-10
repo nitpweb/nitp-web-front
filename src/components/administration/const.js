@@ -203,32 +203,36 @@ const FC = [
     type: "Secretary",
   },
 ]
-const director=[
+const director = [
   {
-   "director":"something"
-  }
+    director: "something",
+  },
 ]
-const AdministrationData=[
+const AdministrationData = [
   {
-    "title":"Our Director",
-    "data":director
+    title: "Our Director",
+    data: director,
   },
   {
-    "title":"Deans",
-    "data":Deansinfo
-  },{
-    "title":"Board of Governors",
-    "data":BOG
-  },{
-    "title":"Building and Works Committee",
-    "data":BWC
-  },{
-    "title":"Institute Disciplinary Committee",
-    "data":IDC
-    },{
-      "title":"Finance Committee",
-      "data":FC
-    }
+    title: "Deans",
+    data: Deansinfo,
+  },
+  {
+    title: "Board of Governors",
+    data: BOG,
+  },
+  {
+    title: "Building and Works Committee",
+    data: BWC,
+  },
+  {
+    title: "Institute Disciplinary Committee",
+    data: IDC,
+  },
+  {
+    title: "Finance Committee",
+    data: FC,
+  },
 ]
 
 export default AdministrationData
