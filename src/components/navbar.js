@@ -217,7 +217,7 @@ const Navbar = ({ theme, changeTheme, department }) => {
               <span className="nav-side-link">Main Menu</span>
             </p>
           </div>
-          <div id="maindropwrap" className="mainsidedrop">
+          <div id="maindropwrap">
             <Link className="nav-sidebar-div" to="/">
               <div className="navsideicondiv">
                 <img src={homeicon} alt="" />
@@ -228,7 +228,6 @@ const Navbar = ({ theme, changeTheme, department }) => {
               className="nav-sidebar-div"
               to="/about"
               onClick={function () {
-                var x = document.querySelector(".departsidedrop")
                 var z = document.querySelector("#aboutsidedropwrap")
                 if (x.style.display === "none") {
                   x.style.display = "block"
@@ -424,13 +423,10 @@ const Navbar = ({ theme, changeTheme, department }) => {
             className="nav-sidebar-div"
             to="/about"
             onClick={function () {
-              var x = document.querySelector(".departsidedrop")
               var z = document.querySelector("#aboutsidedropwrap")
-              if (x.style.display === "none") {
-                x.style.display = "block"
+              if (z.style.display === "none") {
                 z.style.display = "flex"
               } else {
-                x.style.display = "none"
                 z.style.display = "none"
               }
             }}
@@ -441,7 +437,7 @@ const Navbar = ({ theme, changeTheme, department }) => {
             <p>About Us</p>
           </div>
           <div id="aboutsidedropwrap">
-            <div className="adminsidedrop">
+            <div className="departsidedrop">
               {Navlist.about.map(item => (
                 <Link
                   to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
@@ -458,13 +454,10 @@ const Navbar = ({ theme, changeTheme, department }) => {
             className="nav-sidebar-div"
             to="/administration"
             onClick={function () {
-              var x = document.querySelector(".departsidedrop")
               var z = document.querySelector("#adminsidedropwrap")
-              if (x.style.display === "none") {
-                x.style.display = "block"
+              if (z.style.display === "none") {
                 z.style.display = "flex"
               } else {
-                x.style.display = "none"
                 z.style.display = "none"
               }
             }}
@@ -475,7 +468,7 @@ const Navbar = ({ theme, changeTheme, department }) => {
             <p>Administration</p>
           </div>
           <div id="adminsidedropwrap">
-            <div className="adminsidedrop">
+            <div className="departsidedrop">
               {Navlist.admin.map(item => (
                 <Link
                   to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
@@ -499,13 +492,10 @@ const Navbar = ({ theme, changeTheme, department }) => {
             className="nav-sidebar-div"
             to="/academics"
             onClick={function () {
-              var x = document.querySelector(".departsidedrop")
               var z = document.querySelector("#acadsidedropwrap")
-              if (x.style.display === "none") {
-                x.style.display = "block"
+              if (z.style.display === "none") {
                 z.style.display = "flex"
               } else {
-                x.style.display = "none"
                 z.style.display = "none"
               }
             }}
@@ -518,7 +508,10 @@ const Navbar = ({ theme, changeTheme, department }) => {
           <div id="acadsidedropwrap">
             <div className="departsidedrop">
               {Navlist.academics.map(item => (
-                <Link to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`} className="nav-sidebar-div">
+                <Link
+                  to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+                  className="nav-sidebar-div"
+                >
                   <p>
                     <span>{item.title}</span>
                   </p>
@@ -531,14 +524,11 @@ const Navbar = ({ theme, changeTheme, department }) => {
             className="nav-sidebar-div"
             onClick={function () {
               var y = document.querySelector("#departdropicon")
-              var x = document.querySelector(".departsidedrop")
               var z = document.querySelector("#departsidedropwrap")
-              if (x.style.display === "none") {
-                x.style.display = "block"
+              if (z.style.display === "none") {
                 z.style.display = "flex"
                 y.style.transform = "rotate(180deg)"
               } else {
-                x.style.display = "none"
                 z.style.display = "none"
                 y.style.transform = "rotate(0deg)"
               }

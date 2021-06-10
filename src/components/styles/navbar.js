@@ -236,11 +236,10 @@ export const NavbarStyle = styled.div`
     .departsidedrop > .nav-sidebar-div:nth-of-type(2n + 1) {
       background-color: ${props => props.theme.backgroundSecColor};
     }
-    .mainsidedrop > .nav-sidebar-div:nth-of-type(2n + 1) {
+    #mainsidedrop > .nav-sidebar-div:nth-of-type(2n + 1) {
       background-color: ${props => props.theme.backgroundSecColor};
     }
-    .departsidedrop,
-    .mainsidedrop {
+    #mainsidedrop {
       display: none;
       transition: 0.1s;
     }
@@ -288,6 +287,7 @@ export const NavbarStyle = styled.div`
 
   .nav-sidebar-div {
     display: flex;
+    width:280px;
     padding-left: 25px;
     align-items: center;
     text-decoration: none;
@@ -322,26 +322,14 @@ export const NavbarStyle = styled.div`
   #sidedropicon {
     transition: 0.01s ease-in-out;
   }
-  #departsidedropwrap {
-    display: none;
-    padding-left: 0px;
-  }
-  #adminsidedropwrap{
-    display: none;
-    padding-left: 0px;
-  }
-  #aboutsidedropwrap{
-    display: none;
-    padding-left: 0px;
-  }
-  #acadsidedropwrap{
+  #departsidedropwrap, #adminsidedropwrap,#aboutsidedropwrap,#acadsidedropwrap {
     display: none;
     padding-left: 0px;
   }
   .departsidedrop > .nav-sidebar-div {
     padding-left: 25px;
   }
-  .mainsidedrop > .nav-sidebar-div {
+  #mainsidedrop > .nav-sidebar-div {
     display: flex;
   }
   #maindropwrap {
