@@ -66,11 +66,7 @@ const Navbar = ({ theme, changeTheme, department }) => {
   return (
     <NavbarStyle>
       <div className="nav-head-row">
-        <div className="col-6 start">
-          <span>
-            <Link to="/tenders">Tenders</Link>
-          </span>
-        </div>
+        <div className="col-6 start"></div>
         <div className="col-6 end">
           <button className="themebtn" onClick={() => changeTheme()}>
             <span>
@@ -118,14 +114,14 @@ const Navbar = ({ theme, changeTheme, department }) => {
           >
             <span>About Us</span>
           </Link>
-          <Dropdown title="Administration" list={Navlist.admin} />
-          {/* <Link
+
+          <Link
             className="nav-link-item"
             activeClassName="nav-link-item-active"
             to="/administration"
           >
-            <span>Administration</span>
-          </Link> */}
+            <Dropdown title="Administration" list={Navlist.admin} />
+          </Link>
           <Link
             className="nav-link-item"
             activeClassName="nav-link-item-active"
@@ -234,12 +230,46 @@ const Navbar = ({ theme, changeTheme, department }) => {
               </div>
               <p>About Us</p>
             </Link>
-            <Link className="nav-sidebar-div" to="/administration">
+            {/* <Link className="nav-sidebar-div" to="/administration">
               <div className="navsideicondiv">
                 <img src={administrationicon} alt="" />
               </div>
               <p>Administration</p>
-            </Link>
+            </Link> */}
+            <div
+              className="nav-sidebar-div"
+              to="/administration"
+              onClick={function () {
+                var x = document.querySelector(".adminsidedrop")
+                var z = document.querySelector("#adminsidedropwrap")
+                if (x.style.display === "none") {
+                  x.style.display = "block"
+                  z.style.display = "flex"
+                } else {
+                  x.style.display = "none"
+                  z.style.display = "none"
+                }
+              }}
+            >
+              <div className="navsideicondiv">
+                <img src={administrationicon} alt="" />
+              </div>
+              <p>Administration</p>
+            </div>
+            <div id="adminsidedropwrap">
+              <div className="adminsidedrop">
+                {Navlist.admin.map(item => (
+                  <Link
+                    to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+                    className="nav-sidebar-div"
+                  >
+                    <p>
+                      <span>{item.title}</span>
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </div>
             <Link className="nav-sidebar-div" to="/academics">
               <div className="navsideicondiv">
                 <img src={acadicon} alt="" />
@@ -335,12 +365,41 @@ const Navbar = ({ theme, changeTheme, department }) => {
             </div>
             <p>About Us</p>
           </Link>
-          <Link className="nav-sidebar-div" to="/administration">
+          <div
+            className="nav-sidebar-div"
+            to="/administration"
+            onClick={function () {
+              var x = document.querySelector(".adminsidedrop")
+              var z = document.querySelector("#adminsidedropwrap")
+              if (x.style.display === "none") {
+                x.style.display = "block"
+                z.style.display = "flex"
+              } else {
+                x.style.display = "none"
+                z.style.display = "none"
+              }
+            }}
+          >
             <div className="navsideicondiv">
               <img src={administrationicon} alt="" />
             </div>
             <p>Administration</p>
-          </Link>
+          </div>
+          <div id="adminsidedropwrap">
+            <div className="adminsidedrop">
+              {Navlist.admin.map(item => (
+                <Link
+                  to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+                  className="nav-sidebar-div"
+                >
+                  <p>
+                    <span>{item.title}</span>
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </div>
+
           <Link className="nav-sidebar-div" to="/academics">
             <div className="navsideicondiv">
               <img src={acadicon} alt="" />

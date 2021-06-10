@@ -50,6 +50,7 @@ export const NavigateStyle = styled.div`
           brightness(200%) contrast(200%);
       }
     }
+ 
     &:hover {
       background-color: ${props => props.theme.primaryColor};
       padding: 10px 0px 10px 0px;
@@ -66,6 +67,18 @@ export const NavigateStyle = styled.div`
       max-height: 3vh;
       width: auto;
     }
+  }
+  .active{
+    background-color: ${props => props.theme.primaryColor};
+      padding: 10px 0px 10px 0px;
+      p {
+        color: white;
+      }
+      .image {
+        color: white;
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg)
+          brightness(200%) contrast(200%);
+      }
   }
   @media (max-width: 768px) {
     flex-direction: row;

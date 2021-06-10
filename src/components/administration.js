@@ -25,7 +25,7 @@ const Administrationpage = () => {
   return (
     <>
       <AdminStyle>
-        <Navigate data={AdministrationData} callback={getView} />
+        <Navigate data={AdministrationData} callback={getView} tab={tab} />
 
         <div className="mainDiv">
           {view.length != 0 && view[0].name ? (
