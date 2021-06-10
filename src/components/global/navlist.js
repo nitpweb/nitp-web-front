@@ -77,9 +77,27 @@ const About = [
   },
 ]
 
+const Academics=[
+  {
+    url:"/academics",
+    title:"Admissions",
+    name:"Admissions",
+  },
+  {
+    url:"/academics",
+    title:"Notices",
+    name:"Notices",
+  },
+  {
+    url:"/academics",
+    title:"Format",
+    name:"Format",
+  }
+]
 const Navlist = {
   departments: Departments,
   admin: Admin,
   about: About,
+  academics:Academics,
 }
 export default Navlist
