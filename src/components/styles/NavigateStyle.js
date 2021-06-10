@@ -50,7 +50,7 @@ export const NavigateStyle = styled.div`
           brightness(200%) contrast(200%);
       }
     }
- 
+
     &:hover {
       background-color: ${props => props.theme.primaryColor};
       padding: 10px 0px 10px 0px;
@@ -68,17 +68,17 @@ export const NavigateStyle = styled.div`
       width: auto;
     }
   }
-  .active{
+  .active {
     background-color: ${props => props.theme.primaryColor};
-      padding: 10px 0px 10px 0px;
-      p {
-        color: white;
-      }
-      .image {
-        color: white;
-        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg)
-          brightness(200%) contrast(200%);
-      }
+    padding: 10px 0px 10px 0px;
+    p {
+      color: white;
+    }
+    .image {
+      color: white;
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg)
+        brightness(200%) contrast(200%);
+    }
   }
   @media (max-width: 768px) {
     flex-direction: row;
@@ -115,6 +115,14 @@ export const NavigateStyle = styled.div`
         max-height: 50%;
         width: auto;
         display: none;
+      }
+    }
+    .active {
+      background-color: white;
+      transform: scale(1.05);
+      margin: 0 0.15rem;
+      p {
+        color: ${props => props.theme.primaryColor};
       }
     }
   }
