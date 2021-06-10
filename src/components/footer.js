@@ -40,7 +40,9 @@ const Footer = () => {
               {/* <a href="http://www.nitp.ac.in/php/senatemins.php">
                 <h3>Senate Minutes</h3>
               </a> */}
-
+              <Link to="/acadnotice">
+                <h3>Academics Notice</h3>
+              </Link>
               <a href="http://www.nitp.ac.in/php/downloads/Grievance%20Cell%20Constituted%20by%20Council%20of%20NITs.pdf">
                 <h3>Grievance Cell</h3>
               </a>

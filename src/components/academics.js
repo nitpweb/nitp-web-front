@@ -13,7 +13,7 @@ const Academicspage = () => {
    setView(callback)
  }
   useEffect(() => {
-    let noticesUrl = `${process.env.GATSBY_API_URL}/api/notice/all`
+    let noticesUrl = `${process.env.GATSBY_API_URL}/api/notice/academics`
     axios
       .get(noticesUrl)
       .then(res => {

@@ -29,6 +29,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+main{
+  min-height: calc(60vh + 6px);
+}
+
 .imgwrap {
   width: 70%;
 }
@@ -47,6 +51,7 @@ body {
   max-width: 100%;
   height: auto;
 }
+
 .imgcolstyle {
   display: flex;
   justify-content: center;
@@ -74,8 +79,4 @@ body {
   .rowmarr3 {
     margin-right: 0px;
   }
-}
-
-*{
-  transition: all 0.4s ease-in;
 }

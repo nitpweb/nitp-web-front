@@ -6,6 +6,7 @@ export const NavbarStyle = styled.div`
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 100vw;
+  font-family: "Source Sans Pro";
   position: fixed;
   z-index: 5;
   .nav-head-row {
@@ -21,6 +22,10 @@ export const NavbarStyle = styled.div`
       padding-left: 2vw;
       align-items: center;
       width: 50%;
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
     }
     .end {
       display: flex;
@@ -29,9 +34,17 @@ export const NavbarStyle = styled.div`
       align-items: center;
       width: 50%;
       padding-right: 2vw;
+      span {
+        margin: 0px 20px 0px 20px;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
       .themebtn {
         width: 28px;
         background-color: transparent;
+        margin: 0px 20px 0px 20px;
         border: 0;
       }
     }
@@ -144,7 +157,7 @@ export const NavbarStyle = styled.div`
       align-items: center;
       .dep-link-item {
         text-decoration: none;
-        color:#fff;
+        color: #fff;
         font-size: 0.8vw;
       }
     }
@@ -154,7 +167,7 @@ export const NavbarStyle = styled.div`
     width: 42%;
     padding-left: 3vw;
     padding-top: 0.5vw;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     h2 {

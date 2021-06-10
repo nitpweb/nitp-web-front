@@ -3,11 +3,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Noticepage from "../components/noticepage"
 
-const Notice = () => (
+const Tenders = () => (
   <Layout>
-    <SEO title="Notices" />
-    <Noticepage type="all"/>
+    <SEO title="Tenders" />
+    <Noticepage type="tender" title="Tenders" />
   </Layout>
 )
 
-export default Notice
+export default Tenders

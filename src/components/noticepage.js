@@ -3,11 +3,11 @@ import axios from "axios"
 import Noticecard from "./home/notice"
 import { CardsStyle } from "./styles/cards"
 
-const Notice = () => {
+const Notice = ({type,title}) => {
   const [notices, setNotices] = useState()
 
   useEffect(() => {
-    let noticesUrl = `${process.env.GATSBY_API_URL}/api/notice/all`
+    let noticesUrl = `${process.env.GATSBY_API_URL}/api/notice/${type}`
     axios
       .get(noticesUrl)
       .then(res => {
@@ -22,7 +22,7 @@ const Notice = () => {
     <>
       <CardsStyle className="row">
         <div className="card-details-row">
-          <h1>Notices</h1>
+          <h1>{title}</h1>
           <div className="fac-card" data-aos="fade-up">
             {notices && notices.map(notice => {
               const newtime = new Date().getTime()
