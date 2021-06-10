@@ -66,7 +66,11 @@ const Navbar = ({ theme, changeTheme, department }) => {
   return (
     <NavbarStyle>
       <div className="nav-head-row">
-        <div className="col-6 start"></div>
+        <div className="col-6 start">
+          <span>
+            <Link to="/tenders">Tenders</Link>
+          </span>
+        </div>
         <div className="col-6 end">
           <button className="themebtn" onClick={() => changeTheme()}>
             <span>
