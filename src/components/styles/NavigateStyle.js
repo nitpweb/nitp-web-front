@@ -7,12 +7,12 @@ export const NavigateStyle = styled.div`
   top: 50%;
   left: 0%;
   transform: translateY(-50%);
-  margin: 0 0 0 6vw;
+  margin: 0 0 0 5vw;
   z-index: 1;
   background: ${props => props.theme.backgroundColor};
   .childLink {
     margin-top: 0;
-    width: 120px;
+    width: 8.34vw;
     max-height: 90px;
     max-height: 10vh;
     border: 1px solid lightgrey;
@@ -50,6 +50,7 @@ export const NavigateStyle = styled.div`
           brightness(200%) contrast(200%);
       }
     }
+ 
     &:hover {
       background-color: ${props => props.theme.primaryColor};
       padding: 10px 0px 10px 0px;
@@ -66,6 +67,18 @@ export const NavigateStyle = styled.div`
       max-height: 3vh;
       width: auto;
     }
+  }
+  .active{
+    background-color: ${props => props.theme.primaryColor};
+      padding: 10px 0px 10px 0px;
+      p {
+        color: white;
+      }
+      .image {
+        color: white;
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg)
+          brightness(200%) contrast(200%);
+      }
   }
   @media (max-width: 768px) {
     flex-direction: row;
