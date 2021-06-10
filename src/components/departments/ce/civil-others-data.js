@@ -335,7 +335,7 @@ export const Activities = [
         </p>
       </>
     ),
-    image: <img src={`${home}images/image014.jpg`} />,
+    image: <img className="img-fluid" src={`${home}images/image014.jpg`} />,
   },
   {
     content: (
