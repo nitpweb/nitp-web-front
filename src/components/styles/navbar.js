@@ -325,6 +325,10 @@ export const NavbarStyle = styled.div`
     display: none;
     padding-left: 0px;
   }
+  #adminsidedropwrap{
+    display: none;
+    padding-left: 0px;
+  }
   .departsidedrop > .nav-sidebar-div {
     padding-left: 25px;
   }

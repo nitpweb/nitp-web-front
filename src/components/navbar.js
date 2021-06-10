@@ -240,7 +240,7 @@ const Navbar = ({ theme, changeTheme, department }) => {
               className="nav-sidebar-div"
               to="/administration"
               onClick={function () {
-                var x = document.querySelector(".adminsidedrop")
+                var x = document.querySelector(".departsidedrop")
                 var z = document.querySelector("#adminsidedropwrap")
                 if (x.style.display === "none") {
                   x.style.display = "block"
@@ -369,7 +369,7 @@ const Navbar = ({ theme, changeTheme, department }) => {
             className="nav-sidebar-div"
             to="/administration"
             onClick={function () {
-              var x = document.querySelector(".adminsidedrop")
+              var x = document.querySelector(".departsidedrop")
               var z = document.querySelector("#adminsidedropwrap")
               if (x.style.display === "none") {
                 x.style.display = "block"
