@@ -1,3 +1,8 @@
+import React from "react"
+import { Achievements, Activities, Labs } from "./me-others-data"
+import Carousel from "../../carousel"
+import { LabImages } from "./me-others-data"
+
 export const routeName = "me"
 export const title = "Mechanical Engineering"
 export const titleDescription = () => {
@@ -81,6 +86,74 @@ export const contact = () => {
     </>
   )
 }
+
+export const labs = () => {
+  return (
+    <>
+      {" "}
+      <div className="row rowmarl3 ">
+        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
+          Labs
+        </h1>
+      </div>
+      <div className="row rowmarl3">
+        <div className="col-6">
+          {Labs[0].title}
+          <br />
+          {Labs[0].content}
+        </div>
+        <div className="col-6">
+          <Carousel LabImages={LabImages} />
+        </div>
+      </div>
+    </>
+  )
+}
+
+export const achievements = () => {
+  return (
+    <>
+      {" "}
+      <div className="row rowmarl3">
+        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
+          Achievements
+        </h1>
+      </div>
+      <div className="row rowmarl3">
+        {Achievements.map((acht, idx) => (
+          <React.Fragment key={idx}>
+            <div className="row">{acht.title}</div>
+
+            <div className="row">{acht.content}</div>
+          </React.Fragment>
+        ))}
+      </div>
+    </>
+  )
+}
+
+export const activities = () => {
+  return (
+    <>
+      {" "}
+      <div className="row rowmarl3">
+        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
+          Activities
+        </h1>
+      </div>
+      <div className=" row rowmarl3">
+        {Activities.map((act, idx) => (
+          <React.Fragment key={idx}>
+            <div className="row"> {act.title}</div>{" "}
+            <div className="row"> {act.content}</div>
+            <br />
+          </React.Fragment>
+        ))}
+      </div>
+    </>
+  )
+}
+
 export const datalist = [
   {
     title: "About",
