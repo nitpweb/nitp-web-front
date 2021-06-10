@@ -21,7 +21,41 @@ const Departments = [
   { url: "/math", title: "Mathematics" },
 ]
 
+const Admin = [
+  {
+    url: "/administration",
+    title: "About Director",
+    name: "Our Director",
+  },
+  {
+    url: "/administration",
+    title: "Deans",
+    name: "Deans",
+  },
+  {
+    url: "/administration",
+    title: "Board of Governors",
+    name: "Board of Governors",
+  },
+  {
+    url: "/administration",
+    title: "Building & Works committee",
+    name: "Building and Works Committee",
+  },
+  {
+    url: "/administration",
+    title: "Institute Disciplinary committee",
+    name: "Institute Disciplinary Committee",
+  },
+  {
+    url: "/administration",
+    title: "Finance committee",
+    name: "Finance Committee",
+  },
+]
+
 const Navlist = {
-    departments: Departments
+  departments: Departments,
+  admin: Admin,
 }
 export default Navlist

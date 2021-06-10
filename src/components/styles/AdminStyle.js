@@ -14,7 +14,7 @@ export const AdminStyle = styled.div`
   .mainDiv {
     display: flex;
     width: 75vw;
-    margin: 2vw 0 0 0;
+    margin: 2vw 0 2vw 0;
     padding: 1rem;
     height: 80vh;
     box-shadow: -3px -3px 12px #ffffff73, 3px 3px 12px rgba(94, 104, 121, 0.288);

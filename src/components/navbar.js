@@ -114,13 +114,14 @@ const Navbar = ({ theme, changeTheme, department }) => {
           >
             <span>About Us</span>
           </Link>
-          <Link
+          <Dropdown title="Administration" list={Navlist.admin} />
+          {/* <Link
             className="nav-link-item"
             activeClassName="nav-link-item-active"
             to="/administration"
           >
             <span>Administration</span>
-          </Link>
+          </Link> */}
           <Link
             className="nav-link-item"
             activeClassName="nav-link-item-active"
