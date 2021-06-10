@@ -163,6 +163,12 @@ const Dephomepage = ({
           {view == "labs" && (
             <div className="layoutrow layoutrow1">{Labs()}</div>
           )}
+          {view == "achievements" && (
+            <div className="layoutrow layoutrow1">{Achievements()}</div>
+          )}
+          {view == "activities" && (
+            <div className="layoutrow layoutrow1">{Activities()}</div>
+          )}
         </>
       </div>
     </TabPage>

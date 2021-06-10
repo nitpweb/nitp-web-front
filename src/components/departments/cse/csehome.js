@@ -112,6 +112,48 @@ export const labs = () => {
   )
 }
 
+export const achievements = () => {
+  return (
+    <>
+      <div className="row rowmarl3">
+        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
+          Achievements
+        </h1>
+      </div>
+      <div className="row rowmarl3">
+        <ul>
+          {Achievements.map((ach, idx) => (
+            <li key={idx} style={{ fontSize: `1.2rem` }}>
+              {ach}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
+  )
+}
+
+export const activities = () => {
+  return (
+    <>
+      {" "}
+      <div className="row rowmarl3">
+        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
+          Activities
+        </h1>
+      </div>
+      <div className=" row rowmarl3" style={{ fontSize: `1.2rem` }}>
+        {Activities.map((act, idx) => (
+          <>
+            <div className="row"> {act.title}</div>
+            <div className="row"> {act.content}</div>
+          </>
+        ))}
+      </div>
+    </>
+  )
+}
+
 export const datalist = [
   {
     title: "About",
