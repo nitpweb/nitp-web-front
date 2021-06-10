@@ -1,31 +1,31 @@
 export const Activities = {
   content: (
     <>
-      <table className="table-act">
-        <tr>
-          <h2>Seminars and Workshops Organized by the Department</h2>
+      <div>
+        <h2>Seminars and Workshops Organized by the Department</h2>
 
-          <td>
+        <ul>
+          <li>
             <b>Inspire Science Camp for School Children (15-19 Dec; 2014) </b>
-          </td>
-          <td>
+          </li>
+          <li>
             Short term course on
             <b>
               Time Series Analysis & its Applications jointly organized with
               Computer Science & Civil Engineering Department during June 2014.
             </b>
-          </td>
-          <td>
+          </li>
+          <li>
             Nationwide sensitization workshop on
             <b>Mathematics for Teachers and Activists</b> during 2-3 March; 2014
-          </td>
-          <td>
+          </li>
+          <li>
             Nationwide sensitization workshop on
             <b>Mathematics for Teachers and Activists</b> during 2-3 March;
             2014)
-          </td>
-        </tr>
-      </table>
+          </li>
+        </ul>
+      </div>
       <h2>Externally Funded Projects Running in the Department</h2>
       <table className="table-act">
         <tr>
