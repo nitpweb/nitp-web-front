@@ -54,8 +54,32 @@ const Admin = [
   },
 ]
 
+const About = [
+  {
+    url: "/about",
+    title: "About",
+    name: "About",
+  },
+  {
+    url: "/about",
+    title: "Mission & Vision",
+    name: `Mission and Vision`,
+  },
+  {
+    url: "/about",
+    title: "Values",
+    name: "Values",
+  },
+  {
+    url: "/about",
+    title: "Campus",
+    name: "Campus",
+  },
+]
+
 const Navlist = {
   departments: Departments,
   admin: Admin,
+  about: About,
 }
 export default Navlist

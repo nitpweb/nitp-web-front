@@ -92,6 +92,7 @@ export const NavbarStyle = styled.div`
         line-height: 1.6;
         display: flex;
         align-items: center;
+        cursor: pointer;
         span:hover {
           color: #ffe657;
           transition: 0.1s ease-in-out;
@@ -326,6 +327,10 @@ export const NavbarStyle = styled.div`
     padding-left: 0px;
   }
   #adminsidedropwrap{
+    display: none;
+    padding-left: 0px;
+  }
+  #aboutsidedropwrap{
     display: none;
     padding-left: 0px;
   }
