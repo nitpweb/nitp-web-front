@@ -7,12 +7,12 @@ export const NavigateStyle = styled.div`
   top: 50%;
   left: 0%;
   transform: translateY(-50%);
-  margin: 0 0 0 6vw;
+  margin: 0 0 0 5vw;
   z-index: 1;
   background: ${props => props.theme.backgroundColor};
   .childLink {
     margin-top: 0;
-    width: 120px;
+    width: 8.34vw;
     max-height: 90px;
     max-height: 10vh;
     border: 1px solid lightgrey;
