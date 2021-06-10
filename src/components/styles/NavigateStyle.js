@@ -8,6 +8,7 @@ export const NavigateStyle = styled.div`
   left: 0%;
   transform: translateY(-50%);
   margin: 0 0 0 6vw;
+  z-index: 1;
   background: ${props => props.theme.backgroundColor};
   .childLink {
     margin-top: 0;

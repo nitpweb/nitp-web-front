@@ -8,7 +8,10 @@ export const Dropdown = ({ title, list }) => {
         <button className="dropbtn nav-link-div nav-link-item">{title}</button>
         <div className="dropdown-content">
           {list.map(item => (
-            <Link className="nav-link-item" to={item.url}>
+            <Link
+              className="nav-link-item"
+              to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+            >
               <span>{item.title}</span>
             </Link>
           ))}
