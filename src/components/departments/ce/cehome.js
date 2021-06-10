@@ -1,5 +1,7 @@
 export const routeName = "ce"
 export const title = "Civil Engineering"
+import { Labs, Activities } from "./civil-others-data"
+
 export const titleDescription = () => {
   return (
     <>
@@ -102,6 +104,65 @@ export const contact = () => {
     </>
   )
 }
+
+export const labs = () => {
+  return (
+    <>
+      {" "}
+      <div className="row rowmarl3 ">
+        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
+          Labs
+        </h1>
+      </div>
+      <div className="row rowmarl3 ">
+        {Labs[0].title}
+        {Labs[0].text} {Labs[0].table}{" "}
+      </div>
+      {Labs.slice(1).map((lab, idx) => {
+        return (
+          <div className="row rowmarl3" key={idx}>
+            <div
+              className="col-6"
+              style={{ textAlign: "left", fontSize: `1.1rem` }}
+            >
+              {lab.content}
+            </div>
+            <div className="col-6">{lab.image}</div>
+          </div>
+        )
+      })}
+    </>
+  )
+}
+
+export const activities = () => {
+  return (
+    <>
+      {" "}
+      <div className="row rowmarl3">
+        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
+          Activities
+        </h1>
+      </div>
+      <div className=" row rowmarl3" style={{ fontSize: `1.2rem` }}>
+        {Activities.map((lab, idx) => {
+          return (
+            <div className="row rowmarl3" key={idx}>
+              <div className="col-6">{lab.image}</div>
+              <div
+                className="col-6"
+                style={{ textAlign: "left", fontSize: `1.1rem` }}
+              >
+                {lab.content}
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    </>
+  )
+}
+
 export const datalist = [
   {
     title: "About",
@@ -128,11 +189,7 @@ export const datalist = [
     data: "labs",
     img: "/department/labs.svg",
   },
-  {
-    title: "Achievements",
-    data: "achievements",
-    img: "/department/achievements.svg",
-  },
+
   {
     title: "Activities",
     data: "activities",
