@@ -98,6 +98,7 @@ export const TabPage = styled.div`
     .layoutrow.others {
       p,
       h2,
+      li,
       tr {
         color: ${props => props.theme.textColor};
         font-weight: 500;

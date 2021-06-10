@@ -2,7 +2,7 @@ const home = "http://www.nitp.ac.in/"
 export const Labs = {
   content: (
     <>
-      <h3>Departmental Laboratories</h3>
+      <h2>Departmental Laboratories</h2>
       <br />
       <p>
         The Department has 4 lecture room, 8 Studios and 5 laboratories. Apart
