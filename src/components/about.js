@@ -1,7 +1,8 @@
-import React, { useState } from "react"
+import React, { useState,useEffect} from "react"
 import { TabPage } from "./styles/tabpage"
 import Navigate from "./global/Navigate"
 import Aboutlist from "./about/const"
+import { useQueryParam} from "use-query-params"
 
 const aboutusinfo = [
   "National Institute of Technology Patna is the 18th National Institute of Technology created by the Ministry of H.R.D. Government of India after rechristening the erstwhile Bihar College of Engineering Patna on 28. 01. 2004. NIT Patna marked its humble beginning in 1886 with the establishment of pleaders survey training school which was subsequently promoted of Bihar College of Engineering Patna in 1924. This made this institute the 6th Oldest Engineering Institute of India. The graduate level curriculum was later elevated to the post graduate level in 1978. The institute is situated on the south bank of holy river Ganges behind Gandhi Ghat, one of the most important and reverential place of Patna. The Gandhi Ghat is associated with the immersion of ashes of father of the Nation Mahatma Gandhi in the river Ganges. The campus has a picturesque river view with historic building presenting a spectacle of architectural delight and natural beauty.",
@@ -31,17 +32,24 @@ const campusinfo =
   "NIT Patna is situated on the South bank of river Ganges behind Gandhi Ghat, one of the most important and sacred places of Patna . The Institute campus is 8 Km from the Patna junction railway station and 20 Km from the Jai Prakash Narayan International Airport, Patna . The entrance to the institute is from Ashok Rajpath and it is about 3Km from the famous Gandhi Maidan. The Institute is residential in nature and provides residential facilities to its students as well as teachers as per availability. Its large campus has a picturesque river view with eyecatching historic buildings presenting a spectacle of architectural and natural beauty."
 
 const Aboutpage = () => {
+  const [tab] = useQueryParam("tab")
    const [view, setView] = useState("about")
-   console.log(view)
+
    function getView(callback) {
      setView(callback)
    }
+   useEffect(() => {
+    Aboutlist.forEach(x => {
+      x.title === tab ? setView(tab) : ""
+    })
+  }, [tab])
+  console.log(tab)
   return (
     <TabPage>
-      <Navigate data={Aboutlist} callback={getView} />
+      <Navigate data={Aboutlist} callback={getView} tab={tab}/>
 
       <div className="mainDiv">
-        {view == "about" && (
+        {view == "About" && (
           <div className="layoutrow" id="home">
             <div className="col-6">
               <div className="row rowmarl3">
@@ -60,7 +68,7 @@ const Aboutpage = () => {
             </div>
           </div>
         )}
-        {view == "mission" && (
+        {view == "Mission and Vision" && (
           <>
             <div className="layoutrow layoutrow1" id="mission">
               <div className="col-6 imgcolstyle">
@@ -85,7 +93,7 @@ const Aboutpage = () => {
             </div>
           </>
         )}
-        {view == "values" && (
+        {view == "Values" && (
           <div className="layoutrow" id="values">
             <div className="col-6">
               <div className="row rowmarl3">
@@ -105,7 +113,7 @@ const Aboutpage = () => {
           </div>
         )}
 
-        {view == "campus" && (
+        {view == "Campus" && (
           <div className="layoutrow layoutrow1" id="campus">
             <div className="col-6 imgcolstyle">
               <a

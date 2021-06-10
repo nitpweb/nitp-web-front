@@ -4,14 +4,21 @@ import { TabPage } from "./styles/tabpage"
 import Navigate from "./global/Navigate"
 import Notice from "./home/notice"
 import AcademicsList from "./academics/const"
+import { useQueryParam} from "use-query-params"
 
 const Academicspage = () => {
+  const [tab] = useQueryParam("tab")
   const [notices, setNotices] = useState()
  const [view, setView] = useState("admission")
- console.log(view)
+console.log(view)
  function getView(callback) {
    setView(callback)
  }
+ useEffect(() => {
+  AcademicsList.forEach(x => {
+    x.title === tab ? setView(tab) : ""
+  })
+}, [tab])
   useEffect(() => {
     let noticesUrl = `${process.env.GATSBY_API_URL}/api/notice/academics`
     axios
@@ -28,7 +35,7 @@ const Academicspage = () => {
     <>
       {notices && (
         <TabPage>
-          <Navigate data={AcademicsList} callback={getView} />
+          <Navigate data={AcademicsList} callback={getView} tab={tab}/>
           <div className="mainDiv">
             {/* <div className="layoutrow layoutrowmain" id="home">
                 <div className="col-6">
@@ -49,7 +56,7 @@ const Academicspage = () => {
                   <img src="/acadscholar.svg" className="img-fluid" loading="lazy" />
                 </div>
               </div> */}
-            {view == "admission" && (
+            {view == "Admissions" && (
               <div className="layoutrow layoutrow1" id="admission">
                 <div className="col-6 imgcolstyle">
                   <img src="/test.svg" className="img-fluid" loading="lazy" />
@@ -78,7 +85,7 @@ const Academicspage = () => {
                 </div>
               </div>
             )}
-            {view == "format" && (
+            {view == "Format" && (
               <div className="layoutrow" id="format">
                 <div className="col-6">
                   <div className="row rowmarl3">
@@ -107,7 +114,7 @@ const Academicspage = () => {
                 </div>
               </div>
             )}
-            {view == "notice" && (
+            {view == "Notices" && (
               <div className="layoutrow layoutrow1" id="notice">
                 <div className="col-6 imgcolstyle">
                   <img src="/mail.svg" className="img-fluid" loading="lazy" />
