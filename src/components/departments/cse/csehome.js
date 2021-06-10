@@ -1,5 +1,6 @@
 export const routeName = "cse"
 export const title = "Computer Science & Engineering"
+import { Achievements, Activities, Labs } from "./cse-others-data"
 export const titleDescription = () => {
   return (
     <>
@@ -85,6 +86,32 @@ export const contact = () => {
   )
 }
 
+export const labs = () => {
+  return (
+    <>
+      {" "}
+      <div className="row rowmarl3 ">
+        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
+          Labs
+        </h1>
+      </div>
+      {Labs.map((lab, idx) => {
+        return (
+          <div className="row rowmarl3" key={idx}>
+            <div
+              className="col-6"
+              style={{ textAlign: "left", fontSize: `1.1rem` }}
+            >
+              {lab.content}
+            </div>
+            <div className="col-6">{lab.image}</div>
+          </div>
+        )
+      })}
+    </>
+  )
+}
+
 export const datalist = [
   {
     title: "About",
@@ -105,5 +132,20 @@ export const datalist = [
     title: "Contact",
     data: "contact",
     img: "/department/contact.svg",
+  },
+  {
+    title: "Labs",
+    data: "labs",
+    img: "/department/labs.svg",
+  },
+  {
+    title: "Achievements",
+    data: "achievements",
+    img: "/department/achievements.svg",
+  },
+  {
+    title: "Activities",
+    data: "activities",
+    img: "/department/activities.svg",
   },
 ]

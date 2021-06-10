@@ -8,9 +8,12 @@ import {
   titleDescription,
   about,
   mission,
+  labs,
+  achievements,
+  activities,
   vision,
   contact,
-  datalist
+  datalist,
 } from "../../components/departments/cse/csehome"
 const Cse = () => (
   <Layout>
@@ -23,6 +26,9 @@ const Cse = () => (
       Mission={mission}
       Vision={vision}
       Contact={contact}
+      Labs={labs}
+      Achievements={achievements}
+      Activities={activities}
       datalist={datalist}
     />
   </Layout>

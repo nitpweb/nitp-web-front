@@ -1,4 +1,5 @@
 import React from "react"
+import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import Dephomepage from "../../components/departments/dephome"
 import {
@@ -7,11 +8,14 @@ import {
   titleDescription,
   about,
   mission,
+  labs,
+  achievements,
+  activities,
   vision,
   contact,
-  datalist
+  datalist,
 } from "../../components/departments/phy/phyhome"
-import Layout from "../../components/layout"
+
 const Phy = () => (
   <Layout>
     <SEO title="Physics" />
@@ -23,6 +27,9 @@ const Phy = () => (
       Mission={mission}
       Vision={vision}
       Contact={contact}
+      Labs={labs}
+      Achievements={achievements}
+      Activities={activities}
       datalist={datalist}
     />
   </Layout>

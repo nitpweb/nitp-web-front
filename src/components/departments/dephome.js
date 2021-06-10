@@ -15,6 +15,9 @@ const Dephomepage = ({
   TitleDescription,
   About,
   Mission,
+  Labs,
+  Achievements,
+  Activities,
   Vision,
   Contact,
   datalist,
@@ -155,6 +158,10 @@ const Dephomepage = ({
                 </div>
               </div>
             </div>
+          )}
+
+          {view == "labs" && (
+            <div className="layoutrow layoutrow1">{Labs()}</div>
           )}
         </>
       </div>

@@ -123,4 +123,19 @@ export const datalist = [
     data: "contact",
     img: "/department/contact.svg",
   },
+  {
+    title: "Labs",
+    data: "labs",
+    img: "/department/labs.svg",
+  },
+  {
+    title: "Achievements",
+    data: "achievements",
+    img: "/department/achievements.svg",
+  },
+  {
+    title: "Activities",
+    data: "activities",
+    img: "/department/activities.svg",
+  },
 ]
