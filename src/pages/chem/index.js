@@ -11,6 +11,7 @@ import {
   labs,
   achievements,
   activities,
+  others,
   vision,
   contact,
   datalist,
@@ -29,6 +30,7 @@ const Chemistry = () => (
       Labs={labs}
       Achievements={achievements}
       Activities={activities}
+      Extras={others}
       datalist={datalist}
     />
   </Layout>

@@ -1,3 +1,14 @@
+import React from "react"
+import Carousel from "../../carousel"
+import {
+  Achievements,
+  Activity,
+  ActivityImages,
+  LabImages,
+  Labs,
+  Others,
+} from "./chem-others-data"
+
 export const routeName = "che"
 export const title = "Chemistry Department"
 export const titleDescription = () => {
@@ -82,6 +93,49 @@ export const contact = () => {
     </>
   )
 }
+
+export const labs = () => {
+  return (
+    <>
+      <div className="row rowmarl3">
+        <div className="col-6">
+          <Carousel LabImages={LabImages} />
+        </div>{" "}
+        <div className="col-6">{Labs.content}</div>
+      </div>
+    </>
+  )
+}
+
+export const activities = () => {
+  return (
+    <>
+      <div className="row rowmarl3">
+        <Carousel LabImages={ActivityImages} />
+      </div>
+      <div className="row rowmarl3">{Activity.content}</div>
+    </>
+  )
+}
+
+export const achievements = () => {
+  return (
+    <>
+      {" "}
+      <div className="row rowmarl3">{Achievements.content}</div>
+    </>
+  )
+}
+
+export const others = () => {
+  return (
+    <>
+      {" "}
+      <div className="row rowmarl3">{Others.content}</div>
+    </>
+  )
+}
+
 export const datalist = [
   {
     title: "About",
@@ -117,5 +171,10 @@ export const datalist = [
     title: "Activities",
     data: "activities",
     img: "/department/activities.svg",
+  },
+  {
+    title: "More Info",
+    data: "others",
+    img: "/department/labs.svg",
   },
 ]

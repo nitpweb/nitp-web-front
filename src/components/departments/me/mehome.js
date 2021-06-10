@@ -90,7 +90,6 @@ export const contact = () => {
 export const labs = () => {
   return (
     <>
-      {" "}
       <div className="row rowmarl3 ">
         <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
           Labs

@@ -20,6 +20,7 @@ const Dephomepage = ({
   Activities,
   Vision,
   Contact,
+  Extras,
   datalist,
 }) => {
   const [notices, setnotices] = useState()
@@ -168,6 +169,9 @@ const Dephomepage = ({
           )}
           {view == "activities" && (
             <div className="layoutrow layoutrow1 others">{Activities()}</div>
+          )}
+          {view == "others" && (
+            <div className="layoutrow layoutrow1 others">{Extras()}</div>
           )}
         </>
       </div>
