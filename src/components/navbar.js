@@ -50,7 +50,9 @@ const Navbar = ({ theme, changeTheme, department }) => {
         document.querySelector(".logobadge>h4").style.display = "flex"
         document.querySelector(".logobadge>div>img").style.maxHeight = "8vw"
         document.querySelector(".logobadge>div>img").style.borderWidth = "0.5vw"
-        document.querySelector(".logobadge").style.backgroundColor = "#941b0c"
+        document.querySelector(".logobadge").style.backgroundColor = theme
+          ? "#941b0c"
+          : "#cd512f"
         document.querySelector(".logobadge>div>img").style.marginTop = "0px"
         document.querySelector(".logobadge").style.paddingLeft = "0"
         document.querySelector(".mobilelogo>img").style.maxHeight = "7vh"
