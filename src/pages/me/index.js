@@ -7,9 +7,12 @@ import {
   titleDescription,
   about,
   mission,
+  labs,
+  achievements,
+  activities,
   vision,
   contact,
-  datalist
+  datalist,
 } from "../../components/departments/me/mehome"
 import Layout from "../../components/layout"
 const Me = () => (
@@ -23,6 +26,9 @@ const Me = () => (
       Mission={mission}
       Vision={vision}
       Contact={contact}
+      Labs={labs}
+      Achievements={achievements}
+      Activities={activities}
       datalist={datalist}
     />
   </Layout>

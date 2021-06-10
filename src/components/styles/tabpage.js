@@ -62,6 +62,7 @@ export const TabPage = styled.div`
       padding-top: 5vh;
       padding-bottom: 5vh;
       font-family: "Source Sans Pro";
+
       .layoutrow:nth-of-type(2n + 1) {
         .col-6:nth-child(1) {
           justify-content: center;
@@ -92,6 +93,20 @@ export const TabPage = styled.div`
             font-size: 2.5rem;
           }
         }
+      }
+    }
+    .layoutrow.others {
+      p,
+      h2,
+      li,
+      tr {
+        color: ${props => props.theme.textColor};
+        font-weight: 500;
+      }
+      h1 {
+        font-weight: bold;
+        color: ${props => props.theme.primaryColor};
+        font-size: 2.5rem;
       }
     }
 

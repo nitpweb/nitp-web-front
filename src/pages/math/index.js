@@ -8,9 +8,12 @@ import {
   titleDescription,
   about,
   mission,
+  labs,
+  achievements,
+  activities,
   vision,
   contact,
-  datalist
+  datalist,
 } from "../../components/departments/math/mathhome"
 const Math = () => (
   <Layout>
@@ -23,6 +26,9 @@ const Math = () => (
       Mission={mission}
       Vision={vision}
       Contact={contact}
+      Labs={labs}
+      Achievements={achievements}
+      Activities={activities}
       datalist={datalist}
     />
   </Layout>

@@ -1,3 +1,6 @@
+import { Activities } from "./hss-others-data"
+import React from "react"
+
 export const routeName = "hss"
 export const title = "Humanities & Social Sciences"
 export const titleDescription = () => {
@@ -75,6 +78,21 @@ export const contact = () => {
     </>
   )
 }
+
+export const activities = () => {
+  return (
+    <>
+      {" "}
+      <div className="row rowmarl3 ">
+        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
+          Activities
+        </h1>
+      </div>
+      <div className="rowmarl3">{Activities.content}</div>
+    </>
+  )
+}
+
 export const datalist = [
   {
     title: "About",
@@ -95,5 +113,11 @@ export const datalist = [
     title: "Contact",
     data: "contact",
     img: "/department/contact.svg",
+  },
+
+  {
+    title: "Activities",
+    data: "activities",
+    img: "/department/activities.svg",
   },
 ]

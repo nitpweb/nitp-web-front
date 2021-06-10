@@ -15,8 +15,12 @@ const Dephomepage = ({
   TitleDescription,
   About,
   Mission,
+  Labs,
+  Achievements,
+  Activities,
   Vision,
   Contact,
+  Extras,
   datalist,
 }) => {
   const [notices, setnotices] = useState()
@@ -155,6 +159,19 @@ const Dephomepage = ({
                 </div>
               </div>
             </div>
+          )}
+
+          {view == "labs" && (
+            <div className="layoutrow layoutrow1 others">{Labs()}</div>
+          )}
+          {view == "achievements" && (
+            <div className="layoutrow layoutrow1 others">{Achievements()}</div>
+          )}
+          {view == "activities" && (
+            <div className="layoutrow layoutrow1 others">{Activities()}</div>
+          )}
+          {view == "others" && (
+            <div className="layoutrow layoutrow1 others">{Extras()}</div>
           )}
         </>
       </div>

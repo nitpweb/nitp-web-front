@@ -1,3 +1,6 @@
+import React from "react"
+import { Achievements, Activities } from "./phy-others-data"
+
 export const routeName = "phy"
 export const title = "Physics Departmen"
 export const titleDescription = () => {
@@ -86,6 +89,33 @@ export const contact = () => {
     </>
   )
 }
+export const achievements = () => {
+  return (
+    <>
+      <div className="row rowmarl3 ">
+        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
+          Achievements
+        </h1>
+      </div>
+      <div className="row rowmarl3">{Achievements.content}</div>
+    </>
+  )
+}
+
+export const activities = () => {
+  return (
+    <>
+      {" "}
+      <div className="row rowmarl3 ">
+        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
+          Activities
+        </h1>
+      </div>
+      <div className="row rowmarl3">{Activities.content}</div>
+    </>
+  )
+}
+
 export const datalist = [
   {
     title: "About",
@@ -106,5 +136,16 @@ export const datalist = [
     title: "Contact",
     data: "contact",
     img: "/department/contact.svg",
+  },
+
+  {
+    title: "Achievements",
+    data: "achievements",
+    img: "/department/achievements.svg",
+  },
+  {
+    title: "Activities",
+    data: "activities",
+    img: "/department/activities.svg",
   },
 ]

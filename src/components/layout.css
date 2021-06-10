@@ -29,7 +29,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-main{
+main {
   min-height: calc(60vh + 6px);
 }
 
@@ -79,4 +79,22 @@ main{
   .rowmarr3 {
     margin-right: 0px;
   }
+}
+
+.table-act {
+  display: block;
+  overflow-x: auto;
+  margin: auto 4vw;
+  font-family: Quicksand;
+  max-width: 90%;
+}
+
+.table-act td,
+.table-act th {
+  padding: 8px;
+}
+
+.col-6 img {
+  max-width: 100%;
+  height: auto;
 }
