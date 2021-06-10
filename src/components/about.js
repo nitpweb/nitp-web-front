@@ -34,7 +34,7 @@ const campusinfo =
 const Aboutpage = () => {
   const [tab] = useQueryParam("tab")
    const [view, setView] = useState("about")
-   console.log(view)
+
    function getView(callback) {
      setView(callback)
    }
