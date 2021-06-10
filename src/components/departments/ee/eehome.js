@@ -1,5 +1,9 @@
 export const routeName = "ee"
 export const title = "Electrical Engineering"
+
+import { Achievements, Activities, Labs, News_Events } from "./ee-others-data"
+import React from "react"
+
 export const titleDescription = () => {
   return (
     <>
@@ -111,6 +115,86 @@ export const contact = () => {
     </>
   )
 }
+
+export const labs = () => {
+  return (
+    <>
+      {" "}
+      <div className="row rowmarl3 ">
+        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
+          Labs
+        </h1>
+      </div>
+      <div className="row rowmarl3">
+        <div
+          className="col-6"
+          style={{ textAlign: "left", fontSize: `1.1rem` }}
+        >
+          {Labs[0].content}
+        </div>
+        <div className="col-6">{Labs[0].image}</div>
+      </div>
+    </>
+  )
+}
+
+export const achievements = () => {
+  return (
+    <>
+      {" "}
+      <div className="row rowmarl3">
+        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
+          Achievements
+        </h1>
+      </div>
+      <br />
+      <br />
+      <div style={{ fontSize: `1.2rem` }} style={{ overflow: "auto" }}>
+        {Achievements.map((acht, idx) => (
+          <React.Fragment key={idx}>
+            <div className="rowmarl3" style={{ overflow: "auto" }}>
+              {acht.content}
+            </div>
+
+            <br />
+          </React.Fragment>
+        ))}
+      </div>
+    </>
+  )
+}
+
+export const activities = () => {
+  return (
+    <>
+      <div className="rowmarl3" style={{ overflow: "auto" }}>
+        {Activities[0].content}
+      </div>
+      <div
+        style={{
+          marginTop: `80px`,
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <img
+          src="http://www.nitp.ac.in/images/elec_acti.jpg"
+          alt="image"
+          style={{ width: "90%" }}
+        />
+      </div>
+      <div className="row rowmarl3">
+        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
+          News & Events
+        </h1>
+      </div>
+      <div className=" row rowmarl3" style={{ fontSize: `1.2rem` }}>
+        {News_Events.content}
+      </div>{" "}
+    </>
+  )
+}
+
 export const datalist = [
   {
     title: "About",
