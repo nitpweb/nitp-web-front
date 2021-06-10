@@ -1,5 +1,8 @@
 export const routeName = "arch"
 export const title = "Architecture Department"
+import { Labs, LabImages } from "./arch-others-data"
+import Carousel from "../../carousel"
+
 export const titleDescription = () => {
   return (
     <>
@@ -94,6 +97,27 @@ export const contact = () => {
     </>
   )
 }
+
+export const labs = () => {
+  return (
+    <>
+      {" "}
+      <div className="row rowmarl3 ">
+        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
+          Labs
+        </h1>
+      </div>
+      <div className="row rowmarl3">
+        {" "}
+        <div className="col-6">{Labs.content}</div>
+        <div className="col-6">
+          <Carousel LabImages={LabImages} />
+        </div>{" "}
+      </div>
+    </>
+  )
+}
+
 export const datalist = [
   {
     title: "About",
@@ -119,15 +143,5 @@ export const datalist = [
     title: "Labs",
     data: "labs",
     img: "/department/labs.svg",
-  },
-  {
-    title: "Achievements",
-    data: "achievements",
-    img: "/department/achievements.svg",
-  },
-  {
-    title: "Activities",
-    data: "activities",
-    img: "/department/activities.svg",
   },
 ]
