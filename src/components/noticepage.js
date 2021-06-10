@@ -23,7 +23,7 @@ const Notice = ({type,title}) => {
       <CardsStyle className="row">
         <div className="card-details-row">
           <h1>{title}</h1>
-          <div className="fac-card" data-aos="fade-up">
+          <div className="fac-card">
             {notices && notices.map(notice => {
               const newtime = new Date().getTime()
               if (notice.title != "") {
