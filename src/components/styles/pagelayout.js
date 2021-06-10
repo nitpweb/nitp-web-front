@@ -9,10 +9,11 @@ export const PageLayout = styled.div`
       .row {
         h1 {
           font-weight: bold;
-          color: ${props => props.theme.textColor};
+          color: ${props => props.theme.primaryColor};
           font-size: 3rem;
         }
         h2 {
+          color: ${props => props.theme.textColor};
           p {
             color: ${props => props.theme.textColor};
             font-size: 1.3rem;
@@ -65,7 +66,7 @@ export const PageLayout = styled.div`
         }
         h1 {
           font-weight: bold;
-          color: ${props => props.theme.textColor};
+          color: ${props => props.theme.primaryColor};
           font-size: 2.5rem;
         }
       }
@@ -82,7 +83,7 @@ export const PageLayout = styled.div`
       align-items: center;
 
       h1 {
-        color: ${props => props.theme.textColor};
+        color: ${props => props.theme.primaryColor};
       }
       p {
         color: ${props => props.theme.textColor};
@@ -97,8 +98,38 @@ export const PageLayout = styled.div`
       padding: 0vw 0vw 0vw 3vw;
       h1 {
         font-weight: bold;
-        color: ${props => props.theme.textColor};
+        color: ${props => props.theme.primaryColor};
         font-size: 3rem;
+      }
+    }
+  }
+  #sfoot {
+    justify-content: center;
+    padding-bottom: 5vh;
+    height: 25vh;
+    padding-top: 5vh;
+    #sfimg1 {
+      margin-left: 5%;
+      margin-right: 5%;
+      height: 98%;
+      max-width: 40%;
+      img {
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 98%;
+        max-width: 90%;
+      }
+    }
+    #sfimg2 {
+      margin-left: 5%;
+      margin-right: 5%;
+      height: 98%;
+      max-width: 40%;
+      img {
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 98%;
+        max-width: 90%;
       }
     }
   }

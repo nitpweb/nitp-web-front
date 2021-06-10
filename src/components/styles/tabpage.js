@@ -59,8 +59,8 @@ export const TabPage = styled.div`
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       width: 100%;
-      padding-top: 10vh;
-      padding-bottom: 10vh;
+      padding-top: 5vh;
+      padding-bottom: 5vh;
       font-family: "Source Sans Pro";
       .layoutrow:nth-of-type(2n + 1) {
         .col-6:nth-child(1) {
@@ -88,7 +88,7 @@ export const TabPage = styled.div`
           }
           h1 {
             font-weight: bold;
-            color: ${props => props.theme.textColor};
+            color: ${props => props.theme.primaryColor};
             font-size: 2.5rem;
           }
         }
@@ -105,7 +105,7 @@ export const TabPage = styled.div`
         align-items: center;
 
         h1 {
-          color: ${props => props.theme.textColor};
+          color: ${props => props.theme.primaryColor};
         }
         p {
           color: ${props => props.theme.textColor};
@@ -120,7 +120,7 @@ export const TabPage = styled.div`
         padding: 0vw 0vw 0vw 3vw;
         h1 {
           font-weight: bold;
-          color: ${props => props.theme.textColor};
+          color: ${props => props.theme.primaryColor};
           font-size: 3rem;
         }
       }
