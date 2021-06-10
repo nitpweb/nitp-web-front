@@ -118,7 +118,7 @@ const Navbar = ({ theme, changeTheme, department }) => {
             activeClassName="nav-link-item-active"
             to="/about"
           >
-            <span>About Us</span>
+            <Dropdown title="About Us" list={Navlist.about} />
           </Link>
 
           <Link
@@ -133,7 +133,7 @@ const Navbar = ({ theme, changeTheme, department }) => {
             activeClassName="nav-link-item-active"
             to="/academics"
           >
-            <span>Academics</span>
+            <Dropdown title="Academics" list={Navlist.academics} />
           </Link>
         </div>
         <div className="col-6">
@@ -230,12 +230,40 @@ const Navbar = ({ theme, changeTheme, department }) => {
               </div>
               <p>Home</p>
             </Link>
-            <Link className="nav-sidebar-div" to="/about">
+            <div
+              className="nav-sidebar-div"
+              to="/about"
+              onClick={function () {
+                var x = document.querySelector(".departsidedrop")
+                var z = document.querySelector("#aboutsidedropwrap")
+                if (x.style.display === "none") {
+                  x.style.display = "block"
+                  z.style.display = "flex"
+                } else {
+                  x.style.display = "none"
+                  z.style.display = "none"
+                }
+              }}
+            >
               <div className="navsideicondiv">
                 <img src={abouticon} alt="" />
               </div>
               <p>About Us</p>
-            </Link>
+            </div>
+            <div id="aboutsidedropwrap">
+              <div className="adminsidedrop">
+                {Navlist.about.map(item => (
+                  <Link
+                    to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+                    className="nav-sidebar-div"
+                  >
+                    <p>
+                      <span>{item.title}</span>
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </div>
             {/* <Link className="nav-sidebar-div" to="/administration">
               <div className="navsideicondiv">
                 <img src={administrationicon} alt="" />
@@ -276,12 +304,39 @@ const Navbar = ({ theme, changeTheme, department }) => {
                 ))}
               </div>
             </div>
-            <Link className="nav-sidebar-div" to="/academics">
+
+            <div
+              className="nav-sidebar-div"
+              to="/academics"
+              onClick={function () {
+                var x = document.querySelector(".departsidedrop")
+                var z = document.querySelector("#acadsidedropwrap")
+                if (x.style.display === "none") {
+                  x.style.display = "block"
+                  z.style.display = "flex"
+                } else {
+                  x.style.display = "none"
+                  z.style.display = "none"
+                }
+              }}
+            >
               <div className="navsideicondiv">
                 <img src={acadicon} alt="" />
               </div>
               <p>Academics</p>
-            </Link>
+            </div>
+            <div id="acadsidedropwrap">
+              <div className="departsidedrop">
+                {Navlist.academics.map(item => (
+                  <Link to={item.url} className="nav-sidebar-div">
+                    <p>
+                      <span>{item.title}</span>
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
             <div
               className="nav-sidebar-div"
               onClick={function () {
@@ -365,12 +420,46 @@ const Navbar = ({ theme, changeTheme, department }) => {
             </div>
             <p>Home</p>
           </Link>
-          <Link className="nav-sidebar-div" to="/about">
+          {/* <Link className="nav-sidebar-div" to="/about">
             <div className="navsideicondiv">
               <img src={abouticon} alt="" />
             </div>
             <p>About Us</p>
-          </Link>
+          </Link> */}
+          <div
+            className="nav-sidebar-div"
+            to="/about"
+            onClick={function () {
+              var x = document.querySelector(".departsidedrop")
+              var z = document.querySelector("#aboutsidedropwrap")
+              if (x.style.display === "none") {
+                x.style.display = "block"
+                z.style.display = "flex"
+              } else {
+                x.style.display = "none"
+                z.style.display = "none"
+              }
+            }}
+          >
+            <div className="navsideicondiv">
+              <img src={abouticon} alt="" />
+            </div>
+            <p>About Us</p>
+          </div>
+          <div id="aboutsidedropwrap">
+            <div className="adminsidedrop">
+              {Navlist.about.map(item => (
+                <Link
+                  to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+                  className="nav-sidebar-div"
+                >
+                  <p>
+                    <span>{item.title}</span>
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </div>
           <div
             className="nav-sidebar-div"
             to="/administration"
@@ -406,12 +495,44 @@ const Navbar = ({ theme, changeTheme, department }) => {
             </div>
           </div>
 
-          <Link className="nav-sidebar-div" to="/academics">
+          {/* <Link className="nav-sidebar-div" to="/academics">
             <div className="navsideicondiv">
               <img src={acadicon} alt="" />
             </div>
             <p>Academics</p>
-          </Link>
+          </Link> */}
+          <div
+            className="nav-sidebar-div"
+            to="/academics"
+            onClick={function () {
+              var x = document.querySelector(".departsidedrop")
+              var z = document.querySelector("#acadsidedropwrap")
+              if (x.style.display === "none") {
+                x.style.display = "block"
+                z.style.display = "flex"
+              } else {
+                x.style.display = "none"
+                z.style.display = "none"
+              }
+            }}
+          >
+            <div className="navsideicondiv">
+              <img src={acadicon} alt="" />
+            </div>
+            <p>Academics</p>
+          </div>
+          <div id="acadsidedropwrap">
+            <div className="departsidedrop">
+              {Navlist.academics.map(item => (
+                <Link to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`} className="nav-sidebar-div">
+                  <p>
+                    <span>{item.title}</span>
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </div>
+
           <div
             className="nav-sidebar-div"
             onClick={function () {

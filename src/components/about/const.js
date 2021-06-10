@@ -1,22 +1,22 @@
 const Aboutlist = [
   {
     title: "About",
-    data: "about",
+    data: "About",
     img: "/department/about.svg",
   },
   {
-    title: "Mission & Vision",
-    data: "mission",
+    title: `Mission and Vision`,
+    data: "Mission and Vision",
     img: "/department/mission.svg",
     },
     {
         title: "Values",
-        data: "values",
+        data: "Values",
         img:"/clock.svg"
   },
   {
     title: "Campus",
-    data: "campus",
+    data: "Campus",
     img: "/map.svg",
   },
   

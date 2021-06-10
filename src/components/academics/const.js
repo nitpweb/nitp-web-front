@@ -1,15 +1,15 @@
 const AcademicsList = [
     {
         title: "Admissions",
-        data: "admission",
+        data: "Admissions",
         img:"/test.svg"
     }, {
         title: "Notices",
-        data: "notice",
+        data: "Notices",
         img:"/mail.svg"
     }, {
         title: "Format",
-        data: "format",
+        data: "Format",
         img:"/paper.svg"
     }
 ]
