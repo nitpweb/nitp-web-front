@@ -143,7 +143,7 @@ const Navbar = ({ theme, changeTheme, department }) => {
             activeClassName="nav-link-item-active"
             to="/facilities"
           >
-            <span>Facilities</span>
+            <Dropdown title="Facilities" list={Navlist.facilities} />
           </Link>
           <Link
             className="nav-link-item "
@@ -157,7 +157,7 @@ const Navbar = ({ theme, changeTheme, department }) => {
             activeClassName="nav-link-item-active"
             to="/placements"
           >
-            <span>Placements</span>
+            <Dropdown title="Placements" list={Navlist.placements} />
           </Link>
         </div>
       </div>
@@ -371,12 +371,44 @@ const Navbar = ({ theme, changeTheme, department }) => {
                 ))}
               </div>
             </div>
-            <Link to="/facilities" className="nav-sidebar-div">
+            {/* <div to="/facilities" className="nav-sidebar-div">
               <div className="navsideicondiv">
                 <img src={facilityicon} alt="" />
               </div>
               <p>Facilities</p>
-            </Link>
+            </div> */}
+            <div
+              to="/facilities"
+              className="nav-sidebar-div"
+              onClick={function () {
+                var z = document.querySelector("#facsidedropwrap")
+                if (z.style.display === "none") {
+                  z.style.display = "flex"
+                } else {
+                  z.style.display = "none"
+                }
+              }}
+            >
+              <div className="navsideicondiv">
+                <img src={facilityicon} alt="" />
+              </div>
+              <p>Facilities</p>
+            </div>
+            <div id="facsidedropwrap">
+              <div className="departsidedrop">
+                {Navlist.facilities.map(item => (
+                  <Link
+                    to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+                    className="nav-sidebar-div"
+                  >
+                    <p>
+                      <span>{item.title}</span>
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
             <Link to="/student" className="nav-sidebar-div">
               <div className="navsideicondiv">
                 <img src={studenticon} alt="" />
@@ -384,12 +416,37 @@ const Navbar = ({ theme, changeTheme, department }) => {
               <p>Students</p>
             </Link>
 
-            <Link to="/placements" className="nav-sidebar-div">
+            <div
+              to="/placements"
+              className="nav-sidebar-div"
+              onClick={function () {
+                var z = document.querySelector("#placementsidedropwrap")
+                if (z.style.display === "none") {
+                  z.style.display = "flex"
+                } else {
+                  z.style.display = "none"
+                }
+              }}
+            >
               <div className="navsideicondiv">
                 <img src={placementicon} alt="" />
               </div>
               <p>Placements</p>
-            </Link>
+            </div>
+            <div id="placementsidedropwrap">
+              <div className="departsidedrop">
+                {Navlist.placements.map(item => (
+                  <Link
+                    to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+                    className="nav-sidebar-div"
+                  >
+                    <p>
+                      <span>{item.title}</span>
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
           <Link
             className="nav-side-link nav-sidebar-div"
@@ -558,12 +615,38 @@ const Navbar = ({ theme, changeTheme, department }) => {
               ))}
             </div>
           </div>
-          <Link to="/facilities" className="nav-sidebar-div">
+          <div
+            to="/facilities"
+            className="nav-sidebar-div"
+            onClick={function () {
+              var z = document.querySelector("#facsidedropwrap")
+              if (z.style.display === "none") {
+                z.style.display = "flex"
+              } else {
+                z.style.display = "none"
+              }
+            }}
+          >
             <div className="navsideicondiv">
               <img src={facilityicon} alt="" />
             </div>
             <p>Facilities</p>
-          </Link>
+          </div>
+          <div id="facsidedropwrap">
+            <div className="departsidedrop">
+              {Navlist.facilities.map(item => (
+                <Link
+                  to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+                  className="nav-sidebar-div"
+                >
+                  <p>
+                    <span>{item.title}</span>
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </div>
+
           <Link to="/student" className="nav-sidebar-div">
             <div className="navsideicondiv">
               <img src={studenticon} alt="" />
@@ -571,12 +654,43 @@ const Navbar = ({ theme, changeTheme, department }) => {
             <p>Students</p>
           </Link>
 
-          <Link to="/placements" className="nav-sidebar-div">
+          {/* <Link to="/placements" className="nav-sidebar-div">
             <div className="navsideicondiv">
               <img src={placementicon} alt="" />
             </div>
             <p>Placements</p>
-          </Link>
+          </Link> */}
+          <div
+            to="/placements"
+            className="nav-sidebar-div"
+            onClick={function () {
+              var z = document.querySelector("#placementsidedropwrap")
+              if (z.style.display === "none") {
+                z.style.display = "flex"
+              } else {
+                z.style.display = "none"
+              }
+            }}
+          >
+            <div className="navsideicondiv">
+              <img src={placementicon} alt="" />
+            </div>
+            <p>Placements</p>
+          </div>
+          <div id="placementsidedropwrap">
+            <div className="departsidedrop">
+              {Navlist.placements.map(item => (
+                <Link
+                  to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+                  className="nav-sidebar-div"
+                >
+                  <p>
+                    <span>{item.title}</span>
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       )}
     </NavbarStyle>

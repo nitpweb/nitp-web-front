@@ -10,7 +10,7 @@ const Academicspage = () => {
   const [tab] = useQueryParam("tab")
   const [notices, setNotices] = useState()
  const [view, setView] = useState("admission")
-console.log(view)
+
  function getView(callback) {
    setView(callback)
  }
@@ -19,6 +19,7 @@ console.log(view)
     x.title === tab ? setView(tab) : ""
   })
 }, [tab])
+
   useEffect(() => {
     let noticesUrl = `${process.env.GATSBY_API_URL}/api/notice/academics`
     axios
@@ -29,7 +30,7 @@ console.log(view)
       .catch(e => {
         console.log(e)
       })
-  })
+  },[])
 
   return (
     <>
