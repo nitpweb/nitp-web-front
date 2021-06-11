@@ -92,11 +92,6 @@ export const contact = () => {
 export const achievements = () => {
   return (
     <>
-      <div className="row rowmarl3 ">
-        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
-          Achievements
-        </h1>
-      </div>
       <div className="row rowmarl3">{Achievements.content}</div>
     </>
   )
@@ -106,11 +101,6 @@ export const activities = () => {
   return (
     <>
       {" "}
-      <div className="row rowmarl3 ">
-        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
-          Activities
-        </h1>
-      </div>
       <div className="row rowmarl3">{Activities.content}</div>
     </>
   )

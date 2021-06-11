@@ -83,11 +83,6 @@ export const activities = () => {
   return (
     <>
       {" "}
-      <div className="row rowmarl3 ">
-        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
-          Activities
-        </h1>
-      </div>
       <div className="rowmarl3">{Activities.content}</div>
     </>
   )

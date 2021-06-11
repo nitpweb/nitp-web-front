@@ -90,11 +90,6 @@ export const contact = () => {
 export const labs = () => {
   return (
     <>
-      <div className="row rowmarl3 ">
-        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
-          Labs
-        </h1>
-      </div>
       <div className="row rowmarl3">
         <div className="col-6">
           {Labs[0].title}
@@ -114,11 +109,6 @@ export const achievements = () => {
     <>
       {" "}
       <div className="row rowmarl3">
-        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
-          Achievements
-        </h1>
-      </div>
-      <div className="row rowmarl3">
         {Achievements.map((acht, idx) => (
           <React.Fragment key={idx}>
             <div className="row">{acht.title}</div>
@@ -135,11 +125,6 @@ export const activities = () => {
   return (
     <>
       {" "}
-      <div className="row rowmarl3">
-        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
-          Activities
-        </h1>
-      </div>
       <div className=" row rowmarl3">
         {Activities.map((act, idx) => (
           <React.Fragment key={idx}>
