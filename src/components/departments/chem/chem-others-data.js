@@ -329,8 +329,6 @@ export const Activity = {
 export const Achievements = {
   content: (
     <>
-      <h1>Achievements</h1>
-
       <img
         src={`${home}cheimg/rc.png`}
         className="img-fluid"
