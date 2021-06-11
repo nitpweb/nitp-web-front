@@ -84,21 +84,24 @@ export const NavigateStyle = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
-    align-items: center;
-    top: 0%;
-    position: relative;
+    align-items: flex-end;
+    position: absolute;
+    top: 2rem;
+    background-color: transparent;
     justify-content: center;
-    margin: 0;
     .childLink {
-      width: 125px;
-      min-height: 35px;
+      width: fit-content;
+      min-width: 60px;
+      max-width: 120px;
       height: 35px;
       padding: 0 0.5rem;
       margin: 0.2rem 0.2rem;
       background-color: ${props => props.theme.primaryColor};
       border-radius: 2rem;
+      overflow: hidden;
+      word-wrap: break-word;
       p {
-        font-size: 12px;
+        font-size: 11px;
         color: white;
         font-weight: normal;
         padding: 0;
@@ -119,7 +122,6 @@ export const NavigateStyle = styled.div`
     }
     .active {
       background-color: white;
-      transform: scale(1.05);
       margin: 0 0.15rem;
       p {
         color: ${props => props.theme.primaryColor};

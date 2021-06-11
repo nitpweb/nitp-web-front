@@ -1,19 +1,26 @@
-import React, { useState } from "react"
+import React, { useState,useEffect} from "react"
 import tandpcell from "./placements/img/tandpcell.jpg"
 import { PageLayout } from "./styles/pagelayout"
 import { TabPage } from "./styles/tabpage"
 import Navigate from "./global/Navigate"
 import Placementlist from "./placements/const"
+import { useQueryParam} from "use-query-params"
 
 const Placementpage = () => {
+  const [tab] = useQueryParam("tab")
      const [view, setView] = useState("about")
      console.log(view)
      function getView(callback) {
        setView(callback)
      }
+     useEffect(() => {
+      Placementlist.forEach(x => {
+        x.title === tab ? setView(tab) : ""
+      })
+    }, [tab])
   return (
     <TabPage>
-      <Navigate data={Placementlist} callback={getView} />
+      <Navigate data={Placementlist} callback={getView} tab={tab}/>
       <div className="mainDiv">
         {/* <div className="layoutrow layoutrowmain">
             <div className="col-6">
@@ -34,7 +41,7 @@ const Placementpage = () => {
               <img src={tandpcell} className="img-fluid" loading="lazy" />
             </div>
           </div> */}
-        {view == "about" && (
+        {view == "About" && (
           <div className="layoutrow">
             <div className="layoutabout">
               <div className="row">
@@ -71,7 +78,7 @@ const Placementpage = () => {
             </div>
           </div>
         )}
-        {view == "dirmsg" && (
+        {view == "Director's Message" && (
           <div className="layoutrow">
             <div className="col-6 imgcolstyle">
               <img src={tandpcell} className="img-fluid" loading="lazy" />
@@ -149,7 +156,7 @@ const Placementpage = () => {
             </div>
           </div>
         )}
-        {view == "tpo" && (
+        {view == "TPO's Message" && (
           <div className="layoutrow">
             <div className="col-6">
               <div className="row rowmarl3">
@@ -243,7 +250,7 @@ const Placementpage = () => {
             </div>
           </div>
         )}
-        {view == "placoff" && (
+        {view == "Placement Officers" && (
           <div className="layoutrow layoutfoot">
             <div className="row rowmarl3">
               <h1>Placement Officers</h1>

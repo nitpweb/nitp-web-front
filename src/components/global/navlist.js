@@ -77,27 +77,108 @@ const About = [
   },
 ]
 
-const Academics=[
+const Academics = [
   {
-    url:"/academics",
-    title:"Admissions",
-    name:"Admissions",
+    url: "/academics",
+    title: "Admissions",
+    name: "Admissions",
   },
   {
-    url:"/academics",
-    title:"Notices",
-    name:"Notices",
+    url: "/academics",
+    title: "Notices",
+    name: "Notices",
   },
   {
-    url:"/academics",
-    title:"Format",
-    name:"Format",
-  }
+    url: "/academics",
+    title: "Format",
+    name: "Format",
+  },
+]
+const Facilities = [
+  {
+    url: "/facilities",
+    title: "Computer Centre",
+    name: "Computer Centre",
+  },
+  {
+    url: "/facilities",
+    title: "Library",
+    name: "Library",
+  },
+  {
+    url: "/facilities",
+    title: "Medical Facilities",
+    name: "Medical Facilities",
+  },
+  {
+    url: "/facilities",
+    title: "Sports Facilities",
+    name: "Sports Facilities",
+  },
+  {
+    url: "/facilities",
+    title: "Hostel & Mess",
+    name: "Hostel and Mess",
+  },
+  {
+    url: "/facilities",
+    title: "Laboratories",
+    name: "Laboratories",
+  },
+  {
+    url: "/facilities",
+    title: "WiFi",
+    name: "WiFi",
+  },
+  {
+    url: "/facilities",
+    title: "Bank",
+    name: "Bank",
+  },
+  {
+    url: "/facilities",
+    title: "Security",
+    name: "Security",
+  },
+  {
+    url: "/facilities",
+    title: "Woman Cell",
+    name: "Woman Cell",
+  },
+  {
+    url: "/facilities",
+    title: "Electric Maintainence Unit",
+    name: "Electric Maintainence Unit",
+  },
+]
+const Placement = [
+  {
+    url: "/placements",
+    title: "About",
+    name: "About",
+  },
+  {
+    url: "/placements",
+    title: "Director's Message",
+    name: "Director's Message",
+  },
+  {
+    url: "/placements",
+    title: "TPO's Message",
+    name: "TPO's Message",
+  },
+  {
+    url: "/placements",
+    title: "Placement Officers",
+    name: "Placement Officers",
+  },
 ]
 const Navlist = {
   departments: Departments,
   admin: Admin,
   about: About,
-  academics:Academics,
+  academics: Academics,
+  facilities: Facilities,
+  placements: Placement,
 }
 export default Navlist
