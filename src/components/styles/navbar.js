@@ -287,7 +287,7 @@ export const NavbarStyle = styled.div`
 
   .nav-sidebar-div {
     display: flex;
-    width:280px;
+    width: 280px;
     padding-left: 25px;
     align-items: center;
     text-decoration: none;
@@ -322,7 +322,12 @@ export const NavbarStyle = styled.div`
   #sidedropicon {
     transition: 0.01s ease-in-out;
   }
-  #departsidedropwrap, #adminsidedropwrap,#aboutsidedropwrap,#acadsidedropwrap {
+  #departsidedropwrap,
+  #adminsidedropwrap,
+  #aboutsidedropwrap,
+  #acadsidedropwrap,
+  #facsidedropwrap,
+  #placementsidedropwrap {
     display: none;
     padding-left: 0px;
   }

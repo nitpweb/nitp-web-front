@@ -1,43 +1,43 @@
 export const FacilityList = [
   {
     title: "Computer Centre",
-    data: "cc",
+    data: "Computer Centre",
   },
   {
     title: "Library",
-    data: "library",
+    data: "Library",
   },
   {
     title: "Medical Facilities",
-    data: "medical",
+    data: "Medical Facilities",
   },
   {
     title: "Sports Facilities",
-    data: "sports",
+    data: "Sports Facilities",
   },
   {
-    title: "Hostel & Mess",
-    data: "hostel",
+    title: "Hostel and Mess",
+    data: "Hostel and Mess",
   },
   {
     title: "Laboratories",
-    data: "lab",
+    data: "Laboratories",
   },
-  { title: "WiFi", data: "wifi" },
+  { title: "WiFi", data: "WiFi" },
   {
     title: "Bank",
-    data: "bank",
+    data: "Bank",
   },
   {
     title: "Security",
-    data: "security",
+    data: "Security",
   },
   {
     title: "Woman Cell",
-    data: "womancell",
+    data: "Woman Cell",
   },
   {
     title: "Electric Maintainence Unit",
-    data: "emu",
+    data: "Electric Maintainence Unit",
   },
 ]

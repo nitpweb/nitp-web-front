@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState,useEffect } from "react"
 import bank from "./facilities/img/bank.svg"
 import dummy from "./facilities/img/dummy.png"
 import medical from "./facilities/img/medical.svg"
@@ -13,6 +13,7 @@ import { PageLayout } from "./styles/pagelayout"
 import { TabPage } from "./styles/tabpage"
 import { ComputerCentre, FacilityList } from "./facilities/const"
 import Navigate from "./global/Navigate"
+import { useQueryParam} from "use-query-params"
 const ccdetail =
   "A state-of-the-art Computer Centre started its operation on 27th November 2011. It serves as the central computing facility for the students, research scholars and teachers of the institute. The Centre is well equipped with modern Computers (190 in number), air conditioned labs and stabilized uninterrupted power supply among the other facilities. The Centre has seven labs for all the students and one lab exclusively for PhD scholars of the institute. All labs are equipped with IP cameras to monitor the activities remotely. The Centre has 1 Gbps, 24x7 internet connectivity on optical fiber under National Knowledge Network, Govt. of India.The Centre also has a Virtual Class Room and Desktop VideoConferencing facility. It operates from 8:30 AM to 5:30 PM."
 const libdetail =
@@ -37,13 +38,19 @@ const emudetail =
   "To provide Electric power supply to the Institute. EMU maintains all electrical equipment such as Lights, Fans, AC, etc. which are installed in NIT Patna campus. EMU is having an 11KV/415V Electrical Substation (commonly Known as POWER HOUSE), equipped with 02 Nos. 1250KVA Transformer, 02 Nos. 750 KVA Diesel Generator and Separate Electricals Panels for each feeder pillars/Buildings. <br/><br/>Land line- 0612-2371715 Extension No.-116 <br/>br/>For any type of Electrical Complaint kindly fill the form."
 
 const Facilitiespage = () => {
-  const [view, setView] = useState("cc")
+  const [tab] = useQueryParam("tab")
+  const [view, setView] = useState("Computer Centre")
   function getView(callback) {
     setView(callback)
   }
+  useEffect(() => {
+    FacilityList.forEach(x => {
+      x.title === tab ? setView(tab) : ""
+    })
+  }, [tab])
   return (
     <TabPage>
-      <Navigate data={FacilityList} callback={getView} />
+      <Navigate data={FacilityList} callback={getView} tab={tab}/>
       {/* <Floatmenu /> */}
       <div className="mainDiv">
         <PageLayout>
@@ -57,7 +64,7 @@ const Facilitiespage = () => {
               <Facilitymain />
             </div>
           </div> */}
-          {view == "cc" && (
+          {view == "Computer Centre" && (
             <div className="layoutrow layoutrow1" id="cc">
               <div className="col-6 imgcolstyle">
                 <Ccimg />
@@ -72,7 +79,7 @@ const Facilitiespage = () => {
               </div>
             </div>
           )}
-          {view == "library" && (
+          {view == "Library" && (
             <div className="layoutrow" id="lib">
               <div className="col-6">
                 <div className="row rowmarl3">
@@ -149,7 +156,7 @@ const Facilitiespage = () => {
               </div>
             </div>
           )}
-          {view == "medical" && (
+          {view == "Medical Facilities" && (
             <div className="layoutrow layoutrow1" id="med">
               <div className="col-6 imgcolstyle">
                 <Dummyimg />
@@ -198,7 +205,7 @@ const Facilitiespage = () => {
               </div>
             </div>
           )}
-          {view == "sports" && (
+          {view == "Sports Facilities" && (
             <div className="layoutrow" id="sport">
               <div className="col-6">
                 <div className="row rowmarl3">
@@ -213,7 +220,7 @@ const Facilitiespage = () => {
               </div>
             </div>
           )}
-          {view == "hostel" && (
+          {view == "Hostel and Mess" && (
             <div className="layoutrow layoutrow1" id="hostel">
               <div className="col-6 imgcolstyle">
                 <Dummyimg />
@@ -228,7 +235,7 @@ const Facilitiespage = () => {
               </div>
             </div>
           )}
-          {view == "lab" && (
+          {view == "Laboratories" && (
             <div className="layoutrow" id="lab">
               <div className="col-6">
                 <div className="row rowmarl3">
@@ -266,7 +273,7 @@ const Facilitiespage = () => {
               </div>
             </div>
           )}
-          {view == "wifi" && (
+          {view == "WiFi" && (
             <div className="layoutrow layoutrow1" id="wifi">
               <div className="col-6 imgcolstyle">
                 <img src={wifi} className="img-fluid" loading="lazy" />
@@ -281,7 +288,7 @@ const Facilitiespage = () => {
               </div>
             </div>
           )}
-          {view == "bank" && (
+          {view == "Bank" && (
             <div className="layoutrow" id="bank">
               <div className="col-6">
                 <div className="row rowmarl3">
@@ -296,7 +303,7 @@ const Facilitiespage = () => {
               </div>
             </div>
           )}
-          {view == "security" && (
+          {view == "Security" && (
             <div className="layoutrow layoutrow1" id="security">
               <div className="col-6 imgcolstyle">
                 <img src={security} className="img-fluid" loading="lazy" />
@@ -311,7 +318,7 @@ const Facilitiespage = () => {
               </div>
             </div>
           )}
-          {view == "womancell" && (
+          {view == "Woman Cell" && (
             <div className="layoutrow" id="wc">
               <div className="col-6">
                 <div className="row rowmarl3">
@@ -326,7 +333,7 @@ const Facilitiespage = () => {
               </div>
             </div>
           )}
-          {view == "emu" && (
+          {view == "Electric Maintainence Unit" && (
             <div className="layoutrow layoutrow1" id="electric">
               <div className="col-6 imgcolstyle">
                 <img src={electric} className="img-fluid" loading="lazy" />

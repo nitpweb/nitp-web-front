@@ -1,19 +1,19 @@
 const Placementlist = [
   {
     title: "About",
-    data: "about",
+    data: "About",
   },
   {
     title: "Director's Message",
-    data: "dirmsg",
+    data: "Director's Message",
   },
   {
     title: "TPO's Message",
-    data: "tpo",
+    data: "TPO's Message",
   },
   {
     title: "Placement Officers",
-    data: "placoff",
+    data: "Placement Officers",
   },
 ]
 
