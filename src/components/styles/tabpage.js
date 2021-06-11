@@ -145,9 +145,11 @@ export const TabPage = styled.div`
     }
   }
   @media (max-width: 768px) {
-    padding-top: 10.5rem;
+    margin-top: 7.5rem;
+    position: relative;
     .mainDiv {
       width: 80vw;
+      margin-top: 2.2rem;
       .layoutrow1 {
         flex-direction: column-reverse;
       }
