@@ -25,11 +25,16 @@ export const FooterStyle = styled.div`
   }
 
   .foot-col-4 {
+    padding-top: 0;
     h1 {
       font-size: 1.2rem;
+      text-rendering: optimizeLegibility;
     }
     h3 {
       font-size: 1rem;
+      margin: 0.5rem 0;
+      font-weight: 500;
+      text-rendering: optimizeLegibility;
     }
   }
   .foot-col-3 {
@@ -37,6 +42,8 @@ export const FooterStyle = styled.div`
     h1 {
       color: ${props => props.theme.textColor};
       font-size: 1.2rem;
+      font-weight: 600;
+      text-rendering: optimizeLegibility;
     }
     a {
       text-decoration: none;
@@ -44,6 +51,9 @@ export const FooterStyle = styled.div`
       line-height: 1;
       h3 {
         font-size: 1rem;
+        margin: 0.5rem 0;
+        font-weight: 500;
+        text-rendering: optimizeLegibility;
       }
     }
   }
@@ -61,15 +71,16 @@ export const FooterStyle = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-family: "Source Sans Pro";
     color: ${props => props.theme.primaryTextColor};
     background-color: ${props => props.theme.backgroundColor};
     p {
-      font-weight: bolder;
+      font-weight: bold;
       display: flex;
       justify-content: center;
       align-items: center;
       font-size: 14px;
+      font-family: "Source Sans Pro";
+      letter-spacing: 0.03rem;
     }
   }
 

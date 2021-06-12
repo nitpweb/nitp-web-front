@@ -7,7 +7,7 @@ export const NewsCardStyle = styled.div`
   background-color: ${props => props.theme.backgroundSecColor};
   min-height: 325px;
   overflow: hidden;
-  box-shadow: 0 3px 8px #15141a, 0 0 2px #15141a;
+  box-shadow: 0 3px 8px #9b9b9e, 0 0 2px #9b9b9e;
   margin: 20px;
   border-radius: 10px;
   .news-img-wrap {
