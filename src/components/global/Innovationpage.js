@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
 import { NewspageStyle } from "../styles/newspage"
+import InCard from "../home/InCard"
 
 const Innovationpage = () => {
   const [data, setData] = useState([])
@@ -37,20 +38,27 @@ const Innovationpage = () => {
     const cyear = cdate.getFullYear()
 
     return (
-      <div className="newscard row" id={val.id}>
-        <div className="news-img-wrap">
-          <img
-            src={`https://drive.google.com/thumbnail?id=${link(
-              val.image[0].url
-            )}`}
-            alt="Hello"
-          ></img>
-        </div>
-        <div className="news-details">
-          <h1>{val.title}</h1>
-          <p>{val.description}</p>
-        </div>
-      </div>
+      // <div className="newscard row" id={val.id}>
+      //   <div className="news-img-wrap">
+      //     <img
+      //       src={`https://drive.google.com/thumbnail?id=${link(
+      //         val.image[0].url
+      //       )}`}
+      //       alt="Hello"
+      //     ></img>
+      //   </div>
+      //   <div className="news-details">
+      //     <h1>{val.title}</h1>
+      //     <p>{val.description}</p>
+      //   </div>
+      // </div>
+      <InCard
+      link1={link(val.image[0].url)}
+      link2={val.image[1] ? link(val.image[1].url) : null}
+      heading={`${val.title.slice(0, 72)}`}
+      date={`${day}/${month}/${year}`}
+      key={val.id}
+    />
     )
   }
   return (
