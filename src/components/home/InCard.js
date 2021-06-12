@@ -20,7 +20,7 @@ const Incard = props => {
         <div className="part2">
           <div className="text">
             <p id="heading">
-              <Link id="loadmore" to="/Innovationp">
+              <Link id="loadmore" to="/ReadMore">
                 {props.heading}
               </Link>
             </p>

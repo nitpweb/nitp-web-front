@@ -3,7 +3,7 @@ import Innovationpage from "../components/global/Innovationpage"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Event = () => (
+const Innovation = () => (
   <Layout>
     <SEO title="Innovation" />
     <div className="InnovationPage">
@@ -13,4 +13,4 @@ const Event = () => (
   </Layout>
 )
 
-export default Event
+export default Innovation

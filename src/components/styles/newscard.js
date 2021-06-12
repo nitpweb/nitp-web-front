@@ -2,16 +2,16 @@ import styled from "styled-components"
 
 export const NewsCardStyle = styled.div`
   width: 265px;
-  height: 350px;
+  height: 325px;
   min-width: 265px;
   background-color: ${props => props.theme.backgroundSecColor};
-  min-height: 350px;
+  min-height: 325px;
   overflow: hidden;
-  box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.28);
-  margin-left: 40px;
-  border-radius: 2px;
+  box-shadow: 0 3px 8px #15141a, 0 0 2px #15141a;
+  margin: 20px;
+  border-radius: 10px;
   .news-img-wrap {
-    height: 60%;
+    height: 45%;
     overflow: hidden;
     display: grid;
     place-items: center;
@@ -20,6 +20,7 @@ export const NewsCardStyle = styled.div`
       min-height: 100%;
       width: auto;
       height: auto;
+      object-fit: cover;
     }
   }
   .news-read {
