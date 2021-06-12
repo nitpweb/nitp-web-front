@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react"
-import corona from "./img/corona.svg"
-import nss from "./img/nss.svg"
-import josaa from "./img/josaa.svg"
-import teqip from "./img/teqip.svg"
+import notice from "./img/notice.png"
+import event from "./img/event.png"
+import news from "./img/news.png"
+import innovation from "./img/innovation.png"
 import chanakya from "./img/chanakya.svg"
 import firstyear from "./img/firstyear.svg"
 import { ImportantLinkStyle } from "../styles/home/importantlink"
@@ -22,46 +22,46 @@ const Importantlink = () => {
       style={{ transform: `translateY(${offsetY * -0.1}px)` }}
     >
       <div className="link-col">
-        <a href="http://exam.nitp.ac.in/">
+        <a href="#notice">
           <div className="implink">
-            <img className="linkimg" src={chanakya} alt="chanakya" />
-            <h3>CHANAKYA</h3>
-            <div className="lead">
-              <p>The student portal for all the needs of a student</p>
-            </div>
-          </div>
-        </a>
-        <a href="https://tcfnitp.tech/">
-          <div className="implink">
-            <img className="linkimg" src={corona} alt="corona" />
-            <h3>CORONA</h3>
+            <img className="linkimg" src={notice} alt="corona" />
+            <h3>NOTICE</h3>
             <div className="lead">
               <p>
-                The Annual Techno Cultutal Festivals oraganised by the students
+                Collection of important notices
               </p>
             </div>
           </div>
         </a>
-        <a href="https://nss.gov.in/">
+        <a href="#events">
           <div className="implink">
-            <img className="linkimg" src={nss} alt="nss" />
-            <h3>NSS</h3>
+            <img className="linkimg" src={event} alt="nss" />
+            <h3>EVENT</h3>
             <div className="lead">
               <p>
-                Aimed at developing student's personality through community
-                service
+                List of upcoming events
               </p>
             </div>
           </div>
         </a>
-        <a href="https://josaa.nic.in/webinfocms/Public/home.aspx">
+        <a href="#one">
           <div className="implink">
-            <img className="linkimg" src={josaa} alt="josaa" />
-            <h3>JOSAA</h3>
+            <img className="linkimg" src={innovation} alt="teqip" />
+            <h3>Innovation</h3>
             <div className="lead">
               <p>
-                A single platform for taking admission in various academic
-                programs
+                Information of all the innovations
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="#news">
+          <div className="implink">
+            <img className="linkimg" src={news} alt="josaa" />
+            <h3>NEWS</h3>
+            <div className="lead">
+              <p>
+              panorama of recent news
               </p>
             </div>
           </div>
@@ -74,15 +74,13 @@ const Importantlink = () => {
             <h3>JOSAA</h3>
           </div>
         </a> */}
-        <a href="https://www.teqip.in/">
+
+        <a href="http://exam.nitp.ac.in/">
           <div className="implink">
-            <img className="linkimg" src={teqip} alt="teqip" />
-            <h3>TEQIP</h3>
+            <img className="linkimg" src={chanakya} alt="chanakya" />
+            <h3>CHANAKYA</h3>
             <div className="lead">
-              <p>
-                A program to improve learning outcomes and employability of
-                graduate
-              </p>
+              <p>The student portal for all the needs of a student</p>
             </div>
           </div>
         </a>
