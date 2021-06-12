@@ -162,16 +162,44 @@ const Dephomepage = ({
           )}
 
           {view == "labs" && (
-            <div className="layoutrow layoutrow1 others">{Labs()}</div>
+            <div className="layoutrow layoutrow1 others">
+              <div className="row rowmarl3">
+                <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
+                  Labs
+                </h1>
+              </div>
+              {Labs()}
+            </div>
           )}
           {view == "achievements" && (
-            <div className="layoutrow layoutrow1 others">{Achievements()}</div>
+            <div className="layoutrow layoutrow1 others">
+              <div className="row rowmarl3">
+                <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
+                  Achievements
+                </h1>
+              </div>
+              {Achievements()}
+            </div>
           )}
           {view == "activities" && (
-            <div className="layoutrow layoutrow1 others">{Activities()}</div>
+            <div className="layoutrow layoutrow1 others">
+              <div className="row rowmarl3">
+                <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
+                  Activities
+                </h1>
+              </div>
+              {Activities()}
+            </div>
           )}
           {view == "others" && (
-            <div className="layoutrow layoutrow1 others">{Extras()}</div>
+            <div className="layoutrow layoutrow1 others">
+              <div className="row rowmarl3">
+                <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
+                  More Info
+                </h1>
+              </div>
+              {Extras()}
+            </div>
           )}
         </>
       </div>

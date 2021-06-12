@@ -75,9 +75,6 @@ export const Achievements = {
   content: (
     <>
       <div>
-        <h2>
-          <u>ACHIEVEMENTS</u>
-        </h2>
         <ul type="square">
           <li>
             <h3>
