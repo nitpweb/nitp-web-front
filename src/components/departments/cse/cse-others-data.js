@@ -1,3 +1,4 @@
+const home = "http://www.nitp.ac.in"
 export const Labs = [
   {
     content: (
@@ -12,7 +13,7 @@ export const Labs = [
     ),
     image: (
       <img
-        src="/images/cse-images/oslab.jpg"
+        src={`${home}/images/oslab.jpg`}
         id="oslab"
         height="250px"
         width="350px"
@@ -31,7 +32,7 @@ export const Labs = [
     ),
     image: (
       <img
-        src="/images/cse-images/net.jpg"
+        src={`${home}/images/net.jpg`}
         id="oslab2"
         height="250px"
         width="350px"
@@ -50,7 +51,7 @@ export const Labs = [
     ),
     image: (
       <img
-        src="/images/cse-images/simu.jpg"
+        src={`${home}/images/simu.jpg`}
         id="simu"
         height="250px"
         width="350px"
@@ -70,7 +71,7 @@ export const Labs = [
     ),
     image: (
       <img
-        src="/images/cse-images/soft.jpg"
+        src={`${home}/images/soft.jpg`}
         id="soft"
         height="250px"
         width="350px"
@@ -89,7 +90,7 @@ export const Labs = [
     ),
     image: (
       <img
-        src="/images/cse-images/imagep.jpg"
+        src={`${home}/images/imagep.jpg`}
         id="imagep"
         height="250px"
         width="350px"
@@ -108,12 +109,7 @@ export const Labs = [
       </>
     ),
     image: (
-      <img
-        src="/images/cse-images/hp.jpg"
-        id="hp"
-        height="250px"
-        width="350px"
-      />
+      <img src={`${home}/images/hp.jpg`} id="hp" height="250px" width="350px" />
     ),
   },
   {
@@ -132,7 +128,7 @@ export const Labs = [
     ),
     image: (
       <img
-        src="/images/cse-images/oslab.jpg"
+        src={`${home}/images/oslab.jpg`}
         id="oslab3"
         height="250px"
         width="350px"
