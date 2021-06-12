@@ -102,11 +102,6 @@ export const labs = () => {
   return (
     <>
       {" "}
-      <div className="row rowmarl3 ">
-        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
-          Labs
-        </h1>
-      </div>
       <div className="row rowmarl3">
         {" "}
         <div className="col-6">{Labs.content}</div>

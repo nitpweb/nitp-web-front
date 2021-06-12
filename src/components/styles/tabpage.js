@@ -108,6 +108,15 @@ export const TabPage = styled.div`
         color: ${props => props.theme.primaryColor};
         font-size: 2.5rem;
       }
+      .syllabus-table-head > th,
+      .syllabus-table-row > td {
+        font-family: "Quicksand";
+        padding: 10px 0px 0px 60px;
+      }
+      .syllabus-table-head > th {
+        font-size: 1.3rem;
+        color: ${props => props.theme.primaryColor};
+      }
     }
 
     .layoutabout {
@@ -152,6 +161,9 @@ export const TabPage = styled.div`
       margin-top: 2.2rem;
       .layoutrow1 {
         flex-direction: column-reverse;
+      }
+      .others {
+        flex-direction: column;
       }
       .col-6 {
         padding: 1vw;

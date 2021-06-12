@@ -120,11 +120,6 @@ export const labs = () => {
   return (
     <>
       {" "}
-      <div className="row rowmarl3 ">
-        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
-          Labs
-        </h1>
-      </div>
       <div className="row rowmarl3">
         <div
           className="col-6"
@@ -142,11 +137,6 @@ export const achievements = () => {
   return (
     <>
       {" "}
-      <div className="row rowmarl3">
-        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
-          Achievements
-        </h1>
-      </div>
       <br />
       <br />
       <div style={{ fontSize: `1.2rem` }} style={{ overflow: "auto" }}>

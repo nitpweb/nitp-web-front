@@ -110,11 +110,6 @@ export const labs = () => {
     <>
       {" "}
       <div className="row rowmarl3 ">
-        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
-          Labs
-        </h1>
-      </div>
-      <div className="row rowmarl3 ">
         {Labs[0].title}
         {Labs[0].text} {Labs[0].table}{" "}
       </div>
@@ -139,11 +134,6 @@ export const activities = () => {
   return (
     <>
       {" "}
-      <div className="row rowmarl3">
-        <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
-          Activities
-        </h1>
-      </div>
       <div className=" row rowmarl3" style={{ fontSize: `1.2rem` }}>
         {Activities.map((lab, idx) => {
           return (
