@@ -7,7 +7,7 @@ export const ImportantLinkStyle = styled.div`
   flex-direction: column;
   text-rendering: optimizeLegibility;
   max-width: 100%;
-  margin-top: -5vw;
+  margin-top: -7.5vw;
   margin-bottom: 5vh;
 
   .link-col {
@@ -20,7 +20,7 @@ export const ImportantLinkStyle = styled.div`
       text-decoration: none;
 
       .implink {
-        width: 18vw;
+        width: 13vw;
         height: 13vw;
         background: ${props => props.theme.backgroundSecColor};
         /* border-radius:5px; */
@@ -29,7 +29,7 @@ export const ImportantLinkStyle = styled.div`
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         color: #696969;
         /* filter: grayscale(100%); */

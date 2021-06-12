@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const EventCardStyle = styled.div`
-  width: 93%;
+  width: 90%;
   padding: 5px 15px 5px 15px;
   background: ${props => props.theme.backgroundSecColor};
   border-radius: 5px;
@@ -9,6 +9,7 @@ export const EventCardStyle = styled.div`
   display: flex;
   align-items: center;
   height: fit-content;
+
   .eventdtdiv {
     width: 77px;
     height: 80px;
@@ -27,6 +28,7 @@ export const EventCardStyle = styled.div`
         color: #fff;
         font-size: 36px;
         line-height: 0;
+        word-wrap: break-word;
         font-family: "Source Sans Pro";
         font-weight: bold;
       }
@@ -46,15 +48,17 @@ export const EventCardStyle = styled.div`
     }
   }
   .eventcarddetailsection {
-    width: 93%;
+    flex-direction: column;
     .eventcarddetail {
       margin-left: 5%;
       font-size: 16px;
       font-family: "Source Sans Pro";
+      color: ${props => props.theme.textColor};
       a {
         text-decoration: none;
         color: ${props => props.theme.textColor};
         font-weight: 600;
+        text-align: justify;
       }
     }
   }
@@ -70,13 +74,14 @@ export const EventCardStyle = styled.div`
         height: 16px;
       }
       .efp {
-        position: relative;
+        /* position: relative; */
         color: ${props => props.theme.primaryTextColor};
         font-size: 14px;
         width: max-content;
-        text-align: right;
+        text-align: left;
         font-family: "Source Sans Pro";
         margin-left: 5px;
+        letter-spacing: -.02rem;
       }
     }
   }
@@ -85,15 +90,20 @@ export const EventCardStyle = styled.div`
     .eventcarddetailsection {
       .eventcarddetail {
         font-size: 14px;
+        margin-right: 5%;
+        width:75%;
+        text-align: justify;
       }
     }
     .eventcardwrap {
       width: 98%;
     }
     #eventdtp {
+      padding-right: 5%;
       div {
         .efp {
           font-size: 12px;
+          
         }
       }
     }
