@@ -9,7 +9,6 @@ import {
   about,
   mission,
   labs,
-  achievements,
   activities,
   vision,
   contact,
@@ -27,7 +26,6 @@ const Ce = () => (
       Vision={vision}
       Contact={contact}
       Labs={labs}
-      Achievements={achievements}
       Activities={activities}
       datalist={datalist}
     />

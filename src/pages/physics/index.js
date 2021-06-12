@@ -8,7 +8,6 @@ import {
   titleDescription,
   about,
   mission,
-  labs,
   achievements,
   activities,
   vision,
@@ -27,7 +26,6 @@ const Phy = () => (
       Mission={mission}
       Vision={vision}
       Contact={contact}
-      Labs={labs}
       Achievements={achievements}
       Activities={activities}
       datalist={datalist}

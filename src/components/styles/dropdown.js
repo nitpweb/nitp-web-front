@@ -5,7 +5,7 @@ export const DropdownStyle = styled.div`
     background: transparent;
     border: none;
     text-decoration: none;
-    color: #fff;
+    color: ${props => props.theme.textColor};
     font-family: "Source Sans Pro";
     font-size: 1vw;
     font-weight: 500;
@@ -21,38 +21,40 @@ export const DropdownStyle = styled.div`
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: black;
+    background-color: ${props => props.theme.backgroundSecColor};
     min-width: max-content;
-    color: #fff;
+    color: ${props => props.theme.textColor};
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-
-  .dropdown-content a {
-    color: #fff;
-    padding: 8px 2px;
-    text-decoration: none;
-    display: block;
-    font-size:1vw;
-    overflow: hidden;
-    max-height: 1vw;
-  }
-
-  .dropdown-content a:hover {
-    color: #ffe657;
-    transition: 0.05s;
+    padding: 0px 5px 0px 5px;
   }
 
   &:hover .dropdown-content {
     display: block;
+    opacity: 1;
     transition: 0.05s;
   }
 
   .dropdown:hover .dropbtn {
-    color: #ffe657;
+    color: ${props => props.theme.primaryColor};
     transition: 0.05s;
   }
-  .dropdown-content > .nav-link-item {
-    font-size: 1vw;
+  .dropdown-content {
+    font-size: 0.8vw;
+    opacity: 1;
+
+    a {
+      color: ${props => props.theme.textColor};
+      padding: 8px 2px;
+      text-decoration: none;
+      display: block;
+      font-size: 0.8vw;
+      overflow: hidden;
+      max-height: 0.8vw;
+      &:hover {
+        color: ${props => props.theme.primaryColor};
+        transition: 0.05s;
+      }
+    }
   }
 `

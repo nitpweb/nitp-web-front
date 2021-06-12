@@ -9,8 +9,6 @@ import {
   about,
   mission,
   labs,
-  achievements,
-  activities,
   vision,
   contact,
   datalist,
@@ -27,8 +25,6 @@ const Arch = () => (
       Vision={vision}
       Contact={contact}
       Labs={labs}
-      Achievements={achievements}
-      Activities={activities}
       datalist={datalist}
     />
   </Layout>

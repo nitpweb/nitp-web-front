@@ -9,7 +9,6 @@ export const Dropdown = ({ title, list }) => {
         <div className="dropdown-content">
           {list.map(item => (
             <Link
-              className="nav-link-item"
               to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
             >
               <span>{item.title}</span>
