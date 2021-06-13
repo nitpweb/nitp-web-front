@@ -63,7 +63,7 @@ const Footer = () => {
           <div className="foot-col-3">
             <h1>Extra Links</h1>
             <a href="http://www.nitp.ac.in/php/img/digitalmap.jpg">
-              <h3>Digital Map of NIT Patna</h3>
+              <h3>Digital Map of NITP</h3>
             </a>
             <a href="http://www.nitp.ac.in/php/privacy.php">
               <h3>Privacy Policy</h3>

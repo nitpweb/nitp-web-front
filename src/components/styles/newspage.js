@@ -26,7 +26,7 @@ export const NewspageStyle = styled.div`
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      box-shadow: 0 3px 8px #15141a, 0 0 2px #15141a;
+      box-shadow: 0 3px 8px #9b9b9e, 0 0 2px #9b9b9e;
       flex-direction: column;
       margin: 0.8rem;
       .part1 {

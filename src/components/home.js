@@ -189,7 +189,7 @@ const Home = () => {
                       id={news.id}
                       time={d}
                       head={`${news.title.slice(0, 92)}...`}
-                      detail={desc.slice(0, 100)}
+                      detail={desc.slice(0, 200)}
                     />
                   )
                 }
