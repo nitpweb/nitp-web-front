@@ -82,7 +82,7 @@ const Footer = () => {
       </div>
       <div className="footdetail">
         <p>
-          National Institute of Technology Patna-800005,Bihar,INDIA© 2020 NIT
+          National Institute of Technology Patna-800005,Bihar,INDIA© 2021 NIT
           Patna
         </p>
       </div>
