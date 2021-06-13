@@ -8,7 +8,7 @@ const Newscard = inf => {
     <NewsCardStyle>
       <div className="news-img-wrap">
         <img
-          src={`https://drive.google.com/thumbnail?id=${inf.url}`}
+          src={`https://drive.google.com/uc?export=view&id=${inf.url}`}
           alt="Hello"
           className="card-img"
           loading="lazy"
@@ -19,7 +19,7 @@ const Newscard = inf => {
         <h4>{inf.head}</h4>
         <h6>
           {inf.detail}
-          <Link to={`/ReadMore`} className="newscard-readmore">
+          <Link to={`/ReadMore${inf.id ? `?tab=${inf.id}` : ""}`} className="newscard-readmore">
             Read more..
           </Link>
         </h6>
