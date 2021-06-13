@@ -110,6 +110,7 @@ export const NavigateStyle = styled.div`
         background-color: white;
         transform: scale(1.05);
         margin: 0 0.15rem;
+        padding: 0 0.15rem;
         p {
           color: ${props => props.theme.primaryColor};
         }
@@ -123,6 +124,7 @@ export const NavigateStyle = styled.div`
     .active {
       background-color: white;
       margin: 0 0.15rem;
+      padding: 0 0.15rem;
       p {
         color: ${props => props.theme.primaryColor};
       }

@@ -17,7 +17,7 @@ const Eventcard = props => {
       </div>
       <div className="eventcarddetailsection">
         <p className="eventcarddetail">
-          <a href={props.link} target="_blank">{props.detail}</a>
+          {props.link?<a href={props.link} target="_blank">{props.detail}</a>:<>{props.detail}</>}
         </p>
         <div id="eventdtp">
           <div>

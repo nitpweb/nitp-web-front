@@ -2,7 +2,7 @@ import { ThemeProvider } from "styled-components"
 
 export const light = {
   primaryColor: "#941b0c",
-  backgroundColor: "#ffffff",
+   backgroundColor: "#ffffff",
   backgroundSecColor: "#e4e6eb",
   primaryTextColor: "#941b0c",
   textColor: "#121212",
