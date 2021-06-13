@@ -10,13 +10,12 @@ export const ReadStyle = styled.div`
   position: relative;
   .wrapperDiv {
     width: 70vw;
-    min-height: fit-content;
-    max-height: 80vh;
+    min-height: 50vh;
+    height: 80vh;
     box-shadow: 0 3px 8px #9b9b9e, 0 0 2px #9b9b9e;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    position: relative;
     align-items: center;
     border-radius: 20px;
     overflow: scroll;
@@ -26,12 +25,13 @@ export const ReadStyle = styled.div`
       display: none;
     }
     .imgDiv {
-        display: grid;
-        place-items: center;
-        width: 300px;
-        min-height: 250px;
-        overflow: hidden;
-        border-radius: 10px;
+      margin: 1rem;
+      display: grid;
+      place-items: center;
+      width: 65vmax;
+      height: 57vmax;
+      overflow: hidden;
+      border-radius: 10px;
       .img {
         min-width: 100%;
         min-height: 100%;
@@ -45,8 +45,8 @@ export const ReadStyle = styled.div`
       h2 {
         text-align: center;
         font-family: "Source Sans Pro";
-        color: ${props => props.theme.textColor};
-        font-weight:600;
+        color: ${props => props.theme.primaryTextColor};
+        font-weight: 600;
         font-size: 1.75vmax;
       }
       p {
@@ -76,43 +76,56 @@ export const ReadStyle = styled.div`
         }
       }
       .download {
-          a{
-              text-decoration: none;
-              font-size: 14px;
-              color: ${props => props.theme.textColor};
-              display: flex;
-              flex-direction: row;
-              .notdownimg{
-                    width: 25px;
-                    height: 25px;
-                    border-radius: 50%;
-                    border:1px solid ${props => props.theme.textColor};
-                    
-              }
-              p{
-                  padding:0.5rem;
-                  font-weight: 500;
-                  font-family: "Source Sans Pro";
-              }
+        display: flex;
+        flex-direction: column;
+        p {
+          margin: 0;
+          font-family: "Source Sans Pro";
+          color: ${props => props.theme.textColor};
+          font-weight: 500;
+        }
+        a {
+          text-decoration: none;
+          font-size: 14px;
+          color: ${props => props.theme.primaryColor};
+          display: flex;
+          flex-direction: row;
+          .notdownimg {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            border: 1px solid ${props => props.theme.textColor};
           }
+          p {
+            padding: 0.5rem;
+            font-weight: 600;
+            font-family: "Source Sans Pro";
+            color: ${props => props.theme.primaryColor};
+          }
+        }
       }
     }
   }
   @media (max-width: 768px) {
     .wrapperDiv {
       width: 90vw;
-      .info{
-        p{
-            font-size: 14px;
-        }
+      .imgDiv{
+        width: 300px;
+      height: 200px;
       }
-      .base {
-      .author {
-        font-size: 14px;
+      .info {
         p {
           font-size: 14px;
         }
       }
+      .base {
+        .author {
+          font-size: 14px;
+          p {
+            font-size: 14px;
+          }
+        }
+      }
     }
-    }}
+  }
 `

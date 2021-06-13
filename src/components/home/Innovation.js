@@ -59,6 +59,7 @@ const Innovation = () => {
         date={`${day}/${month}/${year}`}
         key={index}
         trans={x}
+        id={val.id}
       />
     )
   }

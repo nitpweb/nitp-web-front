@@ -25,19 +25,19 @@ export const FooterStyle = styled.div`
   }
 
   .foot-col-4 {
-    padding-top: 0;
+    padding-top: 0.5rem;
     h1 {
       font-size: 1.2rem;
       text-rendering: optimizeLegibility;
     }
     h3 {
       font-size: 1rem;
-      margin: 0.5rem 0;
       font-weight: 500;
       text-rendering: optimizeLegibility;
     }
   }
   .foot-col-3 {
+    padding-top: 0.5rem;
     width: 33%;
     h1 {
       color: ${props => props.theme.textColor};
@@ -51,7 +51,6 @@ export const FooterStyle = styled.div`
       line-height: 1;
       h3 {
         font-size: 1rem;
-        margin: 0.5rem 0;
         font-weight: 500;
         text-rendering: optimizeLegibility;
       }
