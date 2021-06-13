@@ -10,12 +10,12 @@ export const ReadStyle = styled.div`
   position: relative;
   .wrapperDiv {
     width: 70vw;
-    min-height: 50vh;
+    min-height: fit-content;
     height: 80vh;
     box-shadow: 0 3px 8px #9b9b9e, 0 0 2px #9b9b9e;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     border-radius: 20px;
     overflow: scroll;

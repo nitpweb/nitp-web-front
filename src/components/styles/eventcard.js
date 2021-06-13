@@ -81,7 +81,7 @@ export const EventCardStyle = styled.div`
         text-align: left;
         font-family: "Source Sans Pro";
         margin-left: 5px;
-        letter-spacing: -.02rem;
+        letter-spacing: -.03rem;
       }
     }
   }

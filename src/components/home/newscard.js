@@ -19,7 +19,7 @@ const Newscard = inf => {
         <h4>{inf.head}</h4>
         <h6>
           {inf.detail}
-          <Link to={`/ReadMore${inf.id ? `?tab=${inf.id}` : ""}`} className="newscard-readmore">
+          <Link to={`/ReadMore${inf.id ? `?id=${inf.id}` : ""}`} className="newscard-readmore">
             Read more..
           </Link>
         </h6>

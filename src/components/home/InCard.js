@@ -4,11 +4,12 @@ import { Link } from "gatsby"
 const Incard = props => {
   return (
     <>
-      <div
+      <Link
         className="card"
         id={props.id}
         style={{ transform: `translateX(${props.trans}px)` }}
         data-aos="zoom"
+        to={`/ReadMoreIn${props.id ? `?id=${props.id}` : ""}`}
       >
         <div className="part1">
           <img
@@ -19,7 +20,7 @@ const Incard = props => {
         <div className="part2">
           <div className="text">
             <p id="heading">
-              <Link id="loadmore" to={`/ReadMoreIn${props.id ? `?tab=${props.id}` : ""}`}>
+              <Link id="loadmore" to={`/ReadMoreIn${props.id ? `?id=${props.id}` : ""}`}>
                 {props.heading}
               </Link>
             </p>
@@ -36,7 +37,7 @@ const Incard = props => {
             />
           </div>
         </div>
-      </div>
+      </Link>
     </>
   )
 }
