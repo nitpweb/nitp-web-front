@@ -8,13 +8,13 @@ import { useQueryParam } from "use-query-params"
 import axios from "axios"
 
 const ReadMoreIn = () => {
-  const [tab] = useQueryParam("tab")
+  const [id] = useQueryParam("id")
   const [data, setData] = useState()
   useEffect(() => {
     loadData();
-  }, [tab])
+  }, [id])
   const loadData = () => {
-    const url = `${process.env.GATSBY_API_URL}/api/innovation/${tab}`
+    const url = `${process.env.GATSBY_API_URL}/api/innovation/${id}`
     axios
       .get(url)
       .then(res => setData(res.data[0]))
@@ -36,7 +36,7 @@ const ReadMoreIn = () => {
         <ReadStyle>
           <div className="wrapperDiv">
             <div className="imgDiv">
-              <img className="img" src={data.image.length!=0?`https://drive.google.com/thumbnail?id=${link(data.image[0].url)}`:news} alt="" />
+              <img className="img" src={data.image.length!=0?`https://drive.google.com/uc?export=view&id=${link(data.image[0].url)}`:news} alt="" />
             </div>
             <div className="info">
               <h2>{data.title}</h2>
@@ -44,7 +44,7 @@ const ReadMoreIn = () => {
             </div>
             <div className="base">
               <div className="author">
-                <p>Autor : {data.author}</p>
+                {/* <p>Autor : {data.author}</p> */}
                 <p>Date : {new Date(data.openDate).toLocaleDateString()}</p>
               </div>
               <div className="download">

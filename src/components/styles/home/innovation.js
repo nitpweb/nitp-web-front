@@ -96,6 +96,7 @@ export const InnovationStyle = styled.div`
       -ms-flex-direction: column;
       flex-direction: column;
       margin-left: 2rem;
+      text-decoration: none;
       .part1 {
         width: 300px;
         height: 65%;

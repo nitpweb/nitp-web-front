@@ -8,13 +8,13 @@ import { useQueryParam } from "use-query-params"
 import axios from "axios"
 
 const ReadMore = () => {
-  const [tab] = useQueryParam("tab")
+  const [id] = useQueryParam("id")
   const [data, setData] = useState()
   useEffect(() => {
     loadData();
-  }, [tab])
+  }, [id])
   const loadData = () => {
-    const url = `${process.env.GATSBY_API_URL}/api/news/${tab}`
+    const url = `${process.env.GATSBY_API_URL}/api/news/${id}`
     axios
       .get(url)
       .then(res => setData(res.data[0]))
