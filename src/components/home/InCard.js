@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 
 const Incard = props => {
-  // console.log(props.link1)
   return (
     <>
       <div
@@ -13,14 +12,14 @@ const Incard = props => {
       >
         <div className="part1">
           <img
-            src={`https://drive.google.com/thumbnail?id=${props.link1}`}
+            src={`https://drive.google.com/uc?export=view&id=${props.link1}`}
             alt="img"
           />
         </div>
         <div className="part2">
           <div className="text">
             <p id="heading">
-              <Link id="loadmore" to="/ReadMore">
+              <Link id="loadmore" to={`/ReadMoreIn${props.id ? `?tab=${props.id}` : ""}`}>
                 {props.heading}
               </Link>
             </p>

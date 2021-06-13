@@ -47,7 +47,7 @@ const Importantlink = () => {
         <a href="#one">
           <div className="implink">
             <img className="linkimg" src={innovation} alt="teqip" />
-            <h3>Innovation</h3>
+            <h3>INNOVATION</h3>
             <div className="lead">
               <p>
                 Information of all the innovations
@@ -87,7 +87,7 @@ const Importantlink = () => {
         <a href={/academics/}>
           <div className="implink">
             <img className="linkimg" src={firstyear} alt="chanakya" />
-            <h3>Admissions</h3>
+            <h3>ADMISSIONS</h3>
             <div className="lead">
               <p>
                 For the newbies willing to take admission in upcoming sessions

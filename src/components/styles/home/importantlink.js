@@ -53,7 +53,7 @@ export const ImportantLinkStyle = styled.div`
           }
         }
         h3 {
-          font-size: 1.2vw;
+          font-size: 1.2vmax;
           color: ${props => props.theme.primaryColor};
           font-family: Source Sans Pro;
           font-weight: bold;
@@ -84,10 +84,18 @@ export const ImportantLinkStyle = styled.div`
     .link-col {
       width: 100%;
       .implink {
-        width: 20vw;
-        height: 20vw;
+        width: 16vw !important;
+        height: 16vw !important;
+        .linkimg {
+          margin-top: 10% !important;
+          width: 45% !important;
+          max-width: 70% !important;
+        }
         .lead p {
           display: none;
+        }
+        h3{
+          font-size: 1vmax !important;
         }
       }
     }

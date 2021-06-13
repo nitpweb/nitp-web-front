@@ -7,14 +7,14 @@ import downimg from "../components/home/img/download.svg"
 import { useQueryParam } from "use-query-params"
 import axios from "axios"
 
-const ReadMore = () => {
+const ReadMoreIn = () => {
   const [tab] = useQueryParam("tab")
   const [data, setData] = useState()
   useEffect(() => {
     loadData();
   }, [tab])
   const loadData = () => {
-    const url = `${process.env.GATSBY_API_URL}/api/news/${tab}`
+    const url = `${process.env.GATSBY_API_URL}/api/innovation/${tab}`
     axios
       .get(url)
       .then(res => setData(res.data[0]))
@@ -36,7 +36,7 @@ const ReadMore = () => {
         <ReadStyle>
           <div className="wrapperDiv">
             <div className="imgDiv">
-              <img className="img" src={data.image.length!=0?`https://drive.google.com/uc?export=view&id=${link(data.image[0].url)}`:news} alt="" />
+              <img className="img" src={data.image.length!=0?`https://drive.google.com/thumbnail?id=${link(data.image[0].url)}`:news} alt="" />
             </div>
             <div className="info">
               <h2>{data.title}</h2>
@@ -44,11 +44,10 @@ const ReadMore = () => {
             </div>
             <div className="base">
               <div className="author">
-                {/* <p>Autor : {data.author}</p> */}
-                <p>venue : {data.venue}</p>
+                <p>Autor : {data.author}</p>
+                <p>Date : {new Date(data.openDate).toLocaleDateString()}</p>
               </div>
               <div className="download">
-                <p>Date : {new Date(data.openDate).toLocaleDateString()}</p>
                 {data.attachments ? (
                   <a className="notdown" href={data.attachments} target="blank">
                     <img id="notdownimg" src={downimg} alt="c" />
@@ -66,4 +65,4 @@ const ReadMore = () => {
   )
 }
 
-export default ReadMore
+export default ReadMoreIn
