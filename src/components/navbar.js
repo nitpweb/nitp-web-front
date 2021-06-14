@@ -22,7 +22,7 @@ const Navbar = ({ theme, changeTheme, department }) => {
   useEffect(() => {
     document.addEventListener("scroll", e => {
       let scrolled = document.scrollingElement.scrollTop
-      if (scrolled >= 80) {
+      if (scrolled >= 120) {
          if (screen.width > 768) {
            document.querySelector(".nav-title-row").style.display = "none"
          }
