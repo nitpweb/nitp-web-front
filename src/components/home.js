@@ -69,7 +69,7 @@ const Home = () => {
           <a href="#news">News</a>
         </div>
       </div>
-      <Importantlink />
+      {/* <Importantlink />
       <div id="notice">
         <div>
           <div
@@ -196,7 +196,7 @@ const Home = () => {
               })
             }
         </div>
-      </div>
+      </div> */}
 
       <GalleryComp />
     </HomeStyle>
