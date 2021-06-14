@@ -12,7 +12,6 @@ const Innovation = () => {
     <Layout>
       <SEO title="Innovation" />
       <div className="InnovationPage">
-
         {id && String(id).length != 0 ? (
           <ReadInn id={id} />
         ) : (
