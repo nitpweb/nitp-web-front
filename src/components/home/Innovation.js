@@ -67,7 +67,7 @@ const Innovation = () => {
     <>
       <InnovationStyle>
         <p id="head">Innovation</p>
-        <Link id="loadMore" to="/Innovation">
+        <Link id="loadMore" to="/innovation">
           view all
         </Link>
         <img src={Union1} id="one" />
