@@ -93,6 +93,12 @@ const Navbar = ({ theme, changeTheme, department }) => {
           <h2>NATIONAL INSTITUTE OF TECHNOLOGY PATNA</h2>
           <h4>राष्ट्रीय प्रौद्योगिकी संस्थान पटना</h4>
         </div>
+        <div className="nav-col right">
+          <p>
+            An Institute of National Importance under Ministry of
+            Education(Shiksha Mantralaya), Government of India
+          </p>
+        </div>
         <span
           className="nav-toggle"
           onClick={function () {
