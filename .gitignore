@@ -5,6 +5,7 @@
 .pnp.js
 /.cache
 .cache/
+.vscode
 # testing
 /coverage
 # production

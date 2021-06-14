@@ -63,7 +63,7 @@ export const FooterStyle = styled.div`
 
   .footsec {
     display: flex;
-    width: 66%;
+    width: 50%;
   }
   .footdetail {
     display: flex;
