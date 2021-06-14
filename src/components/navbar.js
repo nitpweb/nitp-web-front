@@ -23,6 +23,9 @@ const Navbar = ({ theme, changeTheme, department }) => {
     document.addEventListener("scroll", e => {
       let scrolled = document.scrollingElement.scrollTop
       if (scrolled >= 80) {
+         if (screen.width > 768) {
+           document.querySelector(".nav-title-row").style.display = "none"
+         }
         document.querySelector(".nav-col>h2").style.lineHeight = "0.2rem"
         document.querySelector(".nav-col>h4").style.lineHeight = "0.2rem"
         document.querySelector(".nav-link-row").style.backgroundColor = "black"
@@ -31,7 +34,6 @@ const Navbar = ({ theme, changeTheme, department }) => {
         document.querySelector(".logobadge>div>img").style.borderWidth = "0px"
         document.querySelector(".logobadge").style.backgroundColor =
           "transparent"
-        document.querySelector(".logobadge>div>img").style.marginTop = "15px"
         document.querySelector(".logobadge").style.paddingLeft = "0"
         document.querySelector(".mobilelogo>img").style.maxHeight = "5vh"
         document.querySelector(".logobadge").style.transition = "1s"
@@ -42,11 +44,13 @@ const Navbar = ({ theme, changeTheme, department }) => {
         document.querySelector(".nav-col").style.paddingTop = "0.2vw"
         document.querySelector(".nav-link-row").style.height = "1.5vw"
       } else {
+         if (screen.width > 768) {
+           document.querySelector(".nav-title-row").style.display = "flex"
+         }
         document.querySelector(".nav-col>h2").style.lineHeight = "0.3rem"
         document.querySelector(".nav-col>h4").style.lineHeight = "0.3rem"
         document.querySelector(".nav-link-row").style.backgroundColor = "black"
         document.querySelector(".nav-link-row").style.height = "2vw"
-
         document.querySelector(".logobadge>h4").style.display = "flex"
         document.querySelector(".logobadge>div>img").style.maxHeight = "8vw"
         document.querySelector(".logobadge>div>img").style.borderWidth = "0.5vw"
