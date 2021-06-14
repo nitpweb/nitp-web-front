@@ -1,17 +1,12 @@
 import React, { useEffect, useState } from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { ReadStyle } from "../components/styles/ReadStyle"
-import news from "../components/global/img/news.jpg"
-import downimg from "../components/home/img/download.svg"
-import { useQueryParam } from "use-query-params"
+import { ReadStyle } from "./styles/ReadStyle"
+import downimg from "./home/img/download.svg"
 import axios from "axios"
 
-const ReadMoreIn = () => {
-  const [id] = useQueryParam("id")
+const ReadInn = ({ id }) => {
   const [data, setData] = useState()
   useEffect(() => {
-    loadData();
+    loadData()
   }, [id])
   const loadData = () => {
     const url = `${process.env.GATSBY_API_URL}/api/innovation/${id}`
@@ -30,13 +25,21 @@ const ReadMoreIn = () => {
   console.log(data)
   return (
     <>
-      <Layout>
-        <SEO title="Read more" />
-        {data?
+      {data ? (
         <ReadStyle>
           <div className="wrapperDiv">
             <div className="imgDiv">
-              <img className="img" src={data.image.length!=0?`https://drive.google.com/uc?export=view&id=${link(data.image[0].url)}`:news} alt="" />
+              <img
+                className="img"
+                src={
+                  data.image.length != 0
+                    ? `https://drive.google.com/uc?export=view&id=${link(
+                        data.image[0].url
+                      )}`
+                    : news
+                }
+                alt=""
+              />
             </div>
             <div className="info">
               <h2>{data.title}</h2>
@@ -48,21 +51,22 @@ const ReadMoreIn = () => {
                 <p>Date : {new Date(data.openDate).toLocaleDateString()}</p>
               </div>
               <div className="download">
-                {data.attachments ? (
-                  <a className="notdown" href={data.attachments} target="blank">
-                    <img id="notdownimg" src={downimg} alt="c" />
-                    <p>Download</p>
-                  </a>
-                ) : (
-                  ""
-                )}
+                {data.attachments &&
+                  data.attachments.map(item => (
+                    <a className="notdown" href={item.url} target="blank">
+                      <img id="notdownimg" src={downimg} alt="c" />
+                      <p>{item.caption ? item.caption : "Download"}</p>
+                    </a>
+                  ))}
               </div>
             </div>
           </div>
-        </ReadStyle>:""}
-      </Layout>
+        </ReadStyle>
+      ) : (
+        ""
+      )}
     </>
   )
 }
 
-export default ReadMoreIn
+export default ReadInn

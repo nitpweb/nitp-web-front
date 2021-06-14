@@ -191,7 +191,7 @@ export const Achievements = [
 
         <tr>
           <td style={{ padding: `8px` }} style={{ padding: "8px" }}>
-            1.{" "}
+            1.
           </td>
           <td style={{ padding: `8px` }} style={{ padding: "8px" }}>
             Dr. D.K. Singh and Mr. B.C. Sahana
