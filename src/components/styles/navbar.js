@@ -55,6 +55,27 @@ export const NavbarStyle = styled.div`
       h2,
       h4 {
         color: ${props => props.theme.textColor};
+        font-family: "Source Sans Pro";
+        text-rendering: optimizeLegibility;
+      }
+    }
+    .right {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      height: fit-content;
+      margin: 0;
+      height: 100%;
+      padding: 0;
+      padding-right: 50px;
+      width: 50%;
+      p {
+        margin: 0;
+        font-family: "Nunito", sans-serif;
+        width: 240px;
+        font-size: 14px;
+        line-height: 14px;
+        color: ${props => props.theme.textColor};
       }
     }
     .mobilelogo {
@@ -202,6 +223,12 @@ export const NavbarStyle = styled.div`
   }
   @media (max-width: 768px) {
     .nav-title-row {
+      .right {
+        display: none !important;
+        p {
+          display: none !important;
+        }
+      }
       .mobilelogo {
         display: flex;
         justify-content: center;
