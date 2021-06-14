@@ -7,7 +7,7 @@ export const ImportantLinkStyle = styled.div`
   flex-direction: column;
   text-rendering: optimizeLegibility;
   max-width: 100%;
-  margin-top: -7.5vw;
+  margin-top: -8vw;
   margin-bottom: 5vh;
 
   .link-col {
