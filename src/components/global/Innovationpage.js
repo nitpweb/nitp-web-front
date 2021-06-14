@@ -7,18 +7,15 @@ const Innovationpage = () => {
   const [data, setData] = useState([])
 
   useEffect(() => {
-    loadData()
-  }, [])
-
-  const loadData = () => {
     const url = `${process.env.GATSBY_API_URL}/api/innovation/all`
     axios
       .get(url)
-      .then(res => setData([...res.data]))
+      .then(res => setData(res.data))
       .catch(e => {
         console.log(e)
       })
-  }
+  }, [])
+
   const filtered = data.filter(function (el) {
     return el.image.length != 0
   })
@@ -33,32 +30,14 @@ const Innovationpage = () => {
     const month = date.getMonth() + 1
     const year = date.getFullYear()
     const cdate = new Date(val.closeDate)
-    const cday = cdate.getDate()
-    const cmonth = cdate.getMonth() + 1
-    const cyear = cdate.getFullYear()
-
     return (
-      // <div className="newscard row" id={val.id}>
-      //   <div className="news-img-wrap">
-      //     <img
-      //       src={`https://drive.google.com/thumbnail?id=${link(
-      //         val.image[0].url
-      //       )}`}
-      //       alt="Hello"
-      //     ></img>
-      //   </div>
-      //   <div className="news-details">
-      //     <h1>{val.title}</h1>
-      //     <p>{val.description}</p>
-      //   </div>
-      // </div>
       <InCard
-      link1={link(val.image[0].url)}
-      link2={val.image[1] ? link(val.image[1].url) : null}
-      heading={`${val.title.slice(0, 72)}`}
-      date={`${day}/${month}/${year}`}
-      key={val.id}
-    />
+        link1={link(val.image[0].url)}
+        link2={val.image[1] ? link(val.image[1].url) : null}
+        heading={`${val.title.slice(0, 72)}`}
+        date={`${day}/${month}/${year}`}
+        key={val.id}
+      />
     )
   }
   return (
