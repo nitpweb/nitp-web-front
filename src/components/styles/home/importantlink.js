@@ -12,7 +12,7 @@ export const ImportantLinkStyle = styled.div`
 
   .link-col {
     position: relative;
-    width: 100%;
+    width: 100vw;
     display: flex;
     height: 100%;
     justify-content: center;
