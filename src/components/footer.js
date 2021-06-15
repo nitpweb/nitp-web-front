@@ -61,6 +61,12 @@ const Footer = () => {
               <Link to="/webteam">
                 <h3>Web Team</h3>
               </Link>
+              <a href="http://www.nitp.ac.in/uploads/Anti-ragging_Committee_2019.pdf">
+                <h3>Anti Ragging</h3>
+              </a>
+              <a href="http://www.nitp.ac.in/convocation2020/">
+                <h3>Convocation 2020</h3>
+              </a>
             </div>
           </div>
 
@@ -72,6 +78,12 @@ const Footer = () => {
               </a>
               <a href="http://www.nitp.ac.in/php/privacy.php">
                 <h3>Privacy Policy</h3>
+              </a>{" "}
+              <a href="http://www.nitp.ac.in/uploads20/Pratibimb/NIT%20Patna%20E-Magazine.pdf">
+                <h3>Magazine (Pratibimb)</h3>
+              </a>{" "}
+              <a href="http://corona.nitp.ac.in/Corona16/index.php">
+                <h3>CORONA</h3>
               </a>
               {/* <a href="http://www.nitp.ac.in/php/refund-policy.php">
               <h3>Refund Rules</h3>
@@ -85,38 +97,23 @@ const Footer = () => {
             </div>
             <div className="foot-col-3">
               <h1>Useful Links</h1>
-              <a href="http://www.nitp.ac.in/uploads20/Pratibimb/NIT%20Patna%20E-Magazine.pdf">
-                <h3>Magazine (Pratibimb)</h3>
-              </a>
+
               <a href="">
-                <h3>CCMT 2021/JoSAA 2021/CSAB 2021</h3>
+                <h3>Admissions</h3>
               </a>
               <a href="http://www.nitp.ac.in/ict/index.php">
                 <h3>ICT Academy</h3>
               </a>
-              <a href="http://www.nitp.ac.in/uploads/Anti-ragging_Committee_2019.pdf">
-                <h3>Anti Ragging</h3>
-              </a>
+
               <a href="">
                 <h3>TEQUIP</h3>
               </a>
-              <a href="http://corona.nitp.ac.in/Corona16/index.php">
-                <h3>CORONA</h3>
-              </a>
-              <a href="http://www.nitp.ac.in/convocation2020/">
-                <h3>Convocation 2020</h3>
-              </a>
+
               <a href="http://www.nitp.ac.in/php/incubation_center/index.html">
                 <h3>Incubation Center</h3>
               </a>
               <a href="">
                 <h3>National Service Scheme</h3>
-              </a>
-              <a href="https://www.eduqfix.com/PayDirect/#/student/pay/mnYv9Q6+C+3lIMqghRCwdaqVZusPrJtq2RGJrJFnKnmtz3KBqtsEFPVrZFvoPubG/3466">
-                <h3>Fee Payment</h3>
-              </a>
-              <a href="">
-                <h3>Job Opportunities</h3>
               </a>
             </div>
           </div>
