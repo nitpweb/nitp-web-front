@@ -5,7 +5,7 @@ export const DropdownStyle = styled.div`
     background: transparent;
     border: none;
     text-decoration: none;
-    color: ${props => props.theme.textColor};
+    color: ${props => props.theme.dropText};
     font-family: "Source Sans Pro";
     font-size: 1vw;
     font-weight: 500;
@@ -21,9 +21,9 @@ export const DropdownStyle = styled.div`
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: black;
-    min-width: max-content;
-    color: ${props => props.theme.textColor};
+    background-color: ${props => props.theme.dropColor};
+    min-width: 175px;
+    color: ${props => props.theme.dropText};
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding: 0px 10px 10px 10px;
@@ -44,18 +44,21 @@ export const DropdownStyle = styled.div`
     opacity: 1;
 
     a {
+      display: flex;
+      justify-content: center;
       padding: 8px;
       text-decoration: none;
       display: block;
-      font-size: 1vw;
+      font-size: 14px;
       overflow: hidden;
-      max-height: 1vw;
-      border-bottom: 1px solid white;
-      color: white;
+      /* max-height: 1.2vw; */
+      color: ${props=>props.theme.dropBg};
+      margin: 0 !important;
       &:hover {
-        color: yellow;
+        color:${props=>props.theme.dropText};
         transition: 0.05s;
         font-weight:600;
+        background-color:${props=>props.theme.dropBg};
       }
     }
   }
