@@ -84,26 +84,24 @@ const Home = () => {
           </div>
           <div className="notice-row" data-aos="fade-up">
             {notices &&
-               notices.map(notice => {  
-                  if (notice.title != "") {
-                    return (
-                      <Notice
-                        detail={notice.title}
-                        time={notice.openDate}
-                        key={notice.id}
-                        attachments={notice.attachments}
-                        imp={notice.important}
-                        link={
-                          notice.notice_link &&
-                          JSON.parse(notice.notice_link).url
-                            ? JSON.parse(notice.notice_link).url
-                            : ""
-                        }
-                      />
-                    )
-                  }
-                })
-              }
+              notices.map(notice => {
+                if (notice.title != "") {
+                  return (
+                    <Notice
+                      detail={notice.title}
+                      time={notice.openDate}
+                      key={notice.id}
+                      attachments={notice.attachments}
+                      imp={notice.important}
+                      link={
+                        notice.notice_link && JSON.parse(notice.notice_link).url
+                          ? JSON.parse(notice.notice_link).url
+                          : ""
+                      }
+                    />
+                  )
+                }
+              })}
           </div>
         </div>
         <div id="events">
@@ -119,37 +117,36 @@ const Home = () => {
           </div>
           <div className="event-row">
             {events &&
-               events.map(event => {
-                  const date = new Date(event.openDate)
-                  const day = date.getDate()
-                  const month = date.getMonth() + 1
-                  const year = date.getFullYear()
-                  const cdate = new Date(event.closeDate)
-                  const cday = cdate.getDate()
-                  const cmonth = cdate.getMonth() + 1
-                  const cyear = cdate.getFullYear()
-                  const monthname = date
-                    .toLocaleString("default", { month: "short" })
-                    .toUpperCase()
-                  if (event.title != "") {
-                    return (
-                      <Eventcard
-                        detail={event.title}
-                        time={`${day}-${month}-${year} - ${cday}-${cmonth}-${cyear}`}
-                        date={day}
-                        month={monthname}
-                        attachments={event.attachments}
-                        location={event.venue}
-                        link={
-                          event.attachments.length != 0
-                            ? event.attachments[0].url
-                            : ""
-                        }
-                      />
-                    )
-                  }
-                })
-              }
+              events.map(event => {
+                const date = new Date(event.openDate)
+                const day = date.getDate()
+                const month = date.getMonth() + 1
+                const year = date.getFullYear()
+                const cdate = new Date(event.closeDate)
+                const cday = cdate.getDate()
+                const cmonth = cdate.getMonth() + 1
+                const cyear = cdate.getFullYear()
+                const monthname = date
+                  .toLocaleString("default", { month: "short" })
+                  .toUpperCase()
+                if (event.title != "") {
+                  return (
+                    <Eventcard
+                      detail={event.title}
+                      time={`${day}-${month}-${year} - ${cday}-${cmonth}-${cyear}`}
+                      date={day}
+                      month={monthname}
+                      attachments={event.attachments}
+                      location={event.venue}
+                      link={
+                        event.attachments.length != 0
+                          ? event.attachments[0].url
+                          : ""
+                      }
+                    />
+                  )
+                }
+              })}
           </div>
         </div>
       </div>
@@ -168,33 +165,33 @@ const Home = () => {
 
       <div className="news-row">
         <div className="news-viewbox">
-          {news && news.map(news => {
-                const newtime = new Date().getTime()
+          {news &&
+            news.map(news => {
+              const newtime = new Date().getTime()
 
-                var d = Math.round((newtime - news.openDate) / 3600000)
-                if (d > 24) {
-                  d = `${Math.round(d / 24)} days ago`
-                } else if (d < 1) {
-                  d = `Just now`
-                } else if (d < 2) {
-                  d = `${d} hour ago`
-                } else {
-                  d = `${d} hours ago`
-                }
-                var desc = String(news.description).substr(0, 170)
-                if (news.title != "" && news.image[0]) {
-                  return (
-                    <Newscard
-                      url={link(news.image[0].url)}
-                      id={news.id}
-                      time={d}
-                      head={`${news.title.slice(0, 92)}...`}
-                      detail={desc.slice(0, 200)}
-                    />
-                  )
-                }
-              })
-            }
+              var d = Math.round((newtime - news.openDate) / 3600000)
+              if (d > 24) {
+                d = `${Math.round(d / 24)} days ago`
+              } else if (d < 1) {
+                d = `Just now`
+              } else if (d < 2) {
+                d = `${d} hour ago`
+              } else {
+                d = `${d} hours ago`
+              }
+              var desc = String(news.description).substr(0, 170)
+              if (news.title != "" && news.image[0]) {
+                return (
+                  <Newscard
+                    url={link(news.image[0].url)}
+                    id={news.id}
+                    time={d}
+                    head={`${news.title.slice(0, 92)}...`}
+                    detail={desc.slice(0, 200)}
+                  />
+                )
+              }
+            })}
         </div>
       </div>
 
