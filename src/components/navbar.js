@@ -23,6 +23,9 @@ const Navbar = ({ theme, changeTheme, department }) => {
     document.addEventListener("scroll", e => {
       let scrolled = document.scrollingElement.scrollTop
       if (scrolled >= 120) {
+        if (screen.width < 768) {
+          document.querySelector(".nav-head-row>.start").style.display = "none"
+        }
         if (screen.width > 768) {
           document.querySelector(".nav-title-row").style.display = "none"
         }
@@ -44,6 +47,12 @@ const Navbar = ({ theme, changeTheme, department }) => {
         document.querySelector(".nav-col").style.paddingTop = "0.2vw"
         document.querySelector(".nav-link-row").style.height = "1.5vw"
       } else {
+        if (screen.width < 768) {
+                  document.querySelector(".nav-head-row>.start").style.display =
+                    "flex"
+
+        }
+
         if (screen.width > 768) {
           document.querySelector(".nav-title-row").style.display = "flex"
         }
@@ -75,9 +84,11 @@ const Navbar = ({ theme, changeTheme, department }) => {
         <div className="col-6 start">
           <span>
             <Link to="/tenders">Tenders</Link>
+            {` | `}
           </span>
           <span style={{ marginLeft: `8px` }}>
             <Link to="/jobsnitp">Jobs@NITP</Link>
+            {` | `}
           </span>
           <span style={{ marginLeft: `8px` }}>
             <a href="https://www.eduqfix.com/PayDirect/#/student/pay/mnYv9Q6+C+3lIMqghRCwdaqVZusPrJtq2RGJrJFnKnmtz3KBqtsEFPVrZFvoPubG/3466">
