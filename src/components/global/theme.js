@@ -7,6 +7,9 @@ export const light = {
   primaryTextColor: "#941b0c",
   textColor: "#121212",
   secondaryTextColor: "#4b4b4b",
+  dropColor:"#E8E8E8",
+  dropText:"white",
+  dropBg:"black",
 }
 
 export const dark = {
@@ -15,5 +18,8 @@ export const dark = {
   backgroundSecColor: "#282828",
   primaryTextColor:"#ffffff",
   textColor: "#ffffff",
-  secondaryTextColor:"#e7e7e7"
+  secondaryTextColor:"#e7e7e7",
+  dropColor:"#000000",
+  dropText:"#941b0c",
+  dropBg:"white",
 }

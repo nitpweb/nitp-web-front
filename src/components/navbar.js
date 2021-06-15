@@ -20,6 +20,13 @@ import facebook from "./home/img/facebook.png"
 
 const Navbar = ({ theme, changeTheme, department }) => {
   const pathname = window.location.pathname.split("/")[1]
+const [change, setChange]=useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      change===0?setChange(2):setChange(0)
+    }, 8000);
+    return () => clearInterval(interval);
+  }, [change]);
 
   useEffect(() => {
     document.addEventListener("scroll", e => {
@@ -28,8 +35,7 @@ const Navbar = ({ theme, changeTheme, department }) => {
         if (screen.width > 768) {
           document.querySelector(".nav-title-row").style.display = "none"
         }
-        document.querySelector(".nav-col>h2").style.lineHeight = "0.2rem"
-        document.querySelector(".nav-col>h4").style.lineHeight = "0.2rem"
+        document.querySelector(".nav-col>span").style.lineHeight = "0.2rem"
         document.querySelector(".nav-link-row").style.backgroundColor = "black"
         document.querySelector(".logobadge>h4").style.display = "none"
         document.querySelector(".logobadge>div>img").style.maxHeight = "5vw"
@@ -49,8 +55,6 @@ const Navbar = ({ theme, changeTheme, department }) => {
         if (screen.width > 768) {
           document.querySelector(".nav-title-row").style.display = "flex"
         }
-        document.querySelector(".nav-col>h2").style.lineHeight = "0.3rem"
-        document.querySelector(".nav-col>h4").style.lineHeight = "0.3rem"
         document.querySelector(".nav-link-row").style.backgroundColor = "black"
         document.querySelector(".nav-link-row").style.height = "2vw"
         document.querySelector(".logobadge>h4").style.display = "flex"
@@ -66,7 +70,7 @@ const Navbar = ({ theme, changeTheme, department }) => {
         document.querySelector(".logobadge>h4").style.transition = "1s"
         document.querySelector(".logobadge>div>img").style.transition = "1s"
         document.querySelector(".mobilelogo>img").style.transition = "1s"
-        document.querySelector(".nav-link-row").style.opacity = "0.8"
+        document.querySelector(".nav-link-row").style.opacity = "1"
       }
     })
   }, [])
@@ -102,8 +106,7 @@ const Navbar = ({ theme, changeTheme, department }) => {
           <img src={logo} alt="NIT PATNA" />
         </Link>
         <div className="nav-col">
-          <h2>NATIONAL INSTITUTE OF TECHNOLOGY PATNA</h2>
-          <h4>राष्ट्रीय प्रौद्योगिकी संस्थान पटना</h4>
+          <span>{change==0?"NATIONAL INSTITUTE OF TECHNOLOGY PATNA":"राष्ट्रीय प्रौद्योगिकी संस्थान पटना"}</span>
         </div>
         <div className="nav-col right">
           <p>
