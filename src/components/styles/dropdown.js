@@ -21,12 +21,12 @@ export const DropdownStyle = styled.div`
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: ${props => props.theme.backgroundSecColor};
+    background-color: black;
     min-width: max-content;
     color: ${props => props.theme.textColor};
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    padding: 0px 5px 0px 5px;
+    padding: 0px 10px 10px 10px;
   }
 
   &:hover .dropdown-content {
@@ -40,20 +40,22 @@ export const DropdownStyle = styled.div`
     transition: 0.05s;
   }
   .dropdown-content {
-    font-size: 0.8vw;
+    font-size: 1vw;
     opacity: 1;
 
     a {
-      color: ${props => props.theme.textColor};
-      padding: 8px 2px;
+      padding: 8px;
       text-decoration: none;
       display: block;
-      font-size: 0.8vw;
+      font-size: 1vw;
       overflow: hidden;
-      max-height: 0.8vw;
+      max-height: 1vw;
+      border-bottom: 1px solid white;
+      color: white;
       &:hover {
-        color: ${props => props.theme.primaryColor};
+        color: yellow;
         transition: 0.05s;
+        font-weight:600;
       }
     }
   }

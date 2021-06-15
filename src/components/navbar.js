@@ -15,6 +15,8 @@ import { NavbarStyle } from "./styles/navbar"
 import { Dropdown } from "./global/dropdown"
 import Navlist from "./global/navlist"
 import { Deplist, DepListr } from "./global/deplist"
+import location from "./home/img/location.svg"
+import facebook from "./home/img/facebook.png"
 
 const Navbar = ({ theme, changeTheme, department }) => {
   const pathname = window.location.pathname.split("/")[1]
@@ -23,9 +25,9 @@ const Navbar = ({ theme, changeTheme, department }) => {
     document.addEventListener("scroll", e => {
       let scrolled = document.scrollingElement.scrollTop
       if (scrolled >= 120) {
-         if (screen.width > 768) {
-           document.querySelector(".nav-title-row").style.display = "none"
-         }
+        if (screen.width > 768) {
+          document.querySelector(".nav-title-row").style.display = "none"
+        }
         document.querySelector(".nav-col>h2").style.lineHeight = "0.2rem"
         document.querySelector(".nav-col>h4").style.lineHeight = "0.2rem"
         document.querySelector(".nav-link-row").style.backgroundColor = "black"
@@ -44,9 +46,9 @@ const Navbar = ({ theme, changeTheme, department }) => {
         document.querySelector(".nav-col").style.paddingTop = "0.2vw"
         document.querySelector(".nav-link-row").style.height = "1.5vw"
       } else {
-         if (screen.width > 768) {
-           document.querySelector(".nav-title-row").style.display = "flex"
-         }
+        if (screen.width > 768) {
+          document.querySelector(".nav-title-row").style.display = "flex"
+        }
         document.querySelector(".nav-col>h2").style.lineHeight = "0.3rem"
         document.querySelector(".nav-col>h4").style.lineHeight = "0.3rem"
         document.querySelector(".nav-link-row").style.backgroundColor = "black"
@@ -78,6 +80,16 @@ const Navbar = ({ theme, changeTheme, department }) => {
           </span>
         </div>
         <div className="col-6 end">
+          <span>
+            <a href="https://goo.gl/maps/srZ6whpfDGqg85sp6" target="_blank">
+              <img src={facebook} alt="location" />
+            </a>
+          </span>
+          <span>
+            <a href="https://goo.gl/maps/srZ6whpfDGqg85sp6" target="_blank">
+              <img src={location} alt="location" />
+            </a>
+          </span>
           <button className="themebtn" onClick={() => changeTheme()}>
             <span>
               <img src={theme ? "/moon.svg" : "/sun.svg"} alt="theme" />

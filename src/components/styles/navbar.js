@@ -35,17 +35,27 @@ export const NavbarStyle = styled.div`
       width: 50%;
       padding-right: 2vw;
       span {
-        margin: 0px 20px 0px 20px;
+        margin: 0px 10px 0px 10px;
       }
       a {
         text-decoration: none;
         color: #fff;
+        img{
+          height: 15px;
+          width: auto;
+          filter: brightness(0) invert(1);
+          padding: 1px,0px;
+          &:hover{
+            filter: saturate(500%);
+          }
+        }
       }
       .themebtn {
         width: 28px;
         background-color: transparent;
-        margin: 0px 20px 0px 20px;
+        margin: 0px 20px 0px 0px;
         border: 0;
+        cursor: pointer;
       }
     }
   }
