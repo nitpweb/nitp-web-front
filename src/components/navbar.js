@@ -99,6 +99,12 @@ const [change, setChange]=useState(0);
               Fee Payment
             </a>
           </span>
+          <span style={{ marginLeft: `8px` }}>
+            <a href="http://www.nitp.ac.in/uploads20/Revised%20AC%202020-21.pdf">
+              Academic Calendar
+            </a>{" "}
+            {` | `}
+          </span>
         </div>{" "}
         <div className="col-6 end">
           <span>
