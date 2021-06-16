@@ -24,7 +24,7 @@ const [change, setChange]=useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
       change===0?setChange(2):setChange(0)
-    }, 8000);
+    }, 1000);
     return () => clearInterval(interval);
   }, [change]);
 
