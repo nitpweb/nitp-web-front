@@ -38,28 +38,43 @@ export const NavbarStyle = styled.div`
       width: 50%;
       padding-right: 2vw;
       span {
-        margin: 0px 20px 0px 20px;
+        margin: 0px 10px 0px 10px;
       }
       a {
         text-decoration: none;
         color: #fff;
+        img{
+          height: 15px;
+          width: auto;
+          filter: brightness(0) invert(1);
+          padding: 1px,0px;
+          &:hover{
+            filter: saturate(500%);
+          }
+        }
       }
       .themebtn {
         width: 28px;
         background-color: transparent;
-        margin: 0px 20px 0px 20px;
+        margin: 0px 20px 0px 0px;
         border: 0;
+        cursor: pointer;
       }
     }
   }
   .nav-title-row {
     background-color: ${props => props.theme.backgroundColor};
+    height:60px;
     .nav-col {
-      h2,
-      h4 {
+      padding-top: 0;
+      display: flex;
+      justify-content: center;
+      span {
         color: ${props => props.theme.textColor};
         font-family: "Source Sans Pro";
         text-rendering: optimizeLegibility;
+        font-weight: 600;
+        font-size: 18px;
       }
     }
     .right {
@@ -75,10 +90,11 @@ export const NavbarStyle = styled.div`
       p {
         margin: 0;
         font-family: "Nunito", sans-serif;
-        width: 240px;
-        font-size: 14px;
+        width: 250px;
+        font-size: 12px;
         line-height: 14px;
         color: ${props => props.theme.textColor};
+        letter-spacing: 0.02rem;
       }
     }
     .mobilelogo {
@@ -94,7 +110,7 @@ export const NavbarStyle = styled.div`
     width: 100vw;
     height: 2vw;
     background-color: black;
-    opacity: 0.8;
+    opacity: 1;
     z-index: 2;
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
     .col-6 {
@@ -104,21 +120,23 @@ export const NavbarStyle = styled.div`
       flex-direction: row;
       display: flex;
       .nav-link-item-active > span {
-        color: #ffe657;
+        color:${props=>props.theme.primaryColor};
         border-width: 0px 0px 3px 0px;
+        font-weight: 600;
       }
       .nav-link-item {
         text-decoration: none;
         color: #fff;
         font-family: "Source Sans Pro";
         font-size: 1vw;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 1.6;
         display: flex;
+        /* letter-spacing: 1px; */
         align-items: center;
         cursor: pointer;
         span:hover {
-          color: #ffe657;
+          color:${props=>props.theme.dropText};
           transition: 0.1s ease-in-out;
         }
       }
