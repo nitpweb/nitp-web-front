@@ -36,6 +36,9 @@ const [change, setChange]=useState(0);
           document.querySelector(".nav-title-row").style.display = "none"
         }
         document.querySelector(".nav-col>span").style.lineHeight = "0.2rem"
+        if (screen.width < 768) {
+          document.querySelector(".nav-head-row>.start").style.display = "none"
+        }
         document.querySelector(".nav-link-row").style.backgroundColor = "black"
         document.querySelector(".logobadge>h4").style.display = "none"
         document.querySelector(".logobadge>div>img").style.maxHeight = "5vw"
@@ -54,6 +57,11 @@ const [change, setChange]=useState(0);
       } else {
         if (screen.width > 768) {
           document.querySelector(".nav-title-row").style.display = "flex"
+        }
+        if (screen.width < 768) {
+                  document.querySelector(".nav-head-row>.start").style.display =
+                    "flex"
+
         }
         document.querySelector(".nav-link-row").style.backgroundColor = "black"
         document.querySelector(".nav-link-row").style.height = "2vw"
@@ -81,8 +89,18 @@ const [change, setChange]=useState(0);
         <div className="col-6 start">
           <span>
             <Link to="/tenders">Tenders</Link>
+            {` | `}
           </span>
-        </div>
+          <span style={{ marginLeft: `8px` }}>
+            <Link to="/jobsnitp">Jobs@NITP</Link>
+            {` | `}
+          </span>
+          <span style={{ marginLeft: `8px` }}>
+            <a href="https://www.eduqfix.com/PayDirect/#/student/pay/mnYv9Q6+C+3lIMqghRCwdaqVZusPrJtq2RGJrJFnKnmtz3KBqtsEFPVrZFvoPubG/3466">
+              Fee Payment
+            </a>
+          </span>
+        </div>{" "}
         <div className="col-6 end">
           <span>
             <a href="https://goo.gl/maps/srZ6whpfDGqg85sp6" target="_blank">
