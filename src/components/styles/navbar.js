@@ -16,7 +16,6 @@ export const NavbarStyle = styled.div`
     width: 100vw;
     display: flex;
     color: #fff;
-
     .start {
       display: flex;
       flex-direction: row;
@@ -43,12 +42,12 @@ export const NavbarStyle = styled.div`
       a {
         text-decoration: none;
         color: #fff;
-        img{
+        img {
           height: 15px;
           width: auto;
           filter: brightness(0) invert(1);
-          padding: 1px,0px;
-          &:hover{
+          padding: 1px, 0px;
+          &:hover {
             filter: saturate(500%);
           }
         }
@@ -64,7 +63,7 @@ export const NavbarStyle = styled.div`
   }
   .nav-title-row {
     background-color: ${props => props.theme.backgroundColor};
-    height:60px;
+    height: 60px;
     .nav-col {
       padding-top: 0;
       display: flex;
@@ -77,7 +76,7 @@ export const NavbarStyle = styled.div`
         font-size: 18px;
       }
     }
-    .right {
+    .end {
       display: flex;
       align-items: flex-end;
       justify-content: center;
@@ -86,13 +85,12 @@ export const NavbarStyle = styled.div`
       height: 100%;
       padding: 0;
       padding-right: 50px;
-      width: 47%;
-      p {
+      width: 50%;
+      span {
         margin: 0;
-        font-family: "Nunito", sans-serif;
-        width: 250px;
-        font-size: 12px;
-        line-height: 14px;
+        font-family: "Source Sans Pro";
+        font-size: 16px;
+        font-weight:600;
         color: ${props => props.theme.textColor};
         letter-spacing: 0.02rem;
       }
@@ -120,7 +118,7 @@ export const NavbarStyle = styled.div`
       flex-direction: row;
       display: flex;
       .nav-link-item-active > span {
-        color:${props=>props.theme.primaryColor};
+        color: ${props => props.theme.primaryColor};
         border-width: 0px 0px 3px 0px;
         font-weight: 600;
       }
@@ -136,7 +134,7 @@ export const NavbarStyle = styled.div`
         align-items: center;
         cursor: pointer;
         span:hover {
-          color:${props=>props.theme.dropText};
+          color: ${props => props.theme.dropText};
           transition: 0.1s ease-in-out;
         }
       }
@@ -231,6 +229,19 @@ export const NavbarStyle = styled.div`
   }
 
   @media (max-width: 1200px) {
+    .nav-title-row{
+      .start{
+        span{
+          font-size: 14px;
+        }
+      }
+      .end{
+        width:48%;
+        span{
+          font-size: 12px;
+        }
+      }
+    }
     .nav-link-item {
       height: 28px;
       font-weight: 400;
@@ -250,16 +261,18 @@ export const NavbarStyle = styled.div`
         width: 100%;
         display: none;
         height: 24px;
+        padding: 0px;
       }
       .end {
-        width: 95%;
+        width:100%;
         height: 24px;
+        padding: 0px;
       }
     }
     .nav-title-row {
-      .right {
+      .end {
         display: none !important;
-        p {
+        span {
           display: none !important;
         }
       }
