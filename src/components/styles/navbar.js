@@ -10,11 +10,13 @@ export const NavbarStyle = styled.div`
   position: fixed;
   z-index: 5;
   .nav-head-row {
-    height: 24px;
+    min-height: 24px;
     background-color: ${props => props.theme.primaryColor};
     z-index: 5;
     width: 100vw;
     display: flex;
+    color: #fff;
+
     .start {
       display: flex;
       flex-direction: row;
@@ -22,6 +24,7 @@ export const NavbarStyle = styled.div`
       padding-left: 2vw;
       align-items: center;
       width: 50%;
+
       a {
         text-decoration: none;
         color: #fff;
@@ -83,7 +86,7 @@ export const NavbarStyle = styled.div`
       height: 100%;
       padding: 0;
       padding-right: 50px;
-      width: 50%;
+      width: 47%;
       p {
         margin: 0;
         font-family: "Nunito", sans-serif;
@@ -240,6 +243,19 @@ export const NavbarStyle = styled.div`
     }
   }
   @media (max-width: 768px) {
+    .nav-head-row {
+      display: block;
+      height: auto;
+      .start {
+        width: 100%;
+        display: none;
+        height: 24px;
+      }
+      .end {
+        width: 95%;
+        height: 24px;
+      }
+    }
     .nav-title-row {
       .right {
         display: none !important;
