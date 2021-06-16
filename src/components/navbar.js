@@ -16,16 +16,15 @@ import { Dropdown } from "./global/dropdown"
 import Navlist from "./global/navlist"
 import { Deplist, DepListr } from "./global/deplist"
 
-
 const Navbar = ({ theme, changeTheme, department }) => {
   const pathname = window.location.pathname.split("/")[1]
-const [change, setChange]=useState(0);
+  const [change, setChange] = useState(0)
   useEffect(() => {
     const interval = setInterval(() => {
-      change===0?setChange(2):setChange(0)
-    }, 1000);
-    return () => clearInterval(interval);
-  }, [change]);
+      change === 0 ? setChange(2) : setChange(0)
+    }, 1000)
+    return () => clearInterval(interval)
+  }, [change])
 
   useEffect(() => {
     document.addEventListener("scroll", e => {
@@ -58,9 +57,7 @@ const [change, setChange]=useState(0);
           document.querySelector(".nav-title-row").style.display = "flex"
         }
         if (screen.width < 768) {
-                  document.querySelector(".nav-head-row>.start").style.display =
-                    "flex"
-
+          document.querySelector(".nav-head-row>.start").style.display = "flex"
         }
         document.querySelector(".nav-link-row").style.backgroundColor = "black"
         document.querySelector(".nav-link-row").style.height = "2vw"
@@ -98,14 +95,14 @@ const [change, setChange]=useState(0);
             <a href="https://www.eduqfix.com/PayDirect/#/student/pay/mnYv9Q6+C+3lIMqghRCwdaqVZusPrJtq2RGJrJFnKnmtz3KBqtsEFPVrZFvoPubG/3466">
               Fee Payment
             </a>
+            {` | `}
           </span>
           <span style={{ marginLeft: `8px` }}>
             <a href="http://www.nitp.ac.in/uploads20/Revised%20AC%202020-21.pdf">
               Academic Calendar
-            </a>{" "}
-            {` | `}
+            </a>
           </span>
-        </div>{" "}
+        </div>
         <div className="col-6 end">
           <span>
             <a href="http://www.facebook.com/nitpatnaofficial" target="_blank">
