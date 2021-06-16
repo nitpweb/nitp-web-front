@@ -123,14 +123,14 @@ const [change, setChange]=useState(0);
         <Link className="mobilelogo" data-aos="zoom-in" to="/">
           <img src={logo} alt="NIT PATNA" />
         </Link>
-        <div className="nav-col">
+        <div className="nav-col start">
           <span>{change==0?"NATIONAL INSTITUTE OF TECHNOLOGY PATNA":"राष्ट्रीय प्रौद्योगिकी संस्थान पटना"}</span>
         </div>
-        <div className="nav-col right">
-          <p>
-            An Institute of National Importance under Ministry of
+        <div className="nav-col end">
+          <span>
+            An Institute of National Importance under Ministry of<br/>
             Education(Shiksha Mantralaya), Government of India
-          </p>
+          </span>
         </div>
         <span
           className="nav-toggle"
