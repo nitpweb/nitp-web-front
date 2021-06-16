@@ -9,7 +9,7 @@ export const light = {
   secondaryTextColor: "#4b4b4b",
   dropColor:"#E8E8E8",
   dropText:"white",
-  dropBg:"black",
+  dropBg: "black",
 }
 
 export const dark = {
