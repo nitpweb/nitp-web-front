@@ -15,8 +15,7 @@ import { NavbarStyle } from "./styles/navbar"
 import { Dropdown } from "./global/dropdown"
 import Navlist from "./global/navlist"
 import { Deplist, DepListr } from "./global/deplist"
-import location from "./home/img/location.svg"
-import facebook from "./home/img/facebook.png"
+
 
 const Navbar = ({ theme, changeTheme, department }) => {
   const pathname = window.location.pathname.split("/")[1]
@@ -103,13 +102,26 @@ const [change, setChange]=useState(0);
         </div>{" "}
         <div className="col-6 end">
           <span>
-            <a href="https://goo.gl/maps/srZ6whpfDGqg85sp6" target="_blank">
-              <img src={facebook} alt="location" />
+            <a href="http://www.facebook.com/nitpatnaofficial" target="_blank">
+              <img src="/facebook.png" alt="facebook" />
+            </a>
+          </span>
+          <span>
+            <a href="https://twitter.com/NITPatna1" target="_blank">
+              <img src="/twitter.svg" alt="twitter" />
+            </a>
+          </span>
+          <span>
+            <a
+              href="https://www.linkedin.com/school/national-institute-of-technology-patna/"
+              target="_blank"
+            >
+              <img src="/linkedin.svg" alt="linkedin" />
             </a>
           </span>
           <span>
             <a href="https://goo.gl/maps/srZ6whpfDGqg85sp6" target="_blank">
-              <img src={location} alt="location" />
+              <img src="/location.svg" alt="location" />
             </a>
           </span>
           <button className="themebtn" onClick={() => changeTheme()}>
@@ -124,11 +136,16 @@ const [change, setChange]=useState(0);
           <img src={logo} alt="NIT PATNA" />
         </Link>
         <div className="nav-col start">
-          <span>{change==0?"NATIONAL INSTITUTE OF TECHNOLOGY PATNA":"राष्ट्रीय प्रौद्योगिकी संस्थान पटना"}</span>
+          <span>
+            {change == 0
+              ? "NATIONAL INSTITUTE OF TECHNOLOGY PATNA"
+              : "राष्ट्रीय प्रौद्योगिकी संस्थान पटना"}
+          </span>
         </div>
         <div className="nav-col end">
           <span>
-            An Institute of National Importance under Ministry of<br/>
+            An Institute of National Importance under Ministry of
+            <br />
             Education(Shiksha Mantralaya), Government of India
           </span>
         </div>
