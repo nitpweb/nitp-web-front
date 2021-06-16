@@ -58,6 +58,10 @@ export const NavbarStyle = styled.div`
         margin: 0px 20px 0px 0px;
         border: 0;
         cursor: pointer;
+        span {
+          color: #fff;
+          font-weight: 600;
+        }
       }
     }
   }
@@ -73,7 +77,7 @@ export const NavbarStyle = styled.div`
         font-family: "Source Sans Pro";
         text-rendering: optimizeLegibility;
         font-weight: 600;
-        font-size: 18px;
+        font-size: ${props => parseInt(props.theme.font * 18)}px;
       }
     }
     .end {
@@ -89,8 +93,8 @@ export const NavbarStyle = styled.div`
       span {
         margin: 0;
         font-family: "Source Sans Pro";
-        font-size: 16px;
-        font-weight:600;
+        font-size: ${props => parseInt(props.theme.font * 16)}px;
+        font-weight: 600;
         color: ${props => props.theme.textColor};
         letter-spacing: 0.02rem;
       }
@@ -229,16 +233,16 @@ export const NavbarStyle = styled.div`
   }
 
   @media (max-width: 1200px) {
-    .nav-title-row{
-      .start{
-        span{
-          font-size: 14px;
+    .nav-title-row {
+      .start {
+        span {
+          font-size: ${props => parseInt(props.theme.font * 14)}px;
         }
       }
-      .end{
-        width:48%;
-        span{
-          font-size: 12px;
+      .end {
+        width: 48%;
+        span {
+          font-size: ${props => parseInt(props.theme.font * 12)}px;
         }
       }
     }
@@ -264,7 +268,7 @@ export const NavbarStyle = styled.div`
         padding: 0px;
       }
       .end {
-        width:100%;
+        width: 100%;
         height: 24px;
         padding: 0px;
       }
@@ -299,7 +303,7 @@ export const NavbarStyle = styled.div`
       max-width: 70vw;
       color: ${props => props.theme.backgroundColor};
       h2 {
-        font-size: 10px;
+        font-size: ${props => parseInt(props.theme.font * 10)}px;
       }
     }
     .nav-link-row,
@@ -329,10 +333,10 @@ export const NavbarStyle = styled.div`
     .nav-col {
       width: 60%;
       h4 {
-        font-size: 10px;
+        font-size: ${props => parseInt(props.theme.font * 10)}px;
       }
       h2 {
-        font-size: 10px;
+        font-size: ${props => parseInt(props.theme.font * 10)}px;
       }
     }
     .nav-row {
@@ -367,7 +371,7 @@ export const NavbarStyle = styled.div`
     text-decoration: none;
     color: ${props => props.theme.textColor};
     font-family: "Source Sans Pro";
-    font-size: 16px;
+    font-size: ${props => parseInt(props.theme.font * 16)}px;
     line-height: 1;
     padding-top: 5px;
     padding-bottom: 5px;

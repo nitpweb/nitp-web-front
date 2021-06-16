@@ -16,7 +16,7 @@ import { Dropdown } from "./global/dropdown"
 import Navlist from "./global/navlist"
 import { Deplist, DepListr } from "./global/deplist"
 
-const Navbar = ({ theme, changeTheme, department }) => {
+const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
   const pathname = window.location.pathname.split("/")[1]
   const [change, setChange] = useState(0)
   useEffect(() => {
@@ -127,6 +127,21 @@ const Navbar = ({ theme, changeTheme, department }) => {
               <img src="/location.svg" alt="location" />
             </a>
           </span>
+          <button
+            className="themebtn"
+            disabled={font < 0.5}
+            onClick={() => changeFont(2)}
+          >
+            <span>A-</span>
+          </button>
+          /
+          <button
+            className="themebtn"
+            disabled={font > 1.5}
+            onClick={() => changeFont(1)}
+          >
+            <span>A+</span>
+          </button>
           <button className="themebtn" onClick={() => changeTheme()}>
             <span>
               <img src={theme ? "/moon.svg" : "/sun.svg"} alt="theme" />

@@ -10,6 +10,17 @@ import { dark, light } from "./global/theme"
 
 const Layout = props => {
   const [lightTheme, setLightTheme] = useState(true)
+  const [font, setFont] = useState(1)
+
+  function changeFont(value) {
+    if (value == 1 && font < 1.5) {
+      setFont(font + 0.1)
+    }
+    if (value == 2 && font > 0.6) {
+      setFont(font - 0.1)
+    }
+    console.log(font)
+  }
 
   function changeTheme() {
     setLightTheme(!lightTheme)
@@ -22,15 +33,15 @@ const Layout = props => {
       setLightTheme(JSON.parse(localStorageLayout))
     }
     if (typeof window !== `undefined`) {
-     window
-       .matchMedia("(prefers-color-scheme: dark)")
-       .addEventListener("change", event => {
-         if (event.matches) {
-           setLightTheme(false)
-         } else {
-           setLightTheme(true)
-         }
-       })
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", event => {
+          if (event.matches) {
+            setLightTheme(false)
+          } else {
+            setLightTheme(true)
+          }
+        })
       const AOS = require("aos")
       AOS.init()
     }
@@ -48,11 +59,15 @@ const Layout = props => {
         }
       `}
       render={data => (
-        <ThemeProvider theme={lightTheme ? light : dark}>
+        <ThemeProvider
+          theme={lightTheme ? { ...light, font } : { ...dark, font }}
+          font={font}
+        >
           <Navbar
             theme={lightTheme}
             changeTheme={changeTheme}
             department={props.department}
+            changeFont={changeFont}
           ></Navbar>
           <div
             css={css`

@@ -33,12 +33,12 @@ export const TabPage = styled.div`
           h1 {
             font-weight: bold;
             color: ${props => props.theme.textColor};
-            font-size: 3rem;
+            font-size: ${props => parseInt(props.theme.font * 3)}rem;
           }
           h2 {
             p {
               color: ${props => props.theme.textColor};
-              font-size: 1rem;
+              font-size: ${props => parseInt(props.theme.font * 1)}rem;
               font-weight: 500;
             }
           }
@@ -79,7 +79,7 @@ export const TabPage = styled.div`
             scrollbar-width: none;
             div {
               p {
-                font-size: 1rem;
+                font-size: ${props => parseInt(props.theme.font * 1)}rem;
               }
             }
           }
@@ -90,7 +90,7 @@ export const TabPage = styled.div`
           h1 {
             font-weight: bold;
             color: ${props => props.theme.primaryColor};
-            font-size: 2.5rem;
+            font-size: ${props => props.theme.font * 2.5}rem;
           }
         }
       }
@@ -106,7 +106,7 @@ export const TabPage = styled.div`
       h1 {
         font-weight: bold;
         color: ${props => props.theme.primaryColor};
-        font-size: 2.5rem;
+        font-size: ${props => props.theme.font * 2.5}rem;
       }
       .syllabus-table-head > th,
       .syllabus-table-row > td {
@@ -133,7 +133,7 @@ export const TabPage = styled.div`
         }
         p {
           color: ${props => props.theme.textColor};
-          font-size: 1rem;
+          font-size: ${props => props.theme.font * 1}rem;
           font-weight: 500;
         }
       }
@@ -169,10 +169,10 @@ export const TabPage = styled.div`
         padding: 1vw;
       }
       .layoutrow > .col-6 > div > h1 {
-        font-size: 1.8rem;
+        font-size: ${props => (props.theme.font * 1.8)}rem;
       }
       .layoutrow > .col-6 > div > p {
-        font-size: 1rem;
+        font-size: ${props => props.theme.font * 1}rem;
       }
     }
   }
