@@ -10,6 +10,13 @@ export const light = {
   dropColor:"#E8E8E8",
   dropText:"white",
   dropBg: "black",
+  bgnew:"white",
+  bgmain:"#2d2d2d",
+  mainhover:"white",
+  hovernew:"darkred",
+  border:"darkred",
+  textnew:"#1a1919",
+  hovertext:"",
 }
 
 export const dark = {
@@ -22,4 +29,12 @@ export const dark = {
   dropColor:"#000000",
   dropText:"#941b0c",
   dropBg:"white",
+  bgnew:"#4f4e4e",
+  bgmain:"#1a1919",
+  mainhover:"#363434",
+  hovernew:"black",
+  border:"lightgrey",
+  textnew:"white",
+  hovertext:"",
 }
+//#2d2d2d,white,black
