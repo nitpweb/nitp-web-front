@@ -73,21 +73,20 @@ const Admin = [
     name: "Service Unit Heads",
   },
 ]
-const Home=[
+const Home = [
   {
     url: "/about",
     title: "About Us",
     name: "About",
-    sub:[
+    sub: [
       {
         url: "/about",
         title: "About",
         name: "About",
       },
       {
-        url: "/administration",
+        url: "/director",
         title: "Director’s Message",
-        name: "Our Director",
       },
       {
         url: "/about",
@@ -105,26 +104,27 @@ const Home=[
         name: "Campus",
       },
       {
-        url: "/",
-        title: "People at NIT Patna",
-        name: "People at NIT Patna",
+        url: "/faculties",
+        title: "Faculties of NIT Patna",
       },
-    ]
+      {
+        url: "/officers",
+        title: "Officers of NIT Patna",
+      },
+    ],
   },
   {
     url: "/",
     title: "Resources",
     name: "Resources",
-    sub:[
+    sub: [
       {
-        url: "/",
+        url: "http://www.nitp.ac.in/uploads/PAN_NITP.pdf",
         title: "PAN/ GST",
-        name: "pan",
       },
       {
-        url: "/",
+        url: "http://web.nitp.ac.in/alumni/html/index.html",
         title: "Alumni",
-        name: "Alumni",
       },
       {
         url: "/",
@@ -132,26 +132,24 @@ const Home=[
         name: "RTI",
       },
       {
-        url: "/",
+        url:
+          "http://web.nitp.ac.in/uploads20/Pratibimb/NIT%20Patna%20E-Magazine.pdf",
         title: "Magazine (Pratibimb)",
-        name: "Pratibimb",
       },
       {
-        url: "/",
+        url: "/students",
         title: "Clubs/Societies",
         name: "",
       },
       {
-        url: "/",
+        url: "http://web.nitp.ac.in/incubation_center/index.html",
         title: "Incubation Center",
-        name: "Incubation Center",
       },
       {
         url: "/facilities",
         title: "Facilities",
-        name: "",
       },
-    ]
+    ],
   },
 ]
 const About = [
@@ -168,16 +166,20 @@ const About = [
   {
     url: "/about",
     title: "Values",
-    name: "Values",
+    name: "values",
   },
   {
     url: "/about",
     title: "Campus",
-    name: "Campus",
+    name: "campus",
   },
 ]
 
 const Academics = [
+  {
+    url: "http://web.nitp.ac.in/ict/index.php",
+    title: "ICT Academy",
+  },
   {
     url: "/academics",
     title: "Admissions",
@@ -194,6 +196,84 @@ const Academics = [
     name: "Format",
   },
 ]
+
+const Students = [
+  {
+    url: "http://mail.google.com/a/nitp.ac.in",
+    title: "Web Mail",
+  },
+  {
+    url: "http://exam.nitp.ac.in:9001/",
+    title: "Chanakya Portal",
+  },
+  {
+    url: "/academics",
+    title: "Admissions",
+    name: "admissions",
+  },
+  {
+    url: "/academics",
+    title: "Academic Calendar",
+    name: "calendar",
+  },
+  {
+    url: "/students",
+    title: "1st Year Students",
+    name: "1st Year Students",
+  },
+  {
+    url: "http://web.nitp.ac.in/data/Anti-ragging_Committee_2019.pdf",
+    title: "Anti Ragging",
+  },
+  {
+    url: "/students",
+    title: "Fellowship Opportunities",
+    title: "Fellowship Opportunities",
+  },
+  {
+    url: "/students",
+    title: "Scholarship",
+    name: "Scholarship",
+  },
+  {
+    url: "/students",
+    title: "Clubs/Societies",
+    name: "Clubs",
+  },
+  {
+    url: "/students",
+    title: "Tech Fest",
+    name: "Tech Fest",
+  },
+  {
+    url: "http://www.nitp.ac.in/convocation2020/",
+    title:"Convocation"
+  },
+  {
+    url: "http://web.nitp.ac.in/incubation_center/index.html",
+    title: "Incubation Centre",
+  },
+  {
+    url: "/students",
+    title: "Student Exchange",
+    name: "Student Exchange",
+  },
+  {
+    url: "/students",
+    title: "NSS@NITP",
+    name: "NSS@NITP",
+  },
+  {
+    url:
+      "https://docs.google.com/forms/d/e/1FAIpQLSc5_x34TMtQdMaW2Ad9Nvsmz1N8YXdAGJHtAM5kn3a850Ekyw/viewform?usp=sf_link",
+    title: "Student I-Card",
+  },
+  {
+    url: "/facilities",
+    title: "Facilities",
+  },
+]
+
 const Facilities = [
   {
     url: "/facilities",
@@ -251,35 +331,14 @@ const Facilities = [
     name: "Electric Maintainence Unit",
   },
 ]
-const Placement = [
-  {
-    url: "/placements",
-    title: "About",
-    name: "About",
-  },
-  {
-    url: "/placements",
-    title: "Director's Message",
-    name: "Director's Message",
-  },
-  {
-    url: "/placements",
-    title: "TPO's Message",
-    name: "TPO's Message",
-  },
-  {
-    url: "/placements",
-    title: "Placement Officers",
-    name: "Placement Officers",
-  },
-]
+
 const Navlist = {
   departments: Departments,
   admin: Admin,
   about: About,
   academics: Academics,
+  students: Students,
   facilities: Facilities,
-  placements: Placement,
-  home:Home,
+  home: Home,
 }
 export default Navlist

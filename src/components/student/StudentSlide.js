@@ -112,10 +112,10 @@ const StudentSlide = () => {
           </div>
         </div>
         <div className="info col-8">
-          <div className="club" data-aos="zoom-in-right">
+          <div className="club">
             <a href={data[count - 1].link}>{data[count - 1].Title}</a>
           </div>
-          <p data-aos="zoom-in-left">{data[count - 1].description}</p>
+          <p>{data[count - 1].description}</p>
         </div>
       </div>
     </StudentSlideStyle>

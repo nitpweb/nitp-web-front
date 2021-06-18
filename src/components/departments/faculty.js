@@ -5,24 +5,21 @@ import faculty from "./img/faculty.svg"
 import { PageLayout } from "../styles/pagelayout"
 import styled from "styled-components"
 
-const Facultypage = ({ url, dept }) => {
+const Facultypage = ({ title, url, dept }) => {
   const [faculties, setFaculties] = useState()
 
   let facultiesUrl = `${process.env.GATSBY_API_URL}/api/faculty/${url}`
-  useEffect(
-    () => {
-      axios
-        .get(facultiesUrl)
-        .then(res => {
-          const faculty = res.data
-          setFaculties(faculty)
-        })
-        .catch(e => {
-          console.log(e)
-        })
-    },
-    []
-  )
+  useEffect(() => {
+    axios
+      .get(facultiesUrl)
+      .then(res => {
+        const faculty = res.data
+        setFaculties(faculty)
+      })
+      .catch(e => {
+        console.log(e)
+      })
+  }, [])
 
   const FacultyStyle = PageLayout
 
@@ -32,7 +29,7 @@ const Facultypage = ({ url, dept }) => {
         <div className="layoutrow layoutrowmain">
           <div className="col-6">
             <div className="row rowmarl3">
-              <h1 data-aos="zoom-in-right">Faculties</h1>
+              <h1 data-aos="zoom-in-right">{title ? title : "Faculties"}</h1>
             </div>
             <div className="row rowmarl3">
               <h1 data-aos="zoom-in-right">-{dept}</h1>

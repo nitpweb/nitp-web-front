@@ -34,9 +34,9 @@ export const DropStyle = styled.div`
 
      .mainLink {
         text-decoration: none;
-        width: 150px;
+        width: auto;
         display: flex;
-        padding: 5px;
+        padding: 7px;
         align-items: center;
         background-color:${props => props.theme.bgmain};
         color: white;
@@ -51,9 +51,9 @@ export const DropStyle = styled.div`
               text-decoration: none;
               color: ${props => props.theme.textnew};
               font-weight: 400;
-              font-size:0.95vw;
-              padding: 0px 8px;
-              line-height: 1.6;
+              font-size:0.85vw;
+              padding: 0px 10px;
+              line-height: 2;
               &:hover{
                 color: ${props => props.theme.hovertext};
                 font-weight: 600;
