@@ -10,24 +10,23 @@ export const DropStyle = styled.div`
     background-color: ${props => props.theme.bgnew};
     min-height: fit-content;
     max-width: 80vw;
-    /* color: ${props => props.theme.dropText}; */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    padding: 0px 10px 10px 10px;
+    padding: 0;
     flex-direction: row;
 
     .content {
       display: flex;
       flex-direction: column;
-      margin-top: 5px;
+      width: fit-content;
+      margin: 5px 0;
       height: fit-content;
-      margin-left: 1rem !important;
-      margin-right: 1rem !important;
+      margin-left: 0.5rem !important;
+      margin-right: 0.5rem !important;
+      transition: all 0.5s ease-in-out;
       &:hover {
         border: 1px solid ${props => props.theme.border};
         background-color: ${props => props.theme.mainhover};
-        /* border-bottom-left-radius: 1rem;
-        border-bottom-right-radius: 1rem; */
         .mainLink{
             background-color: ${props => props.theme.hovernew};
         }
@@ -35,24 +34,28 @@ export const DropStyle = styled.div`
 
      .mainLink {
         text-decoration: none;
-        min-width: 150px;
+        width: 150px;
+        display: flex;
         padding: 5px;
+        align-items: center;
         background-color:${props => props.theme.bgmain};
         color: white;
-        text-align: center;
-        font-family: "Source Sans Pro";
+        font-size: 1vw;
+        font-weight:400;
       }
       .sub{
           display: flex;
           flex-direction: column;
+          width: max-content;
           .subLink{
               text-decoration: none;
               color: ${props => props.theme.textnew};
-              font-family: "Source Sans Pro";
               font-weight: 400;
-              padding: 5px 8px;
+              font-size:0.95vw;
+              padding: 0px 8px;
+              line-height: 1.6;
               &:hover{
-                color: red;
+                color: ${props => props.theme.hovertext};
                 font-weight: 600;
               }
           }
