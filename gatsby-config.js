@@ -9,7 +9,6 @@ module.exports = {
     author: `NITP WEB TEAM`,
   },
   plugins: [
-    `gatsby-plugin-transition-link`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
