@@ -16,7 +16,7 @@ export const light = {
   hovernew:"darkred",
   border:"darkred",
   textnew:"#1a1919",
-  hovertext:"",
+  hovertext:"darkred",
 }
 
 export const dark = {
@@ -35,6 +35,6 @@ export const dark = {
   hovernew:"black",
   border:"lightgrey",
   textnew:"white",
-  hovertext:"",
+  hovertext:"red",
 }
 //#2d2d2d,white,black

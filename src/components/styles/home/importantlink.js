@@ -32,6 +32,7 @@ export const ImportantLinkStyle = styled.div`
         justify-content: space-between;
         align-items: center;
         color: #696969;
+        overflow: hidden;
         /* filter: grayscale(100%); */
         .linkimg {
           margin-top: 10%;
