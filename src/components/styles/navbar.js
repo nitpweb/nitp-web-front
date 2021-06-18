@@ -67,7 +67,7 @@ export const NavbarStyle = styled.div`
   }
   .nav-title-row {
     background-color: ${props => props.theme.backgroundColor};
-    height: 60px;
+    height: 66px;
     .nav-col {
       padding-top: 0;
       display: flex;
@@ -231,6 +231,9 @@ export const NavbarStyle = styled.div`
   .nav-sidebar > .nav-sidebar-div:nth-of-type(2n + 1) {
     background-color: ${props => props.theme.backgroundSecColor};
   }
+  .mainLink > .mobsub > a:nth-of-type(2n + 1) {
+    background-color: ${props => props.theme.backgroundSecColor};
+  }
 
   @media (max-width: 1200px) {
     .nav-title-row {
@@ -266,6 +269,9 @@ export const NavbarStyle = styled.div`
         display: none;
         height: 24px;
         padding: 0px;
+        span{
+          font-size: 14px;
+        }
       }
       .end {
         width: 100%;
@@ -317,6 +323,7 @@ export const NavbarStyle = styled.div`
     #mainsidedrop > .nav-sidebar-div:nth-of-type(2n + 1) {
       background-color: ${props => props.theme.backgroundSecColor};
     }
+    
     #mainsidedrop {
       display: none;
       transition: 0.1s;
@@ -405,10 +412,50 @@ export const NavbarStyle = styled.div`
   #aboutsidedropwrap,
   #acadsidedropwrap,
   #facsidedropwrap,
-  #placementsidedropwrap {
+  #placementsidedropwrap,
+  #homesidedropwrap {
     display: none;
     padding-left: 0px;
   }
+  .mainLink {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    /* padding-left: 25px; */
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: ${props => props.theme.textColor};
+    font-family: "Source Sans Pro";
+    font-size: ${props => parseInt(props.theme.font * 16)}px;
+    line-height: 1;
+
+
+    p{
+      padding-left: 25px;
+    }
+    
+    .mobsub {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      display: none;
+      width: 100%;
+
+      a {
+        text-decoration: none;
+        color: ${props => props.theme.textColor};
+        font-family: "Source Sans Pro";
+        font-size: ${props => parseInt(props.theme.font * 16)}px;
+        line-height: 1;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        padding-left: 25px;
+      }
+    }
+  }
+
   .departsidedrop > .nav-sidebar-div {
     padding-left: 25px;
   }

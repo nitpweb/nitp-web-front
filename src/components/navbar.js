@@ -15,6 +15,7 @@ import { NavbarStyle } from "./styles/navbar"
 import { Dropdown } from "./global/dropdown"
 import Navlist from "./global/navlist"
 import { Deplist, DepListr } from "./global/deplist"
+import Dropnew from "./global/dropnew"
 
 const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
   const pathname = window.location.pathname.split("/")[1]
@@ -33,7 +34,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
         if (screen.width > 768) {
           document.querySelector(".nav-title-row").style.display = "none"
         }
-        document.querySelector(".nav-col>span").style.lineHeight = "0.2rem"
+        // document.querySelector(".nav-col>span").style.lineHeight = "0.2rem"
         if (screen.width < 768) {
           document.querySelector(".nav-head-row>.start").style.display = "none"
         }
@@ -189,15 +190,16 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             activeClassName="nav-link-item-active"
             to="/"
           >
-            <span>Home</span>
+            {/* <span>Home</span> */}
+            <Dropnew title="Home" list={Navlist.home}/>
           </Link>
-          <Link
+          {/* <Link
             className="nav-link-item"
             activeClassName="nav-link-item-active"
             to="/about"
           >
             <Dropdown title="About Us" list={Navlist.about} />
-          </Link>
+          </Link> */}
 
           <Link
             className="nav-link-item"
@@ -302,22 +304,54 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             </p>
           </div>
           <div id="maindropwrap">
-            <Link className="nav-sidebar-div" to="/">
+            <div className="nav-sidebar-div" to="/" onClick={function () {
+                var z = document.querySelector("#homesidedropwrap")
+                if (z.style.display === "none") {
+                  z.style.display = "flex"
+                } else {
+                  z.style.display = "none"
+                }
+              }}>
               <div className="navsideicondiv">
                 <img src={homeicon} alt="" />
               </div>
               <p>Home</p>
-            </Link>
+            </div>
+            <div id="homesidedropwrap">
+              <div className="adminsidedrop">
+                {Navlist.home.map(item => (
+                  <Link
+                    to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+                    className="nav-sidebar-div"
+                  >
+                    <p>
+                      <span>{item.title}</span>
+                    </p>
+                    {
+                            item.sub?(<div className="mobsub">{
+                                item.sub.map(val=>(
+                                    <Link
+                                    to={`${val.url}${val.name ? `?tab=${val.name}` : ""}`}
+                                >
+                                   {val.title}
+                                </Link> 
+                                ))
+                            }</div>):""
+                        }
+                  </Link>
+
+                ))}
+              </div>
+            </div>
+
             <div
               className="nav-sidebar-div"
               to="/about"
               onClick={function () {
                 var z = document.querySelector("#aboutsidedropwrap")
-                if (x.style.display === "none") {
-                  x.style.display = "block"
+                if (z.style.display === "none") {
                   z.style.display = "flex"
                 } else {
-                  x.style.display = "none"
                   z.style.display = "none"
                 }
               }}
@@ -548,12 +582,58 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
               <p>NIT PATNA</p>
             </Link>
           </div>
-          <Link className="nav-sidebar-div" to="/">
+          {/* <Link className="nav-sidebar-div" to="/">
             <div className="navsideicondiv">
               <img src={homeicon} alt="" />
             </div>
             <p>Home</p>
-          </Link>
+          </Link> */}
+          <div className="nav-sidebar-div" to="/" onClick={function () {
+                var z = document.querySelector("#homesidedropwrap")
+                if (z.style.display === "none") {
+                  z.style.display = "flex"
+                } else {
+                  z.style.display = "none"
+                }
+              }}>
+              <div className="navsideicondiv">
+                <img src={homeicon} alt="" />
+              </div>
+              <p>Home</p>
+            </div>
+            <div id="homesidedropwrap">
+              <div className="adminsidedrop">
+                {Navlist.home.map(item => (
+                  <div
+                    to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+                    className="mainLink" onClick={function () {
+                      var z = document.querySelector(`#sub${item.url.slice(1,)}`)
+                      if (z.style.display === "none") {
+                        z.style.display = "flex"
+                      } else {
+                        z.style.display = "none"
+                      }
+                    }}
+                  >
+                    <p>
+                      <span>{item.title}</span>
+                    </p>
+                    {
+                            item.sub?(<div id={`sub${item.url.slice(1,)}`} className="mobsub">{
+                                item.sub.map(val=>(
+                                    <Link
+                                    to={`${val.url}${val.name ? `?tab=${val.name}` : ""}`}
+                                >
+                                   {val.title}
+                                </Link> 
+                                ))
+                            }</div>):""
+                        }
+                  </div>
+                ))}
+              </div>
+            </div>
+
           {/* <Link className="nav-sidebar-div" to="/about">
             <div className="navsideicondiv">
               <img src={abouticon} alt="" />
