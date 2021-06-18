@@ -24,8 +24,13 @@ const Departments = [
 const Admin = [
   {
     url: "/administration",
-    title: "About Director",
+    title: "Director",
     name: "Our Director",
+  },
+  {
+    url: "/administration",
+    title: "Deputy Director",
+    name: "Deputy Director",
   },
   {
     url: "/administration",
@@ -34,8 +39,18 @@ const Admin = [
   },
   {
     url: "/administration",
+    title: "Registrar",
+    name: "Registrar",
+  },
+  {
+    url: "/administration",
     title: "Board of Governors",
     name: "Board of Governors",
+  },
+  {
+    url: "/administration",
+    title: "Senate",
+    name: "Senate",
   },
   {
     url: "/administration",
@@ -52,8 +67,93 @@ const Admin = [
     title: "Finance committee",
     name: "Finance Committee",
   },
+  {
+    url: "/administration",
+    title: "Service Unit Heads",
+    name: "Service Unit Heads",
+  },
 ]
-
+const Home=[
+  {
+    url: "/about",
+    title: "About Us",
+    name: "About",
+    sub:[
+      {
+        url: "/about",
+        title: "About",
+        name: "About",
+      },
+      {
+        url: "/administration",
+        title: "Director’s Message",
+        name: "Our Director",
+      },
+      {
+        url: "/about",
+        title: "Mission & Vision",
+        name: "Mission and Vision",
+      },
+      {
+        url: "/about",
+        title: "Values",
+        name: "Values",
+      },
+      {
+        url: "/about",
+        title: "Campus",
+        name: "Campus",
+      },
+      {
+        url: "/",
+        title: "People at NIT Patna",
+        name: "People at NIT Patna",
+      },
+    ]
+  },
+  {
+    url: "/",
+    title: "Resources",
+    name: "Resources",
+    sub:[
+      {
+        url: "/",
+        title: "PAN/ GST",
+        name: "pan",
+      },
+      {
+        url: "/",
+        title: "Alumni",
+        name: "Alumni",
+      },
+      {
+        url: "/",
+        title: "RTI",
+        name: "RTI",
+      },
+      {
+        url: "/",
+        title: "Magazine (Pratibimb)",
+        name: "Pratibimb",
+      },
+      {
+        url: "/",
+        title: "Clubs/Societies",
+        name: "",
+      },
+      {
+        url: "/",
+        title: "Incubation Center",
+        name: "Incubation Center",
+      },
+      {
+        url: "/facilities",
+        title: "Facilities",
+        name: "",
+      },
+    ]
+  },
+]
 const About = [
   {
     url: "/about",
@@ -180,5 +280,6 @@ const Navlist = {
   academics: Academics,
   facilities: Facilities,
   placements: Placement,
+  home:Home,
 }
 export default Navlist
