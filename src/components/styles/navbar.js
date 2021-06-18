@@ -412,6 +412,7 @@ export const NavbarStyle = styled.div`
   #aboutsidedropwrap,
   #acadsidedropwrap,
   #facsidedropwrap,
+  #studsidedropwrap,
   #placementsidedropwrap,
   #homesidedropwrap {
     display: none;

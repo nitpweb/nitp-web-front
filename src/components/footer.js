@@ -34,39 +34,34 @@ const Footer = () => {
               <a href="http://www.nitp.ac.in/uploads/ORG_CHART_NITP.pdf">
                 <h3>Organization Chart</h3>
               </a>
+              <Link to="/webteam">
+                <h3>Web Team</h3>
+              </Link>
             </div>
             <div className="foot-col-3">
-              <h1>Important Links</h1>
-              {/* <a href="http://www.nitp.ac.in/php/officeorder.php">
+              <h1>Other Links</h1>
+              <a href="http://www.nitp.ac.in/php/officeorder.php">
                 <h3>BOG/FC/BWC Minutes</h3>
-              </a> */}
-              {/* <a href="http://www.nitp.ac.in/php/senatemins.php">
+              </a>
+              <a href="http://www.nitp.ac.in/php/senatemins.php">
                 <h3>Senate Minutes</h3>
-              </a> */}
+              </a>
               <Link to="/acadnotice">
                 <h3>Academics Notice</h3>
               </Link>
               <a href="http://www.nitp.ac.in/php/downloads/Grievance%20Cell%20Constituted%20by%20Council%20of%20NITs.pdf">
                 <h3>Grievance Cell</h3>
               </a>
-              <a href="http://www.nitp.ac.in/downloads/NIT_Act/Amendments_First_Statutes.pdf">
+              <a href="http://web.nitp.ac.in/data/NIT_Act/Amendments_First_Statutes.pdf">
                 <h3>NIT Act and Statutes</h3>
               </a>
-              {/* <a href="http://www.nitp.ac.in/php/staffclaim_form.php">
-                <h3>Staff Claim Form</h3>
-              </a> */}
               <a href="http://beta.nitp.ac.in:81">
                 <h3>Faculty Login</h3>
               </a>
-              <Link to="/webteam">
-                <h3>Web Team</h3>
-              </Link>
-              <a href="http://www.nitp.ac.in/uploads/Anti-ragging_Committee_2019.pdf">
-                <h3>Anti Ragging</h3>
-              </a>
-              <a href="http://www.nitp.ac.in/convocation2020/">
+
+              {/* <a href="http://www.nitp.ac.in/convocation2020/">
                 <h3>Convocation 2020</h3>
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -78,16 +73,7 @@ const Footer = () => {
               </a>
               <a href="http://www.nitp.ac.in/php/privacy.php">
                 <h3>Privacy Policy</h3>
-              </a>{" "}
-              <a href="http://www.nitp.ac.in/uploads20/Pratibimb/NIT%20Patna%20E-Magazine.pdf">
-                <h3>Magazine (Pratibimb)</h3>
-              </a>{" "}
-              <a href="http://corona.nitp.ac.in/Corona16/index.php">
-                <h3>CORONA</h3>
               </a>
-              {/* <a href="http://www.nitp.ac.in/php/refund-policy.php">
-              <h3>Refund Rules</h3>
-            </a> */}
               <Link to="/terms">
                 <h3>Terms of Use</h3>
               </Link>
@@ -97,20 +83,14 @@ const Footer = () => {
             </div>
             <div className="foot-col-3">
               <h1>Useful Links</h1>
-
+              <a href="http://www.nitp.ac.in/uploads/Anti-ragging_Committee_2019.pdf">
+                <h3>Anti Ragging</h3>
+              </a>
               <a href="">
                 <h3>Admissions</h3>
               </a>
               <a href="http://www.nitp.ac.in/ict/index.php">
                 <h3>ICT Academy</h3>
-              </a>
-
-              <a href="">
-                <h3>TEQUIP</h3>
-              </a>
-
-              <a href="http://www.nitp.ac.in/php/incubation_center/index.html">
-                <h3>Incubation Center</h3>
               </a>
               <a href="">
                 <h3>National Service Scheme</h3>
