@@ -143,7 +143,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           >
             <span>A+</span>
           </button>
-          <button className="themebtn" onClick={() => changeTheme()}>
+          <button className="themebtn" id="theme" onClick={() => changeTheme()}>
             <span>
               <img src={theme ? "/moon.svg" : "/sun.svg"} alt="theme" />
             </span>
