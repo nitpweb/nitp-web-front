@@ -11,7 +11,7 @@ export const StudentSlideStyle = styled.div`
       ${props => props.theme.backgroundColor} 42%,
       ${props => props.theme.backgroundColor} 100%
     );
-    min-height: 60vh;
+    min-height: 60vh; 
     padding: 0px !important;
   }
   .club {
@@ -28,6 +28,7 @@ export const StudentSlideStyle = styled.div`
     text-align: center;
     font-family: "Quicksand";
     font-weight: bolder;
+    padding-top: 1.5rem;
   }
   #slider {
     position: relative;
@@ -194,6 +195,7 @@ export const StudentSlideStyle = styled.div`
     cursor: pointer;
     z-index: 5;
     padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
   }
   .clubsection .move:hover {
     transform: scale(0.9);
@@ -217,8 +219,9 @@ export const StudentSlideStyle = styled.div`
       display: none;
     }
     .img-wrap {
-      height: 235px;
-      width: 300px;
+      min-width: 70%;
+      width: 70%;
+      height: 200px;
     }
   }
 

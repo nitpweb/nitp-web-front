@@ -17,8 +17,6 @@ const StudentSlide = () => {
       setCount(1 + (count % 7))
       const temp = document.getElementById(`s${count}`)
       temp.checked = true
-      // console.log(temp.checked)
-      // console.log(count)
     }, 3000)
     return () => clearInterval(interval)
   }, [count])  
@@ -26,18 +24,16 @@ const StudentSlide = () => {
   return (
     <StudentSlideStyle>
       <div
-        className="row layoutrow clubsection"
+        className="clubsection"
         id="clubsection"
         data-aos="fade"
       >
-        <div className="row rowmarl3">
           <h1
             data-aos="zoom-in-right"
-            style={{ color: `white`, paddingLeft: `1rem`, margin: `0px` }}
+            style={{ width:`90%`, color: `white`, padding: `1rem`, margin: `0px`,textAlign:`left`,fontFamily: `Quicksand`}}
           >
             Our Clubs
           </h1>
-        </div>
         <div className="slide">
           <div
             className="move"
