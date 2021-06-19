@@ -87,6 +87,11 @@ main {
   margin: auto 4vw;
   font-family: Quicksand;
   max-width: 90%;
+  border: 1;
+  display: block;
+  overflow-x: auto;
+  margin:auto 4vw;
+  max-width: 90%;
 }
 
 .table-act td,
