@@ -10,12 +10,13 @@ import Floatmenu from "./student/floatmenu"
 import StudentSlide from "./student/StudentSlide"
 import { PageLayout } from "./styles/pagelayout"
 import { TabPage } from "./styles/tabpage"
-import { StudentList, Scholarship } from "./student/const"
+import { Scholarship } from "./student/const"
 import Navigate from "./global/Navigate"
 import { useQueryParam } from "use-query-params"
 import woman from "./facilities/img/woman.svg"
 import Notice from "./home/notice"
 import Table from "./table"
+import Navlist from "./global/navlist"
 
 const sacinfo =
   "The Student Activity Centre (SAC) was built with the vision to provide support for multiple kinds of student activities. It was initiated by the honorable Director of NIT Patna, Prof. Asok De to encourage participation in extra-curricular activities to promote overall grooming of personality of the students. Various cultural activities and indoor games are conducted in the SAC. This enormous building has numerous rooms each of which is dedicated to activities related to sports and extra-curricular activities. Student offices for the same are also hosted in the SAC. Also, many open spaces have been specifically designed in the SAC to promote community interaction. A huge stadium adjoins the SAC in which football and cricket matches are held. The administration believes that these activities will help the students to provide a dynamic edge to their performances in the professional world and build a truly multi-faceted personality."
@@ -44,14 +45,14 @@ const Studentpage = () => {
       .catch(e => {
         console.log(e)
       })
-    StudentList.forEach(x => {
-      x.title === tab ? setView(tab) : ""
+    Navlist.students.forEach(x => {
+      x.data === tab ? setView(tab) : ""
     })
   }, [tab])
 
   return (
     <TabPage>
-      <Navigate data={StudentList} callback={getView} tab={tab} />
+      <Navigate data={Navlist.students} callback={getView} tab={tab} />
       <div className="mainDiv">
         <PageLayout>
           {/* <div className="layoutrow layoutrowmain" id="home">

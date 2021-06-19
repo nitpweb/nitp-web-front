@@ -9,9 +9,10 @@ const Navigate = ({ callback, data, tab }) => {
   return (
     <NavigateStyle>
       {data.map(item => (
+        item.data?
         <button
           className={`childLink ${
-            item.title === tab && active === 1 ? "active" : ""
+            item.data === tab && active === 1 ? "active" : ""
           }`}
           onClick={() => {
             callback(item.data)
@@ -22,7 +23,7 @@ const Navigate = ({ callback, data, tab }) => {
             <img src={item.img} className="image" alt=""></img>
           ) : null}
           <p>{item.title}</p>
-        </button>
+        </button>:null
       ))}
     </NavigateStyle>
   )
