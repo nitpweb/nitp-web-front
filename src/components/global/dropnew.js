@@ -11,7 +11,7 @@ const Dropnew = ({ title, list }) => {
           <div className="content">
             <Link
               className="mainLink"
-              to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+              to={`${item.url}${item.data ? `?tab=${item.data}` : ""}`}
             >
               {item.title}
             </Link>
@@ -20,7 +20,7 @@ const Dropnew = ({ title, list }) => {
                 {item.sub.map(val => (
                   <Link
                     className="subLink"
-                    to={`${val.url}${val.name ? `?tab=${val.name}` : ""}`}
+                    to={`${val.url}${val.data ? `?tab=${val.data}` : ""}`}
                   >
                     {val.title}
                   </Link>

@@ -11,9 +11,9 @@ import Ccimg from "./facilities/img/ccimg"
 import Dummyimg from "./facilities/img/dummy"
 import { PageLayout } from "./styles/pagelayout"
 import { TabPage } from "./styles/tabpage"
-import { ComputerCentre, FacilityList } from "./facilities/const"
 import Navigate from "./global/Navigate"
 import { useQueryParam} from "use-query-params"
+import Navlist from "./global/navlist"
 const ccdetail =
   "A state-of-the-art Computer Centre started its operation on 27th November 2011. It serves as the central computing facility for the students, research scholars and teachers of the institute. The Centre is well equipped with modern Computers (190 in number), air conditioned labs and stabilized uninterrupted power supply among the other facilities. The Centre has seven labs for all the students and one lab exclusively for PhD scholars of the institute. All labs are equipped with IP cameras to monitor the activities remotely. The Centre has 1 Gbps, 24x7 internet connectivity on optical fiber under National Knowledge Network, Govt. of India.The Centre also has a Virtual Class Room and Desktop VideoConferencing facility. It operates from 8:30 AM to 5:30 PM."
 const libdetail =
@@ -39,18 +39,18 @@ const emudetail =
 
 const Facilitiespage = () => {
   const [tab] = useQueryParam("tab")
-  const [view, setView] = useState("Computer Centre")
+  const [view, setView] = useState("cc")
   function getView(callback) {
     setView(callback)
   }
   useEffect(() => {
-    FacilityList.forEach(x => {
-      x.title === tab ? setView(tab) : ""
+    Navlist.facilities.forEach(x => {
+      x.data === tab ? setView(tab) : ""
     })
   }, [tab])
   return (
     <TabPage>
-      <Navigate data={FacilityList} callback={getView} tab={tab}/>
+      <Navigate data={Navlist.facilities} callback={getView} tab={tab}/>
       {/* <Floatmenu /> */}
       <div className="mainDiv">
         <PageLayout>
@@ -64,7 +64,7 @@ const Facilitiespage = () => {
               <Facilitymain />
             </div>
           </div> */}
-          {view == "Computer Centre" && (
+          {view == "cc" && (
             <div className="layoutrow layoutrow1" id="cc">
               <div className="col-6 imgcolstyle">
                 <Ccimg />
@@ -79,7 +79,7 @@ const Facilitiespage = () => {
               </div>
             </div>
           )}
-          {view == "Library" && (
+          {view == "library" && (
             <div className="layoutrow" id="lib">
               <div className="col-6">
                 <div className="row rowmarl3">
@@ -156,7 +156,7 @@ const Facilitiespage = () => {
               </div>
             </div>
           )}
-          {view == "Medical Facilities" && (
+          {view == "medical" && (
             <div className="layoutrow layoutrow1" id="med">
               <div className="col-6 imgcolstyle">
                 <Dummyimg />
@@ -205,7 +205,7 @@ const Facilitiespage = () => {
               </div>
             </div>
           )}
-          {view == "Sports Facilities" && (
+          {view == "sports" && (
             <div className="layoutrow" id="sport">
               <div className="col-6">
                 <div className="row rowmarl3">
@@ -220,7 +220,7 @@ const Facilitiespage = () => {
               </div>
             </div>
           )}
-          {view == "Hostel and Mess" && (
+          {view == "hostel" && (
             <div className="layoutrow layoutrow1" id="hostel">
               <div className="col-6 imgcolstyle">
                 <Dummyimg />
@@ -235,7 +235,7 @@ const Facilitiespage = () => {
               </div>
             </div>
           )}
-          {view == "Laboratories" && (
+          {view == "lab" && (
             <div className="layoutrow" id="lab">
               <div className="col-6">
                 <div className="row rowmarl3">
@@ -273,7 +273,7 @@ const Facilitiespage = () => {
               </div>
             </div>
           )}
-          {view == "WiFi" && (
+          {view == "wifi" && (
             <div className="layoutrow layoutrow1" id="wifi">
               <div className="col-6 imgcolstyle">
                 <img src={wifi} className="img-fluid" loading="lazy" />
@@ -288,7 +288,7 @@ const Facilitiespage = () => {
               </div>
             </div>
           )}
-          {view == "Bank" && (
+          {view == "bank" && (
             <div className="layoutrow" id="bank">
               <div className="col-6">
                 <div className="row rowmarl3">
@@ -303,7 +303,7 @@ const Facilitiespage = () => {
               </div>
             </div>
           )}
-          {view == "Security" && (
+          {view == "security" && (
             <div className="layoutrow layoutrow1" id="security">
               <div className="col-6 imgcolstyle">
                 <img src={security} className="img-fluid" loading="lazy" />
@@ -318,7 +318,7 @@ const Facilitiespage = () => {
               </div>
             </div>
           )}
-          {view == "Woman Cell" && (
+          {view == "womancell" && (
             <div className="layoutrow" id="wc">
               <div className="col-6">
                 <div className="row rowmarl3">
@@ -333,7 +333,7 @@ const Facilitiespage = () => {
               </div>
             </div>
           )}
-          {view == "Electric Maintainence Unit" && (
+          {view == "emu" && (
             <div className="layoutrow layoutrow1" id="electric">
               <div className="col-6 imgcolstyle">
                 <img src={electric} className="img-fluid" loading="lazy" />
