@@ -24,65 +24,66 @@ const Departments = [
 const Admin = [
   {
     url: "/administration",
-    title: "Director",
-    name: "Our Director",
+    title: "Director", 
+    data: "director",
   },
   {
     url: "/administration",
     title: "Deputy Director",
-    name: "Deputy Director",
+    data: "deputydirector",
   },
   {
     url: "/administration",
     title: "Deans",
-    name: "Deans",
+    data: "deans",
   },
   {
     url: "/administration",
     title: "Registrar",
-    name: "Registrar",
+    data: "registrar",
   },
   {
     url: "/administration",
     title: "Board of Governors",
-    name: "Board of Governors",
+    data: "bog",
   },
   {
     url: "/administration",
     title: "Senate",
-    name: "Senate",
+    data: "senate",
   },
   {
     url: "/administration",
     title: "Building & Works committee",
-    name: "Building and Works Committee",
+    data: "bwc",
   },
   {
     url: "/administration",
     title: "Institute Disciplinary committee",
-    name: "Institute Disciplinary Committee",
+    data: "idc",
   },
   {
     url: "/administration",
     title: "Finance committee",
-    name: "Finance Committee",
+    data: "fc",
   },
   {
     url: "/administration",
     title: "Service Unit Heads",
-    name: "Service Unit Heads",
+    data: "suh",
   },
 ]
 const Home = [
   {
     url: "/about",
     title: "About Us",
-    name: "About",
+    data: "About",
     sub: [
       {
         url: "/about",
         title: "About",
-        name: "About",
+        data: "about",
+        img: "/department/about.svg",
       },
       {
         url: "/director",
@@ -91,17 +92,21 @@ const Home = [
       {
         url: "/about",
         title: "Mission & Vision",
-        name: "Mission and Vision",
+        data: "missionvision",
+        img: "/department/mission.svg",
       },
       {
         url: "/about",
         title: "Values",
-        name: "Values",
+        data: "values",
+        img:"/clock.svg"
       },
       {
         url: "/about",
         title: "Campus",
-        name: "Campus",
+        data: "campus",
+        img: "/map.svg",
+
       },
       {
         url: "/faculties",
@@ -116,7 +121,7 @@ const Home = [
   {
     url: "/",
     title: "Resources",
-    name: "Resources",
+    data: "Resources",
     sub: [
       {
         url: "http://www.nitp.ac.in/uploads/PAN_NITP.pdf",
@@ -129,7 +134,7 @@ const Home = [
       {
         url: "/",
         title: "RTI",
-        name: "RTI",
+        data: "RTI",
       },
       {
         url:
@@ -139,7 +144,7 @@ const Home = [
       {
         url: "/students",
         title: "Clubs/Societies",
-        name: "",
+        data: "",
       },
       {
         url: "http://web.nitp.ac.in/incubation_center/index.html",
@@ -156,22 +161,22 @@ const About = [
   {
     url: "/about",
     title: "About",
-    name: "About",
+    data: "About",
   },
   {
     url: "/about",
     title: "Mission & Vision",
-    name: `Mission and Vision`,
+    data: `Mission and Vision`,
   },
   {
     url: "/about",
     title: "Values",
-    name: "values",
+    data: "values",
   },
   {
     url: "/about",
     title: "Campus",
-    name: "campus",
+    data: "campus",
   },
 ]
 
@@ -183,17 +188,17 @@ const Academics = [
   {
     url: "/academics",
     title: "Admissions",
-    name: "Admissions",
+    data: "Admissions",
   },
   {
     url: "/academics",
     title: "Notices",
-    name: "Notices",
+    data: "Notices",
   },
   {
     url: "/academics",
     title: "Format",
-    name: "Format",
+    data: "Format",
   },
 ]
 
@@ -207,19 +212,27 @@ const Students = [
     title: "Chanakya Portal",
   },
   {
-    url: "/academics",
+    url: "/academics?tab=admissions",
     title: "Admissions",
-    name: "admissions",
   },
   {
-    url: "/academics",
+    url: "/academics?tab=calendar",
     title: "Academic Calendar",
-    name: "calendar",
+  },
+  {
+    url: "/students",
+    title: "Clubs/Societies",
+    data: "clubs",
   },
   {
     url: "/students",
     title: "1st Year Students",
-    name: "1st Year Students",
+    data: "firstyear",
+  },
+  {
+    url: "/students",
+    title: "Student Activity Centre",
+    data: "sac",
   },
   {
     url: "http://web.nitp.ac.in/data/Anti-ragging_Committee_2019.pdf",
@@ -228,22 +241,18 @@ const Students = [
   {
     url: "/students",
     title: "Fellowship Opportunities",
-    title: "Fellowship Opportunities",
+    data: "fellowship",
   },
   {
     url: "/students",
     title: "Scholarship",
-    name: "Scholarship",
+    data: "scholarship",
   },
-  {
-    url: "/students",
-    title: "Clubs/Societies",
-    name: "Clubs",
-  },
+
   {
     url: "/students",
     title: "Tech Fest",
-    name: "Tech Fest",
+    data: "corona",
   },
   {
     url: "http://www.nitp.ac.in/convocation2020/",
@@ -256,12 +265,12 @@ const Students = [
   {
     url: "/students",
     title: "Student Exchange",
-    name: "Student Exchange",
+    data: "studentexchange",
   },
   {
     url: "/students",
     title: "NSS@NITP",
-    name: "NSS@NITP",
+    data: "nss",
   },
   {
     url:
@@ -278,57 +287,57 @@ const Facilities = [
   {
     url: "/facilities",
     title: "Computer Centre",
-    name: "Computer Centre",
+    data: "cc",
   },
   {
     url: "/facilities",
     title: "Library",
-    name: "Library",
+    data: "library",
   },
   {
     url: "/facilities",
     title: "Medical Facilities",
-    name: "Medical Facilities",
+    data: "medical",
   },
   {
     url: "/facilities",
     title: "Sports Facilities",
-    name: "Sports Facilities",
+    data: "sports",
   },
   {
     url: "/facilities",
     title: "Hostel & Mess",
-    name: "Hostel and Mess",
+    data: "hostel",
   },
   {
     url: "/facilities",
     title: "Laboratories",
-    name: "Laboratories",
+    data: "lab",
   },
   {
     url: "/facilities",
     title: "WiFi",
-    name: "WiFi",
+    data: "wifi",
   },
   {
     url: "/facilities",
     title: "Bank",
-    name: "Bank",
+    data: "bank",
   },
   {
     url: "/facilities",
     title: "Security",
-    name: "Security",
+    data: "security",
   },
   {
     url: "/facilities",
     title: "Woman Cell",
-    name: "Woman Cell",
+    data: "womancell",
   },
   {
     url: "/facilities",
     title: "Electric Maintainence Unit",
-    name: "Electric Maintainence Unit",
+    data: "emu",
   },
 ]
 

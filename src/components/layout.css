@@ -18,6 +18,8 @@ body {
   font-family: "Mangal" sans-serif, "Quicksand", "Source Sans Pro";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 code {
@@ -86,11 +88,6 @@ main {
   overflow-x: auto;
   margin: auto 4vw;
   font-family: Quicksand;
-  max-width: 90%;
-  border: 1;
-  display: block;
-  overflow-x: auto;
-  margin:auto 4vw;
   max-width: 90%;
 }
 
