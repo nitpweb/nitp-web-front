@@ -9,12 +9,18 @@ export const NavigateStyle = styled.div`
   transform: translateY(-50%);
   margin: 0 0 0 5vw;
   z-index: 1;
+  max-height: 80vh;
+  overflow-y: scroll;
   background: ${props => props.theme.backgroundColor};
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+&::-webkit-scrollbar {
+  display: none;
+}
   .childLink {
     margin-top: 0;
     width: 8.34vw;
     max-height: 90px;
-    max-height: 10vh;
     border: 1px solid lightgrey;
     display: flex;
     flex-direction: column;
@@ -26,6 +32,7 @@ export const NavigateStyle = styled.div`
     background: white;
     cursor: pointer;
     outline: none;
+    /* overflow: hidden; */
     background-color: ${props => props.theme.backgroundSecColor};
     p {
       font-size: 14px;
@@ -82,27 +89,23 @@ export const NavigateStyle = styled.div`
   }
   @media (max-width: 768px) {
     flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    align-items: flex-end;
+    max-width: 90%;
+    overflow-x: scroll;
     position: absolute;
-    top: 2rem;
+    top: 2.8rem;
     background-color: transparent;
-    justify-content: center;
+    justify-content: flex-start;
     .childLink {
-      width: fit-content;
-      min-width: 60px;
-      max-width: 120px;
-      height: 35px;
+      width: max-content !important;
       padding: 0 0.5rem;
       margin: 0.2rem 0.2rem;
       background-color: ${props => props.theme.primaryColor};
-      border-radius: 2rem;
-      overflow: hidden;
-      word-wrap: break-word;
+      border-radius: 0.5rem;
+      height: 30px !important;
       p {
-        font-size: 11px;
+        font-size: 12px;
         color: white;
+        width: max-content;
         font-weight: normal;
         padding: 0;
       }

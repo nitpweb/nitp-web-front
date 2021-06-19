@@ -154,7 +154,7 @@ export const TabPage = styled.div`
     }
   }
   @media (max-width: 768px) {
-    margin-top: 7.5rem;
+    margin-top: 5.2rem;
     position: relative;
     .mainDiv {
       width: 80vw;
