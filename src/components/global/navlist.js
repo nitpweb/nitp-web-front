@@ -144,7 +144,7 @@ const Home = [
       {
         url: "/students",
         title: "Clubs/Societies",
-        data: "",
+        data: "clubs",
       },
       {
         url: "http://web.nitp.ac.in/incubation_center/index.html",
@@ -182,24 +182,112 @@ const About = [
 
 const Academics = [
   {
-    url: "http://web.nitp.ac.in/ict/index.php",
-    title: "ICT Academy",
+    url: "/academics",
+    title: "Academics",
+    data: "",
+    sub:[
+      {
+        url: "http://web.nitp.ac.in/ict/index.php",
+        title: "ICT Academy",
+        data: "",
+      },
+      {
+        url: "",
+        title: "Digital Initiatives",
+        data: "",
+      },
+      {
+        url: "",
+        title: "Regulation & Curricula",
+        data: "",
+      },
+    ]
+  },
+  {
+    url: "/",
+    title: "Programme Structure",
+    data: "",
+    sub:[
+      {
+        url: "",
+        title: "UG",
+        data: "",
+      },
+      {
+        url: "",
+        title: "PG",
+        data: "",
+      },
+    ]
   },
   {
     url: "/academics",
     title: "Admissions",
     data: "Admissions",
+    sub:[
+      {
+        url: "",
+        title: "CCMT/JoSSA/CSAB",
+        data: "",
+      },
+      {
+        url: "",
+        title: "Relaxation Criteria",
+        data: "",
+      },
+      {
+        url: "",
+        title: "Refund Rules",
+        data: "",
+      },
+    ]
   },
   {
     url: "/academics",
-    title: "Notices",
-    data: "Notices",
-  },
-  {
-    url: "/academics",
-    title: "Format",
-    data: "Format",
-  },
+    title: "Academics",
+    data: "",
+    sub:[
+      {
+        url: "/academics",
+        title: "Academic Notices",
+        data: "Notices",
+      },
+      {
+        url: "",
+        title: "Academic Calendar",
+        data: "",
+      },
+      {
+        url: "",
+        title: "Fee Structure",
+        data: "",
+      },
+      {
+        url: "",
+        title: "Format of Official Documents",
+        data: "",
+      },
+    ]
+  }
+  // {
+  //   url: "http://web.nitp.ac.in/ict/index.php",
+  //   title: "ICT Academy",
+  // },
+  // {
+  //   url: "/academics",
+  //   title: "Admissions",
+  //   data: "Admissions",
+  // },
+  // {
+  //   url: "/academics",
+  //   title: "Notices",
+  //   data: "Notices",
+  // },
+  // {
+  //   url: "/academics",
+  //   title: "Format",
+  //   data: "Format",
+  // },
 ]
 
 const Students = [
