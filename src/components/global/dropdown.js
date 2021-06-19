@@ -9,7 +9,7 @@ export const Dropdown = ({ title, list }) => {
         <div className="dropdown-content">
           {list.map(item => (
             <Link
-              to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+              to={`${item.url}${item.data ? `?tab=${item.data}` : ""}`}
             >
               <span>{item.title}</span>
             </Link>

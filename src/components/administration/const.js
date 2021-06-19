@@ -1,4 +1,5 @@
 import React from "react"
+import Navlist from "../global/navlist"
 
 const Deansinfo = [
   {
@@ -208,31 +209,37 @@ const director = [
     director: "something",
   },
 ]
-const AdministrationData = [
+const Administrationinfol = [
   {
     title: "Our Director",
     data: director,
+    info:"director",
   },
   {
     title: "Deans",
     data: Deansinfo,
+    info:"deans",
   },
   {
     title: "Board of Governors",
     data: BOG,
+    info:"bog",
   },
   {
     title: "Building and Works Committee",
     data: BWC,
+    info:"bwc"
   },
   {
     title: "Institute Disciplinary Committee",
     data: IDC,
+    info:"idc",
   },
   {
     title: "Finance Committee",
     data: FC,
+    info:"fc",
   },
 ]
 
-export default AdministrationData
+export default Administrationinfol
