@@ -6,7 +6,9 @@ const Table = ({ children }) => {
     <TableStyle>
       <div className="table-t">
         <div className="tablewrap">
-          <div>{children}</div>
+          <div>
+            <table>{children}</table>
+          </div>
         </div>
       </div>
     </TableStyle>
