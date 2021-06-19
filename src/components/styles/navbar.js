@@ -55,13 +55,16 @@ export const NavbarStyle = styled.div`
       .themebtn {
         width: 28px;
         background-color: transparent;
-        margin: 0px 20px 0px 0px;
         border: 0;
+        margin: 0;
         cursor: pointer;
         span {
           color: #fff;
           font-weight: 600;
         }
+      }
+      #theme {
+        margin: 0px 20px 0px 0px;
       }
     }
   }
@@ -269,7 +272,7 @@ export const NavbarStyle = styled.div`
         display: none;
         height: 24px;
         padding: 0px;
-        span{
+        span {
           font-size: 14px;
         }
       }
@@ -323,7 +326,7 @@ export const NavbarStyle = styled.div`
     #mainsidedrop > .nav-sidebar-div:nth-of-type(2n + 1) {
       background-color: ${props => props.theme.backgroundSecColor};
     }
-    
+
     #mainsidedrop {
       display: none;
       transition: 0.1s;
@@ -431,11 +434,10 @@ export const NavbarStyle = styled.div`
     font-size: ${props => parseInt(props.theme.font * 16)}px;
     line-height: 1;
 
-
-    p{
+    p {
       padding-left: 25px;
     }
-    
+
     .mobsub {
       flex-direction: column;
       align-items: flex-start;
