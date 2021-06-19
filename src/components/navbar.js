@@ -185,14 +185,12 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
 
       <div className="nav-link-row">
         <div className="col-6">
-          <Link
+          <div
             className="nav-link-item"
             activeClassName="nav-link-item-active"
-            to="/"
           >
-            {/* <span>Home</span> */}
-            <Dropnew title="Home" list={Navlist.home} />
-          </Link>
+            <Dropnew to="/" title="Home" list={Navlist.home} />
+          </div>
           {/* <Link
             className="nav-link-item"
             activeClassName="nav-link-item-active"
@@ -201,6 +199,14 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             <Dropdown title="About Us" list={Navlist.about} />
           </Link> */}
 
+          <div
+            className="nav-link-item"
+            activeClassName="nav-link-item-active"
+            to="/academics"
+          >
+            <Dropnew to="/academics" title="Academics" list={Navlist.academics} />
+          </div>
+          
           <Link
             className="nav-link-item"
             activeClassName="nav-link-item-active"
@@ -208,13 +214,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           >
             <Dropdown title="Administration" list={Navlist.admin} />
           </Link>
-          <Link
-            className="nav-link-item"
-            activeClassName="nav-link-item-active"
-            to="/academics"
-          >
-            <Dropdown title="Academics" list={Navlist.academics} />
-          </Link>
+          
         </div>
         <div className="col-6">
           <Dropdown title="Departments" list={Navlist.departments} />
@@ -653,7 +653,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             </div>
             <p>About Us</p>
           </Link> */}
-          <div
+          {/* <div
             className="nav-sidebar-div"
             to="/about"
             onClick={function () {
@@ -683,7 +683,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
                 </Link>
               ))}
             </div>
-          </div>
+          </div> */}
           <div
             className="nav-sidebar-div"
             to="/administration"
