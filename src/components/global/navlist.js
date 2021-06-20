@@ -24,7 +24,7 @@ const Departments = [
 const Admin = [
   {
     url: "/administration",
-    title: "Director", 
+    title: "Director",
     data: "director",
   },
   {
@@ -99,14 +99,13 @@ const Home = [
         url: "/about",
         title: "Values",
         data: "values",
-        img:"/clock.svg"
+        img: "/clock.svg",
       },
       {
         url: "/about",
         title: "Campus",
         data: "campus",
         img: "/map.svg",
-
       },
       {
         url: "/faculties",
@@ -132,9 +131,8 @@ const Home = [
         title: "Alumni",
       },
       {
-        url: "/",
+        url: "/RTI",
         title: "RTI",
-        data: "RTI",
       },
       {
         url:
@@ -185,7 +183,7 @@ const Academics = [
     url: "/academics",
     title: "Academics",
     data: "",
-    sub:[
+    sub: [
       {
         url: "http://web.nitp.ac.in/ict/index.php",
         title: "ICT Academy",
@@ -201,13 +199,13 @@ const Academics = [
         title: "Regulation & Curricula",
         data: "",
       },
-    ]
+    ],
   },
   {
     url: "/",
     title: "Programme Structure",
     data: "",
-    sub:[
+    sub: [
       {
         url: "",
         title: "UG",
@@ -218,13 +216,13 @@ const Academics = [
         title: "PG",
         data: "",
       },
-    ]
+    ],
   },
   {
     url: "/academics",
     title: "Admissions",
     data: "Admissions",
-    sub:[
+    sub: [
       {
         url: "",
         title: "CCMT/JoSSA/CSAB",
@@ -240,13 +238,13 @@ const Academics = [
         title: "Refund Rules",
         data: "",
       },
-    ]
+    ],
   },
   {
     url: "/academics",
     title: "Academics",
     data: "",
-    sub:[
+    sub: [
       {
         url: "/academics",
         title: "Academic Notices",
@@ -267,8 +265,8 @@ const Academics = [
         title: "Format of Official Documents",
         data: "",
       },
-    ]
-  }
+    ],
+  },
   // {
   //   url: "http://web.nitp.ac.in/ict/index.php",
   //   title: "ICT Academy",
@@ -344,7 +342,7 @@ const Students = [
   },
   {
     url: "http://www.nitp.ac.in/convocation2020/",
-    title:"Convocation"
+    title: "Convocation",
   },
   {
     url: "http://web.nitp.ac.in/incubation_center/index.html",
