@@ -204,42 +204,276 @@ const FC = [
     type: "Secretary",
   },
 ]
+
 const director = [
   {
     director: "something",
   },
 ]
-const Administrationinfol = [
+
+const Admin = [
   {
-    title: "Our Director",
-    data: director,
-    info:"director",
+    url: "/administration",
+    title: "Director",
+    data: "director",
+    content: [],
   },
+  // {
+  //   url: "/administration",
+  //   title: "Deputy Director",
+  //   data: "deputydirector",
+  // },
   {
+    url: "/administration",
     title: "Deans",
-    data: Deansinfo,
-    info:"deans",
+    data: "deans",
+    content: Deansinfo,
   },
   {
+    url: "/administration",
+    title: "Registrar",
+    data: "registrar",
+    content: [],
+  },
+  {
+    url: "/administration",
     title: "Board of Governors",
-    data: BOG,
-    info:"bog",
+    data: "bog",
+    content: BOG,
   },
   {
-    title: "Building and Works Committee",
-    data: BWC,
-    info:"bwc"
+    url: "/administration",
+    title: "Senate",
+    data: "senate",
+    content: [senate],
   },
   {
-    title: "Institute Disciplinary Committee",
-    data: IDC,
-    info:"idc",
+    url: "/administration",
+    title: "Building & Works committee",
+    data: "bwc",
+    content: BWC,
   },
   {
-    title: "Finance Committee",
-    data: FC,
-    info:"fc",
+    url: "/administration",
+    title: "Institute Disciplinary committee",
+    data: "idc",
+    content: IDC,
+  },
+  {
+    url: "/administration",
+    title: "Finance committee",
+    data: "fc",
+    content: FC,
+  },
+  {
+    url: "/administration",
+    title: "Service Unit Heads",
+    data: "suh",
+    content: [],
   },
 ]
 
-export default Administrationinfol
+const senate = {
+  title: (
+    <>
+      <h1>Senate</h1>
+    </>
+  ),
+  content: (
+    <>
+      <table className="table-act" border="1">
+        <tr>
+          <th>Name</th>
+          <th>Designation</th>
+        </tr>
+        <tr>
+          <td>
+            <b>
+              Prof. P. K. Jain
+              <br /> Director, NIT Patna
+            </b>
+          </td>
+          <td>
+            <b>Ex-Officio Chairman</b>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Dr. Manoj Kumar
+            <br />
+            Professor, Architecture Dept.
+          </td>
+          <td>Member</td>
+        </tr>
+        <tr>
+          <td>
+            Dr. Fulena Rajak
+            <br />
+            Professor, Architecture Dept.
+          </td>
+          <td> Member</td>
+        </tr>
+
+        <tr>
+          <td>
+            Dr. Sita Ram Sharma
+            <br />
+            Professor, Chemistry Dept.
+          </td>
+          <td> Member</td>
+        </tr>
+        <tr>
+          <td>
+            Dr. L. B. Roy
+            <br />
+            Professor, Civil Engineering Dept.
+          </td>
+          <td> Member</td>
+        </tr>
+        <tr>
+          <td>
+            Dr. Sanjeev Sinha
+            <br />
+            Professor, Civil Engineering Dept.
+          </td>
+          <td> Member</td>
+        </tr>
+        <tr>
+          <td>
+            Dr. Ajay Kumar Sinha
+            <br />
+            Professor, Civil Engineering Dept.
+          </td>
+          <td> Member</td>
+        </tr>
+        <tr>
+          <td>
+            Dr. S. S. Mishra
+            <br />
+            Professor, Civil Engineering Dept.
+          </td>
+          <td> Member</td>
+        </tr>
+        <tr>
+          <td>
+            Dr. Vivekanand Singh
+            <br />
+            Professor, Civil Engineering Dept.
+          </td>
+          <td> Member</td>
+        </tr>
+
+        <tr>
+          <td>
+            Dr. Ramesh Kumar
+            <br />
+            Professor, Electrical Engineering Dept.
+          </td>
+          <td> Member</td>
+        </tr>
+        <tr>
+          <td>
+            Dr. Sawal Kishore Singh
+            <br />
+            Mathematics Dept.
+          </td>
+          <td> Member</td>
+        </tr>
+        <tr>
+          <td>
+            Dr. S. K. Verma
+            <br />
+            Professor, Mechanical Engineering Dept.
+          </td>
+          <td> Member</td>
+        </tr>
+        <tr>
+          <td>
+            Dr. Om Prakash
+            <br />
+            Professor, Mechanical Engineering Dept.
+          </td>
+          <td>Member</td>
+        </tr>
+        <tr>
+          <td>
+            Dr. N. R. Lall
+            <br />
+            Professor, Physics Dept.
+          </td>
+          <td> Member</td>
+        </tr>
+        <tr>
+          <td>
+            Dr. Ramakar Jha
+            <br />
+            Professor, Civil Engineering Dept.
+          </td>
+          <td> Member</td>
+        </tr>
+        <tr>
+          <td>
+            Dr. Prakash Chandra
+            <br />
+            Professor, Mechanical Engineering Dept.
+          </td>
+          <td> Member</td>
+        </tr>
+        <tr>
+          <td>
+            Dr. A. N. Sinha
+            <br />
+            Professor, Mechanical Engineering Dept.
+          </td>
+          <td> Member</td>
+        </tr>
+        <tr>
+          <td>
+            Prof. K. P. Singh
+            <br />
+            Former Director, IIT BHU
+          </td>
+          <td>External Member</td>
+        </tr>
+        <tr>
+          <td>
+            Prof. S. K. Singh
+            <br />
+            Vice-Chancellor, LNMU, Darbhanga
+          </td>
+          <td>External Member</td>
+        </tr>
+        <tr>
+          <td>
+            Prof. Pushplata Tripathi, Pro-Vice Chancellor,
+            <br />
+            Guru-Govind Singh Indraprastha University,
+            <br />
+            New Delhi.
+          </td>
+          <td>External Member</td>
+        </tr>
+        <tr>
+          <td>
+            Dr. Asit Narayan
+            <br />
+            Registrar, NIT Patna
+          </td>
+          <td>Ex-Officio Member Secretary </td>
+        </tr>
+      </table>
+      <br />
+      <div style="float:right">
+        <a style="text-decoration: none;color:#224E90" href="./senatemins.php">
+          Click here
+        </a>{" "}
+        to view minutes of Senate meetings
+      </div>
+      &nbsp; &nbsp; &nbsp;
+      <a href="./downloads/Senate compositon.pdf">Click here</a> download Senate
+      Composition.
+    </>
+  ),
+}
+
+export default Admin
