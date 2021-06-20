@@ -25,15 +25,13 @@ const Administrationpage = () => {
   }, [tab])
 
   useEffect(() => {
-    if (CardData.includes(view)) {
-      let temp
-      Admin.forEach(item => {
-        if (item.data == view) {
-          temp = item.content
-          setContent(temp)
-        }
-      })
-    }
+    let temp
+    Admin.forEach(item => {
+      if (item.data == view) {
+        temp = item.content
+        setContent(temp)
+      }
+    })
   }, [view])
 
   console.log(tab)
@@ -51,9 +49,9 @@ const Administrationpage = () => {
             content.map((item, idx) => (
               <div className="col-4" key={idx}>
                 <Adcard
-                  name={item.name}
-                  designation={item.designation}
-                  type={item.type}
+                  name={item?.name}
+                  designation={item?.designation}
+                  type={item?.type}
                 />
               </div>
             ))}
