@@ -251,7 +251,7 @@ const Academics = [
         data: "Notices",
       },
       {
-        url: "",
+        url: "http://www.nitp.ac.in/uploads21/Academic_calendar_2021_2022.pdf",
         title: "Academic Calendar",
         data: "",
       },
