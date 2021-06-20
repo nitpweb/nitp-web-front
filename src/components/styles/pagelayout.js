@@ -45,6 +45,40 @@ export const PageLayout = styled.div`
         justify-content: center;
       }
     }
+    .row-new {
+      #layoutnoticewrap {
+        height: 400px;
+        overflow: hidden;
+        min-width: 80%;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        div {
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+      p,
+      h3 {
+        color: ${props => props.theme.textColor};
+      }
+      p {
+        font-weight: 500;
+      }
+      td {
+        color: ${props => props.theme.textColor};
+        font-weight: 600;
+      }
+      th {
+        font-weight: 800;
+        color: ${props => props.theme.primaryColor};
+      }
+      h1 {
+        font-weight: bold;
+        color: ${props => props.theme.primaryColor};
+        font-size: 2.5rem;
+      }
+    }
     .col-6 {
       padding: 3vw;
       .row {
@@ -146,6 +180,9 @@ export const PageLayout = styled.div`
     }
     .layoutrow > .col-6 > div > p {
       font-size: 1rem;
+    }
+    .row-new {
+      padding: 3vw;
     }
   }
 `
