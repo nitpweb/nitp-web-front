@@ -185,10 +185,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
 
       <div className="nav-link-row">
         <div className="col-6">
-          <div
-            className="nav-link-item"
-            activeClassName="nav-link-item-active"
-          >
+          <div className="nav-link-item" activeClassName="nav-link-item-active">
             <Dropnew to="/" title="Home" list={Navlist.home} />
           </div>
           {/* <Link
@@ -204,9 +201,13 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             activeClassName="nav-link-item-active"
             to="/academics"
           >
-            <Dropnew to="/academics" title="Academics" list={Navlist.academics} />
+            <Dropnew
+              to="/academics"
+              title="Academics"
+              list={Navlist.academics}
+            />
           </div>
-          
+
           <Link
             className="nav-link-item"
             activeClassName="nav-link-item-active"
@@ -214,7 +215,6 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           >
             <Dropdown title="Administration" list={Navlist.admin} />
           </Link>
-          
         </div>
         <div className="col-6">
           <Dropdown title="Departments" list={Navlist.departments} />
@@ -232,13 +232,13 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           >
             <Dropdown title="Students" list={Navlist.students} />
           </Link>
-          <Link
+          <a
             className="nav-link-item "
             activeClassName="nav-link-item-active"
             to="https://tnp.nitp.ac.in"
           >
             <span>Placements</span>
-          </Link>
+          </a>
         </div>
       </div>
       {(DepListr[department] || Deplist[pathname]) && (

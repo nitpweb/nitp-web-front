@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const FacultyProfile = styled.div`
   font-family: "Source Sans Pro";
-  padding-top: 10vw;
+  padding-top: 1vw;
   display: flex;
   justify-content: space-evenly;
   color: ${props => props.theme.textColor};

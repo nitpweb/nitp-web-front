@@ -209,37 +209,67 @@ const director = [
     director: "something",
   },
 ]
-const Administrationinfol = [
+
+const Admin = [
   {
-    title: "Our Director",
-    data: director,
-    info:"director",
+    url: "/administration",
+    title: "Director",
+    data: "director",
+    content: [],
   },
+  // {
+  //   url: "/administration",
+  //   title: "Deputy Director",
+  //   data: "deputydirector",
+  // },
   {
+    url: "/administration",
     title: "Deans",
-    data: Deansinfo,
-    info:"deans",
+    data: "deans",
+    content: Deansinfo,
   },
   {
+    url: "/administration",
+    title: "Registrar",
+    data: "registrar",
+    content: [],
+  },
+  {
+    url: "/administration",
     title: "Board of Governors",
-    data: BOG,
-    info:"bog",
+    data: "bog",
+    content: BOG,
   },
   {
-    title: "Building and Works Committee",
-    data: BWC,
-    info:"bwc"
+    url: "/administration",
+    title: "Senate",
+    data: "senate",
+    content: [],
   },
   {
-    title: "Institute Disciplinary Committee",
-    data: IDC,
-    info:"idc",
+    url: "/administration",
+    title: "Building & Works committee",
+    data: "bwc",
+    content: BWC,
   },
   {
-    title: "Finance Committee",
-    data: FC,
-    info:"fc",
+    url: "/administration",
+    title: "Institute Disciplinary committee",
+    data: "idc",
+    content: IDC,
+  },
+  {
+    url: "/administration",
+    title: "Finance committee",
+    data: "fc",
+    content: FC,
+  },
+  {
+    url: "/administration",
+    title: "Service Unit Heads",
+    data: "suh",
+    content: [],
   },
 ]
 
-export default Administrationinfol
+export default Admin
