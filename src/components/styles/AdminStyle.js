@@ -8,6 +8,7 @@ export const AdminStyle = styled.div`
   align-items: center;
   flex-direction: column;
   padding-top: 4rem;
+  font-family: "Source Sans Pro";
   text-rendering: optimizeLegibility;
   background: ${props => props.theme.backgroundColor};
 
@@ -29,6 +30,19 @@ export const AdminStyle = styled.div`
     scrollbar-width: none;
     &::-webkit-scrollbar {
       display: none;
+    }
+    .layout-row {
+      width: 100%;
+      h1,
+      th {
+        color: ${props => props.theme.primaryColor};
+      }
+      td,
+      h2,
+      p,
+      h3 {
+        color: ${props => props.theme.textColor};
+      }
     }
   }
   @media (max-width: 768px) {
