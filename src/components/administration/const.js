@@ -211,69 +211,7 @@ const director = [
   },
 ]
 
-const Admin = [
-  {
-    url: "/administration",
-    title: "Director",
-    data: "director",
-    content: [],
-  },
-  // {
-  //   url: "/administration",
-  //   title: "Deputy Director",
-  //   data: "deputydirector",
-  // },
-  {
-    url: "/administration",
-    title: "Deans",
-    data: "deans",
-    content: Deansinfo,
-  },
-  {
-    url: "/administration",
-    title: "Registrar",
-    data: "registrar",
-    content: [],
-  },
-  {
-    url: "/administration",
-    title: "Board of Governors",
-    data: "bog",
-    content: BOG,
-  },
-  {
-    url: "/administration",
-    title: "Senate",
-    data: "senate",
-    content: [senate],
-  },
-  {
-    url: "/administration",
-    title: "Building & Works committee",
-    data: "bwc",
-    content: BWC,
-  },
-  {
-    url: "/administration",
-    title: "Institute Disciplinary committee",
-    data: "idc",
-    content: IDC,
-  },
-  {
-    url: "/administration",
-    title: "Finance committee",
-    data: "fc",
-    content: FC,
-  },
-  {
-    url: "/administration",
-    title: "Service Unit Heads",
-    data: "suh",
-    content: [],
-  },
-]
-
-const senate = {
+const Senate = {
   title: (
     <>
       <h1>Senate</h1>
@@ -475,5 +413,68 @@ const senate = {
     </>
   ),
 }
+
+const Admin = [
+  {
+    url: "/administration",
+    title: "Director",
+    data: "director",
+    content: [],
+  },
+  // {
+  //   url: "/administration",
+  //   title: "Deputy Director",
+  //   data: "deputydirector",
+  // },
+  {
+    url: "/administration",
+    title: "Deans",
+    data: "deans",
+    content: Deansinfo,
+  },
+  {
+    url: "/administration",
+    title: "Registrar",
+    data: "registrar",
+    content: [],
+  },
+  {
+    url: "/administration",
+    title: "Board of Governors",
+    data: "bog",
+    content: BOG,
+  },
+  {
+    url: "/administration",
+    title: "Senate",
+    data: "senate",
+    content: Senate,
+  },
+  {
+    url: "/administration",
+    title: "Building & Works committee",
+    data: "bwc",
+    content: BWC,
+  },
+  {
+    url: "/administration",
+    title: "Institute Disciplinary committee",
+    data: "idc",
+    content: IDC,
+  },
+  {
+    url: "/administration",
+    title: "Finance committee",
+    data: "fc",
+    content: FC,
+  },
+  {
+    url: "/administration",
+    title: "Service Unit Heads",
+    data: "suh",
+    content: [],
+  },
+]
+
 
 export default Admin
