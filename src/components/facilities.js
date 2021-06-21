@@ -85,6 +85,55 @@ const itservicetable = [
   },
 ]
 
+const tequipData = (
+  <>
+    <div>
+      <h3>
+        <b>TEQIP Coordinator : Dr. M. P. Singh, Associate Professor, C.S.E.</b>
+      </h3>
+
+      <p>
+        NIT Patna has been selected for Technical Education Quality Improvement
+        (TEQIP II) Program under subcomponent 1.1 that aims at strengthening
+        institution to improve learning outcomes and employability of graduates.
+        Memorandum of Understanding (MOU) between the institute and the MHRD has
+        already been signed.
+      </p>
+      <p>
+        TEQIP has been instrumental in various R&D consultancy activities,
+        infrastructure related activities and teaching learning enhancement
+        activities. Several academically weak students have been given extra
+        coaching to make up their deficiencies and stand up in academics. Along
+        with that, TEQIP has sponsored several short-term courses and has given
+        assistance to several postgraduate students to participate and present
+        their paper in conferences. The expenditure from TEQIP fund for
+        different activities are as follows:
+      </p>
+
+      <p>
+        <a href="http://www.nitp.ac.in/uploads20/Annex-1 Format for EAP 2020-21_NIT Patna.docx">
+          EAP(Dec 2020 to March 2021)
+        </a>
+      </p>
+      <p>
+        <a href="http://www.nitp.ac.in/uploads/EAP_2020_NIT_Patna.pdf">
+          EAP(Jan 2020 to Sept 2020)
+        </a>
+      </p>
+      <p>
+        <a href="http://www.nitp.ac.in/uploads/Good%20Governance%20Development%20Plan%2055d36a22b210c.pdf">
+          NIT PATNA GOVERNANCE GUIDELINES DOCUMENT
+        </a>
+      </p>
+      <p>
+        <a href="http://www.nitp.ac.in/uploads/Institutional%20Development%20Plan%20201555d3608b351c3.pdf">
+          INSTITUTIONAL DEVELOPMENT PROPOSAL
+        </a>
+      </p>
+    </div>
+  </>
+)
+
 const Facilitiespage = () => {
   const [tab] = useQueryParam("tab")
   const [view, setView] = useState("cc")
@@ -129,7 +178,7 @@ const Facilitiespage = () => {
             </div>
           )}
           {view == "it" && (
-            <div className="layoutrow layoutrow1" id="cc">
+            <div className="layoutrow layoutrow1">
               <div className="col-6 imgcolstyle">
                 <PKImg />
               </div>
@@ -139,7 +188,6 @@ const Facilitiespage = () => {
                 </div>
                 <div className="row rowmarr3">{itservicedetail}</div>
                 <div className="row row-new rowmarr3">
-                  {" "}
                   <table>
                     <tr>
                       {Object.keys(itservicetable[0]).map(heading => (
@@ -154,6 +202,16 @@ const Facilitiespage = () => {
                     ))}
                   </table>
                 </div>
+              </div>
+            </div>
+          )}
+          {view == "tequip" && (
+            <div className="layoutrow layoutrow1">
+              <div className="col-6" style={{ width: "calc(100% - 6vw)" }}>
+                <div className="row rowmarr3">
+                  <h1>TEQUIP</h1>
+                </div>
+                <div className="row row-new rowmarr3">{tequipData}</div>
               </div>
             </div>
           )}
