@@ -183,6 +183,7 @@ const Academics = [
     url: "/academics",
     title: "Academics",
     data: "",
+    id:"one",
     sub: [
       {
         url: "http://web.nitp.ac.in/ict/index.php",
@@ -202,9 +203,10 @@ const Academics = [
     ],
   },
   {
-    url: "/",
+    url: "/academics",
     title: "Programme Structure",
-    data: "",
+    data: "programmes",
+    id:"two",
     sub: [
       {
         url: "",
@@ -222,6 +224,7 @@ const Academics = [
     url: "/academics",
     title: "Admissions",
     data: "Admissions",
+    id:"three",
     sub: [
       {
         url: "",
@@ -244,6 +247,7 @@ const Academics = [
     url: "/academics",
     title: "Academics",
     data: "",
+    id:"four",
     sub: [
       {
         url: "/academics",
