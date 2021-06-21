@@ -11,6 +11,17 @@ export const TabPage = styled.div`
   text-rendering: optimizeLegibility;
   background: ${props => props.theme.backgroundColor};
 
+  td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
   .mainDiv {
     display: flex;
     width: 75vw;
@@ -159,6 +170,8 @@ export const TabPage = styled.div`
     .mainDiv {
       width: 80vw;
       margin-top: 2.2rem;
+      overflow: scroll;
+      justify-content: flex-start;
       .layoutrow1 {
         flex-direction: column-reverse;
       }
