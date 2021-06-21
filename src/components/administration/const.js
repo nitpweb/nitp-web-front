@@ -211,208 +211,223 @@ const director = [
   },
 ]
 
-const Senate = {
-  title: (
-    <>
-      <h1>Senate</h1>
-    </>
-  ),
-  content: (
-    <>
-      <table className="table-act" border="1">
-        <tr>
-          <th>Name</th>
-          <th>Designation</th>
-        </tr>
-        <tr>
-          <td>
-            <b>
-              Prof. P. K. Jain
-              <br /> Director, NIT Patna
-            </b>
-          </td>
-          <td>
-            <b>Ex-Officio Chairman</b>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Dr. Manoj Kumar
-            <br />
-            Professor, Architecture Dept.
-          </td>
-          <td>Member</td>
-        </tr>
-        <tr>
-          <td>
-            Dr. Fulena Rajak
-            <br />
-            Professor, Architecture Dept.
-          </td>
-          <td> Member</td>
-        </tr>
+const Senate = [
+  {
+    name: "Prof. P. K. Jain               \n Director, NIT Patna",
+    designation: "Ex-Officio Chairman",
+  },
+  {
+    name:
+      "Dr. Manoj Kumar             \n             Professor, Architecture Dept.",
+    designation: "Member",
+  },
+  {
+    name:
+      "Dr. Fulena Rajak             \n             Professor, Architecture Dept.",
+    designation: "Member",
+  },
+  {
+    name:
+      "Dr. Sita Ram Sharma             \n             Professor, Chemistry Dept.",
+    designation: "Member",
+  },
+  {
+    name:
+      "Dr. L. B. Roy             \n             Professor, Civil Engineering Dept.",
+    designation: "Member",
+  },
+  {
+    name:
+      "Dr. Sanjeev Sinha             \n             Professor, Civil Engineering Dept.",
+    designation: "Member",
+  },
+  {
+    name:
+      "Dr. Ajay Kumar Sinha             \n             Professor, Civil Engineering Dept.",
+    designation: "Member",
+  },
+  {
+    name:
+      "Dr. S. S. Mishra             \n             Professor, Civil Engineering Dept.",
+    designation: "Member",
+  },
+  {
+    name:
+      "Dr. Vivekanand Singh             \n             Professor, Civil Engineering Dept.",
+    designation: "Member",
+  },
+  {
+    name:
+      "Dr. Ramesh Kumar             \n             Professor, Electrical Engineering Dept.",
+    designation: "Member",
+  },
+  {
+    name:
+      "Dr. Sawal Kishore Singh             \n             Mathematics Dept.",
+    designation: "Member",
+  },
+  {
+    name:
+      "Dr. S. K. Verma             \n             Professor, Mechanical Engineering Dept.",
+    designation: "Member",
+  },
+  {
+    name:
+      "Dr. Om Prakash             \n             Professor, Mechanical Engineering Dept.",
+    designation: "Member",
+  },
+  {
+    name: "Dr. N. R. Lall             \n             Professor, Physics Dept.",
+    designation: "Member",
+  },
+  {
+    name:
+      "Dr. Ramakar Jha             \n             Professor, Civil Engineering Dept.",
+    designation: "Member",
+  },
+  {
+    name:
+      "Dr. Prakash Chandra             \n             Professor, Mechanical Engineering Dept.",
+    designation: "Member",
+  },
+  {
+    name:
+      "Dr. A. N. Sinha             \n             Professor, Mechanical Engineering Dept.",
+    designation: "Member",
+  },
+  {
+    name:
+      "Prof. K. P. Singh             \n             Former Director, IIT BHU",
+    designation: "External Member",
+  },
+  {
+    name:
+      "Prof. S. K. Singh             \n             Vice-Chancellor, LNMU, Darbhanga",
+    designation: "External Member",
+  },
+  {
+    name:
+      "Prof. Pushplata Tripathi, Pro-Vice Chancellor,             \n             Guru-Govind Singh Indraprastha University,             \n             New Delhi.",
+    designation: "External Member",
+  },
+  {
+    name: "Dr. Asit Narayan             \n             Registrar, NIT Patna",
+    designation: "Ex-Officio Member Secretary",
+  },
+]
 
-        <tr>
-          <td>
-            Dr. Sita Ram Sharma
-            <br />
-            Professor, Chemistry Dept.
-          </td>
-          <td> Member</td>
-        </tr>
-        <tr>
-          <td>
-            Dr. L. B. Roy
-            <br />
-            Professor, Civil Engineering Dept.
-          </td>
-          <td> Member</td>
-        </tr>
-        <tr>
-          <td>
-            Dr. Sanjeev Sinha
-            <br />
-            Professor, Civil Engineering Dept.
-          </td>
-          <td> Member</td>
-        </tr>
-        <tr>
-          <td>
-            Dr. Ajay Kumar Sinha
-            <br />
-            Professor, Civil Engineering Dept.
-          </td>
-          <td> Member</td>
-        </tr>
-        <tr>
-          <td>
-            Dr. S. S. Mishra
-            <br />
-            Professor, Civil Engineering Dept.
-          </td>
-          <td> Member</td>
-        </tr>
-        <tr>
-          <td>
-            Dr. Vivekanand Singh
-            <br />
-            Professor, Civil Engineering Dept.
-          </td>
-          <td> Member</td>
-        </tr>
-
-        <tr>
-          <td>
-            Dr. Ramesh Kumar
-            <br />
-            Professor, Electrical Engineering Dept.
-          </td>
-          <td> Member</td>
-        </tr>
-        <tr>
-          <td>
-            Dr. Sawal Kishore Singh
-            <br />
-            Mathematics Dept.
-          </td>
-          <td> Member</td>
-        </tr>
-        <tr>
-          <td>
-            Dr. S. K. Verma
-            <br />
-            Professor, Mechanical Engineering Dept.
-          </td>
-          <td> Member</td>
-        </tr>
-        <tr>
-          <td>
-            Dr. Om Prakash
-            <br />
-            Professor, Mechanical Engineering Dept.
-          </td>
-          <td>Member</td>
-        </tr>
-        <tr>
-          <td>
-            Dr. N. R. Lall
-            <br />
-            Professor, Physics Dept.
-          </td>
-          <td> Member</td>
-        </tr>
-        <tr>
-          <td>
-            Dr. Ramakar Jha
-            <br />
-            Professor, Civil Engineering Dept.
-          </td>
-          <td> Member</td>
-        </tr>
-        <tr>
-          <td>
-            Dr. Prakash Chandra
-            <br />
-            Professor, Mechanical Engineering Dept.
-          </td>
-          <td> Member</td>
-        </tr>
-        <tr>
-          <td>
-            Dr. A. N. Sinha
-            <br />
-            Professor, Mechanical Engineering Dept.
-          </td>
-          <td> Member</td>
-        </tr>
-        <tr>
-          <td>
-            Prof. K. P. Singh
-            <br />
-            Former Director, IIT BHU
-          </td>
-          <td>External Member</td>
-        </tr>
-        <tr>
-          <td>
-            Prof. S. K. Singh
-            <br />
-            Vice-Chancellor, LNMU, Darbhanga
-          </td>
-          <td>External Member</td>
-        </tr>
-        <tr>
-          <td>
-            Prof. Pushplata Tripathi, Pro-Vice Chancellor,
-            <br />
-            Guru-Govind Singh Indraprastha University,
-            <br />
-            New Delhi.
-          </td>
-          <td>External Member</td>
-        </tr>
-        <tr>
-          <td>
-            Dr. Asit Narayan
-            <br />
-            Registrar, NIT Patna
-          </td>
-          <td>Ex-Officio Member Secretary </td>
-        </tr>
-      </table>
-      <br />
-      <div style="float:right">
-        <a style="text-decoration: none;color:#224E90" href="./senatemins.php">
-          Click here
-        </a>{" "}
-        to view minutes of Senate meetings
-      </div>
-      &nbsp; &nbsp; &nbsp;
-      <a href="./downloads/Senate compositon.pdf">Click here</a> download Senate
-      Composition.
-    </>
-  ),
-}
+const ServiceUnit = [
+  {
+    type: "Personal",
+    Designation: "Registrar",
+    Name: "Dr. Asit Narayan",
+  },
+  {
+    type: "Establishment & Administration",
+    Designation: "Deputy Registrar",
+    Name: "Dr. Asit Narayan",
+  },
+  {
+    type: "Examinations",
+    Designation: "Prof. In-charge",
+    Name: "Dr. Abdur Rahman Quaff",
+  },
+  {
+    type: "Training and Placement",
+    Designation: "Prof. In-charge",
+    Name: "Dr. Samrat Mukherjee",
+  },
+  {
+    type: "HMC",
+    Designation: "Chairman",
+    Name: "Dr. Samrat Mukherjee",
+  },
+  {
+    type: "Procurement",
+    Designation: "Professor Incharge",
+    Name: "Prof. Prakash Chandra",
+  },
+  {
+    type: "TEQIP-III",
+    Designation: "Coordinator",
+    Name: "Dr. M. P. Singh",
+  },
+  {
+    type: "Computer Center",
+    Designation: "Prof. In-charge",
+    Name: "Dr. M. P. Singh",
+  },
+  {
+    type: "Central Library",
+    Designation: "Prof. In-charge",
+    Name: "Dr. Anshuman Singh",
+  },
+  {
+    type: "IT Services",
+    Designation: "Prof. In-charge",
+    Name: "Dr. Prabhat Kumar",
+  },
+  {
+    type: "Web Services and MIS",
+    Designation: "Prof. In-charge",
+    Name: "Dr. Akshay Deepak",
+  },
+  {
+    type: "Finance & Accounts",
+    Designation: "Deputy Registrar",
+    Name: "Shri Mani Shankar Singh",
+  },
+  {
+    type: "R&D",
+    Designation: "Deputy Registrar",
+    Name: "Sri Sunil Kumar Dwivedi",
+  },
+  {
+    type: "EMU",
+    Designation: "Prof. In-charge",
+    Name: "Dr. R. K. Mandal",
+  },
+  {
+    type: "Examination",
+    Designation: "Deputy Registrar",
+    Name: "Mrs. Bobby",
+  },
+  {
+    type: "IT Service",
+    Designation: "Scientific & Technical Officer",
+    Name: "Dr. Santosh Kumar",
+  },
+  {
+    type: "Academics & Examination & Scholarship",
+    Designation: "Assistant Registrar",
+    Name: "Shri Shardul Vikram",
+  },
+  {
+    type: "Establishment",
+    Designation: "Assistant Registrar",
+    Name: "Shri Rajesh Kumar",
+  },
+  {
+    type: "Security & Housekeeping",
+    Designation: "Assistant Registrar",
+    Name: "Sri J P Sharma",
+  },
+  {
+    type: "Finance & Accounts",
+    Designation: "Assistant Registrar",
+    Name: "Sri Sunny Choudhary",
+  },
+  {
+    type: "Academics",
+    Designation: "Assistant Registrar",
+    Name: "Sri Abhay Kumar",
+  },
+  {
+    type: "Student Activity and Sports",
+    Designation: "Officer In-charge",
+    Name: "Sri Arijit Putatunda",
+  },
+]
 
 const Admin = [
   {
@@ -472,9 +487,8 @@ const Admin = [
     url: "/administration",
     title: "Service Unit Heads",
     data: "suh",
-    content: [],
+    content: ServiceUnit,
   },
 ]
-
 
 export default Admin

@@ -183,7 +183,7 @@ const Academics = [
     url: "/academics",
     title: "Academics",
     data: "",
-    id:"one",
+    id: "one",
     sub: [
       {
         url: "http://web.nitp.ac.in/ict/index.php",
@@ -206,7 +206,7 @@ const Academics = [
     url: "/academics",
     title: "Programme Structure",
     data: "programmes",
-    id:"two",
+    id: "two",
     sub: [
       {
         url: "",
@@ -224,7 +224,7 @@ const Academics = [
     url: "/academics",
     title: "Admissions",
     data: "Admissions",
-    id:"three",
+    id: "three",
     sub: [
       {
         url: "",
@@ -247,7 +247,7 @@ const Academics = [
     url: "/academics",
     title: "Academics",
     data: "",
-    id:"four",
+    id: "four",
     sub: [
       {
         url: "/academics",
@@ -378,6 +378,16 @@ const Facilities = [
     url: "/facilities",
     title: "Computer Centre",
     data: "cc",
+  },
+  {
+    url: "/facilities",
+    title: "IT Service Unit",
+    data: "it",
+  },
+  {
+    url: "/facilities",
+    title: "TEQUIP",
+    data: "tequip",
   },
   {
     url: "/facilities",
