@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import bank from "./facilities/img/bank.svg"
 import dummy from "./facilities/img/dummy.png"
 import medical from "./facilities/img/medical.svg"
@@ -8,11 +8,12 @@ import woman from "./facilities/img/woman.svg"
 import electric from "./facilities/img/electric.svg"
 import Facilitymain from "./facilities/img/facilitymainimg"
 import Ccimg from "./facilities/img/ccimg"
+import PKImg from "./facilities/img/pkimg"
 import Dummyimg from "./facilities/img/dummy"
 import { PageLayout } from "./styles/pagelayout"
 import { TabPage } from "./styles/tabpage"
 import Navigate from "./global/Navigate"
-import { useQueryParam} from "use-query-params"
+import { useQueryParam } from "use-query-params"
 import Navlist from "./global/navlist"
 const ccdetail =
   "A state-of-the-art Computer Centre started its operation on 27th November 2011. It serves as the central computing facility for the students, research scholars and teachers of the institute. The Centre is well equipped with modern Computers (190 in number), air conditioned labs and stabilized uninterrupted power supply among the other facilities. The Centre has seven labs for all the students and one lab exclusively for PhD scholars of the institute. All labs are equipped with IP cameras to monitor the activities remotely. The Centre has 1 Gbps, 24x7 internet connectivity on optical fiber under National Knowledge Network, Govt. of India.The Centre also has a Virtual Class Room and Desktop VideoConferencing facility. It operates from 8:30 AM to 5:30 PM."
@@ -36,6 +37,102 @@ const medicaldetail =
   " Two permanent doctor has a fixed chamber within the institute premises. He can be consulted by the students and employees for any health related problems on every working day free of cost.<br/><br/>Profile of the health consultants:<br/>Dr.Vikas Kumar Raj<br/>Senior Medical Officer<br/>MBBS, MD, MBA(HCA)<br/>PGD in DP & R and Family Medicine<br/>PGC in Hospital Management Dr.V K Raj<br/><br/>Dr.Santosh Kumar Sudhakar<br/>Medical Officer<br/>MBBS<br/>Ex - Resident of DR.RML Hospital<br/>New Delhi Dr.S K Sudhakar<br/><br/>The institute also maintains a 24x7 ambulance which is used for transferring patients from the institute to Patna Medical College and Hospital(PMCH) in case of any emergency."
 const emudetail =
   "To provide Electric power supply to the Institute. EMU maintains all electrical equipment such as Lights, Fans, AC, etc. which are installed in NIT Patna campus. EMU is having an 11KV/415V Electrical Substation (commonly Known as POWER HOUSE), equipped with 02 Nos. 1250KVA Transformer, 02 Nos. 750 KVA Diesel Generator and Separate Electricals Panels for each feeder pillars/Buildings. <br/><br/>Land line- 0612-2371715 Extension No.-116 <br/>br/>For any type of Electrical Complaint kindly fill the form."
+const itservicedetail = (
+  <>
+    <p>
+      <b>Professor In-Charge:</b>
+      <br /> &emsp;Dr. Prabhat Kumar, Department of CSE
+    </p>
+    <p>
+      <b>Scientific & Technical Officer:</b>
+      <br />
+      &emsp;Dr. Santosh Kumar : Scientific & Technical Officer
+    </p>
+    <p>
+      The institute IT Service Unit is equipped with most modern and advanced
+      infrastructure to provide services to cater to the computing and
+      networking needs of the of the institute. In addition to providing IT
+      Solution, this units taking care of existing entire campus network
+      (offices as well residential flats), Institute Servers, Web Server and
+      other IT services like Mail, Webserver to meet the academic requirements
+      and research purpose. High speed and uninterrupted Internet access is
+      provide across the campus through 1-Gbps internet connectivity by
+      POWERGRID & 1-Gbps through NKN.
+    </p>
+  </>
+)
+
+const itservicetable = [
+  {
+    "S. No.": 1,
+    Facility: "High Speed Wi-Fi & Wired Internet Connectivity",
+  },
+  {
+    "S. No.": 2,
+    Facility: "CCTV surveillance system",
+  },
+  {
+    "S. No.": 3,
+    Facility: "Bio Matric Authentication Devices",
+  },
+  {
+    "S. No.": 4,
+    Facility: "IP Phones through ready Network",
+  },
+  {
+    "S. No.": 5,
+    Facility: "EPBAX",
+  },
+]
+
+const tequipData = (
+  <>
+    <div>
+      <h3>
+        <b>TEQIP Coordinator : Dr. M. P. Singh, Associate Professor, C.S.E.</b>
+      </h3>
+
+      <p>
+        NIT Patna has been selected for Technical Education Quality Improvement
+        (TEQIP II) Program under subcomponent 1.1 that aims at strengthening
+        institution to improve learning outcomes and employability of graduates.
+        Memorandum of Understanding (MOU) between the institute and the MHRD has
+        already been signed.
+      </p>
+      <p>
+        TEQIP has been instrumental in various R&D consultancy activities,
+        infrastructure related activities and teaching learning enhancement
+        activities. Several academically weak students have been given extra
+        coaching to make up their deficiencies and stand up in academics. Along
+        with that, TEQIP has sponsored several short-term courses and has given
+        assistance to several postgraduate students to participate and present
+        their paper in conferences. The expenditure from TEQIP fund for
+        different activities are as follows:
+      </p>
+
+      <p>
+        <a href="http://www.nitp.ac.in/uploads20/Annex-1 Format for EAP 2020-21_NIT Patna.docx">
+          EAP(Dec 2020 to March 2021)
+        </a>
+      </p>
+      <p>
+        <a href="http://www.nitp.ac.in/uploads/EAP_2020_NIT_Patna.pdf">
+          EAP(Jan 2020 to Sept 2020)
+        </a>
+      </p>
+      <p>
+        <a href="http://www.nitp.ac.in/uploads/Good%20Governance%20Development%20Plan%2055d36a22b210c.pdf">
+          NIT PATNA GOVERNANCE GUIDELINES DOCUMENT
+        </a>
+      </p>
+      <p>
+        <a href="http://www.nitp.ac.in/uploads/Institutional%20Development%20Plan%20201555d3608b351c3.pdf">
+          INSTITUTIONAL DEVELOPMENT PROPOSAL
+        </a>
+      </p>
+    </div>
+  </>
+)
 
 const Facilitiespage = () => {
   const [tab] = useQueryParam("tab")
@@ -50,7 +147,7 @@ const Facilitiespage = () => {
   }, [tab])
   return (
     <TabPage>
-      <Navigate data={Navlist.facilities} callback={getView} tab={tab}/>
+      <Navigate data={Navlist.facilities} callback={getView} tab={tab} />
       {/* <Floatmenu /> */}
       <div className="mainDiv">
         <PageLayout>
@@ -75,7 +172,46 @@ const Facilitiespage = () => {
                 </div>
                 <div className="row rowmarr3">
                   <p>{ccdetail}</p>
+                  <br />
                 </div>
+              </div>
+            </div>
+          )}
+          {view == "it" && (
+            <div className="layoutrow layoutrow1">
+              <div className="col-6 imgcolstyle">
+                <PKImg />
+              </div>
+              <div className="col-6">
+                <div className="row rowmarr3">
+                  <h1>IT Services Unit</h1>
+                </div>
+                <div className="row rowmarr3">{itservicedetail}</div>
+                <div className="row row-new rowmarr3">
+                  <table>
+                    <tr>
+                      {Object.keys(itservicetable[0]).map(heading => (
+                        <th>{heading}</th>
+                      ))}
+                    </tr>
+                    {itservicetable.map(row => (
+                      <tr>
+                        <td>{row["S. No."]}</td>
+                        <td>{row.Facility}</td>
+                      </tr>
+                    ))}
+                  </table>
+                </div>
+              </div>
+            </div>
+          )}
+          {view == "tequip" && (
+            <div className="layoutrow layoutrow1">
+              <div className="col-6" style={{ width: "calc(100% - 6vw)" }}>
+                <div className="row rowmarr3">
+                  <h1>TEQUIP</h1>
+                </div>
+                <div className="row row-new rowmarr3">{tequipData}</div>
               </div>
             </div>
           )}

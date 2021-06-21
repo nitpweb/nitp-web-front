@@ -13,7 +13,7 @@ const Administrationpage = () => {
   const [tab] = useQueryParam("tab")
   const [view, setView] = useState("administration")
   const [content, setContent] = useState([])
-  const CardData = ["deans", "bog", "bwc", "idc", "fc"]
+  const CardData = ["deans", "bog", "bwc", "idc", "fc", "senate", "suh"]
 
   function getView(callback) {
     setView(callback)
