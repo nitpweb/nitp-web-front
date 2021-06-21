@@ -13,7 +13,7 @@ const Administrationpage = () => {
   const [tab] = useQueryParam("tab")
   const [view, setView] = useState("administration")
   const [content, setContent] = useState([])
-  const CardData = ["deans", "bog", "bwc", "idc", "fc"]
+  const CardData = ["deans", "bog", "bwc", "idc", "fc", "senate", "suh"]
 
   function getView(callback) {
     setView(callback)
@@ -55,20 +55,6 @@ const Administrationpage = () => {
                 />
               </div>
             ))}
-
-          <div className="layout-row">
-            {view == "senate" && (
-              <>
-                <div className="row row-new rowmarl3">{content[0]?.title}</div>
-                <div
-                  className="row rowmarl3"
-                  style={{ flexDirection: "column" }}
-                >
-                  {content[0]?.content}
-                </div>
-              </>
-            )}
-          </div>
 
           {/* {view.length != 0 && view[0].name ? (
             view.map(item => {
