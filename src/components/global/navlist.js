@@ -386,6 +386,11 @@ const Facilities = [
   },
   {
     url: "/facilities",
+    title: "TEQUIP",
+    data: "tequip",
+  },
+  {
+    url: "/facilities",
     title: "Library",
     data: "library",
   },
