@@ -2,7 +2,7 @@
 
 This is the repository of website of National Institute of Technology Patna.
 
-The current repo is live at https://nitpweb.netlify.app .
+The current repo is live at https://beta.nitp.ac.in .
 
 # Courses
 
