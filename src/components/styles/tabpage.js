@@ -10,6 +10,10 @@ export const TabPage = styled.div`
   padding-top: 4rem;
   text-rendering: optimizeLegibility;
   background: ${props => props.theme.backgroundColor};
+p {
+            color: ${props => props.theme.textColor};
+            font-weight: 500;
+          }
   h1 {
     color: ${props => props.theme.primaryColor};
   }
