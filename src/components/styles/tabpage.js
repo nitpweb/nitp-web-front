@@ -10,17 +10,21 @@ export const TabPage = styled.div`
   padding-top: 4rem;
   text-rendering: optimizeLegibility;
   background: ${props => props.theme.backgroundColor};
-
-  td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+  h1 {
+    color: ${props => props.theme.primaryColor};
+  }
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    color: ${props => props.theme.textColor};
+  }
 
   .mainDiv {
     display: flex;
@@ -38,6 +42,15 @@ table {
     align-content: flex-start;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    #digital {
+      font-family: "Quicksand";
+      h3 {
+        color: ${props => props.theme.textColor} !important;
+      }
+      a {
+        color: ${props => props.theme.textColor} !important;
+      }
+    }
     .layoutrowmain {
       .col-6 {
         .row {
@@ -182,7 +195,7 @@ table {
         padding: 1vw;
       }
       .layoutrow > .col-6 > div > h1 {
-        font-size: ${props => (props.theme.font * 1.8)}rem;
+        font-size: ${props => props.theme.font * 1.8}rem;
       }
       .layoutrow > .col-6 > div > p {
         font-size: ${props => props.theme.font * 1}rem;
