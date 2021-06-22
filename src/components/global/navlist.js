@@ -191,7 +191,7 @@ const Academics = [
         data: "",
       },
       {
-        url: "",
+        url: "/newacad",
         title: "Digital Initiatives",
         data: "",
       },

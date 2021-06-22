@@ -117,17 +117,15 @@ const Studentpage = () => {
           )}
           {view == "studentexchange" && (
             <div className="layoutrow layoutrow1" id="sep">
-              <div className="col-6 imgcolstyle">
+              <div className="row imgcolstyle backgroundimage">
                 <img src={exchange} className="img-fluid" loading="lazy" />
               </div>
-              <div className="col-6">
-                <div className="row rowmarr3">
+                <div className="row rowmarl3">
                   <h1>Student Exchange Program</h1>
                 </div>
-                <div className="row rowmarr3">
+                <div className="row rowmarl3">
                   <p>{studentexchange}</p>
                 </div>
-              </div>
             </div>
           )}
           {view == "scholarship" && (
@@ -137,7 +135,7 @@ const Studentpage = () => {
                   Scholarships
                 </h1>
               </div>
-              
+
               <Table>
                 <tr>
                   <th>SL No.</th>
@@ -158,45 +156,39 @@ const Studentpage = () => {
           )}
           {view == "fellowship" && (
             <div className="layoutrow layoutrow1" id="notice">
-              <div className="col-6 imgcolstyle">
+              <div className="row imgcolstyle backgroundimage">
                 <img src="/mail.svg" className="img-fluid" loading="lazy" />
               </div>
 
-              <div className="col-6 imgcolstyle">
-                <div className="row rowmarr3">
-                  <h1>Fellowship Opportunities</h1>
-                </div>
-                <div className="row rowmarr3">
-                  <div id="layoutnoticewrap">
-                    {notices != undefined
-                      ? notices.map(notice => {
-                          if (notice.title != "") {
-                            return (
-                              <Notice
-                                detail={notice.title}
-                                time={notice.openDate}
-                                attachments={notice.attachments}
-                              />
-                            )
-                          }
-                        })
-                      : null}
-                  </div>
-                </div>
+              <div className="row rowmarl3">
+                <h1>Fellowship Opportunities</h1>
+              </div>
+              <div className="row rowmarl3">
+                {notices != undefined
+                  ? notices.map(notice => {
+                      if (notice.title != "") {
+                        return (
+                          <Notice
+                            detail={notice.title}
+                            time={notice.openDate}
+                            attachments={notice.attachments}
+                          />
+                        )
+                      }
+                    })
+                  : null}
               </div>
             </div>
           )}
           {view == "nss" && (
             <div className="layoutrow" id="sep">
-              <div className="col-6">
-                <div className="row rowmarr3">
-                  <h1>National Service Scheme</h1>
-                </div>
-                <div className="row rowmarr3">
-                  <p>{nss}</p>
-                </div>
+              <div className="row rowmarl3">
+                <h1>National Service Scheme</h1>
               </div>
-              <div className="col-6 imgcolstyle">
+              <div className="row rowmarl3">
+                <p>{nss}</p>
+              </div>
+              <div className="row imgcolstyle backgroundimage">
                 <img src={exchange} className="img-fluid" loading="lazy" />
               </div>
             </div>

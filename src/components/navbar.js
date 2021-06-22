@@ -16,6 +16,7 @@ import { Dropdown } from "./global/dropdown"
 import Navlist from "./global/navlist"
 import { Deplist, DepListr } from "./global/deplist"
 import Dropnew from "./global/dropnew"
+import DynamicLink from "./global/dynamicurl"
 
 const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
   const pathname = window.location.pathname.split("/")[1]
@@ -277,7 +278,6 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           </div>
         </Link>
       </div>
-
       {DepListr[department] || Deplist[pathname] ? (
         <div className="nav-sidebar">
           <div className="navsidetop">
@@ -324,77 +324,38 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             </div>
             <div id="homesidedropwrap">
               <div className="adminsidedrop">
-              {Navlist.home.map(item => (
-                <div
-                  to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
-                  className="mainLink"
-                  onClick={function () {
-                    var z = document.querySelector(`#sub${item.url.slice(1)}`)
-                    if (z.style.display === "none") {
-                      z.style.display = "flex"
-                    } else {
-                      z.style.display = "none"
-                    }
-                  }}
-                >
-                  <p>
-                    <span>{item.title}</span>
-                  </p>
-                  {item.sub ? (
-                    <div id={`sub${item.url.slice(1)}`} className="mobsub">
-                      {item.sub.map(val => (
-                        <Link
-                          to={`${val.url}${val.name ? `?tab=${val.name}` : ""}`}
-                        >
-                          {val.title}
-                        </Link>
-                      ))}
-                    </div>
-                  ) : (
-                    ""
-                  )}
-                </div>
-              ))}
-              </div>
-            </div>
-
-            {/* <div
-              className="nav-sidebar-div"
-              to="/about"
-              onClick={function () {
-                var z = document.querySelector("#aboutsidedropwrap")
-                if (z.style.display === "none") {
-                  z.style.display = "flex"
-                } else {
-                  z.style.display = "none"
-                }
-              }}
-            >
-              <div className="navsideicondiv">
-                <img src={abouticon} alt="" />
-              </div>
-              <p>About Us</p>
-            </div>
-            <div id="aboutsidedropwrap">
-              <div className="adminsidedrop">
-                {Navlist.about.map(item => (
-                  <Link
+                {Navlist.home.map(item => (
+                  <div
                     to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
-                    className="nav-sidebar-div"
+                    className="mainLink"
+                    onClick={function () {
+                      var z = document.querySelector(`#sub${item.url.slice(1)}`)
+                      if (z.style.display === "none") {
+                        z.style.display = "flex"
+                      } else {
+                        z.style.display = "none"
+                      }
+                    }}
                   >
                     <p>
                       <span>{item.title}</span>
                     </p>
-                  </Link>
+                    {item.sub && (
+                      <div id={`sub${item.url.slice(1)}`} className="mobsub">
+                        {item.sub.map(val => (
+                          <DynamicLink
+                            url={val.url}
+                            data={val.data}
+                            title={val.title}
+                          />
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 ))}
               </div>
-            </div> */}
-            {/* <Link className="nav-sidebar-div" to="/administration">
-              <div className="navsideicondiv">
-                <img src={administrationicon} alt="" />
-              </div>
-              <p>Administration</p>
-            </Link> */}
+            </div>
+
             <div
               className="nav-sidebar-div"
               to="/administration"
@@ -417,15 +378,13 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             </div>
             <div id="adminsidedropwrap">
               <div className="adminsidedrop">
-                {Navlist.admin.map(item => (
-                  <Link
-                    to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
-                    className="nav-sidebar-div"
-                  >
-                    <p>
-                      <span>{item.title}</span>
-                    </p>
-                  </Link>
+                {Navlist.admin.map(val => (
+                  <DynamicLink
+                    classvalue="nav-sidebar-div"
+                    url={val.url}
+                    data={val.data}
+                    title={val.title}
+                  />
                 ))}
               </div>
             </div>
@@ -452,37 +411,35 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             </div>
             <div id="acadsidedropwrap">
               <div className="departsidedrop">
-              {Navlist.academics.map(item => (
-                <div
-                  to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
-                  className="mainLink"
-                  onClick={function () {
-                    var z = document.querySelector(`#sub${item.id}`)
-                    if (z.style.display === "none") {
-                      z.style.display = "flex"
-                    } else {
-                      z.style.display = "none"
-                    }
-                  }}
-                >
-                  <p>
-                    <span>{item.title}</span>
-                  </p>
-                  {item.sub ? (
-                    <div id={`sub${item.id}`} className="mobsub">
-                      {item.sub.map(val => (
-                        <Link
-                          to={`${val.url}${val.name ? `?tab=${val.name}` : ""}`}
-                        >
-                          {val.title}
-                        </Link>
-                      ))}
-                    </div>
-                  ) : (
-                    ""
-                  )}
-                </div>
-              ))}
+                {Navlist.academics.map(item => (
+                  <div
+                    to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+                    className="mainLink"
+                    onClick={function () {
+                      var z = document.querySelector(`#sub${item.id}`)
+                      if (z.style.display === "none") {
+                        z.style.display = "flex"
+                      } else {
+                        z.style.display = "none"
+                      }
+                    }}
+                  >
+                    <p>
+                      <span>{item.title}</span>
+                    </p>
+                    {item.sub && (
+                      <div id={`sub${item.id}`} className="mobsub">
+                        {item.sub.map(val => (
+                          <DynamicLink
+                            url={val.url}
+                            data={val.data}
+                            title={val.title}
+                          />
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ))}
               </div>
             </div>
 
@@ -512,21 +469,17 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             </div>
             <div id="departsidedropwrap">
               <div className="departsidedrop">
-                {Navlist.departments.map(item => (
-                  <Link to={item.url} className="nav-sidebar-div">
-                    <p>
-                      <span>{item.title}</span>
-                    </p>
-                  </Link>
+                {Navlist.departments.map(val => (
+                  <DynamicLink
+                    url={val.url}
+                    data={val.data}
+                    title={val.title}
+                    classvalue="nav-sidebar-div"
+                  />
                 ))}
               </div>
             </div>
-            {/* <div to="/facilities" className="nav-sidebar-div">
-              <div className="navsideicondiv">
-                <img src={facilityicon} alt="" />
-              </div>
-              <p>Facilities</p>
-            </div> */}
+            
             <div
               to="/facilities"
               className="nav-sidebar-div"
@@ -546,15 +499,13 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             </div>
             <div id="facsidedropwrap">
               <div className="departsidedrop">
-                {Navlist.facilities.map(item => (
-                  <Link
-                    to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
-                    className="nav-sidebar-div"
-                  >
-                    <p>
-                      <span>{item.title}</span>
-                    </p>
-                  </Link>
+                {Navlist.facilities.map(val => (
+                  <DynamicLink
+                    url={val.url}
+                    data={val.data}
+                    title={val.title}
+                    classvalue="nav-sidebar-div"
+                  />
                 ))}
               </div>
             </div>
@@ -577,25 +528,23 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             </div>
             <div id="studsidedropwrap">
               <div className="departsidedrop">
-                {Navlist.students.map(item => (
-                  <Link
-                    to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
-                    className="nav-sidebar-div"
-                  >
-                    <p>
-                      <span>{item.title}</span>
-                    </p>
-                  </Link>
+                {Navlist.students.map(val => (
+                  <DynamicLink
+                    url={val.url}
+                    data={val.data}
+                    title={val.title}
+                    classvalue="nav-sidebar-div"
+                  />
                 ))}
               </div>
             </div>
 
-            <Link to="https://tnp.nitp.ac.in" className="nav-sidebar-div">
+            <a href="https://tnp.nitp.ac.in" target="_blank" className="nav-sidebar-div">
               <div className="navsideicondiv">
                 <img src={placementicon} alt="" />
               </div>
               <p>Placements</p>
-            </Link>
+            </a>
           </div>
           <Link
             className="nav-side-link nav-sidebar-div"
@@ -619,12 +568,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
               <p>NIT PATNA</p>
             </Link>
           </div>
-          {/* <Link className="nav-sidebar-div" to="/">
-            <div className="navsideicondiv">
-              <img src={homeicon} alt="" />
-            </div>
-            <p>Home</p>
-          </Link> */}
+
           <div
             className="nav-sidebar-div"
             to="/"
@@ -660,61 +604,21 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
                   <p>
                     <span>{item.title}</span>
                   </p>
-                  {item.sub ? (
+                  {item.sub && (
                     <div id={`sub${item.url.slice(1)}`} className="mobsub">
                       {item.sub.map(val => (
-                        <Link
-                          to={`${val.url}${val.name ? `?tab=${val.name}` : ""}`}
-                        >
-                          {val.title}
-                        </Link>
+                        <DynamicLink
+                          url={val.url}
+                          data={val.data}
+                          title={val.title}
+                        />
                       ))}
                     </div>
-                  ) : (
-                    ""
                   )}
                 </div>
               ))}
             </div>
           </div>
-
-          {/* <Link className="nav-sidebar-div" to="/about">
-            <div className="navsideicondiv">
-              <img src={abouticon} alt="" />
-            </div>
-            <p>About Us</p>
-          </Link> */}
-          {/* <div
-            className="nav-sidebar-div"
-            to="/about"
-            onClick={function () {
-              var z = document.querySelector("#aboutsidedropwrap")
-              if (z.style.display === "none") {
-                z.style.display = "flex"
-              } else {
-                z.style.display = "none"
-              }
-            }}
-          >
-            <div className="navsideicondiv">
-              <img src={abouticon} alt="" />
-            </div>
-            <p>About Us</p>
-          </div>
-          <div id="aboutsidedropwrap">
-            <div className="departsidedrop">
-              {Navlist.about.map(item => (
-                <Link
-                  to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
-                  className="nav-sidebar-div"
-                >
-                  <p>
-                    <span>{item.title}</span>
-                  </p>
-                </Link>
-              ))}
-            </div>
-          </div> */}
           <div
             className="nav-sidebar-div"
             to="/administration"
@@ -734,25 +638,17 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           </div>
           <div id="adminsidedropwrap">
             <div className="departsidedrop">
-              {Navlist.admin.map(item => (
-                <Link
-                  to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
-                  className="nav-sidebar-div"
-                >
-                  <p>
-                    <span>{item.title}</span>
-                  </p>
-                </Link>
+              {Navlist.admin.map(val => (
+                <DynamicLink
+                  url={val.url}
+                  data={val.data}
+                  title={val.title}
+                  classvalue="nav-sidebar-div"
+                />
               ))}
             </div>
           </div>
 
-          {/* <Link className="nav-sidebar-div" to="/academics">
-            <div className="navsideicondiv">
-              <img src={acadicon} alt="" />
-            </div>
-            <p>Academics</p>
-          </Link> */}
           <div
             className="nav-sidebar-div"
             to="/academics"
@@ -772,16 +668,6 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           </div>
           <div id="acadsidedropwrap">
             <div className="departsidedrop">
-              {/* {Navlist.academics.map(item => (
-                <Link
-                  to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
-                  className="nav-sidebar-div"
-                >
-                  <p>
-                    <span>{item.title}</span>
-                  </p>
-                </Link>
-              ))} */}
               {Navlist.academics.map(item => (
                 <div
                   to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
@@ -798,18 +684,16 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
                   <p>
                     <span>{item.title}</span>
                   </p>
-                  {item.sub ? (
+                  {item.sub && (
                     <div id={`sub${item.id}`} className="mobsub">
                       {item.sub.map(val => (
-                        <Link
-                          to={`${val.url}${val.name ? `?tab=${val.name}` : ""}`}
-                        >
-                          {val.title}
-                        </Link>
+                        <DynamicLink
+                          url={val.url}
+                          data={val.data}
+                          title={val.title}
+                        />
                       ))}
                     </div>
-                  ) : (
-                    ""
                   )}
                 </div>
               ))}
@@ -839,12 +723,13 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           </div>
           <div id="departsidedropwrap">
             <div className="departsidedrop">
-              {Navlist.departments.map(item => (
-                <Link to={item.url} className="nav-sidebar-div">
-                  <p>
-                    <span>{item.title}</span>
-                  </p>
-                </Link>
+              {Navlist.departments.map(val => (
+                <DynamicLink
+                  url={val.url}
+                  data={val.data}
+                  title={val.title}
+                  classvalue="nav-sidebar-div"
+                />
               ))}
             </div>
           </div>
@@ -867,15 +752,13 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           </div>
           <div id="facsidedropwrap">
             <div className="departsidedrop">
-              {Navlist.facilities.map(item => (
-                <Link
-                  to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
-                  className="nav-sidebar-div"
-                >
-                  <p>
-                    <span>{item.title}</span>
-                  </p>
-                </Link>
+              {Navlist.facilities.map(val => (
+                <DynamicLink
+                  url={val.url}
+                  data={val.data}
+                  title={val.title}
+                  classvalue="nav-sidebar-div"
+                />
               ))}
             </div>
           </div>
@@ -899,32 +782,23 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           </div>
           <div id="studsidedropwrap">
             <div className="departsidedrop">
-              {Navlist.students.map(item => (
-                <Link
-                  to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
-                  className="nav-sidebar-div"
-                >
-                  <p>
-                    <span>{item.title}</span>
-                  </p>
-                </Link>
+              {Navlist.students.map(val => (
+                <DynamicLink
+                  url={val.url}
+                  data={val.data}
+                  title={val.title}
+                  classvalue="nav-sidebar-div"
+                />
               ))}
             </div>
           </div>
 
-          <Link to="http://tnp.nitp.ac.in" className="nav-sidebar-div">
+          <a href="https://tnp.nitp.ac.in" target="_blank" className="nav-sidebar-div">
             <div className="navsideicondiv">
               <img src={placementicon} alt="" />
             </div>
             <p>Placements</p>
-          </Link>
-
-          {/* <Link to="/placements" className="nav-sidebar-div">
-            <div className="navsideicondiv">
-              <img src={placementicon} alt="" />
-            </div>
-            <p>Placements</p>
-          </Link> */}
+          </a>
         </div>
       )}
     </NavbarStyle>

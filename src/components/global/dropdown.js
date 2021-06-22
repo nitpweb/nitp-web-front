@@ -1,5 +1,6 @@
 import { Link } from "gatsby"
 import { DropdownStyle } from "../styles/dropdown"
+import DynamicLink from "./dynamicurl"
 
 export const Dropdown = ({ title, list }) => {
   return (
@@ -8,11 +9,9 @@ export const Dropdown = ({ title, list }) => {
         <button className="dropbtn nav-link-div nav-link-item">{title}</button>
         <div className="dropdown-content">
           {list.map(item => (
-            <Link
-              to={`${item.url}${item.data ? `?tab=${item.data}` : ""}`}
-            >
-              <span>{item.title}</span>
-            </Link>
+            <>
+              <DynamicLink url={item.url} data={item.data} title={item.title} />
+            </>
           ))}
         </div>
       </DropdownStyle>
