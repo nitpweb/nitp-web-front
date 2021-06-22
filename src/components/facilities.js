@@ -411,74 +411,65 @@ const Facilitiespage = () => {
           )}
           {view == "wifi" && (
             <div className="layoutrow layoutrow1" id="wifi">
-              <div className="col-6 imgcolstyle">
+              <div className="row imgcolstyle backgroundimage">
                 <img src={wifi} className="img-fluid" loading="lazy" />
               </div>
-              <div className="col-6">
-                <div className="row rowmarr3">
+                <div className="row rowmarl3">
                   <h1>Wifi</h1>
                 </div>
-                <div className="row rowmarr3">
+                <div className="row rowmarl3">
                   <p>{wifidetail}</p>
-                </div>
               </div>
             </div>
           )}
           {view == "bank" && (
             <div className="layoutrow" id="bank">
-              <div className="col-6">
                 <div className="row rowmarl3">
                   <h1>Bank</h1>
                 </div>
                 <div className="row rowmarl3">
                   <p>{bankdetail}</p>
                 </div>
-              </div>
-              <div className="col-6 imgcolstyle">
+              <div className="row imgcolstyle backgroundimage">
                 <img src={bank} className="img-fluid" loading="lazy" />
               </div>
             </div>
           )}
           {view == "security" && (
-            <div className="layoutrow layoutrow1" id="security">
-              <div className="col-6 imgcolstyle">
+            <div className="layoutrow" id="security">
+              <div className="row imgcolstyle backgroundimage">
                 <img src={security} className="img-fluid" loading="lazy" />
               </div>
-              <div className="col-6">
-                <div className="row rowmarr3">
+                <div className="row rowmarl3">
                   <h1>Security</h1>
                 </div>
-                <div className="row rowmarr3">
+                <div className="row rowmarl3">
                   <p>{securitydetail}</p>
                 </div>
-              </div>
             </div>
           )}
           {view == "womancell" && (
             <div className="layoutrow" id="wc">
-              <div className="col-6">
                 <div className="row rowmarl3">
                   <h1>Woman Cell</h1>
                 </div>
                 <div className="row rowmarl3">
                   <p>{womancell}</p>
                 </div>
-              </div>
-              <div className="col-6 imgcolstyle">
+              <div className="row imgcolstyle backgroundimage">
                 <img src={woman} className="img-fluid" loading="lazy" />
               </div>
             </div>
           )}
           {view == "emu" && (
-            <div className="layoutrow layoutrow1" id="electric">
-              <div className="col-6 imgcolstyle">
+            <div className="layoutrow" id="electric">
+              <div className="row imgcolstyle backgroundimage">
                 <img src={electric} className="img-fluid" loading="lazy" />
               </div>
-              <div className="col-6">
-                <div className="row rowmarr3">
+                <div className="row rowmarl3">
                   <h1>Electrical Maintainance Unit (EMU)</h1>
                 </div>
-                <div className="row rowmarr3">
+                <div className="row rowmarl3">
                   <p>
                     To provide Electric power supply to the Institute. EMU
                     maintains all electrical equipment such as Lights, Fans, AC,
@@ -495,7 +486,6 @@ const Facilitiespage = () => {
                     For any type of Electrical Complaint kindly fill the form.
                   </p>
                 </div>
-              </div>
             </div>
           )}
         </PageLayout>
