@@ -43,6 +43,7 @@ main {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   z-index: 1;
 }
