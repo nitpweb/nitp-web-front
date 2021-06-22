@@ -44,6 +44,7 @@ main {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 100%;
+  z-index: 1;
 }
 .col-6 {
   width: calc(50% - 6vw);
@@ -60,6 +61,14 @@ main {
   flex-direction: column;
   align-items: center;
 }
+
+.backgroundimage{
+position: absolute;
+width: 75vw;
+opacity: 0.3;
+z-index: 0;
+}
+
 .rowmarr3 {
   margin-right: 3vw;
 }
@@ -99,4 +108,8 @@ main {
 .col-6 img {
   max-width: 100%;
   height: auto;
+}
+
+*{
+  text-align: justify;
 }

@@ -1,7 +1,7 @@
-import React, { useState,useEffect} from "react"
+import React, { useState, useEffect } from "react"
 import { TabPage } from "./styles/tabpage"
 import Navigate from "./global/Navigate"
-import { useQueryParam} from "use-query-params"
+import { useQueryParam } from "use-query-params"
 import Navlist from "./global/navlist"
 
 const aboutusinfo = [
@@ -33,12 +33,12 @@ const campusinfo =
 
 const Aboutpage = () => {
   const [tab] = useQueryParam("tab")
-   const [view, setView] = useState("about")
+  const [view, setView] = useState("about")
 
-   function getView(callback) {
-     setView(callback)
-   }
-   useEffect(() => {
+  function getView(callback) {
+    setView(callback)
+  }
+  useEffect(() => {
     Navlist.home[0].sub.forEach(x => {
       x.data === tab ? setView(tab) : ""
     })
@@ -46,56 +46,52 @@ const Aboutpage = () => {
   console.log(tab)
   return (
     <TabPage>
-      <Navigate data={Navlist.home[0].sub} callback={getView} tab={tab}/>
+      <Navigate data={Navlist.home[0].sub} callback={getView} tab={tab} />
 
       <div className="mainDiv">
         {view == "about" && (
           <div className="layoutrow" id="home">
-            <div className="col-6">
-              <div className="row rowmarl3">
-                <h1>About Us</h1>
-              </div>
-              {aboutusinfo.map(elem => {
-                return (
-                  <div className="row rowmarl3">
-                    <p>{elem}</p>
-                  </div>
-                )
-              })}
+            <div className="row rowmarl3">
+              <h1>About Us</h1>
             </div>
-            <div className="col-6 imgcolstyle">
+            {aboutusinfo.map(elem => {
+              return (
+                <div className="row rowmarl3">
+                  <p>{elem}</p>
+                </div>
+              )
+            })}
+            <div className="row imgcolstyle backgroundimage">
               <img data-aos="zoom-in" src="/bulb.svg" className="img-fluid" />
             </div>
           </div>
         )}
         {view == "missionvision" && (
           <>
-            <div className="layoutrow layoutrow1" id="mission">
-              <div className="col-6 imgcolstyle">
+            <div className="layoutrow" id="mission">
+              <div className="row rowmarl3">
+                <h1>Mission & Vision</h1>
+              </div>
+              {missioninfo.map(elem => {
+                return (
+                  <div className="row rowmarl3">
+                    <p>{elem}</p>
+                  </div>
+                )
+              })}
+              <div className="row imgcolstyle backgroundimage">
                 <img
                   data-aos="zoom-in"
                   src="/mission.svg"
                   className="img-fluid"
                 />
               </div>
-              <div className="col-6">
-                <div className="row rowmarr3">
-                  <h1>Mission & Vision</h1>
-                </div>
-                {missioninfo.map(elem => {
-                  return (
-                    <div className="row rowmarr3">
-                      <p>{elem}</p>
-                    </div>
-                  )
-                })}
-              </div>
             </div>
           </>
         )}
         {view == "values" && (
           <div className="layoutrow" id="values">
-            <div className="col-6">
+            
               <div className="row rowmarl3">
                 <h1>Values</h1>
               </div>
@@ -106,8 +102,7 @@ const Aboutpage = () => {
                   </div>
                 )
               })}
-            </div>
-            <div className="col-6 imgcolstyle">
+            <div className="row imgcolstyle backgroundimage">
               <img src="/clock.svg" className="img-fluid" />
             </div>
           </div>
@@ -115,7 +110,7 @@ const Aboutpage = () => {
 
         {view == "campus" && (
           <div className="layoutrow layoutrow1" id="campus">
-            <div className="col-6 imgcolstyle">
+            <div className="row imgcolstyle backgroundimage">
               <a
                 href="https://www.google.com/maps/place/National+Institute+of+Technology+Patna/@25.6207241,85.170702,17z/data=!4m5!3m4!1s0x39ed58dce6732867:0x4059f39a1ac82f06!8m2!3d25.6207241!4d85.1728907"
                 target="_blank"
@@ -123,15 +118,14 @@ const Aboutpage = () => {
                 <img data-aos="zoom-in" src="/map.svg" className="img-fluid" />
               </a>
             </div>
-            <div className="col-6">
-              <div className="row rowmarr3">
+           
+              <div className="row rowmarl3">
                 <h1 data-aos="zoom-in-left">Campus</h1>
               </div>
-              <div className="row rowmarr3">
+              <div className="row rowmarl3">
                 <p data-aos="zoom-in-left">{campusinfo}</p>
               </div>
             </div>
-          </div>
         )}
       </div>
     </TabPage>

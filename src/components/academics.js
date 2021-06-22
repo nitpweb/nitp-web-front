@@ -21,17 +21,17 @@ const Academicspage = () => {
     })
   }, [tab])
 
-  // useEffect(() => {
-  //   // let noticesUrl = `${process.env.GATSBY_API_URL}/api/notice/academics`
-  //   // axios
-  //   //   .get(noticesUrl)
-  //   //   .then(res => {
-  //   //     setNotices(res.data)
-  //   //   })
-  //   //   .catch(e => {
-  //   //     console.log(e)
-  //   //   })
-  // }, [])
+  useEffect(() => {
+    let noticesUrl = `${process.env.GATSBY_API_URL}/api/notice/academics`
+    axios
+      .get(noticesUrl)
+      .then(res => {
+        setNotices(res.data)
+      })
+      .catch(e => {
+        console.log(e)
+      })
+  }, [])
 
   return (
     <>
@@ -59,26 +59,39 @@ const Academicspage = () => {
                 </div>
               </div> */}
             {view == "Admissions" && (
-              <div className="layoutrow layoutrow1" id="admission" style={{padding:`0 2rem`}}>
+              <div
+                className="layoutrow layoutrow1"
+                id="admission"
+                style={{ padding: `0 2rem` }}
+              >
                 {/* <div className="col-6 imgcolstyle">
                   <img src="/test.svg" className="img-fluid" loading="lazy" />
                 </div> */}
                 <div>
                   <div className="row rowmarr3">
-                    <h1 style={{margin:`0`,color:`darkred`}}>Admissions</h1>
+                    <h1 style={{ margin: `0`, color: `darkred` }}>
+                      Admissions
+                    </h1>
                   </div>
-                  <div className="row rowmarr3">
-                {acadData.Admissions.map(e=>(
-                  <div>
-                    <h2>{e.title}</h2>
-                  {e.data.map(item=>(
-                    <>
-                    <a href={item.link} target="_blank" style={{textDecoration:`none`,padding:`5px`}}><li>{item.para}</li></a><br/>
-                    </>
+                  {acadData.Admissions.map(e => (
+                    <div className="row rowmarr3">
+                      <div>
+                        <h2>{e.title}</h2>
+                        {e.data.map(item => (
+                          <>
+                            <a
+                              href={item.link}
+                              target="_blank"
+                              style={{ textDecoration: `none`, padding: `5px` }}
+                            >
+                              <li>{item.para}</li>
+                            </a>
+                            <br />
+                          </>
+                        ))}
+                      </div>
+                    </div>
                   ))}
-                  </div>
-                ))}
-                  </div>
                 </div>
               </div>
             )}
@@ -270,60 +283,52 @@ const Academicspage = () => {
             )}
             {view == "Format" && (
               <div className="layoutrow" id="format">
-                <div className="col-6">
-                  <div className="row rowmarl3">
-                    <h1>Formats</h1>
-                  </div>
-                  <div className="row rowmarl3">
-                    <div id="layoutnoticewrap">
-                      {notices != undefined
-                        ? notices.map(notice => {
-                            if (notice.title != "") {
-                              return (
-                                <Notice
-                                  detail={notice.title}
-                                  time={notice.openDate}
-                                  attachments={notice.attachments}
-                                />
-                              )
-                            }
-                          })
-                        : null}
-                    </div>
-                  </div>
+                <div className="row rowmarl3">
+                  <h1>Formats</h1>
                 </div>
-                <div className="col-6 imgcolstyle">
+                <div className="row rowmarl3">
+                    {notices != undefined
+                      ? notices.map(notice => {
+                          if (notice.title != "") {
+                            return (
+                              <Notice
+                                detail={notice.title}
+                                time={notice.openDate}
+                                attachments={notice.attachments}
+                              />
+                            )
+                          }
+                        })
+                      : null}
+                  </div>
+                <div className="row imgcolstyle backgroundimage">
                   <img src="/paper.svg" className="img-fluid" loading="lazy" />
                 </div>
               </div>
             )}
             {view == "Notices" && (
-              <div className="layoutrow layoutrow1" id="notice">
-                <div className="col-6 imgcolstyle">
+              <div className="layoutrow" id="notice">
+                <div className="row imgcolstyle backgroundimage">
                   <img src="/mail.svg" className="img-fluid" loading="lazy" />
                 </div>
 
-                <div className="col-6 imgcolstyle">
-                  <div className="row rowmarr3">
-                    <h1>Notice</h1>
-                  </div>
-                  <div className="row rowmarr3">
-                    <div id="layoutnoticewrap">
-                      {notices != undefined
-                        ? notices.map(notice => {
-                            if (notice.title != "") {
-                              return (
-                                <Notice
-                                  detail={notice.title}
-                                  time={notice.openDate}
-                                  attachments={notice.attachments}
-                                />
-                              )
-                            }
-                          })
-                        : null}
-                    </div>
-                  </div>
+                <div className="row rowmarl3">
+                  <h1>Notice</h1>
+                </div>
+                <div className="row rowmarl3">
+                    {notices != undefined
+                      ? notices.map(notice => {
+                          if (notice.title != "") {
+                            return (
+                              <Notice
+                                detail={notice.title}
+                                time={notice.openDate}
+                                attachments={notice.attachments}
+                              />
+                            )
+                          }
+                        })
+                      : null}
                 </div>
               </div>
             )}
