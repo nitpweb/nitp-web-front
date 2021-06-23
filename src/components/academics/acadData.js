@@ -1,4 +1,4 @@
-const Data0 = [
+const Datad = [
   {
     heading: "Digital Initiatives of NIT Patna",
     title: "GIAN Course PFB the links",
@@ -19,10 +19,25 @@ const DataUG = [
   {
     heading: "Regulation & Curricula",
     title: "UG",
-    links: [
-      "http://www.nitp.ac.in/downloads/firstyear/UG%20Program%20Curricula%20Approved%20in%2032nd%20Senate%20on%2021092020-1.pdf",
-      "http://www.nitp.ac.in/downloads/firstyear/UG%20Regulation%20&%20Curiculla%20amended%20upto%2018th%20Senate%20with%20effect%20from%20session%202016-17.pdf",
-      "http://www.nitp.ac.in/downloads/firstyear/UG%20Curricula%202013.pdf",
+    data: [
+      {
+        link:
+          "http://www.nitp.ac.in/downloads/firstyear/UG%20Program%20Curricula%20Approved%20in%2032nd%20Senate%20on%2021092020-1.pdf",
+        para:
+          "UG Curricula 2020. (Application for Academic Session 2020-21 and onward)",
+      },
+      {
+        link:
+          "http://www.nitp.ac.in/downloads/firstyear/UG%20Regulation%20&%20Curiculla%20amended%20upto%2018th%20Senate%20with%20effect%20from%20session%202016-17.pdf",
+        para:
+          "UG REGULATION 2016. (to be effective from the Academic session 2016-17 and onwards)",
+      },
+      {
+        link:
+          "http://www.nitp.ac.in/downloads/firstyear/UG%20Curricula%202013.pdf",
+        para:
+          "UG REGULATION 2013. (UG CURRICULA' 2013 FOR B.TECH, B.ARCH PROGRAM",
+      },
     ],
   },
 ]
@@ -30,9 +45,19 @@ const DataPG = [
   {
     heading: "Regulation & Curricula",
     title: "PG",
-    links: [
-      "http://www.nitp.ac.in/downloads/M.Tech%20&%20MURP%20Regulation%202013-14%20-%20Scanned%20%20copy.pdf",
-      "http://www.nitp.ac.in/downloads/firstyear/PG%20Regulation%20&%20Curiculla%20amended%20upto%2022nd%20Senate%20with%20effect%20from%20session%202017-18.pdf",
+    data: [
+      {
+        link:
+          "http://www.nitp.ac.in/downloads/M.Tech%20&%20MURP%20Regulation%202013-14%20-%20Scanned%20%20copy.pdf",
+        para:
+          "M.Tech/MURP (PG) REGULATION 2013. ( Effective from Session 2013-14 to 2016-2017)",
+      },
+      {
+        link:
+          "http://www.nitp.ac.in/downloads/firstyear/PG%20Regulation%20&%20Curiculla%20amended%20upto%2022nd%20Senate%20with%20effect%20from%20session%202017-18.pdf",
+        para:
+          "M.Tech/MURP (PG) REGULATION 2017. (to be effective from the Academic session 2017-18 and onwards)",
+      },
     ],
   },
 ]
@@ -41,10 +66,23 @@ const DataPHD = [
   {
     heading: "Regulation & Curricula",
     title: "PHD",
-    links: [
-      "http://www.nitp.ac.in/uploads/Notice%20regarding%20DSC_02_03_2020.jpg",
-      "http://www.nitp.ac.in/uploads/Ph.D%20Regulation%202018-(FINAL).pdf",
-      "http://www.nitp.ac.in/uploads/Ph.D.%20Offline%20Registration%20Form%20(Tripilicate)%20Format%20(1)%20in%20PDF.pdf",
+    data: [
+      {
+        link:
+          "http://www.nitp.ac.in/uploads/Notice%20regarding%20DSC_02_03_2020.jpg",
+        para:
+          "Notice: PhD Supervisor will be Chairman DSC irrespective of admission date",
+      },
+      {
+        link:
+          "http://www.nitp.ac.in/uploads/Ph.D%20Regulation%202018-(FINAL).pdf",
+        para: "Ph.D. REGULATION",
+      },
+      {
+        link:
+          "http://www.nitp.ac.in/uploads/Ph.D.%20Offline%20Registration%20Form%20(Tripilicate)%20Format%20(1)%20in%20PDF.pdf",
+        para: "Ph.D. Registration Form (Triplicate)",
+      },
     ],
   },
 ]
@@ -53,8 +91,10 @@ const DataNotice = [
   {
     heading: "Regulation & Curricula",
     title: "Notice related to Copyright transfer certificate (UG,PG & Ph.D)",
-    links: [
-      "http://www.nitp.ac.in/uploads20/Declaration_copyright_transfer_certificate.pdf",
+    data: [
+      {link:"http://www.nitp.ac.in/uploads20/Declaration_copyright_transfer_certificate.pdf",
+      para:"Notice: regarding Declaration and Copyright transfer certificate (UG,PG & Ph.D) required to be included in the dissertation/thesis"
+    }
     ],
   },
 ]
@@ -315,7 +355,7 @@ const Admissions = [
     title: "PhD Admission July-Dec 2020:",
     data: [
       {
-        para:"Advertisement of Ph.D admission July-Dec'2020 (Odd Sem.).",
+        para: "Advertisement of Ph.D admission July-Dec'2020 (Odd Sem.).",
         link:
           "http://www.nitp.ac.in/uploads20/Final_PhD_Admission_July-Dec-2020-09.09.2020.pdf",
       },
@@ -364,30 +404,36 @@ const Admissions = [
     title: "CCMT 2020:",
     data: [
       {
-        para:"Information for Provisional Admission to M.Tech./MURP/M.Arch. Programmes under CCMT 2020 Process.",
+        para:
+          "Information for Provisional Admission to M.Tech./MURP/M.Arch. Programmes under CCMT 2020 Process.",
         link:
           "http://nitp.ac.in/downloads/academics/pg-admission/PG%20Admission%20Academic%20Sesion%202020-21%20through%20CCMT%202020_31_08_2020.pdf",
       },
       {
-        para:"Important notice regarding hostel and stipend/scholarship/Assistanceship",
+        para:
+          "Important notice regarding hostel and stipend/scholarship/Assistanceship",
         link:
           "http://nitp.ac.in/downloads/academics/pg-admission/NOTICE-NIT%20Patna_18_05_2020.pdf",
       },
       {
-        para:"Notice regarding Tuition fee Waiver for SC/ST/PH M.Tech students",
+        para:
+          "Notice regarding Tuition fee Waiver for SC/ST/PH M.Tech students",
         link:
           "http://www.nitp.ac.in/uploads/Tution%20fee%20waiver%2004_06_2020.pdf",
       },
       {
-        para:"Provisionally admitted students in PG programme in Academic Section 2020-21 (July-Dec'2020)",
+        para:
+          "Provisionally admitted students in PG programme in Academic Section 2020-21 (July-Dec'2020)",
         link: "http://www.nitp.ac.in/uploads20/CCMT%202020-09.11.2020.jpg",
       },
       {
-        para:"Notice for M.Tech/M.Arch/IVIURP students provisionally admitted in the First Semester (July-Dec 2020) ",
+        para:
+          "Notice for M.Tech/M.Arch/IVIURP students provisionally admitted in the First Semester (July-Dec 2020) ",
         link: "http://www.nitp.ac.in/uploads20/M.Tech%20students.pdf",
       },
       {
-        para:"Notice for M.Tech/M.Arch/MURP & PhD students admitted in July-Dec-2020 semester regarding submission of documents",
+        para:
+          "Notice for M.Tech/M.Arch/MURP & PhD students admitted in July-Dec-2020 semester regarding submission of documents",
         link:
           "http://www.nitp.ac.in/uploads20/NOTICE%20M.Tech%20MURP%20M.ARCH%20AND%20Ph.D%202020%20(1).jpg",
       },
@@ -471,7 +517,7 @@ const Format = [
 ]
 
 const acadData = {
-  data0: Data0,
+  datad: Datad,
   dataUG: DataUG,
   dataPG: DataPG,
   dataPHD: DataPHD,

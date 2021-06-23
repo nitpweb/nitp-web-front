@@ -85,6 +85,17 @@ const Studentpage = () => {
               <StudentSlide />
             </div>
           )}
+          {view == "concession" && (
+            <div className="layoutrow" id="sac">
+                <div className="row rowmarl3">
+                  <h1></h1>
+                </div>
+                <div className="row rowmarl3">
+                  <p></p>
+                </div>
+              
+            </div>
+          )}
           {view == "sac" && (
             <div className="layoutrow" id="sac">
               <div className="col-6">
@@ -120,12 +131,12 @@ const Studentpage = () => {
               <div className="row imgcolstyle backgroundimage">
                 <img src={exchange} className="img-fluid" loading="lazy" />
               </div>
-                <div className="row rowmarl3">
-                  <h1>Student Exchange Program</h1>
-                </div>
-                <div className="row rowmarl3">
-                  <p>{studentexchange}</p>
-                </div>
+              <div className="row rowmarl3">
+                <h1>Student Exchange Program</h1>
+              </div>
+              <div className="row rowmarl3">
+                <p>{studentexchange}</p>
+              </div>
             </div>
           )}
           {view == "scholarship" && (

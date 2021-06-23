@@ -1,7 +1,7 @@
 const AcademicsList = [
     {
         title: "Admissions",
-        data: "Admissions",
+        data: "admissions",
         img:"/test.svg"
     },
     {
