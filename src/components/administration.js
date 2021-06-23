@@ -46,14 +46,13 @@ const Administrationpage = () => {
 
           {CardData.includes(view) &&
             content.length != 0 &&
-            content.map(item => (
-              <div>
+            content.map((item, idx) => (
+              <div key={idx}>
                 <Adcard
-                  name={item.name}
-                  designation={item.designation}
-                  type={item.type}
+                  name={item?.name}
+                  designation={item?.designation}
+                  type={item?.type}
                 />
-               
               </div>
             ))}
         </div>
