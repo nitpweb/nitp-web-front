@@ -7,7 +7,7 @@ import Registrar from "./registrar"
 import { AdminStyle } from "./styles/AdminStyle"
 import Navigate from "./global/Navigate"
 import Admin from "./administration/const"
-import { useQueryParam, NumberParam, StringParam } from "use-query-params"
+import { useQueryParam } from "use-query-params"
 
 const Administrationpage = () => {
   const [tab] = useQueryParam("tab")
@@ -46,31 +46,16 @@ const Administrationpage = () => {
 
           {CardData.includes(view) &&
             content.length != 0 &&
-            content.map((item, idx) => (
-              <div className="col-4" key={idx}>
+            content.map(item => (
+              <div>
                 <Adcard
-                  name={item?.name}
-                  designation={item?.designation}
-                  type={item?.type}
+                  name={item.name}
+                  designation={item.designation}
+                  type={item.type}
                 />
+               
               </div>
             ))}
-
-          {/* {view.length != 0 && view[0].name ? (
-            view.map(item => {
-              return (
-                <div className="col-4">
-                  <Adcard
-                    name={item.name}
-                    designation={item.designation}
-                    type={item.type}
-                  />
-                </div>
-              )
-            })
-          ) : (
-            <Director id="director" />
-          )} */}
         </div>
       </AdminStyle>
     </>

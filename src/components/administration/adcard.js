@@ -4,13 +4,13 @@ import { AdCardStyle } from "../styles/adcard"
 const Adcard = props => {
   return (
       <AdCardStyle>
-        <div className="row adrow adname">
+        <div className="adcardrow adcardname">
           <span>{props.name}</span>
         </div>
-        <div className="row adrow designation">
+        <div className="adcardrow designation">
           <span>{props.designation}</span>
         </div>
-        <div className="row type">
+        <div className="type">
           <span>{props.type}</span>
         </div>
       </AdCardStyle>

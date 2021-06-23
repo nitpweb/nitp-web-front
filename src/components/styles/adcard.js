@@ -12,7 +12,6 @@ export const AdCardStyle = styled.div`
   box-shadow: 5px 10px 19px rgba(193, 104, 0, 0.25);
   box-shadow: 5px 10px 19px rgba(193, 104, 0, 0.25) unset;
   background: ${props => props.theme.backgroundSecColor};
-
   position: relative;
   margin: 1rem;
   .type {
@@ -29,21 +28,25 @@ export const AdCardStyle = styled.div`
       font-family: "Source Sans Pro";
     }
   }
-  .adrow {
+  .adcardrow {
     display: flex;
     width: 94%;
     justify-content: center;
     align-items: center;
   }
-  .adname {
-    line-height: 1.2;
-    font-weight: bold;
-    font-family: "Source Sans Pro";
-    color: ${props => props.theme.textColor};
+  .adcardname {
+    span {
+      line-height: 1.2;
+      font-weight: bold;
+      font-family: "Source Sans Pro";
+      color: ${props => props.theme.textColor};
+    }
   }
   .designation {
-    line-height: 1.3;
-    font-family: "Source Sans Pro";
-    color: ${props => props.theme.secondaryTextColor};
+    span {
+      line-height: 1.3;
+      font-family: "Source Sans Pro";
+      color: ${props => props.theme.secondaryTextColor};
+    }
   }
 `
