@@ -4,7 +4,6 @@ import eventclock from "./img/eventclock.svg"
 import eventlocation from "./img/eventlocation.svg"
 
 const Eventcard = props => {
-
   return (
     <EventCardStyle>
       <div className="eventdtdiv">
@@ -17,7 +16,13 @@ const Eventcard = props => {
       </div>
       <div className="eventcarddetailsection">
         <p className="eventcarddetail">
-          {props.link?<a href={props.link} target="_blank">{props.detail}</a>:<>{props.detail}</>}
+          {props.link ? (
+            <a href={props.link} target="_blank">
+              {props.detail}
+            </a>
+          ) : (
+            <>{props.detail}</>
+          )}
         </p>
         <div id="eventdtp">
           <div>
@@ -25,8 +30,10 @@ const Eventcard = props => {
             <p className="efp">{props.time}</p>
           </div>
           <div>
-            <img src={eventlocation} alt="c" />
-            <p className="efp">{props.location}</p>
+            <a target="_blank" href={`https://www.google.com/maps/search/${props.location}`}>
+              <img src={eventlocation} alt="c" />
+              <p className="efp">{props.location}</p>
+            </a>
           </div>
         </div>
       </div>
