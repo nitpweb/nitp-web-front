@@ -193,12 +193,12 @@ const Academics = [
       {
         url: "/newacad",
         title: "Digital Initiatives",
-        data: "",
+        data: "digital",
       },
       {
-        url: "",
+        url: "/newacad",
         title: "Regulation & Curricula",
-        data: "",
+        data: "curricula",
       },
     ],
   },
@@ -223,13 +223,13 @@ const Academics = [
   {
     url: "/academics",
     title: "Admissions",
-    data: "Admissions",
+    data: "admissions",
     id: "three",
     sub: [
       {
-        url: "",
+        url: "/academics",
         title: "CCMT/JoSSA/CSAB",
-        data: "",
+        data: "admissions",
       },
       {
         url: "",
@@ -338,7 +338,11 @@ const Students = [
     title: "Scholarship",
     data: "scholarship",
   },
-
+  {
+    url: "/students",
+    title: "Concessions",
+    data: "concession",
+  },
   {
     url: "/students",
     title: "Tech Fest",
