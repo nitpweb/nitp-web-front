@@ -39,26 +39,7 @@ const Academicspage = () => {
         <TabPage>
           <Navigate data={AcademicsList} callback={getView} tab={tab} />
           <div className="mainDiv">
-            {/* <div className="layoutrow layoutrowmain" id="home">
-                <div className="col-6">
-                  <div className="row rowmarl3">
-                    <h1>Academics</h1>
-                  </div>
-                  <div className="row rowmarl3">
-                    <h2>
-                      “Education is not the learning of facts, but the training
-                      of minds to think”
-                    </h2>
-                  </div>
-                  <div className="row rowmarl3">
-                    <h2 id="aut">- Albert Einstein</h2>
-                  </div>
-                </div>
-                <div className="col-6 imgcolstyle">
-                  <img src="/acadscholar.svg" className="img-fluid" loading="lazy" />
-                </div>
-              </div> */}
-            {view == "Admissions" && (
+            {view == "admissions" && (
               <div
                 className="layoutrow layoutrow1"
                 id="admission"
