@@ -214,218 +214,218 @@ const director = [
 const Senate = [
   {
     name: "Prof. P. K. Jain               \n Director, NIT Patna",
-    designation: "Ex-Officio Chairman",
+    type: "Ex-Officio Chairman",
   },
   {
     name:
       "Dr. Manoj Kumar             \n             Professor, Architecture Dept.",
-    designation: "Member",
+    type: "Member",
   },
   {
     name:
       "Dr. Fulena Rajak             \n             Professor, Architecture Dept.",
-    designation: "Member",
+    type: "Member",
   },
   {
     name:
       "Dr. Sita Ram Sharma             \n             Professor, Chemistry Dept.",
-    designation: "Member",
+    type: "Member",
   },
   {
     name:
       "Dr. L. B. Roy             \n             Professor, Civil Engineering Dept.",
-    designation: "Member",
+    type: "Member",
   },
   {
     name:
       "Dr. Sanjeev Sinha             \n             Professor, Civil Engineering Dept.",
-    designation: "Member",
+    type: "Member",
   },
   {
     name:
       "Dr. Ajay Kumar Sinha             \n             Professor, Civil Engineering Dept.",
-    designation: "Member",
+    type: "Member",
   },
   {
     name:
       "Dr. S. S. Mishra             \n             Professor, Civil Engineering Dept.",
-    designation: "Member",
+    type: "Member",
   },
   {
     name:
       "Dr. Vivekanand Singh             \n             Professor, Civil Engineering Dept.",
-    designation: "Member",
+    type: "Member",
   },
   {
     name:
       "Dr. Ramesh Kumar             \n             Professor, Electrical Engineering Dept.",
-    designation: "Member",
+    type: "Member",
   },
   {
     name:
       "Dr. Sawal Kishore Singh             \n             Mathematics Dept.",
-    designation: "Member",
+    type: "Member",
   },
   {
     name:
       "Dr. S. K. Verma             \n             Professor, Mechanical Engineering Dept.",
-    designation: "Member",
+    type: "Member",
   },
   {
     name:
       "Dr. Om Prakash             \n             Professor, Mechanical Engineering Dept.",
-    designation: "Member",
+    type: "Member",
   },
   {
     name: "Dr. N. R. Lall             \n             Professor, Physics Dept.",
-    designation: "Member",
+    type: "Member",
   },
   {
     name:
       "Dr. Ramakar Jha             \n             Professor, Civil Engineering Dept.",
-    designation: "Member",
+    type: "Member",
   },
   {
     name:
       "Dr. Prakash Chandra             \n             Professor, Mechanical Engineering Dept.",
-    designation: "Member",
+    type: "Member",
   },
   {
     name:
       "Dr. A. N. Sinha             \n             Professor, Mechanical Engineering Dept.",
-    designation: "Member",
+    type: "Member",
   },
   {
     name:
       "Prof. K. P. Singh             \n             Former Director, IIT BHU",
-    designation: "External Member",
+    type: "External Member",
   },
   {
     name:
       "Prof. S. K. Singh             \n             Vice-Chancellor, LNMU, Darbhanga",
-    designation: "External Member",
+    type: "External Member",
   },
   {
     name:
       "Prof. Pushplata Tripathi, Pro-Vice Chancellor,             \n             Guru-Govind Singh Indraprastha University,             \n             New Delhi.",
-    designation: "External Member",
+    type: "External Member",
   },
   {
     name: "Dr. Asit Narayan             \n             Registrar, NIT Patna",
-    designation: "Ex-Officio Member Secretary",
+    type: "Ex-Officio Member Secretary",
   },
 ]
 
 const ServiceUnit = [
   {
-    type: "Personal",
-    designation: "Registrar",
-    Name: "Dr. Asit Narayan",
+    designation: "Personal",
+    type: "Registrar",
+    name: "Dr. Asit Narayan",
   },
   {
-    type: "Establishment & Administration",
-    designation: "Deputy Registrar",
-    Name: "Dr. Asit Narayan",
+    designation: "Establishment & Administration",
+    type: "Deputy Registrar",
+    name: "Dr. Asit Narayan",
   },
   {
-    type: "Examinations",
-    designation: "Prof. In-charge",
-    Name: "Dr. Abdur Rahman Quaff",
+    designation: "Examinations",
+    type: "Prof. In-charge",
+    name: "Dr. Abdur Rahman Quaff",
   },
   {
-    type: "Training and Placement",
-    designation: "Prof. In-charge",
-    Name: "Dr. Samrat Mukherjee",
+    designation: "Training and Placement",
+    type: "Prof. In-charge",
+    name: "Dr. Samrat Mukherjee",
   },
   {
-    type: "HMC",
-    designation: "Chairman",
-    Name: "Dr. Samrat Mukherjee",
+    designation: "HMC",
+    type: "Chairman",
+    name: "Dr. Samrat Mukherjee",
   },
   {
-    type: "Procurement",
-    designation: "Professor Incharge",
-    Name: "Prof. Prakash Chandra",
+    designation: "Procurement",
+    type: "Professor Incharge",
+    name: "Prof. Prakash Chandra",
   },
   {
-    type: "TEQIP-III",
-    designation: "Coordinator",
-    Name: "Dr. M. P. Singh",
+    designation: "TEQIP-III",
+    type: "Coordinator",
+    name: "Dr. M. P. Singh",
   },
   {
-    type: "Computer Center",
-    designation: "Prof. In-charge",
-    Name: "Dr. M. P. Singh",
+    designation: "Computer Center",
+    type: "Prof. In-charge",
+    name: "Dr. M. P. Singh",
   },
   {
-    type: "Central Library",
-    designation: "Prof. In-charge",
-    Name: "Dr. Anshuman Singh",
+    designation: "Central Library",
+    type: "Prof. In-charge",
+    name: "Dr. Anshuman Singh",
   },
   {
-    type: "IT Services",
-    designation: "Prof. In-charge",
-    Name: "Dr. Prabhat Kumar",
+    designation: "IT Services",
+    type: "Prof. In-charge",
+    name: "Dr. Prabhat Kumar",
   },
   {
-    type: "Web Services and MIS",
-    designation: "Prof. In-charge",
-    Name: "Dr. Akshay Deepak",
+    designation: "Web Services and MIS",
+    type: "Prof. In-charge",
+    name: "Dr. Akshay Deepak",
   },
   {
-    type: "Finance & Accounts",
-    designation: "Deputy Registrar",
-    Name: "Shri Mani Shankar Singh",
+    designation: "Finance & Accounts",
+    type: "Deputy Registrar",
+    name: "Shri Mani Shankar Singh",
   },
   {
-    type: "R&D",
-    designation: "Deputy Registrar",
-    Name: "Sri Sunil Kumar Dwivedi",
+    designation: "R&D",
+    type: "Deputy Registrar",
+    name: "Sri Sunil Kumar Dwivedi",
   },
   {
-    type: "EMU",
-    designation: "Prof. In-charge",
-    Name: "Dr. R. K. Mandal",
+    designation: "EMU",
+    type: "Prof. In-charge",
+    name: "Dr. R. K. Mandal",
   },
   {
-    type: "Examination",
-    designation: "Deputy Registrar",
-    Name: "Mrs. Bobby",
+    designation: "Examination",
+    type: "Deputy Registrar",
+    name: "Mrs. Bobby",
   },
   {
-    type: "IT Service",
-    designation: "Scientific & Technical Officer",
-    Name: "Dr. Santosh Kumar",
+    designation: "IT Service",
+    type: "Scientific & Technical Officer",
+    name: "Dr. Santosh Kumar",
   },
   {
-    type: "Academics & Examination & Scholarship",
-    designation: "Assistant Registrar",
-    Name: "Shri Shardul Vikram",
+    designation: "Academics & Examination & Scholarship",
+    type: "Assistant Registrar",
+    name: "Shri Shardul Vikram",
   },
   {
-    type: "Establishment",
-    designation: "Assistant Registrar",
-    Name: "Shri Rajesh Kumar",
+    designation: "Establishment",
+    type: "Assistant Registrar",
+    name: "Shri Rajesh Kumar",
   },
   {
-    type: "Security & Housekeeping",
-    designation: "Assistant Registrar",
-    Name: "Sri J P Sharma",
+    designation: "Security & Housekeeping",
+    type: "Assistant Registrar",
+    name: "Sri J P Sharma",
   },
   {
-    type: "Finance & Accounts",
-    designation: "Assistant Registrar",
-    Name: "Sri Sunny Choudhary",
+    designation: "Finance & Accounts",
+    type: "Assistant Registrar",
+    name: "Sri Sunny Choudhary",
   },
   {
-    type: "Academics",
-    designation: "Assistant Registrar",
-    Name: "Sri Abhay Kumar",
+    designation: "Academics",
+    type: "Assistant Registrar",
+    name: "Sri Abhay Kumar",
   },
   {
-    type: "Student Activity and Sports",
-    designation: "Officer In-charge",
-    Name: "Sri Arijit Putatunda",
+    designation: "Student Activity and Sports",
+    type: "Officer In-charge",
+    name: "Sri Arijit Putatunda",
   },
 ]
 
