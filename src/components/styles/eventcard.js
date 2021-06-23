@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const EventCardStyle = styled.div`
   width: 90%;
@@ -70,18 +70,23 @@ export const EventCardStyle = styled.div`
       display: flex;
       align-items: center;
       margin-left: 20px;
-      img {
-        height: 16px;
-      }
-      .efp {
-        /* position: relative; */
-        color: ${props => props.theme.primaryTextColor};
-        font-size: 14px;
-        width: max-content;
-        text-align: left;
-        font-family: "Source Sans Pro";
-        margin-left: 5px;
-        letter-spacing: -.03rem;
+      a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        img {
+          height: 16px;
+        }
+        .efp {
+          /* position: relative; */
+          color: ${props => props.theme.primaryTextColor};
+          font-size: 14px;
+          width: max-content;
+          text-align: left;
+          font-family: "Source Sans Pro";
+          margin-left: 5px;
+          letter-spacing: -0.03rem;
+        }
       }
     }
   }
@@ -91,7 +96,7 @@ export const EventCardStyle = styled.div`
       .eventcarddetail {
         font-size: 14px;
         margin-right: 5%;
-        width:75%;
+        width: 75%;
         text-align: justify;
       }
     }
@@ -103,7 +108,6 @@ export const EventCardStyle = styled.div`
       div {
         .efp {
           font-size: 12px;
-          
         }
       }
     }
