@@ -84,7 +84,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
   return (
     <NavbarStyle>
       <div className="nav-head-row">
-        <div className="col-6 start">
+        <div className="col-6 start" style={{fontSize:`14px`}}>
           <span>
             <Link to="/tenders">Tenders</Link>
             {` | `}
@@ -231,7 +231,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             activeClassName="nav-link-item-active"
             to="/students"
           >
-            <Dropdown title="Students" list={Navlist.students} />
+            <Dropdown title="For Students" list={Navlist.students} />
           </Link>
           <a
             className="nav-link-item "
