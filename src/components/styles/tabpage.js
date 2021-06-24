@@ -46,13 +46,13 @@ p {
     align-content: flex-start;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    .digital {
+    #digital {
       font-family: "Quicksand";
       h3 {
         color: ${props => props.theme.textColor} !important;
       }
       a {
-        color: ${props => props.theme.textColor};
+        color: ${props => props.theme.textColor} !important;
       }
     }
     .layoutrowmain {

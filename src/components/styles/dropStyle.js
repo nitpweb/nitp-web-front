@@ -4,7 +4,6 @@ export const DropStyle = styled.div`
   position: relative;
   display: inline-block;
   z-index: 100 !important;
-
   .links {
     display: none;
     position: absolute;
@@ -27,7 +26,6 @@ export const DropStyle = styled.div`
       margin-left: 0.5rem !important;
       margin-right: 0.5rem !important;
       transition: all 0.5s ease-in-out;
-      box-sizing: border-box;
       &:hover {
         border: 1px solid ${props => props.theme.border};
         background-color: ${props => props.theme.mainhover};
@@ -73,7 +71,7 @@ export const DropStyle = styled.div`
     color: white;
     font-family: "Source Sans Pro";
     font-size: 1vw;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.6;
     display: flex;
     &:hover{

@@ -10,7 +10,7 @@ import { useQueryParam } from "use-query-params"
 const Academicspage = () => {
   const [tab] = useQueryParam("tab")
   const [notices, setNotices] = useState()
-  const [view, setView] = useState("admissions")
+  const [view, setView] = useState("admission")
 
   function getView(callback) {
     setView(callback)
@@ -41,22 +41,23 @@ const Academicspage = () => {
           <div className="mainDiv">
             {view == "admissions" && (
               <div
-                className="layoutrow layoutrow1 rowmarl3"
+                className="layoutrow layoutrow1"
                 id="admission"
+                style={{ padding: `0 2rem` }}
               >
                 {/* <div className="col-6 imgcolstyle">
                   <img src="/test.svg" className="img-fluid" loading="lazy" />
                 </div> */}
                 <div>
-                  <div className="row">
+                  <div className="row rowmarr3">
                     <h1 style={{ margin: `0`, color: `darkred` }}>
                       Admissions
                     </h1>
                   </div>
                   {acadData.Admissions.map(e => (
-                    <div className="row rowmarr3 digital">
+                    <div className="row rowmarr3">
                       <div>
-                        <h3>{e.title}</h3>
+                        <h2>{e.title}</h2>
                         {e.data.map(item => (
                           <>
                             <a
@@ -261,22 +262,26 @@ const Academicspage = () => {
                 </table>
               </div>
             )}
-            {view == "format" && (
+            {view == "Format" && (
               <div className="layoutrow" id="format">
                 <div className="row rowmarl3">
                   <h1>Formats</h1>
                 </div>
-                
-                {
-                  acadData.format.map(item=>(
-                    item.data.map(e=>(
-                      <div className="row rowmarl3 digital">
-                      <p><a href={e.link} style={{textDecoration:`none`,color:`darkred`,fontWeight:`bold`}} target="_blank">Download</a> {e.para}</p>
-                      </div>
-                  ))
-                  ))
-                }
-                  
+                <div className="row rowmarl3">
+                    {notices != undefined
+                      ? notices.map(notice => {
+                          if (notice.title != "") {
+                            return (
+                              <Notice
+                                detail={notice.title}
+                                time={notice.openDate}
+                                attachments={notice.attachments}
+                              />
+                            )
+                          }
+                        })
+                      : null}
+                  </div>
                 <div className="row imgcolstyle backgroundimage">
                   <img src="/paper.svg" className="img-fluid" loading="lazy" />
                 </div>

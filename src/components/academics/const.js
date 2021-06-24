@@ -15,7 +15,7 @@ const AcademicsList = [
         img:"/mail.svg"
     }, {
         title: "Format",
-        data: "format",
+        data: "Format",
         img:"/paper.svg"
     }
 ]

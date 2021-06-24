@@ -92,12 +92,9 @@ const DataNotice = [
     heading: "Regulation & Curricula",
     title: "Notice related to Copyright transfer certificate (UG,PG & Ph.D)",
     data: [
-      {
-        link:
-          "http://www.nitp.ac.in/uploads20/Declaration_copyright_transfer_certificate.pdf",
-        para:
-          "Notice: regarding Declaration and Copyright transfer certificate (UG,PG & Ph.D) required to be included in the dissertation/thesis",
-      },
+      {link:"http://www.nitp.ac.in/uploads20/Declaration_copyright_transfer_certificate.pdf",
+      para:"Notice: regarding Declaration and Copyright transfer certificate (UG,PG & Ph.D) required to be included in the dissertation/thesis"
+    }
     ],
   },
 ]
@@ -447,117 +444,74 @@ const Admissions = [
 const Relaxation = [
   {
     heading: "Concessions",
-    data: [
-      {
-        title_main: "Concessions Provided for Students",
-        title: `Relaxation in minimum eligibilities:`,
-        para: `B. Tech. / B. Arch. Admission eligibility criteria for SC/ST/PH candidates are governed by CCB (Central Counseling Board).
-        M. Tech. admission eligibility criteria for SC/ST/PH candidates are governed by MHRD rules (on the basis of Grade Score).`,
-
-        title_list: `Reservation of seats`,
-        list: [
-          "15% seats are reserved for SC and 7.5% for ST candidates.",
-          "3% seats are reserved for PH candidates.",
-          "27% seats are reserved for OBC candidates.",
-        ],
-        title_end: "Concessions Provided for Staff",
-        para_end:
-          "Reservation in appointment and promotion to SC/ST/PH candidates as per Govt. of India rule is applicable at this Institute. Concession in application fee for appointment and age relaxation is also applicable at this Institute as per Govt. of India rules.",
-      },
-    ],
+    data: `Concessions Provided for Students
+        Relaxation in minimum eligibilities:
+        B. Tech. / B. Arch. Admission eligibility criteria for SC/ST/PH candidates are governed by CCB (Central Counseling Board).
+        M. Tech. admission eligibility criteria for SC/ST/PH candidates are governed by MHRD rules (on the basis of Grade Score).
+        
+        Reservation of seats
+        15% seats are reserved for SC and 7.5% for ST candidates.
+        3% seats are reserved for PH candidates.
+        27% seats are reserved for OBC candidates.
+        Concessions Provided for Staff
+        Reservation in appointment and promotion to SC/ST/PH candidates as per Govt. of India rule is applicable at this Institute. Concession in application fee for appointment and age relaxation is also applicable at this Institute as per Govt. of India rules.`,
   },
 ]
 const Refund = [
   {
     heading: "Refund Policy",
-    para: [
-      `Cancellations / Refund if any related to Regular Fee such as Semester Fee, Hostel Fee etc. respective section refund / cancellation rule will previal.`,
-      `Cancellation / Refund if any related to non-regular event such as workshop, conferences etc. will be notified by the concerned event co-ordinator.`,
-    ],
+    para: `Cancellations / Refund if any related to Regular Fee such as Semester Fee, Hostel Fee etc. respective section refund / cancellation rule will previal.
+
+        Cancellation / Refund if any related to non-regular event such as workshop, conferences etc. will be notified by the concerned event co-ordinator.`,
   },
 ]
 const Fee = [
   {
     heading: "Fee Structures",
     title: `UG/PG/PhD`,
-    data: [
-      {
-        para:
-          "PG: Revised fee component for M.Tech./M.Arch/MURP Programme from the Academic Session 2021-22 onwards ",
-        link:
-          "http://www.nitp.ac.in/uploads20/Fee%20Notification%2026.04.2021-26.04.2021.pdf",
-      },
-      {
-        para: "PG: Fee Structure for M.Tech./M.Arch/MURP for (Jan-June'2021)",
-        link: "http://www.nitp.ac.in/uploads20/Notification.pdf",
-      },
-
-      {
-        para: "UG : Fee Structure (2020-21)",
-        link: "http://www.nitp.ac.in/uploads20/Fee%20Structure_UG_PG_Ph.D.pdf",
-      },
-      {
-        para: "UG : Fee Structure (2018-19)",
-        link: "http://www.nitp.ac.in/uploads/Fee_Structure_All.pdf",
-      },
+    para: [
+      "PG: Revised fee component for M.Tech./M.Arch/MURP Programme from the Academic Session 2021-22 onwards ",
+      "PG: Fee Structure for M.Tech./M.Arch/MURP for (Jan-June'2021)",
+      "UG : Fee Structure (2020-21)",
+      "UG : Fee Structure (2018-19)",
+    ],
+    links: [
+      "http://www.nitp.ac.in/uploads20/Fee%20Notification%2026.04.2021-26.04.2021.pdf",
+      "http://www.nitp.ac.in/uploads20/Notification.pdf",
+      "http://www.nitp.ac.in/uploads20/Fee%20Structure_UG_PG_Ph.D.pdf",
+      "http://www.nitp.ac.in/uploads/Fee_Structure_All.pdf",
     ],
   },
   {
     heading: "Fee Structures",
     title: `Fee structure for MCA programme`,
-    data: [
-      {
-        para: "Regular.",
-        link:
-          "http://www.nitp.ac.in/uploads20/MCA%20Fee%20Structure%20%2021-22%20Regular.pdf",
-      },
-      {
-        para: "Self-financed.",
-        link:
-          "http://www.nitp.ac.in/uploads20/MCA%20Fee%20Structure%20%2021-22%20SelfFinanced.pdf",
-      },
+    para: ["Regular.", "Self-financed."],
+    links: [
+      "http://www.nitp.ac.in/uploads20/MCA%20Fee%20Structure%20%2021-22%20Regular.pdf",
+      "http://www.nitp.ac.in/uploads20/MCA%20Fee%20Structure%20%2021-22%20SelfFinanced.pdf",
     ],
   },
 ]
 const Format = [
   {
     heading: "Format",
-    data: [
-      {
-        para: "Guidelines cum checklist to get process of academic document",
-        link:
-          "http://nitp.ac.in/downloads/Guidelines%20cum%20checklist%20to%20get%20process%20of%20academic%20document.pdf",
-      },
-      {
-        para:
-          "Format for issue of Grade Card / Provisional / Transcript from Exam Section",
-        link:
-          "http://nitp.ac.in/downloads/exam/Format%20for%20Grade%20Card01.10.2020.pdf",
-      },
-      {
-        para: "1-Procedure to get an Original Degree from the Institute",
-        link: "http://nitp.ac.in/uploads20/Degree_sop.pdf",
-      },
-      {
-        para:
-          "2-Procedure to get Institute Leaving/Transfer Cum Migration certificate",
-        link: "http://nitp.ac.in/uploads20/migration_sop.pdf",
-      },
-      {
-        para:
-          "3-Procedure for refund/adjustment of DRCC Bihar student credit card loan along with application form.",
-        link:
-          "http://nitp.ac.in/uploads20/Revised_sop_DRCC_REFUND-26.03.2021.pdf",
-      },
-      {
-        para:
-          "4-Procedure for issue of Demand Letter for Bank/DRCC student credit card loan.",
-        link: "http://nitp.ac.in/uploads20/demand_letter_sop.pdf",
-      },
-      {
-        para: "5-Procedure for Educational verification of Students.",
-        link: "http://nitp.ac.in/uploads20/verification_sop.pdf",
-      },
+    para: [
+      "Download Guidelines cum checklist to get process of academic document",
+      "Download Format for issue of Grade Card / Provisional / Transcript from Exam Section",
+      "Download 1-Procedure to get an Original Degree from the Institute",
+      "Download 2-Procedure to get Institute Leaving/Transfer Cum Migration certificate",
+      "Download 3-Procedure for refund/adjustment of DRCC Bihar student credit card loan along with application form.",
+      "Download 4-Procedure for issue of Demand Letter for Bank/DRCC student credit card loan.",
+      "Download 5-Procedure for Educational verification of Students.",
+    ],
+    links: [
+      "http://nitp.ac.in/downloads/Guidelines%20cum%20checklist%20to%20get%20process%20of%20academic%20document.pdf",
+      "http://nitp.ac.in/downloads/exam/Format%20for%20Grade%20Card01.10.2020.pdf",
+      "http://nitp.ac.in/uploads20/Degree_sop.pdf",
+      "http://nitp.ac.in/uploads20/migration_sop.pdf",
+      "http://nitp.ac.in/uploads20/Revised_sop_DRCC_REFUND-26.03.2021.pdf",
+      "http://nitp.ac.in/uploads20/demand_letter_sop.pdf",
+      "http://nitp.ac.in/uploads20/verification_sop.pdf",
     ],
   },
 ]
