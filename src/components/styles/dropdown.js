@@ -8,7 +8,7 @@ export const DropdownStyle = styled.div`
     color: ${props => props.theme.dropText};
     font-family: "Source Sans Pro";
     font-size: 1vw;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.6;
     display: flex;
   }
@@ -40,13 +40,14 @@ export const DropdownStyle = styled.div`
     transition: 0.05s;
   }
   .dropdown-content {
-    font-size: 1vw;
+    font-size: 14px;
+    font-weight: 400;
     opacity: 1;
 
     a {
       display: flex;
       justify-content: center;
-      padding: 8px;
+      padding: 5px 6px;
       text-decoration: none;
       display: block;
       font-size: 14px;
