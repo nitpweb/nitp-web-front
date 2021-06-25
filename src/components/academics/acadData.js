@@ -561,7 +561,240 @@ const Format = [
     ],
   },
 ]
+const CourseUG = [
+  {
+    title: "UG Course Structure",
+    data: [
+      {
+        para: "Bachelor of Architecture (ARUG)",
+        link: "http://www.nitp.ac.in/downloads/course_structure/ARUG.pdf",
+      },
+      {
+        para: "Bachelor of Civil Engineering (CEUG)",
+        link: "http://www.nitp.ac.in/downloads/course_structure/CEUG.pdf",
+      },
+      {
+        para: "Bachelor of Computer Science & Engineering (CSUG)",
+        link: "http://www.nitp.ac.in/downloads/course_structure/CSUG.pdf",
+      },
+      {
+        para: "CSUG 2018-19",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/CSUG_2018_19.pdf",
+      },
+      {
+        para: "Bachelor of Electronics & Communication Engineering (ECUG)",
+        link: "http://www.nitp.ac.in/downloads/course_structure/ECUG.pdf",
+      },
+      {
+        para: "ECUG 2018-19",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/ECUG_2018_19.pdf",
+      },
+      {
+        para: "Bachelor of Electrical Engineering (EEUG) for 2014 & 2015 Batch",
+        link: "http://www.nitp.ac.in/downloads/course_structure/EEUG.pdf",
+      },
+      {
+        para: "Bachelor of Mechanical Engineering (MEUG)",
+        link: "http://www.nitp.ac.in/downloads/course_structure/MEUG.pdf",
+      },
+      {
+        para: "MEUG 2018-19",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/MEUG_2018_19.pdf",
+      },
+      {
+        para: "Bachelor of Information Technology (ITUG)",
+        link: "http://www.nitp.ac.in/downloads/course_structure/ITUG.pdf",
+      },
+    ],
+  },
+]
 
+const CoursePG = [
+  {
+    title: "PG (M.tech/MURP) Course Structure",
+    data: [
+      {
+        para: "M. Tech (Civil Engg.) in Environmental Engineering",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/MTech_Civil_%20ENV%20Syllabus%20wef%202020-05.10.2020.pdf",
+      },
+      {
+        para: "M.TECH. IN CIVIL ENGINEERING",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/MTech_Civil_%20GET%20Syllabus%20wef%202020-05.10.2020.pdf",
+      },
+      {
+        para: "Master in Civil Engineering (River)",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/CEPG%20(River).pdf",
+      },
+      {
+        para: "M. Tech (Civil Engg.) in Structural Engineering",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/MTech_Civil_%20STE%20Syllabus%20wef%202020-05.10.2020.pdf",
+      },
+      {
+        para: "M.TECH. IN CIVIL ENGINEERING (TRANSPORTATION)",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/MTech_Civil_%20TRE%20Syllabus%20wef%202020-05.10.2020.pdf",
+      },
+      {
+        para: "CEPG (Water Resources)",
+        link: "#",
+      },
+      {
+        para: "Master in Computer Science & Technology",
+        link: "http://www.nitp.ac.in/downloads/course_structure/CSPG.pdf",
+      },
+      {
+        para: "ECPG (Communication)",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/ECPG%20(Communication).pdf",
+      },
+      {
+        para: "ECPG (VLSI)",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/ECPG%20(VLSI).pdf",
+      },
+      {
+        para: "EE (Power System)",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/EE%20(Power%20System).pdf",
+      },
+      {
+        para: "EEPG (Control System)",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/EEPG%20(Control%20System).pdf",
+      },
+      {
+        para: "Master in Information Technology",
+        link: "http://www.nitp.ac.in/downloads/course_structure/ITPG.pdf",
+      },
+      {
+        para: "MAPG",
+        link: "http://www.nitp.ac.in/downloads/course_structure/MAPG.pdf",
+      },
+      {
+        para: "Master of Mechanical Engineering (MEPG) Production",
+        link: "http://www.nitp.ac.in/downloads/course_structure/MEPG%20(Production).pdf",
+      },
+      {
+        para: "MEPG (Thermal)",
+        link: "http://www.nitp.ac.in/downloads/course_structure/MEPG%20(Thermal).pdf",
+      },
+      {
+        para: "Master of Mechanical Engineering (MEPG) Design",
+        link: "http://www.nitp.ac.in/downloads/course_structure/MEUG%20(Design).pdf",
+      },
+      {
+        para: "Master of Urban & Regional Planning",
+        link: "http://www.nitp.ac.in/downloads/course_structure/MURP.pdf",
+      },
+    ],
+  },
+]
+
+const CoursePHD = [
+  {
+    title: "M.tech/MURP-PHD (DD)",
+    data: [
+      {
+        para: "Master of Urban & Regional Planning (MURP)-DD",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/ARPG%20DD.pdf",
+      },
+      {
+        para: "Master of Civil Engineering (CEPG) Enviormental-DD",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/CEPG%20(Enviormental)%20DD.pdf",
+      },
+      {
+        para: "Master of Civil Engineering (CEPG) Geotechnical-DD ",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/CEPG%20(Geotechnical)%20DD.pdf",
+      },
+      {
+        para: "Master of Civil Engineering (CEPG) Structural-DD",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/CEPG%20(Structural)%20DD.pdf",
+      },
+      {
+        para: "Master of Civil Engineering (CEPG) Transportation-DD",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/CEPG%20(Transportation)%20DD.pdf",
+      },
+      {
+        para: "Master of Civil Engineering (CEPG) Water Resources-DD",
+        link: "http://www.nitp.ac.in/downloads/course_structure/CEPG%20(Water%20Resources)%20DD.pdf",
+      },
+      {
+        para: "Master of Computer Science & Engineering (CSPG)-DD",
+        link: "http://www.nitp.ac.in/downloads/course_structure/CSPG-%20DD.pdf",
+      },
+      {
+        para: "Master of Electronics & Communication (ECPG) Communication System-DD",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/ECPG%20(Communication)%20DD.pdf",
+      },
+      {
+        para: "Master of Civil Engineering (ECPG) Microelectronics & VLSI-DD",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/ECPG%20(VLSI)%20DD.pdf",
+      },
+      {
+        para: "Master of Electrical Engineering (EEUG) Control System- DD",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/EE%20(Control%20System)%20DD.pdf",
+      },
+      {
+        para: "Master of Electrical Engineering (EEUG) Power System- DD",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/EE%20(Power)%20DD.pdf",
+      },
+      {
+        para: "Master of Information Technology (ITPG)-DD",
+        link: "http://www.nitp.ac.in/downloads/course_structure/ITPG%20DD.pdf",
+      },
+      {
+        para: "Master of Mechanical Engineering (MEPG) Design-DD",
+        link: "http://www.nitp.ac.in/downloads/course_structure/ME%20(Design)%20DD.pdf",
+      },
+      {
+        para: "Master of Mechanical Engineering (MEPG) Production-DD",
+        link: "http://www.nitp.ac.in/downloads/course_structure/ME%20(Production)%20DD.pdf",
+      },
+      {
+        para: "Master of Mechanical Engineering (MEPG) Thermal Engineering-DD",
+        link: "http://www.nitp.ac.in/downloads/course_structure/ME%20(Thermal)%20DD.pdf",
+      },
+    ],
+  },
+]
+const CourseMsc = [
+  {
+    title: "Integrated M.sc",
+    data: [
+      {
+        para: "Course Structure: Five year Integrated M. Sc. in Physics",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/Int.%20M.Sc.%20(Physics).pdf",
+      },
+      {
+        para: "Course Structure: Five year Integrated M. Sc. in Mathematics ",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/Int.%20M.Sc.%20(Mathematics).pdf",
+      },
+      {
+        para: "Course Structure: Five year Integrated M. Sc. in Chemistry",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/Int.%20M.Sc.%20(Chemistry).pdf",
+      },
+    ],
+  },
+]
 const acadData = {
   datad: Datad,
   dataUG: DataUG,
@@ -574,5 +807,9 @@ const acadData = {
   refund: Refund,
   fee: Fee,
   format: Format,
+  courseMsc:CourseMsc,
+  coursePG:CoursePG,
+  courseUG:CourseUG,
+  coursePHD:CoursePHD,
 }
 export default acadData
