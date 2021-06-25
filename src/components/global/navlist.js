@@ -183,22 +183,27 @@ const Academics = [
     url: "/academics",
     title: "Academics",
     data: "",
-    id: "one",
+    id: "four",
     sub: [
       {
-        url: "http://web.nitp.ac.in/ict/index.php",
-        title: "ICT Academy",
+        url: "/academics",
+        title: "Academic Notices",
+        data: "Notices",
+      },
+      {
+        url: "http://www.nitp.ac.in/uploads21/Academic_calendar_2021_2022.pdf",
+        title: "Academic Calendar",
         data: "",
       },
       {
         url: "/newacad",
-        title: "Digital Initiatives",
-        data: "digital",
+        title: "Fee Structure",
+        data: "fee",
       },
       {
-        url: "/newacad",
-        title: "Regulation & Curricula",
-        data: "curricula",
+        url: "/academics",
+        title: "Format of Official Documents",
+        data: "format",
       },
     ],
   },
@@ -209,14 +214,24 @@ const Academics = [
     id: "two",
     sub: [
       {
-        url: "",
-        title: "UG",
-        data: "",
+        url: "/courselist",
+        title: "UG Course",
+        data: "ug",
       },
       {
-        url: "",
-        title: "PG",
-        data: "",
+        url: "/courselist",
+        title: "PG (M.tech/MURP) Course",
+        data: "pg",
+      },
+      {
+        url: "/courselist",
+        title: "M.tech/MURP-PHD (DD)",
+        data: "phd",
+      },
+      {
+        url: "/courselist",
+        title: "Integrated M.sc",
+        data: "imsc",
       },
     ],
   },
@@ -247,27 +262,22 @@ const Academics = [
     url: "/academics",
     title: "Academics",
     data: "",
-    id: "four",
+    id: "one",
     sub: [
       {
-        url: "/academics",
-        title: "Academic Notices",
-        data: "Notices",
-      },
-      {
-        url: "http://www.nitp.ac.in/uploads21/Academic_calendar_2021_2022.pdf",
-        title: "Academic Calendar",
+        url: "http://web.nitp.ac.in/ict/index.php",
+        title: "ICT Academy",
         data: "",
       },
       {
         url: "/newacad",
-        title: "Fee Structure",
-        data: "fee",
+        title: "Digital Initiatives",
+        data: "digital",
       },
       {
-        url: "/academics",
-        title: "Format of Official Documents",
-        data: "format",
+        url: "/newacad",
+        title: "Regulation & Curricula",
+        data: "curricula",
       },
     ],
   },
@@ -292,42 +302,42 @@ const Academics = [
   // },
 ]
 
-const Faculty=[
+const Faculty = [
   {
-    url:"#",
-    title:"Web-mail",
-    data:"",
+    url: "#",
+    title: "Web-mail",
+    data: "",
   },
   {
-    url:"http://exam.nitp.ac.in/",
-    title:"Chanakya Portal",
-    data:"",
+    url: "http://exam.nitp.ac.in/",
+    title: "Chanakya Portal",
+    data: "",
   },
   {
-    url:"#",
-    title:"Recruitments",
-    data:"",
+    url: "#",
+    title: "Recruitments",
+    data: "",
   },
   {
-    url:"#",
-    title:"Employee I-Card",
-    data:"",
+    url: "#",
+    title: "Employee I-Card",
+    data: "",
   },
   {
-    url:"#",
-    title:"Staff Claim Form",
-    data:"",
+    url: "#",
+    title: "Staff Claim Form",
+    data: "",
   },
   {
-    url:"#",
-    title:"Faculty Login",
-    data:"",
+    url: "#",
+    title: "Faculty Login",
+    data: "",
   },
   {
-    url:"#",
-    title:"Facilities",
-    data:"",
-  }
+    url: "#",
+    title: "Facilities",
+    data: "",
+  },
 ]
 
 const Students = [
@@ -491,6 +501,6 @@ const Navlist = {
   students: Students,
   facilities: Facilities,
   home: Home,
-  faculty:Faculty,
+  faculty: Faculty,
 }
 export default Navlist

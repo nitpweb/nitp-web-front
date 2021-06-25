@@ -76,7 +76,8 @@ const Academicspage = () => {
               </div>
             )}
             {view == "programmes" && (
-              <div>
+              <div className="digital">
+                <h3>Names of the approved programmes</h3>
                 <table align="center">
                   <tbody>
                     <tr>
