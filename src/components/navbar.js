@@ -200,7 +200,6 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           <div
             className="nav-link-item"
             activeClassName="nav-link-item-active"
-            to="/academics"
           >
             <Dropnew
               to="/academics"
@@ -216,6 +215,12 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           >
             <Dropdown title="Administration" list={Navlist.admin} />
           </Link>
+          <div
+            className="nav-link-item"
+            activeClassName="nav-link-item-active"
+          >
+            <Dropdown title="For Faculty & Staff" list={Navlist.faculty} />
+          </div>
         </div>
         <div className="col-6">
           <Dropdown title="Departments" list={Navlist.departments} />

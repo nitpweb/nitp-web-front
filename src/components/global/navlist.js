@@ -292,6 +292,44 @@ const Academics = [
   // },
 ]
 
+const Faculty=[
+  {
+    url:"#",
+    title:"Web-mail",
+    data:"",
+  },
+  {
+    url:"http://exam.nitp.ac.in/",
+    title:"Chanakya Portal",
+    data:"",
+  },
+  {
+    url:"#",
+    title:"Recruitments",
+    data:"",
+  },
+  {
+    url:"#",
+    title:"Employee I-Card",
+    data:"",
+  },
+  {
+    url:"#",
+    title:"Staff Claim Form",
+    data:"",
+  },
+  {
+    url:"#",
+    title:"Faculty Login",
+    data:"",
+  },
+  {
+    url:"#",
+    title:"Facilities",
+    data:"",
+  }
+]
+
 const Students = [
   {
     url: "http://mail.google.com/a/nitp.ac.in",
@@ -453,5 +491,6 @@ const Navlist = {
   students: Students,
   facilities: Facilities,
   home: Home,
+  faculty:Faculty,
 }
 export default Navlist
