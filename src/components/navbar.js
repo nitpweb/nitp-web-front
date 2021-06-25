@@ -215,12 +215,13 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           >
             <Dropdown title="Administration" list={Navlist.admin} />
           </Link>
-          <div
+          <Link
             className="nav-link-item"
             activeClassName="nav-link-item-active"
+            to="/"
           >
             <Dropdown title="For Faculty & Staff" list={Navlist.faculty} />
-          </div>
+          </Link>
         </div>
         <div className="col-6">
           <Dropdown title="Departments" list={Navlist.departments} />
