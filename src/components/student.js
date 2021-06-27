@@ -47,7 +47,7 @@ const Studentpage = () => {
         console.log(e)
       })
     Navlist.students.forEach(x => {
-      x.data === tab ? setView(tab) : ""
+      tab?x.data === tab ? setView(tab) : "":""
     })
   }, [tab])
 

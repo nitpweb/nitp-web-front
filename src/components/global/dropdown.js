@@ -2,12 +2,12 @@ import { Link } from "gatsby"
 import { DropdownStyle } from "../styles/dropdown"
 import DynamicLink from "./dynamicurl"
 
-export const Dropdown = ({ title, list }) => {
+export const Dropdown = ({ to,title, list,idname }) => {
   return (
     <>
       <DropdownStyle className="dropdown nav-link-div">
-        <button className="dropbtn nav-link-div nav-link-item">{title}</button>
-        <div className="dropdown-content">
+        <Link className="dropbtn nav-link-div nav-link-item" to={to?to:"/"}>{title}</Link>
+        <div className="dropdown-content" id={idname}>
           {list.map(item => (
             <>
               <DynamicLink url={item.url} data={item.data} title={item.title} />

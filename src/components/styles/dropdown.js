@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const DropdownStyle = styled.div`
+#rightlink{
+  margin-left:calc(-275px + 8vw);
+}
   .dropbtn {
     background: transparent;
     border: none;
@@ -11,17 +14,23 @@ export const DropdownStyle = styled.div`
     font-weight: 400;
     line-height: 1.6;
     display: flex;
+    &:hover{
+      color: tomato !important;
+    }
+    &:focus{
+      color: tomato !important;
+    }
   }
 
   .dropdown {
     position: relative;
     display: inline-block;
   }
-
+   
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: ${props => props.theme.dropColor};
+    background-color: ${props => props.theme.bgnew};
     min-width: 175px;
     color: ${props => props.theme.dropText};
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);

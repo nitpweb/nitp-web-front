@@ -3,13 +3,13 @@ import { DropStyle } from "../styles/dropStyle"
 import { Link } from "gatsby"
 import DynamicLink from "./dynamicurl"
 
-const Dropnew = ({ to, title, list }) => {
+const Dropnew = ({ to, title, list, idname }) => {
   return (
     <DropStyle>
       <Link to={to} className="title_main">
         {title}
       </Link>
-      <div className="links">
+      <div className="links" id={idname}>
         {list.map(item => (
           <div className="content">
             <DynamicLink
