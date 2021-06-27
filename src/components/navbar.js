@@ -200,31 +200,39 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           <div
             className="nav-link-item"
             activeClassName="nav-link-item-active"
+            
+          >
+            <Dropdown to="/administration" title="Administration" list={Navlist.admin} />
+          </div>
+          <div
+            className="nav-link-item"
+            activeClassName="nav-link-item-active"
           >
             <Dropnew
               to="/academics"
               title="Academics"
               list={Navlist.academics}
+              idname="right-link"
             />
           </div>
+          <Dropdown title="Departments" list={Navlist.departments} idname="rightlink"/>
 
-          <Link
+        </div>
+        <div className="col-6">
+        <div
             className="nav-link-item"
             activeClassName="nav-link-item-active"
-            to="/administration"
+            
           >
-            <Dropdown title="Administration" list={Navlist.admin} />
-          </Link>
-          <Link
+            <Dropdown to="/students" title="For Students" list={Navlist.students} />
+          </div>
+        <Link
             className="nav-link-item"
             activeClassName="nav-link-item-active"
             to="/"
           >
             <Dropdown title="For Faculty & Staff" list={Navlist.faculty} />
           </Link>
-        </div>
-        <div className="col-6">
-          <Dropdown title="Departments" list={Navlist.departments} />
           <Link
             className="nav-link-item"
             activeClassName="nav-link-item-active"
@@ -232,13 +240,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           >
             <Dropdown title="Facilities" list={Navlist.facilities} />
           </Link>
-          <Link
-            className="nav-link-item"
-            activeClassName="nav-link-item-active"
-            to="/students"
-          >
-            <Dropdown title="For Students" list={Navlist.students} />
-          </Link>
+          
           <a
             className="nav-link-item "
             activeClassName="nav-link-item-active"
@@ -419,12 +421,12 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
               <div className="departsidedrop">
                 {Navlist.academics.map(item => (
                   <div
-                    to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
                     className="mainLink"
                     onClick={function () {
                       var z = document.querySelector(`#sub${item.id}`)
                       if (z.style.display === "none") {
                         z.style.display = "flex"
+                        // document.location.href=`${item.url}${item.name ? `?tab=${item.name}` : ""}`
                       } else {
                         z.style.display = "none"
                       }
@@ -676,15 +678,16 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             <div className="departsidedrop">
               {Navlist.academics.map(item => (
                 <div
-                  to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
                   className="mainLink"
                   onClick={function () {
                     var z = document.querySelector(`#sub${item.id}`)
                     if (z.style.display === "none") {
                       z.style.display = "flex"
+                      // document.location.href=`${item.url}${item.name ? `?tab=${item.name}` : ""}`
                     } else {
                       z.style.display = "none"
                     }
+                    
                   }}
                 >
                   <p>
