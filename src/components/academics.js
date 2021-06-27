@@ -49,7 +49,7 @@ const Academicspage = () => {
                 </div> */}
                 <div>
                   <div className="row">
-                    <h1 style={{ margin: `0`, color: `darkred` }}>
+                    <h1 style={{ marginBottom: `1rem`}}>
                       Admissions
                     </h1>
                   </div>
@@ -272,7 +272,7 @@ const Academicspage = () => {
                   acadData.format.map(item=>(
                     item.data.map(e=>(
                       <div className="row rowmarl3 digital">
-                      <p><a href={e.link} style={{textDecoration:`none`,color:`darkred`,fontWeight:`bold`}} target="_blank">Download</a> {e.para}</p>
+                      <p><a id="formatdown" href={e.link} style={{textDecoration:`none`,fontWeight:`bold`}} target="_blank">Download</a> {e.para}</p>
                       </div>
                   ))
                   ))
