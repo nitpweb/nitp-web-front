@@ -383,8 +383,8 @@ export const NavbarStyle = styled.div`
     font-family: "Source Sans Pro";
     font-size: ${props => parseInt(props.theme.font * 16)}px;
     line-height: 1;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
   .navsideicondiv {
     width: 15%;

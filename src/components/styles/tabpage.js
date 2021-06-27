@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const TabPage = styled.div`
+  text-align: justify;
   width: 100vw;
   height: 80vh;
   position: relative;
@@ -24,7 +25,7 @@ p {
     padding: 8px;
   }
   table {
-    font-family: arial, sans-serif;
+    font-family: "Source Sans Pro";
     border-collapse: collapse;
     width: 100%;
     color: ${props => props.theme.textColor};
@@ -47,12 +48,15 @@ p {
     -ms-overflow-style: none;
     scrollbar-width: none;
     .digital {
-      font-family: "Quicksand";
+      font-family: "Source Sans Pro";
       h3 {
-        color: ${props => props.theme.textColor} !important;
+        color: ${props => props.theme.primaryColor} !important;
       }
       a {
         color: ${props => props.theme.textColor};
+      }
+      #formatdown{
+        color: ${props => props.theme.primaryColor};
       }
     }
     .layoutrowmain {

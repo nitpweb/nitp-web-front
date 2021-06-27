@@ -11,7 +11,7 @@ import { useQueryParam } from "use-query-params"
 
 const Administrationpage = () => {
   const [tab] = useQueryParam("tab")
-  const [view, setView] = useState("administration")
+  const [view, setView] = useState("director")
   const [content, setContent] = useState([])
   const CardData = ["deans", "bog", "bwc", "idc", "fc", "senate", "suh"]
 
@@ -20,7 +20,7 @@ const Administrationpage = () => {
   }
   useEffect(() => {
     Admin.forEach(x => {
-      x.data === tab ? setView(tab) : "director"
+      tab?x.data === tab ? setView(tab) : "":setView("director")
     })
   }, [tab])
 

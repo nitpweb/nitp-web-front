@@ -5,18 +5,18 @@ export const DropStyle = styled.div`
   display: inline-block;
   z-index: 100 !important;
 
+  #right-link{
+    margin-left:calc(-415px + 8vw);
+  }
+  
   .links {
     display: none;
     position: absolute;
-    max-height: 75vh;
+    max-height: 420px;
     background-color: ${props => props.theme.bgnew};
-    min-height: fit-content;
-    width: 415px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 0;
-    flex-direction: row;
-    flex-wrap: wrap;
-    z-index: 10;
+    width:420px;
 
     .content {
       display: flex;
@@ -44,6 +44,7 @@ export const DropStyle = styled.div`
         align-items: center;
         background-color:${props => props.theme.bgmain};
         color: white;
+        justify-content: center;
         font-size: 16px;
         font-weight:400;
       }
@@ -77,12 +78,20 @@ export const DropStyle = styled.div`
     line-height: 1.6;
     display: flex;
     &:hover{
-      color: white !important;
+      color: tomato !important;
+    }
+    &:focus{
+      color: tomato !important;
     }
   }
   &:hover .links {
     display: flex;
     opacity: 1;
     transition: 0.05s;
+    align-items:flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    z-index: 10;
   }
 `

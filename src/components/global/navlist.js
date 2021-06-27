@@ -181,34 +181,6 @@ const About = [
 const Academics = [
   {
     url: "/academics",
-    title: "Academics",
-    data: "",
-    id: "four",
-    sub: [
-      {
-        url: "/academics",
-        title: "Academic Notices",
-        data: "Notices",
-      },
-      {
-        url: "http://www.nitp.ac.in/uploads21/Academic_calendar_2021_2022.pdf",
-        title: "Academic Calendar",
-        data: "",
-      },
-      {
-        url: "/newacad",
-        title: "Fee Structure",
-        data: "fee",
-      },
-      {
-        url: "/academics",
-        title: "Format of Official Documents",
-        data: "format",
-      },
-    ],
-  },
-  {
-    url: "/academics",
     title: "Programme Structure",
     data: "programmes",
     id: "two",
@@ -262,8 +234,28 @@ const Academics = [
     url: "/academics",
     title: "Academics",
     data: "",
-    id: "one",
+    id: "four",
     sub: [
+      {
+        url: "/academics",
+        title: "Academic Notices",
+        data: "Notices",
+      },
+      {
+        url: "http://www.nitp.ac.in/uploads21/Academic_calendar_2021_2022.pdf",
+        title: "Academic Calendar",
+        data: "",
+      },
+      {
+        url: "/newacad",
+        title: "Fee Structure",
+        data: "fee",
+      },
+      {
+        url: "/academics",
+        title: "Format of Official Documents",
+        data: "format",
+      },
       {
         url: "http://web.nitp.ac.in/ict/index.php",
         title: "ICT Academy",
@@ -281,6 +273,29 @@ const Academics = [
       },
     ],
   },
+  // {
+  //   url: "/academics",
+  //   title: "Academics",
+  //   data: "",
+  //   id: "one",
+  //   sub: [
+  //     {
+  //       url: "http://web.nitp.ac.in/ict/index.php",
+  //       title: "ICT Academy",
+  //       data: "",
+  //     },
+  //     {
+  //       url: "/newacad",
+  //       title: "Digital Initiatives",
+  //       data: "digital",
+  //     },
+  //     {
+  //       url: "/newacad",
+  //       title: "Regulation & Curricula",
+  //       data: "curricula",
+  //     },
+  //   ],
+  // },
   // {
   //   url: "http://web.nitp.ac.in/ict/index.php",
   //   title: "ICT Academy",
