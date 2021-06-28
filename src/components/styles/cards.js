@@ -43,12 +43,6 @@ export const CardsStyle = styled.div`
     h1 {
       color: ${props => props.theme.textColor};
     }
-    #dir {
-      line-height: 1.5;
-      letter-spacing: 1px;
-      padding-right: 3vw;
-      padding-top: 50px;
-    }
     .fac-card {
       width: 90%;
       margin-top: 3vh;
@@ -56,27 +50,12 @@ export const CardsStyle = styled.div`
       background:${props => props.theme.backgroundColor};
       box-shadow: 0px 0px 18px rgba(156, 156, 156, 0.38);
       border-radius: 5px;
-      padding-left: 5%;
+      padding:0% 5%;
       padding-bottom: 15px;
       font-family: "Source Sans Pro";
       list-style: disc;
       h3 {
         color: #2f2f2f;
-      }
-      .factable {
-        overflow: hidden;
-        max-width: 90%;
-        overflow-x: scroll;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-      }
-      .factable:-webkit-scrollbar {
-        width: 0px;
-        background: transparent;
-      }
-      table {
-        min-width: 90%;
-        width: 90%;
       }
     }
   }
@@ -85,7 +64,9 @@ export const CardsStyle = styled.div`
       width: 100%;
       .fac-card {
         width: 98%;
-        padding-left: 0;
+        div{
+          width: 90%;
+        }
       }
     }
   }
