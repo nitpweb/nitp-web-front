@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const HomeStyle = styled.div`
-
   background-color: ${props => props.theme.backgroundColor};
   .nitpbackimg {
     width: 100%;
@@ -35,7 +34,7 @@ export const HomeStyle = styled.div`
     max-height: 90vh;
     position: relative;
   }
-  #notice-event{
+  #notice-event {
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -112,9 +111,9 @@ export const HomeStyle = styled.div`
       text-decoration: none;
     }
   }
-.news-head{
-padding: 0 6vw 0 8.5vw;
-}
+  .news-head {
+    padding: 0 6vw 0 8.5vw;
+  }
 
   .gallery-head {
     margin-left: 8vw;
@@ -127,13 +126,18 @@ padding: 0 6vw 0 8.5vw;
     height: 400px;
   }
   @media (max-width: 768px) {
+    #notice-event {
+      flex-direction: column;
+      display: flex;
+    }
     .notice-row,
     .event-row,
     .notice-head,
     .event-head {
-      width: 90vw;
-      margin-left: 5vw;
+      padding:0vw 5vw;
+      width: calc(100% - 10vw);
     }
+
     .tablinkcover,
     .tablink {
       display: flex;
