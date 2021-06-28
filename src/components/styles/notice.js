@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const NoticeStyle = styled.div`
-  width: 90%;
+  width: 100%;
   height: fit-content;
   padding: 5px 15px 5px 15px;
   background: ${props => props.theme.backgroundSecColor};

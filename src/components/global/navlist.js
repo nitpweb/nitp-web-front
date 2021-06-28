@@ -186,24 +186,24 @@ const Academics = [
     id: "two",
     sub: [
       {
-        url: "/courselist",
+        url: "/academics",
         title: "UG Course",
-        data: "ug",
+        data: "programmesug",
       },
       {
-        url: "/courselist",
+        url: "/academics",
         title: "PG (M.tech/MURP) Course",
-        data: "pg",
+        data: "programmespg",
       },
       {
-        url: "/courselist",
+        url: "/academics",
         title: "M.tech/MURP-PHD (DD)",
-        data: "phd",
+        data: "programmesdd",
       },
       {
-        url: "/courselist",
+        url: "/academics",
         title: "Integrated M.sc",
-        data: "imsc",
+        data: "programmesimsc",
       },
     ],
   },
@@ -224,7 +224,7 @@ const Academics = [
         data: "concession",
       },
       {
-        url: "/newacad",
+        url: "/academics",
         title: "Refund Rules",
         data: "refund",
       },
@@ -247,7 +247,7 @@ const Academics = [
         data: "",
       },
       {
-        url: "/newacad",
+        url: "/academics",
         title: "Fee Structure",
         data: "fee",
       },
@@ -262,12 +262,12 @@ const Academics = [
         data: "",
       },
       {
-        url: "/newacad",
+        url: "/academics",
         title: "Digital Initiatives",
         data: "digital",
       },
       {
-        url: "/newacad",
+        url: "/academics",
         title: "Regulation & Curricula",
         data: "curricula",
       },
@@ -285,12 +285,12 @@ const Academics = [
   //       data: "",
   //     },
   //     {
-  //       url: "/newacad",
+  //       url: "/academics",
   //       title: "Digital Initiatives",
   //       data: "digital",
   //     },
   //     {
-  //       url: "/newacad",
+  //       url: "/academics",
   //       title: "Regulation & Curricula",
   //       data: "curricula",
   //     },
