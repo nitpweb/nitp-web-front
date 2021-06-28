@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const EventCardStyle = styled.div`
-  width: 90%;
+  width: 100%;
   padding: 5px 15px 5px 15px;
   background: ${props => props.theme.backgroundSecColor};
   border-radius: 5px;
@@ -48,6 +48,7 @@ export const EventCardStyle = styled.div`
     }
   }
   .eventcarddetailsection {
+    width:calc(100% - 77px);
     flex-direction: column;
     .eventcarddetail {
       margin-left: 5%;
@@ -92,6 +93,7 @@ export const EventCardStyle = styled.div`
   }
 
   @media (max-width: 768px) {
+    width: auto;
     .eventcarddetailsection {
       .eventcarddetail {
         font-size: 14px;

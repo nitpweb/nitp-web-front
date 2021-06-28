@@ -47,6 +47,38 @@ p {
     align-content: flex-start;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    .probutton{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      overflow-x: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      .btnactive{
+        background-color: white;
+          color:${props => props.theme.primaryColor};
+      }
+      button{
+        background-color: ${props => props.theme.primaryColor};
+        border: none;
+        margin-right: 5px;
+        display: grid;
+        place-items: center;
+        color: white;
+        height: 30px !important;
+        width: max-content !important;
+        font-family: "Source Sans Pro";
+        border: 1px solid ${props => props.theme.primaryColor};
+        &:focus{
+          background-color: white;
+          color:${props => props.theme.primaryColor};
+        }
+      }
+      &::-webkit-scrollbar {
+      display: none;
+    }
+    }
     .digital {
       font-family: "Source Sans Pro";
       h3 {

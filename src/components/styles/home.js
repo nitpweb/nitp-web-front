@@ -35,6 +35,11 @@ export const HomeStyle = styled.div`
     max-height: 90vh;
     position: relative;
   }
+  #notice-event{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
   .notice-row {
     display: -ms-flexbox;
     display: flex;
@@ -44,10 +49,6 @@ export const HomeStyle = styled.div`
     width: 40vw;
     height: 500px;
     z-index: 1;
-    // padding-bottom: 6vh;
-    margin-left: 8vw;
-    // margin-bottom: 5vh;
-    border-radius: 3px;
     display: flex;
     justify-content: flex-start;
     overflow-x: hidden;
@@ -67,9 +68,6 @@ export const HomeStyle = styled.div`
     width: 40vw;
     height: 500px;
     z-index: 1;
-    // padding-bottom: 6vh;
-    margin-left: 5vw;
-    // margin-bottom: 5vh;
     border-radius: 3px;
     display: flex;
     justify-content: flex-start;
@@ -114,13 +112,9 @@ export const HomeStyle = styled.div`
       text-decoration: none;
     }
   }
-  .notice-head,
-  .news-head {
-    margin-left: 8vw;
-  }
-  .news-head {
-    margin-right: 5vw;
-  }
+.news-head{
+padding: 0 6vw 0 8.5vw;
+}
 
   .gallery-head {
     margin-left: 8vw;
@@ -131,9 +125,6 @@ export const HomeStyle = styled.div`
     margin-right: 5vw;
     display: flex;
     height: 400px;
-  }
-  .event-head {
-    margin-left: 5vw;
   }
   @media (max-width: 768px) {
     .notice-row,
@@ -191,9 +182,6 @@ export const HomeStyle = styled.div`
     );
   }
   @media (min-width: 768px) {
-    #notice {
-      display: flex;
-    }
     .bgimgwrap {
       margin-top: 0;
     }

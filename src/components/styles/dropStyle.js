@@ -6,7 +6,7 @@ export const DropStyle = styled.div`
   z-index: 100 !important;
 
   #right-link{
-    margin-left:calc(-415px + 8vw);
+    margin-left:calc(-415px + 15vw);
   }
   
   .links {

@@ -70,7 +70,7 @@ const Home = () => {
         </div>
       </div>
       <Importantlink />
-      <div id="notice">
+      <div id="notice-event">
         <div>
           <div
             data-aos="zoom-in"
@@ -151,50 +151,51 @@ const Home = () => {
         </div>
       </div>
       <Innovation />
-      <div
-        data-aos="zoom-in"
-        data-aos-duration="200"
-        className="news-head"
-        id="news"
-      >
-        News
-        <Link id="news-head-p" to="/news">
-          view all
-        </Link>
-      </div>
+      <div id="news">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="200"
+          className="news-head"
+          id="news"
+        >
+          News
+          <Link id="news-head-p" to="/news">
+            view all
+          </Link>
+        </div>
 
-      <div className="news-row">
-        <div className="news-viewbox">
-          {news &&
-            news.map(news => {
-              const newtime = new Date().getTime()
+        <div className="news-row">
+          <div className="news-viewbox">
+            {news &&
+              news.map(news => {
+                const newtime = new Date().getTime()
 
-              var d = Math.round((newtime - news.openDate) / 3600000)
-              if (d > 24) {
-                d = `${Math.round(d / 24)} days ago`
-              } else if (d < 1) {
-                d = `Just now`
-              } else if (d < 2) {
-                d = `${d} hour ago`
-              } else {
-                d = `${d} hours ago`
-              }
-              var desc = String(news.description).substr(0, 170)
-              if (news.title != "" && news.image[0]) {
-                return (
-                  <Newscard
-                    url={link(news.image[0].url)}
-                    id={news.id}
-                    time={d}
-                    head={`${news.title.slice(0, 92)}...`}
-                    detail={desc.slice(0, 200)}
-                  />
-                )
-              }
-            })}
+                var d = Math.round((newtime - news.openDate) / 3600000)
+                if (d > 24) {
+                  d = `${Math.round(d / 24)} days ago`
+                } else if (d < 1) {
+                  d = `Just now`
+                } else if (d < 2) {
+                  d = `${d} hour ago`
+                } else {
+                  d = `${d} hours ago`
+                }
+                var desc = String(news.description).substr(0, 170)
+                if (news.title != "" && news.image[0]) {
+                  return (
+                    <Newscard
+                      url={link(news.image[0].url)}
+                      id={news.id}
+                      time={d}
+                      head={`${news.title.slice(0, 92)}...`}
+                      detail={desc.slice(0, 200)}
+                    />
+                  )
+                }
+              })}
+          </div>
         </div>
       </div>
-
       <GalleryComp />
     </HomeStyle>
   )
