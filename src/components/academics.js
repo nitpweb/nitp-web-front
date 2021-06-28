@@ -16,9 +16,9 @@ const Academicspage = () => {
     setView(callback)
   }
   useEffect(() => {
-    AcademicsList.forEach(x => {
-      x.data === tab ? setView(tab) : ""
-    })
+    tab?tab.slice(0,10)==="programmes"?setView(tab):AcademicsList.forEach(x => {
+      x.data === tab ? setView(tab) :""
+    }):""
   }, [tab])
 
   useEffect(() => {
@@ -37,21 +37,16 @@ const Academicspage = () => {
     <>
       {true && (
         <TabPage>
-          <Navigate data={AcademicsList} callback={getView} tab={tab} />
+          <Navigate data={AcademicsList} callback={getView} tab={tab?tab.slice(0,10)==="programmes"?"programmes":tab:""} />
           <div className="mainDiv">
             {view == "admissions" && (
-              <div
-                className="layoutrow layoutrow1 rowmarl3"
-                id="admission"
-              >
+              <div className="layoutrow layoutrow1 rowmarl3" id="admission">
                 {/* <div className="col-6 imgcolstyle">
-                  <img src="/test.svg" className="img-fluid" loading="lazy" />
+                  <img src="/test.svg" className="img-fluid" loading="lazy" /> 
                 </div> */}
                 <div>
                   <div className="row">
-                    <h1 style={{ marginBottom: `1rem`}}>
-                      Admissions
-                    </h1>
+                    <h1 style={{ marginBottom: `1rem` }}>Admissions</h1>
                   </div>
                   {acadData.Admissions.map(e => (
                     <div className="row rowmarr3 digital">
@@ -75,8 +70,18 @@ const Academicspage = () => {
                 </div>
               </div>
             )}
-            {view == "programmes" && (
+            {view.slice(0,10) == "programmes" && (
+              <div className="row rowmarl3">
               <div className="digital">
+                <h1 style={{ marginBottom: `1rem` }}>Programmes</h1>
+                <div className="probutton">
+                  <button onClick={()=>{setView("programmes")}} className={view=="programmes"?"btnactive":""}>All</button>
+                  <button onClick={()=>{setView("programmesug")}} className={view=="programmesug"?"btnactive":""}>UG Courses</button>
+                  <button onClick={()=>{setView("programmespg")}} className={view=="programmespg"?"btnactive":""}>PG (M.tech/MURP) Courses</button>
+                  <button onClick={()=>{setView("programmesdd")}} className={view=="programmesdd"?"btnactive":""}>M.tech/MURP-PHD (DD)</button>
+                  <button onClick={()=>{setView("programmesimsc")}} className={view=="programmesimsc"?"btnactive":""}>Integrated Courses</button>
+                </div>
+                {view=="programmes"&&<>
                 <h3>Names of the approved programmes</h3>
                 <table align="center">
                   <tbody>
@@ -260,6 +265,160 @@ const Academicspage = () => {
                     </tr>
                   </tbody>
                 </table>
+                </>}
+                {view == "programmesug"
+              ? acadData.courseUG.map(item => (
+                  <div className="digital">
+                    <h1
+                      style={{
+                        fontFamily: `Source Sans Pro`,
+                        color: `#941b0c`,
+                      }}
+                    >
+                      {item.title}
+                    </h1>
+                    <br />
+                    {item.data.map(e => (
+                      <>
+                        <a
+                          href={e.link}
+                          target="_blank"
+                          style={{
+                            textDecoration: `none`,
+                            fontFamily: `Source Sans Pro`,
+                          }}
+                        >
+                          <p
+                            style={{
+                              fontWeight: `bold`,
+                              borderBottom: `1px dotted black`,
+                              paddingBottom: `0.5rem`,
+                              margin: `0`,
+                            }}
+                          >
+                            {e.para}
+                          </p>
+                        </a>
+                      </>
+                    ))}
+                  </div>
+                ))
+              : ""}
+            {view == "programmespg"
+              ? acadData.coursePG.map(item => (
+                  <div className="digital">
+                    <h1
+                      style={{
+                        fontFamily: `Source Sans Pro`,
+                        color: `#941b0c`,
+                      }}
+                    >
+                      {item.title}
+                    </h1>
+                    <br />
+                    {item.data.map(e => (
+                      <>
+                        <a
+                          href={e.link}
+                          target="_blank"
+                          style={{
+                            textDecoration: `none`,
+                            fontFamily: `Source Sans Pro`,
+                          }}
+                        >
+                          <p
+                            style={{
+                              fontWeight: `bold`,
+                              borderBottom: `1px dotted black`,
+                              paddingBottom: `0.5rem`,
+                              margin: `0`,
+                            }}
+                          >
+                            {e.para}
+                          </p>
+                        </a>
+                      </>
+                    ))}
+                  </div>
+                ))
+              : ""}
+            {view == "programmesdd"
+              ? acadData.coursePHD.map(item => (
+                  <div className="digital">
+                    <h1
+                      style={{
+                        fontFamily: `Source Sans Pro`,
+                        color: `#941b0c`,
+                      }}
+                    >
+                      {item.title}
+                    </h1>
+                    <br />
+                    {item.data.map(e => (
+                      <>
+                        <a
+                          href={e.link}
+                          target="_blank"
+                          style={{
+                            textDecoration: `none`,
+                            fontFamily: `Source Sans Pro`,
+                          }}
+                        >
+                          <p
+                            style={{
+                              fontWeight: `bold`,
+                              borderBottom: `1px dotted black`,
+                              paddingBottom: `0.5rem`,
+                              margin: `0`,
+                            }}
+                          >
+                            {e.para}
+                          </p>
+                        </a>
+                      </>
+                    ))}
+                  </div>
+                ))
+              : ""}
+            {view == "programmesimsc"
+              ? acadData.courseMsc.map(item => (
+                  <div className="digital">
+                    <h1
+                      style={{
+                        fontFamily: `Source Sans Pro`,
+                        color: `#941b0c`,
+                      }}
+                    >
+                      {item.title}
+                    </h1>
+                    <br />
+                    {item.data.map(e => (
+                      <>
+                        <a
+                          href={e.link}
+                          target="_blank"
+                          style={{
+                            textDecoration: `none`,
+                            fontFamily: `Source Sans Pro`,
+                          }}
+                        >
+                          <p
+                            style={{
+                              fontWeight: `bold`,
+                              borderBottom: `1px dotted black`,
+                              paddingBottom: `0.5rem`,
+                              margin: `0`,
+                            }}
+                          >
+                            {e.para}
+                          </p>
+                        </a>
+                      </>
+                    ))}
+                  </div>
+                ))
+              : ""}
+              </div>
               </div>
             )}
             {view == "format" && (
@@ -267,17 +426,25 @@ const Academicspage = () => {
                 <div className="row rowmarl3">
                   <h1>Formats</h1>
                 </div>
-                
-                {
-                  acadData.format.map(item=>(
-                    item.data.map(e=>(
-                      <div className="row rowmarl3 digital">
-                      <p><a id="formatdown" href={e.link} style={{textDecoration:`none`,fontWeight:`bold`}} target="_blank">Download</a> {e.para}</p>
-                      </div>
+
+                {acadData.format.map(item =>
+                  item.data.map(e => (
+                    <div className="row rowmarl3 digital">
+                      <p>
+                        <a
+                          id="formatdown"
+                          href={e.link}
+                          style={{ textDecoration: `none`, fontWeight: `bold` }}
+                          target="_blank"
+                        >
+                          Download
+                        </a>{" "}
+                        {e.para}
+                      </p>
+                    </div>
                   ))
-                  ))
-                }
-                  
+                )}
+
                 <div className="row imgcolstyle backgroundimage">
                   <img src="/paper.svg" className="img-fluid" loading="lazy" />
                 </div>
@@ -293,22 +460,209 @@ const Academicspage = () => {
                   <h1>Notice</h1>
                 </div>
                 <div className="row rowmarl3">
-                    {notices != undefined
-                      ? notices.map(notice => {
-                          if (notice.title != "") {
-                            return (
-                              <Notice
-                                detail={notice.title}
-                                time={notice.openDate}
-                                attachments={notice.attachments}
-                              />
-                            )
-                          }
-                        })
-                      : null}
+                  {notices != undefined
+                    ? notices.map(notice => {
+                        if (notice.title != "") {
+                          return (
+                            <Notice
+                              detail={notice.title}
+                              time={notice.openDate}
+                              attachments={notice.attachments}
+                            />
+                          )
+                        }
+                      })
+                    : null}
                 </div>
               </div>
             )}
+          
+          {view == "digital" ? (
+            <>
+              <h1 style={{ fontFamily: `Source Sans Pro`, color: `#941b0c` }}>
+                Digital Initiatives of NIT Patna
+              </h1>
+              {acadData.datad.map(item => (
+                <div className="row rowmarl3">
+                  <div className="digital">
+                    <h3>{item.title}</h3>
+
+                    {item.links.map(e => (
+                      <a
+                        href={e}
+                        target="_blank"
+                        style={{ textDecoration: `none` }}
+                      >
+                        <p>{e}</p>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </>
+          ) : (
+            ""
+          )}
+          {view == "curricula" ? (
+            <>
+              <h1 style={{ fontFamily: `Source Sans Pro`, color: `#941b0c` }}>
+                Regulation & Curricula
+              </h1>
+              {acadData.dataUG.map(item => (
+                <div className="row rowmarl3">
+                  <div className="digital">
+                    <h3>{item.title}</h3>
+
+                    {item.data.map(e => (
+                      <a
+                        href={e.link}
+                        target="_blank"
+                        style={{ textDecoration: `none` }}
+                      >
+                        <p
+                          style={{
+                            borderBottom: `1px dotted black`,
+                            paddingBottom: `0.35rem`,
+                            width: `fit-content`,
+                          }}
+                        >
+                          {e.para}
+                        </p>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ))}
+              {acadData.dataPG.map(item => (
+                <div className="row rowmarl3">
+                  <div className="digital">
+                    <h3>{item.title}</h3>
+
+                    {item.data.map(e => (
+                      <a
+                        href={e.link}
+                        target="_blank"
+                        style={{ textDecoration: `none` }}
+                      >
+                        <p
+                          style={{
+                            borderBottom: `1px dotted black`,
+                            paddingBottom: `0.35rem`,
+                            width: `fit-content`,
+                          }}
+                        >
+                          {e.para}
+                        </p>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ))}
+              {acadData.dataPHD.map(item => (
+                <div className="row rowmarl3">
+                  <div className="digital">
+                    <h3>{item.title}</h3>
+
+                    {item.data.map(e => (
+                      <a
+                        href={e.link}
+                        target="_blank"
+                        style={{ textDecoration: `none` }}
+                      >
+                        <p
+                          style={{
+                            borderBottom: `1px dotted black`,
+                            paddingBottom: `0.35rem`,
+                            width: `fit-content`,
+                          }}
+                        >
+                          {e.para}
+                        </p>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ))}
+              {acadData.dataNotice.map(item => (
+                <div className="row rowmarl3">
+                  <div className="digital">
+                    <h3>{item.title}</h3>
+
+                    {item.data.map(e => (
+                      <a href={e.link} style={{ textDecoration: `none` }}>
+                        <p
+                          style={{
+                            borderBottom: `1px dotted black`,
+                            paddingBottom: `0.35rem`,
+                            width: `fit-content`,
+                          }}
+                        >
+                          {e.para}
+                        </p>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </>
+          ) : (
+            ""
+          )}
+          {view == "refund" ? (
+            <>
+              <h1 style={{ fontFamily: `Source Sans Pro`, color: `#941b0c` }}>
+                Refund Policy
+              </h1>
+              {acadData.refund.map(item => (
+                <div className="row rowmarl3">
+                  <div className="digital">
+                    {item.para.map(e => (
+                      <p>{e}</p>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </>
+          ) : (
+            ""
+          )}
+          {view == "fee" ? (
+            <>
+              <h1 style={{ fontFamily: `Source Sans Pro`, color: `#941b0c` }}>
+                Fee Structures
+              </h1>
+              {acadData.fee.map(item => (
+                <div className="row rowmarl3">
+                  <div className="digital">
+                    <h3>{item.title}</h3>
+                    {item.data.map(e => (
+                      <>
+                        <a
+                          href={e.link}
+                          target="_blank"
+                          style={{ textDecoration: `none` }}
+                        >
+                          <p
+                            style={{
+                              borderBottom: `1px dotted black`,
+                              paddingBottom: `0.15rem`,
+                              width: `fit-content`,
+                              margin: `0`,
+                            }}
+                          >
+                            {e.para}
+                          </p>
+                        </a>
+                        <br />
+                      </>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </>
+          ) : (
+            ""
+          )}
           </div>
         </TabPage>
       )}
