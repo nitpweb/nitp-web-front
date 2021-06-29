@@ -72,6 +72,11 @@ const Admin = [
     title: "Service Unit Heads",
     data: "suh",
   },
+  {
+    url: "http://www.nitp.ac.in/uploads/ORG_CHART_NITP.pdf",
+    title: "Organization Chart",
+    data: "",
+  },
 ]
 const Home = [
   {
@@ -319,8 +324,8 @@ const Academics = [
 
 const Faculty = [
   {
-    url: "#",
-    title: "Web-mail",
+    url: "http://mail.google.com/a/nitp.ac.in",
+    title: "Web Mail",
     data: "",
   },
   {
@@ -334,22 +339,23 @@ const Faculty = [
     data: "",
   },
   {
-    url: "#",
+    url:
+      "https://docs.google.com/forms/d/e/1FAIpQLSedy0aZLXXj709zQjAejWvLQOs4_6ESIciPe0IV199kMr_D1g/viewform?usp=sf_link",
     title: "Employee I-Card",
     data: "",
   },
   {
-    url: "#",
+    url: "/staffClaimForm",
     title: "Staff Claim Form",
     data: "",
   },
   {
-    url: "#",
+    url: "http://admin.nitp.ac.in/",
     title: "Faculty Login",
     data: "",
   },
   {
-    url: "#",
+    url: "/facilities",
     title: "Facilities",
     data: "",
   },

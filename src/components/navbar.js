@@ -84,7 +84,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
   return (
     <NavbarStyle>
       <div className="nav-head-row">
-        <div className="col-6 start" style={{fontSize:`14px`}}>
+        <div className="col-6 start" style={{ fontSize: `14px` }}>
           <span>
             <Link to="/tenders">Tenders</Link>
             {` | `}
@@ -197,17 +197,14 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             <Dropdown title="About Us" list={Navlist.about} />
           </Link> */}
 
-          <div
-            className="nav-link-item"
-            activeClassName="nav-link-item-active"
-            
-          >
-            <Dropdown to="/administration" title="Administration" list={Navlist.admin} />
+          <div className="nav-link-item" activeClassName="nav-link-item-active">
+            <Dropdown
+              to="/administration"
+              title="Administration"
+              list={Navlist.admin}
+            />
           </div>
-          <div
-            className="nav-link-item"
-            activeClassName="nav-link-item-active"
-          >
+          <div className="nav-link-item" activeClassName="nav-link-item-active">
             <Dropnew
               to="/academics"
               title="Academics"
@@ -215,24 +212,27 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
               idname="right-link"
             />
           </div>
-          <Dropdown title="Departments" list={Navlist.departments} idname="rightlink"/>
-
+          <Dropdown
+            title="Departments"
+            list={Navlist.departments}
+            idname="rightlink"
+          />
         </div>
         <div className="col-6">
-        <div
-            className="nav-link-item"
-            activeClassName="nav-link-item-active"
-            
-          >
-            <Dropdown to="/students" title="For Students" list={Navlist.students} />
+          <div className="nav-link-item" activeClassName="nav-link-item-active">
+            <Dropdown
+              to="/students"
+              title="For Students"
+              list={Navlist.students}
+            />
           </div>
-        <Link
-            className="nav-link-item"
-            activeClassName="nav-link-item-active"
-            to="/"
-          >
-            <Dropdown title="For Faculty & Staff" list={Navlist.faculty} />
-          </Link>
+          <div className="nav-link-item" activeClassName="nav-link-item-active">
+            <Dropdown
+              to="/"
+              title="For Faculty & Staff"
+              list={Navlist.faculty}
+            />
+          </div>
           <Link
             className="nav-link-item"
             activeClassName="nav-link-item-active"
@@ -240,7 +240,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           >
             <Dropdown title="Facilities" list={Navlist.facilities} />
           </Link>
-          
+
           <a
             className="nav-link-item "
             activeClassName="nav-link-item-active"
@@ -487,7 +487,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
                 ))}
               </div>
             </div>
-            
+
             <div
               to="/facilities"
               className="nav-sidebar-div"
@@ -547,7 +547,11 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
               </div>
             </div>
 
-            <a href="https://tnp.nitp.ac.in" target="_blank" className="nav-sidebar-div">
+            <a
+              href="https://tnp.nitp.ac.in"
+              target="_blank"
+              className="nav-sidebar-div"
+            >
               <div className="navsideicondiv">
                 <img src={placementicon} alt="" />
               </div>
@@ -687,7 +691,6 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
                     } else {
                       z.style.display = "none"
                     }
-                    
                   }}
                 >
                   <p>
@@ -802,7 +805,11 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             </div>
           </div>
 
-          <a href="https://tnp.nitp.ac.in" target="_blank" className="nav-sidebar-div">
+          <a
+            href="https://tnp.nitp.ac.in"
+            target="_blank"
+            className="nav-sidebar-div"
+          >
             <div className="navsideicondiv">
               <img src={placementicon} alt="" />
             </div>
