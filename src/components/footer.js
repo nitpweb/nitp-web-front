@@ -22,16 +22,22 @@ const Footer = () => {
               <Link to="/director">
                 <h3>Director’s Desk</h3>
               </Link>
-              <a href="https://www.google.com/maps/place/National+Institute+of+Technology+Patna/@25.6207241,85.170702,17z/data=!3m1!4b1!4m5!3m4!1s0x39ed58dce6732867:0x4059f39a1ac82f06!8m2!3d25.6207241!4d85.1728907" target="_blank">
+              <a
+                href="https://www.google.com/maps/place/National+Institute+of+Technology+Patna/@25.6207241,85.170702,17z/data=!3m1!4b1!4m5!3m4!1s0x39ed58dce6732867:0x4059f39a1ac82f06!8m2!3d25.6207241!4d85.1728907"
+                target="_blank"
+              >
                 <h3>How to Reach</h3>
               </a>
               <a href="http://www.nitp.ac.in/php/NIRF.php" target="_blank">
                 <h3>NIRF</h3>
               </a>
-              <a href="http://www.nitp.ac.in/php/rti.php" target="_blank">
+              <Link to="/RTI" target="_blank">
                 <h3>RTI</h3>
-              </a>
-              <a href="http://www.nitp.ac.in/uploads/ORG_CHART_NITP.pdf" target="_blank">
+              </Link>
+              <a
+                href="http://www.nitp.ac.in/uploads/ORG_CHART_NITP.pdf"
+                target="_blank"
+              >
                 <h3>Organization Chart</h3>
               </a>
               <Link to="/webteam">
@@ -49,10 +55,16 @@ const Footer = () => {
               <Link to="/acadnotice">
                 <h3>Academics Notice</h3>
               </Link>
-              <a href="http://www.nitp.ac.in/php/downloads/Grievance%20Cell%20Constituted%20by%20Council%20of%20NITs.pdf" target="_blank">
+              <a
+                href="http://www.nitp.ac.in/php/downloads/Grievance%20Cell%20Constituted%20by%20Council%20of%20NITs.pdf"
+                target="_blank"
+              >
                 <h3>Grievance Cell</h3>
               </a>
-              <a href="http://web.nitp.ac.in/data/NIT_Act/Amendments_First_Statutes.pdf" target="_blank">
+              <a
+                href="http://web.nitp.ac.in/data/NIT_Act/Amendments_First_Statutes.pdf"
+                target="_blank"
+              >
                 <h3>NIT Act and Statutes</h3>
               </a>
               <a href="http://beta.nitp.ac.in:81">
@@ -68,7 +80,10 @@ const Footer = () => {
           <div className="footsec">
             <div className="foot-col-3">
               <h1>Extra Links</h1>
-              <a href="http://www.nitp.ac.in/php/img/digitalmap.jpg" target="_blank">
+              <a
+                href="http://www.nitp.ac.in/php/img/digitalmap.jpg"
+                target="_blank"
+              >
                 <h3>Digital Map of NITP</h3>
               </a>
               <a href="http://www.nitp.ac.in/php/privacy.php" target="_blank">
@@ -77,7 +92,10 @@ const Footer = () => {
               <Link to="/terms">
                 <h3>Terms of Use</h3>
               </Link>
-              <a href="http://www.nitp.ac.in/downloads/annual_report/Annual%20Report%20Hindi.pdf" target="_blank">
+              <a
+                href="http://www.nitp.ac.in/downloads/annual_report/Annual%20Report%20Hindi.pdf"
+                target="_blank"
+              >
                 <h3>Annual Reports</h3>
               </a>
               <Link to="/sitemap">
@@ -86,7 +104,10 @@ const Footer = () => {
             </div>
             <div className="foot-col-3">
               <h1>Useful Links</h1>
-              <a href="http://www.nitp.ac.in/uploads/Anti-ragging_Committee_2019.pdf" target="_blank">
+              <a
+                href="http://www.nitp.ac.in/uploads/Anti-ragging_Committee_2019.pdf"
+                target="_blank"
+              >
                 <h3>Anti Ragging</h3>
               </a>
               <a href="">
