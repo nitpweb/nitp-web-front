@@ -46,6 +46,7 @@ export const FacultyProfile = styled.div`
       letter-spacing: 1px;
       padding-right: 3vw;
       padding-top: 25px;
+      
     }
     .fac-card {
       width: 90%;
@@ -63,6 +64,7 @@ export const FacultyProfile = styled.div`
       }
       p {
         max-width: 95%;
+        font-size: ${props => parseInt(props.theme.font * 1)}rem;
       }
       .factable {
         overflow: hidden;

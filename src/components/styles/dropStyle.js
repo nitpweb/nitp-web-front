@@ -8,15 +8,13 @@ export const DropStyle = styled.div`
   #right-link{
     margin-left:calc(-415px + 15vw);
   }
-  
+
   .links {
     display: none;
     position: absolute;
-    max-height: 420px;
     background-color: ${props => props.theme.bgnew};
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 0;
-    width:420px;
 
     .content {
       display: flex;
@@ -31,39 +29,40 @@ export const DropStyle = styled.div`
       &:hover {
         border: 1px solid ${props => props.theme.border};
         background-color: ${props => props.theme.mainhover};
-        .mainLink{
-            background-color: ${props => props.theme.hovernew};
+        .mainLink {
+          background-color: ${props => props.theme.hovernew};
         }
       }
 
-     .mainLink {
+      .mainLink {
         text-decoration: none;
         width: auto;
         display: flex;
         padding: 7px;
         align-items: center;
-        background-color:${props => props.theme.bgmain};
+        background-color: ${props => props.theme.bgmain};
         color: white;
         justify-content: center;
         font-size: 16px;
-        font-weight:400;
+        font-weight: 400;
       }
-      .sub{
-          display: flex;
-          flex-direction: column;
-          width: max-content;
-          .subLink{
-              text-decoration: none;
-              color: ${props => props.theme.textnew};
-              font-weight: 400;
-              font-size:14px;
-              padding: 0px 10px;
-              line-height: 2;
-              &:hover{
-                color: ${props => props.theme.hovertext};
-                font-weight: 600;
-              }
+      .sub {
+        display: flex;
+        flex-direction: column;
+        width: 190px;
+        word-wrap: break-word;
+        .subLink {
+          text-decoration: none;
+          color: ${props => props.theme.textnew};
+          font-weight: 400;
+          font-size: 14px;
+          padding: 0px 10px;
+          line-height: 2;
+          &:hover {
+            color: ${props => props.theme.hovertext};
+            font-weight: 600;
           }
+        }
       }
     }
   }
@@ -77,10 +76,10 @@ export const DropStyle = styled.div`
     font-weight: 600;
     line-height: 1.6;
     display: flex;
-    &:hover{
+    &:hover {
       color: tomato !important;
     }
-    &:focus{
+    &:focus {
       color: tomato !important;
     }
   }
@@ -88,10 +87,11 @@ export const DropStyle = styled.div`
     display: flex;
     opacity: 1;
     transition: 0.05s;
-    align-items:flex-start;
+    align-items: center;
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
     z-index: 10;
+    max-height: 420px;
   }
 `
