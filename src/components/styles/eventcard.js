@@ -78,7 +78,8 @@ export const EventCardStyle = styled.div`
         img {
           height: 16px;
         }
-        .efp {
+        
+      }.efp {
           /* position: relative; */
           color: ${props => props.theme.primaryTextColor};
           font-size: 14px;
@@ -88,7 +89,6 @@ export const EventCardStyle = styled.div`
           margin-left: 5px;
           letter-spacing: -0.03rem;
         }
-      }
     }
   }
 
