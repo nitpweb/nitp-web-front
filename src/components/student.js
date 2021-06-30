@@ -46,14 +46,17 @@ const Studentpage = () => {
       .catch(e => {
         console.log(e)
       })
-    Navlist.students.forEach(x => {
-      tab?x.data === tab ? setView(tab) : "":""
+    Navlist.students.map(x => {
+      x.sub.forEach(element => {
+        tab ? (element.data === tab ? setView(tab) : "") : ""
+      })
     })
   }, [tab])
-
+  const arrdata = []
+  Navlist.students.map(x => arrdata.push(...x.sub))
   return (
     <TabPage>
-      <Navigate data={Navlist.students} callback={getView} tab={tab} />
+      <Navigate data={arrdata} callback={getView} tab={tab} />
       <div className="mainDiv">
         <PageLayout>
           {/* <div className="layoutrow layoutrowmain" id="home">
@@ -88,30 +91,28 @@ const Studentpage = () => {
           )}
           {view == "concession" && (
             <div className="layoutrow digital">
-                
-                  {acadData.relaxation.map(item=>(
-                    <div className="row rowmarl3">
-                      <h1>{item.heading}</h1>
-                      {item.data.map(e=>(
-                        <div>
-                          <h3>{e.title_main}</h3>
-                          <p>{e.title}</p>
-                          <p>
-                            {e.list.map(val=>(
-                              <li>{val}</li>
-                            ))}
-                          </p>
-                          <h3>{e.title_end}</h3>
-                          <p>{e.para_end}</p>
-                        </div>
-                      ))}
+              {acadData.relaxation.map(item => (
+                <div className="row rowmarl3">
+                  <h1>{item.heading}</h1>
+                  {item.data.map(e => (
+                    <div>
+                      <h3>{e.title_main}</h3>
+                      <p>{e.title}</p>
+                      <p>
+                        {e.list.map(val => (
+                          <li>{val}</li>
+                        ))}
+                      </p>
+                      <h3>{e.title_end}</h3>
+                      <p>{e.para_end}</p>
                     </div>
                   ))}
-                
-                <div className="row rowmarl3">
-                  <p></p>
                 </div>
-              
+              ))}
+
+              <div className="row rowmarl3">
+                <p></p>
+              </div>
             </div>
           )}
           {view == "sac" && (

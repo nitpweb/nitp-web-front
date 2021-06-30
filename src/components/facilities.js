@@ -141,13 +141,18 @@ const Facilitiespage = () => {
     setView(callback)
   }
   useEffect(() => {
-    Navlist.facilities.forEach(x => {
-      x.data === tab ? setView(tab) : ""
+    Navlist.facilities.map(x => {
+      x.sub.forEach(element => {
+        tab ? (element.data === tab ? setView(tab) : "") : ""
+      })
     })
   }, [tab])
+
+const arrdata = []
+Navlist.facilities.map(x => arrdata.push(...x.sub))
   return (
     <TabPage>
-      <Navigate data={Navlist.facilities} callback={getView} tab={tab} />
+      <Navigate data={arrdata} callback={getView} tab={tab} />
       {/* <Floatmenu /> */}
       <div className="mainDiv">
         <PageLayout>

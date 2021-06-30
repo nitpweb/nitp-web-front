@@ -8,7 +8,7 @@ export const NavigateStyle = styled.div`
   left: 0%;
   transform: translateY(-50%);
   margin: 0 0 0 5vw;
-  z-index: 1;
+  z-index: 2;
   max-height: 80vh;
   overflow-y: scroll;
   background: ${props => props.theme.backgroundColor};
