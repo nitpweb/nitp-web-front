@@ -4,12 +4,17 @@ import { Link } from "gatsby"
 import DynamicLink from "./dynamicurl"
 
 const Dropnew = ({ to, title, list, idname }) => {
+  const element = list.length == 1 ? 1 : list.length==2?2:Math.ceil(list.length / 2)
   return (
     <DropStyle>
       <Link to={to} className="title_main">
         {title}
       </Link>
-      <div className="links" id={idname}>
+      <div
+        className="links"
+        style={{ width: `${element * 215}px` }}
+        id={idname}
+      >
         {list.map(item => (
           <div className="content">
             <DynamicLink

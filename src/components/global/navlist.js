@@ -23,59 +23,66 @@ const Departments = [
 
 const Admin = [
   {
-    url: "/administration",
-    title: "Director",
-    data: "director",
-  },
-  {
-    url: "/administration",
-    title: "Deputy Director",
-    data: "deputydirector",
-  },
-  {
-    url: "/administration",
-    title: "Deans",
-    data: "deans",
-  },
-  {
-    url: "/administration",
-    title: "Registrar",
-    data: "registrar",
-  },
-  {
-    url: "/administration",
-    title: "Board of Governors",
-    data: "bog",
-  },
-  {
-    url: "/administration",
-    title: "Senate",
-    data: "senate",
-  },
-  {
-    url: "/administration",
-    title: "Building & Works committee",
-    data: "bwc",
-  },
-  {
-    url: "/administration",
-    title: "Institute Disciplinary committee",
-    data: "idc",
-  },
-  {
-    url: "/administration",
-    title: "Finance committee",
-    data: "fc",
-  },
-  {
-    url: "/administration",
-    title: "Service Unit Heads",
-    data: "suh",
-  },
-  {
-    url: "http://www.nitp.ac.in/uploads/ORG_CHART_NITP.pdf",
-    title: "Organization Chart",
+    url: "/",
+    title: "Administration",
     data: "",
+    sub: [
+      {
+        url: "/administration",
+        title: "Director",
+        data: "director",
+      },
+      {
+        url: "/administration",
+        title: "Deputy Director",
+        data: "deputydirector",
+      },
+      {
+        url: "/administration",
+        title: "Deans",
+        data: "deans",
+      },
+      {
+        url: "/administration",
+        title: "Registrar",
+        data: "registrar",
+      },
+      {
+        url: "/administration",
+        title: "Board of Governors",
+        data: "bog",
+      },
+      {
+        url: "/administration",
+        title: "Senate",
+        data: "senate",
+      },
+      {
+        url: "/administration",
+        title: "Building & Works committee",
+        data: "bwc",
+      },
+      {
+        url: "/administration",
+        title: "Institute Disciplinary committee",
+        data: "idc",
+      },
+      {
+        url: "/administration",
+        title: "Finance committee",
+        data: "fc",
+      },
+      {
+        url: "/administration",
+        title: "Service Unit Heads",
+        data: "suh",
+      },
+      {
+        url: "http://www.nitp.ac.in/uploads/ORG_CHART_NITP.pdf",
+        title: "Organization Chart",
+        data: "",
+      },
+    ],
   },
 ]
 const Home = [
@@ -324,193 +331,224 @@ const Academics = [
 
 const Faculty = [
   {
-    url: "http://mail.google.com/a/nitp.ac.in",
-    title: "Web Mail",
+    url: "/",
+    title: "Faculty",
     data: "",
-  },
-  {
-    url: "http://exam.nitp.ac.in/",
-    title: "Chanakya Portal",
-    data: "",
-  },
-  {
-    url: "#",
-    title: "Recruitments",
-    data: "",
-  },
-  {
-    url:
-      "https://docs.google.com/forms/d/e/1FAIpQLSedy0aZLXXj709zQjAejWvLQOs4_6ESIciPe0IV199kMr_D1g/viewform?usp=sf_link",
-    title: "Employee I-Card",
-    data: "",
-  },
-  {
-    url: "/staffClaimForm",
-    title: "Staff Claim Form",
-    data: "",
-  },
-  {
-    url: "http://admin.nitp.ac.in/",
-    title: "Faculty Login",
-    data: "",
-  },
-  {
-    url: "/facilities",
-    title: "Facilities",
-    data: "",
+    sub: [
+      {
+        url: "http://mail.google.com/a/nitp.ac.in",
+        title: "Web Mail",
+        data: "",
+      },
+      {
+        url: "http://exam.nitp.ac.in/",
+        title: "Chanakya Portal",
+        data: "",
+      },
+      {
+        url: "#",
+        title: "Recruitments",
+        data: "",
+      },
+      {
+        url:
+          "https://docs.google.com/forms/d/e/1FAIpQLSedy0aZLXXj709zQjAejWvLQOs4_6ESIciPe0IV199kMr_D1g/viewform?usp=sf_link",
+        title: "Employee I-Card",
+        data: "",
+      },
+      {
+        url: "/staffClaimForm",
+        title: "Staff Claim Form",
+        data: "",
+      },
+      {
+        url: "http://admin.nitp.ac.in/",
+        title: "Faculty Login",
+        data: "",
+      },
+      {
+        url: "/facilities",
+        title: "Facilities",
+        data: "",
+      },
+    ],
   },
 ]
 
 const Students = [
   {
-    url: "http://mail.google.com/a/nitp.ac.in",
-    title: "Web Mail",
-  },
-  {
-    url: "http://exam.nitp.ac.in:9001/",
-    title: "Chanakya Portal",
-  },
-  {
-    url: "/academics?tab=admissions",
-    title: "Admissions",
-  },
-  {
-    url: "/academics?tab=calendar",
-    title: "Academic Calendar",
+    url: "/students",
+    title: "For Students",
+    data: "",
+    sub: [
+      {
+        url: "/students",
+        title: "Clubs/Societies",
+        data: "clubs",
+      },
+      {
+        url: "/academics?tab=admissions",
+        title: "Admissions",
+      },
+      {
+        url: "/students",
+        title: "1st Year Students",
+        data: "firstyear",
+      },
+      {
+        url: "/students",
+        title: "Student Activity Centre",
+        data: "sac",
+      },
+
+      {
+        url: "/students",
+        title: "Fellowship Opportunities",
+        data: "fellowship",
+      },
+      {
+        url: "/students",
+        title: "Scholarship",
+        data: "scholarship",
+      },
+      {
+        url: "/students",
+        title: "Tech Fest",
+        data: "corona",
+      },
+
+      {
+        url: "/students",
+        title: "Student Exchange",
+        data: "studentexchange",
+      },
+      {
+        url: "/students",
+        title: "NSS@NITP",
+        data: "nss",
+      },
+    ],
   },
   {
     url: "/students",
-    title: "Clubs/Societies",
-    data: "clubs",
-  },
-  {
-    url: "/students",
-    title: "1st Year Students",
-    data: "firstyear",
-  },
-  {
-    url: "/students",
-    title: "Student Activity Centre",
-    data: "sac",
-  },
-  {
-    url: "http://web.nitp.ac.in/data/Anti-ragging_Committee_2019.pdf",
-    title: "Anti Ragging",
-  },
-  {
-    url: "/students",
-    title: "Fellowship Opportunities",
-    data: "fellowship",
-  },
-  {
-    url: "/students",
-    title: "Scholarship",
-    data: "scholarship",
-  },
-  {
-    url: "/students",
-    title: "Concessions",
-    data: "concession",
-  },
-  {
-    url: "/students",
-    title: "Tech Fest",
-    data: "corona",
-  },
-  {
-    url: "http://www.nitp.ac.in/convocation2020/",
-    title: "Convocation",
-  },
-  {
-    url: "http://web.nitp.ac.in/incubation_center/index.html",
-    title: "Incubation Centre",
-  },
-  {
-    url: "/students",
-    title: "Student Exchange",
-    data: "studentexchange",
-  },
-  {
-    url: "/students",
-    title: "NSS@NITP",
-    data: "nss",
-  },
-  {
-    url:
-      "https://docs.google.com/forms/d/e/1FAIpQLSc5_x34TMtQdMaW2Ad9Nvsmz1N8YXdAGJHtAM5kn3a850Ekyw/viewform?usp=sf_link",
-    title: "Student I-Card",
-  },
-  {
-    url: "/facilities",
-    title: "Facilities",
+    title: "Links",
+    data: "",
+    sub: [
+      {
+        url: "http://mail.google.com/a/nitp.ac.in",
+        title: "Web Mail",
+      },
+      {
+        url: "http://exam.nitp.ac.in:9001/",
+        title: "Chanakya Portal",
+      },
+      {
+        url:
+          "https://docs.google.com/forms/d/e/1FAIpQLSc5_x34TMtQdMaW2Ad9Nvsmz1N8YXdAGJHtAM5kn3a850Ekyw/viewform?usp=sf_link",
+        title: "Student I-Card",
+      },
+      {
+        url: "http://www.nitp.ac.in/convocation2020/",
+        title: "Convocation",
+      },
+      {
+        url: "http://web.nitp.ac.in/incubation_center/index.html",
+        title: "Incubation Centre",
+      },
+      {
+        url: "http://web.nitp.ac.in/data/Anti-ragging_Committee_2019.pdf",
+        title: "Anti Ragging",
+      },
+
+      {
+        url: "/facilities",
+        title: "Facilities",
+      },
+      {
+        url: "/students",
+        title: "Concessions",
+        data: "concession",
+      },
+      {
+        url: "/academics?tab=calendar",
+        title: "Academic Calendar",
+      },
+    ],
   },
 ]
 
 const Facilities = [
   {
     url: "/facilities",
-    title: "Computer Centre",
-    data: "cc",
-  },
-  {
-    url: "/facilities",
-    title: "IT Service Unit",
-    data: "it",
-  },
-  {
-    url: "/facilities",
-    title: "TEQUIP",
-    data: "tequip",
-  },
-  {
-    url: "/facilities",
-    title: "Library",
-    data: "library",
-  },
-  {
-    url: "/facilities",
-    title: "Medical Facilities",
-    data: "medical",
-  },
-  {
-    url: "/facilities",
-    title: "Sports Facilities",
-    data: "sports",
-  },
-  {
-    url: "/facilities",
-    title: "Hostel & Mess",
-    data: "hostel",
-  },
-  {
-    url: "/facilities",
-    title: "Laboratories",
-    data: "lab",
-  },
-  {
-    url: "/facilities",
-    title: "WiFi",
-    data: "wifi",
-  },
-  {
-    url: "/facilities",
-    title: "Bank",
-    data: "bank",
-  },
-  {
-    url: "/facilities",
-    title: "Security",
-    data: "security",
-  },
-  {
-    url: "/facilities",
-    title: "Woman Cell",
-    data: "womancell",
-  },
-  {
-    url: "/facilities",
-    title: "Electric Maintainence Unit",
-    data: "emu",
+    title: "Facilities",
+    data: "",
+    sub: [
+      {
+        url: "/facilities",
+        title: "Computer Centre",
+        data: "cc",
+      },
+      {
+        url: "/facilities",
+        title: "IT Service Unit",
+        data: "it",
+      },
+      {
+        url: "/facilities",
+        title: "TEQUIP",
+        data: "tequip",
+      },
+      {
+        url: "/facilities",
+        title: "Library",
+        data: "library",
+      },
+      {
+        url: "/facilities",
+        title: "Medical Facilities",
+        data: "medical",
+      },
+      {
+        url: "/facilities",
+        title: "Sports Facilities",
+        data: "sports",
+      },
+      {
+        url: "/facilities",
+        title: "Hostel & Mess",
+        data: "hostel",
+      },
+      {
+        url: "/facilities",
+        title: "Laboratories",
+        data: "lab",
+      },
+      {
+        url: "/facilities",
+        title: "WiFi",
+        data: "wifi",
+      },
+      {
+        url: "/facilities",
+        title: "Bank",
+        data: "bank",
+      },
+      {
+        url: "/facilities",
+        title: "Security",
+        data: "security",
+      },
+      {
+        url: "/facilities",
+        title: "Woman Cell",
+        data: "womancell",
+      },
+      {
+        url: "/facilities",
+        title: "Electric Maintainence Unit",
+        data: "emu",
+      },
+    ],
   },
 ]
 
