@@ -1,4 +1,157 @@
+import React from "react"
 const home = "http://www.nitp.ac.in/php/"
+
+const Tables = {
+  sponsoredProjects: [
+    {
+      "S.No.": 1,
+      "Name of the Project":
+        "Modelling and nonlinear dynamic analysis of wrinkled graphene resonators",
+      "Name of the PI": "Dr. Anand Bhushan",
+      "Sponsoring Agency": "Science and Engineering Research Board",
+      "Sanctioned Amount(in lakh)": 12.9275,
+      Status: "Completed",
+    },
+    {
+      "S.No.": 2,
+      "Name of the Project":
+        "Friction Stir Welding of Dissimilar Heat Treatable Aluminium Alloys",
+      "Name of the PI": "Dr. Vikas Upadhyay",
+      "Sponsoring Agency": "Science and Engineering Research Board, DST, GOI",
+      "Sanctioned Amount(in lakh)": 8.41,
+      Status: "Completed (2017-2020)",
+    },
+    {
+      "S.No.": 3,
+      "Name of the Project":
+        "Experiment and Analysis of Energy Saving Variable Displacement Electro-Hydrostatics Actuation (VDEHA) System",
+      "Name of the PI": "Dr. Nimai Pada Mandal",
+      "Sponsoring Agency": "DST",
+      "Sanctioned Amount(in lakh)": 24.2468,
+      Status: "Ongoing",
+    },
+    {
+      "S.No.": 4,
+      "Name of the Project": "SEED Project",
+      "Name of the PI": "Dr. Anindya Malas",
+      "Sponsoring Agency": "NIT Patna, TEQIP III",
+      "Sanctioned Amount(in lakh)": 6,
+      Status: "Ongoing",
+    },
+    {
+      "S.No.": 5,
+      "Name of the Project":
+        "Studies on hard-facing of Inconel 718 on stainless steel 321 and 347 grades for nuclear reactor components",
+      "Name of the PI": "Dr. A. Karpagaraj",
+      "Sponsoring Agency": "SERB",
+      "Sanctioned Amount(in lakh)": 29.74,
+      Status: "Ongoing",
+    },
+    {
+      "S.No.": 6,
+      "Name of the Project":
+        'Wire Arc Additive Manufacturing (WAAM) of Stainless Steel 316L Components for Nuclear Plant Applications.{" "}',
+      "Name of the PI": "Dr. A. Karpagaraj",
+      "Sponsoring Agency": "TEQIP-III/NITP",
+      "Sanctioned Amount(in lakh)": 10,
+      Status: "Ongoing",
+    },
+  ],
+  shortTermCourse: [
+    {
+      "S.No.": 1,
+      "Name of the Faculty": {
+        Coordinator: "Dr. Abhishek Singh and Dr. Sharifuddin Mondal",
+        "Organizing Secretary": "Prof. Om Prakash",
+      },
+      "Organized Workshop/FDP/STC/Conference/GIAN program":
+        'Short Term Course on Gas Turbine - Development, Operation and Maintenance for Power & Propulsion - 2015 (GT-DOMPP-2015){" "}',
+      Duration: "May 18-22, 2015",
+    },
+    {
+      "S.No.": 2,
+      "Name of the Faculty": {
+        Coordinator: "Dr. Vikas Upadhyay, Dr. Nilamber Kumar Singh",
+      },
+      "Organized Workshop/FDP/STC/Conference/GIAN program":
+        'Advanced Materials, Processing and Characterization (AMPC-2016) organized under the aegis of TEQIP-II from{" "}',
+      Duration: "February 18 - 20, 2016",
+    },
+    {
+      "S.No.": 3,
+      "Name of the Faculty": {
+        "Joint Secretary": " Dr. Abhishek Singh and Dr. Anupam Das",
+        "Organizing Secretary": "Dr. A.N Sinha",
+      },
+      "Organized Workshop/FDP/STC/Conference/GIAN program":
+        "SHORT TERM COURSE ON ADVANCED MANUFACTURING PRACTICES - 2016, (AMP-2016)",
+      Duration: "March 07-12, 2016",
+    },
+    {
+      "S.No.": 4,
+      "Name of the Faculty": {
+        Chairman: "Dr. Amit Kumar and Dr. M.P. Singh",
+        Secretary:
+          "Dr. Abhishek Singh, Mr. Arun Kumar, Dr. Vikas Upadhyay and Dr. Gowrisankar S.",
+      },
+      "Organized Workshop/FDP/STC/Conference/GIAN program":
+        "International Conference on Advances and Soft Computing Applications in Design and Manufacturing (ASCADM-2018)",
+      Duration: "June 04-06, 2018",
+    },
+    {
+      "S.No.": 5,
+      "Name of the Faculty": {
+        Chairman: "Prof. Om Prakash",
+        Coordinators: " Dr. A. Karpagaraj, Dr. A.K. Das, Dr. Rahul Goyal ",
+        "Organizing Secretary": "Dr. Vimal K E K",
+      },
+      "Organized Workshop/FDP/STC/Conference/GIAN program":
+        "Renewable Energy and Applications-2018 (REA 2018)",
+      Duration: "December 19-23, 2018",
+    },
+    {
+      "S.No.": 6,
+      "Name of the Faculty": {
+        Coordinator: "Dr. Abhishek Singh and Dr. Amit Kumar",
+      },
+      "Organized Workshop/FDP/STC/Conference/GIAN program":
+        "One-week e-workshop on “Recent Trends in Mechanical Engineering – 2020 (RTME-2020)",
+      Duration: "July 20-24, 2020",
+    },
+    {
+      "S.No.": 7,
+      "Name of the Faculty": {
+        Coordinator: "Dr. Abhishek Singh and Dr. Amit Kumar",
+        Convener: "Dr. Shailesh Mani Pandey and Dr. Ambrish Maurya",
+      },
+      "Organized Workshop/FDP/STC/Conference/GIAN program":
+        "One-week online e-short term course on “Advances in Design & Manufacturing Engineering – 2020 (ADME-2020)",
+      Duration: "August 03 – 07- 2020",
+    },
+    {
+      "S.No.": 8,
+      "Name of the Faculty": {
+        Coordinator: "Dr. Yogesh Kumar",
+        Convener: "Dr. Amit Kumar",
+        Chairman: "Prof. S. K. Verma",
+      },
+      "Organized Workshop/FDP/STC/Conference/GIAN program":
+        "Online FDP on DEEKSHARAMBH (Student Induction Program)",
+      Duration: "August 10-14, 2020",
+    },
+    {
+      "S.No.": 9,
+      "Name of the Faculty": {
+        Coordinator: "Dr. Yogesh Kumar",
+        Convener: "Dr. Amit Kumar",
+        Chairman: "Prof. S. K. Verma",
+      },
+      "Organized Workshop/FDP/STC/Conference/GIAN program":
+        "Online FDP on Universal Human Values for DEEKSHARAMBH (Student Induction Program)",
+      Duration: "September 21-25, 2020",
+    },
+  ],
+}
 
 export const Labs = [
   {
@@ -111,82 +264,25 @@ export const Achievements = [
       <table className="table-act">
         <thead>
           <tr className="syllabus-table-head">
-            <th style={{ padding: `8px` }}>S.No.</th>
-            <th style={{ padding: `8px` }}>Name of the Project</th>
-            <th style={{ padding: `8px` }}>Name of the PI</th>
-            <th style={{ padding: `8px` }}>Sponsoring Agency</th>
-            <th style={{ padding: `8px` }}>Sanctioned Amount(in lakh)</th>
-            <th style={{ padding: `8px` }}>Status</th>
+            <th>S.No.</th>
+            <th>Name of the Project</th>
+            <th>Name of the PI</th>
+            <th>Sponsoring Agency</th>
+            <th>Sanctioned Amount(in lakh)</th>
+            <th>Status</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td style={{ padding: `8px` }}>1</td>
-            <td style={{ padding: `8px` }}>
-              Modelling and nonlinear dynamic analysis of wrinkled graphene
-              resonators
-            </td>
-            <td style={{ padding: `8px` }}>Dr. Anand Bhushan</td>
-            <td style={{ padding: `8px` }}>
-              Science and Engineering Research Board
-            </td>
-            <td style={{ padding: `8px` }}>12.9275</td>
-            <td style={{ padding: `8px` }}>Completed</td>
-          </tr>
-          <tr>
-            <td style={{ padding: `8px` }}>2</td>
-            <td style={{ padding: `8px` }}>
-              Friction Stir Welding of Dissimilar Heat Treatable Aluminium
-              Alloys
-            </td>
-            <td style={{ padding: `8px` }}>Dr. Vikas Upadhyay</td>
-            <td style={{ padding: `8px` }}>
-              Science and Engineering Research Board, DST, GOI
-            </td>
-            <td style={{ padding: `8px` }}>8.41</td>
-            <td style={{ padding: `8px` }}>Completed (2017-2020)</td>
-          </tr>
-          <tr>
-            <td style={{ padding: `8px` }}>3</td>
-            <td style={{ padding: `8px` }}>
-              Experiment and Analysis of Energy Saving Variable Displacement
-              Electro-Hydrostatics Actuation (VDEHA) System
-            </td>
-            <td style={{ padding: `8px` }}>Dr. Nimai Pada Mandal</td>
-            <td style={{ padding: `8px` }}>DST</td>
-            <td style={{ padding: `8px` }}>24.2468</td>
-            <td style={{ padding: `8px` }}>Ongoing</td>
-          </tr>
-          <tr>
-            <td style={{ padding: `8px` }}>4</td>
-            <td style={{ padding: `8px` }}>SEED Project</td>
-            <td style={{ padding: `8px` }}>Dr. Anindya Malas</td>
-            <td style={{ padding: `8px` }}>NIT Patna, TEQIP III</td>
-            <td style={{ padding: `8px` }}>6</td>
-            <td style={{ padding: `8px` }}>Ongoing</td>
-          </tr>
-          <tr>
-            <td style={{ padding: `8px` }}>5</td>
-            <td style={{ padding: `8px` }}>
-              Studies on hard-facing of Inconel 718 on stainless steel 321 and
-              347 grades for nuclear reactor components
-            </td>
-            <td style={{ padding: `8px` }}>Dr. A. Karpagaraj</td>
-            <td style={{ padding: `8px` }}>SERB</td>
-            <td style={{ padding: `8px` }}>29.74</td>
-            <td style={{ padding: `8px` }}>Ongoing</td>
-          </tr>
-          <tr>
-            <td style={{ padding: `8px` }}>6</td>
-            <td style={{ padding: `8px` }}>
-              Wire Arc Additive Manufacturing (WAAM) of Stainless Steel 316L
-              Components for Nuclear Plant Applications.{" "}
-            </td>
-            <td style={{ padding: `8px` }}>Dr. A. Karpagaraj</td>
-            <td style={{ padding: `8px` }}>TEQIP-III/NITP</td>
-            <td style={{ padding: `8px` }}>10</td>
-            <td style={{ padding: `8px` }}>Ongoing</td>
-          </tr>
+          {Tables.sponsoredProjects.map((row, idx) => (
+            <tr key={idx}>
+              <td>{row["S.No."]}</td>
+              <td>{row["Name of the Project"]}</td>
+              <td>{row["Name of the PI"]}</td>
+              <td>{row["Sponsoring Agency"]}</td>
+              <td>{row["Sanctioned Amount(in lakh)"]}</td>
+              <td>{row.Status}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     ),
@@ -240,121 +336,24 @@ export const Activities = [
             <th>Duration</th>
           </tr>
 
-          <tr>
-            <td>1. </td>
-            <td>
-              <b>Coordinator:</b> Dr. Abhishek Singh and Dr. Sharifuddin Mondal
-              <br />
-              <b>Organizing secretary:</b> Prof. Om Prakash
-            </td>
-            <td>
-              Short Term Course on Gas Turbine - Development, Operation and
-              Maintenance for Power & Propulsion - 2015 (GT-DOMPP-2015){" "}
-            </td>
-            <td>May 18-22, 2015</td>
-          </tr>
-
-          <tr>
-            <td>2.</td>
-            <td>
-              <b>Coordinator:</b> Dr. Vikas Upadhyay, Dr. Nilamber Kumar Singh
-            </td>
-            <td>
-              Advanced Materials, Processing and Characterization (AMPC-2016)
-              organized under the aegis of TEQIP-II from{" "}
-            </td>
-            <td>February 18 - 20, 2016</td>
-          </tr>
-
-          <tr>
-            <td>3.</td>
-            <td>
-              <b>Joint Secretary:</b> Dr. Abhishek Singh and Dr. Anupam Das
-              <br />
-              <b>Organizing Secretary:</b> Dr. A.N Sinha
-            </td>
-            <td>
-              SHORT TERM COURSE ON ADVANCED MANUFACTURING PRACTICES - 2016,
-              (AMP-2016)
-            </td>
-            <td>March 07-12, 2016</td>
-          </tr>
-
-          <tr>
-            <td>4.</td>
-            <td>
-              <b>Chairman:</b> Dr. Amit Kumar and Dr. M.P. Singh <br />
-              <b>Secretary:</b> Dr. Abhishek Singh, Mr. Arun Kumar, Dr. Vikas
-              Upadhyay and Dr. Gowrisankar S.
-            </td>
-            <td>
-              International Conference on Advances and Soft Computing
-              Applications in Design and Manufacturing (ASCADM-2018)
-            </td>
-            <td>June 04-06, 2018</td>
-          </tr>
-
-          <tr>
-            <td>5.</td>
-            <td>
-              <b>Chairman:</b> Prof. Om Prakash <br />
-              <b>Coordinators:</b> Dr. A. Karpagaraj, Dr. A.K. Das, Dr. Rahul
-              Goyal <br />
-              <b>Organizing Secretary:</b> Dr. Vimal K E K
-            </td>
-            <td>Renewable Energy and Applications-2018 (REA 2018)</td>
-            <td>December 19-23, 2018</td>
-          </tr>
-
-          <tr>
-            <td>6.</td>
-            <td>
-              <b>Coordinator:</b> Dr. Abhishek Singh and Dr. Amit Kumar
-            </td>
-            <td>
-              One-week e-workshop on “Recent Trends in Mechanical Engineering –
-              2020 (RTME-2020)
-            </td>
-            <td> July 20-24, 2020</td>
-          </tr>
-
-          <tr>
-            <td>7.</td>
-            <td>
-              <b>Coordinator:</b> Dr. Abhishek Singh and Dr. Amit Kumar <br />
-              <b>Convener:</b> Dr. Shailesh Mani Pandey and Dr. Ambrish Maurya
-            </td>
-            <td>
-              One-week online e-short term course on “Advances in Design &
-              Manufacturing Engineering – 2020 (ADME-2020)
-            </td>
-            <td>August 03 – 07- 2020</td>
-          </tr>
-
-          <tr>
-            <td>8.</td>
-            <td>
-              <b>Chairman:</b> Prof. S. K. Verma <br />
-              <b>Coordinator:</b> Dr. Yogesh Kumar <br />
-              <b>Convener:</b> Dr. Amit Kumar
-            </td>
-            <td>Online FDP on DEEKSHARAMBH (Student Induction Program)</td>
-            <td> August 10-14, 2020</td>
-          </tr>
-
-          <tr>
-            <td>9.</td>
-            <td>
-              <b>Chairman:</b> Prof. S. K. Verma <br />
-              <b>Coordinator:</b> Dr. Yogesh Kumar <br />
-              <b>Convener:</b> Dr. Amit Kumar
-            </td>
-            <td>
-              Online FDP on Universal Human Values for DEEKSHARAMBH (Student
-              Induction Program)
-            </td>
-            <td> September 21-25, 2020</td>
-          </tr>
+          {Tables.shortTermCourse.map((row, idx) => (
+            <tr key={idx}>
+              <td>{row["S.No."]}</td>
+              <td>
+                {Object.keys(row["Name of the Faculty"]).map((title, idx) => (
+                  <React.Fragment key={idx}>
+                    <strong>{title}:</strong>{" "}
+                    {row["Name of the Faculty"][title]}
+                    <br />
+                  </React.Fragment>
+                ))}
+              </td>
+              <td>
+                {row["Organized Workshop/FDP/STC/Conference/GIAN program"]}
+              </td>
+              <td>{row.Duration}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     ),

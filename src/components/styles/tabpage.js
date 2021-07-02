@@ -11,10 +11,10 @@ export const TabPage = styled.div`
   padding-top: 4rem;
   text-rendering: optimizeLegibility;
   background: ${props => props.theme.backgroundColor};
-p {
-            color: ${props => props.theme.textColor};
-            font-weight: 500;
-          }
+  p {
+    color: ${props => props.theme.textColor};
+    font-weight: 500;
+  }
   h1 {
     color: ${props => props.theme.primaryColor};
   }
@@ -47,7 +47,7 @@ p {
     align-content: flex-start;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    .probutton{
+    .probutton {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
@@ -55,11 +55,11 @@ p {
       overflow-x: scroll;
       -ms-overflow-style: none;
       scrollbar-width: none;
-      .btnactive{
+      .btnactive {
         background-color: white;
-          color:${props => props.theme.primaryColor};
+        color: ${props => props.theme.primaryColor};
       }
-      button{
+      button {
         background-color: ${props => props.theme.primaryColor};
         border: none;
         margin-right: 5px;
@@ -70,14 +70,14 @@ p {
         width: max-content !important;
         font-family: "Source Sans Pro";
         border: 1px solid ${props => props.theme.primaryColor};
-        &:focus{
+        &:focus {
           background-color: white;
-          color:${props => props.theme.primaryColor};
+          color: ${props => props.theme.primaryColor};
         }
       }
       &::-webkit-scrollbar {
-      display: none;
-    }
+        display: none;
+      }
     }
     .digital {
       font-family: "Source Sans Pro";
@@ -87,7 +87,7 @@ p {
       a {
         color: ${props => props.theme.textColor};
       }
-      #formatdown{
+      #formatdown {
         color: ${props => props.theme.primaryColor};
       }
     }
@@ -175,7 +175,7 @@ p {
       .syllabus-table-head > th,
       .syllabus-table-row > td {
         font-family: "Quicksand";
-        padding: 10px 0px 0px 60px;
+        padding: 20px;
       }
       .syllabus-table-head > th {
         font-size: 1.3rem;

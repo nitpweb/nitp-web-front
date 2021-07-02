@@ -1,4 +1,58 @@
 const home = "http://www.nitp.ac.in/"
+
+const LabsTable = [
+  {
+    "Sl. No.": 1,
+    "Name of Laboratories": "Transportation Engineering Lab",
+    "Area (Sq. ft.)": 2299,
+  },
+  {
+    "Sl. No.": 2,
+    "Name of Laboratories": "Cement Concrete Lab",
+    "Area (Sq. ft.)": 1437.7,
+  },
+  {
+    "Sl. No.": 3,
+    "Name of Laboratories": "Water Resources Engineering Lab",
+    "Area (Sq. ft.)": 4626.36,
+  },
+  {
+    "Sl. No.": 4,
+    "Name of Laboratories": "Material Testing Lab",
+    "Area (Sq. ft.)": 3909.29,
+  },
+  {
+    "Sl. No.": 5,
+    "Name of Laboratories": "Geotechnical Lab",
+    "Area (Sq. ft.)": 2770.68,
+  },
+  {
+    "Sl. No.": 6,
+    "Name of Laboratories": "Environmental Engineering Lab",
+    "Area (Sq. ft.)": 1389.52,
+  },
+  {
+    "Sl. No.": 7,
+    "Name of Laboratories": "Heavy Structures Lab",
+    "Area (Sq. ft.)": 2357.04,
+  },
+  {
+    "Sl. No.": 8,
+    "Name of Laboratories": "Surveying Lab",
+    "Area (Sq. ft.)": 1100,
+  },
+  {
+    "Sl. No.": 9,
+    "Name of Laboratories": "Civil Engineering Computer Lab",
+    "Area (Sq. ft.)": 472.31,
+  },
+  {
+    "Sl. No.": 10,
+    "Name of Laboratories": "Earthquake and Safety Clinic",
+    "Area (Sq. ft.)": 1930.5,
+  },
+]
+
 export const Labs = [
   {
     title: (
@@ -22,57 +76,15 @@ export const Labs = [
           <th>Name of Laboratories</th>
           <th>Area (Sq. ft.)</th>
         </tr>
-        <tr>
-          <td>1</td>
-          <td>Transportation Engineering Lab</td>
-          <td>2299.0</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Cement Concrete Lab</td>
-          <td>1437.7</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Water Resources Engineering Lab</td>
-          <td>4626.36</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td> Material Testing Lab</td>
-          <td>3909.29</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td> Geotechnical Lab</td>
-          <td> 2770.68</td>
-        </tr>
-        <tr>
-          {" "}
-          <td>6 </td>
-          <td>Environmental Engineering Lab</td>
-          <td> 1389.52</td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td> Heavy Structures Lab </td>
-          <td>2357.04</td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td> Surveying Lab</td>
-          <td> 1100.0</td>
-        </tr>
-        <tr>
-          <td>9</td>
-          <td> Civil Engineering Computer Lab</td>
-          <td> 472.31</td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td> Earthquake and Safety Clinic</td>
-          <td> 1930.50</td>
-        </tr>
+        {LabsTable.map((row, idx) => {
+          return (
+            <tr key={idx}>
+              <td>{row["Sl. No."]}</td>
+              <td>{row["Name of Laboratories"]}</td>
+              <td>{row["Area (Sq. ft.)"]}</td>
+            </tr>
+          )
+        })}
       </table>
     ),
   },

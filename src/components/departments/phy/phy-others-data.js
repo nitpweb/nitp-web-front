@@ -1,72 +1,67 @@
+const Tables = {
+  fundedProjects: [
+    {
+      "Sl. No": 1,
+      "Name of the projects":
+        "Development Multifunctional Perovskite Materials for Device Application",
+      "Name of the faculty": "Dr. D.K. Mahato",
+      "Major funding agency": "DRDO",
+      "Completed / Ongoing": "Ongoing",
+      "Grant Sanctioned (INR in Lakhs)": 16.5552,
+    },
+    {
+      "Sl. No": 2,
+      "Name of the projects":
+        "Study Spin Injection & Spin Dynamics in Semiconductors for Spintronic Application",
+      "Name of the faculty": "Dr. Samrat Mukherjee",
+      "Major funding agency": "CSIR",
+      "Completed / Ongoing": "Ongoing",
+      "Grant Sanctioned (INR in Lakhs)": 18.94,
+    },
+    {
+      "Sl. No": 3,
+      "Name of the projects":
+        "Characterizations of Magnetically Doped Semiconductor for possible Spintronic Applications",
+      "Name of the faculty": "Dr. Samrat Mukherjee",
+      "Major funding agency": "UGC",
+      "Completed / Ongoing": "Ongoing",
+      "Grant Sanctioned (INR in Lakhs)": 12.43,
+    },
+    {
+      "Sl. No": 4,
+      "Name of the projects":
+        'Facile Synthesis and Characterization of Magnetically Modulated Luminescent Nanocomposites{" "}',
+      "Name of the faculty": "Dr. Samrat Mukherjee",
+      "Major funding agency": "AICTE",
+      "Completed / Ongoing": "Completed",
+      "Grant Sanctioned (INR in Lakhs)": 8.5,
+    },
+  ],
+}
+
 export const Activities = {
   content: (
     <>
       <h2>Externally Funded Projects Running in the Department</h2>
       <table className="table-act">
-        <tr>
-          <td>
-            <b>Sl. No</b>
-          </td>
-          <td>
-            <b>Name of the projects</b>
-          </td>
-          <td>
-            <b>Name of the faculty</b>
-          </td>
-          <td>
-            <b>Major funding agency</b>
-          </td>
-          <td>
-            <b>Completed / Ongoing</b>
-          </td>
-          <td>
-            <b>Grant Sanctioned (INR in Lakhs)</b>
-          </td>
+        <tr className="syllabus-table-head">
+          <th>Sl. No</th>
+          <th>Name of the projects</th>
+          <th>Name of the faculty</th>
+          <th>Major funding agency</th>
+          <th>Completed / Ongoing</th>
+          <th>Grant Sanctioned (INR in Lakhs)</th>
         </tr>
-        <tr>
-          <td>1</td>
-          <td>
-            Development Multifunctional Perovskite Materials for Device
-            Application
-          </td>
-          <td>Dr. D.K. Mahato</td>
-          <td>DRDO</td>
-          <td>Ongoing</td>
-          <td>16.5552</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>
-            Study Spin Injection & Spin Dynamics in Semiconductors for
-            Spintronic Application
-          </td>
-          <td>Dr. Samrat Mukherjee</td>
-          <td>CSIR</td>
-          <td>Ongoing</td>
-          <td>18.94</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>
-            Characterizations of Magnetically Doped Semiconductor for possible
-            Spintronic Applications
-          </td>
-          <td>Dr. Samrat Mukherjee</td>
-          <td>UGC</td>
-          <td>Ongoing</td>
-          <td>12.43</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>
-            Facile Synthesis and Characterization of Magnetically Modulated
-            Luminescent Nanocomposites{" "}
-          </td>
-          <td>Dr. Samrat Mukherjee</td>
-          <td>AICTE</td>
-          <td>Completed</td>
-          <td>8.5</td>
-        </tr>
+        {Tables.fundedProjects.map((row, idx) => (
+          <tr key={idx}>
+            <td>{row["Sl. No"]}</td>
+            <td>{row["Name of the projects"]}</td>
+            <td>{row["Name of the faculty"]}</td>
+            <td>{row["Major funding agency"]}</td>
+            <td>{row["Completed / Ongoing"]}</td>
+            <td>{row["Grant Sanctioned (INR in Lakhs)"]}</td>
+          </tr>
+        ))}
       </table>
     </>
   ),

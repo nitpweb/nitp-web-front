@@ -88,6 +88,80 @@ export const ActivityImages = [
   <img src={`${home}cheimg/11.jpg`} alt="image" />,
 ]
 
+const SponseredProjectsTable = [
+  {
+    "Sl. No.": 1,
+    "Name of Faculty": "Dr. Subrata Das",
+    "Title of Project":
+      'Metallosupramolecular complexes with bioactive pyrimidine derivatives: Materials for advanced applications{" "}',
+    "Sponsored Agency": "DST-SERB, Govt. of India, Ongoing (2019-2022)",
+    "Amount (Rs.)": "42.85 Lacs",
+  },
+  {
+    "Sl. No.": 2,
+    "Name of Faculty": "Dr. Tasneem Parvin",
+    "Title of Project":
+      "Exploration of bifunctional thiourea-amine organocatalysts in asymmetric multicomponent reactions",
+    "Sponsored Agency": "DST-SERB, Govt. of India. Completed(2016-2019)",
+    "Amount (Rs.)": "51.95 Lakh",
+  },
+  {
+    "Sl. No.": 3,
+    "Name of Faculty": "Dr. Suvankar Dasgupta",
+    "Title of Project": "Host-Guest Chemistry for Stimuli-Responsive System",
+    "Sponsored Agency": "DST-SERB, Govt. of India, (2016-)",
+    "Amount (Rs.)": "36.21 Lacs",
+  },
+  {
+    "Sl. No.": 4,
+    "Name of Faculty": "Dr. Aniruddha Paul",
+    "Title of Project":
+      "Surface-Immobilized Growth of Anisotropic Noble Metal Nanoparticles: Spectroscopic Investigation and Application",
+    "Sponsored Agency": "DST-SERB, Govt. of India, (2016-)",
+    "Amount (Rs.)": "45.16 Lacs",
+  },
+  {
+    "Sl. No.": 5,
+    "Name of Faculty": "Dr. Rima Thakur",
+    "Title of Project":
+      "Stereoselective Strategies towards beta-glycosylation: En route synthesis of bioactive compounds",
+    "Sponsored Agency": "DST-SERB, Govt. of India, completed (2016-2019)",
+    "Amount (Rs.)": "37.62 Lacs",
+  },
+  {
+    "Sl. No.": 6,
+    "Name of Faculty": "Dr. Mukesh Choudhary",
+    "Title of Project":
+      "Synthesis, characterization, crystal structure, superoxide dismutase and antimicrobial activities of some new copper(II) and nickel(II) complexes containing ONN donor Schiff bases and bidentate N, N, donor co-ligands",
+    "Sponsored Agency": "CSIR, New Delhi, Completed (2016-2019)",
+    "Amount (Rs.)": "8 Lacs",
+  },
+  {
+    "Sl. No.": 7,
+    "Name of Faculty": "Dr. Niki Sweta Jha",
+    "Title of Project":
+      "Biophysical and electrochemical characterization of G-quadruplex and small molecules binding",
+    "Sponsored Agency": "DST-SERB, Govt. of India, Completed",
+    "Amount (Rs.)": "20.76 lacs",
+  },
+  {
+    "Sl. No.": 8,
+    "Name of Faculty": "Dr. Subrata Das",
+    "Title of Project":
+      "Nitroso-Diels-Alder (NDA) reactions for the synthesis of some heterocyclic compounds",
+    "Sponsored Agency": "DST-SERB, New Delhi, Completed (2013-2017)",
+    "Amount (Rs.)": "12 Lacs",
+  },
+  {
+    "Sl. No.": 9,
+    "Name of Faculty": "Dr. Tasneem Parvin",
+    "Title of Project":
+      "Design and development of multifunctional organocatalysts for asymmetric synthesis",
+    "Sponsored Agency": "DST-SERB, New Delhi, Completed (2010-2014)",
+    "Amount (Rs.)": "19.90 Lacs",
+  },
+]
+
 export const Activity = {
   content: (
     <>
@@ -219,109 +293,33 @@ export const Activity = {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1.</td>
-            <td>Dr. Subrata Das</td>
-            <td>
-              Metallosupramolecular complexes with bioactive pyrimidine
-              derivatives: Materials for advanced applications{" "}
-            </td>
-            <td>DST-SERB, Govt. of India, Ongoing (2019-2022)</td>
-            <td>42.85 Lacs</td>
-          </tr>
-          <tr>
-            <td>2.</td>
-            <td>Dr. Tasneem Parvin</td>
-            <td>
-              Exploration of bifunctional thiourea-amine organocatalysts in
-              asymmetric multicomponent reactions
-            </td>
-            <td>DST-SERB, Govt. of India. Completed(2016-2019)</td>
-            <td>51.95 Lakh</td>
-          </tr>
-          <tr>
-            <td>3.</td>
-            <td>Dr. Suvankar Dasgupta</td>
-            <td>Host-Guest Chemistry for Stimuli-Responsive System</td>
-            <td>DST-SERB, Govt. of India, (2016-)</td>
-            <td>36.21 Lacs</td>
-          </tr>
-          <tr>
-            <td>4.</td>
-            <td>Dr. Aniruddha Paul</td>
-            <td>
-              Surface-Immobilized Growth of Anisotropic Noble Metal
-              Nanoparticles: Spectroscopic Investigation and Application
-            </td>
-            <td>DST-SERB, Govt. of India, (2016-)</td>
-            <td>45.16 Lacs</td>
-          </tr>
-          <tr>
-            <td>5.</td>
-            <td>Dr. Rima Thakur</td>
-            <td>
-              Stereoselective Strategies towards beta-glycosylation: En route
-              synthesis of bioactive compounds
-            </td>
-            <td>DST-SERB, Govt. of India, completed (2016-2019)</td>
-            <td>37.62 Lacs</td>
-          </tr>
-          <tr>
-            <td>6.</td>
-            <td>Dr. Mukesh Choudhary</td>
-            <td>
-              Synthesis, characterization, crystal structure, superoxide
-              dismutase and antimicrobial activities of some new copper(II) and
-              nickel(II) complexes containing ONN donor Schiff bases and
-              bidentate N, N, donor co-ligands
-            </td>
-            <td>CSIR, New Delhi, Completed (2016-2019)</td>
-            <td>8 Lacs</td>
-          </tr>
-          <tr>
-            <td>7.</td>
-            <td>Dr. Niki Sweta Jha</td>
-            <td>
-              Biophysical and electrochemical characterization of G-quadruplex
-              and small molecules binding
-            </td>
-            <td>DST-SERB, Govt. of India, Completed</td>
-            <td>20.76 lacs</td>
-          </tr>
-          <tr>
-            <td>8.</td>
-            <td>Dr. Subrata Das</td>
-            <td>
-              Nitroso-Diels-Alder (NDA) reactions for the synthesis of some
-              heterocyclic compounds
-            </td>
-            <td>DST-SERB, New Delhi, Completed (2013-2017)</td>
-            <td>12 Lacs</td>
-          </tr>
-          <tr>
-            <td>9.</td>
-            <td>Dr. Tasneem Parvin</td>
-            <td>
-              Design and development of multifunctional organocatalysts for
-              asymmetric synthesis
-            </td>
-            <td>DST-SERB, New Delhi, Completed (2010-2014)</td>
-            <td>19.90 Lacs</td>
-          </tr>
+          {SponseredProjectsTable.map((row, idx) => {
+            return (
+              <tr key={idx}>
+                <td>{row["Sl. No."]}</td>
+                <td>{row["Name of Faculty"]}</td>
+                <td>{row["Title of Project"]}</td>
+                <td>{row["Sponsored Agency"]}</td>
+                <td>{row["Amount (Rs.)"]}</td>
+              </tr>
+            )
+          })}
         </tbody>
       </table>
 
-      <h2>News</h2>
-      <p>
-        <h3>
-          <ul>
-            <li>
-              Department of Chemistry welcomes applications for PhD from
-              NET/GATE qualified MSc./M.Tech. students.
-            </li>
-          </ul>
-        </h3>
-      </p>
+      <div>
+        <h3>News</h3>
+        <p>
+          <h3>
+            <ul>
+              <li>
+                Department of Chemistry welcomes applications for PhD from
+                NET/GATE qualified MSc./M.Tech. students.
+              </li>
+            </ul>
+          </h3>
+        </p>
+      </div>
     </>
   ),
 }

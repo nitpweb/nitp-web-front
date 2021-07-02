@@ -1,4 +1,146 @@
 const home = "http://www.nitp.ac.in/"
+
+const Tables = {
+  studentSelectedForInternships: [
+    {
+      "Roll No": 1422014,
+      Name: "SRIRAM RANGARAJAN",
+      "Academic / Industrial": "Academic",
+      Organisation: "IIT Bombay",
+    },
+    {
+      "Roll No": 1421001,
+      Name: "MUNJI LALITHA KUMARI",
+      "Academic / Industrial": "Industrial",
+      Organisation: "KPIT Technologies, Bangalore",
+    },
+    {
+      "Roll No": 1421005,
+      Name: "SUBHRA CHANDAN BEHERA",
+      "Academic / Industrial": "Industrial",
+      Organisation: "KPIT Technologies",
+    },
+    {
+      "Roll No": 1421006,
+      Name: "DEBASISH MOHAPATRA",
+      "Academic / Industrial": "Industrial",
+      Organisation: "KPIT Technologies",
+    },
+    {
+      "Roll No": 1421017,
+      Name: "KISHAN KUMAR",
+      "Academic / Industrial": "Industrial",
+      Organisation: "KPIT Technologies",
+    },
+  ],
+  projectSanctioned: [
+    {
+      "Name of the Project":
+        "Fault Tolerant Control of Permanent Magnet Synchronous Motor Drive in Electric Vehicles",
+      "Name of the PI": "Dr. Vimlesh Verma",
+      Collaboration: "None",
+      "Sponsoring Agency": "SERB - DST",
+      "Sanctioned Amount(in lakh)": "32 Lakhs",
+      Status: "Sanctioned",
+    },
+    {
+      "Name of the Project":
+        "Development of Potentiostat System for General Purpose Electro-Chemical Applications",
+      "Name of the PI":
+        "PI - Prof. Rajib Bandhyopadhyay(JU)Co-PI – Dr Arunangshu Ghosh (NITP)",
+      Collaboration: "Jadavpur University",
+      "Sponsoring Agency": "DST",
+      "Sanctioned Amount(in lakh)": "23 Lakh",
+      Status: "On-going",
+    },
+  ],
+  shortTermCourse: [
+    {
+      Title: "DSP Applications on ARM Platform",
+      "Developed/Organized By": "Dr Arunangshu Ghosh",
+      Duration: "7 days (26/08/2016 to 01/09/2016)",
+      "Resource Persons":
+        "Prof. S K Sinha (Retd. Prof. IISc Bangalore)  Prof. Donald Reay (Heriot-Watt University; Edinburgh, UK.",
+    },
+    {
+      Title:
+        "Short term course(Intelligent sensing technologies and Instrumentation)",
+      "Developed/Organized By": "Dr Arunangshu Ghosh",
+      Duration: "5 days (05/0l/2016 to 09/01/2016)",
+      "Resource Persons": "IITs, JU, NIT and Industries (CDAC)",
+    },
+    {
+      Title:
+        "Short term course(Advanced Power Electronics converters for renewable energy and Industrial Drives)",
+      "Developed/Organized By": "Dr Vimlesh Verma",
+      Duration: "5 days (14/12/2015 to 18/12/2015)",
+      "Resource Persons": "Faculties from IITs, NITs and Industries (ABB)",
+    },
+    {
+      Title: "Short term course(Advances in Industrial Control)",
+      "Developed/Organized By": "Dr Nishat Anwar",
+      Duration: "5 days (27/l 1/2015 to 1/12/2015)",
+      "Resource Persons":
+        "Faculties from IITs , AMU, NITs and Foreign University.",
+    },
+    {
+      Title:
+        "Short term course Reliability, Availability, Maintainability and Safety (RAMS)",
+      "Developed/Organized By": "Dr Mala De",
+      Duration: "2 days (18/04/2015 to 19/04/2015)",
+      "Resource Persons":
+        "Dr. Ajeet Kr PandeyDr. Mukul Verma,Experts from Industries",
+    },
+    {
+      Title: "Summer School",
+      "Developed/Organized By": "Dr G K Choudhury",
+      Duration: "1 week (19/10/2012 to 23/10/2012)",
+      "Resource Persons": "Faculties from IITs and NITs",
+    },
+  ],
+  expertLectures: [
+    {
+      Title:
+        "Expert classes and discussion session on Power Electronics and Industrial Drives & control",
+      Duration: "4 days (25/02/2016 to 28/02/2016)",
+      "Resource Persons": "Prof. S. K Sinha (Retd Professor IISC Banglore)",
+    },
+    {
+      Title:
+        "DC Motor Speed Control Problem and Discussion on end-to-end Controller Design",
+      Duration: "4 days (25/02/216 to 28/02/2016)",
+      "Resource Persons": "Prof. S.K Sinha (Retd. Prof. IISc Bangalore)",
+    },
+    {
+      Title: "Power Electronics & Industrial Drive Control",
+      Duration: "5 days (03/02/2015 to 09/02/2015)",
+      "Resource Persons": "J R P Gupta(Professor, DTU)",
+    },
+    {
+      Title:
+        "General overview on Aerospace Industries and equipment and Information on higher studies requirement in USA",
+      Duration: "1 day on 20/03/2015",
+      "Resource Persons":
+        "Mr. Fariz Kalim, Manager Project Management and Hardware Development, TELEDYNE CONTROLS",
+    },
+    {
+      Title: "Commercial Aspects of Solar Energy in Indian Market",
+      Duration: "1 day on18/03/2015",
+      "Resource Persons": "Mr. S. Talapatra(Industry Expert)",
+    },
+    {
+      Title: "Microcontrollers/ PIC processor/ ARM Processor",
+      Duration: "1 day on 12/03/2015",
+      "Resource Persons": "Radha Narayan Rao(Industry Expert)",
+    },
+    {
+      Title:
+        "Embedded System Design and implementation – case study and discussion",
+      Duration: "1 day on 29/01/2015",
+      "Resource Persons": "Prof. S.K Sinha (Retd. Prof. IISc Bangalore)",
+    },
+  ],
+}
 export const Labs = [
   {
     content: (
@@ -152,93 +294,24 @@ export const Achievements = [
   {
     content: (
       <>
-        <table
-          className="table-act"
-          border="1"
-          style={{ display: "inline-block" }}
-        >
+        <table className="table-act">
           <thead>
-            <tr>
+            <tr className="syllabus-table-head">
               <th>Roll No</th>
-
               <th>Name</th>
-
               <th>Academic / Industrial</th>
-
               <th>Organisation</th>
             </tr>
-          </thead>{" "}
+          </thead>
           <tbody>
-            <tr>
-              <td>
-                <p align="center">1422014</p>
-              </td>
-              <td>
-                <p align="center">SRIRAM RANGARAJAN</p>
-              </td>
-              <td>
-                <p align="center">Academic</p>
-              </td>
-              <td>
-                <p align="center">IIT Bombay</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p align="center">1421001</p>
-              </td>
-              <td>
-                <p align="center">MUNJI LALITHA KUMARI</p>
-              </td>
-              <td>
-                <p align="center">Industrial</p>
-              </td>
-              <td>
-                <p align="center">KPIT Technologies, Bangalore</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p align="center">1421005</p>
-              </td>
-              <td>
-                <p align="center">SUBHRA CHANDAN BEHERA</p>
-              </td>
-              <td>
-                <p align="center">Industrial</p>
-              </td>
-              <td>
-                <p align="center">KPIT Technologies</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p align="center">1421006</p>
-              </td>
-              <td>
-                <p align="center">DEBASISH MOHAPATRA</p>
-              </td>
-              <td>
-                <p align="center">Industrial</p>
-              </td>
-              <td>
-                <p align="center">KPIT Technologies</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p align="center">1421017</p>
-              </td>
-              <td>
-                <p align="center">KISHAN KUMAR</p>
-              </td>
-              <td>
-                <p align="center">Industrial</p>
-              </td>
-              <td>
-                <p align="center">KPIT Technologies</p>
-              </td>
-            </tr>
+            {Tables.studentSelectedForInternships.map((row, idx) => (
+              <tr key={idx}>
+                <td>{row["Roll No"]}</td>
+                <td>{row.Name}</td>
+                <td>{row["Academic / Industrial"]}</td>
+                <td>{row.Organisation}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </>
@@ -482,9 +555,9 @@ export const Activities = [
     content: (
       <>
         <h2>List of Projects Sanctioned / On-going:&nbsp;-</h2>
-        <table className="table-act" border="1">
+        <table className="table-act">
           <thead>
-            <tr>
+            <tr className="syllabus-table-head">
               <th>Name of the Project</th>
               <th>Name of the PI</th>
               <th>Collaboration</th>
@@ -494,175 +567,37 @@ export const Activities = [
             </tr>
           </thead>{" "}
           <tbody>
-            <tr>
-              <td>
-                <p align="center">
-                  Fault Tolerant Control of Permanent Magnet Synchronous Motor
-                  Drive in Electric Vehicles
-                </p>
-              </td>
-              <td>
-                <p align="center">Dr. Vimlesh Verma</p>
-              </td>
-              <td>
-                <p align="center">None</p>
-              </td>
-              <td>
-                <p align="center">SERB - DST</p>
-              </td>
-              <td>
-                <p align="center">32 Lakhs</p>
-              </td>
-              <td>
-                <p align="center">Sanctioned</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p align="center">
-                  Development of Potentiostat System for General Purpose
-                  Electro-Chemical Applications
-                </p>
-              </td>
-              <td>
-                <p align="center">PI - Prof. Rajib Bandhyopadhyay</p>
-                <p align="center">(JU)</p>
-                <p align="center">Co-PI &ndash; Dr Arunangshu Ghosh (NITP)</p>
-              </td>
-              <td>
-                <p align="center">Jadavpur University</p>
-              </td>
-              <td>
-                <p align="center">DST</p>
-              </td>
-              <td>
-                <p align="center">23 Lakh</p>
-              </td>
-              <td>
-                <p align="center">On-going</p>
-              </td>
-            </tr>
+            {Tables.projectSanctioned.map((row, idx) => (
+              <tr key={idx}>
+                <td>{row["Name of the Project"]}</td>
+                <td>{row["Name of the PI"]}</td>
+                <td>{row.Collaboration}</td>
+                <td>{row["Sponsoring Agency"]}</td>
+                <td>{row["Sanctioned Amount(in lakh)"]}</td>
+                <td>{row.Status}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
-        <p>
-          &nbsp;<strong>The List of Short Term Courses organized:-</strong>
-        </p>
-        <table className="table-act" border="1">
-          <tbody>
-            <tr>
+        <h2>&nbsp;The List of Short Term Courses organized:-</h2>
+        <table className="table-act">
+          <thead>
+            <tr className="syllabus-table-head">
               <th>Title</th>
-
               <th>Developed/Organized By</th>
-
               <th>Duration</th>
-
               <th>Resource Persons</th>
             </tr>
-            <tr>
-              <td>
-                <p align="center">DSP Applications on ARM Platform</p>
-              </td>
-              <td>
-                <p align="center">Dr Arunangshu Ghosh</p>
-              </td>
-              <td>
-                <p align="center">7 days (26/08/2016 to 01/09/2016)</p>
-              </td>
-              <td>
-                <p align="center">
-                  Prof. S K Sinha (Retd. Prof. IISc Bangalore)
-                </p>
-                <p align="center">
-                  Prof. Donald Reay (Heriot-Watt University; Edinburgh, UK.
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p align="center">
-                  Short term course(Intelligent sensing technologies and
-                  Instrumentation)
-                </p>
-              </td>
-              <td>
-                <p align="center">Dr Arunangshu Ghosh</p>
-              </td>
-              <td>
-                <p align="center">5 days (05/0l/2016 to 09/01/2016)</p>
-              </td>
-              <td>
-                <p align="center">IITs, JU, NIT and Industries (CDAC)</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p align="center">
-                  Short term course(Advanced Power Electronics converters for
-                  renewable energy and Industrial Drives)
-                </p>
-              </td>
-              <td>
-                <p align="center">Dr Vimlesh Verma</p>
-              </td>
-              <td>
-                <p align="center">5 days (14/12/2015 to 18/12/2015)</p>
-              </td>
-              <td>
-                <p align="center">
-                  Faculties from IITs, NITs and Industries (ABB)
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p align="center">
-                  Short term course(Advances in Industrial Control)
-                </p>
-              </td>
-              <td>
-                <p align="center">Dr Nishat Anwar</p>
-              </td>
-              <td>
-                <p align="center">5 days (27/l 1/2015 to 1/12/2015)</p>
-              </td>
-              <td>
-                <p align="center">
-                  Faculties from IITs , AMU, NITs and Foreign University.
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p align="center">
-                  Short term course Reliability, Availability, Maintainability
-                  and Safety (RAMS)
-                </p>
-              </td>
-              <td>
-                <p align="center">Dr Mala De</p>
-              </td>
-              <td>
-                <p align="center">2 days (18/04/2015 to 19/04/2015)</p>
-              </td>
-              <td>
-                <p align="center">Dr. Ajeet Kr Pandey</p>
-                <p align="center">Dr. Mukul Verma,Experts from Industries</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p align="center">Summer School</p>
-              </td>
-              <td>
-                <p align="center">Dr G K Choudhury</p>
-              </td>
-              <td>
-                <p align="center">1 week (19/10/2012 to 23/10/2012)</p>
-              </td>
-              <td>
-                <p align="center">Faculties from IITs and NITs</p>
-              </td>
-            </tr>
+          </thead>
+          <tbody>
+            {Tables.shortTermCourse.map((row, idx) => (
+              <tr key={idx}>
+                <td>{row.Title}</td>
+                <td>{row["Developed/Organized By"]}</td>
+                <td>{row.Duration}</td>
+                <td>{row["Resource Persons"]}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
         <h2>
@@ -670,132 +605,22 @@ export const Activities = [
           Representatives:-
         </h2>
 
-        <table className="table-act" border="1">
+        <table className="table-act">
+          <thead>
+            <tr className="syllabus-table-head">
+              <th>Title</th>
+              <th>Duration</th>
+              <th>Resource Persons</th>
+            </tr>
+          </thead>
           <tbody>
-            <tr>
-              <th>
-                <p align="center">
-                  <strong>Title</strong>
-                </p>
-              </th>
-              <th>
-                <p align="center">
-                  <strong>Duration</strong>
-                </p>
-              </th>
-              <th>
-                <p align="center">
-                  <strong>Resource Persons</strong>
-                </p>
-              </th>
-            </tr>
-            <tr>
-              <td>
-                <p align="center">
-                  Expert classes and discussion session on Power Electronics and
-                  Industrial Drives &amp; control
-                </p>
-              </td>
-              <td>
-                <p align="center">4 days (25/02/2016 to 28/02/2016)</p>
-              </td>
-              <td>
-                <p align="center">
-                  Prof. S. K Sinha (Retd Professor IISC Banglore)
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p align="center">
-                  DC Motor Speed Control Problem and Discussion on end-to-end
-                  Controller Design
-                </p>
-              </td>
-              <td>
-                <p align="center">4 days (25/02/216 to 28/02/2016)</p>
-              </td>
-              <td>
-                <p align="center">
-                  Prof. S.K Sinha (Retd. Prof. IISc Bangalore)
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p align="center">
-                  Power Electronics &amp; Industrial Drive Control
-                </p>
-              </td>
-              <td>
-                <p align="center">5 days (03/02/2015 to 09/02/2015)</p>
-              </td>
-              <td>
-                <p align="center">J R P Gupta</p>
-                <p align="center">(Professor, DTU)</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p align="center">
-                  General overview on Aerospace Industries and equipment and
-                  Information on higher studies requirement in USA
-                </p>
-              </td>
-              <td>
-                <p align="center">1 day on 20/03/2015</p>
-              </td>
-              <td>
-                <p align="center">
-                  Mr. Fariz Kalim, Manager Project Management and Hardware
-                  Development, TELEDYNE CONTROLS
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p align="center">
-                  Commercial Aspects of Solar Energy in Indian Market
-                </p>
-              </td>
-              <td>
-                <p align="center">1 day on18/03/2015</p>
-              </td>
-              <td>
-                <p align="center">Mr. S. Talapatra</p>
-                <p align="center">(Industry Expert)</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p align="center">
-                  Microcontrollers/ PIC processor/ ARM Processor
-                </p>
-              </td>
-              <td>
-                <p align="center">1 day on 12/03/2015</p>
-              </td>
-              <td>
-                <p align="center">Radha Narayan Rao</p>
-                <p align="center">(Industry Expert)</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p align="center">
-                  Embedded System Design and implementation &ndash; case study
-                  and discussion
-                </p>
-              </td>
-              <td>
-                <p align="center">1 day on 29/01/2015</p>
-              </td>
-              <td>
-                <p align="center">
-                  Prof. S.K Sinha (Retd. Prof. IISc Bangalore)
-                </p>
-              </td>
-            </tr>
+            {Tables.expertLectures.map((row, idx) => (
+              <tr key={idx}>
+                <td>{row.Title}</td>
+                <td>{row.Duration}</td>
+                <td>{row["Resource Persons"]}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </>
