@@ -62,12 +62,12 @@ main {
   align-items: center;
 }
 
-.backgroundimage{
-position: absolute;
-width: 75vw;
-height:80vh;
-opacity: 0.3;
-z-index: 0;
+.backgroundimage {
+  position: absolute;
+  width: 75vw;
+  height: 80vh;
+  opacity: 0.3;
+  z-index: 0;
 }
 
 .rowmarr3 {
@@ -110,4 +110,3 @@ z-index: 0;
   max-width: 100%;
   height: auto;
 }
-
