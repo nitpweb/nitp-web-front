@@ -351,7 +351,7 @@ const Faculty = [
         data: "",
       },
       {
-        url: "#",
+        url: "/jobsnitp",
         title: "Recruitments",
         data: "",
       },

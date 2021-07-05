@@ -21,7 +21,7 @@ const rti_data = {
         </h3>
       </div>
       <br />
-      <table className="table-act" border="1">
+      <table className="table-act" border="1" style={{ textAlign: "justify" }}>
         <tbody>
           <tr>
             <th>1</th>
