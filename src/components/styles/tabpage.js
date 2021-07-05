@@ -83,9 +83,14 @@ export const TabPage = styled.div`
       font-family: "Source Sans Pro";
       h3 {
         color: ${props => props.theme.primaryColor} !important;
+        font-size: ${props => props.theme.font * 1.2}rem;
       }
       a {
         color: ${props => props.theme.textColor};
+        font-size: ${props => props.theme.font * 1}rem;
+      }
+      p {
+        font-size: ${props => props.theme.font * 1}rem;
       }
       #formatdown {
         color: ${props => props.theme.primaryColor};
