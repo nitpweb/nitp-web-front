@@ -269,14 +269,13 @@ const Academicspage = () => {
                 {view == "programmesug"
               ? acadData.courseUG.map(item => (
                   <div className="digital">
-                    <h1
+                    <h3
                       style={{
-                        fontFamily: `Source Sans Pro`,
-                        color: `#941b0c`,
+                        fontFamily: `Source Sans Pro`
                       }}
                     >
                       {item.title}
-                    </h1>
+                    </h3>
                     <br />
                     {item.data.map(e => (
                       <>
@@ -307,14 +306,13 @@ const Academicspage = () => {
             {view == "programmespg"
               ? acadData.coursePG.map(item => (
                   <div className="digital">
-                    <h1
+                    <h3
                       style={{
-                        fontFamily: `Source Sans Pro`,
-                        color: `#941b0c`,
+                        fontFamily: `Source Sans Pro`
                       }}
                     >
                       {item.title}
-                    </h1>
+                    </h3>
                     <br />
                     {item.data.map(e => (
                       <>
@@ -345,14 +343,13 @@ const Academicspage = () => {
             {view == "programmesdd"
               ? acadData.coursePHD.map(item => (
                   <div className="digital">
-                    <h1
+                    <h3
                       style={{
-                        fontFamily: `Source Sans Pro`,
-                        color: `#941b0c`,
+                        fontFamily: `Source Sans Pro`
                       }}
                     >
                       {item.title}
-                    </h1>
+                    </h3>
                     <br />
                     {item.data.map(e => (
                       <>
@@ -383,14 +380,13 @@ const Academicspage = () => {
             {view == "programmesimsc"
               ? acadData.courseMsc.map(item => (
                   <div className="digital">
-                    <h1
+                    <h3
                       style={{
-                        fontFamily: `Source Sans Pro`,
-                        color: `#941b0c`,
+                        fontFamily: `Source Sans Pro`
                       }}
                     >
                       {item.title}
-                    </h1>
+                    </h3>
                     <br />
                     {item.data.map(e => (
                       <>
@@ -479,7 +475,7 @@ const Academicspage = () => {
           
           {view == "digital" ? (
             <>
-              <h1 style={{ fontFamily: `Source Sans Pro`, color: `#941b0c` }}>
+              <h1 style={{ fontFamily: `Source Sans Pro` }}>
                 Digital Initiatives of NIT Patna
               </h1>
               {acadData.datad.map(item => (
@@ -505,7 +501,7 @@ const Academicspage = () => {
           )}
           {view == "curricula" ? (
             <>
-              <h1 style={{ fontFamily: `Source Sans Pro`, color: `#941b0c` }}>
+              <h1 style={{ fontFamily: `Source Sans Pro`}}>
                 Regulation & Curricula
               </h1>
               {acadData.dataUG.map(item => (
@@ -610,7 +606,7 @@ const Academicspage = () => {
           )}
           {view == "refund" ? (
             <>
-              <h1 style={{ fontFamily: `Source Sans Pro`, color: `#941b0c` }}>
+              <h1 style={{ fontFamily: `Source Sans Pro`}}>
                 Refund Policy
               </h1>
               {acadData.refund.map(item => (
@@ -628,7 +624,7 @@ const Academicspage = () => {
           )}
           {view == "fee" ? (
             <>
-              <h1 style={{ fontFamily: `Source Sans Pro`, color: `#941b0c` }}>
+              <h1 style={{ fontFamily: `Source Sans Pro` }}>
                 Fee Structures
               </h1>
               {acadData.fee.map(item => (

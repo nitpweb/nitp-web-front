@@ -679,15 +679,18 @@ const CoursePG = [
       },
       {
         para: "Master of Mechanical Engineering (MEPG) Production",
-        link: "http://www.nitp.ac.in/downloads/course_structure/MEPG%20(Production).pdf",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/MEPG%20(Production).pdf",
       },
       {
         para: "MEPG (Thermal)",
-        link: "http://www.nitp.ac.in/downloads/course_structure/MEPG%20(Thermal).pdf",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/MEPG%20(Thermal).pdf",
       },
       {
         para: "Master of Mechanical Engineering (MEPG) Design",
-        link: "http://www.nitp.ac.in/downloads/course_structure/MEUG%20(Design).pdf",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/MEUG%20(Design).pdf",
       },
       {
         para: "Master of Urban & Regional Planning",
@@ -703,8 +706,7 @@ const CoursePHD = [
     data: [
       {
         para: "Master of Urban & Regional Planning (MURP)-DD",
-        link:
-          "http://www.nitp.ac.in/downloads/course_structure/ARPG%20DD.pdf",
+        link: "http://www.nitp.ac.in/downloads/course_structure/ARPG%20DD.pdf",
       },
       {
         para: "Master of Civil Engineering (CEPG) Enviormental-DD",
@@ -728,14 +730,16 @@ const CoursePHD = [
       },
       {
         para: "Master of Civil Engineering (CEPG) Water Resources-DD",
-        link: "http://www.nitp.ac.in/downloads/course_structure/CEPG%20(Water%20Resources)%20DD.pdf",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/CEPG%20(Water%20Resources)%20DD.pdf",
       },
       {
         para: "Master of Computer Science & Engineering (CSPG)-DD",
         link: "http://www.nitp.ac.in/downloads/course_structure/CSPG-%20DD.pdf",
       },
       {
-        para: "Master of Electronics & Communication (ECPG) Communication System-DD",
+        para:
+          "Master of Electronics & Communication (ECPG) Communication System-DD",
         link:
           "http://www.nitp.ac.in/downloads/course_structure/ECPG%20(Communication)%20DD.pdf",
       },
@@ -760,15 +764,18 @@ const CoursePHD = [
       },
       {
         para: "Master of Mechanical Engineering (MEPG) Design-DD",
-        link: "http://www.nitp.ac.in/downloads/course_structure/ME%20(Design)%20DD.pdf",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/ME%20(Design)%20DD.pdf",
       },
       {
         para: "Master of Mechanical Engineering (MEPG) Production-DD",
-        link: "http://www.nitp.ac.in/downloads/course_structure/ME%20(Production)%20DD.pdf",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/ME%20(Production)%20DD.pdf",
       },
       {
         para: "Master of Mechanical Engineering (MEPG) Thermal Engineering-DD",
-        link: "http://www.nitp.ac.in/downloads/course_structure/ME%20(Thermal)%20DD.pdf",
+        link:
+          "http://www.nitp.ac.in/downloads/course_structure/ME%20(Thermal)%20DD.pdf",
       },
     ],
   },
@@ -795,6 +802,95 @@ const CourseMsc = [
     ],
   },
 ]
+const NIRF = [
+  {
+    title: "NIRF",
+    data: [
+      {
+        para: "Enterpreneurship Students.",
+        link: "http://www.nitp.ac.in/downloads/NIRF/Enterpreneurship.xlsx",
+      },
+      {
+        para: "Students opting for higher studies.",
+        link: "http://www.nitp.ac.in/downloads/NIRF/HigherStudies_NITP.xlsx",
+      },
+      {
+        para: "Sponsored Research Projects.",
+        link:
+          "http://www.nitp.ac.in/downloads/NIRF/SponsoredResearchDetail.xlsx",
+      },
+      {
+        para:
+          "Top Universities from where students have enrolled in institution to pursue higher studies",
+        link:
+          "http://www.nitp.ac.in/downloads/NIRF/TopUniversityDetails_5D_PhD.XLSX",
+      },
+      {
+        para: "Placement",
+        link: "http://www.nitp.ac.in/downloads/NIRF/Placement_NITP.xlsx",
+      },
+      {
+        para: "Top University Details",
+        link:
+          "http://www.nitp.ac.in/downloads/NIRF/TopUniversityDetails_5D_NITP__2015_16_PG.xlsx",
+      },
+      {
+        para: "CONSULTANCY 2013-14.",
+        link:
+          "http://www.nitp.ac.in/downloads/NIRF/CONSULTANCY%20FY%202013-14.xlsx",
+      },
+      {
+        para: "CONSULTANCY 2014-15.",
+        link: "http://www.nitp.ac.in/downloads/NIRF/CONSULTANCY%202014-15.xlsx",
+      },
+      {
+        para: "CONSULTANCY 2015-16.",
+        link:
+          "http://www.nitp.ac.in/downloads/NIRF/CONSULTANCY%20FY%202015-16.ods",
+      },
+      {
+        para: "NIRF AR.",
+        link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_AR.xlsx",
+      },
+      {
+        para: "NIRF CH.",
+        link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_CH.xlsx",
+      },
+      {
+        para: "NIRF CE.",
+        link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_CE.xls",
+      },
+      {
+        para: "NIRF CSE.",
+        link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_CSE.xlsm",
+      },
+      {
+        para: "NIRF ECE.",
+        link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_ECE.xlsm",
+      },
+      {
+        para: "NIRF EE.",
+        link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_EE.xlsm",
+      },
+      {
+        para: "NIRF HSS.",
+        link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_HSS.xls",
+      },
+      {
+        para: "NIRF MA.",
+        link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_MA.xlsx",
+      },
+      {
+        para: "NIRF ME.",
+        link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_ME.xlsm",
+      },
+      {
+        para: "NIRF PH.",
+        link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_PH.xlsx",
+      },
+    ],
+  },
+]
 const acadData = {
   datad: Datad,
   dataUG: DataUG,
@@ -807,9 +903,10 @@ const acadData = {
   refund: Refund,
   fee: Fee,
   format: Format,
-  courseMsc:CourseMsc,
-  coursePG:CoursePG,
-  courseUG:CourseUG,
-  coursePHD:CoursePHD,
+  courseMsc: CourseMsc,
+  coursePG: CoursePG,
+  courseUG: CourseUG,
+  coursePHD: CoursePHD,
+  nirf:NIRF,
 }
 export default acadData
