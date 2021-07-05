@@ -20,7 +20,7 @@ const ComponentName = ({ data }) => (
                 String(item.node.path).slice(1, -1) != "" &&
                 String(item.node.path).slice(1, -1) != "404.htm" &&
                 String(item.node.path).slice(1, -1) != "sitemap" ? (
-                  <div className="row rowmarl3">
+                  <div className="row rowmarl3 digital">
                   <Link
                     to={item.node.path}
                     style={{
