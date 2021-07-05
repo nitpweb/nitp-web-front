@@ -130,4 +130,14 @@ export const datalist = [
     data: "activities",
     img: "/department/activities.svg",
   },
+  {
+    title: "Syllabus",
+    relPath: "/syllabus",
+    img: "/department/syllabus.svg",
+  },
+  {
+    title: "Faculties",
+    relPath: "/faculty",
+    img: "/department/faculty.svg",
+  },
 ]
