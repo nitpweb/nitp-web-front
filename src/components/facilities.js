@@ -167,7 +167,7 @@ Navlist.facilities.map(x => arrdata.push(...x.sub))
             </div>
           </div> */}
           {view == "cc" && (
-            <div className="layoutrow layoutrow1" id="cc">
+            <div className="layoutrow layoutrow1 digital" id="cc">
               <div className="col-6 imgcolstyle">
                 <Ccimg />
               </div>
@@ -183,7 +183,7 @@ Navlist.facilities.map(x => arrdata.push(...x.sub))
             </div>
           )}
           {view == "it" && (
-            <div className="layoutrow layoutrow1">
+            <div className="layoutrow layoutrow1 digital">
               <div className="col-6 imgcolstyle">
                 <PKImg />
               </div>
@@ -211,7 +211,7 @@ Navlist.facilities.map(x => arrdata.push(...x.sub))
             </div>
           )}
           {view == "tequip" && (
-            <div className="layoutrow layoutrow1">
+            <div className="layoutrow layoutrow1 digital">
               <div className="col-6" style={{ width: "calc(100% - 6vw)" }}>
                 <div className="row rowmarr3">
                   <h1>TEQUIP</h1>
@@ -221,7 +221,7 @@ Navlist.facilities.map(x => arrdata.push(...x.sub))
             </div>
           )}
           {view == "library" && (
-            <div className="layoutrow" id="lib">
+            <div className="layoutrow digital" id="lib">
               <div className="col-6">
                 <div className="row rowmarl3">
                   <h1>Library</h1>
@@ -298,7 +298,7 @@ Navlist.facilities.map(x => arrdata.push(...x.sub))
             </div>
           )}
           {view == "medical" && (
-            <div className="layoutrow layoutrow1" id="med">
+            <div className="layoutrow layoutrow1 digital" id="med">
               <div className="col-6 imgcolstyle">
                 <Dummyimg />
               </div>
@@ -347,7 +347,7 @@ Navlist.facilities.map(x => arrdata.push(...x.sub))
             </div>
           )}
           {view == "sports" && (
-            <div className="layoutrow" id="sport">
+            <div className="layoutrow digital" id="sport">
               <div className="col-6">
                 <div className="row rowmarl3">
                   <h1>Sport Facilities</h1>
@@ -362,7 +362,7 @@ Navlist.facilities.map(x => arrdata.push(...x.sub))
             </div>
           )}
           {view == "hostel" && (
-            <div className="layoutrow layoutrow1" id="hostel">
+            <div className="layoutrow layoutrow1 digital" id="hostel">
               <div className="col-6 imgcolstyle">
                 <Dummyimg />
               </div>
@@ -377,7 +377,7 @@ Navlist.facilities.map(x => arrdata.push(...x.sub))
             </div>
           )}
           {view == "lab" && (
-            <div className="layoutrow" id="lab">
+            <div className="layoutrow digital" id="lab">
               <div className="col-6">
                 <div className="row rowmarl3">
                   <h1>Laboratories</h1>
@@ -415,7 +415,7 @@ Navlist.facilities.map(x => arrdata.push(...x.sub))
             </div>
           )}
           {view == "wifi" && (
-            <div className="layoutrow layoutrow1" id="wifi">
+            <div className="layoutrow layoutrow1 digital" id="wifi">
               <div className="row imgcolstyle backgroundimage">
                 <img src={wifi} className="img-fluid" loading="lazy" />
               </div>
@@ -428,7 +428,7 @@ Navlist.facilities.map(x => arrdata.push(...x.sub))
             </div>
           )}
           {view == "bank" && (
-            <div className="layoutrow" id="bank">
+            <div className="layoutrow digital" id="bank">
                 <div className="row rowmarl3">
                   <h1>Bank</h1>
                 </div>
@@ -441,7 +441,7 @@ Navlist.facilities.map(x => arrdata.push(...x.sub))
             </div>
           )}
           {view == "security" && (
-            <div className="layoutrow" id="security">
+            <div className="layoutrow digital" id="security">
               <div className="row imgcolstyle backgroundimage">
                 <img src={security} className="img-fluid" loading="lazy" />
               </div>
@@ -454,7 +454,7 @@ Navlist.facilities.map(x => arrdata.push(...x.sub))
             </div>
           )}
           {view == "womancell" && (
-            <div className="layoutrow" id="wc">
+            <div className="layoutrow digital" id="wc">
                 <div className="row rowmarl3">
                   <h1>Woman Cell</h1>
                 </div>
@@ -467,7 +467,7 @@ Navlist.facilities.map(x => arrdata.push(...x.sub))
             </div>
           )}
           {view == "emu" && (
-            <div className="layoutrow" id="electric">
+            <div className="layoutrow digital" id="electric">
               <div className="row imgcolstyle backgroundimage">
                 <img src={electric} className="img-fluid" loading="lazy" />
               </div>
