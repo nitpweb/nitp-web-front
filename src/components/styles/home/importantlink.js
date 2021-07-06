@@ -22,7 +22,8 @@ export const ImportantLinkStyle = styled.div`
       .implink {
         width: 13vw;
         height: 13vw;
-        background: ${props => props.theme.backgroundSecColor};
+        /* background: ${props => props.theme.backgroundSecColor}; */
+        background: rgba(0, 0, 0, 0) linear-gradient(0deg, rgb(255, 255, 255) 20%, rgba(0, 0, 0, 0.8) 66%) repeat scroll 0% 0%;
         /* border-radius:5px; */
         /* margin-left: 1vw; */
         border: 0.5px solid #c5c5c5;
