@@ -6,11 +6,7 @@ import { TabPage } from "../components/styles/tabpage"
 const Director = () => (
   <Layout>
     <SEO title="Director's Desk" />
-    <TabPage>
-    <div className="mainDiv">
     <Directorpage />
-    </div>
-    </TabPage>
   </Layout>
 )
 

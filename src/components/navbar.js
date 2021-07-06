@@ -236,9 +236,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           <div
             className="nav-link-item"
             activeClassName="nav-link-item-active"
-            to="/facilities"
+            
           >
-            <Dropnew title="Facilities" list={Navlist.facilities} />
+            <Dropnew to="/facilities" title="Facilities" list={Navlist.facilities} />
           </div>
 
           <a

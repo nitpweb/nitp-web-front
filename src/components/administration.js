@@ -38,7 +38,7 @@ const Administrationpage = () => {
   return (
     <>
       <AdminStyle>
-        <Navigate data={Admin} callback={getView} tab={tab} />
+        <Navigate data={Admin} callback={getView} tab={tab?tab:"director"} />
 
         <div className="mainDiv">
           {view == "director" && <Director id="director" />}

@@ -65,7 +65,7 @@ const DataPG = [
 const DataPHD = [
   {
     heading: "Regulation & Curricula",
-    title: "PHD",
+    title: "PhD",
     data: [
       {
         link:
