@@ -85,7 +85,7 @@ const Studentpage = () => {
             </div>
           </div> */}
           {view == "clubs" && (
-            <div className="layoutrowmain">
+            <div className="layoutrowmain digital">
               <StudentSlide />
             </div>
           )}
@@ -116,7 +116,7 @@ const Studentpage = () => {
             </div>
           )}
           {view == "sac" && (
-            <div className="layoutrow" id="sac">
+            <div className="layoutrow digital" id="sac">
               <div className="col-6">
                 <div className="row rowmarl3">
                   <h1>Student Activity Center</h1>
@@ -131,7 +131,7 @@ const Studentpage = () => {
             </div>
           )}
           {view == "corona" && (
-            <div className="layoutrow layoutrow1" id="tcf">
+            <div className="layoutrow digital" id="tcf">
               <div className="col-6 imgcolstyle">
                 <Coronapic />
               </div>
@@ -146,7 +146,7 @@ const Studentpage = () => {
             </div>
           )}
           {view == "studentexchange" && (
-            <div className="layoutrow layoutrow1" id="sep">
+            <div className="layoutrow digital" id="sep">
               <div className="row imgcolstyle backgroundimage">
                 <img src={exchange} className="img-fluid" loading="lazy" />
               </div>
@@ -159,7 +159,7 @@ const Studentpage = () => {
             </div>
           )}
           {view == "scholarship" && (
-            <div className="layoutrow layoutrow1 others">
+            <div className="layoutrow others">
               <div className="row rowmarl3">
                 <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
                   Scholarships
@@ -185,7 +185,7 @@ const Studentpage = () => {
             </div>
           )}
           {view == "fellowship" && (
-            <div className="layoutrow layoutrow1" id="notice">
+            <div className="layoutrow digital" id="notice">
               <div className="row imgcolstyle backgroundimage">
                 <img src="/mail.svg" className="img-fluid" loading="lazy" />
               </div>
@@ -211,7 +211,7 @@ const Studentpage = () => {
             </div>
           )}
           {view == "nss" && (
-            <div className="layoutrow" id="sep">
+            <div className="layoutrow digital" id="sep">
               <div className="row rowmarl3">
                 <h1>National Service Scheme</h1>
               </div>

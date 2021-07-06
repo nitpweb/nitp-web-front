@@ -23,6 +23,7 @@ export const TabPage = styled.div`
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    font-size: ${props => props.theme.font * 1}rem;
   }
   table {
     font-family: "Source Sans Pro";
