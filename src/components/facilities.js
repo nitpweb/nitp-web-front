@@ -152,7 +152,7 @@ const arrdata = []
 Navlist.facilities.map(x => arrdata.push(...x.sub))
   return (
     <TabPage>
-      <Navigate data={arrdata} callback={getView} tab={tab} />
+      <Navigate data={arrdata} callback={getView} tab={tab?tab:"cc"} />
       {/* <Floatmenu /> */}
       <div className="mainDiv">
         <PageLayout>
