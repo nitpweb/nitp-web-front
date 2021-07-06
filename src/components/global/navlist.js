@@ -194,28 +194,28 @@ const Academics = [
   {
     url: "/academics",
     title: "Course Structure",
-    data: "course",
+    data: "programmes",
     id: "two",
     sub: [
       {
         url: "/academics",
         title: "UG",
-        data: "courseug",
+        data: "programmesug",
       },
       {
         url: "/academics",
         title: "PG (M.tech/MURP)",
-        data: "coursepg",
+        data: "programmespg",
       },
       {
         url: "/academics",
         title: "M.tech/MURP-PhD (DD)",
-        data: "coursedd",
+        data: "programmesdd",
       },
       {
         url: "/academics",
         title: "Integrated M.sc",
-        data: "courseimsc",
+        data: "programmesimsc",
       },
     ],
   },

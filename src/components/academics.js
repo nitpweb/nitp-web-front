@@ -17,7 +17,7 @@ const Academicspage = () => {
   }
   useEffect(() => {
     tab
-      ? tab.slice(0, 6) === "course"
+      ? tab.slice(0, 10) === "programmes"
         ? setView(tab)
         : AcademicsList.forEach(x => {
             x.data === tab ? setView(tab) : ""
@@ -46,8 +46,8 @@ const Academicspage = () => {
             callback={getView}
             tab={
               tab
-                ? tab.slice(0, 6) === "course"
-                  ? "course"
+                ? tab.slice(0, 10) === "programmes"
+                  ? "programmes"
                   : tab
                 : "admissions"
             }
@@ -84,202 +84,57 @@ const Academicspage = () => {
                 </div>
               </div>
             )}
-            {view.slice(0, 6) == "course" ? (
+            {view.slice(0, 10) == "programmes" ? (
               <div className="row rowmarl3">
                 <div className="digital">
-                  <h1 style={{ marginBottom: `1rem` }}>Course Structure</h1>
-                  {view=="course"?setView("courseug"):""}
+                  <h1 style={{ marginBottom: `1rem` }}>Programmes</h1>
+                  
                   <div className="probutton">
+                  <button
+                      onClick={() => {
+                        setView("programmes")
+                      }}
+                      className={view == "programmes" ? "btnactive" : ""}
+                    >
+                      All
+                    </button>
                     <button
                       onClick={() => {
-                        setView("courseug")
+                        setView("programmesug")
                       }}
-                      className={view == "courseug" ? "btnactive" : ""}
+                      className={view == "programmesug" ? "btnactive" : ""}
                     >
                       UG Courses
                     </button>
                     <button
                       onClick={() => {
-                        setView("coursepg")
+                        setView("programmespg")
                       }}
-                      className={view == "coursepg" ? "btnactive" : ""}
+                      className={view == "programmespg" ? "btnactive" : ""}
                     >
                       PG (M.tech/MURP) Courses
                     </button>
                     <button
                       onClick={() => {
-                        setView("coursedd")
+                        setView("programmesdd")
                       }}
-                      className={view == "coursedd" ? "btnactive" : ""}
+                      className={view == "programmesdd" ? "btnactive" : ""}
                     >
                       M.tech/MURP-PHD (DD)
                     </button>
                     <button
                       onClick={() => {
-                        setView("courseimsc")
+                        setView("programmesimsc")
                       }}
-                      className={view == "courseimsc" ? "btnactive" : ""}
+                      className={view == "programmesimsc" ? "btnactive" : ""}
                     >
                       Integrated Courses
                     </button>
                   </div>
-                  {view == "courseug"
-                    ? acadData.courseUG.map(item => (
-                        <div className="digital">
-                          <h3
-                            style={{
-                              fontFamily: `Source Sans Pro`,
-                            }}
-                          >
-                            {item.title}
-                          </h3>
-                          <br />
-                          {item.data.map(e => (
-                            <>
-                              <a
-                                href={e.link}
-                                target="_blank"
-                                style={{
-                                  textDecoration: `none`,
-                                  fontFamily: `Source Sans Pro`,
-                                }}
-                              >
-                                <p
-                                  style={{
-                                    fontWeight: `bold`,
-                                    borderBottom: `1px dotted black`,
-                                    paddingBottom: `0.5rem`,
-                                    margin: `0 1rem`,
-                                  }}
-                                >
-                                  {e.para}
-                                </p>
-                              </a>
-                            </>
-                          ))}
-                        </div>
-                      ))
-                    : ""}
-                  {view == "coursepg"
-                    ? acadData.coursePG.map(item => (
-                        <div className="digital">
-                          <h3
-                            style={{
-                              fontFamily: `Source Sans Pro`,
-                            }}
-                          >
-                            {item.title}
-                          </h3>
-                          <br />
-                          {item.data.map(e => (
-                            <>
-                              <a
-                                href={e.link}
-                                target="_blank"
-                                style={{
-                                  textDecoration: `none`,
-                                  fontFamily: `Source Sans Pro`,
-                                }}
-                              >
-                                <p
-                                  style={{
-                                    fontWeight: `bold`,
-                                    borderBottom: `1px dotted black`,
-                                    paddingBottom: `0.5rem`,
-                                    margin: `0 1rem`,
-                                  }}
-                                >
-                                  {e.para}
-                                </p>
-                              </a>
-                            </>
-                          ))}
-                        </div>
-                      ))
-                    : ""}
-                  {view == "coursedd"
-                    ? acadData.coursePHD.map(item => (
-                        <div className="digital">
-                          <h3
-                            style={{
-                              fontFamily: `Source Sans Pro`,
-                            }}
-                          >
-                            {item.title}
-                          </h3>
-                          <br />
-                          {item.data.map(e => (
-                            <>
-                              <a
-                                href={e.link}
-                                target="_blank"
-                                style={{
-                                  textDecoration: `none`,
-                                  fontFamily: `Source Sans Pro`,
-                                }}
-                              >
-                                <p
-                                  style={{
-                                    fontWeight: `bold`,
-                                    borderBottom: `1px dotted black`,
-                                    paddingBottom: `0.5rem`,
-                                    margin: `0 1rem`,
-                                  }}
-                                >
-                                  {e.para}
-                                </p>
-                              </a>
-                            </>
-                          ))}
-                        </div>
-                      ))
-                    : ""}
-                  {view == "courseimsc"
-                    ? acadData.courseMsc.map(item => (
-                        <div className="digital">
-                          <h3
-                            style={{
-                              fontFamily: `Source Sans Pro`,
-                            }}
-                          >
-                            {item.title}
-                          </h3>
-                          <br />
-                          {item.data.map(e => (
-                            <>
-                              <a
-                                href={e.link}
-                                target="_blank"
-                                style={{
-                                  textDecoration: `none`,
-                                  fontFamily: `Source Sans Pro`,
-                                }}
-                              >
-                                <p
-                                  style={{
-                                    fontWeight: `bold`,
-                                    borderBottom: `1px dotted black`,
-                                    paddingBottom: `0.5rem`,
-                                    margin: `0 1rem`,
-                                  }}
-                                >
-                                  {e.para}
-                                </p>
-                              </a>
-                            </>
-                          ))}
-                        </div>
-                      ))
-                    : ""}
-                </div>
-              </div>
-            ) : (
-              ""
-            )}
-            {view == "programmes" && (
-              <div className="row rowmarl3">
+                  {view == "programmes" && (
+              <div className="row">
                 <div className="digital">
-                  <h1 style={{ marginBottom: `1rem` }}>Programmes</h1>
+                  {/* <h1 style={{ marginBottom: `1rem` }}>Programmes</h1> */}
                   <h3>Names of the approved programmes</h3>
                   <table align="center">
                     <tbody>
@@ -465,6 +320,159 @@ const Academicspage = () => {
                   </table>
                 </div>
               </div>
+            )}
+                  {view == "programmesug"
+                    ? acadData.courseUG.map(item => (
+                        <div className="digital">
+                          <h3
+                            style={{
+                              fontFamily: `Source Sans Pro`,
+                            }}
+                          >
+                            {item.title}
+                          </h3>
+                          <br />
+                          {item.data.map(e => (
+                            <>
+                              <a
+                                href={e.link}
+                                target="_blank"
+                                style={{
+                                  textDecoration: `none`,
+                                  fontFamily: `Source Sans Pro`,
+                                }}
+                              >
+                                <p
+                                  style={{
+                                    fontWeight: `bold`,
+                                    borderBottom: `1px dotted black`,
+                                    paddingBottom: `0.5rem`,
+                                    margin: `0 1rem`,
+                                  }}
+                                >
+                                  {e.para}
+                                </p>
+                              </a>
+                            </>
+                          ))}
+                        </div>
+                      ))
+                    : ""}
+                  {view == "programmespg"
+                    ? acadData.coursePG.map(item => (
+                        <div className="digital">
+                          <h3
+                            style={{
+                              fontFamily: `Source Sans Pro`,
+                            }}
+                          >
+                            {item.title}
+                          </h3>
+                          <br />
+                          {item.data.map(e => (
+                            <>
+                              <a
+                                href={e.link}
+                                target="_blank"
+                                style={{
+                                  textDecoration: `none`,
+                                  fontFamily: `Source Sans Pro`,
+                                }}
+                              >
+                                <p
+                                  style={{
+                                    fontWeight: `bold`,
+                                    borderBottom: `1px dotted black`,
+                                    paddingBottom: `0.5rem`,
+                                    margin: `0 1rem`,
+                                  }}
+                                >
+                                  {e.para}
+                                </p>
+                              </a>
+                            </>
+                          ))}
+                        </div>
+                      ))
+                    : ""}
+                  {view == "programmesdd"
+                    ? acadData.coursePHD.map(item => (
+                        <div className="digital">
+                          <h3
+                            style={{
+                              fontFamily: `Source Sans Pro`,
+                            }}
+                          >
+                            {item.title}
+                          </h3>
+                          <br />
+                          {item.data.map(e => (
+                            <>
+                              <a
+                                href={e.link}
+                                target="_blank"
+                                style={{
+                                  textDecoration: `none`,
+                                  fontFamily: `Source Sans Pro`,
+                                }}
+                              >
+                                <p
+                                  style={{
+                                    fontWeight: `bold`,
+                                    borderBottom: `1px dotted black`,
+                                    paddingBottom: `0.5rem`,
+                                    margin: `0 1rem`,
+                                  }}
+                                >
+                                  {e.para}
+                                </p>
+                              </a>
+                            </>
+                          ))}
+                        </div>
+                      ))
+                    : ""}
+                  {view == "programmesimsc"
+                    ? acadData.courseMsc.map(item => (
+                        <div className="digital">
+                          <h3
+                            style={{
+                              fontFamily: `Source Sans Pro`,
+                            }}
+                          >
+                            {item.title}
+                          </h3>
+                          <br />
+                          {item.data.map(e => (
+                            <>
+                              <a
+                                href={e.link}
+                                target="_blank"
+                                style={{
+                                  textDecoration: `none`,
+                                  fontFamily: `Source Sans Pro`,
+                                }}
+                              >
+                                <p
+                                  style={{
+                                    fontWeight: `bold`,
+                                    borderBottom: `1px dotted black`,
+                                    paddingBottom: `0.5rem`,
+                                    margin: `0 1rem`,
+                                  }}
+                                >
+                                  {e.para}
+                                </p>
+                              </a>
+                            </>
+                          ))}
+                        </div>
+                      ))
+                    : ""}
+                </div>
+              </div>
+            ) : (
+              ""
             )}
 
             {view == "format" && (
