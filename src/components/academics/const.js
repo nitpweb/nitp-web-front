@@ -9,11 +9,11 @@ const AcademicsList = [
         data: "programmes",
         img:"/test.svg"
     },
-    {
-        title: "Course Structure",
-        data: "course",
-        img:"/test.svg"
-    },
+    // {
+    //     title: "Course Structure",
+    //     data: "course",
+    //     img:"/test.svg"
+    // },
     {
         title: "Academic Notices",
         data: "Notices",

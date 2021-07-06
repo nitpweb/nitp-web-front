@@ -56,7 +56,7 @@ const Studentpage = () => {
   Navlist.students.map(x => arrdata.push(...x.sub))
   return (
     <TabPage>
-      <Navigate data={arrdata} callback={getView} tab={tab} />
+      <Navigate data={arrdata} callback={getView} tab={tab?tab:"clubs"} />
       <div className="mainDiv">
         <PageLayout>
           {/* <div className="layoutrow layoutrowmain" id="home">
