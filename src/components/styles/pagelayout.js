@@ -1,9 +1,34 @@
 import styled from "styled-components"
+import book from "../departments/img/book.svg"
 
 export const PageLayout = styled.div`
   width: 100%;
   background: ${props => props.theme.backgroundColor};
 
+  .syllabus-page {
+    position: relative;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.7)
+      ),
+      url(${book}) no-repeat center fixed;
+    background-size: 90vw 60vh;
+    background-position-y: bottom;
+
+    .layoutrow {
+      padding-top: 3vh;
+      padding-bottom: 3vh;
+    }
+    .syllabus-page-head {
+      padding-top: 8vh;
+      padding-bottom: 3vh;
+
+      .col-6 {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
   .layoutrowmain {
     .col-6 {
       .row {

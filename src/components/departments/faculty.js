@@ -26,7 +26,7 @@ const Facultypage = ({ title, url, dept }) => {
   return (
     <>
       <FacultyStyle style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
-        <div className="layoutrow layoutrowmain">
+        <div className="layoutrow layoutrowmain syllabus-page-head">
           <div className="col-6">
             <div className="row rowmarl3">
               <h1 data-aos="zoom-in-right">{title ? title : "Faculties"}</h1>
