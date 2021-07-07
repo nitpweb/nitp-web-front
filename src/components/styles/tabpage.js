@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const TabPage = styled.div`
   text-align: justify;
   width: 100vw;
-  height: 80vh;
+  height: 85vh;
   position: relative;
   display: flex;
   align-items: center;
@@ -36,7 +36,7 @@ export const TabPage = styled.div`
     width: 75vw;
     margin: 2vw 0 2vw 0;
     padding: 1rem;
-    height: 80vh;
+    height: 85vh;
     box-shadow: -3px -3px 12px #ffffff73, 3px 3px 12px rgba(94, 104, 121, 0.288);
     align-items: flex-start;
     justify-content: space-evenly;

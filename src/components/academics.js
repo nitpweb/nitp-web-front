@@ -16,9 +16,13 @@ const Academicspage = () => {
     setView(callback)
   }
   useEffect(() => {
-    tab?tab.slice(0,10)==="programmes"?setView(tab):AcademicsList.forEach(x => {
-      x.data === tab ? setView(tab) :""
-    }):""
+    tab
+      ? tab.slice(0, 10) === "programmes"
+        ? setView(tab)
+        : AcademicsList.forEach(x => {
+            x.data === tab ? setView(tab) : ""
+          })
+      : ""
   }, [tab])
 
   useEffect(() => {
@@ -37,7 +41,17 @@ const Academicspage = () => {
     <>
       {true && (
         <TabPage>
-          <Navigate data={AcademicsList} callback={getView} tab={tab?tab.slice(0,10)==="programmes"?"programmes":tab:""} />
+          <Navigate
+            data={AcademicsList}
+            callback={getView}
+            tab={
+              tab
+                ? tab.slice(0, 10) === "programmes"
+                  ? "programmes"
+                  : tab
+                : "admissions"
+            }
+          />
           <div className="mainDiv">
             {view == "admissions" && (
               <div className="layoutrow layoutrow1 rowmarl3" id="admission">
@@ -70,353 +84,397 @@ const Academicspage = () => {
                 </div>
               </div>
             )}
-            {view.slice(0,10) == "programmes" && (
+            {view.slice(0, 10) == "programmes" ? (
               <div className="row rowmarl3">
-              <div className="digital">
-                <h1 style={{ marginBottom: `1rem` }}>Programmes</h1>
-                <div className="probutton">
-                  <button onClick={()=>{setView("programmes")}} className={view=="programmes"?"btnactive":""}>All</button>
-                  <button onClick={()=>{setView("programmesug")}} className={view=="programmesug"?"btnactive":""}>UG Courses</button>
-                  <button onClick={()=>{setView("programmespg")}} className={view=="programmespg"?"btnactive":""}>PG (M.tech/MURP) Courses</button>
-                  <button onClick={()=>{setView("programmesdd")}} className={view=="programmesdd"?"btnactive":""}>M.tech/MURP-PHD (DD)</button>
-                  <button onClick={()=>{setView("programmesimsc")}} className={view=="programmesimsc"?"btnactive":""}>Integrated Courses</button>
+                <div className="digital">
+                  <h1 style={{ marginBottom: `1rem` }}>Programmes</h1>
+                  
+                  <div className="probutton">
+                  <button
+                      onClick={() => {
+                        setView("programmes")
+                      }}
+                      className={view == "programmes" ? "btnactive" : ""}
+                    >
+                      All
+                    </button>
+                    <button
+                      onClick={() => {
+                        setView("programmesug")
+                      }}
+                      className={view == "programmesug" ? "btnactive" : ""}
+                    >
+                      UG Courses
+                    </button>
+                    <button
+                      onClick={() => {
+                        setView("programmespg")
+                      }}
+                      className={view == "programmespg" ? "btnactive" : ""}
+                    >
+                      PG (M.tech/MURP) Courses
+                    </button>
+                    <button
+                      onClick={() => {
+                        setView("programmesdd")
+                      }}
+                      className={view == "programmesdd" ? "btnactive" : ""}
+                    >
+                      M.tech/MURP-PHD (DD)
+                    </button>
+                    <button
+                      onClick={() => {
+                        setView("programmesimsc")
+                      }}
+                      className={view == "programmesimsc" ? "btnactive" : ""}
+                    >
+                      Integrated Courses
+                    </button>
+                  </div>
+                  {view == "programmes" && (
+              <div className="row">
+                <div className="digital">
+                  {/* <h1 style={{ marginBottom: `1rem` }}>Programmes</h1> */}
+                  <h3>Names of the approved programmes</h3>
+                  <table align="center">
+                    <tbody>
+                      <tr>
+                        <th>S.no.</th>
+                        <th>Degree/Program</th>
+                        <th>Branch of specialization</th>
+                        <th>Duration</th>
+                      </tr>
+                      <tr>
+                        <td colspan="4" align="center">
+                          <b>Under Graduate Programmes</b>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Bachelor of Architecture</td>
+                        <td>Architecture</td>
+                        <td>5 years</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td rowspan="6">Bachelor of Technology</td>
+                        <td>Civil Engineering</td>
+                        <td rowspan="6">4 Years</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Computer Scince &amp; Engineering</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td> Electrical Engineering</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>Electronics &amp; Communication Engineering</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>Information Technology</td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>Mechanical Engineering</td>
+                      </tr>
+                      <tr>
+                        <td colspan="4" align="center">
+                          <b>Post Graduate Programmes</b>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td rowspan="5">
+                          Master of Technology <i>(Civil Engineering)</i>
+                        </td>
+                        <td>Water Resources Engineering</td>
+                        <td rowspan="19">2 Years</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Transportation Engineering</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Structural Engineering</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Environmental Engineering</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>Geotechnical Engineering</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td rowspan="2">
+                          Master of Technology <i>(Electrical Engineering)</i>
+                        </td>
+                        <td>Control System Engineering</td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>Power System Engineering</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td rowspan="5">
+                          Master of Technology <i>(Mechanical Engineering)</i>
+                        </td>
+                        <td>Thermal Engineering</td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>Production Engineering</td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>Design Engineering</td>
+                      </tr>
+                      <tr>
+                        <td>11</td>
+                        <td>Automobile Engineering</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>Renewable Energy Technology</td>
+                      </tr>
+                      <tr>
+                        <td>13</td>
+                        <td rowspan="2">
+                          Master of Technology{" "}
+                          <i>(Computer Science &amp; Engineering)</i>
+                        </td>
+                        <td>Information Technology</td>
+                      </tr>
+                      <tr>
+                        <td>14</td>
+                        <td>Computer Science &amp; Engineering</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td rowspan="2">
+                          Master of Technology{" "}
+                          <i>(Electronics &amp; Communication Engineering)</i>
+                        </td>
+                        <td>Communication Systems</td>
+                      </tr>
+                      <tr>
+                        <td>16</td>
+                        <td>VLSI System Design and Microelectronics</td>
+                      </tr>
+                      <tr>
+                        <td>17</td>
+                        <td>
+                          Master in Urban &amp; Regional Planning<i>(MURP)</i>
+                        </td>
+                        <td>Urban and Regional Planning</td>
+                      </tr>
+                      <tr>
+                        <td>18</td>
+                        <td>
+                          M. Tech (Computational Mathematics)<i></i>
+                        </td>
+                        <td>Computational Mathematics</td>
+                      </tr>
+                      <tr>
+                        <td>19</td>
+                        <td>
+                          M. Tech (Nanoscience and Technology)<i></i>
+                        </td>
+                        <td>Nanoscience and Technology</td>
+                      </tr>
+                      <tr>
+                        <td colspan="4" align="center">
+                          <b>Five Years Integrated Programs</b>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>
+                          M. Sc.<i>(Chemistry)</i>
+                        </td>
+                        <td>Integrated M. Sc. in Chemistry</td>
+                        <td rowspan="3">5 Years</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>
+                          M. Sc.<i>(Mathematics)</i>
+                        </td>
+                        <td>Integrated M. Sc. in Mathematics</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>
+                          M. Sc.<i>(Physics)</i>
+                        </td>
+                        <td>Integrated M. Sc. in Physics</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-                {view=="programmes"&&<>
-                <h3>Names of the approved programmes</h3>
-                <table align="center">
-                  <tbody>
-                    <tr>
-                      <th>S.no.</th>
-                      <th>Degree/Program</th>
-                      <th>Branch of specialization</th>
-                      <th>Duration</th>
-                    </tr>
-                    <tr>
-                      <td colspan="4" align="center">
-                        <b>Under Graduate Programmes</b>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>Bachelor of Architecture</td>
-                      <td>Architecture</td>
-                      <td>5 years</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td rowspan="6">Bachelor of Technology</td>
-                      <td>Civil Engineering</td>
-                      <td rowspan="6">4 Years</td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Computer Scince &amp; Engineering</td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td> Electrical Engineering</td>
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td>Electronics &amp; Communication Engineering</td>
-                    </tr>
-                    <tr>
-                      <td>6</td>
-                      <td>Information Technology</td>
-                    </tr>
-                    <tr>
-                      <td>7</td>
-                      <td>Mechanical Engineering</td>
-                    </tr>
-                    <tr>
-                      <td colspan="4" align="center">
-                        <b>Post Graduate Programmes</b>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td rowspan="5">
-                        Master of Technology <i>(Civil Engineering)</i>
-                      </td>
-                      <td>Water Resources Engineering</td>
-                      <td rowspan="19">2 Years</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Transportation Engineering</td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Structural Engineering</td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>Environmental Engineering</td>
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td>Geotechnical Engineering</td>
-                    </tr>
-                    <tr>
-                      <td>6</td>
-                      <td rowspan="2">
-                        Master of Technology <i>(Electrical Engineering)</i>
-                      </td>
-                      <td>Control System Engineering</td>
-                    </tr>
-                    <tr>
-                      <td>7</td>
-                      <td>Power System Engineering</td>
-                    </tr>
-                    <tr>
-                      <td>8</td>
-                      <td rowspan="5">
-                        Master of Technology <i>(Mechanical Engineering)</i>
-                      </td>
-                      <td>Thermal Engineering</td>
-                    </tr>
-                    <tr>
-                      <td>9</td>
-                      <td>Production Engineering</td>
-                    </tr>
-                    <tr>
-                      <td>10</td>
-                      <td>Design Engineering</td>
-                    </tr>
-                    <tr>
-                      <td>11</td>
-                      <td>Automobile Engineering</td>
-                    </tr>
-                    <tr>
-                      <td>12</td>
-                      <td>Renewable Energy Technology</td>
-                    </tr>
-                    <tr>
-                      <td>13</td>
-                      <td rowspan="2">
-                        Master of Technology{" "}
-                        <i>(Computer Science &amp; Engineering)</i>
-                      </td>
-                      <td>Information Technology</td>
-                    </tr>
-                    <tr>
-                      <td>14</td>
-                      <td>Computer Science &amp; Engineering</td>
-                    </tr>
-                    <tr>
-                      <td>15</td>
-                      <td rowspan="2">
-                        Master of Technology{" "}
-                        <i>(Electronics &amp; Communication Engineering)</i>
-                      </td>
-                      <td>Communication Systems</td>
-                    </tr>
-                    <tr>
-                      <td>16</td>
-                      <td>VLSI System Design and Microelectronics</td>
-                    </tr>
-                    <tr>
-                      <td>17</td>
-                      <td>
-                        Master in Urban &amp; Regional Planning<i>(MURP)</i>
-                      </td>
-                      <td>Urban and Regional Planning</td>
-                    </tr>
-                    <tr>
-                      <td>18</td>
-                      <td>
-                        M. Tech (Computational Mathematics)<i></i>
-                      </td>
-                      <td>Computational Mathematics</td>
-                    </tr>
-                    <tr>
-                      <td>19</td>
-                      <td>
-                        M. Tech (Nanoscience and Technology)<i></i>
-                      </td>
-                      <td>Nanoscience and Technology</td>
-                    </tr>
-                    <tr>
-                      <td colspan="4" align="center">
-                        <b>Five Years Integrated Programs</b>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>
-                        M. Sc.<i>(Chemistry)</i>
-                      </td>
-                      <td>Integrated M. Sc. in Chemistry</td>
-                      <td rowspan="3">5 Years</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>
-                        M. Sc.<i>(Mathematics)</i>
-                      </td>
-                      <td>Integrated M. Sc. in Mathematics</td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>
-                        M. Sc.<i>(Physics)</i>
-                      </td>
-                      <td>Integrated M. Sc. in Physics</td>
-                    </tr>
-                  </tbody>
-                </table>
-                </>}
-                {view == "programmesug"
-              ? acadData.courseUG.map(item => (
-                  <div className="digital">
-                    <h3
-                      style={{
-                        fontFamily: `Source Sans Pro`
-                      }}
-                    >
-                      {item.title}
-                    </h3>
-                    <br />
-                    {item.data.map(e => (
-                      <>
-                        <a
-                          href={e.link}
-                          target="_blank"
-                          style={{
-                            textDecoration: `none`,
-                            fontFamily: `Source Sans Pro`,
-                          }}
-                        >
-                          <p
-                            style={{
-                              fontWeight: `bold`,
-                              borderBottom: `1px dotted black`,
-                              paddingBottom: `0.5rem`,
-                              margin: `0`,
-                            }}
-                          >
-                            {e.para}
-                          </p>
-                        </a>
-                      </>
-                    ))}
-                  </div>
-                ))
-              : ""}
-            {view == "programmespg"
-              ? acadData.coursePG.map(item => (
-                  <div className="digital">
-                    <h3
-                      style={{
-                        fontFamily: `Source Sans Pro`
-                      }}
-                    >
-                      {item.title}
-                    </h3>
-                    <br />
-                    {item.data.map(e => (
-                      <>
-                        <a
-                          href={e.link}
-                          target="_blank"
-                          style={{
-                            textDecoration: `none`,
-                            fontFamily: `Source Sans Pro`,
-                          }}
-                        >
-                          <p
-                            style={{
-                              fontWeight: `bold`,
-                              borderBottom: `1px dotted black`,
-                              paddingBottom: `0.5rem`,
-                              margin: `0`,
-                            }}
-                          >
-                            {e.para}
-                          </p>
-                        </a>
-                      </>
-                    ))}
-                  </div>
-                ))
-              : ""}
-            {view == "programmesdd"
-              ? acadData.coursePHD.map(item => (
-                  <div className="digital">
-                    <h3
-                      style={{
-                        fontFamily: `Source Sans Pro`
-                      }}
-                    >
-                      {item.title}
-                    </h3>
-                    <br />
-                    {item.data.map(e => (
-                      <>
-                        <a
-                          href={e.link}
-                          target="_blank"
-                          style={{
-                            textDecoration: `none`,
-                            fontFamily: `Source Sans Pro`,
-                          }}
-                        >
-                          <p
-                            style={{
-                              fontWeight: `bold`,
-                              borderBottom: `1px dotted black`,
-                              paddingBottom: `0.5rem`,
-                              margin: `0`,
-                            }}
-                          >
-                            {e.para}
-                          </p>
-                        </a>
-                      </>
-                    ))}
-                  </div>
-                ))
-              : ""}
-            {view == "programmesimsc"
-              ? acadData.courseMsc.map(item => (
-                  <div className="digital">
-                    <h3
-                      style={{
-                        fontFamily: `Source Sans Pro`
-                      }}
-                    >
-                      {item.title}
-                    </h3>
-                    <br />
-                    {item.data.map(e => (
-                      <>
-                        <a
-                          href={e.link}
-                          target="_blank"
-                          style={{
-                            textDecoration: `none`,
-                            fontFamily: `Source Sans Pro`,
-                          }}
-                        >
-                          <p
-                            style={{
-                              fontWeight: `bold`,
-                              borderBottom: `1px dotted black`,
-                              paddingBottom: `0.5rem`,
-                              margin: `0`,
-                            }}
-                          >
-                            {e.para}
-                          </p>
-                        </a>
-                      </>
-                    ))}
-                  </div>
-                ))
-              : ""}
-              </div>
               </div>
             )}
+                  {view == "programmesug"
+                    ? acadData.courseUG.map(item => (
+                        <div className="digital">
+                          <h3
+                            style={{
+                              fontFamily: `Source Sans Pro`,
+                            }}
+                          >
+                            {item.title}
+                          </h3>
+                          <br />
+                          {item.data.map(e => (
+                            <>
+                              <a
+                                href={e.link}
+                                target="_blank"
+                                style={{
+                                  textDecoration: `none`,
+                                  fontFamily: `Source Sans Pro`,
+                                }}
+                              >
+                                <p
+                                  style={{
+                                    fontWeight: `bold`,
+                                    borderBottom: `1px dotted black`,
+                                    paddingBottom: `0.5rem`,
+                                    margin: `0 1rem`,
+                                  }}
+                                >
+                                  {e.para}
+                                </p>
+                              </a>
+                            </>
+                          ))}
+                        </div>
+                      ))
+                    : ""}
+                  {view == "programmespg"
+                    ? acadData.coursePG.map(item => (
+                        <div className="digital">
+                          <h3
+                            style={{
+                              fontFamily: `Source Sans Pro`,
+                            }}
+                          >
+                            {item.title}
+                          </h3>
+                          <br />
+                          {item.data.map(e => (
+                            <>
+                              <a
+                                href={e.link}
+                                target="_blank"
+                                style={{
+                                  textDecoration: `none`,
+                                  fontFamily: `Source Sans Pro`,
+                                }}
+                              >
+                                <p
+                                  style={{
+                                    fontWeight: `bold`,
+                                    borderBottom: `1px dotted black`,
+                                    paddingBottom: `0.5rem`,
+                                    margin: `0 1rem`,
+                                  }}
+                                >
+                                  {e.para}
+                                </p>
+                              </a>
+                            </>
+                          ))}
+                        </div>
+                      ))
+                    : ""}
+                  {view == "programmesdd"
+                    ? acadData.coursePHD.map(item => (
+                        <div className="digital">
+                          <h3
+                            style={{
+                              fontFamily: `Source Sans Pro`,
+                            }}
+                          >
+                            {item.title}
+                          </h3>
+                          <br />
+                          {item.data.map(e => (
+                            <>
+                              <a
+                                href={e.link}
+                                target="_blank"
+                                style={{
+                                  textDecoration: `none`,
+                                  fontFamily: `Source Sans Pro`,
+                                }}
+                              >
+                                <p
+                                  style={{
+                                    fontWeight: `bold`,
+                                    borderBottom: `1px dotted black`,
+                                    paddingBottom: `0.5rem`,
+                                    margin: `0 1rem`,
+                                  }}
+                                >
+                                  {e.para}
+                                </p>
+                              </a>
+                            </>
+                          ))}
+                        </div>
+                      ))
+                    : ""}
+                  {view == "programmesimsc"
+                    ? acadData.courseMsc.map(item => (
+                        <div className="digital">
+                          <h3
+                            style={{
+                              fontFamily: `Source Sans Pro`,
+                            }}
+                          >
+                            {item.title}
+                          </h3>
+                          <br />
+                          {item.data.map(e => (
+                            <>
+                              <a
+                                href={e.link}
+                                target="_blank"
+                                style={{
+                                  textDecoration: `none`,
+                                  fontFamily: `Source Sans Pro`,
+                                }}
+                              >
+                                <p
+                                  style={{
+                                    fontWeight: `bold`,
+                                    borderBottom: `1px dotted black`,
+                                    paddingBottom: `0.5rem`,
+                                    margin: `0 1rem`,
+                                  }}
+                                >
+                                  {e.para}
+                                </p>
+                              </a>
+                            </>
+                          ))}
+                        </div>
+                      ))
+                    : ""}
+                </div>
+              </div>
+            ) : (
+              ""
+            )}
+
             {view == "format" && (
               <div className="layoutrow" id="format">
                 <div className="row rowmarl3">
@@ -430,7 +488,7 @@ const Academicspage = () => {
                         <a
                           id="formatdown"
                           href={e.link}
-                          style={{ textDecoration: `none`, fontWeight: `bold` }}
+                          style={{ textDecoration: `none`, fontWeight: `bold`,marginLeft:`1rem` }}
                           target="_blank"
                         >
                           Download
@@ -472,167 +530,44 @@ const Academicspage = () => {
                 </div>
               </div>
             )}
-          
-          {view == "digital" ? (
-            <>
-              <h1 style={{ fontFamily: `Source Sans Pro` }}>
-                Digital Initiatives of NIT Patna
-              </h1>
-              {acadData.datad.map(item => (
-                <div className="row rowmarl3">
-                  <div className="digital">
-                    <h3>{item.title}</h3>
 
-                    {item.links.map(e => (
-                      <a
-                        href={e}
-                        target="_blank"
-                        style={{ textDecoration: `none` }}
-                      >
-                        <p>{e}</p>
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </>
-          ) : (
-            ""
-          )}
-          {view == "curricula" ? (
-            <>
-              <h1 style={{ fontFamily: `Source Sans Pro`}}>
-                Regulation & Curricula
-              </h1>
-              {acadData.dataUG.map(item => (
-                <div className="row rowmarl3">
-                  <div className="digital">
-                    <h3>{item.title}</h3>
+            {view == "digital" ? (
+              <>
+                <h1 style={{ fontFamily: `Source Sans Pro` }}>
+                  Digital Initiatives of NIT Patna
+                </h1>
+                {acadData.datad.map(item => (
+                  <div className="row rowmarl3">
+                    <div className="digital">
+                      <h3>{item.title}</h3>
 
-                    {item.data.map(e => (
-                      <a
-                        href={e.link}
-                        target="_blank"
-                        style={{ textDecoration: `none` }}
-                      >
-                        <p
-                          style={{
-                            borderBottom: `1px dotted black`,
-                            paddingBottom: `0.35rem`,
-                            width: `fit-content`,
-                          }}
+                      {item.links.map(e => (
+                        <a
+                          href={e}
+                          target="_blank"
+                          style={{ textDecoration: `none` }}
                         >
-                          {e.para}
-                        </p>
-                      </a>
-                    ))}
+                          <p style={{ margin: `1rem 1rem` }}>{e}</p>
+                        </a>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              ))}
-              {acadData.dataPG.map(item => (
-                <div className="row rowmarl3">
-                  <div className="digital">
-                    <h3>{item.title}</h3>
+                ))}
+              </>
+            ) : (
+              ""
+            )}
+            {view == "curricula" ? (
+              <>
+                <h1 style={{ fontFamily: `Source Sans Pro` }}>
+                  Regulation & Curricula
+                </h1>
+                {acadData.dataUG.map(item => (
+                  <div className="row rowmarl3">
+                    <div className="digital">
+                      <h3>{item.title}</h3>
 
-                    {item.data.map(e => (
-                      <a
-                        href={e.link}
-                        target="_blank"
-                        style={{ textDecoration: `none` }}
-                      >
-                        <p
-                          style={{
-                            borderBottom: `1px dotted black`,
-                            paddingBottom: `0.35rem`,
-                            width: `fit-content`,
-                          }}
-                        >
-                          {e.para}
-                        </p>
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              ))}
-              {acadData.dataPHD.map(item => (
-                <div className="row rowmarl3">
-                  <div className="digital">
-                    <h3>{item.title}</h3>
-
-                    {item.data.map(e => (
-                      <a
-                        href={e.link}
-                        target="_blank"
-                        style={{ textDecoration: `none` }}
-                      >
-                        <p
-                          style={{
-                            borderBottom: `1px dotted black`,
-                            paddingBottom: `0.35rem`,
-                            width: `fit-content`,
-                          }}
-                        >
-                          {e.para}
-                        </p>
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              ))}
-              {acadData.dataNotice.map(item => (
-                <div className="row rowmarl3">
-                  <div className="digital">
-                    <h3>{item.title}</h3>
-
-                    {item.data.map(e => (
-                      <a href={e.link} style={{ textDecoration: `none` }}>
-                        <p
-                          style={{
-                            borderBottom: `1px dotted black`,
-                            paddingBottom: `0.35rem`,
-                            width: `fit-content`,
-                          }}
-                        >
-                          {e.para}
-                        </p>
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </>
-          ) : (
-            ""
-          )}
-          {view == "refund" ? (
-            <>
-              <h1 style={{ fontFamily: `Source Sans Pro`}}>
-                Refund Policy
-              </h1>
-              {acadData.refund.map(item => (
-                <div className="row rowmarl3">
-                  <div className="digital">
-                    {item.para.map(e => (
-                      <p>{e}</p>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </>
-          ) : (
-            ""
-          )}
-          {view == "fee" ? (
-            <>
-              <h1 style={{ fontFamily: `Source Sans Pro` }}>
-                Fee Structures
-              </h1>
-              {acadData.fee.map(item => (
-                <div className="row rowmarl3">
-                  <div className="digital">
-                    <h3>{item.title}</h3>
-                    {item.data.map(e => (
-                      <>
+                      {item.data.map(e => (
                         <a
                           href={e.link}
                           target="_blank"
@@ -641,24 +576,149 @@ const Academicspage = () => {
                           <p
                             style={{
                               borderBottom: `1px dotted black`,
-                              paddingBottom: `0.15rem`,
+                              paddingBottom: `0.5rem`,
                               width: `fit-content`,
-                              margin: `0`,
+                              margin: `0 1rem`,
                             }}
                           >
                             {e.para}
                           </p>
                         </a>
-                        <br />
-                      </>
-                    ))}
+                      ))}
+                    </div>
                   </div>
-                </div>
-              ))}
-            </>
-          ) : (
-            ""
-          )}
+                ))}
+                {acadData.dataPG.map(item => (
+                  <div className="row rowmarl3">
+                    <div className="digital">
+                      <h3>{item.title}</h3>
+
+                      {item.data.map(e => (
+                        <a
+                          href={e.link}
+                          target="_blank"
+                          style={{ textDecoration: `none` }}
+                        >
+                          <p
+                            style={{
+                              borderBottom: `1px dotted black`,
+                              paddingBottom: `0.5rem`,
+                              width: `fit-content`,
+                              margin: `0 1rem`,
+                            }}
+                          >
+                            {e.para}
+                          </p>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+                {acadData.dataPHD.map(item => (
+                  <div className="row rowmarl3">
+                    <div className="digital">
+                      <h3>{item.title}</h3>
+
+                      {item.data.map(e => (
+                        <a
+                          href={e.link}
+                          target="_blank"
+                          style={{ textDecoration: `none` }}
+                        >
+                          <p
+                            style={{
+                              borderBottom: `1px dotted black`,
+                              paddingBottom: `0.5rem`,
+                              width: `fit-content`,
+                              margin: `0 1rem`,
+                            }}
+                          >
+                            {e.para}
+                          </p>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+                {acadData.dataNotice.map(item => (
+                  <div className="row rowmarl3">
+                    <div className="digital">
+                      <h3>{item.title}</h3>
+
+                      {item.data.map(e => (
+                        <a href={e.link} style={{ textDecoration: `none` }}>
+                          <p
+                            style={{
+                              borderBottom: `1px dotted black`,
+                              paddingBottom: `0.5rem`,
+                              width: `fit-content`,
+                              margin: `0 1rem`,
+                            }}
+                          >
+                            {e.para}
+                          </p>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </>
+            ) : (
+              ""
+            )}
+            {view == "refund" ? (
+              <>
+                <h1 style={{ fontFamily: `Source Sans Pro` }}>Refund Policy</h1>
+                {acadData.refund.map(item => (
+                  <div className="row rowmarl3">
+                    <div className="digital">
+                      {item.para.map(e => (
+                        <p>{e}</p>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </>
+            ) : (
+              ""
+            )}
+            {view == "fee" ? (
+              <>
+                <h1 style={{ fontFamily: `Source Sans Pro` }}>
+                  Fee Structures
+                </h1>
+                {acadData.fee.map(item => (
+                  <div className="row rowmarl3">
+                    <div className="digital">
+                      <h3>{item.title}</h3>
+                      {item.data.map(e => (
+                        <>
+                          <a
+                            href={e.link}
+                            target="_blank"
+                            style={{ textDecoration: `none` }}
+                          >
+                            <p
+                              style={{
+                                borderBottom: `1px dotted black`,
+                                paddingBottom: `0.15rem`,
+                                width: `fit-content`,
+                                margin: `0 1rem`,
+                              }}
+                            >
+                              {e.para}
+                            </p>
+                          </a>
+                          <br />
+                        </>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </>
+            ) : (
+              ""
+            )}
           </div>
         </TabPage>
       )}

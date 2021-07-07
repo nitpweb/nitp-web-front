@@ -43,14 +43,14 @@ const Aboutpage = () => {
       x.data === tab ? setView(tab) : ""
     })
   }, [tab])
-  console.log(tab)
+  // console.log(tab)
   return (
     <TabPage>
       <Navigate data={Navlist.home[0].sub} callback={getView} tab={tab} />
 
       <div className="mainDiv">
         {view == "about" && (
-          <div className="layoutrow" id="home">
+          <div className="layoutrow digital" id="home">
             <div className="row rowmarl3">
               <h1>About Us</h1>
             </div>
@@ -68,7 +68,7 @@ const Aboutpage = () => {
         )}
         {view == "missionvision" && (
           <>
-            <div className="layoutrow" id="mission">
+            <div className="layoutrow digital" id="mission">
               <div className="row rowmarl3">
                 <h1>Mission & Vision</h1>
               </div>
@@ -90,7 +90,7 @@ const Aboutpage = () => {
           </>
         )}
         {view == "values" && (
-          <div className="layoutrow" id="values">
+          <div className="layoutrow digital" id="values">
             
               <div className="row rowmarl3">
                 <h1>Values</h1>
@@ -109,7 +109,7 @@ const Aboutpage = () => {
         )}
 
         {view == "campus" && (
-          <div className="layoutrow layoutrow1" id="campus">
+          <div className="layoutrow digital" id="campus">
             <div className="row imgcolstyle backgroundimage">
               <a
                 href="https://www.google.com/maps/place/National+Institute+of+Technology+Patna/@25.6207241,85.170702,17z/data=!4m5!3m4!1s0x39ed58dce6732867:0x4059f39a1ac82f06!8m2!3d25.6207241!4d85.1728907"
