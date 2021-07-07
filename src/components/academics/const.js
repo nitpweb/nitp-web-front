@@ -9,13 +9,18 @@ const AcademicsList = [
         data: "programmes",
         img:"/test.svg"
     },
+    // {
+    //     title: "Course Structure",
+    //     data: "course",
+    //     img:"/test.svg"
+    // },
     {
-        title: "Notices",
+        title: "Academic Notices",
         data: "Notices",
         img:"/mail.svg"
     },
     {
-        title: "Format",
+        title: "Format of Official Documents",
         data: "format",
         img:"/paper.svg"
     },

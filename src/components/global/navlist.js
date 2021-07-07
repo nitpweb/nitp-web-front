@@ -193,23 +193,23 @@ const About = [
 const Academics = [
   {
     url: "/academics",
-    title: "Programme Structure",
+    title: "Course Structure",
     data: "programmes",
     id: "two",
     sub: [
       {
         url: "/academics",
-        title: "UG Course",
+        title: "UG",
         data: "programmesug",
       },
       {
         url: "/academics",
-        title: "PG (M.tech/MURP) Course",
+        title: "PG (M.tech/MURP)",
         data: "programmespg",
       },
       {
         url: "/academics",
-        title: "M.tech/MURP-PHD (DD)",
+        title: "M.tech/MURP-PhD (DD)",
         data: "programmesdd",
       },
       {
@@ -248,6 +248,11 @@ const Academics = [
     data: "",
     id: "four",
     sub: [
+      {
+        url: "/academics",
+        title: "Programmes",
+        data: "programmes"
+      },
       {
         url: "/academics",
         title: "Academic Notices",
