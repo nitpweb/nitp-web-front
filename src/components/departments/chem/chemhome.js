@@ -177,4 +177,14 @@ export const datalist = [
     data: "others",
     img: "/department/labs.svg",
   },
+  {
+    title: "Syllabus",
+    relPath: "/syllabus",
+    img: "/department/syllabus.svg",
+  },
+  {
+    title: "Faculties",
+    relPath: "/faculty",
+    img: "/department/faculty.svg",
+  },
 ]

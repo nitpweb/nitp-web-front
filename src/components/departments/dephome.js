@@ -65,73 +65,81 @@ const Dephomepage = ({
             </div>
           </div> */}
           {view == "about" && (
-            <div className="layoutrow" id="about">
-              <div className="layoutabout">
-                <div className="row">
-                  <h1>About</h1>
-                </div>
-                <div className="row">
-                  <p>{About()}</p>
-                </div>
-              </div>
-            </div>
-          )}
-          {view == "happening" && (
-            <div className="layoutrow" id="happening">
-              <div className="col-6">
-                <div className="row">
-                  <h1>Happenings</h1>
-                </div>
-                <div className="row">
-                  <div id="layoutnoticewrap">
-                    {notices &&
-                      notices.length != 0 &&
-                      notices.map(notice => {
-                        if (notice.title != "") {
-                          return (
-                            <Notice
-                              detail={notice.title}
-                              time={notice.openDate}
-                              attachments={notice.attachments}
-                              key={notice.id}
-                              attachments={notice.attachments}
-                              imp={notice.important}
-                              link={
-                                notice.notice_link &&
-                                JSON.parse(notice.notice_link).url
-                                  ? JSON.parse(notice.notice_link).url
-                                  : ""
-                              }
-                            />
-                          )
-                        }
-                      })}
+            <>
+              <div className="layoutrow" id="about">
+                <div className="layoutabout">
+                  <div className="row">
+                    <h1>About</h1>
+                  </div>
+                  <div className="row">
+                    <p>{About()}</p>
                   </div>
                 </div>
               </div>
-              <div className="col-6 imgcolstyle">
-                <img src={pc} className="img-fluid" loading="lazy" />
+              <div className="row imgcolstyle backgroundimage">
+                <img data-aos="zoom-in" src="/bulb.svg" className="img-fluid" />
               </div>
-            </div>
+            </>
+          )}
+          {view == "happening" && (
+            <>
+              <div
+                className="layoutrow"
+                style={{ position: `relative`, zIndex: 1 }}
+                id="happening"
+              >
+                <div className="col-6" style={{ width: `100%` }}>
+                  <div className="row">
+                    <h1>Happenings</h1>
+                  </div>
+                  <div className="row">
+                    <div id="layoutnoticewrap">
+                      {notices &&
+                        notices.length != 0 &&
+                        notices.map(notice => {
+                          if (notice.title != "") {
+                            return (
+                              <Notice
+                                detail={notice.title}
+                                time={notice.openDate}
+                                attachments={notice.attachments}
+                                key={notice.id}
+                                attachments={notice.attachments}
+                                imp={notice.important}
+                                link={
+                                  notice.notice_link &&
+                                  JSON.parse(notice.notice_link).url
+                                    ? JSON.parse(notice.notice_link).url
+                                    : ""
+                                }
+                              />
+                            )
+                          }
+                        })}
+                    </div>
+                  </div>
+                </div>
+              </div>{" "}
+              <div className="row imgcolstyle backgroundimage">
+                <img data-aos="zoom-in" src={pc} className="img-fluid" />
+              </div>
+            </>
           )}
 
           {view == "missionvision" && (
             <>
-              <div className="layoutrow layoutrow1" id="mission">
-                <div className="col-6 imgcolstyle">
-                  <img src={mountain} className="img-fluid" loading="lazy" />
-                </div>
-                <div className="col-6">
-                  <div className="row rowmarr3">
+              <div className="layoutrow" id="mission">
+                <div className="row">
+                  <div className="row rowmarl3">
                     <h1>Mission</h1>
                   </div>
-                  <div className="row rowmarr3">
+                  <div className="row rowmarl3">
                     <p>{Mission()}</p>
                   </div>
                 </div>
               </div>
               <div className="layoutrow" id="vision">
-                <div className="col-6">
+                <div className="row">
                   <div className="row rowmarl3">
                     <h1>Vision</h1>
                   </div>
@@ -139,57 +147,99 @@ const Dephomepage = ({
                     <p>{Vision()}</p>
                   </div>
                 </div>
-                <div className="col-6 imgcolstyle">
-                  <img src={lens} className="img-fluid" loading="lazy" />
-                </div>
+              </div>
+              <div className="row imgcolstyle backgroundimage">
+                <img
+                  data-aos="zoom-in"
+                  src="/mission.svg"
+                  className="img-fluid"
+                />
               </div>
             </>
           )}
           {view == "contact" && (
-            <div className="layoutrow layoutrow1" id="contact">
-              <div className="col-6 imgcolstyle">
-                <img src={map} className="img-fluid" loading="lazy" />
-              </div>
-              <div className="col-6">
-                <div className="row rowmarr3">
-                  <h1>Contact</h1>
+            <>
+              <div
+                className="layoutrow layoutrow1"
+                style={{ position: `relative`, zIndex: 1 }}
+                id="contact"
+              >
+                <div className="col-6" style={{ width: `100%` }}>
+                  <div className="row rowmarr3">
+                    <h1>Contact</h1>
+                  </div>
+                  <div className="row rowmarr3">
+                    <p>{Contact()}</p>
+                  </div>
                 </div>
-                <div className="row rowmarr3">
-                  <p>{Contact()}</p>
-                </div>
               </div>
-            </div>
+              <div className="row imgcolstyle backgroundimage">
+                <img data-aos="zoom-in" src={map} className="img-fluid" />
+              </div>
+            </>
           )}
 
           {view == "labs" && (
-            <div className="layoutrow layoutrow1 others">
-              <div className="row rowmarl3">
-                <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
-                  Labs
-                </h1>
+            <>
+              <div
+                className="layoutrow layoutrow1 others"
+                style={{ position: `relative`, zIndex: 1 }}
+              >
+                <div className="row rowmarl3">
+                  <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
+                    Labs
+                  </h1>
+                </div>
+                {Labs()}{" "}
+              </div>{" "}
+              <div className="row imgcolstyle backgroundimage">
+                <img data-aos="zoom-in" src="/labs.svg" className="img-fluid" />
               </div>
-              {Labs()}
-            </div>
+            </>
           )}
           {view == "achievements" && (
-            <div className="layoutrow layoutrow1 others">
-              <div className="row rowmarl3">
-                <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
-                  Achievements
-                </h1>
+            <>
+              <div
+                className="layoutrow layoutrow1 others"
+                style={{ position: `relative`, zIndex: 1 }}
+              >
+                <div className="row rowmarl3">
+                  <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
+                    Achievements
+                  </h1>
+                </div>
+                {Achievements()}
               </div>
-              {Achievements()}
-            </div>
+              <div className="row imgcolstyle backgroundimage">
+                <img
+                  data-aos="zoom-in"
+                  src="/achievements.svg"
+                  className="img-fluid"
+                />
+              </div>
+            </>
           )}
           {view == "activities" && (
-            <div className="layoutrow layoutrow1 others">
-              <div className="row rowmarl3">
-                <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
-                  Activities
-                </h1>
+            <>
+              <div
+                className="layoutrow layoutrow1 others"
+                style={{ position: `relative`, zIndex: 1 }}
+              >
+                <div className="row rowmarl3">
+                  <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
+                    Activities
+                  </h1>
+                </div>
+                {Activities()}{" "}
+              </div>{" "}
+              <div className="row imgcolstyle backgroundimage">
+                <img
+                  data-aos="zoom-in"
+                  src="/activities.svg"
+                  className="img-fluid"
+                />
               </div>
-              {Activities()}
-            </div>
+            </>
           )}
           {view == "others" && (
             <div className="layoutrow layoutrow1 others">
@@ -199,6 +249,9 @@ const Dephomepage = ({
                 </h1>
               </div>
               {Extras()}
+              <div className="row imgcolstyle backgroundimage">
+                <img data-aos="zoom-in" src="/labs.svg" className="img-fluid" />
+              </div>
             </div>
           )}
         </>
