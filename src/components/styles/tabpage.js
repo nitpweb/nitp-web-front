@@ -11,6 +11,7 @@ export const TabPage = styled.div`
   padding-top: 4rem;
   text-rendering: optimizeLegibility;
   background: ${props => props.theme.backgroundColor};
+
   p {
     color: ${props => props.theme.textColor};
     font-weight: 500;
@@ -190,6 +191,8 @@ export const TabPage = styled.div`
 
     .layoutabout {
       align-items: center;
+      position: relative;
+      z-index: 1;
       margin-left: 8%;
       margin-right: 8%;
       .row {
