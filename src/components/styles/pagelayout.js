@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import book from "../departments/img/book.svg"
-
+import faculty from "../departments/img/faculty.svg"
 export const PageLayout = styled.div`
   width: 100%;
   background: ${props => props.theme.backgroundColor};
@@ -29,6 +29,18 @@ export const PageLayout = styled.div`
       }
     }
   }
+
+  .faculty-page {
+    position: relative;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.7)
+      ),
+      url(${faculty}) no-repeat center fixed;
+    background-size: 90vw 60vh;
+    background-position-y: bottom;
+  }
+
   .layoutrowmain {
     .col-6 {
       .row {
