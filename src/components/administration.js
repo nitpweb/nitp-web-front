@@ -4,6 +4,7 @@ import Adcard from "./administration/adcard"
 // import Floatmenu from "./administration/floatmenu"
 import Director from "./director"
 import Registrar from "./registrar"
+import DeputyDirector from "./deputyDirector"
 import { AdminStyle } from "./styles/AdminStyle"
 import Navigate from "./global/Navigate"
 import Admin from "./administration/const"
@@ -20,7 +21,7 @@ const Administrationpage = () => {
   }
   useEffect(() => {
     Admin.forEach(x => {
-      tab?x.data === tab ? setView(tab) : "":setView("director")
+      tab ? (x.data === tab ? setView(tab) : "") : setView("director")
     })
   }, [tab])
 
@@ -38,15 +39,20 @@ const Administrationpage = () => {
   return (
     <>
       <AdminStyle>
-        <Navigate data={Admin} callback={getView} tab={tab?tab:"director"} />
+        <Navigate
+          data={Admin}
+          callback={getView}
+          tab={tab ? tab : "director"}
+        />
 
         <div className="mainDiv">
           {view == "director" && <Director id="director" />}
           {view == "registrar" && <Registrar id="registrar" />}
+          {view == "deputydirector" && <DeputyDirector id="deputydirector" />}
 
           {CardData.includes(view) &&
-            content.length != 0 &&
-            content.map((item, idx) => (
+            content?.length != 0 &&
+            content?.map((item, idx) => (
               <div key={idx}>
                 <Adcard
                   name={item?.name}
