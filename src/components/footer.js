@@ -28,9 +28,9 @@ const Footer = () => {
               >
                 <h3>How to Reach</h3>
               </a>
-              <a href="http://www.nitp.ac.in/php/NIRF.php" target="_blank">
+              <Link to="/nirf">
                 <h3>NIRF</h3>
-              </a>
+              </Link>
               <Link to="/RTI" target="_blank">
                 <h3>RTI</h3>
               </Link>
@@ -61,13 +61,12 @@ const Footer = () => {
               >
                 <h3>Grievance Cell</h3>
               </a>
-              <a
-                href="http://web.nitp.ac.in/data/NIT_Act/Amendments_First_Statutes.pdf"
-                target="_blank"
+              <Link
+                to="/nit_act"
               >
                 <h3>NIT Act and Statutes</h3>
-              </a>
-              <a href="http://beta.nitp.ac.in:81">
+              </Link>
+              <a href="http://admin.nitp.ac.in">
                 <h3>Faculty Login</h3>
               </a>
 
@@ -110,13 +109,13 @@ const Footer = () => {
               >
                 <h3>Anti Ragging</h3>
               </a>
-              <a href="">
+              <a href="/academics?tab=admissions">
                 <h3>Admissions</h3>
               </a>
               <a href="http://www.nitp.ac.in/ict/index.php" target="_blank">
                 <h3>ICT Academy</h3>
               </a>
-              <a href="">
+              <a href="/students?tab=nss">
                 <h3>National Service Scheme</h3>
               </a>
             </div>
