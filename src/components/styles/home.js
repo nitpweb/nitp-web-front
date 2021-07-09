@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const HomeStyle = styled.div`
   background-color: ${props => props.theme.backgroundColor};
@@ -134,7 +134,7 @@ export const HomeStyle = styled.div`
     .event-row,
     .notice-head,
     .event-head {
-      padding:0vw 5vw;
+      padding: 0vw 5vw;
       width: calc(100% - 10vw);
     }
 

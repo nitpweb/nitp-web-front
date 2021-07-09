@@ -132,12 +132,12 @@ export const datalist = [
   },
   {
     title: "Syllabus",
-    relPath: "/syllabus",
+    relPath: "/math/syllabus",
     img: "/department/syllabus.svg",
   },
   {
     title: "Faculties",
-    relPath: "/faculty",
+    relPath: "/math/faculty",
     img: "/department/faculty.svg",
   },
 ]

@@ -260,12 +260,12 @@ export const datalist = [
   },
   {
     title: "Syllabus",
-    relPath: "/syllabus",
+    relPath: "/ece/syllabus",
     img: "/department/syllabus.svg",
   },
   {
     title: "Faculties",
-    relPath: "/faculty",
+    relPath: "/ece/faculty",
     img: "/department/faculty.svg",
   },
 ]

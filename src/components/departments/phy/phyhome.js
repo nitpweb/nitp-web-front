@@ -140,12 +140,12 @@ export const datalist = [
   },
   {
     title: "Syllabus",
-    relPath: "/syllabus",
+    relPath: "/physics/syllabus",
     img: "/department/syllabus.svg",
   },
   {
     title: "Faculties",
-    relPath: "/faculty",
+    relPath: "/physics/faculty",
     img: "/department/faculty.svg",
   },
 ]
