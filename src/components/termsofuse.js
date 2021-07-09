@@ -13,8 +13,8 @@ const Termspage = () => {
   `
   return (
     <>
-      <Terms className="facultypage row">
-        <div className="faculty-details-row">
+      <Terms className="facultypage row" style={{marginTop:`4rem`}}>
+        <div className="faculty-details-row" style={{display:`flex`,alignItems:`flex-start`,textAlign:`justify`}}>
           <h1>Disclaimer</h1>
           <div className="fac-card" data-aos="fade-up">
             <p id="dir">

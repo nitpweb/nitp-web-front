@@ -1,6 +1,7 @@
 import React from "react"
 import { PageLayout } from "./styles/pagelayout"
 const home = "http://www.nitp.ac.in"
+import { TabPage } from "./styles/tabpage"
 
 const SCF = {
   title: <h1>Staff Claim Form</h1>,
@@ -91,30 +92,26 @@ const SCF = {
 const StaffClaimForms = () => {
   return (
     <>
-      <PageLayout style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
-        <div className="layoutrow layoutrowmain">
-          <div className="row row-new rowmarl3 ">{SCF.title}</div>
+
+<TabPage>
+  <div className="mainDiv">
+        <div className="layoutrow layoutrowmain digital">
+          <div className="row rowmarl3">{SCF.title}</div>
 
           <div
-            className="row row-new rowmarl3"
-            style={{
-              overflow: `auto`,
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
+            className="row rowmarl3 rowmarr3"
           >
-            <table className="table-act" border="1">
+            <table>
               <tr>
-                <th>Downloads</th>
-                <th>Office order</th>
+                <th><h3 style={{margin:`0`}}>Downloads</h3></th>
+                <th><h3 style={{margin:`0`}}>Office order</h3></th>
               </tr>
               {SCF.content?.map(row => {
                 return (
                   <tr>
                     {row.Downloads ? (
                       <td>
-                        <a href={row.DLink || ""}>{row.Downloads}</a>
+                        <a href={row.DLink || ""} style={{textDecoration:`none`,fontWeight:`bold`}}>{row.Downloads}</a>
                       </td>
                     ) : (
                       <td></td>
@@ -122,7 +119,7 @@ const StaffClaimForms = () => {
 
                     {row["Office order"] ? (
                       <td>
-                        <a href={row.OLink || ""}>{row["Office order"]}</a>
+                        <a href={row.OLink || ""} style={{textDecoration:`none`,fontWeight:`bold`}}>{row["Office order"]}</a>
                       </td>
                     ) : (
                       <td></td>
@@ -133,7 +130,8 @@ const StaffClaimForms = () => {
             </table>
           </div>
         </div>
-      </PageLayout>
+        </div>
+        </TabPage>
     </>
   )
 }
