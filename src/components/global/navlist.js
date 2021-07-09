@@ -1,24 +1,28 @@
 const Departments = [
+  
+  { url: "/arch", title: "Architecture" },
+
+  { url: "/chem", title: "Chemistry" },
+
+  { url: "/ce", title: "Civil Engineering" },
+
   {
     title: "Computer Science and Engineering",
     url: "/cse",
   },
-  { url: "/ece", title: "Electronics and Communication Engineering" },
 
   { url: "/ee", title: "Electrical Engineering" },
-  { url: "/me", title: "Mechanical Engineering" },
 
-  { url: "/ce", title: "Civil Engineering" },
+  { url: "/ece", title: "Electronics and Communication Engineering" },
 
   { url: "/hss", title: "Humanities & Social Sciences" },
+  
+  { url: "/math", title: "Mathematics" },
 
-  { url: "/arch", title: "Architecture" },
+  { url: "/me", title: "Mechanical Engineering" },
 
   { url: "/physics", title: "Physics" },
 
-  { url: "/chem", title: "Chemistry" },
-
-  { url: "/math", title: "Mathematics" },
 ]
 
 const Admin = [
@@ -475,7 +479,7 @@ const Students = [
         data: "concession",
       },
       {
-        url: "/academics?tab=calendar",
+        url: "http://www.nitp.ac.in/uploads21/Academic_calendar_2021_2022.pdf",
         title: "Academic Calendar",
       },
     ],
