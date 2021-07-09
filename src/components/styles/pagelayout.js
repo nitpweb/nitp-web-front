@@ -8,8 +8,10 @@ export const PageLayout = styled.div`
   .syllabus-page {
     position: relative;
     background: linear-gradient(
-        rgba(255, 255, 255, 0.7),
-        rgba(255, 255, 255, 0.7)
+        ${props =>
+          props.theme.dropBg == "black"
+            ? "rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)"
+            : "rgba(77,77, 77, 0.7), rgba(77,77, 77, 0.7)"}
       ),
       url(${book}) no-repeat center fixed;
     background-size: 90vw 60vh;
@@ -33,8 +35,10 @@ export const PageLayout = styled.div`
   .faculty-page {
     position: relative;
     background: linear-gradient(
-        rgba(255, 255, 255, 0.7),
-        rgba(255, 255, 255, 0.7)
+        ${props =>
+          props.theme.dropBg == "black"
+            ? "rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)"
+            : "rgba(77,77, 77, 0.7), rgba(77,77, 77, 0.7)"}
       ),
       url(${faculty}) no-repeat center fixed;
     background-size: 90vw 60vh;
