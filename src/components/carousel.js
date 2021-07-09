@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from "react"
-import "./global/css/carousel.css"
+import { CarouselStyles } from "./styles/carousel"
 
-const Carousel = ({ LabImages }) => {
+const Carousel = ({ LabImages, type }) => {
   const [slideIndex, setSlideIndex] = useState(1)
 
   // function plusSlides(n) {
@@ -46,9 +46,9 @@ const Carousel = ({ LabImages }) => {
   }, [slideIndex])
 
   return (
-    <>
+    <CarouselStyles type={type}>
       <div className="slideshow-container">
-        {LabImages.map((img, idx) => (
+        {LabImages?.map((img, idx) => (
           <div className="mySlides fade" key={idx}>
             {img}
           </div>
@@ -61,7 +61,7 @@ const Carousel = ({ LabImages }) => {
           &#10095;
         </a>
       </div>
-    </>
+    </CarouselStyles>
   )
 }
 
