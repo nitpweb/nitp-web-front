@@ -29,10 +29,7 @@ const Navigate = ({ callback, data, tab }) => {
           )
         } else if (item.relPath) {
           return (
-            <Link
-              to={location.pathname + item.relPath}
-              style={{ textDecoration: "none" }}
-            >
+            <Link to={item.relPath} style={{ textDecoration: "none" }}>
               <button
                 className={`childLink ${
                   item.data && item.data === tab && active === 1 ? "active" : ""
