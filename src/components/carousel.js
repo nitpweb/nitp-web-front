@@ -8,7 +8,11 @@ const Carousel = ({ LabImages, type }) => {
   //   let b = slideIndex + n
   //   setSlideIndex(b)
   // }
-  const slides = document.getElementsByClassName("mySlides")
+  let slides = []
+
+  if (typeof window !== "undefined") {
+    slides = document.getElementsByClassName("mySlides")
+  }
 
   // function currentSlide(n) {
   //   showSlides((slideIndex = n))
