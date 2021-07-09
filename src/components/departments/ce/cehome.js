@@ -187,12 +187,12 @@ export const datalist = [
   },
   {
     title: "Syllabus",
-    relPath: "/syllabus",
+    relPath: "/ce/syllabus",
     img: "/department/syllabus.svg",
   },
   {
     title: "Faculties",
-    relPath: "/faculty",
+    relPath: "/ce/faculty",
     img: "/department/faculty.svg",
   },
 ]
