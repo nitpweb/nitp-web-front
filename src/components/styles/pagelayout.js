@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import book from "../departments/img/book.svg"
 import faculty from "../departments/img/faculty.svg"
+import web from "../global/img/web.svg"
 export const PageLayout = styled.div`
   width: 100%;
   background: ${props => props.theme.backgroundColor};
@@ -32,6 +33,19 @@ export const PageLayout = styled.div`
     }
   }
 
+  .webteam-page {
+    position: relative;
+    background: linear-gradient(
+        ${props =>
+          props.theme.dropBg == "black"
+            ? "rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)"
+            : "rgba(77,77, 77, 0.7), rgba(77,77, 77, 0.7)"}
+      ),
+      url(${web}) no-repeat center fixed;
+    background-size: 90vw 60vh;
+    background-position-y: bottom;
+  }
+
   .faculty-page {
     position: relative;
     background: linear-gradient(
@@ -52,7 +66,7 @@ export const PageLayout = styled.div`
           font-weight: bold;
           color: ${props => props.theme.primaryColor};
           font-size: 2.5rem;
-          line-height:0.5;
+          line-height: 0.5;
         }
         h2 {
           color: ${props => props.theme.textColor};
@@ -87,6 +101,7 @@ export const PageLayout = styled.div`
         justify-content: center;
       }
     }
+    color: ${props => props.theme.textColor};
     .row-new {
       #layoutnoticewrap {
         height: 400px;

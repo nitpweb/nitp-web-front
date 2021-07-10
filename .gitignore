@@ -11,9 +11,6 @@
 # production
 
 
-/static/weblist.js
-/src/pages/webteam.js
-
 # misc
 .DS_Store
 .env.local
