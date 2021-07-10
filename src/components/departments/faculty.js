@@ -4,9 +4,13 @@ import Facultycard from "../global/facultycard"
 import faculty from "./img/faculty.svg"
 import { PageLayout } from "../styles/pagelayout"
 import styled from "styled-components"
+import { SearchStyle } from '../styles/SearchStyle'
 
 const Facultypage = ({ title, url, dept }) => {
   const [faculties, setFaculties] = useState()
+  const [search, setSearch] = useState("")
+  const [data, setData] = useState([])
+  const department = (url == "faculties" || url == "officers")
 
   let facultiesUrl = `${process.env.GATSBY_API_URL}/api/faculty/${url}`
   useEffect(() => {
@@ -15,11 +19,20 @@ const Facultypage = ({ title, url, dept }) => {
       .then(res => {
         const faculty = res.data
         setFaculties(faculty)
+        setData(faculty)
       })
       .catch(e => {
         console.log(e)
       })
   }, [])
+
+  useEffect(() => {
+    let result = faculties;
+    result = result?.filter(item => String(item.name).replace(/[.*+?^${}()|[\]\\]/g, '').toLowerCase().startsWith(String(search).toLowerCase()))
+    setData(result)
+    console.log(search)
+
+  }, [search])
 
   const FacultyStyle = PageLayout
 
@@ -31,11 +44,17 @@ const Facultypage = ({ title, url, dept }) => {
             <div className="col-6" style={{ width: `100%` }}>
               <div className="row rowmarl3">
                 <h1 data-aos="zoom-in-right">{title ? title : "Faculties"}</h1>
+                <div className="row">                  <h2 data-aos="zoom-in-right">{dept ? `-${dept}` : ""}</h2>
+                </div>
               </div>
-              <div className="row rowmarl3">
-                <h1 data-aos="zoom-in-right">-{dept}</h1>
-              </div>
+              <div className="row rowmarl3"><SearchStyle>
+                <div className="form-search">
+                  <input type="search" placeholder="Search" onChange={(e) => setSearch(e.target.value)} />
+                </div>
+              </SearchStyle></div>
+
             </div>
+
             {/* <div className="col-6 imgcolstyle">
             <img
               data-aos="zoom-in"
@@ -47,12 +66,12 @@ const Facultypage = ({ title, url, dept }) => {
           </div> */}
           </div>
           <div className="row facultyrow">
-            {faculties &&
-              faculties.map(faculty => {
+            {data &&
+              data.map(faculty => {
                 return (
                   <Facultycard
                     name={faculty.name}
-                    email={faculty.email}
+                    email={department ? faculty.department : faculty.email}
                     extn={faculty.ext_no}
                     id={faculty.email}
                     research={faculty.research_interest}

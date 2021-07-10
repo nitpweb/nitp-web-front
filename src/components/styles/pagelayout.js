@@ -51,7 +51,8 @@ export const PageLayout = styled.div`
         h1 {
           font-weight: bold;
           color: ${props => props.theme.primaryColor};
-          font-size: 3rem;
+          font-size: 2.5rem;
+          line-height:0.5;
         }
         h2 {
           color: ${props => props.theme.textColor};

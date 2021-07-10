@@ -15,7 +15,7 @@ const Mesyllabus = props => {
                 <h1 data-aos="zoom-in-right">Syllabus</h1>
               </div>
               <div className="row rowmarl3">
-                <h1 data-aos="zoom-in-right"> -Mechanical Engineering</h1>
+                <h2 data-aos="zoom-in-right"> -Mechanical Engineering</h2>
               </div>
             </div>
           </div>

@@ -45,7 +45,7 @@ const Dephomepage = ({
   )
   return (
     <TabPage>
-      <Navigate data={datalist} callback={getView} />
+      <Navigate data={datalist} callback={getView} tab={view} />
       <div className="mainDiv">
         <>
           {/* <div className="layoutrow layoutrowmain" id="home">
@@ -85,15 +85,13 @@ const Dephomepage = ({
             <>
               <div
                 className="layoutrow"
-                style={{ position: `relative`, zIndex: 1 }}
                 id="happening"
               >
-                <div className="col-6" style={{ width: `100%` }}>
-                  <div className="row">
-                    <h1>Happenings</h1>
+
+                  <div className="row rowmarl3">
+                    <h1>Notice</h1>
                   </div>
-                  <div className="row">
-                    <div id="layoutnoticewrap">
+                  <div className="row rowmarl3">
                       {notices &&
                         notices.length != 0 &&
                         notices.map(notice => {
@@ -116,9 +114,8 @@ const Dephomepage = ({
                             )
                           }
                         })}
-                    </div>
                   </div>
-                </div>
+                
               </div>{" "}
               <div className="row imgcolstyle backgroundimage">
                 <img data-aos="zoom-in" src={pc} className="img-fluid" />
