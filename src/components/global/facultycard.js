@@ -8,7 +8,7 @@ const Facultycard = props => {
     if (props.research != null) {
       setResearch(props.research.split(","))
     }
-  }, {})
+  }, [])
 
   return (
     <>
