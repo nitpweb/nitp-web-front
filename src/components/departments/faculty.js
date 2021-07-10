@@ -71,7 +71,8 @@ const Facultypage = ({ title, url, dept }) => {
                 return (
                   <Facultycard
                     name={faculty.name}
-                    email={department ? faculty.department : faculty.email}
+                    subtitle={department ? faculty.department : faculty.email}
+                    email={faculty.email}
                     extn={faculty.ext_no}
                     id={faculty.email}
                     research={faculty.research_interest}
