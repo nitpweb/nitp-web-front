@@ -28,7 +28,7 @@ const Facultycard = props => {
             </div>
             <h2>{props.name}</h2>
             <h3>{props.desg}</h3>
-            <p>{props.email}</p>
+            <p>{props.subtitle}</p>
           </div>
         </div>
         <div className="faculty2">
