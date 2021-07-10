@@ -197,7 +197,7 @@ export const datalist = [
     img: "/department/mission.svg",
   },
   {
-    title: "Happenings",
+    title: "Notice",
     data: "happening",
     img: "/department/activities.svg",
   },

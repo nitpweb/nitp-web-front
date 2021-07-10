@@ -15,10 +15,10 @@ const Mesyllabus = props => {
                 <h1 data-aos="zoom-in-right">Syllabus</h1>
               </div>
               <div className="row rowmarl3">
-                <h1 data-aos="zoom-in-right">
+                <h2 data-aos="zoom-in-right">
                   {" "}
                   -Humanitites & Social Sciences
-                </h1>
+                </h2>
               </div>
             </div>
           </div>
