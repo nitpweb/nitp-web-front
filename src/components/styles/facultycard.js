@@ -46,6 +46,7 @@ width: 320px;
   align-self: flex-start;
   position: absolute;
   right: 0;
+  color:${props => props.theme.textColor};
   text-align: end;
   margin-right: 15px;
 }

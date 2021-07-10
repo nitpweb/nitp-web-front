@@ -20,7 +20,7 @@ const Eesyllabus = props => {
                 <h1 data-aos="zoom-in-right">Syllabus</h1>
               </div>
               <div className="row rowmarl3">
-                <h1 data-aos="zoom-in-right"> - Electrical Engineering</h1>
+                <h2 data-aos="zoom-in-right"> - Electrical Engineering</h2>
               </div>
             </div>
           </div>

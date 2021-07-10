@@ -15,10 +15,10 @@ const Csesyllabus = props => {
                 <h1 data-aos="zoom-in-right">Syllabus</h1>
               </div>
               <div className="row rowmarl3">
-                <h1 data-aos="zoom-in-right">
+                <h2 data-aos="zoom-in-right">
                   {" "}
                   -Computer Science and Engineering
-                </h1>
+                </h2>
               </div>
             </div>
           </div>
