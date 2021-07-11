@@ -30,8 +30,6 @@ const Facultypage = ({ title, url, dept }) => {
     let result = faculties;
     result = result?.filter(item => String(item.name).replace(/[.*+?^${}()|[\]\\]/g, '').toLowerCase().startsWith(String(search).toLowerCase()))
     setData(result)
-    console.log(search)
-
   }, [search])
 
   const FacultyStyle = PageLayout
@@ -43,7 +41,7 @@ const Facultypage = ({ title, url, dept }) => {
           <div className="layoutrow layoutrowmain syllabus-page-head">
             <div className="col-6" style={{ width: `100%` }}>
               <div className="row rowmarl3">
-                <h1 data-aos="zoom-in-right">{title ? title : "Faculties"}</h1>
+                <h1 data-aos="zoom-in-right" style={{fontSize:`30px`}}>{title ? title : "Faculties"}</h1>
                 <div className="row">                  <h2 data-aos="zoom-in-right">{dept ? `-${dept}` : ""}</h2>
                 </div>
               </div>
