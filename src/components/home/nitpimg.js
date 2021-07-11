@@ -36,5 +36,5 @@ export const Nitpbackimg = () => {
     />
   ))
 
-  return <Slider dataSlider={images} showDots={false} />
+  return <Slider dataSlider={images} type={"homePageImg"} />
 }

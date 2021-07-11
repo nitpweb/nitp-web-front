@@ -1,13 +1,15 @@
 import styled from "styled-components"
 
 export const SliderStyle = styled.div`
+  width: 100%;
   .container-slider {
-    height: 90vh;
+    height: ${props => (props.type === "homePageImg" ? "90vh" : "300px")};
     max-height: 90vw;
     margin: auto 0;
     position: relative;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: ${props => (props.type === "depImages" ? "25px" : 0)};
   }
 
   @media screen and (max-width: 700px) {
@@ -61,6 +63,17 @@ export const SliderStyle = styled.div`
     transform: translateY(-60%);
   }
 
+  .text {
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 2rem;
+    background: rgba(0, 0, 0, 0.8);
+
+    text-align: center;
+  }
+
   .container-dots {
     position: absolute;
     bottom: 10px;
@@ -78,5 +91,12 @@ export const SliderStyle = styled.div`
   }
   .dot.active {
     background: rgb(32, 32, 32);
+  }
+
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .text {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+    }
   }
 `

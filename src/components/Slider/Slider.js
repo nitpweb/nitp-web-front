@@ -3,7 +3,11 @@ import React, { useState, useEffect } from "react"
 import { SliderStyle } from "./SliderStyle"
 import BtnSlider from "./BtnSlider"
 
-export default function Slider({ dataSlider, showDots = true }) {
+export default function Slider({
+  dataSlider,
+  showDots = false,
+  type = "depImages",
+}) {
   const [slideIndex, setSlideIndex] = useState(1)
 
   useEffect(() => {
@@ -36,7 +40,7 @@ export default function Slider({ dataSlider, showDots = true }) {
   }
 
   return (
-    <SliderStyle>
+    <SliderStyle type={type}>
       <div className="container-slider">
         {dataSlider.map((obj, index) => {
           return (
