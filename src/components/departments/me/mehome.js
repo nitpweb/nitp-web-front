@@ -1,7 +1,8 @@
 import React from "react"
 import { Achievements, Activities, Labs } from "./me-others-data"
-import Carousel from "../../carousel"
+
 import { LabImages } from "./me-others-data"
+import Slider from "../../Slider/Slider"
 
 export const routeName = "me"
 export const title = "Mechanical Engineering"
@@ -97,7 +98,7 @@ export const labs = () => {
           {Labs[0].content}
         </div>
         <div className="col-6">
-          <Carousel LabImages={LabImages} />
+          <Slider dataSlider={LabImages} />
         </div>
       </div>
     </>
