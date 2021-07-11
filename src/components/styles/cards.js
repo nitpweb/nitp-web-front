@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const CardsStyle = styled.div`
   font-family: "Source Sans Pro";
-  padding-top: 10vw;
+  padding-top: 15vh;
   display: flex;
   justify-content: space-evenly;
   background-color: ${props => props.theme.backgroundColor};

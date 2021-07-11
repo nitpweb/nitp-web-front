@@ -115,7 +115,7 @@ const Home = () => {
               view all
             </Link>
           </div>
-          <div className="event-row">
+          <div className="event-row" data-aos="fade-up">
             {events &&
               events.map(event => {
                 const date = new Date(event.openDate)

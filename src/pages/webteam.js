@@ -38,30 +38,79 @@ useEffect(() => {
                   </h2>
                 </div>
               </div>{" "}
-              <div className="row rowmarl3">
-                <h2 data-aos="zoom-in-right">Faculties/Officers Involved</h2>
-              </div>
-              {webteam &&
-                webteam.slice(0, 4).map(member => {
-                  return (
-                    <Webcard
-                      name={member.name}
-                      email={member.email}
-                      extn={member.ext_no}
-                      id={member.email}
-                      interests={member.interests}
-                      image={member.image}
-                      desg={member.desg}
-                      url={member.url}
-                    />
-                  )
-                })}
               <div className="row layoutrow">
                 <div className="row rowmarl3">
                   <h2 data-aos="zoom-in-right">Student Volunteers</h2>
                 </div>
                 {webteam &&
                   webteam.slice(4).map(member => {
+                    return (
+                      <Webcard
+                        name={member.name}
+                        email={member.email}
+                        extn={member.ext_no}
+                        id={member.email}
+                        interests={member.interests}
+                        image={member.image}
+                        desg={member.desg}
+                        url={member.url}
+                      />
+                    )
+                  })}
+              </div>
+              <div className="row rowmarl3">
+                <h2 data-aos="zoom-in-right">Faculties/Officers Involved</h2>
+              </div>
+              <div className="col-6">
+                <div classNam="row">
+                  <h2 data-aos="zoom-in-right">PI Website</h2>
+                </div>
+                <div className="row">
+                  {webteam &&
+                    webteam.slice(0, 2).map(member => {
+                      return (
+                        <Webcard
+                          name={member.name}
+                          email={member.email}
+                          extn={member.ext_no}
+                          id={member.email}
+                          interests={member.interests}
+                          image={member.image}
+                          desg={member.desg}
+                          url={member.url}
+                        />
+                      )
+                    })}
+                </div>
+              </div>
+              <div className="col-6">
+                <div classNam="row">
+                  <h2 data-aos="zoom-in-right">PI IT Services</h2>
+                </div>
+                <div className="row">
+                  {webteam &&
+                    webteam.slice(2, 3).map(member => {
+                      return (
+                        <Webcard
+                          name={member.name}
+                          email={member.email}
+                          extn={member.ext_no}
+                          id={member.email}
+                          interests={member.interests}
+                          image={member.image}
+                          desg={member.desg}
+                          url={member.url}
+                        />
+                      )
+                    })}
+                </div>
+              </div>
+              <div className="row layoutrow">
+                <div className="row rowmarl3">
+                  <h2 data-aos="zoom-in-right">Scientific Officer</h2>
+                </div>
+                {webteam &&
+                  webteam.slice(3, 4).map(member => {
                     return (
                       <Webcard
                         name={member.name}
