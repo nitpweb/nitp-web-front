@@ -20,24 +20,30 @@ const Notice = props => {
   return (
     <>
       <NoticeStyle>
-        <p className="noticecarddetail">{props.imp==1?<img id="flag" src={flag} alt="f" />:""}<a href={props.link} target="_blank">{" "}{props.detail}</a></p>
+        <p className="noticecarddetail">
+          {props.imp == 1 ? <img id="flag" src={flag} alt="f" /> : ""}
+          <a href={props.link} rel="noopener noreferrer" target="_blank">
+            {" "}
+            {props.detail}
+          </a>
+        </p>
         <div id="notdate">
           <div>
             {props.attachments.map(elem => {
-              if(elem.url)
-              return (
-                <>
-                  <img id="notdownimg" src={downimg} alt="c" />
-                  <a
-                    className="notdown"
-                    href={elem.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {elem.caption}
-                  </a>
-                </>
-              )
+              if (elem.url)
+                return (
+                  <>
+                    <img id="notdownimg" src={downimg} alt="c" />
+                    <a
+                      className="notdown"
+                      href={elem.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {elem.caption}
+                    </a>
+                  </>
+                )
             })}
           </div>
           <div>
