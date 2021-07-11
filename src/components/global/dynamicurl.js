@@ -7,7 +7,14 @@ const DynamicLink = ({ url, data, title, classvalue }) => (
         {title}
       </Link>
     ) : (
-      <a href={url} className={classvalue} target="_blank">{title}</a>
+      <a
+        href={url}
+        className={classvalue}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {title}
+      </a>
     )}
   </>
 )

@@ -71,6 +71,7 @@ const Academicspage = () => {
                             <a
                               href={item.link}
                               target="_blank"
+                              rel="noopener noreferrer"
                               style={{ textDecoration: `none`, padding: `5px` }}
                             >
                               <li>{item.para}</li>
@@ -88,9 +89,9 @@ const Academicspage = () => {
               <div className="row rowmarl3">
                 <div className="digital">
                   <h1 style={{ marginBottom: `1rem` }}>Programmes</h1>
-                  
+
                   <div className="probutton">
-                  <button
+                    <button
                       onClick={() => {
                         setView("programmes")
                       }}
@@ -132,195 +133,202 @@ const Academicspage = () => {
                     </button>
                   </div>
                   {view == "programmes" && (
-              <div className="row">
-                <div className="digital">
-                  {/* <h1 style={{ marginBottom: `1rem` }}>Programmes</h1> */}
-                  <h3>Names of the approved programmes</h3>
-                  <table align="center">
-                    <tbody>
-                      <tr>
-                        <th>S.no.</th>
-                        <th>Degree/Program</th>
-                        <th>Branch of specialization</th>
-                        <th>Duration</th>
-                      </tr>
-                      <tr>
-                        <td colspan="4" align="center">
-                          <b>Under Graduate Programmes</b>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Bachelor of Architecture</td>
-                        <td>Architecture</td>
-                        <td>5 years</td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td rowspan="6">Bachelor of Technology</td>
-                        <td>Civil Engineering</td>
-                        <td rowspan="6">4 Years</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>Computer Scince &amp; Engineering</td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td> Electrical Engineering</td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td>Electronics &amp; Communication Engineering</td>
-                      </tr>
-                      <tr>
-                        <td>6</td>
-                        <td>Information Technology</td>
-                      </tr>
-                      <tr>
-                        <td>7</td>
-                        <td>Mechanical Engineering</td>
-                      </tr>
-                      <tr>
-                        <td colspan="4" align="center">
-                          <b>Post Graduate Programmes</b>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td rowspan="5">
-                          Master of Technology <i>(Civil Engineering)</i>
-                        </td>
-                        <td>Water Resources Engineering</td>
-                        <td rowspan="19">2 Years</td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Transportation Engineering</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>Structural Engineering</td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>Environmental Engineering</td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td>Geotechnical Engineering</td>
-                      </tr>
-                      <tr>
-                        <td>6</td>
-                        <td rowspan="2">
-                          Master of Technology <i>(Electrical Engineering)</i>
-                        </td>
-                        <td>Control System Engineering</td>
-                      </tr>
-                      <tr>
-                        <td>7</td>
-                        <td>Power System Engineering</td>
-                      </tr>
-                      <tr>
-                        <td>8</td>
-                        <td rowspan="5">
-                          Master of Technology <i>(Mechanical Engineering)</i>
-                        </td>
-                        <td>Thermal Engineering</td>
-                      </tr>
-                      <tr>
-                        <td>9</td>
-                        <td>Production Engineering</td>
-                      </tr>
-                      <tr>
-                        <td>10</td>
-                        <td>Design Engineering</td>
-                      </tr>
-                      <tr>
-                        <td>11</td>
-                        <td>Automobile Engineering</td>
-                      </tr>
-                      <tr>
-                        <td>12</td>
-                        <td>Renewable Energy Technology</td>
-                      </tr>
-                      <tr>
-                        <td>13</td>
-                        <td rowspan="2">
-                          Master of Technology{" "}
-                          <i>(Computer Science &amp; Engineering)</i>
-                        </td>
-                        <td>Information Technology</td>
-                      </tr>
-                      <tr>
-                        <td>14</td>
-                        <td>Computer Science &amp; Engineering</td>
-                      </tr>
-                      <tr>
-                        <td>15</td>
-                        <td rowspan="2">
-                          Master of Technology{" "}
-                          <i>(Electronics &amp; Communication Engineering)</i>
-                        </td>
-                        <td>Communication Systems</td>
-                      </tr>
-                      <tr>
-                        <td>16</td>
-                        <td>VLSI System Design and Microelectronics</td>
-                      </tr>
-                      <tr>
-                        <td>17</td>
-                        <td>
-                          Master in Urban &amp; Regional Planning<i>(MURP)</i>
-                        </td>
-                        <td>Urban and Regional Planning</td>
-                      </tr>
-                      <tr>
-                        <td>18</td>
-                        <td>
-                          M. Tech (Computational Mathematics)<i></i>
-                        </td>
-                        <td>Computational Mathematics</td>
-                      </tr>
-                      <tr>
-                        <td>19</td>
-                        <td>
-                          M. Tech (Nanoscience and Technology)<i></i>
-                        </td>
-                        <td>Nanoscience and Technology</td>
-                      </tr>
-                      <tr>
-                        <td colspan="4" align="center">
-                          <b>Five Years Integrated Programs</b>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>
-                          M. Sc.<i>(Chemistry)</i>
-                        </td>
-                        <td>Integrated M. Sc. in Chemistry</td>
-                        <td rowspan="3">5 Years</td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>
-                          M. Sc.<i>(Mathematics)</i>
-                        </td>
-                        <td>Integrated M. Sc. in Mathematics</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>
-                          M. Sc.<i>(Physics)</i>
-                        </td>
-                        <td>Integrated M. Sc. in Physics</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            )}
+                    <div className="row">
+                      <div className="digital">
+                        {/* <h1 style={{ marginBottom: `1rem` }}>Programmes</h1> */}
+                        <h3>Names of the approved programmes</h3>
+                        <table align="center">
+                          <tbody>
+                            <tr>
+                              <th>S.no.</th>
+                              <th>Degree/Program</th>
+                              <th>Branch of specialization</th>
+                              <th>Duration</th>
+                            </tr>
+                            <tr>
+                              <td colspan="4" align="center">
+                                <b>Under Graduate Programmes</b>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>Bachelor of Architecture</td>
+                              <td>Architecture</td>
+                              <td>5 years</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td rowspan="6">Bachelor of Technology</td>
+                              <td>Civil Engineering</td>
+                              <td rowspan="6">4 Years</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>Computer Scince &amp; Engineering</td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td> Electrical Engineering</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>
+                                Electronics &amp; Communication Engineering
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td>Information Technology</td>
+                            </tr>
+                            <tr>
+                              <td>7</td>
+                              <td>Mechanical Engineering</td>
+                            </tr>
+                            <tr>
+                              <td colspan="4" align="center">
+                                <b>Post Graduate Programmes</b>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td rowspan="5">
+                                Master of Technology <i>(Civil Engineering)</i>
+                              </td>
+                              <td>Water Resources Engineering</td>
+                              <td rowspan="19">2 Years</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Transportation Engineering</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>Structural Engineering</td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>Environmental Engineering</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>Geotechnical Engineering</td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td rowspan="2">
+                                Master of Technology{" "}
+                                <i>(Electrical Engineering)</i>
+                              </td>
+                              <td>Control System Engineering</td>
+                            </tr>
+                            <tr>
+                              <td>7</td>
+                              <td>Power System Engineering</td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td rowspan="5">
+                                Master of Technology{" "}
+                                <i>(Mechanical Engineering)</i>
+                              </td>
+                              <td>Thermal Engineering</td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td>Production Engineering</td>
+                            </tr>
+                            <tr>
+                              <td>10</td>
+                              <td>Design Engineering</td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td>Automobile Engineering</td>
+                            </tr>
+                            <tr>
+                              <td>12</td>
+                              <td>Renewable Energy Technology</td>
+                            </tr>
+                            <tr>
+                              <td>13</td>
+                              <td rowspan="2">
+                                Master of Technology{" "}
+                                <i>(Computer Science &amp; Engineering)</i>
+                              </td>
+                              <td>Information Technology</td>
+                            </tr>
+                            <tr>
+                              <td>14</td>
+                              <td>Computer Science &amp; Engineering</td>
+                            </tr>
+                            <tr>
+                              <td>15</td>
+                              <td rowspan="2">
+                                Master of Technology{" "}
+                                <i>
+                                  (Electronics &amp; Communication Engineering)
+                                </i>
+                              </td>
+                              <td>Communication Systems</td>
+                            </tr>
+                            <tr>
+                              <td>16</td>
+                              <td>VLSI System Design and Microelectronics</td>
+                            </tr>
+                            <tr>
+                              <td>17</td>
+                              <td>
+                                Master in Urban &amp; Regional Planning
+                                <i>(MURP)</i>
+                              </td>
+                              <td>Urban and Regional Planning</td>
+                            </tr>
+                            <tr>
+                              <td>18</td>
+                              <td>
+                                M. Tech (Computational Mathematics)<i></i>
+                              </td>
+                              <td>Computational Mathematics</td>
+                            </tr>
+                            <tr>
+                              <td>19</td>
+                              <td>
+                                M. Tech (Nanoscience and Technology)<i></i>
+                              </td>
+                              <td>Nanoscience and Technology</td>
+                            </tr>
+                            <tr>
+                              <td colspan="4" align="center">
+                                <b>Five Years Integrated Programs</b>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>
+                                M. Sc.<i>(Chemistry)</i>
+                              </td>
+                              <td>Integrated M. Sc. in Chemistry</td>
+                              <td rowspan="3">5 Years</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>
+                                M. Sc.<i>(Mathematics)</i>
+                              </td>
+                              <td>Integrated M. Sc. in Mathematics</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>
+                                M. Sc.<i>(Physics)</i>
+                              </td>
+                              <td>Integrated M. Sc. in Physics</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  )}
                   {view == "programmesug"
                     ? acadData.courseUG.map(item => (
                         <div className="digital">
@@ -337,6 +345,7 @@ const Academicspage = () => {
                               <a
                                 href={e.link}
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 style={{
                                   textDecoration: `none`,
                                   fontFamily: `Source Sans Pro`,
@@ -374,6 +383,7 @@ const Academicspage = () => {
                               <a
                                 href={e.link}
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 style={{
                                   textDecoration: `none`,
                                   fontFamily: `Source Sans Pro`,
@@ -411,6 +421,7 @@ const Academicspage = () => {
                               <a
                                 href={e.link}
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 style={{
                                   textDecoration: `none`,
                                   fontFamily: `Source Sans Pro`,
@@ -448,6 +459,7 @@ const Academicspage = () => {
                               <a
                                 href={e.link}
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 style={{
                                   textDecoration: `none`,
                                   fontFamily: `Source Sans Pro`,
@@ -488,7 +500,11 @@ const Academicspage = () => {
                         <a
                           id="formatdown"
                           href={e.link}
-                          style={{ textDecoration: `none`, fontWeight: `bold`,marginLeft:`1rem` }}
+                          style={{
+                            textDecoration: `none`,
+                            fontWeight: `bold`,
+                            marginLeft: `1rem`,
+                          }}
                           target="_blank"
                         >
                           Download
@@ -544,6 +560,7 @@ const Academicspage = () => {
                       {item.links.map(e => (
                         <a
                           href={e}
+                          rel="noopener noreferrer"
                           target="_blank"
                           style={{ textDecoration: `none` }}
                         >
@@ -571,6 +588,7 @@ const Academicspage = () => {
                         <a
                           href={e.link}
                           target="_blank"
+                          rel="noopener noreferrer"
                           style={{ textDecoration: `none` }}
                         >
                           <p
@@ -597,6 +615,7 @@ const Academicspage = () => {
                         <a
                           href={e.link}
                           target="_blank"
+                          rel="noopener noreferrer"
                           style={{ textDecoration: `none` }}
                         >
                           <p
@@ -623,6 +642,7 @@ const Academicspage = () => {
                         <a
                           href={e.link}
                           target="_blank"
+                          rel="noopener noreferrer"
                           style={{ textDecoration: `none` }}
                         >
                           <p
@@ -646,7 +666,12 @@ const Academicspage = () => {
                       <h3>{item.title}</h3>
 
                       {item.data.map(e => (
-                        <a href={e.link} style={{ textDecoration: `none` }}>
+                        <a
+                          href={e.link}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          style={{ textDecoration: `none` }}
+                        >
                           <p
                             style={{
                               borderBottom: `1px dotted black`,
@@ -696,6 +721,7 @@ const Academicspage = () => {
                           <a
                             href={e.link}
                             target="_blank"
+                            rel="noopener noreferrer"
                             style={{ textDecoration: `none` }}
                           >
                             <p

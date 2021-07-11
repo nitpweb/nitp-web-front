@@ -17,7 +17,7 @@ const Eventcard = props => {
       <div className="eventcarddetailsection">
         <p className="eventcarddetail">
           {props.link ? (
-            <a href={props.link} target="_blank">
+            <a href={props.link} target="_blank" rel="noopener noreferrer">
               {props.detail}
             </a>
           ) : (
@@ -30,7 +30,11 @@ const Eventcard = props => {
             <p className="efp">{props.time}</p>
           </div>
           <div>
-            <a target="_blank" href={`https://www.google.com/maps/search/${props.location}`}>
+            <a
+              target="_blank"
+              href={`https://www.google.com/maps/search/${props.location}`}
+              rel="noopener noreferrer"
+            >
               <img src={eventlocation} alt="c" />
               <p className="efp">{props.location}</p>
             </a>
