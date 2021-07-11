@@ -1,7 +1,8 @@
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import React from "react"
-import Carousel from "./../carousel"
+// import Carousel from "./../carousel"
+import Slider from "../Slider/Slider"
 
 export const Nitpbackimg = () => {
   const data = useStaticQuery(graphql`
@@ -26,10 +27,14 @@ export const Nitpbackimg = () => {
   const images = data.nitpBackImages.nodes.map(image => (
     <Img
       fluid={image.childImageSharp.fluid}
-      imgStyle={{ objectFit: "fill", maxHeight: `90vh` }}
-      style={{ maxHeight: `90vh` }}
+      imgStyle={{
+        objectFit: "cover",
+        maxHeight: `90vh`,
+        objectPosition: "center",
+      }}
+      style={{ maxHeight: `90vw`, height: `100%` }}
     />
   ))
 
-  return <Carousel LabImages={images} type="backGround" />
+  return <Slider dataSlider={images} type={"homePageImg"} />
 }
