@@ -28,7 +28,12 @@ const Notice = props => {
               return (
                 <>
                   <img id="notdownimg" src={downimg} alt="c" />
-                  <a className="notdown" href={elem.url} target="blank">
+                  <a
+                    className="notdown"
+                    href={elem.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {elem.caption}
                   </a>
                 </>
