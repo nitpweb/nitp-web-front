@@ -1,7 +1,7 @@
 export const routeName = "arch"
 export const title = "Architecture Department"
 import { Labs, LabImages } from "./arch-others-data"
-import Carousel from "../../carousel"
+import Slider from "../../Slider/Slider"
 
 export const titleDescription = () => {
   return (
@@ -106,7 +106,7 @@ export const labs = () => {
         {" "}
         <div className="col-6">{Labs.content}</div>
         <div className="col-6">
-          <Carousel LabImages={LabImages} />
+          <Slider dataSlider={LabImages} />
         </div>{" "}
       </div>
     </>

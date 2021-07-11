@@ -1,5 +1,6 @@
 import React from "react"
-import Carousel from "../../carousel"
+import Slider from "../../Slider/Slider"
+
 import {
   Achievements,
   Activity,
@@ -99,7 +100,7 @@ export const labs = () => {
     <>
       <div className="row rowmarl3">
         <div className="col-6">
-          <Carousel LabImages={LabImages} />
+          <Slider dataSlider={LabImages} />
         </div>{" "}
         <div className="col-6">{Labs.content}</div>
       </div>
@@ -111,7 +112,7 @@ export const activities = () => {
   return (
     <>
       <div className="row rowmarl3">
-        <Carousel LabImages={ActivityImages} />
+        <Slider dataSlider={ActivityImages} showDots={true} />
       </div>
       <div className="row rowmarl3">{Activity.content}</div>
     </>
