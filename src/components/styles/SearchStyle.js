@@ -8,13 +8,14 @@ width: 100%;
     margin: 0 ;
     text-align: center;
     align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
     font: bold 13px sans-serif;
-    max-width: 40%;
     position: relative;
 }
 
 .form-search input{
-    width: 60%;
+    width: 300px;
     box-sizing: border-box;
     border-bottom-left-radius: 2px;
     border-top-left-radius: 2px;
@@ -34,6 +35,5 @@ width: 100%;
     font-size: 16px;
     color: #80A3BD;
 }
-
 
 `
