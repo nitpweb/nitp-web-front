@@ -500,6 +500,7 @@ const Academicspage = () => {
                         <a
                           id="formatdown"
                           href={e.link}
+                          rel="noopener noreferrer"
                           style={{
                             textDecoration: `none`,
                             fontWeight: `bold`,
