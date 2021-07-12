@@ -3,11 +3,6 @@ import Navlist from "../global/navlist"
 
 const Deansinfo = [
   {
-    name: "Prof. Pradip Kumar Jain",
-    designation: "Chairman, Board of Governors",
-    type: "Chairman",
-  },
-  {
     name: "Prof. S.K. Verma",
     designation: "Deputy Director and Dean, Academic",
     type: "Dean",

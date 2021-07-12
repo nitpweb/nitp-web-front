@@ -36,7 +36,7 @@ const Facultypage = ({ title, url, dept }) => {
 
   return (
     <>
-      <FacultyStyle style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
+      <FacultyStyle style={{ marginBottom: `3vh` }}>
         <div className="faculty-page">
           <div className="layoutrow layoutrowmain syllabus-page-head">
             <div className="col-6" style={{ width: `100%` }}>
