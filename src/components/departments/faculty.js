@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react"
 import Facultycard from "../global/facultycard"
 import faculty from "./img/faculty.svg"
 import { PageLayout } from "../styles/pagelayout"
-import styled from "styled-components"
 import { SearchStyle } from '../styles/SearchStyle'
 
 const Facultypage = ({ title, url, dept }) => {
@@ -18,6 +17,15 @@ const Facultypage = ({ title, url, dept }) => {
       .get(facultiesUrl)
       .then(res => {
         const faculty = res.data
+        faculty.sort(
+          (a, b) =>
+            String(a.name)
+              .replace(/[.*+?^${}()|[\]\\' ']/g, "")
+              .toLowerCase() >
+            String(b.name)
+              .replace(/[.*+?^${}()|[\]\\' ']/g, "")
+              .toLowerCase()
+        )
         setFaculties(faculty)
         setData(faculty)
       })
