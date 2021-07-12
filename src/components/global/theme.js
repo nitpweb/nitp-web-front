@@ -1,6 +1,7 @@
 import { ThemeProvider } from "styled-components"
 
 export const light = {
+  theme:"light",
   primaryColor: "#941b0c",
   backgroundColor: "#ffffff",
   backgroundSecColor: "#e4e6eb",
@@ -20,6 +21,7 @@ export const light = {
 }
 
 export const dark = {
+  theme:"dark",
   primaryColor: "#cd512f",
   backgroundColor: "#4d4d4d",
   backgroundSecColor: "#282828",
