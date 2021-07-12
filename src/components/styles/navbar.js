@@ -231,10 +231,10 @@ export const NavbarStyle = styled.div`
       line-height: 0.3rem;
     }
   }
-  .nav-sidebar > .nav-sidebar-div:nth-of-type(2n + 1) {
+  /* .nav-sidebar > .nav-sidebar-div:nth-of-type(2n + 10) {
     background-color: ${props => props.theme.backgroundSecColor};
-  }
-  .mainLink > .mobsub > a:nth-of-type(2n + 1) {
+  } */
+  .mainLink > .mobsub {
     background-color: ${props => props.theme.backgroundSecColor};
   }
 
@@ -320,7 +320,7 @@ export const NavbarStyle = styled.div`
       display: none;
     }
 
-    .departsidedrop > .nav-sidebar-div:nth-of-type(2n + 1) {
+    .departsidedrop > .nav-sidebar-div{
       background-color: ${props => props.theme.backgroundSecColor};
     }
     #mainsidedrop > .nav-sidebar-div:nth-of-type(2n + 1) {
@@ -383,8 +383,8 @@ export const NavbarStyle = styled.div`
     font-family: "Source Sans Pro";
     font-size: ${props => parseInt(props.theme.font * 16)}px;
     line-height: 1;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   .navsideicondiv {
     width: 15%;
@@ -416,6 +416,7 @@ export const NavbarStyle = styled.div`
   #acadsidedropwrap,
   #facsidedropwrap,
   #studsidedropwrap,
+  #facultysidedropwrap,
   #placementsidedropwrap,
   #homesidedropwrap {
     display: none;
@@ -426,6 +427,7 @@ export const NavbarStyle = styled.div`
     flex-direction: column;
     width: 280px;
     /* padding-left: 25px; */
+    background-color: ${props => props.theme.theme=="light"?"lightgray":"black"};
     align-items: flex-start;
     justify-content: flex-start;
     text-decoration: none;
@@ -442,7 +444,7 @@ export const NavbarStyle = styled.div`
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
-      display: none;
+      display: flex;
       width: 100%;
 
       a {
