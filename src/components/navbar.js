@@ -189,13 +189,6 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           <div className="nav-link-item" activeClassName="nav-link-item-active">
             <Dropnew to="/" title="Home" list={Navlist.home} />
           </div>
-          {/* <Link
-            className="nav-link-item"
-            activeClassName="nav-link-item-active"
-            to="/about"
-          >
-            <Dropdown title="About Us" list={Navlist.about} />
-          </Link> */}
 
           <div className="nav-link-item" activeClassName="nav-link-item-active">
             <Dropnew
@@ -236,7 +229,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           <div
             className="nav-link-item"
             activeClassName="nav-link-item-active"
-            
+
           >
             <Dropnew to="/facilities" title="Facilities" list={Navlist.facilities} />
           </div>
@@ -336,14 +329,6 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
                   <div
                     to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
                     className="mainLink"
-                    onClick={function () {
-                      var z = document.querySelector(`#sub${item.url.slice(1)}`)
-                      if (z.style.display === "none") {
-                        z.style.display = "flex"
-                      } else {
-                        z.style.display = "none"
-                      }
-                    }}
                   >
                     <p>
                       <span>{item.title}</span>
@@ -387,12 +372,26 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             <div id="adminsidedropwrap">
               <div className="adminsidedrop">
                 {Navlist.admin.map(val => (
-                  <DynamicLink
-                    classvalue="nav-sidebar-div"
-                    url={val.url}
-                    data={val.data}
-                    title={val.title}
-                  />
+                  <div
+                    to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+                    className="mainLink"
+                  >
+                    {Navlist.admin.length != 1 && <p>
+                      <span>{item.title}</span>
+                    </p>}
+                    {item.sub && (
+                      <div id={`sub${item.url.slice(1)}`} className="mobsub">
+                        {item.sub.map(val => (
+                          <DynamicLink
+                            url={val.url}
+                            data={val.data}
+                            title={val.title}
+                            classvalue="nav-sidebar-div"
+                          />
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 ))}
               </div>
             </div>
@@ -507,13 +506,27 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             </div>
             <div id="facsidedropwrap">
               <div className="departsidedrop">
-                {Navlist.facilities.map(val => (
-                  <DynamicLink
-                    url={val.url}
-                    data={val.data}
-                    title={val.title}
-                    classvalue="nav-sidebar-div"
-                  />
+                {Navlist.facilities.map(item => (
+                  <div
+                    to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+                    className="mainLink"
+                  >
+                    {Navlist.facilities.length != 1 && <p>
+                      <span>{item.title}</span>
+                    </p>}
+                    {item.sub && (
+                      <div id={`sub${item.url.slice(1)}`} className="mobsub">
+                        {item.sub.map(val => (
+                          <DynamicLink
+                            url={val.url}
+                            data={val.data}
+                            title={val.title}
+                            classvalue="nav-sidebar-div"
+                          />
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 ))}
               </div>
             </div>
@@ -532,21 +545,77 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
               <div className="navsideicondiv">
                 <img src={studenticon} alt="" />
               </div>
-              <p>Students</p>
+              <p>For Students</p>
             </div>
             <div id="studsidedropwrap">
               <div className="departsidedrop">
-                {Navlist.students.map(val => (
-                  <DynamicLink
-                    url={val.url}
-                    data={val.data}
-                    title={val.title}
-                    classvalue="nav-sidebar-div"
-                  />
+                {Navlist.students.map(item => (
+                  <div
+                    to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+                    className="mainLink"
+                  >
+                    {Navlist.facilities.length != 1 && <p>
+                      <span>{item.title}</span>
+                    </p>}
+                    {item.sub && (
+                      <div id={`sub${item.url.slice(1)}`} className="mobsub">
+                        {item.sub.map(val => (
+                          <DynamicLink
+                            url={val.url}
+                            data={val.data}
+                            title={val.title}
+                            classvalue="nav-sidebar-div"
+                          />
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 ))}
               </div>
             </div>
-
+            <div
+              to="/"
+              className="nav-sidebar-div"
+              onClick={function () {
+                var z = document.querySelector("#facultysidedropwrap")
+                if (z.style.display === "none") {
+                  z.style.display = "flex"
+                } else {
+                  z.style.display = "none"
+                }
+              }}
+            >
+              <div className="navsideicondiv">
+                <img src={studenticon} alt="" />
+              </div>
+              <p>For Faculty &amp; Staff</p>
+            </div>
+            <div id="facultysidedropwrap">
+              <div className="departsidedrop">
+                {Navlist.faculty.map(item => (
+                  <div
+                    to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+                    className="mainLink"
+                  >
+                    {Navlist.faculty.length != 1 && <p>
+                      <span>{item.title}</span>
+                    </p>}
+                    {item.sub && (
+                      <div id={`sub${item.url.slice(1)}`} className="mobsub">
+                        {item.sub.map(val => (
+                          <DynamicLink
+                            url={val.url}
+                            data={val.data}
+                            title={val.title}
+                            classvalue="nav-sidebar-div"
+                          />
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
             <a
               href="https://tnp.nitp.ac.in"
               target="_blank"
@@ -604,14 +673,6 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
                 <div
                   to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
                   className="mainLink"
-                  onClick={function () {
-                    var z = document.querySelector(`#sub${item.url.slice(1)}`)
-                    if (z.style.display === "none") {
-                      z.style.display = "flex"
-                    } else {
-                      z.style.display = "none"
-                    }
-                  }}
                 >
                   <p>
                     <span>{item.title}</span>
@@ -650,13 +711,27 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           </div>
           <div id="adminsidedropwrap">
             <div className="departsidedrop">
-              {Navlist.admin.map(val => (
-                <DynamicLink
-                  url={val.url}
-                  data={val.data}
-                  title={val.title}
-                  classvalue="nav-sidebar-div"
-                />
+              {Navlist.admin.map(item => (
+                <div
+                  to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+                  className="mainLink"
+                >
+                  {Navlist.admin.length != 1 && <p>
+                    <span>{item.title}</span>
+                  </p>}
+                  {item.sub && (
+                    <div id={`sub${item.url.slice(1)}`} className="mobsub">
+                      {item.sub.map(val => (
+                        <DynamicLink
+                          url={val.url}
+                          data={val.data}
+                          title={val.title}
+                          classvalue="nav-sidebar-div"
+                        />
+                      ))}
+                    </div>
+                  )}
+                </div>
               ))}
             </div>
           </div>
@@ -764,13 +839,27 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           </div>
           <div id="facsidedropwrap">
             <div className="departsidedrop">
-              {Navlist.facilities.map(val => (
-                <DynamicLink
-                  url={val.url}
-                  data={val.data}
-                  title={val.title}
-                  classvalue="nav-sidebar-div"
-                />
+              {Navlist.facilities.map(item => (
+                <div
+                  to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+                  className="mainLink"
+                >
+                  {Navlist.facilities.length != 1 && <p>
+                    <span>{item.title}</span>
+                  </p>}
+                  {item.sub && (
+                    <div id={`sub${item.url.slice(1)}`} className="mobsub">
+                      {item.sub.map(val => (
+                        <DynamicLink
+                          url={val.url}
+                          data={val.data}
+                          title={val.title}
+                          classvalue="nav-sidebar-div"
+                        />
+                      ))}
+                    </div>
+                  )}
+                </div>
               ))}
             </div>
           </div>
@@ -790,21 +879,77 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             <div className="navsideicondiv">
               <img src={studenticon} alt="" />
             </div>
-            <p>Students</p>
+            <p>For Students</p>
           </div>
           <div id="studsidedropwrap">
             <div className="departsidedrop">
-              {Navlist.students.map(val => (
-                <DynamicLink
-                  url={val.url}
-                  data={val.data}
-                  title={val.title}
-                  classvalue="nav-sidebar-div"
-                />
+              {Navlist.students.map(item => (
+                <div
+                  to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+                  className="mainLink"
+                >
+                  {Navlist.students.length != 1 && <p>
+                    <span>{item.title}</span>
+                  </p>}
+                  {item.sub && (
+                    <div id={`sub${item.url.slice(1)}`} className="mobsub">
+                      {item.sub.map(val => (
+                        <DynamicLink
+                          url={val.url}
+                          data={val.data}
+                          title={val.title}
+                          classvalue="nav-sidebar-div"
+                        />
+                      ))}
+                    </div>
+                  )}
+                </div>
               ))}
             </div>
           </div>
-
+          <div
+              to="/"
+              className="nav-sidebar-div"
+              onClick={function () {
+                var z = document.querySelector("#facultysidedropwrap")
+                if (z.style.display === "none") {
+                  z.style.display = "flex"
+                } else {
+                  z.style.display = "none"
+                }
+              }}
+            >
+              <div className="navsideicondiv">
+                <img src={studenticon} alt="" />
+              </div>
+              <p>For Faculty &amp; Staff</p>
+            </div>
+            <div id="facultysidedropwrap">
+              <div className="departsidedrop">
+                {Navlist.faculty.map(item => (
+                  <div
+                    to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
+                    className="mainLink"
+                  >
+                    {Navlist.faculty.length != 1 && <p>
+                      <span>{item.title}</span>
+                    </p>}
+                    {item.sub && (
+                      <div id={`sub${item.url.slice(1)}`} className="mobsub">
+                        {item.sub.map(val => (
+                          <DynamicLink
+                            url={val.url}
+                            data={val.data}
+                            title={val.title}
+                            classvalue="nav-sidebar-div"
+                          />
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
           <a
             href="https://tnp.nitp.ac.in"
             target="_blank"
