@@ -3,11 +3,6 @@ import { FacultyCard } from "../styles/facultycard"
 
 const Webcard = props => {
   const [interests, setInterests] = useState()
-  useEffect(() => {
-    if (props.interests != null) {
-      setInterests(props.interests.split(","))
-    }
-  }, {})
 
   return (
     <>
@@ -29,8 +24,7 @@ const Webcard = props => {
           </div>
         </div>
         <div className="faculty2">
-          {interests && <p>Interests:-</p>}
-          {interests && interests.map(item => <p>{item}</p>)}
+          <p style={{fontWeight:`normal`}}>{props.interests }</p>
           <p>
             <a href={props.url}>View Profile</a>
           </p>
