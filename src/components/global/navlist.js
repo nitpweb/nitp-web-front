@@ -1,5 +1,4 @@
 const Departments = [
-  
   { url: "/arch", title: "Architecture" },
 
   { url: "/chem", title: "Chemistry" },
@@ -16,13 +15,12 @@ const Departments = [
   { url: "/ece", title: "Electronics and Communication Engineering" },
 
   { url: "/hss", title: "Humanities & Social Sciences" },
-  
+
   { url: "/math", title: "Mathematics" },
 
   { url: "/me", title: "Mechanical Engineering" },
 
   { url: "/physics", title: "Physics" },
-
 ]
 
 const Admin = [
@@ -255,7 +253,7 @@ const Academics = [
       {
         url: "/academics",
         title: "Programmes",
-        data: "programmes"
+        data: "programmes",
       },
       {
         url: "/academics",

@@ -3,13 +3,13 @@ import React, { useEffect, useState } from "react"
 import Facultycard from "../global/facultycard"
 import faculty from "./img/faculty.svg"
 import { PageLayout } from "../styles/pagelayout"
-import { SearchStyle } from '../styles/SearchStyle'
+import { SearchStyle } from "../styles/SearchStyle"
 
 const Facultypage = ({ title, url, dept }) => {
   const [faculties, setFaculties] = useState()
   const [search, setSearch] = useState("")
   const [data, setData] = useState([])
-  const department = (url == "faculties" || url == "officers")
+  const department = url == "faculties" || url == "officers"
 
   let facultiesUrl = `${process.env.GATSBY_API_URL}/api/faculty/${url}`
   useEffect(() => {
@@ -35,8 +35,13 @@ const Facultypage = ({ title, url, dept }) => {
   }, [])
 
   useEffect(() => {
-    let result = faculties;
-    result = result?.filter(item => String(item.name).replace(/[.*+?^${}()|[\]\\]/g, '').toLowerCase().startsWith(String(search).toLowerCase()))
+    let result = faculties
+    result = result?.filter(item =>
+      String(item.name)
+        .replace(/[.*+?^${}()|[\]\\]/g, "")
+        .toLowerCase()
+        .startsWith(String(search).toLowerCase())
+    )
     setData(result)
   }, [search])
 
@@ -49,16 +54,25 @@ const Facultypage = ({ title, url, dept }) => {
           <div className="layoutrow layoutrowmain syllabus-page-head">
             <div className="col-6" style={{ width: `100%` }}>
               <div className="row rowmarl3">
-                <h1 data-aos="zoom-in-right" style={{fontSize:`30px`}}>{title ? title : "Faculties"}</h1>
-                <div className="row">                  <h2 data-aos="zoom-in-right">{dept ? `-${dept}` : ""}</h2>
+                <h1 data-aos="zoom-in-right" style={{ fontSize: `30px` }}>
+                  {title ? title : "Faculties"}
+                </h1>
+                <div className="row">
+                  {" "}
+                  <h2 data-aos="zoom-in-right">{dept ? `-${dept}` : ""}</h2>
                 </div>
               </div>
-              <div className="row rowmarl3"><SearchStyle>
-                <div className="form-search">
-                  <input type="search" placeholder="Search" onChange={(e) => setSearch(e.target.value)} />
-                </div>
-              </SearchStyle></div>
-
+              <div className="row rowmarl3">
+                <SearchStyle>
+                  <div className="form-search">
+                    <input
+                      type="search"
+                      placeholder="Search"
+                      onChange={e => setSearch(e.target.value)}
+                    />
+                  </div>
+                </SearchStyle>
+              </div>
             </div>
 
             {/* <div className="col-6 imgcolstyle">

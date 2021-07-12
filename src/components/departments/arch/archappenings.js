@@ -1,6 +1,4 @@
 import React from "react"
 
-const ARCHHappenings = [
-
-]
+const ARCHHappenings = []
 export default ARCHHappenings

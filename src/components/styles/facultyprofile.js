@@ -50,7 +50,6 @@ export const FacultyProfile = styled.div`
       letter-spacing: 1px;
       padding-right: 3vw;
       padding-top: 25px;
-      
     }
     .fac-card {
       width: 90%;
@@ -104,12 +103,12 @@ export const FacultyProfile = styled.div`
       }
     }
   }
-  @media(max-width:768px){
+  @media (max-width: 768px) {
     justify-content: space-evenly;
-    .faculty-img-row{
+    .faculty-img-row {
       position: static;
     }
-    .faculty-details-row{
+    .faculty-details-row {
       width: 90%;
     }
   }

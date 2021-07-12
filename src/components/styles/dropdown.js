@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const DropdownStyle = styled.div`
-#rightlink{
-  margin-left:calc(-275px + 8vw);
-}
+  #rightlink {
+    margin-left: calc(-275px + 8vw);
+  }
   .dropbtn {
     background: transparent;
     border: none;
@@ -14,10 +14,10 @@ export const DropdownStyle = styled.div`
     font-weight: 400;
     line-height: 1.6;
     display: flex;
-    &:hover{
+    &:hover {
       color: tomato !important;
     }
-    &:focus{
+    &:focus {
       color: tomato !important;
     }
   }
@@ -26,7 +26,7 @@ export const DropdownStyle = styled.div`
     position: relative;
     display: inline-block;
   }
-   
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -62,13 +62,13 @@ export const DropdownStyle = styled.div`
       font-size: 14px;
       overflow: hidden;
       /* max-height: 1.2vw; */
-      color: ${props=>props.theme.dropBg};
+      color: ${props => props.theme.dropBg};
       margin: 0 !important;
       &:hover {
-        color:${props=>props.theme.dropText};
+        color: ${props => props.theme.dropText};
         transition: 0.05s;
-        font-weight:600;
-        background-color:${props=>props.theme.dropBg};
+        font-weight: 600;
+        background-color: ${props => props.theme.dropBg};
       }
     }
   }

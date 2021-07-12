@@ -109,9 +109,9 @@ export const ReadStyle = styled.div`
   @media (max-width: 768px) {
     .wrapperDiv {
       width: 90vw;
-      .imgDiv{
+      .imgDiv {
         width: 300px;
-      height: 200px;
+        height: 200px;
       }
       .info {
         p {

@@ -1,6 +1,4 @@
 import React from "react"
 
-const CEHappenings = [
-
-]
+const CEHappenings = []
 export default CEHappenings

@@ -92,46 +92,63 @@ const SCF = {
 const StaffClaimForms = () => {
   return (
     <>
+      <TabPage>
+        <div className="mainDiv">
+          <div className="layoutrow layoutrowmain digital">
+            <div className="row rowmarl3">{SCF.title}</div>
 
-<TabPage>
-  <div className="mainDiv">
-        <div className="layoutrow layoutrowmain digital">
-          <div className="row rowmarl3">{SCF.title}</div>
+            <div className="row rowmarl3 rowmarr3">
+              <table>
+                <tr>
+                  <th>
+                    <h3 style={{ margin: `0` }}>Downloads</h3>
+                  </th>
+                  <th>
+                    <h3 style={{ margin: `0` }}>Office order</h3>
+                  </th>
+                </tr>
+                {SCF.content?.map(row => {
+                  return (
+                    <tr>
+                      {row.Downloads ? (
+                        <td>
+                          <a
+                            href={row.DLink || ""}
+                            style={{
+                              textDecoration: `none`,
+                              fontWeight: `bold`,
+                            }}
+                          >
+                            {row.Downloads}
+                          </a>
+                        </td>
+                      ) : (
+                        <td></td>
+                      )}
 
-          <div
-            className="row rowmarl3 rowmarr3"
-          >
-            <table>
-              <tr>
-                <th><h3 style={{margin:`0`}}>Downloads</h3></th>
-                <th><h3 style={{margin:`0`}}>Office order</h3></th>
-              </tr>
-              {SCF.content?.map(row => {
-                return (
-                  <tr>
-                    {row.Downloads ? (
-                      <td>
-                        <a href={row.DLink || ""} style={{textDecoration:`none`,fontWeight:`bold`}}>{row.Downloads}</a>
-                      </td>
-                    ) : (
-                      <td></td>
-                    )}
-
-                    {row["Office order"] ? (
-                      <td>
-                        <a href={row.OLink || ""} style={{textDecoration:`none`,fontWeight:`bold`}}>{row["Office order"]}</a>
-                      </td>
-                    ) : (
-                      <td></td>
-                    )}
-                  </tr>
-                )
-              })}
-            </table>
+                      {row["Office order"] ? (
+                        <td>
+                          <a
+                            href={row.OLink || ""}
+                            style={{
+                              textDecoration: `none`,
+                              fontWeight: `bold`,
+                            }}
+                          >
+                            {row["Office order"]}
+                          </a>
+                        </td>
+                      ) : (
+                        <td></td>
+                      )}
+                    </tr>
+                  )
+                })}
+              </table>
+            </div>
           </div>
         </div>
-        </div>
-        </TabPage>
+      </TabPage>
     </>
   )
 }

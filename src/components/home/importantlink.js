@@ -27,9 +27,7 @@ const Importantlink = () => {
             <img className="linkimg" src={notice} alt="corona" />
             <h3>NOTICE</h3>
             <div className="lead">
-              <p>
-                Collection of important notices
-              </p>
+              <p>Collection of important notices</p>
             </div>
           </div>
         </a>
@@ -38,9 +36,7 @@ const Importantlink = () => {
             <img className="linkimg" src={event} alt="nss" />
             <h3>EVENT</h3>
             <div className="lead">
-              <p>
-                List of upcoming events
-              </p>
+              <p>List of upcoming events</p>
             </div>
           </div>
         </a>
@@ -49,9 +45,7 @@ const Importantlink = () => {
             <img className="linkimg" src={innovation} alt="teqip" />
             <h3>INNOVATION</h3>
             <div className="lead">
-              <p>
-                Information of all the innovations
-              </p>
+              <p>Information of all the innovations</p>
             </div>
           </div>
         </a>
@@ -60,9 +54,7 @@ const Importantlink = () => {
             <img className="linkimg" src={news} alt="josaa" />
             <h3>NEWS</h3>
             <div className="lead">
-              <p>
-              panorama of recent news
-              </p>
+              <p>panorama of recent news</p>
             </div>
           </div>
         </a>

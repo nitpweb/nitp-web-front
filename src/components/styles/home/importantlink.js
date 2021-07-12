@@ -95,7 +95,7 @@ export const ImportantLinkStyle = styled.div`
         .lead p {
           display: none;
         }
-        h3{
+        h3 {
           font-size: 1vmax !important;
         }
       }

@@ -148,11 +148,11 @@ const Facilitiespage = () => {
     })
   }, [tab])
 
-const arrdata = []
-Navlist.facilities.map(x => arrdata.push(...x.sub))
+  const arrdata = []
+  Navlist.facilities.map(x => arrdata.push(...x.sub))
   return (
     <TabPage>
-      <Navigate data={arrdata} callback={getView} tab={tab?tab:"cc"} />
+      <Navigate data={arrdata} callback={getView} tab={tab ? tab : "cc"} />
       {/* <Floatmenu /> */}
       <div className="mainDiv">
         <PageLayout>
@@ -419,22 +419,22 @@ Navlist.facilities.map(x => arrdata.push(...x.sub))
               <div className="row imgcolstyle backgroundimage">
                 <img src={wifi} className="img-fluid" loading="lazy" />
               </div>
-                <div className="row rowmarl3">
-                  <h1>Wifi</h1>
-                </div>
-                <div className="row rowmarl3">
-                  <p>{wifidetail}</p>
+              <div className="row rowmarl3">
+                <h1>Wifi</h1>
+              </div>
+              <div className="row rowmarl3">
+                <p>{wifidetail}</p>
               </div>
             </div>
           )}
           {view == "bank" && (
             <div className="layoutrow digital" id="bank">
-                <div className="row rowmarl3">
-                  <h1>Bank</h1>
-                </div>
-                <div className="row rowmarl3">
-                  <p>{bankdetail}</p>
-                </div>
+              <div className="row rowmarl3">
+                <h1>Bank</h1>
+              </div>
+              <div className="row rowmarl3">
+                <p>{bankdetail}</p>
+              </div>
               <div className="row imgcolstyle backgroundimage">
                 <img src={bank} className="img-fluid" loading="lazy" />
               </div>
@@ -445,22 +445,22 @@ Navlist.facilities.map(x => arrdata.push(...x.sub))
               <div className="row imgcolstyle backgroundimage">
                 <img src={security} className="img-fluid" loading="lazy" />
               </div>
-                <div className="row rowmarl3">
-                  <h1>Security</h1>
-                </div>
-                <div className="row rowmarl3">
-                  <p>{securitydetail}</p>
-                </div>
+              <div className="row rowmarl3">
+                <h1>Security</h1>
+              </div>
+              <div className="row rowmarl3">
+                <p>{securitydetail}</p>
+              </div>
             </div>
           )}
           {view == "womancell" && (
             <div className="layoutrow digital" id="wc">
-                <div className="row rowmarl3">
-                  <h1>Woman Cell</h1>
-                </div>
-                <div className="row rowmarl3">
-                  <p>{womancell}</p>
-                </div>
+              <div className="row rowmarl3">
+                <h1>Woman Cell</h1>
+              </div>
+              <div className="row rowmarl3">
+                <p>{womancell}</p>
+              </div>
               <div className="row imgcolstyle backgroundimage">
                 <img src={woman} className="img-fluid" loading="lazy" />
               </div>
@@ -471,26 +471,26 @@ Navlist.facilities.map(x => arrdata.push(...x.sub))
               <div className="row imgcolstyle backgroundimage">
                 <img src={electric} className="img-fluid" loading="lazy" />
               </div>
-                <div className="row rowmarl3">
-                  <h1>Electrical Maintainance Unit (EMU)</h1>
-                </div>
-                <div className="row rowmarl3">
-                  <p>
-                    To provide Electric power supply to the Institute. EMU
-                    maintains all electrical equipment such as Lights, Fans, AC,
-                    etc. which are installed in NIT Patna campus. EMU is having
-                    an 11KV/415V Electrical Substation (commonly Known as POWER
-                    HOUSE), equipped with 02 Nos. 1250KVA Transformer, 02 Nos.
-                    750 KVA Diesel Generator and Separate Electricals Panels for
-                    each feeder pillars/Buildings.
-                    <br />
-                    <br />
-                    Land line- 0612-2371715 Extension No.-116
-                    <br />
-                    <br />
-                    For any type of Electrical Complaint kindly fill the form.
-                  </p>
-                </div>
+              <div className="row rowmarl3">
+                <h1>Electrical Maintainance Unit (EMU)</h1>
+              </div>
+              <div className="row rowmarl3">
+                <p>
+                  To provide Electric power supply to the Institute. EMU
+                  maintains all electrical equipment such as Lights, Fans, AC,
+                  etc. which are installed in NIT Patna campus. EMU is having an
+                  11KV/415V Electrical Substation (commonly Known as POWER
+                  HOUSE), equipped with 02 Nos. 1250KVA Transformer, 02 Nos. 750
+                  KVA Diesel Generator and Separate Electricals Panels for each
+                  feeder pillars/Buildings.
+                  <br />
+                  <br />
+                  Land line- 0612-2371715 Extension No.-116
+                  <br />
+                  <br />
+                  For any type of Electrical Complaint kindly fill the form.
+                </p>
+              </div>
             </div>
           )}
         </PageLayout>

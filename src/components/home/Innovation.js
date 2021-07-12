@@ -37,9 +37,9 @@ const Innovation = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       x > filtered.length * -300 + 900 ? setX(x - 300) : setX(0)
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [x]);
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [x])
 
   function Card(val, index) {
     const date = new Date(val.openDate)

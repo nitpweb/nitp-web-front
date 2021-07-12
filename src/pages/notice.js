@@ -6,7 +6,7 @@ import Noticepage from "../components/noticepage"
 const Notice = () => (
   <Layout>
     <SEO title="Notices" />
-    <Noticepage type="all"/>
+    <Noticepage type="all" />
   </Layout>
 )
 

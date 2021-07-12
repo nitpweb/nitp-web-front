@@ -320,7 +320,7 @@ export const NavbarStyle = styled.div`
       display: none;
     }
 
-    .departsidedrop > .nav-sidebar-div{
+    .departsidedrop > .nav-sidebar-div {
       background-color: ${props => props.theme.backgroundSecColor};
     }
     #mainsidedrop > .nav-sidebar-div:nth-of-type(2n + 1) {
@@ -427,7 +427,8 @@ export const NavbarStyle = styled.div`
     flex-direction: column;
     width: 280px;
     /* padding-left: 25px; */
-    background-color: ${props => props.theme.theme=="light"?"lightgray":"black"};
+    background-color: ${props =>
+      props.theme.theme == "light" ? "lightgray" : "black"};
     align-items: flex-start;
     justify-content: flex-start;
     text-decoration: none;

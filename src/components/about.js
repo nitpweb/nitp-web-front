@@ -91,17 +91,16 @@ const Aboutpage = () => {
         )}
         {view == "values" && (
           <div className="layoutrow digital" id="values">
-            
-              <div className="row rowmarl3">
-                <h1>Values</h1>
-              </div>
-              {valuesinfo.map(elem => {
-                return (
-                  <div className="row rowmarl3">
-                    <p>{elem}</p>
-                  </div>
-                )
-              })}
+            <div className="row rowmarl3">
+              <h1>Values</h1>
+            </div>
+            {valuesinfo.map(elem => {
+              return (
+                <div className="row rowmarl3">
+                  <p>{elem}</p>
+                </div>
+              )
+            })}
             <div className="row imgcolstyle backgroundimage">
               <img src="/clock.svg" className="img-fluid" />
             </div>
@@ -118,14 +117,14 @@ const Aboutpage = () => {
                 <img data-aos="zoom-in" src="/map.svg" className="img-fluid" />
               </a>
             </div>
-           
-              <div className="row rowmarl3">
-                <h1 data-aos="zoom-in-left">Campus</h1>
-              </div>
-              <div className="row rowmarl3">
-                <p data-aos="zoom-in-left">{campusinfo}</p>
-              </div>
+
+            <div className="row rowmarl3">
+              <h1 data-aos="zoom-in-left">Campus</h1>
             </div>
+            <div className="row rowmarl3">
+              <p data-aos="zoom-in-left">{campusinfo}</p>
+            </div>
+          </div>
         )}
       </div>
     </TabPage>

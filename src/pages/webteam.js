@@ -6,20 +6,20 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 
 const Webteam = () => {
-    const [webteam, setWebteam] = useState()
+  const [webteam, setWebteam] = useState()
   let webteamUrl = `${process.env.GATSBY_API_URL}/api/webteam`
 
-useEffect(() => {
-  axios
-    .get(webteamUrl)
-    .then(res => {
-      const web = res.data
-      setWebteam(web);
-    })
-    .catch(e => {
-      console.log(e)
-    })
-}, [])
+  useEffect(() => {
+    axios
+      .get(webteamUrl)
+      .then(res => {
+        const web = res.data
+        setWebteam(web)
+      })
+      .catch(e => {
+        console.log(e)
+      })
+  }, [])
 
   return (
     <>

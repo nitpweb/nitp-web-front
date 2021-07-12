@@ -11,16 +11,15 @@ const ComponentName = ({ data }) => (
     <SEO title="site map" />
     <TabPage>
       <div className="mainDiv">
-        
-          <>
-            {data.allSitePage.edges.map(item => (
-              <>
-                {String(item.node.path).slice(1, -1) != "404" &&
-                String(item.node.path).slice(1, -1) != "dev-404-page" &&
-                String(item.node.path).slice(1, -1) != "" &&
-                String(item.node.path).slice(1, -1) != "404.htm" &&
-                String(item.node.path).slice(1, -1) != "sitemap" ? (
-                  <div className="row rowmarl3 digital">
+        <>
+          {data.allSitePage.edges.map(item => (
+            <>
+              {String(item.node.path).slice(1, -1) != "404" &&
+              String(item.node.path).slice(1, -1) != "dev-404-page" &&
+              String(item.node.path).slice(1, -1) != "" &&
+              String(item.node.path).slice(1, -1) != "404.htm" &&
+              String(item.node.path).slice(1, -1) != "sitemap" ? (
+                <div className="row rowmarl3 digital">
                   <Link
                     to={item.node.path}
                     style={{
@@ -32,15 +31,16 @@ const ComponentName = ({ data }) => (
                     }}
                   >
                     ▪ {String(item.node.path).slice(1, -1)}
-                  </Link><br/></div>
-                ) : (
-                  ""
-                )}
-              </>
-            ))}
-          </>
-        </div>
-      
+                  </Link>
+                  <br />
+                </div>
+              ) : (
+                ""
+              )}
+            </>
+          ))}
+        </>
+      </div>
     </TabPage>
   </Layout>
 )
