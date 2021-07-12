@@ -55,9 +55,7 @@ const Directorpage = () => {
 
           <div
             className="faculty-details-row"
-            style={{ width: `95%`, margin: `0` }}
           >
-            <h1>His Profile</h1>
             <div className="fac-card" data-aos="">
               <h3>Research Interest:-</h3>
               <p>{data.profile.research_interest}</p>
