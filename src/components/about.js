@@ -11,8 +11,10 @@ const aboutusinfo = [
   "Ever since its rechristening, NIT Patna has been on the fast track of development and has undergone numerous facelifts because of which placement records have witnessed unprecedented growth and is touching new heights as the graph of placement is increasing remarkably.",
 ]
 
+const Vision =
+  "To contribute to India and the World through excellence in scientific and technical education and research; to serve as a valuable resource for industry and society; and to remain a source of pride for all Indians."
+
 const missioninfo = [
-  "To contribute to India and the World through excellence in scientific and technical education and research; to serve as a valuable resource for industry and society; and to remain a source of pride for all Indians.",
   "To generate new knowledge by engaging in cutting-edge research and to promote academic growth by offering state-of-the-art undergraduate, postgraduate and doctoral programmes",
   "To identify, based on an informed perception of Indian, regional and global needs, areas of specialization upon which the Institute can concentrate",
   "To undertake collaborative projects which offer opportunities for long term interaction with academia and industry",
@@ -70,7 +72,14 @@ const Aboutpage = () => {
           <>
             <div className="layoutrow digital" id="mission">
               <div className="row rowmarl3">
-                <h1>Mission & Vision</h1>
+                <h1>Vision</h1>
+              </div>
+              <div className="row rowmarl3">
+                <p>{Vision}</p>
+              </div>
+              )
+              <div className="row rowmarl3">
+                <h1>Mission</h1>
               </div>
               {missioninfo.map(elem => {
                 return (
