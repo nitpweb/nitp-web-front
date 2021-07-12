@@ -29,13 +29,11 @@ width: 320px;
     z-index: 2;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     p {
       font-size: 18px;
       font-family: "Source Sans Pro";
-      font-weight: bold;
-      line-height: 0.1;
+      text-align: center;
     }
   }
   .faculty2:hover {
