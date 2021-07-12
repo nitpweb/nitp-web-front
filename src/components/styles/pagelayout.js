@@ -93,8 +93,7 @@ export const PageLayout = styled.div`
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 3vh;
     font-family: "Source Sans Pro";
     .layoutrow:nth-of-type(2n + 1) {
       .col-6:nth-child(1) {
@@ -226,6 +225,9 @@ export const PageLayout = styled.div`
   }
 
   @media (max-width: 768px) {
+    .layoutrowmain{
+      margin-top: 10vh;
+    }
     .layoutrow1 {
       flex-direction: column-reverse;
     }
