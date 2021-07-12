@@ -26,9 +26,12 @@ const RegistrarPage = () => {
       {data && (
         <FacultyProfile className="facultypage row">
           <div
-            className="faculty-img-row"
-            style={{ position: `relative`, paddingTop: "4vw" }}
+            className="row rowmarl3"
+            style={{ display: "block", width: `100%` }}
           >
+            <h1>Deputy Director</h1>
+          </div>
+          <div className="faculty-img-row" style={{ position: `relative` }}>
             <div className="faculty-img-wrap">
               <img
                 src={
@@ -52,9 +55,7 @@ const RegistrarPage = () => {
 
           <div
             className="faculty-details-row"
-            style={{ width: `95%`, margin: `0` }}
           >
-            <h1>His Profile</h1>
             <div className="fac-card" data-aos="">
               <h3>Research Interest:-</h3>
               <p>{data.profile.research_interest}</p>
