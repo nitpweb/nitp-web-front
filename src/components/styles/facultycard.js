@@ -34,6 +34,11 @@ width: 320px;
       font-size: 18px;
       font-family: "Source Sans Pro";
       text-align: center;
+      margin-top: 0;
+      margin-bottom: 0;
+      a{
+        line-height: 3;
+      }
     }
   }
   .faculty2:hover {
