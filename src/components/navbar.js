@@ -371,7 +371,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             </div>
             <div id="adminsidedropwrap">
               <div className="adminsidedrop">
-                {Navlist.admin.map(val => (
+                {Navlist.admin.map(item => (
                   <div
                     to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
                     className="mainLink"
