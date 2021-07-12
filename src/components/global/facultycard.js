@@ -15,7 +15,7 @@ const Facultycard = props => {
       <FacultyCard>
         <div className="faculty1">
           {props.extn != 0 ? (
-            <p className="extn">Extn:{props.extn}</p>
+            <p className="extn">{String(props.extn).length<8?`Extn:${props.extn}`:props.extn}</p>
           ) : null}
           <div className="row fimg">
             <div className="facimg">
