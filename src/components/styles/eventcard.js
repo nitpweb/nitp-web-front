@@ -48,7 +48,7 @@ export const EventCardStyle = styled.div`
     }
   }
   .eventcarddetailsection {
-    width:calc(100% - 77px);
+    width: calc(100% - 77px);
     flex-direction: column;
     .eventcarddetail {
       margin-left: 5%;
@@ -78,17 +78,17 @@ export const EventCardStyle = styled.div`
         img {
           height: 16px;
         }
-        
-      }.efp {
-          /* position: relative; */
-          color: ${props => props.theme.primaryTextColor};
-          font-size: 14px;
-          width: max-content;
-          text-align: left;
-          font-family: "Source Sans Pro";
-          margin-left: 5px;
-          letter-spacing: -0.03rem;
-        }
+      }
+      .efp {
+        /* position: relative; */
+        color: ${props => props.theme.primaryTextColor};
+        font-size: 14px;
+        width: max-content;
+        text-align: left;
+        font-family: "Source Sans Pro";
+        margin-left: 5px;
+        letter-spacing: -0.03rem;
+      }
     }
   }
 

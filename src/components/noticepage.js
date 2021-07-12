@@ -3,7 +3,7 @@ import axios from "axios"
 import Noticecard from "./home/notice"
 import { CardsStyle } from "./styles/cards"
 
-const Notice = ({type,title}) => {
+const Notice = ({ type, title }) => {
   const [notices, setNotices] = useState()
 
   useEffect(() => {
@@ -24,25 +24,26 @@ const Notice = ({type,title}) => {
         <div className="card-details-row">
           <h1>{title}</h1>
           <div className="fac-card">
-            {notices && notices.map(notice => {
-              const newtime = new Date().getTime()
-              if (notice.title != "") {
-                return (
-                  <Noticecard
-                    detail={notice.title}
-                    time={notice.openDate}
-                    key={notice.id}
-                    attachments={notice.attachments}
-                    imp={notice.important}
-                    link={
-                      notice.notice_link && JSON.parse(notice.notice_link).url
-                        ? JSON.parse(notice.notice_link).url
-                        : ""
-                    }
-                  />
-                )
-              }
-            })}
+            {notices &&
+              notices.map(notice => {
+                const newtime = new Date().getTime()
+                if (notice.title != "") {
+                  return (
+                    <Noticecard
+                      detail={notice.title}
+                      time={notice.openDate}
+                      key={notice.id}
+                      attachments={notice.attachments}
+                      imp={notice.important}
+                      link={
+                        notice.notice_link && JSON.parse(notice.notice_link).url
+                          ? JSON.parse(notice.notice_link).url
+                          : ""
+                      }
+                    />
+                  )
+                }
+              })}
           </div>
         </div>
       </CardsStyle>

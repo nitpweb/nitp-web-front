@@ -1,6 +1,4 @@
 import React from "react"
 
-const mathHappenings = [
-
-]
+const mathHappenings = []
 export default mathHappenings

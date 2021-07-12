@@ -83,39 +83,34 @@ const Dephomepage = ({
           )}
           {view == "happening" && (
             <>
-              <div
-                className="layoutrow"
-                id="happening"
-              >
-
-                  <div className="row rowmarl3">
-                    <h1>Notice</h1>
-                  </div>
-                  <div className="row rowmarl3">
-                      {notices &&
-                        notices.length != 0 &&
-                        notices.map(notice => {
-                          if (notice.title != "") {
-                            return (
-                              <Notice
-                                detail={notice.title}
-                                time={notice.openDate}
-                                attachments={notice.attachments}
-                                key={notice.id}
-                                attachments={notice.attachments}
-                                imp={notice.important}
-                                link={
-                                  notice.notice_link &&
-                                  JSON.parse(notice.notice_link).url
-                                    ? JSON.parse(notice.notice_link).url
-                                    : ""
-                                }
-                              />
-                            )
-                          }
-                        })}
-                  </div>
-                
+              <div className="layoutrow" id="happening">
+                <div className="row rowmarl3">
+                  <h1>Notice</h1>
+                </div>
+                <div className="row rowmarl3">
+                  {notices &&
+                    notices.length != 0 &&
+                    notices.map(notice => {
+                      if (notice.title != "") {
+                        return (
+                          <Notice
+                            detail={notice.title}
+                            time={notice.openDate}
+                            attachments={notice.attachments}
+                            key={notice.id}
+                            attachments={notice.attachments}
+                            imp={notice.important}
+                            link={
+                              notice.notice_link &&
+                              JSON.parse(notice.notice_link).url
+                                ? JSON.parse(notice.notice_link).url
+                                : ""
+                            }
+                          />
+                        )
+                      }
+                    })}
+                </div>
               </div>{" "}
               <div className="row imgcolstyle backgroundimage">
                 <img data-aos="zoom-in" src={pc} className="img-fluid" />

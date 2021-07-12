@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const StudentSlideStyle = styled.div`
   .clubsection {
@@ -11,7 +11,7 @@ export const StudentSlideStyle = styled.div`
       ${props => props.theme.backgroundColor} 42%,
       ${props => props.theme.backgroundColor} 100%
     );
-    min-height: 60vh; 
+    min-height: 60vh;
     padding: 0px !important;
   }
   .club {

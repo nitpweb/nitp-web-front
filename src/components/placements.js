@@ -1,26 +1,26 @@
-import React, { useState,useEffect} from "react"
+import React, { useState, useEffect } from "react"
 import tandpcell from "./placements/img/tandpcell.jpg"
 import { PageLayout } from "./styles/pagelayout"
 import { TabPage } from "./styles/tabpage"
 import Navigate from "./global/Navigate"
 import Placementlist from "./placements/const"
-import { useQueryParam} from "use-query-params"
+import { useQueryParam } from "use-query-params"
 
 const Placementpage = () => {
   const [tab] = useQueryParam("tab")
-     const [view, setView] = useState("about")
-     console.log(view)
-     function getView(callback) {
-       setView(callback)
-     }
-     useEffect(() => {
-      Placementlist.forEach(x => {
-        x.title === tab ? setView(tab) : ""
-      })
-    }, [tab])
+  const [view, setView] = useState("about")
+  console.log(view)
+  function getView(callback) {
+    setView(callback)
+  }
+  useEffect(() => {
+    Placementlist.forEach(x => {
+      x.title === tab ? setView(tab) : ""
+    })
+  }, [tab])
   return (
     <TabPage>
-      <Navigate data={Placementlist} callback={getView} tab={tab}/>
+      <Navigate data={Placementlist} callback={getView} tab={tab} />
       <div className="mainDiv">
         {/* <div className="layoutrow layoutrowmain">
             <div className="col-6">

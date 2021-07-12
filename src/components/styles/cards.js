@@ -47,10 +47,10 @@ export const CardsStyle = styled.div`
       width: 90%;
       margin-top: 3vh;
       margin-bottom: 3vh;
-      background:${props => props.theme.backgroundColor};
+      background: ${props => props.theme.backgroundColor};
       box-shadow: 0px 0px 18px rgba(156, 156, 156, 0.38);
       border-radius: 5px;
-      padding:0% 5%;
+      padding: 0% 5%;
       padding-bottom: 15px;
       font-family: "Source Sans Pro";
       list-style: disc;
@@ -64,7 +64,7 @@ export const CardsStyle = styled.div`
       width: 100%;
       .fac-card {
         width: 98%;
-        div{
+        div {
           width: 90%;
         }
       }

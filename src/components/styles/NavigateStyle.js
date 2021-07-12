@@ -14,9 +14,9 @@ export const NavigateStyle = styled.div`
   background: ${props => props.theme.backgroundColor};
   -ms-overflow-style: none;
   scrollbar-width: none;
-&::-webkit-scrollbar {
-  display: none;
-}
+  &::-webkit-scrollbar {
+    display: none;
+  }
   .childLink {
     margin-top: 0;
     width: 8.34vw;

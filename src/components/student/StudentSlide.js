@@ -8,7 +8,7 @@ const StudentSlide = () => {
   const [initial, setInitial] = useState(0)
 
   useEffect(() => {
-    if(initial==0){
+    if (initial == 0) {
       const temp = document.getElementById(`s${count}`)
       temp.checked = true
       setInitial(1)
@@ -19,21 +19,24 @@ const StudentSlide = () => {
       temp.checked = true
     }, 3000)
     return () => clearInterval(interval)
-  }, [count])  
+  }, [count])
 
   return (
     <StudentSlideStyle>
-      <div
-        className="clubsection"
-        id="clubsection"
-        data-aos="fade"
-      >
-          <h1
-            data-aos="zoom-in-right"
-            style={{ width:`90%`, color: `white`, padding: `1rem`, margin: `0px`,textAlign:`left`,fontFamily: `Quicksand`}}
-          >
-            Our Clubs
-          </h1>
+      <div className="clubsection" id="clubsection" data-aos="fade">
+        <h1
+          data-aos="zoom-in-right"
+          style={{
+            width: `90%`,
+            color: `white`,
+            padding: `1rem`,
+            margin: `0px`,
+            textAlign: `left`,
+            fontFamily: `Quicksand`,
+          }}
+        >
+          Our Clubs
+        </h1>
         <div className="slide">
           <div
             className="move"

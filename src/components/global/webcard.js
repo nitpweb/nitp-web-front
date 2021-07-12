@@ -24,7 +24,7 @@ const Webcard = props => {
           </div>
         </div>
         <div className="faculty2">
-          <p style={{fontWeight:`normal`}}>{props.interests }</p>
+          <p style={{ fontWeight: `normal` }}>{props.interests}</p>
           <p>
             <a href={props.url}>View Profile</a>
           </p>

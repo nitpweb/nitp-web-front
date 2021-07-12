@@ -53,9 +53,7 @@ const RegistrarPage = () => {
             <h3>Deputy Director</h3>
           </div>
 
-          <div
-            className="faculty-details-row"
-          >
+          <div className="faculty-details-row">
             <div className="fac-card" data-aos="">
               <h3>Research Interest:-</h3>
               <p>{data.profile.research_interest}</p>

@@ -61,9 +61,7 @@ const Footer = () => {
               >
                 <h3>Grievance Cell</h3>
               </a>
-              <Link
-                to="/nit_act"
-              >
+              <Link to="/nit_act">
                 <h3>NIT Act and Statutes</h3>
               </Link>
               <a href="http://admin.nitp.ac.in">

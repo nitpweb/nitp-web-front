@@ -225,7 +225,7 @@ export const PageLayout = styled.div`
   }
 
   @media (max-width: 768px) {
-    .layoutrowmain{
+    .layoutrowmain {
       margin-top: 10vh;
     }
     .layoutrow1 {

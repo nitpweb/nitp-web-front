@@ -16,7 +16,7 @@ const Csefacultyprofilepage = () => {
       </>
     )
   } else {
-    return null;
+    return null
   }
 }
 
