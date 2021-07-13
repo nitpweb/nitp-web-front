@@ -190,12 +190,12 @@ export const NavbarStyle = styled.div`
   .dep-nav-row {
     display: flex;
     width: 100vw;
-    background-color: #d45628;
+    background-color: #ba0019;
     font-family: "Source Sans Pro";
     color: ${props => props.theme.backgroundColor};
-    padding-top: 2px;
-    letter-spacing: 0.2rem;
-    padding-bottom: 2px;
+    padding-top: 4px;
+    letter-spacing: 0.05rem;
+    padding-bottom: 4px;
     z-index: 1;
     .col-6 {
       width: 50%;
@@ -206,7 +206,7 @@ export const NavbarStyle = styled.div`
       .dep-link-item {
         text-decoration: none;
         color: #fff;
-        font-size: 0.8vw;
+        font-size: 0.85vw;
       }
     }
   }
