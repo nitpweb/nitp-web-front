@@ -55,7 +55,7 @@ const Facultypage = ({ title, url, dept }) => {
             <div className="col-6" style={{ width: `100%` }}>
               <div className="row rowmarl3">
                 <h1 data-aos="zoom-in-right" style={{ fontSize: `30px` }}>
-                  {title ? title : "Faculties"}
+                  {title ? title : "Faculty"}
                 </h1>
                 <div className="row">
                   {" "}

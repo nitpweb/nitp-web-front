@@ -50,12 +50,7 @@ const Footer = () => {
               <Link to="/director">
                 <h3>Director’s Desk</h3>
               </Link>
-              <a
-                href="https://www.google.com/maps/place/National+Institute+of+Technology+Patna/@25.6207241,85.170702,17z/data=!3m1!4b1!4m5!3m4!1s0x39ed58dce6732867:0x4059f39a1ac82f06!8m2!3d25.6207241!4d85.1728907"
-                target="_blank"
-              >
-                <h3>How to Reach</h3>
-              </a>
+
               <Link to="/nirf">
                 <h3>NIRF</h3>
               </Link>
@@ -92,9 +87,6 @@ const Footer = () => {
               <Link to="/nit_act">
                 <h3>NIT Act and Statutes</h3>
               </Link>
-              <a href="http://admin.nitp.ac.in">
-                <h3>Faculty Login</h3>
-              </a>
 
               {/* <a href="http://www.nitp.ac.in/convocation2020/">
                 <h3>Convocation 2020</h3>
@@ -130,13 +122,16 @@ const Footer = () => {
             <div className="foot-col-3">
               <h1>Useful Links</h1>
               <a
+                href="https://www.google.com/maps/place/National+Institute+of+Technology+Patna/@25.6207241,85.170702,17z/data=!3m1!4b1!4m5!3m4!1s0x39ed58dce6732867:0x4059f39a1ac82f06!8m2!3d25.6207241!4d85.1728907"
+                target="_blank"
+              >
+                <h3>How to Reach</h3>
+              </a>
+              <a
                 href="http://www.nitp.ac.in/uploads/Anti-ragging_Committee_2019.pdf"
                 target="_blank"
               >
                 <h3>Anti Ragging</h3>
-              </a>
-              <a href="/academics?tab=admissions">
-                <h3>Admissions</h3>
               </a>
               <a href="http://www.nitp.ac.in/ict/index.php" target="_blank">
                 <h3>ICT Academy</h3>
