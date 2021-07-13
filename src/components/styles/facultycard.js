@@ -4,8 +4,8 @@ export const FacultyCard = styled.div`
 width: 320px;
   height: 380px;
   margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   background: ${props => props.theme.backgroundSecColor};
   box-shadow: 0 0 21px rgba(0, 0, 0, 0.25);
   .faculty1 {

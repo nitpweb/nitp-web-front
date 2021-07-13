@@ -6,7 +6,7 @@ import Facultypage from "../components/departments/faculty"
 const Facultiespage = () => (
   <Layout>
     <SEO title="Faculties" />
-    <Facultypage url="faculties" title="Faculties of NIT Patna" />
+    <Facultypage url="faculties" title="Faculty of NIT Patna" />
   </Layout>
 )
 
