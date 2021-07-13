@@ -8,7 +8,7 @@ export const SearchStyle = styled.div`
     margin: 0;
     text-align: center;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: flex-end;
     width: 100%;
     font: bold 13px sans-serif;
     position: relative;
@@ -34,5 +34,10 @@ export const SearchStyle = styled.div`
     left: 20px;
     font-size: 16px;
     color: #80a3bd;
+  }
+  @media(max-width:768px){
+    .form-search{
+      justify-content: flex-start;
+    }
   }
 `

@@ -52,17 +52,21 @@ const Facultypage = ({ title, url, dept }) => {
       <FacultyStyle style={{ marginBottom: `3vh` }}>
         <div className="faculty-page">
           <div className="layoutrow layoutrowmain syllabus-page-head">
-            <div className="col-6" style={{ width: `100%` }}>
+            <div className="col-6">
               <div className="row rowmarl3">
                 <h1 data-aos="zoom-in-right" style={{ fontSize: `30px` }}>
                   {title ? title : "Faculty"}
                 </h1>
-                <div className="row">
-                  {" "}
-                  <h2 data-aos="zoom-in-right">{dept ? `-${dept}` : ""}</h2>
-                </div>
+                {dept && (
+                  <div className="row">
+                    <h2 data-aos="zoom-in-right">-{dept}</h2>
+                  </div>
+                )}
               </div>
-              <div className="row rowmarl3">
+            </div>
+
+            <div className="col-6">
+              <div className="row">
                 <SearchStyle>
                   <div className="form-search">
                     <input
@@ -74,16 +78,6 @@ const Facultypage = ({ title, url, dept }) => {
                 </SearchStyle>
               </div>
             </div>
-
-            {/* <div className="col-6 imgcolstyle">
-            <img
-              data-aos="zoom-in"
-              src={faculty}
-              className="img-fluid"
-              style={{ maxHeight: `50vh` }}
-              loading="lazy"
-            />
-          </div> */}
           </div>
           <div className="row facultyrow">
             {data &&

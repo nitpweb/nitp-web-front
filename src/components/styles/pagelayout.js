@@ -29,6 +29,7 @@ export const PageLayout = styled.div`
       .col-6 {
         padding-top: 0;
         padding-bottom: 0;
+
       }
     }
   }
@@ -76,6 +77,7 @@ export const PageLayout = styled.div`
             font-weight: 500;
           }
         }
+
         #aut {
           color: ${props => props.theme.textColor};
           font-weight: bold;
@@ -136,7 +138,7 @@ export const PageLayout = styled.div`
       }
     }
     .col-6 {
-      padding: 3vw;
+      padding: 2vw;
       .row {
         #layoutnoticewrap {
           height: 400px;

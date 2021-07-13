@@ -123,7 +123,7 @@ const Home = [
       },
       {
         url: "/faculties",
-        title: "Faculties of NIT Patna",
+        title: "Faculty of NIT Patna",
       },
       {
         url: "/officers",

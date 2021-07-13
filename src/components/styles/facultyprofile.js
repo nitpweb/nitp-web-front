@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const FacultyProfile = styled.div`
   font-family: "Source Sans Pro";
-  padding-top: 10vh;
+  padding-top: 3vh;
   display: flex;
   /* justify-content: space-evenly; */
   color: ${props => props.theme.textColor};
@@ -104,6 +104,7 @@ export const FacultyProfile = styled.div`
     }
   }
   @media (max-width: 768px) {
+    padding-top: 10vh;
     justify-content: space-evenly;
     .faculty-img-row {
       position: static;
