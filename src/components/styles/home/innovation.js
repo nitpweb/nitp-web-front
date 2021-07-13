@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const InnovationStyle = styled.div`
   width: 100vw;
-  height: 580px;
+  height: 480px;
   background: -webkit-gradient(
     linear,
     left bottom,

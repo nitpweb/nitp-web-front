@@ -8,8 +8,7 @@ export const ImportantLinkStyle = styled.div`
   text-rendering: optimizeLegibility;
   max-width: 100%;
   margin-top: -8vw;
-  margin-bottom: 5vh;
-
+  margin-bottom: 1vh;
   .link-col {
     position: relative;
     width: 100vw;
@@ -21,7 +20,7 @@ export const ImportantLinkStyle = styled.div`
 
       .implink {
         width: 13vw;
-        height: 13vw;
+        height: 10vw;
         background: ${props => props.theme.backgroundSecColor};
         /* border-radius:5px; */
         /* margin-left: 1vw; */
@@ -58,6 +57,7 @@ export const ImportantLinkStyle = styled.div`
           color: ${props => props.theme.primaryColor};
           font-family: Source Sans Pro;
           font-weight: bold;
+          margin: 0px;
         }
       }
     }

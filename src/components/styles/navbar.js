@@ -127,14 +127,14 @@ export const NavbarStyle = styled.div`
       .nav-link-item-active > span {
         color: ${props => props.theme.primaryColor};
         border-width: 0px 0px 3px 0px;
-        font-weight: 600;
+        font-weight: lighter;
       }
       .nav-link-item {
         text-decoration: none;
         color: #fff;
         font-family: "Source Sans Pro";
         font-size: 1vw;
-        font-weight: 600;
+        font-weight: lighter;
         line-height: 1.6;
         display: flex;
         /* letter-spacing: 1px; */

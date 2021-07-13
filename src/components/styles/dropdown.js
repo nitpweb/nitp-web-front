@@ -67,7 +67,7 @@ export const DropdownStyle = styled.div`
       &:hover {
         color: ${props => props.theme.dropText};
         transition: 0.05s;
-        font-weight: 600;
+        font-weight: lighter;
         background-color: ${props => props.theme.dropBg};
       }
     }

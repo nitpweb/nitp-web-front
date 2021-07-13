@@ -14,6 +14,34 @@ const Footer = () => {
             <br />
             FAX : +91-0612-2670631 , 0612-2660480
           </h3>
+          <div className="social-link">
+            <span>
+              <a
+                href="http://www.facebook.com/nitpatnaofficial"
+                target="_blank"
+              >
+                <img src="/facebook.png" alt="facebook" />
+              </a>
+            </span>
+            <span>
+              <a href="https://twitter.com/NITPatna1" target="_blank">
+                <img src="/twitter.svg" alt="twitter" />
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://www.linkedin.com/school/national-institute-of-technology-patna/"
+                target="_blank"
+              >
+                <img src="/linkedin.svg" alt="linkedin" />
+              </a>
+            </span>
+            <span>
+              <a href="https://goo.gl/maps/srZ6whpfDGqg85sp6" target="_blank">
+                <img src="/location.svg" alt="location" />
+              </a>
+            </span>
+          </div>
         </div>
         <div className="foot-col-8">
           <div className="footsec">
@@ -122,7 +150,7 @@ const Footer = () => {
       </div>
       <div className="footdetail">
         <p>
-          National Institute of Technology Patna-800005,Bihar,INDIA© 2021 NIT
+          National Institute of Technology Patna-800005, Bihar, INDIA© 2021 NIT
           Patna
         </p>
       </div>

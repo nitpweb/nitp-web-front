@@ -9,6 +9,17 @@ export const FooterStyle = styled.div`
     padding-bottom: 2vh;
     padding-top: 2vh;
     max-width: 95vw;
+    .social-link {
+      span {
+        margin-right: 5%;
+        a {
+          img {
+            height: 24px;
+            width: 24px;
+          }
+        }
+      }
+    }
   }
   .foot-row {
     background: ${props => props.theme.backgroundSecColor};
@@ -135,6 +146,7 @@ export const FooterStyle = styled.div`
       align-items: center;
       font-size: 9px;
     }
+
     .foot-col-8 {
       display: block;
     }
