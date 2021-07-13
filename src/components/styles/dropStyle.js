@@ -73,7 +73,7 @@ export const DropStyle = styled.div`
     color: white;
     font-family: "Source Sans Pro";
     font-size: 1vw;
-    font-weight: 600;
+    font-weight: lighter;
     line-height: 1.6;
     display: flex;
     &:hover {

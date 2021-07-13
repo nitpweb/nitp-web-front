@@ -66,7 +66,7 @@ const Innovation = () => {
   return (
     <>
       <InnovationStyle>
-        <p id="head">Innovation</p>
+        <p id="head">Research & Innovation</p>
         <Link id="loadMore" to="/innovation">
           view all
         </Link>

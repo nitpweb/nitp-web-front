@@ -19,7 +19,7 @@ const Importantlink = () => {
   }, [])
   return (
     <ImportantLinkStyle
-      style={{ transform: `translateY(${offsetY * -0.1}px)` }}
+      style={{ transform: `translateY(${offsetY * -0.05}px)` }}
     >
       <div className="link-col">
         <a href="#notice">
@@ -57,16 +57,7 @@ const Importantlink = () => {
               <p>panorama of recent news</p>
             </div>
           </div>
-        </a>
-      </div>
-      <div className="link-col">
-        {/* <a href="https://josaa.nic.in/webinfocms/Public/home.aspx">
-          <div className="implink">
-            <img className="linkimg" src={josaa} alt="josaa" />
-            <h3>JOSAA</h3>
-          </div>
-        </a> */}
-
+        </a>{" "}
         <a href="http://exam.nitp.ac.in/">
           <div className="implink">
             <img className="linkimg" src={chanakya} alt="chanakya" />
@@ -88,6 +79,14 @@ const Importantlink = () => {
           </div>
         </a>
       </div>
+      {/* <div className="link-col">
+        <a href="https://josaa.nic.in/webinfocms/Public/home.aspx">
+          <div className="implink">
+            <img className="linkimg" src={josaa} alt="josaa" />
+            <h3>JOSAA</h3>
+          </div>
+        </a>
+      </div> */}
     </ImportantLinkStyle>
   )
 }

@@ -71,7 +71,7 @@ const Home = () => {
       </div>
       <Importantlink />
       <div id="notice-event">
-        <div>
+        <div id="notice">
           <div
             data-aos="zoom-in"
             data-aos-duration="200"

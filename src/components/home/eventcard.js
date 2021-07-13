@@ -32,7 +32,7 @@ const Eventcard = props => {
           <div>
             <a
               target="_blank"
-              href={`https://www.google.com/maps/search/${props.location}`}
+              href={`https://www.google.com/maps/search/${props.location},NIT Patna`}
               rel="noopener noreferrer"
             >
               <img src={eventlocation} alt="c" />
