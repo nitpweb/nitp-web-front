@@ -2,6 +2,7 @@ export const routeName = "arch"
 export const title = "Architecture Department"
 import { Labs, LabImages } from "./arch-others-data"
 import Slider from "../../Slider/Slider"
+import React from "react"
 
 export const titleDescription = () => {
   return (

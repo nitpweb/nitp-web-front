@@ -1,6 +1,7 @@
 export const routeName = "ce"
 export const title = "Civil Engineering"
 import { Labs, Activities } from "./civil-others-data"
+import React from "react"
 
 export const titleDescription = () => {
   return (

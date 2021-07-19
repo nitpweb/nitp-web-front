@@ -1,3 +1,5 @@
+import React from "react"
+
 export const routeName = "ece"
 export const title = "Electronics and Communication Engineering"
 

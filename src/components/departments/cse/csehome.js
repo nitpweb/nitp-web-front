@@ -1,3 +1,5 @@
+import React from "react"
+
 export const routeName = "cse"
 export const title = "Computer Science & Engineering"
 import { Achievements, Activities, Labs } from "./cse-others-data"
