@@ -1,4 +1,5 @@
 const source = "http://www.nitp.ac.in/php/"
+import React from "react"
 
 export const StructuralEngg = [
   {

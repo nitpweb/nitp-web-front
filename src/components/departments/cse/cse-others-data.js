@@ -1,3 +1,5 @@
+import React from "react"
+
 const home = "http://www.nitp.ac.in"
 export const Labs = [
   {
