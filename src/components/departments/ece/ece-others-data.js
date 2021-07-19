@@ -1,5 +1,6 @@
-const home = "http://www.nitp.ac.in"
 import React from "react"
+
+const home = "http://www.nitp.ac.in"
 
 const btn_style = {
   backgroundColor: `red`,

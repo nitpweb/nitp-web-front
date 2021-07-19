@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import { DropdownStyle } from "../styles/dropdown"
 import DynamicLink from "./dynamicurl"
+import React from "react"
 
 export const Dropdown = ({ to, title, list, idname }) => {
   return (

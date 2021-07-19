@@ -1,4 +1,5 @@
 import { Link } from "gatsby"
+import React from "react"
 
 const DynamicLink = ({ url, data, title, classvalue }) => (
   <>
