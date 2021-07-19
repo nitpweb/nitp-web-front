@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { Link } from "gatsby"
 import { FacultyCard } from "../styles/facultycard"
+import React from "react"
 
 const Facultycard = props => {
   const [research, setResearch] = useState()
