@@ -2,18 +2,18 @@ import styled from "styled-components"
 
 export const FacultyProfile = styled.div`
   font-family: "Source Sans Pro";
-  padding-top: 3vh;
+  padding:4rem 0;
   display: flex;
-  /* justify-content: space-evenly; */
+  height: max-content;
   color: ${props => props.theme.textColor};
   background: ${props => props.theme.backgroundColor};
-  justify-content: end;
+  justify-content: flex-end;
   .faculty-img-row {
     margin-top: 5vh;
     position: fixed;
     left: 2%;
     padding-right: 10px;
-    justify-content: center;
+    justify-content: center; 
     text-align: center;
     .facmail {
       position: absolute;
@@ -39,12 +39,13 @@ export const FacultyProfile = styled.div`
     }
   }
   .faculty-details-row {
-    width: calc(100% - 280px);
+    width: calc(100% - 300px);
     display: flex;
-    align-self: flex-end;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
+    h1{
+      padding-left: 5%;
+    }
     #dir {
       line-height: 1.5;
       letter-spacing: 1px;
@@ -111,6 +112,7 @@ export const FacultyProfile = styled.div`
     }
     .faculty-details-row {
       width: 90%;
+      align-items: center;
     }
   }
 `

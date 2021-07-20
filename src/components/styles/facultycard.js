@@ -75,7 +75,8 @@ width: 320px;
  }
   h3 {
     color: ${props => props.theme.textColor};
-    line-height: 0.1;
+    /* line-height: 0.1; */
+    text-align: center;
   }
   p {
     color: #d33a00;

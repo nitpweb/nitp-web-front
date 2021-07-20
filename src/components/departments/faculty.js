@@ -9,7 +9,8 @@ const Facultypage = ({ title, url, dept }) => {
   const [faculties, setFaculties] = useState()
   const [search, setSearch] = useState("")
   const [data, setData] = useState([])
-  const department = url == "faculties" || url == "officers"
+  const department = url == "faculties"
+  // const department = url == "faculties" || url == "officers"
 
   let facultiesUrl = `${process.env.GATSBY_API_URL}/api/faculty/${url}`
   useEffect(() => {
@@ -49,7 +50,7 @@ const Facultypage = ({ title, url, dept }) => {
 
   return (
     <>
-      <FacultyStyle style={{ marginBottom: `3vh` }}>
+      <FacultyStyle style={{ marginBottom: `3vh`,marginTop:`1rem` }}>
         <div className="faculty-page">
           <div className="layoutrow layoutrowmain syllabus-page-head">
             <div className="col-6">
