@@ -29,9 +29,9 @@ const Directorpage = () => {
             className="row rowmarl3"
             style={{ display: "block", width: `100%` }}
           >
-            <h1>Our Director</h1>
+            <h1 style={{marginTop:`0`,marginLeft:`270px`}}>Our Director</h1>
           </div>
-          <div className="faculty-img-row" style={{ position: `relative` }}>
+          <div className="faculty-img-row" style={{ position: `absolute`,left:`15%`}}>
             <div className="faculty-img-wrap">
               <img
                 src={
