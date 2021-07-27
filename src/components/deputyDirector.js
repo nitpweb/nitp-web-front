@@ -29,9 +29,9 @@ const RegistrarPage = () => {
             className="row rowmarl3"
             style={{ display: "block", width: `100%` }}
           >
-            <h1>Deputy Director</h1>
+            <h1 style={{marginTop:`0`,marginLeft:`270px`}}>Deputy Director</h1>
           </div>
-          <div className="faculty-img-row" style={{ position: `relative` }}>
+          <div className="faculty-img-row" style={{ position: `absolute`,left:`15%`}}>
             <div className="faculty-img-wrap">
               <img
                 src={
@@ -46,7 +46,6 @@ const RegistrarPage = () => {
               <img
                 src={mail}
                 className="img-fluid facmail"
-                style={{ position: `absolute` }}
               />
             </a>
             <h2>{data.profile.name}</h2>

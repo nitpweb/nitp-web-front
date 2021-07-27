@@ -9,10 +9,9 @@ export const FacultyProfile = styled.div`
   background: ${props => props.theme.backgroundColor};
   justify-content: flex-end;
   .faculty-img-row {
-    margin-top: 5vh;
+    margin-top: 3vh;
     position: fixed;
     left: 2%;
-    padding-right: 10px;
     justify-content: center; 
     text-align: center;
     .facmail {
@@ -28,18 +27,18 @@ export const FacultyProfile = styled.div`
       overflow: hidden;
       width: 250px;
       height: 250px;
-      min-width: 250px;
       border-radius: 50%;
 
       img {
         width: 100%;
         height: auto;
         align-self: center;
+        object-fit: cover;
       }
     }
   }
   .faculty-details-row {
-    width: calc(100% - 300px);
+    width: calc(100% - 320px);
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -108,7 +107,7 @@ export const FacultyProfile = styled.div`
     padding-top: 10vh;
     justify-content: space-evenly;
     .faculty-img-row {
-      position: static;
+      position: static !important;
     }
     .faculty-details-row {
       width: 90%;
