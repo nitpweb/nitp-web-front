@@ -29,6 +29,68 @@ const studentexchange =
   " National Institute of Technology (NIT), Patna has recently signed a memorandum of understanding (MoU) with the Handong Global University, Pohang, South Korea for exchange of students, faculty and research. The first six-month exchange programme will be funded by UNICEF. The research areas in focus are urban planning, urban development, infrastructure development and electrical engineering, all of which relate most directly to Bihar’s immediate needs. South Korea is known the world over for its highly advanced monorail system which also has a low impact on traffic flow on roads under construction. Automated driverless trains are another feature of the monorail; an Indian student may want to study. Apart from the concrete advantages, exchange of students and faculty and exposure to the teaching practices in South Korea is likely to have enormous impact on engineering education as being imparted at NIT Patna in the coming days."
 
 const nss = `The National Service Scheme (NSS) was launched in 1969 and is an Indian government-sponsored public service program conducted by the Department of Youth Affairs and Sports of the Government of India aimed at developing student's personality through community service, NSS is a voluntary association of young people in Colleges, Universities and at +2 level working for a campus-community linkage. The NSS chapter at NIT Patna follows the cardinal principle of the NSS programme which is aimed at organising events by the students themselves such that both students and teachers get a sense of involvement in the tasks of nation building through their combined participation in community service. The programme aims to inculcate social welfare in students, and to provide service to society without bias. NSS volunteers work to ensure that everyone who is needy gets help to enhance their standard of living and lead a life of dignity.`
+const firstYear = [
+  {
+    heading: `Welcome! 1st Year`,
+    info: `This page has been created specially for First Year Students, so that they can get all important information / announcement (not exhaustive though) related to them on a single page.`,
+    data0: [
+      {
+        title: `Microsoft Teams online links to join the Orientation Programme.`,
+        link: `http://www.nitp.ac.in/uploads20/Online%20Orientation%20Programme%202020_2_30_Nov_2020.pdf`
+      }
+    ],
+    data1: [
+      {
+        title: `Class Schedule for 1st Year Students :`,
+        link: `http://www.nitp.ac.in/uploads20/Online%20Orientation%20Programme%202020_2_30_Nov_2020.pdf`,
+      },
+      {
+        title: `Click here for Physics :`,
+        link: `http://www.nitp.ac.in/uploads20/Time-Table%20for%20B.%20Tech.%20students%20(Newly%20admitted)_2020_Department%20of%20Physics.pdf`,
+      },
+      {
+        title: `Click here for Electronics Dept. :`,
+        link: `http://www.nitp.ac.in/uploads20/1st%20Year%20Dec-March%202020-2021%20(1).pdf`,
+      },
+      {
+        title: `Click here for ME Dept (Dept subjects). :`,
+        link: `http://www.nitp.ac.in/uploads20/Time%20table%20ME%20department_2020-2021%20odd%20semester_modified_01-09-2020_1st%20year%20students.pdf`,
+      },
+      {
+        title: `Click here for ME Dept. (overall):`,
+        link: `http://www.nitp.ac.in/uploads20/Mechanical.pdf`,
+      },
+      {
+        title: `Click here for CSE :`,
+        link: `http://www.nitp.ac.in/uploads20/CSED_1stYear_Dec-March-2020-semester_08_12_2020.pdf`,
+      },
+      {
+        title: `Click here for Maths. Dept. :`,
+        link: `http://www.nitp.ac.in/uploads20/1st%20year%20time-table%20(1).pdf`,
+      },
+      {
+        title: `Click here for Updated Civil Dept. Class Schedule :`,
+        link: `http://www.nitp.ac.in/uploads20/1UGCE(JULY-DEC%2020).pdf`,
+      },
+      {
+        title: `Click here for Chemistry Dept. :`,
+        link: `http://www.nitp.ac.in/uploads20/B.%20Tech%201st%20yr%20Time%20Table_Chemistry.pdf`,
+      },
+      {
+        title: ` Click here for HSS Dept. :`,
+        link: `http://www.nitp.ac.in/uploads20/Time%20Table%20HSS%20July%20Dec%202020%20(BTECH%201ST%20SEM)-1.pdf`,
+      },
+      {
+        title: `Click here for EE Dept. :`,
+        link: `http://www.nitp.ac.in/uploads20/Routine%201st%20sem%20EE.docx`,
+      },
+      {
+        title: `Click here for Architecture Dept. :`,
+        link: `http://www.nitp.ac.in/uploads20/2020-07.12.2020.pdf`,
+      },
+    ],
+  }
+]
 const Studentpage = () => {
   const [tab] = useQueryParam("tab")
   const [view, setView] = useState("clubs")
@@ -196,16 +258,16 @@ const Studentpage = () => {
               <div className="row rowmarl3">
                 {notices != undefined
                   ? notices.map(notice => {
-                      if (notice.title != "") {
-                        return (
-                          <Notice
-                            detail={notice.title}
-                            time={notice.openDate}
-                            attachments={notice.attachments}
-                          />
-                        )
-                      }
-                    })
+                    if (notice.title != "") {
+                      return (
+                        <Notice
+                          detail={notice.title}
+                          time={notice.openDate}
+                          attachments={notice.attachments}
+                        />
+                      )
+                    }
+                  })
                   : null}
               </div>
             </div>
@@ -224,8 +286,8 @@ const Studentpage = () => {
             </div>
           )}
           {view == "firstyear" && (
-            <div id="sfoot" className="layoutrow">
-              <a
+            <div className="layoutrow digital">
+              {/* <a
                 id="sfimg1"
                 href="http://www.nitp.ac.in/uploads/Anti-ragging_Committee_2019.pdf"
               >
@@ -236,7 +298,50 @@ const Studentpage = () => {
                 href="http://www.nitp.ac.in/uploads/Orientation_Programe_2018.pdf"
               >
                 <img src={first} loading="lazy" />
-              </a>
+              </a> */}
+              {
+                firstYear.map(e => (<>
+                  <div className="row rowmarl3 rowmarr3">
+                    <h1>{e.heading}</h1>
+                    <p>{e.info}</p>
+                  </div>
+                  {e.data0.map(i => (<div className="row rowmarl3 rowmarr3">
+                    <a href={i.link} target="_blank" rel="noopener noreferrer" style={{
+                                  textDecoration: `none`,
+                                  fontFamily: `Source Sans Pro`,
+                                }}><h3 style={{
+                                  borderBottom: `1px dotted black`,
+                                  borderTop: `1px dotted black`,
+                                  padding: `0.5rem`,
+                                }}>{i.title}</h3></a>
+                  </div>))}
+                    {
+                      e.data1.map(j=>(
+                        <div className="row rowmarl3 rowmarr3">
+                                                        <a
+                                href={j.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{
+                                  textDecoration: `none`,
+                                  fontFamily: `Source Sans Pro`,
+                                }}
+                              >
+                                <p
+                                  style={{
+                                    fontWeight: `bold`,
+                                    paddingBottom: `0.5rem`,
+                                    margin: `0 1rem`,
+                                  }}
+                                >
+                                  → {j.title}
+                                </p>
+                              </a>
+                        </div>
+                      ))
+                    }
+                </>))
+              }
             </div>
           )}
         </PageLayout>
