@@ -29,7 +29,7 @@ const Directorpage = () => {
             className="row rowmarl3"
             style={{ display: "block", width: `100%` }}
           >
-            <h1 style={{marginTop:`0`,marginLeft:`270px`}}>Our Director</h1>
+            <h1 style={{marginTop:`0`,textAlign:`center`}}>Our Director</h1>
           </div>
           <div className="faculty-img-row" style={{ position: `absolute`,left:`15%`}}>
             <div className="faculty-img-wrap">
@@ -46,7 +46,7 @@ const Directorpage = () => {
               <img
                 src={mail}
                 className="img-fluid facmail"
-                style={{ position: `absolute` }}
+                // style={{ position: `absolute` }}
               />
             </a>
             <h2>{data.profile.name}</h2>
