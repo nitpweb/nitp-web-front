@@ -107,7 +107,8 @@ export const FacultyProfile = styled.div`
     padding-top: 10vh;
     justify-content: space-evenly;
     .faculty-img-row {
-      position: static !important;
+      position: relative !important;
+      left:0 !important;
     }
     .faculty-details-row {
       width: 90%;
