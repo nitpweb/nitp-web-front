@@ -1,3 +1,5 @@
+import React from "react"
+
 export const EEPhdCourse = [
   {
     type: `Mandatory Course`,
