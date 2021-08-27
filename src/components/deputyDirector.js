@@ -115,7 +115,7 @@ const RegistrarPage = () => {
                 research papers in the National and International Journals and
                 also has presented papers in the International and National
                 conferences. He has guided M.Sc (Engg.) / M.Tech and Ph.D
-                research scholars.
+                research scholars. He is a renowned scholar in his field. 
               </p>
             </div>
           </div>
