@@ -22,7 +22,7 @@ export const titleDescription = () => {
 export const about = () => {
   return (
     <>
-      Computer Science and Engineering branch of NIT Patna offers courses
+      Computer Science and Engineering department of NIT Patna offers courses
       leading to Bachelor of Technology in Computer Science and Engineering. The
       department has a very good infrastructure and faculty to provide excellent
       education.
