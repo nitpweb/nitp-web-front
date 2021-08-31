@@ -272,10 +272,6 @@ const Senate = [
     type: "Member",
   },
   {
-    name: "Dr. N. R. Lall             \n             Professor, Physics Dept.",
-    type: "Member",
-  },
-  {
     name:
       "Dr. Ramakar Jha             \n             Professor, Civil Engineering Dept.",
     type: "Member",
