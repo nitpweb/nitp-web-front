@@ -302,7 +302,7 @@ const Admissions = [
     data: [
       {
         para:
-          "Official website of CCMT 2021 for M/Tech/MURP/MArch admission for the Academic session 2021-22 ",
+          "Official website of CCMT 2021 for M/Tech/MURP/MArch admission for the Academic session 2021-22. ",
         link: "https://ccmt.nic.in/",
       },
     ],
