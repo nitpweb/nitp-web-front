@@ -22,16 +22,14 @@ export const titleDescription = () => {
 export const about = () => {
   return (
     <>
-      Computer Science and Engineering department of NIT Patna offers courses
-      leading to Bachelor of Technology in Computer Science and Engineering. The
+      The Department of Computer Science and Engineering offers courses leading
+      to Bachelor of Technology in Computer Science and Engineering. The
       department has a very good infrastructure and faculty to provide excellent
       education.
-      <br />
       <br />
       The curriculum is updated regularly to keep up with the growing demands
       and the changing trends of the software industry and research
       laboratories.
-      <br />
       <br />
       The department provides a wide range of courses. The prominent among them
       includes Data Structures, Design and Analysis of Algorithms, System
@@ -45,10 +43,21 @@ export const about = () => {
 export const mission = () => {
   return (
     <>
-      To formulate up-to-date and flexible technical programs which will allow
-      our graduates to attain their maximum technical potential, managerial
-      capability, be competitive in the job market and to emerge as a centre of
-      excellence.
+      <ul>
+        <li>
+          To improve employability by providing high-quality undergraduate and
+          graduate education in computer-related disciplines.
+        </li>
+        <li>
+          To develop professionals to satisfy the rising personnel demands and
+          needs of industry and entrepreneurship for the state's and country's
+          economic growth.
+        </li>
+        <li>
+          To become capable in conducting high-quality technological research
+          for the benefit of society.
+        </li>
+      </ul>
     </>
   )
 }
@@ -56,14 +65,10 @@ export const mission = () => {
 export const vision = () => {
   return (
     <>
-      To impart high quality of Under-graduate and Post-graduate education in
-      all Computer related fields to increase the employability.
-      <br />
-      To develop world class professionals to meet the growing manpower demands
-      and needs of the industry for economic development of the state and the
-      country.
-      <br />
-      To conduct high standard technical research for betterment of the society.
+      To formulate up-to-date and flexible technical programs which will allow
+      our graduates to attain their maximum technical potential, managerial
+      capability, be competitive in the job market and to emerge as a centre of
+      excellence.
     </>
   )
 }
