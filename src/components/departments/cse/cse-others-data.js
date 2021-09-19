@@ -5,12 +5,15 @@ export const Labs = [
   {
     content: (
       <>
-        <h2>Operating System Lab(54 Systems)</h2>
+        <h2>Computing Lab-1 (60 Systems)</h2>
         <br />
-        Processor: Intel Corei7-3770, RAM: 6 GB, HDD: 500 GB Operating System
-        lab uses the Linux OS (Fedora 18.0) to implement the operating system
-        management process, memory function and shell programming related to OS
-        functions.
+        Processor: Intel Corei7-4790, RAM: 6 GB, HDD: 500 GB (54 systems) and
+        Intel Core i5- 3470, RAM: 2 GB, HDD: 500 GB (6 systems) Operating System
+        lab uses the Linux OS (Fedora 16.0) to implement the operating system
+        management process, memory function, UNIX and shell programming related
+        to OS system call functions. This lab also deals some courses like
+        Object- Oriented Programming (OOP), Web Technology, Database Management
+        (DBMS), Artificial Intelligence (AI), and Software Engineering.
       </>
     ),
     image: (
@@ -25,11 +28,13 @@ export const Labs = [
   {
     content: (
       <>
-        <h2>Simulation Lab (54 Systems)</h2>
+        <h2>Computing Lab-2 (54 Systems)</h2>
         <br />
         Processor: Intel Corei5-3770, RAM: 2 GB, HDD: 500 GB Simulation lab uses
         the IBM Rational Rose software and other software to design software
-        modules.
+        modules. This lab also deals some courses like Object-Oriented
+        Programming (OOP), Web Technology, Database Management (DBMS),
+        Artificial Intelligence (AI), and Software Engineering.
       </>
     ),
     image: (
@@ -48,7 +53,7 @@ export const Labs = [
         <br />
         Processor: Intel Core2Duo, RAM: 4 GB, HDD: 320 GB Hardware: Network
         System Kit (5 no.). The lab has well equipped system for research, which
-        include the Network Training Kit.
+        include the Network Training Kit. The lab deals Cyber Security courses.
       </>
     ),
     image: (
@@ -68,7 +73,7 @@ export const Labs = [
         Processor: Intel P4 3.00 GHz, RAM: 1 GB, HDD: 80GB Hardware: LAN Trainer
         Kit (10 no.). Soft Computing lab use Statistica software for supervised
         learning analysis and data mining and also used the LAN Trainer kit for
-        network topology.
+        network topology. The lab is focusing on IOT related specific courses.
       </>
     ),
     image: (
@@ -117,15 +122,55 @@ export const Labs = [
   {
     content: (
       <>
-        <h2>HP Center of Excellence (50 PCs, 2 Rack servers)</h2>
+        <h2>Computing Lab-3 (50 PCs, 2 Rack servers)</h2>
         <br />
-        This lab will contain 50 PCs with latest configuration, two rack
-        servers, one workstation, five laptops, two voice tabs, two iIPads, two
-        large screen display units, two heavy duty printers and many other
-        network connected devices. This lab will facilitate training, research,
-        experiments in the domain of software testing, mobile application
-        development, cloud computing, network security, Big Data analysis and
-        Industrial Automation.
+        The lab contains 50 PCs with latest configuration, two rack servers, one
+        workstation, five laptops, two voice tabs, two iIPads, two large screen
+        display units, two heavy duty printers and many other network connected
+        devices. This lab will facilitate training, research, experiments in the
+        domain of software testing, mobile application development, cloud
+        computing, network security, Big Data analysis and Industrial
+        Automation. This also deals some courses like Data Structure and
+        Algorithms, Operating System, Compiler Design, and Computer Graphics.
+      </>
+    ),
+    image: (
+      <img
+        src={`${home}/images/oslab.jpg`}
+        id="oslab3"
+        height="250px"
+        width="350px"
+      />
+    ),
+  },
+  {
+    content: (
+      <>
+        <h2>Computing Lab-4</h2>
+        <br />
+        The lab contains 41 PCs of Acer Company with latest configuration as
+        Processor: Intel i7, RAM: 8GB, and HDD: 500 GB, and working on Ubuntu
+        (14.04 64-bit) OS. This also deals some courses like Data Structure and
+        Algorithms, Operating System, Compiler Design, and Computer Graphics.{" "}
+      </>
+    ),
+    image: (
+      <img
+        src={`${home}/images/oslab.jpg`}
+        id="oslab3"
+        height="250px"
+        width="350px"
+      />
+    ),
+  },
+  {
+    content: (
+      <>
+        <h2>Network Security Lab</h2>
+        <br />
+        The lab contains 32 PCs of Acer Company with latest configuration as
+        Processor: i7-4790, RAM: 8GB, HDD: 500GB, and working environment on
+        Linux. This lab also contain 2 hp Servers of Intel Xeon E3- 1241v3.{" "}
       </>
     ),
     image: (
@@ -146,25 +191,251 @@ export const Achievements = [
   `“Digital Literacy” Course under Skill Development Program (PMRY scheme) Completed`,
 ]
 
+const Projects = [
+  {
+    "Funding body": "DST   SERB",
+    "Area of research":
+      "Efficient   Reliable Data Delivery during Forest Fire using Wireless Network",
+    "Faculty members involved": "Dr.   Ditipriya Sinha",
+    "Funding amount": "11   lakhs",
+    Year: "2017-2020",
+  },
+  {
+    "Funding body": "DST   SERB",
+    "Area of research":
+      "Study   of Road Coverage Problem in Wireless Sensor Network",
+    "Faculty members involved": "Dr. Dinesh   Dash",
+    "Funding amount": "7.42   lakhs",
+    Year: "2016-2019   Completed",
+  },
+  {
+    "Funding body": "SERB (DST)",
+    "Area of research":
+      "Fault-tolerant   Coordination in Infrastructure-less Network",
+    "Faculty members involved": "Dr.   Suddhasil De",
+    "Funding amount": "Rs.   20.85 lakhs",
+    Year: "2017-   Ongoing",
+  },
+  {
+    "Funding body":
+      "Ministry   of Electronics and Information Technology (MeitY), Government of India",
+    "Area of research":
+      "Information   Security Education and Awareness (ISEA) - Phase 1",
+    "Faculty members involved":
+      "Dr.   G.K. Choudhary, Dr. Prabhat Kumar (CSE deptt.) (Co-chief Investigator)",
+    "Funding amount": "19.32   lakhs",
+    Year: "2006-2014   Completed",
+  },
+  {
+    "Funding body":
+      "Graphic   Trades Pvt. Ltd. (An ISO 9001, 14001, 20001 & 27001 Certified Company)",
+    "Area of research":
+      "Cashless   Services without the need of Smart Phone and Internet",
+    "Faculty members involved": "Dr.   Prabhat Kumar (P.I.)",
+    "Funding amount": "10.07   lakhs   (approx.)",
+    Year: "2017-2021",
+  },
+  {
+    "Funding body":
+      "Ministry   of Electronics and Information Technology (MeitY)",
+    "Area of research":
+      "Development   of Algorithms for Speech based Bilingual Keyword Search to Detect Fraud/Spam   Calls",
+    "Faculty members involved":
+      "PI :   Dr. Gayadhar Pradhan (ECE deptt.) Co-PI : Dr. Jyoti Prakash Singh (CSE   deptt.)",
+    "Funding amount": "41.1   lakhs",
+    Year: "Completed",
+  },
+  {
+    "Funding body": "DST   SERB",
+    "Area of research":
+      'A   "plug-and-play" Framework for Phylogenetic Databases with Semantic   Web Extension',
+    "Faculty members involved":
+      "PI :-   Dr. Akshay Deepak (CSE deptt.) Co-PI : Dr. Kumar Abhishek (CSE deptt.)",
+    "Funding amount": "13.59   lakhs",
+    Year: "2016-2019 Completed",
+  },
+  {
+    "Funding body": "DEITY",
+    "Area of research":
+      "Information   Security Awareness Project (ISEA PHASE-II)",
+    "Faculty members involved":
+      "Dr.   M. P. Singh (Chief Investigator)   Dr.   Kakali Chatterjee (Co-Chief Investigator)",
+    "Funding amount": "96   Crores",
+    Year: "2015-Ongoing",
+  },
+  {
+    "Funding body": "TEQIP-III",
+    "Area of research":
+      "Robust   and Secure Copyright Protection Techniques for e-Government Document",
+    "Faculty members involved": "Dr.   Amit Kumar Singh",
+    "Funding amount": "8.40   lakhs",
+    Year: "2019-Ongoing",
+  },
+  {
+    "Funding body": "TEQIP-III",
+    "Area of research":
+      "Healthcare   Data Lake: An Intelligent Search and Analytics Platform for Improving   Healthcare Plans and Treatments",
+    "Faculty members involved": "Dr.   Mukesh Kumar",
+    "Funding amount": "9.10   lakhs   (approx.)",
+    Year: "2019-Ongoing",
+  },
+  {
+    "Funding body": "TEQIP-III",
+    "Area of research":
+      "Discovery   of Knowledge Patterns in Student Learning System through Data Mining and Deep   Learning Techniques",
+    "Faculty members involved": "Dr.   Somaraju Suvvari",
+    "Funding amount": "8.65   lakhs   (approx.)",
+    Year: "2020-Ongoing",
+  },
+  {
+    "Funding body": "DRDO",
+    "Area of research": "Copyright   protection tool for digital data",
+    "Faculty members involved": "Dr.   Amit Kumar Singh",
+    "Funding amount": "9.775   lakhs",
+    Year: "2020-Ongoing",
+  },
+]
+
 export const Activities = [
   {
     title: <h2>Workshops / Seminars / Training / Course Conducted:</h2>,
     content: (
       <ul>
-        <li> Short Term Training Program on "Information Security"</li>
-        <li>Workshop on "Public Key Infrastructure (PKI)"</li>
         <li>
-          Research Promotion Workshop on "Introduction to Graph and Geometric
-          Algorithms"
+          <span>
+            Workshop/Short Term Courses on "Concepts of Cryptographic
+            Engineering" from 19<sup>th</sup>
+            February 2018 to 23<sup>rd</sup> February 2018.
+          </span>
         </li>
-        <li>Workshop on "Wireless Network & Security"</li>
-        <li>Workshop on "Image Processing and Pattern Recognition"</li>
-        <li>Workshop on "Scientific documentation processing using Latex"</li>
         <li>
-          National level workshop Cum Short Term course on "Time Series Analysis
-          and its Application"
+          <span>
+            Workshop/Short Term Courses on "Artificial Intelligence &amp;
+            Machine Learning" from 18<sup>th</sup>
+            May 2018 to 22<sup>nd</sup> May 2018.
+          </span>
         </li>
-        <li>Workshop on "Network Management and Ethical Hacking"</li>
+        <li>
+          <span>
+            Workshop/Short Term Courses on "Deep Learning and applications" from
+            27<sup>th</sup> May 2019 to 31<sup>st</sup> May 2019.
+          </span>
+        </li>
+        <li>
+          <span>
+            Workshop/Short Term Courses on "Introduction to Programming: A
+            Pedagogical Approach" from 17<sup>th</sup> June 2019 to 22
+            <sup>nd</sup> June 2019.
+          </span>
+        </li>
+        <li>
+          <span>
+            Workshop/Short Term Courses on "Academia-Future of Industry" from 23
+            <sup>rd</sup> August 2019 to 24<sup>th</sup> August 2019.
+          </span>
+        </li>
+        <li>
+          <span>
+            Workshop/Short Term Courses on "Natural Language Processing" from 6
+            <sup>th</sup> January 2020 to 10<sup>th</sup> January 2020.
+          </span>
+        </li>
+        <li>
+          <span>
+            Workshop/Short Term Courses on "Artificial Intelligence &amp;
+            Machine Learning" from 12<sup>th</sup>
+            February 2020 to 16<sup>th</sup> February 2020.
+          </span>
+        </li>
+        <li>
+          <span>
+            Workshop/Short Term Courses on "Cyber Security Using Machine
+            Learning/Big Data Analytics" from 17<sup>th</sup> February 2020 to
+            21<sup>st</sup> February 2020.
+          </span>
+        </li>
+        <li>
+          <span>
+            Workshop/Short Term Courses on "Understanding the concept of Node.JS
+            and React.JS from 20<sup>th</sup>
+            May 2020 to 26<sup>th</sup> May 2020.
+          </span>
+        </li>
+        <li>
+          <span>
+            Workshop/Short Term Courses on "Deep learning and its Applications"
+            from 17<sup>th</sup>
+            June 2020 to 22<sup>nd</sup> June 2020.
+          </span>
+        </li>
+        <li>
+          <span>
+            Workshop/Short Term Courses on "Machine learning for Computer
+            Vision" from 29<sup>th</sup>
+            June 2020 to 8<sup>th</sup> July 2020.
+          </span>
+        </li>
+        <li>
+          <span>
+            Workshop/Short Term Courses on "Advanced Optimization Techniques and
+            Hands-on with MATLAB/SCILAB" from 13<sup>th</sup> July 2020 to 24
+            <sup>th</sup> July 2020.
+          </span>
+        </li>
+        <li>
+          <span>
+            Workshop/Short Term Courses on "Data Science for All" from 27
+            <sup>th</sup> July 2020 to 8<sup>th</sup>
+            August 2020.
+          </span>
+        </li>
+        <li>
+          <span>
+            Workshop/Short Term Courses on "Deep learning &amp; Machine learning
+            Application in Computer Vision" from 12<sup>th</sup> August 2020 to
+            18<sup>th</sup>
+            August 2020.
+          </span>
+        </li>
+        <li>
+          <span>
+            Workshop/Short Term Courses on "Quantum Computing" from 24
+            <sup>th</sup> August 2020 to 29<sup>th</sup>
+            August 2020.
+          </span>
+        </li>
+        <li>
+          <span>
+            Workshop/Short Term Courses on "Python Programming" from 7
+            <sup>th</sup> September 2020 to 18<sup>th</sup> September 2020.
+          </span>
+        </li>
+        <li>
+          <span>
+            Workshop/Short Term Courses on "Cyber Security" from 5<sup>th</sup>{" "}
+            October 2020 to 11<sup>th</sup>
+            October 2020.
+          </span>
+        </li>
+        <li>
+          <span>
+            Workshop/Short Term Courses on "Machine learning for Computer
+            Vision" from 1<sup>st</sup>
+            February 2021 to 12<sup>th</sup> February 2021.
+          </span>
+        </li>
+        <li>
+          <span>
+            Workshop/Short Term Courses on "Data Science for All" from 14
+            <sup>th</sup> April 2021 to 23<sup>rd</sup> April 2021.
+          </span>
+        </li>
+        <li>
+          <span>
+            Workshop/Short Term Courses on "Social Robotics &amp; AI" from 28
+            <sup>th</sup> June 2021 to 4<sup>th</sup> July 2021.
+          </span>
+        </li>
       </ul>
     ),
   },
@@ -185,6 +456,37 @@ export const Activities = [
           Former Director, ISI Kolkata
         </li>
       </ul>
+    ),
+  },
+  {
+    title: <h2>Projects</h2>,
+    content: (
+      <>
+        <table className="table-act">
+          <thead>
+            <tr className="syllabus-table-head">
+              <th>Funding Body</th>
+              <th>Area of Research</th>
+              <th>Faculty members involved</th>
+              <th>Funding amount</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            {Projects.map((row, idx) => {
+              return (
+                <tr key={idx}>
+                  <td>{row["Funding body"]}</td>
+                  <td>{row["Area of research"]}</td>
+                  <td>{row["Faculty members involved"]}</td>
+                  <td>{row["Funding amount"]}</td>
+                  <td>{row["Year"]}</td>
+                </tr>
+              )
+            })}
+          </tbody>
+        </table>
+      </>
     ),
   },
 ]
