@@ -12,6 +12,7 @@ import {
   achievements,
   activities,
   vision,
+  Outcomes,
   contact,
   datalist,
 } from "../../components/departments/cse/csehome"
@@ -23,6 +24,7 @@ const Cse = () => (
       title={title}
       TitleDescription={titleDescription}
       About={about}
+      Outcomes={Outcomes}
       Mission={mission}
       Vision={vision}
       Contact={contact}

@@ -2,7 +2,7 @@ import React from "react"
 
 export const routeName = "cse"
 export const title = "Computer Science & Engineering"
-import { Achievements, Activities, Labs } from "./cse-others-data"
+import { Achievements, Activities, Labs, Outcomes_ } from "./cse-others-data"
 export const titleDescription = () => {
   return (
     <>
@@ -69,6 +69,21 @@ export const vision = () => {
       our graduates to attain their maximum technical potential, managerial
       capability, be competitive in the job market and to emerge as a centre of
       excellence.
+    </>
+  )
+}
+
+export const Outcomes = () => {
+  return (
+    <>
+      {Outcomes_.map(row => {
+        return (
+          <>
+            <div className="row rowmarl3">{row.title}</div>
+            <div className="row rowmarl3">{row.content}</div>
+          </>
+        )
+      })}
     </>
   )
 }
