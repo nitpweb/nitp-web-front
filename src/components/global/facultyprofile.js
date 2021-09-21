@@ -89,7 +89,7 @@ const Facultyprofile = ({ url }) => {
                   <h3>Subjects</h3>
                   <div className="factable">
                     <table>
-                      <tr>
+                      {/* <tr>
                         <th>
                           <h4>Subject Code</h4>
                         </th>
@@ -102,23 +102,24 @@ const Facultyprofile = ({ url }) => {
                         <th>
                           <h4>Year</h4>
                         </th>
-                      </tr>
+                      </tr> */}
                       {data.subjects.map(item => {
                         return (
-                          <tr>
-                            <td>
-                              <p>{item.code}</p>
-                            </td>
-                            <td>
-                              <p>{item.name}</p>
-                            </td>
-                            <td>
-                              <p>{item.start}</p>
-                            </td>
-                            <td>
-                              <p>{new Date(item.end).getFullYear()}</p>
-                            </td>
-                          </tr>
+                          <p>{item.code}{" "}{item.name}{" "}{item.start}{" "}{new Date(item.end).getFullYear()}</p>
+                          // <tr>
+                          //   <td>
+                          //     <p>{item.code}</p>
+                          //   </td>
+                          //   <td>
+                          //     <p>{item.name}</p>
+                          //   </td>
+                          //   <td>
+                          //     <p>{item.start}</p>
+                          //   </td>
+                          //   <td>
+                          //     <p>{new Date(item.end).getFullYear()}</p>
+                          //   </td>
+                          // </tr>
                         )
                       })}
                     </table>
@@ -131,7 +132,7 @@ const Facultyprofile = ({ url }) => {
                   <h3>Memberships & Society</h3>
                   <div className="factable">
                     <table>
-                      <tr>
+                      {/* <tr>
                         <th>
                           <h4>Membership Id</h4>
                         </th>
@@ -144,29 +145,32 @@ const Facultyprofile = ({ url }) => {
                         <th>
                           <h4>End-Date</h4>
                         </th>
-                      </tr>
+                      </tr> */}
                       {data.memberships.map(item => {
                         return (
-                          <tr>
-                            <td>
-                              <p>{item.membership_id}</p>
-                            </td>
-                            <td>
-                              <p>{item.membership_society}</p>
-                            </td>
-                            <td>
-                              <p>
-                                {new Date(item.start).getMonth() + 1} /{" "}
-                                {new Date(item.start).getFullYear()}
-                              </p>
-                            </td>
-                            <td>
-                              <p>
-                                {new Date(item.end).getMonth() + 1} /{" "}
-                                {new Date(item.end).getFullYear()}
-                              </p>
-                            </td>
-                          </tr>
+                          <p>{item.membership_id}{" "}{item.membership_society}{" "}{` [${new Date(item.start).getMonth() + 1} -
+                          ${new Date(item.start).getFullYear()} / ${new Date(item.end).getMonth() + 1} -
+                          ${new Date(item.end).getFullYear()}]`}</p>
+                          // <tr>
+                          //   <td>
+                          //     <p>{item.membership_id}</p>
+                          //   </td>
+                          //   <td>
+                          //     <p>{item.membership_society}</p>
+                          //   </td>
+                          //   <td>
+                          //     <p>
+                          //       {new Date(item.start).getMonth() + 1} /{" "}
+                          //       {new Date(item.start).getFullYear()}
+                          //     </p>
+                          //   </td>
+                          //   <td>
+                          //     <p>
+                          //       {new Date(item.end).getMonth() + 1} /{" "}
+                          //       {new Date(item.end).getFullYear()}
+                          //     </p>
+                          //   </td>
+                          // </tr>
                         )
                       })}
                     </table>
@@ -179,7 +183,7 @@ const Facultyprofile = ({ url }) => {
                   <h3>Educational Qualification</h3>
                   <div className="factable">
                     <table>
-                      <tr>
+                      {/* <tr>
                         <th>
                           <h4>Certification</h4>
                         </th>
@@ -189,20 +193,21 @@ const Facultyprofile = ({ url }) => {
                         <th>
                           <h4>Passing Year</h4>
                         </th>
-                      </tr>
+                      </tr> */}
                       {data.qualification.map(item => {
                         return (
-                          <tr>
-                            <td>
-                              <p>{item.certification}</p>
-                            </td>
-                            <td>
-                              <p>{item.institution}</p>
-                            </td>
-                            <td>
-                              <p>{item.passing_year}</p>
-                            </td>
-                          </tr>
+                          <p>{item.certification}{" "}{item.institution}{" "}{item.passing_year}</p>
+                          // <tr>
+                          //   <td>
+                          //     <p>{item.certification}</p>
+                          //   </td>
+                          //   <td>
+                          //     <p>{item.institution}</p>
+                          //   </td>
+                          //   <td>
+                          //     <p>{item.passing_year}</p>
+                          //   </td>
+                          // </tr>
                         )
                       })}
                     </table>
@@ -342,27 +347,28 @@ const Facultyprofile = ({ url }) => {
                   <h3>Current Administrative Responsibility</h3>
                   <div className="factable">
                     <table>
-                      <tr>
+                      {/* <tr>
                         <th>
                           <h4>Post</h4>
                         </th>
                         <th>
                           <h4>Start-Date</h4>
                         </th>
-                      </tr>
+                      </tr> */}
                       {data.currResponsibility.map(item => {
                         return (
-                          <tr>
-                            <td>
-                              <p>{item.curr_responsibility}</p>
-                            </td>
-                            <td>
-                              <p>
-                                {new Date(item.start).getMonth() + 1} /{" "}
-                                {new Date(item.start).getFullYear()}
-                              </p>
-                            </td>
-                          </tr>
+                          <p>{item.curr_responsibility}{" "}[{new Date(item.start).getMonth() + 1}-{" "}{new Date(item.start).getFullYear()}]</p>
+                          // <tr>
+                          //   <td>
+                          //     <p>{item.curr_responsibility}</p>
+                          //   </td>
+                          //   <td>
+                          //     <p>
+                          //       {new Date(item.start).getMonth() + 1} /{" "}
+                          //       {new Date(item.start).getFullYear()}
+                          //     </p>
+                          //   </td>
+                          // </tr>
                         )
                       })}
                     </table>
@@ -375,7 +381,7 @@ const Facultyprofile = ({ url }) => {
                   <h3>Past Administrative Responsibility</h3>
                   <div className="factable">
                     <table>
-                      <tr>
+                      {/* <tr>
                         <th>
                           <h4>Post</h4>
                         </th>
@@ -385,26 +391,29 @@ const Facultyprofile = ({ url }) => {
                         <th>
                           <h4>End-Date</h4>
                         </th>
-                      </tr>
+                      </tr> */}
                       {data.pastResponsibility.map(item => {
                         return (
-                          <tr>
-                            <td>
-                              <p>{item.past_responsibility}</p>
-                            </td>
-                            <td>
-                              <p>
-                                {new Date(item.start).getMonth() + 1} /{" "}
-                                {new Date(item.start).getFullYear()}
-                              </p>
-                            </td>
-                            <td>
-                              <p>
-                                {new Date(item.end).getMonth() + 1} /{" "}
-                                {new Date(item.end).getFullYear()}
-                              </p>
-                            </td>
-                          </tr>
+                          <p>{item.past_responsibility}{" "}[{new Date(item.start).getMonth() + 1} -{" "}
+                                {new Date(item.start).getFullYear()} / {new Date(item.end).getMonth() + 1}-{" "}
+                                {new Date(item.end).getFullYear()}]</p>
+                          // <tr> 
+                          //    <td>
+                          //     <p>{item.past_responsibility}</p>
+                          //   </td>
+                          //   <td>
+                          //     <p>
+                          //       {new Date(item.start).getMonth() + 1} /{" "}
+                          //       {new Date(item.start).getFullYear()}
+                          //     </p>
+                          //   </td>
+                          //   <td>
+                          //     <p>
+                          //       {new Date(item.end).getMonth() + 1} /{" "}
+                          //       {new Date(item.end).getFullYear()}
+                          //     </p>
+                          //   </td>
+                          // </tr> 
                         )
                       })}
                     </table>
@@ -417,7 +426,7 @@ const Facultyprofile = ({ url }) => {
                   <h3>Work Experiences</h3>
                   <div className="factable">
                     <table>
-                      <tr>
+                      {/* <tr>
                         <th>
                           <h4>Designation</h4>
                         </th>
@@ -430,29 +439,30 @@ const Facultyprofile = ({ url }) => {
                         <th>
                           <h4>End-Date</h4>
                         </th>
-                      </tr>
+                      </tr> */}
                       {data.workExperience.map(item => {
                         return (
-                          <tr>
-                            <td>
-                              <p>{item.work_experiences}</p>
-                            </td>
-                            <td>
-                              <p>{item.institute}</p>
-                            </td>
-                            <td>
-                              <p>
-                                {new Date(item.start).getMonth() + 1} /{" "}
-                                {new Date(item.start).getFullYear()}
-                              </p>
-                            </td>
-                            <td>
-                              <p>
-                                {new Date(item.end).getMonth() + 1} /{" "}
-                                {new Date(item.end).getFullYear()}
-                              </p>
-                            </td>
-                          </tr>
+                          <p>{item.work_experiences}{" "}{item.institute}{" "}[{new Date(item.start).getMonth() + 1} -{" "}{new Date(item.start).getFullYear()} / {new Date(item.end).getMonth() + 1} -{" "}{new Date(item.end).getFullYear()}]</p>
+                          // <tr>
+                          //   <td>
+                          //     <p>{item.work_experiences}</p>
+                          //   </td>
+                          //   <td>
+                          //     <p>{item.institute}</p>
+                          //   </td>
+                          //   <td>
+                          //     <p>
+                          //       {new Date(item.start).getMonth() + 1} /{" "}
+                          //       {new Date(item.start).getFullYear()}
+                          //     </p>
+                          //   </td>
+                          //   <td>
+                          //     <p>
+                          //       {new Date(item.end).getMonth() + 1} /{" "}
+                          //       {new Date(item.end).getFullYear()}
+                          //     </p>
+                          //   </td>
+                          // </tr>
                         )
                       })}
                     </table>
@@ -482,7 +492,7 @@ const Facultyprofile = ({ url }) => {
                   <h3>Projects</h3>
                   <div className="factable">
                     <table>
-                      <tr>
+                      {/* <tr>
                         <th>
                           <h4>Title</h4>
                         </th>
@@ -498,32 +508,33 @@ const Facultyprofile = ({ url }) => {
                         <th>
                           <h4>End-Date</h4>
                         </th>
-                      </tr>
+                      </tr> */}
                       {data.projects.map(item => {
                         return (
-                          <tr>
-                            <td>
-                              <p>{item.project}</p>
-                            </td>
-                            <td>
-                              <p>{item.sponsor}</p>
-                            </td>
-                            <td>
-                              <p>{item.amount}</p>
-                            </td>
-                            <td>
-                              <p>
-                                {new Date(item.start).getMonth() + 1} /{" "}
-                                {new Date(item.start).getFullYear()}
-                              </p>
-                            </td>
-                            <td>
-                              <p>
-                                {new Date(item.end).getMonth() + 1} /{" "}
-                                {new Date(item.end).getFullYear()}
-                              </p>
-                            </td>
-                          </tr>
+                          <p>{item.project}{" "}{item.sponsor}{" "}{item.amount}{" "}[{new Date(item.start).getMonth() + 1} -{" "}{new Date(item.start).getFullYear()} / {new Date(item.end).getMonth() + 1} -{" "}{new Date(item.end).getFullYear()}]</p>
+                          // <tr>
+                          //   <td>
+                          //     <p>{item.project}</p>
+                          //   </td>
+                          //   <td>
+                          //     <p>{item.sponsor}</p>
+                          //   </td>
+                          //   <td>
+                          //     <p>{item.amount}</p>
+                          //   </td>
+                          //   <td>
+                          //     <p>
+                          //       {new Date(item.start).getMonth() + 1} /{" "}
+                          //       {new Date(item.start).getFullYear()}
+                          //     </p>
+                          //   </td>
+                          //   <td>
+                          //     <p>
+                          //       {new Date(item.end).getMonth() + 1} /{" "}
+                          //       {new Date(item.end).getFullYear()}
+                          //     </p>
+                          //   </td>
+                          // </tr>
                         )
                       })}
                     </table>
