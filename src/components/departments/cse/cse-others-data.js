@@ -490,3 +490,264 @@ export const Activities = [
     ),
   },
 ]
+
+const mapOutcomeTable = [
+  {
+    FIELD1: "PEO1",
+    PO1: 3,
+    PO2: 3,
+    PO3: 3,
+    PO4: 2,
+    PO5: 3,
+    PO6: 1,
+    PO7: 1,
+    PO8: 1,
+    PO9: 3,
+    PO10: 3,
+    PO11: 3,
+    PO12: 2,
+  },
+  {
+    FIELD1: "PEO2",
+    PO1: 3,
+    PO2: 3,
+    PO3: 3,
+    PO4: 3,
+    PO5: 3,
+    PO6: 3,
+    PO7: 3,
+    PO8: 3,
+    PO9: 3,
+    PO10: 3,
+    PO11: 2,
+    PO12: 3,
+  },
+  {
+    FIELD1: "PEO3",
+    PO1: 2,
+    PO2: 2,
+    PO3: 3,
+    PO4: 3,
+    PO5: 3,
+    PO6: 2,
+    PO7: 2,
+    PO8: 3,
+    PO9: 3,
+    PO10: 3,
+    PO11: 3,
+    PO12: 2,
+  },
+  {
+    FIELD1: "PEO4",
+    PO1: 3,
+    PO2: 3,
+    PO3: 2,
+    PO4: 3,
+    PO5: 3,
+    PO6: 3,
+    PO7: 3,
+    PO8: 3,
+    PO9: 1,
+    PO10: 2,
+    PO11: 2,
+    PO12: 3,
+  },
+]
+
+export const Outcomes_ = [
+  {
+    title: <h1>Program Educational Objectives</h1>,
+    content: (
+      <>
+        <ul>
+          <li>
+            <b>PEO1: </b>engage in requirement analysis, designing,
+            implementation, testing, deployment, and/or maintaining of software
+            systems in the domain of computer science &amp; engineering and
+            allied fields.
+          </li>
+          <li>
+            <b>PEO2: </b>solve socially relevant challenges using computer
+            science and engineering expertise, and/or pursue higher education
+            and research
+          </li>
+          <li>
+            <b>PEO3: </b>work productively in a team and as an individual in
+            interdisciplinary&nbsp;projects in industry/academia setup
+          </li>
+          <li>
+            <b>PEO4:</b>
+            &nbsp;To participate in lifelong learning and career advancement, as
+            well as adapting to changing professional and social requirements .
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    title: <h1>Programs Outcomes</h1>,
+    content: (
+      <>
+        <ul>
+          <li>
+            <b>
+              <span>PO1. Engineering knowledge: </span>
+            </b>
+            <span>A</span>
+            <span>
+              pply the knowledge of mathematics, science and engineering
+              fundamentals, and an engineering specialization to the solution of
+              complex engineering problems.
+            </span>
+          </li>
+          <li>
+            <b>
+              <span>PO2. Problem Analysis:</span>
+            </b>
+            <span>
+              &nbsp;Identify, formulate, review research literature, and analyse
+              complex engineering problems reaching substantiated conclusions
+              using first principles of mathematics, natural sciences, and
+              engineering sciences.
+            </span>
+          </li>
+          <li>
+            <b>
+              <span>PO3. Design/ development of solutions: </span>
+            </b>
+            <span>
+              Design solutions for complex engineering problems and design
+              system components or processes that meet the specified needs with
+              appropriate consideration for the public health and safety, and
+              the cultural, societal, and environmental considerations.{" "}
+            </span>
+          </li>
+          <li>
+            <b>
+              <span>PO4. Conduct investigations of complex problems:</span>
+            </b>
+            <span>
+              &nbsp;Use research-based knowledge are research methods including
+              design of experiments, analysis and interpretation of data, and
+              synthesis of the information to provide valid conclusions.
+            </span>
+          </li>
+          <li>
+            <b>
+              <span>PO5. Modern tool usage:</span>
+            </b>
+            <span>
+              &nbsp;Create, select and apply appropriate techniques, resources,
+              and modern engineering and IT tools including prediction and
+              modelling to complex engineering activities with an understanding
+              of the limitations.{" "}
+            </span>
+          </li>
+          <li>
+            <b>
+              <span>PO6. The engineer and society: </span>
+            </b>
+            <span>
+              &nbsp;Apply reasoning informed by the contextual knowledge to
+              assess societal, health, safety, legal and cultural issues and the
+              consequent responsibilities relevant to the professional
+              engineering practice.{" "}
+            </span>
+          </li>
+          <li>
+            <b>
+              <span>PO7. Environment and sustainability: </span>
+            </b>
+            <span>
+              Understand the impact of the professional engineering solutions in
+              societal and environmental contexts, and demonstrate the knowledge
+              of, and need for sustainable development.
+            </span>
+          </li>
+          <li>
+            <b>
+              <span>PO8. Ethics: </span>
+            </b>
+            <span>
+              Apply ethical principles and commit to professional ethics and
+              responsibilities and norms of the engineering practice.
+            </span>
+          </li>
+          <li>
+            <b>
+              <span>PO9. Individual and team work: </span>
+            </b>
+            <span>
+              Function effectively as an individual, and as a member or leader
+              in diverse teams, and in multidisciplinary settings.{" "}
+            </span>
+          </li>
+          <li>
+            <b>
+              <span>PO10. Communications: </span>
+            </b>
+            <span>
+              Communicate effectively on complex engineering activities with the
+              engineering community and with society at large, such as, being
+              able to comprehend and write effective reports and design
+              documentation, make effective presentations, and give and receive
+              clear instructions.
+            </span>
+          </li>
+          <li>
+            <b>
+              <span>PO11. Project management and finance: </span>
+            </b>
+            <span>
+              Demonstrate knowledge and understanding of the engineering and
+              management principles and apply these to one�s own work, as a
+              member and leader in a team, to manage projects and in
+              multidisciplinary environments.{" "}
+            </span>
+          </li>
+          <li>
+            <b>
+              <span>PO12. Life-long learning: </span>
+            </b>
+            <span>
+              Recognize the need for, and have the preparation and ability to
+              engage in independent and life-long learning in the broadest
+              context of technological change.{" "}
+            </span>
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    title: <h1>Mapping of Program Outcomes</h1>,
+    content: (
+      <>
+        {" "}
+        <table className="table-act">
+          <thead>
+            <tr className="syllabus-table-head">
+              <th></th>
+              {Object.keys(mapOutcomeTable[0])
+                .slice(1)
+                .map(key => (
+                  <th>{key}</th>
+                ))}
+            </tr>
+          </thead>
+          <tbody>
+            {mapOutcomeTable.map((row, idx) => {
+              return (
+                <tr key={idx}>
+                  {Object.values(mapOutcomeTable[0]).map(key => (
+                    <td>{key}</td>
+                  ))}
+                </tr>
+              )
+            })}
+          </tbody>
+        </table>
+      </>
+    ),
+  },
+]
