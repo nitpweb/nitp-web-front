@@ -15,6 +15,7 @@ export const TabPage = styled.div`
   p {
     color: ${props => props.theme.textColor};
     font-weight: 500;
+    font-family: "Source Sans Pro";
   }
   h1 {
     color: ${props => props.theme.primaryColor};
@@ -28,7 +29,8 @@ export const TabPage = styled.div`
   table {
     font-family: "Source Sans Pro";
     border-collapse: collapse;
-    width: 100%;
+    table-layout: auto;
+    max-width: 100%;
     color: ${props => props.theme.textColor};
   }
 
@@ -228,11 +230,18 @@ export const TabPage = styled.div`
   @media (max-width: 768px) {
     margin-top: 5.2rem;
     position: relative;
+    .new{
+      margin-top: 0rem !important;
+    }
     .mainDiv {
       width: 80vw;
       margin-top: 2.2rem;
       overflow: scroll;
       justify-content: flex-start;
+      .digital{
+        width: 80vw;
+        overflow-x: hidden;
+      }
       .layoutrow1 {
         flex-direction: column-reverse;
       }
