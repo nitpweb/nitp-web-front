@@ -72,6 +72,7 @@ export const FacultyProfile = styled.div`
       .factable {
         overflow: hidden;
         max-width: 100%;
+        table-layout: auto;
         overflow-x: scroll;
         scrollbar-width: none;
         -ms-overflow-style: none;
@@ -80,8 +81,8 @@ export const FacultyProfile = styled.div`
           display: none;
         }
         p {
-          width: 200px;
-          min-width: 48px;
+          max-width: inherit;
+          min-width: 68px;
         }
         td {
           text-align: left;
@@ -98,7 +99,8 @@ export const FacultyProfile = styled.div`
       }
       table {
         min-width: 90%;
-        width: 100%;
+        table-layout: auto;
+        max-width: 100%;
         border-collapse: collapse;
       }
     }
