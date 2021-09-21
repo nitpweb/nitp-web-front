@@ -16,6 +16,7 @@ const Dephomepage = ({
   About,
   Mission,
   Labs,
+  Outcomes,
   Achievements,
   Activities,
   Vision,
@@ -140,6 +141,12 @@ const Dephomepage = ({
                   </div>
                 </div>
               </div>
+              {Outcomes && (
+                <div className="layoutrow" id="Outcomes">
+                  <div className="row">{Outcomes()}</div>
+                </div>
+              )}
+
               <div className="row imgcolstyle backgroundimage">
                 <img
                   data-aos="zoom-in"
