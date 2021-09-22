@@ -14,6 +14,7 @@ import {
   vision,
   Outcomes,
   contact,
+  timeTable,
   datalist,
 } from "../../components/departments/cse/csehome"
 const Cse = () => (
@@ -29,6 +30,7 @@ const Cse = () => (
       Vision={vision}
       Contact={contact}
       Labs={labs}
+      timeTable={timeTable}
       Achievements={achievements}
       Activities={activities}
       datalist={datalist}
