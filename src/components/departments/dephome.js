@@ -22,6 +22,7 @@ const Dephomepage = ({
   Vision,
   Contact,
   Extras,
+  TimeTable,
   datalist,
 }) => {
   const [notices, setnotices] = useState()
@@ -251,6 +252,17 @@ const Dephomepage = ({
               <div className="row imgcolstyle backgroundimage">
                 <img data-aos="zoom-in" src="/labs.svg" className="img-fluid" />
               </div>
+            </div>
+          )}
+            {view == "timetable" && (
+            <div className="layoutrow">
+              <div className="row rowmarl3 digital" style={{display:`flex`,flexDirection:`column`}}>
+                <h1 data-aos="zoom-in" style={{ fontSize: `2rem` }}>
+                  Time Table
+                </h1>
+                {TimeTable()}
+              </div>
+              
             </div>
           )}
         </>

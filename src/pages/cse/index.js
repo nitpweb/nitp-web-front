@@ -14,6 +14,7 @@ import {
   vision,
   Outcomes,
   contact,
+  timetable,
   datalist,
 } from "../../components/departments/cse/csehome"
 const Cse = () => (
@@ -31,6 +32,7 @@ const Cse = () => (
       Labs={labs}
       Achievements={achievements}
       Activities={activities}
+      TimeTable={timetable}
       datalist={datalist}
     />
   </Layout>
