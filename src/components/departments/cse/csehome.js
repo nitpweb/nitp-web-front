@@ -2,7 +2,13 @@ import React from "react"
 
 export const routeName = "cse"
 export const title = "Computer Science & Engineering"
-import { Achievements, Activities, Labs, Outcomes_,TimeTable } from "./cse-others-data"
+import {
+  Achievements,
+  Activities,
+  Labs,
+  Outcomes_,
+  TimeTable,
+} from "./cse-others-data"
 export const titleDescription = () => {
   return (
     <>
@@ -145,7 +151,6 @@ export const achievements = () => {
   )
 }
 
-
 export const activities = () => {
   return (
     <>
@@ -163,17 +168,30 @@ export const activities = () => {
 }
 
 export const timetable = () => {
-  console.log(TimeTable);
+  console.log(TimeTable)
   return (
     <>
-
-          {TimeTable.map((e, idx) => (
-            <>
-            <a href={e.link} key={idx} target="_blank" style={{ fontSize: `1.2rem`,textDecoration:`none`,borderBottom: `1px dotted`,width:`fit-content`}}>
-              {e.title}
-            </a><br/></>
-          ))}
-      
+      {TimeTable.map((e, idx) => (
+        <>
+          <a
+            href={e.link}
+            key={idx}
+            target="_blank"
+            style={{
+              fontSize: `1.2rem`,
+              textDecoration: `none`,
+              borderBottom: `1px dotted`,
+              width: `fit-content`,
+            }}
+          >
+            {e.title}
+          </a>
+          <br />
+        </>
+      ))}
+    </>
+  )
+}
 
 export const timeTable = () => {
   return (
@@ -198,7 +216,6 @@ export const timeTable = () => {
           </li>
         </ul>
       </div>
-
     </>
   )
 }
