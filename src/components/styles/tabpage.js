@@ -12,7 +12,7 @@ export const TabPage = styled.div`
   text-rendering: optimizeLegibility;
   background: ${props => props.theme.backgroundColor};
 
-  p {
+  p ,ul,span,b,li{
     color: ${props => props.theme.textColor};
     font-weight: 500;
     font-family: "Source Sans Pro";

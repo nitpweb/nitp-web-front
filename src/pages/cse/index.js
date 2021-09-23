@@ -30,6 +30,7 @@ const Cse = () => (
       Vision={vision}
       Contact={contact}
       Labs={labs}
+      timeTable={timeTable}
       Achievements={achievements}
       Activities={activities}
       TimeTable={timetable}

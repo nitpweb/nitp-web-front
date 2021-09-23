@@ -174,6 +174,31 @@ export const timetable = () => {
             </a><br/></>
           ))}
       
+
+export const timeTable = () => {
+  return (
+    <>
+      <div className="row rowmarl3">
+        <ul>
+          <li>
+            <a href="http://www.nitp.ac.in/uploads20/CSE_1stYearTimeTableFall2021_31_07_2021.pdf">
+              Click here for the time table of UG first year CSE batch
+            </a>
+          </li>
+          <li>
+            <a href="http://www.nitp.ac.in/uploads20/AllFirstYearSubjectsCSED_31_07_2021.pdf">
+              Click here for the time table of all the subjects offered by CSED
+              to first year students (both CSE and non-CSE)
+            </a>
+          </li>
+          <li>
+            <a href="https://goo.gl/it4A21">
+              Click here for the time table of other batches.
+            </a>
+          </li>
+        </ul>
+      </div>
+
     </>
   )
 }
@@ -212,6 +237,11 @@ export const datalist = [
   {
     title: "Activities",
     data: "activities",
+    img: "/department/activities.svg",
+  },
+  {
+    title: "Time Table",
+    data: "timeTable",
     img: "/department/activities.svg",
   },
   {

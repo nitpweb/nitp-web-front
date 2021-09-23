@@ -9,6 +9,7 @@ import Notice from "../home/notice"
 import { PageLayout } from "../styles/pagelayout"
 import { TabPage } from "../styles/tabpage"
 import Navigate from "../global/Navigate"
+
 const Dephomepage = ({
   routeName,
   title,
@@ -24,6 +25,7 @@ const Dephomepage = ({
   Extras,
   TimeTable,
   datalist,
+  timeTable,
 }) => {
   const [notices, setnotices] = useState()
   const [view, setView] = useState("about")
@@ -240,6 +242,20 @@ const Dephomepage = ({
                 />
               </div>
             </>
+          )}
+
+          {view == "timeTable" && (
+            <div className="layoutrow layoutrow1 others">
+              <div className="row rowmarl3">
+                <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
+                  Time Table
+                </h1>
+              </div>
+              {timeTable()}
+              <div className="row imgcolstyle backgroundimage">
+                <img data-aos="zoom-in" src="/labs.svg" className="img-fluid" />
+              </div>
+            </div>
           )}
           {view == "others" && (
             <div className="layoutrow layoutrow1 others">
