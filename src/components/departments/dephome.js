@@ -25,7 +25,6 @@ const Dephomepage = ({
   Extras,
   TimeTable,
   datalist,
-  timeTable,
 }) => {
   const [notices, setnotices] = useState()
   const [view, setView] = useState("about")
@@ -124,7 +123,7 @@ const Dephomepage = ({
 
           {view == "missionvision" && (
             <>
-              <div className="layoutrow" id="mission">
+              <div className="layoutrow" id="mission" style={{paddingBottom:`0`}}>
                 <div className="row">
                   <div className="row rowmarl3">
                     <h1>Mission</h1>
@@ -134,7 +133,7 @@ const Dephomepage = ({
                   </div>
                 </div>
               </div>
-              <div className="layoutrow" id="vision">
+              <div className="layoutrow" id="vision" style={{paddingBottom:`0`}}>
                 <div className="row">
                   <div className="row rowmarl3">
                     <h1>Vision</h1>
