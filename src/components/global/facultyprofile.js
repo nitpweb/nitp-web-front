@@ -474,7 +474,7 @@ const Facultyprofile = ({ url }) => {
                 <div className="fac-card" data-aos="fade-up">
                   <h3>Professional Services</h3>
                   {data.services.map(item => {
-                    return <li>{item.services}</li>
+                    return <><p><li>{item.services}</li></p></>
                   })}
                 </div>
               )}
@@ -562,11 +562,11 @@ const Facultyprofile = ({ url }) => {
                             <h4>Completion Year</h4>
                           </th>
                         </tr>
-                        {data.phdCandidates.map(item => {
+                        {data.phdCandidates.map((item,index) => {
                           return (
                             <tr>
                               <td>
-                                <p>{item.phd_student_name}</p>
+                                {index+1}{`)`} {item.phd_student_name}
                               </td>
                               <td>
                                 <p>{item.thesis_topic}</p>
