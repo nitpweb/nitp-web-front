@@ -41,7 +41,8 @@ const Webteam = () => {
               </div>{" "}
               <div className="row layoutrow">
                 <div className="row rowmarl3">
-                  <h2 data-aos="zoom-in-right">Student Volunteers</h2>
+                  <h2 data-aos="zoom-in-right" style={{width:`50%`,marginTop:`0`}}>Student Volunteers</h2>
+                  <Link to="/volunteers" style={{ textDecorationLine: `none`, color: `tomato` }}><h3 style={{ padding: `0.25rem 0`, borderBottom: `2px red dotted`, width: `fit-content`,margin:`0` }}>Previous Student Volunteers</h3></Link>
                 </div>
                 {webteam &&
                   webteam.slice(4).map(member => {
@@ -128,9 +129,7 @@ const Webteam = () => {
               </div>
             </div>
           </div>
-          <div style={{display:`flex`,justifyContent:`center`,width:`100%`}}>
-          <Link to="/volunteers" style={{textDecorationLine:`none`,color:`tomato`}}><h3 style={{padding:`0.25rem 0`,borderBottom:`2px red dotted`,width:`fit-content`}}>Previous Student Volunteers</h3></Link>
-          </div>
+
         </PageLayout>
       </Layout>
     </>
