@@ -105,7 +105,8 @@ const Facultyprofile = ({ url }) => {
                       </tr> */}
                       {data.subjects.map(item => {
                         return (
-                          <p>{item.code}{" "}{item.name}{" "}{item.start}{" "}{new Date(item.end).getFullYear()}</p>
+                          <p>{item.code}{" "}{item.name}{" "}{item.start}{" "}{item.end}</p>
+                          // <p>{item.code}{" "}{item.name}{" "}{item.start}{" "}{new Date(item.end).getFullYear()}</p>
                           // <tr>
                           //   <td>
                           //     <p>{item.code}</p>
@@ -148,9 +149,10 @@ const Facultyprofile = ({ url }) => {
                       </tr> */}
                       {data.memberships.map(item => {
                         return (
-                          <p>{item.membership_id}{" "}{item.membership_society}{" "}{` [${new Date(item.start).getMonth() + 1} -
-                          ${new Date(item.start).getFullYear()} / ${new Date(item.end).getMonth() + 1} -
-                          ${new Date(item.end).getFullYear()}]`}</p>
+                          <p>{item.membership_id}{" "}{item.membership_society}{" "}{` [${item.start} | ${item.end}] `}</p>
+                          // <p>{item.membership_id}{" "}{item.membership_society}{" "}{` [${new Date(item.start).getMonth() + 1} -
+                          // ${new Date(item.start).getFullYear()} / ${new Date(item.end).getMonth() + 1} -
+                          // ${new Date(item.end).getFullYear()}]`}</p>
                           // <tr>
                           //   <td>
                           //     <p>{item.membership_id}</p>
@@ -357,7 +359,8 @@ const Facultyprofile = ({ url }) => {
                       </tr> */}
                       {data.currResponsibility.map(item => {
                         return (
-                          <p>{item.curr_responsibility}{" "}[{new Date(item.start).getMonth() + 1}-{" "}{new Date(item.start).getFullYear()}]</p>
+                          <p>{item.curr_responsibility}{" "}[{item.start}{item.start?" | ":""}{item.start}]</p>
+                          // <p>{item.curr_responsibility}{" "}[{new Date(item.start).getMonth() + 1}-{" "}{new Date(item.start).getFullYear()}]</p>
                           // <tr>
                           //   <td>
                           //     <p>{item.curr_responsibility}</p>
@@ -394,9 +397,10 @@ const Facultyprofile = ({ url }) => {
                       </tr> */}
                       {data.pastResponsibility.map(item => {
                         return (
-                          <p>{item.past_responsibility}{" "}[{new Date(item.start).getMonth() + 1} -{" "}
-                                {new Date(item.start).getFullYear()} / {new Date(item.end).getMonth() + 1}-{" "}
-                                {new Date(item.end).getFullYear()}]</p>
+                          <p>{item.past_responsibility}{" "}[{item.start} {item.start?"|":""} {item.end}]</p>
+                          // <p>{item.past_responsibility}{" "}[{new Date(item.start).getMonth() + 1} -{" "}
+                          //       {new Date(item.start).getFullYear()} / {new Date(item.end).getMonth() + 1}-{" "}
+                          //       {new Date(item.end).getFullYear()}]</p>
                           // <tr> 
                           //    <td>
                           //     <p>{item.past_responsibility}</p>
@@ -442,7 +446,8 @@ const Facultyprofile = ({ url }) => {
                       </tr> */}
                       {data.workExperience.map(item => {
                         return (
-                          <p>{item.work_experiences}{" "}{item.institute}{" "}[{new Date(item.start).getMonth() + 1} -{" "}{new Date(item.start).getFullYear()} / {new Date(item.end).getMonth() + 1} -{" "}{new Date(item.end).getFullYear()}]</p>
+                          <p>{item.work_experiences}{" "}{item.institute}{" "}[{item.start} {item.start?"|":""} {item.end}]</p>
+                          // <p>{item.work_experiences}{" "}{item.institute}{" "}[{new Date(item.start).getMonth() + 1} -{" "}{new Date(item.start).getFullYear()} / {new Date(item.end).getMonth() + 1} -{" "}{new Date(item.end).getFullYear()}]</p>
                           // <tr>
                           //   <td>
                           //     <p>{item.work_experiences}</p>
@@ -511,7 +516,8 @@ const Facultyprofile = ({ url }) => {
                       </tr> */}
                       {data.projects.map(item => {
                         return (
-                          <p>{item.project}{" "}{item.sponsor}{" "}{item.amount}{" "}[{new Date(item.start).getMonth() + 1} -{" "}{new Date(item.start).getFullYear()} / {new Date(item.end).getMonth() + 1} -{" "}{new Date(item.end).getFullYear()}]</p>
+                          <p>{item.project}{" "}{item.sponsor}{" "}{item.amount}{" "}[{item.start} {item.start?"|":""} {item.end}]</p>
+                          // <p>{item.project}{" "}{item.sponsor}{" "}{item.amount}{" "}[{new Date(item.start).getMonth() + 1} -{" "}{new Date(item.start).getFullYear()} / {new Date(item.end).getMonth() + 1} -{" "}{new Date(item.end).getFullYear()}]</p>
                           // <tr>
                           //   <td>
                           //     <p>{item.project}</p>
