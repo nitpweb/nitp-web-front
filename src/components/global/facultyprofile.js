@@ -149,7 +149,7 @@ const Facultyprofile = ({ url }) => {
                       </tr> */}
                       {data.memberships.map(item => {
                         return (
-                          <p>{item.membership_id}{" "}{item.membership_society}{" "}{` [${item.start} | ${item.end} `}</p>
+                          <p>{item.membership_id}{" "}{item.membership_society}{" "}{` [${item.start} | ${item.end}] `}</p>
                           // <p>{item.membership_id}{" "}{item.membership_society}{" "}{` [${new Date(item.start).getMonth() + 1} -
                           // ${new Date(item.start).getFullYear()} / ${new Date(item.end).getMonth() + 1} -
                           // ${new Date(item.end).getFullYear()}]`}</p>
@@ -359,7 +359,7 @@ const Facultyprofile = ({ url }) => {
                       </tr> */}
                       {data.currResponsibility.map(item => {
                         return (
-                          <p>{item.curr_responsibility}{" "}[{item.start}{item.start?"|":""}{item.start}]</p>
+                          <p>{item.curr_responsibility}{" "}[{item.start}{item.start?" | ":""}{item.start}]</p>
                           // <p>{item.curr_responsibility}{" "}[{new Date(item.start).getMonth() + 1}-{" "}{new Date(item.start).getFullYear()}]</p>
                           // <tr>
                           //   <td>
