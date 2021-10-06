@@ -149,7 +149,7 @@ const Facultyprofile = ({ url }) => {
                       </tr> */}
                       {data.memberships.map(item => {
                         return (
-                          <p>{item.membership_id}{" "}{item.membership_society}{" "}{item.start!=null | item.end!=null?` [ ${item.start?item.start:""} ${item.start & item.end?" | ":""} ${item.end?item.end:""} ] `:""}</p>
+                          <p>{item.membership_id}{" "}{item.membership_society}{" "}{item.start!=null | item.end!=null?` [ ${item.start?item.start:""} ${item.start!=null & item.end!=null?" | ":""} ${item.end?item.end:""} ] `:""}</p>
                           // <p>{item.membership_id}{" "}{item.membership_society}{" "}{` [${new Date(item.start).getMonth() + 1} -
                           // ${new Date(item.start).getFullYear()} / ${new Date(item.end).getMonth() + 1} -
                           // ${new Date(item.end).getFullYear()}]`}</p>
