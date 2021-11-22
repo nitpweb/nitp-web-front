@@ -3,66 +3,51 @@ import styled from "styled-components"
 export const Gallery = styled.div`
   margin-left: 8vw;
   margin-right: 5vw;
-  display: flex;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: 1em;
+  row-gap: 1em;
+  * {
+    box-sizing: border-box;
+  }
 
   height: 400px;
 
-  .first-div {
-    width: 30%;
-    margin: 15px;
+  div.gallery-image:nth-child(1) {
+    grid-column: 1/4;
+    grid-row: 1/5;
   }
 
-  .second-div,
-  .third-div,
-  .fourth-div {
-    width: 20%;
-    margin: 15px 0;
-    display: flex;
-    flex-direction: column;
-  }
-  .second-div,
-  .third-div {
-    margin-right: 15px;
+  div.gallery-image:nth-child(2) {
+    grid-column: 4/6;
+    grid-row: 1/3;
   }
 
-  .second-div,
-  .third-div,
-  .fourth-div {
-    .first-child-div {
-      margin-bottom: 15px;
-    }
-    .first-child-div,
-    .second-child-div {
-      height: 50%;
-    }
-  }
-  .fourth-div .first-child-div {
-    display: flex;
-    flex-direction: column;
-    .short-row-1,
-    .short-row-2 {
-      height: 50%;
-      display: flex;
-    }
-    .short-row-1 {
-      margin-bottom: 15px;
-    }
-    .first,
-    .second,
-    .third,
-    .fourth {
-      height: 100%;
-      width: 50%;
-    }
-    .first,
-    .third {
-      margin-right: 15px;
-    }
+  div.gallery-image:nth-child(3) {
+    grid-column: 4/6;
+    grid-row: 3/5;
   }
 
-  .fifth-div {
-    width: 10%;
-    margin: 15px;
+  div.gallery-image:nth-child(4) {
+    grid-column: 6/8;
+    grid-row: 1/3;
+  }
+
+  div.gallery-image:nth-child(5) {
+    grid-column: 6/8;
+    grid-row: 3/5;
+  }
+
+  div.gallery-image:nth-child(11) {
+    grid-column: 8/10;
+    grid-row: 3/5;
+  }
+
+  div.gallery-image:nth-child(8) {
+    grid-row: 1/5;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -85,11 +70,80 @@ export const Gallery = styled.div`
   }
 
   .tempimg {
-    display: flex;
     width: 100%;
     height: 100%;
   }
+
   @media only screen and (max-width: 768px) {
+    height: 280px;
+    grid-template-columns: repeat(9, 1fr);
+
+    /* Inline #3 | http://localhost:8000/#news */
+
+    .bftgfp div.gallery-image:nth-child(11) {
+      display: none;
+    }
+
+    div.gallery-image:nth-child(6) {
+      display: none;
+    }
+
+    div.gallery-image:nth-child(7) {
+      display: none;
+    }
+
+    div.gallery-image:nth-child(9) {
+      display: none;
+    }
+
+    div.gallery-image:nth-child(10) {
+      display: none;
+    }
+
+    div.gallery-image:nth-child(11) {
+      display: none;
+    }
+
+    div.gallery-image:nth-child(8) {
+      grid-column: 8/10;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    div.gallery-image:nth-child(4) {
+      display: none;
+    }
+
+    div.gallery-image:nth-child(5) {
+      display: none;
+    }
+
+    height: 500px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
+    div.gallery-image:nth-child(8) {
+      grid-row: 6/8;
+      grid-column: 1/5;
+    }
+
+    div.gallery-image:nth-child(1) {
+      grid-column: 1/5;
+      grid-row: 1/4;
+    }
+
+    div.gallery-image:nth-child(2) {
+      grid-column: 1/3;
+      grid-row: 4/6;
+    }
+
+    div.gallery-image:nth-child(3) {
+      grid-column: 3/5;
+      grid-row: 4/6;
+    }
+  }
+
+  /* @media only screen and (max-width: 768px) {
     height: 250px;
   }
   @media only screen and (max-width: 426px) {
@@ -123,7 +177,7 @@ export const Gallery = styled.div`
       margin-top: 0;
       height: 100px;
     }
-  }
+  } */
 `
 
 // export const MainGallery = styled.div`

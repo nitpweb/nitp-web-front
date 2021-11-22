@@ -23,9 +23,9 @@ const GalleryComp = () => {
     return (
       <div data-aos="zoom-in" className="tempimg">
         <Img
-          style={{ width: `100%`, height: `100%` }}
           fluid={data.images.nodes[props.index].childImageSharp.fluid}
-          imgStyle={{ width: `100%`, height: `100%`, objectFit: "fill" }}
+          style={{ height: "100%", width: "100%" }}
+          imgStyle={{ objectFit: "fill" }}
         />
       </div>
     )
@@ -37,7 +37,44 @@ const GalleryComp = () => {
         Gallery
       </div>
       <Gallery>
-        <div className="first-div">
+        <div className="gallery-image">
+          <Image index="0" />
+        </div>
+        <div className="gallery-image">
+          <Image index="1" />
+        </div>
+        <div className="gallery-image">
+          <Image index="2" />
+        </div>
+        <div className="gallery-image">
+          <Image index="3" />
+        </div>
+        <div className="gallery-image">
+          <Image index="4" />
+        </div>
+        <div className="gallery-image">
+          <Image index="5" />
+        </div>
+        <div className="gallery-image">
+          <Image index="6" />
+        </div>
+        <div className="gallery-image">
+          <Image index="7" />
+          <Link to="/gallery">
+            <p>See More</p>
+          </Link>
+        </div>
+        <div className="gallery-image">
+          <Image index="8" />
+        </div>
+        <div className="gallery-image">
+          <Image index="9" />
+        </div>
+        <div className="gallery-image">
+          <Image index="10" />
+        </div>
+
+        {/* <div className="first-div">
           <Image index="0" />
         </div>
         <div className="second-div">
@@ -48,14 +85,14 @@ const GalleryComp = () => {
             <Image index="2" />
           </div>
         </div>
-        <div className="third-div">
+        < className="third-div">
           <div className="first-child-div">
             <Image index="3" />
           </div>
           <div className="second-child-div">
             <Image index="4" />
           </div>
-        </div>{" "}
+        
         <div className="fourth-div">
           <div className="first-child-div">
             <div className="short-row-1">
@@ -84,7 +121,7 @@ const GalleryComp = () => {
           <Link to="/gallery">
             <p>See More</p>
           </Link>
-        </div>
+        </div> */}
       </Gallery>
     </div>
   )
