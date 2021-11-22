@@ -7,14 +7,14 @@ export const Gallery = styled.div`
   margin-bottom: 5vw;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 100px);
   column-gap: 1em;
   row-gap: 1em;
   * {
     box-sizing: border-box;
   }
 
-  height: 400px;
+  height: 100%;
 
   div.gallery-image:nth-child(1) {
     grid-column: 1/4;
@@ -75,8 +75,8 @@ export const Gallery = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    height: 280px;
     grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(4, 70px);
 
     /* Inline #3 | http://localhost:8000/#news */
 
