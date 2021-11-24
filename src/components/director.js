@@ -97,7 +97,7 @@ const Directorpage = () => {
                 </div>
               </div>
             ) : null}
-            <h1>What He Says?</h1>
+            <h1>Director's Message</h1>
             <div className="fac-card" data-aos="">
               <p id="dir" style={{ textAlign: `justify` }}>
                 It is my pleasure to introduce one of the oldest Technological
