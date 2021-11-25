@@ -82,7 +82,7 @@ const Home = () => {
               view all
             </Link>
           </div>
-          <div className="notice-row" data-aos="fade-up">
+          <div className="notice-row" >
             {notices &&
               notices.map(notice => {
                 if (notice.title != "") {
@@ -115,7 +115,7 @@ const Home = () => {
               view all
             </Link>
           </div>
-          <div className="event-row" data-aos="fade-up">
+          <div className="event-row">
             {events &&
               events.map(event => {
                 const date = new Date(event.openDate)
