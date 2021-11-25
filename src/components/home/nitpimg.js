@@ -7,7 +7,7 @@ import Slider from "../Slider/Slider"
 export const Nitpbackimg = () => {
   const data = useStaticQuery(graphql`
     query {
-      nitpBackImages: allFile(m
+      nitpBackImages: allFile(
         filter: {
           relativePath: {
             in: ["home/img/bg-2.jpg", "home/img/bg-3.jpg", "home/img/sac.jpeg","home/img/bg-5.jpeg","home/img/bg-6.JPG"]
