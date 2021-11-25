@@ -29,9 +29,14 @@ const Directorpage = () => {
             className="row rowmarl3"
             style={{ display: "block", width: `100%` }}
           >
-            <h1 style={{marginTop:`0`,textAlign:`center`}}>Our Director</h1>
+            <h1 style={{ marginTop: `0`, textAlign: `center` }}>
+              Our Director
+            </h1>
           </div>
-          <div className="faculty-img-row" style={{ position: `absolute`,left:`15%`}}>
+          <div
+            className="faculty-img-row"
+            style={{ position: `absolute`, left: `15%` }}
+          >
             <div className="faculty-img-wrap">
               <img
                 src={
@@ -97,6 +102,39 @@ const Directorpage = () => {
                 </div>
               </div>
             ) : null}
+            <h1>About</h1>
+            <div className="fac-card" data-aos="">
+              <p id="dir" style={{ textAlign: "justify" }}>
+                Prof. Pradip K. Jain has joined as a Lecturer of Electronics
+                Engineering at Institute of Technology, Banaras Hindu University
+                in 1981, and became Professor in the Year 2001. He has made
+                significant contribution in the areas of analysis, modeling and
+                development of high power microwave tubes and gyrotron devices.
+                Currently, He is Director of National Institute of Technology,
+                Patna. He also served as Dean, Research and Development of
+                Indian Institute of Technology (BHU), Varanasi, Coordinator of
+                the Centre of Research in Microwave Tubes, Coordinator, Center
+                of Advanced Study, and Head of Department of Electronics
+                Engineering, IIT (BHU) besides acting as Chairman of the various
+                Institute level committees over the years. Prof. Jain is
+                actively and extensively engaged in collaborative research and
+                development activities with other national laboratories in this
+                area, like, CEERI (CSIR, Pilani), Various DRDO Laboratories, IPR
+                (DAE, Gandhinagar) and successfully executed a number of
+                sponsored research projects. His current research interests
+                include high power microwave devices and circuits. Prof. Jain
+                was a Visiting Scientist at Massachusetts Institute of
+                Technology, Cambridge, US and at the Pennsylvania State
+                University, US in the years 2008 and 2007, respectively. He has
+                so far guided 20 doctoral theses, published more than 100
+                research papers in SCI journals and 200 in the conference
+                proceedings beside a patent and authoring six book/monograph
+                chapters. Dr. Jain is a senior member of IEEE, fellow of
+                Institution of Electronics and Telecommunications Engineers of
+                India, Fellow of Institution of Engineers of India and also a
+                fellow of Vacuum Electron Devices and Application Society.
+              </p>
+            </div>
             <h1>Director's Message</h1>
             <div className="fac-card" data-aos="">
               <p id="dir" style={{ textAlign: `justify` }}>
