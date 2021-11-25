@@ -7,7 +7,7 @@ export const ImportantLinkStyle = styled.div`
   flex-direction: column;
   text-rendering: optimizeLegibility;
   max-width: 100%;
-  margin-top: -8vw;
+  margin-top: -3vw;
   margin-bottom: 1vh;
   .link-col {
     position: relative;
@@ -20,7 +20,7 @@ export const ImportantLinkStyle = styled.div`
 
       .implink {
         width: 13vw;
-        height: 10vw;
+        height: 7vw;
         background: ${props => props.theme.backgroundSecColor};
         /* border-radius:5px; */
         /* margin-left: 1vw; */
@@ -34,9 +34,9 @@ export const ImportantLinkStyle = styled.div`
         overflow: hidden;
         /* filter: grayscale(100%); */
         .linkimg {
-          margin-top: 10%;
-          width: 25%;
-          max-width: 70%;
+          margin-top: 5%;
+          width: 20%;
+          max-width:70%;
         }
         .lead {
           max-width: 95%;
@@ -53,11 +53,12 @@ export const ImportantLinkStyle = styled.div`
           }
         }
         h3 {
-          font-size: 1.2vmax;
+          font-size: 1.4vmax;
           color: ${props => props.theme.primaryColor};
           font-family: Source Sans Pro;
           font-weight: bold;
-          margin: 0px;
+          line-height: 0;
+          /* margin: 0px; */
         }
       }
     }
