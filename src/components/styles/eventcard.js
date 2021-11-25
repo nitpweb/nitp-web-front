@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const EventCardStyle = styled.div`
   width: 100%;
   padding: 5px 15px 5px 15px;
-  background: ${props => props.theme.backgroundSecColor};
+  background: ${props => props.theme.backgroundTerColor};
   border-radius: 5px;
   margin-top: 10px;
   display: flex;
@@ -50,6 +50,7 @@ export const EventCardStyle = styled.div`
   .eventcarddetailsection {
     width: calc(100% - 77px);
     flex-direction: column;
+
     .eventcarddetail {
       margin-left: 5%;
       font-size: 16px;

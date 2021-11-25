@@ -4,11 +4,10 @@ export const NoticeStyle = styled.div`
   width: 100%;
   height: fit-content;
   padding: 5px 15px 5px 15px;
-  background: ${props => props.theme.backgroundSecColor};
+  background: ${props => props.theme.backgroundTerColor};
   margin-top: 10px;
-
   .noticecarddetail {
-    font-size: 16px;
+    font-size: 18px;
     font-family: "Source Sans Pro";
     a {
       text-decoration: none;
@@ -38,7 +37,7 @@ export const NoticeStyle = styled.div`
         bottom: 0;
         margin-bottom: 5px;
         color: ${props => props.theme.primaryColor};
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 600;
         text-align: right;
         font-family: "Source Sans Pro";

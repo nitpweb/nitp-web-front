@@ -32,7 +32,7 @@ export const NewsCardStyle = styled.div`
     background: ${props => props.theme.primaryColor};
     border-radius: 3px;
     color: white;
-    font-size: 0.8em;
+    font-size: 1em;
     display: flex;
     justify-content: center;
     align-items: center;

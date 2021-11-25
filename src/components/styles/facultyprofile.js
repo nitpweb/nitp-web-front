@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const FacultyProfile = styled.div`
   font-family: "Source Sans Pro";
-  padding:4rem 0;
+  padding: 4rem 0;
   display: flex;
   height: max-content;
   color: ${props => props.theme.textColor};
@@ -12,7 +12,7 @@ export const FacultyProfile = styled.div`
     margin-top: 3vh;
     position: fixed;
     left: 2%;
-    justify-content: center; 
+    justify-content: center;
     text-align: center;
     .facmail {
       position: absolute;
@@ -42,7 +42,7 @@ export const FacultyProfile = styled.div`
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    h1{
+    h1 {
       padding-left: 5%;
     }
     #dir {
@@ -53,8 +53,8 @@ export const FacultyProfile = styled.div`
     }
     .fac-card {
       width: 90%;
-      margin-top: 3vh;
-      margin-bottom: 3vh;
+      margin-top: 1vh;
+      margin-bottom: 1vh;
       background: ${props => props.theme.backgroundSecColor};
       box-shadow: 0px 0px 18px rgba(156, 156, 156, 0.38);
       border-radius: 5px;
@@ -64,10 +64,11 @@ export const FacultyProfile = styled.div`
       list-style: disc;
       h3 {
         color: ${props => props.theme.textColor};
+        font-size: ${props => props.theme.font * 1.2}rem;
       }
       p {
         max-width: 95%;
-        font-size: ${props => parseInt(props.theme.font * 1)}rem;
+        font-size: ${props => props.theme.font * 1.1}rem;
       }
       .factable {
         overflow: hidden;
@@ -110,7 +111,7 @@ export const FacultyProfile = styled.div`
     justify-content: space-evenly;
     .faculty-img-row {
       position: relative !important;
-      left:0 !important;
+      left: 0 !important;
     }
     .faculty-details-row {
       width: 90%;
