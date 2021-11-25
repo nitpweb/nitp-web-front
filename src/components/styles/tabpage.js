@@ -12,10 +12,15 @@ export const TabPage = styled.div`
   text-rendering: optimizeLegibility;
   background: ${props => props.theme.backgroundColor};
 
-  p ,ul,span,b,li{
+  p,
+  ul,
+  span,
+  b,
+  li {
     color: ${props => props.theme.textColor};
     font-weight: 500;
     font-family: "Source Sans Pro";
+    font-size: ${props => props.theme.font * 1.3}rem;
   }
   h1 {
     color: ${props => props.theme.primaryColor};
@@ -73,6 +78,7 @@ export const TabPage = styled.div`
         width: max-content !important;
         font-family: "Source Sans Pro";
         border: 1px solid ${props => props.theme.primaryColor};
+        font-size: ${props => props.theme.font * 1.1}rem;
         &:focus {
           background-color: white;
           color: ${props => props.theme.primaryColor};
@@ -87,13 +93,14 @@ export const TabPage = styled.div`
       h3 {
         color: ${props => props.theme.primaryColor} !important;
         font-size: ${props => props.theme.font * 1.2}rem;
+        line-height: 0%;
       }
       a {
         color: ${props => props.theme.textColor};
-        font-size: ${props => props.theme.font * 1}rem;
+        font-size: ${props => props.theme.font * 1.2}rem;
       }
       p {
-        font-size: ${props => props.theme.font * 1}rem;
+        font-size: ${props => props.theme.font * 1.2}rem;
       }
       #formatdown {
         color: ${props => props.theme.primaryColor};
@@ -110,7 +117,7 @@ export const TabPage = styled.div`
           h2 {
             p {
               color: ${props => props.theme.textColor};
-              font-size: ${props => parseInt(props.theme.font * 1)}rem;
+              font-size: ${props => parseInt(props.theme.font * 1.3)}rem;
               font-weight: 500;
             }
           }
@@ -151,7 +158,7 @@ export const TabPage = styled.div`
             scrollbar-width: none;
             div {
               p {
-                font-size: ${props => parseInt(props.theme.font * 1)}rem;
+                font-size: ${props => parseInt(props.theme.font * 1.3)}rem;
               }
             }
           }
@@ -204,10 +211,11 @@ export const TabPage = styled.div`
 
         h1 {
           color: ${props => props.theme.primaryColor};
+          line-height: 0%;
         }
         p {
           color: ${props => props.theme.textColor};
-          font-size: ${props => props.theme.font * 1}rem;
+          font-size: ${props => props.theme.font * 1.3}rem;
           font-weight: 500;
         }
       }
@@ -230,7 +238,7 @@ export const TabPage = styled.div`
   @media (max-width: 768px) {
     margin-top: 5.2rem;
     position: relative;
-    .new{
+    .new {
       margin-top: 0rem !important;
     }
     .mainDiv {
@@ -238,7 +246,7 @@ export const TabPage = styled.div`
       margin-top: 2.2rem;
       overflow: scroll;
       justify-content: flex-start;
-      .digital{
+      .digital {
         width: 80vw;
         overflow-x: hidden;
       }
@@ -255,7 +263,7 @@ export const TabPage = styled.div`
         font-size: ${props => props.theme.font * 1.8}rem;
       }
       .layoutrow > .col-6 > div > p {
-        font-size: ${props => props.theme.font * 1}rem;
+        font-size: ${props => props.theme.font * 1.3}rem;
       }
     }
   }

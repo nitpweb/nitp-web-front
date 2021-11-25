@@ -79,9 +79,9 @@ const Dephomepage = ({
                   </div>
                 </div>
               </div>
-              <div className="row imgcolstyle backgroundimage">
+              {/* <div className="row imgcolstyle backgroundimage">
                 <img data-aos="zoom-in" src="/bulb.svg" className="img-fluid" />
-              </div>
+              </div> */}
             </>
           )}
           {view == "happening" && (
@@ -115,9 +115,9 @@ const Dephomepage = ({
                     })}
                 </div>
               </div>{" "}
-              <div className="row imgcolstyle backgroundimage">
+              {/* <div className="row imgcolstyle backgroundimage">
                 <img data-aos="zoom-in" src={pc} className="img-fluid" />
-              </div>
+              </div> */}
             </>
           )}
 
@@ -149,13 +149,13 @@ const Dephomepage = ({
                 </div>
               )}
 
-              <div className="row imgcolstyle backgroundimage">
+              {/* <div className="row imgcolstyle backgroundimage">
                 <img
                   data-aos="zoom-in"
                   src="/mission.svg"
                   className="img-fluid"
                 />
-              </div>
+              </div> */}
             </>
           )}
           {view == "contact" && (
@@ -174,9 +174,9 @@ const Dephomepage = ({
                   </div>
                 </div>
               </div>
-              <div className="row imgcolstyle backgroundimage">
+              {/* <div className="row imgcolstyle backgroundimage">
                 <img data-aos="zoom-in" src={map} className="img-fluid" />
-              </div>
+              </div> */}
             </>
           )}
 
@@ -193,9 +193,9 @@ const Dephomepage = ({
                 </div>
                 {Labs()}{" "}
               </div>{" "}
-              <div className="row imgcolstyle backgroundimage">
+              {/* <div className="row imgcolstyle backgroundimage">
                 <img data-aos="zoom-in" src="/labs.svg" className="img-fluid" />
-              </div>
+              </div> */}
             </>
           )}
           {view == "achievements" && (
@@ -211,13 +211,13 @@ const Dephomepage = ({
                 </div>
                 {Achievements()}
               </div>
-              <div className="row imgcolstyle backgroundimage">
+              {/* <div className="row imgcolstyle backgroundimage">
                 <img
                   data-aos="zoom-in"
                   src="/achievements.svg"
                   className="img-fluid"
                 />
-              </div>
+              </div> */}
             </>
           )}
           {view == "activities" && (
@@ -233,13 +233,13 @@ const Dephomepage = ({
                 </div>
                 {Activities()}{" "}
               </div>{" "}
-              <div className="row imgcolstyle backgroundimage">
+              {/* <div className="row imgcolstyle backgroundimage">
                 <img
                   data-aos="zoom-in"
                   src="/activities.svg"
                   className="img-fluid"
                 />
-              </div>
+              </div> */}
             </>
           )}
           {view == "others" && (
@@ -250,9 +250,9 @@ const Dephomepage = ({
                 </h1>
               </div>
               {Extras()}
-              <div className="row imgcolstyle backgroundimage">
+              {/* <div className="row imgcolstyle backgroundimage">
                 <img data-aos="zoom-in" src="/labs.svg" className="img-fluid" />
-              </div>
+              </div> */}
             </div>
           )}
             {view == "timetable" && (

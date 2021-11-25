@@ -72,7 +72,7 @@ const Academicspage = () => {
                               href={item.link}
                               target="_blank"
                               rel="noopener noreferrer"
-                              style={{ textDecoration: `none`, padding: `5px` }}
+                              style={{ textDecoration: `none` }}
                             >
                               <li>{item.para}</li>
                             </a>
@@ -492,10 +492,9 @@ const Academicspage = () => {
                 <div className="row rowmarl3">
                   <h1>Formats</h1>
                 </div>
-
-                {acadData.format.map(item =>
-                  item.data.map(e => (
-                    <div className="row rowmarl3 digital">
+                <div className="row rowmarl3 digital">
+                  {acadData.format.map(item =>
+                    item.data.map(e => (
                       <p>
                         <a
                           id="formatdown"
@@ -512,9 +511,9 @@ const Academicspage = () => {
                         </a>{" "}
                         {e.para}
                       </p>
-                    </div>
-                  ))
-                )}
+                    ))
+                  )}{" "}
+                </div>
 
                 <div className="row imgcolstyle backgroundimage">
                   <img src="/paper.svg" className="img-fluid" loading="lazy" />
