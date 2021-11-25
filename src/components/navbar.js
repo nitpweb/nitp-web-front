@@ -215,14 +215,14 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           <div className="nav-link-item" activeClassName="nav-link-item-active">
             <Dropnew
               to="/students"
-              title="For Students"
+              title="Students"
               list={Navlist.students}
             />
           </div>
           <div className="nav-link-item" activeClassName="nav-link-item-active">
             <Dropnew
               to="/"
-              title="For Faculty & Staff"
+              title="Faculty & Staff"
               list={Navlist.faculty}
             />
           </div>
@@ -549,7 +549,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
               <div className="navsideicondiv">
                 <img src={studenticon} alt="" />
               </div>
-              <p>For Students</p>
+              <p>Students</p>
             </div>
             <div id="studsidedropwrap">
               <div className="departsidedrop">
@@ -594,7 +594,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
               <div className="navsideicondiv">
                 <img src={studenticon} alt="" />
               </div>
-              <p>For Faculty &amp; Staff</p>
+              <p>Faculty &amp; Staff</p>
             </div>
             <div id="facultysidedropwrap">
               <div className="departsidedrop">
@@ -891,7 +891,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             <div className="navsideicondiv">
               <img src={studenticon} alt="" />
             </div>
-            <p>For Students</p>
+            <p>Students</p>
           </div>
           <div id="studsidedropwrap">
             <div className="departsidedrop">
@@ -936,7 +936,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             <div className="navsideicondiv">
               <img src={studenticon} alt="" />
             </div>
-            <p>For Faculty &amp; Staff</p>
+            <p>Faculty &amp; Staff</p>
           </div>
           <div id="facultysidedropwrap">
             <div className="departsidedrop">
