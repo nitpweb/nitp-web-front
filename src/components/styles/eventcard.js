@@ -53,7 +53,7 @@ export const EventCardStyle = styled.div`
 
     .eventcarddetail {
       margin-left: 5%;
-      font-size: 18px;
+      font-size: 20px;
       font-family: "Source Sans Pro";
       color: ${props => props.theme.textColor};
       a {
@@ -97,7 +97,7 @@ export const EventCardStyle = styled.div`
     width: auto;
     .eventcarddetailsection {
       .eventcarddetail {
-        font-size: 14px;
+        font-size: 16px;
         margin-right: 5%;
         width: 75%;
         text-align: justify;
@@ -110,7 +110,7 @@ export const EventCardStyle = styled.div`
       padding-right: 5%;
       div {
         .efp {
-          font-size: 12px;
+          font-size: 14px;
         }
       }
     }

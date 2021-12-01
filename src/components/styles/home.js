@@ -4,7 +4,7 @@ export const HomeStyle = styled.div`
   background-color: ${props => props.theme.backgroundColor};
   .nitpbackimg {
     width: 100%;
-    max-height: 65vw;
+    max-height: 70vw;
   }
   .tablinkcover {
     display: none;
@@ -30,10 +30,10 @@ export const HomeStyle = styled.div`
 
   .bgimgwrap {
     overflow: hidden;
-    width: 90%;
-    max-height: 65vh;
+    width: 100%;
+    max-height: 85vh;
     position: relative;
-    margin-left: 5%;
+    /* margin-left: 5%; */
   }
   #notice-event {
     display: flex;
@@ -46,7 +46,7 @@ export const HomeStyle = styled.div`
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 40vw;
+    width: 45vw;
     height: 500px;
     z-index: 1;
     display: flex;
@@ -65,7 +65,7 @@ export const HomeStyle = styled.div`
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 40vw;
+    width: 45vw;
     height: 500px;
     z-index: 1;
     border-radius: 3px;
