@@ -69,7 +69,7 @@ const Webteam = () => {
                 </div>
                 <div className="row">
                   {webteam &&
-                    webteam.slice(0, 2).map(member => {
+                    webteam.slice(0, 1).map(member => {
                       return (
                         <Webcard
                           name={member.name}
