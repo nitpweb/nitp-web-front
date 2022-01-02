@@ -1,24 +1,24 @@
 import styled from "styled-components"
 
 export const FacultyCard = styled.div`
-width: 320px;
-  height: 380px;
+  width: 250px;
+  height: 280px;
   margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   background: ${props => props.theme.backgroundSecColor};
   box-shadow: 0 0 21px rgba(0, 0, 0, 0.25);
   .faculty1 {
-    width: 320px;
-    height: 380px;
+    width: 250px;
+    height: 280px;
     position: absolute;
     z-index: 1;
     display: flex;
     align-items: center;
   }
   .faculty2 {
-    width: 320px;
-    height: 380px;
+    width: 250px;
+    height: 280px;
     background: linear-gradient(
       180deg,
       ${props => props.theme.backgroundColor} 0%,
@@ -70,10 +70,10 @@ width: 320px;
     height: auto;
   }
   }
- h2{
+ h3{
    color:${props => props.theme.primaryTextColor}
  }
-  h3 {
+  h4 {
     color: ${props => props.theme.textColor};
     /* line-height: 0.1; */
     text-align: center;

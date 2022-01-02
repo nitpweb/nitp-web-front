@@ -85,10 +85,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
     <NavbarStyle>
       <div className="nav-head-row">
         <div className="col-6 start" style={{ fontSize: `14px` }}>
-          <span>
-            <Link to="/tenders">Tenders</Link>
-            {` | `}
-          </span>
+          
           <span style={{ marginLeft: `8px` }}>
             <Link to="/jobsnitp">Jobs@NITP</Link>
             {` | `}

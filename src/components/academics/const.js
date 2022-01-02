@@ -2,12 +2,12 @@ const AcademicsList = [
   {
     title: "Admissions",
     data: "admissions",
-    img: "/test.svg",
+    // img: "/test.svg",
   },
   {
     title: "Programmes",
     data: "programmes",
-    img: "/test.svg",
+    // img: "/test.svg",
   },
   // {
   //     title: "Course Structure",
@@ -17,32 +17,32 @@ const AcademicsList = [
   {
     title: "Academic Notices",
     data: "Notices",
-    img: "/mail.svg",
+    // img: "/mail.svg",
   },
   {
     title: "Format of Official Documents",
     data: "format",
-    img: "/paper.svg",
+    // img: "/paper.svg",
   },
   {
     title: "Digital Initiatives",
     data: "digital",
-    img: "/test.svg",
+    // img: "/test.svg",
   },
   {
     title: "Regulation & Curricula",
     data: "curricula",
-    img: "/test.svg",
+    // img: "/test.svg",
   },
   {
     title: "Refund Policy",
     data: "refund",
-    img: "/test.svg",
+    // img: "/test.svg",
   },
   {
     title: "Fee Structures",
     data: "fee",
-    img: "/test.svg",
+    // img: "/test.svg",
   },
 ]
 

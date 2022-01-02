@@ -19,7 +19,7 @@ export const ImportantLinkStyle = styled.div`
       text-decoration: none;
 
       .implink {
-        width: 13vw;
+        width: 10vw;
         height: 7vw;
         background: ${props => props.theme.backgroundSecColor};
         /* border-radius:5px; */
@@ -35,7 +35,7 @@ export const ImportantLinkStyle = styled.div`
         /* filter: grayscale(100%); */
         .linkimg {
           margin-top: 5%;
-          width: 20%;
+          width: 30%;
           max-width:70%;
         }
         .lead {
@@ -53,7 +53,7 @@ export const ImportantLinkStyle = styled.div`
           }
         }
         h3 {
-          font-size: 1.4vmax;
+          font-size: 1.2rem;
           color: ${props => props.theme.primaryColor};
           font-family: Source Sans Pro;
           font-weight: bold;

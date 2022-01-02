@@ -71,10 +71,10 @@ export const mission = () => {
 export const vision = () => {
   return (
     <>
-      To formulate up-to-date and flexible technical programs which will allow
-      our graduates to attain their maximum technical potential, managerial
-      capability, be competitive in the job market and to emerge as a centre of
-      excellence.
+      <ul><li>      To formulate up-to-date and flexible technical programs which will allow
+        our graduates to attain their maximum technical potential, managerial
+        capability, be competitive in the job market and to emerge as a centre of
+        excellence.</li></ul>
     </>
   )
 }
@@ -117,17 +117,17 @@ export const contact = () => {
 export const labs = () => {
   return (
     <>
-      {" "}
       {Labs.map((lab, idx) => {
         return (
           <div className="row rowmarl3" key={idx}>
             <div
               className="col-6"
-              style={{ textAlign: "left", fontSize: `1.1rem` }}
+              style={{ textAlign: "left", fontSize: `1.1rem`,padding:`0px` }}
             >
               {lab.content}
             </div>
-            <div className="col-6">{lab.image}</div>
+            <div className="col-6"
+            style={{ display:`flex`,alignItems:`center`,justifyContent:`center`}}>{lab.image}</div>
           </div>
         )
       })}
@@ -197,52 +197,52 @@ export const datalist = [
   {
     title: "About",
     data: "about",
-    img: "/department/about.svg",
+    // img: "/department/about.svg",
   },
   {
     title: "Mission & Vision",
     data: "missionvision",
-    img: "/department/mission.svg",
+    // img: "/department/mission.svg",
   },
   {
     title: "Notice",
     data: "happening",
-    img: "/department/activities.svg",
+    // img: "/department/activities.svg",
   },
   {
     title: "Contact",
     data: "contact",
-    img: "/department/contact.svg",
+    // img: "/department/contact.svg",
   },
   {
     title: "Labs",
     data: "labs",
-    img: "/department/labs.svg",
+    // img: "/department/labs.svg",
   },
   {
     title: "Achievements",
     data: "achievements",
-    img: "/department/achievements.svg",
+    // img: "/department/achievements.svg",
   },
   {
     title: "Activities",
     data: "activities",
-    img: "/department/activities.svg",
+    // img: "/department/activities.svg",
   },
   {
     title: "Time Table",
     data: "timetable",
-    img: "clock.svg",
+    // img: "clock.svg",
   },
   {
     title: "Syllabus",
     relPath: "/cse/syllabus",
-    img: "/department/syllabus.svg",
+    // img: "/department/syllabus.svg",
   },
   {
     title: "Faculties",
     relPath: "/cse/faculty",
-    img: "/department/faculty.svg",
+    // img: "/department/faculty.svg",
   },
 
 ]

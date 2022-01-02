@@ -52,20 +52,20 @@ const Facultypage = ({ title, url, dept }) => {
     <>
       <FacultyStyle style={{ marginBottom: `3vh`,marginTop:`1rem` }}>
         <div className="faculty-page">
-          <div className="layoutrow layoutrowmain syllabus-page-head">
+          <div className="layoutrow">
             <div className="col-6">
               <div className="row rowmarl3">
-                <h1 data-aos="zoom-in-right" style={{ fontSize: `30px` }}>
+                <h1 data-aos="zoom-in-right" style={{ fontSize: `30px`,paddingTop:`1rem` }}>
                   {title ? title : "Faculty"}
                 </h1>
                 {dept && (
                   <div className="row">
-                    <h2 data-aos="zoom-in-right">-{dept}</h2>
+                    <h2 data-aos="zoom-in-right">{dept}</h2>
                   </div>
                 )}
               </div>
             </div>
-
+                  
             <div className="col-6">
               <div className="row">
                 <SearchStyle>
@@ -88,7 +88,8 @@ const Facultypage = ({ title, url, dept }) => {
                     name={faculty.name}
                     subtitle={department ? faculty.department : faculty.email}
                     email={faculty.email}
-                    extn={faculty.ext_no}
+                    // extn={faculty.ext_no}
+                    extn={""}
                     id={faculty.email}
                     research={faculty.research_interest}
                     image={faculty.image}
