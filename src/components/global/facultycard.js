@@ -33,16 +33,16 @@ const Facultycard = props => {
             </div>
             <h3>{props.name}</h3>
             <h4>{props.desg}</h4>
-            <p>{props.subtitle}</p>
+            {props.subtitle?<p>{props.subtitle}</p>:null}
           </div>
         </div>
-        <div className="faculty2">
+        <Link className="faculty2" to={`/profile?id=${props.email}`}>
           {research && <p style={{fontWeight:`bold`}}>Research Interests:-</p>}
           {research && research.map(item => <p>{item}</p>)}
-          <p>
-            <Link to={`/profile?id=${props.email}`}>View Profile</Link>
-          </p>
-        </div>
+          {/* <p>
+            <Link >View Profile</Link>
+          </p> */}
+        </Link>
       </FacultyCard>
     </>
   )
