@@ -1,15 +1,15 @@
 import styled from "styled-components"
 
 export const FacultyCard = styled.div`
-  width: 250px;
+  width: 240px;
   height: 280px;
   margin: auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background: ${props => props.theme.backgroundSecColor};
   box-shadow: 0 0 21px rgba(0, 0, 0, 0.25);
   .faculty1 {
-    width: 250px;
+    width: 240px;
     height: 280px;
     position: absolute;
     z-index: 1;
@@ -17,8 +17,9 @@ export const FacultyCard = styled.div`
     align-items: center;
   }
   .faculty2 {
-    width: 250px;
+    width: 240px;
     height: 280px;
+    text-decoration: none;
     background: linear-gradient(
       180deg,
       ${props => props.theme.backgroundColor} 0%,
@@ -60,22 +61,27 @@ export const FacultyCard = styled.div`
   flex-direction: column;
   align-items: center;
   position: absolute;
+  margin-top: -20px;
   .facimg{
     overflow: hidden;
     border-radius: 50%;
-    width: 126px;
-    height: 126px;
+    width: 110px;
+    height: 110px;
      img {
     width: 100%;
     height: auto;
   }
   }
  h3{
-   color:${props => props.theme.primaryTextColor}
+   color:${props => props.theme.primaryTextColor};
+   line-height: 0.1;
+   margin-bottom:5px;
+   margin-top: 30px;
  }
   h4 {
     color: ${props => props.theme.textColor};
-    /* line-height: 0.1; */
+    line-height: 0.1;
+
     text-align: center;
   }
   p {

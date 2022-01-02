@@ -86,7 +86,8 @@ const Facultypage = ({ title, url, dept }) => {
                 return (
                   <Facultycard
                     name={faculty.name}
-                    subtitle={department ? faculty.department : faculty.email}
+                    // subtitle={department ? faculty.department : faculty.email}
+                    subtitle={department ? faculty.department : null}
                     email={faculty.email}
                     // extn={faculty.ext_no}
                     extn={""}
