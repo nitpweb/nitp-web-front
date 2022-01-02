@@ -72,7 +72,7 @@ const Dephomepage = ({
               <div className="layoutrow" id="about">
                 <div className="layoutabout">
                   
-                    <h1>About</h1>
+                    <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>About</h1>
                   
                   <div className="row">
                     <p>{About()}</p>
@@ -88,7 +88,7 @@ const Dephomepage = ({
             <>
               <div className="layoutrow" id="happening">
                 <div className="row rowmarl3">
-                  <h1>Notice</h1>
+                  <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>Notice</h1>
                 </div>
                 <div className="row rowmarl3">
                   {notices &&
@@ -126,7 +126,7 @@ const Dephomepage = ({
               <div className="layoutrow" id="mission" style={{paddingBottom:`0`}}>
                 <div className="row">
                   <div className="row rowmarl3 rowmarr3">
-                    <h1>Mission</h1>
+                    <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>Mission</h1>
                   </div>
                   <div className="row rowmarl3 rowmarr3">
                     <p>{Mission()}</p>
@@ -136,7 +136,7 @@ const Dephomepage = ({
               <div className="layoutrow" id="vision" style={{paddingBottom:`0`}}>
                 <div className="row">
                   <div className="row rowmarl3 rowmarr3">
-                    <h1>Vision</h1>
+                    <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>Vision</h1>
                   </div>
                   <div className="row rowmarl3 rowmarr3">
                     <p>{Vision()}</p>
@@ -145,7 +145,7 @@ const Dephomepage = ({
               </div>
               {Outcomes && (
                 <div className="layoutrow" id="Outcomes">
-                  <div className="row">{Outcomes()}</div>
+                  <div className="row rowmarr3">{Outcomes()}</div>
                 </div>
               )}
 
@@ -167,7 +167,7 @@ const Dephomepage = ({
               >
                 <div className="col-6" style={{ width: `100%` }}>
                   <div className="row rowmarr3">
-                    <h1>Contact</h1>
+                    <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>Contact</h1>
                   </div>
                   <div className="row rowmarr3">
                     <p>{Contact()}</p>
@@ -225,7 +225,7 @@ const Dephomepage = ({
             <div className="layoutrow">
                 <div className="row rowmarl3 rowmarr3">
                   
-                    <h1>Activities</h1>
+                    <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>Activities</h1>
                     </div>
                   <div className="row rowmarr3">
                     {Activities()}
@@ -258,7 +258,7 @@ const Dephomepage = ({
             {view == "timetable" && (
             <div className="layoutrow">
               <div className="row rowmarl3 digital" style={{display:`flex`,flexDirection:`column`}}>
-                <h1 data-aos="zoom-in" style={{ fontSize: `2rem`,paddingBottom:`5px`}}>
+                <h1 data-aos="zoom-in" style={{ fontSize: `3rem`,paddingBottom:`5px`}}>
                   Time Table
                 </h1>
                 {TimeTable()}
