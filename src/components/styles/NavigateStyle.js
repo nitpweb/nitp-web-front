@@ -35,8 +35,8 @@ export const NavigateStyle = styled.div`
     /* overflow: hidden; */
     background-color: ${props => props.theme.backgroundSecColor};
     p {
-      font-size: 14px;
-      font-weight: 600;
+      font-size: 16px;
+      font-weight: bold;
       color: ${props => props.theme.primaryTextColor};
       text-align: center;
       transition: all 1s ease;

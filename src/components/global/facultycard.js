@@ -12,16 +12,16 @@ const Facultycard = props => {
   }, [])
 
   return (
-    <>
+    <> 
       <FacultyCard>
         <div className="faculty1">
-          {props.extn != 0 ? (
+          {/* {props.extn != 0 ? (
             <p className="extn">
               {String(props.extn).length < 8
                 ? `Extn:${props.extn}`
                 : props.extn}
             </p>
-          ) : null}
+          ) : null} */}
           <div className="row fimg">
             <div className="facimg">
               <img
@@ -31,8 +31,8 @@ const Facultycard = props => {
                 alt=""
               />
             </div>
-            <h2>{props.name}</h2>
-            <h3>{props.desg}</h3>
+            <h3>{props.name}</h3>
+            <h4>{props.desg}</h4>
             <p>{props.subtitle}</p>
           </div>
         </div>

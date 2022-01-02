@@ -10,7 +10,7 @@ export const DropdownStyle = styled.div`
     text-decoration: none;
     color: ${props => props.theme.dropText};
     font-family: "Source Sans Pro";
-    font-size: 1vw;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.6;
     display: flex;
@@ -49,7 +49,7 @@ export const DropdownStyle = styled.div`
     transition: 0.05s;
   }
   .dropdown-content {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     opacity: 1;
 
@@ -59,7 +59,7 @@ export const DropdownStyle = styled.div`
       padding: 5px 6px;
       text-decoration: none;
       display: block;
-      font-size: 14px;
+      font-size: 16px;
       overflow: hidden;
       /* max-height: 1.2vw; */
       color: ${props => props.theme.dropBg};

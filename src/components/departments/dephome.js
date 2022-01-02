@@ -71,17 +71,17 @@ const Dephomepage = ({
             <>
               <div className="layoutrow" id="about">
                 <div className="layoutabout">
-                  <div className="row">
+                  
                     <h1>About</h1>
-                  </div>
+                  
                   <div className="row">
                     <p>{About()}</p>
                   </div>
                 </div>
               </div>
-              <div className="row imgcolstyle backgroundimage">
+              {/* <div className="row imgcolstyle backgroundimage">
                 <img data-aos="zoom-in" src="/bulb.svg" className="img-fluid" />
-              </div>
+              </div> */}
             </>
           )}
           {view == "happening" && (
@@ -115,9 +115,9 @@ const Dephomepage = ({
                     })}
                 </div>
               </div>{" "}
-              <div className="row imgcolstyle backgroundimage">
+              {/* <div className="row imgcolstyle backgroundimage">
                 <img data-aos="zoom-in" src={pc} className="img-fluid" />
-              </div>
+              </div> */}
             </>
           )}
 
@@ -125,20 +125,20 @@ const Dephomepage = ({
             <>
               <div className="layoutrow" id="mission" style={{paddingBottom:`0`}}>
                 <div className="row">
-                  <div className="row rowmarl3">
+                  <div className="row rowmarl3 rowmarr3">
                     <h1>Mission</h1>
                   </div>
-                  <div className="row rowmarl3">
+                  <div className="row rowmarl3 rowmarr3">
                     <p>{Mission()}</p>
                   </div>
                 </div>
               </div>
               <div className="layoutrow" id="vision" style={{paddingBottom:`0`}}>
                 <div className="row">
-                  <div className="row rowmarl3">
+                  <div className="row rowmarl3 rowmarr3">
                     <h1>Vision</h1>
                   </div>
-                  <div className="row rowmarl3">
+                  <div className="row rowmarl3 rowmarr3">
                     <p>{Vision()}</p>
                   </div>
                 </div>
@@ -149,13 +149,13 @@ const Dephomepage = ({
                 </div>
               )}
 
-              <div className="row imgcolstyle backgroundimage">
+              {/* <div className="row imgcolstyle backgroundimage">
                 <img
                   data-aos="zoom-in"
                   src="/mission.svg"
                   className="img-fluid"
                 />
-              </div>
+              </div> */}
             </>
           )}
           {view == "contact" && (
@@ -174,9 +174,9 @@ const Dephomepage = ({
                   </div>
                 </div>
               </div>
-              <div className="row imgcolstyle backgroundimage">
+              {/* <div className="row imgcolstyle backgroundimage">
                 <img data-aos="zoom-in" src={map} className="img-fluid" />
-              </div>
+              </div> */}
             </>
           )}
 
@@ -193,9 +193,9 @@ const Dephomepage = ({
                 </div>
                 {Labs()}{" "}
               </div>{" "}
-              <div className="row imgcolstyle backgroundimage">
+              {/* <div className="row imgcolstyle backgroundimage">
                 <img data-aos="zoom-in" src="/labs.svg" className="img-fluid" />
-              </div>
+              </div> */}
             </>
           )}
           {view == "achievements" && (
@@ -204,42 +204,42 @@ const Dephomepage = ({
                 className="layoutrow layoutrow1 others"
                 style={{ position: `relative`, zIndex: 1 }}
               >
-                <div className="row rowmarl3">
-                  <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
+                <div className="row rowmarl3 rowmarr3">
+                  <h1 data-aos="zoom-in" >
                     Achievements
                   </h1>
                 </div>
                 {Achievements()}
               </div>
-              <div className="row imgcolstyle backgroundimage">
+              {/* <div className="row imgcolstyle backgroundimage">
                 <img
                   data-aos="zoom-in"
                   src="/achievements.svg"
                   className="img-fluid"
                 />
-              </div>
+              </div> */}
             </>
           )}
           {view == "activities" && (
             <>
-              <div
-                className="layoutrow layoutrow1 others"
-                style={{ position: `relative`, zIndex: 1 }}
-              >
-                <div className="row rowmarl3">
-                  <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
-                    Activities
-                  </h1>
-                </div>
-                {Activities()}{" "}
-              </div>{" "}
-              <div className="row imgcolstyle backgroundimage">
+            <div className="layoutrow">
+                <div className="row rowmarl3 rowmarr3">
+                  
+                    <h1>Activities</h1>
+                    </div>
+                  <div className="row rowmarr3">
+                    {Activities()}
+                  </div>
+                
+              </div>
+              
+              {/* <div className="row imgcolstyle backgroundimage">
                 <img
                   data-aos="zoom-in"
                   src="/activities.svg"
                   className="img-fluid"
                 />
-              </div>
+              </div> */}
             </>
           )}
           {view == "others" && (
@@ -250,15 +250,15 @@ const Dephomepage = ({
                 </h1>
               </div>
               {Extras()}
-              <div className="row imgcolstyle backgroundimage">
+              {/* <div className="row imgcolstyle backgroundimage">
                 <img data-aos="zoom-in" src="/labs.svg" className="img-fluid" />
-              </div>
+              </div> */}
             </div>
           )}
             {view == "timetable" && (
             <div className="layoutrow">
               <div className="row rowmarl3 digital" style={{display:`flex`,flexDirection:`column`}}>
-                <h1 data-aos="zoom-in" style={{ fontSize: `2rem` }}>
+                <h1 data-aos="zoom-in" style={{ fontSize: `2rem`,paddingBottom:`5px`}}>
                   Time Table
                 </h1>
                 {TimeTable()}

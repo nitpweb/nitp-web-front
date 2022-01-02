@@ -55,9 +55,9 @@ export const DropStyle = styled.div`
           text-decoration: none;
           color: ${props => props.theme.textnew};
           font-weight: 400;
-          font-size: 14px;
+          font-size: 16px;
           padding: 0px 10px;
-          line-height: 2;
+          line-height: 1.8;
           &:hover {
             color: ${props => props.theme.hovertext};
             font-weight: 600;
@@ -72,7 +72,7 @@ export const DropStyle = styled.div`
     text-decoration: none;
     color: white;
     font-family: "Source Sans Pro";
-    font-size: 1vw;
+    font-size: 16px;
     font-weight: lighter;
     line-height: 1.6;
     display: flex;
@@ -92,6 +92,6 @@ export const DropStyle = styled.div`
     justify-content: flex-start;
     flex-wrap: wrap;
     z-index: 10;
-    max-height: 420px;
+    max-height: 445px;
   }
 `
