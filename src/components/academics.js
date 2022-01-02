@@ -76,7 +76,7 @@ const Academicspage = () => {
                             >
                               <li>{item.para}</li>
                             </a>
-                            <br />
+                            
                           </>
                         ))}
                       </div>
@@ -735,7 +735,7 @@ const Academicspage = () => {
                               {e.para}
                             </p>
                           </a>
-                          <br />
+                          
                         </>
                       ))}
                     </div>

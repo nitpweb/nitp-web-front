@@ -96,6 +96,7 @@ export const PageLayout = styled.div`
     flex-wrap: wrap;
     width: 100%;
     padding-top: 3vh;
+    align-items: center;
     font-family: "Source Sans Pro";
     .layoutrow:nth-of-type(2n + 1) {
       .col-6:nth-child(1) {

@@ -53,84 +53,86 @@ const Aboutpage = () => {
       <div className="mainDiv">
         {view == "about" && (
           <div className="layoutrow digital" id="home">
-            <div className="row rowmarl3">
+            <div className="row rowmarl3 rowmarr3">
               <h1>About Us</h1>
             </div>
             {aboutusinfo.map(elem => {
               return (
-                <div className="row rowmarl3">
+                <div className="row rowmarl3 rowmarr3">
                   <p>{elem}</p>
                 </div>
               )
             })}
-            <div className="row imgcolstyle backgroundimage">
+            {/* <div className="row imgcolstyle backgroundimage">
               <img data-aos="zoom-in" src="/bulb.svg" className="img-fluid" />
-            </div>
+            </div> */}
           </div>
         )}
         {view == "missionvision" && (
           <>
             <div className="layoutrow digital" id="mission">
-              <div className="row rowmarl3">
+              <div className="row rowmarl3 rowmarr3">
                 <h1>Vision</h1>
               </div>
-              <div className="row rowmarl3">
+              <div className="row rowmarl3 rowmarr3">
                 <p>{Vision}</p>
               </div>
-              )
-              <div className="row rowmarl3">
+              
+              <div className="row rowmarl3 rowmarr3">
                 <h1>Mission</h1>
               </div>
               {missioninfo.map(elem => {
                 return (
-                  <div className="row rowmarl3">
+                  <div className="row rowmarl3 rowmarr3">
                     <p>{elem}</p>
                   </div>
                 )
               })}
-              <div className="row imgcolstyle backgroundimage">
+              <></>
+              {/* <div className="row imgcolstyle backgroundimage">
                 <img
                   data-aos="zoom-in"
                   src="/mission.svg"
                   className="img-fluid"
                 />
-              </div>
+              </div> */}
             </div>
           </>
         )}
         {view == "values" && (
           <div className="layoutrow digital" id="values">
-            <div className="row rowmarl3">
+            <div className="row rowmarl3 rowmarr3">
               <h1>Values</h1>
             </div>
             {valuesinfo.map(elem => {
               return (
-                <div className="row rowmarl3">
+                <div className="row rowmarl3 rowmarr3">
                   <p>{elem}</p>
                 </div>
               )
             })}
-            <div className="row imgcolstyle backgroundimage">
+            
+            {/* <div className="row imgcolstyle backgroundimage">
               <img src="/clock.svg" className="img-fluid" />
-            </div>
+            </div> */}
           </div>
         )}
 
         {view == "campus" && (
           <div className="layoutrow digital" id="campus">
-            <div className="row imgcolstyle backgroundimage">
+            {/* <div className="row imgcolstyle backgroundimage">
               <a
                 href="https://www.google.com/maps/place/National+Institute+of+Technology+Patna/@25.6207241,85.170702,17z/data=!4m5!3m4!1s0x39ed58dce6732867:0x4059f39a1ac82f06!8m2!3d25.6207241!4d85.1728907"
                 target="_blank"
               >
                 <img data-aos="zoom-in" src="/map.svg" className="img-fluid" />
               </a>
-            </div>
+            </div> */}
 
-            <div className="row rowmarl3">
+            <div className="row rowmarl3 rowmarr3">
               <h1 data-aos="zoom-in-left">Campus</h1>
             </div>
-            <div className="row rowmarl3">
+            <div className="row rowmarl3 rowmarr3">
               <p data-aos="zoom-in-left">{campusinfo}</p>
             </div>
           </div>

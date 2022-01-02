@@ -139,6 +139,9 @@ const Footer = () => {
               <a href="/students?tab=nss">
                 <h3>National Service Scheme</h3>
               </a>
+              
+            <Link to="/tenders">Tenders</Link>
+            
             </div>
           </div>
         </div>

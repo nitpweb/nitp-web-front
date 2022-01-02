@@ -46,6 +46,9 @@ main {
   width: 100%;
   z-index: 1;
 }
+.row p, h1, h2{
+  margin: 0;
+}
 .col-6 {
   width: calc(50% - 6vw);
 }
