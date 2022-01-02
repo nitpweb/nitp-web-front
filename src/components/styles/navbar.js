@@ -133,7 +133,7 @@ export const NavbarStyle = styled.div`
         text-decoration: none;
         color: #fff;
         font-family: "Source Sans Pro";
-        font-size: 1vw;
+        font-size: 16px;
         font-weight: lighter;
         line-height: 1.6;
         display: flex;
@@ -263,7 +263,7 @@ export const NavbarStyle = styled.div`
       font-weight: 300;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .nav-head-row {
       display: block;
       height: auto;

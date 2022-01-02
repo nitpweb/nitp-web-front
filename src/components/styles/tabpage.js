@@ -138,8 +138,8 @@ export const TabPage = styled.div`
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       width: 100%;
-      padding-top: 5vh;
-      padding-bottom: 5vh;
+      padding-top: 0vh;
+      padding-bottom: 0vh;
       font-family: "Source Sans Pro";
 
       .layoutrow:nth-of-type(2n + 1) {
@@ -212,6 +212,7 @@ export const TabPage = styled.div`
         h1 {
           color: ${props => props.theme.primaryColor};
           line-height: 0%;
+          padding-bottom: 1.2rem;
         }
         p {
           color: ${props => props.theme.textColor};
