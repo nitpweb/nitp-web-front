@@ -73,8 +73,8 @@ const Home = () => {
       <div id="notice-event">
         <div id="notice">
           <div
-            data-aos="zoom-in"
-            data-aos-duration="200"
+            // data-aos="zoom-in"
+            // data-aos-duration="200"
             className="notice-head"
           >
             Notice
@@ -85,7 +85,7 @@ const Home = () => {
           <div className="notice-row" >
             {notices &&
               notices.map(notice => {
-                if (notice.title != "") {
+                if (notice.title != "" && notice.important != true) {
                   return (
                     <Notice
                       detail={notice.title}
@@ -106,8 +106,8 @@ const Home = () => {
         </div>
         <div id="events">
           <div
-            data-aos="zoom-in"
-            data-aos-duration="200"
+            // data-aos="zoom-in"
+            // data-aos-duration="200"
             className="event-head"
           >
             Events
@@ -151,11 +151,11 @@ const Home = () => {
         </div>
         <div id="notice">
           <div
-            data-aos="zoom-in"
-            data-aos-duration="200"
+            // data-aos="zoom-in"
+            // data-aos-duration="200"
             className="notice-head"
           >
-            Important
+            Announcements
             <Link id="notice-head-p" to="/notice">
               view all
             </Link>
