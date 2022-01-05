@@ -149,6 +149,39 @@ const Home = () => {
               })}
           </div>
         </div>
+        <div id="notice">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="200"
+            className="notice-head"
+          >
+            Important
+            <Link id="notice-head-p" to="/notice">
+              view all
+            </Link>
+          </div>
+          <div className="notice-row" >
+            {notices &&
+              notices.map(notice => {
+                if (notice.title != "" && notice.important == true) {
+                  return (
+                    <Notice
+                      detail={notice.title}
+                      time={notice.openDate}
+                      key={notice.id}
+                      attachments={notice.attachments}
+                      imp={notice.important}
+                      link={
+                        notice.notice_link && JSON.parse(notice.notice_link).url
+                          ? JSON.parse(notice.notice_link).url
+                          : ""
+                      }
+                    />
+                  )
+                }
+              })}
+          </div>
+        </div>
       </div>
       <Innovation />
       <div id="news">
@@ -165,7 +198,7 @@ const Home = () => {
         </div>
 
         <div className="news-row">
-          <div className="news-viewbox">
+          <div className="news-viewbox" data-aos="fade-left" data-aos-duration="200">
             {news &&
               news.map(news => {
                 const newtime = new Date().getTime()

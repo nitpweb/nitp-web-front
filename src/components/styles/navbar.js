@@ -57,14 +57,17 @@ export const NavbarStyle = styled.div`
         background-color: transparent;
         border: 0;
         margin: 0;
+        padding-right: 0 !important;
         cursor: pointer;
         span {
+          margin: 0;
           color: #fff;
           font-weight: 600;
+          line-height: 0.1;
         }
       }
       #theme {
-        margin: 0px 20px 0px 0px;
+        margin: 0px 20px 0px 10px;
       }
     }
   }
@@ -77,7 +80,7 @@ export const NavbarStyle = styled.div`
       justify-content: center;
       span {
         color: ${props => props.theme.textColor};
-        font-family: "Source Sans Pro";
+        /* font-family: "Source Sans Pro"; */
         text-rendering: optimizeLegibility;
         font-weight: 600;
         font-size: ${props => parseInt(props.theme.font * 18)}px;
@@ -242,7 +245,7 @@ export const NavbarStyle = styled.div`
     .nav-title-row {
       .start {
         span {
-          font-size: ${props => parseInt(props.theme.font * 14)}px;
+          font-size: ${props => parseInt(props.theme.font * 12)}px;
         }
       }
       .end {
@@ -273,13 +276,15 @@ export const NavbarStyle = styled.div`
         height: 24px;
         padding: 0px;
         span {
-          font-size: 14px;
+          /* font-size: 14px; */
+          font-family: "Source Sans Pro";
         }
       }
       .end {
         width: 100%;
         height: 24px;
         padding: 0px;
+        font-family: "Source Sans Pro";
       }
     }
     .nav-title-row {
@@ -294,6 +299,7 @@ export const NavbarStyle = styled.div`
         justify-content: center;
         align-items: center;
         padding-right: 10px;
+        padding-bottom: 2px;
         img {
           max-height: 6vh;
         }
@@ -340,6 +346,11 @@ export const NavbarStyle = styled.div`
     }
   }
   @media (max-width: 500px) {
+    .start{
+      span{
+        line-height: 1.7;
+      }
+    }
     .nav-col {
       width: 60%;
       h4 {

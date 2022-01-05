@@ -1,14 +1,16 @@
 import styled from "styled-components"
 
 export const NoticeStyle = styled.div`
-  width: 100%;
+  width: auto;
   height: fit-content;
   padding: 5px 15px 5px 15px;
   background: ${props => props.theme.backgroundTerColor};
   margin-top: 10px;
   .noticecarddetail {
-    font-size: 20px;
+    text-align: justify;
+    font-size: 18px;
     font-family: "Source Sans Pro";
+    margin:0;
     a {
       text-decoration: none;
       color: ${props => props.theme.textColor};
@@ -35,7 +37,7 @@ export const NoticeStyle = styled.div`
         text-decoration: none;
         position: relative;
         bottom: 0;
-        margin-bottom: 5px;
+        /* margin-bottom: 5px; */
         color: ${props => props.theme.primaryColor};
         font-size: 18px;
         font-weight: 600;
@@ -59,9 +61,9 @@ export const NoticeStyle = styled.div`
   .notet {
     position: relative;
     bottom: 0;
-    margin-bottom: 5px;
+    margin: 4px 0 0 0;
     color: ${props => props.theme.secondaryTextColor};
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     text-align: right;
     font-family: "Source Sans Pro";

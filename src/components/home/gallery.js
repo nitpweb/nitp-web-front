@@ -24,7 +24,7 @@ const GalleryComp = () => {
       <div data-aos="zoom-in" className="tempimg">
         <Img
           fluid={data.images.nodes[props.index].childImageSharp.fluid}
-          style={{ height: "100%", width: "100%" }}
+          style={{ height: "100%", width: "100%", borderRadius: "0.5rem" }}
           imgStyle={{ objectFit: "fill" }}
         />
       </div>
