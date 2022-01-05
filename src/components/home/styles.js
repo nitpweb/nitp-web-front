@@ -1,10 +1,10 @@
 import styled from "styled-components"
 
 export const Gallery = styled.div`
-  margin-left: 8vw;
+  margin-left: 6.8vw;
   margin-right: 5vw;
-  margin-top: 5vw;
-  margin-bottom: 5vw;
+  margin-top: 1vw;
+  margin-bottom: 2vw;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(4, 100px);

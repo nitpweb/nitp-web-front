@@ -88,7 +88,7 @@ const Innovation = () => {
           {filtered.map(Card)}
           <div
             className="child1"
-            style={{ left: "90%" }}
+            style={{ left: "94%" }}
             onClick={() => {
               x > filtered.length * -300 + 900 ? setX(x - 300) : setX(0)
             }}
