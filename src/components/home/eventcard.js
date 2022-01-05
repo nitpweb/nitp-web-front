@@ -6,14 +6,14 @@ import eventlocation from "./img/eventlocation.svg"
 const Eventcard = props => {
   return (
     <EventCardStyle>
-      <div className="eventdtdiv">
+      {/* <div className="eventdtdiv">
         <div id="eventmonth">
           <p>{props.month}</p>
         </div>
         <div id="eventdate">
           <p>{props.date}</p>
         </div>
-      </div>
+      </div> */}
       <div className="eventcarddetailsection">
         <p className="eventcarddetail">
           {props.link ? (

@@ -2,15 +2,15 @@ import styled from "styled-components"
 
 export const InnovationStyle = styled.div`
   width: 100vw;
-  height: 480px;
+  height: 350px;
   background: -webkit-gradient(
     linear,
     left bottom,
     left top,
-    from(black),
-    to(#363636)
+    from(white),
+    to(${props => props.theme.backgroundTerColor})
   );
-  background: linear-gradient(0deg, black, #363636);
+  background: linear-gradient(0deg, ${props => props.theme.backgroundTerColor},lightgrey, ${props => props.theme.backgroundTerColor});
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,14 +25,14 @@ export const InnovationStyle = styled.div`
   -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  margin-top: 4vh;
-  margin-bottom: 4vh;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
   #head {
     position: absolute;
-    color: white;
-    left: 10%;
-    top: 18%;
-    font-family: "Nunito", sans-serif;
+    color: ${props => props.theme.textColor};
+    left: 6%;
+    top: 6%;
+    font-family: "Quicksand";
     font-size: 30px;
     margin: 0;
   }
@@ -43,6 +43,7 @@ export const InnovationStyle = styled.div`
     top: 0;
     left: 5%;
     width: 200px;
+    filter: invert(1);
   }
   #two {
     -webkit-transform: rotate(0deg);
@@ -51,6 +52,7 @@ export const InnovationStyle = styled.div`
     right: 0;
     top: 5%;
     width: 100px;
+    filter: invert(1);
   }
   #three {
     -webkit-transform: rotate(0deg);
@@ -65,15 +67,18 @@ export const InnovationStyle = styled.div`
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 0%;
+    bottom: 0%;
     width: 80px;
     height: auto;
+    filter: invert(1) opacity(0.2);
   }
   .child {
-    background: rgba(0, 0, 0, 0.2);
+    border-bottom-right-radius:0.5rem;
+      border-top-right-radius:0.5rem;
+    background: rgba(0, 0, 0, 0.035);
     height: 200px;
-    margin: 2vw;
+    /* margin: 2vw; */
     cursor: pointer;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -95,7 +100,7 @@ export const InnovationStyle = styled.div`
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      margin-left: 2rem;
+      margin-right: 1rem;
       text-decoration: none;
       .part1 {
         width: 300px;
@@ -127,20 +132,20 @@ export const InnovationStyle = styled.div`
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
         flex-direction: row;
-        background-color: white;
+        background-color: ${props => props.theme.backgroundTerColor};
         overflow: hidden;
         .text {
           width: 75%;
           padding: 8px;
           font-size: 11.5px;
-          font-family: "Nunito", sans-serif;
+          font-family: "Quicksand";
           position: relative;
           #heading {
             font-weight: 600;
             margin: 0;
             #loadmore {
               text-decoration: none;
-              color: #363636;
+              color: ${props => props.theme.textColor};
             }
           }
           #time {
@@ -149,7 +154,7 @@ export const InnovationStyle = styled.div`
             padding-bottom: 5px;
             position: absolute;
             bottom: 0;
-            color: #363636;
+            color: ${props => props.theme.textColor};
           }
         }
         .pic {
@@ -166,7 +171,7 @@ export const InnovationStyle = styled.div`
       }
     }
     .child1 {
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.05);
       width: auto;
       height: 200px;
       -webkit-box-align: center;
@@ -175,6 +180,7 @@ export const InnovationStyle = styled.div`
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
+      border-radius: 0.5rem;
       cursor: pointer;
       position: absolute;
       -webkit-transform: translateX(-100%);
@@ -183,8 +189,8 @@ export const InnovationStyle = styled.div`
       #arrow {
         width: 28px;
         height: auto;
-        -webkit-filter: invert(1);
-        filter: invert(1);
+        -webkit-filter: invert(0.5);
+        filter: invert(0.5);
         padding: 5px;
       }
       &:hover {
@@ -203,7 +209,7 @@ export const InnovationStyle = styled.div`
       }
     }
     .child2 {
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.05);
       width: auto;
       height: 200px;
       -webkit-box-align: center;
@@ -252,15 +258,15 @@ export const InnovationStyle = styled.div`
       display: flex;
     }
     .child {
-      width: 80%;
+      width: 88%;
     }
   }
   #loadMore {
-    font-family: "Nunito", sans-serif;
+    font-family: "Quicksand";
     position: absolute;
-    color: white;
-    bottom: 25%;
-    right: 10%;
+    color: ${props => props.theme.textColor};
+    bottom: 10%;
+    right: 6%;
     text-decoration: none;
   }
 `

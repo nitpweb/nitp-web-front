@@ -20,13 +20,13 @@ import DynamicLink from "./global/dynamicurl"
 
 const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
   const pathname = window.location.pathname.split("/")[1]
-  const [change, setChange] = useState(0)
-  useEffect(() => {
-    const interval = setInterval(() => {
-      change === 0 ? setChange(2) : setChange(0)
-    }, 1000)
-    return () => clearInterval(interval)
-  }, [change])
+  // const [change, setChange] = useState(0)
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     change === 0 ? setChange(2) : setChange(0)
+  //   }, 1000)
+  //   return () => clearInterval(interval)
+  // }, [change])
 
   useEffect(() => {
     document.addEventListener("scroll", e => {
@@ -84,7 +84,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
   return (
     <NavbarStyle>
       <div className="nav-head-row">
-        <div className="col-6 start" style={{ fontSize: `14px` }}>
+        <div className="col-6 start" style={{ fontSize: `16px` }}>
           
           <span style={{ marginLeft: `8px` }}>
             <Link to="/jobsnitp">Jobs@NITP</Link>
@@ -133,7 +133,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           >
             <span>A-</span>
           </button>
-          /
+          <span>/</span>
           <button
             className="themebtn"
             disabled={font > 1.5}
@@ -154,9 +154,11 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
         </Link>
         <div className="nav-col start">
           <span>
-            {change == 0
+            {/* {change == 0
               ? "NATIONAL INSTITUTE OF TECHNOLOGY PATNA"
-              : "राष्ट्रीय प्रौद्योगिकी संस्थान पटना"}
+              : "राष्ट्रीय प्रौद्योगिकी संस्थान पटना"} */}
+              NATIONAL INSTITUTE OF TECHNOLOGY PATNA<br/>
+              राष्ट्रीय प्रौद्योगिकी संस्थान पटना
           </span>
         </div>
         <div className="nav-col end">
