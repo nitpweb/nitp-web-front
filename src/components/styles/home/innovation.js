@@ -3,14 +3,15 @@ import styled from "styled-components"
 export const InnovationStyle = styled.div`
   width: 100vw;
   height: 350px;
-  background: -webkit-gradient(
+  background: lightgrey;
+  /* background: -webkit-gradient(
     linear,
     left bottom,
     left top,
     from(white),
     to(${props => props.theme.backgroundTerColor})
   );
-  background: linear-gradient(0deg, ${props => props.theme.backgroundTerColor},lightgrey, ${props => props.theme.backgroundTerColor});
+  background: linear-gradient(0deg, ${props => props.theme.backgroundTerColor},lightgrey, ${props => props.theme.backgroundTerColor}); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +30,7 @@ export const InnovationStyle = styled.div`
   margin-bottom: 2vh;
   #head {
     position: absolute;
-    color: ${props => props.theme.primaryTextColor};
+    color: #941b0c;
     left: 6%;
     top: 6%;
     font-family: "Quicksand";
@@ -72,7 +73,7 @@ export const InnovationStyle = styled.div`
     bottom: 0%;
     width: 80px;
     height: auto;
-    filter: invert(1) opacity(0.2);
+    filter: invert(1) opacity(0.25);
   }
   .child {
     border-bottom-right-radius:0.5rem;
@@ -265,7 +266,7 @@ export const InnovationStyle = styled.div`
   #loadMore {
     font-family: "Quicksand";
     position: absolute;
-    color: ${props => props.theme.textColor};
+    color: #121212;
     bottom: 10%;
     right: 6%;
     text-decoration: none;

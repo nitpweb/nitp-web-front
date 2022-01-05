@@ -4,22 +4,39 @@ export const SliderStyle = styled.div`
   width: 100%;
   .container-slider {
     height: ${props => (props.type === "homePageImg" ? "90vh" : "300px")};
-    max-height: 90vw;
+    max-height: 65vmin;
     margin: auto 0;
     position: relative;
     overflow: hidden;
+    display: grid;
+    place-items: center;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     border-radius: ${props => (props.type === "depImages" ? "25px" : 0)};
   }
-
-  @media screen and (max-width: 700px) {
-    .container-slider {
-      margin: 10px 0;
-    }
-  }
-  .slide {
+  @media (max-width: 480px) {
+    .slide{
     width: 100%;
     height: 100%;
+    }
+}
+  @media screen and (max-width: 700px) {
+    .container-slider {
+      margin: 10px 0 0 0;
+    }
+  }
+  @media (min-width: 481px) and (max-width: 1024px) {
+    .slide {
+    width: 100%;
+    height: 100%;
+    }
+}
+  @media (min-width: 1025px) {
+    .slide {
+    width: 71%;
+    height: 100%;
+    }
+}
+  .slide {
     position: absolute;
     opacity: 0;
     transition: opacity ease-in-out 0.4s;
@@ -37,13 +54,17 @@ export const SliderStyle = styled.div`
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #f1f1f1;
+    background:#f1f1f1;
     border: 1px solid rgba(34, 34, 34, 0.287);
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    opacity: 0;
+    &:hover {
+      opacity: 1;
+    }
   }
 
   .btn-slide img {
