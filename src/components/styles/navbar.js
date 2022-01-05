@@ -301,7 +301,7 @@ export const NavbarStyle = styled.div`
         padding-right: 10px;
         padding-bottom: 2px;
         img {
-          max-height: 6vh;
+          max-height: 63px;
         }
       }
       .nav-toggle {

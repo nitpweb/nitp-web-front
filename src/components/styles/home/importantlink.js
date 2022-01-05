@@ -19,8 +19,8 @@ export const ImportantLinkStyle = styled.div`
       text-decoration: none;
 
       .implink {
-        width: 10vw;
-        height: 7vw;
+        width: 10vmax;
+        height: 6vmax;
         background: ${props => props.theme.backgroundSecColor};
         /* border-radius:5px; */
         /* margin-left: 1vw; */
@@ -46,14 +46,14 @@ export const ImportantLinkStyle = styled.div`
           p {
             margin: 0;
             color: ${props => props.theme.primaryColor};
-            font-size: 0.7vw;
+            font-size: 0.7vmax;
             word-wrap: break-word;
             padding: 0 0.5rem 0 0.5rem;
             font-family: quicksand;
           }
         }
         h3 {
-          font-size: 1.3rem;
+          font-size: 1.4vmax;
           color: ${props => props.theme.primaryColor};
           font-family: Source Sans Pro;
           font-weight: bold;
@@ -86,12 +86,12 @@ export const ImportantLinkStyle = styled.div`
     .link-col {
       width: 100%;
       .implink {
-        width: 16vw !important;
-        height: 16vw !important;
+        width: 8vmax !important;
+        height: 6vmax !important;
         .linkimg {
-          margin-top: 10% !important;
-          width: 45% !important;
-          max-width: 70% !important;
+          margin-top: 5% !important;
+          width: 25% !important;
+          max-width:70% !important;
         }
         .lead p {
           display: none;
