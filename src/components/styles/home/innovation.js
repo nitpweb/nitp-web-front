@@ -246,6 +246,9 @@ export const InnovationStyle = styled.div`
   }
 
   @media (max-width: 480px) {
+    #three{
+      filter: opacity(0.3);
+    }
     .child {
       width: 95%;
     }
@@ -271,5 +274,6 @@ export const InnovationStyle = styled.div`
     right: 6%;
     text-decoration: none;
     font-weight: 600;
+    z-index: 5;
   }
 `

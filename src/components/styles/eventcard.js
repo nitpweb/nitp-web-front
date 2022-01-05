@@ -102,7 +102,7 @@ export const EventCardStyle = styled.div`
       .eventcarddetail {
         font-size: 16px;
         margin-right: 5%;
-        width: 75%;
+        /* width: 75%; */
         text-align: justify;
       }
     }
