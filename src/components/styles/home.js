@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const HomeStyle = styled.div`
+  overflow-x: hidden;
   background-color: ${props => props.theme.backgroundColor};
   .nitpbackimg {
     width: 100%;
