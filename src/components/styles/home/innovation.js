@@ -29,10 +29,11 @@ export const InnovationStyle = styled.div`
   margin-bottom: 2vh;
   #head {
     position: absolute;
-    color: ${props => props.theme.textColor};
+    color: ${props => props.theme.primaryTextColor};
     left: 6%;
     top: 6%;
     font-family: "Quicksand";
+    font-weight: bold;
     font-size: 30px;
     margin: 0;
   }
@@ -268,5 +269,6 @@ export const InnovationStyle = styled.div`
     bottom: 10%;
     right: 6%;
     text-decoration: none;
+    font-weight: 600;
   }
 `
