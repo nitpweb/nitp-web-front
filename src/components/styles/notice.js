@@ -8,7 +8,7 @@ export const NoticeStyle = styled.div`
   margin-top: 10px;
   .noticecarddetail {
     text-align: justify;
-    font-size: 18px;
+    font-size: 16px;
     font-family: "Source Sans Pro";
     margin:0;
     a {
