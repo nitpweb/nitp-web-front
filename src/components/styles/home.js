@@ -47,7 +47,8 @@ export const HomeStyle = styled.div`
     flex-wrap: wrap; */
     flex-direction: column;
     width: 30vw;
-    height: 500px;
+    min-height: fit-content;
+    max-height: 500px;
     z-index: 1;
     justify-content: flex-start;
     overflow-x: hidden;
@@ -65,7 +66,8 @@ export const HomeStyle = styled.div`
     /* -ms-flex-wrap: wrap;
     flex-wrap: wrap; */
     flex-direction: column;
-    width: 30vw;
+    width: 30vw; 
+    min-height: fit-content;
     max-height: 500px;
     z-index: 1;
     border-radius: 3px;
