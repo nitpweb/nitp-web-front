@@ -35,7 +35,7 @@ export const ImportantLinkStyle = styled.div`
         /* filter: grayscale(100%); */
         .linkimg {
           margin-top: 5%;
-          width: 30%;
+          width: 25%;
           max-width:70%;
         }
         .lead {
@@ -49,11 +49,11 @@ export const ImportantLinkStyle = styled.div`
             font-size: 0.7vw;
             word-wrap: break-word;
             padding: 0 0.5rem 0 0.5rem;
-            font-family: Source Sans Pro;
+            font-family: quicksand;
           }
         }
         h3 {
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           color: ${props => props.theme.primaryColor};
           font-family: Source Sans Pro;
           font-weight: bold;
