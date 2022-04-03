@@ -20,7 +20,7 @@ export const NewsCardStyle = styled.div`
       min-height: 100%;
       width: auto;
       height: auto;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
   .news-read {

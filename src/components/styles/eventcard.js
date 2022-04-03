@@ -70,11 +70,11 @@ export const EventCardStyle = styled.div`
 
   #eventdtp {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     div {
       display: flex;
       align-items: center;
-      margin-left: 20px;
+      /* margin-left: 20px; */
       a {
         text-decoration: none;
         display: flex;
