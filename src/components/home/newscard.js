@@ -23,7 +23,7 @@ const Newscard = inf => {
             to={`/news${inf.id ? `?id=${inf.id}` : ""}`}
             className="newscard-readmore"
           >
-            Read more..
+            Read more...
           </Link>
         </h6>
       </div>
