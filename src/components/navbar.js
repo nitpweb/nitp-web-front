@@ -165,7 +165,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           <span>
             An Institute of National Importance under Ministry of
             <br />
-            Education(Shiksha Mantralaya), Government of India
+            Education (Shiksha Mantralaya), Government of India
           </span>
         </div>
         <span
