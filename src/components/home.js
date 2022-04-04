@@ -8,6 +8,7 @@ import { Nitpbackimg } from "./home/nitpimg"
 import { Link } from "gatsby"
 import Innovation from "./home/Innovation"
 import GalleryComp from "./home/gallery"
+import Homegif from "./home/homegif"
 import { HomeStyle } from "./styles/home"
 
 const Home = () => {
@@ -230,6 +231,8 @@ const Home = () => {
         </div>
       </div>
       <GalleryComp />
+
+      {/* <Homegif /> */}
     </HomeStyle>
   )
 }
