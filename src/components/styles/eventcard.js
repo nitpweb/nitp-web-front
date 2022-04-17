@@ -55,7 +55,7 @@ export const EventCardStyle = styled.div`
     .eventcarddetail {
       /* margin-left: 5%; */
       text-align:justify;
-      font-size: 18px;
+      font-size: 16px;
       margin:0;
       font-family: "Source Sans Pro";
       color: ${props => props.theme.textColor};
@@ -70,11 +70,11 @@ export const EventCardStyle = styled.div`
 
   #eventdtp {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     div {
       display: flex;
       align-items: center;
-      margin-left: 20px;
+      /* margin-left: 20px; */
       a {
         text-decoration: none;
         display: flex;

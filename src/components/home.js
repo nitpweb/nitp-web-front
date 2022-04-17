@@ -8,6 +8,7 @@ import { Nitpbackimg } from "./home/nitpimg"
 import { Link } from "gatsby"
 import Innovation from "./home/Innovation"
 import GalleryComp from "./home/gallery"
+import Homegif from "./home/homegif"
 import { HomeStyle } from "./styles/home"
 
 const Home = () => {
@@ -78,8 +79,8 @@ const Home = () => {
             className="notice-head"
           >
             Notice
-            <Link id="notice-head-p" to="/notice">
-              view all
+            <Link id="notice-head-p" className="home_heading-p" to="/notice">
+              View all
             </Link>
           </div>
           <div className="notice-row" >
@@ -111,8 +112,8 @@ const Home = () => {
             className="event-head"
           >
             Events
-            <Link id="event-head-p" to="/event">
-              view all
+            <Link id="event-head-p" class = "home_heading-p" to="/event">
+              View all
             </Link>
           </div>
           <div className="event-row">
@@ -156,8 +157,8 @@ const Home = () => {
             className="notice-head"
           >
             Announcements
-            <Link id="notice-head-p" to="/notice">
-              view all
+            <Link id="notice-head-p" class = "home_heading-p" to="/notice">
+              View all
             </Link>
           </div>
           <div className="notice-row" >
@@ -192,8 +193,8 @@ const Home = () => {
           id="news"
         >
           News
-          <Link id="news-head-p" to="/news">
-            view all
+          <Link id="news-head-p" class = "home_heading-p" to="/news">
+            View all
           </Link>
         </div>
 
@@ -230,6 +231,8 @@ const Home = () => {
         </div>
       </div>
       <GalleryComp />
+
+      {/* <Homegif /> */}
     </HomeStyle>
   )
 }
