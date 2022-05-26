@@ -48,7 +48,20 @@ const Facultyprofile = ({ url }) => {
       .catch(e => {
         console.log(e)
       })
-  }, data)
+  }, []) // because of "data", it was sending the requests again and again
+
+
+  document.addEventListener("scroll", e => {
+    let scrolled = document.scrollingElement.scrollTop
+    if (scrolled >= 120) {
+      if (screen.width > 768) {
+        document.querySelector(".faculty-img-row").style.marginTop = "-4vh"
+      }
+    }else{
+      document.querySelector(".faculty-img-row").style.marginTop = "3vh"
+    }
+})
+
 
   return (
     <>
@@ -71,6 +84,9 @@ const Facultyprofile = ({ url }) => {
               </a>
               <h2>{data.profile.name}</h2>
               <h3>{data.profile.designation}</h3>
+              {data.profile.cv && (
+                <button className="cv-btn" onClick={(e)=>{window.open("https://drive.google.com/uc?export=download&id=" + data.profile.cv.split('id=').pop())}}>Download CV</button>
+              )}
             </div>
 
             <div className="faculty-details-row">

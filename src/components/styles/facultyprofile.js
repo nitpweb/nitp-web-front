@@ -37,6 +37,18 @@ export const FacultyProfile = styled.div`
       }
     }
   }
+  .cv-btn{
+    padding: 10px;
+    border-radius: 5px;
+    background: ${props => props.theme.primaryColor};
+    color: white;
+    width: 60%;
+    border: none;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
   .faculty-details-row {
     width: calc(100% - 320px);
     display: flex;
