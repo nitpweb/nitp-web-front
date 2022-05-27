@@ -221,7 +221,7 @@ export const GallertHead = styled.h1`
   text-align: center;
   padding-top: 10vw;
 `
-export const HomegifStyle = styled.div`
+export const VideoStyle = styled.div`
   color: blue;
 
 `
