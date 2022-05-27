@@ -8,7 +8,7 @@ import { Nitpbackimg } from "./home/nitpimg"
 import { Link } from "gatsby"
 import Innovation from "./home/Innovation"
 import GalleryComp from "./home/gallery"
-import Homegif from "./home/homegif"
+import Video from "./home/video"
 import { HomeStyle } from "./styles/home"
 
 const Home = () => {
@@ -112,7 +112,7 @@ const Home = () => {
             className="event-head"
           >
             Events
-            <Link id="event-head-p" class = "home_heading-p" to="/event">
+            <Link id="event-head-p"  to="/event">
               View all
             </Link>
           </div>
@@ -157,7 +157,7 @@ const Home = () => {
             className="notice-head"
           >
             Announcements
-            <Link id="notice-head-p" class = "home_heading-p" to="/notice">
+            <Link id="notice-head-p"  to="/notice">
               View all
             </Link>
           </div>
@@ -193,7 +193,7 @@ const Home = () => {
           id="news"
         >
           News
-          <Link id="news-head-p" class = "home_heading-p" to="/news">
+          <Link id="news-head-p"  to="/news">
             View all
           </Link>
         </div>
@@ -232,7 +232,7 @@ const Home = () => {
       </div>
       <GalleryComp />
 
-      {/* <Homegif /> */}
+      {/* <Video /> */}
     </HomeStyle>
   )
 }
