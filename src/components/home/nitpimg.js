@@ -10,7 +10,7 @@ export const Nitpbackimg = () => {
       nitpBackImages: allFile(
         filter: {
           relativePath: {
-            in: ["home/img/bg-2.jpg", "home/img/bg-3.jpg", "home/img/sac.jpeg","home/img/bg-5.jpeg","home/img/bg-6.JPG"]
+            in: ["home/img/homebg-1.jpg", "home/img/homebg-2.jpeg", "home/img/sac.jpeg","home/img/homebg-3.jpg","home/img/bg.jpg"]
           }
         }
       ) {
