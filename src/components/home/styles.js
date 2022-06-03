@@ -222,6 +222,6 @@ export const GallertHead = styled.h1`
   padding-top: 10vw;
 `
 export const VideoStyle = styled.div`
-  color: blue;
-
+  text-align: center;
+  padding-bottom: 2vw;
 `
