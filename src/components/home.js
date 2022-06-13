@@ -138,7 +138,7 @@ const Home = () => {
                       date={day}
                       month={monthname}
                       attachments={event.attachments}
-                      location={event.venue}
+                      location={event.venue.substring(0, 60)}
                       link={
                         event.attachments.length != 0
                           ? event.attachments[0].url
