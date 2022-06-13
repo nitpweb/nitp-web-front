@@ -38,7 +38,7 @@ const Footer = () => {
             </span>
             <span>
               <a href="https://goo.gl/maps/srZ6whpfDGqg85sp6" target="_blank">
-                <img src="/location.svg" alt="location" />
+                <img src="/location.png" alt="location" />
               </a>
             </span>
           </div>
