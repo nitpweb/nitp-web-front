@@ -26,11 +26,11 @@ export const NoticeStyle = styled.div`
     justify-content: flex-end;
     div {
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       margin-left: 20px;
       padding-bottom: 10px;
       img {
-        margin-right: 8px;
+        margin: 3px 8px 3px auto;
         height: 14px;
       }
       .notdown {
@@ -39,7 +39,7 @@ export const NoticeStyle = styled.div`
         bottom: 0;
         /* margin-bottom: 5px; */
         color: ${props => props.theme.primaryColor};
-        font-size: 18px;
+        font-size: 13px;
         font-weight: 600;
         text-align: right;
         font-family: "Source Sans Pro";
