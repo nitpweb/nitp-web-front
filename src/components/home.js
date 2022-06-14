@@ -138,7 +138,7 @@ const Home = () => {
                       date={day}
                       month={monthname}
                       attachments={event.attachments}
-                      location={event.venue}
+                      location={event.venue.substring(0, 60)}
                       link={
                         event.attachments.length != 0
                           ? event.attachments[0].url
@@ -202,16 +202,23 @@ const Home = () => {
           <div className="news-viewbox" data-aos="fade-left" data-aos-duration="200">
             {news &&
               news.map(news => {
+                Date.prototype.formatDDMMYYYY = function(){
+                  return this.getDate() + 
+                  "/" +  (this.getMonth()+1) +
+                  "/" +  this.getFullYear();
+              }
+              
                 const newtime = new Date().getTime()
 
                 var d = Math.round((newtime - news.openDate) / 3600000)
-                if (d > 24) {
+                if(d > 24*7){
+                  d = new Date(news.openDate);
+                  d = d.formatDDMMYYYY();
+                }else if (d > 24) {
                   d = `${Math.round(d / 24)} days ago`
                 } else if (d < 1) {
                   d = `Just now`
-                } else if (d < 2) {
-                  d = `${d} hour ago`
-                } else {
+                }  else {
                   d = `${d} hours ago`
                 }
                 var desc = String(news.description).substr(0, 170)

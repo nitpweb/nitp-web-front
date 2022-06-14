@@ -4,6 +4,8 @@ import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
 
+import images from './images/images.json'
+
 const GalleryComp = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -22,8 +24,8 @@ const GalleryComp = () => {
   const Image = props => {
     return (
       <div data-aos="zoom-in" className="tempimg">
-        <Img
-          fluid={data.images.nodes[props.index].childImageSharp.fluid}
+        <img
+          src={`https://web.nitp.ac.in/gallery/images/${props.img}`}
           style={{ height: "100%", width: "100%", borderRadius: "0.5rem" }}
           imgStyle={{ objectFit: "fill" }}
         />
@@ -38,40 +40,40 @@ const GalleryComp = () => {
       </div>
       <Gallery>
         <div className="gallery-image">
-          <Image index="0" />
+          <Image img={`${images[2]}`} />
         </div>
         <div className="gallery-image">
-          <Image index="1" />
+          <Image img={`${images[4]}`} />
         </div>
         <div className="gallery-image">
-          <Image index="2" />
+          <Image img={`2020-01-31_1_1920x1080_1_700x500.jpg`} />
         </div>
         <div className="gallery-image">
-          <Image index="3" />
+          <Image img={`${images[5]}`} />
         </div>
         <div className="gallery-image">
-          <Image index="4" />
+          <Image img={`${images[6]}`} />
         </div>
         <div className="gallery-image">
-          <Image index="5" />
+          <Image img={`${images[7]}`} />
         </div>
         <div className="gallery-image">
-          <Image index="6" />
+          <Image img={`${images[8]}`} />
         </div>
         <div className="gallery-image">
-          <Image index="7" />
+          <Image img={`${images[9]}`} />
           <Link to="/gallery">
             <p>See More</p>
           </Link>
         </div>
         <div className="gallery-image">
-          <Image index="8" />
+          <Image img={`${images[11]}`} />
         </div>
         <div className="gallery-image">
-          <Image index="9" />
+          <Image img={`${images[12]}`} />
         </div>
         <div className="gallery-image">
-          <Image index="10" />
+          <Image img={`${images[13]}`} />
         </div>
 
         {/* <div className="first-div">
