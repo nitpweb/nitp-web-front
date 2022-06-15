@@ -1,6 +1,7 @@
 import React from "react"
 
-const home = "https://web.nitp.ac.in/uploads/departments/cse/labs"
+// const home = "https://web.nitp.ac.in/uploads/departments/cse/labs"
+const home = "https://web.nitp.ac.in/dept/cse/labs"
 export const Labs = [
   {
     content: (
@@ -21,7 +22,7 @@ export const Labs = [
     ),
     image: (
       <img
-        src={`${home}/image001.jpg`}
+        src={`${home}/DSC_0004.jpg`}
         id="oslab"
         height="250px"
         width="350px"
@@ -44,7 +45,7 @@ export const Labs = [
     ),
     image: (
       <img
-        src={`${home}/image002.jpg`}
+        src={`${home}/DSC_0001.jpg`}
         id="oslab2"
         height="250px"
         width="350px"
@@ -66,7 +67,7 @@ export const Labs = [
     ),
     image: (
       <img
-        src={`${home}/image003.jpg`}
+        src={`${home}/DSC_0002.jpg`}
         id="simu"
         height="250px"
         width="350px"
@@ -89,7 +90,7 @@ export const Labs = [
     ),
     image: (
       <img
-        src={`${home}/image004.jpg`}
+        src={`${home}/DSC_0008.jpg`}
         id="soft"
         height="250px"
         width="350px"
