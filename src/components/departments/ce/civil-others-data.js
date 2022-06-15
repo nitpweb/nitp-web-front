@@ -297,7 +297,7 @@ export const Labs = [
     ),
     image: (
       <>
-        <img src={`${home}images/image013.jpg`} />
+        <img src={`https://web.nitp.ac.in/dept/civil/labs/DSC_0045.jpg`} />
       </>
     ),
   },
@@ -323,7 +323,7 @@ export const Labs = [
     ),
     image: (
       <>
-        <img src={`${home}images/image007.jpg`} />
+        <img src={`https://web.nitp.ac.in/dept/civil/labs/DSC_0051.jpg`} />
       </>
     ),
   },
