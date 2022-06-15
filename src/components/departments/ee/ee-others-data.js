@@ -1,6 +1,7 @@
 import React from "react"
 
-const home = "http://www.nitp.ac.in/"
+// const home = "http://www.nitp.ac.in/"
+const home = "https://web.nitp.ac.in/dept/ee/labs/"
 
 const Tables = {
   studentSelectedForInternships: [
@@ -143,90 +144,122 @@ const Tables = {
     },
   ],
 }
-export const Labs = [
-  {
-    content: (
-      <>
-        <h2>Laboratory Facilities Available in the Department:-</h2>
+// export const Labs = [
+//   {
+//     content: (
+//       <>
+//         <h2>Laboratory Facilities Available in the Department:-</h2>
 
-        <ol type="1">
-          <li>Elements of Electrical Engg. Lab.</li>
-          <li>Electrical M/C Lab</li>
-          <li>Power System Protection Lab</li>
-          <li>Power Electronics Lab</li>
-          <li>Computer Lab</li>
-          <li>Microprocessor and Microcontroller Lab</li>
-          <li>Network theory Lab</li>
-          <li>Control System Lab</li>
-          <li>Measurement Lab</li>
-          <li>High Voltage Lab</li>
-          <li>SCADA Lab</li>
-        </ol>
-      </>
-    ),
-    image: (
-      <img src={`${home}images/image_ele.jpg`} style={{ width: "100%" }}></img>
-    ),
-  },
-  {
-    content: (
-      <>
-        <h2>
-          The following facilities are available in the department for carrying
-          out research:-
-        </h2>
-        <br />
-        <ol type="1">
-          <li>
-            A high end SCADA Lab is provided to the students to carry out
-            experiments related to their research.
-          </li>
-          <li>
-            Available simulation softwares include, MATLAB, Power World
-            Simulator, Cadence-OrCAD, PSIM, LabView(NI).
-          </li>
-          <li>
-            The hardware interface currently available in the department is
-            Typhoon, HIL.
-          </li>
-          <li>
-            Three high end Labs with state-of-the-art facilities are coming up
-            shortly. This include, Advanced Industrial Drives Lab, Advanced
-            Control System lab and Advanced Instrumentation lab.
-          </li>
-          <br />
-          <br />
-          The laboratory under this department includes Basic Electrical
-          Engg.,Electrical Machines, Network Theory, Signals & Systems, and
-          Instrumentation, High Voltage Engg., Microprocessor, Switchgear &
-          protection labs. All labs are equipped with machines and instruments
-          to meet the requirement of UG and PG course Curriculum as well as
-          research & development work being under taken by students and faculty.
-          The department has a Computer Lab with all hardware and software
-          facilities to meet the requirements of system modeling and analog and
-          digital circuit simulation. The department has Analog and Digital
-          Circuit Simulation software for analysis, PCB layout, MATLAB software
-          for modeling, simulation of signals and systems and Power World
-          Simulator for power system study.
-          <br />
-          The aim of the department is to equip the different labs for modern
-          course curriculum in the field of engineering & technology. In order
-          to carryout research, development and consultancy work in active
-          participation with the industry. The department is in process of
-          establishing labs for computer based process control and digital
-          signal processing. Very recently the department has established a high
-          end SCADA lab with a expense of more than 5 crores which is used for
-          final year ug and pg laboratories and also for research purpose by PhD
-          scholars of the department.
-          <br />
-          We are planning to start training courses for industry personnel and
-          academicians in this facility to generate revenue for the department/
-          college.
-        </ol>
-      </>
-    ),
-  },
+//         <ol type="1">
+//           <li>Elements of Electrical Engg. Lab.</li>
+//           <li>Electrical M/C Lab</li>
+//           <li>Power System Protection Lab</li>
+//           <li>Power Electronics Lab</li>
+//           <li>Computer Lab</li>
+//           <li>Microprocessor and Microcontroller Lab</li>
+//           <li>Network theory Lab</li>
+//           <li>Control System Lab</li>
+//           <li>Measurement Lab</li>
+//           <li>High Voltage Lab</li>
+//           <li>SCADA Lab</li>
+//         </ol>
+//       </>
+//     ),
+//     // image: (
+//     //   <img src={`${home}images/image_ele.jpg`} style={{ width: "100%" }}></img>
+//     // ),
+//   },
+//   {
+//     content: (
+//       <>
+//         <h2>
+//           The following facilities are available in the department for carrying
+//           out research:-
+//         </h2>
+//         <br />
+//         <ol type="1">
+//           <li>
+//             A high end SCADA Lab is provided to the students to carry out
+//             experiments related to their research.
+//           </li>
+//           <li>
+//             Available simulation softwares include, MATLAB, Power World
+//             Simulator, Cadence-OrCAD, PSIM, LabView(NI).
+//           </li>
+//           <li>
+//             The hardware interface currently available in the department is
+//             Typhoon, HIL.
+//           </li>
+//           <li>
+//             Three high end Labs with state-of-the-art facilities are coming up
+//             shortly. This include, Advanced Industrial Drives Lab, Advanced
+//             Control System lab and Advanced Instrumentation lab.
+//           </li>
+//           <br />
+//           <br />
+//           The laboratory under this department includes Basic Electrical
+//           Engg.,Electrical Machines, Network Theory, Signals & Systems, and
+//           Instrumentation, High Voltage Engg., Microprocessor, Switchgear &
+//           protection labs. All labs are equipped with machines and instruments
+//           to meet the requirement of UG and PG course Curriculum as well as
+//           research & development work being under taken by students and faculty.
+//           The department has a Computer Lab with all hardware and software
+//           facilities to meet the requirements of system modeling and analog and
+//           digital circuit simulation. The department has Analog and Digital
+//           Circuit Simulation software for analysis, PCB layout, MATLAB software
+//           for modeling, simulation of signals and systems and Power World
+//           Simulator for power system study.
+//           <br />
+//           The aim of the department is to equip the different labs for modern
+//           course curriculum in the field of engineering & technology. In order
+//           to carryout research, development and consultancy work in active
+//           participation with the industry. The department is in process of
+//           establishing labs for computer based process control and digital
+//           signal processing. Very recently the department has established a high
+//           end SCADA lab with a expense of more than 5 crores which is used for
+//           final year ug and pg laboratories and also for research purpose by PhD
+//           scholars of the department.
+//           <br />
+//           We are planning to start training courses for industry personnel and
+//           academicians in this facility to generate revenue for the department/
+//           college.
+//         </ol>
+//       </>
+//     ),
+//   },
+// ]
+
+export const Labs = {
+  content: (
+    <>
+      <h2>Laboratory Facilities Available in the Department:-</h2>
+
+      <ol type="1">
+        <li>Elements of Electrical Engg. Lab.</li>
+        <li>Electrical M/C Lab</li>
+        <li>Power System Protection Lab</li>
+        <li>Power Electronics Lab</li>
+        <li>Computer Lab</li>
+        <li>Microprocessor and Microcontroller Lab</li>
+        <li>Network theory Lab</li>
+        <li>Control System Lab</li>
+        <li>Measurement Lab</li>
+        <li>High Voltage Lab</li>
+        <li>SCADA Lab</li>
+      </ol>
+    </>
+  ),
+}
+
+export const LabImages = [
+  <img src={`${home}DSC_0056.jpg`} />,
+  <img src={`${home}DSC_0057.jpg`} />,
+  <img src={`${home}DSC_0058.jpg`} />,
+  <img src={`${home}DSC_0061.jpg`} />,
+  <img src={`${home}DSC_0063.jpg`} />,
+  // <img src={`${home}images/a_model.jpg`} />,
 ]
+
 export const Achievements = [
   {
     content: (

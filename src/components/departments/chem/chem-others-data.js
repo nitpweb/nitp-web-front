@@ -24,56 +24,69 @@ export const Labs = {
     </>
   ),
 }
+// export const LabImages = [
+//   <>
+//     <img src={`${home}cheimg/Dr. Parvin Lab.jpg`} alt="image" />
+//     <div className="text">Dr. Parvin Lab</div>
+//   </>,
+//   <>
+//     <img src={`${home}cheimg/Dr. Jha Lab.png`} alt="image" />
+//     <div className="text">Dr. Jha Lab</div>
+//   </>,
+//   <>
+//     <img src={`${home}cheimg/Dr. Dasgupta Lab.jpg`} alt="image" />
+//     <div className="text">Dr. Dasgupta Lab</div>
+//   </>,
+//   <>
+//     <img src={`${home}cheimg/subrata.jpg`} alt="image" />
+//     <div className="text">Dr. Das Lab</div>
+//   </>,
+//   <>
+//     <img src={`${home}cheimg/Dr. Chowdhury Lab.jpg`} alt="image" />
+//     <div className="text">Dr. Chowdhury Lab</div>
+//   </>,
+//   <>
+//     <img src={`${home}cheimg/Dr. Thakur Lab.png`} alt="image" />
+//     <div className="text">Dr. Thakur Lab</div>
+//   </>,
+//   <>
+//     <img src={`${home}cheimg/pic-3_BTech lab.JPG`} alt="image" />
+//     <div className="text">B.Tech Lab</div>
+//   </>,
+//   <>
+//     <img src={`${home}cheimg/pic-4_MSc Synthesis lab.JPG`} alt="image" />
+//     <div className="text">M.Sc Synthesis Lab</div>
+//   </>,
+//   <>
+//     <img src={`${home}cheimg/pic-5_MSc Characterization lab.jpg`} alt="image" />
+//     <div className="text">M.Sc Characterization lab</div>
+//   </>,
+//   <>
+//     <img
+//       src={`${home}cheimg/pic-6_Departmental Instrument Lab.jpg`}
+//       alt="image"
+//     />
+//     <div className="text">Departmental Instrument Lab</div>
+//   </>,
+//   <>
+//     <img
+//       src={`${home}cheimg/pic-7_Departmental Individual Faculty Research Lab.jpg`}
+//     />
+//     <div className="text">Dep. Of Faculty Research Lab</div>
+//   </>,
+// ]
+
 export const LabImages = [
   <>
-    <img src={`${home}cheimg/Dr. Parvin Lab.jpg`} alt="image" />
-    <div className="text">Dr. Parvin Lab</div>
+    <img src={`https://web.nitp.ac.in/dept/chem/labs/DSC_0072.jpg`} alt="image" />
   </>,
   <>
-    <img src={`${home}cheimg/Dr. Jha Lab.png`} alt="image" />
-    <div className="text">Dr. Jha Lab</div>
+    <img src={`https://web.nitp.ac.in/dept/chem/labs/DSC_0070.jpg`} alt="image" />
   </>,
   <>
-    <img src={`${home}cheimg/Dr. Dasgupta Lab.jpg`} alt="image" />
-    <div className="text">Dr. Dasgupta Lab</div>
+    <img src={`https://web.nitp.ac.in/dept/chem/labs/DSC_0065.jpg`} alt="image" />
   </>,
-  <>
-    <img src={`${home}cheimg/subrata.jpg`} alt="image" />
-    <div className="text">Dr. Das Lab</div>
-  </>,
-  <>
-    <img src={`${home}cheimg/Dr. Chowdhury Lab.jpg`} alt="image" />
-    <div className="text">Dr. Chowdhury Lab</div>
-  </>,
-  <>
-    <img src={`${home}cheimg/Dr. Thakur Lab.png`} alt="image" />
-    <div className="text">Dr. Thakur Lab</div>
-  </>,
-  <>
-    <img src={`${home}cheimg/pic-3_BTech lab.JPG`} alt="image" />
-    <div className="text">B.Tech Lab</div>
-  </>,
-  <>
-    <img src={`${home}cheimg/pic-4_MSc Synthesis lab.JPG`} alt="image" />
-    <div className="text">M.Sc Synthesis Lab</div>
-  </>,
-  <>
-    <img src={`${home}cheimg/pic-5_MSc Characterization lab.jpg`} alt="image" />
-    <div className="text">M.Sc Characterization lab</div>
-  </>,
-  <>
-    <img
-      src={`${home}cheimg/pic-6_Departmental Instrument Lab.jpg`}
-      alt="image"
-    />
-    <div className="text">Departmental Instrument Lab</div>
-  </>,
-  <>
-    <img
-      src={`${home}cheimg/pic-7_Departmental Individual Faculty Research Lab.jpg`}
-    />
-    <div className="text">Dep. Of Faculty Research Lab</div>
-  </>,
+ 
 ]
 
 export const ActivityImages = [
