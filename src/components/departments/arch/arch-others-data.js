@@ -1,6 +1,7 @@
 import React from "react"
 
-const home = "http://www.nitp.ac.in/"
+// const home = "http://www.nitp.ac.in/"
+const home = "https://web.nitp.ac.in/dept/arch/labs/"
 export const Labs = {
   content: (
     <>
@@ -50,10 +51,10 @@ export const Labs = {
 }
 
 export const LabImages = [
-  <img src={`${home}images/a_building.jpg`} />,
-  <img src={`${home}images/a_climatolog.jpg`} />,
-  <img src={`${home}images/a_computer.png`} />,
-  <img src={`${home}images/a_construction.jpg`} />,
-  <img src={`${home}images/a_departmentallib.jpg`} />,
-  <img src={`${home}images/a_model.jpg`} />,
+  <img src={`${home}DSC_0663.jpg`} />,
+  <img src={`${home}DSC_0666.jpg`} />,
+  <img src={`${home}DSC_0675.jpg`} />,
+  <img src={`${home}DSC_0680.jpg`} />,
+  <img src={`${home}DSC_0686.jpg`} />,
+  // <img src={`${home}images/a_model.jpg`} />,
 ]

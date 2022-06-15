@@ -155,7 +155,13 @@ export const Labs = [
         />
         <br />
         <img
-          src={`${home}/images/eceimage008.jpg`}
+          src={`https://web.nitp.ac.in/dept/ece/labs/DSC_0031.jpg`}
+          height="250px"
+          width="350px"
+        />
+        <br />
+        <img
+          src={`https://web.nitp.ac.in/dept/ece/labs/DSC_0011.jpg`}
           height="250px"
           width="350px"
         />
