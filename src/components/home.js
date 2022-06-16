@@ -118,7 +118,7 @@ const Home = () => {
           </div>
           <div className="event-row">
             {events &&
-              events.map(event => {
+              events.map((event, index) => {
                 const date = new Date(event.openDate)
                 const day = date.getDate()
                 const month = date.getMonth() + 1
@@ -133,6 +133,7 @@ const Home = () => {
                 if (event.title != "") {
                   return (
                     <Eventcard
+                      key={index}
                       detail={event.title}
                       time={`${day}-${month}-${year} - ${cday}-${cmonth}-${cyear}`}
                       date={day}
@@ -228,6 +229,7 @@ const Home = () => {
                       url={link(news.image[0].url)}
                       id={news.id}
                       time={d}
+                      key={news.id}
                       head={`${news.title.slice(0, 92)}...`}
                       detail={desc.slice(0, 200)}
                     />
