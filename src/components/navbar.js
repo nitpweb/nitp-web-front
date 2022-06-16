@@ -17,9 +17,16 @@ import Navlist from "./global/navlist"
 import { Deplist, DepListr } from "./global/deplist"
 import Dropnew from "./global/dropnew"
 import DynamicLink from "./global/dynamicurl"
+import { isBrowser } from "./isBrowser"
 
 const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
   const pathname = window.location.pathname.split("/")[1]
+  const isInSession = () =>{
+    if (!isBrowser) {
+      return;
+    }
+    return sessionStorage.getItem("inSession")
+  }
   // const [change, setChange] = useState(0)
   // useEffect(() => {
   //   const interval = setInterval(() => {
@@ -44,7 +51,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
         document.querySelector(".logobadge>div>img").style.maxHeight = "5vw"
         document.querySelector(".logobadge>div>img").style.borderWidth = "0px"
         document.querySelector(".logobadge").style.backgroundColor =
-          "transparent"
+        "transparent"
         document.querySelector(".logobadge").style.paddingLeft = "0"
         document.querySelector(".mobilelogo>img").style.maxHeight = "5vh"
         document.querySelector(".logobadge").style.transition = "1s"
@@ -66,9 +73,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
         document.querySelector(".logobadge>h4").style.display = "flex"
         document.querySelector(".logobadge>div>img").style.maxHeight = "8vw"
         document.querySelector(".logobadge>div>img").style.borderWidth = "0.5vw"
-        document.querySelector(".logobadge").style.backgroundColor = theme
-          ? "#941b0c"
-          : "#cd512f"
+        document.querySelector(".logobadge").style.backgroundColor = theme? "#941b0c" : "#cd512f"
         document.querySelector(".logobadge>div>img").style.marginTop = "0px"
         document.querySelector(".logobadge").style.paddingLeft = "0"
         document.querySelector(".mobilelogo>img").style.maxHeight = "7vh"
@@ -80,7 +85,11 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
       }
     })
   }, [])
-
+  useEffect(()=>{
+    if (isBrowser) {
+      sessionStorage.setItem("inSession", true)   
+    }
+  })
   return (
     <NavbarStyle>
       <div className="nav-head-row">
@@ -271,7 +280,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
       )}
 
       <div id="logowr1">
-        <Link className="logobadge" data-aos="fade-down" to="/">
+        <Link className="logobadge" data-aos={ isInSession ? " " : "fade-down"} to="/">
           <h4>श्रमोऽनवरत चेष्टाय</h4>
           <div id="logowr2">
             <img src={logo} alt="NIT PATNA" />
@@ -324,18 +333,20 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             </div>
             <div id="homesidedropwrap">
               <div className="adminsidedrop">
-                {Navlist.home.map(item => (
+                {Navlist.home.map((item, index) => (
                   <div
                     to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
                     className="mainLink"
+                    key={index}
                   >
                     <p>
                       <span>{item.title}</span>
                     </p>
                     {item.sub && (
                       <div id={`sub${item.url.slice(1)}`} className="mobsub">
-                        {item.sub.map(val => (
+                        {item.sub.map((val, index) => (
                           <DynamicLink
+                            key={index}
                             url={val.url}
                             data={val.data}
                             title={val.title}
@@ -370,10 +381,11 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             </div>
             <div id="adminsidedropwrap">
               <div className="adminsidedrop">
-                {Navlist.admin.map(item => (
+                {Navlist.admin.map((item,index) => (
                   <div
                     to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
                     className="mainLink"
+                    key={index}
                   >
                     {Navlist.admin.length != 1 && (
                       <p>
@@ -382,12 +394,13 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
                     )}
                     {item.sub && (
                       <div id={`sub${item.url.slice(1)}`} className="mobsub">
-                        {item.sub.map(val => (
+                        {item.sub.map((val, index) => (
                           <DynamicLink
                             url={val.url}
                             data={val.data}
                             title={val.title}
                             classvalue="nav-sidebar-div"
+                            key={index}
                           />
                         ))}
                       </div>
@@ -419,8 +432,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             </div>
             <div id="acadsidedropwrap">
               <div className="departsidedrop">
-                {Navlist.academics.map(item => (
+                {Navlist.academics.map((item, index) => (
                   <div
+                    key={index}
                     className="mainLink"
                     onClick={function () {
                       var z = document.querySelector(`#sub${item.id}`)
@@ -437,8 +451,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
                     </p>
                     {item.sub && (
                       <div id={`sub${item.id}`} className="mobsub">
-                        {item.sub.map(val => (
+                        {item.sub.map((val, index) => (
                           <DynamicLink
+                            key={index}
                             url={val.url}
                             data={val.data}
                             title={val.title}
@@ -477,8 +492,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             </div>
             <div id="departsidedropwrap">
               <div className="departsidedrop">
-                {Navlist.departments.map(val => (
+                {Navlist.departments.map((val, index) => (
                   <DynamicLink
+                    key={index}
                     url={val.url}
                     data={val.data}
                     title={val.title}
@@ -507,8 +523,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             </div>
             <div id="facsidedropwrap">
               <div className="departsidedrop">
-                {Navlist.facilities.map(item => (
+                {Navlist.facilities.map((item, index) => (
                   <div
+                    key={index}
                     to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
                     className="mainLink"
                   >
@@ -519,8 +536,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
                     )}
                     {item.sub && (
                       <div id={`sub${item.url.slice(1)}`} className="mobsub">
-                        {item.sub.map(val => (
+                        {item.sub.map((val, index) => (
                           <DynamicLink
+                            key={index}
                             url={val.url}
                             data={val.data}
                             title={val.title}
@@ -552,8 +570,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             </div>
             <div id="studsidedropwrap">
               <div className="departsidedrop">
-                {Navlist.students.map(item => (
+                {Navlist.students.map((item, index) => (
                   <div
+                  key={index}
                     to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
                     className="mainLink"
                   >
@@ -564,8 +583,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
                     )}
                     {item.sub && (
                       <div id={`sub${item.url.slice(1)}`} className="mobsub">
-                        {item.sub.map(val => (
+                        {item.sub.map((val, index)=> (
                           <DynamicLink
+                            key={index}
                             url={val.url}
                             data={val.data}
                             title={val.title}
@@ -597,8 +617,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             </div>
             <div id="facultysidedropwrap">
               <div className="departsidedrop">
-                {Navlist.faculty.map(item => (
+                {Navlist.faculty.map((item, index) => (
                   <div
+                    key={index}
                     to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
                     className="mainLink"
                   >
@@ -609,8 +630,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
                     )}
                     {item.sub && (
                       <div id={`sub${item.url.slice(1)}`} className="mobsub">
-                        {item.sub.map(val => (
+                        {item.sub.map((val, index) => (
                           <DynamicLink
+                            key={index}
                             url={val.url}
                             data={val.data}
                             title={val.title}
@@ -676,8 +698,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           </div>
           <div id="homesidedropwrap">
             <div className="adminsidedrop">
-              {Navlist.home.map(item => (
+              {Navlist.home.map((item, index) => (
                 <div
+                  key={index}
                   to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
                   className="mainLink"
                 >
@@ -686,8 +709,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
                   </p>
                   {item.sub && (
                     <div id={`sub${item.url.slice(1)}`} className="mobsub">
-                      {item.sub.map(val => (
+                      {item.sub.map((val, index) => (
                         <DynamicLink
+                          key={index}
                           url={val.url}
                           data={val.data}
                           title={val.title}
@@ -718,8 +742,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           </div>
           <div id="adminsidedropwrap">
             <div className="departsidedrop">
-              {Navlist.admin.map(item => (
+              {Navlist.admin.map((item, index) => (
                 <div
+                  key={index}
                   to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
                   className="mainLink"
                 >
@@ -730,8 +755,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
                   )}
                   {item.sub && (
                     <div id={`sub${item.url.slice(1)}`} className="mobsub">
-                      {item.sub.map(val => (
+                      {item.sub.map((val, index) => (
                         <DynamicLink
+                          key={index}
                           url={val.url}
                           data={val.data}
                           title={val.title}
@@ -764,8 +790,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           </div>
           <div id="acadsidedropwrap">
             <div className="departsidedrop">
-              {Navlist.academics.map(item => (
+              {Navlist.academics.map((item, index) => (
                 <div
+                  key={index}
                   className="mainLink"
                   onClick={function () {
                     var z = document.querySelector(`#sub${item.id}`)
@@ -782,8 +809,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
                   </p>
                   {item.sub && (
                     <div id={`sub${item.id}`} className="mobsub">
-                      {item.sub.map(val => (
+                      {item.sub.map((val, index) => (
                         <DynamicLink
+                          key={index}
                           url={val.url}
                           data={val.data}
                           title={val.title}
@@ -819,8 +847,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           </div>
           <div id="departsidedropwrap">
             <div className="departsidedrop">
-              {Navlist.departments.map(val => (
+              {Navlist.departments.map((val, index) => (
                 <DynamicLink
+                  key={index}
                   url={val.url}
                   data={val.data}
                   title={val.title}
@@ -848,8 +877,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           </div>
           <div id="facsidedropwrap">
             <div className="departsidedrop">
-              {Navlist.facilities.map(item => (
+              {Navlist.facilities.map((item, index) => (
                 <div
+                  key={index}
                   to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
                   className="mainLink"
                 >
@@ -860,8 +890,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
                   )}
                   {item.sub && (
                     <div id={`sub${item.url.slice(1)}`} className="mobsub">
-                      {item.sub.map(val => (
+                      {item.sub.map((val, index) => (
                         <DynamicLink
+                          key={index}
                           url={val.url}
                           data={val.data}
                           title={val.title}
@@ -894,8 +925,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           </div>
           <div id="studsidedropwrap">
             <div className="departsidedrop">
-              {Navlist.students.map(item => (
+              {Navlist.students.map((item, index) => (
                 <div
+                  key={index}
                   to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
                   className="mainLink"
                 >
@@ -906,8 +938,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
                   )}
                   {item.sub && (
                     <div id={`sub${item.url.slice(1)}`} className="mobsub">
-                      {item.sub.map(val => (
+                      {item.sub.map((val, index) => (
                         <DynamicLink
+                          key={index}
                           url={val.url}
                           data={val.data}
                           title={val.title}
@@ -939,8 +972,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           </div>
           <div id="facultysidedropwrap">
             <div className="departsidedrop">
-              {Navlist.faculty.map(item => (
+              {Navlist.faculty.map((item, index) => (
                 <div
+                  key={index}
                   to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
                   className="mainLink"
                 >
@@ -951,8 +985,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
                   )}
                   {item.sub && (
                     <div id={`sub${item.url.slice(1)}`} className="mobsub">
-                      {item.sub.map(val => (
+                      {item.sub.map((val, index) => (
                         <DynamicLink
+                          key={index}
                           url={val.url}
                           data={val.data}
                           title={val.title}
