@@ -11,9 +11,9 @@ export const Dropdown = ({ to, title, list, idname }) => {
           {title}
         </Link>
         <div className="dropdown-content" id={idname}>
-          {list.map(item => (
+          {list.map((item, index) => (
             <>
-              <DynamicLink url={item.url} data={item.data} title={item.title} />
+              <DynamicLink url={item.url} data={item.data} title={item.title}/>
             </>
           ))}
         </div>
