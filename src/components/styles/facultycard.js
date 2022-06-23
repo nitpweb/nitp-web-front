@@ -77,6 +77,7 @@ export const FacultyCard = styled.div`
    line-height: 0.1;
    margin-bottom:5px;
    margin-top: 30px;
+   font-size: inherit;
  }
   h4 {
     color: ${props => props.theme.textColor};
@@ -87,4 +88,5 @@ export const FacultyCard = styled.div`
   p {
     color: #d33a00;
     line-height: 0.1;
+    padding-top: 20px;
   }`
