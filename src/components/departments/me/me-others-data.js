@@ -216,45 +216,57 @@ export const Labs = [
 ]
 
 export const LabImages = [
-  <img src={`${home}mech_lab_pics/01.jpg`} alt="image" />,
+  // <img src={`${home}mech_lab_pics/01.jpg`} alt="image" />,
 
-  <img src={`${home}mech_lab_pics/02.jpg`} alt="image" />,
+  // <img src={`${home}mech_lab_pics/02.jpg`} alt="image" />,
 
-  <img src={`${home}mech_lab_pics/03.jpg`} alt="image" />,
+  // <img src={`${home}mech_lab_pics/03.jpg`} alt="image" />,
 
-  <img src={`${home}mech_lab_pics/04.jpg`} alt="image" />,
+  // <img src={`${home}mech_lab_pics/04.jpg`} alt="image" />,
 
-  <img src={`${home}mech_lab_pics/05.jpg`} alt="image" />,
+  // <img src={`${home}mech_lab_pics/05.jpg`} alt="image" />,
 
-  <img src={`${home}mech_lab_pics/06.jpg`} alt="image" />,
+  // <img src={`${home}mech_lab_pics/06.jpg`} alt="image" />,
 
-  <img src={`${home}mech_lab_pics/07.jpg`} alt="image" />,
+  // <img src={`${home}mech_lab_pics/07.jpg`} alt="image" />,
 
-  <img src={`${home}mech_lab_pics/08.jpg`} alt="image" />,
+  // <img src={`${home}mech_lab_pics/08.jpg`} alt="image" />,
 
-  <img src={`${home}mech_lab_pics/09.jpg`} alt="image" />,
+  // <img src={`${home}mech_lab_pics/09.jpg`} alt="image" />,
 
-  <img src={`${home}mech_lab_pics/10.jpg`} alt="image" />,
+  // <img src={`${home}mech_lab_pics/10.jpg`} alt="image" />,
 
-  <img src={`${home}mech_lab_pics/11.jpg`} alt="image" />,
+  // <img src={`${home}mech_lab_pics/11.jpg`} alt="image" />,
 
-  <img src={`${home}mech_lab_pics/12.jpg`} alt="image" />,
+  // <img src={`${home}mech_lab_pics/12.jpg`} alt="image" />,
 
-  <img src={`${home}mech_lab_pics/13.jpg`} alt="image" />,
+  // <img src={`${home}mech_lab_pics/13.jpg`} alt="image" />,
 
-  <img src={`${home}mech_lab_pics/14.jpg`} alt="image" />,
+  // <img src={`${home}mech_lab_pics/14.jpg`} alt="image" />,
 
-  <img src={`${home}mech_lab_pics/15.jpg`} alt="image" />,
+  // <img src={`${home}mech_lab_pics/15.jpg`} alt="image" />,
 
-  <img src={`${home}mech_lab_pics/16.jpg`} alt="image" />,
+  // <img src={`${home}mech_lab_pics/16.jpg`} alt="image" />,
 
-  <img src={`${home}mech_lab_pics/19.jpg`} alt="image" />,
+  // <img src={`${home}mech_lab_pics/19.jpg`} alt="image" />,
 
-  <img src={`${home}mech_lab_pics/20.jpg`} alt="image" />,
+  // <img src={`${home}mech_lab_pics/20.jpg`} alt="image" />,
 
-  <img src={`${home}mech_lab_pics/21.jpg`} alt="image" />,
+  // <img src={`${home}mech_lab_pics/21.jpg`} alt="image" />,
 
-  <img src={`${home}mech_lab_pics/22.jpg`} alt="image" />,
+  // <img src={`${home}mech_lab_pics/22.jpg`} alt="image" />,
+
+  <img src={`https://web.nitp.ac.in/dept/me/labs/DSC_0952.jpg`} alt="image" />,
+
+  <img src={`https://web.nitp.ac.in/dept/me/labs/DSC_0959.jpg`} alt="image" />,
+
+  <img src={`https://web.nitp.ac.in/dept/me/labs/DSC_0966.jpg`} alt="image" />,
+
+  <img src={`https://web.nitp.ac.in/dept/me/labs/DSC_0972.jpg`} alt="image" />,
+
+  <img src={`https://web.nitp.ac.in/dept/me/labs/DSC_0976.jpg`} alt="image" />,
+
+  <img src={`https://web.nitp.ac.in/dept/me/labs/DSC_0977.jpg`} alt="image" />,
 ]
 
 export const Achievements = [
