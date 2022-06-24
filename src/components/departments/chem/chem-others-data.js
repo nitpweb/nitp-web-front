@@ -1,6 +1,9 @@
 import React from "react"
 
-const home = "http://www.nitp.ac.in/php/"
+// const home = "http://www.nitp.ac.in/php/"
+const home = "https://web.nitp.ac.in/dept/chem/labs/"
+const activity = "https://web.nitp.ac.in/dept/chem/"
+
 export const Labs = {
   content: (
     <>
@@ -78,29 +81,29 @@ export const Labs = {
 
 export const LabImages = [
   <>
-    <img src={`https://web.nitp.ac.in/dept/chem/labs/DSC_0072.jpg`} alt="image" />
+    <img src={`${home}DSC_0072.jpg`} alt="image" />
   </>,
   <>
-    <img src={`https://web.nitp.ac.in/dept/chem/labs/DSC_0070.jpg`} alt="image" />
+    <img src={`${home}DSC_0070.jpg`} alt="image" />
   </>,
   <>
-    <img src={`https://web.nitp.ac.in/dept/chem/labs/DSC_0065.jpg`} alt="image" />
+    <img src={`${home}DSC_0065.jpg`} alt="image" />
   </>,
  
 ]
 
 export const ActivityImages = [
-  <img src={`${home}cheimg/02.jpg`} alt="image" />,
-  <img src={`${home}cheimg/01.jpg`} alt="image" />,
-  <img src={`${home}cheimg/06.jpg`} alt="image" />,
-  <img src={`${home}cheimg/03.jpg`} alt="image" />,
-  <img src={`${home}cheimg/04.jpg`} alt="image" />,
-  <img src={`${home}cheimg/05.jpg`} alt="image" />,
-  <img src={`${home}cheimg/07.jpg`} alt="image" />,
-  <img src={`${home}cheimg/08.jpg`} alt="image" />,
-  <img src={`${home}cheimg/10.jpg`} alt="image" />,
-  <img src={`${home}cheimg/09.jpg`} alt="image" />,
-  <img src={`${home}cheimg/11.jpg`} alt="image" />,
+  <img src={`${activity}02.jpg`} alt="image" />,
+  <img src={`${activity}01.jpg`} alt="image" />,
+  <img src={`${activity}06.jpg`} alt="image" />,
+  <img src={`${activity}03.jpg`} alt="image" />,
+  <img src={`${activity}04.jpg`} alt="image" />,
+  <img src={`${activity}05.jpg`} alt="image" />,
+  <img src={`${activity}07.jpg`} alt="image" />,
+  <img src={`${activity}08.jpg`} alt="image" />,
+  <img src={`${activity}10.jpg`} alt="image" />,
+  <img src={`${activity}09.jpg`} alt="image" />,
+  <img src={`${activity}11.jpg`} alt="image" />,
 ]
 
 const SponseredProjectsTable = [
@@ -343,7 +346,7 @@ export const Achievements = {
   content: (
     <>
       <img
-        src={`${home}cheimg/rc.png`}
+        src={`${home}rc.png`}
         className="img-fluid"
         alt="A METHOD FOR CONTAMINATED WATER USING PHOTOSTABLE SUPERPARAMAGNETIC NANOMATERIAL"
       />
