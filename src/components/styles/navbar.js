@@ -209,7 +209,7 @@ export const NavbarStyle = styled.div`
       .dep-link-item {
         text-decoration: none;
         color: #fff;
-        font-size: 0.85vw;
+        font-size: 1.20vw;
       }
     }
   }

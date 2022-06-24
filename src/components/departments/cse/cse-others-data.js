@@ -109,14 +109,14 @@ export const Labs = [
         </p>
       </>
     ),
-    image: (
-      <img
-        src={`${home}/image005.jpg`}
-        id="imagep"
-        height="250px"
-        width="350px"
-      />
-    ),
+    // image: (
+    //   <img
+    //     src={`${home}/image005.jpg`}
+    //     id="imagep"
+    //     height="250px"
+    //     width="350px"
+    //   />
+    // ),
   },
   {
     content: (
@@ -131,7 +131,7 @@ export const Labs = [
         </p>
       </>
     ),
-    image: <img src={`${home}/image006.jpg`} />,
+    // image: <img src={`${home}/image006.jpg`} />,
   },
   {
     content: (
@@ -151,14 +151,14 @@ export const Labs = [
         </p>
       </>
     ),
-    image: (
-      <img
-        src={`${home}/image007.jpg`}
-        id="oslab3"
-        height="250px"
-        width="350px"
-      />
-    ),
+    // image: (
+    //   <img
+    //     src={`${home}/image007.jpg`}
+    //     id="oslab3"
+    //     height="250px"
+    //     width="350px"
+    //   />
+    // ),
   },
   {
     content: (
@@ -174,14 +174,14 @@ export const Labs = [
         </p>
       </>
     ),
-    image: (
-      <img
-        src={`${home}/image008.jpg`}
-        id="oslab3"
-        height="250px"
-        width="350px"
-      />
-    ),
+    // image: (
+    //   <img
+    //     src={`${home}/image008.jpg`}
+    //     id="oslab3"
+    //     height="250px"
+    //     width="350px"
+    //   />
+    // ),
   },
   {
     content: (
@@ -195,14 +195,14 @@ export const Labs = [
         </p>
       </>
     ),
-    image: (
-      <img
-        src={`${home}/image009.jpg`}
-        id="oslab3"
-        height="250px"
-        width="350px"
-      />
-    ),
+    // image: (
+    //   <img
+    //     src={`${home}/image009.jpg`}
+    //     id="oslab3"
+    //     height="250px"
+    //     width="350px"
+    //   />
+    // ),
   },
 ]
 
