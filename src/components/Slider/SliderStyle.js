@@ -10,7 +10,8 @@ export const SliderStyle = styled.div`
     overflow: hidden;
     display: grid;
     place-items: center;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+    box-shadow: ${props => (props.type === "depImages" ? "" : "0 10px 20px rgba(0, 0, 0, 0.2)")};
     border-radius: ${props => (props.type === "depImages" ? "25px" : 0)};
   }
   @media (max-width: 480px) {
