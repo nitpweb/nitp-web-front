@@ -141,7 +141,7 @@ const Home = [
         title: "PAN/ GST",
       },
       {
-        url: "http://web.nitp.ac.in/alumni/html/index.html",
+        url: "http://nitp.ac.in/alumni/html/index.html",
         title: "Alumni",
       },
       {
@@ -150,7 +150,7 @@ const Home = [
       },
       {
         url:
-          "http://web.nitp.ac.in/uploads20/Pratibimb/NIT%20Patna%20E-Magazine.pdf",
+          "http://nitp.ac.in/uploads20/Pratibimb/NIT%20Patna%20E-Magazine.pdf",
         title: "Magazine (Pratibimb)",
       },
       {
@@ -159,7 +159,7 @@ const Home = [
         data: "clubs",
       },
       {
-        url: "http://web.nitp.ac.in/incubation_center/index.html",
+        url: "http://nitp.ac.in/incubation_center/index.html",
         title: "Incubation Center",
       },
       {
@@ -276,7 +276,7 @@ const Academics = [
         data: "format",
       },
       {
-        url: "http://web.nitp.ac.in/ict/index.php",
+        url: "http://nitp.ac.in/ict/index.php",
         title: "ICT Academy",
         data: "",
       },
@@ -299,7 +299,7 @@ const Academics = [
   //   id: "one",
   //   sub: [
   //     {
-  //       url: "http://web.nitp.ac.in/ict/index.php",
+  //       url: "http://nitp.ac.in/ict/index.php",
   //       title: "ICT Academy",
   //       data: "",
   //     },
@@ -316,7 +316,7 @@ const Academics = [
   //   ],
   // },
   // {
-  //   url: "http://web.nitp.ac.in/ict/index.php",
+  //   url: "http://nitp.ac.in/ict/index.php",
   //   title: "ICT Academy",
   // },
   // {
@@ -459,11 +459,11 @@ const Students = [
         title: "Convocation",
       },
       {
-        url: "http://web.nitp.ac.in/incubation_center/index.html",
+        url: "http://nitp.ac.in/incubation_center/index.html",
         title: "Incubation Centre",
       },
       {
-        url: "http://web.nitp.ac.in/data/Anti-ragging_Committee_2019.pdf",
+        url: "http://nitp.ac.in/data/Anti-ragging_Committee_2019.pdf",
         title: "Anti Ragging",
       },
 
