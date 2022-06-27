@@ -87,6 +87,7 @@ export const FacultyCard = styled.div`
   }
   p {
     color: #d33a00;
-    line-height: 0.1;
+    line-height: 1;
     padding-top: 20px;
+    text-align: center;
   }`
