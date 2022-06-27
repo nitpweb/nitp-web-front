@@ -35,7 +35,7 @@ const Directorpage = () => {
           </div>
           <div
             className="faculty-img-row"
-            style={{ position: `absolute`, left: `2%` }}
+            style={{ position: `absolute`, left: `15%` }}
           >
             <div className="faculty-img-wrap">
               <img
