@@ -1,12 +1,26 @@
-import React, {useState, useEffect} from "react"
+import React from "react"
 import { GallertHead } from "./styles"
-
-
-import images from './images/images.json'
-
+import Img from "gatsby-image"
+import images from "./images/images.json"
+import { graphql, useStaticQuery } from "gatsby"
 
 const Extendedgallery = () => {
-  
+  const data = useStaticQuery(graphql`
+    query {
+      allGalleryImage {
+        nodes {
+          featuredImg {
+            childImageSharp {
+              fluid(maxWidth: 1920) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+  const imgNodes = data.allGalleryImage.nodes
   return (
     <>
       <GallertHead>Gallery</GallertHead>
@@ -18,24 +32,24 @@ const Extendedgallery = () => {
           padding: `2vw`,
         }}
       >
-        {images.map(i => {
+        {imgNodes?.map(image => {
           return (
-            <img
-              src={`https://web.nitp.ac.in/gallery/images/${i}`}
+            <Img
+              fluid={image.featuredImg.childImageSharp.fluid}
               style={{
                 flexGrow: 1,
-                height: `${250}px`,
-                maxWidth: `${500}px`,
+                width: `${
+                  image.featuredImg.childImageSharp.fluid.aspectRatio * 280
+                }px`,
                 boxSizing: `border-box`,
-                margin: `${3}px`,
-                padding: `${3}px`
               }}
+              imgStyle={{ width: `100%`, objectFit: `cover`, padding: `8px` }}
             />
           )
         })}
+        <div style={{ flex: "1 1 " }}></div>
       </div>
     </>
   )
 }
-
 export default Extendedgallery
