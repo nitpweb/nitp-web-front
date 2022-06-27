@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const InnovationStyle = styled.div`
   width: 100vw;
   height: 350px;
-  background: lightgrey;
+  background: rgb(240, 240, 240);
   /* background: -webkit-gradient(
     linear,
     left bottom,
