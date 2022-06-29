@@ -6,6 +6,8 @@ import Notice from "./home/notice"
 import AcademicsList from "./academics/const"
 import acadData from "./academics/acadData"
 import { useQueryParam } from "use-query-params"
+import Navlist from "./global/navlist"
+import DynamicLink from "./global/dynamicurl"
 
 const Academicspage = () => {
   const [tab] = useQueryParam("tab")
@@ -483,6 +485,62 @@ const Academicspage = () => {
                     : ""}
                 </div>
               </div>
+            ) : (
+              ""
+            )}
+
+            {view == "depts" ? (
+              <>
+                <h1 style={{ fontFamily: `Source Sans Pro` }}>Departments</h1>
+                {Navlist.departments.map((val, index) => (
+                  <p
+                  style={{
+                    fontWeight: `bold`,
+                    borderBottom: `1px dotted black`,
+                    paddingBottom: `0.5rem`,
+                    margin: `0 1rem`,
+                  }}
+                >
+                  <DynamicLink
+                    key={index}
+                    url={val.url}
+                    data={val.data}
+                    title={val.title}
+                    // classvalue="nav-sidebar-div"
+                  />
+                </p>
+                  
+                ))}
+                {/* {acadData.depts.map(item => (
+                  <div className="row rowmarl3">
+                    <div className="digital">
+                      <h3>{item.title}</h3>
+                      {item.data.map(e => (
+                        <>
+                          <a
+                            href={e.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ textDecoration: `none` }}
+                          >
+                            <p
+                              style={{
+                                borderBottom: `1px dotted black`,
+                                paddingBottom: `0.15rem`,
+                                width: `fit-content`,
+                                margin: `0 1rem`,
+                              }}
+                            >
+                              {e.para}
+                            </p>
+                          </a>
+                          
+                        </>
+                      ))}
+                    </div>
+                  </div>
+                ))} */}
+              </>
             ) : (
               ""
             )}

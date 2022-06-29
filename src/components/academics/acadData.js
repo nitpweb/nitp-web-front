@@ -500,6 +500,7 @@ const Fee = [
         para: "UG : Fee Structure (2018-19)",
         link: "http://www.nitp.ac.in/uploads/Fee_Structure_All.pdf",
       },
+
     ],
   },
   {
@@ -950,6 +951,56 @@ const Privacy = [
     ],
   },
 ]
+// const Depts = [
+//   {
+//     heading: "Departments",
+//     data: [
+//       {
+//         para:
+//           "Architecture",
+//         link:
+//           "https://beta.nitp.ac.in/arch",
+//       },
+//       {
+//         para: "Chemistry",
+//         link: "http://www.nitp.ac.in/uploads20/Notification.pdf",
+//       },
+
+//       {
+//         para: "Civil Engineering",
+//         link: "http://www.nitp.ac.in/uploads20/Fee%20Structure_UG_PG_Ph.D.pdf",
+//       },
+//       {
+//         para: "Computer Science and Engineering",
+//         link: "http://www.nitp.ac.in/uploads/Fee_Structure_All.pdf",
+//       },
+//       {
+//         para: "Electrical Engineering",
+//         link: "http://www.nitp.ac.in/uploads/Fee_Structure_All.pdf",
+//       },
+//       {
+//         para: "Electronics and Communication Engineering",
+//         link: "http://www.nitp.ac.in/uploads/Fee_Structure_All.pdf",
+//       },
+//       {
+//         para: "Humanities & Social Sciences",
+//         link: "http://www.nitp.ac.in/uploads/Fee_Structure_All.pdf",
+//       },
+//       {
+//         para: "Mathematics",
+//         link: "http://www.nitp.ac.in/uploads/Fee_Structure_All.pdf",
+//       },
+//       {
+//         para: "Mechanical Engineering",
+//         link: "http://www.nitp.ac.in/uploads/Fee_Structure_All.pdf",
+//       },
+//       {
+//         para: "Physics",
+//         link: "http://www.nitp.ac.in/uploads/Fee_Structure_All.pdf",
+//       },
+//     ],
+//   },
+// ]
 
 const acadData = {
   datad: Datad,
@@ -970,5 +1021,6 @@ const acadData = {
   nirf: NIRF,
   statutes: Statutes,
   privacy: Privacy,
+  // depts: Depts,
 }
 export default acadData
