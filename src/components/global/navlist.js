@@ -257,6 +257,11 @@ const Academics = [
       },
       {
         url: "/academics",
+        title: "Departments",
+        data: "depts",
+      },
+      {
+        url: "/academics",
         title: "Academic Notices",
         data: "Notices",
       },
