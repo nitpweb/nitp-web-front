@@ -15,6 +15,11 @@ const AcademicsList = [
   //     img:"/test.svg"
   // },
   {
+    title: "Departments",
+    data: "depts",
+    // img: "/test.svg",
+  },
+  {
     title: "Academic Notices",
     data: "Notices",
     // img: "/mail.svg",
