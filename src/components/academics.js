@@ -491,16 +491,11 @@ const Academicspage = () => {
 
             {view == "depts" ? (
               <>
+                <div className="row rowmarl3">
                 <h1 style={{ fontFamily: `Source Sans Pro` }}>Departments</h1>
-                {Navlist.departments.map((val, index) => (
-                  <p
-                  style={{
-                    fontWeight: `bold`,
-                    borderBottom: `1px dotted black`,
-                    paddingBottom: `0.5rem`,
-                    margin: `0 1rem`,
-                  }}
-                >
+                </div>
+                
+                {/* {Navlist.departments.map((val, index) => (
                   <DynamicLink
                     key={index}
                     url={val.url}
@@ -508,10 +503,10 @@ const Academicspage = () => {
                     title={val.title}
                     // classvalue="nav-sidebar-div"
                   />
-                </p>
                   
-                ))}
-                {/* {acadData.depts.map(item => (
+                ))} */}
+                
+                {acadData.depts.map(item => (
                   <div className="row rowmarl3">
                     <div className="digital">
                       <h3>{item.title}</h3>
@@ -519,13 +514,13 @@ const Academicspage = () => {
                         <>
                           <a
                             href={e.link}
-                            target="_blank"
+                            // target="_blank"
                             rel="noopener noreferrer"
                             style={{ textDecoration: `none` }}
                           >
                             <p
                               style={{
-                                borderBottom: `1px dotted black`,
+                                // borderBottom: `1px dotted black`,
                                 paddingBottom: `0.15rem`,
                                 width: `fit-content`,
                                 margin: `0 1rem`,
@@ -539,7 +534,7 @@ const Academicspage = () => {
                       ))}
                     </div>
                   </div>
-                ))} */}
+                ))}
               </>
             ) : (
               ""

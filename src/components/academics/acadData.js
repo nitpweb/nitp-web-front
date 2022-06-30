@@ -951,56 +951,56 @@ const Privacy = [
     ],
   },
 ]
-// const Depts = [
-//   {
-//     heading: "Departments",
-//     data: [
-//       {
-//         para:
-//           "Architecture",
-//         link:
-//           "https://beta.nitp.ac.in/arch",
-//       },
-//       {
-//         para: "Chemistry",
-//         link: "http://www.nitp.ac.in/uploads20/Notification.pdf",
-//       },
+const Depts = [
+  {
+    heading: "Departments",
+    data: [
+      {
+        para:
+          "Architecture",
+        link:
+          "/arch",
+      },
+      {
+        para: "Chemistry",
+        link: "/chem",
+      },
 
-//       {
-//         para: "Civil Engineering",
-//         link: "http://www.nitp.ac.in/uploads20/Fee%20Structure_UG_PG_Ph.D.pdf",
-//       },
-//       {
-//         para: "Computer Science and Engineering",
-//         link: "http://www.nitp.ac.in/uploads/Fee_Structure_All.pdf",
-//       },
-//       {
-//         para: "Electrical Engineering",
-//         link: "http://www.nitp.ac.in/uploads/Fee_Structure_All.pdf",
-//       },
-//       {
-//         para: "Electronics and Communication Engineering",
-//         link: "http://www.nitp.ac.in/uploads/Fee_Structure_All.pdf",
-//       },
-//       {
-//         para: "Humanities & Social Sciences",
-//         link: "http://www.nitp.ac.in/uploads/Fee_Structure_All.pdf",
-//       },
-//       {
-//         para: "Mathematics",
-//         link: "http://www.nitp.ac.in/uploads/Fee_Structure_All.pdf",
-//       },
-//       {
-//         para: "Mechanical Engineering",
-//         link: "http://www.nitp.ac.in/uploads/Fee_Structure_All.pdf",
-//       },
-//       {
-//         para: "Physics",
-//         link: "http://www.nitp.ac.in/uploads/Fee_Structure_All.pdf",
-//       },
-//     ],
-//   },
-// ]
+      {
+        para: "Civil Engineering",
+        link: "/ce",
+      },
+      {
+        para: "Computer Science and Engineering",
+        link: "/cse",
+      },
+      {
+        para: "Electrical Engineering",
+        link: "/ee",
+      },
+      {
+        para: "Electronics and Communication Engineering",
+        link: "/ece",
+      },
+      {
+        para: "Humanities & Social Sciences",
+        link: "/hss",
+      },
+      {
+        para: "Mathematics",
+        link: "/math",
+      },
+      {
+        para: "Mechanical Engineering",
+        link: "/me",
+      },
+      {
+        para: "Physics",
+        link: "/physics",
+      },
+    ],
+  },
+]
 
 const acadData = {
   datad: Datad,
@@ -1021,6 +1021,6 @@ const acadData = {
   nirf: NIRF,
   statutes: Statutes,
   privacy: Privacy,
-  // depts: Depts,
+  depts: Depts,
 }
 export default acadData
