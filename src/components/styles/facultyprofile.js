@@ -37,6 +37,7 @@ export const FacultyProfile = styled.div`
       }
     }
   }
+  /* FOR VIEW CV POPUP START */
   .cv-btn{
     padding: 10px;
     border-radius: 5px;
@@ -49,6 +50,55 @@ export const FacultyProfile = styled.div`
       cursor: pointer;
     }
   }
+  .cv {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .cv:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 10;
+  }
+
+  .popup {
+    margin: 10vh auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    min-height: 70vh;
+    min-width: 70vw;
+  }
+
+  .popup .close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    transition: all 200ms;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ba0019;
+    background-color: white;
+    border: 1px solid #ba0019;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+  }
+  .popup .content {
+    height: 70vh;
+    width: 70vw;
+    overflow: hidden;
+  }
+  /* FOR VIEW CV POPUP END */
   .faculty-details-row {
     width: calc(100% - 320px);
     display: flex;
