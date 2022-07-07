@@ -85,9 +85,31 @@ const Facultyprofile = ({ url }) => {
               <h2>{data.profile.name}</h2>
               <h3>{data.profile.designation}</h3>
               {data.profile.cv && (
-                <button className="cv-btn" onClick={(e)=>{window.open("https://drive.google.com/uc?export=download&id=" + data.profile.cv.split('id=').pop())}}>Download CV</button>
+                <div>
+                  <a href="#cv">
+                    <button
+                      className="cv-btn"
+                      color="primary"
+                      variant="contained"
+                    >
+                      View CV
+                    </button>
+                  </a>
+                </div>
               )}
             </div>
+
+            {data.profile.cv && (
+                  <div id="cv" className="cv">
+                      <a href="#" className="close">
+                    <div className="popup">
+                      <div className="content">
+                        <iframe src={"https://drive.google.com/file/d/" + data.profile.cv.split('id=').pop() + "/preview"} width="100%" height="100%"></iframe>
+                      </div>
+                    </div>
+                    </a>
+                </div>
+              )}
 
             <div className="faculty-details-row">
               <h1>Profile</h1>
