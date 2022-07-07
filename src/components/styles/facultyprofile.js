@@ -68,13 +68,12 @@ export const FacultyProfile = styled.div`
   }
 
   .popup {
-    margin: 70px auto;
+    margin: 10vh auto;
     padding: 20px;
     background: #fff;
     border-radius: 5px;
     width: 30%;
     position: relative;
-    transition: all 5s ease-in-out;
     min-height: 70vh;
     min-width: 70vw;
   }
