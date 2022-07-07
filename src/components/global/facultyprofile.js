@@ -103,6 +103,7 @@ const Facultyprofile = ({ url }) => {
                   <div id="cv" className="cv">
                       <a href="#" className="close">
                     <div className="popup">
+                      <div className="close">X</div>
                       <div className="content">
                         <iframe src={"https://drive.google.com/file/d/" + data.profile.cv.split('id=').pop() + "/preview"} width="100%" height="100%"></iframe>
                       </div>

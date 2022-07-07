@@ -80,13 +80,18 @@ export const FacultyProfile = styled.div`
 
   .popup .close {
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 50px;
+    right: 50px;
     transition: all 200ms;
-    font-size: 30px;
     font-weight: bold;
     text-decoration: none;
     color: #ba0019;
+    background-color: white;
+    border: 1px solid #ba0019;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
   }
   .popup .content {
     height: 70vh;
