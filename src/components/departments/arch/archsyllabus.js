@@ -35,7 +35,9 @@ const Archsyllabus = props => {
                 <td>{elem.deptt}</td>
                 <td>{elem.sem_elect}</td>
                 <td>{elem.course_code}</td>
-                <td>{elem.course_title}</td>
+                <td>
+                  <a href={elem.url}>{elem.course_title}</a>
+                </td>
                 <td>{elem.l}</td>
                 <td>{elem.t}</td>
                 <td>{elem.p}</td>
