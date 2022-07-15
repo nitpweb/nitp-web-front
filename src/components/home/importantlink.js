@@ -5,6 +5,8 @@ import news from "./img/news.png"
 import innovation from "./img/innovation.png"
 import chanakya from "./img/chanakya.svg"
 import firstyear from "./img/firstyear.svg"
+import startup from "./img/startup.svg"
+import highlight from "./img/highlight.svg"
 import { ImportantLinkStyle } from "../styles/home/importantlink"
 
 const Importantlink = () => {
@@ -22,24 +24,27 @@ const Importantlink = () => {
       style={{ transform: `translateY(${offsetY * -0.05}px)` }}
     >
       <div className="link-col">
-        <a href="#notice">
+        {/* <a href="#notice">
           <div className="implink">
             <img className="linkimg" src={notice} alt="corona" />
             <h3>NOTICE</h3>
-            {/* <div className="lead">
-              <p>Collection of important notices</p>
-            </div> */}
+
           </div>
-        </a>
-        <a href="#events">
+        </a> */}
+        {/* <a href="#events">
           <div className="implink">
             <img className="linkimg" src={event} alt="nss" />
             <h3>EVENT</h3>
-            {/* <div className="lead">
-              <p>List of upcoming events</p>
-            </div> */}
+            
           </div>
-        </a>
+        </a> */}
+        {/* <a href=" ">
+          <div className="implink">
+            <img className="linkimg" src={notice} alt="teqip" />
+            <h3>LATEST EVENTS</h3>
+      
+          </div>
+        </a> */}
         <a href="#one">
           <div className="implink">
             <img className="linkimg" src={innovation} alt="teqip" />
@@ -51,31 +56,36 @@ const Importantlink = () => {
         </a>
         <a href="#news">
           <div className="implink">
-            <img className="linkimg" src={news} alt="josaa" />
-            <h3>NEWS</h3>
+            <img className="linkimg" src={highlight} alt="josaa" />
+            <h3>HIGHLIGHTS</h3>
             {/* <div className="lead">
               <p>panorama of recent news</p>
             </div> */}
           </div>
         </a>{" "}
-        <a href="http://exam.nitp.ac.in/">
+        {/* <a href="http://exam.nitp.ac.in/">
           <div className="implink">
             <img className="linkimg" src={chanakya} alt="chanakya" />
             <h3>CHANAKYA</h3>
-            {/* <div className="lead">
-              <p>The student portal for all the needs of a student</p>
-            </div> */}
+            
           </div>
-        </a>
+        </a> */}
         <a href={/academics/}>
           <div className="implink">
-            <img className="linkimg" src={firstyear} alt="chanakya" />
+            <img className="linkimg" src={firstyear} alt="admissions" />
             <h3>ADMISSIONS</h3>
             {/* <div className="lead">
               <p>
                 For the newbies willing to take admission in upcoming sessions
               </p>
             </div> */}
+          </div>
+        </a>
+        <a href="http://www.nitp.ac.in/php/incubation_center/index.html">
+          <div className="implink">
+            <img className="linkimg" src={startup} alt="teqip" />
+            <h3>STARTUPS</h3>
+      
           </div>
         </a>
       </div>
@@ -87,6 +97,7 @@ const Importantlink = () => {
           </div>
         </a>
       </div> */}
+      
     </ImportantLinkStyle>
   )
 }
