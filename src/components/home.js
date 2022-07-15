@@ -193,7 +193,7 @@ const Home = () => {
           className="news-head"
           id="news"
         >
-          News
+          Highlights
           <Link id="news-head-p"  to="/news">
             View all
           </Link>
