@@ -236,7 +236,7 @@ export const datalist = [
     // img: "/department/syllabus.svg",
   },
   {
-    title: "Faculties",
+    title: "Faculty",
     relPath: "/ece/faculty",
     // img: "/department/faculty.svg",
   },
