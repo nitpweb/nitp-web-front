@@ -229,7 +229,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
           <a
             className="nav-link-item "
             activeClassName="nav-link-item-active"
-            href=" "
+            href="/centreOfExcellence"
             // target="_blank"
           >
             <span>Centre of Excellence</span>

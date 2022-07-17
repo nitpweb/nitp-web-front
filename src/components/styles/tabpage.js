@@ -165,6 +165,11 @@ export const TabPage = styled.div`
           p {
             color: ${props => props.theme.textColor};
             font-weight: 500;
+            strong {
+              font-weight: bold;
+              color: ${props => props.theme.primaryColor};
+              font-size: ${props => props.theme.font * 1.5}rem;
+            }
           }
           h1 {
             font-weight: bold;
