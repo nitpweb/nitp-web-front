@@ -70,14 +70,6 @@ const Importantlink = () => {
             
           </div>
         </a> */}
-        <a href="http://www.nitp.ac.in/php/incubation_center/index.html">
-          <div className="implink">
-            <img className="linkimg" src={startup} alt="teqip" />
-            <h3>STARTUPS</h3>
-      
-          </div>
-        </a>
-        
         <a href={/academics/}>
           <div className="implink">
             <img className="linkimg" src={firstyear} alt="admissions" />
@@ -89,7 +81,13 @@ const Importantlink = () => {
             </div> */}
           </div>
         </a>
-        
+        <a href="http://www.nitp.ac.in/php/incubation_center/index.html">
+          <div className="implink">
+            <img className="linkimg" src={startup} alt="teqip" />
+            <h3>STARTUPS</h3>
+      
+          </div>
+        </a>
       </div>
       {/* <div className="link-col">
         <a href="https://josaa.nic.in/webinfocms/Public/home.aspx">
