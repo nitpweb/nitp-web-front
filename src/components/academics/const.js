@@ -49,6 +49,11 @@ const AcademicsList = [
     data: "fee",
     // img: "/test.svg",
   },
+  {
+    title: "Centre of Excellence",
+    data: "centreOfExcellence",
+    // img: "/test.svg",
+  },
 ]
 
 export default AcademicsList
