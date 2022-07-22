@@ -213,11 +213,11 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
               idname="right-link"
             />
           </div>
-          {/* <Dropdown
+          <Dropdown
             title="Departments"
             list={Navlist.departments}
             idname="rightlink"
-          /> */}
+          />
           {/* <div className="nav-link-item" activeClassName="nav-link-item-active">
             <Dropnew
               to="/"
@@ -226,14 +226,14 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
               idname="right-link"
             />
           </div> */}
-          <a
+          {/* <a
             className="nav-link-item "
             activeClassName="nav-link-item-active"
             href="/centreOfExcellence"
             // target="_blank"
           >
             <span>Centre of Excellence</span>
-          </a>
+          </a> */}
         </div>
         <div className="col-6">
           <div className="nav-link-item" activeClassName="nav-link-item-active">
