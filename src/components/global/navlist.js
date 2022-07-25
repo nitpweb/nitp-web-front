@@ -295,6 +295,11 @@ const Academics = [
         title: "Regulation & Curricula",
         data: "curricula",
       },
+      {
+        url: "/academics",
+        title: "Centre of Excellence",
+        data: "centreOfExcellence",
+      },
     ],
   },
   // {
