@@ -38,7 +38,9 @@ const Csesyllabus = props => {
                 <td>{elem.dept}</td>
                 <td>{elem.sem_elect}</td>
                 <td>{elem.coursecode}</td>
-                <td>{elem.coursetitle}</td>
+                <td>
+                  <a href={elem.url}>{elem.coursetitle}</a>
+                </td>
                 <td>{elem.l}</td>
                 <td>{elem.t}</td>
                 <td>{elem.p}</td>

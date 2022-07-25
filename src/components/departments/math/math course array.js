@@ -223,7 +223,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `MA3701`,
-    url: `./math/syllabus /MA3701.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/MA3701.docx`,
     course_title: `Discrete Mathematics`,
     l: `3`,
     t: `1`,
@@ -234,7 +234,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `MA3702`,
-    url: `./math/syllabus /MA3702.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/MA3702.docx`,
     course_title: `Analysis-I`,
     l: `3`,
     t: `1`,
@@ -245,7 +245,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `MA3703`,
-    url: `./math/syllabus /MA3703.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/MA3703.docx`,
     course_title: `Algebra-I`,
     l: `3`,
     t: `1`,
@@ -256,7 +256,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `CS3701`,
-    url: `./math/syllabus /CS3701.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/CS3701.docx`,
     course_title: `Object oriented Methodology`,
     l: `l3`,
     t: `t0`,
@@ -267,7 +267,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `CSL3701`,
-    url: `./math/syllabus /CSL3701.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/CSL3701.docx`,
     course_title: `Object oriented Methodology lab`,
     l: `0`,
     t: `0`,
@@ -278,7 +278,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `HS3701`,
-    url: `./math/syllabus /HS3701.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/HS3701.docx`,
     course_title: `Industrial Economics and Financial Management`,
     l: `3`,
     t: `0`,
@@ -299,7 +299,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `MA4701`,
-    url: `./math/syllabus /MA4701.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/MA4701.docx`,
     course_title: `Probability & Statistics`,
     l: `3`,
     t: `1`,
@@ -310,7 +310,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `MA4702`,
-    url: `./math/syllabus /MA4702.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/MA4702.docx`,
     course_title: `Theory of Linear Algebra`,
     l: `3`,
     t: `1`,
@@ -321,7 +321,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `MA4703`,
-    url: `./math/syllabus /MA4703.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/MA4703.docx`,
     course_title: `Ordinary Differential Equation`,
     l: `3`,
     t: `1`,
@@ -332,7 +332,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `MA4704`,
-    url: `./math/syllabus /MA4704.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/MA4704.docx`,
     course_title: `Introduction to Data Structures and Algorithms`,
     l: `3`,
     t: `0`,
@@ -343,7 +343,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `MAL4701`,
-    url: `./math/syllabus /MAL4701.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/MAL4701.docx`,
     course_title: `Data Structure and Algorithms Lab`,
     l: `0`,
     t: `0`,
@@ -374,7 +374,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `MA5701`,
-    url: `./math/syllabus /MA5701.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/MA5701.docx`,
     course_title: `Topology`,
     l: `3`,
     t: `1`,
@@ -385,7 +385,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `MA5702`,
-    url: `./math/syllabus /MA5702.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/MA5702.docx`,
     course_title: `Analysis-II`,
     l: `3`,
     t: `1`,
@@ -396,7 +396,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `MA5703`,
-    url: `./math/syllabus /MA5703.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/MA5703.docx`,
     course_title: `Mathematical Methods-I`,
     l: `3`,
     t: `1`,
@@ -407,7 +407,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `MA5704`,
-    url: `./math/syllabus /MA5704.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/MA5704.docx`,
     course_title: `Functional Analysis`,
     l: `3`,
     t: `1`,
@@ -418,7 +418,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `MA5705`,
-    url: `./math/syllabus /MA5705.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/MA5705.docx`,
     course_title: `Numerical Analysis`,
     l: `3`,
     t: `1`,
@@ -429,7 +429,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `MAL5705`,
-    url: `./math/syllabus /MA5705.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/MA5705.docx`,
     course_title: `Numerical Analysis Lab`,
     l: `0`,
     t: `0`,
@@ -450,7 +450,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `MA6701`,
-    url: `./math/syllabus /MA6701.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/MA6701.docx`,
     course_title: `Linear Programming Problem and Game Theory`,
     l: `3`,
     t: `1`,
@@ -461,7 +461,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `MA6702`,
-    url: `./math/syllabus /MA6702.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/MA6702.docx`,
     course_title: `Measure Theory and Integration`,
     l: `3`,
     t: `1`,
@@ -522,7 +522,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `MA7701`,
-    url: `./math/syllabus /MA7701.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/MA7701.docx`,
     course_title: `Integral Equation and Calculus of Variation`,
     l: `3`,
     t: `1`,
@@ -533,7 +533,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `MA7702`,
-    url: `./math/syllabus /MA7702.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/MA7702.docx`,
     course_title: `Numerical Solutions of Ordinary and Partial Differentiation Equations`,
     l: `3`,
     t: `1`,
@@ -544,7 +544,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `MAL7701`,
-    url: `./math/syllabus /MAL7701.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/MAL7701.docx`,
     course_title: `Numerical ODE and PDE lab`,
     l: `0`,
     t: `0`,
@@ -595,7 +595,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `MA8701`,
-    url: `./math/syllabus /MA8701.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/MA8701.docx`,
     course_title: `Theory of Computation`,
     l: `3`,
     t: `1`,
@@ -606,7 +606,7 @@ const IMScMathCourseStructure = [
   },
   {
     course_code: `MA8702`,
-    url: `./math/syllabus /MA8702.docx`,
+    url: `https://web.nitp.ac.in/dept/math/syllabus/MA8702.docx`,
     course_title: `Complex Analysis`,
     l: `3`,
     t: `1`,
