@@ -5,7 +5,7 @@ import Noticepage from "../components/noticepage"
 
 const NewCampus = () => (
   <Layout>
-    <SEO title="Jobs@NITP" />
+    <SEO title="New Campus Notices " />
     <Noticepage type="newcampus" title="New Campus Notices" />
   </Layout>
 )
