@@ -109,6 +109,12 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             <a href="http://www.nitp.ac.in/uploads20/Revised%20AC%202020-21.pdf">
               Academic Calendar
             </a>
+            {` | `}
+          </span>
+          <span style={{ marginLeft: `8px` }}>
+            <a href="http://www.nitp.ac.in/php/home.php">
+              Switch to Old Website
+            </a>
           </span>
         </div>
         <div className="col-6 end">
