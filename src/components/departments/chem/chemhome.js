@@ -144,14 +144,19 @@ export const datalist = [
     // img: "/department/about.svg",
   },
   {
-    title: "Mission & Vision",
-    data: "missionvision",
-    // img: "/department/mission.svg",
+    title: "Syllabus",
+    relPath: "/chem/syllabus",
+    // img: "/department/syllabus.svg",
+  },
+  {
+    title: "Faculty",
+    relPath: "/chem/faculty",
+    // img: "/department/faculty.svg",
   },
   {
     title: "Notice",
     data: "happening",
-    img: "/department/activities.svg",
+    // img: "/department/activities.svg",
   },
   {
     title: "Contact",
@@ -179,13 +184,8 @@ export const datalist = [
     // img: "/department/labs.svg",
   },
   {
-    title: "Syllabus",
-    relPath: "/chem/syllabus",
-    // img: "/department/syllabus.svg",
-  },
-  {
-    title: "Faculties",
-    relPath: "/chem/faculty",
-    // img: "/department/faculty.svg",
+    title: "Mission & Vision",
+    data: "missionvision",
+    // img: "/department/mission.svg",
   },
 ]

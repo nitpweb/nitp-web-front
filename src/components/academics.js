@@ -6,6 +6,8 @@ import Notice from "./home/notice"
 import AcademicsList from "./academics/const"
 import acadData from "./academics/acadData"
 import { useQueryParam } from "use-query-params"
+import Navlist from "./global/navlist"
+import DynamicLink from "./global/dynamicurl"
 
 const Academicspage = () => {
   const [tab] = useQueryParam("tab")
@@ -487,6 +489,57 @@ const Academicspage = () => {
               ""
             )}
 
+            {view == "depts" ? (
+              <>
+                <div className="row rowmarl3">
+                <h1 style={{ fontFamily: `Source Sans Pro` }}>Departments</h1>
+                </div>
+                
+                {/* {Navlist.departments.map((val, index) => (
+                  <DynamicLink
+                    key={index}
+                    url={val.url}
+                    data={val.data}
+                    title={val.title}
+                    // classvalue="nav-sidebar-div"
+                  />
+                  
+                ))} */}
+                
+                {acadData.depts.map(item => (
+                  <div className="row rowmarl3">
+                    <div className="digital">
+                      <h3>{item.title}</h3>
+                      {item.data.map(e => (
+                        <>
+                          <a
+                            href={e.link}
+                            // target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ textDecoration: `none` }}
+                          >
+                            <p
+                              style={{
+                                // borderBottom: `1px dotted black`,
+                                paddingBottom: `0.15rem`,
+                                width: `fit-content`,
+                                margin: `0 1rem`,
+                              }}
+                            >
+                              {e.para}
+                            </p>
+                          </a>
+                          
+                        </>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </>
+            ) : (
+              ""
+            )}
+
             {view == "format" && (
               <div className="layoutrow" id="format">
                 <div className="row rowmarl3">
@@ -735,6 +788,43 @@ const Academicspage = () => {
                               {e.para}
                             </p>
                           </a>
+                          
+                        </>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </>
+            ) : (
+              ""
+            )}
+            {view == "centreOfExcellence" ? (
+              <>
+                <div className="row rowmarl3">
+                <h1 style={{ fontFamily: `Source Sans Pro` }}>Centre of Excellence set up by TSSC at NIT Patna</h1>
+                </div>
+                {acadData.centreOfExcellence.map(item => (
+                  <div className="row rowmarl3">
+                    <div className="digital">
+                      <h3>{item.title}</h3>
+                      {item.data.map(e => (
+                        <>
+                          {/* <a
+                            href={e.link}
+                            // target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ textDecoration: `none` }}
+                          > */}
+                            <p
+                              style={{
+                                paddingBottom: `0.15rem`,
+                                width: `fit-content`,
+                                margin: `0 1rem`,
+                              }}
+                            >
+                              {e.para}
+                            </p>
+                          {/* </a> */}
                           
                         </>
                       ))}

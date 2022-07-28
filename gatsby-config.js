@@ -33,6 +33,7 @@ module.exports = {
         icon: `src/assets/logo512.png`, // This path is relative to the root of the site.
       },
     },
+
     // {
     //   resolve: 'gatsby-source-multi-api',
     //   options: {

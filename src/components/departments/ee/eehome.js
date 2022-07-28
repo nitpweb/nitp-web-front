@@ -1,7 +1,8 @@
 export const routeName = "ee"
 export const title = "Electrical Engineering"
 
-import { Achievements, Activities, Labs, News_Events } from "./ee-others-data"
+import { Achievements, Activities, Labs, News_Events, LabImages } from "./ee-others-data"
+import Slider from "../../Slider/Slider"
 import React from "react"
 
 export const titleDescription = () => {
@@ -125,18 +126,33 @@ export const contact = () => {
   )
 }
 
+// export const labs = () => {
+//   return (
+//     <>
+//       {" "}
+//       <div className="row rowmarl3">
+//         <div
+//           className="col-6"
+//           style={{ textAlign: "left", fontSize: `1.1rem` }}
+//         >
+//           {Labs[0].content}
+//         </div>
+//         <div className="col-6">{Labs[0].image}</div>
+//       </div>
+//     </>
+//   )
+// }
+
 export const labs = () => {
   return (
     <>
       {" "}
       <div className="row rowmarl3">
-        <div
-          className="col-6"
-          style={{ textAlign: "left", fontSize: `1.1rem` }}
-        >
-          {Labs[0].content}
-        </div>
-        <div className="col-6">{Labs[0].image}</div>
+        {" "}
+        <div className="col-6">{Labs.content}</div>
+        <div className="col-6">
+          <Slider dataSlider={LabImages} />
+        </div>{" "}
       </div>
     </>
   )
@@ -148,7 +164,7 @@ export const achievements = () => {
       {" "}
       <br />
       <br />
-      <div style={{ fontSize: `1.2rem` }} style={{ overflow: "auto" }}>
+      <div style={{ fontSize: `1.2rem`, overflow: "auto" }}>
         {Achievements.map((acht, idx) => (
           <React.Fragment key={idx}>
             <div className="rowmarl3" style={{ overflow: "auto" }}>
@@ -233,9 +249,14 @@ export const datalist = [
     // img: "/department/about.svg",
   },
   {
-    title: "Mission & Vision",
-    data: "missionvision",
-    // img: "/department/mission.svg",
+    title: "Syllabus",
+    relPath: "/ee/syllabus",
+    // img: "/department/syllabus.svg",
+  },
+  {
+    title: "Faculty",
+    relPath: "/ee/faculty",
+    // img: "/department/faculty.svg",
   },
   {
     title: "Notice",
@@ -263,13 +284,8 @@ export const datalist = [
     // img: "/department/activities.svg",
   },
   {
-    title: "Syllabus",
-    relPath: "/ee/syllabus",
-    // img: "/department/syllabus.svg",
-  },
-  {
-    title: "Faculties",
-    relPath: "/ee/faculty",
-    // img: "/department/faculty.svg",
+    title: "Mission & Vision",
+    data: "missionvision",
+    // img: "/department/mission.svg",
   },
 ]

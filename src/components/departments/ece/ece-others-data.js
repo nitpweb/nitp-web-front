@@ -1,6 +1,7 @@
 import React from "react"
 
-const home = "http://www.nitp.ac.in"
+// const home = "http://www.nitp.ac.in"
+const home = "https://web.nitp.ac.in/dept/ece/labs/"
 
 const btn_style = {
   backgroundColor: `red`,
@@ -41,13 +42,13 @@ export const Labs = [
     images: (
       <>
         <img
-          src={`${home}/images/eceimage002.jpg`}
+          src={`${home}eceimage002.jpg`}
           height="250px"
           width="350px"
         />
         <br />
         <img
-          src={`${home}/images/eceimage003.jpg`}
+          src={`${home}eceimage003.jpg`}
           height="250px"
           width="350px"
         />
@@ -80,14 +81,14 @@ export const Labs = [
     images: (
       <>
         <img
-          src={`${home}/images/eceimage005.jpg`}
+          src={`${home}eceimage005.jpg`}
           height="250px"
           width="350px"
         />
         <br />
 
         <img
-          src={`${home}/images/eceimage006.jpg`}
+          src={`${home}eceimage006.jpg`}
           height="250px"
           width="350px"
         />
@@ -149,13 +150,19 @@ export const Labs = [
     images: (
       <>
         <img
-          src={`${home}/images/eceimage007.jpg`}
+          src={`${home}eceimage007.jpg`}
           height="250px"
           width="350px"
         />
         <br />
         <img
-          src={`${home}/images/eceimage008.jpg`}
+          src={`${home}DSC_0031.jpg`}
+          height="250px"
+          width="350px"
+        />
+        <br />
+        <img
+          src={`${home}DSC_0011.jpg`}
           height="250px"
           width="350px"
         />

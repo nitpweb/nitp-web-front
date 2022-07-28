@@ -109,7 +109,7 @@ export const Labs = [
     ),
     image: (
       <>
-        <img src={`${home}images/image013.jpg`} />
+        <img src={`https://web.nitp.ac.in/dept/civil/labs/image013.jpg`} />
       </>
     ),
   },
@@ -139,7 +139,7 @@ export const Labs = [
     ),
     image: (
       <>
-        <img src={`${home}images/image007.jpg`} />
+        <img src={`https://web.nitp.ac.in/dept/civil/labs/image007.jpg`} />
       </>
     ),
   },
@@ -163,7 +163,7 @@ export const Labs = [
     ),
     image: (
       <>
-        <img src={`${home}images/image008.jpg`} />
+        <img src={`https://web.nitp.ac.in/dept/civil/labs/image008.jpg`} />
       </>
     ),
   },
@@ -190,7 +190,7 @@ export const Labs = [
     ),
     image: (
       <>
-        <img src={`${home}images/image009.jpg`} />
+        <img src={`https://web.nitp.ac.in/dept/civil/labs/image009.jpg`} />
       </>
     ),
   },
@@ -221,7 +221,7 @@ export const Labs = [
     ),
     image: (
       <>
-        <img src={`${home}images/image010.jpg`} />
+        <img src={`https://web.nitp.ac.in/dept/civil/labs/image010.jpg`} />
       </>
     ),
   },
@@ -250,7 +250,7 @@ export const Labs = [
     ),
     image: (
       <>
-        <img src={`${home}images/image011.jpg`} />
+        <img src={`https://web.nitp.ac.in/dept/civil/labs/image011.jpg`} />
       </>
     ),
   },
@@ -274,7 +274,7 @@ export const Labs = [
     ),
     image: (
       <>
-        <img src={`${home}images/image012.jpg`} />
+        <img src={`https://web.nitp.ac.in/dept/civil/labs/image012.jpg`} />
       </>
     ),
   },
@@ -297,7 +297,7 @@ export const Labs = [
     ),
     image: (
       <>
-        <img src={`${home}images/image013.jpg`} />
+        <img src={`https://web.nitp.ac.in/dept/civil/labs/DSC_0045.jpg`} />
       </>
     ),
   },
@@ -323,7 +323,7 @@ export const Labs = [
     ),
     image: (
       <>
-        <img src={`${home}images/image007.jpg`} />
+        <img src={`https://web.nitp.ac.in/dept/civil/labs/DSC_0051.jpg`} />
       </>
     ),
   },
@@ -349,7 +349,7 @@ export const Activities = [
         </p>
       </>
     ),
-    image: <img className="img-fluid" src={`${home}images/image014.jpg`} />,
+    image: <img className="img-fluid" src={`https://web.nitp.ac.in/dept/civil/image014.jpg`} />,
   },
   {
     content: (
@@ -373,6 +373,6 @@ export const Activities = [
         </p>
       </>
     ),
-    image: <img src={`${home}images/image015.jpg`} />,
+    image: <img src={`https://web.nitp.ac.in/dept/civil/image015.jpg`} />,
   },
 ]

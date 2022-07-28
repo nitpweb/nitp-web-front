@@ -1,6 +1,9 @@
 import React from "react"
 
-const home = "http://www.nitp.ac.in/php/"
+// const home = "http://www.nitp.ac.in/php/"
+const home = "https://web.nitp.ac.in/dept/chem/labs/"
+const activity = "https://web.nitp.ac.in/dept/chem/"
+
 export const Labs = {
   content: (
     <>
@@ -24,70 +27,83 @@ export const Labs = {
     </>
   ),
 }
+// export const LabImages = [
+//   <>
+//     <img src={`${home}cheimg/Dr. Parvin Lab.jpg`} alt="image" />
+//     <div className="text">Dr. Parvin Lab</div>
+//   </>,
+//   <>
+//     <img src={`${home}cheimg/Dr. Jha Lab.png`} alt="image" />
+//     <div className="text">Dr. Jha Lab</div>
+//   </>,
+//   <>
+//     <img src={`${home}cheimg/Dr. Dasgupta Lab.jpg`} alt="image" />
+//     <div className="text">Dr. Dasgupta Lab</div>
+//   </>,
+//   <>
+//     <img src={`${home}cheimg/subrata.jpg`} alt="image" />
+//     <div className="text">Dr. Das Lab</div>
+//   </>,
+//   <>
+//     <img src={`${home}cheimg/Dr. Chowdhury Lab.jpg`} alt="image" />
+//     <div className="text">Dr. Chowdhury Lab</div>
+//   </>,
+//   <>
+//     <img src={`${home}cheimg/Dr. Thakur Lab.png`} alt="image" />
+//     <div className="text">Dr. Thakur Lab</div>
+//   </>,
+//   <>
+//     <img src={`${home}cheimg/pic-3_BTech lab.JPG`} alt="image" />
+//     <div className="text">B.Tech Lab</div>
+//   </>,
+//   <>
+//     <img src={`${home}cheimg/pic-4_MSc Synthesis lab.JPG`} alt="image" />
+//     <div className="text">M.Sc Synthesis Lab</div>
+//   </>,
+//   <>
+//     <img src={`${home}cheimg/pic-5_MSc Characterization lab.jpg`} alt="image" />
+//     <div className="text">M.Sc Characterization lab</div>
+//   </>,
+//   <>
+//     <img
+//       src={`${home}cheimg/pic-6_Departmental Instrument Lab.jpg`}
+//       alt="image"
+//     />
+//     <div className="text">Departmental Instrument Lab</div>
+//   </>,
+//   <>
+//     <img
+//       src={`${home}cheimg/pic-7_Departmental Individual Faculty Research Lab.jpg`}
+//     />
+//     <div className="text">Dep. Of Faculty Research Lab</div>
+//   </>,
+// ]
+
 export const LabImages = [
   <>
-    <img src={`${home}cheimg/Dr. Parvin Lab.jpg`} alt="image" />
-    <div className="text">Dr. Parvin Lab</div>
+    <img src={`${home}DSC_0072.jpg`} alt="image" />
   </>,
   <>
-    <img src={`${home}cheimg/Dr. Jha Lab.png`} alt="image" />
-    <div className="text">Dr. Jha Lab</div>
+    <img src={`${home}DSC_0070.jpg`} alt="image" />
   </>,
   <>
-    <img src={`${home}cheimg/Dr. Dasgupta Lab.jpg`} alt="image" />
-    <div className="text">Dr. Dasgupta Lab</div>
+    <img src={`${home}DSC_0065.jpg`} alt="image" />
   </>,
-  <>
-    <img src={`${home}cheimg/subrata.jpg`} alt="image" />
-    <div className="text">Dr. Das Lab</div>
-  </>,
-  <>
-    <img src={`${home}cheimg/Dr. Chowdhury Lab.jpg`} alt="image" />
-    <div className="text">Dr. Chowdhury Lab</div>
-  </>,
-  <>
-    <img src={`${home}cheimg/Dr. Thakur Lab.png`} alt="image" />
-    <div className="text">Dr. Thakur Lab</div>
-  </>,
-  <>
-    <img src={`${home}cheimg/pic-3_BTech lab.JPG`} alt="image" />
-    <div className="text">B.Tech Lab</div>
-  </>,
-  <>
-    <img src={`${home}cheimg/pic-4_MSc Synthesis lab.JPG`} alt="image" />
-    <div className="text">M.Sc Synthesis Lab</div>
-  </>,
-  <>
-    <img src={`${home}cheimg/pic-5_MSc Characterization lab.jpg`} alt="image" />
-    <div className="text">M.Sc Characterization lab</div>
-  </>,
-  <>
-    <img
-      src={`${home}cheimg/pic-6_Departmental Instrument Lab.jpg`}
-      alt="image"
-    />
-    <div className="text">Departmental Instrument Lab</div>
-  </>,
-  <>
-    <img
-      src={`${home}cheimg/pic-7_Departmental Individual Faculty Research Lab.jpg`}
-    />
-    <div className="text">Dep. Of Faculty Research Lab</div>
-  </>,
+ 
 ]
 
 export const ActivityImages = [
-  <img src={`${home}cheimg/02.jpg`} alt="image" />,
-  <img src={`${home}cheimg/01.jpg`} alt="image" />,
-  <img src={`${home}cheimg/06.jpg`} alt="image" />,
-  <img src={`${home}cheimg/03.jpg`} alt="image" />,
-  <img src={`${home}cheimg/04.jpg`} alt="image" />,
-  <img src={`${home}cheimg/05.jpg`} alt="image" />,
-  <img src={`${home}cheimg/07.jpg`} alt="image" />,
-  <img src={`${home}cheimg/08.jpg`} alt="image" />,
-  <img src={`${home}cheimg/10.jpg`} alt="image" />,
-  <img src={`${home}cheimg/09.jpg`} alt="image" />,
-  <img src={`${home}cheimg/11.jpg`} alt="image" />,
+  <img src={`${activity}02.jpg`} alt="image" />,
+  <img src={`${activity}01.jpg`} alt="image" />,
+  <img src={`${activity}06.jpg`} alt="image" />,
+  <img src={`${activity}03.jpg`} alt="image" />,
+  <img src={`${activity}04.jpg`} alt="image" />,
+  <img src={`${activity}05.jpg`} alt="image" />,
+  <img src={`${activity}07.jpg`} alt="image" />,
+  <img src={`${activity}08.jpg`} alt="image" />,
+  <img src={`${activity}10.jpg`} alt="image" />,
+  <img src={`${activity}09.jpg`} alt="image" />,
+  <img src={`${activity}11.jpg`} alt="image" />,
 ]
 
 const SponseredProjectsTable = [
@@ -330,7 +346,7 @@ export const Achievements = {
   content: (
     <>
       <img
-        src={`${home}cheimg/rc.png`}
+        src={`${home}rc.png`}
         className="img-fluid"
         alt="A METHOD FOR CONTAMINATED WATER USING PHOTOSTABLE SUPERPARAMAGNETIC NANOMATERIAL"
       />

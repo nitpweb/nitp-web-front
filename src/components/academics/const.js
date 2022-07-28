@@ -15,6 +15,11 @@ const AcademicsList = [
   //     img:"/test.svg"
   // },
   {
+    title: "Departments",
+    data: "depts",
+    // img: "/test.svg",
+  },
+  {
     title: "Academic Notices",
     data: "Notices",
     // img: "/mail.svg",
@@ -42,6 +47,11 @@ const AcademicsList = [
   {
     title: "Fee Structures",
     data: "fee",
+    // img: "/test.svg",
+  },
+  {
+    title: "Centre of Excellence",
+    data: "centreOfExcellence",
     // img: "/test.svg",
   },
 ]

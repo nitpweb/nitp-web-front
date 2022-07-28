@@ -200,9 +200,14 @@ export const datalist = [
     // img: "/department/about.svg",
   },
   {
-    title: "Mission & Vision",
-    data: "missionvision",
-    // img: "/department/mission.svg",
+    title: "Syllabus",
+    relPath: "/cse/syllabus",
+    // img: "/department/syllabus.svg",
+  },
+  {
+    title: "Faculty",
+    relPath: "/cse/faculty",
+    // img: "/department/faculty.svg",
   },
   {
     title: "Notice",
@@ -235,14 +240,8 @@ export const datalist = [
     // img: "clock.svg",
   },
   {
-    title: "Syllabus",
-    relPath: "/cse/syllabus",
-    // img: "/department/syllabus.svg",
+    title: "Mission & Vision",
+    data: "missionvision",
+    // img: "/department/mission.svg",
   },
-  {
-    title: "Faculties",
-    relPath: "/cse/faculty",
-    // img: "/department/faculty.svg",
-  },
-
 ]

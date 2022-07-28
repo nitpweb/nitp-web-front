@@ -16,9 +16,10 @@ const Dropnew = ({ to, title, list, idname }) => {
         style={{ width: `${element * 215}px` }}
         id={idname}
       >
-        {list.map(item => (
+        {list.map((item, index) => (
           <div className="content">
             <DynamicLink
+              key={index}
               classvalue="mainLink"
               url={item.url}
               data={item.data}
@@ -26,8 +27,9 @@ const Dropnew = ({ to, title, list, idname }) => {
             />
             {item.sub ? (
               <div className="sub">
-                {item.sub.map(val => (
+                {item.sub.map((val, index) => (
                   <DynamicLink
+                    key={index}
                     url={val.url}
                     data={val.data}
                     title={val.title}
