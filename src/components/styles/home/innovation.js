@@ -3,7 +3,8 @@ import styled from "styled-components"
 export const InnovationStyle = styled.div`
   width: 100vw;
   height: 350px;
-  background: lightgrey;
+  background: ${props => props.theme.backgroundSecColor};
+  ${'' /* background: rgb(240, 240, 240); */}
   /* background: -webkit-gradient(
     linear,
     left bottom,
@@ -134,7 +135,7 @@ export const InnovationStyle = styled.div`
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
         flex-direction: row;
-        background-color: ${props => props.theme.backgroundTerColor};
+        background-color: ${props => props.theme.backgroundColor};
         overflow: hidden;
         .text {
           width: 75%;

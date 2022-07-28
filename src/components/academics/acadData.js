@@ -500,6 +500,7 @@ const Fee = [
         para: "UG : Fee Structure (2018-19)",
         link: "http://www.nitp.ac.in/uploads/Fee_Structure_All.pdf",
       },
+
     ],
   },
   {
@@ -950,6 +951,104 @@ const Privacy = [
     ],
   },
 ]
+const Depts = [
+  {
+    heading: "Departments",
+    data: [
+      {
+        para:
+          "Architecture",
+        link:
+          "/arch",
+      },
+      {
+        para: "Chemistry",
+        link: "/chem",
+      },
+
+      {
+        para: "Civil Engineering",
+        link: "/ce",
+      },
+      {
+        para: "Computer Science and Engineering",
+        link: "/cse",
+      },
+      {
+        para: "Electrical Engineering",
+        link: "/ee",
+      },
+      {
+        para: "Electronics and Communication Engineering",
+        link: "/ece",
+      },
+      {
+        para: "Humanities & Social Sciences",
+        link: "/hss",
+      },
+      {
+        para: "Mathematics",
+        link: "/math",
+      },
+      {
+        para: "Mechanical Engineering",
+        link: "/me",
+      },
+      {
+        para: "Physics",
+        link: "/physics",
+      },
+    ],
+  },
+]
+// const CentreOfExcellence = [
+//   // {
+//   //   heading: "Privacy",
+//   //   data: [
+//   //     {
+//   //       title: "National Institute of Technology Patna (NITP)",
+//   //       para: `We at NITP value your privacy and understand how important it is for you. To that effect, we have the following privacy policy in place with regard to the collection, use and dissemination of personal information collected by this website. This document will help you understand the terms and conditions under which personal information is provided to this website. Please note that this policy is effective only within NITP’s domain, and does not apply to websites that may be accessible from external links provided in various pages of this website. Also note that due to the very nature of internet technology and evolving threats, this policy may be updated from time to time. All such updates will be posted in the privacy policy page. In continuing to use this website, you indicate your acceptance of the terms and policies mentioned here.`,
+//   //     },
+//   //   ],
+//   // },
+//   {
+//     heading: "Admissions",
+//     title: "CCMT-2021:",
+//     data: [
+//       {
+//         para:
+//           "Official website of CCMT 2021 for M/Tech/MURP/MArch admission for the Academic session 2021-22. ",
+//         link: "https://ccmt.nic.in/",
+//       },
+//     ],
+//   },
+// ]
+
+// const CentreOfExcellence = [
+//   {
+//     title: "UG Course Structure",
+//     data: [
+//       {
+//         para: "Bachelor of Architecture (ARUG)",
+//         link: "http://www.nitp.ac.in/downloads/course_structure/ARUG.pdf",
+//       },
+//     ],
+//   },
+// ]
+
+const CentreOfExcellence = [
+  {
+    heading: "Centre",
+    data: [
+      {
+        para:
+          "A Memorandum of Understanding (MOU) has been signed between Telecom Sector Skill Council and National Institute of Technology Patna for setting up a Centre of Excellence (CoE) to create a facility for practical training on the domain of Information and Communications Technology on 22nd January, 2021. Skill development training is being imparted by the CoE to enhance the employability of aspiring students on the cutting-edge technologies in the domain of Information and Communications Technology including Technical, Services and allied fields. The CoE will provide training on the base line courses and also on the advance courses like IOT, 5G and beyond, cyber security and robotics etc. Almost 190 students have been trained on different job roles by this centre. A state-of-art laboratory on internet of things (IOT) is being developed. Hopefully the lab will be ready shortly where training/research will be conducted on IOT/5G technologies.",
+        // link:
+        //   "/arch",
+      },
+    ],
+  },
+]
 
 const acadData = {
   datad: Datad,
@@ -970,5 +1069,8 @@ const acadData = {
   nirf: NIRF,
   statutes: Statutes,
   privacy: Privacy,
+  depts: Depts,
+  centreOfExcellence: CentreOfExcellence,
+  // centre: Centre,
 }
 export default acadData

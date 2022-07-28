@@ -101,7 +101,6 @@ const Dephomepage = ({
                             time={notice.openDate}
                             attachments={notice.attachments}
                             key={notice.id}
-                            attachments={notice.attachments}
                             imp={notice.important}
                             link={
                               notice.notice_link &&

@@ -49,7 +49,7 @@ export const HomeStyle = styled.div`
     flex-direction: column;
     width: 30vw;
     min-height: fit-content;
-    max-height: 500px;
+    max-height: 160px;
     z-index: 1;
     justify-content: flex-start;
     overflow-x: hidden;
@@ -69,7 +69,7 @@ export const HomeStyle = styled.div`
     flex-direction: column;
     width: 30vw; 
     min-height: fit-content;
-    max-height: 500px;
+    max-height: 160px;
     z-index: 1;
     border-radius: 3px;
     justify-content: flex-start;
