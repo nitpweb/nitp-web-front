@@ -6,7 +6,7 @@ const Notice = props => {
   const newtime = new Date().getTime()
 
   let d = Math.round((newtime - props.time) / 3600000)
-  if (d > 168) {
+  if (d > 48) {
     d = new Date(props.time).toLocaleDateString()
   } else if (d > 24) {
     d = `${Math.round(d / 24)} days ago`
