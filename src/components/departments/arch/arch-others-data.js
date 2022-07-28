@@ -1,7 +1,7 @@
 import React from "react"
 
 // const home = "http://www.nitp.ac.in/"
-const home = "https://web.nitp.ac.in/dept/arch/labs/"
+const home = process.env.BASE_URL+"arch/labs/"
 export const Labs = {
   content: (
     <>

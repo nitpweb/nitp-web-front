@@ -1,8 +1,8 @@
 import React from "react"
 
 // const home = "http://www.nitp.ac.in/php/"
-const home = "https://web.nitp.ac.in/dept/chem/labs/"
-const activity = "https://web.nitp.ac.in/dept/chem/"
+const home = process.env.BASE_URL+"chem/labs/"
+const activity = process.env.BASE_URL+"chem/"
 
 export const Labs = {
   content: (
