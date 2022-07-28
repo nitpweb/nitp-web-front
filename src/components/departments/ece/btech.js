@@ -9,7 +9,7 @@ const Btech = [
     t: "1",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/hs1052.docx",
+    url: process.env.BASE_URL+"ece/syllabus/hs1052.docx",
   },
   {
     sem_elect: "1",
@@ -19,7 +19,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/ma12.docx",
+    url: process.env.BASE_URL+"ece/syllabus/ma12.docx",
   },
   {
     sem_elect: "1",
@@ -30,7 +30,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/ch1.docx",
+    url: process.env.BASE_URL+"ece/syllabus/ch1.docx",
   },
   {
     sem_elect: "1",
@@ -41,7 +41,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/ec1.docx",
+    url: process.env.BASE_URL+"ece/syllabus/ec1.docx",
   },
   {
     sem_elect: "1",
@@ -52,7 +52,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/ee1.docx",
+    url: process.env.BASE_URL+"ece/syllabus/ee1.docx",
   },
 
   {
@@ -64,7 +64,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/chl1.docx",
+    url: process.env.BASE_URL+"ece/syllabus/chl1.docx",
   },
   {
     sem_elect: "1",
@@ -74,7 +74,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/ecl1.docx",
+    url: process.env.BASE_URL+"ece/syllabus/ecl1.docx",
   },
   {
     sem_elect: "1",
@@ -85,7 +85,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/eel1.docx",
+    url: process.env.BASE_URL+"ece/syllabus/eel1.docx",
   },
   {
     sem_elect: "1",
@@ -96,7 +96,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "2",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/egl1.docx",
+    url: process.env.BASE_URL+"ece/syllabus/egl1.docx",
   },
   {
     sem_elect: "1",
@@ -117,7 +117,7 @@ const Btech = [
     t: "1",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/hs2.docx",
+    url: process.env.BASE_URL+"ece/syllabus/hs2.docx",
   },
   {
     sem_elect: "2",
@@ -127,7 +127,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/ma22.docx",
+    url: process.env.BASE_URL+"ece/syllabus/ma22.docx",
   },
   {
     sem_elect: "2",
@@ -137,7 +137,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/ph2.docx",
+    url: process.env.BASE_URL+"ece/syllabus/ph2.docx",
   },
   {
     sem_elect: "2",
@@ -147,7 +147,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/cs2.docx",
+    url: process.env.BASE_URL+"ece/syllabus/cs2.docx",
   },
   {
     sem_elect: "2",
@@ -158,7 +158,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/ec2.docx",
+    url: process.env.BASE_URL+"ece/syllabus/ec2.docx",
   },
   {
     sem_elect: "2",
@@ -169,7 +169,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/hsl2.docx",
+    url: process.env.BASE_URL+"ece/syllabus/hsl2.docx",
   },
   {
     sem_elect: "2",
@@ -180,7 +180,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/phl2.docx",
+    url: process.env.BASE_URL+"ece/syllabus/phl2.docx",
   },
   {
     sem_elect: "2",
@@ -192,7 +192,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/csl2.docx",
+    url: process.env.BASE_URL+"ece/syllabus/csl2.docx",
   },
   {
     sem_elect: "2",
@@ -204,7 +204,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/ecl2.docx",
+    url: process.env.BASE_URL+"ece/syllabus/ecl2.docx",
   },
   {
     sem_elect: "2",
@@ -225,7 +225,7 @@ const Btech = [
     t: "1",
     p: "0",
     credits: "4",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/ce3.docx",
+    url: process.env.BASE_URL+"ece/syllabus/ce3.docx",
   },
   {
     sem_elect: "3",
@@ -236,7 +236,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/eft3.docx",
+    url: process.env.BASE_URL+"ece/syllabus/eft3.docx",
   },
   {
     sem_elect: "3",
@@ -247,7 +247,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/ssa3.docx",
+    url: process.env.BASE_URL+"ece/syllabus/ssa3.docx",
   },
   {
     sem_elect: "3",
@@ -258,7 +258,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/cs3.docx",
+    url: process.env.BASE_URL+"ece/syllabus/cs3.docx",
   },
   {
     sem_elect: "3",
@@ -269,7 +269,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/ma3.docx",
+    url: process.env.BASE_URL+"ece/syllabus/ma3.docx",
   },
   {
     sem_elect: "3",
@@ -280,7 +280,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/nas3.docx",
+    url: process.env.BASE_URL+"ece/syllabus/nas3.docx",
   },
   {
     sem_elect: "3",
@@ -291,7 +291,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/ael3.docx",
+    url: process.env.BASE_URL+"ece/syllabus/ael3.docx",
   },
   {
     sem_elect: "3",
@@ -302,7 +302,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/csl3.docx",
+    url: process.env.BASE_URL+"ece/syllabus/csl3.docx",
   },
   {
     sem_elect: "3",
@@ -313,7 +313,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/ssal3.docx",
+    url: process.env.BASE_URL+"ece/syllabus/ssal3.docx",
   },
   {
     sem_elect: "4",
@@ -324,7 +324,7 @@ const Btech = [
     t: "1",
     p: "0",
     credits: "4",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/de4.docx",
+    url: process.env.BASE_URL+"ece/syllabus/de4.docx",
   },
   {
     sem_elect: "4",
@@ -335,7 +335,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/cs4.docx",
+    url: process.env.BASE_URL+"ece/syllabus/cs4.docx",
   },
   {
     sem_elect: "4",
@@ -346,7 +346,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/oop4.docx",
+    url: process.env.BASE_URL+"ece/syllabus/oop4.docx",
   },
   {
     sem_elect: "4",
@@ -357,7 +357,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/pe5.docx",
+    url: process.env.BASE_URL+"ece/syllabus/pe5.docx",
   },
   {
     sem_elect: "4",
@@ -378,7 +378,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/OpenE.docx",
+    url: process.env.BASE_URL+"ece/syllabus/OpenE.docx",
   },
   {
     sem_elect: "4",
@@ -389,7 +389,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/del4.docx",
+    url: process.env.BASE_URL+"ece/syllabus/del4.docx",
   },
   {
     sem_elect: "4",
@@ -400,7 +400,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/cel4.docx",
+    url: process.env.BASE_URL+"ece/syllabus/cel4.docx",
   },
   {
     sem_elect: "5",
@@ -411,7 +411,7 @@ const Btech = [
     t: "1",
     p: "0",
     credits: "4",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/vlsi5.docx",
+    url: process.env.BASE_URL+"ece/syllabus/vlsi5.docx",
   },
   {
     sem_elect: "5",
@@ -422,7 +422,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/ace5.docx",
+    url: process.env.BASE_URL+"ece/syllabus/ace5.docx",
   },
   {
     sem_elect: "5",
@@ -433,7 +433,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/mm5.docx",
+    url: process.env.BASE_URL+"ece/syllabus/mm5.docx",
   },
   {
     sem_elect: "5",
@@ -444,7 +444,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/pe5.docx",
+    url: process.env.BASE_URL+"ece/syllabus/pe5.docx",
   },
   {
     sem_elect: "5",
@@ -455,7 +455,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/gt5.docx",
+    url: process.env.BASE_URL+"ece/syllabus/gt5.docx",
   },
   {
     sem_elect: "5",
@@ -466,7 +466,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/OpenE.docx",
+    url: process.env.BASE_URL+"ece/syllabus/OpenE.docx",
   },
   {
     sem_elect: "5",
@@ -477,7 +477,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/vlsil5.docx",
+    url: process.env.BASE_URL+"ece/syllabus/vlsil5.docx",
   },
   {
     sem_elect: "5",
@@ -488,7 +488,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/acl5.docx",
+    url: process.env.BASE_URL+"ece/syllabus/acl5.docx",
   },
   {
     sem_elect: "5",
@@ -499,7 +499,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/mml5.docx",
+    url: process.env.BASE_URL+"ece/syllabus/mml5.docx",
   },
   {
     sem_elect: "6",
@@ -510,7 +510,7 @@ const Btech = [
     t: "1",
     p: "0",
     credits: "4",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/dsp6.docx",
+    url: process.env.BASE_URL+"ece/syllabus/dsp6.docx",
   },
   {
     sem_elect: "6",
@@ -521,7 +521,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/awp6.docx",
+    url: process.env.BASE_URL+"ece/syllabus/awp6.docx",
   },
   {
     sem_elect: "6",
@@ -532,7 +532,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/pe5.docx",
+    url: process.env.BASE_URL+"ece/syllabus/pe5.docx",
   },
   {
     sem_elect: "6",
@@ -543,7 +543,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/pe5.docx",
+    url: process.env.BASE_URL+"ece/syllabus/pe5.docx",
   },
   {
     sem_elect: "6",
@@ -562,7 +562,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/OpenE.docx",
+    url: process.env.BASE_URL+"ece/syllabus/OpenE.docx",
   },
   {
     sem_elect: "6",
@@ -593,7 +593,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/rf.docx",
+    url: process.env.BASE_URL+"ece/syllabus/rf.docx",
   },
   {
     sem_elect: "7",
@@ -615,7 +615,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/pe5.docx",
+    url: process.env.BASE_URL+"ece/syllabus/pe5.docx",
   },
   {
     sem_elect: "7",
@@ -626,7 +626,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/OpenE.docx",
+    url: process.env.BASE_URL+"ece/syllabus/OpenE.docx",
   },
   {
     sem_elect: "7",
@@ -643,7 +643,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/rfl.docx",
+    url: process.env.BASE_URL+"ece/syllabus/rfl.docx",
   },
   {
     sem_elect: "7",
@@ -676,7 +676,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/pe5.docx",
+    url: process.env.BASE_URL+"ece/syllabus/pe5.docx",
   },
   {
     sem_elect: "8",
@@ -714,7 +714,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/eipe.docx",
+    url: process.env.BASE_URL+"ece/syllabus/eipe.docx",
   },
   {
     sem_elect: "EL",
@@ -724,7 +724,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/coape.docx",
+    url: process.env.BASE_URL+"ece/syllabus/coape.docx",
   },
   {
     sem_elect: "EL",
@@ -734,7 +734,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/sdmpe.docx",
+    url: process.env.BASE_URL+"ece/syllabus/sdmpe.docx",
   },
   {
     sem_elect: "EL",
@@ -744,7 +744,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/licpe.docx",
+    url: process.env.BASE_URL+"ece/syllabus/licpe.docx",
   },
   {
     sem_elect: "EL",
@@ -754,7 +754,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/pdswpe.docx",
+    url: process.env.BASE_URL+"ece/syllabus/pdswpe.docx",
   },
   {
     sem_elect: "EL",
@@ -764,7 +764,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/cspe.docx",
+    url: process.env.BASE_URL+"ece/syllabus/cspe.docx",
   },
   {
     sem_elect: "EL",
@@ -828,7 +828,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/wsnpe.docx",
+    url: process.env.BASE_URL+"ece/syllabus/wsnpe.docx",
   },
   {
     sem_elect: "EL",
@@ -847,7 +847,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/dippe.docx",
+    url: process.env.BASE_URL+"ece/syllabus/dippe.docx",
   },
   {
     sem_elect: "EL",
@@ -884,7 +884,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/itcpe.docx",
+    url: process.env.BASE_URL+"ece/syllabus/itcpe.docx",
   },
   {
     sem_elect: "EL",
@@ -903,7 +903,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/lptpe.docx",
+    url: process.env.BASE_URL+"ece/syllabus/lptpe.docx",
   },
   {
     sem_elect: "EL",
@@ -922,7 +922,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/rfpe.docx",
+    url: process.env.BASE_URL+"ece/syllabus/rfpe.docx",
   },
   {
     sem_elect: "EL",
@@ -950,7 +950,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/scpe.docx",
+    url: process.env.BASE_URL+"ece/syllabus/scpe.docx",
   },
   {
     sem_elect: "EL",
@@ -960,7 +960,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/ape.docx",
+    url: process.env.BASE_URL+"ece/syllabus/ape.docx",
   },
   {
     sem_elect: "EL",
@@ -988,7 +988,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/sppe.docx",
+    url: process.env.BASE_URL+"ece/syllabus/sppe.docx",
   },
   {
     sem_elect: "EL",
@@ -1025,7 +1025,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: "http://web.nitp.ac.in/dept/ece/syllabus/nedpe.docx",
+    url: process.env.BASE_URL+"ece/syllabus/nedpe.docx",
   },
   {
     sem_elect: "EL",
