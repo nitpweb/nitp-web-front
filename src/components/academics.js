@@ -798,6 +798,43 @@ const Academicspage = () => {
             ) : (
               ""
             )}
+            {view == "centreOfExcellence" ? (
+              <>
+                <div className="row rowmarl3">
+                <h1 style={{ fontFamily: `Source Sans Pro` }}>Centre of Excellence set up by TSSC at NIT Patna</h1>
+                </div>
+                {acadData.centreOfExcellence.map(item => (
+                  <div className="row rowmarl3">
+                    <div className="digital">
+                      <h3>{item.title}</h3>
+                      {item.data.map(e => (
+                        <>
+                          {/* <a
+                            href={e.link}
+                            // target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ textDecoration: `none` }}
+                          > */}
+                            <p
+                              style={{
+                                paddingBottom: `0.15rem`,
+                                width: `fit-content`,
+                                margin: `0 1rem`,
+                              }}
+                            >
+                              {e.para}
+                            </p>
+                          {/* </a> */}
+                          
+                        </>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </>
+            ) : (
+              ""
+            )}
           </div>
         </TabPage>
       )}
