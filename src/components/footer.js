@@ -57,6 +57,9 @@ const Footer = () => {
               <Link to="/RTI" target="_blank">
                 <h3>RTI</h3>
               </Link>
+              <Link to="/newcampus" target="_blank">
+                <h3>New Campus</h3>
+              </Link>
               <a
                 href="http://www.nitp.ac.in/uploads/ORG_CHART_NITP.pdf"
                 target="_blank"

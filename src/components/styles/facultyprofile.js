@@ -67,6 +67,20 @@ export const FacultyProfile = styled.div`
     z-index: 10;
   }
 
+  .link-card{
+    margin: 15px;
+    border-radius: 5px;
+    background: ${props => props.theme.primaryColor};
+    color: white;
+    border: none;
+    z-index: 10;
+  }
+
+  .link-card img{
+    height: 25px;
+    padding:10px;
+  }
+
   .popup {
     margin: 10vh auto;
     padding: 20px;
