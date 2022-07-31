@@ -1043,8 +1043,33 @@ const CentreOfExcellence = [
       {
         para:
           "A Memorandum of Understanding (MOU) has been signed between Telecom Sector Skill Council and National Institute of Technology Patna for setting up a Centre of Excellence (CoE) to create a facility for practical training on the domain of Information and Communications Technology on 22nd January, 2021. Skill development training is being imparted by the CoE to enhance the employability of aspiring students on the cutting-edge technologies in the domain of Information and Communications Technology including Technical, Services and allied fields. The CoE will provide training on the base line courses and also on the advance courses like IOT, 5G and beyond, cyber security and robotics etc. Almost 190 students have been trained on different job roles by this centre. A state-of-art laboratory on internet of things (IOT) is being developed. Hopefully the lab will be ready shortly where training/research will be conducted on IOT/5G technologies.",
-        // link:
-        //   "/arch",
+      },
+    ],
+  },
+]
+
+const Convocation = [
+  {
+    title: "Convocation",
+    data: [
+      {
+        link:
+          "https://drive.google.com/drive/folders/1FCX_gRZEdbHFDLm7lEQVPLmuzaQVrajX?usp=sharing",
+        para:
+          "Photos from the 10th Conovocation Event (accessible from an @nitp.ac.in account only)",
+      },
+      {
+        link:
+          "https://drive.google.com/file/d/1bTEXmXWTCPdMTXcjI_e7hW9wht6MFFQi/view",
+        para: "Video message for graduands from Dr. Subhas Sarkar, Honorable Union Minister of State, Ministry of Education",
+      },
+      {
+        link: "https://drive.google.com/file/d/1GhjpEr-Z6dzbZjUuFw4KwSkdl9-i7a9F/view",
+        para: "Video message for graduands from Dr G. Satheesh Reddy, Honorable Secretary, Department of Defence R&D and Chairman, DRDO",
+      },
+      {
+        link: "https://www.youtube.com/watch?v=QZeLU_QKr6I",
+        para: "Recorded web-cast of the 10th Convocation event.",
       },
     ],
   },
@@ -1071,6 +1096,6 @@ const acadData = {
   privacy: Privacy,
   depts: Depts,
   centreOfExcellence: CentreOfExcellence,
-  // centre: Centre,
+  convocation: Convocation,
 }
 export default acadData
