@@ -104,6 +104,9 @@ const Footer = () => {
           <div className="footsec">
             <div className="foot-col-3">
               <h1>Extra Links</h1>
+              <Link to="/magazine">
+                <h3>Magazine (Vol. 4)</h3>
+              </Link>
               <a
                 href="http://www.nitp.ac.in/php/img/digitalmap.jpg"
                 target="_blank"
@@ -125,6 +128,7 @@ const Footer = () => {
               <Link to="/sitemap">
                 <h3>Site Map</h3>
               </Link>
+              
             </div>
             <div className="foot-col-3">
               <h1>Useful Links</h1>

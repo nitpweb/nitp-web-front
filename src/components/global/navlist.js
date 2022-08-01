@@ -433,7 +433,10 @@ const Students = [
         title: "Tech Fest",
         data: "corona",
       },
-
+      {
+        url: "http://www.nitp.ac.in/asme/index.html",
+        title: "ASME",
+      },
       {
         url: "/students",
         title: "Student Exchange",
@@ -471,6 +474,14 @@ const Students = [
       {
         url: "http://nitp.ac.in/incubation_center/index.html",
         title: "Incubation Centre",
+      },
+      {
+        url: "http://corona.nitp.ac.in/Corona16/index.php",
+        title: "Corona",
+      },
+      {
+        url: "http://ieee.nitp.ac.in/",
+        title: "IEEE",
       },
       {
         url: "http://nitp.ac.in/data/Anti-ragging_Committee_2019.pdf",
