@@ -1,16 +1,16 @@
 import React from "react"
 
 const CSEBtechCourseStructure = [
-  {
-    dept: `Deptt`,
-    sem_elect: `Sem/Electives`,
-    coursecode: `Course Code`,
-    coursetitle: `Course Title`,
-    l: `L`,
-    t: `T`,
-    p: `P`,
-    credits: `Credits`,
-  },
+  // {
+  //   dept: `Deptt`,
+  //   sem_elect: `Sem/Electives`,
+  //   coursecode: `Course Code`,
+  //   coursetitle: `Course Title`,
+  //   l: `L`,
+  //   t: `T`,
+  //   p: `P`,
+  //   credits: `Credits`,
+  // },
   {
     dept: `CSUG`,
     sem_elect: `1`,
