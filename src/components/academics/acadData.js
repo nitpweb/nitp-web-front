@@ -1075,6 +1075,64 @@ const Convocation = [
   },
 ]
 
+const Magazine = [
+  {
+    heading: "Magazine of NIT Patna",
+    title: "Magazine Vol. 4, (March 2022)",
+    data: [
+      {
+        para:
+          "Click here to download (English Version)",
+        link: "http://www.nitp.ac.in/uploads20/Pratibimb/Pratibimb%20Vol.%204,%20March%202022,%20online%20version-16.03.2022.pdf",
+      },
+    ],
+  },
+  {
+    heading: "Magazine of NIT Patna",
+    title: "Magazine Vol. 3 (October, 2021)",
+    data: [
+      {
+        para: "Click here to download (English Version)",
+        link:
+          "http://www.nitp.ac.in/uploads20/Pratibimb/Pratibimb_03_English%20Version.pdf",
+      },
+      {
+        para: "Click here to download (Hindi Version)",
+        link:
+          "http://www.nitp.ac.in/uploads20/Pratibimb/Pratibimb_03_Hindi%20Version.pdf",
+      },
+    ],
+  },
+  {
+    heading: "Magazine of NIT Patna",
+    title: "Magazine Vol. 2 (June, 2021)",
+    data: [
+      {
+        para: "Click here to download (English Version)",
+        link:
+          "http://www.nitp.ac.in/uploads20/Pratibimb/Pratibimb%20Vol.%2002-Updated%2028.07.2021.pdf",
+      },
+      {
+        para: "Click here to download (Hindi Version)",
+        link:
+          "https://drive.google.com/file/d/1MIx4WSMWO6-blJhZ71Ve9Y3gEd7cybBO/view?usp=sharing",
+      },
+    ],
+  },
+  {
+    heading: "Magazine of NIT Patna",
+    title: "Magazine Vol. 1 (Dec., 2020)",
+    data: [
+      {
+        para: "Click here to download (English Version)",
+        link:
+          "http://www.nitp.ac.in/uploads20/Pratibimb/NIT%20Patna%20E-Magazine.pdf",
+      },
+      
+    ],
+  },
+]
+
 const acadData = {
   datad: Datad,
   dataUG: DataUG,
@@ -1097,5 +1155,6 @@ const acadData = {
   depts: Depts,
   centreOfExcellence: CentreOfExcellence,
   convocation: Convocation,
+  magazine: Magazine,
 }
 export default acadData
