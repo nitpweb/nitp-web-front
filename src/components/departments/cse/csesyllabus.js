@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import Courseug from "./cse BTech CourseStructure"
 import Coursephd from "./phd course"
+import Coursepg from "./cse MTech CourseStructure"
 import main from "../img/book.svg"
 import { PageLayout } from "../../styles/pagelayout"
 
@@ -37,7 +38,7 @@ const Csesyllabus = props => {
                   >
                     UG Courses
                   </button>
-                  {/* <button
+                  <button
                     onClick={() => {
                       setCourse("programmespg")
                       setSyllabus(Coursepg)
@@ -45,7 +46,7 @@ const Csesyllabus = props => {
                     className={course == "programmespg" ? "btnactive" : ""}
                   >
                     PG (M.tech/MURP) Courses
-                  </button> */}
+                  </button>
                   <button
                     onClick={() => {
                       setCourse("programmesphd")
