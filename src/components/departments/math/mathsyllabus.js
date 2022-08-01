@@ -1,5 +1,6 @@
 import React from "react"
 import Table from "../../table"
+import { TabPage } from "../../styles/tabpage"
 import Course from "./math course array"
 import Elect from "./math elective array"
 import main from "../img/book.svg"
@@ -9,12 +10,14 @@ const Mathsyllabus = props => {
   return (
     <>
       <PageLayout style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
-        <div className="syllabus-page">
+      <TabPage>
+        <div className="syllabus-page mainDiv">
           <div className="layoutrow layoutrowmain syllabus-page-head">
             <div className="col-6">
               <div className="row rowmarl3">
                 <h1 data-aos="zoom-in-right">Syllabus</h1>
               </div>
+              <br/>
               <div className="row rowmarl3">
                 <h2 data-aos="zoom-in-right"> -Department of Mathematics</h2>
               </div>
@@ -22,7 +25,7 @@ const Mathsyllabus = props => {
           </div>
           <div className="layoutrow">
             <h1 className="rowmarl3" data-aos="zoom-in-right">
-              Course Structure
+              Course Structure (IMSc.)
             </h1>
           </div>
           <Table>
@@ -52,7 +55,7 @@ const Mathsyllabus = props => {
             ))}
           </Table>
           <div className="layoutrow">
-            <h1 className="rowmarl3" data-aos="zoom-in-right">
+            <h1 className="rowmarl3">
               Electives
             </h1>
           </div>
@@ -79,6 +82,7 @@ const Mathsyllabus = props => {
             ))}
           </Table>
         </div>
+        </TabPage>
       </PageLayout>
     </>
   )
