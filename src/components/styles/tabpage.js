@@ -141,7 +141,9 @@ export const TabPage = styled.div`
       padding-top: 0vh;
       padding-bottom: 0vh;
       font-family: "Source Sans Pro";
-
+      .notice {
+        flex-direction: column;
+      }
       .layoutrow:nth-of-type(2n + 1) {
         .col-6:nth-child(1) {
           justify-content: center;
