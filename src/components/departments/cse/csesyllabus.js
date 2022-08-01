@@ -17,9 +17,9 @@ const Csesyllabus = props => {
   }, [course])
   
   return (
-    <>
+    <PageLayout style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
     <TabPage>
-          <div className="mainDiv" style={{width: "90vw"}}>
+          <div className="mainDiv syllabus-page" style={{width: "90vw"}}>
             <div className="row rowmarl3">
               <div className="digital">
                 <h1 style={{ marginBottom: `1rem` }}>Syllabus</h1>
@@ -133,7 +133,7 @@ const Csesyllabus = props => {
           </Table>
         </div>
       </PageLayout> */}
-    </>
+    </PageLayout>
   )
 }
 
