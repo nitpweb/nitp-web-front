@@ -112,7 +112,7 @@ const ChemCourseStructure = [
   },
 
   {
-    semester: `<b>semester Total <b>`,
+    semester: <strong>Semester Total</strong>,
     course_code: `-`,
     course_title: `-`,
     l: `-`,
@@ -212,7 +212,7 @@ const ChemCourseStructure = [
   },
 
   {
-    semester: `<b>semester Total </b>`,
+    semester: <strong>Semester Total</strong>,
     course_code: `-`,
     course_title: `-`,
     l: `-`,
@@ -302,7 +302,7 @@ const ChemCourseStructure = [
   },
 
   {
-    semester: `semester Total `,
+    semester: <strong>Semester Total</strong>,
     course_code: `-`,
     course_title: `-`,
     l: `-`,
@@ -382,7 +382,7 @@ const ChemCourseStructure = [
   },
 
   {
-    semester: `<b>semester Total<b> `,
+    semester: <strong>semester Total</strong>,
     course_code: `-`,
     course_title: `-`,
     l: `-`,
@@ -452,7 +452,7 @@ const ChemCourseStructure = [
   },
 
   {
-    semester: `<b>semester Total</b> `,
+    semester: <strong>semester Total</strong>,
     course_code: `-`,
     course_title: `-`,
     l: `-`,
@@ -541,7 +541,7 @@ const ChemCourseStructure = [
   },
 
   {
-    semester: `semester Total `,
+    semester: <strong>Semester Total</strong>,
     course_code: `-`,
     course_title: `-`,
     l: `-`,
@@ -631,7 +631,7 @@ const ChemCourseStructure = [
   },
 
   {
-    semester: `semester Total `,
+    semester: <strong>Semester Total</strong>,
     course_code: `-`,
     course_title: `-`,
     l: `-`,
@@ -710,7 +710,7 @@ const ChemCourseStructure = [
   },
 
   {
-    semester: `semester Total `,
+    semester: <strong>Semester Total</strong>,
     course_code: `-`,
     course_title: `-`,
     l: `-`,
@@ -770,7 +770,7 @@ const ChemCourseStructure = [
   },
 
   {
-    semester: `semester Total `,
+    semester: <strong>Semester Total</strong>,
     course_code: `-`,
     course_title: `-`,
     l: `-`,
@@ -800,7 +800,7 @@ const ChemCourseStructure = [
   },
 
   {
-    semester: `semester Total `,
+    semester: <strong>Semester Total</strong>,
     course_code: `-`,
     course_title: `-`,
     l: `-`,
@@ -810,7 +810,7 @@ const ChemCourseStructure = [
   },
 
   {
-    semester: `Grand Total `,
+    semester: <strong>Grand Total</strong>,
     course_code: `-`,
     course_title: `-`,
     l: `-`,

@@ -1,4 +1,5 @@
 import React from "react"
+import { TabPage } from "../../styles/tabpage"
 import Table from "../../table"
 import Courseelect from "./Chem IMSc Electives"
 import Course from "./Chem IMSc CourseStructure"
@@ -9,7 +10,8 @@ const Csesyllabus = props => {
   return (
     <>
       <PageLayout style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
-        <div className="syllabus-page">
+        <TabPage>
+        <div className="syllabus-page mainDiv">
           <div className="layoutrow layoutrowmain syllabus-page-head">
             <div className="col-6">
               <div className="row rowmarl3">
@@ -73,6 +75,7 @@ const Csesyllabus = props => {
             ))}
           </Table>
         </div>
+        </TabPage>
       </PageLayout>
     </>
   )

@@ -1,0 +1,233 @@
+export const IntPhd = [
+    {
+        "deptt":"Physics",
+      "sem_elect": "NANOSCIENCE & TECHNOLOGY",
+      "coursecode": "",
+      "coursetitle": "",
+      l: null,
+      "t": null,
+      "p": null,
+      "credits": null,
+      "Total": null
+    },
+    {
+        "deptt":"Physics",
+      "sem_elect": "1",
+      "coursecode": "xxPG",
+      "coursetitle": "Core Subject-I",
+      l: 3,
+      "t": 0,
+      "p": 0,
+      "credits": 3,
+      "Total": null
+    },
+    {
+        "deptt":"Physics",
+      "sem_elect": "1",
+      "coursecode": "xxPG",
+      "coursetitle": "Core Subject-II",
+      l: 3,
+      "t": 0,
+      "p": 0,
+      "credits": 3,
+      "Total": null
+    },
+    {
+        "deptt":"Physics",
+      "sem_elect": "1",
+      "coursecode": "xxPG",
+      "coursetitle": "Specialization Elective-I",
+      l: 3,
+      "t": 0,
+      "p": 0,
+      "credits": 3,
+      "Total": null
+    },
+    {
+        "deptt":"Physics",
+      "sem_elect": "1",
+      "coursecode": "xxPG",
+      "coursetitle": "Specialization Elective-II",
+      l: 3,
+      "t": 0,
+      "p": 0,
+      "credits": 3,
+      "Total": null
+    },
+    {
+        "deptt":"Physics",
+      "sem_elect": "1",
+      "coursecode": "1CS101",
+      "coursetitle": "Specialization Elective-VI",
+      l: 3,
+      "t": 0,
+      "p": 0,
+      "credits": 3,
+      "Total": null
+    },
+    {
+        "deptt":"Physics",
+      "sem_elect": "1",
+      "coursecode": "1CS102",
+      "coursetitle": "Advance Engineering Lab-I",
+      l: 0,
+      "t": 0,
+      "p": 6,
+      "credits": 4,
+      "Total": 19
+    },
+    {
+        "deptt":"Physics",
+      "sem_elect": "NANOSCIENCE & TECHNOLOGY Semester-II",
+      "coursecode": "",
+      "coursetitle": "",
+      l: null,
+      "t": null,
+      "p": null,
+      "credits": null,
+      "Total": null
+    },
+    {
+        "deptt":"Physics",
+      "sem_elect": "2",
+      "coursecode": "xxPG",
+      "coursetitle": "Core Subject-III",
+      l: 3,
+      "t": 1,
+      "p": 0,
+      "credits": 4,
+      "Total": null
+    },
+    {
+        "deptt":"Physics",
+      "sem_elect": "2",
+      "coursecode": "xxPG",
+      "coursetitle": "Specialization Elective-III",
+      l: 3,
+      "t": 1,
+      "p": 0,
+      "credits": 4,
+      "Total": null
+    },
+    {
+        "deptt":"Physics",
+      "sem_elect": "2",
+      "coursecode": "xxPG",
+      "coursetitle": "Specialization Elective-IV",
+      l: 3,
+      "t": 0,
+      "p": 0,
+      "credits": 3,
+      "Total": null
+    },
+    {
+        "deptt":"Physics",
+      "sem_elect": "2",
+      "coursecode": "xxPG",
+      "coursetitle": "Specialization Elective-V",
+      l: 3,
+      "t": 0,
+      "p": 0,
+      "credits": 3,
+      "Total": null
+    },
+    {
+        "deptt":"Physics",
+      "sem_elect": "2",
+      "coursecode": "xxPG",
+      "coursetitle": "Specialization Elective-V",
+      l: 3,
+      "t": 0,
+      "p": 0,
+      "credits": 3,
+      "Total": null
+    },
+    {
+        "deptt":"Physics",
+      "sem_elect": "2",
+      "coursecode": "xx692",
+      "coursetitle": "Advanced Engineering Lab-II",
+      l: 0,
+      "t": 0,
+      "p": 6,
+      "credits": 4,
+      "Total": null
+    },
+    {
+        "deptt":"Physics",
+      "sem_elect": "2",
+      "coursecode": "xx694",
+      "coursetitle": "Seminar",
+      l: 0,
+      "t": 0,
+      "p": 3,
+      "credits": 2,
+      "Total": 21
+    },
+    {
+        "deptt":"Physics",
+      "sem_elect": "NANOSCIENCE & TECHNOLOGY Semester-III",
+      "coursecode": "",
+      "coursetitle": "",
+      l: null,
+      "t": null,
+      "p": null,
+      "credits": null,
+      "Total": null
+    },
+    {
+        "deptt":"Physics",
+      "sem_elect": "3",
+      "coursecode": "xxPG",
+      "coursetitle": "Seminar & Comprehensive Viva",
+      l: 0,
+      "t": 0,
+      "p": 3,
+      "credits": 2,
+      "Total": null
+    },
+    {
+        "deptt":"Physics",
+      "sem_elect": "3",
+      "coursecode": "xxPG",
+      "coursetitle": "Dissertation",
+      l: 0,
+      "t": 0,
+      "p": 12,
+      "credits": 8,
+      "Total": 10
+    },
+    {
+        "deptt":"Physics",
+      "sem_elect": "NANOSCIENCE & TECHNOLOGY Semester-IV",
+      "coursecode": "",
+      "coursetitle": "",
+      l: null,
+      "t": null,
+      "p": null,
+      "credits": null,
+      "Total": null
+    },
+    {
+        "deptt":"Physics",
+      "sem_elect": "3",
+      "coursecode": "xxPG",
+      "coursetitle": "Seminar & Comprehensive Viva",
+      l: 0,
+      "t": 0,
+      "p": 3,
+      "credits": 2,
+      "Total": null
+    },
+    {
+        "deptt":"Physics",
+      "sem_elect": "3",
+      "coursecode": "xxPG",
+      "coursetitle": "Dissertation",
+      l: 0,
+      "t": 0,
+      "p": 15,
+      "credits": 10,
+      "Total": 12
+    }
+   ]
