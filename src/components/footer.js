@@ -91,6 +91,10 @@ const Footer = () => {
               {/* <a href="http://www.nitp.ac.in/convocation2020/">
                 <h3>Convocation 2020</h3>
               </a> */}
+
+              <a href="/convocation">
+                <h3>Convocation 2021</h3>
+              </a>
             </div>
           </div>
 
@@ -141,6 +145,12 @@ const Footer = () => {
               </a>
               
             <Link to="/tenders">Tenders</Link>
+              <a
+                href="http://www.nitp.ac.in/uploads20/Revised%20AC%202020-21.pdf"
+                target="_blank"
+              >
+                <h3>Academic Calendar</h3>
+              </a>
             
             </div>
           </div>
