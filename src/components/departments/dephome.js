@@ -90,7 +90,7 @@ const Dephomepage = ({
                 <div className="row rowmarl3">
                   <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>Notice</h1>
                 </div>
-                <div className="row rowmarl3" style={{flexDirection: "column"}}>
+                <div className="row rowmarl3 notice">
                   {notices &&
                     notices.length != 0 &&
                     notices.map(notice => {
