@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import Courseug from "./cse BTech CourseStructure"
 import Coursephd from "./phd course"
+import Coursepg from "./cse MTech CourseStructure"
 import main from "../img/book.svg"
 import { PageLayout } from "../../styles/pagelayout"
 
@@ -16,9 +17,9 @@ const Csesyllabus = props => {
   }, [course])
   
   return (
-    <>
+    <PageLayout style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
     <TabPage>
-          <div className="mainDiv" style={{width: "90vw"}}>
+          <div className="mainDiv syllabus-page" style={{width: "90vw"}}>
             <div className="row rowmarl3">
               <div className="digital">
                 <h1 style={{ marginBottom: `1rem` }}>Syllabus</h1>
@@ -37,7 +38,7 @@ const Csesyllabus = props => {
                   >
                     UG Courses
                   </button>
-                  {/* <button
+                  <button
                     onClick={() => {
                       setCourse("programmespg")
                       setSyllabus(Coursepg)
@@ -45,7 +46,7 @@ const Csesyllabus = props => {
                     className={course == "programmespg" ? "btnactive" : ""}
                   >
                     PG (M.tech/MURP) Courses
-                  </button> */}
+                  </button>
                   <button
                     onClick={() => {
                       setCourse("programmesphd")
@@ -132,7 +133,7 @@ const Csesyllabus = props => {
           </Table>
         </div>
       </PageLayout> */}
-    </>
+    </PageLayout>
   )
 }
 
