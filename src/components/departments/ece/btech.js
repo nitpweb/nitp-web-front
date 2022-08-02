@@ -2,6 +2,7 @@ import React from "react"
 
 const Btech = [
   {
+    deptt:"ECE",
     sem_elect: "1",
     course_code: "HS1501",
     course_title: "Science Society and Ethics",
@@ -12,6 +13,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/hs1052.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "1",
     course_code: "MA1501",
     course_title: "Engineering Mathematics-1",
@@ -22,6 +24,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/ma12.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "1",
     category: "Foundation Course",
     course_code: "CH1501",
@@ -33,6 +36,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/ch1.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "1",
     category: "Foundation Course",
     course_code: "EC1501",
@@ -44,6 +48,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/ec1.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "1",
     category: "Foundation Course",
     course_code: "EE1501",
@@ -56,6 +61,7 @@ const Btech = [
   },
 
   {
+    deptt:"ECE",
     sem_elect: "1",
     category: "Foundation Lab",
     course_code: "CHL1501",
@@ -67,6 +73,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/chl1.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "1",
     course_code: "ECL1501",
     course_title: "Elements of Electronics Engg Lab",
@@ -77,6 +84,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/ecl1.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "1",
     category: "Foundation Lab",
     course_code: "EEL1501",
@@ -88,6 +96,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/eel1.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "1",
     category: "Foundation Lab",
     course_code: "ME1501",
@@ -99,6 +108,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/egl1.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "1",
     category: "Foundation Lab",
     course_code: "EAA1501",
@@ -109,6 +119,7 @@ const Btech = [
     credits: "1",
   },
   {
+    deptt:"ECE",
     sem_elect: "2",
     category: "Foundation Course",
     course_code: "HS2501",
@@ -120,6 +131,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/hs2.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "2",
     course_code: "MA2501",
     course_title: "Engineering Mathematics-II",
@@ -130,6 +142,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/ma22.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "2",
     course_code: "PH2501",
     course_title: " Engineering Physics",
@@ -140,6 +153,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/ph2.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "2",
     course_code: "CS2501",
     course_title: " Introduction to Computing",
@@ -150,6 +164,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/cs2.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "2",
     category: "Core Course",
     course_code: "EC2501",
@@ -161,6 +176,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/ec2.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "2",
     category: "Foundation Lab",
     course_code: "HSL2501",
@@ -172,6 +188,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/hsl2.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "2",
     category: "Foundation Lab",
     course_code: "PHL2501",
@@ -183,6 +200,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/phl2.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "2",
     category: "Foundation Lab",
 
@@ -195,6 +213,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/csl2.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "2",
     category: "Core Lab",
     course_code: "<b> Core Lab</b>",
@@ -207,6 +226,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/ecl2.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "2",
     category: "EAA",
     course_code: "EAA2501",
@@ -217,6 +237,7 @@ const Btech = [
     credits: "1",
   },
   {
+    deptt:"ECE",
     sem_elect: "3",
     category: "Core Subjects",
     course_code: "EC3501",
@@ -228,6 +249,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/ce3.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "3",
     category: "Core Subjects",
     course_code: "EC3502",
@@ -239,6 +261,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/eft3.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "3",
     category: "Core Subjects",
     course_code: "EC3503",
@@ -250,6 +273,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/ssa3.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "3",
     category: "Foundation Course",
     course_code: "CS3501",
@@ -261,6 +285,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/cs3.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "3",
     category: "Foundation Course",
     course_code: "MA3501",
@@ -272,6 +297,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/ma3.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "3",
     category: "Foundation Course",
     course_code: "EE3501",
@@ -283,6 +309,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/nas3.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "3",
     category: "Lab Courses",
     course_code: "ECL3501",
@@ -294,6 +321,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/ael3.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "3",
     category: "Lab Courses",
     course_code: "CSL3501",
@@ -305,6 +333,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/csl3.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "3",
     category: "Lab Courses",
     course_code: "ECL3502",
@@ -316,6 +345,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/ssal3.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "4",
     category: "Core Subjects",
     course_code: "EC4501",
@@ -327,6 +357,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/de4.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "4",
     category: "Core Subjects",
     course_code: "EC4502",
@@ -338,6 +369,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/cs4.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "4",
     category: "Foundation Course",
     course_code: "CS4501",
@@ -349,6 +381,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/oop4.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "4",
     category: "Professional Electives",
     course_code: "EC45xx",
@@ -360,6 +393,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/pe5.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "4",
     category: "MOOC Course",
     course_title: "",
@@ -370,6 +404,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "4",
     category: "Open Electives",
     course_code: "OE0xxx",
@@ -381,6 +416,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/OpenE.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "4",
     category: "Lab Courses",
     course_code: "ECL4501",
@@ -392,6 +428,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/del4.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "4",
     category: "Lab Courses",
     course_code: "ECL4502",
@@ -403,6 +440,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/cel4.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "5",
     category: "Core Subjects",
     course_code: "EC5501",
@@ -414,6 +452,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/vlsi5.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "5",
     category: "Core Subjects",
     course_code: "EC5502",
@@ -425,6 +464,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/ace5.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "5",
     category: "Core Subjects",
     course_code: "EC5503",
@@ -436,6 +476,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/mm5.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "5",
     category: "Professional Electives",
     course_code: "EC55xx",
@@ -447,6 +488,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/pe5.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "5",
     category: "Foundation Course",
     course_code: "CH5501",
@@ -458,6 +500,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/gt5.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "5",
     category: "Open Electives-II",
     course_code: "OE0xxx",
@@ -469,6 +512,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/OpenE.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "5",
     category: "Foundation Course",
     course_code: "ECL5501",
@@ -480,6 +524,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/vlsil5.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "5",
     category: "Foundation Course",
     course_code: "ECL5502",
@@ -491,6 +536,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/acl5.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "5",
     category: "Foundation Course",
     course_code: "ECL5503",
@@ -502,6 +548,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/mml5.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "6",
     category: "Core Subjects",
     course_code: "EC6501",
@@ -513,6 +560,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/dsp6.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "6",
     category: "Core Subjects",
     course_code: "EC6502",
@@ -524,6 +572,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/awp6.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "6",
     category: "Professional Elective",
     course_code: "EC65xx",
@@ -535,6 +584,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/pe5.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "6",
     category: "Professional Elective",
     course_code: "EC65xx",
@@ -546,6 +596,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/pe5.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "6",
     category: "<b>MOOC</b>",
     l: "3",
@@ -554,6 +605,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "6",
     category: "Open Electives",
     course_code: "OE0xxx",
@@ -565,6 +617,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/OpenE.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "6",
     category: "Lab Courses",
     course_code: "ECL6501",
@@ -575,6 +628,7 @@ const Btech = [
     credits: "1",
   },
   {
+    deptt:"ECE",
     sem_elect: "6",
     category: "Lab Courses",
     course_code: "ECL6502",
@@ -585,6 +639,7 @@ const Btech = [
     credits: "1",
   },
   {
+    deptt:"ECE",
     sem_elect: "7",
     category: "Core Subjects",
     course_code: "EC7501",
@@ -596,6 +651,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/rf.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "7",
     category: "Core Subjects",
 
@@ -607,6 +663,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "7",
     category: "Professional Electives",
     course_code: "EC75xx",
@@ -618,6 +675,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/pe5.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "7",
     category: "Open Electives",
     course_code: "EC75xx",
@@ -629,12 +687,14 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/OpenE.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "7",
     course_code: "EC7503",
     course_title: "Seminar and Technical Report Writing",
     credits: "2",
   },
   {
+    deptt:"ECE",
     sem_elect: "7",
     category: "Lab Courses",
     course_code: " ECL7501",
@@ -646,18 +706,21 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/rfl.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "7",
     course_code: "EC7504",
     course_title: "Short term industrial research Experience",
     credits: "1",
   },
   {
+    deptt:"ECE",
     sem_elect: "7",
     course_code: "EC7505",
     course_title: "Project-I",
     credits: "5",
   },
   {
+    deptt:"ECE",
     sem_elect: "8",
     category: "Core Subjects",
     course_code: "EC8501",
@@ -668,6 +731,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "8",
     category: "Professional Electives",
     course_code: "EC85xx",
@@ -679,12 +743,14 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/pe5.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "8",
     course_code: "EC8502",
     course_title: "Seminar and Technical Report Writing",
     credits: "2",
   },
   {
+    deptt:"ECE",
     sem_elect: "8",
     course_code: "EC8503",
     course_title: "Comprehensive Viva",
@@ -692,6 +758,7 @@ const Btech = [
   },
 
   {
+    deptt:"ECE",
     sem_elect: "8",
     category: "Lab Courses",
     course_code: "ECL8501",
@@ -702,11 +769,13 @@ const Btech = [
     credits: "1",
   },
   {
+    deptt:"ECE",
     sem_elect: "8",
     course_code: "EC8504",
     course_title: "Project-II",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx510",
     course_title: " Electronic Instrumentation",
@@ -717,6 +786,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/eipe.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx511",
     course_title: " Computer Organization and Architecture",
@@ -727,6 +797,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/coape.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx512",
     course_title: " Semiconductor Device Modeling",
@@ -737,6 +808,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/sdmpe.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx513",
     course_title: " Linear Integrated Circuits",
@@ -747,6 +819,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/licpe.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx514",
     course_title: " Pulse and Digital Switching Circuits",
@@ -757,6 +830,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/pdswpe.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx515",
     course_title: " Control System",
@@ -767,6 +841,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/cspe.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx516",
     course_title: "Sensors and Transducers",
@@ -776,6 +851,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx517",
     course_title: "Telecommunication Switching Networks",
@@ -785,6 +861,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx518",
     course_title: "Computer Communication",
@@ -794,6 +871,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx519",
     course_title: "Statistical Signal Processing",
@@ -803,6 +881,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx520",
     course_title: "IoT for Communication Engineering",
@@ -812,6 +891,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx521",
     course_title: " Wireless Sensor Networks",
@@ -821,6 +901,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx522",
     course_title: "Optoelectronics",
@@ -831,6 +912,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/wsnpe.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx523",
     course_title: "Biomedical Signal Processing",
@@ -840,6 +922,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx524",
     course_title: " Digital Image Processing",
@@ -850,6 +933,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/dippe.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx525",
     course_title: "MIMO Communications",
@@ -859,6 +943,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx526",
     course_title: "Computer Vision and its applications",
@@ -868,6 +953,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx527",
     course_title: "Artificial Intelligence and Machine Learning",
@@ -877,6 +963,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx528",
     course_title: " Information Theory and Coding",
@@ -887,6 +974,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/itcpe.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx529",
     course_title: "Digital System Design",
@@ -896,6 +984,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx530",
     course_title: " Low Power Techniques in VLSI Design",
@@ -906,6 +995,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/lptpe.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx531",
     course_title: "Analysis and Design of Digital ICs",
@@ -915,6 +1005,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx532",
     course_title: " RF Circuit Design",
@@ -925,6 +1016,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/rfpe.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx533",
     course_title: "Micro Electro Mechanical Systems",
@@ -934,6 +1026,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx534",
     course_title: "Optical Networks and Photonic Switches",
@@ -943,6 +1036,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx535",
     course_title: " Satellite Communication",
@@ -953,6 +1047,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/scpe.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx536",
     course_title: " Analog VLSI Design",
@@ -963,6 +1058,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/ape.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx537",
     course_title: "Electromagnetic Interference and Compatibility",
@@ -972,6 +1068,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx538",
     course_title: "VLSI Technology",
@@ -981,6 +1078,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx539",
     course_title: " Speech  Processing",
@@ -991,6 +1089,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/sppe.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx540",
     course_title: "Optimization Technniques",
@@ -1000,6 +1099,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx541",
     course_title: "Communication Network Security",
@@ -1009,6 +1109,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx542",
     course_title: "Power Electronics",
@@ -1018,6 +1119,7 @@ const Btech = [
     credits: "3",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx543",
     course_title: " Nano Electronic Devices",
@@ -1028,6 +1130,7 @@ const Btech = [
     url: process.env.BASE_URL+"ece/syllabus/nedpe.docx",
   },
   {
+    deptt:"ECE",
     sem_elect: "EL",
     course_code: "ECx544",
     course_title: "Detection And Estimation Theory",
