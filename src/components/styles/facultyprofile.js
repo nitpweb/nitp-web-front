@@ -10,7 +10,6 @@ export const FacultyProfile = styled.div`
   justify-content: flex-end;
   .faculty-img-row {
     margin-top: 3vh;
-    position: fixed;
     left: 2%;
     justify-content: center;
     text-align: center;
@@ -65,6 +64,20 @@ export const FacultyProfile = styled.div`
     visibility: visible;
     opacity: 1;
     z-index: 10;
+  }
+
+  .link-card{
+    margin: 15px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    z-index: 10;
+  }
+
+  .link-card img{
+    height: 25px;
+    padding:10px;
+    filter: invert(80%) sepia(30%) saturate(5331%) hue-rotate(357deg) brightness(109%) contrast(96%);
   }
 
   .popup {
