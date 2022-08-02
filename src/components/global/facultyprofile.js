@@ -102,7 +102,7 @@ const Facultyprofile = ({ url }) => {
                 Object.keys(JSON.parse(data.profile.social_media_links)).map((key) => (
                       JSON.parse(data.profile.social_media_links)[key] ? <>
                         <span>
-                          <a href={JSON.parse(data.profile.social_media_links)[key]} target="_blank">
+                          <a href={JSON.parse(data.profile.social_media_links)[key]} >
                             <img src={"/"+key.charAt(0).toLowerCase() + key.replace(/\s/g, "").slice(1)+".svg"} alt={key} />
                           </a>
                         </span>
