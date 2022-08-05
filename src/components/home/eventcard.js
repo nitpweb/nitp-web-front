@@ -16,8 +16,8 @@ const Eventcard = props => {
       </div> */}
       <div className="eventcarddetailsection">
         <p className="eventcarddetail">
-          {props.link ? (
-            <a href={props.link} target="_blank" rel="noopener noreferrer">
+          {props.event_link !== "" ? (
+            <a href={props.event_link} target="_blank" rel="noopener noreferrer">
               {props.detail}
             </a>
           ) : (

@@ -23,7 +23,7 @@ export const NoticeStyle = styled.div`
   }
   #notdate {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     div {
       display: flex;
       align-items: center;
@@ -46,6 +46,7 @@ export const NoticeStyle = styled.div`
         line-height: 0;
       }
     }
+    
   }
 
   @media (max-width: 768px) {
