@@ -140,6 +140,7 @@ const Home = () => {
                       month={monthname}
                       attachments={event.attachments}
                       location={event.venue.substring(0, 60)}
+                      event_link = {event.event_link && JSON.parse(event.event_link).url || ""}
                       link={
                         event.attachments.length != 0
                           ? event.attachments[0].url

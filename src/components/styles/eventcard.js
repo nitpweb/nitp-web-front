@@ -62,7 +62,6 @@ export const EventCardStyle = styled.div`
       a {
         text-decoration: none;
         color: ${props => props.theme.textColor};
-        font-weight: 600;
         text-align: justify;
       }
     }
