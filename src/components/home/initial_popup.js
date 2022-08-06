@@ -1,19 +1,50 @@
+import { graphql, useStaticQuery } from "gatsby";
 import React from "react"
 import styled from "styled-components"
+import Img from "gatsby-image"
 
 
-const Initial_popup = () => (
-    <>
-        <Container>
-            <Popup_Image_div id="popup_image" class="popup_image">
-                <Popup_Image src="https://bit.ly/3cH8lb5" id="ur_img" />
-            </Popup_Image_div>
-            <div>
-                <p><font size="+4" >#harghartiranga </font> <font size="+4" color="blue">Let's hoist our national flag during 13-15th August!</font></p>
-            </div>
-        </Container>
-    </>
-)
+const Initial_popup = () => {
+    var data = useStaticQuery(graphql`
+    query {
+        allFile(filter: {extension: {regex: "/(jpg)|(png)|(PNG)|(jpeg)/"}, relativeDirectory: {eq: "home/popup_images"}}) {
+          edges {
+            node {
+              id
+              base
+              childImageSharp {
+                fluid(maxWidth: 1920) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+        `
+    )
+
+    // console.log(data);
+
+    const image_fluid = data.allFile.edges[Math.floor(Math.random() * data.allFile.edges.length)].node.childImageSharp.fluid;
+
+    return <>
+                <Container>
+                    <Popup_Image_div>
+                        {/* <Popup_Image src="https://bit.ly/3cH8lb5" id="ur_img" /> */}
+                        <Img 
+                            fluid={image_fluid}
+                            imgStyle={{ maxWidth: `70%`, maxHeight: `80%`, objectFit: `contain`, padding: `8px`}}
+                            style={{width: "100%"}}
+                         />
+                    </Popup_Image_div>
+                    <div>
+                        <p><font size="+4" >#harghartiranga </font> <font size="+4" color="blue">Let's hoist our national flag during 13-15th August!</font></p>
+                    </div>
+                </Container>
+            </>
+}
+
 
 export default Initial_popup
 
@@ -55,7 +86,17 @@ const Container = styled.div`
 const Popup_Image_div = styled.div`
     width: 100%;
     max-height: 90%;
+
+    .gatsby-image-wrapper > picture > img, .gatsby-image-wrapper > img {
+        max-height: 80%;
+        object-fit: contain;
+        margin: auto;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
 `
+
 const Popup_Image = styled.img`
     max-height: 100%;
     object-fit: contain;

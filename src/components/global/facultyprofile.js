@@ -97,22 +97,57 @@ const Facultyprofile = ({ url }) => {
                   </a>
                 </div>
               )}
+
+              {/* SOCIAL MEDIA LINKS STARTS */}
+
+              {
+                data.profile.personal_webpage ? <>
+                <div style={{margin: "3px"}}>
+                    <a href={data.profile.personal_webpage}>
+                      <button
+                        className="cv-btn"
+                        color="primary"
+                        variant="contained"
+                      >
+                        Personal Webpage
+                      </button>
+                    </a>
+                  </div>
+                </> : null
+              }
               <div className="link-card">
-              {data.profile.social_media_links && (
-                Object.keys(JSON.parse(data.profile.social_media_links)).map((key) => (
-                      JSON.parse(data.profile.social_media_links)[key] ? <>
-                        <span>
-                          <a href={JSON.parse(data.profile.social_media_links)[key]} >
-                            <img src={"/"+key.charAt(0).toLowerCase() + key.replace(/\s/g, "").slice(1)+".svg"} alt={key} />
-                          </a>
-                        </span>
-                      </> : null
-                    )
-                    ) 
-              )}
+              {
+                data.profile.linkedin ? <>
+                  <span>
+                    <a href={data.profile.linkedin} >
+                      <img src={"/linkedin.svg"} alt={"Linkedin"} />
+                    </a>
+                  </span>
+                </> : null
+              }
+              {
+                data.profile.google_scholar ? <>
+                  <span>
+                    <a href={data.profile.google_scholar} >
+                      <img src={"/googleScholer.svg"} alt={"Google Scholer"} />
+                    </a>
+                  </span>
+                </> : null
+              }
+              {
+                data.profile.scopus ? <>
+                  <span>
+                    <a href={data.profile.scopus} >
+                      <img src={"/scopus.svg"} alt={"Scopus"} />
+                    </a>
+                  </span>
+                </> : null
+              }
               </div>
 
             </div>
+
+            {/* SOCIAL MEDIA LINKS END */}
 
             {data.profile.cv && (
                   <div id="cv" className="cv">
