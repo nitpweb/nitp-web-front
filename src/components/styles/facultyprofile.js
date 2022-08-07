@@ -76,7 +76,7 @@ export const FacultyProfile = styled.div`
 
   .link-card img{
     height: 25px;
-    padding:10px;
+    padding:7px;
   }
 
   .link-icon{

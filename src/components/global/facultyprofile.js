@@ -129,14 +129,14 @@ const Facultyprofile = ({ url }) => {
                 data.profile.google_scholar ? <>
                   <span className="link-icon">
                     <a href={data.profile.google_scholar} >
-                      <img src={"/googleScholer.svg"} alt={"Google Scholer"} />
+                      <img src={"/googleScholar.svg"} alt={"Google Scholar"} />
                     </a>
                   </span>
                 </> : null
               }
               {
                 data.profile.scopus ? <>
-                  <span className="link-icon">
+                  <span>
                     <a href={data.profile.scopus} >
                       <img src={"/scopus.svg"} alt={"Scopus"} />
                     </a>
