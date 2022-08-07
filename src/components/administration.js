@@ -48,7 +48,7 @@ const Administrationpage = () => {
         <div className="mainDiv">
           {view == "director" && <Director id="director" />}
           {view == "registrar" && <Registrar id="registrar" />}
-          {view == "deputydirector" && <DeputyDirector id="deputydirector" />}
+          {/* {view == "deputydirector" && <DeputyDirector id="deputydirector" />} */}
 
           {CardData.includes(view) &&
             content?.length != 0 &&
