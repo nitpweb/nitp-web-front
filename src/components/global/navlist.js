@@ -34,11 +34,11 @@ const Admin = [
         title: "Director",
         data: "director",
       },
-      {
-        url: "/administration",
-        title: "Deputy Director",
-        data: "deputydirector",
-      },
+      // {
+      //   url: "/administration",
+      //   title: "Deputy Director",
+      //   data: "deputydirector",
+      // },
       {
         url: "/administration",
         title: "Deans",

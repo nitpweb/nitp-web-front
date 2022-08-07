@@ -117,6 +117,7 @@ export const FacultyProfile = styled.div`
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    margin-top: 3vh;
     h1 {
       padding-left: 5%;
     }
@@ -144,6 +145,9 @@ export const FacultyProfile = styled.div`
       p {
         max-width: 95%;
         font-size: ${props => props.theme.font * 1.1}rem;
+      }
+      .text-justify{
+        text-align: justify;
       }
       .factable {
         overflow: hidden;

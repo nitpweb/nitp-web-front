@@ -167,10 +167,16 @@ const Facultyprofile = ({ url }) => {
               <div className="fac-card" data-aos="fade-up">
                 <h3>Research Interest:-</h3>
                 <p>{data.profile.research_interest}</p>
-                <h3>Email:-</h3>
-                <p>{data.profile.email}</p>
-                <h3>Phone:-</h3>
-                <p>{data.profile.ext_no}</p>
+                <div style={{display: 'flex'}} className="row">
+                  <div className="col-6">
+                    <h3>Email:-</h3>
+                    <p>{data.profile.email}</p>
+                  </div>
+                  <div className="col-6">
+                    <h3>Phone:-</h3>
+                    <p>{data.profile.ext_no}</p>
+                  </div>
+                </div>
               </div>
 
               {data.subjects && data.subjects.length != 0 && (
@@ -309,9 +315,9 @@ const Facultyprofile = ({ url }) => {
               {data.article && data.article.length != 0 && (
                 <>
                   <div className="fac-card" data-aos="fade-up">
-                    <h3>Articles</h3>
+                    <h3>Journals</h3>
                     {data.article.map(item => (
-                      <p style={{ maxWidth: `1000px` }}>
+                      <p className="text-justify" style={{ maxWidth: `1000px`}}>
                         <li>{`${item.authors}, "${item.title}", ${item.journal_name} (${item.year})`}</li>
                       </p>
                     ))}
@@ -323,7 +329,7 @@ const Facultyprofile = ({ url }) => {
                   <div className="fac-card" data-aos="fade-up">
                     <h3>Conferences</h3>
                     {data.conferences.map(item => (
-                      <p style={{ maxWidth: `1000px` }}>
+                      <p className="text-justify" style={{ maxWidth: `1000px` }}>
                         <li>{`${item.authors}, "${item.title}", ${item.booktitle},${item.citation_key} (${item.year})`}</li>
                       </p>
                     ))}
@@ -486,7 +492,7 @@ const Facultyprofile = ({ url }) => {
                       </tr> */}
                       {data.pastResponsibility.map(item => {
                         return (
-                          <p>{item.past_responsibility}{" "}[ {item.start?item.start:""} {item.start!=null & item.end!=null?"|":""} {item.end?item.end:""} ]</p>
+                          <p>{item.past_responsibility}{" "}{(item.start||item.end) && <>[ {item.start?item.start:""} {item.start!=null & item.end!=null?"|":""} {item.end?item.end:""} ]</>}</p>
                           // <p>{item.past_responsibility}{" "}[{new Date(item.start).getMonth() + 1} -{" "}
                           //       {new Date(item.start).getFullYear()} / {new Date(item.end).getMonth() + 1}-{" "}
                           //       {new Date(item.end).getFullYear()}]</p>
@@ -535,7 +541,7 @@ const Facultyprofile = ({ url }) => {
                       </tr> */}
                       {data.workExperience.map(item => {
                         return (
-                          <p>{item.work_experiences}{" "}{item.institute}{" "}[{item.start?item.start:""} {item.start!=null & item.end!=null?"|":""} {item.end?item.end:""} ]</p>
+                          <p>{item.work_experiences}{" "}{item.institute}{" "}{(item.start||item.end) && <>[ {item.start?item.start:""} {item.start!=null & item.end!=null?"|":""} {item.end?item.end:""} ]</>}</p>
                           // <p>{item.work_experiences}{" "}{item.institute}{" "}[{new Date(item.start).getMonth() + 1} -{" "}{new Date(item.start).getFullYear()} / {new Date(item.end).getMonth() + 1} -{" "}{new Date(item.end).getFullYear()}]</p>
                           // <tr>
                           //   <td>
@@ -568,7 +574,7 @@ const Facultyprofile = ({ url }) => {
                 <div className="fac-card" data-aos="fade-up">
                   <h3>Professional Services</h3>
                   {data.services.map(item => {
-                    return <><p><li>{item.services}</li></p></>
+                    return <><p className="text-justify"><li>{item.services}</li></p></>
                   })}
                 </div>
               )}
