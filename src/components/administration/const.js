@@ -427,11 +427,11 @@ const Admin = [
     data: "director",
     content: [],
   },
-  {
-    url: "/administration",
-    title: "Deputy Director",
-    data: "deputydirector",
-  },
+  // {
+  //   url: "/administration",
+  //   title: "Deputy Director",
+  //   data: "deputydirector",
+  // },
   {
     url: "/administration",
     title: "Deans",
