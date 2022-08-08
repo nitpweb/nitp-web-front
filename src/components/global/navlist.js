@@ -150,7 +150,7 @@ const Home = [
       },
       {
         url:
-          "http://nitp.ac.in/uploads20/Pratibimb/NIT%20Patna%20E-Magazine.pdf",
+          "/magazine",
         title: "Magazine (Pratibimb)",
       },
       {
