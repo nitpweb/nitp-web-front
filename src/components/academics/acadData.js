@@ -1001,36 +1001,14 @@ const Depts = [
     ],
   },
 ]
-// const CentreOfExcellence = [
-//   // {
-//   //   heading: "Privacy",
-//   //   data: [
-//   //     {
-//   //       title: "National Institute of Technology Patna (NITP)",
-//   //       para: `We at NITP value your privacy and understand how important it is for you. To that effect, we have the following privacy policy in place with regard to the collection, use and dissemination of personal information collected by this website. This document will help you understand the terms and conditions under which personal information is provided to this website. Please note that this policy is effective only within NITP’s domain, and does not apply to websites that may be accessible from external links provided in various pages of this website. Also note that due to the very nature of internet technology and evolving threats, this policy may be updated from time to time. All such updates will be posted in the privacy policy page. In continuing to use this website, you indicate your acceptance of the terms and policies mentioned here.`,
-//   //     },
-//   //   ],
-//   // },
-//   {
-//     heading: "Admissions",
-//     title: "CCMT-2021:",
-//     data: [
-//       {
-//         para:
-//           "Official website of CCMT 2021 for M/Tech/MURP/MArch admission for the Academic session 2021-22. ",
-//         link: "https://ccmt.nic.in/",
-//       },
-//     ],
-//   },
-// ]
 
 // const CentreOfExcellence = [
 //   {
-//     title: "UG Course Structure",
+//     heading: "Centre",
 //     data: [
 //       {
-//         para: "Bachelor of Architecture (ARUG)",
-//         link: "http://www.nitp.ac.in/downloads/course_structure/ARUG.pdf",
+//         para:
+//           "A Memorandum of Understanding (MOU) has been signed between Telecom Sector Skill Council and National Institute of Technology Patna for setting up a Centre of Excellence (CoE) to create a facility for practical training on the domain of Information and Communications Technology on 22nd January, 2021. Skill development training is being imparted by the CoE to enhance the employability of aspiring students on the cutting-edge technologies in the domain of Information and Communications Technology including Technical, Services and allied fields. The CoE will provide training on the base line courses and also on the advance courses like IOT, 5G and beyond, cyber security and robotics etc. Almost 190 students have been trained on different job roles by this centre. A state-of-art laboratory on internet of things (IOT) is being developed. Hopefully the lab will be ready shortly where training/research will be conducted on IOT/5G technologies.",
 //       },
 //     ],
 //   },
@@ -1039,13 +1017,45 @@ const Depts = [
 const CentreOfExcellence = [
   {
     heading: "Centre",
+    title: "1. Centre of Excellence set up by TSSC at NIT Patna :",
     data: [
       {
         para:
-          "A Memorandum of Understanding (MOU) has been signed between Telecom Sector Skill Council and National Institute of Technology Patna for setting up a Centre of Excellence (CoE) to create a facility for practical training on the domain of Information and Communications Technology on 22nd January, 2021. Skill development training is being imparted by the CoE to enhance the employability of aspiring students on the cutting-edge technologies in the domain of Information and Communications Technology including Technical, Services and allied fields. The CoE will provide training on the base line courses and also on the advance courses like IOT, 5G and beyond, cyber security and robotics etc. Almost 190 students have been trained on different job roles by this centre. A state-of-art laboratory on internet of things (IOT) is being developed. Hopefully the lab will be ready shortly where training/research will be conducted on IOT/5G technologies.",
+          "A Memorandum of Understanding (MOU) has been signed between Telecom Sector Skill Council and National Institute of Technology Patna for setting up a Centre of Excellence (CoE) to create a facility for practical training on the domain of Information and Communications Technology on 22nd January, 2021. Skill development training is being imparted by the CoE to enhance the employability of aspiring students on the cutting-edge technologies in the domain of Information and Communications Technology including Technical, Services and allied fields. The CoE will provide training on the base line courses and also on the advance courses like IOT, 5G and beyond, cyber security and robotics etc. Almost 190 students have been trained on different job roles by this centre. A state-of-art laboratory on internet of things (IOT) is being developed. Hopefully the lab will be ready shortly where training/research will be conducted on IOT/5G technologies. ",
       },
     ],
   },
+  {
+    heading: "Centre",
+    title: "2. Centre of Excellence set up by ISRO RACS at NIT Patna :",
+    data: [
+      {
+        para:
+          "As we joyfully unveil, it's all hues of bliss. The Indian Space Research Organization (ISRO) intends to open a Regional Academic Centre for Space at the National Institute of Technology, Patna (NITP) to encourage students to pursue careers in space research. The NITP and the ISRO signed a memorandum of understanding (MoU) in this regard on Wednesday, November 25, 2021. The ISRO headquarters were represented by Sudheer Kumar N, director of CBPO (Capacity Building Programme Office), and MA Paul, associate director (response and academic interface-CBPO), while our esteemed director Prof. P. K. Jain was present from our side.",
+      },
+      {
+        para:
+          "The Regional Academic Centre for Space is a regional-level project that seeks to conduct advanced research in areas relevant to the future technological and programmatic needs of the space program. Other current Regional Academic Centres for Space are located in prestigious colleges such as MNIT, Jaipur, NIT Kurukshetra, IIT (BHU) Varanasi, Gauhati University, and NIT K, Surathkal.",
+      },
+      {
+        para:
+          "The ISRO's research and development operations in the Eastern India region (including Bihar, Jharkhand, West Bengal, Odisha, Andaman, the Nicobar Islands, and Sikkim) would be coordinated through NIT-Patna. Sudheer, Director of CBPO, stated that the RAC-S center will serve as a facilitator for space technology operations. He also discussed the research areas and how to get involved in the initiative. The ISRO will also provide financial assistance in the amount of Rs. 2 crores per year. ",
+      },
+      {
+        para:
+          "Director, NIT Patna, Prof. P. K. Jain, addressing the event, promised that NITP will encourage research activities in different fields, including electronics, communication, material science, information technology, and remote sensing, by the needs of the ISRO. If any institute in eastern India requires experimental help, our facility would be available. The funding is available not just for research initiatives, but also for undergraduate, postgraduate, Ph.D., and teaching faculty.",
+      },
+      {
+        para:
+          "  The short-term projects will be for NITP and other institutes' B. Tech and M. Tech students. The center will also provide Ph.D. scholars and faculty members with long-term research and development projects. The projects can be individual projects or projects in collaboration with another institute. The projects will be scrutinized twice, first by the NITP and subsequently by the ISRO.",
+      },
+      // {
+      //   imageLink:
+      //   "/news.jpg"
+      // },
+    ],
+  },
+  
 ]
 
 const Convocation = [
