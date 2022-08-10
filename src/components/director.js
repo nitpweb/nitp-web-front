@@ -29,7 +29,7 @@ const Directorpage = () => {
             className="row rowmarl3"
             style={{ display: "block", width: `100%` }}
           >
-            <h1 style={{ marginTop: `0`, textAlign: `center` }}>
+            <h1 style={{ marginTop: `15px`, textAlign: `center` }}>
               Our Director
             </h1>
           </div>
