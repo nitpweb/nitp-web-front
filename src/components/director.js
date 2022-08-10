@@ -20,7 +20,6 @@ const Directorpage = () => {
         console.log(e)
       })
   }, [])
-
   return (
     <>
       {data && (
@@ -35,7 +34,9 @@ const Directorpage = () => {
           </div>
           <div
             className="faculty-img-row"
-            style={{ position: `absolute` ,left:`15%`}}
+            style={{ 
+              position: `absolute`, 
+              left: `${(window.location.pathname === "/administration/") || (window.location.pathname ==="/administration") ? "15%" : "2%"}` }}
           >
             <div className="faculty-img-wrap">
               <img
