@@ -54,4 +54,10 @@ We believe in bringing out one's true creative self and building the courage to 
       "We are a group of music enthusiasts learning-living through different forms of music🎶🎼🎵",
     link: "https://www.youtube.com/channel/UC5t5faINbKmzs_rXgyJ2ltg",
   },
+  {
+    url: "/clubs/Vista.jpg",
+    Title: "Vista Club",
+    description : "Vista is the official photography club of NIT Patna that strives to bring together all photography aficionados of the institute and lead them towards collective through workshops, photo walks and other activities. The Club also functions as a Media house inside the Institute as it covers all sorts of events going on in the Institute. You may contact Vista club for any photography request for institute purposes with event purpose, venue and timings, on this email ID vista@nitp.ac.in",
+    link: "https://forms.gle/yuKwUswsMQzStabd6"
+  }
 ]
