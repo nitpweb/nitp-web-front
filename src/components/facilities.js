@@ -10,6 +10,11 @@ import Facilitymain from "./facilities/img/facilitymainimg"
 import Ccimg from "./facilities/img/ccimg"
 import PKImg from "./facilities/img/pkimg"
 import Dummyimg from "./facilities/img/dummy"
+import Sportsimg from "./facilities/img/sportsimg"
+import Medicalimg from "./facilities/img/medicalimg"
+import Hostelimg from "./facilities/img/hostelimg"
+import Labimg from "./facilities/img/labimg"
+import Libraryimg from "./facilities/img/libraryimg"
 import { PageLayout } from "./styles/pagelayout"
 import { TabPage } from "./styles/tabpage"
 import Navigate from "./global/Navigate"
@@ -231,10 +236,10 @@ const Facilitiespage = () => {
                 </div>
               </div>
               <div className="col-6 imgcolstyle">
-                <Dummyimg />
+                <Libraryimg />
               </div>
               <div className="col-6 imgcolstyle">
-                <Dummyimg />
+                <Libraryimg />
               </div>
               <div className="col-6">
                 <div className="row rowmarr3">
@@ -300,7 +305,7 @@ const Facilitiespage = () => {
           {view == "medical" && (
             <div className="layoutrow layoutrow1 digital" id="med">
               <div className="col-6 imgcolstyle">
-                <Dummyimg />
+                <Medicalimg />
               </div>
               <div className="col-6">
                 <div className="row rowmarr3">
@@ -357,14 +362,14 @@ const Facilitiespage = () => {
                 </div>
               </div>
               <div className="col-6 imgcolstyle">
-                <Dummyimg />
+                <Sportsimg />
               </div>
             </div>
           )}
           {view == "hostel" && (
             <div className="layoutrow layoutrow1 digital" id="hostel">
               <div className="col-6 imgcolstyle">
-                <Dummyimg />
+                <Hostelimg />
               </div>
               <div className="col-6">
                 <div className="row rowmarr3">
@@ -410,7 +415,7 @@ const Facilitiespage = () => {
                 </div>
               </div>
               <div className="col-6 imgcolstyle">
-                <Dummyimg />
+                <Labimg />
               </div>
             </div>
           )}
