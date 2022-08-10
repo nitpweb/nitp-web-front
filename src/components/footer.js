@@ -47,7 +47,7 @@ const Footer = () => {
           <div className="footsec">
             <div className="foot-col-3">
               <h1>Know Us</h1>
-              <Link to="/director">
+              <Link to="/administration?tab=director">
                 <h3>Director’s Desk</h3>
               </Link>
 
@@ -128,7 +128,6 @@ const Footer = () => {
               <Link to="/sitemap">
                 <h3>Site Map</h3>
               </Link>
-              
             </div>
             <div className="foot-col-3">
               <h1>Useful Links</h1>
@@ -150,15 +149,14 @@ const Footer = () => {
               <a href="/students?tab=nss">
                 <h3>National Service Scheme</h3>
               </a>
-              
-            <Link to="/tenders">Tenders</Link>
+
+              <Link to="/tenders">Tenders</Link>
               <a
                 href="http://www.nitp.ac.in/uploads20/Revised%20AC%202020-21.pdf"
                 target="_blank"
               >
                 <h3>Academic Calendar</h3>
               </a>
-            
             </div>
           </div>
         </div>
