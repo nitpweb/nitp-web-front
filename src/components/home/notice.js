@@ -32,7 +32,7 @@ const Notice = props => {
             {props.attachments.map(elem => {
               if (elem.url)
                 return (
-                  <>
+                  <div>
                     <img id="notdownimg" src={downimg} alt="c" />
                     <a
                       className="notdown"
@@ -42,7 +42,7 @@ const Notice = props => {
                     >
                       {elem.caption}
                     </a>
-                  </>
+                  </div>
                 )
             })}
           </div>
