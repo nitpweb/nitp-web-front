@@ -40,7 +40,7 @@ const Notice = props => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {elem.caption}
+                      {elem.caption.length>12 ? elem.caption.substring(0, 12) + "..." : elem.caption}
                     </a>
                   </div>
                 )
