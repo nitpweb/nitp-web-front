@@ -14,7 +14,7 @@ const StudentSlide = () => {
       setInitial(1)
     }
     const interval = setInterval(() => {
-      setCount(1 + (count % 7))
+      setCount(1 + (count % data.length))
       const temp = document.getElementById(`s${count}`)
       temp.checked = true
     }, 3000)
@@ -42,7 +42,7 @@ const StudentSlide = () => {
             className="move"
             onClick={() => {
               if (count === 1) {
-                setCount(7)
+                setCount(data.length)
               } else {
                 setCount(count - 1)
               }
@@ -61,6 +61,7 @@ const StudentSlide = () => {
             <input type="radio" name="slider" id="s5" onChange={() => {}} />
             <input type="radio" name="slider" id="s6" onChange={() => {}} />
             <input type="radio" name="slider" id="s7" onChange={() => {}} />
+            <input type="radio" name="slider" id="s8" onChange={() => {}} />
 
             <label htmlFor="s1" id="slide1">
               <div className="img-wrap">
@@ -94,6 +95,11 @@ const StudentSlide = () => {
             </label>
             <label htmlFor="s7" id="slide7">
               <div className="img-wrap">
+                <img className="pic" src={data[7].url} alt=""></img>
+              </div>
+            </label>
+            <label htmlFor="s8" id="slide8">
+              <div className="img-wrap">
                 <img className="pic" src={data[0].url} alt=""></img>
               </div>
             </label>
@@ -101,7 +107,7 @@ const StudentSlide = () => {
           <div
             className="move"
             onClick={() => {
-              setCount(1 + (count % 7))
+              setCount(1 + (count % data.length))
               const temp = document.getElementById(`s${count}`)
               temp.checked = true
               console.log(count)
