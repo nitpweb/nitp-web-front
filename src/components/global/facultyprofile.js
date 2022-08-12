@@ -19,23 +19,23 @@ const Facultyprofile = ({ url }) => {
           currResponsibility: detail.curr_admin_responsibility,
           pastResponsibility: detail.past_admin_responsibility,
           patents:
-            detail.publications != undefined &&
+            detail.publications != undefined && detail.publications[0].publications != null &&
             JSON.parse(detail.publications[0].publications).filter(
               x => x.type === "patent"
             ),
           books:
-            detail.publications != undefined &&
+            detail.publications != undefined && detail.publications[0].publications != null &&
             JSON.parse(detail.publications[0].publications).filter(
               x => x.type === "book"
             ),
           journals: detail.journals,
           conferences:
-            detail.publications != undefined &&
+            detail.publications != undefined && detail.publications[0].publications != null &&
             JSON.parse(detail.publications[0].publications).filter(
               x => x.type === "conference"
             ),
           article:
-            detail.publications != undefined &&
+            detail.publications != undefined && detail.publications[0].publications != null &&
             JSON.parse(detail.publications[0].publications).filter(
               x => x.type === "article"
             ),
