@@ -10,6 +10,7 @@ export const FacultyProfile = styled.div`
   justify-content: flex-end;
   .faculty-img-row {
     margin-top: 3vh;
+    margin-right: 3vw;
     justify-content: center;
     text-align: center;
     .facmail {
