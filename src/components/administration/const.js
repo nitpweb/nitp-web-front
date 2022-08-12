@@ -3,13 +3,13 @@ import Navlist from "../global/navlist"
 
 const Deansinfo = [
   {
-    name: "Prof. S.K. Verma",
-    designation: "Deputy Director and Dean, Academic",
+    name: "Prof. Fulena Rajak",
+    designation: "Dean, Planning & Development",
     type: "Dean",
   },
   {
-    name: "Prof. Om Prakash",
-    designation: "Dean, Faculty Welfare",
+    name: "Prof. Vivekanand Singh",
+    designation: "Dean, Research & Consultancy",
     type: "Dean",
   },
   {
@@ -18,19 +18,14 @@ const Deansinfo = [
     type: "Dean",
   },
   {
-    name: "Prof. Fulena Rajak",
-    designation: "Dean, Planning and Development",
+    name: "Prof.(Dr.) Sanjeev Sinha",
+    designation: "Dean, Academic",
     type: "Dean",
   },
   {
-    name: "Prof. Lal Bahadur Roy",
-    designation: "Dean, Research and consultancy",
+    name: "Prof. Amar Nath Sinha",
+    designation: "Dean, Faculty Welfare",
     type: "Dean",
-  },
-  {
-    name: "Dr. Asit Narayan",
-    designation: "Registrar, NIT Patna",
-    type: "Registrar",
   },
 ]
 const BOG = [

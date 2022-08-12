@@ -118,7 +118,7 @@ const Facultyprofile = ({ url }) => {
               <div className="link-card">
               {
                 data.profile.linkedin ? <>
-                  <span>
+                  <span className="link-icon">
                     <a href={data.profile.linkedin} >
                       <img src={"/linkedin.svg"} alt={"Linkedin"} />
                     </a>
@@ -127,9 +127,9 @@ const Facultyprofile = ({ url }) => {
               }
               {
                 data.profile.google_scholar ? <>
-                  <span>
+                  <span className="link-icon">
                     <a href={data.profile.google_scholar} >
-                      <img src={"/googleScholer.svg"} alt={"Google Scholer"} />
+                      <img src={"/googleScholar.svg"} alt={"Google Scholar"} />
                     </a>
                   </span>
                 </> : null
@@ -139,6 +139,24 @@ const Facultyprofile = ({ url }) => {
                   <span>
                     <a href={data.profile.scopus} >
                       <img src={"/scopus.svg"} alt={"Scopus"} />
+                    </a>
+                  </span>
+                </> : null
+              }
+              {
+                data.profile.vidwan ? <>
+                  <span >
+                    <a href={data.profile.vidwan} >
+                      <img src={"/vidwan.svg"} alt={"Vidwan"} />
+                    </a>
+                  </span>
+                </> : null
+              }
+              {
+                data.profile.orcid ? <>
+                  <span >
+                    <a href={data.profile.orcid} >
+                      <img src={"/orcid.svg"} alt={"Orcid"} />
                     </a>
                   </span>
                 </> : null

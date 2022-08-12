@@ -150,7 +150,7 @@ const Home = [
       },
       {
         url:
-          "http://nitp.ac.in/uploads20/Pratibimb/NIT%20Patna%20E-Magazine.pdf",
+          "/magazine",
         title: "Magazine (Pratibimb)",
       },
       {
@@ -237,10 +237,28 @@ const Academics = [
         title: "Relaxation Criteria",
         data: "concession",
       },
+      // {
+      //   url: "/academics",
+      //   title: "Refund Rules",
+      //   data: "refund",
+      // },
+    ],
+  },
+  {
+    url: "/academics",
+    title: "Centre Of Excellence",
+    data: "centreOfExcellence",
+    id: "three",
+    sub: [
       {
         url: "/academics",
-        title: "Refund Rules",
-        data: "refund",
+        title: "TSSC",
+        data: "centreOfExcellence",
+      },
+      {
+        url: "/academics",
+        title: "ISRO RACS",
+        data: "centreOfExcellence",
       },
     ],
   },
@@ -295,11 +313,11 @@ const Academics = [
         title: "Regulation & Curricula",
         data: "curricula",
       },
-      {
-        url: "/academics",
-        title: "Centre of Excellence",
-        data: "centreOfExcellence",
-      },
+      // {
+      //   url: "/academics",
+      //   title: "Centre of Excellence",
+      //   data: "centreOfExcellence",
+      // },
     ],
   },
   // {

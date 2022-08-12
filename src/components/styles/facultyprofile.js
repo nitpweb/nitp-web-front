@@ -10,7 +10,7 @@ export const FacultyProfile = styled.div`
   justify-content: flex-end;
   .faculty-img-row {
     margin-top: 3vh;
-    left: 2%;
+    margin-right: 3vw;
     justify-content: center;
     text-align: center;
     .facmail {
@@ -76,8 +76,12 @@ export const FacultyProfile = styled.div`
 
   .link-card img{
     height: 25px;
-    padding:10px;
+    padding:7px;
+  }
+
+  .link-icon{
     filter: invert(80%) sepia(30%) saturate(5331%) hue-rotate(357deg) brightness(109%) contrast(96%);
+
   }
 
   .popup {

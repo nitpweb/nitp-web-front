@@ -28,7 +28,8 @@ export const NoticeStyle = styled.div`
       display: flex;
       align-items: center;
       margin-left: 20px;
-      padding-bottom: 10px;
+      max-width: 70%;
+      flex-wrap: wrap;
       img {
         margin: 3px 8px 3px auto;
         height: 14px;

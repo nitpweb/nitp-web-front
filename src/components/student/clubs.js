@@ -1,9 +1,9 @@
 export const clubs = [
   {
-    url: "/hackslash.png",
+    url: "/hackslash2.png",
     Title: "HackSlash",
     description:
-      "HackSlash, currently under the Mozilla Campus Clubs Network, is an all student driven developers community located in the National Institute of Technology Patna. The club strives to build and improve the open sourcing environment and the coding culture of the whole city of Patna and eventually the whole state of Bihar. The will power and determination of each Developers, Competitive Coders, Designers and Innovative thinkers is what governs our great community.",
+      "A community of NIT Patna that was created with the sole purpose of bringing people with similar interests in technology together where they can begin and master their coding and development skills.HackSlash gives a platform where you get to work on collaborative projects and help each other grow as a team. It is an initiative taken that will go a long way in maintaining the coding culture of NIT Patna in the years to come.",
     link: "https://hackslash.co.in/",
   },
   {
@@ -15,7 +15,8 @@ export const clubs = [
     link: "#",
   },
   {
-    url: "https://roboticsnitp.co.in/assets/logo1.png",
+    // url: "https://roboticsnitp.co.in/assets/logo1.png",
+    url: "/robotics.png",
     Title: "Robotics Club",
     description:
       "Robotics club has been embodiment of innovation at NIT Patna. Being formed in year 2015-16 by Nripendra Saroj Sir ,our club boasts a glorious legacy. With our members ranging from seasoned coders to brilliant designers to hardware scientists, Our members have also represented our college at Smart India hackathon,headed by our current Captain Dheeraj Kumar Sir.We have been constantly working to enhance the students’ technical skills and making them aware of the fascinating world of automation,robotics and electronics which surrounds us.Boasting of a huge roster of exciting and engaging events, This year’s techno-cultural fest was nothing less than a rollercoaster ride for us. ",
@@ -26,7 +27,7 @@ export const clubs = [
       "https://media-exp1.licdn.com/dms/image/C510BAQF7oBRmY3nP-Q/company-logo_200_200/0/1587022038940?e=2159024400&v=beta&t=DhomKeI4bLF5_J0Xj2hSqzqACq8nWqhK8lFLOsrWKC4",
     Title: "IEEE",
     description:
-      "IEEE Student Branch, NIT Patna was established with an enthusiastic initiative of 13 students of NIT Patna enrolled in B.Tech programme of Electrical Engineering and Electronics and Communication Engineering under the leadership of Prof Kumar Abhishek, Assistant professor of Computer Science and Engineering.",
+      "IEEE Student Branch, NIT Patna was established with an enthusiastic initiative of 13 students of NIT Patna enrolled in B.Tech programme of Electrical Engineering and Electronics and Communication Engineering under the leadership of Prof Kumar Abhishek, Assistant professor of Computer Science and Engineering. In this whole path our mentors were the three great visionaries of our college Dr Asok De (Director NIT Patna), Dr D.K. Singh (HOD, Electronics and Communication Engineering), and Dr M.P Singh (HOD, Computer Science and Engineering). Prof. Kumar Abhishek became the first Branch Counsellor of the Student Branch and Shruti Neha became the first Student Branch Chair. IEEE Student Branch, NITP was established with a vision of making students aware of new developments in various engineering fields and to provide support in implementing new innovative ideas of future engineers which can give a new shape to this world.",
     link: "http://ieee.nitp.ac.in/",
   },
   {
@@ -54,4 +55,10 @@ We believe in bringing out one's true creative self and building the courage to 
       "We are a group of music enthusiasts learning-living through different forms of music🎶🎼🎵",
     link: "https://www.youtube.com/channel/UC5t5faINbKmzs_rXgyJ2ltg",
   },
+  {
+    url: "/Vista.jpg",
+    Title: "Vista Club",
+    description : "Vista is the official photography club of NIT Patna that strives to bring together all photography aficionados of the institute and lead them towards collective through workshops, photo walks and other activities. The Club also functions as a Media house inside the Institute as it covers all sorts of events going on in the Institute. You may contact Vista club for any photography request for institute purposes with event purpose, venue and timings, on this email ID vista@nitp.ac.in",
+    link: "https://forms.gle/yuKwUswsMQzStabd6"
+  }
 ]

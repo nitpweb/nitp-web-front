@@ -32,7 +32,7 @@ const Notice = props => {
             {props.attachments.map(elem => {
               if (elem.url)
                 return (
-                  <>
+                  <div>
                     <img id="notdownimg" src={downimg} alt="c" />
                     <a
                       className="notdown"
@@ -40,9 +40,9 @@ const Notice = props => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {elem.caption}
+                      {elem.caption.length>12 ? elem.caption.substring(0, 12) + "..." : elem.caption}
                     </a>
-                  </>
+                  </div>
                 )
             })}
           </div>
