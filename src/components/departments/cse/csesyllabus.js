@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import Courseug from "./cse BTech CourseStructure"
 import Coursephd from "./phd course"
 import Coursepg from "./cse MTech CourseStructure"
+import Courseug_nep21 from "./cse Btech NEP21"
 import main from "../img/book.svg"
 import { PageLayout } from "../../styles/pagelayout"
 
@@ -27,7 +28,6 @@ const Csesyllabus = props => {
                     {" "}
                     -Computer Science and Engineering
                   </h2>
-
                 <div className="probutton">
                   <button
                     onClick={() => {
@@ -37,6 +37,15 @@ const Csesyllabus = props => {
                     className={course == "programmesug" ? "btnactive" : ""}
                   >
                     UG Courses
+                  </button>
+                  <button
+                    onClick={() => {
+                      setCourse("programmesugnep21")
+                      setSyllabus(Courseug_nep21)
+                    }}
+                    className={course == "programmesugnep21" ? "btnactive" : ""}
+                  >
+                    UG Courses-2021
                   </button>
                   <button
                     onClick={() => {
@@ -89,50 +98,6 @@ const Csesyllabus = props => {
             </Table>
           </div>
         </TabPage>
-        
-      {/* <PageLayout style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
-        <div className="syllabus-page">
-          <div className="layoutrow layoutrowmain syllabus-page-head">
-            <div className="col-6">
-              <div className="row rowmarl3">
-                <h1 data-aos="zoom-in-right">Syllabus</h1>
-              </div>
-              <div className="row rowmarl3">
-                <h2 data-aos="zoom-in-right">
-                  {" "}
-                  -Computer Science and Engineering
-                </h2>
-              </div>
-            </div>
-          </div>
-          <Table>
-            <tr className="syllabus-table-head">
-              <th>Dept.</th>
-              <th>Sem/Electives</th>
-              <th>Course Code</th>
-              <th>Course Title</th>
-              <th>L</th>
-              <th>T</th>
-              <th>P</th>
-              <th>Credits</th>
-            </tr>
-            {Course.map(elem => (
-              <tr className="syllabus-table-row">
-                <td>{elem.dept}</td>
-                <td>{elem.sem_elect}</td>
-                <td>{elem.coursecode}</td>
-                <td>
-                  <a href={elem.url}>{elem.coursetitle}</a>
-                </td>
-                <td>{elem.l}</td>
-                <td>{elem.t}</td>
-                <td>{elem.p}</td>
-                <td>{elem.credits}</td>
-              </tr>
-            ))}
-          </Table>
-        </div>
-      </PageLayout> */}
     </PageLayout>
   )
 }
