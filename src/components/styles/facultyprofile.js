@@ -38,6 +38,7 @@ export const FacultyProfile = styled.div`
   }
   /* FOR VIEW CV POPUP START */
   .cv-btn{
+    margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
     background: ${props => props.theme.primaryColor};
@@ -50,6 +51,7 @@ export const FacultyProfile = styled.div`
     }
   }
   .cv {
+   
     position: fixed;
     top: 0;
     bottom: 0;

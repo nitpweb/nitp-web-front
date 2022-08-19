@@ -11,8 +11,10 @@ const Facultyprofile = ({ url }) => {
       .get(url)
       .then(res => {
         const detail = res.data
+        console.log(detail)
         setData({
           profile: detail.profile,
+          publications: detail.publications[0],
           subjects: detail.subjects_teaching,
           memberships: detail.memberships,
           qualification: detail.education,
@@ -84,6 +86,7 @@ const Facultyprofile = ({ url }) => {
               </a>
               <h2>{data.profile.name}</h2>
               <h3>{data.profile.designation}</h3>
+
               {data.profile.cv && (
                 <div>
                   <a href="#cv">
@@ -93,6 +96,20 @@ const Facultyprofile = ({ url }) => {
                       variant="contained"
                     >
                       View CV
+                    </button>
+                  </a>
+                </div>
+              )}
+
+              {data.publications.pub_pdf && (
+                <div>
+                  <a href="#pub_pdf">
+                    <button
+                      className="cv-btn"
+                      color="primary"
+                      variant="contained"
+                    >
+                      View Publications
                     </button>
                   </a>
                 </div>
@@ -174,6 +191,19 @@ const Facultyprofile = ({ url }) => {
                       <div className="close">X</div>
                       <div className="content">
                         <iframe src={"https://drive.google.com/file/d/" + data.profile.cv.split('id=').pop() + "/preview"} width="100%" height="100%"></iframe>
+                      </div>
+                    </div>
+                    </a>
+                </div>
+              )}
+              
+              {data.publications.pub_pdf && (
+                  <div id="pub_pdf" className="cv">
+                      <a href="#" className="close">
+                    <div className="popup">
+                      <div className="close">X</div>
+                      <div className="content">
+                        <iframe src={data.publications.pub_pdf.split("view")[0]+"/preview?usp=drivesdk"} width="100%" height="100%"></iframe>
                       </div>
                     </div>
                     </a>
