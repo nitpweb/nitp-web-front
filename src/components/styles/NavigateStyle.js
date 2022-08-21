@@ -87,7 +87,7 @@ export const NavigateStyle = styled.div`
         brightness(200%) contrast(200%);
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 820px) {
     flex-direction: row;
     max-width: 90%;
     overflow-x: scroll;
@@ -131,6 +131,11 @@ export const NavigateStyle = styled.div`
       p {
         color: ${props => props.theme.primaryColor};
       }
+    }
+  }
+  @media (max-width: 1024px) {
+    .childLink{
+      width: 11.34vw;
     }
   }
 `

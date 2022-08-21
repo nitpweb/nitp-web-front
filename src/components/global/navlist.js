@@ -155,7 +155,7 @@ const Home = [
       },
       {
         url: "/students",
-        title: "Clubs/Societies",
+        title: "Clubs/ Societies",
         data: "clubs",
       },
       {
@@ -418,7 +418,7 @@ const Students = [
     sub: [
       {
         url: "/students",
-        title: "Clubs/Societies",
+        title: "Clubs/ Societies",
         data: "clubs",
       },
       {
