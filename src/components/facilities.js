@@ -251,21 +251,21 @@ const Facilitiespage = () => {
                     maintains a wide collection of highly acclaimed e-journals
                     published by some big names like:
                     <br />
-                    AMERICAN SOCIETY OF CIVIL ENGINEERS(ASCE)
+                    - AMERICAN SOCIETY OF CIVIL ENGINEERS(ASCE)
                     <br />
-                    AMERICAN SOCIETY OF MECHANICAL ENGINEERS(ASME)
+                    - AMERICAN SOCIETY OF MECHANICAL ENGINEERS(ASME)
                     <br />
-                    IEL
+                    - IEL
                     <br />
-                    IEEE
+                    - IEEE
                     <br />
-                    NATURE
+                    - NATURE
                     <br />
-                    ACM
+                    - ACM
                     <br />
-                    INDIAN STANDARD
+                    - INDIAN STANDARD
                     <br />
-                    SPRINGER
+                    - SPRINGER
                     <br />
                     ...and many more. The total collection of e-journals in the
                     E-Resource Section numbers to more than 2700 of diverse
