@@ -13,31 +13,43 @@ const Facultyprofile = ({ url }) => {
         const detail = res.data
         console.log(detail)
         setData({
-          profile: detail.profile,
-          publications: detail.publications[0],
-          subjects: detail.subjects_teaching,
-          memberships: detail.memberships,
-          qualification: detail.education,
-          currResponsibility: detail.curr_admin_responsibility,
-          pastResponsibility: detail.past_admin_responsibility,
+          profile: detail.profile ? detail.profile : [],
+          publications: detail.publications ? detail.publications[0] : [],
+          subjects: detail.profile ? detail.subjects_teaching : [],
+          memberships: detail.memberships ? detail.memberships : [],
+          qualification: detail.qualification ? detail.education : [],
+          currResponsibility: detail.curr_admin_responsibility
+            ? detail.curr_admin_responsibility
+            : [],
+          pastResponsibility: detail.past_admin_responsibility
+            ? detail.past_admin_responsibility
+            : [],
           patents:
-            detail.publications != undefined && detail.publications[0].publications != null &&
+            detail.publications &&
+            detail.publications != undefined &&
+            detail.publications[0].publications != null &&
             JSON.parse(detail.publications[0].publications).filter(
               x => x.type === "patent"
             ),
           books:
-            detail.publications != undefined && detail.publications[0].publications != null &&
+            detail.publications &&
+            detail.publications != undefined &&
+            detail.publications[0].publications != null &&
             JSON.parse(detail.publications[0].publications).filter(
               x => x.type === "book"
             ),
           journals: detail.journals,
           conferences:
-            detail.publications != undefined && detail.publications[0].publications != null &&
+            detail.publications &&
+            detail.publications != undefined &&
+            detail.publications[0].publications != null &&
             JSON.parse(detail.publications[0].publications).filter(
               x => x.type === "conference"
             ),
           article:
-            detail.publications != undefined && detail.publications[0].publications != null &&
+            detail.publications &&
+            detail.publications != undefined &&
+            detail.publications[0].publications != null &&
             JSON.parse(detail.publications[0].publications).filter(
               x => x.type === "article"
             ),
@@ -52,18 +64,20 @@ const Facultyprofile = ({ url }) => {
       })
   }, []) // because of "data", it was sending the requests again and again
 
-
   document.addEventListener("scroll", e => {
     let scrolled = document.scrollingElement.scrollTop
     if (scrolled >= 120) {
       if (screen.width > 768) {
-        document.querySelector(".faculty-img-row").style.marginTop = "-4vh"
+        if (document.querySelector(".faculty-img-row")) {
+          document.querySelector(".faculty-img-row").style.marginTop = "-4vh"
+        }
       }
-    }else{
-      document.querySelector(".faculty-img-row").style.marginTop = "3vh"
+    } else {
+      if (document.querySelector(".faculty-img-row")) {
+        document.querySelector(".faculty-img-row").style.marginTop = "3vh"
+      }
     }
-})
-
+  })
 
   return (
     <>
@@ -117,9 +131,9 @@ const Facultyprofile = ({ url }) => {
 
               {/* SOCIAL MEDIA LINKS STARTS */}
 
-              {
-                data.profile.personal_webpage ? <>
-                <div style={{margin: "3px"}}>
+              {data.profile.personal_webpage ? (
+                <>
+                  <div style={{ margin: "3px" }}>
                     <a href={data.profile.personal_webpage}>
                       <button
                         className="cv-btn"
@@ -130,92 +144,109 @@ const Facultyprofile = ({ url }) => {
                       </button>
                     </a>
                   </div>
-                </> : null
-              }
+                </>
+              ) : null}
               <div className="link-card">
-              {
-                data.profile.linkedin ? <>
-                  <span className="link-icon">
-                    <a href={data.profile.linkedin} >
-                      <img src={"/linkedin.svg"} alt={"Linkedin"} />
-                    </a>
-                  </span>
-                </> : null
-              }
-              {
-                data.profile.google_scholar ? <>
-                  <span className="link-icon">
-                    <a href={data.profile.google_scholar} >
-                      <img src={"/googleScholar.svg"} alt={"Google Scholar"} />
-                    </a>
-                  </span>
-                </> : null
-              }
-              {
-                data.profile.scopus ? <>
-                  <span>
-                    <a href={data.profile.scopus} >
-                      <img src={"/scopus.svg"} alt={"Scopus"} />
-                    </a>
-                  </span>
-                </> : null
-              }
-              {
-                data.profile.vidwan ? <>
-                  <span >
-                    <a href={data.profile.vidwan} >
-                      <img src={"/vidwan.svg"} alt={"Vidwan"} />
-                    </a>
-                  </span>
-                </> : null
-              }
-              {
-                data.profile.orcid ? <>
-                  <span >
-                    <a href={data.profile.orcid} >
-                      <img src={"/orcid.svg"} alt={"Orcid"} />
-                    </a>
-                  </span>
-                </> : null
-              }
+                {data.profile.linkedin ? (
+                  <>
+                    <span className="link-icon">
+                      <a href={data.profile.linkedin}>
+                        <img src={"/linkedin.svg"} alt={"Linkedin"} />
+                      </a>
+                    </span>
+                  </>
+                ) : null}
+                {data.profile.google_scholar ? (
+                  <>
+                    <span className="link-icon">
+                      <a href={data.profile.google_scholar}>
+                        <img
+                          src={"/googleScholar.svg"}
+                          alt={"Google Scholar"}
+                        />
+                      </a>
+                    </span>
+                  </>
+                ) : null}
+                {data.profile.scopus ? (
+                  <>
+                    <span>
+                      <a href={data.profile.scopus}>
+                        <img src={"/scopus.svg"} alt={"Scopus"} />
+                      </a>
+                    </span>
+                  </>
+                ) : null}
+                {data.profile.vidwan ? (
+                  <>
+                    <span>
+                      <a href={data.profile.vidwan}>
+                        <img src={"/vidwan.svg"} alt={"Vidwan"} />
+                      </a>
+                    </span>
+                  </>
+                ) : null}
+                {data.profile.orcid ? (
+                  <>
+                    <span>
+                      <a href={data.profile.orcid}>
+                        <img src={"/orcid.svg"} alt={"Orcid"} />
+                      </a>
+                    </span>
+                  </>
+                ) : null}
               </div>
-
             </div>
 
             {/* SOCIAL MEDIA LINKS END */}
 
             {data.profile.cv && (
-                  <div id="cv" className="cv">
-                      <a href="#" className="close">
-                    <div className="popup">
-                      <div className="close">X</div>
-                      <div className="content">
-                        <iframe src={"https://drive.google.com/file/d/" + data.profile.cv.split('id=').pop() + "/preview"} width="100%" height="100%"></iframe>
-                      </div>
+              <div id="cv" className="cv">
+                <a href="#" className="close">
+                  <div className="popup">
+                    <div className="close">X</div>
+                    <div className="content">
+                      <iframe
+                        src={
+                          "https://drive.google.com/file/d/" +
+                          data.profile.cv.split("id=").pop() +
+                          "/preview"
+                        }
+                        width="100%"
+                        height="100%"
+                      ></iframe>
                     </div>
-                    </a>
-                </div>
-              )}
-              
-              {data.publications.pub_pdf && (
-                  <div id="pub_pdf" className="cv">
-                      <a href="#" className="close">
-                    <div className="popup">
-                      <div className="close">X</div>
-                      <div className="content">
-                        <iframe src={data.publications.pub_pdf.split("view")[0]+"/preview?usp=drivesdk"} width="100%" height="100%"></iframe>
-                      </div>
+                  </div>
+                </a>
+              </div>
+            )}
+
+            {data.publications.pub_pdf && (
+              <div id="pub_pdf" className="cv">
+                <a href="#" className="close">
+                  <div className="popup">
+                    <div className="close">X</div>
+                    <div className="content">
+                      <iframe
+                        src={
+                          data.publications.pub_pdf.split("view")[0] +
+                          "/preview?usp=drivesdk"
+                        }
+                        width="100%"
+                        height="100%"
+                      ></iframe>
                     </div>
-                    </a>
-                </div>
-              )}
+                  </div>
+                </a>
+              </div>
+            )}
 
             <div className="faculty-details-row">
               <h1>Profile</h1>
               <div className="fac-card" data-aos="fade-up">
                 <h3>Research Interest:-</h3>
                 <p>{data.profile.research_interest}</p>
-                <div style={{display: 'flex'}} className="row">
+                <div style={{ display: "flex" }} className="row">
                   <div className="col-6">
                     <h3>Email:-</h3>
                     <p>{data.profile.email}</p>
@@ -248,7 +279,11 @@ const Facultyprofile = ({ url }) => {
                       </tr> */}
                       {data.subjects.map(item => {
                         return (
-                          <p>{item.code}{" "}{item.name}{" "}{item.start?item.start:""}{" "}{item.end?item.end:""}</p>
+                          <p>
+                            {item.code} {item.name}{" "}
+                            {item.start ? item.start : ""}{" "}
+                            {item.end ? item.end : ""}
+                          </p>
                           // <p>{item.code}{" "}{item.name}{" "}{item.start}{" "}{new Date(item.end).getFullYear()}</p>
                           // <tr>
                           //   <td>
@@ -292,7 +327,16 @@ const Facultyprofile = ({ url }) => {
                       </tr> */}
                       {data.memberships.map(item => {
                         return (
-                          <p>{item.membership_id}{" "}{item.membership_society}{" "}{item.start!=null | item.end!=null?` [ ${item.start?item.start:""} ${item.start!=null & item.end!=null?" | ":""} ${item.end?item.end:""} ] `:""}</p>
+                          <p>
+                            {item.membership_id} {item.membership_society}{" "}
+                            {(item.start != null) | (item.end != null)
+                              ? ` [ ${item.start ? item.start : ""} ${
+                                  (item.start != null) & (item.end != null)
+                                    ? " | "
+                                    : ""
+                                } ${item.end ? item.end : ""} ] `
+                              : ""}
+                          </p>
                           // <p>{item.membership_id}{" "}{item.membership_society}{" "}{` [${new Date(item.start).getMonth() + 1} -
                           // ${new Date(item.start).getFullYear()} / ${new Date(item.end).getMonth() + 1} -
                           // ${new Date(item.end).getFullYear()}]`}</p>
@@ -341,7 +385,11 @@ const Facultyprofile = ({ url }) => {
                       </tr> */}
                       {data.qualification.map(item => {
                         return (
-                          <p>{item.certification}{" "}{item.institution?item.institution:""}{" "}{item.passing_year?item.passing_year:""}</p>
+                          <p>
+                            {item.certification}{" "}
+                            {item.institution ? item.institution : ""}{" "}
+                            {item.passing_year ? item.passing_year : ""}
+                          </p>
                           // <tr>
                           //   <td>
                           //     <p>{item.certification}</p>
@@ -365,7 +413,10 @@ const Facultyprofile = ({ url }) => {
                   <div className="fac-card" data-aos="fade-up">
                     <h3>Journals</h3>
                     {data.article.map(item => (
-                      <p className="text-justify" style={{ maxWidth: `1000px`}}>
+                      <p
+                        className="text-justify"
+                        style={{ maxWidth: `1000px` }}
+                      >
                         <li>{`${item.authors}, "${item.title}", ${item.journal_name} (${item.year})`}</li>
                       </p>
                     ))}
@@ -377,7 +428,10 @@ const Facultyprofile = ({ url }) => {
                   <div className="fac-card" data-aos="fade-up">
                     <h3>Conferences</h3>
                     {data.conferences.map(item => (
-                      <p className="text-justify" style={{ maxWidth: `1000px` }}>
+                      <p
+                        className="text-justify"
+                        style={{ maxWidth: `1000px` }}
+                      >
                         <li>{`${item.authors}, "${item.title}", ${item.booktitle},${item.citation_key} (${item.year})`}</li>
                       </p>
                     ))}
@@ -502,7 +556,10 @@ const Facultyprofile = ({ url }) => {
                       </tr> */}
                       {data.currResponsibility.map(item => {
                         return (
-                          <p>{item.curr_responsibility}{" "}{item.start?`[ ${item.start} ]`:""}</p>
+                          <p>
+                            {item.curr_responsibility}{" "}
+                            {item.start ? `[ ${item.start} ]` : ""}
+                          </p>
                           // <p>{item.curr_responsibility}{" "}[{new Date(item.start).getMonth() + 1}-{" "}{new Date(item.start).getFullYear()}]</p>
                           // <tr>
                           //   <td>
@@ -540,11 +597,22 @@ const Facultyprofile = ({ url }) => {
                       </tr> */}
                       {data.pastResponsibility.map(item => {
                         return (
-                          <p>{item.past_responsibility}{" "}{(item.start||item.end) && <>[ {item.start?item.start:""} {item.start!=null & item.end!=null?"|":""} {item.end?item.end:""} ]</>}</p>
+                          <p>
+                            {item.past_responsibility}{" "}
+                            {(item.start || item.end) && (
+                              <>
+                                [ {item.start ? item.start : ""}{" "}
+                                {(item.start != null) & (item.end != null)
+                                  ? "|"
+                                  : ""}{" "}
+                                {item.end ? item.end : ""} ]
+                              </>
+                            )}
+                          </p>
                           // <p>{item.past_responsibility}{" "}[{new Date(item.start).getMonth() + 1} -{" "}
                           //       {new Date(item.start).getFullYear()} / {new Date(item.end).getMonth() + 1}-{" "}
                           //       {new Date(item.end).getFullYear()}]</p>
-                          // <tr> 
+                          // <tr>
                           //    <td>
                           //     <p>{item.past_responsibility}</p>
                           //   </td>
@@ -560,7 +628,7 @@ const Facultyprofile = ({ url }) => {
                           //       {new Date(item.end).getFullYear()}
                           //     </p>
                           //   </td>
-                          // </tr> 
+                          // </tr>
                         )
                       })}
                     </table>
@@ -589,7 +657,18 @@ const Facultyprofile = ({ url }) => {
                       </tr> */}
                       {data.workExperience.map(item => {
                         return (
-                          <p>{item.work_experiences}{" "}{item.institute}{" "}{(item.start||item.end) && <>[ {item.start?item.start:""} {item.start!=null & item.end!=null?"|":""} {item.end?item.end:""} ]</>}</p>
+                          <p>
+                            {item.work_experiences} {item.institute}{" "}
+                            {(item.start || item.end) && (
+                              <>
+                                [ {item.start ? item.start : ""}{" "}
+                                {(item.start != null) & (item.end != null)
+                                  ? "|"
+                                  : ""}{" "}
+                                {item.end ? item.end : ""} ]
+                              </>
+                            )}
+                          </p>
                           // <p>{item.work_experiences}{" "}{item.institute}{" "}[{new Date(item.start).getMonth() + 1} -{" "}{new Date(item.start).getFullYear()} / {new Date(item.end).getMonth() + 1} -{" "}{new Date(item.end).getFullYear()}]</p>
                           // <tr>
                           //   <td>
@@ -622,7 +701,13 @@ const Facultyprofile = ({ url }) => {
                 <div className="fac-card" data-aos="fade-up">
                   <h3>Professional Services</h3>
                   {data.services.map(item => {
-                    return <><p className="text-justify"><li>{item.services}</li></p></>
+                    return (
+                      <>
+                        <p className="text-justify">
+                          <li>{item.services}</li>
+                        </p>
+                      </>
+                    )
                   })}
                 </div>
               )}
@@ -659,7 +744,17 @@ const Facultyprofile = ({ url }) => {
                       </tr> */}
                       {data.projects.map(item => {
                         return (
-                          <p>{item.project}{" "}{item.sponsor?item.sponsor:""}{" "}{item.amount?item.amount:""}{" "}{item.start!=null | item.end!=null ?`[${item.start?item.start:""} ${item.start!=null & item.end!=null?"|":""} ${item.end?item.end:""}]`:""}</p>
+                          <p>
+                            {item.project} {item.sponsor ? item.sponsor : ""}{" "}
+                            {item.amount ? item.amount : ""}{" "}
+                            {(item.start != null) | (item.end != null)
+                              ? `[${item.start ? item.start : ""} ${
+                                  (item.start != null) & (item.end != null)
+                                    ? "|"
+                                    : ""
+                                } ${item.end ? item.end : ""}]`
+                              : ""}
+                          </p>
                           // <p>{item.project}{" "}{item.sponsor}{" "}{item.amount}{" "}[{new Date(item.start).getMonth() + 1} -{" "}{new Date(item.start).getFullYear()} / {new Date(item.end).getMonth() + 1} -{" "}{new Date(item.end).getFullYear()}]</p>
                           // <tr>
                           //   <td>
@@ -711,11 +806,12 @@ const Facultyprofile = ({ url }) => {
                             <h4>Completion Year</h4>
                           </th>
                         </tr>
-                        {data.phdCandidates.map((item,index) => {
+                        {data.phdCandidates.map((item, index) => {
                           return (
                             <tr>
                               <td>
-                                {index+1}{`)`} {item.phd_student_name}
+                                {index + 1}
+                                {`)`} {item.phd_student_name}
                               </td>
                               <td>
                                 <p>{item.thesis_topic}</p>

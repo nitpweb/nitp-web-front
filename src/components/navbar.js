@@ -21,9 +21,9 @@ import { isBrowser } from "./isBrowser"
 
 const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
   const pathname = window.location.pathname.split("/")[1]
-  const isInSession = () =>{
+  const isInSession = () => {
     if (!isBrowser) {
-      return;
+      return
     }
     return sessionStorage.getItem("inSession")
   }
@@ -38,63 +38,71 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
   useEffect(() => {
     document.addEventListener("scroll", e => {
       let scrolled = document.scrollingElement.scrollTop
-      if (scrolled >= 120) {
-        if (screen.width > 768) {
-          document.querySelector(".nav-title-row").style.display = "none"
+      if (document.querySelector(".logobadge")) {
+        if (scrolled >= 120) {
+          if (screen.width > 768) {
+            document.querySelector(".nav-title-row").style.display = "none"
+          }
+          // document.querySelector(".nav-col>span").style.lineHeight = "0.2rem"
+          if (screen.width < 768) {
+            document.querySelector(".nav-head-row>.start").style.display =
+              "none"
+          }
+          document.querySelector(".nav-link-row").style.backgroundColor =
+            "black"
+          document.querySelector(".logobadge>h4").style.display = "none"
+          document.querySelector(".logobadge>div>img").style.maxHeight = "5vw"
+          document.querySelector(".logobadge>div>img").style.borderWidth = "0px"
+          document.querySelector(".logobadge").style.backgroundColor =
+            "transparent"
+          document.querySelector(".logobadge").style.paddingLeft = "0"
+          document.querySelector(".mobilelogo>img").style.maxHeight = "5vh"
+          document.querySelector(".logobadge").style.transition = "1s"
+          document.querySelector(".logobadge>h4").style.transition = "0s"
+          document.querySelector(".logobadge>div>img").style.transition = "1s"
+          document.querySelector(".mobilelogo>img").style.transition = "1s"
+          document.querySelector(".nav-link-row").style.opacity = "1"
+          document.querySelector(".nav-col").style.paddingTop = "0.2vw"
+          document.querySelector(".nav-link-row").style.height = "1.5vw"
+        } else {
+          if (screen.width > 768) {
+            document.querySelector(".nav-title-row").style.display = "flex"
+          }
+          if (screen.width < 768) {
+            document.querySelector(".nav-head-row>.start").style.display =
+              "flex"
+          }
+          document.querySelector(".nav-link-row").style.backgroundColor =
+            "black"
+          document.querySelector(".nav-link-row").style.height = "2vw"
+          document.querySelector(".logobadge>h4").style.display = "flex"
+          document.querySelector(".logobadge>div>img").style.maxHeight = "8vw"
+          document.querySelector(".logobadge>div>img").style.borderWidth =
+            "0.5vw"
+          document.querySelector(".logobadge").style.backgroundColor = theme
+            ? "#941b0c"
+            : "#cd512f"
+          document.querySelector(".logobadge>div>img").style.marginTop = "0px"
+          document.querySelector(".logobadge").style.paddingLeft = "0"
+          document.querySelector(".mobilelogo>img").style.maxHeight = "7vh"
+          document.querySelector(".logobadge").style.transition = "1s"
+          document.querySelector(".logobadge>h4").style.transition = "1s"
+          document.querySelector(".logobadge>div>img").style.transition = "1s"
+          document.querySelector(".mobilelogo>img").style.transition = "1s"
+          document.querySelector(".nav-link-row").style.opacity = "1"
         }
-        // document.querySelector(".nav-col>span").style.lineHeight = "0.2rem"
-        if (screen.width < 768) {
-          document.querySelector(".nav-head-row>.start").style.display = "none"
-        }
-        document.querySelector(".nav-link-row").style.backgroundColor = "black"
-        document.querySelector(".logobadge>h4").style.display = "none"
-        document.querySelector(".logobadge>div>img").style.maxHeight = "5vw"
-        document.querySelector(".logobadge>div>img").style.borderWidth = "0px"
-        document.querySelector(".logobadge").style.backgroundColor =
-        "transparent"
-        document.querySelector(".logobadge").style.paddingLeft = "0"
-        document.querySelector(".mobilelogo>img").style.maxHeight = "5vh"
-        document.querySelector(".logobadge").style.transition = "1s"
-        document.querySelector(".logobadge>h4").style.transition = "0s"
-        document.querySelector(".logobadge>div>img").style.transition = "1s"
-        document.querySelector(".mobilelogo>img").style.transition = "1s"
-        document.querySelector(".nav-link-row").style.opacity = "1"
-        document.querySelector(".nav-col").style.paddingTop = "0.2vw"
-        document.querySelector(".nav-link-row").style.height = "1.5vw"
-      } else {
-        if (screen.width > 768) {
-          document.querySelector(".nav-title-row").style.display = "flex"
-        }
-        if (screen.width < 768) {
-          document.querySelector(".nav-head-row>.start").style.display = "flex"
-        }
-        document.querySelector(".nav-link-row").style.backgroundColor = "black"
-        document.querySelector(".nav-link-row").style.height = "2vw"
-        document.querySelector(".logobadge>h4").style.display = "flex"
-        document.querySelector(".logobadge>div>img").style.maxHeight = "8vw"
-        document.querySelector(".logobadge>div>img").style.borderWidth = "0.5vw"
-        document.querySelector(".logobadge").style.backgroundColor = theme? "#941b0c" : "#cd512f"
-        document.querySelector(".logobadge>div>img").style.marginTop = "0px"
-        document.querySelector(".logobadge").style.paddingLeft = "0"
-        document.querySelector(".mobilelogo>img").style.maxHeight = "7vh"
-        document.querySelector(".logobadge").style.transition = "1s"
-        document.querySelector(".logobadge>h4").style.transition = "1s"
-        document.querySelector(".logobadge>div>img").style.transition = "1s"
-        document.querySelector(".mobilelogo>img").style.transition = "1s"
-        document.querySelector(".nav-link-row").style.opacity = "1"
       }
     })
   }, [])
-  useEffect(()=>{
+  useEffect(() => {
     if (isBrowser) {
-      sessionStorage.setItem("inSession", true)   
+      sessionStorage.setItem("inSession", true)
     }
   })
   return (
     <NavbarStyle>
       <div className="nav-head-row">
         <div className="col-6 start" style={{ fontSize: `16px` }}>
-          
           <span style={{ marginLeft: `8px` }}>
             <Link to="/jobsnitp">Jobs@NITP</Link>
             {` | `}
@@ -112,9 +120,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             {` | `}
           </span> */}
           <span style={{ marginLeft: `8px` }}>
-            <a href="http://www.nitp.ac.in/php/home.php">
-              Old Website
-            </a>
+            <a href="http://www.nitp.ac.in/php/home.php">Old Website</a>
           </span>
         </div>
         <div className="col-6 end">
@@ -172,8 +178,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             {/* {change == 0
               ? "NATIONAL INSTITUTE OF TECHNOLOGY PATNA"
               : "राष्ट्रीय प्रौद्योगिकी संस्थान पटना"} */}
-              NATIONAL INSTITUTE OF TECHNOLOGY PATNA<br/>
-              राष्ट्रीय प्रौद्योगिकी संस्थान पटना
+            NATIONAL INSTITUTE OF TECHNOLOGY PATNA
+            <br />
+            राष्ट्रीय प्रौद्योगिकी संस्थान पटना
           </span>
         </div>
         <div className="nav-col end">
@@ -243,18 +250,10 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
         </div>
         <div className="col-6">
           <div className="nav-link-item" activeClassName="nav-link-item-active">
-            <Dropnew
-              to="/students"
-              title="Students"
-              list={Navlist.students}
-            />
+            <Dropnew to="/students" title="Students" list={Navlist.students} />
           </div>
           <div className="nav-link-item" activeClassName="nav-link-item-active">
-            <Dropnew
-              to="/"
-              title="Faculty & Staff"
-              list={Navlist.faculty}
-            />
+            <Dropnew to="/" title="Faculty & Staff" list={Navlist.faculty} />
           </div>
           <div className="nav-link-item" activeClassName="nav-link-item-active">
             <Dropnew
@@ -302,7 +301,11 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
       )}
 
       <div id="logowr1">
-        <Link className="logobadge" data-aos={ isInSession ? " " : "fade-down"} to="/">
+        <Link
+          className="logobadge"
+          data-aos={isInSession ? " " : "fade-down"}
+          to="/"
+        >
           <h4>श्रमोऽनवरत चेष्टाय</h4>
           <div id="logowr2">
             <img src={logo} alt="NIT PATNA" />
@@ -403,7 +406,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             </div>
             <div id="adminsidedropwrap">
               <div className="adminsidedrop">
-                {Navlist.admin.map((item,index) => (
+                {Navlist.admin.map((item, index) => (
                   <div
                     to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
                     className="mainLink"
@@ -594,7 +597,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
               <div className="departsidedrop">
                 {Navlist.students.map((item, index) => (
                   <div
-                  key={index}
+                    key={index}
                     to={`${item.url}${item.name ? `?tab=${item.name}` : ""}`}
                     className="mainLink"
                   >
@@ -605,7 +608,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
                     )}
                     {item.sub && (
                       <div id={`sub${item.url.slice(1)}`} className="mobsub">
-                        {item.sub.map((val, index)=> (
+                        {item.sub.map((val, index) => (
                           <DynamicLink
                             key={index}
                             url={val.url}
