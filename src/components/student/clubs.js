@@ -34,11 +34,12 @@ export const clubs = [
     url: "https://i.ytimg.com/vi/gAZW1JuBSOo/maxresdefault.jpg",
     Title: "Drama & Film Club NIT Patna",
     description:
-      "Drama and Film Club had always shown it's high activity 💯 in and outside  our college, taken part in Tecno-cultural Fest of many colleges and got recognised.",
+      "Drama and Film Club has always been active 💯 in and outside the college. It has been a part of Tecno-cultural Fest of several colleges and got recognised.",
     link: "https://www.facebook.com/dfc.nitp",
   },
   {
-    url: "http://www.nitp.ac.in/php/expresso/images/colored.svg",
+    // url: "http://www.nitp.ac.in/php/expresso/images/colored.svg",
+    url: "/expresso.png",
     Title: "Expresso",
     description: `"Literature and Art are the Finite Expressions of the Infinite Mind"
 
@@ -52,7 +53,7 @@ We believe in bringing out one's true creative self and building the courage to 
       "https://d1fdloi71mui9q.cloudfront.net/OhipotRVqHEDuG0i6fgE_FTsSE1w0fdiX3jI2",
     Title: "SAPTAK - Music Club NIT Patna",
     description:
-      "We are a group of music enthusiasts learning-living through different forms of music🎶🎼🎵",
+      "Saptak is a group of music enthusiasts learning-living through different forms of music🎶🎼🎵",
     link: "https://www.youtube.com/channel/UC5t5faINbKmzs_rXgyJ2ltg",
   },
   {
