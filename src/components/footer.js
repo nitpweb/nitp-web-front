@@ -152,7 +152,7 @@ const Footer = () => {
 
               <Link to="/tenders">Tenders</Link>
               <a
-                href="http://www.nitp.ac.in/uploads22/Academic_Calendar_2022_23-11.08.2022.pdf"
+                href="http://web.nitp.ac.in/uploads22/Academic_Calendar_2022_23-11.08.2022.pdf"
                 target="_blank"
               >
                 <h3>Academic Calendar</h3>
