@@ -8,7 +8,7 @@ export const clubs = [
   },
   {
     url:
-      "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_1080,q_100,w_1080/v1/gcs/platform-data-dsc/chapter_banners/Frame%201%20%281%29.png",
+      "/gdsc.jpg",
     Title: "DSC",
     description:
       "Developer Student Clubs (DSC) is a Google Developers program that intends to bring together young enthusiasts who want to acquire development skills. It's a matter of grandeur and pride that in 2020 NIT Patna has its First Developer Student Club with a core team of 20 members. It is a community where students collaborate with each other to learn and work together using several Google developer resources. The DSC organizes numerous events ranging from small meetups for working on projects to large-scale hackathons. The club is open to anyone in the university who wants to work and learn together, be it a fresher or a senior who wants to brush up his/her developing abilities.",
@@ -34,11 +34,12 @@ export const clubs = [
     url: "https://i.ytimg.com/vi/gAZW1JuBSOo/maxresdefault.jpg",
     Title: "Drama & Film Club NIT Patna",
     description:
-      "Drama and Film Club had always shown it's high activity 💯 in and outside  our college, taken part in Tecno-cultural Fest of many colleges and got recognised.",
+      "Drama and Film Club has always been active 💯 in and outside the college. It has been a part of Tecno-cultural Fest of several colleges and got recognised.",
     link: "https://www.facebook.com/dfc.nitp",
   },
   {
-    url: "http://www.nitp.ac.in/php/expresso/images/colored.svg",
+    // url: "http://www.nitp.ac.in/php/expresso/images/colored.svg",
+    url: "/expresso.png",
     Title: "Expresso",
     description: `"Literature and Art are the Finite Expressions of the Infinite Mind"
 
@@ -52,7 +53,7 @@ We believe in bringing out one's true creative self and building the courage to 
       "https://d1fdloi71mui9q.cloudfront.net/OhipotRVqHEDuG0i6fgE_FTsSE1w0fdiX3jI2",
     Title: "SAPTAK - Music Club NIT Patna",
     description:
-      "We are a group of music enthusiasts learning-living through different forms of music🎶🎼🎵",
+      "Saptak is a group of music enthusiasts learning-living through different forms of music🎶🎼🎵",
     link: "https://www.youtube.com/channel/UC5t5faINbKmzs_rXgyJ2ltg",
   },
   {
