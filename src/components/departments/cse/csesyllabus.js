@@ -87,7 +87,7 @@ const Csesyllabus = props => {
                   <td>{elem.sem_elect}</td>
                   <td>{elem.coursecode}</td>
                   <td>
-                    <a href={elem.url}>{elem.coursetitle}</a>
+                    <a href={elem.url} target="_blank">{elem.coursetitle}</a>
                   </td>
                   <td>{elem.l}</td>
                   <td>{elem.t}</td>
