@@ -26,7 +26,7 @@ export const StudentSlideStyle = styled.div`
     width: 100%;
     text-transform: capitalize;
     text-align: center;
-    font-family: "Quicksand";
+    font-family: "NotoSans";
     font-weight: bolder;
     padding-top: 1.5rem;
   }

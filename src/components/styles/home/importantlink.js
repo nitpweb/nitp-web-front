@@ -49,7 +49,7 @@ export const ImportantLinkStyle = styled.div`
             font-size: 0.7vmax;
             word-wrap: break-word;
             padding: 0 0.5rem 0 0.5rem;
-            font-family: quicksand;
+            font-family: NotoSans;
           }
         }
         h3 {

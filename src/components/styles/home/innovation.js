@@ -34,7 +34,7 @@ export const InnovationStyle = styled.div`
     color: #941b0c;
     left: 6%;
     top: 6%;
-    font-family: "Quicksand";
+    font-family: "NotoSans";
     font-weight: bold;
     font-size: 30px;
     margin: 0;
@@ -141,7 +141,7 @@ export const InnovationStyle = styled.div`
           width: 75%;
           padding: 8px;
           font-size: 11.5px;
-          font-family: "Quicksand";
+          font-family: "NotoSans";
           position: relative;
           #heading {
             font-weight: 600;
@@ -268,7 +268,7 @@ export const InnovationStyle = styled.div`
     }
   }
   #loadMore {
-    font-family: "Quicksand";
+    font-family: "NotoSans";
     position: absolute;
     color: #121212;
     bottom: 10%;
