@@ -582,7 +582,7 @@ const Academicspage = () => {
                 <div className="row rowmarl3">
                   <h1>Notice</h1>
                 </div>
-                <div className="row rowmarl3">
+                <div className="row rowmarl3 notice">
                   {notices != undefined
                     ? notices.map(notice => {
                         if (notice.title != "") {
