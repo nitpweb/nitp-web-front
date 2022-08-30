@@ -14,12 +14,14 @@ import { HomeStyle } from "./styles/home"
 const Home = () => {
   const [events, setEvents] = useState()
   const [notices, setNotices] = useState()
+  const [academics, setAcademics] = useState()
   const [news, setNews] = useState()
 
   useEffect(() => {
     let eventsUrl = `${process.env.GATSBY_API_URL}/api/events/active`
     let noticesUrl = `${process.env.GATSBY_API_URL}/api/notice/active`
     let newsUrl = `${process.env.GATSBY_API_URL}/api/news/all`
+    let academicsUrl = `${process.env.GATSBY_API_URL}/api/notice/academics`
     axios
       .get(eventsUrl)
       .then(res => {
@@ -32,6 +34,14 @@ const Home = () => {
       .get(noticesUrl)
       .then(res => {
         setNotices(res.data)
+      })
+      .catch(e => {
+        console.log(e)
+      })
+    axios
+      .get(academicsUrl)
+      .then(res => {
+        setAcademics(res.data)
       })
       .catch(e => {
         console.log(e)
@@ -86,7 +96,7 @@ const Home = () => {
           <div className="notice-row" >
             {notices &&
               notices.map(notice => {
-                if (notice.title != "" && notice.important != true) {
+                if (notice.title != "") {
                   return (
                     <Notice
                       detail={notice.title}
@@ -164,9 +174,9 @@ const Home = () => {
             </Link>
           </div>
           <div className="notice-row" >
-            {notices &&
-              notices.map(notice => {
-                if (notice.title != "" && notice.important == true) {
+            {academics &&
+              academics.map(notice => {
+                if (academics.title != "") {
                   return (
                     <Notice
                       detail={notice.title}
