@@ -1,7 +1,7 @@
 import React from "react"
 
 // const home = "http://www.nitp.ac.in"
-const home = process.env.BASE_URL+"ece/labs/"
+const home = process.env.GATSBY_BASE_URL+"ece/labs/"
 
 const btn_style = {
   backgroundColor: `red`,

@@ -10,7 +10,7 @@ const Btech = [
     t: "1",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/hs1052.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/hs1052.docx",
   },
   {
     deptt:"ECE",
@@ -21,7 +21,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/ma12.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/ma12.docx",
   },
   {
     deptt:"ECE",
@@ -33,7 +33,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/ch1.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/ch1.docx",
   },
   {
     deptt:"ECE",
@@ -45,7 +45,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/ec1.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/ec1.docx",
   },
   {
     deptt:"ECE",
@@ -57,7 +57,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/ee1.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/ee1.docx",
   },
 
   {
@@ -70,7 +70,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: process.env.BASE_URL+"ece/syllabus/chl1.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/chl1.docx",
   },
   {
     deptt:"ECE",
@@ -81,7 +81,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: process.env.BASE_URL+"ece/syllabus/ecl1.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/ecl1.docx",
   },
   {
     deptt:"ECE",
@@ -93,7 +93,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: process.env.BASE_URL+"ece/syllabus/eel1.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/eel1.docx",
   },
   {
     deptt:"ECE",
@@ -105,7 +105,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "2",
-    url: process.env.BASE_URL+"ece/syllabus/egl1.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/egl1.docx",
   },
   {
     deptt:"ECE",
@@ -128,7 +128,7 @@ const Btech = [
     t: "1",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/hs2.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/hs2.docx",
   },
   {
     deptt:"ECE",
@@ -139,7 +139,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/ma22.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/ma22.docx",
   },
   {
     deptt:"ECE",
@@ -150,7 +150,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/ph2.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/ph2.docx",
   },
   {
     deptt:"ECE",
@@ -161,7 +161,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/cs2.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/cs2.docx",
   },
   {
     deptt:"ECE",
@@ -173,7 +173,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/ec2.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/ec2.docx",
   },
   {
     deptt:"ECE",
@@ -185,7 +185,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: process.env.BASE_URL+"ece/syllabus/hsl2.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/hsl2.docx",
   },
   {
     deptt:"ECE",
@@ -197,7 +197,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: process.env.BASE_URL+"ece/syllabus/phl2.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/phl2.docx",
   },
   {
     deptt:"ECE",
@@ -210,7 +210,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: process.env.BASE_URL+"ece/syllabus/csl2.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/csl2.docx",
   },
   {
     deptt:"ECE",
@@ -223,7 +223,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: process.env.BASE_URL+"ece/syllabus/ecl2.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/ecl2.docx",
   },
   {
     deptt:"ECE",
@@ -246,7 +246,7 @@ const Btech = [
     t: "1",
     p: "0",
     credits: "4",
-    url: process.env.BASE_URL+"ece/syllabus/ce3.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/ce3.docx",
   },
   {
     deptt:"ECE",
@@ -258,7 +258,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/eft3.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/eft3.docx",
   },
   {
     deptt:"ECE",
@@ -270,7 +270,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/ssa3.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/ssa3.docx",
   },
   {
     deptt:"ECE",
@@ -282,7 +282,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/cs3.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/cs3.docx",
   },
   {
     deptt:"ECE",
@@ -294,7 +294,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/ma3.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/ma3.docx",
   },
   {
     deptt:"ECE",
@@ -306,7 +306,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/nas3.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/nas3.docx",
   },
   {
     deptt:"ECE",
@@ -318,7 +318,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: process.env.BASE_URL+"ece/syllabus/ael3.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/ael3.docx",
   },
   {
     deptt:"ECE",
@@ -330,7 +330,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: process.env.BASE_URL+"ece/syllabus/csl3.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/csl3.docx",
   },
   {
     deptt:"ECE",
@@ -342,7 +342,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: process.env.BASE_URL+"ece/syllabus/ssal3.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/ssal3.docx",
   },
   {
     deptt:"ECE",
@@ -354,7 +354,7 @@ const Btech = [
     t: "1",
     p: "0",
     credits: "4",
-    url: process.env.BASE_URL+"ece/syllabus/de4.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/de4.docx",
   },
   {
     deptt:"ECE",
@@ -366,7 +366,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/cs4.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/cs4.docx",
   },
   {
     deptt:"ECE",
@@ -378,7 +378,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/oop4.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/oop4.docx",
   },
   {
     deptt:"ECE",
@@ -390,7 +390,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/pe5.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/pe5.docx",
   },
   {
     deptt:"ECE",
@@ -413,7 +413,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/OpenE.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/OpenE.docx",
   },
   {
     deptt:"ECE",
@@ -425,7 +425,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: process.env.BASE_URL+"ece/syllabus/del4.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/del4.docx",
   },
   {
     deptt:"ECE",
@@ -437,7 +437,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: process.env.BASE_URL+"ece/syllabus/cel4.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/cel4.docx",
   },
   {
     deptt:"ECE",
@@ -449,7 +449,7 @@ const Btech = [
     t: "1",
     p: "0",
     credits: "4",
-    url: process.env.BASE_URL+"ece/syllabus/vlsi5.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/vlsi5.docx",
   },
   {
     deptt:"ECE",
@@ -461,7 +461,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/ace5.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/ace5.docx",
   },
   {
     deptt:"ECE",
@@ -473,7 +473,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/mm5.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/mm5.docx",
   },
   {
     deptt:"ECE",
@@ -485,7 +485,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/pe5.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/pe5.docx",
   },
   {
     deptt:"ECE",
@@ -497,7 +497,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/gt5.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/gt5.docx",
   },
   {
     deptt:"ECE",
@@ -509,7 +509,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: process.env.BASE_URL+"ece/syllabus/OpenE.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/OpenE.docx",
   },
   {
     deptt:"ECE",
@@ -521,7 +521,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: process.env.BASE_URL+"ece/syllabus/vlsil5.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/vlsil5.docx",
   },
   {
     deptt:"ECE",
@@ -533,7 +533,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: process.env.BASE_URL+"ece/syllabus/acl5.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/acl5.docx",
   },
   {
     deptt:"ECE",
@@ -545,7 +545,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: process.env.BASE_URL+"ece/syllabus/mml5.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/mml5.docx",
   },
   {
     deptt:"ECE",
@@ -557,7 +557,7 @@ const Btech = [
     t: "1",
     p: "0",
     credits: "4",
-    url: process.env.BASE_URL+"ece/syllabus/dsp6.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/dsp6.docx",
   },
   {
     deptt:"ECE",
@@ -569,7 +569,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/awp6.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/awp6.docx",
   },
   {
     deptt:"ECE",
@@ -581,7 +581,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/pe5.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/pe5.docx",
   },
   {
     deptt:"ECE",
@@ -593,7 +593,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/pe5.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/pe5.docx",
   },
   {
     deptt:"ECE",
@@ -614,7 +614,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/OpenE.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/OpenE.docx",
   },
   {
     deptt:"ECE",
@@ -648,7 +648,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/rf.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/rf.docx",
   },
   {
     deptt:"ECE",
@@ -672,7 +672,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/pe5.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/pe5.docx",
   },
   {
     deptt:"ECE",
@@ -684,7 +684,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/OpenE.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/OpenE.docx",
   },
   {
     deptt:"ECE",
@@ -703,7 +703,7 @@ const Btech = [
     t: "0",
     p: "3",
     credits: "1",
-    url: process.env.BASE_URL+"ece/syllabus/rfl.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/rfl.docx",
   },
   {
     deptt:"ECE",
@@ -740,7 +740,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/pe5.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/pe5.docx",
   },
   {
     deptt:"ECE",
@@ -783,7 +783,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/eipe.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/eipe.docx",
   },
   {
     deptt:"ECE",
@@ -794,7 +794,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/coape.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/coape.docx",
   },
   {
     deptt:"ECE",
@@ -805,7 +805,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/sdmpe.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/sdmpe.docx",
   },
   {
     deptt:"ECE",
@@ -816,7 +816,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/licpe.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/licpe.docx",
   },
   {
     deptt:"ECE",
@@ -827,7 +827,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/pdswpe.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/pdswpe.docx",
   },
   {
     deptt:"ECE",
@@ -838,7 +838,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/cspe.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/cspe.docx",
   },
   {
     deptt:"ECE",
@@ -909,7 +909,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/wsnpe.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/wsnpe.docx",
   },
   {
     deptt:"ECE",
@@ -930,7 +930,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/dippe.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/dippe.docx",
   },
   {
     deptt:"ECE",
@@ -971,7 +971,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/itcpe.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/itcpe.docx",
   },
   {
     deptt:"ECE",
@@ -992,7 +992,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/lptpe.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/lptpe.docx",
   },
   {
     deptt:"ECE",
@@ -1013,7 +1013,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/rfpe.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/rfpe.docx",
   },
   {
     deptt:"ECE",
@@ -1044,7 +1044,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/scpe.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/scpe.docx",
   },
   {
     deptt:"ECE",
@@ -1055,7 +1055,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/ape.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/ape.docx",
   },
   {
     deptt:"ECE",
@@ -1086,7 +1086,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/sppe.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/sppe.docx",
   },
   {
     deptt:"ECE",
@@ -1127,7 +1127,7 @@ const Btech = [
     t: "0",
     p: "0",
     credits: "3",
-    url: process.env.BASE_URL+"ece/syllabus/nedpe.docx",
+    url: process.env.GATSBY_BASE_URL+"ece/syllabus/nedpe.docx",
   },
   {
     deptt:"ECE",
