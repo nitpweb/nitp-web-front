@@ -3,7 +3,7 @@ import React from "react"
 export const IMScMathElectives = [
   {
     course_code: `MA*711`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_711.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_711.docx`,
     subject: `Probability Theory-I`,
     l: `3`,
     t: `0`,
@@ -12,7 +12,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*712`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_712.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_712.docx`,
     subject: `Algebra- II`,
     l: `3`,
     t: `0`,
@@ -21,7 +21,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*713`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_713.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_713.docx`,
     subject: `Commutative Algebra`,
     l: `3`,
     t: `0`,
@@ -30,7 +30,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*714`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_714.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_714.docx`,
     subject: `Differential Geometry`,
     l: `3`,
     t: `0`,
@@ -39,7 +39,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*715`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_715.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_715.docx`,
     subject: `Number Theory`,
     l: `3`,
     t: `0`,
@@ -48,7 +48,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*716`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_716.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_716.docx`,
     subject: `Applied Matrix Theory`,
     l: `3`,
     t: `0`,
@@ -57,7 +57,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*717`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_717.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_717.docx`,
     subject: `Approximation Theory`,
     l: `3`,
     t: `0`,
@@ -66,7 +66,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*718`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_718.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_718.docx`,
     subject: `Advanced Complex Analysis`,
     l: `3`,
     t: `0`,
@@ -75,7 +75,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*719`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_718.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_718.docx`,
     subject: `Computational Linear Algbra`,
     l: `3`,
     t: `0`,
@@ -84,7 +84,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*720`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_720.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_720.docx`,
     subject: `Fluid Dynamics`,
     l: `3`,
     t: `0`,
@@ -93,7 +93,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*721`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_721.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_721.docx`,
     subject: `Theory and Methods of Statistical Inference`,
     l: `3`,
     t: `0`,
@@ -102,7 +102,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*722`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_722.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_722.docx`,
     subject: `Classical Mechanics`,
     l: `3`,
     t: `0`,
@@ -111,7 +111,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*723`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_723.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_723.docx`,
     subject: `Stochastic Processes`,
     l: `3`,
     t: `0`,
@@ -120,7 +120,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*724`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_724.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_724.docx`,
     subject: `Optimization Techniques`,
     l: `3`,
     t: `0`,
@@ -129,7 +129,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*725`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_725.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_725.docx`,
     subject: `Partial differential Equations`,
     l: `3`,
     t: `0`,
@@ -138,7 +138,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*726`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_726.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_726.docx`,
     subject: `Statistical Simulation and Data Analysis`,
     l: `3`,
     t: `0`,
@@ -147,7 +147,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*727`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_727.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_727.docx`,
     subject: `Time Series Analysis`,
     l: `3`,
     t: `0`,
@@ -156,7 +156,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*728`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_728.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_728.docx`,
     subject: `Finite Element Method`,
     l: `3`,
     t: `0`,
@@ -165,7 +165,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*729`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_729.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_729.docx`,
     subject: `Computational Fluid Dynamics`,
     l: `3`,
     t: `0`,
@@ -174,7 +174,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*730`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_730.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_730.docx`,
     subject: `Financial Mathematics`,
     l: `3`,
     t: `0`,
@@ -183,7 +183,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*731`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_731.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_731.docx`,
     subject: `Graph Theory and Algorithms`,
     l: `3`,
     t: `0`,
@@ -192,7 +192,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*732`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_732.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_732.docx`,
     subject: `Nonlinear Dynamical Systems`,
     l: `3`,
     t: `0`,
@@ -201,7 +201,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*733`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_733.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_733.docx`,
     subject: `Neural Networks`,
     l: `3`,
     t: `0`,
@@ -210,7 +210,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*734`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_734.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_734.docx`,
     subject: `Non Linear Programming`,
     l: `3`,
     t: `0`,
@@ -219,7 +219,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*735`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_735.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_735.docx`,
     subject: `Theory of Operators`,
     l: `3`,
     t: `0`,
@@ -228,7 +228,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*736`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_736.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_736.docx`,
     subject: `Advanced Numerical Methods`,
     l: `3`,
     t: `0`,
@@ -237,7 +237,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `MA*737`,
-    url: `${process.env.BASE_URL}math/syllabus/MA_737.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/MA_737.docx`,
     subject: `Topological Vector Space`,
     l: `3`,
     t: `0`,
@@ -246,7 +246,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `OE0701`,
-    url: `${process.env.BASE_URL}math/syllabus/OE0701.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/OE0701.docx`,
     subject: `Stochastic Processes`,
     l: `3`,
     t: `0`,
@@ -255,7 +255,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `OE0702`,
-    url: `${process.env.BASE_URL}math/syllabus/OE0702.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/OE0702.docx`,
     subject: `Applied Matrix Theory`,
     l: `3`,
     t: `0`,
@@ -264,7 +264,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `OE0703`,
-    url: `${process.env.BASE_URL}math/syllabus/OE0703.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/OE0703.docx`,
     subject: `Graph Theory and Algorithms`,
     l: `3`,
     t: `0`,
@@ -273,7 +273,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `OE0704`,
-    url: `${process.env.BASE_URL}math/syllabus/OE0704.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/OE0704.docx`,
     subject: `Nonlinear Dynamical Systems`,
     l: `3`,
     t: `0`,
@@ -282,7 +282,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `OE0705`,
-    url: `${process.env.BASE_URL}math/syllabus/OE0705.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/OE0705.docx`,
     subject: `Financial Mathematics`,
     l: `3`,
     t: `0`,
@@ -291,7 +291,7 @@ export const IMScMathElectives = [
   },
   {
     course_code: `OE0706`,
-    url: `${process.env.BASE_URL}math/syllabus/OE0706.docx`,
+    url: `${process.env.GATSBY_BASE_URL}math/syllabus/OE0706.docx`,
     subject: `Finite Element Methods`,
     l: `3`,
     t: `0`,

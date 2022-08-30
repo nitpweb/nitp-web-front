@@ -1,7 +1,7 @@
 import React from "react"
 
 // const home = "https://web.nitp.ac.in/uploads/departments/cse/labs"
-const home = process.env.BASE_URL+"cse/labs"
+const home = process.env.GATSBY_BASE_URL+"cse/labs"
 export const Labs = [
   {
     content: (

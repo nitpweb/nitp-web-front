@@ -256,17 +256,17 @@ export const LabImages = [
 
   // <img src={`${home}mech_lab_pics/22.jpg`} alt="image" />,
 
-  <img src={`${process.env.BASE_URL}me/labs/DSC_0952.jpg`} alt="image" />,
+  <img src={`${process.env.GATSBY_BASE_URL}me/labs/DSC_0952.jpg`} alt="image" />,
 
-  <img src={`${process.env.BASE_URL}me/labs/DSC_0959.jpg`} alt="image" />,
+  <img src={`${process.env.GATSBY_BASE_URL}me/labs/DSC_0959.jpg`} alt="image" />,
 
-  <img src={`${process.env.BASE_URL}me/labs/DSC_0966.jpg`} alt="image" />,
+  <img src={`${process.env.GATSBY_BASE_URL}me/labs/DSC_0966.jpg`} alt="image" />,
 
-  <img src={`${process.env.BASE_URL}me/labs/DSC_0972.jpg`} alt="image" />,
+  <img src={`${process.env.GATSBY_BASE_URL}me/labs/DSC_0972.jpg`} alt="image" />,
 
-  <img src={`${process.env.BASE_URL}me/labs/DSC_0976.jpg`} alt="image" />,
+  <img src={`${process.env.GATSBY_BASE_URL}me/labs/DSC_0976.jpg`} alt="image" />,
 
-  <img src={`${process.env.BASE_URL}me/labs/DSC_0977.jpg`} alt="image" />,
+  <img src={`${process.env.GATSBY_BASE_URL}me/labs/DSC_0977.jpg`} alt="image" />,
 ]
 
 export const Achievements = [
