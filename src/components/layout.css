@@ -9,13 +9,13 @@
 }
 
 @font-face {
-  font-family: "Quicksand";
-  src: url("../assets/Quicksand.ttf");
+  font-family: "NotoSans";
+  src: url("../assets/NotoSans.ttf");
 }
 
 body {
   margin: 0;
-  font-family: "Mangal" sans-serif, "Quicksand", "Source Sans Pro";
+  font-family: "Mangal" sans-serif, "NotoSans", "Source Sans Pro";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -23,7 +23,7 @@ body {
 }
 
 code {
-  font-family: "Mangal", "Quicksand", "Source Sans Pro";
+  font-family: "Mangal", "NotoSans", "Source Sans Pro";
 }
 
 body {
@@ -101,7 +101,7 @@ main {
   display: block;
   overflow-x: auto;
   margin: auto 4vw;
-  font-family: Quicksand;
+  font-family: NotoSans;
   max-width: 90%;
 }
 

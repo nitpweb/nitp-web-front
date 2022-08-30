@@ -32,7 +32,7 @@ const StudentSlide = () => {
             padding: `1rem`,
             margin: `0px`,
             textAlign: `left`,
-            fontFamily: `Quicksand`,
+            fontFamily: `NotoSans`,
           }}
         >
           Our Clubs

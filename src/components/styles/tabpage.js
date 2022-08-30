@@ -196,7 +196,7 @@ export const TabPage = styled.div`
       }
       .syllabus-table-head > th,
       .syllabus-table-row > td {
-        font-family: "Quicksand";
+        font-family: "NotoSans";
         padding: 20px;
       }
       .syllabus-table-head > th {

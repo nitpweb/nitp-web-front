@@ -93,7 +93,7 @@ export const HomeStyle = styled.div`
     color: ${props => props.theme.primaryTextColor};
     display: flex;
     justify-content: space-between;
-    font-family: "Quicksand";
+    font-family: "NotoSans";
     font-weight: bold;
     // padding-left: 18px;
     align-items: center;
