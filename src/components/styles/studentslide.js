@@ -18,6 +18,10 @@ export const StudentSlideStyle = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
+    transition: transform .2s;
+  }
+  .club:hover{
+    transform: scale(1.2);
   }
   .club a {
     text-decoration: none;
