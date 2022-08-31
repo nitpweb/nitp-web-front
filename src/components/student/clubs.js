@@ -9,9 +9,10 @@ export const clubs = [
   {
     url:
       "/gdsc.jpg",
-    Title: "DSC",
+    Title: "GDSC",
     description:
-      "Developer Student Clubs (DSC) is a Google Developers program that intends to bring together young enthusiasts who want to acquire development skills. It's a matter of grandeur and pride that in 2020 NIT Patna has its First Developer Student Club with a core team of 20 members. It is a community where students collaborate with each other to learn and work together using several Google developer resources. The DSC organizes numerous events ranging from small meetups for working on projects to large-scale hackathons. The club is open to anyone in the university who wants to work and learn together, be it a fresher or a senior who wants to brush up his/her developing abilities.",
+      // "Developer Student Clubs (DSC) is a Google Developers program that intends to bring together young enthusiasts who want to acquire development skills. It's a matter of grandeur and pride that in 2020 NIT Patna has its First Developer Student Club with a core team of 20 members. It is a community where students collaborate with each other to learn and work together using several Google developer resources. The DSC organizes numerous events ranging from small meetups for working on projects to large-scale hackathons. The club is open to anyone in the university who wants to work and learn together, be it a fresher or a senior who wants to brush up his/her developing abilities.",
+      "Google Developer Student Clubs NIT Patna is a community of NIT Patna undergraduate and graduates interested in Google developer technologies under the guide of Mr. Suyel Namasudra. GDSC provides an opportunity for students to enhance their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community. The GDSC organizes numerous events ranging from small meetups for working on projects to large-scale hackathons. The club is open to anyone in the university who wants to work and learn together, be it a fresher or a senior who wants to brush up his/her developing abilities.",
     link: "#",
   },
   {
@@ -24,7 +25,7 @@ export const clubs = [
   },
   {
     url:
-      "https://media-exp1.licdn.com/dms/image/C510BAQF7oBRmY3nP-Q/company-logo_200_200/0/1587022038940?e=2159024400&v=beta&t=DhomKeI4bLF5_J0Xj2hSqzqACq8nWqhK8lFLOsrWKC4",
+      "/ieee.png",
     Title: "IEEE",
     description:
       "IEEE Student Branch, NIT Patna was established with an enthusiastic initiative of 13 students of NIT Patna enrolled in B.Tech programme of Electrical Engineering and Electronics and Communication Engineering under the leadership of Prof Kumar Abhishek, Assistant professor of Computer Science and Engineering. In this whole path our mentors were the three great visionaries of our college Dr Asok De (Director NIT Patna), Dr D.K. Singh (HOD, Electronics and Communication Engineering), and Dr M.P Singh (HOD, Computer Science and Engineering). Prof. Kumar Abhishek became the first Branch Counsellor of the Student Branch and Shruti Neha became the first Student Branch Chair. IEEE Student Branch, NITP was established with a vision of making students aware of new developments in various engineering fields and to provide support in implementing new innovative ideas of future engineers which can give a new shape to this world.",

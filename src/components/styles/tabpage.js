@@ -76,6 +76,7 @@ export const TabPage = styled.div`
         color: white;
         height: 30px !important;
         width: max-content !important;
+        white-space: nowrap;
         font-family: "Source Sans Pro";
         border: 1px solid ${props => props.theme.primaryColor};
         font-size: ${props => props.theme.font * 1.1}rem;
