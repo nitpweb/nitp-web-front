@@ -284,7 +284,8 @@ const Academics = [
         data: "Notices",
       },
       {
-        url: "http://www.nitp.ac.in/uploads21/Academic_calendar_2021_2022.pdf",
+        url:
+          "https://web.nitp.ac.in/uploads22/Academic_Calendar_2022_23-11.08.2022.pdf",
         title: "Academic Calendar",
         data: "",
       },
@@ -516,7 +517,8 @@ const Students = [
         data: "concession",
       },
       {
-        url: "http://www.nitp.ac.in/uploads21/Academic_calendar_2021_2022.pdf",
+        url:
+          "https://web.nitp.ac.in/uploads22/Academic_Calendar_2022_23-11.08.2022.pdff",
         title: "Academic Calendar",
       },
     ],
