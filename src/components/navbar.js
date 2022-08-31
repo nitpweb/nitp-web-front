@@ -120,7 +120,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             {` | `}
           </span> */}
           <span style={{ marginLeft: `8px` }}>
-            <a href="http://www.old.nitp.ac.in">Old Website</a>
+            <a href="http://old.nitp.ac.in">Old Website</a>
           </span>
         </div>
         <div className="col-6 end">
