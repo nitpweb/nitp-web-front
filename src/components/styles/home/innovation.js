@@ -30,7 +30,7 @@ export const InnovationStyle = styled.div`
   margin-bottom: 2vh;
   #head {
     position: absolute;
-    color: #941b0c;
+    color: ${props => props.theme.primaryTextColor};
     left: 6%;
     top: 6%;
     font-family: "Quicksand";
