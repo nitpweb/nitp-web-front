@@ -25,7 +25,7 @@ const Innovationpage = () => {
     return k
   }
   function Card(val) {
-    const date = new Date(val.openDate)
+    const date = new Date(val.timestamp)
     const day = date.getDate()
     const month = date.getMonth() + 1
     const year = date.getFullYear()

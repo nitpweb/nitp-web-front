@@ -98,7 +98,7 @@ const Dephomepage = ({
                         return (
                           <Notice
                             detail={notice.title}
-                            time={notice.openDate}
+                            time={notice.timestamp}
                             attachments={notice.attachments}
                             key={notice.id}
                             imp={notice.important}

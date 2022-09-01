@@ -48,7 +48,7 @@ const ReadInn = ({ id }) => {
             <div className="base">
               <div className="author">
                 {/* <p>Autor : {data.author}</p> */}
-                <p>Date : {new Date(data.openDate).toLocaleDateString()}</p>
+                <p>Date : {new Date(data.timestamp).toLocaleDateString()}</p>
               </div>
               <div className="download">
                 {data.attachments &&
