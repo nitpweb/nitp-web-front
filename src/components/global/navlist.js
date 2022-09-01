@@ -399,7 +399,7 @@ const Faculty = [
       },
       {
         url: "https://admin.nitp.ac.in/",
-        title: "Faculty Login",
+        title: "Admin Login",
         data: "",
       },
       {
