@@ -96,7 +96,26 @@ const Home = () => {
           <div className="notice-row">
             {notices &&
               notices.map(notice => {
-                if (notice.title != "") {
+                if (notice.title != "" && notice.important == 1) {
+                  return (
+                    <Notice
+                      detail={notice.title}
+                      time={notice.openDate}
+                      key={notice.id}
+                      attachments={notice.attachments}
+                      imp={notice.important}
+                      link={
+                        notice.notice_link && JSON.parse(notice.notice_link).url
+                          ? JSON.parse(notice.notice_link).url
+                          : ""
+                      }
+                    />
+                  )
+                }
+              })}
+            {notices &&
+              notices.map(notice => {
+                if (notice.title != "" && notice.important != 1) {
                   return (
                     <Notice
                       detail={notice.title}
