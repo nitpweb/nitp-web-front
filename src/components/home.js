@@ -100,7 +100,7 @@ const Home = () => {
                   return (
                     <Notice
                       detail={notice.title}
-                      time={notice.openDate}
+                      time={notice.timestamp}
                       key={notice.id}
                       attachments={notice.attachments}
                       imp={notice.important}
