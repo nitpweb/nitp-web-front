@@ -51,7 +51,7 @@ const ReadNews = ({ id }) => {
                 <p>venue : {data.venue}</p>
               </div>
               <div className="download">
-                <p>Date : {new Date(data.openDate).toLocaleDateString()}</p>
+                <p>Date : {new Date(data.timestamp).toLocaleDateString()}</p>
                 {data.attachments &&
                   data.attachments.map(item => (
                     <a className="notdown" href={item.url} target="blank">

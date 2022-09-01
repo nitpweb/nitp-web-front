@@ -244,7 +244,7 @@ const Facultyprofile = ({ url }) => {
             <div className="faculty-details-row">
               <h1>Profile</h1>
               <div className="fac-card" data-aos="fade-up">
-                <h3>Research Interest:-</h3>
+                <h3>{data.profile.department=="Officers" ? "Responsibilities:-" : "Research Interest:-"}</h3>
                 <p>{data.profile.research_interest}</p>
                 <div style={{ display: "flex" }} className="row">
                   <div className="col-6">
