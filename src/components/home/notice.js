@@ -39,7 +39,7 @@ const Notice = props => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {elem.caption.length>50 ? elem.caption.substring(0, 50) + "..." : elem.caption}
+                      {elem.caption.length>256 ? elem.caption.substring(0, 256) + "..." : elem.caption}
                     </a>
                   </ul>
                 )
