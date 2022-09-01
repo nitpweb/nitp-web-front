@@ -30,6 +30,7 @@ export const NoticeStyle = styled.div`
       margin-left: 20px;
       max-width: 70%;
       flex-wrap: wrap;
+      justify-content: flex-end;
       img {
         margin: 3px 8px 3px auto;
         height: 14px;
