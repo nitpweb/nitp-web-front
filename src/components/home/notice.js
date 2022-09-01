@@ -31,7 +31,7 @@ const Notice = props => {
             {props.attachments.map(elem => {
               if (elem.url)
                 return (
-                  <li>
+                  <ul>
                     <img id="notdownimg" src={downimg} alt="c" />
                     <a
                       className="notdown"
@@ -41,7 +41,7 @@ const Notice = props => {
                     >
                       {elem.caption.length>50 ? elem.caption.substring(0, 50) + "..." : elem.caption}
                     </a>
-                  </li>
+                  </ul>
                 )
             })}
           <div>
