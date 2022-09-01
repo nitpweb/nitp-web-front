@@ -81,8 +81,27 @@ const Facultypage = ({ title, url, dept }) => {
             </div>
           </div>
           <div className="row facultyrow">
+          {data &&
+              data.map(faculty => {
+                if(faculty.designation=="Registrar"){
+                  return <Facultycard
+                    name="Dr. Asit Narayan"
+                    // subtitle={department ? faculty.department : faculty.email}
+                    subtitle={null}
+                    email="asit.narayan@nitp.ac.in"
+                    // extn={faculty.ext_no}
+                    extn="0"
+                    id="asit.narayan@nitp.ac.in"
+                    research=""
+                    image={null}
+                    desg="Registrar"/>
+             }})
+            }
             {data &&
               data.map(faculty => {
+                if(faculty.designation=="Registrar"){
+                  return 
+                }
                 return (
                   <Facultycard
                     name={faculty.name}
