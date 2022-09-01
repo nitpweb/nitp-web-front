@@ -589,7 +589,7 @@ const Academicspage = () => {
                           return (
                             <Notice
                               detail={notice.title}
-                              time={notice.openDate}
+                              time={notice.timestamp}
                               attachments={notice.attachments}
                             />
                           )

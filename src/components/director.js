@@ -35,8 +35,8 @@ const Directorpage = () => {
           <div
             className="faculty-img-row"
             style={{ 
-              position: `absolute`, 
-              left: `${(window.location.pathname === "/administration/") || (window.location.pathname ==="/administration") ? "15%" : "2%"}` }}
+              position: `relative`, 
+              left: `${(window.location.pathname === "/administration/") || (window.location.pathname ==="/administration") ? "3%" : "2%"}` }}
           >
             <div className="faculty-img-wrap">
               <img
@@ -177,8 +177,8 @@ const Directorpage = () => {
                 our passed out graduates are serving the Indian Industry and
                 PSUs with distinction. I wish the Institute all the success.
               </p>
-              <h4>Prof. Pradip Kumar Jain Director,</h4>
-              <h4>NIT Patna</h4>
+              <h4>Prof. Pradip Kumar Jain,</h4>
+              <h4>Director NIT Patna</h4>
             </div>
           </div>
         </FacultyProfile>
