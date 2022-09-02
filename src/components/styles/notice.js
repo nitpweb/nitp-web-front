@@ -73,7 +73,7 @@ export const NoticeStyle = styled.div`
       }
     }
   }
-  .notet {
+  ${'' /* .notet {
     position: relative;
     bottom: 0;
     margin: 4px 0 0 0;
@@ -83,5 +83,5 @@ export const NoticeStyle = styled.div`
     text-align: right;
     font-family: "Source Sans Pro";
     line-height: 0;
-  }
+  } */}
 `
