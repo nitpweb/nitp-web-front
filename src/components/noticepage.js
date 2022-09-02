@@ -27,7 +27,26 @@ const Notice = ({ type, title }) => {
             {notices &&
               notices.map(notice => {
                 const newtime = new Date().getTime()
-                if (notice.title != "") {
+                if (notice.title != "" && notice.important == 1) {
+                  return (
+                    <Noticecard
+                      detail={notice.title}
+                      time={notice.timestamp}
+                      key={notice.id}
+                      attachments={notice.attachments}
+                      imp={notice.important}
+                      link={
+                        notice.notice_link && JSON.parse(notice.notice_link).url
+                          ? JSON.parse(notice.notice_link).url
+                          : ""
+                      }
+                    />
+                  )
+                }
+              })}
+              {notices &&
+              notices.map(notice => {
+                if (notice.title != "" && notice.important != 1) {
                   return (
                     <Noticecard
                       detail={notice.title}
