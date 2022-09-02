@@ -31,7 +31,7 @@ const Notice = ({ type, title }) => {
                   return (
                     <Noticecard
                       detail={notice.title}
-                      time={notice.openDate}
+                      time={notice.timestamp}
                       key={notice.id}
                       attachments={notice.attachments}
                       imp={notice.important}

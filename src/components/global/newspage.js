@@ -38,7 +38,7 @@ class Newspage extends React.Component {
           {this.state.news.map(news => {
             const newtime = new Date().getTime()
 
-            let d = Math.round((newtime - news.openDate) / 3600000)
+            let d = Math.round((newtime - news.timestamp) / 3600000)
             if (d > 24) {
               d = `${Math.round(d / 24)} days ago`
             } else if (d < 1) {
@@ -76,7 +76,7 @@ class Newspage extends React.Component {
           {this.state.news.map(news => {
             const newtime = new Date().getTime()
 
-            var d = Math.round((newtime - news.openDate) / 3600000)
+            var d = Math.round((newtime - news.timestamp) / 3600000)
             if (d > 24) {
               d = `${Math.round(d / 24)} days ago`
             } else if (d < 1) {
