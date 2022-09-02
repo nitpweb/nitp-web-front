@@ -100,7 +100,7 @@ const Home = () => {
                   return (
                     <Notice
                       detail={notice.title}
-                      time={notice.openDate}
+                      time={notice.timestamp}
                       key={notice.id}
                       attachments={notice.attachments}
                       imp={notice.important}
@@ -119,7 +119,7 @@ const Home = () => {
                   return (
                     <Notice
                       detail={notice.title}
-                      time={notice.openDate}
+                      time={notice.timestamp}
                       key={notice.id}
                       attachments={notice.attachments}
                       imp={notice.important}
@@ -148,7 +148,7 @@ const Home = () => {
           <div className="event-row">
             {events &&
               events.map((event, index) => {
-                const date = new Date(event.openDate)
+                const date = new Date(event.timestamp)
                 const day = date.getDate()
                 const month = date.getMonth() + 1
                 const year = date.getFullYear()
@@ -203,7 +203,7 @@ const Home = () => {
                   return (
                     <Notice
                       detail={notice.title}
-                      time={notice.openDate}
+                      time={notice.timestamp}
                       key={notice.id}
                       attachments={notice.attachments}
                       imp={notice.important}
@@ -253,9 +253,9 @@ const Home = () => {
 
                 const newtime = new Date().getTime()
 
-                var d = Math.round((newtime - news.openDate) / 3600000)
+                var d = Math.round((newtime - news.timestamp) / 3600000)
                 if (d > 24 * 7) {
-                  d = new Date(news.openDate)
+                  d = new Date(news.timestamp)
                   d = d.formatDDMMYYYY()
                 } else if (d > 24) {
                   d = `${Math.round(d / 24)} days ago`

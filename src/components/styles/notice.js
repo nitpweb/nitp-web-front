@@ -22,7 +22,6 @@ export const NoticeStyle = styled.div`
     height: 16px;
   }
   #notdate {
-    display: flex;
     justify-content: space-between;
     div {
       display: flex;
@@ -50,6 +49,19 @@ export const NoticeStyle = styled.div`
     }
     
   }
+
+  .notdown {
+        text-decoration: none;
+        position: relative;
+        bottom: 0;
+        /* margin-bottom: 5px; */
+        color: ${props => props.theme.primaryColor};
+        font-size: 13px;
+        font-weight: 600;
+        text-align: right;
+        font-family: "Source Sans Pro";
+        line-height: 0;
+      }
 
   @media (max-width: 768px) {
     .noticecard {

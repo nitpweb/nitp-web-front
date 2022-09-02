@@ -74,14 +74,12 @@ export const FacultyCard = styled.div`
   }
  h3{
    color:${props => props.theme.primaryTextColor};
-   line-height: 0.1;
    margin-bottom:5px;
    margin-top: 30px;
    font-size: inherit;
  }
   h4 {
     color: ${props => props.theme.textColor};
-    line-height: 0.1;
 
     text-align: center;
   }
