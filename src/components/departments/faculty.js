@@ -94,7 +94,9 @@ const Facultypage = ({ title, url, dept }) => {
                     id="asit.narayan@nitp.ac.in"
                     research=""
                     image={null}
-                    desg="Registrar"/>
+                    desg="Registrar"
+                    dept="Officers"
+                    />
              }})
             }
             {data &&
@@ -114,6 +116,7 @@ const Facultypage = ({ title, url, dept }) => {
                     research={faculty.research_interest}
                     image={faculty.image}
                     desg={faculty.designation}
+                    dept={faculty.department}
                   />
                 )
               })}
