@@ -44,7 +44,7 @@ export const NoticeStyle = styled.div`
         font-weight: 600;
         text-align: right;
         font-family: "Source Sans Pro";
-        line-height: 0;
+        line-height: 1;
       }
     }
     
@@ -60,7 +60,7 @@ export const NoticeStyle = styled.div`
         font-weight: 600;
         text-align: right;
         font-family: "Source Sans Pro";
-        line-height: 0;
+        line-height: 1;
       }
 
   @media (max-width: 768px) {

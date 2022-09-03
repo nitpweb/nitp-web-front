@@ -57,7 +57,7 @@ export const ImportantLinkStyle = styled.div`
           color: ${props => props.theme.primaryColor};
           font-family: Source Sans Pro;
           font-weight: bold;
-          line-height: 0;
+          line-height: 1;
           /* margin: 0px; */
         }
       }
