@@ -27,7 +27,7 @@ export const EventCardStyle = styled.div`
         position: relative;
         color: #fff;
         font-size: 36px;
-        line-height: 0;
+        line-height: 1;
         word-wrap: break-word;
         font-family: "Source Sans Pro";
         font-weight: bold;
