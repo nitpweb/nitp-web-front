@@ -37,7 +37,7 @@ const Facultycard = props => {
           </div>
         </div>
         <Link className="faculty2" to={`/profile?id=${props.email}`}>
-          {research && <p style={{fontWeight:`bold`}}>Research Interests:-</p>}
+          {research && <p style={{fontWeight:`bold`}}>{props.dept=="Officers" ? "Responsibilities:-" : "Research Interest:-"}</p>}
           {research && research.map(item => <p>{item}</p>)}
           {/* <p>
             <Link >View Profile</Link>
