@@ -143,7 +143,7 @@ const Footer = () => {
               >
                 <h3>Anti Ragging</h3>
               </a>
-              <a href="http://www.nitp.ac.in/ict/index.php" target="_blank">
+              <a href="https://web.nitp.ac.in/ict/" target="_blank">
                 <h3>ICT Academy</h3>
               </a>
               <a href="/students?tab=nss">
