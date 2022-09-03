@@ -82,7 +82,7 @@ const Home = () => {
       </div>
       <Importantlink />
       <div id="notice-event">
-        <div id="notice">
+      {notices&&<div id="notice">
           <div
             // data-aos="zoom-in"
             // data-aos-duration="200"
@@ -133,8 +133,8 @@ const Home = () => {
                 }
               })}
           </div>
-        </div>
-        <div id="events">
+        </div>}
+        {events&&<div id="events">
           <div
             // data-aos="zoom-in"
             // data-aos-duration="200"
@@ -184,8 +184,9 @@ const Home = () => {
                 }
               })}
           </div>
-        </div>
-        <div id="notice">
+        </div>}
+
+       {academics&& <div id="notice">
           <div
             // data-aos="zoom-in"
             // data-aos-duration="200"
@@ -217,7 +218,7 @@ const Home = () => {
                 }
               })}
           </div>
-        </div>
+        </div>}
       </div>
       <Innovation />
       <div id="news">
