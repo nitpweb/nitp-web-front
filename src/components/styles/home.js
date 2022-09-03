@@ -53,7 +53,7 @@ export const HomeStyle = styled.div`
     z-index: 1;
     justify-content: flex-start;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: scroll;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE 10+ */
     
@@ -74,7 +74,7 @@ export const HomeStyle = styled.div`
     border-radius: 3px;
     justify-content: flex-start;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: scroll;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE 10+ */
   }
