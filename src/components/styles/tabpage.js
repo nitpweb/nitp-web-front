@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const TabPage = styled.div`
-  text-align: justify;
   width: 100vw;
   height: 85vh;
   position: relative;
@@ -21,6 +20,7 @@ export const TabPage = styled.div`
     font-weight: 500;
     font-family: "Source Sans Pro";
     font-size: ${props => props.theme.font * 1.3}rem;
+    text-align: justify;
   }
   h1 {
     color: ${props => props.theme.primaryColor};
@@ -94,7 +94,7 @@ export const TabPage = styled.div`
       h3 {
         color: ${props => props.theme.primaryColor} !important;
         font-size: ${props => props.theme.font * 1.2}rem;
-        line-height: 0%;
+        line-height: 1;
       }
       a {
         color: ${props => props.theme.textColor};
@@ -219,7 +219,7 @@ export const TabPage = styled.div`
 
         h1 {
           color: ${props => props.theme.primaryColor};
-          line-height: 0%;
+          line-height: 1;
           padding-bottom: 1.2rem;
         }
         p {
