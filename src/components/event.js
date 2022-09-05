@@ -30,11 +30,11 @@ class Event extends React.Component {
             <h1>Events</h1>
             <div className="fac-card" data-aos="fade-up">
               {this.state.events.map(event => {
-                const date = new Date(event.timestamp)
+                const date = new Date(event.eventStartDate)
                 const day = date.getDate()
                 const month = date.getMonth() + 1
                 const year = date.getFullYear()
-                const cdate = new Date(event.closeDate)
+                const cdate = new Date(event.eventEndDate)
                 const cday = cdate.getDate()
                 const cmonth = cdate.getMonth() + 1
                 const cyear = cdate.getFullYear()
