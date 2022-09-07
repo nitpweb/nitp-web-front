@@ -136,7 +136,7 @@ const IDC = [
     type: "Chairman",
   },
   {
-    name: "Prof. Vivekanand Singh",
+    name: "Dr. A. R. Quaff",
     designation: "Director's Nominee",
     type: "Member",
   },
@@ -152,12 +152,12 @@ const IDC = [
     type: "Member",
   },
   {
-    name: "Dr. T. Roshni",
+    name: "Dr. Mala De",
     designation: "One faculty nominated by the Senate",
     type: "Member",
   },
   {
-    name: "",
+    name: "Mr. Anurag Pandey, Roll No. 1906030, CSE   Ms. Surapaneni Vipanchika, Roll No. - 1901111, MED",
     designation: "Students Representative nominated by Dean (Student Welfare)",
     type: "Member",
   },
