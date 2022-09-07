@@ -136,7 +136,7 @@ const IDC = [
     type: "Chairman",
   },
   {
-    name: "Dr. A. R. Quaff",
+    name: "Dr. A. R. Quaff",
     designation: "Director's Nominee",
     type: "Member",
   },
@@ -152,7 +152,7 @@ const IDC = [
     type: "Member",
   },
   {
-    name: "Dr. Mala De",
+    name: "Dr. Mala De",
     designation: "One faculty nominated by the Senate",
     type: "Member",
   },
@@ -162,7 +162,7 @@ const IDC = [
     type: "Member",
   },
   {
-    name: "Dr. Asit Narayan",
+    name: "",
     designation: "Registrar, NIT Patna",
     type: "Member Secretary",
   },
