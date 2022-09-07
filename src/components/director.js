@@ -57,6 +57,20 @@ const Directorpage = () => {
             </a>
             <h2>{data.profile.name}</h2>
             <h3>Director</h3>
+
+            {data.profile.cv && (
+                <div>
+                  <a href={data.profile.cv} target="blank">
+                    <button
+                      className="cv-btn"
+                      color="primary"
+                      variant="contained"
+                    >
+                      View Profile
+                    </button>
+                  </a>
+                </div>
+              )}
           </div>
 
           <div className="faculty-details-row">
@@ -106,7 +120,7 @@ const Directorpage = () => {
             <h1>About</h1>
             <div className="fac-card" data-aos="">
               <p id="dir" style={{ textAlign: "justify" }}>
-                Prof. Pradip K. Jain has joined as a Lecturer of Electronics
+                Prof. Pradip K. Jain joined as a Lecturer of Electronics
                 Engineering at Institute of Technology, Banaras Hindu University
                 in 1981, and became Professor in the Year 2001. He has made
                 significant contribution in the areas of analysis, modeling and
