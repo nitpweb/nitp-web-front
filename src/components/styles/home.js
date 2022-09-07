@@ -75,7 +75,7 @@ export const HomeStyle = styled.div`
     border-radius: 3px;
     justify-content: flex-start;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE 10+ */
   }
