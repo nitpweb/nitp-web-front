@@ -119,12 +119,9 @@ const Footer = () => {
               <Link to="/terms">
                 <h3>Terms of Use</h3>
               </Link>
-              <a
-                href="http://www.nitp.ac.in/downloads/annual_report/Annual%20Report%20Hindi.pdf"
-                target="_blank"
-              >
+              <Link to="/annualreports">
                 <h3>Annual Reports</h3>
-              </a>
+              </Link>
               <Link to="/sitemap">
                 <h3>Site Map</h3>
               </Link>
