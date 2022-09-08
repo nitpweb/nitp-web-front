@@ -1142,6 +1142,88 @@ const Magazine = [
     ],
   },
 ]
+const AnnualReports = [
+  {
+    heading: "Annual Reports",
+    data: [
+      {
+        para:
+          "Annual Report 2019-20(Hindi Version)",
+        link: "http://old.nitp.ac.in/downloads/NIT%20Patna_AR%20Hindi%2019-20-updated.pdf",
+      },
+      {
+        para:
+          "Annual Report 2019-20(English Version)",
+        link: "http://old.nitp.ac.in/downloads/Annual%20Report%20AR%20%20English%20NIT%20Patna%2019-20-20.04.2021.pdf",
+      },
+      {
+        para:
+          "Annual Report 2018-19(Hindi Version)",
+        link: "http://old.nitp.ac.in/downloads/annual_report/Annual%20Report%20Hindi.pdf",
+      },
+      {
+        para:
+          "Annual Report 2018-19(English Version)",
+        link: "http://old.nitp.ac.in/downloads/annual_report/Annual%20Report.pdf",
+      },
+      {
+        para:
+          "Annual Report 2017-18",
+        link: "http://old.nitp.ac.in/downloads/annual_report/AR_17-18.pdfhttp://old.nitp.ac.in/downloads/annual_report/AR_16-17.pdf",
+      },
+      {
+        para:
+          "Annual Report 2016-17",
+        link: "http://old.nitp.ac.in/downloads/annual_report/AR_16-17.pdf",
+      },
+      {
+        para:
+          "Annual Report 2015-16",
+        link: "http://old.nitp.ac.in/downloads/annual_report/AR_15-16.pdf",
+      },
+      {
+        para:
+          "Annual Report 2014-15",
+        link: "http://old.nitp.ac.in/downloads/annual_report/AR_14-15.pdf",
+      },
+      {
+        para:
+          "Annual Report 2013-14",
+        link: "http://old.nitp.ac.in/downloads/annual_report/AR_13-14.pdf",
+      },
+      {
+        para:
+          "Annual Report 2012-13",
+        link: "http://old.nitp.ac.in/downloads/annual_report/AR_12-13.pdf",
+      },
+      {
+        para:
+          "Annual Report 2011-12",
+        link: "http://old.nitp.ac.in/downloads/annual_report/AR_11-12.pdf",
+      },
+      {
+        para:
+          "Annual Report 2010-11",
+        link: "http://old.nitp.ac.in/downloads/annual_report/AR_10-11.pdf",
+      },
+      {
+        para:
+          "Annual Report 2009-10",
+        link: "http://old.nitp.ac.in/downloads/annual_report/AR_09-10.pdf",
+      },
+      {
+        para:
+          "Annual Report 2008-09",
+        link: "http://old.nitp.ac.in/downloads/annual_report/AR_08-09.pdf",
+      },
+      {
+        para:
+          "Annual Report 2007-08",
+        link: "http://old.nitp.ac.in/downloads/annual_report/AR_07-08.pdf",
+      },
+    ],
+  },
+]
 
 const acadData = {
   datad: Datad,
@@ -1166,5 +1248,6 @@ const acadData = {
   centreOfExcellence: CentreOfExcellence,
   convocation: Convocation,
   magazine: Magazine,
+  annualreports:AnnualReports,
 }
 export default acadData

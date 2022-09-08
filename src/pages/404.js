@@ -5,11 +5,10 @@ import SEO from "../components/seo"
 import { navigate } from "gatsby"
 
 const NotFoundPage = () => {
-  const [second, setSecond] = useState(5);
-  var total = 5, i=0;
+  const [second, setSecond] = useState(6);
   function manageTime() {
-    setSecond(total-i)
-    if (++i < 6) {
+    setSecond((second)=> second-1)
+    if (second >= 0) {
       setTimeout(manageTime, 1000)
     }
   }
@@ -17,9 +16,9 @@ const NotFoundPage = () => {
   useEffect(() => {
     setTimeout(manageTime, 0)
 
-    setInterval(()=>{
-      navigate("/");
-    }, 5000);
+    setTimeout(()=>{
+      navigate("/")
+    }, 5000)
   }, [])
 
   return (
