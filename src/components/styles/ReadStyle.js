@@ -25,20 +25,10 @@ export const ReadStyle = styled.div`
       display: none;
     }
     .imgDiv {
-      margin: 1rem;
-      display: grid;
-      place-items: center;
-      width: 65vmax;
-      height: 57vmax;
-      overflow: hidden;
-      border-radius: 10px;
-      .img {
+        width: 100%;
         min-width: 100%;
-        min-height: 100%;
-        width: auto;
         height: auto;
         object-fit: contain;
-      }
     }
     .info {
       width: 90%;

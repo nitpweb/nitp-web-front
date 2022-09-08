@@ -5,18 +5,18 @@ import acadData from "../components/academics/acadData"
 import { TabPage } from "../components/styles/tabpage"
 
 
-const Magazine = () => (
+const AnnualReports = () => (
   <Layout>
-    <SEO title="Magazine of NIT Patna" />
+    <SEO title="Annual Reports" />
     <TabPage>
     <div className="mainDiv">
-              <div className="layoutrow layoutrow1 rowmarl3" id="magazine">
+              <div className="layoutrow layoutrow1 rowmarl3" id="annualreports">
                 
                 <div>
                   <div className="row">
-                    <h1 style={{ marginBottom: `1rem` }}>Magazine of NIT Patna</h1>
+                    <h1 style={{ marginBottom: `1rem` }}>Annual Reports</h1>
                   </div>
-                  {acadData.magazine.map(e => (
+                  {acadData.annualreports.map(e => (
                     <div className="row rowmarr3 digital">
                       <div>
                         <h3>{e.title}</h3>
@@ -43,4 +43,4 @@ const Magazine = () => (
   </Layout>
 )
 
-export default Magazine
+export default AnnualReports
