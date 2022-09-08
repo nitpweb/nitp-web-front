@@ -32,6 +32,10 @@ const Notice = ({ type, title }) => {
                     <Noticecard
                       detail={notice.title}
                       time={notice.timestamp}
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
                       key={notice.id}
                       attachments={notice.attachments}
                       imp={notice.important}
@@ -51,6 +55,14 @@ const Notice = ({ type, title }) => {
                     <Noticecard
                       detail={notice.title}
                       time={notice.timestamp}
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
                       key={notice.id}
                       attachments={notice.attachments}
                       imp={notice.important}
