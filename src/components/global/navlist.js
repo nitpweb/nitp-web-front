@@ -402,11 +402,6 @@ const Faculty = [
         title: "Admin Login",
         data: "",
       },
-      {
-        url: "/facilities",
-        title: "Facilities",
-        data: "",
-      },
     ],
   },
 ]
