@@ -2,6 +2,7 @@ import React,{useEffect, useState} from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { navigate } from "gatsby"
 
 const NotFoundPage = () => {
   const [second, setSecond] = useState(6);
@@ -15,9 +16,9 @@ const NotFoundPage = () => {
   useEffect(() => {
     setTimeout(manageTime, 0)
 
-    setInterval(()=>{
-      window.location.href="/";
-    }, 5000);
+    setTimeout(()=>{
+      navigate("/")
+    }, 5000)
   }, [])
 
   return (
