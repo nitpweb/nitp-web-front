@@ -4,7 +4,7 @@ export const NoticeStyle = styled.div`
   width: auto;
   height: fit-content;
   padding: 5px 15px 5px 15px;
-  background: ${props => props.theme.backgroundTerColor};
+  ${'' /* background: ${props => props.theme.backgroundTerColor}; */}
   margin-top: 10px;
   .noticecarddetail {
     text-align: justify;
