@@ -31,7 +31,23 @@ const Notice = props => {
             {props.attachments.map(elem => {
               if (elem.url)
                 return (
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
                   <ul>
+=======
+                  <li>
+>>>>>>> Stashed changes
+=======
+                  <li>
+>>>>>>> Stashed changes
+=======
+                  <li>
+>>>>>>> Stashed changes
+=======
+                  <li>
+>>>>>>> Stashed changes
                     <img id="notdownimg" src={downimg} alt="c" />
                     <a
                       className="notdown"
@@ -39,12 +55,30 @@ const Notice = props => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
                       {elem.caption.length>256 ? elem.caption.substring(0, 256) + "..." : elem.caption}
                     </a>
                   </ul>
                 )
             })}
           {/* <div>
+=======
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+                      {elem.caption.length>50 ? elem.caption.substring(0, 50) + "..." : elem.caption}
+                    </a>
+                  </li>
+                )
+            })}
+          <div>
+>>>>>>> Stashed changes
             <p className="notet">{d}</p>
           </div> */}
         </div>

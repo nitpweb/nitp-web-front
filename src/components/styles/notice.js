@@ -60,7 +60,23 @@ export const NoticeStyle = styled.div`
         font-weight: 600;
         text-align: right;
         font-family: "Source Sans Pro";
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
         line-height: 1;
+=======
+        line-height: 0;
+>>>>>>> Stashed changes
+=======
+        line-height: 0;
+>>>>>>> Stashed changes
+=======
+        line-height: 0;
+>>>>>>> Stashed changes
+=======
+        line-height: 0;
+>>>>>>> Stashed changes
       }
 
   @media (max-width: 768px) {

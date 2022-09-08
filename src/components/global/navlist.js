@@ -593,8 +593,13 @@ const Facilities = [
       },
       {
         url: "/facilities",
-        title: "Electric Maintainence Unit",
+        title: "EMU",
         data: "emu",
+      },
+      {
+        url: "/facilities",
+        title: "ESU",
+        data: "esu",
       },
     ],
   },

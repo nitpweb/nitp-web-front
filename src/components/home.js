@@ -101,6 +101,10 @@ const Home = () => {
                     <Notice
                       detail={notice.title}
                       time={notice.timestamp}
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
                       key={notice.id}
                       attachments={notice.attachments}
                       imp={notice.important}
@@ -120,6 +124,14 @@ const Home = () => {
                     <Notice
                       detail={notice.title}
                       time={notice.timestamp}
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
                       key={notice.id}
                       attachments={notice.attachments}
                       imp={notice.important}
@@ -148,7 +160,23 @@ const Home = () => {
           <div className="event-row">
             {events &&
               events.map((event, index) => {
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 const date = new Date(event.eventStartDate)
+=======
+                const date = new Date(event.timestamp)
+>>>>>>> Stashed changes
+=======
+                const date = new Date(event.timestamp)
+>>>>>>> Stashed changes
+=======
+                const date = new Date(event.timestamp)
+>>>>>>> Stashed changes
+=======
+                const date = new Date(event.timestamp)
+>>>>>>> Stashed changes
                 const day = date.getDate()
                 const month = date.getMonth() + 1
                 const year = date.getFullYear()
