@@ -1093,7 +1093,7 @@ const Magazine = [
       {
         para:
           "Click here to download (English Version)",
-        link: "http://www.nitp.ac.in/uploads20/Pratibimb/Pratibimb%20Vol.%204,%20March%202022,%20online%20version-16.03.2022.pdf",
+        link: "http://web.nitp.ac.in/uploads20/Pratibimb/Pratibimb%20Vol.%204,%20March%202022,%20online%20version-16.03.2022.pdf",
       },
     ],
   },
@@ -1104,12 +1104,12 @@ const Magazine = [
       {
         para: "Click here to download (English Version)",
         link:
-          "http://www.nitp.ac.in/uploads20/Pratibimb/Pratibimb_03_English%20Version.pdf",
+          "http://web.nitp.ac.in/uploads20/Pratibimb/Pratibimb_03_English%20Version.pdf",
       },
       {
         para: "Click here to download (Hindi Version)",
         link:
-          "http://www.nitp.ac.in/uploads20/Pratibimb/Pratibimb_03_Hindi%20Version.pdf",
+          "http://web.nitp.ac.in/uploads20/Pratibimb/Pratibimb_03_Hindi%20Version.pdf",
       },
     ],
   },
@@ -1120,7 +1120,7 @@ const Magazine = [
       {
         para: "Click here to download (English Version)",
         link:
-          "http://www.nitp.ac.in/uploads20/Pratibimb/Pratibimb%20Vol.%2002-Updated%2028.07.2021.pdf",
+          "http://web.nitp.ac.in/uploads20/Pratibimb/Pratibimb%20Vol.%2002-Updated%2028.07.2021.pdf",
       },
       {
         para: "Click here to download (Hindi Version)",
@@ -1136,7 +1136,7 @@ const Magazine = [
       {
         para: "Click here to download (English Version)",
         link:
-          "http://www.nitp.ac.in/uploads20/Pratibimb/NIT%20Patna%20E-Magazine.pdf",
+          "http://web.nitp.ac.in/uploads20/Pratibimb/NIT%20Patna%20E-Magazine.pdf",
       },
       
     ],
