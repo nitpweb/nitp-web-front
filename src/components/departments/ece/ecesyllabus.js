@@ -20,7 +20,7 @@ const Ecesyllabus = props => {
                 <h1 style={{ marginBottom: `1rem` }}>Syllabus</h1>
                 <h2 data-aos="zoom-in-right">
                     {" "}
-                    -Electronics And Electrical Engineering
+                    -Electronics And Communication Engineering
                   </h2>
 
                 <div className="probutton">
