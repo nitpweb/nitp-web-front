@@ -22,19 +22,19 @@ const DataUG = [
     data: [
       {
         link:
-          "http://www.nitp.ac.in/downloads/firstyear/UG%20Program%20Curricula%20Approved%20in%2032nd%20Senate%20on%2021092020-1.pdf",
+          "http://web.nitp.ac.in/downloads/firstyear/UG%20Program%20Curricula%20Approved%20in%2032nd%20Senate%20on%2021092020-1.pdf",
         para:
           "UG Curricula 2020. (Application for Academic Session 2020-21 and onward)",
       },
       {
         link:
-          "http://www.nitp.ac.in/downloads/firstyear/UG%20Regulation%20&%20Curiculla%20amended%20upto%2018th%20Senate%20with%20effect%20from%20session%202016-17.pdf",
+          "http://web.nitp.ac.in/downloads/firstyear/UG%20Regulation%20&%20Curiculla%20amended%20upto%2018th%20Senate%20with%20effect%20from%20session%202016-17.pdf",
         para:
           "UG REGULATION 2016. (to be effective from the Academic session 2016-17 and onwards)",
       },
       {
         link:
-          "http://www.nitp.ac.in/downloads/firstyear/UG%20Curricula%202013.pdf",
+          "http://web.nitp.ac.in/downloads/firstyear/UG%20Curricula%202013.pdf",
         para:
           "UG REGULATION 2013. (UG CURRICULA' 2013 FOR B.TECH, B.ARCH PROGRAM",
       },
@@ -48,13 +48,13 @@ const DataPG = [
     data: [
       {
         link:
-          "http://www.nitp.ac.in/downloads/M.Tech%20&%20MURP%20Regulation%202013-14%20-%20Scanned%20%20copy.pdf",
+          "http://web.nitp.ac.in/downloads/M.Tech%20&%20MURP%20Regulation%202013-14%20-%20Scanned%20%20copy.pdf",
         para:
           "M.Tech/MURP (PG) REGULATION 2013. ( Effective from Session 2013-14 to 2016-2017)",
       },
       {
         link:
-          "http://www.nitp.ac.in/downloads/firstyear/PG%20Regulation%20&%20Curiculla%20amended%20upto%2022nd%20Senate%20with%20effect%20from%20session%202017-18.pdf",
+          "http://web.nitp.ac.in/downloads/firstyear/PG%20Regulation%20&%20Curiculla%20amended%20upto%2022nd%20Senate%20with%20effect%20from%20session%202017-18.pdf",
         para:
           "M.Tech/MURP (PG) REGULATION 2017. (to be effective from the Academic session 2017-18 and onwards)",
       },
@@ -69,18 +69,18 @@ const DataPHD = [
     data: [
       {
         link:
-          "http://www.nitp.ac.in/uploads/Notice%20regarding%20DSC_02_03_2020.jpg",
+          "http://web.nitp.ac.in/uploads/Notice%20regarding%20DSC_02_03_2020.jpg",
         para:
           "Notice: PhD Supervisor will be Chairman DSC irrespective of admission date",
       },
       {
         link:
-          "http://www.nitp.ac.in/uploads/Ph.D%20Regulation%202018-(FINAL).pdf",
+          "http://web.nitp.ac.in/uploads/Ph.D%20Regulation%202018-(FINAL).pdf",
         para: "Ph.D. REGULATION",
       },
       {
         link:
-          "http://www.nitp.ac.in/uploads/Ph.D.%20Offline%20Registration%20Form%20(Tripilicate)%20Format%20(1)%20in%20PDF.pdf",
+          "http://web.nitp.ac.in/uploads/Ph.D.%20Offline%20Registration%20Form%20(Tripilicate)%20Format%20(1)%20in%20PDF.pdf",
         para: "Ph.D. Registration Form (Triplicate)",
       },
     ],
@@ -94,7 +94,7 @@ const DataNotice = [
     data: [
       {
         link:
-          "http://www.nitp.ac.in/uploads20/Declaration_copyright_transfer_certificate.pdf",
+          "http://web.nitp.ac.in/uploads20/Declaration_copyright_transfer_certificate.pdf",
         para:
           "Notice: regarding Declaration and Copyright transfer certificate (UG,PG & Ph.D) required to be included in the dissertation/thesis",
       },
@@ -485,20 +485,20 @@ const Fee = [
         para:
           "PG: Revised fee component for M.Tech./M.Arch/MURP Programme from the Academic Session 2021-22 onwards ",
         link:
-          "http://www.nitp.ac.in/uploads20/Fee%20Notification%2026.04.2021-26.04.2021.pdf",
+          "http://web.nitp.ac.in/uploads20/Fee%20Notification%2026.04.2021-26.04.2021.pdf",
       },
       {
         para: "PG: Fee Structure for M.Tech./M.Arch/MURP for (Jan-June'2021)",
-        link: "http://www.nitp.ac.in/uploads20/Notification.pdf",
+        link: "http://web.nitp.ac.in/uploads20/Notification.pdf",
       },
 
       {
         para: "UG : Fee Structure (2020-21)",
-        link: "http://www.nitp.ac.in/uploads20/Fee%20Structure_UG_PG_Ph.D.pdf",
+        link: "http://web.nitp.ac.in/uploads20/Fee%20Structure_UG_PG_Ph.D.pdf",
       },
       {
         para: "UG : Fee Structure (2018-19)",
-        link: "http://www.nitp.ac.in/uploads/Fee_Structure_All.pdf",
+        link: "http://web.nitp.ac.in/uploads/Fee_Structure_All.pdf",
       },
 
     ],
@@ -510,12 +510,12 @@ const Fee = [
       {
         para: "Regular.",
         link:
-          "http://www.nitp.ac.in/uploads20/MCA%20Fee%20Structure%20%2021-22%20Regular.pdf",
+          "http://web.nitp.ac.in/uploads20/MCA%20Fee%20Structure%20%2021-22%20Regular.pdf",
       },
       {
         para: "Self-financed.",
         link:
-          "http://www.nitp.ac.in/uploads20/MCA%20Fee%20Structure%20%2021-22%20SelfFinanced.pdf",
+          "http://web.nitp.ac.in/uploads20/MCA%20Fee%20Structure%20%2021-22%20SelfFinanced.pdf",
       },
     ],
   },
@@ -527,37 +527,37 @@ const Format = [
       {
         para: "Guidelines cum checklist to get process of academic document",
         link:
-          "http://nitp.ac.in/downloads/Guidelines%20cum%20checklist%20to%20get%20process%20of%20academic%20document.pdf",
+          "http://web.nitp.ac.in/downloads/Guidelines%20cum%20checklist%20to%20get%20process%20of%20academic%20document.pdf",
       },
       {
         para:
           "Format for issue of Grade Card / Provisional / Transcript from Exam Section",
         link:
-          "http://nitp.ac.in/downloads/exam/Format%20for%20Grade%20Card01.10.2020.pdf",
+          "http://web.nitp.ac.in/downloads/exam/Format%20for%20Grade%20Card01.10.2020.pdf",
       },
       {
         para: "1-Procedure to get an Original Degree from the Institute",
-        link: "http://nitp.ac.in/uploads20/Degree_sop.pdf",
+        link: "http://web.nitp.ac.in/uploads20/Degree_sop.pdf",
       },
       {
         para:
           "2-Procedure to get Institute Leaving/Transfer Cum Migration certificate",
-        link: "http://nitp.ac.in/uploads20/migration_sop.pdf",
+        link: "http://web.nitp.ac.in/uploads20/migration_sop.pdf",
       },
       {
         para:
           "3-Procedure for refund/adjustment of DRCC Bihar student credit card loan along with application form.",
         link:
-          "http://nitp.ac.in/uploads20/Revised_sop_DRCC_REFUND-26.03.2021.pdf",
+          "http://web.nitp.ac.in/uploads20/Revised_sop_DRCC_REFUND-26.03.2021.pdf",
       },
       {
         para:
           "4-Procedure for issue of Demand Letter for Bank/DRCC student credit card loan.",
-        link: "http://nitp.ac.in/uploads20/demand_letter_sop.pdf",
+        link: "http://web.nitp.ac.in/uploads20/demand_letter_sop.pdf",
       },
       {
         para: "5-Procedure for Educational verification of Students.",
-        link: "http://nitp.ac.in/uploads20/verification_sop.pdf",
+        link: "http://web.nitp.ac.in/uploads20/verification_sop.pdf",
       },
     ],
   },
@@ -568,51 +568,50 @@ const CourseUG = [
     data: [
       {
         para: "Bachelor of Architecture (ARUG)",
-        link: "http://www.nitp.ac.in/downloads/course_structure/ARUG.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/ARUG.pdf",
       },
       {
         para: "Bachelor of Civil Engineering (CEUG)",
-        link: "http://www.nitp.ac.in/downloads/course_structure/CEUG.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/CEUG.pdf",
       },
       {
         para: "Bachelor of Computer Science & Engineering (CSUG)",
-        link: "http://www.nitp.ac.in/downloads/course_structure/CSUG.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/CSUG.pdf",
       },
       {
         para: "CSUG 2018-19",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/CSUG_2018_19.pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/CSUG_2018_19.pdf",
       },
       {
         para: "Bachelor of Electronics & Communication Engineering (ECUG)",
-        link: "http://www.nitp.ac.in/downloads/course_structure/ECUG.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/ECUG.pdf",
       },
       {
         para: "ECUG 2018-19",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/ECUG_2018_19.pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/ECUG_2018_19.pdf",
       },
       {
         para: "Bachelor of Electrical Engineering (EEUG) for 2014 & 2015 Batch",
-        link: "http://www.nitp.ac.in/downloads/course_structure/EEUG.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/EEUG.pdf",
       },
       {
         para: "Bachelor of Mechanical Engineering (MEUG)",
-        link: "http://www.nitp.ac.in/downloads/course_structure/MEUG.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/MEUG.pdf",
       },
       {
         para: "MEUG 2018-19",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/MEUG_2018_19.pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/MEUG_2018_19.pdf",
       },
       {
         para: "Bachelor of Information Technology (ITUG)",
-        link: "http://www.nitp.ac.in/downloads/course_structure/ITUG.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/ITUG.pdf",
       },
     ],
   },
 ]
-
 const CoursePG = [
   {
     title: "PG (M.tech/MURP) Course Structure",
@@ -620,27 +619,27 @@ const CoursePG = [
       {
         para: "M. Tech (Civil Engg.) in Environmental Engineering",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/MTech_Civil_%20ENV%20Syllabus%20wef%202020-05.10.2020.pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/MTech_Civil_%20ENV%20Syllabus%20wef%202020-05.10.2020.pdf",
       },
       {
         para: "M.TECH. IN CIVIL ENGINEERING",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/MTech_Civil_%20GET%20Syllabus%20wef%202020-05.10.2020.pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/MTech_Civil_%20GET%20Syllabus%20wef%202020-05.10.2020.pdf",
       },
       {
         para: "Master in Civil Engineering (River)",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/CEPG%20(River).pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/CEPG%20(River).pdf",
       },
       {
         para: "M. Tech (Civil Engg.) in Structural Engineering",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/MTech_Civil_%20STE%20Syllabus%20wef%202020-05.10.2020.pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/MTech_Civil_%20STE%20Syllabus%20wef%202020-05.10.2020.pdf",
       },
       {
         para: "M.TECH. IN CIVIL ENGINEERING (TRANSPORTATION)",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/MTech_Civil_%20TRE%20Syllabus%20wef%202020-05.10.2020.pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/MTech_Civil_%20TRE%20Syllabus%20wef%202020-05.10.2020.pdf",
       },
       {
         para: "CEPG (Water Resources)",
@@ -648,54 +647,54 @@ const CoursePG = [
       },
       {
         para: "Master in Computer Science & Technology",
-        link: "http://www.nitp.ac.in/downloads/course_structure/CSPG.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/CSPG.pdf",
       },
       {
         para: "ECPG (Communication)",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/ECPG%20(Communication).pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/ECPG%20(Communication).pdf",
       },
       {
         para: "ECPG (VLSI)",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/ECPG%20(VLSI).pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/ECPG%20(VLSI).pdf",
       },
       {
         para: "EE (Power System)",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/EE%20(Power%20System).pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/EE%20(Power%20System).pdf",
       },
       {
         para: "EEPG (Control System)",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/EEPG%20(Control%20System).pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/EEPG%20(Control%20System).pdf",
       },
       {
         para: "Master in Information Technology",
-        link: "http://www.nitp.ac.in/downloads/course_structure/ITPG.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/ITPG.pdf",
       },
       {
         para: "MAPG",
-        link: "http://www.nitp.ac.in/downloads/course_structure/MAPG.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/MAPG.pdf",
       },
       {
         para: "Master of Mechanical Engineering (MEPG) Production",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/MEPG%20(Production).pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/MEPG%20(Production).pdf",
       },
       {
         para: "MEPG (Thermal)",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/MEPG%20(Thermal).pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/MEPG%20(Thermal).pdf",
       },
       {
         para: "Master of Mechanical Engineering (MEPG) Design",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/MEUG%20(Design).pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/MEUG%20(Design).pdf",
       },
       {
         para: "Master of Urban & Regional Planning",
-        link: "http://www.nitp.ac.in/downloads/course_structure/MURP.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/MURP.pdf",
       },
     ],
   },
@@ -707,76 +706,76 @@ const CoursePHD = [
     data: [
       {
         para: "Master of Urban & Regional Planning (MURP)-DD",
-        link: "http://www.nitp.ac.in/downloads/course_structure/ARPG%20DD.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/ARPG%20DD.pdf",
       },
       {
         para: "Master of Civil Engineering (CEPG) Enviormental-DD",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/CEPG%20(Enviormental)%20DD.pdf",
+          "http:/eb.nitp.ac.in/downloads/course_structure/CEPG%20(Enviormental)%20DD.pdf",
       },
       {
         para: "Master of Civil Engineering (CEPG) Geotechnical-DD ",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/CEPG%20(Geotechnical)%20DD.pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/CEPG%20(Geotechnical)%20DD.pdf",
       },
       {
         para: "Master of Civil Engineering (CEPG) Structural-DD",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/CEPG%20(Structural)%20DD.pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/CEPG%20(Structural)%20DD.pdf",
       },
       {
         para: "Master of Civil Engineering (CEPG) Transportation-DD",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/CEPG%20(Transportation)%20DD.pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/CEPG%20(Transportation)%20DD.pdf",
       },
       {
         para: "Master of Civil Engineering (CEPG) Water Resources-DD",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/CEPG%20(Water%20Resources)%20DD.pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/CEPG%20(Water%20Resources)%20DD.pdf",
       },
       {
         para: "Master of Computer Science & Engineering (CSPG)-DD",
-        link: "http://www.nitp.ac.in/downloads/course_structure/CSPG-%20DD.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/CSPG-%20DD.pdf",
       },
       {
         para:
           "Master of Electronics & Communication (ECPG) Communication System-DD",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/ECPG%20(Communication)%20DD.pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/ECPG%20(Communication)%20DD.pdf",
       },
       {
         para: "Master of Civil Engineering (ECPG) Microelectronics & VLSI-DD",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/ECPG%20(VLSI)%20DD.pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/ECPG%20(VLSI)%20DD.pdf",
       },
       {
         para: "Master of Electrical Engineering (EEUG) Control System- DD",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/EE%20(Control%20System)%20DD.pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/EE%20(Control%20System)%20DD.pdf",
       },
       {
         para: "Master of Electrical Engineering (EEUG) Power System- DD",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/EE%20(Power)%20DD.pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/EE%20(Power)%20DD.pdf",
       },
       {
         para: "Master of Information Technology (ITPG)-DD",
-        link: "http://www.nitp.ac.in/downloads/course_structure/ITPG%20DD.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/ITPG%20DD.pdf",
       },
       {
         para: "Master of Mechanical Engineering (MEPG) Design-DD",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/ME%20(Design)%20DD.pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/ME%20(Design)%20DD.pdf",
       },
       {
         para: "Master of Mechanical Engineering (MEPG) Production-DD",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/ME%20(Production)%20DD.pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/ME%20(Production)%20DD.pdf",
       },
       {
         para: "Master of Mechanical Engineering (MEPG) Thermal Engineering-DD",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/ME%20(Thermal)%20DD.pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/ME%20(Thermal)%20DD.pdf",
       },
     ],
   },
@@ -788,17 +787,17 @@ const CourseMsc = [
       {
         para: "Course Structure: Five year Integrated M. Sc. in Physics",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/Int.%20M.Sc.%20(Physics).pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/Int.%20M.Sc.%20(Physics).pdf",
       },
       {
         para: "Course Structure: Five year Integrated M. Sc. in Mathematics ",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/Int.%20M.Sc.%20(Mathematics).pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/Int.%20M.Sc.%20(Mathematics).pdf",
       },
       {
         para: "Course Structure: Five year Integrated M. Sc. in Chemistry",
         link:
-          "http://www.nitp.ac.in/downloads/course_structure/Int.%20M.Sc.%20(Chemistry).pdf",
+          "http://web.nitp.ac.in/downloads/course_structure/Int.%20M.Sc.%20(Chemistry).pdf",
       },
     ],
   },
@@ -1093,7 +1092,7 @@ const Magazine = [
       {
         para:
           "Click here to download (English Version)",
-        link: "http://www.nitp.ac.in/uploads20/Pratibimb/Pratibimb%20Vol.%204,%20March%202022,%20online%20version-16.03.2022.pdf",
+        link: "http://web.nitp.ac.in/uploads20/Pratibimb/Pratibimb%20Vol.%204,%20March%202022,%20online%20version-16.03.2022.pdf",
       },
     ],
   },
@@ -1104,12 +1103,12 @@ const Magazine = [
       {
         para: "Click here to download (English Version)",
         link:
-          "http://www.nitp.ac.in/uploads20/Pratibimb/Pratibimb_03_English%20Version.pdf",
+          "http://web.nitp.ac.in/uploads20/Pratibimb/Pratibimb_03_English%20Version.pdf",
       },
       {
         para: "Click here to download (Hindi Version)",
         link:
-          "http://www.nitp.ac.in/uploads20/Pratibimb/Pratibimb_03_Hindi%20Version.pdf",
+          "http://web.nitp.ac.in/uploads20/Pratibimb/Pratibimb_03_Hindi%20Version.pdf",
       },
     ],
   },
@@ -1120,7 +1119,7 @@ const Magazine = [
       {
         para: "Click here to download (English Version)",
         link:
-          "http://www.nitp.ac.in/uploads20/Pratibimb/Pratibimb%20Vol.%2002-Updated%2028.07.2021.pdf",
+          "http://web.nitp.ac.in/uploads20/Pratibimb/Pratibimb%20Vol.%2002-Updated%2028.07.2021.pdf",
       },
       {
         para: "Click here to download (Hindi Version)",
@@ -1136,7 +1135,7 @@ const Magazine = [
       {
         para: "Click here to download (English Version)",
         link:
-          "http://www.nitp.ac.in/uploads20/Pratibimb/NIT%20Patna%20E-Magazine.pdf",
+          "http://web.nitp.ac.in/uploads20/Pratibimb/NIT%20Patna%20E-Magazine.pdf",
       },
       
     ],
