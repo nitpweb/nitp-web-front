@@ -27,10 +27,10 @@ export const about = () => {
       The Department of Electronics and Communication Engineering is one of the
       established and largest department in the institute. It was established in
       the year 1978 with an intake of 10 students only. The Department offers
-      B.Tech programme in "Electronics & Communication Engineering" with 141
+      B.Tech programme in "Electronics & Communication Engineering" with 161
       intake capacity, and M.Tech programme in "Communication System,
-      Microelectronics and VLSI System Design"with 18 intake capacity for each
-      specialization. The department is also offering Ph.D. program (Full time
+      Microelectronics and VLSI System Design" with 22 intake capacity for each
+      specialization. Department introduces dual degree program in "Microelectronics and VLSI System Design" in the year 2022 onwards with 22 intake capacity. The department is also offering Ph.D. program (Full time
       and Part time research program) in Electronics and Communication
       Engineering since 2012 provides a platform for bright graduates and
       postgraduates to conduct research in the following areas:
@@ -83,7 +83,7 @@ export const about = () => {
       of Accreditation (NBA). The undergraduate (UG) course B.Tech (Electronics
       & Communication Engineering) was accredited by the NBA for the academic
       Year 2015-16, 2016-17 and 2017-18, i.e., upto 30-06-2018; Further
-      Accredited for 2018-19, 2019-20 and 2020-21, i.e., upto 30-06-2021. The PG
+      Accredited for 2018-19, 2019-20 and 2020-21, i.e., upto 30-06-2021; Further<a href="http://old.nitp.ac.in/uploads22/NBA2022.pdf"> accredited for 2021-22 to 2026-27 i.e, upto 30-06-2027</a>. The PG
       course Communication systems was accredited by the NBA for the academic
       Years 2016-2017 and 2017-2018.
       <br />
