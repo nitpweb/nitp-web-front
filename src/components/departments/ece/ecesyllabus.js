@@ -11,18 +11,48 @@ const Ecesyllabus = props => {
   const [course, setCourse] = useState("programmesug")
   const [syllabus, setSyllabus] = useState(Courseug)
   return (
-    <> 
-     <PageLayout style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
-    <TabPage>
-          <div className="mainDiv syllabus-page" style={{width: "90vw"}}>
+    <>
+      <PageLayout style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
+        <TabPage>
+          <div className="mainDiv syllabus-page" style={{ width: "90vw" }}>
             <div className="row rowmarl3">
               <div className="digital">
                 <h1 style={{ marginBottom: `1rem` }}>Syllabus</h1>
                 <h2 data-aos="zoom-in-right">
-                    {" "}
-                    -Electronics And Communication Engineering
-                  </h2>
-
+                  {" "}
+                  -Electronics And Communication Engineering
+                </h2>
+                <ul>
+                  <li>
+                    <a href="https://web.nitp.ac.in/uploads22/Course structure of Minor-16.03.2022.pdf">
+                      Course structure for of Minor courses floated by ECE Dept.
+                      for B.Tech. (CSE, EE, CE, ME){" "}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://web.nitp.ac.in/uploads22/B.Tech. syllabus effective_Detailed Syllabus_2021-2022-09.03.2022.pdf">
+                      B.Tech. Detailed syllabus wef 2021-2022 ( As per NEP )
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://web.nitp.ac.in/uploads22/Dual degree B.Tech M.Tech Program_Detailed Syllabus_2021-2022-09.03.2022.pdf">
+                      Detailed syllabus Dual Degree Programme B.Tech-ECE and
+                      M.Tech. (Microelectronics &amp; VLSI Design) ( As per NEP
+                      )
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://web.nitp.ac.in/uploads22/PG_Com. Sys_ effetive 2021-22_FINAL-09.03.2022.pdf">
+                      M.Tech. (Communication systems) wef 2021-2022 ( As per NEP
+                      )
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://web.nitp.ac.in/uploads22/PG_VLSI_ECE_effetive 2021-22_FINAL-09.03.2022.pdf">
+                      M.Tech. (Microelectronics &amp; VLSI Design) wef 2021-2022
+                    </a>
+                  </li>
+                </ul>
                 <div className="probutton">
                   <button
                     onClick={() => {
@@ -55,7 +85,7 @@ const Ecesyllabus = props => {
               </div>
             </div>
 
-            <Table style={{width:"100%", marginTop:"20px"}}>
+            <Table style={{ width: "100%", marginTop: "20px" }}>
               <br />
               <tr className="syllabus-table-head">
                 <th>Dept.</th>
@@ -84,7 +114,7 @@ const Ecesyllabus = props => {
             </Table>
           </div>
         </TabPage>
-        </PageLayout>
+      </PageLayout>
       {/* <PageLayout style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
       <TabPage>
         <div className="syllabus-page mainDiv">

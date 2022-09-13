@@ -83,7 +83,7 @@ export const about = () => {
       of Accreditation (NBA). The undergraduate (UG) course B.Tech (Electronics
       & Communication Engineering) was accredited by the NBA for the academic
       Year 2015-16, 2016-17 and 2017-18, i.e., upto 30-06-2018; Further
-      Accredited for 2018-19, 2019-20 and 2020-21, i.e., upto 30-06-2021; Further<a href="http://old.nitp.ac.in/uploads22/NBA2022.pdf"> accredited for 2021-22 to 2026-27 i.e, upto 30-06-2027</a>. The PG
+      Accredited for 2018-19, 2019-20 and 2020-21, i.e., upto 30-06-2021; Further<a href="http://web.nitp.ac.in/uploads22/NBA2022.pdf"> accredited for 2021-22 to 2026-27 i.e, upto 30-06-2027</a>. The PG
       course Communication systems was accredited by the NBA for the academic
       Years 2016-2017 and 2017-2018.
       <br />
