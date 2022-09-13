@@ -15,12 +15,14 @@ export const TabPage = styled.div`
   ul,
   span,
   b,
-  li {
+  li,
+  a {
     color: ${props => props.theme.textColor};
     font-weight: 500;
     font-family: "Source Sans Pro";
     font-size: ${props => props.theme.font * 1.3}rem;
     text-align: justify;
+    text-decoration: none;
   }
   h1 {
     color: ${props => props.theme.primaryColor};
