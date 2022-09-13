@@ -72,8 +72,7 @@ const Cesyllabus = props => {
             {
               (syllabus === Coursedd) &&
               <ul>
-                <li><a href="/">Computer Science and Engineering with Specialization in Data Science (5 Years, Bachelor and Master of Technology (Dual Degree))</a></li>
-                <li><a href="/">Computer Science and Engineering with Specialization in Cyber Security (5 Years, Bachelor and Master of Technology (Dual Degree))</a></li>
+                <li><a href="/">Civil Engineering with Specialization in Construction Technology and Management (5 Years, Bachelor and Master of Technology (Dual Degree))</a></li>
               </ul>
             }
             {
