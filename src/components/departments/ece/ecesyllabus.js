@@ -94,8 +94,6 @@ const Ecesyllabus = props => {
                 </div>
               </div>
             </div>
-
-<<<<<<< HEAD
             
             {
               (syllabus === Coursedd) &&
@@ -105,10 +103,7 @@ const Ecesyllabus = props => {
             }
             {
               (syllabus === Coursedd) || 
-            <Table style={{width:"100%", marginTop:"20px"}}>
-=======
             <Table style={{ width: "100%", marginTop: "20px" }}>
->>>>>>> 46e55bef6d2958607675a4623c65ad8d12579fe7
               <br />
               <tr className="syllabus-table-head">
                 <th>Dept.</th>
