@@ -3,6 +3,7 @@ import Table from "../../table"
 import { TabPage } from "../../styles/tabpage"
 import Courseug from "./btech"
 import Coursepg from "./ece-mtech"
+import Coursedd from "./ecedd.js"
 import ECEPhd from "./ece-phd"
 import main from "../img/book.svg"
 import { PageLayout } from "../../styles/pagelayout"
@@ -51,10 +52,28 @@ const Ecesyllabus = props => {
                   >
                     PhD Courses
                   </button>
+                  <button
+                    onClick={() => {
+                      setCourse("programmesdd")
+                      setSyllabus(Coursedd)
+                    }}
+                    className={course == "programmesdd" ? "btnactive" : ""}
+                  >
+                    Dual Degree
+                  </button>
                 </div>
               </div>
             </div>
 
+            
+            {
+              (syllabus === Coursedd) &&
+              <ul>
+                <li><a href="/"> Electronics and Communication Engineering with Specialization in Microelectronics and VLSI System Design (5 Years, Bachelor and Master of Technology (Dual Degree))</a></li>
+              </ul>
+            }
+            {
+              (syllabus === Coursedd) || 
             <Table style={{width:"100%", marginTop:"20px"}}>
               <br />
               <tr className="syllabus-table-head">
@@ -82,6 +101,7 @@ const Ecesyllabus = props => {
                 </tr>
               ))}
             </Table>
+            }
           </div>
         </TabPage>
         </PageLayout>

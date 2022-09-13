@@ -8,6 +8,7 @@ import {
   EEMtechSyllabuspower as EeMtechPower,
 } from "./Elec_MTECH_syllabus"
 import { EEPhdCourse as Coursephd } from "./Elelc_phd"
+import Coursedd from "./eedd.js"
 import { PageLayout } from "../../styles/pagelayout"
 
 const Eesyllabus = props => {
@@ -63,10 +64,27 @@ const Eesyllabus = props => {
                   >
                     PhD Courses
                   </button>
+                  <button
+                    onClick={() => {
+                      setCourse("programmesdd")
+                      setSyllabus(Coursedd)
+                    }}
+                    className={course == "programmesdd" ? "btnactive" : ""}
+                  >
+                    Dual Degree
+                  </button>
                 </div>
               </div>
             </div>
 
+            {
+              (syllabus === Coursedd) &&
+              <ul>
+                <li><a href="/">Electrical Engineering with Specialization In Power System Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))</a></li>
+              </ul>
+            }
+            {
+              (syllabus === Coursedd) ||
             <Table style={{width:"100%", marginTop:"20px"}}>
               <br />
               <tr className="syllabus-table-head">
@@ -94,6 +112,7 @@ const Eesyllabus = props => {
                 </tr>
               ))}
             </Table>
+            }
           </div>
         </TabPage>
         </PageLayout>
