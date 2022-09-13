@@ -3,6 +3,7 @@ import Table from "../../table"
 import Courseug from "./Civil BTech CourseStructure"
 import Coursephd from "./cephd"
 import Coursepg from "./cemtech"
+import Coursedd from "./cedd.js"
 import { TabPage } from "../../styles/tabpage"
 import main from "../img/book.svg"
 import { PageLayout } from "../../styles/pagelayout"
@@ -55,10 +56,27 @@ const Cesyllabus = props => {
                   >
                     PhD Courses
                   </button>
+                  <button
+                    onClick={() => {
+                      setCourse("programmesdd")
+                      setSyllabus(Coursedd)
+                    }}
+                    className={course == "programmesdd" ? "btnactive" : ""}
+                  >
+                    Dual Degree
+                  </button>
                 </div>
               </div>
             </div>
 
+            {
+              (syllabus === Coursedd) &&
+              <ul>
+                <li><a href="/">Civil Engineering with Specialization in Construction Technology and Management (5 Years, Bachelor and Master of Technology (Dual Degree))</a></li>
+              </ul>
+            }
+            {
+              (syllabus === Coursedd) || 
             <Table style={{width:"100%", marginTop:"20px"}}>
               <br />
               <tr className="syllabus-table-head">
@@ -103,7 +121,7 @@ const Cesyllabus = props => {
                 </tr>
                 ))
                 ))}
-            </Table>
+            </Table>}
           </div>
         </TabPage>
         </PageLayout>
