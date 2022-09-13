@@ -10,6 +10,7 @@ import {
   MtechThermalEngineering as Coursepg3
 } from "./Mech MTech"
 import { PhdCourse } from "./Mech Phd"
+import Coursedd from "./medd.js"
 const Mesyllabus = props => {
   const [course, setCourse] = useState("programmesug")
   const [syllabus, setSyllabus] = useState(Courseug)
@@ -76,10 +77,27 @@ const Mesyllabus = props => {
                   >
                     PhD Courses
                   </button>
+                  <button
+                    onClick={() => {
+                      setCourse("programmesdd")
+                      setSyllabus(Coursedd)
+                    }}
+                    className={course == "programmesdd" ? "btnactive" : ""}
+                  >
+                    Dual Degree
+                  </button>
                 </div>
               </div>
             </div>
 
+            {
+              (syllabus === Coursedd) &&
+              <ul>
+                <li><a href="/">Mechanical Engineering with Specialization in Manufacturing and Industrial Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))</a></li>
+              </ul>
+            }
+            {
+              (syllabus === Coursedd) ||
             <Table style={{width:"100%", marginTop:"20px"}}>
               <br />
               <tr className="syllabus-table-head">
@@ -106,7 +124,7 @@ const Mesyllabus = props => {
                   <td>{elem.credits}</td>
                 </tr>
               ))}
-            </Table>
+            </Table>}
           </div>
         </TabPage>
         {course === "programmesphd" && <h3 align="center">Other credit courses can be opted from PG course Section.(<a href="./mech/syllabus/PG/MTechupdtedcoursestructure_DesignEngineering_modified.pdf">Click here to select Courses.</a>)</h3>}
