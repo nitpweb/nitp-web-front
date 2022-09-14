@@ -4,6 +4,7 @@ import Table from "../../table"
 import IntPhy from "./Phy IMSc CourseStructure"
 import Coursepg from "./Phy Mtech"
 import { IntPhd as PhdCourse } from "./Phy Int.Phd"
+import Coursedd from "./phydd.js"
 import main from "../img/book.svg"
 import { PageLayout } from "../../styles/pagelayout"
 
@@ -51,10 +52,27 @@ const Mesyllabus = props => {
                   >
                     Int. PhD
                   </button>
+                  <button
+                    onClick={() => {
+                      setCourse("programmesdd")
+                      setSyllabus(Coursedd)
+                    }}
+                    className={course == "programmesdd" ? "btnactive" : ""}
+                  >
+                    Dual Degree
+                  </button>
                 </div>
               </div>
             </div>
 
+            {
+              (syllabus === Coursedd) &&
+              <ul>
+                <li><a href="/"> Material Science and Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))</a></li>
+              </ul>
+            }
+            {
+              (syllabus === Coursedd) ||
             <Table style={{width:"100%", marginTop:"20px"}}>
               <br />
               <tr className="syllabus-table-head">
@@ -81,7 +99,7 @@ const Mesyllabus = props => {
                   <td>{elem.credits}</td>
                 </tr>
               ))}
-            </Table>
+            </Table>}
           </div>
         </TabPage>
         </PageLayout>
