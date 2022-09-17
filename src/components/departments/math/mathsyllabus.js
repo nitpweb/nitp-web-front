@@ -1,62 +1,63 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import Table from "../../table"
 import { TabPage } from "../../styles/tabpage"
 import Course from "./math course array"
 import Elect from "./math elective array"
-import Coursedd from "./mathdd.js"
 import main from "../img/book.svg"
 import { PageLayout } from "../../styles/pagelayout"
 
 const Mathsyllabus = props => {
-  const [course, setCourse] = useState("programmesphd")
-  const [syllabus, setSyllabus] = useState(Course)
-
-  useEffect(() => {}, [course])
+  const [course, setCourse] = useState("programmesug")
+  // const [syllabus, setSyllabus] = useState(Courseug)
   return (
     <>
       <PageLayout style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
         <TabPage>
-          <div className="syllabus-page mainDiv" style={{ width: "90vw" }}>
-            <div className="row rowmarl3">
+          <div className="mainDiv syllabus-page" style={{ width: "90vw" }}>
+            <div className="row rowmar13">
               <div className="digital">
                 <h1 style={{ marginBottom: `1rem` }}>Syllabus</h1>
                 <h2 data-aos="zoom-in-right"> -Department of Mathematics</h2>
+
                 <div className="probutton">
                   <button
                     onClick={() => {
-                      setCourse("programmesphd")
-                      setSyllabus(Course)
+                      setCourse("programmesug")
+                      // setSyllabus(Courseug)
                     }}
-                    className={course == "programmesphd" ? "btnactive" : ""}
+                    className={course == "programmesug" ? "btnactive" : ""}
                   >
-                    Course Structure (IMSc.)
+                    IMSc. Courses
                   </button>
                   <button
                     onClick={() => {
-                      setCourse("programmesdd")
-                      setSyllabus(Coursedd)
+                      setCourse("programmespg")
+                      // setSyllabus(Coursepg)
                     }}
-                    className={course == "programmesdd" ? "btnactive" : ""}
+                    className={course == "programmespg" ? "btnactive" : ""}
                   >
-                    Dual Degree
+                    PhD Courses
+                  </button>
+                  <button
+                    onClick={() => {
+                      setCourse("programmesphd")
+                      // setSyllabus(MathsPhd)
+                    }}
+                    className={course == "programmesphd" ? "btnactive" : ""}
+                  >
+                    Dual Degree Courses
                   </button>
                 </div>
               </div>
             </div>
-            {syllabus === Coursedd && (
-              <ul>
-                <li>
-                  <a href="/">
-                    Mathematics and Computing Technology (5 Years, Bachelor and
-                    Master of Technology (Dual Degree))
-                  </a>
-                </li>
-              </ul>
-            )}
-            {syllabus === Course && (
-              <div>
-                <Table style={{ width: "100%", marginTop: "20px" }}>
-                  <br />
+            {course === "programmesug" && (
+              <>
+                <div className="layoutrow">
+                  <h1 className="rowmarl3" data-aos="zoom-in-right">
+                    Course Structure (IMSc.)
+                  </h1>
+                </div>
+                <Table>
                   <tr className="syllabus-table-head">
                     <th>Course Code</th>
                     <th>Course Title</th>
@@ -85,8 +86,7 @@ const Mathsyllabus = props => {
                 <div className="layoutrow">
                   <h1 className="rowmarl3">Electives</h1>
                 </div>
-                <Table style={{ width: "100%", marginTop: "20px" }}>
-                  <br />
+                <Table>
                   <tr className="syllabus-table-head">
                     <th>Course Code</th>
                     <th>Subject</th>
@@ -108,8 +108,26 @@ const Mathsyllabus = props => {
                     </tr>
                   ))}
                 </Table>
-              </div>
+              </>
             )}
+
+            <div className="layoutrow">
+            {course === "programmespg" && (
+              <ul>
+                <li>
+                  <a href="/">To be uploaded for PhD</a>
+                </li>
+              </ul>
+            )}
+
+            {course === "programmesphd" && (
+              <ul>
+                <li>
+                  <a href="/">Mathematics and Computing Technology (5 Years, Bachelor and Master of Technology (Dual Degree))</a>
+                </li>
+              </ul>   
+            )}
+            </div>
           </div>
         </TabPage>
       </PageLayout>

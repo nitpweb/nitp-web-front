@@ -103,7 +103,7 @@ const Studentpage = () => {
     axios
       .get(noticesUrl)
       .then(res => {
-        setNotices(res.data)
+        setNotices(res.data.filter(notice => notice.isVisible === 1))
       })
       .catch(e => {
         console.log(e)

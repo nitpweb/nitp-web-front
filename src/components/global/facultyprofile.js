@@ -17,7 +17,7 @@ const Facultyprofile = ({ url }) => {
           publications: detail.publications ? detail.publications[0] : [],
           subjects: detail.profile ? detail.subjects_teaching : [],
           memberships: detail.memberships ? detail.memberships : [],
-          qualification: detail.qualification ? detail.education : [],
+          qualification: detail.education?detail.education : [],
           currResponsibility: detail.curr_admin_responsibility
             ? detail.curr_admin_responsibility
             : [],
@@ -277,9 +277,9 @@ const Facultyprofile = ({ url }) => {
                           <h4>Year</h4>
                         </th>
                       </tr> */}
-                      {data.subjects.map(item => {
+                      {data.subjects.map((item,index) => {
                         return (
-                          <p>
+                          <p key={index}>
                             {item.code} {item.name}{" "}
                             {item.start ? item.start : ""}{" "}
                             {item.end ? item.end : ""}
@@ -325,9 +325,9 @@ const Facultyprofile = ({ url }) => {
                           <h4>End-Date</h4>
                         </th>
                       </tr> */}
-                      {data.memberships.map(item => {
+                      {data.memberships.map((item,index) => {
                         return (
-                          <p>
+                          <p key={index}>
                             {item.membership_id} {item.membership_society}{" "}
                             {(item.start != null) | (item.end != null)
                               ? ` [ ${item.start ? item.start : ""} ${
@@ -372,7 +372,8 @@ const Facultyprofile = ({ url }) => {
                   <h3>Educational Qualification</h3>
                   <div className="factable">
                     <table>
-                      {/* <tr>
+                      <thead>
+                      <tr>
                         <th>
                           <h4>Certification</h4>
                         </th>
@@ -382,27 +383,32 @@ const Facultyprofile = ({ url }) => {
                         <th>
                           <h4>Passing Year</h4>
                         </th>
-                      </tr> */}
-                      {data.qualification.map(item => {
+                      </tr>
+                      </thead>
+                      <tbody>
+                      {data.qualification.map((item,index) => {
                         return (
-                          <p>
+                          <>
+                          {/* <p key={index}>
                             {item.certification}{" "}
                             {item.institution ? item.institution : ""}{" "}
                             {item.passing_year ? item.passing_year : ""}
-                          </p>
-                          // <tr>
-                          //   <td>
-                          //     <p>{item.certification}</p>
-                          //   </td>
-                          //   <td>
-                          //     <p>{item.institution}</p>
-                          //   </td>
-                          //   <td>
-                          //     <p>{item.passing_year}</p>
-                          //   </td>
-                          // </tr>
+                          </p> */}
+                          <tr key={index}>
+                            <td>
+                              <p>{item.certification}</p>
+                            </td>
+                            <td>
+                              <p>{item.institution}</p>
+                            </td>
+                            <td>
+                              <p>{item.passing_year}</p>
+                            </td>
+                          </tr>
+                          </>
                         )
                       })}
+                      </tbody>
                     </table>
                   </div>
                 </div>
