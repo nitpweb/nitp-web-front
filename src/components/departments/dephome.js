@@ -37,8 +37,7 @@ const Dephomepage = ({
       axios
         .get(noticesUrl)
         .then(res => {
-          const notice = res.data
-          setnotices(notice)
+          setnotices(res.data.filter(notice => notice.isVisible === 1))
         })
         .catch(e => {
           console.log(e)
