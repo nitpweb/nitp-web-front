@@ -45,7 +45,7 @@ const Mathsyllabus = props => {
                     }}
                     className={course == "programmesphd" ? "btnactive" : ""}
                   >
-                    Dual Degree Courses
+                    Dual Degree (B.tech + M.tech)
                   </button>
                 </div>
               </div>
@@ -57,6 +57,16 @@ const Mathsyllabus = props => {
                     Course Structure (IMSc.)
                   </h1>
                 </div>
+                <div className="syllabus-bullets">
+                <ul className="rowmarl3">
+                <li>
+                    <a href="https://web.nitp.ac.in/uploads22/Int_MSc_CourseStructure.pdf">
+                      Course Structure of Integrated Msc Course
+                    </a>
+                  </li>
+                </ul>
+                </div>
+                
                 <Table>
                   <tr className="syllabus-table-head">
                     <th>Course Code</th>
@@ -123,7 +133,7 @@ const Mathsyllabus = props => {
             {course === "programmesphd" && (
               <ul>
                 <li>
-                  <a href="/">Mathematics and Computing Technology (5 Years, Bachelor and Master of Technology (Dual Degree))</a>
+                  <a href="https://web.nitp.ac.in//uploads22/Dual_Degree_Mathematics_and_Computing_Technology.pdf">Mathematics and Computing Technology (5 Years, Bachelor and Master of Technology (Dual Degree))</a>
                 </li>
               </ul>   
             )}
