@@ -22,6 +22,9 @@ export const PageLayout = styled.div`
       padding-top: 3vh;
       padding-bottom: 3vh;
     }
+    .syllabus-bullets{
+      width:100%;
+    }
     .syllabus-page-head {
       padding-top: 8vh;
       padding-bottom: 3vh;
