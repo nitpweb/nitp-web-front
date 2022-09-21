@@ -62,5 +62,11 @@ We believe in bringing out one's true creative self and building the courage to 
     Title: "Vista Club",
     description : "Vista is the official photography club of NIT Patna that strives to bring together all photography aficionados of the institute and lead them towards collective through workshops, photo walks and other activities. The Club also functions as a Media house inside the Institute as it covers all sorts of events going on in the Institute. You may contact Vista club for any photography request for institute purposes with event purpose, venue and timings, on this email ID vista@nitp.ac.in",
     link: "https://forms.gle/yuKwUswsMQzStabd6"
-  }
+  },
+  {
+    url: "/asme.png",
+    Title: "ASME",
+    description : "The American Society of Mechanical Engineers (ASME) is an American professional association that, in its own words, promotes the art, science, and practice of multidisciplinary engineering and allied sciences around the globe via continuing education, training and professional development, codes and standards, research, conferences and publications, government relations, and other forms of outreach.ASME is thus an engineering society, a standards organization, a research and development organization, an advocacy organization, a provider of training and education, and a nonprofit organization. Founded as an engineering society focused on mechanical engineering in North America, ASME is today multidisciplinary and global.",
+    link: "http://web.nitp.ac.in/asme/index.html"
+  },
 ]
