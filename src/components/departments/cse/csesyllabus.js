@@ -83,8 +83,8 @@ const Csesyllabus = props => {
             {
               (syllabus === Coursedd) &&
               <ul>
-                <li><a href="https://web.nitp.ac.in/uploads22/DataScienceCombinedSep22.pdf">Computer Science and Engineering with Specialization in Data Science (5 Years, Bachelor and Master of Technology (Dual Degree))</a></li>
-                <li><a href="https://web.nitp.ac.in/uploads22/CyberSecurityCombinedSep2022.pdf">Computer Science and Engineering with Specialization in Cyber Security (5 Years, Bachelor and Master of Technology (Dual Degree))</a></li>
+                <li><a href="https://web.nitp.ac.in/uploads22/DataScienceCombinedSep22.pdf" target="_blank">Computer Science and Engineering with Specialization in Data Science (5 Years, Bachelor and Master of Technology (Dual Degree))</a></li>
+                <li><a href="https://web.nitp.ac.in/uploads22/CyberSecurityCombinedSep2022.pdf" target="_blank">Computer Science and Engineering with Specialization in Cyber Security (5 Years, Bachelor and Master of Technology (Dual Degree))</a></li>
               </ul>
             }
             {
