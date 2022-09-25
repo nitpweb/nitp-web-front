@@ -8,9 +8,13 @@ import {
   titleDescription,
   about,
   mission,
+  labs,
+  achievements,
   activities,
   vision,
+  Outcomes,
   contact,
+  timetable,
   datalist,
 } from "../../components/departments/hss/hsshome"
 const Hss = () => (
@@ -21,10 +25,14 @@ const Hss = () => (
       title={title}
       TitleDescription={titleDescription}
       About={about}
+      Outcomes={Outcomes}
       Mission={mission}
       Vision={vision}
       Contact={contact}
+      Labs={labs}
+      Achievements={achievements}
       Activities={activities}
+      TimeTable={timetable}
       datalist={datalist}
     />
   </Layout>
