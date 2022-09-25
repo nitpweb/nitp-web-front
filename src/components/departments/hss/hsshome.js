@@ -1,4 +1,14 @@
-import { Activities } from "./hss-others-data"
+import Slider from "../../Slider/Slider"
+
+import { 
+  Activities,
+  ActivityImages,
+  Outcomes_,
+  LabImages, 
+  Labs,
+  TimeTable,
+  Achievements,
+} from "./hss-others-data"
 import React from "react"
 
 export const routeName = "hss"
@@ -22,29 +32,14 @@ export const titleDescription = () => {
 export const about = () => {
   return (
     <>
-      With an interdisciplinary perspective at the heart of its approach, the
-      Department of Humanities and Social Sciences at NIT Patna provides
-      intellectual and cultural foundations for the study of human relations
-      with society interaction and teaching towards problem solving of the
-      nation in contemporary contexts. The Department, with its diverse
-      expertise offers students in the B. Tech programme courses aimed at
-      developing essential skills in critical thinking and writing along with
-      the knowledge of literature, society, economic value, and philosophies of
-      the mind and body. The Department also offers Doctoral programmes in
-      humanities and social sciences especially in English, Economics, Sociology
-      and Human resource management besides elective courses for the
-      undergraduate programmes of the institute.
+      With an interdisciplinary perspective at the heart of its approach, the Department of Humanities and Social Sciences at NIT Patna provides intellectual and cultural foundations for the study of human relations with society interaction and teaching towards problem solving of the nation in contemporary contexts. The department, with its diverse expertise offers students in the B Tech programme courses aimed at developing essential skills in critical thinking and writing along with the knowledge of literature, society, economic value, and philosophies of the mind and body. The department also offers doctoral programmes in humanities and social sciences especially in English, Economics, Sociology and Human Resource Management besides elective courses for the undergraduate programmes of the institute.
     </>
   )
 }
 export const mission = () => {
   return (
     <>
-      To provide quality teaching, learning, and research in the field of
-      Humanities and Social Sciences by creating,preserving,transmitting and
-      utilizing knowledge especially to engineering students so that
-      intellectually capable and imaginatively gifted leaders can emerge in the
-      technical education and industry.
+      To provide quality teaching, learning, and research in the field of Humanities and Social Sciences by creating, preserving, transmitting and utilizing  knowledge especially to engineering students so that intellectually capable and imaginatively gifted leaders can emerge in the technical education and industry.
     </>
   )
 }
@@ -52,10 +47,30 @@ export const mission = () => {
 export const vision = () => {
   return (
     <>
-      The Department aspires to be a national exemplar in undergraduate teaching
-      and research in the humanities and social sciences. Upon completion of the
-      program, the students will be prepared to compete, sustain and advance
-      their communities and the world.
+      The Department aspires to be a national exemplar in undergraduate teaching and research in the humanities and social sciences. Upon completion of the program, the students will be prepared to compete, sustain and advance their communities and the world.
+    </>
+  )
+}
+
+// export const Outcomes = () => {
+//   return (
+//     <>
+//       Hello
+//     </>
+//   )
+// }
+
+export const Outcomes = () => {
+  return (
+    <>
+      {Outcomes_.map(row => {
+        return (
+          <>
+            <div className="row rowmarl3">{row.title}</div>
+            <div className="row rowmarl3">{row.content}</div>
+          </>
+        )
+      })}
     </>
   )
 }
@@ -74,7 +89,30 @@ export const contact = () => {
       Email: head.hs@nitp.ac.in
       <br />
       <br />
-      Contact no: +91-9934065068
+      Contact no: +91-9557805425
+    </>
+  )
+}
+
+// export const labs = () => {
+//   return (
+//     <>
+//     <div className="col-6" style={{ textAlign: "left", fontSize: `1.1rem`,padding:`0px` }}>
+//     <h2>Language Lab</h2>
+//     Language Laboratory is a designated space for English language learning where students access audio-visual materials. It adapts a perfect blend of Instructor-Led-Training and Computer-Based-Training. The assessment on speaking and listening programme along with reading and writing,  listening and speaking skills to promote proficiency of language.
+//     </div>
+//     </>
+//   )
+// }
+
+export const labs = () => {
+  return (
+    <>
+      <div className="row rowmarl3">{Labs.title}</div>
+      <div className="rowmarl3" style={{fontSize: `0.8rem`,padding:`0px` }}>{Labs.content}</div>
+      <div className="col-6">
+          <Slider dataSlider={LabImages} />
+      </div>{" "}
     </>
   )
 }
@@ -83,7 +121,52 @@ export const activities = () => {
   return (
     <>
       {" "}
+      <div className="row rowmarl3">
+        <Slider dataSlider={ActivityImages} showDots={true} />
+      </div>
       <div className="rowmarl3">{Activities.content}</div>
+    </>
+  )
+}
+
+export const achievements = () => {
+  return (
+    <>
+      {" "}
+      <div className=" row rowmarl3" style={{ fontSize: `1.2rem` }}>
+        {Achievements.map((act, idx) => (
+          <>
+            <div className="row"> {act.title}</div>
+            <div className="row"> {act.content}</div>
+          </>
+        ))}
+      </div>
+    </>
+  )
+}
+
+export const timetable = () => {
+  console.log(TimeTable)
+  return (
+    <>
+      {TimeTable.map((e, idx) => (
+        <>
+          <a
+            href={e.link}
+            key={idx}
+            target="_blank"
+            style={{
+              fontSize: `1.2rem`,
+              textDecoration: `none`,
+              borderBottom: `1px dotted`,
+              width: `fit-content`,
+            }}
+          >
+            {e.title}
+          </a>
+          <br />
+        </>
+      ))}
     </>
   )
 }
@@ -93,6 +176,11 @@ export const datalist = [
     title: "About",
     data: "about",
     // img: "/department/about.svg",
+  },
+  {
+    title: "Mission & Vision",
+    data: "missionvision",
+    // img: "/department/mission.svg",
   },
   {
     title: "Syllabus",
@@ -114,15 +202,24 @@ export const datalist = [
     data: "contact",
     // img: "/department/contact.svg",
   },
-
+  {
+    title: "Labs",
+    data: "labs",
+    // img: "/department/labs.svg",
+  },
+  // {
+  //   title: "Achievements",
+  //   data: "achievements",
+  //   // img: "/department/achievements.svg",
+  // },
   {
     title: "Activities",
     data: "activities",
     // img: "/department/activities.svg",
   },
   {
-    title: "Mission & Vision",
-    data: "missionvision",
-    // img: "/department/mission.svg",
-  }
+    title: "Time Table",
+    data: "timetable",
+    // img: "clock.svg",
+  },
 ]
