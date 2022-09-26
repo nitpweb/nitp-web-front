@@ -39,7 +39,8 @@ const SCF = {
     {
       Downloads: "Medical Claim Form",
       DLink: `${home}/staffForm/claim.pdf`,
-      "Office order": "",
+      "Office order": "List of Hospitals",
+      OLink: `${home}/staffForm/list_of_hospitals.pdf`,
     },
     {
       Downloads: "Medical Certificate (A)",
