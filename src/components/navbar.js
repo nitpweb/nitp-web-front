@@ -178,9 +178,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             {/* {change == 0
               ? "NATIONAL INSTITUTE OF TECHNOLOGY PATNA"
               : "राष्ट्रीय प्रौद्योगिकी संस्थान पटना"} */}
-            NATIONAL INSTITUTE OF TECHNOLOGY PATNA
-            <br />
             राष्ट्रीय प्रौद्योगिकी संस्थान पटना
+            <br />
+            NATIONAL INSTITUTE OF TECHNOLOGY PATNA
           </span>
         </div>
         <div className="nav-col end">
