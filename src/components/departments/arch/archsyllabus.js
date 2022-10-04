@@ -28,7 +28,7 @@ const Archsyllabus = props => {
                     {" "}
                     -Architecture
                   </h2>
-
+                  <br />
                 <div className="probutton">
                   <button
                     onClick={() => {
