@@ -25,9 +25,9 @@ const Cesyllabus = props => {
                 <h1 style={{ marginBottom: `1rem` }}>Syllabus</h1>
                 <h2 data-aos="zoom-in-right">
                     {" "}
-                    --Civil Engineering
+                    -Civil Engineering
                   </h2>
-
+                  <br />
                 <div className="probutton">
                   <button
                     onClick={() => {

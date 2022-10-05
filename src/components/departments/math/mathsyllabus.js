@@ -18,7 +18,7 @@ const Mathsyllabus = props => {
               <div className="digital">
                 <h1 style={{ marginBottom: `1rem` }}>Syllabus</h1>
                 <h2 data-aos="zoom-in-right"> -Department of Mathematics</h2>
-
+                <br />
                 <div className="probutton">
                   <button
                     onClick={() => {
