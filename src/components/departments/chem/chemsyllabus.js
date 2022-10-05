@@ -17,6 +17,7 @@ const Csesyllabus = props => {
               <div className="row rowmarl3">
                 <h1 data-aos="zoom-in-right">Syllabus</h1>
               </div>
+              <br />
               <div className="row rowmarl3">
                 <h2 data-aos="zoom-in-right"> -Chemistry</h2>
               </div>

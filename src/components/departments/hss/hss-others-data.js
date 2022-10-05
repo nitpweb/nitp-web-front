@@ -25,8 +25,17 @@ export const Activities = {
       <li>
       	Expert Lecture on “The Humanities for Scientists & Engineers: The Relationship between the Natural & Social Sciences” on 28 August 2017.
       </li>
+      <li>
+      	Expert Lecture on “Human Resource Management” on 28th January 2017.
+      </li>
+      <li>
+      	Expert Lecture on “Sampling Methods in Statistics” on 28th January 2015.
+      </li>
+      <li>
+      	Expert Lecture on “Communication Skills: An Important Employability Skill for Workplace Success” on 28th August, 2014.
+      </li>
       </ul>
-      <h1>Invited Lectures</h1>
+      {/* <h1>Invited Lectures</h1>
       <br />
       <p>
         <p>
@@ -85,7 +94,7 @@ export const Activities = {
         </li>
         <li>Date: 28th August, 2014</li>
         <li>Seminar Hall, NIT Patna</li>
-      </p>
+      </p> */}
     </>
   ),
 }
@@ -173,145 +182,6 @@ export const TimeTable=[
     link:"https://drive.google.com/file/d/1ebFsyL3l2ZXxaLDtYup74gPsJq6P6rM4/view?usp=sharing",
   },
 ]
-
-export const Achievements = [
-  {
-    title: <h2>Projects</h2>,
-    content: (
-      <>
-        <table className="table-act">
-          <thead>
-            <tr className="syllabus-table-head">
-              <th>Funding Body</th>
-              <th>Area of Research</th>
-              <th>Faculty members involved</th>
-              <th>Funding amount</th>
-              <th>Year</th>
-            </tr>
-          </thead>
-          <tbody>
-            {/* {Projects.map((row, idx) => {
-              return (
-                <tr key={idx}>
-                  <td>{row["Funding body"]}</td>
-                  <td>{row["Area of research"]}</td>
-                  <td>{row["Faculty members involved"]}</td>
-                  <td>{row["Funding amount"]}</td>
-                  <td>{row["Year"]}</td>
-                </tr>
-              )
-            })} */}
-          </tbody>
-        </table>
-      </>
-    ),
-  },
-]
-
-// const Projects = [
-//   {
-//     "Funding body": "DST   SERB",
-//     "Area of research":
-//       "Efficient   Reliable Data Delivery during Forest Fire using Wireless Network",
-//     "Faculty members involved": "Dr.   Ditipriya Sinha",
-//     "Funding amount": "11   lakhs",
-//     Year: "2017-2020",
-//   },
-//   {
-//     "Funding body": "DST   SERB",
-//     "Area of research":
-//       "Study   of Road Coverage Problem in Wireless Sensor Network",
-//     "Faculty members involved": "Dr. Dinesh   Dash",
-//     "Funding amount": "7.42   lakhs",
-//     Year: "2016-2019   Completed",
-//   },
-//   {
-//     "Funding body": "SERB (DST)",
-//     "Area of research":
-//       "Fault-tolerant   Coordination in Infrastructure-less Network",
-//     "Faculty members involved": "Dr.   Suddhasil De",
-//     "Funding amount": "Rs.   20.85 lakhs",
-//     Year: "2017-   Ongoing",
-//   },
-//   {
-//     "Funding body":
-//       "Ministry   of Electronics and Information Technology (MeitY), Government of India",
-//     "Area of research":
-//       "Information   Security Education and Awareness (ISEA) - Phase 1",
-//     "Faculty members involved":
-//       "Dr.   G.K. Choudhary, Dr. Prabhat Kumar (CSE deptt.) (Co-chief Investigator)",
-//     "Funding amount": "19.32   lakhs",
-//     Year: "2006-2014   Completed",
-//   },
-//   {
-//     "Funding body":
-//       "Graphic   Trades Pvt. Ltd. (An ISO 9001, 14001, 20001 & 27001 Certified Company)",
-//     "Area of research":
-//       "Cashless   Services without the need of Smart Phone and Internet",
-//     "Faculty members involved": "Dr.   Prabhat Kumar (P.I.)",
-//     "Funding amount": "10.07   lakhs   (approx.)",
-//     Year: "2017-2021",
-//   },
-//   {
-//     "Funding body":
-//       "Ministry   of Electronics and Information Technology (MeitY)",
-//     "Area of research":
-//       "Development   of Algorithms for Speech based Bilingual Keyword Search to Detect Fraud/Spam   Calls",
-//     "Faculty members involved":
-//       "PI :   Dr. Gayadhar Pradhan (ECE deptt.) Co-PI : Dr. Jyoti Prakash Singh (CSE   deptt.)",
-//     "Funding amount": "41.1   lakhs",
-//     Year: "Completed",
-//   },
-//   {
-//     "Funding body": "DST   SERB",
-//     "Area of research":
-//       'A   "plug-and-play" Framework for Phylogenetic Databases with Semantic   Web Extension',
-//     "Faculty members involved":
-//       "PI :-   Dr. Akshay Deepak (CSE deptt.) Co-PI : Dr. Kumar Abhishek (CSE deptt.)",
-//     "Funding amount": "13.59   lakhs",
-//     Year: "2016-2019 Completed",
-//   },
-//   {
-//     "Funding body": "DEITY",
-//     "Area of research":
-//       "Information   Security Awareness Project (ISEA PHASE-II)",
-//     "Faculty members involved":
-//       "Dr.   M. P. Singh (Chief Investigator)   Dr.   Kakali Chatterjee (Co-Chief Investigator)",
-//     "Funding amount": "96   Crores",
-//     Year: "2015-Ongoing",
-//   },
-//   {
-//     "Funding body": "TEQIP-III",
-//     "Area of research":
-//       "Robust   and Secure Copyright Protection Techniques for e-Government Document",
-//     "Faculty members involved": "Dr.   Amit Kumar Singh",
-//     "Funding amount": "8.40   lakhs",
-//     Year: "2019-Ongoing",
-//   },
-//   {
-//     "Funding body": "TEQIP-III",
-//     "Area of research":
-//       "Healthcare   Data Lake: An Intelligent Search and Analytics Platform for Improving   Healthcare Plans and Treatments",
-//     "Faculty members involved": "Dr.   Mukesh Kumar",
-//     "Funding amount": "9.10   lakhs   (approx.)",
-//     Year: "2019-Ongoing",
-//   },
-//   {
-//     "Funding body": "TEQIP-III",
-//     "Area of research":
-//       "Discovery   of Knowledge Patterns in Student Learning System through Data Mining and Deep   Learning Techniques",
-//     "Faculty members involved": "Dr.   Somaraju Suvvari",
-//     "Funding amount": "8.65   lakhs   (approx.)",
-//     Year: "2020-Ongoing",
-//   },
-//   {
-//     "Funding body": "DRDO",
-//     "Area of research": "Copyright   protection tool for digital data",
-//     "Faculty members involved": "Dr.   Amit Kumar Singh",
-//     "Funding amount": "9.775   lakhs",
-//     Year: "2020-Ongoing",
-//   },
-// ]
 
 export const ActivityImages = [
   <img src={`${activity}02.jpg`} alt="image" />,

@@ -23,7 +23,7 @@ const Mesyllabus = props => {
                     {" "}
                     -Physics
                   </h2>
-
+                  <br />
                 <div className="probutton">
                   <button
                     onClick={() => {

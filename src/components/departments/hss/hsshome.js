@@ -52,20 +52,13 @@ export const vision = () => {
   )
 }
 
-// export const Outcomes = () => {
-//   return (
-//     <>
-//       Hello
-//     </>
-//   )
-// }
-
 export const Outcomes = () => {
   return (
     <>
       {Outcomes_.map(row => {
         return (
           <>
+            <br />
             <div className="row rowmarl3">{row.title}</div>
             <div className="row rowmarl3">{row.content}</div>
           </>
@@ -78,10 +71,10 @@ export const Outcomes = () => {
 export const contact = () => {
   return (
     <>
+      <br />
       Department of Humanities & Social Sciences
       <br />
-      <br />
-      National Institute Of Technology Patna,
+      National Institute of Technology Patna,
       <br />
       Ashok Rajpath, Patna - 800005.
       <br />
@@ -93,17 +86,6 @@ export const contact = () => {
     </>
   )
 }
-
-// export const labs = () => {
-//   return (
-//     <>
-//     <div className="col-6" style={{ textAlign: "left", fontSize: `1.1rem`,padding:`0px` }}>
-//     <h2>Language Lab</h2>
-//     Language Laboratory is a designated space for English language learning where students access audio-visual materials. It adapts a perfect blend of Instructor-Led-Training and Computer-Based-Training. The assessment on speaking and listening programme along with reading and writing,  listening and speaking skills to promote proficiency of language.
-//     </div>
-//     </>
-//   )
-// }
 
 export const labs = () => {
   return (
@@ -125,22 +107,6 @@ export const activities = () => {
         <Slider dataSlider={ActivityImages} showDots={true} />
       </div>
       <div className="rowmarl3">{Activities.content}</div>
-    </>
-  )
-}
-
-export const achievements = () => {
-  return (
-    <>
-      {" "}
-      <div className=" row rowmarl3" style={{ fontSize: `1.2rem` }}>
-        {Achievements.map((act, idx) => (
-          <>
-            <div className="row"> {act.title}</div>
-            <div className="row"> {act.content}</div>
-          </>
-        ))}
-      </div>
     </>
   )
 }
@@ -198,11 +164,6 @@ export const datalist = [
     // img: "/department/activities.svg",
   },
   {
-    title: "Contact",
-    data: "contact",
-    // img: "/department/contact.svg",
-  },
-  {
     title: "Labs",
     data: "labs",
     // img: "/department/labs.svg",
@@ -221,5 +182,10 @@ export const datalist = [
     title: "Time Table",
     data: "timetable",
     // img: "clock.svg",
+  },
+  {
+    title: "Contact",
+    data: "contact",
+    // img: "/department/contact.svg",
   },
 ]
