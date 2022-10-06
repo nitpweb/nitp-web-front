@@ -15,7 +15,7 @@ const Innovation = () => {
 
   useEffect(() => {
     loadData()
-    setX(-300)
+    setX(0.1)
   }, [])
   const loadData = () => {
     const url = `${process.env.GATSBY_API_URL}/api/innovation/all`

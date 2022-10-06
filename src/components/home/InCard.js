@@ -29,7 +29,7 @@ const Incard = props => {
             </p>
             <p id="time">{props.date}</p>
           </div>
-          <div className="pic">
+          {/* <div className="pic">
             <img
               src={
                 props.link2 != undefined
@@ -38,7 +38,7 @@ const Incard = props => {
               }
               alt="img"
             />
-          </div>
+          </div> */}
         </div>
       </Link>
     </>

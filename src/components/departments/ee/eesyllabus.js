@@ -26,7 +26,7 @@ const Eesyllabus = props => {
                     {" "}
                     -Electrical Engineering
                   </h2>
-
+                  <br />
                 <div className="probutton">
                   <button
                     onClick={() => {
