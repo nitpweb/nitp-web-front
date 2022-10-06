@@ -29,6 +29,7 @@ const Csesyllabus = props => {
                     {" "}
                     -Computer Science and Engineering
                   </h2>
+                  <br />
                 <div className="probutton">
                   <button
                     onClick={() => {
