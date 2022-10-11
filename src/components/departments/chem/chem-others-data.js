@@ -12,10 +12,7 @@ export const Labs = {
       </h2>
 
       <ol>
-        <li>
-          Synthetic Research Lab (Prof. Sitaram Sharma &amp; Dr. Khursheed
-          Ahmad)
-        </li>
+        <li>Synthetic Research Lab (Dr. Khursheed Ahmad)</li>
         <li>Green Synthesis Lab (Dr. Tasneem Parvin)</li>
         <li>Inorganic Lab (Dr. Mukesh Choudhary)</li>
         <li>Physical Chemistry Exptl. Lab (Dr. Aniruddha Paul)</li>
@@ -344,13 +341,9 @@ export const Activity = {
 
 export const Achievements = {
   content: (
-    <>
-      <img
-        src={`${home}rc.png`}
-        className="img-fluid"
-        alt="A METHOD FOR CONTAMINATED WATER USING PHOTOSTABLE SUPERPARAMAGNETIC NANOMATERIAL"
-      />
-    </>
+    <ul>
+      <li>Patent granted on "A METHOD FOR CONTAMINATED WATER USING PHOTOSTABLE SUPERPARAMAGNETIC NANOMATERIAL."</li>
+    </ul>
   ),
 }
 
@@ -362,15 +355,9 @@ export const Others = {
           <strong>PhD students:</strong>
         </p>
         <ol>
-          <li>Pooja Kumari (PhD guide: Dr. Tasneem Parvin)</li>
-          <li>Mahesh Kumar Mishra (PhD guide: Prof. Sitaram Sharma)</li>
           <li>Sangeeta (PhD guide: Dr. Khursheed Ahmad)</li>
-          <li>Noorussabah (PhD guide: Dr. Khursheed Ahmad) </li>
-          <li>Brajesh Kumar (PhD guide: Dr. Subrata Das)</li>
           <li>Mosidur Rahaman Molla (PhD guide: Dr. Rima Thakur)</li>
-          <li>Bharti Mohan (PhD guide: Dr. Mukesh Choudhary)</li>
           <li>Pramanand Kumar (PhD guide: Dr. Subrata Das)</li>
-          <li>Rahul Yadav (PhD guide: Dr. Tasneem Parvin)</li>
           <li>Manisha Prakashini (PhD guide: Dr. Suvankar Dasgupta)</li>
           <li>Sweta (PhD guide: Prof. Sitaram Sharma)</li>
           <li>Vedeshwar Narayan Singh (PhD guide: Prof. Sitaram Sharma)</li>
@@ -379,8 +366,6 @@ export const Others = {
           <li>Pradeep Das (PhD guide: Dr. Rima Thakur)</li>
           <li>Mukesh Kumar Mishra (PhD guide: Dr. Khursheed Ahmad)</li>
           <li>Krishna Kumar Mahto (PhD guide: Dr. Khursheed Ahmad)</li>
-          <li>Sarfaraz Ahmad (PhD guide: Dr. Subrata Das)</li>
-          <li>Ruchika Jaryal (PhD guide: Dr. Mukesh Choudhary)</li>
           <li>Darakshan (PhD guide: Dr. Tasneem Parvin)</li>
           <li>Rasendra Shukla (Project guide: Dr. Suvankar Dasgupta)</li>
           <li>Susital Mal (Project guide: Dr. Subrata Das)</li>
@@ -393,6 +378,12 @@ export const Others = {
           <li>Ruchi Bharti, 2016 (PhD guide: Dr. Tasneem Parvin)</li>
           <li>Debojyoti Chakraborty, 2015 (PhD guide: Prof. Sitaram Sharma)</li>
           <li>Madhu Bala, 2014 (PhD guide: Dr. Khursheed Ahmad)</li>
+          <li>Pooja Kumari (PhD guide: Dr. Tasneem Parvin)</li>
+          <li>Mahesh Kumar Mishra (PhD guide: Prof. Sitaram Sharma)</li>
+          <li>Noorussabah (PhD guide: Dr. Khursheed Ahmad) </li>
+          <li>Brajesh Kumar (PhD guide: Dr. Subrata Das)</li>
+          <li>Bharti Mohan (PhD guide: Dr. Mukesh Choudhary)</li>
+          <li>Rahul Yadav (PhD guide: Dr. Tasneem Parvin)</li>
         </ol>
       </div>
       <div>
