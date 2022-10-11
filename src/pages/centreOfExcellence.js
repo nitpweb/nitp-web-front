@@ -1,5 +1,5 @@
 import React from "react"
-import CentreOfExcellence from "../components/CentreOfExcellence"
+import CentreOfExcellence from "../components/centreOfExcellence"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 const centreOfExcellence = () => (

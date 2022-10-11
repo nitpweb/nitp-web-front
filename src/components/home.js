@@ -41,7 +41,7 @@ const Home = () => {
     axios
       .get(academicsUrl)
       .then(res => {
-        setAcademics(res.data)
+        setAcademics(res.data.filter(notice => notice.isVisible === 1))
       })
       .catch(e => {
         console.log(e)
@@ -200,7 +200,26 @@ const Home = () => {
           <div className="notice-row">
             {academics &&
               academics.map(notice => {
-                if (academics.title != "") {
+                if (notice.title != "" && notice.important == 1) {
+                  return (
+                    <Notice
+                      detail={notice.title}
+                      time={notice.timestamp}
+                      key={notice.id}
+                      attachments={notice.attachments}
+                      imp={notice.important}
+                      link={
+                        notice.notice_link && JSON.parse(notice.notice_link).url
+                          ? JSON.parse(notice.notice_link).url
+                          : ""
+                      }
+                    />
+                  )
+                }
+              })}
+              {academics &&
+              academics.map(notice => {
+                if (notice.title != "" && notice.important != 1){
                   return (
                     <Notice
                       detail={notice.title}
