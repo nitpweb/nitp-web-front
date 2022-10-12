@@ -14,6 +14,11 @@ const Academicspage = () => {
   const [notices, setNotices] = useState()
   const [view, setView] = useState("admissions")
 
+  const formatStyleFix = {
+    "display":"flex",
+    "flexDirection":"column"
+  }
+
   function getView(callback) {
     setView(callback)
   }
@@ -545,10 +550,10 @@ const Academicspage = () => {
                 <div className="row rowmarl3">
                   <h1>Formats</h1>
                 </div>
-                <div className="row rowmarl3 digital">
+                <div className="row rowmarl3 digital" style={formatStyleFix}>
                   {acadData.format.map(item =>
-                    item.data.map(e => (
-                      <p>
+                    item.data.map((e,idx) => (
+                      <p key={idx}>
                         <a
                           id="formatdown"
                           href={e.link}
