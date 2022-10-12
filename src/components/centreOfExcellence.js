@@ -1,7 +1,7 @@
 import React from 'react'
 import { TabPage } from './styles/tabpage'
 
-function CentreOfExcellence() {
+function centreOfExcellence() {
   return (
     <TabPage>
       <div className="mainDiv">
@@ -19,4 +19,4 @@ function CentreOfExcellence() {
   )
 }
 
-export default CentreOfExcellence
+export default centreOfExcellence
