@@ -536,28 +536,38 @@ const Format = [
           "http://web.nitp.ac.in/downloads/exam/Format%20for%20Grade%20Card01.10.2020.pdf",
       },
       {
-        para: "1-Procedure to get an Original Degree from the Institute",
-        link: "http://web.nitp.ac.in/uploads20/Degree_sop.pdf",
+        para: "1-SOP to issue Original Degree Certificate",
+        link: "http://web.nitp.ac.in/uploads22/Degree_SOP (6).pdf",
       },
       {
         para:
-          "2-Procedure to get Institute Leaving/Transfer Cum Migration certificate",
-        link: "http://web.nitp.ac.in/uploads20/migration_sop.pdf",
+          "2-SOP to issue Institute Leaving/Transfer Cum Migration Certificate",
+        link: "http://web.nitp.ac.in/uploads22/Migration_SOP (1).pdf",
       },
       {
         para:
-          "3-Procedure for refund/adjustment of DRCC Bihar student credit card loan along with application form.",
+          "3-SOP for Refund of DRCC Education Loan under Bihar Student Credit Card Scheme",
         link:
-          "http://web.nitp.ac.in/uploads20/Revised_sop_DRCC_REFUND-26.03.2021.pdf",
+          "http://web.nitp.ac.in/uploads22/DRCC_Refund_SOP.pdf",
       },
       {
         para:
-          "4-Procedure for issue of Demand Letter for Bank/DRCC student credit card loan.",
+          "4-SOP for Adjustment of DRCC Education Loan under Bihar Student Credit Card Scheme",
+        link:
+          "http://web.nitp.ac.in/uploads22/DRCC_Adjustment_SOP.pdf",
+      },
+      {
+        para:
+          "5-Procedure for issue of Demand Letter for Bank/DRCC student credit card loan.",
         link: "http://web.nitp.ac.in/uploads20/demand_letter_sop.pdf",
       },
       {
-        para: "5-Procedure for Educational verification of Students.",
+        para: "6-Procedure for Educational verification of Students.",
         link: "http://web.nitp.ac.in/uploads20/verification_sop.pdf",
+      },
+      {
+        para: "7-SOP for Cancellation of Admission",
+        link: "http://web.nitp.ac.in/uploads22/Application for Cancellation of Admission.pdf",
       },
     ],
   },

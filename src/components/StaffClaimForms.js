@@ -58,7 +58,7 @@ const SCF = {
       "Office order": "",
     },
     {
-      Downloads: "Medical Nursing CERTIFICATE",
+      Downloads: "Medical Nursing Certificate",
       DLink: `${home}/staffForm/Nursing CERTIFICATE.pdf`,
       "Office order": "",
     },
@@ -73,7 +73,7 @@ const SCF = {
       "Office order": "",
     },
     {
-      Downloads: "Travall Bill For Tour",
+      Downloads: "Travel Bill For Tour",
       DLink: `${home}/staffForm/travallbillfortour.pdf`,
       "Office order": "",
     },
