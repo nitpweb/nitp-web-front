@@ -35,6 +35,7 @@ export const AdCardStyle = styled.div`
     width: 94%;
     justify-content: center;
     align-items: center;
+    white-space: pre-wrap;
   }
   .adcardname {
     span {
