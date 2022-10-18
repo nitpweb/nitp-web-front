@@ -69,6 +69,12 @@ const DataPHD = [
     data: [
       {
         link:
+          "http://web.nitp.ac.in/uploads22/Notice_Thesis printing on both sides_19_10_22.pdf",
+        para:
+          "Notice regarding printing of Ph.D thesis on both sides of the paper",
+      },
+      {
+        link:
           "http://web.nitp.ac.in/uploads/Notice%20regarding%20DSC_02_03_2020.jpg",
         para:
           "Notice: PhD Supervisor will be Chairman DSC irrespective of admission date",
