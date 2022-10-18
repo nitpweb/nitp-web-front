@@ -192,7 +192,7 @@ const Home = () => {
             // data-aos-duration="200"
             className="notice-head"
           >
-            Announcements
+            Academics
             <Link id="notice-head-p" to="academics?tab=Notices">
               View all
             </Link>

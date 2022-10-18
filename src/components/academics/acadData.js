@@ -491,11 +491,6 @@ const Fee = [
         para: "PG: Fee Structure for M.Tech./M.Arch/MURP for (Jan-June'2021)",
         link: "http://web.nitp.ac.in/uploads20/Notification.pdf",
       },
-
-      {
-        para: "UG : Fee Structure (2020-21)",
-        link: "http://web.nitp.ac.in/uploads20/Fee%20Structure_UG_PG_Ph.D.pdf",
-      },
       {
         para: "UG : Fee Structure (2018-19)",
         link: "http://web.nitp.ac.in/uploads/Fee_Structure_All.pdf",
