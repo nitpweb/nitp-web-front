@@ -304,6 +304,21 @@ const DataNotice = [
 const Admissions = [
   {
     heading: "Admissions",
+    title: "JoSAA-2022/CSAB-2022/DASA-2022",
+    data: [
+      {
+        para: "Information for Admission to B.Tech./B.Arch./Dual Degree (B.Tech+M.Tech) Programmes through JoSAA-2022/CSAB-2022/DASA-2022",
+        link:
+          "http://web.nitp.ac.in/uploads22/Admission Notice_ 2022-23_B.Tech_B.Arch_Dual DegreeB.Tech_M.Tech.pdf",
+      },
+      {
+        para:
+          " UG Admission 2022-23:The dates of physical reporting at the institute shall be according to the schedule of CSAB-2022",        
+      },
+    ],
+  },
+  {
+    heading: "Admissions",
     title: "CCMT-2021:",
     data: [
       {
