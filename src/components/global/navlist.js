@@ -469,6 +469,10 @@ const Students = [
     data: "",
     sub: [
       {
+        url: "http://old.nitp.ac.in/alumni/html/index.html",
+        title: "Alumni",
+      },
+      {
         url: "http://mail.google.com/a/nitp.ac.in",
         title: "Web Mail",
       },
