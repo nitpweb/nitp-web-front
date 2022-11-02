@@ -136,7 +136,7 @@ const IDC = [
   type: "Chairman",
   },
   {
-  name: "Dr. A. R. Quaff",
+  name: "Prof. A. R. Quaff",
   designation: "Director's Nominee",
   type: "Member",
   },
@@ -227,6 +227,10 @@ const Senate = [
   type: "Member",
   },
   {
+    name: "Prof. Abdur Rahman Quaff, \n Civil Engineering Dept.",
+    type: "Member",
+  },
+  {
   name: "Prof. Baboo Rai \n Professor, Civil Engineering Dept.",
   type: "Member",
   },
@@ -248,72 +252,72 @@ const Senate = [
   },
   {
   name:
-  "Dr. Manoj Kumar \n Professor, Architecture Dept.",
+  "Prof. Manoj Kumar \n Professor, Architecture Dept.",
   type: "Member",
   },
   {
   name:
-  "Dr. Fulena Rajak \n Professor, Architecture Dept.",
+  "Prof. Fulena Rajak \n Professor, Architecture Dept.",
   type: "Member",
   },
   {
   name:
-  "Dr. L. B. Roy \n Professor, Civil Engineering Dept.",
+  "Prof. L. B. Roy \n Professor, Civil Engineering Dept.",
   type: "Member",
   },
   {
   name:
-  "Dr. Sanjeev Sinha \n Professor, Civil Engineering Dept.",
+  "Prof. Sanjeev Sinha \n Professor, Civil Engineering Dept.",
   type: "Member",
   },
   {
   name:
-  "Dr. Ajay Kumar Sinha \n Professor, Civil Engineering Dept.",
+  "Prof. Ajay Kumar Sinha \n Professor, Civil Engineering Dept.",
   type: "Member",
   },
   {
   name:
-  "Dr. S. S. Mishra \n Professor, Civil Engineering Dept.",
+  "Prof. S. S. Mishra \n Professor, Civil Engineering Dept.",
   type: "Member",
   },
   {
   name:
-  "Dr. Vivekanand Singh \n Professor, Civil Engineering Dept.",
+  "Prof. Vivekanand Singh \n Professor, Civil Engineering Dept.",
   type: "Member",
   },
   {
   name:
-  "Dr. Ramesh Kumar \n Professor, Electrical Engineering Dept.",
+  "Prof. Ramesh Kumar \n Professor, Electrical Engineering Dept.",
   type: "Member",
   },
   {
   name:
-  "Dr. Sawal Kishore Singh \n Mathematics Dept.",
+  "Prof. Sawal Kishore Singh \n Mathematics Dept.",
   type: "Member",
   },
   {
   name:
-  "Dr. S. K. Verma \n Professor, Mechanical Engineering Dept.",
+  "Prof. S. K. Verma \n Professor, Mechanical Engineering Dept.",
   type: "Member",
   },
   {
   name:
-  "Dr. Om Prakash \n Professor, Mechanical Engineering Dept.",
+  "Prof. Om Prakash \n Professor, Mechanical Engineering Dept.",
   type: "Member",
   },
   {
   name:
-  "Dr. Ramakar Jha \n Professor, Civil Engineering Dept.",
+  "Prof. Ramakar Jha \n Professor, Civil Engineering Dept.",
   type: "Member",
   },
   {
   name:
-  "Dr. Prakash Chandra \n Professor, Mechanical Engineering Dept.",
+  "Prof. Prakash Chandra \n Professor, Mechanical Engineering Dept.",
   type: "Member",
   },
   {
   name:
-  "Dr. A. N. Sinha \n Professor, Mechanical Engineering Dept.",
+  "Prof. A. N. Sinha \n Professor, Mechanical Engineering Dept.",
   type: "Member",
   },
   {
@@ -332,7 +336,7 @@ const Senate = [
   type: "External Member",
   },
   {
-  name: "Dr. Asit Narayan \n Registrar, NIT Patna",
+  name: "Prof. Asit Narayan \n Registrar, NIT Patna",
   type: "Ex-Officio Member Secretary",
   },
 ]
@@ -350,13 +354,13 @@ const ServiceUnit = [
   },
   {
   designation: "Examinations",
-  type: "Associate Dean",
+  type: "Associate Dean (Exam)",
   name: "Prof. Abdur Rahman Quaff",
   },
   {
   designation: "Training and Placement",
   type: "Prof. In-charge",
-  name: "Dr. Samrat Mukherjee",
+  name: "Prof. Samrat Mukherjee",
   },
   {
   designation: "HMC",
