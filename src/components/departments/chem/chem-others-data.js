@@ -78,15 +78,20 @@ export const Labs = {
 
 export const LabImages = [
   <>
-    <img src={`${home}DSC_0072.jpg`} alt="image" />
+    <img src={`${home}Dr. Parvin Lab.jpg`} alt="image" />
   </>,
   <>
-    <img src={`${home}DSC_0070.jpg`} alt="image" />
+    <img src={`${home}Dr. Chowdhury Lab.jpg`} alt="image" />
   </>,
   <>
-    <img src={`${home}DSC_0065.jpg`} alt="image" />
+    <img src={`${home}Dr. Jha Lab.png`} alt="image" />
   </>,
- 
+  <>
+    <img src={`${home}Dr. Dasgupta Lab.png`} alt="image" />
+  </>,
+  <>
+    <img src={`${home}subrata.jpg`} alt="image" />
+  </>,
 ]
 
 export const ActivityImages = [
