@@ -332,15 +332,7 @@ const Projects = [
 ]
 export const TimeTable=[
   {
-    title:"Click here for the time table of UG first year CSE batch.",
-    link:"http://web.nitp.ac.in/uploads20/CSE_1stYearTimeTableFall2021_31_07_2021.pdf",
-  },
-  {
-    title:"Click here for the time table of all the subjects offered by CSED to first year students (both CSE and non-CSE).",
-    link:"http://web.nitp.ac.in/uploads20/AllFirstYearSubjectsCSED_31_07_2021.pdf",
-  },
-  {
-    title:"Click here for the time table of other batches.",
+    title:"Click here for the time table of CSED.",
     link:"https://goo.gl/it4A21",
   },
 ]
