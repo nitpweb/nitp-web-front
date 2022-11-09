@@ -12,6 +12,7 @@ import {
 
 export const routeName = "che"
 export const title = "Chemistry Department"
+console.log(LabImages)
 export const titleDescription = () => {
   return (
     <>
