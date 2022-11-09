@@ -39,6 +39,7 @@ export default function Slider({
     setSlideIndex(index)
   }
 
+  dataSlider = [dataSlider[dataSlider.length -1], ...dataSlider]
   return (
     <SliderStyle type={type}>
       <div className="container-slider">
