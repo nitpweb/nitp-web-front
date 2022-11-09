@@ -35,59 +35,59 @@ const firstYear = [
     info: `This page has been created specially for First Year Students, so that they can get all important information / announcement (not exhaustive though) related to them on a single page.`,
     data0: [
       {
-        title: `Microsoft Teams online links to join the Orientation Programme.`,
-        link: `http://www.nitp.ac.in/uploads20/Online%20Orientation%20Programme%202020_2_30_Nov_2020.pdf`
+        title: `Student Induction Programme 2022.`,
+        link: `https://web.nitp.ac.in/uploads22/UG Student Induction Programme 2022.jpg`
       }
     ],
     data1: [
-      {
-        title: `Class Schedule for 1st Year Students :`,
-        link: `http://www.nitp.ac.in/uploads20/Online%20Orientation%20Programme%202020_2_30_Nov_2020.pdf`,
-      },
-      {
-        title: `Click here for Physics :`,
-        link: `http://www.nitp.ac.in/uploads20/Time-Table%20for%20B.%20Tech.%20students%20(Newly%20admitted)_2020_Department%20of%20Physics.pdf`,
-      },
-      {
-        title: `Click here for Electronics Dept. :`,
-        link: `http://www.nitp.ac.in/uploads20/1st%20Year%20Dec-March%202020-2021%20(1).pdf`,
-      },
-      {
-        title: `Click here for ME Dept (Dept subjects). :`,
-        link: `http://www.nitp.ac.in/uploads20/Time%20table%20ME%20department_2020-2021%20odd%20semester_modified_01-09-2020_1st%20year%20students.pdf`,
-      },
-      {
-        title: `Click here for ME Dept. (overall):`,
-        link: `http://www.nitp.ac.in/uploads20/Mechanical.pdf`,
-      },
-      {
-        title: `Click here for CSE :`,
-        link: `http://www.nitp.ac.in/uploads20/CSED_1stYear_Dec-March-2020-semester_08_12_2020.pdf`,
-      },
-      {
-        title: `Click here for Maths. Dept. :`,
-        link: `http://www.nitp.ac.in/uploads20/1st%20year%20time-table%20(1).pdf`,
-      },
-      {
-        title: `Click here for Updated Civil Dept. Class Schedule :`,
-        link: `http://www.nitp.ac.in/uploads20/1UGCE(JULY-DEC%2020).pdf`,
-      },
-      {
-        title: `Click here for Chemistry Dept. :`,
-        link: `http://www.nitp.ac.in/uploads20/B.%20Tech%201st%20yr%20Time%20Table_Chemistry.pdf`,
-      },
-      {
-        title: ` Click here for HSS Dept. :`,
-        link: `http://www.nitp.ac.in/uploads20/Time%20Table%20HSS%20July%20Dec%202020%20(BTECH%201ST%20SEM)-1.pdf`,
-      },
-      {
-        title: `Click here for EE Dept. :`,
-        link: `http://www.nitp.ac.in/uploads20/Routine%201st%20sem%20EE.docx`,
-      },
-      {
-        title: `Click here for Architecture Dept. :`,
-        link: `http://www.nitp.ac.in/uploads20/2020-07.12.2020.pdf`,
-      },
+      // {
+      //   title: `Class Schedule for 1st Year Students :`,
+      //   link: `http://www.nitp.ac.in/uploads20/Online%20Orientation%20Programme%202020_2_30_Nov_2020.pdf`,
+      // },
+      // {
+      //   title: `Click here for Physics :`,
+      //   link: `http://www.nitp.ac.in/uploads20/Time-Table%20for%20B.%20Tech.%20students%20(Newly%20admitted)_2020_Department%20of%20Physics.pdf`,
+      // },
+      // {
+      //   title: `Click here for Electronics Dept. :`,
+      //   link: `http://www.nitp.ac.in/uploads20/1st%20Year%20Dec-March%202020-2021%20(1).pdf`,
+      // },
+      // {
+      //   title: `Click here for ME Dept (Dept subjects). :`,
+      //   link: `http://www.nitp.ac.in/uploads20/Time%20table%20ME%20department_2020-2021%20odd%20semester_modified_01-09-2020_1st%20year%20students.pdf`,
+      // },
+      // {
+      //   title: `Click here for ME Dept. (overall):`,
+      //   link: `http://www.nitp.ac.in/uploads20/Mechanical.pdf`,
+      // },
+      // {
+      //   title: `Click here for CSE :`,
+      //   link: `http://www.nitp.ac.in/uploads20/CSED_1stYear_Dec-March-2020-semester_08_12_2020.pdf`,
+      // },
+      // {
+      //   title: `Click here for Maths. Dept. :`,
+      //   link: `http://www.nitp.ac.in/uploads20/1st%20year%20time-table%20(1).pdf`,
+      // },
+      // {
+      //   title: `Click here for Updated Civil Dept. Class Schedule :`,
+      //   link: `http://www.nitp.ac.in/uploads20/1UGCE(JULY-DEC%2020).pdf`,
+      // },
+      // {
+      //   title: `Click here for Chemistry Dept. :`,
+      //   link: `http://www.nitp.ac.in/uploads20/B.%20Tech%201st%20yr%20Time%20Table_Chemistry.pdf`,
+      // },
+      // {
+      //   title: ` Click here for HSS Dept. :`,
+      //   link: `http://www.nitp.ac.in/uploads20/Time%20Table%20HSS%20July%20Dec%202020%20(BTECH%201ST%20SEM)-1.pdf`,
+      // },
+      // {
+      //   title: `Click here for EE Dept. :`,
+      //   link: `http://www.nitp.ac.in/uploads20/Routine%201st%20sem%20EE.docx`,
+      // },
+      // {
+      //   title: `Click here for Architecture Dept. :`,
+      //   link: `http://www.nitp.ac.in/uploads20/2020-07.12.2020.pdf`,
+      // },
     ],
   }
 ]
