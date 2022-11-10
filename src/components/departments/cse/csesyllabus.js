@@ -4,6 +4,9 @@ import Coursephd from "./phd course"
 import Coursepg from "./cse MTech CourseStructure"
 import Courseug_nep21 from "./cse Btech NEP21"
 import Coursedd from "./csedd.js"
+import Course_CSEBtech22_onwards from "./cse Btech 2022 Onwards"
+import Course_DD_CyberSecurity from "./cse Dual Degree CyberSecurity"
+import Course_DD_DataScience from "./cse Dual Degree DataScience"
 import main from "../img/book.svg"
 import { PageLayout } from "../../styles/pagelayout"
 
@@ -13,6 +16,14 @@ import Table from "../../table"
 const Csesyllabus = props => {
     const [course, setCourse] = useState("programmesug")
   const [syllabus, setSyllabus] = useState(Courseug)
+
+  const add_url = (syllabus, folder_name) => {
+    // add a new column to the syllabus array
+    syllabus.forEach((item, index) => {
+      syllabus[index].url = `https://web.nitp.ac.in/dept/cse/syllabus/${folder_name}/${item.coursecode}_${item.coursetitle}.docx`
+    })
+    return syllabus
+  }
 
   useEffect(() => {
     
@@ -51,6 +62,15 @@ const Csesyllabus = props => {
                   </button>
                   <button
                     onClick={() => {
+                      setCourse("programmesug22_onwards")
+                      setSyllabus(add_url(Course_CSEBtech22_onwards, "syllabus_btech_2021_onwards"))
+                    }}
+                    className={course == "programmesug22_onwards" ? "btnactive" : ""}
+                  >
+                    UG Courses-2022 Onwards
+                  </button>
+                  <button
+                    onClick={() => {
                       setCourse("programmespg")
                       setSyllabus(Coursepg)
                     }}
@@ -67,7 +87,7 @@ const Csesyllabus = props => {
                   >
                     PhD Courses
                   </button>
-                  <button
+                  {/* <button
                     onClick={() => {
                       setCourse("programmesdd")
                       setSyllabus(Coursedd)
@@ -75,21 +95,39 @@ const Csesyllabus = props => {
                     className={course == "programmesdd" ? "btnactive" : ""}
                   >
                     Dual Degree
+                  </button> */}
+                  <button
+                    onClick={() => {
+                      setCourse("programmes_dd_cyber_security")
+                      setSyllabus(add_url(Course_DD_CyberSecurity, "syllabus_dual_degree_cyber_security"))
+                    }}
+                    className={course == "programmes_dd_cyber_security" ? "btnactive" : ""}
+                  >
+                    Dual Degree (Cyber Security)
+                  </button>
+                  <button
+                    onClick={() => {
+                      setCourse("programmes_dd_data_science")
+                      setSyllabus(add_url(Course_DD_DataScience, "syllabus_dual_degree_data_science"))
+                    }}
+                    className={course == "programmes_dd_data_science" ? "btnactive" : ""}
+                  >
+                    Dual Degree (Data Science and Engineering)
                   </button>
                 </div>
               </div>
             </div>
 
-            
-            {
+
+            {/* {
               (syllabus === Coursedd) &&
               <ul>
                 <li><a href="https://web.nitp.ac.in/uploads22/DataScienceCombinedSep22.pdf" target="_blank">Computer Science and Engineering with Specialization in Data Science (5 Years, Bachelor and Master of Technology (Dual Degree))</a></li>
                 <li><a href="https://web.nitp.ac.in/uploads22/CyberSecurityCombinedSep2022.pdf" target="_blank">Computer Science and Engineering with Specialization in Cyber Security (5 Years, Bachelor and Master of Technology (Dual Degree))</a></li>
               </ul>
-            }
+            } */}
             {
-              (syllabus === Coursedd) || 
+              // (syllabus === Coursedd) || 
             <Table style={{width:"100%", marginTop:"20px"}}>
               <br />
               <tr className="syllabus-table-head">
