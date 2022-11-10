@@ -1,0 +1,24 @@
+coursecode,coursetitle,l,t,p,credits,sem_elect,dept
+CS14102,Programming in C,3,0,2,4,1,CSUG
+MA14102,Engineering Mathematics I,3,1,0,4,1,MATH
+CH14101,Engineering Chemistry,3,0,2,4,1,CHE
+EC14102,Digital Design,2,0,2,3,1,ECE
+CS14106,Information Technology  Workshop,3,0,2,4,1,CSUG
+EAA14102,EAA -II Swachha Bharat Mission (SBM),0,0,2,1,1,CSE/SAC
+CS24107,Web Technology,3,0,2,4,2,CSUG
+HS24101,Communicative English,3,0,2,4,2,HSS
+PH24101,Engineering Physics,3,0,2,4,2,PHY
+CS24108,Computer Organization,3,0,2,4,2,CSUG
+MA24102,Engineering Mathematics II,3,0,0,3,2,MATH
+EAA24101,EAA - I Sports/Innovative Project/NCC/NSS,0,0,2,1,2,CSE/SAC
+CS34104,Data Structures,3,0,2,4,3,CSUG
+CS34105,Object Oriented Programming,2,0,2,3,3,CSUG
+CS34109,Database Management Systems,3,0,2,4,3,CSUG
+CS34110,Discrete Mathematics and Graph Theory,3,0,0,3,3,CSUG
+CS34111,Operating Systems,3,0,2,4,3,CSUG
+HS34151,Social and Professional Ethics,3,0,0,3,3,CSUG
+CS44112,Artificial Intelligence,3,0,2,4,4,CSUG
+CS44113,Computer Networks,3,0,2,4,4,CSUG
+CS44114,Automata Theory and compiler design,3,0,2,4,4,CSUG
+CS44115,Design and Analysis of Algorithms,3,0,2,4,4,CSUG
+OP44XXX,Open Electives-1,X,X,X,3,4,CSUG
