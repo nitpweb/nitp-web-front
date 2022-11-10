@@ -18,15 +18,18 @@ const Facultypage = ({ title, url, dept }) => {
       .get(facultiesUrl)
       .then(res => {
         const faculty = res.data
-        faculty.sort(
-          (a, b) =>
-            String(a.name)
-              .replace(/[.*+?^${}()|[\]\\' ']/g, "")
-              .toLowerCase() >
-            String(b.name)
-              .replace(/[.*+?^${}()|[\]\\' ']/g, "")
-              .toLowerCase()
-        )
+        faculty.sort((a, b) => {
+          var nameA = String(a.name).toUpperCase().replace(/[.*+?^${}()|[\]\\' ']/g, "")
+          var nameB = String(b.name).toUpperCase().replace(/[.*+?^${}()|[\]\\' ']/g, "")
+          if (nameA < nameB) {
+            return -1;
+          }
+          if (nameA > nameB) {
+            return 1;
+          }
+      
+          return 0;
+        });
         setFaculties(faculty)
         setData(faculty)
       })
