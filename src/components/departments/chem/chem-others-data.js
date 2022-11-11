@@ -87,10 +87,25 @@ export const LabImages = [
     <img src={`${home}Dr. Jha Lab.png`} alt="image" />
   </>,
   <>
-    <img src={`${home}Dr. Dasgupta Lab.png`} alt="image" />
+    <img src={`${home}Dr. Dasgupta Lab.jpg`} alt="image" />
   </>,
   <>
     <img src={`${home}subrata.jpg`} alt="image" />
+  </>,
+  <>
+    <img src={`${home}pic-3_BTech lab.jpg`} alt="image" />
+  </>,
+  <>
+    <img src={`${home}pic-4_MSc Synthesis lab.jpg`} alt="image" />
+  </>,
+  <>
+    <img src={`${home}pic-5_MSc Characterization lab.jpg`} alt="image" />
+  </>,
+  <>
+    <img src={`${home}pic-6_Departmental Instrument Lab.jpg`} alt="image" />
+  </>,
+  <>
+    <img src={`${home}pic-7_Departmental Individual Faculty Research Lab.jpg`} alt="image" />
   </>,
 ]
 

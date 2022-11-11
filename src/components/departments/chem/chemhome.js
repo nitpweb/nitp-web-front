@@ -99,11 +99,17 @@ export const contact = () => {
 export const labs = () => {
   return (
     <>
-      <div className="row rowmarl3">
-        <div className="col-6">
+      <div className="row rowmarl3"
+        style={{flexDirection: "column", alignItems: "center"}}
+      >
+        <div className="col-6"
+          style={{width: "90%"}}
+        >
           <Slider dataSlider={LabImages} />
         </div>{" "}
-        <div className="col-6">{Labs.content}</div>
+        <div className="col-6"
+          style={{width: "100%"}}
+        >{Labs.content}</div>
       </div>
     </>
   )
