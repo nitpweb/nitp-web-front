@@ -71,16 +71,13 @@ export const Outcomes = () => {
 export const contact = () => {
   return (
     <>
-      <br />
       Department of Humanities & Social Sciences
       <br />
       National Institute of Technology Patna,
       <br />
       Ashok Rajpath, Patna - 800005.
       <br />
-      <br />
       Email: head.hs@nitp.ac.in
-      <br />
       <br />
       Contact no: +91-9557805425
     </>
@@ -91,10 +88,13 @@ export const labs = () => {
   return (
     <>
       <div className="row rowmarl3">{Labs.title}</div>
+      <div className="row rowmarl3">
+        <Slider dataSlider={LabImages} showDots={true} />
+      </div>
       <div className="rowmarl3" style={{fontSize: `0.8rem`,padding:`0px` }}>{Labs.content}</div>
-      <div className="col-6">
+      {/* <div className="col-6">
           <Slider dataSlider={LabImages} />
-      </div>{" "}
+      </div>{" "} */}
     </>
   )
 }
