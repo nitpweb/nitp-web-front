@@ -69,4 +69,10 @@ We believe in bringing out one's true creative self and building the courage to 
     description : "The American Society of Mechanical Engineers (ASME) is an American professional association that, in its own words, promotes the art, science, and practice of multidisciplinary engineering and allied sciences around the globe via continuing education, training and professional development, codes and standards, research, conferences and publications, government relations, and other forms of outreach.ASME is thus an engineering society, a standards organization, a research and development organization, an advocacy organization, a provider of training and education, and a nonprofit organization. Founded as an engineering society focused on mechanical engineering in North America, ASME is today multidisciplinary and global.",
     link: "http://web.nitp.ac.in/asme/index.html"
   },
+  {
+    url: "/isie.png",
+    Title: "ISIE NITP SRA",
+    description : "ISIE stands for IMPERIAL SOCIETY OF INNOVATIVE ENGINEERS. Keeping in view ,the declining technical knowledge among students of NIT patna and the need of renewal sources of energy as fuel, our 2015 batch seniors established this club in 2017. Improvement in technical knowledge of students and to create a hub for solar powered vehicles have been our prime focus. Innovation has been a key essence to our club. ISIE serves as a platform for new start-ups and for youngsters who really want to contribute to society. Collectively we work on different innovations that could enhance the performance of a solar powered vehicle at the same time keeping its price suitable for a country like India.",
+    link: "/"
+  },
 ]
