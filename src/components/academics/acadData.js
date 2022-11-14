@@ -555,7 +555,7 @@ const Format = [
         para:
           "Format for issue of Grade Card / Provisional / Transcript from Exam Section",
         link:
-          "http://web.nitp.ac.in/downloads/exam/Format%20for%20Grade%20Card01.10.2020.pdf",
+          "http://web.nitp.ac.in/uploads22/REQUEST_LETTER_CUM_DOCUMENT_ISSUE_FORM.pdf",
       },
       {
         para: "1-SOP to issue Original Degree Certificate",

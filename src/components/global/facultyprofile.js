@@ -18,6 +18,7 @@ const Facultyprofile = ({ url }) => {
           subjects: detail.profile ? detail.subjects_teaching : [],
           memberships: detail.memberships ? detail.memberships : [],
           qualification: detail.education?detail.education : [],
+          pg_ug: detail.pg_ug_projects?detail.pg_ug_projects:[],
           currResponsibility: detail.curr_admin_responsibility
             ? detail.curr_admin_responsibility
             : [],
@@ -824,6 +825,50 @@ const Facultyprofile = ({ url }) => {
                               </td>
                               <td>
                                 <p>{item.start_year}</p>
+                              </td>
+                              <td>
+                                <p>{item.completion_year}</p>
+                              </td>
+                            </tr>
+                          )
+                        })}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              )}
+              {data.pg_ug && data.pg_ug.length != 0 && (
+                <div className="fac-card" data-aos="fade-up">
+                  <h3>PG/UG Projects</h3>
+                  <div className="factable">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th>
+                            <h4>Student Name</h4>
+                          </th>
+                          <th>
+                            <h4>Project Topic</h4>
+                          </th>
+                          <th>
+                            <h4>Student Program</h4>
+                          </th>
+                          <th>
+                            <h4>Completion Year</h4>
+                          </th>
+                        </tr>
+                        {data.pg_ug.map((item, index) => {
+                          return (
+                            <tr>
+                              <td>
+                                {index + 1}
+                                {`)`} {item.student_name}
+                              </td>
+                              <td>
+                                <p>{item.project_topic}</p>
+                              </td>
+                              <td>
+                                <p>{item.student_program}</p>
                               </td>
                               <td>
                                 <p>{item.completion_year}</p>
