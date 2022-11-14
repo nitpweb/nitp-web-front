@@ -63,6 +63,7 @@ const StudentSlide = () => {
             <input type="radio" name="slider" id="s7" onChange={() => {}} />
             <input type="radio" name="slider" id="s8" onChange={() => {}} />
             <input type="radio" name="slider" id="s9" onChange={() => {}} />
+            <input type="radio" name="slider" id="s10" onChange={() => {}} />
 
             <label htmlFor="s1" id="slide1">
               <div className="img-wrap">
@@ -105,6 +106,11 @@ const StudentSlide = () => {
               </div>
             </label>
             <label htmlFor="s9" id="slide9">
+              <div className="img-wrap">
+                <img className="pic" src={data[9].url} alt=""></img>
+              </div>
+            </label>
+            <label htmlFor="s10" id="slide10">
               <div className="img-wrap">
                 <img className="pic" src={data[0].url} alt=""></img>
               </div>
