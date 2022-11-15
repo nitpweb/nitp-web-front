@@ -116,6 +116,11 @@ export const TabPage = styled.div`
             color: ${props => props.theme.textColor};
             font-size: ${props => parseInt(props.theme.font * 3)}rem;
           }
+          img{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+          }
           h2 {
             p {
               color: ${props => props.theme.textColor};
