@@ -178,9 +178,9 @@ const Dephomepage = ({
                     <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>Contact</h1>
                   </div>
                   
-                  <div className="row">
+                  <div className="row" style={{justifyContent: "space-between"}}>
                     <div className="rowmarl3">
-                      <img src={hod} alt="HOD Image" />
+                      <img src={hod} alt="HOD Image" height="250"/>
                     </div>
                     <p>{Contact()}</p>
                   </div>

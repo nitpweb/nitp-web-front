@@ -189,6 +189,9 @@ export const TabPage = styled.div`
             color: ${props => props.theme.primaryColor};
             font-size: ${props => props.theme.font * 2.5}rem;
           }
+          img {
+            height: 250px;
+          }
         }
       }
     }
