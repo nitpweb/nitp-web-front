@@ -12,14 +12,14 @@ export const Labs = {
       </h2>
 
       <ol>
-        <li>Synthetic Research Lab (Dr. Khursheed Ahmad)</li>
+        <li>Applied Chemistry Lab (Dr. Subrata Das)</li>
+        <li>Bioorganic Lab (Dr. Rima Thakur)</li>
+        <li>Biophysical Chemistry Lab (Dr. Niki Sweta Jha)</li>
         <li>Green Synthesis Lab (Dr. Tasneem Parvin)</li>
         <li>Inorganic Lab (Dr. Mukesh Choudhary)</li>
         <li>Physical Chemistry Exptl. Lab (Dr. Aniruddha Paul)</li>
-        <li>Biophysical Chemistry Lab (Dr. Niki Sweta Jha)</li>
         <li>Supramolecular Materials Lab (Dr. Suvankar Dasgupta)</li>
-        <li>Bioorganic Lab (Dr. Rima Thakur)</li>
-        <li>Applied Chemistry Lab (Dr. Subrata Das)</li>
+        <li>Synthetic Research Lab (Dr. Khursheed Ahmad)</li>
       </ol>
     </>
   ),
@@ -78,19 +78,19 @@ export const Labs = {
 
 export const LabImages = [
   <>
+    <img src={`${home}subrata.jpg`} alt="image" />
+  </>,
+  <>
+    <img src={`${home}Dr. Jha Lab.png`} alt="image" />
+  </>,
+  <>
     <img src={`${home}Dr. Parvin Lab.jpg`} alt="image" />
   </>,
   <>
     <img src={`${home}Dr. Chowdhury Lab.jpg`} alt="image" />
   </>,
   <>
-    <img src={`${home}Dr. Jha Lab.png`} alt="image" />
-  </>,
-  <>
     <img src={`${home}Dr. Dasgupta Lab.jpg`} alt="image" />
-  </>,
-  <>
-    <img src={`${home}subrata.jpg`} alt="image" />
   </>,
   <>
     <img src={`${home}pic-3_BTech lab.jpg`} alt="image" />

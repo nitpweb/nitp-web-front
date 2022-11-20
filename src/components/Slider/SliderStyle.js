@@ -45,7 +45,7 @@ export const SliderStyle = styled.div`
   .slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
   .active-anim {
     opacity: 1;
