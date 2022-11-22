@@ -1,5 +1,5 @@
 const Departments = [
-  { url: "/arch", title: "Architecture" },
+  { url: "/arch", title: "Architecture & Planning" },
 
   { url: "/chem", title: "Chemistry" },
 
