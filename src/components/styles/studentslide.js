@@ -87,7 +87,8 @@ export const StudentSlideStyle = styled.div`
   #s7:checked ~ #slide7, 
   #s8:checked ~ #slide8,
   #s9:checked ~ #slide9,
-  #s10:checked ~ #slide10 {
+  #s10:checked ~ #slide10,
+  #s11:checked ~ #slide11 {
     /* box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2); */
     transform: translate3d(0%, 0, 0px);
   }
@@ -100,7 +101,8 @@ export const StudentSlideStyle = styled.div`
   #s7:checked ~ #slide8,
   #s8:checked ~ #slide9,
   #s9:checked ~ #slide10,
-  #s10:checked ~ #slide1 {
+  #s10:checked ~ #slide11,
+  #s11:checked ~ #slide1 {
     /* box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2); */
     transform: translate3d(30%, 0, -150px);
   }
@@ -112,8 +114,9 @@ export const StudentSlideStyle = styled.div`
   #s6:checked ~ #slide8,
   #s7:checked ~ #slide9,
   #s8:checked ~ #slide10,
-  #s9:checked ~ #slide1,
-  #s10:checked ~ #slide2
+  #s9:checked ~ #slide11,
+  #s10:checked ~ #slide1,
+  #s11:checked ~ #slide2
    {
     /* box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2); */
     transform: translate3d(60%, 0, -350px);
@@ -125,9 +128,10 @@ export const StudentSlideStyle = styled.div`
   #s5:checked ~ #slide8,
   #s6:checked ~ #slide9,
   #s7:checked ~ #slide10,
-  #s8:checked ~ #slide1,
-  #s9:checked ~ #slide2,
-  #s10:checked ~ #slide3 {
+  #s8:checked ~ #slide11,
+  #s9:checked ~ #slide1,
+  #s10:checked ~ #slide2,
+  #s11:checked ~ #slide3 {
     /* box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2); */
     transform: translate3d(90%, 0, -500px);
   }
@@ -137,10 +141,11 @@ export const StudentSlideStyle = styled.div`
   #s4:checked ~ #slide8,
   #s5:checked ~ #slide9,
   #s6:checked ~ #slide10,
-  #s7:checked ~ #slide1,
-  #s8:checked ~ #slide2,
-  #s9:checked ~ #slide3,
-  #s10:checked ~ #slide4 {
+  #s7:checked ~ #slide11,
+  #s8:checked ~ #slide1,
+  #s9:checked ~ #slide2,
+  #s10:checked ~ #slide3,
+  #s11:checked ~ #slide4 {
     /* box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2); */
     transform: translate3d(-90%, 0, -500px);
   }
@@ -149,11 +154,12 @@ export const StudentSlideStyle = styled.div`
   #s3:checked ~ #slide8,
   #s4:checked ~ #slide9,
   #s5:checked ~ #slide10,
-  #s6:checked ~ #slide1,
-  #s7:checked ~ #slide2,
-  #s8:checked ~ #slide3,
-  #s9:checked ~ #slide4,
-  #s10:checked ~ #slide5 {
+  #s6:checked ~ #slide11,
+  #s7:checked ~ #slide1,
+  #s8:checked ~ #slide2,
+  #s9:checked ~ #slide3,
+  #s10:checked ~ #slide4,
+  #s11:checked ~ #slide5 {
     /* box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2); */
     transform: translate3d(-60%, 0, -350px);
   }
@@ -161,25 +167,27 @@ export const StudentSlideStyle = styled.div`
   #s2:checked ~ #slide8,
   #s3:checked ~ #slide9,
   #s4:checked ~ #slide10,
-  #s5:checked ~ #slide1,
-  #s6:checked ~ #slide2,
-  #s7:checked ~ #slide3,
-  #s8:checked ~ #slide4,
-  #s9:checked ~ #slide5,
-  #s10:checked ~ #slide6 {
+  #s5:checked ~ #slide11,
+  #s6:checked ~ #slide1,
+  #s7:checked ~ #slide2,
+  #s8:checked ~ #slide3,
+  #s9:checked ~ #slide4,
+  #s10:checked ~ #slide5,
+  #s11:checked ~ #slide6 {
     /* box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2); */
     transform: translate3d(-30%, 0, -150px);
   }
   #s1:checked ~ #slide8,
   #s2:checked ~ #slide9,
   #s3:checked ~ #slide10,
-  #s4:checked ~ #slide1,
-  #s5:checked ~ #slide2,
-  #s6:checked ~ #slide3,
-  #s7:checked ~ #slide4,
-  #s8:checked ~ #slide5,
-  #s9:checked ~ #slide6,
-  #s10:checked ~ #slide7 {
+  #s4:checked ~ #slide11,
+  #s5:checked ~ #slide1,
+  #s6:checked ~ #slide2,
+  #s7:checked ~ #slide3,
+  #s8:checked ~ #slide4,
+  #s9:checked ~ #slide5,
+  #s10:checked ~ #slide6,
+  #s11:checked ~ #slide7 {
     /* box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2); */
     transform: translate3d(0%, 0, -150px);
   }
