@@ -2,7 +2,7 @@ export const Deplist = {
   cse: "Computer Science and Engineering",
   ece: "Electronics and Communication Engineering",
   chem: "Chemistry",
-  arch: "Architecture",
+  arch: "Architecture & Planning",
   ce: "Civil Engineering",
   hss: "Humanities and Social Sciences",
   physics: "Physics",
