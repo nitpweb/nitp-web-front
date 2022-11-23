@@ -1,5 +1,5 @@
 export const routeName = "arch"
-export const title = "Architecture Department"
+export const title = "Architecture & Planning Department"
 import { Labs, LabImages } from "./arch-others-data"
 import Slider from "../../Slider/Slider"
 import React from "react"
@@ -23,20 +23,37 @@ export const titleDescription = () => {
 export const about = () => {
   return (
     <>
-      The Department of Architecture is one of the oldest Department of the
-      Institute, which was established in the year 1979. The Department offers
-      undergraduate program in architecture, Post graduate program in Urban and
-      Regional Planning and Doctoral program. It is committed to provide quality
-      teaching and research opportunities to its student.
+      The Department of Architecture was established in the Bihar College of
+       Engineering (BCE) Patna in the year 1979 under Patna University. It 
+       was the ¬ first time that architectural education had commenced in 
+       Bihar. When BCE Patna was rechristened as National Institute of Technology
+        Patna on 28th January 2004, it came under the control of Ministry of Human 
+        Resource Development (MHRD), Government of India. The Department of 
+        Architecture and Planning offers programmes in Bachelor of Architecture 
+        (B.Arch.), Master of Urban and Regional Planning (MURP), Master of Architecture
+         (Sustainable Architecture) and Ph.D. in Architecture and Planning.
       <br />
       <br />
-      The department is dedicated to producing intellectuals and professionals
-      who are well-versed in the state-of-the-art techniques and requisite
-      skills of the profession. The programme also inculcates humanist ideas,
-      community values and team spirit to motivate and stimulate creativity. To
-      understand these objectives, architecture is taught as a serious,
-      exploratory and creative attempt that embraces both the humanities and the
-      sciences.{" "}
+      The B.Arch. course, apart from ful¬filling the functional requirements, 
+      leads towards creativity, innovation and aesthetics in the approach for 
+      design of buildings and its environments.  The postgraduate course in Master 
+      of Urban and Regional Planning, which commenced from 2012-13, imparts knowledge 
+      of urban and regional planning, green infrastructure, environment planning, 
+      sustainability and energy efficient aspects in urban and regional planning. It 
+      emphasizes on creating new ideas and innovative concepts of physical / spatial 
+      planning in the present scenario. The nomenclature of Department of Architecture 
+      gets changed to Department of Architecture and Planning in the year 2020. This 
+      course is affiliated by Institute of Town Planners, India.
+      <br />
+      <br />
+      The M.Arch. programme stated in 2019-2020, the nomenclature of this post graduate 
+      programme was changed to Master of Architecture (Sustainable Architecture) from 
+      session  2022-23. The Course content focused more on environmental issues related 
+      to built environment, ecology, energy conscious built structure, Artificial Intelligence, 
+      Building Simulation and different means of passive architectural methods. The Ph.D. 
+      programme started in year 2009 with research areas in Architecture, Urban Planning, 
+      Regional Planning, Environmental Planning, Transport Planning, Architectural Conservation, 
+      Landscape, Housing, Healthcare Architecture and Construction Planning Management, etc.{" "}
     </>
   )
 }
@@ -81,7 +98,7 @@ export const vision = () => {
 export const contact = () => {
   return (
     <>
-      Department of Architecture,
+      Department of Architecture & Planning,
       <br />
       <br />
       National Institute Of Technology Patna,
@@ -94,7 +111,7 @@ export const contact = () => {
       <br />
       Extn: +91-612-(2371715/2715/2371929/
       <br />
-      2370419/2370843/2371930) * 199
+      2370419/2370843/2371930) * 240/241
     </>
   )
 }
