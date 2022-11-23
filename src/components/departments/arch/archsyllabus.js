@@ -28,6 +28,11 @@ const Archsyllabus = props => {
                     {" "}
                     -Architecture
                   </h2>
+                  <ul className="rowmarl3">
+                    <li><a href="https://docs.google.com/spreadsheets/d/1dkCRSAwBPwF8el9Aqa6QV9g7EIaQOSy6/edit#gid=298991979">B.Arch All Semester course structure</a></li>
+                    <li><a href="https://docs.google.com/document/d/11bNjUxO1W3QXxssq8NgXfOb-aoDg9TBu/edit?rtpof=true">M.Arch.(Sustainable Architecture) Syllabus</a></li>
+                    <li><a href="https://docs.google.com/document/d/1ISc6reDye0m3rY-fWUqfN000kp5w_oYS/edit?rtpof=true">MURP Syllabus</a></li>
+                  </ul>
                   <br />
                 <div className="probutton">
                   <button
