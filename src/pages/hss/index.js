@@ -9,7 +9,7 @@ import {
   about,
   mission,
   labs,
-  achievements,
+  // achievements,
   activities,
   vision,
   Outcomes,
@@ -30,7 +30,7 @@ const Hss = () => (
       Vision={vision}
       Contact={contact}
       Labs={labs}
-      Achievements={achievements}
+      // Achievements={achievements}
       Activities={activities}
       TimeTable={timetable}
       datalist={datalist}

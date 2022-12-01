@@ -28,12 +28,12 @@ const Dephomepage = ({
 }) => {
   const [notices, setnotices] = useState()
   const [view, setView] = useState("about")
-  const [hod, setHod] = useState()
+  // const [hod, setHod] = useState()
   function getView(callback) {
     setView(callback)
   }
   let noticesUrl = `${process.env.GATSBY_API_URL}/api/notice/${routeName}`
-  const hodurl = `${process.env.GATSBY_API_URL}/api/faculty/rk_nitp@nitp.ac.in`
+  // const hodurl = `${process.env.GATSBY_API_URL}/api/faculty/rk_nitp@nitp.ac.in`
   useEffect(
     () => {
       axios
@@ -48,13 +48,13 @@ const Dephomepage = ({
     { notices }
   )
 
-  useEffect(()=>{
-    axios.get(hodurl).then(res=>{
-      setHod(res.data.profile.image)
-    }).catch(e=>{
-      console.log(e)
-    })
-  }, [hodurl])
+  // useEffect(()=>{
+  //   axios.get(hodurl).then(res=>{
+  //     setHod(res.data.profile.image)
+  //   }).catch(e=>{
+  //     console.log(e)
+  //   })
+  // }, [hodurl])
   return (
     <TabPage>
       <Navigate data={datalist} callback={getView} tab={view} />
@@ -177,11 +177,11 @@ const Dephomepage = ({
                   <div className="row rowmarr3">
                     <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>Contact</h1>
                   </div>
-                  
-                  <div className="row" style={{justifyContent: "space-between"}}>
-                    <div className="rowmarl3">
+                  <div className="row rowmarr3">
+                  {/* <div className="row" style={{justifyContent: "space-between"}}> */}
+                    {/* <div className="rowmarl3">
                       <img src={hod} alt="HOD Image" height="250"/>
-                    </div>
+                    </div> */}
                     <p>{Contact()}</p>
                   </div>
                 </div>

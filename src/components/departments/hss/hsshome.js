@@ -7,7 +7,7 @@ import {
   LabImages, 
   Labs,
   TimeTable,
-  Achievements,
+  // Achievements,
 } from "./hss-others-data"
 import React from "react"
 
