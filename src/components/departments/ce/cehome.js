@@ -53,6 +53,13 @@ export const about = () => {
       organisations in the locale. The Department supports in upbringing of
       society and other educational institutes by providing training, workshops,
       technology transfer, capacity building, and awareness programs.
+      <br />
+      <br />
+      <img src={`${process.env.GATSBY_BASE_URL}civil/labs/hod.jpg`} />
+      <br />
+      <strong>S. S. Mishra</strong>
+      <br />
+      Professor & HOD
     </>
   )
 }
