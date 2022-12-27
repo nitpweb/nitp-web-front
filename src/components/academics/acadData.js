@@ -522,7 +522,10 @@ const Fee = [
         para: "UG : Fee Structure (2018-19)",
         link: "http://web.nitp.ac.in/uploads/Fee_Structure_All.pdf",
       },
-
+      {
+        para: "UG/PG Dual Degree: Fee notification for B.Tech and M.Tech Dual Degree",
+        link: "http://web.nitp.ac.in/uploads22/FeeNotification_Dual.pdf",
+      },
     ],
   },
   {
