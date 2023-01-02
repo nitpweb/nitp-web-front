@@ -285,7 +285,7 @@ const Academics = [
       },
       {
         url:
-          "https://web.nitp.ac.in/uploads22/Academic_Calendar_2022_23_UG_1st_Year_updated.pdf",
+          "https://web.nitp.ac.in/uploads22/Academic_cal._Even_2022_23.pdf",
         title: "Academic Calendar",
         data: "",
       },
@@ -517,7 +517,7 @@ const Students = [
       },
       {
         url:
-          "https://web.nitp.ac.in/uploads22/Academic_Calendar_2022_23_UG_1st_Year_updated.pdf",
+          "https://web.nitp.ac.in/uploads22/Academic_cal._Even_2022_23.pdf",
         title: "Academic Calendar",
       },
     ],
