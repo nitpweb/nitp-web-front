@@ -803,40 +803,8 @@ const Academicspage = () => {
             ) : (
               ""
             )}
-            {/* {view == "centreOfExcellence" ? (
-              <>
-                <div className="row rowmarl3">
-                <h1 style={{ fontFamily: `Source Sans Pro` }}>Centre of Excellence set up by TSSC at NIT Patna</h1>
-                </div>
-                {acadData.centreOfExcellence.map(item => (
-                  <div className="row rowmarl3">
-                    <div className="digital">
-                      <h3>{item.title}</h3>
-                      {item.data.map(e => (
-                        <>
-                            <p
-                              style={{
-                                paddingBottom: `0.15rem`,
-                                width: `fit-content`,
-                                margin: `0 1rem`,
-                              }}
-                            >
-                              {e.para}
-                            </p>
-                        </>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </>
-            ) : (
-              ""
-            )} */}
             {view == "centreOfExcellence" && (
               <div className="layoutrow layoutrow1 rowmarl3" id="admission">
-                {/* <div className="col-6 imgcolstyle">
-                  <img src="/test.svg" className="img-fluid" loading="lazy" /> 
-                </div> */}
                 <div>
                   <div className="row">
                     <h1 style={{ marginBottom: `1rem` }}>Centre Of Excellence</h1>
@@ -847,12 +815,6 @@ const Academicspage = () => {
                         <h3>{e.title}</h3>
                         {e.data.map(item => (
                           <>
-                            {/* <a
-                              href={item.link}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              style={{ textDecoration: `none` }}
-                            > */}
                               <li>{item.para}</li>
                             {/* </a> */}
                             {/* <img src={item.imageLink}></img> */}
@@ -863,6 +825,44 @@ const Academicspage = () => {
                   ))}
                 </div>
               </div>
+            )}
+            {view == "patents" ? (
+              <>
+                <h1 style={{ fontFamily: `Source Sans Pro` }}>
+                  Patents
+                </h1>
+                {acadData.patents.map(item => (
+                  <div className="row rowmarl3">
+                    <div className="digital">
+                      <h3>{item.title}</h3>
+                      {item.data.map(e => (
+                        <>
+                          <a
+                            href={e.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ textDecoration: `none` }}
+                          >
+                            <p
+                              style={{
+                                borderBottom: `1px dotted black`,
+                                paddingBottom: `0.15rem`,
+                                width: `fit-content`,
+                                margin: `0 1rem`,
+                              }}
+                            >
+                              {e.para}
+                            </p>
+                          </a>
+                          
+                        </>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </>
+            ) : (
+              ""
             )}
           </div>
         </TabPage>
