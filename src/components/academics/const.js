@@ -54,6 +54,11 @@ const AcademicsList = [
     data: "centreOfExcellence",
     // img: "/test.svg",
   },
+  {
+    title: "Patents",
+    data: "patents",
+    // img: "/test.svg",
+  },
 ]
 
 export default AcademicsList
