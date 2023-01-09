@@ -377,7 +377,7 @@ const Faculty = [
         data: "",
       },
       {
-        url: "http://192.168.1.12:81/",
+        url: "http://mis.nitp.ac.in:81/",
         title: "Chanakya Portal",
         data: "",
       },
