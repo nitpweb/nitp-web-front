@@ -34,7 +34,7 @@ const SCF = {
       Downloads: "LTC Application Form",
       DLink: `${home}/staffForm/LTC Application Form.pdf`,
       "Office order": "LTC Claim Form",
-      OLink: `${home}/staffForm/ltcclaim.pdf`,
+      OLink: `${home}/staffForm/ltcclaim_updated.pdf`,
     },
     {
       Downloads: "Medical Claim Form",
@@ -74,7 +74,7 @@ const SCF = {
     },
     {
       Downloads: "Travel Bill For Tour",
-      DLink: `${home}/staffForm/travallbillfortour.pdf`,
+      DLink: `${home}/staffForm/travallbillfortour_updated.pdf`,
       "Office order": "",
     },
     {
