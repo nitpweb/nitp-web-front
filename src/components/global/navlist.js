@@ -314,6 +314,11 @@ const Academics = [
         title: "Regulation & Curricula",
         data: "curricula",
       },
+      {
+        url: "/academics",
+        title: "Patents",
+        data: "patents",
+      },
       // {
       //   url: "/academics",
       //   title: "Centre of Excellence",
@@ -377,7 +382,7 @@ const Faculty = [
         data: "",
       },
       {
-        url: "http://exam.nitp.ac.in/",
+        url: "http://mis.nitp.ac.in:81/",
         title: "Chanakya Portal",
         data: "",
       },
