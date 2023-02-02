@@ -842,87 +842,91 @@ const NIRF = [
     title: "NIRF",
     data: [
       {
-        para: "Enterpreneurship Students.",
-        link: "http://www.nitp.ac.in/downloads/NIRF/Enterpreneurship.xlsx",
+        para: "NIRF 2023 Data",
+        link: "http://web.nitp.ac.in/uploads23/NIRF%20Overall%20data%202023.pdf",
       },
-      {
-        para: "Students opting for higher studies.",
-        link: "http://www.nitp.ac.in/downloads/NIRF/HigherStudies_NITP.xlsx",
-      },
-      {
-        para: "Sponsored Research Projects.",
-        link:
-          "http://www.nitp.ac.in/downloads/NIRF/SponsoredResearchDetail.xlsx",
-      },
-      {
-        para:
-          "Top Universities from where students have enrolled in institution to pursue higher studies",
-        link:
-          "http://www.nitp.ac.in/downloads/NIRF/TopUniversityDetails_5D_PhD.XLSX",
-      },
-      {
-        para: "Placement",
-        link: "http://www.nitp.ac.in/downloads/NIRF/Placement_NITP.xlsx",
-      },
-      {
-        para: "Top University Details",
-        link:
-          "http://www.nitp.ac.in/downloads/NIRF/TopUniversityDetails_5D_NITP__2015_16_PG.xlsx",
-      },
-      {
-        para: "CONSULTANCY 2013-14.",
-        link:
-          "http://www.nitp.ac.in/downloads/NIRF/CONSULTANCY%20FY%202013-14.xlsx",
-      },
-      {
-        para: "CONSULTANCY 2014-15.",
-        link: "http://www.nitp.ac.in/downloads/NIRF/CONSULTANCY%202014-15.xlsx",
-      },
-      {
-        para: "CONSULTANCY 2015-16.",
-        link:
-          "http://www.nitp.ac.in/downloads/NIRF/CONSULTANCY%20FY%202015-16.ods",
-      },
-      {
-        para: "NIRF AR.",
-        link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_AR.xlsx",
-      },
-      {
-        para: "NIRF CH.",
-        link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_CH.xlsx",
-      },
-      {
-        para: "NIRF CE.",
-        link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_CE.xls",
-      },
-      {
-        para: "NIRF CSE.",
-        link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_CSE.xlsm",
-      },
-      {
-        para: "NIRF ECE.",
-        link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_ECE.xlsm",
-      },
-      {
-        para: "NIRF EE.",
-        link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_EE.xlsm",
-      },
-      {
-        para: "NIRF HSS.",
-        link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_HSS.xls",
-      },
-      {
-        para: "NIRF MA.",
-        link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_MA.xlsx",
-      },
-      {
-        para: "NIRF ME.",
-        link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_ME.xlsm",
-      },
-      {
-        para: "NIRF PH.",
-        link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_PH.xlsx",
-      },
+      // {
+      //   para: "Enterpreneurship Students.",
+      //   link: "http://www.nitp.ac.in/downloads/NIRF/Enterpreneurship.xlsx",
+      // },
+      // {
+      //   para: "Students opting for higher studies.",
+      //   link: "http://www.nitp.ac.in/downloads/NIRF/HigherStudies_NITP.xlsx",
+      // },
+      // {
+      //   para: "Sponsored Research Projects.",
+      //   link:
+      //     "http://www.nitp.ac.in/downloads/NIRF/SponsoredResearchDetail.xlsx",
+      // },
+      // {
+      //   para:
+      //     "Top Universities from where students have enrolled in institution to pursue higher studies",
+      //   link:
+      //     "http://www.nitp.ac.in/downloads/NIRF/TopUniversityDetails_5D_PhD.XLSX",
+      // },
+      // {
+      //   para: "Placement",
+      //   link: "http://www.nitp.ac.in/downloads/NIRF/Placement_NITP.xlsx",
+      // },
+      // {
+      //   para: "Top University Details",
+      //   link:
+      //     "http://www.nitp.ac.in/downloads/NIRF/TopUniversityDetails_5D_NITP__2015_16_PG.xlsx",
+      // },
+      // {
+      //   para: "CONSULTANCY 2013-14.",
+      //   link:
+      //     "http://www.nitp.ac.in/downloads/NIRF/CONSULTANCY%20FY%202013-14.xlsx",
+      // },
+      // {
+      //   para: "CONSULTANCY 2014-15.",
+      //   link: "http://www.nitp.ac.in/downloads/NIRF/CONSULTANCY%202014-15.xlsx",
+      // },
+      // {
+      //   para: "CONSULTANCY 2015-16.",
+      //   link:
+      //     "http://www.nitp.ac.in/downloads/NIRF/CONSULTANCY%20FY%202015-16.ods",
+      // },
+      // {
+      //   para: "NIRF AR.",
+      //   link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_AR.xlsx",
+      // },
+      // {
+      //   para: "NIRF CH.",
+      //   link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_CH.xlsx",
+      // },
+      // {
+      //   para: "NIRF CE.",
+      //   link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_CE.xls",
+      // },
+      // {
+      //   para: "NIRF CSE.",
+      //   link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_CSE.xlsm",
+      // },
+      // {
+      //   para: "NIRF ECE.",
+      //   link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_ECE.xlsm",
+      // },
+      // {
+      //   para: "NIRF EE.",
+      //   link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_EE.xlsm",
+      // },
+      // {
+      //   para: "NIRF HSS.",
+      //   link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_HSS.xls",
+      // },
+      // {
+      //   para: "NIRF MA.",
+      //   link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_MA.xlsx",
+      // },
+      // {
+      //   para: "NIRF ME.",
+      //   link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_ME.xlsm",
+      // },
+      // {
+      //   para: "NIRF PH.",
+      //   link: "http://www.nitp.ac.in/downloads/NIRF/NIRF_PH.xlsx",
+      // },
     ],
   },
 ]
