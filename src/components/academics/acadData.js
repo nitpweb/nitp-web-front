@@ -1263,6 +1263,33 @@ const AnnualReports = [
   },
 ]
 
+const Patents = [
+  {
+    heading: "Patents",
+    title: `List of Granted Patents`,
+    data: [
+      {
+        para:
+          "Click here to download the list of Granted Patents.",
+        link:
+          "http://web.nitp.ac.in/uploads23/ListOfGrantedPatents.pdf",
+      },
+    ],
+  },
+  {
+    heading: "Patents",
+    title: `List of Published Patents`,
+    data: [
+      {
+        para: 
+          "Click here to download the list of Published Patents.",
+        link:
+          "http://web.nitp.ac.in/uploads23/ListOfPublishedPatents.pdf",
+      },
+    ],
+  },
+]
+
 const acadData = {
   datad: Datad,
   dataUG: DataUG,
@@ -1287,5 +1314,6 @@ const acadData = {
   convocation: Convocation,
   magazine: Magazine,
   annualreports:AnnualReports,
+  patents: Patents,
 }
 export default acadData

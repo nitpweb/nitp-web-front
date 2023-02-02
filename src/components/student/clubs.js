@@ -29,7 +29,7 @@ export const clubs = [
     Title: "IEEE",
     description:
       "IEEE Student Branch, NIT Patna was established with an enthusiastic initiative of 13 students of NIT Patna enrolled in B.Tech programme of Electrical Engineering and Electronics and Communication Engineering under the leadership of Prof Kumar Abhishek, Assistant professor of Computer Science and Engineering. In this whole path our mentors were the three great visionaries of our college Dr Asok De (Director NIT Patna), Dr D.K. Singh (HOD, Electronics and Communication Engineering), and Dr M.P Singh (HOD, Computer Science and Engineering). Prof. Kumar Abhishek became the first Branch Counsellor of the Student Branch and Shruti Neha became the first Student Branch Chair. IEEE Student Branch, NITP was established with a vision of making students aware of new developments in various engineering fields and to provide support in implementing new innovative ideas of future engineers which can give a new shape to this world.",
-    link: "http://ieee.nitp.ac.in/",
+    link: " https://ieeenitp.vercel.app/",
   },
   {
     url: "https://i.ytimg.com/vi/gAZW1JuBSOo/maxresdefault.jpg",
