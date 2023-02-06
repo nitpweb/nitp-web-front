@@ -7,6 +7,7 @@ import chanakya from "./img/chanakya.svg"
 import firstyear from "./img/firstyear.svg"
 import startup from "./img/startup.svg"
 import highlight from "./img/highlight.svg"
+import magazine from "./img/magazine.svg"
 import { ImportantLinkStyle } from "../styles/home/importantlink"
 
 const Importantlink = () => {
@@ -88,7 +89,15 @@ const Importantlink = () => {
             </div> */}
           </div>
         </a>
-        
+
+        <a href="https://www.nitp.ac.in/magazine">
+          <div className="implink">
+            <img className="linkimg" src={magazine} alt="teqip" />
+            <h3>MAGAZINE</h3>
+      
+          </div>
+        </a>
+
       </div>
       {/* <div className="link-col">
         <a href="https://josaa.nic.in/webinfocms/Public/home.aspx">
@@ -98,6 +107,8 @@ const Importantlink = () => {
           </div>
         </a>
       </div> */}
+      
+      
       
     </ImportantLinkStyle>
   )
