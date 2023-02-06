@@ -5,9 +5,14 @@ import { PageLayout } from "../components/styles/pagelayout"
 import { useEffect, useState } from "react"
 import axios from "axios"
 import { Link } from "gatsby"
+import { TabPage } from "../components/styles/tabpage"
+import acadData from "../components/academics/acadData"
+import Developers from "../components/developers"
+
 
 const Webteam = () => {
   const [webteam, setWebteam] = useState()
+  const [view, setView] = useState("developers")
   let webteamUrl = `${process.env.GATSBY_API_URL}/api/webteam`
 
   useEffect(() => {
@@ -26,7 +31,148 @@ const Webteam = () => {
     <>
       <Layout>
         <SEO title="Web Team" />
-        <PageLayout style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
+        <TabPage>
+          <div className="mainDiv">
+            <div className="row rowmarl3">
+              <div className="digital">
+                <div className="col-6" style={{ width: `100%` }}>
+                  <div className="row">
+                    <h1 data-aos="zoom-in-right">Web Team</h1>
+                  </div>
+                  <div className="row">
+                    <h2 data-aos="zoom-in-right">
+                      The Team behind the website of NIT Patna
+                    </h2>
+                  </div>
+                </div>
+
+                <div className="probutton">
+                  <button
+                    onClick={() => {
+                      setView("developers")
+                    }}
+                    className={view == "developers" ? "btnactive" : ""}
+                  >
+                    Developers
+                  </button>
+                  <button
+                    onClick={() => {
+                      setView("maintainers")
+                    }}
+                    className={view == "maintainers" ? "btnactive" : ""}
+                  >
+                    Maintainers
+                  </button>
+                </div>
+                {view == "developers" && (
+                    // <div className="row layoutrow">
+                    //   <div className="row">
+                    //     <h2 data-aos="zoom-in-right" style={{width:`50%`,marginTop:`0`}}>Student Volunteers</h2>
+                    //   </div>
+                    //   <div style={{position:"relative", display:"flex", justifyContent: "space-around", flexWrap:"wrap"}}>
+                    //       {webteam &&
+                    //     webteam.slice(4).map(member => {
+                    //       return (
+                    //         <Webcard
+                    //           name={member.name}
+                    //           email={member.email}
+                    //           extn={member.ext_no}
+                    //           id={member.email}
+                    //           interests={member.interests}
+                    //           image={member.image}
+                    //           desg={member.desg}
+                    //           url={member.url}
+                    //         />
+                    //       )
+                    //     })}
+                    //   </div>
+
+                    //   <div className="row">
+                    //     <h2 style={{width:`50%`,marginTop:`0`}}>Faculties/Officers Involved</h2>
+                    //   </div>
+                    //   <div style={{position:"relative", display:"flex", justifyContent: "space-between", width:"max-content",flexWrap:"wrap"}}>
+                    //     <div>
+                    //       <div classNam="row">
+                    //         <h2>PI Website</h2>
+                    //       </div>
+                    //       <div className="row">
+                    //         {webteam &&
+                    //           webteam.slice(0, 1).map(member => {
+                    //             return (
+                    //               <Webcard
+                    //                 name={member.name}
+                    //                 email={member.email}
+                    //                 extn={member.ext_no}
+                    //                 id={member.email}
+                    //                 interests={member.interests}
+                    //                 image={member.image}
+                    //                 desg={member.desg}
+                    //                 url={member.url}
+                    //               />
+                    //             )
+                    //           })}
+                    //       </div>
+                    //     </div>
+                        
+                    //     <div>
+                    //     <div classNam="row">
+                    //       <h2>PI IT Services</h2>
+                    //     </div>
+                    //     <div className="row">
+                    //       {webteam &&
+                    //         webteam.slice(2, 3).map(member => {
+                    //           return (
+                    //             <Webcard
+                    //               name={member.name}
+                    //               email={member.email}
+                    //               extn={member.ext_no}
+                    //               id={member.email}
+                    //               interests={member.interests}
+                    //               image={member.image}
+                    //               desg={member.desg}
+                    //               url={member.url}
+                    //             />
+                    //           )
+                    //         })}
+                    //     </div>
+                    //     </div>
+                    //   </div>
+                      
+                    //   <div className="row">
+                    //     <h2>Scientific Officer</h2>
+                    //   </div>
+                    //   <div style={{position:"relative", display:"flex", justifyContent: "space-around", flexWrap:"wrap"}}>
+                    //   {webteam &&
+                    //     webteam.slice(3, 4).map(member => {
+                    //       return (
+                    //         <Webcard
+                    //           name={member.name}
+                    //           email={member.email}
+                    //           extn={member.ext_no}
+                    //           id={member.email}
+                    //           interests={member.interests}
+                    //           image={member.image}
+                    //           desg={member.desg}
+                    //           url={member.url}
+                    //         />
+                    //       )
+                    //     })}
+                    //     </div>
+                    // </div>
+                    <Developers />
+                )}
+                {view == "maintainers"
+                  ? <div className="row">
+                  <div className="digital">
+                    
+                  </div>
+                </div>
+                  : ""}
+              </div>
+            </div>
+          </div>
+        </TabPage>
+        {/* <PageLayout style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
           <div className="webteam-page">
             <div className="layoutrow layoutrowmain">
               <div className="col-6" style={{ width: `100%` }}>
@@ -130,7 +276,7 @@ const Webteam = () => {
             </div>
           </div>
 
-        </PageLayout>
+        </PageLayout> */}
       </Layout>
     </>
   )
