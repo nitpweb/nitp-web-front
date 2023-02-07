@@ -1,18 +1,16 @@
 import Layout from "../components/layout"
-import Webcard from "../components/global/webcard"
 import SEO from "../components/seo"
-import { PageLayout } from "../components/styles/pagelayout"
 import { useEffect, useState } from "react"
 import axios from "axios"
-import { Link } from "gatsby"
 import { TabPage } from "../components/styles/tabpage"
-import acadData from "../components/academics/acadData"
 import Developers from "../components/developers"
+import Maintainers from "../components/maintainers"
 
 
 const Webteam = () => {
   const [webteam, setWebteam] = useState()
   const [view, setView] = useState("developers")
+  const [year, setYear] = useState("2022")
   let webteamUrl = `${process.env.GATSBY_API_URL}/api/webteam`
 
   useEffect(() => {
@@ -159,14 +157,12 @@ const Webteam = () => {
                     //     })}
                     //     </div>
                     // </div>
-                    <Developers />
+                    <Developers webteam={webteam}/>
                 )}
                 {view == "maintainers"
-                  ? <div className="row">
-                  <div className="digital">
-                    
-                  </div>
-                </div>
+                  ? (
+                    <Maintainers webteam={webteam}/>
+                  )
                   : ""}
               </div>
             </div>

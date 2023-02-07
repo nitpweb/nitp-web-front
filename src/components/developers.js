@@ -2,21 +2,9 @@ import axios from "axios"
 import React, { useEffect, useState } from "react"
 import Webcard from "./global/webcard"
 
-const Developers = () => {
-    const [webteam, setWebteam] = useState()
-    let webteamUrl = `${process.env.GATSBY_API_URL}/api/webteam`
+const Developers = (props) => {
+  const {webteam} = props
   
-    useEffect(() => {
-      axios
-        .get(webteamUrl)
-        .then(res => {
-          const web = res.data
-          setWebteam(web)
-        })
-        .catch(e => {
-          console.log(e)
-        })
-    }, [])
   return (
     <div className="row layoutrow">
       <div className="row">
