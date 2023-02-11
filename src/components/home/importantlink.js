@@ -8,6 +8,7 @@ import firstyear from "./img/firstyear.svg"
 import startup from "./img/startup.svg"
 import highlight from "./img/highlight.svg"
 import magazine from "./img/magazine.svg"
+import alumni from "./img/alumni.svg"
 import { ImportantLinkStyle } from "../styles/home/importantlink"
 
 const Importantlink = () => {
@@ -46,6 +47,15 @@ const Importantlink = () => {
       
           </div>
         </a> */}
+
+        <a href="https://web.nitp.ac.in/alumni/html/index.html">
+          <div className="implink">
+            <img className="linkimg" src={alumni} alt="alumni" />
+            <h3>ALUMNI</h3>
+      
+          </div>
+        </a>
+
         <a href="#one">
           <div className="implink">
             <img className="linkimg" src={innovation} alt="teqip" />
@@ -71,13 +81,13 @@ const Importantlink = () => {
             
           </div>
         </a> */}
-        <a href="http://www.nitp.ac.in/php/incubation_center/index.html">
+        {/* <a href="http://www.nitp.ac.in/php/incubation_center/index.html">
           <div className="implink">
             <img className="linkimg" src={startup} alt="teqip" />
             <h3>STARTUPS</h3>
       
           </div>
-        </a>
+        </a> */}
         <a href={/academics/}>
           <div className="implink">
             <img className="linkimg" src={firstyear} alt="admissions" />
@@ -92,7 +102,7 @@ const Importantlink = () => {
 
         <a href="https://www.nitp.ac.in/magazine">
           <div className="implink">
-            <img className="linkimg" src={magazine} alt="teqip" />
+            <img className="linkimg" src={magazine} alt="magazine" />
             <h3>MAGAZINE</h3>
       
           </div>
