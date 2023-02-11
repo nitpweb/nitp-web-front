@@ -22,8 +22,8 @@ export const PageLayout = styled.div`
       padding-top: 3vh;
       padding-bottom: 3vh;
     }
-    .syllabus-bullets{
-      width:100%;
+    .syllabus-bullets {
+      width: 100%;
     }
     .syllabus-page-head {
       padding-top: 8vh;
@@ -32,7 +32,6 @@ export const PageLayout = styled.div`
       .col-6 {
         padding-top: 0;
         padding-bottom: 0;
-
       }
     }
   }
@@ -48,6 +47,40 @@ export const PageLayout = styled.div`
       url(${web}) no-repeat center fixed;
     background-size: 90vw 60vh;
     background-position-y: bottom;
+    .probutton {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      overflow-x: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      .btnactive {
+        background-color: white;
+        color: ${props => props.theme.primaryColor};
+      }
+      button {
+        background-color: ${props => props.theme.primaryColor};
+        border: none;
+        margin-right: 5px;
+        display: grid;
+        place-items: center;
+        color: white;
+        height: 30px !important;
+        width: max-content !important;
+        white-space: nowrap;
+        font-family: "Source Sans Pro";
+        border: 1px solid ${props => props.theme.primaryColor};
+        font-size: ${props => props.theme.font * 1.1}rem;
+        &:focus {
+          background-color: white;
+          color: ${props => props.theme.primaryColor};
+        }
+      }
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
   }
 
   .faculty-page {

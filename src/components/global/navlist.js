@@ -149,8 +149,7 @@ const Home = [
         title: "RTI",
       },
       {
-        url:
-          "/magazine",
+        url: "/magazine",
         title: "Magazine (Pratibimb)",
       },
       {
@@ -284,8 +283,7 @@ const Academics = [
         data: "Notices",
       },
       {
-        url:
-          "https://web.nitp.ac.in/uploads22/Academic_cal._Even_2022_23.pdf",
+        url: "https://web.nitp.ac.in/uploads22/Academic_cal._Even_2022_23.pdf",
         title: "Academic Calendar",
         data: "",
       },
@@ -502,10 +500,7 @@ const Students = [
         url: "http://corona.nitp.ac.in/Corona16/index.php",
         title: "Corona",
       },
-      // {
-      //   url: "http://ieee.nitp.ac.in/",
-      //   title: "IEEE",
-      // },
+
       {
         url: "http://nitp.ac.in/data/Anti-ragging_Committee_2019.pdf",
         title: "Anti Ragging",
@@ -521,9 +516,13 @@ const Students = [
         data: "concession",
       },
       {
-        url:
-          "https://web.nitp.ac.in/uploads22/Academic_cal._Even_2022_23.pdf",
+        url: "https://web.nitp.ac.in/uploads22/Academic_cal._Even_2022_23.pdf",
         title: "Academic Calendar",
+      },
+      {
+        url:
+          "https://www.eduqfix.com/PayDirect/#/student/pay/mnYv9Q6+C+3lIMqghRCwdaqVZusPrJtq2RGJrJFnKnmtz3KBqtsEFPVrZFvoPubG/3466",
+        title: "Fee Payment",
       },
     ],
   },
