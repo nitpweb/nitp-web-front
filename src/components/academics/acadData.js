@@ -1126,6 +1126,17 @@ const Convocation = [
 const Magazine = [
   {
     heading: "Magazine of NIT Patna",
+    title: "Magazine Vol. 5, (Jan 2022)",
+    data: [
+      {
+        para:
+          "Click here to download (English Version)",
+        link: "https://drive.google.com/file/d/1FAhIZPthEMvSyceX5ASOAO-yI-BiTQ7Y/view?usp=share_link",
+      },
+    ],
+  },  
+  {
+    heading: "Magazine of NIT Patna",
     title: "Magazine Vol. 4, (March 2022)",
     data: [
       {
