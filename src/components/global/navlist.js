@@ -141,7 +141,7 @@ const Home = [
         title: "PAN/ GST",
       },
       {
-        url: "http://nitp.ac.in/alumni/html/index.html",
+        url: "http://web.nitp.ac.in/alumni/html/index.html",
         title: "Alumni",
       },
       {
