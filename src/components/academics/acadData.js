@@ -1126,7 +1126,7 @@ const Convocation = [
 const Magazine = [
   {
     heading: "Magazine of NIT Patna",
-    title: "Magazine Vol. 5, (Jan 2022)",
+    title: "Magazine Vol. 5 (Jan 2023)",
     data: [
       {
         para:
@@ -1137,7 +1137,7 @@ const Magazine = [
   },  
   {
     heading: "Magazine of NIT Patna",
-    title: "Magazine Vol. 4, (March 2022)",
+    title: "Magazine Vol. 4 (March 2022)",
     data: [
       {
         para:
