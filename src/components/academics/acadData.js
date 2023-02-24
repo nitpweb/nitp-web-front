@@ -1126,17 +1126,6 @@ const Convocation = [
 const Magazine = [
   {
     heading: "Magazine of NIT Patna",
-    title: "Special Edition: 5 Years Report",
-    data: [
-      {
-        para:
-          "Click here to download (English Version)",
-        link: "http://web.nitp.ac.in/uploads23/5_years_Report.pdf",
-      }
-    ],
-  },
-  {
-    heading: "Magazine of NIT Patna",
     title: "Special Edition: Institute Coffee-Table Booklet",
     data: [
       {
@@ -1157,6 +1146,17 @@ const Magazine = [
       },
     ],
   },  
+  {
+    heading: "Magazine of NIT Patna",
+    title: "Special Edition: 5 Years Report",
+    data: [
+      {
+        para:
+          "Click here to download (English Version)",
+        link: "http://web.nitp.ac.in/uploads23/5_years_Report.pdf",
+      }
+    ],
+  },
   {
     heading: "Magazine of NIT Patna",
     title: "Magazine Vol. 4 (March 2022)",
