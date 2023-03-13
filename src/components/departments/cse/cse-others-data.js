@@ -331,12 +331,12 @@ const Projects = [
   },
 ]
 export const TimeTable=[
-  {
+  /*{
     title:"Click here for the time table of first year subjects offered by CSED for Dec'22-Feb'23 session.",
     link:"http://web.nitp.ac.in/uploads23/FirstYearTimeTable_AllSubjectsByCSED_July-Dec2022.pdf",
-  },
+  },*/
   {
-    title:"Click here for the time table of CSED for Jan-Jun 2023 session",
+    title:"Click here for the time table of CSED for Jan-Jun 2023 session (including B.Tech first year)",
     link:"https://goo.gl/it4A21",
   },
 ]
