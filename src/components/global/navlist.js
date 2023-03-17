@@ -158,7 +158,7 @@ const Home = [
         data: "clubs",
       },
       {
-        url: "http://nitp.ac.in/incubation_center/index.html",
+        url: "https://web.nitp.ac.in/incubation_center/index.html",
         title: "Incubation Center",
       },
       {
@@ -493,7 +493,7 @@ const Students = [
         title: "Convocation",
       },
       {
-        url: "http://nitp.ac.in/incubation_center/index.html",
+        url: "https://web.nitp.ac.in/incubation_center/index.html",
         title: "Incubation Centre",
       },
       {
