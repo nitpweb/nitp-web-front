@@ -20,19 +20,54 @@ const SCF = {
     },
     {
       Downloads: "CL Application",
-      DLink: `${home}/staffForm/CL application.pdf`,
+      DLink: `${home}/staffForm/1.%20Casual%20Leave%20(CL),%20Restricted%20Leave%20(RH).pdf`,
       "Office order": "Bills/PDA form",
       OLink: `${home}/staffForm/Circular5c370f6512525.pdf`,
     },
     {
+      Downloads: "Restricted Leave  (RH)",
+      DLink: `${home}/staffForm/1.%20Casual%20Leave%20(CL),%20Restricted%20Leave%20(RH).pdf`,
+      "Office order": "",
+    },
+    {
       Downloads: "El Form",
-      DLink: `${home}/staffForm/elform .pdf`,
+      DLink: `${home}/staffForm/2.%20Earned%20Leave%20(EL).pdf`,
       "Office order": "New Bill Format",
       OLink: `${home}/staffForm/Bill_format.pdf`,
     },
     {
+      Downloads: "Child Care Leave (CCL) ",
+      DLink: `${home}/staffForm/3.%20Child%20Care%20Leave.pdf`,
+      "Office order": "",
+    },
+    {
+      Downloads: "Commuted Leave",
+      DLink: `${home}/staffForm/4.%20Commuted,%20HPL,%20Maternity,%20Paternity%20Leave.pdf`,
+      "Office order": "",
+    },
+    {
+      Downloads: "Half Pay Leave (HPL) ",
+      DLink: `${home}/staffForm/4.%20Commuted,%20HPL,%20Maternity,%20Paternity%20Leave.pdf`,
+      "Office order": "",
+    },
+    {
+      Downloads: "Maternity Leave",
+      DLink: `${home}/staffForm/4.%20Commuted,%20HPL,%20Maternity,%20Paternity%20Leave.pdf`,
+      "Office order": "",
+    },
+    {
+      Downloads: "Paternity Leave",
+      DLink: `${home}/staffForm/4.%20Commuted,%20HPL,%20Maternity,%20Paternity%20Leave.pdf`,
+      "Office order": "",
+    },
+    {
+      Downloads: "Leave Encashment (LTC)",
+      DLink: `${home}/staffForm/6.%20Leave%20Encashment%20(LTC).pdf`,
+      "Office order": "",
+    },
+    {
       Downloads: "LTC Application Form",
-      DLink: `${home}/staffForm/LTC Application Form.pdf`,
+      DLink: `${home}/staffForm/5.%20Application%20for%20LTC%20(Home%20town,%20All%20India).pdf`,
       "Office order": "LTC Claim Form",
       OLink: `${home}/staffForm/ltcclaim_updated.pdf`,
     },
