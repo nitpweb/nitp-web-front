@@ -16,6 +16,28 @@ const Home = () => {
   const [notices, setNotices] = useState()
   const [academics, setAcademics] = useState()
   const [news, setNews] = useState()
+  const temp = {
+    "id": 1679321527399,
+    "title": "Admissions under ‘Visvesvaraya PhD scheme for Electronics and IT: Phase-II’, Sponsored by MeitY, Govt. of India",
+    "timestamp": 1679321564580,
+    "openDate": 1678924800000,
+    "closeDate": 1682812800000,
+    "important": 1,
+    "attachments": [
+        {
+            "id": 1679321507893,
+            "caption": "SOP for online admission",
+            "url": "https://drive.google.com/file/d/1Yu-mRPKRxZKPoWspwhLeCsUqGAMvnTyA/view?usp=drivesdk"
+        }
+    ],
+    "isVisible": 1,
+    "notice_link": "{\"url\":\"https://drive.google.com/file/d/1QMEAxvGRmZKrAWmGAJxgb2d_Iu3nIhFH/view?usp=drivesdk\",\"typeLink\":false}",
+    "email": "harsha.ug20.ece@nitp.ac.in",
+    "department": "",
+    "notice_type": "general",
+    "updatedBy": "harsha.ug20.ece@nitp.ac.in",
+    "updatedAt": 1679394985499
+}
 
   useEffect(() => {
     let eventsUrl = `${process.env.GATSBY_API_URL}/api/events/active`
@@ -34,6 +56,7 @@ const Home = () => {
       .get(noticesUrl)
       .then(res => {
         setNotices(res.data.filter(notice => notice.isVisible === 1))
+        setNotices(notice=> [...notice, temp])
       })
       .catch(e => {
         console.log(e)
