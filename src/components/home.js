@@ -18,7 +18,7 @@ const Home = () => {
   const [news, setNews] = useState()
   const temp = {
     "id": 1679321527399,
-    "title": "Admissions under ‘Visvesvaraya PhD scheme for Electronics and IT: Phase-II’, Sponsored by MeitY, Govt. of India",
+    "title": "Admissions under 'Visvesvaraya PhD scheme for Electronics and IT: Phase-II', Sponsored by MeitY, Govt. of India",
     "timestamp": 1679321564580,
     "openDate": 1678924800000,
     "closeDate": 1682812800000,
@@ -36,7 +36,7 @@ const Home = () => {
     "department": "",
     "notice_type": "general",
     "updatedBy": "harsha.ug20.ece@nitp.ac.in",
-    "updatedAt": 1679394985499
+    "updatedAt": 1679394985499
 }
 
   useEffect(() => {
