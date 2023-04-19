@@ -1,3 +1,4 @@
+
 const Datad = [
   {
     heading: "Digital Initiatives of NIT Patna",
@@ -558,7 +559,8 @@ const Format = [
         para:
           "Format for issue of Grade Card / Provisional / Transcript from Exam Section",
         link:
-          "http://web.nitp.ac.in/uploads22/REQUEST_LETTER_CUM_DOCUMENT_ISSUE_FORM.pdf",
+          // "http://web.nitp.ac.in/uploads22/REQUEST_LETTER_CUM_DOCUMENT_ISSUE_FORM.pdf",
+          "https://web.nitp.ac.in//uploads23/Bilingual%20Request%20Letter%20Cum%20Document%20Issue%20Form.pdf",
       },
       {
         para: "1-SOP to issue Original Degree Certificate",
