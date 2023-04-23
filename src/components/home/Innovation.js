@@ -66,7 +66,7 @@ const Innovation = () => {
   return (
     <>
       <InnovationStyle>
-        <p id="head">Research & Innovation</p>
+        <p id="head">For Faculty/Staff</p>
         <Link id="loadMore" to="/innovation">
           View all
         </Link>
@@ -82,7 +82,11 @@ const Innovation = () => {
                 x < 0 ? setX(x + 300) : setX(filtered.length * -300 + 900)
               }}
             >
-              <img id="arrow" src={Arrow} style={{ transform: "rotate(180deg)" }} />
+              <img
+                id="arrow"
+                src={Arrow}
+                style={{ transform: "rotate(180deg)" }}
+              />
             </div>
           ) : null}
           {filtered.map(Card)}
