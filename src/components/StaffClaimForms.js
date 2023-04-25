@@ -39,7 +39,8 @@ const SCF = {
       Downloads: "Child Care Leave (CCL) ",
       DLink: `${home}/staffForm/3.%20Child%20Care%20Leave.pdf`,
       "Office order": "Bill Format (Bilingual)",
-      OLink: `${home}/staffForm/Bill%20format%20dt%2019%20Apr%202023.pdf`,
+      // OLink: `${home}/staffForm/Bill%20format%20dt%2019%20Apr%202023.pdf`,
+      OLink: `${home}/staffForm/bill%20format%20new%20bilingual.docx.pdf`,
     },
     {
       Downloads: "Commuted Leave",
