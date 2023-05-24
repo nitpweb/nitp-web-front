@@ -510,6 +510,10 @@ const Fee = [
     title: `UG/PG/PhD`,
     data: [
       {
+        para: "UG Fee refund policy Notification",
+        link: "https://web.nitp.ac.in//uploads23/UG%20Refund%20Policy%20Notification.pdf",
+      },
+      {
         para:
           "PG: Revised fee component for M.Tech./M.Arch/MURP Programme from the Academic Session 2021-22 onwards ",
         link:
