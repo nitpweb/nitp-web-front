@@ -510,7 +510,7 @@ const Fee = [
     title: `UG/PG/PhD`,
     data: [
       {
-        para: "UG Fee refund policy Notification",
+        para: "UG : Fee refund policy notification",
         link: "https://web.nitp.ac.in//uploads23/UG%20Refund%20Policy%20Notification.pdf",
       },
       {
