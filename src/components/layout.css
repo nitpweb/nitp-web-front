@@ -122,17 +122,17 @@ h2 {
 
 @media (min-width: 768px) {
   /* Desktop size and larger */
-  .col-11 {
+  .img-11 {
     /* Reduce width by 300px */
     /* Apply margin of 300px */
     display: flex;
   }
-  .col-12 {
+  .img-12 {
     margin-left: 200px;
   }
 }
 @media (min-width: 768) and (max-width: 940) {
-  .col-12 {
+  .img-12 {
     margin-left: 100px;
   }
   .img {
@@ -142,7 +142,7 @@ h2 {
   }
 }
 @media (max-width: 768px) {
-  .col-11 {
+  .img-11 {
     width: 100%;
   }
   .img {

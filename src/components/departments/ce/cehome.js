@@ -90,7 +90,7 @@ export const vision = () => {
 
 export const contact = () => {
   return (
-    <div className="col-11">
+    <div className="img-11">
       <div style={{}}>
         Department of Civil Engg.,
         <br />
@@ -109,7 +109,7 @@ export const contact = () => {
         <br />
       </div>
 
-      <div className="img col-12">
+      <div className="img img-12">
         <img src="/civilhod.jpg" />
         <br />
         <br />
