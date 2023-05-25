@@ -36,8 +36,8 @@ const firstYear = [
     data0: [
       {
         title: `Student Induction Programme 2022.`,
-        link: `https://web.nitp.ac.in/uploads22/UG Student Induction Programme 2022.jpg`
-      }
+        link: `https://web.nitp.ac.in/uploads22/UG Student Induction Programme 2022.jpg`,
+      },
     ],
     data1: [
       // {
@@ -89,7 +89,7 @@ const firstYear = [
       //   link: `http://www.nitp.ac.in/uploads20/2020-07.12.2020.pdf`,
       // },
     ],
-  }
+  },
 ]
 const Studentpage = () => {
   const [tab] = useQueryParam("tab")
@@ -258,16 +258,16 @@ const Studentpage = () => {
               <div className="row rowmarl3">
                 {notices != undefined
                   ? notices.map(notice => {
-                    if (notice.title != "") {
-                      return (
-                        <Notice
-                          detail={notice.title}
-                          time={notice.timestamp}
-                          attachments={notice.attachments}
-                        />
-                      )
-                    }
-                  })
+                      if (notice.title != "") {
+                        return (
+                          <Notice
+                            detail={notice.title}
+                            time={notice.timestamp}
+                            attachments={notice.attachments}
+                          />
+                        )
+                      }
+                    })
                   : null}
               </div>
             </div>
@@ -299,49 +299,60 @@ const Studentpage = () => {
               >
                 <img src={first} loading="lazy" />
               </a> */}
-              {
-                firstYear.map(e => (<>
+              {firstYear.map(e => (
+                <>
                   <div className="row rowmarl3 rowmarr3">
                     <h1>{e.heading}</h1>
                     <p>{e.info}</p>
                   </div>
-                  {e.data0.map(i => (<div className="row rowmarl3 rowmarr3">
-                    <a href={i.link} target="_blank" rel="noopener noreferrer" style={{
-                                  textDecoration: `none`,
-                                  fontFamily: `Source Sans Pro`,
-                                }}><h3 style={{
-                                  borderBottom: `1px dotted black`,
-                                  borderTop: `1px dotted black`,
-                                  padding: `0.5rem`,
-                                }}>{i.title}</h3></a>
-                  </div>))}
-                    {
-                      e.data1.map(j=>(
-                        <div className="row rowmarl3 rowmarr3">
-                                                        <a
-                                href={j.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                style={{
-                                  textDecoration: `none`,
-                                  fontFamily: `Source Sans Pro`,
-                                }}
-                              >
-                                <p
-                                  style={{
-                                    fontWeight: `bold`,
-                                    paddingBottom: `0.5rem`,
-                                    margin: `0 1rem`,
-                                  }}
-                                >
-                                  → {j.title}
-                                </p>
-                              </a>
-                        </div>
-                      ))
-                    }
-                </>))
-              }
+                  {e.data0.map(i => (
+                    <div className="row rowmarl3 rowmarr3">
+                      <a
+                        href={i.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          textDecoration: `none`,
+                          fontFamily: `Source Sans Pro`,
+                        }}
+                      >
+                        <h3
+                          style={{
+                            borderBottom: `1px dotted black`,
+                            borderTop: `1px dotted black`,
+                            padding: `0.5rem`,
+                          }}
+                        >
+                          {i.title}
+                        </h3>
+                      </a>
+                    </div>
+                  ))}
+                  {e.data1.map(j => (
+                    <div className="row rowmarl3 rowmarr3">
+                      <a
+                        href={j.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          textDecoration: `none`,
+                          fontFamily: `Source Sans Pro`,
+                        }}
+                      >
+                        <p
+                          style={{
+                            fontWeight: `bold`,
+                            paddingBottom: `0.5rem`,
+                            margin: `0 1rem`,
+                          }}
+                        >
+                          → {j.title}
+                        </p>
+                      </a>
+                    </div>
+                  ))}
+                </>
+              ))}
             </div>
           )}
         </PageLayout>

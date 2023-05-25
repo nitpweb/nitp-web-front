@@ -32,7 +32,7 @@ const Floatmenu = () => (
         </div>
         <div className="float-card">
           <a href="#contact">
-            <h3>Contact Us</h3>
+            <h3>Contact</h3>
           </a>
         </div>
       </div>

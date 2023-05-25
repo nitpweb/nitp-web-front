@@ -55,11 +55,7 @@ export const about = () => {
       technology transfer, capacity building, and awareness programs.
       <br />
       <br />
-      <img src={`${process.env.GATSBY_BASE_URL}civil/labs/hod.jpg`} />
       <br />
-      <strong>S. S. Mishra</strong>
-      <br />
-      Professor & HOD
     </>
   )
 }
@@ -94,22 +90,34 @@ export const vision = () => {
 
 export const contact = () => {
   return (
-    <>
-      Department of Civil Engg.,
-      <br />
-      <br />
-      National Institute Of Technology Patna,
-      <br />
-      Ashok Rajpath, Patna - 800005.
-      <br />
-      <br />
-      Email: head.ce@nitp.ac.in
-      <br />
-      <br />
-      Extn: +91-612-(2371715/2715/2371929/
-      <br />
-      2370419/2370843/2371930) * 126
-    </>
+    <div className="col-11">
+      <div style={{}}>
+        Department of Civil Engg.,
+        <br />
+        National Institute Of Technology Patna,
+        <br />
+        Ashok Rajpath, Patna - 800005.
+        <br />
+        <br />
+        Email: head.ce@nitp.ac.in
+        <br />
+        <br />
+        Extn: +91-612-(2371715/2715/2371929/
+        <br />
+        2370419/2370843/2371930) * 126
+        <br />
+        <br />
+      </div>
+
+      <div className="img col-12">
+        <img src="/civilhod.jpg" />
+        <br />
+        <br />
+        <strong>Prof. Anshuman Singh</strong>
+        <br />
+        Professor & HOD
+      </div>
+    </div>
   )
 }
 
@@ -183,7 +191,7 @@ export const datalist = [
     // img: "/department/activities.svg",
   },
   {
-    title: "Contact",
+    title: "Contact & HOD",
     data: "contact",
     // img: "/department/contact.svg",
   },
@@ -191,7 +199,7 @@ export const datalist = [
     title: "Labs",
     data: "labs",
     // img: "/department/labs.svg",
-  }, 
+  },
   {
     title: "Activities",
     data: "activities",
@@ -201,5 +209,5 @@ export const datalist = [
     title: "Mission & Vision",
     data: "missionvision",
     // img: "/department/mission.svg",
-  }
+  },
 ]

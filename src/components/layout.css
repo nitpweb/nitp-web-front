@@ -46,7 +46,9 @@ main {
   width: 100%;
   z-index: 1;
 }
-.row p, h1, h2{
+.row p,
+h1,
+h2 {
   margin: 0;
 }
 .col-6 {
@@ -67,6 +69,9 @@ main {
 
 .backgroundimage {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 75vw;
   height: 80vh;
   opacity: 0.3;
@@ -113,4 +118,35 @@ main {
 .col-6 img {
   max-width: 100%;
   height: auto;
+}
+
+@media (min-width: 768px) {
+  /* Desktop size and larger */
+  .col-11 {
+    /* Reduce width by 300px */
+    /* Apply margin of 300px */
+    display: flex;
+  }
+  .col-12 {
+    margin-left: 200px;
+  }
+}
+@media (min-width: 768) and (max-width: 940) {
+  .col-12 {
+    margin-left: 100px;
+  }
+  .img {
+    width: 250px;
+    height: 270px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .col-11 {
+    width: 100%;
+  }
+  .img {
+    width: 200px;
+    height: 200px;
+  }
 }
