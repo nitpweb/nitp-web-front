@@ -8,7 +8,7 @@ export const light = {
   // backgroundSecColor: "#e4e6eb",
   backgroundSecColor: "#f5f5f5",
   // backgroundTerColor:"#f8faff",
-  backgroundTerColor:"#fcfdff",
+  backgroundTerColor: "#fcfdff",
   primaryTextColor: "#941b0c",
   textColor: "#121212",
   secondaryTextColor: "#4b4b4b",

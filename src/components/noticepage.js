@@ -44,7 +44,7 @@ const Notice = ({ type, title }) => {
                   )
                 }
               })}
-              {notices &&
+            {notices &&
               notices.map(notice => {
                 if (notice.title != "" && notice.important != 1) {
                   return (

@@ -10,11 +10,19 @@ export const Nitpbackimg = () => {
       nitpBackImages: allFile(
         filter: {
           relativePath: {
-
-        
-
-            in: ["home/img/homebg-16.jpg","home/img/homebg-17.jpg","home/img/homebg-18.jpg","home/img/ByteVerse.jpg","home/img/homebg-1.jpg","home/img/homebg-2.jpg", "home/img/homebg-5.jpg", "home/img/sac.jpeg","home/img/homebg-3.jpg","home/img/homebg-4.jpg", "home/img/homebg-6.jpg"]
-
+            in: [
+              "home/img/homebg-16.jpg"
+              "home/img/homebg-17.jpg"
+              "home/img/homebg-18.jpg"
+              "home/img/ByteVerse.jpg"
+              "home/img/homebg-1.jpg"
+              "home/img/homebg-2.jpg"
+              "home/img/homebg-5.jpg"
+              "home/img/sac.jpeg"
+              "home/img/homebg-3.jpg"
+              "home/img/homebg-4.jpg"
+              "home/img/homebg-6.jpg"
+            ]
           }
         }
       ) {

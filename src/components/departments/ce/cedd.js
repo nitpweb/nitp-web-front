@@ -1,4 +1,2 @@
-const civilDualDegreeCourse = [
-    
-]
+const civilDualDegreeCourse = []
 export default civilDualDegreeCourse

@@ -11,15 +11,16 @@ export const SliderStyle = styled.div`
     display: grid;
     place-items: center;
     /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
-    box-shadow: ${props => (props.type === "depImages" ? "" : "0 10px 20px rgba(0, 0, 0, 0.2)")};
+    box-shadow: ${props =>
+      props.type === "depImages" ? "" : "0 10px 20px rgba(0, 0, 0, 0.2)"};
     border-radius: ${props => (props.type === "depImages" ? "25px" : 0)};
   }
   @media (max-width: 480px) {
-    .slide{
-    width: 100%;
-    height: 100%;
+    .slide {
+      width: 100%;
+      height: 100%;
     }
-}
+  }
   @media screen and (max-width: 700px) {
     .container-slider {
       margin: 10px 0 0 0;
@@ -27,16 +28,16 @@ export const SliderStyle = styled.div`
   }
   @media (min-width: 481px) and (max-width: 1024px) {
     .slide {
-    width: 100%;
-    height: 100%;
+      width: 100%;
+      height: 100%;
     }
-}
+  }
   @media (min-width: 1025px) {
     .slide {
-    width: 71%;
-    height: 100%;
+      width: 71%;
+      height: 100%;
     }
-}
+  }
   .slide {
     position: absolute;
     opacity: 0;
@@ -55,7 +56,7 @@ export const SliderStyle = styled.div`
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background:#f1f1f1;
+    background: #f1f1f1;
     border: 1px solid rgba(34, 34, 34, 0.287);
     position: absolute;
     display: flex;
