@@ -17,8 +17,8 @@ const Facultyprofile = ({ url }) => {
           publications: detail.publications ? detail.publications[0] : [],
           subjects: detail.profile ? detail.subjects_teaching : [],
           memberships: detail.memberships ? detail.memberships : [],
-          qualification: detail.education?detail.education : [],
-          pg_ug: detail.pg_ug_projects?detail.pg_ug_projects:[],
+          qualification: detail.education ? detail.education : [],
+          pg_ug: detail.pg_ug_projects ? detail.pg_ug_projects : [],
           currResponsibility: detail.curr_admin_responsibility
             ? detail.curr_admin_responsibility
             : [],
@@ -245,7 +245,11 @@ const Facultyprofile = ({ url }) => {
             <div className="faculty-details-row">
               <h1>Profile</h1>
               <div className="fac-card" data-aos="fade-up">
-                <h3>{data.profile.department=="Officers" ? "Responsibilities:-" : "Research Interest:-"}</h3>
+                <h3>
+                  {data.profile.department == "Officers"
+                    ? "Responsibilities:-"
+                    : "Research Interest:-"}
+                </h3>
                 <p>{data.profile.research_interest}</p>
                 <div style={{ display: "flex" }} className="row">
                   <div className="col-6">
@@ -278,7 +282,7 @@ const Facultyprofile = ({ url }) => {
                           <h4>Year</h4>
                         </th>
                       </tr> */}
-                      {data.subjects.map((item,index) => {
+                      {data.subjects.map((item, index) => {
                         return (
                           <p key={index}>
                             {item.code} {item.name}{" "}
@@ -326,7 +330,7 @@ const Facultyprofile = ({ url }) => {
                           <h4>End-Date</h4>
                         </th>
                       </tr> */}
-                      {data.memberships.map((item,index) => {
+                      {data.memberships.map((item, index) => {
                         return (
                           <p key={index}>
                             {item.membership_id} {item.membership_society}{" "}
@@ -374,41 +378,41 @@ const Facultyprofile = ({ url }) => {
                   <div className="factable">
                     <table>
                       <thead>
-                      <tr>
-                        <th>
-                          <h4>Certification</h4>
-                        </th>
-                        <th>
-                          <h4>Institute Name</h4>
-                        </th>
-                        <th>
-                          <h4>Passing Year</h4>
-                        </th>
-                      </tr>
+                        <tr>
+                          <th>
+                            <h4>Certification</h4>
+                          </th>
+                          <th>
+                            <h4>Institute Name</h4>
+                          </th>
+                          <th>
+                            <h4>Passing Year</h4>
+                          </th>
+                        </tr>
                       </thead>
                       <tbody>
-                      {data.qualification.map((item,index) => {
-                        return (
-                          <>
-                          {/* <p key={index}>
+                        {data.qualification.map((item, index) => {
+                          return (
+                            <>
+                              {/* <p key={index}>
                             {item.certification}{" "}
                             {item.institution ? item.institution : ""}{" "}
                             {item.passing_year ? item.passing_year : ""}
                           </p> */}
-                          <tr key={index}>
-                            <td>
-                              <p>{item.certification}</p>
-                            </td>
-                            <td>
-                              <p>{item.institution}</p>
-                            </td>
-                            <td>
-                              <p>{item.passing_year}</p>
-                            </td>
-                          </tr>
-                          </>
-                        )
-                      })}
+                              <tr key={index}>
+                                <td>
+                                  <p>{item.certification}</p>
+                                </td>
+                                <td>
+                                  <p>{item.institution}</p>
+                                </td>
+                                <td>
+                                  <p>{item.passing_year}</p>
+                                </td>
+                              </tr>
+                            </>
+                          )
+                        })}
                       </tbody>
                     </table>
                   </div>

@@ -284,7 +284,8 @@ const Academics = [
       },
       {
         // url: "https://web.nitp.ac.in/uploads22/Academic_cal._Even_2022_23.pdf",
-        url: "https://web.nitp.ac.in//uploads23/Academic_calendar_2023_24%20_Odd_sem.pdf",
+        url:
+          "https://web.nitp.ac.in//uploads23/Academic_calendar_2023_24%20_Odd_sem.pdf",
         title: "Academic Calendar",
         data: "",
       },

@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react"
 // import video1 from "./video/demoVideo.mp4"
-import logo from './video/load.gif'
-import { VideoStyle } from './styles'
+import logo from "./video/load.gif"
+import { VideoStyle } from "./styles"
 function Video() {
   return (
     <VideoStyle>
@@ -11,4 +11,4 @@ function Video() {
   )
 }
 
-export default Video;
+export default Video

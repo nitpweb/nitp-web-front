@@ -4,13 +4,13 @@ export const NoticeStyle = styled.div`
   width: auto;
   height: fit-content;
   padding: 5px 15px 5px 15px;
-  ${'' /* background: ${props => props.theme.backgroundTerColor}; */}
+  ${"" /* background: ${props => props.theme.backgroundTerColor}; */}
   margin-top: 10px;
   .noticecarddetail {
     text-align: justify;
     font-size: 16px;
     font-family: "Source Sans Pro";
-    margin:0;
+    margin: 0;
     a {
       text-decoration: none;
       color: ${props => props.theme.textColor};
@@ -47,21 +47,20 @@ export const NoticeStyle = styled.div`
         line-height: 1;
       }
     }
-    
   }
 
   .notdown {
-        text-decoration: none;
-        position: relative;
-        bottom: 0;
-        /* margin-bottom: 5px; */
-        color: ${props => props.theme.primaryColor};
-        font-size: 13px;
-        font-weight: 600;
-        text-align: right;
-        font-family: "Source Sans Pro";
-        line-height: 1;
-      }
+    text-decoration: none;
+    position: relative;
+    bottom: 0;
+    /* margin-bottom: 5px; */
+    color: ${props => props.theme.primaryColor};
+    font-size: 13px;
+    font-weight: 600;
+    text-align: right;
+    font-family: "Source Sans Pro";
+    line-height: 1;
+  }
 
   @media (max-width: 768px) {
     .noticecard {
@@ -73,7 +72,7 @@ export const NoticeStyle = styled.div`
       }
     }
   }
-  ${'' /* .notet {
+  ${"" /* .notet {
     position: relative;
     bottom: 0;
     margin: 4px 0 0 0;

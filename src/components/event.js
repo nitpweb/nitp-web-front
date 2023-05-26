@@ -50,7 +50,11 @@ class Event extends React.Component {
                       month={monthname}
                       attachments={event.attachments}
                       location={event.venue}
-                      event_link = {event.event_link && JSON.parse(event.event_link).url || ""}
+                      event_link={
+                        (event.event_link &&
+                          JSON.parse(event.event_link).url) ||
+                        ""
+                      }
                       link={
                         event.attachments.length != 0
                           ? event.attachments[0].url

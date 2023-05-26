@@ -184,5 +184,5 @@ export const datalist = [
     title: "Mission & Vision",
     data: "missionvision",
     // img: "/department/mission.svg",
-  }
+  },
 ]

@@ -1,4 +1,2 @@
-const mathDualDegreeCourse = [
-    
-]
+const mathDualDegreeCourse = []
 export default mathDualDegreeCourse

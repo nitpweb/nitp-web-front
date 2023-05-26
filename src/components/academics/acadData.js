@@ -1,4 +1,3 @@
-
 const Datad = [
   {
     heading: "Digital Initiatives of NIT Patna",
@@ -314,13 +313,14 @@ const Admissions = [
     title: "JoSAA-2022/CSAB-2022/DASA-2022",
     data: [
       {
-        para: "Information for Admission to B.Tech./B.Arch./Dual Degree (B.Tech+M.Tech) Programmes through JoSAA-2022/CSAB-2022/DASA-2022",
+        para:
+          "Information for Admission to B.Tech./B.Arch./Dual Degree (B.Tech+M.Tech) Programmes through JoSAA-2022/CSAB-2022/DASA-2022",
         link:
           "http://web.nitp.ac.in/uploads22/Admission Notice_ 2022-23_B.Tech_B.Arch_Dual DegreeB.Tech_M.Tech.pdf",
       },
       {
         para:
-          " UG Admission 2022-23:The dates of physical reporting at the institute shall be according to the schedule of CSAB-2022",        
+          " UG Admission 2022-23:The dates of physical reporting at the institute shall be according to the schedule of CSAB-2022",
       },
     ],
   },
@@ -511,7 +511,8 @@ const Fee = [
     data: [
       {
         para: "UG : Fee refund policy notification",
-        link: "https://web.nitp.ac.in//uploads23/UG%20Refund%20Policy%20Notification.pdf",
+        link:
+          "https://web.nitp.ac.in//uploads23/UG%20Refund%20Policy%20Notification.pdf",
       },
       {
         para:
@@ -528,7 +529,8 @@ const Fee = [
         link: "http://web.nitp.ac.in/uploads/Fee_Structure_All.pdf",
       },
       {
-        para: "UG/PG Dual Degree: Fee notification for B.Tech and M.Tech Dual Degree",
+        para:
+          "UG/PG Dual Degree: Fee notification for B.Tech and M.Tech Dual Degree",
         link: "http://web.nitp.ac.in/uploads22/FeeNotification_Dual.pdf",
       },
     ],
@@ -578,30 +580,32 @@ const Format = [
       {
         para:
           "3-SOP for Refund of DRCC Education Loan under Bihar Student Credit Card Scheme",
-        link:
-          "http://web.nitp.ac.in/uploads22/DRCC_Refund_SOP.pdf",
+        link: "http://web.nitp.ac.in/uploads22/DRCC_Refund_SOP.pdf",
       },
       {
         para:
           "4-SOP for Adjustment of DRCC Education Loan under Bihar Student Credit Card Scheme",
-        link:
-          "http://web.nitp.ac.in/uploads22/DRCC_Adjustment_SOP.pdf",
+        link: "http://web.nitp.ac.in/uploads22/DRCC_Adjustment_SOP.pdf",
       },
       {
         para: "5-Application for Demand Letter.",
-        link: "http://web.nitp.ac.in/uploads23/Application%20for%20Demand%20Letter.pdf",
+        link:
+          "http://web.nitp.ac.in/uploads23/Application%20for%20Demand%20Letter.pdf",
       },
       {
         para: "6-Application for Hostel & Mess Fee Receipt.",
-        link: "http://web.nitp.ac.in/uploads23/Application%20for%20Hostel%20&%20Mess%20Fee%20Receipt.pdf",
+        link:
+          "http://web.nitp.ac.in/uploads23/Application%20for%20Hostel%20&%20Mess%20Fee%20Receipt.pdf",
       },
       {
         para: "7-SOP for Educational Verification of Students.",
-        link: "http://web.nitp.ac.in/uploads23/Educational%20Verification_SOP.pdf",
+        link:
+          "http://web.nitp.ac.in/uploads23/Educational%20Verification_SOP.pdf",
       },
       {
         para: "8-SOP for Cancellation of Admission",
-        link: "http://web.nitp.ac.in/uploads22/Application for Cancellation of Admission.pdf",
+        link:
+          "http://web.nitp.ac.in/uploads22/Application for Cancellation of Admission.pdf",
       },
     ],
   },
@@ -852,7 +856,8 @@ const NIRF = [
     data: [
       {
         para: "NIRF 2023 Data",
-        link: "http://web.nitp.ac.in/uploads23/NIRF%20Overall%20data%202023.pdf",
+        link:
+          "http://web.nitp.ac.in/uploads23/NIRF%20Overall%20data%202023.pdf",
       },
       // {
       //   para: "Enterpreneurship Students.",
@@ -1003,10 +1008,8 @@ const Depts = [
     heading: "Departments",
     data: [
       {
-        para:
-          "Architecture",
-        link:
-          "/arch",
+        para: "Architecture",
+        link: "/arch",
       },
       {
         para: "Chemistry",
@@ -1102,7 +1105,6 @@ const CentreOfExcellence = [
       // },
     ],
   },
-  
 ]
 
 const Convocation = [
@@ -1118,11 +1120,14 @@ const Convocation = [
       {
         link:
           "https://drive.google.com/file/d/1bTEXmXWTCPdMTXcjI_e7hW9wht6MFFQi/view",
-        para: "Video message for graduands from Dr. Subhas Sarkar, Honorable Union Minister of State, Ministry of Education",
+        para:
+          "Video message for graduands from Dr. Subhas Sarkar, Honorable Union Minister of State, Ministry of Education",
       },
       {
-        link: "https://drive.google.com/file/d/1GhjpEr-Z6dzbZjUuFw4KwSkdl9-i7a9F/view",
-        para: "Video message for graduands from Dr G. Satheesh Reddy, Honorable Secretary, Department of Defence R&D and Chairman, DRDO",
+        link:
+          "https://drive.google.com/file/d/1GhjpEr-Z6dzbZjUuFw4KwSkdl9-i7a9F/view",
+        para:
+          "Video message for graduands from Dr G. Satheesh Reddy, Honorable Secretary, Department of Defence R&D and Chairman, DRDO",
       },
       {
         link: "https://www.youtube.com/watch?v=QZeLU_QKr6I",
@@ -1138,8 +1143,7 @@ const Magazine = [
     title: "Special Edition: Institute Coffee-Table Booklet",
     data: [
       {
-        para:
-          "Click here to download (English Version)",
+        para: "Click here to download (English Version)",
         link: "http://web.nitp.ac.in/uploads23/Coffee-Table_NITP.pdf",
       },
     ],
@@ -1149,21 +1153,20 @@ const Magazine = [
     title: "Magazine Vol. 5 (Jan 2023)",
     data: [
       {
-        para:
-          "Click here to download (English Version)",
-        link: "https://drive.google.com/file/d/1FAhIZPthEMvSyceX5ASOAO-yI-BiTQ7Y/view?usp=share_link",
+        para: "Click here to download (English Version)",
+        link:
+          "https://drive.google.com/file/d/1FAhIZPthEMvSyceX5ASOAO-yI-BiTQ7Y/view?usp=share_link",
       },
     ],
-  },  
+  },
   {
     heading: "Magazine of NIT Patna",
     title: "Special Edition: 5 Years Report",
     data: [
       {
-        para:
-          "Click here to download (English Version)",
+        para: "Click here to download (English Version)",
         link: "http://web.nitp.ac.in/uploads23/5_years_Report.pdf",
-      }
+      },
     ],
   },
   {
@@ -1171,9 +1174,9 @@ const Magazine = [
     title: "Magazine Vol. 4 (March 2022)",
     data: [
       {
-        para:
-          "Click here to download (English Version)",
-        link: "http://web.nitp.ac.in/uploads20/Pratibimb/Pratibimb%20Vol.%204,%20March%202022,%20online%20version-16.03.2022.pdf",
+        para: "Click here to download (English Version)",
+        link:
+          "http://web.nitp.ac.in/uploads20/Pratibimb/Pratibimb%20Vol.%204,%20March%202022,%20online%20version-16.03.2022.pdf",
       },
     ],
   },
@@ -1218,7 +1221,6 @@ const Magazine = [
         link:
           "http://web.nitp.ac.in/uploads20/Pratibimb/NIT%20Patna%20E-Magazine.pdf",
       },
-      
     ],
   },
 ]
@@ -1227,78 +1229,68 @@ const AnnualReports = [
     heading: "Annual Reports",
     data: [
       {
-        para:
-          "Annual Report 2019-20(Hindi Version)",
-        link: "http://old.nitp.ac.in/downloads/NIT%20Patna_AR%20Hindi%2019-20-updated.pdf",
+        para: "Annual Report 2019-20(Hindi Version)",
+        link:
+          "http://old.nitp.ac.in/downloads/NIT%20Patna_AR%20Hindi%2019-20-updated.pdf",
       },
       {
-        para:
-          "Annual Report 2019-20(English Version)",
-        link: "http://old.nitp.ac.in/downloads/Annual%20Report%20AR%20%20English%20NIT%20Patna%2019-20-20.04.2021.pdf",
+        para: "Annual Report 2019-20(English Version)",
+        link:
+          "http://old.nitp.ac.in/downloads/Annual%20Report%20AR%20%20English%20NIT%20Patna%2019-20-20.04.2021.pdf",
       },
       {
-        para:
-          "Annual Report 2018-19(Hindi Version)",
-        link: "http://old.nitp.ac.in/downloads/annual_report/Annual%20Report%20Hindi.pdf",
+        para: "Annual Report 2018-19(Hindi Version)",
+        link:
+          "http://old.nitp.ac.in/downloads/annual_report/Annual%20Report%20Hindi.pdf",
       },
       {
-        para:
-          "Annual Report 2018-19(English Version)",
-        link: "http://old.nitp.ac.in/downloads/annual_report/Annual%20Report.pdf",
+        para: "Annual Report 2018-19(English Version)",
+        link:
+          "http://old.nitp.ac.in/downloads/annual_report/Annual%20Report.pdf",
       },
       {
-        para:
-          "Annual Report 2017-18",
-        link: "http://old.nitp.ac.in/downloads/annual_report/AR_17-18.pdfhttp://old.nitp.ac.in/downloads/annual_report/AR_16-17.pdf",
+        para: "Annual Report 2017-18",
+        link:
+          "http://old.nitp.ac.in/downloads/annual_report/AR_17-18.pdfhttp://old.nitp.ac.in/downloads/annual_report/AR_16-17.pdf",
       },
       {
-        para:
-          "Annual Report 2016-17",
+        para: "Annual Report 2016-17",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_16-17.pdf",
       },
       {
-        para:
-          "Annual Report 2015-16",
+        para: "Annual Report 2015-16",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_15-16.pdf",
       },
       {
-        para:
-          "Annual Report 2014-15",
+        para: "Annual Report 2014-15",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_14-15.pdf",
       },
       {
-        para:
-          "Annual Report 2013-14",
+        para: "Annual Report 2013-14",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_13-14.pdf",
       },
       {
-        para:
-          "Annual Report 2012-13",
+        para: "Annual Report 2012-13",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_12-13.pdf",
       },
       {
-        para:
-          "Annual Report 2011-12",
+        para: "Annual Report 2011-12",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_11-12.pdf",
       },
       {
-        para:
-          "Annual Report 2010-11",
+        para: "Annual Report 2010-11",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_10-11.pdf",
       },
       {
-        para:
-          "Annual Report 2009-10",
+        para: "Annual Report 2009-10",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_09-10.pdf",
       },
       {
-        para:
-          "Annual Report 2008-09",
+        para: "Annual Report 2008-09",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_08-09.pdf",
       },
       {
-        para:
-          "Annual Report 2007-08",
+        para: "Annual Report 2007-08",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_07-08.pdf",
       },
     ],
@@ -1311,10 +1303,8 @@ const Patents = [
     title: `List of Granted Patents`,
     data: [
       {
-        para:
-          "Click here to download the list of Granted Patents.",
-        link:
-          "http://web.nitp.ac.in/uploads23/ListOfGrantedPatents.pdf",
+        para: "Click here to download the list of Granted Patents.",
+        link: "http://web.nitp.ac.in/uploads23/ListOfGrantedPatents.pdf",
       },
     ],
   },
@@ -1323,10 +1313,8 @@ const Patents = [
     title: `List of Published Patents`,
     data: [
       {
-        para: 
-          "Click here to download the list of Published Patents.",
-        link:
-          "http://web.nitp.ac.in/uploads23/ListOfPublishedPatents.pdf",
+        para: "Click here to download the list of Published Patents.",
+        link: "http://web.nitp.ac.in/uploads23/ListOfPublishedPatents.pdf",
       },
     ],
   },
@@ -1355,7 +1343,7 @@ const acadData = {
   centreOfExcellence: CentreOfExcellence,
   convocation: Convocation,
   magazine: Magazine,
-  annualreports:AnnualReports,
+  annualreports: AnnualReports,
   patents: Patents,
 }
 export default acadData

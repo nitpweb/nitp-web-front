@@ -14,7 +14,7 @@ export const AdCardStyle = styled.div`
   background: ${props => props.theme.backgroundSecColor};
   position: relative;
   margin: 1rem;
-  text-align:center;
+  text-align: center;
 
   .type {
     display: flex;

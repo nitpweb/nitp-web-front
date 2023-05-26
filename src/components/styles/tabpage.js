@@ -148,9 +148,8 @@ export const TabPage = styled.div`
       padding-top: 0vh;
       padding-bottom: 0vh;
       font-family: "Source Sans Pro";
-      .noticecarddetail{
+      .noticecarddetail {
         background: ${props => props.theme.backgroundSecColor};
-
       }
       .notice {
         flex-direction: column;
