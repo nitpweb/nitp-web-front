@@ -1,4 +1,3 @@
-
 const Datad = [
   {
     heading: "Digital Initiatives of NIT Patna",
@@ -22,28 +21,20 @@ const DataUG = [
     title: "UG",
     data: [
       {
-        link:
-          "http://web.nitp.ac.in/downloads/firstyear/Curricula%202022%20_B.Tech,%20B.Arch%20and%20Dual%20Degree%20Programmes.pdf",
-        para:
-          "UG_Curricula_2022(Effective from academic session 2021-22 and onwards)",
+        link: "http://web.nitp.ac.in/downloads/firstyear/Curricula%202022%20_B.Tech,%20B.Arch%20and%20Dual%20Degree%20Programmes.pdf",
+        para: "UG_Curricula_2022(Effective from academic session 2021-22 and onwards)",
       },
       {
-        link:
-          "http://web.nitp.ac.in/downloads/firstyear/UG%20Program%20Curricula%20Approved%20in%2032nd%20Senate%20on%2021092020-1.pdf",
-        para:
-          "UG Curricula 2020. (Application for Academic Session 2020-21 and onward)",
+        link: "http://web.nitp.ac.in/downloads/firstyear/UG%20Program%20Curricula%20Approved%20in%2032nd%20Senate%20on%2021092020-1.pdf",
+        para: "UG Curricula 2020. (Application for Academic Session 2020-21 and onward)",
       },
       {
-        link:
-          "http://web.nitp.ac.in/downloads/firstyear/UG%20Regulation%20&%20Curiculla%20amended%20upto%2018th%20Senate%20with%20effect%20from%20session%202016-17.pdf",
-        para:
-          "UG REGULATION 2016. (to be effective from the Academic session 2016-17 and onwards)",
+        link: "http://web.nitp.ac.in/downloads/firstyear/UG%20Regulation%20&%20Curiculla%20amended%20upto%2018th%20Senate%20with%20effect%20from%20session%202016-17.pdf",
+        para: "UG REGULATION 2016. (to be effective from the Academic session 2016-17 and onwards)",
       },
       {
-        link:
-          "http://web.nitp.ac.in/downloads/firstyear/UG%20Curricula%202013.pdf",
-        para:
-          "UG REGULATION 2013. (UG CURRICULA' 2013 FOR B.TECH, B.ARCH PROGRAM",
+        link: "http://web.nitp.ac.in/downloads/firstyear/UG%20Curricula%202013.pdf",
+        para: "UG REGULATION 2013. (UG CURRICULA' 2013 FOR B.TECH, B.ARCH PROGRAM",
       },
     ],
   },
@@ -54,16 +45,12 @@ const DataPG = [
     title: "PG",
     data: [
       {
-        link:
-          "http://web.nitp.ac.in/downloads/M.Tech%20&%20MURP%20Regulation%202013-14%20-%20Scanned%20%20copy.pdf",
-        para:
-          "M.Tech/MURP (PG) REGULATION 2013. ( Effective from Session 2013-14 to 2016-2017)",
+        link: "http://web.nitp.ac.in/downloads/M.Tech%20&%20MURP%20Regulation%202013-14%20-%20Scanned%20%20copy.pdf",
+        para: "M.Tech/MURP (PG) REGULATION 2013. ( Effective from Session 2013-14 to 2016-2017)",
       },
       {
-        link:
-          "http://web.nitp.ac.in/downloads/firstyear/PG%20Regulation%20&%20Curiculla%20amended%20upto%2022nd%20Senate%20with%20effect%20from%20session%202017-18.pdf",
-        para:
-          "M.Tech/MURP (PG) REGULATION 2017. (to be effective from the Academic session 2017-18 and onwards)",
+        link: "http://web.nitp.ac.in/downloads/firstyear/PG%20Regulation%20&%20Curiculla%20amended%20upto%2022nd%20Senate%20with%20effect%20from%20session%202017-18.pdf",
+        para: "M.Tech/MURP (PG) REGULATION 2017. (to be effective from the Academic session 2017-18 and onwards)",
       },
     ],
   },
@@ -75,25 +62,19 @@ const DataPHD = [
     title: "PhD",
     data: [
       {
-        link:
-          "http://web.nitp.ac.in/uploads22/Notice_Thesis printing on both sides_19_10_22.pdf",
-        para:
-          "Notice regarding printing of Ph.D thesis on both sides of the paper",
+        link: "http://web.nitp.ac.in/uploads22/Notice_Thesis printing on both sides_19_10_22.pdf",
+        para: "Notice regarding printing of Ph.D thesis on both sides of the paper",
       },
       {
-        link:
-          "http://web.nitp.ac.in/uploads/Notice%20regarding%20DSC_02_03_2020.jpg",
-        para:
-          "Notice: PhD Supervisor will be Chairman DSC irrespective of admission date",
+        link: "http://web.nitp.ac.in/uploads/Notice%20regarding%20DSC_02_03_2020.jpg",
+        para: "Notice: PhD Supervisor will be Chairman DSC irrespective of admission date",
       },
       {
-        link:
-          "http://web.nitp.ac.in/uploads/Ph.D%20Regulation%202018-(FINAL).pdf",
+        link: "http://web.nitp.ac.in/uploads/Ph.D%20Regulation%202018-(FINAL).pdf",
         para: "Ph.D. REGULATION",
       },
       {
-        link:
-          "http://web.nitp.ac.in/uploads/Ph.D.%20Offline%20Registration%20Form%20(Tripilicate)%20Format%20(1)%20in%20PDF.pdf",
+        link: "http://web.nitp.ac.in/uploads/Ph.D.%20Offline%20Registration%20Form%20(Tripilicate)%20Format%20(1)%20in%20PDF.pdf",
         para: "Ph.D. Registration Form (Triplicate)",
       },
     ],
@@ -106,10 +87,8 @@ const DataNotice = [
     title: "Notice related to Copyright transfer certificate (UG,PG & Ph.D)",
     data: [
       {
-        link:
-          "http://web.nitp.ac.in/uploads20/Declaration_copyright_transfer_certificate.pdf",
-        para:
-          "Notice: regarding Declaration and Copyright transfer certificate (UG,PG & Ph.D) required to be included in the dissertation/thesis",
+        link: "http://web.nitp.ac.in/uploads20/Declaration_copyright_transfer_certificate.pdf",
+        para: "Notice: regarding Declaration and Copyright transfer certificate (UG,PG & Ph.D) required to be included in the dissertation/thesis",
       },
     ],
   },
@@ -315,12 +294,10 @@ const Admissions = [
     data: [
       {
         para: "Information for Admission to B.Tech./B.Arch./Dual Degree (B.Tech+M.Tech) Programmes through JoSAA-2022/CSAB-2022/DASA-2022",
-        link:
-          "http://web.nitp.ac.in/uploads22/Admission Notice_ 2022-23_B.Tech_B.Arch_Dual DegreeB.Tech_M.Tech.pdf",
+        link: "http://web.nitp.ac.in/uploads22/Admission Notice_ 2022-23_B.Tech_B.Arch_Dual DegreeB.Tech_M.Tech.pdf",
       },
       {
-        para:
-          " UG Admission 2022-23:The dates of physical reporting at the institute shall be according to the schedule of CSAB-2022",        
+        para: " UG Admission 2022-23:The dates of physical reporting at the institute shall be according to the schedule of CSAB-2022",
       },
     ],
   },
@@ -329,8 +306,7 @@ const Admissions = [
     title: "CCMT-2021:",
     data: [
       {
-        para:
-          "Official website of CCMT 2021 for M/Tech/MURP/MArch admission for the Academic session 2021-22. ",
+        para: "Official website of CCMT 2021 for M/Tech/MURP/MArch admission for the Academic session 2021-22. ",
         link: "https://ccmt.nic.in/",
       },
     ],
@@ -340,10 +316,8 @@ const Admissions = [
     title: "B.Tech./B.Arch. Programmes:",
     data: [
       {
-        para:
-          "DETAILS OF ADMISSION PROCESS FOR FIRST SEMESTER (B.Tech./B.Arch.) 2020-21",
-        link:
-          "http://www.nitp.ac.in/uploads20/Notice%20Provisional%20Admission%20Procedure%20through%20JoSAA%20CSAB%2025%20Nov%20to%201%20Dec-25.11.2020.pdf",
+        para: "DETAILS OF ADMISSION PROCESS FOR FIRST SEMESTER (B.Tech./B.Arch.) 2020-21",
+        link: "http://www.nitp.ac.in/uploads20/Notice%20Provisional%20Admission%20Procedure%20through%20JoSAA%20CSAB%2025%20Nov%20to%201%20Dec-25.11.2020.pdf",
       },
     ],
   },
@@ -353,31 +327,23 @@ const Admissions = [
     data: [
       {
         para: "PhD admission notice Jan-June 2021",
-        link:
-          "http://www.nitp.ac.in/uploads20/Ph.D%20Admission%20notice-Jan-June'2021,WebSite-1.pdf",
+        link: "http://www.nitp.ac.in/uploads20/Ph.D%20Admission%20notice-Jan-June'2021,WebSite-1.pdf",
       },
       {
         para: "Interview list for PhD amission Jan-June 2021.",
-        link:
-          "http://www.nitp.ac.in/uploads20/Interview%20List%20PhD%20Admission%20jan%202021.pdf",
+        link: "http://www.nitp.ac.in/uploads20/Interview%20List%20PhD%20Admission%20jan%202021.pdf",
       },
       {
-        para:
-          "Result of interview for for PhD admission ( Ref. 1099/Acad. /20-21 dt.: 05.01.2021).",
-        link:
-          "http://nitp.ac.in/uploads20/Interview-Result-Admission-Jan%202021%20with%20Sign.pdf",
+        para: "Result of interview for for PhD admission ( Ref. 1099/Acad. /20-21 dt.: 05.01.2021).",
+        link: "http://nitp.ac.in/uploads20/Interview-Result-Admission-Jan%202021%20with%20Sign.pdf",
       },
       {
-        para:
-          "Information for Provisional Admission to PhD programme (Ref. 1099/Acad. /20-21 dt.: 05.01.2021). ",
-        link:
-          "http://nitp.ac.in/uploads20/Online%20Admission%20Notice%20With%20Signature.pdf",
+        para: "Information for Provisional Admission to PhD programme (Ref. 1099/Acad. /20-21 dt.: 05.01.2021). ",
+        link: "http://nitp.ac.in/uploads20/Online%20Admission%20Notice%20With%20Signature.pdf",
       },
       {
-        para:
-          'Fees payment link (choose "PHD NEW ADMISSION 2021" from drop down. ',
-        link:
-          "https://www.eduqfix.com/PayDirect/#/student/pay/mnYv9Q6+C+3lIMqghRCwdaqVZusPrJtq2RGJrJFnKnmtz3KBqtsEFPVrZFvoPubG/3466",
+        para: 'Fees payment link (choose "PHD NEW ADMISSION 2021" from drop down. ',
+        link: "https://www.eduqfix.com/PayDirect/#/student/pay/mnYv9Q6+C+3lIMqghRCwdaqVZusPrJtq2RGJrJFnKnmtz3KBqtsEFPVrZFvoPubG/3466",
       },
     ],
   },
@@ -387,45 +353,34 @@ const Admissions = [
     data: [
       {
         para: "Advertisement of Ph.D admission July-Dec'2020 (Odd Sem.).",
-        link:
-          "http://www.nitp.ac.in/uploads20/Final_PhD_Admission_July-Dec-2020-09.09.2020.pdf",
+        link: "http://www.nitp.ac.in/uploads20/Final_PhD_Admission_July-Dec-2020-09.09.2020.pdf",
       },
       {
-        para:
-          "Notice regarding PhD admission test (Ref: 61/Acad./20-21 dt.03.07.2020).",
-        link:
-          "http://www.nitp.ac.in/uploads/Ph.D%20Admission%20Notice_30_07_2020.pdf",
+        para: "Notice regarding PhD admission test (Ref: 61/Acad./20-21 dt.03.07.2020).",
+        link: "http://www.nitp.ac.in/uploads/Ph.D%20Admission%20Notice_30_07_2020.pdf",
       },
       {
         para: "Online Interview Schedule for PhD Admission.",
-        link:
-          "http://www.nitp.ac.in/uploads/PhD%20Admission%20Notice-31.07.2020.pdf",
+        link: "http://www.nitp.ac.in/uploads/PhD%20Admission%20Notice-31.07.2020.pdf",
       },
       {
-        para:
-          "Change in credentials of applicants w.r.t Notice No.61/Acad/20-21 dated 03.07.2020 for Ph.D admission.",
+        para: "Change in credentials of applicants w.r.t Notice No.61/Acad/20-21 dated 03.07.2020 for Ph.D admission.",
         link: "http://www.nitp.ac.in/uploads20/color_phd_05_08_2020.pdf",
       },
       {
         para: "Selection criteria for admission to PhD program.",
-        link:
-          "http://www.nitp.ac.in/uploads20/PhDAdmissionCriteria_05.08.20.pdf",
+        link: "http://www.nitp.ac.in/uploads20/PhDAdmissionCriteria_05.08.20.pdf",
       },
       {
-        para:
-          "List of selected candidates for the admission to PhD programme Odd Semester (July- December' 2020 ) under Full Time/ Part-Time/Sponsored Scheme of PhD and JRF/SRF against admission notice vide Ref. 61/Acad./20-21 dt. 03.07.2020.",
-        link:
-          "http://nitp.ac.in/downloads/academics/phd-admission/Interview-Result-Admission-July'2020_31_08_2020.pdf",
+        para: "List of selected candidates for the admission to PhD programme Odd Semester (July- December' 2020 ) under Full Time/ Part-Time/Sponsored Scheme of PhD and JRF/SRF against admission notice vide Ref. 61/Acad./20-21 dt. 03.07.2020.",
+        link: "http://nitp.ac.in/downloads/academics/phd-admission/Interview-Result-Admission-July'2020_31_08_2020.pdf",
       },
       {
-        para:
-          "Information for Provisional Admission to PhD programme through Institute notice no. 61/Acad. /20-21 dt.: 03.07.2020",
-        link:
-          "http://www.nitp.ac.in/uploads20/Final_PhD_Admission_July-Dec-2020-09.09.2020.pdf",
+        para: "Information for Provisional Admission to PhD programme through Institute notice no. 61/Acad. /20-21 dt.: 03.07.2020",
+        link: "http://www.nitp.ac.in/uploads20/Final_PhD_Admission_July-Dec-2020-09.09.2020.pdf",
       },
       {
-        para:
-          "Notice for PhD students provisionally admitted in the First Semester (July-Dec2O20)",
+        para: "Notice for PhD students provisionally admitted in the First Semester (July-Dec2O20)",
         link: "http://www.nitp.ac.in/uploads20/PhD%20students.pdf",
       },
     ],
@@ -435,38 +390,28 @@ const Admissions = [
     title: "CCMT 2020:",
     data: [
       {
-        para:
-          "Information for Provisional Admission to M.Tech./MURP/M.Arch. Programmes under CCMT 2020 Process.",
-        link:
-          "http://nitp.ac.in/downloads/academics/pg-admission/PG%20Admission%20Academic%20Sesion%202020-21%20through%20CCMT%202020_31_08_2020.pdf",
+        para: "Information for Provisional Admission to M.Tech./MURP/M.Arch. Programmes under CCMT 2020 Process.",
+        link: "http://nitp.ac.in/downloads/academics/pg-admission/PG%20Admission%20Academic%20Sesion%202020-21%20through%20CCMT%202020_31_08_2020.pdf",
       },
       {
-        para:
-          "Important notice regarding hostel and stipend/scholarship/Assistanceship",
-        link:
-          "http://nitp.ac.in/downloads/academics/pg-admission/NOTICE-NIT%20Patna_18_05_2020.pdf",
+        para: "Important notice regarding hostel and stipend/scholarship/Assistanceship",
+        link: "http://nitp.ac.in/downloads/academics/pg-admission/NOTICE-NIT%20Patna_18_05_2020.pdf",
       },
       {
-        para:
-          "Notice regarding Tuition fee Waiver for SC/ST/PH M.Tech students",
-        link:
-          "http://www.nitp.ac.in/uploads/Tution%20fee%20waiver%2004_06_2020.pdf",
+        para: "Notice regarding Tuition fee Waiver for SC/ST/PH M.Tech students",
+        link: "http://www.nitp.ac.in/uploads/Tution%20fee%20waiver%2004_06_2020.pdf",
       },
       {
-        para:
-          "Provisionally admitted students in PG programme in Academic Section 2020-21 (July-Dec'2020)",
+        para: "Provisionally admitted students in PG programme in Academic Section 2020-21 (July-Dec'2020)",
         link: "http://www.nitp.ac.in/uploads20/CCMT%202020-09.11.2020.jpg",
       },
       {
-        para:
-          "Notice for M.Tech/M.Arch/IVIURP students provisionally admitted in the First Semester (July-Dec 2020) ",
+        para: "Notice for M.Tech/M.Arch/IVIURP students provisionally admitted in the First Semester (July-Dec 2020) ",
         link: "http://www.nitp.ac.in/uploads20/M.Tech%20students.pdf",
       },
       {
-        para:
-          "Notice for M.Tech/M.Arch/MURP & PhD students admitted in July-Dec-2020 semester regarding submission of documents",
-        link:
-          "http://www.nitp.ac.in/uploads20/NOTICE%20M.Tech%20MURP%20M.ARCH%20AND%20Ph.D%202020%20(1).jpg",
+        para: "Notice for M.Tech/M.Arch/MURP & PhD students admitted in July-Dec-2020 semester regarding submission of documents",
+        link: "http://www.nitp.ac.in/uploads20/NOTICE%20M.Tech%20MURP%20M.ARCH%20AND%20Ph.D%202020%20(1).jpg",
       },
     ],
   },
@@ -514,10 +459,8 @@ const Fee = [
         link: "https://web.nitp.ac.in//uploads23/UG%20Refund%20Policy%20Notification.pdf",
       },
       {
-        para:
-          "PG: Revised fee component for M.Tech./M.Arch/MURP Programme from the Academic Session 2021-22 onwards ",
-        link:
-          "http://web.nitp.ac.in/uploads20/Fee%20Notification%2026.04.2021-26.04.2021.pdf",
+        para: "PG: Revised fee component for M.Tech./M.Arch/MURP Programme from the Academic Session 2021-22 onwards ",
+        link: "http://web.nitp.ac.in/uploads20/Fee%20Notification%2026.04.2021-26.04.2021.pdf",
       },
       {
         para: "PG: Fee Structure for M.Tech./M.Arch/MURP for (Jan-June'2021)",
@@ -539,13 +482,11 @@ const Fee = [
     data: [
       {
         para: "Regular.",
-        link:
-          "http://web.nitp.ac.in/uploads20/MCA%20Fee%20Structure%20%2021-22%20Regular.pdf",
+        link: "http://web.nitp.ac.in/uploads20/MCA%20Fee%20Structure%20%2021-22%20Regular.pdf",
       },
       {
         para: "Self-financed.",
-        link:
-          "http://web.nitp.ac.in/uploads20/MCA%20Fee%20Structure%20%2021-22%20SelfFinanced.pdf",
+        link: "http://web.nitp.ac.in/uploads20/MCA%20Fee%20Structure%20%2021-22%20SelfFinanced.pdf",
       },
     ],
   },
@@ -556,12 +497,10 @@ const Format = [
     data: [
       {
         para: "Guidelines cum checklist to get process of academic document",
-        link:
-          "http://web.nitp.ac.in/downloads/Guidelines%20cum%20checklist%20to%20get%20process%20of%20academic%20document.pdf",
+        link: "http://web.nitp.ac.in/downloads/Guidelines%20cum%20checklist%20to%20get%20process%20of%20academic%20document.pdf",
       },
       {
-        para:
-          "Format for issue of Grade Card / Provisional / Transcript from Exam Section",
+        para: "Format for issue of Grade Card / Provisional / Transcript from Exam Section",
         link:
           // "http://web.nitp.ac.in/uploads22/REQUEST_LETTER_CUM_DOCUMENT_ISSUE_FORM.pdf",
           "https://web.nitp.ac.in//uploads23/Bilingual%20Request%20Letter%20Cum%20Document%20Issue%20Form.pdf",
@@ -571,21 +510,16 @@ const Format = [
         link: "http://web.nitp.ac.in/uploads22/Degree_SOP (6).pdf",
       },
       {
-        para:
-          "2-SOP to issue Institute Leaving/Transfer Cum Migration Certificate",
+        para: "2-SOP to issue Institute Leaving/Transfer Cum Migration Certificate",
         link: "http://web.nitp.ac.in/uploads22/Migration_SOP (1).pdf",
       },
       {
-        para:
-          "3-SOP for Refund of DRCC Education Loan under Bihar Student Credit Card Scheme",
-        link:
-          "http://web.nitp.ac.in/uploads22/DRCC_Refund_SOP.pdf",
+        para: "3-SOP for Refund of DRCC Education Loan under Bihar Student Credit Card Scheme",
+        link: "http://web.nitp.ac.in/uploads22/DRCC_Refund_SOP.pdf",
       },
       {
-        para:
-          "4-SOP for Adjustment of DRCC Education Loan under Bihar Student Credit Card Scheme",
-        link:
-          "http://web.nitp.ac.in/uploads22/DRCC_Adjustment_SOP.pdf",
+        para: "4-SOP for Adjustment of DRCC Education Loan under Bihar Student Credit Card Scheme",
+        link: "http://web.nitp.ac.in/uploads22/DRCC_Adjustment_SOP.pdf",
       },
       {
         para: "5-Application for Demand Letter.",
@@ -624,8 +558,7 @@ const CourseUG = [
       },
       {
         para: "CSUG 2018-19",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/CSUG_2018_19.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/CSUG_2018_19.pdf",
       },
       {
         para: "Bachelor of Electronics & Communication Engineering (ECUG)",
@@ -633,8 +566,7 @@ const CourseUG = [
       },
       {
         para: "ECUG 2018-19",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/ECUG_2018_19.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/ECUG_2018_19.pdf",
       },
       {
         para: "Bachelor of Electrical Engineering (EEUG) for 2014 & 2015 Batch",
@@ -646,8 +578,7 @@ const CourseUG = [
       },
       {
         para: "MEUG 2018-19",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/MEUG_2018_19.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/MEUG_2018_19.pdf",
       },
       {
         para: "Bachelor of Information Technology (ITUG)",
@@ -662,28 +593,23 @@ const CoursePG = [
     data: [
       {
         para: "M. Tech (Civil Engg.) in Environmental Engineering",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/MTech_Civil_%20ENV%20Syllabus%20wef%202020-05.10.2020.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/MTech_Civil_%20ENV%20Syllabus%20wef%202020-05.10.2020.pdf",
       },
       {
         para: "M.TECH. IN CIVIL ENGINEERING",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/MTech_Civil_%20GET%20Syllabus%20wef%202020-05.10.2020.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/MTech_Civil_%20GET%20Syllabus%20wef%202020-05.10.2020.pdf",
       },
       {
         para: "Master in Civil Engineering (River)",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/CEPG%20(River).pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/CEPG%20(River).pdf",
       },
       {
         para: "M. Tech (Civil Engg.) in Structural Engineering",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/MTech_Civil_%20STE%20Syllabus%20wef%202020-05.10.2020.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/MTech_Civil_%20STE%20Syllabus%20wef%202020-05.10.2020.pdf",
       },
       {
         para: "M.TECH. IN CIVIL ENGINEERING (TRANSPORTATION)",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/MTech_Civil_%20TRE%20Syllabus%20wef%202020-05.10.2020.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/MTech_Civil_%20TRE%20Syllabus%20wef%202020-05.10.2020.pdf",
       },
       {
         para: "CEPG (Water Resources)",
@@ -695,23 +621,19 @@ const CoursePG = [
       },
       {
         para: "ECPG (Communication)",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/ECPG%20(Communication).pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/ECPG%20(Communication).pdf",
       },
       {
         para: "ECPG (VLSI)",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/ECPG%20(VLSI).pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/ECPG%20(VLSI).pdf",
       },
       {
         para: "EE (Power System)",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/EE%20(Power%20System).pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/EE%20(Power%20System).pdf",
       },
       {
         para: "EEPG (Control System)",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/EEPG%20(Control%20System).pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/EEPG%20(Control%20System).pdf",
       },
       {
         para: "Master in Information Technology",
@@ -723,18 +645,15 @@ const CoursePG = [
       },
       {
         para: "Master of Mechanical Engineering (MEPG) Production",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/MEPG%20(Production).pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/MEPG%20(Production).pdf",
       },
       {
         para: "MEPG (Thermal)",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/MEPG%20(Thermal).pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/MEPG%20(Thermal).pdf",
       },
       {
         para: "Master of Mechanical Engineering (MEPG) Design",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/MEUG%20(Design).pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/MEUG%20(Design).pdf",
       },
       {
         para: "Master of Urban & Regional Planning",
@@ -754,53 +673,43 @@ const CoursePHD = [
       },
       {
         para: "Master of Civil Engineering (CEPG) Enviormental-DD",
-        link:
-          "http:/eb.nitp.ac.in/downloads/course_structure/CEPG%20(Enviormental)%20DD.pdf",
+        link: "http:/eb.nitp.ac.in/downloads/course_structure/CEPG%20(Enviormental)%20DD.pdf",
       },
       {
         para: "Master of Civil Engineering (CEPG) Geotechnical-DD ",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/CEPG%20(Geotechnical)%20DD.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/CEPG%20(Geotechnical)%20DD.pdf",
       },
       {
         para: "Master of Civil Engineering (CEPG) Structural-DD",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/CEPG%20(Structural)%20DD.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/CEPG%20(Structural)%20DD.pdf",
       },
       {
         para: "Master of Civil Engineering (CEPG) Transportation-DD",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/CEPG%20(Transportation)%20DD.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/CEPG%20(Transportation)%20DD.pdf",
       },
       {
         para: "Master of Civil Engineering (CEPG) Water Resources-DD",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/CEPG%20(Water%20Resources)%20DD.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/CEPG%20(Water%20Resources)%20DD.pdf",
       },
       {
         para: "Master of Computer Science & Engineering (CSPG)-DD",
         link: "http://web.nitp.ac.in/downloads/course_structure/CSPG-%20DD.pdf",
       },
       {
-        para:
-          "Master of Electronics & Communication (ECPG) Communication System-DD",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/ECPG%20(Communication)%20DD.pdf",
+        para: "Master of Electronics & Communication (ECPG) Communication System-DD",
+        link: "http://web.nitp.ac.in/downloads/course_structure/ECPG%20(Communication)%20DD.pdf",
       },
       {
         para: "Master of Civil Engineering (ECPG) Microelectronics & VLSI-DD",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/ECPG%20(VLSI)%20DD.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/ECPG%20(VLSI)%20DD.pdf",
       },
       {
         para: "Master of Electrical Engineering (EEUG) Control System- DD",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/EE%20(Control%20System)%20DD.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/EE%20(Control%20System)%20DD.pdf",
       },
       {
         para: "Master of Electrical Engineering (EEUG) Power System- DD",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/EE%20(Power)%20DD.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/EE%20(Power)%20DD.pdf",
       },
       {
         para: "Master of Information Technology (ITPG)-DD",
@@ -808,18 +717,15 @@ const CoursePHD = [
       },
       {
         para: "Master of Mechanical Engineering (MEPG) Design-DD",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/ME%20(Design)%20DD.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/ME%20(Design)%20DD.pdf",
       },
       {
         para: "Master of Mechanical Engineering (MEPG) Production-DD",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/ME%20(Production)%20DD.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/ME%20(Production)%20DD.pdf",
       },
       {
         para: "Master of Mechanical Engineering (MEPG) Thermal Engineering-DD",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/ME%20(Thermal)%20DD.pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/ME%20(Thermal)%20DD.pdf",
       },
     ],
   },
@@ -830,18 +736,15 @@ const CourseMsc = [
     data: [
       {
         para: "Course Structure: Five year Integrated M. Sc. in Physics",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/Int.%20M.Sc.%20(Physics).pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/Int.%20M.Sc.%20(Physics).pdf",
       },
       {
         para: "Course Structure: Five year Integrated M. Sc. in Mathematics ",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/Int.%20M.Sc.%20(Mathematics).pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/Int.%20M.Sc.%20(Mathematics).pdf",
       },
       {
         para: "Course Structure: Five year Integrated M. Sc. in Chemistry",
-        link:
-          "http://web.nitp.ac.in/downloads/course_structure/Int.%20M.Sc.%20(Chemistry).pdf",
+        link: "http://web.nitp.ac.in/downloads/course_structure/Int.%20M.Sc.%20(Chemistry).pdf",
       },
     ],
   },
@@ -945,14 +848,11 @@ const Statutes = [
     title: "NIT Act and Statutes",
     data: [
       {
-        link:
-          "http://www.nitp.ac.in/downloads/NIT_Act/Amendments_First_Statutes.pdf",
-        para:
-          "Amendments in the First Statutes of National Institute of Technology (NITs)",
+        link: "http://www.nitp.ac.in/downloads/NIT_Act/Amendments_First_Statutes.pdf",
+        para: "Amendments in the First Statutes of National Institute of Technology (NITs)",
       },
       {
-        link:
-          "http://www.nitp.ac.in/downloads/NIT_Act/First_Statutes_NIT_Act_2007.pdf",
+        link: "http://www.nitp.ac.in/downloads/NIT_Act/First_Statutes_NIT_Act_2007.pdf",
         para: "First Statutes of NIT Act 2007",
       },
       {
@@ -972,28 +872,23 @@ const Privacy = [
       },
       {
         title: "Information Collection and Use",
-        para:
-          "While you can use parts of this website without providing any personal information, certain sections will only be accessible after you have registered with the website by providing specific data. These sections include, but are not limited to Donations, Registrations, Books, Journals and Alumni Profiles. The information collected by NITP will be used strictly for the purpose stated at the time of collection. Such information will not be sold, traded, rented or in any way given to a third party, including direct marketing companies and similar organisations for commercial purposes. However, NITP may reveal the collected information to its employees, agents, consultants and others who the NITP decides need to know the information. The institute may also divulge the information to third parties, including law enforcement officials, courts and others based on its discretion.",
+        para: "While you can use parts of this website without providing any personal information, certain sections will only be accessible after you have registered with the website by providing specific data. These sections include, but are not limited to Donations, Registrations, Books, Journals and Alumni Profiles. The information collected by NITP will be used strictly for the purpose stated at the time of collection. Such information will not be sold, traded, rented or in any way given to a third party, including direct marketing companies and similar organisations for commercial purposes. However, NITP may reveal the collected information to its employees, agents, consultants and others who the NITP decides need to know the information. The institute may also divulge the information to third parties, including law enforcement officials, courts and others based on its discretion.",
       },
       {
         title: "System Information Including IP Addresses",
-        para:
-          "Information that is not personal in nature, i.e., IP addresses, web browser and operating system details, browsing habits, demographical and geographic data and other similar information may be logged and used to analyze and extrapolate information about general user behavior within the NITP website. Such extrapolations and statistics may be made public; however, they cannot be tracked to individual users. IP addresses are not linked to anything that can help identify the user. Neither are IP addresses, except in rare occasions, handed out to third parties.",
+        para: "Information that is not personal in nature, i.e., IP addresses, web browser and operating system details, browsing habits, demographical and geographic data and other similar information may be logged and used to analyze and extrapolate information about general user behavior within the NITP website. Such extrapolations and statistics may be made public; however, they cannot be tracked to individual users. IP addresses are not linked to anything that can help identify the user. Neither are IP addresses, except in rare occasions, handed out to third parties.",
       },
       {
         title: "Cookies",
-        para:
-          "This website uses “cookies” to track usage and manage services on the website. Cookies are small bits of data that may be transferred to the user’s hard drive when he logs in or accesses a particular part of the website. These are used for a variety of purposes including authentication and can be blocked by reconfiguring the appropriate settings in your web browser. Doing so may, however, restrict access to certain parts of the website. Cookies can also be removed from the user’s hard drive whenever he wishes through his browser options. Information collected through cookies cannot be traced back to the user as it contains no personally identifiable data like name, address or phone number.",
+        para: "This website uses “cookies” to track usage and manage services on the website. Cookies are small bits of data that may be transferred to the user’s hard drive when he logs in or accesses a particular part of the website. These are used for a variety of purposes including authentication and can be blocked by reconfiguring the appropriate settings in your web browser. Doing so may, however, restrict access to certain parts of the website. Cookies can also be removed from the user’s hard drive whenever he wishes through his browser options. Information collected through cookies cannot be traced back to the user as it contains no personally identifiable data like name, address or phone number.",
       },
       {
         title: "Online Forms",
-        para:
-          "The NITP website uses online forms where you may be asked to provide certain personal information. This is necessary to access certain services in the website (e.g. donations, registrations, books and journals) or to take part in surveys. By filling out and submitting the form you are understood to have consented to NITP storing and using the information for the purposes for which it has been provided",
+        para: "The NITP website uses online forms where you may be asked to provide certain personal information. This is necessary to access certain services in the website (e.g. donations, registrations, books and journals) or to take part in surveys. By filling out and submitting the form you are understood to have consented to NITP storing and using the information for the purposes for which it has been provided",
       },
       {
         title: "Security",
-        para:
-          "At NITP, we take every possible precaution to ensure that your data is safe and secure. Unfortunately, we have to control over the transmission medium and digital transmission over the internet can rarely be completely secure. Thus, we cannot ensure the safety of the information transferred to us, and you need to do so at your own risk. Once we receive the data, we will strive to keep it secure using the latest technology, constant upgrades to our digital security infrastructure and restricted access. All information you provide as will be stored in NITP secured servers within NITP premises. However, we make no guarantees about the security of the data in case of unforeseen circumstances.",
+        para: "At NITP, we take every possible precaution to ensure that your data is safe and secure. Unfortunately, we have to control over the transmission medium and digital transmission over the internet can rarely be completely secure. Thus, we cannot ensure the safety of the information transferred to us, and you need to do so at your own risk. Once we receive the data, we will strive to keep it secure using the latest technology, constant upgrades to our digital security infrastructure and restricted access. All information you provide as will be stored in NITP secured servers within NITP premises. However, we make no guarantees about the security of the data in case of unforeseen circumstances.",
       },
     ],
   },
@@ -1003,10 +898,8 @@ const Depts = [
     heading: "Departments",
     data: [
       {
-        para:
-          "Architecture",
-        link:
-          "/arch",
+        para: "Architecture",
+        link: "/arch",
       },
       {
         para: "Chemistry",
@@ -1067,8 +960,7 @@ const CentreOfExcellence = [
     title: "1. Centre of Excellence set up by TSSC at NIT Patna :",
     data: [
       {
-        para:
-          "A Memorandum of Understanding (MOU) has been signed between Telecom Sector Skill Council and National Institute of Technology Patna for setting up a Centre of Excellence (CoE) to create a facility for practical training on the domain of Information and Communications Technology on 22nd January, 2021. Skill development training is being imparted by the CoE to enhance the employability of aspiring students on the cutting-edge technologies in the domain of Information and Communications Technology including Technical, Services and allied fields. The CoE will provide training on the base line courses and also on the advance courses like IOT, 5G and beyond, cyber security and robotics etc. Almost 190 students have been trained on different job roles by this centre. A state-of-art laboratory on internet of things (IOT) is being developed. Hopefully the lab will be ready shortly where training/research will be conducted on IOT/5G technologies. ",
+        para: "A Memorandum of Understanding (MOU) has been signed between Telecom Sector Skill Council and National Institute of Technology Patna for setting up a Centre of Excellence (CoE) to create a facility for practical training on the domain of Information and Communications Technology on 22nd January, 2021. Skill development training is being imparted by the CoE to enhance the employability of aspiring students on the cutting-edge technologies in the domain of Information and Communications Technology including Technical, Services and allied fields. The CoE will provide training on the base line courses and also on the advance courses like IOT, 5G and beyond, cyber security and robotics etc. Almost 190 students have been trained on different job roles by this centre. A state-of-art laboratory on internet of things (IOT) is being developed. Hopefully the lab will be ready shortly where training/research will be conducted on IOT/5G technologies. ",
       },
     ],
   },
@@ -1077,24 +969,19 @@ const CentreOfExcellence = [
     title: "2. Centre of Excellence set up by ISRO RACS at NIT Patna :",
     data: [
       {
-        para:
-          "As we joyfully unveil, it's all hues of bliss. The Indian Space Research Organization (ISRO) intends to open a Regional Academic Centre for Space at the National Institute of Technology, Patna (NITP) to encourage students to pursue careers in space research. The NITP and the ISRO signed a memorandum of understanding (MoU) in this regard on Wednesday, November 25, 2021. The ISRO headquarters were represented by Sudheer Kumar N, director of CBPO (Capacity Building Programme Office), and MA Paul, associate director (response and academic interface-CBPO), while our esteemed director Prof. P. K. Jain was present from our side.",
+        para: "As we joyfully unveil, it's all hues of bliss. The Indian Space Research Organization (ISRO) intends to open a Regional Academic Centre for Space at the National Institute of Technology, Patna (NITP) to encourage students to pursue careers in space research. The NITP and the ISRO signed a memorandum of understanding (MoU) in this regard on Wednesday, November 25, 2021. The ISRO headquarters were represented by Sudheer Kumar N, director of CBPO (Capacity Building Programme Office), and MA Paul, associate director (response and academic interface-CBPO), while our esteemed director Prof. P. K. Jain was present from our side.",
       },
       {
-        para:
-          "The Regional Academic Centre for Space is a regional-level project that seeks to conduct advanced research in areas relevant to the future technological and programmatic needs of the space program. Other current Regional Academic Centres for Space are located in prestigious colleges such as MNIT, Jaipur, NIT Kurukshetra, IIT (BHU) Varanasi, Gauhati University, and NIT K, Surathkal.",
+        para: "The Regional Academic Centre for Space is a regional-level project that seeks to conduct advanced research in areas relevant to the future technological and programmatic needs of the space program. Other current Regional Academic Centres for Space are located in prestigious colleges such as MNIT, Jaipur, NIT Kurukshetra, IIT (BHU) Varanasi, Gauhati University, and NIT K, Surathkal.",
       },
       {
-        para:
-          "The ISRO's research and development operations in the Eastern India region (including Bihar, Jharkhand, West Bengal, Odisha, Andaman, the Nicobar Islands, and Sikkim) would be coordinated through NIT-Patna. Sudheer, Director of CBPO, stated that the RAC-S center will serve as a facilitator for space technology operations. He also discussed the research areas and how to get involved in the initiative. The ISRO will also provide financial assistance in the amount of Rs. 2 crores per year. ",
+        para: "The ISRO's research and development operations in the Eastern India region (including Bihar, Jharkhand, West Bengal, Odisha, Andaman, the Nicobar Islands, and Sikkim) would be coordinated through NIT-Patna. Sudheer, Director of CBPO, stated that the RAC-S center will serve as a facilitator for space technology operations. He also discussed the research areas and how to get involved in the initiative. The ISRO will also provide financial assistance in the amount of Rs. 2 crores per year. ",
       },
       {
-        para:
-          "Director, NIT Patna, Prof. P. K. Jain, addressing the event, promised that NITP will encourage research activities in different fields, including electronics, communication, material science, information technology, and remote sensing, by the needs of the ISRO. If any institute in eastern India requires experimental help, our facility would be available. The funding is available not just for research initiatives, but also for undergraduate, postgraduate, Ph.D., and teaching faculty.",
+        para: "Director, NIT Patna, Prof. P. K. Jain, addressing the event, promised that NITP will encourage research activities in different fields, including electronics, communication, material science, information technology, and remote sensing, by the needs of the ISRO. If any institute in eastern India requires experimental help, our facility would be available. The funding is available not just for research initiatives, but also for undergraduate, postgraduate, Ph.D., and teaching faculty.",
       },
       {
-        para:
-          "  The short-term projects will be for NITP and other institutes' B. Tech and M. Tech students. The center will also provide Ph.D. scholars and faculty members with long-term research and development projects. The projects can be individual projects or projects in collaboration with another institute. The projects will be scrutinized twice, first by the NITP and subsequently by the ISRO.",
+        para: "  The short-term projects will be for NITP and other institutes' B. Tech and M. Tech students. The center will also provide Ph.D. scholars and faculty members with long-term research and development projects. The projects can be individual projects or projects in collaboration with another institute. The projects will be scrutinized twice, first by the NITP and subsequently by the ISRO.",
       },
       // {
       //   imageLink:
@@ -1102,7 +989,6 @@ const CentreOfExcellence = [
       // },
     ],
   },
-  
 ]
 
 const Convocation = [
@@ -1110,14 +996,11 @@ const Convocation = [
     title: "Convocation",
     data: [
       {
-        link:
-          "https://drive.google.com/drive/folders/1FCX_gRZEdbHFDLm7lEQVPLmuzaQVrajX?usp=sharing",
-        para:
-          "Photos from the 10th Conovocation Event (accessible from an @nitp.ac.in account only)",
+        link: "https://drive.google.com/drive/folders/1FCX_gRZEdbHFDLm7lEQVPLmuzaQVrajX?usp=sharing",
+        para: "Photos from the 10th Conovocation Event (accessible from an @nitp.ac.in account only)",
       },
       {
-        link:
-          "https://drive.google.com/file/d/1bTEXmXWTCPdMTXcjI_e7hW9wht6MFFQi/view",
+        link: "https://drive.google.com/file/d/1bTEXmXWTCPdMTXcjI_e7hW9wht6MFFQi/view",
         para: "Video message for graduands from Dr. Subhas Sarkar, Honorable Union Minister of State, Ministry of Education",
       },
       {
@@ -1138,8 +1021,7 @@ const Magazine = [
     title: "Special Edition: Institute Coffee-Table Booklet",
     data: [
       {
-        para:
-          "Click here to download (English Version)",
+        para: "Click here to download (English Version)",
         link: "http://web.nitp.ac.in/uploads23/Coffee-Table_NITP.pdf",
       },
     ],
@@ -1149,21 +1031,19 @@ const Magazine = [
     title: "Magazine Vol. 5 (Jan 2023)",
     data: [
       {
-        para:
-          "Click here to download (English Version)",
+        para: "Click here to download (English Version)",
         link: "https://drive.google.com/file/d/1FAhIZPthEMvSyceX5ASOAO-yI-BiTQ7Y/view?usp=share_link",
       },
     ],
-  },  
+  },
   {
     heading: "Magazine of NIT Patna",
     title: "Special Edition: 5 Years Report",
     data: [
       {
-        para:
-          "Click here to download (English Version)",
+        para: "Click here to download (English Version)",
         link: "http://web.nitp.ac.in/uploads23/5_years_Report.pdf",
-      }
+      },
     ],
   },
   {
@@ -1171,8 +1051,7 @@ const Magazine = [
     title: "Magazine Vol. 4 (March 2022)",
     data: [
       {
-        para:
-          "Click here to download (English Version)",
+        para: "Click here to download (English Version)",
         link: "http://web.nitp.ac.in/uploads20/Pratibimb/Pratibimb%20Vol.%204,%20March%202022,%20online%20version-16.03.2022.pdf",
       },
     ],
@@ -1183,13 +1062,11 @@ const Magazine = [
     data: [
       {
         para: "Click here to download (English Version)",
-        link:
-          "http://web.nitp.ac.in/uploads20/Pratibimb/Pratibimb_03_English%20Version.pdf",
+        link: "http://web.nitp.ac.in/uploads20/Pratibimb/Pratibimb_03_English%20Version.pdf",
       },
       {
         para: "Click here to download (Hindi Version)",
-        link:
-          "http://web.nitp.ac.in/uploads20/Pratibimb/Pratibimb_03_Hindi%20Version.pdf",
+        link: "http://web.nitp.ac.in/uploads20/Pratibimb/Pratibimb_03_Hindi%20Version.pdf",
       },
     ],
   },
@@ -1199,13 +1076,11 @@ const Magazine = [
     data: [
       {
         para: "Click here to download (English Version)",
-        link:
-          "http://web.nitp.ac.in/uploads20/Pratibimb/Pratibimb%20Vol.%2002-Updated%2028.07.2021.pdf",
+        link: "http://web.nitp.ac.in/uploads20/Pratibimb/Pratibimb%20Vol.%2002-Updated%2028.07.2021.pdf",
       },
       {
         para: "Click here to download (Hindi Version)",
-        link:
-          "https://drive.google.com/file/d/1MIx4WSMWO6-blJhZ71Ve9Y3gEd7cybBO/view?usp=sharing",
+        link: "https://drive.google.com/file/d/1MIx4WSMWO6-blJhZ71Ve9Y3gEd7cybBO/view?usp=sharing",
       },
     ],
   },
@@ -1215,10 +1090,8 @@ const Magazine = [
     data: [
       {
         para: "Click here to download (English Version)",
-        link:
-          "http://web.nitp.ac.in/uploads20/Pratibimb/NIT%20Patna%20E-Magazine.pdf",
+        link: "http://web.nitp.ac.in/uploads20/Pratibimb/NIT%20Patna%20E-Magazine.pdf",
       },
-      
     ],
   },
 ]
@@ -1227,78 +1100,63 @@ const AnnualReports = [
     heading: "Annual Reports",
     data: [
       {
-        para:
-          "Annual Report 2019-20(Hindi Version)",
+        para: "Annual Report 2019-20(Hindi Version)",
         link: "http://old.nitp.ac.in/downloads/NIT%20Patna_AR%20Hindi%2019-20-updated.pdf",
       },
       {
-        para:
-          "Annual Report 2019-20(English Version)",
+        para: "Annual Report 2019-20(English Version)",
         link: "http://old.nitp.ac.in/downloads/Annual%20Report%20AR%20%20English%20NIT%20Patna%2019-20-20.04.2021.pdf",
       },
       {
-        para:
-          "Annual Report 2018-19(Hindi Version)",
+        para: "Annual Report 2018-19(Hindi Version)",
         link: "http://old.nitp.ac.in/downloads/annual_report/Annual%20Report%20Hindi.pdf",
       },
       {
-        para:
-          "Annual Report 2018-19(English Version)",
+        para: "Annual Report 2018-19(English Version)",
         link: "http://old.nitp.ac.in/downloads/annual_report/Annual%20Report.pdf",
       },
       {
-        para:
-          "Annual Report 2017-18",
+        para: "Annual Report 2017-18",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_17-18.pdfhttp://old.nitp.ac.in/downloads/annual_report/AR_16-17.pdf",
       },
       {
-        para:
-          "Annual Report 2016-17",
+        para: "Annual Report 2016-17",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_16-17.pdf",
       },
       {
-        para:
-          "Annual Report 2015-16",
+        para: "Annual Report 2015-16",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_15-16.pdf",
       },
       {
-        para:
-          "Annual Report 2014-15",
+        para: "Annual Report 2014-15",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_14-15.pdf",
       },
       {
-        para:
-          "Annual Report 2013-14",
+        para: "Annual Report 2013-14",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_13-14.pdf",
       },
       {
-        para:
-          "Annual Report 2012-13",
+        para: "Annual Report 2012-13",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_12-13.pdf",
       },
       {
-        para:
-          "Annual Report 2011-12",
+        para: "Annual Report 2011-12",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_11-12.pdf",
       },
       {
-        para:
-          "Annual Report 2010-11",
+        para: "Annual Report 2010-11",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_10-11.pdf",
       },
       {
-        para:
-          "Annual Report 2009-10",
+        para: "Annual Report 2009-10",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_09-10.pdf",
       },
       {
-        para:
-          "Annual Report 2008-09",
+        para: "Annual Report 2008-09",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_08-09.pdf",
       },
       {
-        para:
-          "Annual Report 2007-08",
+        para: "Annual Report 2007-08",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_07-08.pdf",
       },
     ],
@@ -1311,10 +1169,8 @@ const Patents = [
     title: `List of Granted Patents`,
     data: [
       {
-        para:
-          "Click here to download the list of Granted Patents.",
-        link:
-          "http://web.nitp.ac.in/uploads23/ListOfGrantedPatents.pdf",
+        para: "Click here to download the list of Granted Patents.",
+        link: "http://web.nitp.ac.in/uploads23/ListOfGrantedPatents.pdf",
       },
     ],
   },
@@ -1323,10 +1179,8 @@ const Patents = [
     title: `List of Published Patents`,
     data: [
       {
-        para: 
-          "Click here to download the list of Published Patents.",
-        link:
-          "http://web.nitp.ac.in/uploads23/ListOfPublishedPatents.pdf",
+        para: "Click here to download the list of Published Patents.",
+        link: "http://web.nitp.ac.in/uploads23/ListOfPublishedPatents.pdf",
       },
     ],
   },
@@ -1355,7 +1209,7 @@ const acadData = {
   centreOfExcellence: CentreOfExcellence,
   convocation: Convocation,
   magazine: Magazine,
-  annualreports:AnnualReports,
+  annualreports: AnnualReports,
   patents: Patents,
 }
 export default acadData

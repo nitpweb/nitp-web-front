@@ -15,8 +15,8 @@ const Academicspage = () => {
   const [view, setView] = useState("admissions")
 
   const formatStyleFix = {
-    "display":"flex",
-    "flexDirection":"column"
+    display: "flex",
+    flexDirection: "column",
   }
 
   function getView(callback) {
@@ -83,7 +83,6 @@ const Academicspage = () => {
                             >
                               <li>{item.para}</li>
                             </a>
-                            
                           </>
                         ))}
                       </div>
@@ -497,9 +496,9 @@ const Academicspage = () => {
             {view == "depts" ? (
               <>
                 <div className="row rowmarl3">
-                <h1 style={{ fontFamily: `Source Sans Pro` }}>Departments</h1>
+                  <h1 style={{ fontFamily: `Source Sans Pro` }}>Departments</h1>
                 </div>
-                
+
                 {/* {Navlist.departments.map((val, index) => (
                   <DynamicLink
                     key={index}
@@ -510,7 +509,7 @@ const Academicspage = () => {
                   />
                   
                 ))} */}
-                
+
                 {acadData.depts.map(item => (
                   <div className="row rowmarl3">
                     <div className="digital">
@@ -534,7 +533,6 @@ const Academicspage = () => {
                               {e.para}
                             </p>
                           </a>
-                          
                         </>
                       ))}
                     </div>
@@ -552,7 +550,7 @@ const Academicspage = () => {
                 </div>
                 <div className="row rowmarl3 digital" style={formatStyleFix}>
                   {acadData.format.map(item =>
-                    item.data.map((e,idx) => (
+                    item.data.map((e, idx) => (
                       <p key={idx}>
                         <a
                           id="formatdown"
@@ -793,7 +791,6 @@ const Academicspage = () => {
                               {e.para}
                             </p>
                           </a>
-                          
                         </>
                       ))}
                     </div>
@@ -807,7 +804,9 @@ const Academicspage = () => {
               <div className="layoutrow layoutrow1 rowmarl3" id="admission">
                 <div>
                   <div className="row">
-                    <h1 style={{ marginBottom: `1rem` }}>Centre Of Excellence</h1>
+                    <h1 style={{ marginBottom: `1rem` }}>
+                      Centre Of Excellence
+                    </h1>
                   </div>
                   {acadData.centreOfExcellence.map(e => (
                     <div className="row rowmarr3 digital">
@@ -815,7 +814,7 @@ const Academicspage = () => {
                         <h3>{e.title}</h3>
                         {e.data.map(item => (
                           <>
-                              <li>{item.para}</li>
+                            <li>{item.para}</li>
                             {/* </a> */}
                             {/* <img src={item.imageLink}></img> */}
                           </>
@@ -828,9 +827,7 @@ const Academicspage = () => {
             )}
             {view == "patents" ? (
               <>
-                <h1 style={{ fontFamily: `Source Sans Pro` }}>
-                  Patents
-                </h1>
+                <h1 style={{ fontFamily: `Source Sans Pro` }}>Patents</h1>
                 {acadData.patents.map(item => (
                   <div className="row rowmarl3">
                     <div className="digital">
@@ -854,7 +851,6 @@ const Academicspage = () => {
                               {e.para}
                             </p>
                           </a>
-                          
                         </>
                       ))}
                     </div>

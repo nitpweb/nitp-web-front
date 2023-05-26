@@ -2,7 +2,7 @@ import React from "react"
 
 const PhyCourseStructure = [
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `1`,
     coursecode: `1HS101`,
     coursetitle: `English Literature`,
@@ -12,7 +12,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `1`,
     coursecode: `MA101`,
     coursetitle: `Engineering Mathematics � I`,
@@ -22,7 +22,7 @@ const PhyCourseStructure = [
     credits: `4`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `1`,
     coursecode: `1PH101`,
     coursetitle: `Engineering Physics TH `,
@@ -32,7 +32,7 @@ const PhyCourseStructure = [
     credits: `4`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `1`,
     coursecode: `1PH102`,
     coursetitle: `Engineering Physics Lab`,
@@ -42,7 +42,7 @@ const PhyCourseStructure = [
     credits: `1`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `1`,
     coursecode: `1CS101`,
     coursetitle: `Introduction to Computing`,
@@ -52,7 +52,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `1`,
     coursecode: `1CS102`,
     coursetitle: `Computing Lab`,
@@ -62,7 +62,7 @@ const PhyCourseStructure = [
     credits: `1`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `1`,
     coursecode: `1EE101`,
     coursetitle: `Elements of Electrical Engg`,
@@ -72,7 +72,7 @@ const PhyCourseStructure = [
     credits: `4`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `1`,
     coursecode: `1EE102`,
     coursetitle: `Elements of Electrical Engg Lab`,
@@ -82,7 +82,7 @@ const PhyCourseStructure = [
     credits: `1`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `1`,
     coursecode: `1ME102`,
     coursetitle: `Workshop Practice`,
@@ -92,7 +92,7 @@ const PhyCourseStructure = [
     credits: `1`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: ` Semester Total`,
     coursecode: `-`,
     coursetitle: `-`,
@@ -102,7 +102,7 @@ const PhyCourseStructure = [
     credits: `22`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `2`,
     coursecode: `2HS102`,
     coursetitle: `CoCreditsunication Skill Development & Technical Writing`,
@@ -112,7 +112,7 @@ const PhyCourseStructure = [
     credits: `4`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `2`,
     coursecode: `2MA102`,
     coursetitle: `Engineering Mathematics �II`,
@@ -122,7 +122,7 @@ const PhyCourseStructure = [
     credits: `4`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `2`,
     coursecode: `2CH101`,
     coursetitle: `Chemical Science`,
@@ -132,7 +132,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `2`,
     coursecode: `2CH102`,
     coursetitle: `Chemical Science Lab`,
@@ -142,7 +142,7 @@ const PhyCourseStructure = [
     credits: `1`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `2`,
     coursecode: `2HS105`,
     coursetitle: `Science, Society & Ethical Values`,
@@ -152,7 +152,7 @@ const PhyCourseStructure = [
     credits: `2`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `2`,
     coursecode: `2CE101`,
     coursetitle: `Engineering Mechanics`,
@@ -162,7 +162,7 @@ const PhyCourseStructure = [
     credits: `4`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `2`,
     coursecode: `2EC101`,
     coursetitle: `Elements of Electronics Engg`,
@@ -172,7 +172,7 @@ const PhyCourseStructure = [
     credits: `4`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `2`,
     coursecode: `2EC102`,
     coursetitle: `Elements of Electronics Engg Lab`,
@@ -182,7 +182,7 @@ const PhyCourseStructure = [
     credits: `1`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `2`,
     coursecode: `2EC101`,
     coursetitle: `Engineering Graphics`,
@@ -192,7 +192,7 @@ const PhyCourseStructure = [
     credits: `2`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: ` Semester Total`,
     coursecode: `-`,
     coursetitle: `-`,
@@ -202,7 +202,7 @@ const PhyCourseStructure = [
     credits: `23`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `3`,
     coursecode: `3MA111`,
     coursetitle: `Complex Variable and Partial Diffrentiation Equation:Mathematics-III`,
@@ -212,7 +212,7 @@ const PhyCourseStructure = [
     credits: `4`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `3`,
     coursecode: `CH106`,
     coursetitle: `Physical Chemistry I:Physical Properties`,
@@ -222,7 +222,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `3`,
     coursecode: `3CH107`,
     coursetitle: `Physical Chemistry Lab I`,
@@ -232,7 +232,7 @@ const PhyCourseStructure = [
     credits: `1`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `3`,
     coursecode: `PH104`,
     coursetitle: `Mechanics,Waves & Oscillation ,Continum Mechanics`,
@@ -242,7 +242,7 @@ const PhyCourseStructure = [
     credits: `4`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `3`,
     coursecode: `3PH105`,
     coursetitle: `Computational Physics-I`,
@@ -252,7 +252,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `3`,
     coursecode: `3PH106`,
     coursetitle: `Computational Physics LAB-I`,
@@ -262,7 +262,7 @@ const PhyCourseStructure = [
     credits: `1`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `3`,
     coursecode: `3PH107`,
     coursetitle: `Fundamentals of Bio-Science`,
@@ -272,7 +272,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `3`,
     coursecode: `3PH108`,
     coursetitle: `Physics Lab-II`,
@@ -283,7 +283,7 @@ const PhyCourseStructure = [
   },
 
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: ` Semester Total`,
     coursecode: `-`,
     coursetitle: `-`,
@@ -293,7 +293,7 @@ const PhyCourseStructure = [
     credits: `20`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `4`,
     coursecode: `4MA115`,
     coursetitle: `Numerical Technique,Statistical Methods: Mathematics -IV`,
@@ -304,7 +304,7 @@ const PhyCourseStructure = [
   },
 
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `4`,
     coursecode: `4MA116`,
     coursetitle: `Mathematics- IV Computing LAB`,
@@ -314,7 +314,7 @@ const PhyCourseStructure = [
     credits: `1`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `4`,
     coursecode: `4CH104`,
     coursetitle: `Green Technology(Environmental Science)`,
@@ -324,7 +324,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `4`,
     coursecode: `4PH164`,
     coursetitle: `Electricity & Magnetism`,
@@ -334,7 +334,7 @@ const PhyCourseStructure = [
     credits: `4`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `4`,
     coursecode: `4CH110`,
     coursetitle: `Quantum Mechanism-I`,
@@ -344,7 +344,7 @@ const PhyCourseStructure = [
     credits: `4`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `4`,
     coursecode: `4PH111`,
     coursetitle: `Thermodynamics`,
@@ -354,7 +354,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `4`,
     coursecode: `4PH114`,
     coursetitle: `Advanced Physics Lab-II`,
@@ -365,7 +365,7 @@ const PhyCourseStructure = [
   },
 
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: ` Semester Total`,
     coursecode: `-`,
     coursetitle: `-`,
@@ -375,7 +375,7 @@ const PhyCourseStructure = [
     credits: `20`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `5`,
     coursecode: `5PH115`,
     coursetitle: `Chemical Mechanics`,
@@ -385,7 +385,7 @@ const PhyCourseStructure = [
     credits: `4`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `5`,
     coursecode: `5PH116`,
     coursetitle: `Quantum Mechanics-II`,
@@ -395,7 +395,7 @@ const PhyCourseStructure = [
     credits: `4`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `5`,
     coursecode: `5PH117`,
     coursetitle: `Mthematical Methods In Physics-I`,
@@ -405,7 +405,7 @@ const PhyCourseStructure = [
     credits: `4`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `5`,
     coursecode: `5PH118`,
     coursetitle: `Material Science `,
@@ -415,7 +415,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `5`,
     coursecode: `5DD1Coursecode`,
     coursetitle: `Open Elective`,
@@ -425,7 +425,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `5`,
     coursecode: `5PH120`,
     coursetitle: `Advanced Physics Lab-II`,
@@ -436,7 +436,7 @@ const PhyCourseStructure = [
   },
 
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: ` Semester Total`,
     coursecode: `-`,
     coursetitle: `-`,
@@ -446,7 +446,7 @@ const PhyCourseStructure = [
     credits: `19`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `6`,
     coursecode: `6PH121`,
     coursetitle: `Stastical Mathematics`,
@@ -456,7 +456,7 @@ const PhyCourseStructure = [
     credits: `4`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `6`,
     coursecode: `6PH122`,
     coursetitle: `Mathematical Methods Physics II`,
@@ -466,7 +466,7 @@ const PhyCourseStructure = [
     credits: `4`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `6`,
     coursecode: `6PH123`,
     coursetitle: `Modern Optics`,
@@ -476,7 +476,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `6`,
     coursecode: `6PH124`,
     coursetitle: `Electronics`,
@@ -486,7 +486,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `6`,
     coursecode: `6PH125`,
     coursetitle: `Condesed Matter Physics`,
@@ -496,7 +496,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `6`,
     coursecode: `6CH126`,
     coursetitle: `Advanced Physics Lab-III`,
@@ -506,7 +506,7 @@ const PhyCourseStructure = [
     credits: `1`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `6`,
     coursecode: `6PH128`,
     coursetitle: `Physics Lab IV(Electronics)`,
@@ -516,7 +516,7 @@ const PhyCourseStructure = [
     credits: `1`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `6`,
     coursecode: `6GE103`,
     coursetitle: `Industrial Interaction and Soft Skill Development`,
@@ -527,7 +527,7 @@ const PhyCourseStructure = [
   },
 
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: ` Semester Total`,
     coursecode: `-`,
     coursetitle: `-`,
@@ -537,7 +537,7 @@ const PhyCourseStructure = [
     credits: `19`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `7`,
     coursecode: `7PH131`,
     coursetitle: `Computational Physics -II`,
@@ -547,7 +547,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `7`,
     coursecode: `7PH132`,
     coursetitle: `Computational Physics Lab -II`,
@@ -557,7 +557,7 @@ const PhyCourseStructure = [
     credits: `1`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `7`,
     coursecode: `7PH133`,
     coursetitle: `Nuclear Physics`,
@@ -567,7 +567,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `7`,
     coursecode: `7PH134`,
     coursetitle: `Atomic & Molecular Spectroscopy`,
@@ -577,7 +577,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `7`,
     coursecode: `7PH135`,
     coursetitle: `Electrodynamics`,
@@ -587,7 +587,7 @@ const PhyCourseStructure = [
     credits: `4`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `7`,
     coursecode: `7PH1Coursecode1Coursecode`,
     coursetitle: `Elective-I`,
@@ -597,7 +597,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `7`,
     coursecode: `7PH38`,
     coursetitle: `Advanced Physics Lab- V`,
@@ -607,7 +607,7 @@ const PhyCourseStructure = [
     credits: `1`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `7`,
     coursecode: `7MA190`,
     coursetitle: `Industrial Training(4 to 6 weeks after 6th Sem)`,
@@ -618,7 +618,7 @@ const PhyCourseStructure = [
   },
 
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: ` Semester Total`,
     coursecode: `-`,
     coursetitle: `-`,
@@ -628,7 +628,7 @@ const PhyCourseStructure = [
     credits: `19`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `8`,
     coursecode: `8PH141`,
     coursetitle: `Particle Physics`,
@@ -638,7 +638,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `8`,
     coursecode: `8PH142`,
     coursetitle: `Modern Analytical Techniques`,
@@ -648,7 +648,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `8`,
     coursecode: `8PH143`,
     coursetitle: `Material Synthesis`,
@@ -658,7 +658,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `8`,
     coursecode: `8PH144`,
     coursetitle: `Material Synthesis Lab`,
@@ -668,7 +668,7 @@ const PhyCourseStructure = [
     credits: `1`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `8`,
     coursecode: `8PH146`,
     coursetitle: `Modelling & Simulation Lab`,
@@ -678,7 +678,7 @@ const PhyCourseStructure = [
     credits: `1`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `8`,
     coursecode: `PH190`,
     coursetitle: `Seminar and Comprehensive Viva-I`,
@@ -688,7 +688,7 @@ const PhyCourseStructure = [
     credits: `1`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `8`,
     coursecode: `8PH149`,
     coursetitle: `Advanced Physics Lab-VI`,
@@ -699,7 +699,7 @@ const PhyCourseStructure = [
   },
 
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `8`,
     coursecode: `8PH190`,
     coursetitle: `Minor Project`,
@@ -709,7 +709,7 @@ const PhyCourseStructure = [
     credits: `5`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: ` Semester Total`,
     coursecode: `-`,
     coursetitle: `-`,
@@ -719,7 +719,7 @@ const PhyCourseStructure = [
     credits: `20`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `9`,
     coursecode: `9PH191`,
     coursetitle: `Seminar and Comprehensive Viva-Ii`,
@@ -730,7 +730,7 @@ const PhyCourseStructure = [
   },
 
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `9`,
     coursecode: `9PH192`,
     coursetitle: `Thesis(To be contd...)`,
@@ -741,7 +741,7 @@ const PhyCourseStructure = [
   },
 
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: ` Semester Total`,
     coursecode: `-`,
     coursetitle: `-`,
@@ -751,7 +751,7 @@ const PhyCourseStructure = [
     credits: `19`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `10`,
     coursecode: `10PH193`,
     coursetitle: `Seminar and Comprehensive viva-III`,
@@ -761,7 +761,7 @@ const PhyCourseStructure = [
     credits: `2`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `10`,
     coursecode: `10PH194`,
     coursetitle: `Thesis`,
@@ -772,7 +772,7 @@ const PhyCourseStructure = [
   },
 
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: ` Semester Total`,
     coursecode: `-`,
     coursetitle: `-`,
@@ -783,7 +783,7 @@ const PhyCourseStructure = [
   },
 
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: ` Grand Total`,
     coursecode: `-`,
     coursetitle: `-`,
@@ -793,7 +793,7 @@ const PhyCourseStructure = [
     credits: `200`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `EL `,
     coursecode: `PH151`,
     coursetitle: `Smart Material`,
@@ -803,7 +803,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `EL `,
     coursecode: `PH152`,
     coursetitle: `Nano Technology`,
@@ -813,7 +813,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `EL `,
     coursecode: `PH153`,
     coursetitle: `Synthesis & Characteristic of Functional Material`,
@@ -823,7 +823,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `EL `,
     coursecode: `PH154`,
     coursetitle: `Material Characteristic Techniques`,
@@ -833,7 +833,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `EL `,
     coursecode: `PH155`,
     coursetitle: `Ion Beam Patterning & Nano-bio Technology `,
@@ -843,7 +843,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `EL `,
     coursecode: `PH156`,
     coursetitle: `Quatum Information Computation & Cryptography `,
@@ -853,7 +853,7 @@ const PhyCourseStructure = [
     credits: `3`,
   },
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `EL `,
     coursecode: `PH157`,
     coursetitle: `Physics of the Universe`,
@@ -864,7 +864,7 @@ const PhyCourseStructure = [
   },
 
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `EL `,
     coursecode: `PH158 `,
     coursetitle: `General Relativity and Black Hole Physics `,
@@ -875,7 +875,7 @@ const PhyCourseStructure = [
   },
 
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `EL `,
     coursecode: `PH159`,
     coursetitle: `Quantum field Theory and its Applications `,
@@ -886,7 +886,7 @@ const PhyCourseStructure = [
   },
 
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `EL `,
     coursecode: `PH160`,
     coursetitle: `Advanced Statistical Mechanics `,
@@ -897,7 +897,7 @@ const PhyCourseStructure = [
   },
 
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `EL `,
     coursecode: `PH161`,
     coursetitle: `Membrane Separations: Principles ,Design & Application`,
@@ -908,7 +908,7 @@ const PhyCourseStructure = [
   },
 
   {
-    deptt:"Physics",
+    deptt: "Physics",
     sem_elect: `EL `,
     coursecode: `PH162`,
     coursetitle: `Electrochemical energy conversion and storage `,

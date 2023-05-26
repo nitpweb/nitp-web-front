@@ -34,9 +34,15 @@ const Directorpage = () => {
           </div>
           <div
             className="faculty-img-row"
-            style={{ 
-              position: `relative`, 
-              left: `${(window.location.pathname === "/administration/") || (window.location.pathname ==="/administration") ? "3%" : "2%"}` }}
+            style={{
+              position: `relative`,
+              left: `${
+                window.location.pathname === "/administration/" ||
+                window.location.pathname === "/administration"
+                  ? "3%"
+                  : "2%"
+              }`,
+            }}
           >
             <div className="faculty-img-wrap">
               <img
@@ -59,18 +65,18 @@ const Directorpage = () => {
             <h3>Director</h3>
 
             {data.profile.cv && (
-                <div>
-                  <a href={data.profile.cv} target="blank">
-                    <button
-                      className="cv-btn"
-                      color="primary"
-                      variant="contained"
-                    >
-                      View Profile
-                    </button>
-                  </a>
-                </div>
-              )}
+              <div>
+                <a href={data.profile.cv} target="blank">
+                  <button
+                    className="cv-btn"
+                    color="primary"
+                    variant="contained"
+                  >
+                    View Profile
+                  </button>
+                </a>
+              </div>
+            )}
           </div>
 
           <div className="faculty-details-row">

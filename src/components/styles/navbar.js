@@ -209,7 +209,7 @@ export const NavbarStyle = styled.div`
       .dep-link-item {
         text-decoration: none;
         color: #fff;
-        font-size: 1.20vw;
+        font-size: 1.2vw;
       }
     }
   }
@@ -346,8 +346,8 @@ export const NavbarStyle = styled.div`
     }
   }
   @media (max-width: 500px) {
-    .start{
-      span{
+    .start {
+      span {
         line-height: 1.7;
       }
     }
