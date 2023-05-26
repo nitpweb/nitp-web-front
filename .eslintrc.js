@@ -9,5 +9,5 @@ module.exports = {
   ],
   "jsx-a11y/click-events-have-key-events": ignore,
   "react/no-unescaped-entities": ignore,
-  extends: ["prettier"],
+  extends: ["prettier", "eslint:recommended", "plugin:react/recommended"],
 }
