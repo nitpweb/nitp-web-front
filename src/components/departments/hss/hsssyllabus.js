@@ -64,7 +64,7 @@ import { PageLayout } from "../../styles/pagelayout"
 import { TabPage } from "../../styles/tabpage"
 import Table from "../../table"
 
-const Csesyllabus = props => {
+const Hsssyllabus = props => {
   const [course, setCourse] = useState("programmesug")
   const [syllabus, setSyllabus] = useState(Courseug)
 
@@ -148,7 +148,11 @@ const Csesyllabus = props => {
                   <td>{elem.sem_elect}</td>
                   <td>{elem.coursecode}</td>
                   <td>
-                    <a href={elem.url} target="_blank">
+                    <a
+                      href={elem.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {elem.coursetitle}
                     </a>
                   </td>
@@ -166,4 +170,4 @@ const Csesyllabus = props => {
   )
 }
 
-export default Csesyllabus
+export default Hsssyllabus

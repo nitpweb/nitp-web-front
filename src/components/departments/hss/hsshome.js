@@ -141,6 +141,7 @@ export const timetable = () => {
             href={e.link}
             key={idx}
             target="_blank"
+            rel="noopener noreferrer"
             style={{
               fontSize: `1.2rem`,
               textDecoration: `none`,
