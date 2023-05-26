@@ -71,10 +71,15 @@ export const mission = () => {
 export const vision = () => {
   return (
     <>
-      <ul><li>      To formulate up-to-date and flexible technical programs which will allow
-        our graduates to attain their maximum technical potential, managerial
-        capability, be competitive in the job market and to emerge as a centre of
-        excellence.</li></ul>
+      <ul>
+        <li>
+          {" "}
+          To formulate up-to-date and flexible technical programs which will
+          allow our graduates to attain their maximum technical potential,
+          managerial capability, be competitive in the job market and to emerge
+          as a centre of excellence.
+        </li>
+      </ul>
     </>
   )
 }
@@ -122,12 +127,20 @@ export const labs = () => {
           <div className="row rowmarl3" key={idx}>
             <div
               className="col-6"
-              style={{ textAlign: "left", fontSize: `1.1rem`,padding:`0px` }}
+              style={{ textAlign: "left", fontSize: `1.1rem`, padding: `0px` }}
             >
               {lab.content}
             </div>
-            <div className="col-6"
-            style={{ display:`flex`,alignItems:`center`,justifyContent:`center`}}>{lab.image}</div>
+            <div
+              className="col-6"
+              style={{
+                display: `flex`,
+                alignItems: `center`,
+                justifyContent: `center`,
+              }}
+            >
+              {lab.image}
+            </div>
           </div>
         )
       })}

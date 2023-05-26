@@ -1,7 +1,7 @@
 import React from "react"
 
 // const home = "https://web.nitp.ac.in/uploads/departments/cse/labs"
-const home = process.env.GATSBY_BASE_URL+"cse/labs"
+const home = process.env.GATSBY_BASE_URL + "cse/labs"
 export const Labs = [
   {
     content: (
@@ -11,10 +11,11 @@ export const Labs = [
         <p>
           {/* Processor: Intel Corei7-4790, RAM: 6 GB, HDD: 500 GB (54 systems) and
           Intel Core i5- 3470, RAM: 2 GB, HDD: 500 GB (6 systems)  */}
-          Operating System lab uses the Linux OS (Fedora 16.0) to implement the operating
-          system management process, memory function, UNIX and shell programming
-          related to OS system call functions. This lab also deals with courses like Object- Oriented Programming (OOP), Web Technology, Database
-          Management (DBMS), Artificial Intelligence (AI), and Software
+          Operating System lab uses the Linux OS (Fedora 16.0) to implement the
+          operating system management process, memory function, UNIX and shell
+          programming related to OS system call functions. This lab also deals
+          with courses like Object- Oriented Programming (OOP), Web Technology,
+          Database Management (DBMS), Artificial Intelligence (AI), and Software
           Engineering.
         </p>
       </>
@@ -31,13 +32,13 @@ export const Labs = [
   {
     content: (
       <>
-      <br />
+        <br />
         <h2>Computing Lab-2 </h2>
         <br />
         <p>
           {/* Processor: Intel Corei5-3770, RAM: 2 GB, HDD: 500 GB  */}
-          Simulation lab uses the IBM Rational Rose software and other software to design
-          software modules. This lab also deals some courses like
+          Simulation lab uses the IBM Rational Rose software and other software
+          to design software modules. This lab also deals some courses like
           Object-Oriented Programming (OOP), Web Technology, Database Management
           (DBMS), Artificial Intelligence (AI), and Software Engineering.
         </p>
@@ -55,15 +56,14 @@ export const Labs = [
   {
     content: (
       <>
-      {/* <br /> */}
+        {/* <br /> */}
         <h2>Network System Lab </h2>
         <br />
         <p>
           {/* Processor: Intel Core2Duo, RAM: 4 GB, HDD: 320 GB Hardware: Network
           System Kit (5 no.).  */}
-          The lab has well equipped system for research,
-          which include the Network Training Kit. The lab deals with Cyber Security
-          courses.
+          The lab has well equipped system for research, which include the
+          Network Training Kit. The lab deals with Cyber Security courses.
         </p>
       </>
     ),
@@ -84,10 +84,9 @@ export const Labs = [
         <p>
           {/* Processor: Intel P4 3.00 GHz, RAM: 1 GB, HDD: 80GB Hardware: LAN
           Trainer Kit (10 no.).  */}
-          Soft Computing lab use Statistica software for
-          supervised learning analysis and data mining and also used the LAN
-          Trainer kit for network topology. The lab is focusing on IOT related
-          specific courses.
+          Soft Computing lab use Statistica software for supervised learning
+          analysis and data mining and also used the LAN Trainer kit for network
+          topology. The lab is focusing on IOT related specific courses.
         </p>
       </>
     ),
@@ -107,9 +106,8 @@ export const Labs = [
         <br />
         <p>
           {/* Processor: Intel Core2 Duo, RAM: 4 GB, HDD: 320 GB  */}
-          The lab uses
-          Statistica for supervised learning analysis and data mining work and
-          Qualnet simulator for network simulation work.
+          The lab uses Statistica for supervised learning analysis and data
+          mining work and Qualnet simulator for network simulation work.
         </p>
       </>
     ),
@@ -125,7 +123,7 @@ export const Labs = [
   {
     content: (
       <>
-      <br />
+        <br />
         <h2>Image Processing Lab</h2>
         <br />
         <p>
@@ -141,7 +139,7 @@ export const Labs = [
   {
     content: (
       <>
-      <br />
+        <br />
         <h2>Computing Lab-3 </h2>
         <br />
         <p>
@@ -149,12 +147,11 @@ export const Labs = [
           one workstation, five laptops, two voice tabs, two iIPads, two large
           screen display units, two heavy duty printers and many other network
           connected devices. */}
-           This lab facilitates training, research,
-          experiments in the domain of software testing, mobile application
-          development, cloud computing, network security, Big Data analysis and
-          Industrial Automation. This also deals some courses like Data
-          Structure and Algorithms, Operating System, Compiler Design, and
-          Computer Graphics.
+          This lab facilitates training, research, experiments in the domain of
+          software testing, mobile application development, cloud computing,
+          network security, Big Data analysis and Industrial Automation. This
+          also deals some courses like Data Structure and Algorithms, Operating
+          System, Compiler Design, and Computer Graphics.
         </p>
       </>
     ),
@@ -170,16 +167,15 @@ export const Labs = [
   {
     content: (
       <>
-      <br />
+        <br />
         <h2>Computing Lab-4</h2>
         <br />
         <p>
           {/* The lab contains 41 PCs of Acer Company with latest configuration as
           Processor: Intel i7, RAM: 8GB, and HDD: 500 GB, and working on Ubuntu
           (14.04 64-bit) OS. */}
-           This deals with some courses like Data Structure
-          and Algorithms, Operating System, Compiler Design, and Computer
-          Graphics.
+          This deals with some courses like Data Structure and Algorithms,
+          Operating System, Compiler Design, and Computer Graphics.
         </p>
       </>
     ),
@@ -195,16 +191,15 @@ export const Labs = [
   {
     content: (
       <>
-      <br />
+        <br />
         <h2>Network Security Lab</h2>
         <br />
         <p>
           {/* The lab contains 32 PCs of Acer Company with latest configuration as
           Processor: i7-4790, RAM: 8GB, HDD: 500GB, and working environment on
           Linux. This lab also contain 2 hp Servers of Intel Xeon E3- 1241v3. */}
-          The lab has well equipped system for research,
-          which include the Network Training Kit. The lab deals with Cyber Security
-          courses.
+          The lab has well equipped system for research, which include the
+          Network Training Kit. The lab deals with Cyber Security courses.
         </p>
       </>
     ),
@@ -330,14 +325,15 @@ const Projects = [
     Year: "2020-Ongoing",
   },
 ]
-export const TimeTable=[
+export const TimeTable = [
   /*{
     title:"Click here for the time table of first year subjects offered by CSED for Dec'22-Feb'23 session.",
     link:"http://web.nitp.ac.in/uploads23/FirstYearTimeTable_AllSubjectsByCSED_July-Dec2022.pdf",
   },*/
   {
-    title:"Click here for the time table of CSED for Jan-Jun 2023 session (including B.Tech first year)",
-    link:"https://goo.gl/it4A21",
+    title:
+      "Click here for the time table of CSED for Jan-Jun 2023 session (including B.Tech first year)",
+    link: "https://goo.gl/it4A21",
   },
 ]
 export const Activities = [

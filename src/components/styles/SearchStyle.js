@@ -35,8 +35,8 @@ export const SearchStyle = styled.div`
     font-size: 16px;
     color: #80a3bd;
   }
-  @media(max-width:768px){
-    .form-search{
+  @media (max-width: 768px) {
+    .form-search {
       justify-content: flex-start;
     }
   }

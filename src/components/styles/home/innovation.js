@@ -4,7 +4,7 @@ export const InnovationStyle = styled.div`
   width: 100vw;
   height: 350px;
   background: ${props => props.theme.backgroundSecColor};
-  ${'' /* background: rgb(240, 240, 240); */}
+  ${"" /* background: rgb(240, 240, 240); */}
   /* background: -webkit-gradient(
     linear,
     left bottom,
@@ -12,7 +12,9 @@ export const InnovationStyle = styled.div`
     from(white),
     to(${props => props.theme.backgroundTerColor})
   );
-  background: linear-gradient(0deg, ${props => props.theme.backgroundTerColor},lightgrey, ${props => props.theme.backgroundTerColor}); */
+  background: linear-gradient(0deg, ${props =>
+    props.theme.backgroundTerColor},lightgrey, ${props =>
+    props.theme.backgroundTerColor}); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,8 +79,8 @@ export const InnovationStyle = styled.div`
     filter: invert(1) opacity(0.25);
   }
   .child {
-    border-bottom-right-radius:0.5rem;
-      border-top-right-radius:0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
     background: rgba(0, 0, 0, 0.035);
     height: 200px;
     /* margin: 2vw; */
@@ -247,7 +249,7 @@ export const InnovationStyle = styled.div`
   }
 
   @media (max-width: 480px) {
-    #three{
+    #three {
       filter: opacity(0.3);
     }
     .child {

@@ -54,9 +54,9 @@ export const CardsStyle = styled.div`
       padding-bottom: 15px;
       font-family: "Source Sans Pro";
       list-style: disc;
-      .eventcarddetailsection, .noticecarddetail{
+      .eventcarddetailsection,
+      .noticecarddetail {
         background: ${props => props.theme.backgroundSecColor};
-
       }
       h3 {
         color: #2f2f2f;

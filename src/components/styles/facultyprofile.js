@@ -37,7 +37,7 @@ export const FacultyProfile = styled.div`
     }
   }
   /* FOR VIEW CV POPUP START */
-  .cv-btn{
+  .cv-btn {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
@@ -46,12 +46,11 @@ export const FacultyProfile = styled.div`
     width: 60%;
     border: none;
 
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
   }
   .cv {
-   
     position: fixed;
     top: 0;
     bottom: 0;
@@ -68,7 +67,7 @@ export const FacultyProfile = styled.div`
     z-index: 10;
   }
 
-  .link-card{
+  .link-card {
     margin: 15px;
     border-radius: 5px;
     color: white;
@@ -76,14 +75,14 @@ export const FacultyProfile = styled.div`
     z-index: 10;
   }
 
-  .link-card img{
+  .link-card img {
     height: 25px;
-    padding:7px;
+    padding: 7px;
   }
 
-  .link-icon{
-    filter: invert(80%) sepia(30%) saturate(5331%) hue-rotate(357deg) brightness(109%) contrast(96%);
-
+  .link-icon {
+    filter: invert(80%) sepia(30%) saturate(5331%) hue-rotate(357deg)
+      brightness(109%) contrast(96%);
   }
 
   .popup {
@@ -152,7 +151,7 @@ export const FacultyProfile = styled.div`
         max-width: 95%;
         font-size: ${props => props.theme.font * 1.1}rem;
       }
-      .text-justify{
+      .text-justify {
         text-align: justify;
       }
       .factable {

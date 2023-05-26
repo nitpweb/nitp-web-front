@@ -47,15 +47,12 @@ const Importantlink = () => {
       
           </div>
         </a> */}
-
         <a href="https://web.nitp.ac.in/alumni/html/index.html">
           <div className="implink">
             <img className="linkimg" src={alumni} alt="alumni" />
             <h3>ALUMNI</h3>
-      
           </div>
         </a>
-
         <a href="#one">
           <div className="implink">
             <img className="linkimg" src={innovation} alt="teqip" />
@@ -99,15 +96,12 @@ const Importantlink = () => {
             </div> */}
           </div>
         </a>
-
         <a href="https://www.nitp.ac.in/magazine">
           <div className="implink">
             <img className="linkimg" src={magazine} alt="magazine" />
             <h3>MAGAZINE</h3>
-      
           </div>
         </a>
-
       </div>
       {/* <div className="link-col">
         <a href="https://josaa.nic.in/webinfocms/Public/home.aspx">
@@ -117,9 +111,6 @@ const Importantlink = () => {
           </div>
         </a>
       </div> */}
-      
-      
-      
     </ImportantLinkStyle>
   )
 }

@@ -29,9 +29,14 @@ const RegistrarPage = () => {
             className="row rowmarl3"
             style={{ display: "block", width: `100%` }}
           >
-            <h1 style={{marginTop:`0`,textAlign:`center`}}>Deputy Director</h1>
+            <h1 style={{ marginTop: `0`, textAlign: `center` }}>
+              Deputy Director
+            </h1>
           </div>
-          <div className="faculty-img-row" style={{ position: `absolute`,left:`15%`}}>
+          <div
+            className="faculty-img-row"
+            style={{ position: `absolute`, left: `15%` }}
+          >
             <div className="faculty-img-wrap">
               <img
                 src={
@@ -43,10 +48,7 @@ const RegistrarPage = () => {
               />
             </div>
             <a href={`mailto:${data.profile.email}`} target="blank">
-              <img
-                src={mail}
-                className="img-fluid facmail"
-              />
+              <img src={mail} className="img-fluid facmail" />
             </a>
             <h2>{data.profile.name}</h2>
             <h3>Deputy Director</h3>
@@ -115,7 +117,7 @@ const RegistrarPage = () => {
                 research papers in the National and International Journals and
                 also has presented papers in the International and National
                 conferences. He has guided M.Sc (Engg.) / M.Tech and Ph.D
-                research scholars. He is a renowned scholar in his field. 
+                research scholars. He is a renowned scholar in his field.
               </p>
             </div>
           </div>

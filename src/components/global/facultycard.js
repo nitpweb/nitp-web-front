@@ -12,7 +12,7 @@ const Facultycard = props => {
   }, [])
 
   return (
-    <> 
+    <>
       <FacultyCard>
         <div className="faculty1">
           {/* {props.extn != 0 ? (
@@ -33,11 +33,17 @@ const Facultycard = props => {
             </div>
             <h3>{props.name}</h3>
             <h4>{props.desg}</h4>
-            {props.subtitle?<p>{props.subtitle}</p>:null}
+            {props.subtitle ? <p>{props.subtitle}</p> : null}
           </div>
         </div>
         <Link className="faculty2" to={`/profile?id=${props.email}`}>
-          {research && <p style={{fontWeight:`bold`}}>{props.dept=="Officers" ? "Responsibilities:-" : "Research Interest:-"}</p>}
+          {research && (
+            <p style={{ fontWeight: `bold` }}>
+              {props.dept == "Officers"
+                ? "Responsibilities:-"
+                : "Research Interest:-"}
+            </p>
+          )}
           {research && research.map(item => <p>{item}</p>)}
           {/* <p>
             <Link >View Profile</Link>

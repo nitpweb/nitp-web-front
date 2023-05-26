@@ -14,7 +14,7 @@ const Nirf = () => {
           {
             <>
               <h1 style={{ fontFamily: `Source Sans Pro` }}>
-              10th Convocation, 25th December 2021
+                10th Convocation, 25th December 2021
               </h1>
               {acadData.convocation.map(item => (
                 <div className="row rowmarl3" key={++i}>
