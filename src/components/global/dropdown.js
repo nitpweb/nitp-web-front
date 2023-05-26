@@ -13,7 +13,7 @@ export const Dropdown = ({ to, title, list, idname }) => {
         <div className="dropdown-content" id={idname}>
           {list.map((item, index) => (
             <>
-              <DynamicLink url={item.url} data={item.data} title={item.title}/>
+              <DynamicLink url={item.url} data={item.data} title={item.title} />
             </>
           ))}
         </div>

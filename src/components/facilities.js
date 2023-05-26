@@ -493,7 +493,10 @@ const Facilitiespage = () => {
                   Land line- 0612-2371715 Extension No.-116
                   <br />
                   <br />
-                  For any type of Electrical Complaint kindly fill the <a href="http://old.nitp.ac.in/downloads/Electrical%20Complaint%20Form.pdf">form.</a>
+                  For any type of Electrical Complaint kindly fill the{" "}
+                  <a href="http://old.nitp.ac.in/downloads/Electrical%20Complaint%20Form.pdf">
+                    form.
+                  </a>
                 </p>
               </div>
             </div>
@@ -509,10 +512,14 @@ const Facilitiespage = () => {
               <div className="row rowmarl3">
                 <p>
                   <br />
-                Complaint Form:
+                  Complaint Form:
                   <br />
                   <br />
-                  Click here to download <a href="http://web.nitp.ac.in/uploads22/ESU_Complain%20Format.pdf">ESU Maintenance Complaint form</a>, kindly fill the form and submit.
+                  Click here to download{" "}
+                  <a href="http://web.nitp.ac.in/uploads22/ESU_Complain%20Format.pdf">
+                    ESU Maintenance Complaint form
+                  </a>
+                  , kindly fill the form and submit.
                 </p>
               </div>
             </div>

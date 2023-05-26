@@ -19,17 +19,21 @@ const Facultypage = ({ title, url, dept }) => {
       .then(res => {
         const faculty = res.data
         faculty.sort((a, b) => {
-          var nameA = String(a.name).toUpperCase().replace(/[.*+?^${}()|[\]\\' ']/g, "")
-          var nameB = String(b.name).toUpperCase().replace(/[.*+?^${}()|[\]\\' ']/g, "")
+          var nameA = String(a.name)
+            .toUpperCase()
+            .replace(/[.*+?^${}()|[\]\\' ']/g, "")
+          var nameB = String(b.name)
+            .toUpperCase()
+            .replace(/[.*+?^${}()|[\]\\' ']/g, "")
           if (nameA < nameB) {
-            return -1;
+            return -1
           }
           if (nameA > nameB) {
-            return 1;
+            return 1
           }
-      
-          return 0;
-        });
+
+          return 0
+        })
         setFaculties(faculty)
         setData(faculty)
       })
@@ -53,12 +57,15 @@ const Facultypage = ({ title, url, dept }) => {
 
   return (
     <>
-      <FacultyStyle style={{ marginBottom: `3vh`,marginTop:`1rem` }}>
+      <FacultyStyle style={{ marginBottom: `3vh`, marginTop: `1rem` }}>
         <div className="faculty-page">
           <div className="layoutrow">
             <div className="col-6">
               <div className="row rowmarl3">
-                <h1 data-aos="zoom-in-right" style={{ fontSize: `30px`,paddingTop:`1rem` }}>
+                <h1
+                  data-aos="zoom-in-right"
+                  style={{ fontSize: `30px`, paddingTop: `1rem` }}
+                >
                   {title ? title : "Faculty"}
                 </h1>
                 {dept && (
@@ -68,7 +75,7 @@ const Facultypage = ({ title, url, dept }) => {
                 )}
               </div>
             </div>
-                  
+
             <div className="col-6">
               <div className="row">
                 <SearchStyle>
@@ -84,28 +91,30 @@ const Facultypage = ({ title, url, dept }) => {
             </div>
           </div>
           <div className="row facultyrow">
-          {data &&
-              data.map(faculty => {
-                if(faculty.designation=="Registrar"){
-                  return <Facultycard
-                    name="Dr. Asit Narayan"
-                    // subtitle={department ? faculty.department : faculty.email}
-                    subtitle={null}
-                    email="asit.narayan@nitp.ac.in"
-                    // extn={faculty.ext_no}
-                    extn="0"
-                    id="asit.narayan@nitp.ac.in"
-                    research=""
-                    image={null}
-                    desg="Registrar"
-                    dept="Officers"
-                    />
-             }})
-            }
             {data &&
               data.map(faculty => {
-                if(faculty.designation=="Registrar"){
-                  return 
+                if (faculty.designation == "Registrar") {
+                  return (
+                    <Facultycard
+                      name="Dr. Asit Narayan"
+                      // subtitle={department ? faculty.department : faculty.email}
+                      subtitle={null}
+                      email="asit.narayan@nitp.ac.in"
+                      // extn={faculty.ext_no}
+                      extn="0"
+                      id="asit.narayan@nitp.ac.in"
+                      research=""
+                      image={null}
+                      desg="Registrar"
+                      dept="Officers"
+                    />
+                  )
+                }
+              })}
+            {data &&
+              data.map(faculty => {
+                if (faculty.designation == "Registrar") {
+                  return
                 }
                 return (
                   <Facultycard

@@ -28,22 +28,24 @@ const Notice = props => {
           </a>
         </p>
         <div>
-            {props.attachments.map(elem => {
-              if (elem.url)
-                return (
-                  <ul>
-                    <img id="notdownimg" src={downimg} alt="c" />
-                    <a
-                      className="notdown"
-                      href={elem.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {elem.caption.length>256 ? elem.caption.substring(0, 256) + "..." : elem.caption}
-                    </a>
-                  </ul>
-                )
-            })}
+          {props.attachments.map(elem => {
+            if (elem.url)
+              return (
+                <ul>
+                  <img id="notdownimg" src={downimg} alt="c" />
+                  <a
+                    className="notdown"
+                    href={elem.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {elem.caption.length > 256
+                      ? elem.caption.substring(0, 256) + "..."
+                      : elem.caption}
+                  </a>
+                </ul>
+              )
+          })}
           {/* <div>
             <p className="notet">{d}</p>
           </div> */}

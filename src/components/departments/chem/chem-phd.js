@@ -1,4 +1,2 @@
-const ChemistryPhdCourse = [
-    
-]
+const ChemistryPhdCourse = []
 export default ChemistryPhdCourse

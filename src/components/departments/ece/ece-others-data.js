@@ -1,7 +1,7 @@
 import React from "react"
 
 // const home = "http://www.nitp.ac.in"
-const home = process.env.GATSBY_BASE_URL+"ece/labs/"
+const home = process.env.GATSBY_BASE_URL + "ece/labs/"
 
 const btn_style = {
   backgroundColor: `red`,
@@ -41,17 +41,9 @@ export const Labs = [
     ),
     images: (
       <>
-        <img
-          src={`${home}eceimage002.jpg`}
-          height="250px"
-          width="350px"
-        />
+        <img src={`${home}eceimage002.jpg`} height="250px" width="350px" />
         <br />
-        <img
-          src={`${home}eceimage003.jpg`}
-          height="250px"
-          width="350px"
-        />
+        <img src={`${home}eceimage003.jpg`} height="250px" width="350px" />
       </>
     ),
   },
@@ -80,18 +72,10 @@ export const Labs = [
     ),
     images: (
       <>
-        <img
-          src={`${home}eceimage005.jpg`}
-          height="250px"
-          width="350px"
-        />
+        <img src={`${home}eceimage005.jpg`} height="250px" width="350px" />
         <br />
 
-        <img
-          src={`${home}eceimage006.jpg`}
-          height="250px"
-          width="350px"
-        />
+        <img src={`${home}eceimage006.jpg`} height="250px" width="350px" />
       </>
     ),
   },
@@ -149,23 +133,11 @@ export const Labs = [
     ),
     images: (
       <>
-        <img
-          src={`${home}eceimage007.jpg`}
-          height="250px"
-          width="350px"
-        />
+        <img src={`${home}eceimage007.jpg`} height="250px" width="350px" />
         <br />
-        <img
-          src={`${home}DSC_0031.jpg`}
-          height="250px"
-          width="350px"
-        />
+        <img src={`${home}DSC_0031.jpg`} height="250px" width="350px" />
         <br />
-        <img
-          src={`${home}DSC_0011.jpg`}
-          height="250px"
-          width="350px"
-        />
+        <img src={`${home}DSC_0011.jpg`} height="250px" width="350px" />
       </>
     ),
   },

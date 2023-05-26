@@ -16,17 +16,14 @@ const Eesyllabus = props => {
   const [syllabus, setSyllabus] = useState(Courseug)
   return (
     <>
-    <PageLayout style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
-    <TabPage>
-          <div className="mainDiv syllabus-page" style={{width: "90vw"}}>
+      <PageLayout style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
+        <TabPage>
+          <div className="mainDiv syllabus-page" style={{ width: "90vw" }}>
             <div className="row rowmarl3">
               <div className="digital">
                 <h1 style={{ marginBottom: `1rem` }}>Syllabus</h1>
-                <h2 data-aos="zoom-in-right">
-                    {" "}
-                    -Electrical Engineering
-                  </h2>
-                  <br />
+                <h2 data-aos="zoom-in-right"> -Electrical Engineering</h2>
+                <br />
                 <div className="probutton">
                   <button
                     onClick={() => {
@@ -77,45 +74,49 @@ const Eesyllabus = props => {
               </div>
             </div>
 
-            {
-              (syllabus === Coursedd) &&
+            {syllabus === Coursedd && (
               <ul>
-                <li><a href="/">Electrical Engineering with Specialization In Power System Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))</a></li>
+                <li>
+                  <a href="/">
+                    Electrical Engineering with Specialization In Power System
+                    Engineering (5 Years, Bachelor and Master of Technology
+                    (Dual Degree))
+                  </a>
+                </li>
               </ul>
-            }
-            {
-              (syllabus === Coursedd) ||
-            <Table style={{width:"100%", marginTop:"20px"}}>
-              <br />
-              <tr className="syllabus-table-head">
-                <th>Dept.</th>
-                <th>Sem/Electives</th>
-                <th>Course Code</th>
-                <th>Course Title</th>
-                <th>L</th>
-                <th>T</th>
-                <th>P</th>
-                <th>Credits</th>
-              </tr>
-              {syllabus.map(elem => (
-                <tr className="syllabus-table-row">
-                  <td>{elem.prog}</td>
-                  <td>{elem.sem}</td>
-                  <td>{elem.course_code}</td>
-                  <td>
-                    <a href={elem.url}>{elem.course_title}</a>
-                  </td>
-                  <td>{elem.l}</td>
-                  <td>{elem.t}</td>
-                  <td>{elem.p}</td>
-                  <td>{elem.credits}</td>
+            )}
+            {syllabus === Coursedd || (
+              <Table style={{ width: "100%", marginTop: "20px" }}>
+                <br />
+                <tr className="syllabus-table-head">
+                  <th>Dept.</th>
+                  <th>Sem/Electives</th>
+                  <th>Course Code</th>
+                  <th>Course Title</th>
+                  <th>L</th>
+                  <th>T</th>
+                  <th>P</th>
+                  <th>Credits</th>
                 </tr>
-              ))}
-            </Table>
-            }
+                {syllabus.map(elem => (
+                  <tr className="syllabus-table-row">
+                    <td>{elem.prog}</td>
+                    <td>{elem.sem}</td>
+                    <td>{elem.course_code}</td>
+                    <td>
+                      <a href={elem.url}>{elem.course_title}</a>
+                    </td>
+                    <td>{elem.l}</td>
+                    <td>{elem.t}</td>
+                    <td>{elem.p}</td>
+                    <td>{elem.credits}</td>
+                  </tr>
+                ))}
+              </Table>
+            )}
           </div>
         </TabPage>
-        </PageLayout>
+      </PageLayout>
       {/* <PageLayout style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
         <div className="syllabus-page">
           <div className="layoutrow layoutrowmain syllabus-page-head">

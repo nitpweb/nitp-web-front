@@ -25,10 +25,10 @@ export const ReadStyle = styled.div`
       display: none;
     }
     .imgDiv {
-        width: 100%;
-        min-width: 100%;
-        height: auto;
-        object-fit: contain;
+      width: 100%;
+      min-width: 100%;
+      height: auto;
+      object-fit: contain;
     }
     .info {
       width: 90%;

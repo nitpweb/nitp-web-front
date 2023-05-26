@@ -24,7 +24,9 @@ const Incard = props => {
                 id="loadmore"
                 to={`/innovation${props.id ? `?id=${props.id}` : ""}`}
               >
-                {props.heading.length>50 ? props.heading.substring(0, 50) + "..." : props.heading}
+                {props.heading.length > 50
+                  ? props.heading.substring(0, 50) + "..."
+                  : props.heading}
               </Link>
             </p>
             <p id="time">{props.date}</p>

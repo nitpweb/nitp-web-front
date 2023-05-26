@@ -1,4 +1,2 @@
-const electronicsDualDegreeCourse = [
-    
-]
+const electronicsDualDegreeCourse = []
 export default electronicsDualDegreeCourse

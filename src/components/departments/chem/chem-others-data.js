@@ -1,8 +1,8 @@
 import React from "react"
 
 // const home = "http://www.nitp.ac.in/php/"
-const home = process.env.GATSBY_BASE_URL+"chem/labs/"
-const activity = process.env.GATSBY_BASE_URL+"chem/"
+const home = process.env.GATSBY_BASE_URL + "chem/labs/"
+const activity = process.env.GATSBY_BASE_URL + "chem/"
 
 export const Labs = {
   content: (
@@ -105,7 +105,10 @@ export const LabImages = [
     <img src={`${home}pic-6_Departmental Instrument Lab.jpg`} alt="image" />
   </>,
   <>
-    <img src={`${home}pic-7_Departmental Individual Faculty Research Lab.jpg`} alt="image" />
+    <img
+      src={`${home}pic-7_Departmental Individual Faculty Research Lab.jpg`}
+      alt="image"
+    />
   </>,
 ]
 
@@ -362,7 +365,10 @@ export const Activity = {
 export const Achievements = {
   content: (
     <ul>
-      <li>Patent granted on "A METHOD FOR CONTAMINATED WATER USING PHOTOSTABLE SUPERPARAMAGNETIC NANOMATERIAL."</li>
+      <li>
+        Patent granted on "A METHOD FOR CONTAMINATED WATER USING PHOTOSTABLE
+        SUPERPARAMAGNETIC NANOMATERIAL."
+      </li>
     </ul>
   ),
 }

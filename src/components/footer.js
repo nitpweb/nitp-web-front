@@ -160,8 +160,8 @@ const Footer = () => {
       </div>
       <div className="footdetail">
         <p>
-          National Institute of Technology Patna-800005, Bihar, INDIA ©{new Date().getFullYear()}  NIT
-          Patna
+          National Institute of Technology Patna-800005, Bihar, INDIA ©
+          {new Date().getFullYear()} NIT Patna
         </p>
       </div>
     </FooterStyle>

@@ -349,7 +349,12 @@ export const Activities = [
         </p>
       </>
     ),
-    image: <img className="img-fluid" src={`${process.env.GATSBY_BASE_URL}civil/image014.jpg`} />,
+    image: (
+      <img
+        className="img-fluid"
+        src={`${process.env.GATSBY_BASE_URL}civil/image014.jpg`}
+      />
+    ),
   },
   {
     content: (
