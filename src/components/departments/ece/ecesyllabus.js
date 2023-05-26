@@ -94,43 +94,48 @@ const Ecesyllabus = props => {
                 </div>
               </div>
             </div>
-            
-            {
-              (syllabus === Coursedd) &&
+
+            {syllabus === Coursedd && (
               <ul>
-                <li><a href="/"> Electronics and Communication Engineering with Specialization in Microelectronics and VLSI System Design (5 Years, Bachelor and Master of Technology (Dual Degree))</a></li>
+                <li>
+                  <a href="/">
+                    {" "}
+                    Electronics and Communication Engineering with
+                    Specialization in Microelectronics and VLSI System Design (5
+                    Years, Bachelor and Master of Technology (Dual Degree))
+                  </a>
+                </li>
               </ul>
-            }
-            {
-              (syllabus === Coursedd) || 
-            <Table style={{ width: "100%", marginTop: "20px" }}>
-              <br />
-              <tr className="syllabus-table-head">
-                <th>Dept.</th>
-                <th>Sem/Electives</th>
-                <th>Course Code</th>
-                <th>Course Title</th>
-                <th>L</th>
-                <th>T</th>
-                <th>P</th>
-                <th>Credits</th>
-              </tr>
-              {syllabus.map(elem => (
-                <tr className="syllabus-table-row">
-                  <td>{elem.deptt}</td>
-                  <td>{elem.sem_elect || "-"}</td>
-                  <td>{elem.course_code || "-"}</td>
-                  <td>
-                    <a href={elem.url}>{elem.course_title}</a>
-                  </td>
-                  <td>{elem.l}</td>
-                  <td>{elem.t}</td>
-                  <td>{elem.p}</td>
-                  <td>{elem.credits}</td>
+            )}
+            {syllabus === Coursedd || (
+              <Table style={{ width: "100%", marginTop: "20px" }}>
+                <br />
+                <tr className="syllabus-table-head">
+                  <th>Dept.</th>
+                  <th>Sem/Electives</th>
+                  <th>Course Code</th>
+                  <th>Course Title</th>
+                  <th>L</th>
+                  <th>T</th>
+                  <th>P</th>
+                  <th>Credits</th>
                 </tr>
-              ))}
-            </Table>
-            }
+                {syllabus.map(elem => (
+                  <tr className="syllabus-table-row">
+                    <td>{elem.deptt}</td>
+                    <td>{elem.sem_elect || "-"}</td>
+                    <td>{elem.course_code || "-"}</td>
+                    <td>
+                      <a href={elem.url}>{elem.course_title}</a>
+                    </td>
+                    <td>{elem.l}</td>
+                    <td>{elem.t}</td>
+                    <td>{elem.p}</td>
+                    <td>{elem.credits}</td>
+                  </tr>
+                ))}
+              </Table>
+            )}
           </div>
         </TabPage>
       </PageLayout>

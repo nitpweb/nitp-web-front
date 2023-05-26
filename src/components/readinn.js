@@ -28,17 +28,17 @@ const ReadInn = ({ id }) => {
       {data ? (
         <ReadStyle>
           <div className="wrapperDiv">
-          <img
-                className="img imgDiv"
-                src={
-                  data.image.length != 0
-                    ? `https://drive.google.com/uc?export=view&id=${link(
-                        data.image[0].url
-                      )}`
-                    : news
-                }
-                alt=""
-              />
+            <img
+              className="img imgDiv"
+              src={
+                data.image.length != 0
+                  ? `https://drive.google.com/uc?export=view&id=${link(
+                      data.image[0].url
+                    )}`
+                  : news
+              }
+              alt=""
+            />
             <div className="info">
               <h2>{data.title}</h2>
               <p>{data.description}</p>

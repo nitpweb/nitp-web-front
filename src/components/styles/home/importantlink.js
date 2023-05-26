@@ -36,7 +36,7 @@ export const ImportantLinkStyle = styled.div`
         .linkimg {
           margin-top: 5%;
           width: 25%;
-          max-width:70%;
+          max-width: 70%;
         }
         .lead {
           max-width: 95%;
@@ -90,7 +90,7 @@ export const ImportantLinkStyle = styled.div`
         .linkimg {
           margin-top: 5% !important;
           width: 25% !important;
-          max-width:70% !important;
+          max-width: 70% !important;
         }
         .lead p {
           display: none;

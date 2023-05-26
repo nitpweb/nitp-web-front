@@ -58,15 +58,15 @@ const Mathsyllabus = props => {
                   </h1>
                 </div>
                 <div className="syllabus-bullets">
-                <ul className="rowmarl3">
-                <li>
-                    <a href="https://web.nitp.ac.in/uploads22/Int_MSc_CourseStructure.pdf">
-                      Course Structure of Integrated Msc Course
-                    </a>
-                  </li>
-                </ul>
+                  <ul className="rowmarl3">
+                    <li>
+                      <a href="https://web.nitp.ac.in/uploads22/Int_MSc_CourseStructure.pdf">
+                        Course Structure of Integrated Msc Course
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-                
+
                 <Table>
                   <tr className="syllabus-table-head">
                     <th>Course Code</th>
@@ -122,21 +122,24 @@ const Mathsyllabus = props => {
             )}
 
             <div className="layoutrow">
-            {course === "programmespg" && (
-              <ul>
-                <li>
-                  <a href="/">To be uploaded for PhD</a>
-                </li>
-              </ul>
-            )}
+              {course === "programmespg" && (
+                <ul>
+                  <li>
+                    <a href="/">To be uploaded for PhD</a>
+                  </li>
+                </ul>
+              )}
 
-            {course === "programmesphd" && (
-              <ul>
-                <li>
-                  <a href="https://web.nitp.ac.in//uploads22/Dual_Degree_Mathematics_and_Computing_Technology.pdf">Mathematics and Computing Technology (5 Years, Bachelor and Master of Technology (Dual Degree))</a>
-                </li>
-              </ul>   
-            )}
+              {course === "programmesphd" && (
+                <ul>
+                  <li>
+                    <a href="https://web.nitp.ac.in//uploads22/Dual_Degree_Mathematics_and_Computing_Technology.pdf">
+                      Mathematics and Computing Technology (5 Years, Bachelor
+                      and Master of Technology (Dual Degree))
+                    </a>
+                  </li>
+                </ul>
+              )}
             </div>
           </div>
         </TabPage>

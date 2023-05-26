@@ -32,9 +32,9 @@ const SCF = {
     {
       Downloads: "El Form",
       DLink: `${home}/staffForm/2.%20Earned%20Leave%20(EL).pdf`,
-    //   "Office order": "New Bill Format",
-    //   OLink: `${home}/staffForm/Bill_format.pdf`,
-     },
+      //   "Office order": "New Bill Format",
+      //   OLink: `${home}/staffForm/Bill_format.pdf`,
+    },
     {
       Downloads: "Child Care Leave (CCL) ",
       DLink: `${home}/staffForm/3.%20Child%20Care%20Leave.pdf`,

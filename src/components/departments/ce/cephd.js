@@ -3,8 +3,8 @@ import React from "react"
 const Cephd = [
   {
     type: "Mandatory Course",
-    "coursecode": "xxxx",
-    "coursetitle": "Research Methodology",
+    coursecode: "xxxx",
+    coursetitle: "Research Methodology",
     l: "3",
     t: "0",
     p: "0",
@@ -12,8 +12,8 @@ const Cephd = [
   },
   {
     type: "Mandatory Course",
-    "coursecode": "xxxx",
-    "coursetitle": "Seminar and Technical report Writing",
+    coursecode: "xxxx",
+    coursetitle: "Seminar and Technical report Writing",
     l: "0",
     t: "0",
     p: "3",
@@ -21,8 +21,8 @@ const Cephd = [
   },
   {
     type: "Mandatory Course",
-    "coursecode": "xxxx",
-    "coursetitle": "Comprehensive Viva & Presentation ",
+    coursecode: "xxxx",
+    coursetitle: "Comprehensive Viva & Presentation ",
     l: "0",
     t: "0",
     p: "2",
@@ -30,8 +30,8 @@ const Cephd = [
   },
   {
     type: "Departmental Course",
-    "coursecode": "xxxx",
-    "coursetitle": "Course - I",
+    coursecode: "xxxx",
+    coursetitle: "Course - I",
     l: "3",
     t: "0",
     p: "0",
@@ -39,8 +39,8 @@ const Cephd = [
   },
   {
     type: "Departmental Course",
-    "coursecode": "xxxx",
-    "coursetitle": "Course - II",
+    coursecode: "xxxx",
+    coursetitle: "Course - II",
     l: "3",
     t: "0",
     p: "0",
@@ -48,8 +48,8 @@ const Cephd = [
   },
   {
     type: "Departmental Course",
-    "coursecode": "xxxx",
-    "coursetitle": "Lab Course",
+    coursecode: "xxxx",
+    coursetitle: "Lab Course",
     l: "0",
     t: "0",
     p: "6",
@@ -57,8 +57,8 @@ const Cephd = [
   },
   {
     type: "Departmental Course",
-    "coursecode": "xxxx",
-    "coursetitle": "Course - III",
+    coursecode: "xxxx",
+    coursetitle: "Course - III",
     l: "3",
     t: "0",
     p: "0",
@@ -66,8 +66,8 @@ const Cephd = [
   },
   {
     type: "Departmental Course",
-    "coursecode": "xxxx",
-    "coursetitle": "Course - IV",
+    coursecode: "xxxx",
+    coursetitle: "Course - IV",
     l: "3",
     t: "0",
     p: "0",
@@ -75,8 +75,8 @@ const Cephd = [
   },
   {
     type: "Departmental Course",
-    "coursecode": "xxxx",
-    "coursetitle": "Course - V",
+    coursecode: "xxxx",
+    coursetitle: "Course - V",
     l: "3",
     t: "0",
     p: "0",
