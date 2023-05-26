@@ -77,7 +77,7 @@ const Aboutpage = () => {
               <div className="row rowmarl3 rowmarr3">
                 <p>{Vision}</p>
               </div>
-              
+
               <div className="row rowmarl3 rowmarr3">
                 <h1>Mission</h1>
               </div>
@@ -111,7 +111,7 @@ const Aboutpage = () => {
                 </div>
               )
             })}
-            
+
             {/* <div className="row imgcolstyle backgroundimage">
               <img src="/clock.svg" className="img-fluid" />
             </div> */}

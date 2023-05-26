@@ -22,7 +22,13 @@ const Csesyllabus = props => {
                 <h2 data-aos="zoom-in-right"> -Chemistry</h2>
                 <ul>
                   <li>
-                    <a href="https://web.nitp.ac.in/dept/chem/Syllabus/Engg%20Chemistry%20Syllabus.pdf" target="_blank">Engineering Chemistry Course for ALL Engg. Branches(B.Tech NewSyllabus) 2021</a>
+                    <a
+                      href="https://web.nitp.ac.in/dept/chem/Syllabus/Engg%20Chemistry%20Syllabus.pdf"
+                      target="_blank"
+                    >
+                      Engineering Chemistry Course for ALL Engg. Branches(B.Tech
+                      NewSyllabus) 2021
+                    </a>
                   </li>
                   <li>
                     B. Tech. 1st year (1st and 2nd Semester) General Chemistry
@@ -134,11 +140,11 @@ const Csesyllabus = props => {
             )}
 
             {course === "programmesug" && (
-                <div className="layoutrow">
-                  <h1 className="rowmarl3" data-aos="zoom-in-right">
-                    UG Course Structure
-                  </h1>
-                </div>
+              <div className="layoutrow">
+                <h1 className="rowmarl3" data-aos="zoom-in-right">
+                  UG Course Structure
+                </h1>
+              </div>
             )}
             {course === "programmesphd" && (
               <div className="layoutrow">

@@ -1,10 +1,10 @@
 import Slider from "../../Slider/Slider"
 
-import { 
+import {
   Activities,
   ActivityImages,
   Outcomes_,
-  LabImages, 
+  LabImages,
   Labs,
   TimeTable,
   // Achievements,
@@ -32,14 +32,29 @@ export const titleDescription = () => {
 export const about = () => {
   return (
     <>
-      With an interdisciplinary perspective at the heart of its approach, the Department of Humanities and Social Sciences at NIT Patna provides intellectual and cultural foundations for the study of human relations with society interaction and teaching towards problem solving of the nation in contemporary contexts. The department, with its diverse expertise offers students in the B Tech programme courses aimed at developing essential skills in critical thinking and writing along with the knowledge of literature, society, economic value, and philosophies of the mind and body. The department also offers doctoral programmes in humanities and social sciences especially in English, Economics, Sociology and Human Resource Management besides elective courses for the undergraduate programmes of the institute.
+      With an interdisciplinary perspective at the heart of its approach, the
+      Department of Humanities and Social Sciences at NIT Patna provides
+      intellectual and cultural foundations for the study of human relations
+      with society interaction and teaching towards problem solving of the
+      nation in contemporary contexts. The department, with its diverse
+      expertise offers students in the B Tech programme courses aimed at
+      developing essential skills in critical thinking and writing along with
+      the knowledge of literature, society, economic value, and philosophies of
+      the mind and body. The department also offers doctoral programmes in
+      humanities and social sciences especially in English, Economics, Sociology
+      and Human Resource Management besides elective courses for the
+      undergraduate programmes of the institute.
     </>
   )
 }
 export const mission = () => {
   return (
     <>
-      To provide quality teaching, learning, and research in the field of Humanities and Social Sciences by creating, preserving, transmitting and utilizing  knowledge especially to engineering students so that intellectually capable and imaginatively gifted leaders can emerge in the technical education and industry.
+      To provide quality teaching, learning, and research in the field of
+      Humanities and Social Sciences by creating, preserving, transmitting and
+      utilizing knowledge especially to engineering students so that
+      intellectually capable and imaginatively gifted leaders can emerge in the
+      technical education and industry.
     </>
   )
 }
@@ -47,7 +62,10 @@ export const mission = () => {
 export const vision = () => {
   return (
     <>
-      The Department aspires to be a national exemplar in undergraduate teaching and research in the humanities and social sciences. Upon completion of the program, the students will be prepared to compete, sustain and advance their communities and the world.
+      The Department aspires to be a national exemplar in undergraduate teaching
+      and research in the humanities and social sciences. Upon completion of the
+      program, the students will be prepared to compete, sustain and advance
+      their communities and the world.
     </>
   )
 }
@@ -91,7 +109,9 @@ export const labs = () => {
       <div className="row rowmarl3">
         <Slider dataSlider={LabImages} showDots={true} />
       </div>
-      <div className="rowmarl3" style={{fontSize: `0.8rem`,padding:`0px` }}>{Labs.content}</div>
+      <div className="rowmarl3" style={{ fontSize: `0.8rem`, padding: `0px` }}>
+        {Labs.content}
+      </div>
       {/* <div className="col-6">
           <Slider dataSlider={LabImages} />
       </div>{" "} */}
@@ -121,6 +141,7 @@ export const timetable = () => {
             href={e.link}
             key={idx}
             target="_blank"
+            rel="noopener noreferrer"
             style={{
               fontSize: `1.2rem`,
               textDecoration: `none`,

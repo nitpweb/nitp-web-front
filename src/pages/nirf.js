@@ -13,8 +13,10 @@ const Nirf = () => {
         <div className="mainDiv">
           {
             <>
-              <h1 style={{ fontFamily: `Source Sans Pro` }}>NIRF (Coordinator : Prof. Prakash Chandra (prakash@nitp.ac.in))</h1>
-              
+              <h1 style={{ fontFamily: `Source Sans Pro` }}>
+                NIRF (Coordinator : Prof. Prakash Chandra (prakash@nitp.ac.in))
+              </h1>
+
               {acadData.nirf.map(item => (
                 <div className="row rowmarl3" key={++i}>
                   <div className="digital">
@@ -41,11 +43,7 @@ const Nirf = () => {
                       </a>
                     ))}
                   </div>
-                  
-                  
-
                 </div>
-                
               ))}
             </>
           }

@@ -89,7 +89,7 @@ const Webteam = () => {
                         }}
                         className={year == item ? "btnactive" : ""}
                       >
-                        {item}-{`${(item+1).toString().slice(2,4)}`}
+                        {item}-{`${(item + 1).toString().slice(2, 4)}`}
                       </button>
                     ))}
                   </div>

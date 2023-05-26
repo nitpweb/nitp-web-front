@@ -16,7 +16,7 @@ const Home = () => {
   const [notices, setNotices] = useState()
   const [academics, setAcademics] = useState()
   const [news, setNews] = useState()
-  
+
   useEffect(() => {
     let eventsUrl = `${process.env.GATSBY_API_URL}/api/events/active`
     let noticesUrl = `${process.env.GATSBY_API_URL}/api/notice/active`
@@ -82,162 +82,172 @@ const Home = () => {
       </div>
       <Importantlink />
       <div id="notice-event">
-      {notices&&<div id="notice">
-          <div
-            // data-aos="zoom-in"
-            // data-aos-duration="200"
-            className="notice-head"
-          >
-            Notice
-            <Link id="notice-head-p" className="home_heading-p" to="/notice">
-              View all
-            </Link>
+        {notices && (
+          <div id="notice">
+            <div
+              // data-aos="zoom-in"
+              // data-aos-duration="200"
+              className="notice-head"
+            >
+              Notice
+              <Link id="notice-head-p" className="home_heading-p" to="/notice">
+                View all
+              </Link>
+            </div>
+            <div className="notice-row">
+              {notices &&
+                notices.map(notice => {
+                  if (notice.title != "" && notice.important == 1) {
+                    return (
+                      <Notice
+                        detail={notice.title}
+                        time={notice.timestamp}
+                        key={notice.id}
+                        attachments={notice.attachments}
+                        imp={notice.important}
+                        link={
+                          notice.notice_link &&
+                          JSON.parse(notice.notice_link).url
+                            ? JSON.parse(notice.notice_link).url
+                            : ""
+                        }
+                      />
+                    )
+                  }
+                })}
+              {notices &&
+                notices.map(notice => {
+                  if (notice.title != "" && notice.important != 1) {
+                    return (
+                      <Notice
+                        detail={notice.title}
+                        time={notice.timestamp}
+                        key={notice.id}
+                        attachments={notice.attachments}
+                        imp={notice.important}
+                        link={
+                          notice.notice_link &&
+                          JSON.parse(notice.notice_link).url
+                            ? JSON.parse(notice.notice_link).url
+                            : ""
+                        }
+                      />
+                    )
+                  }
+                })}
+            </div>
           </div>
-          <div className="notice-row">
-            {notices &&
-              notices.map(notice => {
-                if (notice.title != "" && notice.important == 1) {
-                  return (
-                    <Notice
-                      detail={notice.title}
-                      time={notice.timestamp}
-                      key={notice.id}
-                      attachments={notice.attachments}
-                      imp={notice.important}
-                      link={
-                        notice.notice_link && JSON.parse(notice.notice_link).url
-                          ? JSON.parse(notice.notice_link).url
-                          : ""
-                      }
-                    />
-                  )
-                }
-              })}
-            {notices &&
-              notices.map(notice => {
-                if (notice.title != "" && notice.important != 1) {
-                  return (
-                    <Notice
-                      detail={notice.title}
-                      time={notice.timestamp}
-                      key={notice.id}
-                      attachments={notice.attachments}
-                      imp={notice.important}
-                      link={
-                        notice.notice_link && JSON.parse(notice.notice_link).url
-                          ? JSON.parse(notice.notice_link).url
-                          : ""
-                      }
-                    />
-                  )
-                }
-              })}
+        )}
+        {events && (
+          <div id="events">
+            <div
+              // data-aos="zoom-in"
+              // data-aos-duration="200"
+              className="event-head"
+            >
+              Events
+              <Link id="event-head-p" to="/event">
+                View all
+              </Link>
+            </div>
+            <div className="event-row">
+              {events &&
+                events.map((event, index) => {
+                  const date = new Date(event.eventStartDate)
+                  const day = date.getDate()
+                  const month = date.getMonth() + 1
+                  const year = date.getFullYear()
+                  const cdate = new Date(event.eventEndDate)
+                  const cday = cdate.getDate()
+                  const cmonth = cdate.getMonth() + 1
+                  const cyear = cdate.getFullYear()
+                  const monthname = date
+                    .toLocaleString("default", { month: "short" })
+                    .toUpperCase()
+                  if (event.title != "") {
+                    return (
+                      <Eventcard
+                        key={index}
+                        detail={event.title}
+                        time={`${day}-${month}-${year} - ${cday}-${cmonth}-${cyear}`}
+                        date={day}
+                        month={monthname}
+                        attachments={event.attachments}
+                        location={event.venue.substring(0, 60)}
+                        event_link={
+                          (event.event_link &&
+                            JSON.parse(event.event_link).url) ||
+                          ""
+                        }
+                        link={
+                          event.attachments.length != 0
+                            ? event.attachments[0].url
+                            : ""
+                        }
+                      />
+                    )
+                  }
+                })}
+            </div>
           </div>
-        </div>}
-        {events&&<div id="events">
-          <div
-            // data-aos="zoom-in"
-            // data-aos-duration="200"
-            className="event-head"
-          >
-            Events
-            <Link id="event-head-p" to="/event">
-              View all
-            </Link>
-          </div>
-          <div className="event-row">
-            {events &&
-              events.map((event, index) => {
-                const date = new Date(event.eventStartDate)
-                const day = date.getDate()
-                const month = date.getMonth() + 1
-                const year = date.getFullYear()
-                const cdate = new Date(event.eventEndDate)
-                const cday = cdate.getDate()
-                const cmonth = cdate.getMonth() + 1
-                const cyear = cdate.getFullYear()
-                const monthname = date
-                  .toLocaleString("default", { month: "short" })
-                  .toUpperCase()
-                if (event.title != "") {
-                  return (
-                    <Eventcard
-                      key={index}
-                      detail={event.title}
-                      time={`${day}-${month}-${year} - ${cday}-${cmonth}-${cyear}`}
-                      date={day}
-                      month={monthname}
-                      attachments={event.attachments}
-                      location={event.venue.substring(0, 60)}
-                      event_link={
-                        (event.event_link &&
-                          JSON.parse(event.event_link).url) ||
-                        ""
-                      }
-                      link={
-                        event.attachments.length != 0
-                          ? event.attachments[0].url
-                          : ""
-                      }
-                    />
-                  )
-                }
-              })}
-          </div>
-        </div>}
+        )}
 
-       {academics&& <div id="notice">
-          <div
-            // data-aos="zoom-in"
-            // data-aos-duration="200"
-            className="notice-head"
-          >
-            Academics
-            <Link id="notice-head-p" to="academics?tab=Notices">
-              View all
-            </Link>
-          </div>
-          <div className="notice-row">
-            {academics &&
-              academics.map(notice => {
-                if (notice.title != "" && notice.important == 1) {
-                  return (
-                    <Notice
-                      detail={notice.title}
-                      time={notice.timestamp}
-                      key={notice.id}
-                      attachments={notice.attachments}
-                      imp={notice.important}
-                      link={
-                        notice.notice_link && JSON.parse(notice.notice_link).url
-                          ? JSON.parse(notice.notice_link).url
-                          : ""
-                      }
-                    />
-                  )
-                }
-              })}
+        {academics && (
+          <div id="notice">
+            <div
+              // data-aos="zoom-in"
+              // data-aos-duration="200"
+              className="notice-head"
+            >
+              Academics
+              <Link id="notice-head-p" to="academics?tab=Notices">
+                View all
+              </Link>
+            </div>
+            <div className="notice-row">
               {academics &&
-              academics.map(notice => {
-                if (notice.title != "" && notice.important != 1){
-                  return (
-                    <Notice
-                      detail={notice.title}
-                      time={notice.timestamp}
-                      key={notice.id}
-                      attachments={notice.attachments}
-                      imp={notice.important}
-                      link={
-                        notice.notice_link && JSON.parse(notice.notice_link).url
-                          ? JSON.parse(notice.notice_link).url
-                          : ""
-                      }
-                    />
-                  )
-                }
-              })}
+                academics.map(notice => {
+                  if (notice.title != "" && notice.important == 1) {
+                    return (
+                      <Notice
+                        detail={notice.title}
+                        time={notice.timestamp}
+                        key={notice.id}
+                        attachments={notice.attachments}
+                        imp={notice.important}
+                        link={
+                          notice.notice_link &&
+                          JSON.parse(notice.notice_link).url
+                            ? JSON.parse(notice.notice_link).url
+                            : ""
+                        }
+                      />
+                    )
+                  }
+                })}
+              {academics &&
+                academics.map(notice => {
+                  if (notice.title != "" && notice.important != 1) {
+                    return (
+                      <Notice
+                        detail={notice.title}
+                        time={notice.timestamp}
+                        key={notice.id}
+                        attachments={notice.attachments}
+                        imp={notice.important}
+                        link={
+                          notice.notice_link &&
+                          JSON.parse(notice.notice_link).url
+                            ? JSON.parse(notice.notice_link).url
+                            : ""
+                        }
+                      />
+                    )
+                  }
+                })}
+            </div>
           </div>
-        </div>}
+        )}
       </div>
       <Innovation />
       <div id="news">

@@ -191,7 +191,7 @@ export const datalist = [
     title: "Labs",
     data: "labs",
     // img: "/department/labs.svg",
-  }, 
+  },
   {
     title: "Activities",
     data: "activities",
@@ -201,5 +201,5 @@ export const datalist = [
     title: "Mission & Vision",
     data: "missionvision",
     // img: "/department/mission.svg",
-  }
+  },
 ]

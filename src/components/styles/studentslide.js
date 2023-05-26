@@ -18,9 +18,9 @@ export const StudentSlideStyle = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
-    transition: transform .2s;
+    transition: transform 0.2s;
   }
-  .club:hover{
+  .club:hover {
     transform: scale(1.2);
   }
   .club a {
@@ -84,7 +84,7 @@ export const StudentSlideStyle = styled.div`
   #s4:checked ~ #slide4,
   #s5:checked ~ #slide5,
   #s6:checked ~ #slide6,
-  #s7:checked ~ #slide7, 
+  #s7:checked ~ #slide7,
   #s8:checked ~ #slide8,
   #s9:checked ~ #slide9,
   #s10:checked ~ #slide10,
@@ -116,8 +116,7 @@ export const StudentSlideStyle = styled.div`
   #s8:checked ~ #slide10,
   #s9:checked ~ #slide11,
   #s10:checked ~ #slide1,
-  #s11:checked ~ #slide2
-   {
+  #s11:checked ~ #slide2 {
     /* box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2); */
     transform: translate3d(60%, 0, -350px);
   }

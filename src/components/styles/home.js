@@ -49,16 +49,15 @@ export const HomeStyle = styled.div`
     flex-direction: column;
     width: 30vw;
     height: 160px;
-    max-height:280px;
-    z-index:1;
+    max-height: 280px;
+    z-index: 1;
     justify-content: flex-start;
     overflow-x: hidden;
     overflow-y: auto;
-    height:280px;
+    height: 280px;
 
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE 10+ */
-    
   }
   .notice-row::-webkit-scrollbar {
     display: none;
@@ -69,7 +68,7 @@ export const HomeStyle = styled.div`
     /* -ms-flex-wrap: wrap;
     flex-wrap: wrap; */
     flex-direction: column;
-    width: 30vw; 
+    width: 30vw;
     max-height: 280px;
     z-index: 1;
     border-radius: 3px;

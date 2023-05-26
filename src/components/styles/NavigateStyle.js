@@ -134,7 +134,7 @@ export const NavigateStyle = styled.div`
     }
   }
   @media (max-width: 1024px) {
-    .childLink{
+    .childLink {
       width: 11.34vw;
     }
   }

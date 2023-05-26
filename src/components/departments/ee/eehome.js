@@ -1,7 +1,13 @@
 export const routeName = "ee"
 export const title = "Electrical Engineering"
 
-import { Achievements, Activities, Labs, News_Events, LabImages } from "./ee-others-data"
+import {
+  Achievements,
+  Activities,
+  Labs,
+  News_Events,
+  LabImages,
+} from "./ee-others-data"
 import Slider from "../../Slider/Slider"
 import React from "react"
 
@@ -70,7 +76,8 @@ export const about = () => {
 export const mission = () => {
   return (
     <>
-      To achieve sustainable growth towards academic excellence in the field of Electrical Engineering.
+      To achieve sustainable growth towards academic excellence in the field of
+      Electrical Engineering.
       {/* To create and maintain a sustainable development in infrastructure,
       academic environment human resources and governance. */}
     </>
@@ -98,11 +105,15 @@ export const vision = () => {
       equipped to meet the challenges in education, profession and life
       <br />
       To instill moral and ethical values among the faculty and students */}
-      To offer quality education in electrical engineering to meet the requirements of industry, society and nation.
+      To offer quality education in electrical engineering to meet the
+      requirements of industry, society and nation.
       <br />
-      To provide contemporary technical knowhow by regular upgradation of curriculum as per the needs of industry and educative exposures like short term courses, conferences, etc.
+      To provide contemporary technical knowhow by regular upgradation of
+      curriculum as per the needs of industry and educative exposures like short
+      term courses, conferences, etc.
       <br />
-      To establish state-of-the-art infrastructural facilities in the arena of academics and research.
+      To establish state-of-the-art infrastructural facilities in the arena of
+      academics and research.
       <br />
       To inculcate leadership, moral and ethical values among the students.
       <br />
@@ -179,36 +190,130 @@ export const achievements = () => {
   )
 }
 export const Outcomes = () => {
-  return (<>
-  <div className="row rowmarl3 rowmarr3 digital">
-    <h3 style={{width:`100%`}}>Programme Educational Objectives (PEO) for UG (B.Tech - EE)</h3>
-    <li>The programme is devoted to impart learning and understanding of different segments of Electrical Engineering.</li>
-    <li>The programme aims to provide students with the opportunity to apply advanced techniques and develop skills to explore new problems in Electrical Engineering. It aims to produce graduates, who are employable in Industries and/or can pursue higher studies.</li>
-    <li>The programme is expected to empower students to collaborate with different sectors of the field that shall lead to innovation for solving social, technical and business challenges in an optimized and environment friendly way.</li>
-    <li>The programme is designed to encourage students to pursue life-long learning and develop professional ethics, communication skills, leadership quality, and team work capability through continuing education toward self-improvement.</li>
+  return (
+    <>
+      <div className="row rowmarl3 rowmarr3 digital">
+        <h3 style={{ width: `100%` }}>
+          Programme Educational Objectives (PEO) for UG (B.Tech - EE)
+        </h3>
+        <li>
+          The programme is devoted to impart learning and understanding of
+          different segments of Electrical Engineering.
+        </li>
+        <li>
+          The programme aims to provide students with the opportunity to apply
+          advanced techniques and develop skills to explore new problems in
+          Electrical Engineering. It aims to produce graduates, who are
+          employable in Industries and/or can pursue higher studies.
+        </li>
+        <li>
+          The programme is expected to empower students to collaborate with
+          different sectors of the field that shall lead to innovation for
+          solving social, technical and business challenges in an optimized and
+          environment friendly way.
+        </li>
+        <li>
+          The programme is designed to encourage students to pursue life-long
+          learning and develop professional ethics, communication skills,
+          leadership quality, and team work capability through continuing
+          education toward self-improvement.
+        </li>
 
-    <h3 style={{width:`100%`}}>PROGRAM OUTCOME (POs) for UG (B.Tech - EE)</h3>
-    <p>Engineering Graduates will be able to:</p>
-    <p><b>PO1:</b> Engineering knowledge: Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.</p>
-    <p><b>PO2:</b> Problem analysis: Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.</p>
-    <p><b>PO3:</b> Design/development of solutions: Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.</p>
-    <p><b>PO4:</b> Conduct investigations of complex problems: Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.</p>
-    <p><b>PO5:</b> Modern tool usage: Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modelling to complex engineering activities with an understanding of the limitations.</p>
-    <p><b>PO6:</b> The engineer and society: Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice.</p>
-    <p><b>PO7:</b> Environment and sustainability: Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development.</p>
-    <p><b>PO8:</b> Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice.</p>
-    <p><b>PO9:</b> Individual and team work: Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings.</p>
-    <p><b>PO10:</b> Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions.</p>
-    <p><b>PO11:</b> Project management and finance: Demonstrate knowledge and understanding of the engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.</p>
-    <p><b>PO12:</b> Life-long learning: Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change.</p>
+        <h3 style={{ width: `100%` }}>
+          PROGRAM OUTCOME (POs) for UG (B.Tech - EE)
+        </h3>
+        <p>Engineering Graduates will be able to:</p>
+        <p>
+          <b>PO1:</b> Engineering knowledge: Apply the knowledge of mathematics,
+          science, engineering fundamentals, and an engineering specialization
+          to the solution of complex engineering problems.
+        </p>
+        <p>
+          <b>PO2:</b> Problem analysis: Identify, formulate, review research
+          literature, and analyze complex engineering problems reaching
+          substantiated conclusions using first principles of mathematics,
+          natural sciences, and engineering sciences.
+        </p>
+        <p>
+          <b>PO3:</b> Design/development of solutions: Design solutions for
+          complex engineering problems and design system components or processes
+          that meet the specified needs with appropriate consideration for the
+          public health and safety, and the cultural, societal, and
+          environmental considerations.
+        </p>
+        <p>
+          <b>PO4:</b> Conduct investigations of complex problems: Use
+          research-based knowledge and research methods including design of
+          experiments, analysis and interpretation of data, and synthesis of the
+          information to provide valid conclusions.
+        </p>
+        <p>
+          <b>PO5:</b> Modern tool usage: Create, select, and apply appropriate
+          techniques, resources, and modern engineering and IT tools including
+          prediction and modelling to complex engineering activities with an
+          understanding of the limitations.
+        </p>
+        <p>
+          <b>PO6:</b> The engineer and society: Apply reasoning informed by the
+          contextual knowledge to assess societal, health, safety, legal and
+          cultural issues and the consequent responsibilities relevant to the
+          professional engineering practice.
+        </p>
+        <p>
+          <b>PO7:</b> Environment and sustainability: Understand the impact of
+          the professional engineering solutions in societal and environmental
+          contexts, and demonstrate the knowledge of, and need for sustainable
+          development.
+        </p>
+        <p>
+          <b>PO8:</b> Apply ethical principles and commit to professional ethics
+          and responsibilities and norms of the engineering practice.
+        </p>
+        <p>
+          <b>PO9:</b> Individual and team work: Function effectively as an
+          individual, and as a member or leader in diverse teams, and in
+          multidisciplinary settings.
+        </p>
+        <p>
+          <b>PO10:</b> Communicate effectively on complex engineering activities
+          with the engineering community and with society at large, such as,
+          being able to comprehend and write effective reports and design
+          documentation, make effective presentations, and give and receive
+          clear instructions.
+        </p>
+        <p>
+          <b>PO11:</b> Project management and finance: Demonstrate knowledge and
+          understanding of the engineering and management principles and apply
+          these to one’s own work, as a member and leader in a team, to manage
+          projects and in multidisciplinary environments.
+        </p>
+        <p>
+          <b>PO12:</b> Life-long learning: Recognize the need for, and have the
+          preparation and ability to engage in independent and life-long
+          learning in the broadest context of technological change.
+        </p>
 
-    <h3 style={{width:`100%`}}>Programme Specific Outcomes (PSO) for UG (B.Tech - EE)</h3>
-    <p>Engineering Graduates will be able to:</p>
-    <p><b>PSO1:</b> Engineering knowledge: Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.</p>
-    <p><b>PSO2:</b> Selection, design and prototype Power electronic systems and electrical machine drives for applications related to industrial, traction, electrical vehicle and renewable energy.</p>
-    <p><b>PSO3:</b>  Design and development of Instrumentation, Control and Automation systems for industries and intelligent systems.</p>
-    </div>
-  </>)
+        <h3 style={{ width: `100%` }}>
+          Programme Specific Outcomes (PSO) for UG (B.Tech - EE)
+        </h3>
+        <p>Engineering Graduates will be able to:</p>
+        <p>
+          <b>PSO1:</b> Engineering knowledge: Apply the knowledge of
+          mathematics, science, engineering fundamentals, and an engineering
+          specialization to the solution of complex engineering problems.
+        </p>
+        <p>
+          <b>PSO2:</b> Selection, design and prototype Power electronic systems
+          and electrical machine drives for applications related to industrial,
+          traction, electrical vehicle and renewable energy.
+        </p>
+        <p>
+          <b>PSO3:</b> Design and development of Instrumentation, Control and
+          Automation systems for industries and intelligent systems.
+        </p>
+      </div>
+    </>
+  )
 }
 
 export const activities = () => {

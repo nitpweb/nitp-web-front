@@ -29,9 +29,12 @@ const RegistrarPage = () => {
             className="row rowmarl3"
             style={{ display: "block", width: `100%` }}
           >
-            <h1 style={{marginTop:`0`,textAlign:`center`}}>Registrar</h1>
+            <h1 style={{ marginTop: `0`, textAlign: `center` }}>Registrar</h1>
           </div>
-          <div className="faculty-img-row" style={{ position: `relative`,left:`2%`,}}>
+          <div
+            className="faculty-img-row"
+            style={{ position: `relative`, left: `2%` }}
+          >
             <div className="faculty-img-wrap">
               <img
                 src={
@@ -55,7 +58,11 @@ const RegistrarPage = () => {
 
           <div className="faculty-details-row">
             <div className="fac-card" data-aos="">
-            <h3>{data.profile.department=="Officers" ? "Responsibilities:-" : "Research Interest:-"}</h3>
+              <h3>
+                {data.profile.department == "Officers"
+                  ? "Responsibilities:-"
+                  : "Research Interest:-"}
+              </h3>
               <h3>Email:-</h3>
               <p>{data.profile.email}</p>
               <h3>Phone:-</h3>
