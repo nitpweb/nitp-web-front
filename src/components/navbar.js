@@ -108,7 +108,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             {` | `}
           </span>
           <span style={{ marginLeft: `8px` }}>
-            <a href="https://www.eduqfix.com/PayDirect/#/student/pay/mnYv9Q6+C+3lIMqghRCwdaqVZusPrJtq2RGJrJFnKnmtz3KBqtsEFPVrZFvoPubG/3466">
+            <a href="https://paydirect.eduqfix.com/app/mnYv9Q6+C+3lIMqghRCwdaqVZusPrJtq2RGJrJFnKnmtz3KBqtsEFPVrZFvoPubG/3466">
               Fee Payment
             </a>
             {` | `}
