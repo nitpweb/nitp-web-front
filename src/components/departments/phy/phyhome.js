@@ -71,8 +71,9 @@ export const vision = () => {
 
 export const contact = () => {
   return (
-    <>
-      Department of Physics,
+    <div className="img-11">
+    <div>
+    Department of Physics,
       <br />
       <br />
       National Institute Of Technology Patna,
@@ -86,7 +87,17 @@ export const contact = () => {
       Extn: +91-612-(2371715/2715/2371929/
       <br />
       2370419/2370843/2371930) * 163
-    </>
+    </div>
+
+    <div className="img img-12">
+      <img src="/physics-hod.png" />
+      <br />
+      <br />
+      <strong>Dr. Dev Kumar Mahato</strong>
+      <br />
+       Associate Professor & HOD
+    </div>
+  </div>
   )
 }
 export const achievements = () => {
@@ -128,7 +139,7 @@ export const datalist = [
     // img: "/department/activities.svg",
   },
   {
-    title: "Contact",
+    title: "Contact & HOD",
     data: "contact",
     // img: "/department/contact.svg",
   },

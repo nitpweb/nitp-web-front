@@ -76,8 +76,9 @@ export const vision = () => {
 
 export const contact = () => {
   return (
-    <>
-      Department of Mathematics,
+    <div className="img-11">
+    <div>
+    Department of Mathematics,
       <br />
       <br />
       National Institute Of Technology Patna,
@@ -91,7 +92,17 @@ export const contact = () => {
       Extn: +91-612-(2371715/2715/2371929/
       <br />
       2370419/2370843/2371930) * 117
-    </>
+    </div>
+
+    <div className="img img-12">
+      <img src="/maths-hod.jpg" />
+      <br />
+      <br />
+      <strong>Dr. Gowrishankar S</strong>
+      <br />
+       Associate Professor & HOD
+    </div>
+  </div>
   )
 }
 
@@ -126,7 +137,7 @@ export const datalist = [
     // img: "/department/activities.svg",
   },
   {
-    title: "Contact",
+    title: "Contact & HOD",
     data: "contact",
     // img: "/department/contact.svg",
   },
