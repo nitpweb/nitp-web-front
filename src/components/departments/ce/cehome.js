@@ -94,24 +94,37 @@ export const vision = () => {
 
 export const contact = () => {
   return (
-    <>
-      Department of Civil Engg.,
-      <br />
-      <br />
-      National Institute Of Technology Patna,
-      <br />
-      Ashok Rajpath, Patna - 800005.
-      <br />
-      <br />
-      Email: head.ce@nitp.ac.in
-      <br />
-      <br />
-      Extn: +91-612-(2371715/2715/2371929/
-      <br />
-      2370419/2370843/2371930) * 126
-    </>
+    <div className="img-11">
+      <div style={{}}>
+        Department of Civil Engg.,
+        <br />
+        National Institute Of Technology Patna,
+        <br />
+        Ashok Rajpath, Patna - 800005.
+        <br />
+        <br />
+        Email: head.ce@nitp.ac.in
+        <br />
+        <br />
+        Extn: +91-612-(2371715/2715/2371929/
+        <br />
+        2370419/2370843/2371930) * 126
+        <br />
+        <br />
+      </div>
+
+      <div className="img img-12">
+        <img src="/civil-hod.jpg" />
+        <br />
+        <br />
+        <strong>Prof. Anshuman Singh</strong>
+        <br />
+        Professor & HOD
+      </div>
+    </div>
   )
 }
+
 
 export const labs = () => {
   return (
@@ -183,7 +196,7 @@ export const datalist = [
     // img: "/department/activities.svg",
   },
   {
-    title: "Contact",
+    title: "Contact & HOD",
     data: "contact",
     // img: "/department/contact.svg",
   },

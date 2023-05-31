@@ -116,3 +116,34 @@ h2 {
   max-width: 100%;
   height: auto;
 }
+
+@media (min-width: 768px) {
+  /* Desktop size and larger */
+  .img-11 {
+    /* Reduce width by 300px */
+    /* Apply margin of 300px */
+    display: flex;
+  }
+  .img-12 {
+    margin-left: 200px;
+  }
+}
+@media (min-width: 768) and (max-width: 940) {
+  .img-12 {
+    margin-left: 100px;
+  }
+  .img {
+    width: 250px;
+    height: 270px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .img-11 {
+    width: 100%;
+  }
+  .img {
+    width: 200px;
+    height: 200px;
+  }
+}

@@ -101,7 +101,8 @@ export const Outcomes = () => {
 
 export const contact = () => {
   return (
-    <>
+    <div className="img-11">
+      <div>
       Department of Computer Science & Engg.,
       <br />
       National Institute Of Technology Patna,
@@ -115,7 +116,17 @@ export const contact = () => {
       Extn: +91-612-(2371715/2715/2371929/
       <br />
       2370419/2370843/2371930) 201
-    </>
+      </div>
+
+      <div className="img img-12">
+        <img src="/cse-hod.jpg" />
+        <br />
+        <br />
+        <strong>Prof. Maheshwari Prasad Singh</strong>
+        <br />
+        Professor & HOD
+      </div>
+    </div>
   )
 }
 
@@ -229,7 +240,7 @@ export const datalist = [
     // img: "/department/activities.svg",
   },
   {
-    title: "Contact",
+    title: "Contact & HOD",
     data: "contact",
     // img: "/department/contact.svg",
   },
