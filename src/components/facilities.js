@@ -46,7 +46,7 @@ const itservicedetail = (
   <>
     <p>
       <b>Professor In-Charge:</b>
-      <br /> &emsp;Dr. Prabhat Kumar, Department of CSE
+      <br /> &emsp;Dr. Prabhat Kumar, Professor, Department of CSE
     </p>
     <p>
       <b>Scientific & Technical Officer:</b>
