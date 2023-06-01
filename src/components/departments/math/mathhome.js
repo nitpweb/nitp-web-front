@@ -76,7 +76,8 @@ export const vision = () => {
 
 export const contact = () => {
   return (
-    <>
+    <div className="img-11">
+      <div>
       Department of Mathematics,
       <br />
       <br />
@@ -91,7 +92,17 @@ export const contact = () => {
       Extn: +91-612-(2371715/2715/2371929/
       <br />
       2370419/2370843/2371930) * 117
-    </>
+      </div>
+
+      <div className="img img-12">
+        <img src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=1-TK7XcNCqXlnNON5BWASENxjYXsw_ouB" alt ="hodImage" />
+        <br />
+        <br />
+        <strong>Dr. Gowrisankar S</strong>
+        <br />
+        Associate Professor & HOD
+      </div>
+    </div>  
   )
 }
 
@@ -126,7 +137,7 @@ export const datalist = [
     // img: "/department/activities.svg",
   },
   {
-    title: "Contact",
+    title: "Contact & HOD",
     data: "contact",
     // img: "/department/contact.svg",
   },

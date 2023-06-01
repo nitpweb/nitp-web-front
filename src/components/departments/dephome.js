@@ -191,9 +191,10 @@ const Dephomepage = ({
                 <div className="col-6" style={{ width: `100%` }}>
                   <div className="row rowmarr3">
                     <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
-                      Contact
+                      Contact & HOD
                     </h1>
                   </div>
+                  <br/>
                   <div className="row rowmarr3">
                     {/* <div className="row" style={{justifyContent: "space-between"}}> */}
                     {/* <div className="rowmarl3">

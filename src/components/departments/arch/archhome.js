@@ -100,7 +100,8 @@ export const vision = () => {
 
 export const contact = () => {
   return (
-    <>
+    <div className="img-11">
+      <div>
       Department of Architecture & Planning,
       <br />
       <br />
@@ -115,7 +116,17 @@ export const contact = () => {
       Extn: +91-612-(2371715/2715/2371929/
       <br />
       2370419/2370843/2371930) * 240/241
-    </>
+      </div>
+
+      <div className="img img-12">
+        <img src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=1I91FCwC7s2k0UiOmuzervGK6M5Q_m8CI" alt ="hodImage"/>
+        <br />
+        <br />
+        <strong>Prof. Manoj Kumar</strong>
+        <br />
+        Professor & HOD
+      </div>
+    </div>
   )
 }
 
@@ -156,7 +167,7 @@ export const datalist = [
     // img: "/department/activities.svg",
   },
   {
-    title: "Contact",
+    title: "Contact & HOD",
     data: "contact",
     // img: "/department/contact.svg",
   },

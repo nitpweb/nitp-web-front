@@ -88,7 +88,8 @@ export const Outcomes = () => {
 
 export const contact = () => {
   return (
-    <>
+    <div className="img-11">
+      <div>
       Department of Humanities & Social Sciences
       <br />
       National Institute of Technology Patna,
@@ -98,7 +99,17 @@ export const contact = () => {
       Email: head.hs@nitp.ac.in
       <br />
       Contact no: +91-9557805425
-    </>
+      </div>
+
+      <div className="img img-12">
+        <img src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=1SNizQP1nCCmog6hjxw3AwhsX0ROXQsu9" alt ="hodImage"/>
+        <br />
+        <br />
+        <strong>Dr. Deepak Kumar Behera</strong>
+        <br />
+        Associate Professor & HOD
+      </div>
+    </div>
   )
 }
 
@@ -205,7 +216,7 @@ export const datalist = [
     // img: "clock.svg",
   },
   {
-    title: "Contact",
+    title: "Contact & HOD",
     data: "contact",
     // img: "/department/contact.svg",
   },

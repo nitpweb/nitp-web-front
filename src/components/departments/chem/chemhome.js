@@ -84,7 +84,8 @@ export const vision = () => {
 
 export const contact = () => {
   return (
-    <>
+    <div className="img-11">
+      <div>
       Department of Chemistry,
       <br />
       <br />
@@ -92,7 +93,17 @@ export const contact = () => {
       <br />
       <br />
       Email: head.ch@nitp.ac.in
-    </>
+      </div>
+
+      <div className="img img-12">
+        <img src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=1JDx-0LS5pxsMcYpcyAFBbq3If3Kfubcg" alt ="hodImage"/>
+        <br />
+        <br />
+        <strong>Dr. Subrata Das</strong>
+        <br />
+        Associate Professor & HOD
+      </div>
+    </div>
   )
 }
 
@@ -165,7 +176,7 @@ export const datalist = [
     // img: "/department/activities.svg",
   },
   {
-    title: "Contact",
+    title: "Contact & HOD",
     data: "contact",
     // img: "/department/contact.svg",
   },
