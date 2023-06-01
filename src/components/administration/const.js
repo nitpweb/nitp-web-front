@@ -3,7 +3,7 @@ import Navlist from "../global/navlist"
 
 const Deansinfo = [
   {
-    name: "Prof. Fulena Rajak",
+    name: "Prof. Pijush Samui",
     designation: "Dean, Planning & Development",
     type: "Dean",
   },
@@ -13,7 +13,7 @@ const Deansinfo = [
     type: "Dean",
   },
   {
-    name: "Prof. Prakash Chandra",
+    name: "Prof. Samrat Mukherjee",
     designation: "Dean, Student Welfare",
     type: "Dean",
   },
@@ -394,6 +394,11 @@ const ServiceUnit = [
     designation: "EMU",
     type: "Prof. In-charge",
     name: "Dr. R. K. Mandal",
+  },
+  {
+    designation: "Website",
+    type: "Prof. In-charge",
+    name: "Dr. Amitesh Kumar",
   },
   {
     designation: "Examination",
