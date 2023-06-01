@@ -1,5 +1,6 @@
 import React from "react"
 import Slider from "../../Slider/Slider"
+import chemhod from "../img/chem-hod.jpg";
 
 import {
   Achievements,
@@ -96,7 +97,7 @@ export const contact = () => {
     </div>
 
     <div className="img img-12">
-      <img src="/chem-hod.jpg" />
+      <img src={chemhod} alt ="hod image"/>
       <br />
       <br />
       <strong>Dr. Subrata Das</strong>

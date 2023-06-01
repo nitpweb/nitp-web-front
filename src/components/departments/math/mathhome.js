@@ -1,5 +1,6 @@
 import React from "react"
 import { Activities } from "./maths-others-data"
+import mathhod from "../img/maths-hod.jpg";
 
 export const routeName = "math"
 export const title = "Mathematics Department"
@@ -95,7 +96,7 @@ export const contact = () => {
     </div>
 
     <div className="img img-12">
-      <img src="/maths-hod.jpg" />
+      <img src={mathhod} alt ="hod image" />
       <br />
       <br />
       <strong>Dr. Gowrishankar S</strong>

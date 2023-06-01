@@ -1,5 +1,6 @@
 import React from "react"
 import { Achievements, Activities } from "./phy-others-data"
+import phyhod from "../img/physics-hod.png";
 
 export const routeName = "phy"
 export const title = "Physics Departmen"
@@ -90,7 +91,7 @@ export const contact = () => {
     </div>
 
     <div className="img img-12">
-      <img src="/physics-hod.png" />
+      <img src={phyhod} alt ="hod image"/>
       <br />
       <br />
       <strong>Dr. Dev Kumar Mahato</strong>

@@ -2,6 +2,7 @@ export const routeName = "ce"
 export const title = "Civil Engineering"
 import { Labs, Activities } from "./civil-others-data"
 import React from "react"
+import cehod from "../img/civil-hod.jpg";
 
 export const titleDescription = () => {
   return (
@@ -114,7 +115,7 @@ export const contact = () => {
       </div>
 
       <div className="img img-12">
-        <img src="/civil-hod.jpg" />
+        <img src={cehod} alt ="hod image" />
         <br />
         <br />
         <strong>Prof. Anshuman Singh</strong>

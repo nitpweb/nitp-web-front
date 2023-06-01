@@ -1,4 +1,5 @@
 import Slider from "../../Slider/Slider"
+import hsshod from "../img/hss-hod.jpg";
 
 import {
   Activities,
@@ -102,7 +103,7 @@ export const contact = () => {
       </div>
 
       <div className="img img-12">
-        <img src="/hss-hod.jpg" />
+        <img src={hsshod} alt ="hod image" />
         <br />
         <br />
         <strong>Dr. Deepak Kumar Behera</strong>

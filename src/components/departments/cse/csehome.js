@@ -1,4 +1,6 @@
 import React from "react"
+import csehod from "../img/cse-hod.jpg";
+
 
 export const routeName = "cse"
 export const title = "Computer Science & Engineering"
@@ -119,7 +121,7 @@ export const contact = () => {
       </div>
 
       <div className="img img-12">
-        <img src="/cse-hod.jpg" />
+        <img src={csehod}  alt ="hod image"/>
         <br />
         <br />
         <strong>Prof. Maheshwari Prasad Singh</strong>

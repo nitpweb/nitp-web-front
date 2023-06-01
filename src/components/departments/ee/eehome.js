@@ -10,6 +10,7 @@ import {
 } from "./ee-others-data"
 import Slider from "../../Slider/Slider"
 import React from "react"
+import eehod from "../img/electrical-hod.jpg";
 
 export const titleDescription = () => {
   return (
@@ -137,7 +138,7 @@ export const contact = () => {
       </div>
 
       <div className="img img-12">
-        <img src="/electrical-hod.jpg" />
+        <img src={eehod}  alt ="hod image"/>
         <br />
         <br />
         <strong>Dr. Rajib Kumar Mandal</strong>

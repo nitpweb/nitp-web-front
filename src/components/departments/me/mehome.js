@@ -3,6 +3,7 @@ import { Achievements, Activities, Labs } from "./me-others-data"
 
 import { LabImages } from "./me-others-data"
 import Slider from "../../Slider/Slider"
+import mechhod from "../img/mechanical-hod.jpg";
 
 export const routeName = "me"
 export const title = "Mechanical Engineering"
@@ -88,7 +89,7 @@ export const contact = () => {
       </div>
 
       <div className="img img-12">
-        <img src="/mechanical-hod.jpg" />
+        <img src={mechhod}  alt ="hod image"/>
         <br />
         <br />
         <strong>Prof. Prakash Chandra</strong>

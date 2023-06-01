@@ -1,5 +1,5 @@
 import React from "react"
-
+import ecehod from "../img/ece-hod.jpg";
 export const routeName = "ece"
 export const title = "Electronics and Communication Engineering"
 
@@ -174,7 +174,7 @@ export const contact = () => {
     </div>
 
     <div className="img img-12">
-      <img src="/ece-hod.jpg" />
+      <img src={ecehod}  alt ="hod image"/>
       <br />
       <br />
       <strong>Prof. Bharat Gupta</strong>
