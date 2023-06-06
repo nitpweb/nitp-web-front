@@ -55,11 +55,7 @@ export const about = () => {
       technology transfer, capacity building, and awareness programs.
       <br />
       <br />
-      <img src={`${process.env.GATSBY_BASE_URL}civil/labs/hod.jpg`} />
-      <br />
-      <strong>S. S. Mishra</strong>
-      <br />
-      Professor & HOD
+
     </>
   )
 }
@@ -94,10 +90,11 @@ export const vision = () => {
 
 export const contact = () => {
   return (
-    <div className="img-11">
-      <div style={{}}>
+        <div className="img-11">
+      <div>
         Department of Civil Engg.,
         <br />
+
         National Institute Of Technology Patna,
         <br />
         Ashok Rajpath, Patna - 800005.
@@ -114,7 +111,7 @@ export const contact = () => {
       </div>
 
       <div className="img img-12">
-        <img src="/civil-hod.jpg" />
+        <img src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=1aLZr0n_58Cx0lpVxSUjY6BfJbqiVduG6" alt ="hodImage" />
         <br />
         <br />
         <strong>Prof. Anshuman Singh</strong>

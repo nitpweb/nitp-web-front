@@ -100,22 +100,6 @@ export const vision = () => {
 
 export const contact = () => {
   return (
-    // <>
-    //   Department of Architecture & Planning,
-    //   <br />
-    //   <br />
-    //   National Institute Of Technology Patna,
-    //   <br />
-    //   Ashok Rajpath, Patna - 800005.
-    //   <br />
-    //   <br />
-    //   Email: head.ar@nitp.ac.in
-    //   <br />
-    //   <br />
-    //   Extn: +91-612-(2371715/2715/2371929/
-    //   <br />
-    //   2370419/2370843/2371930) * 240/241
-    // </>
     <div className="img-11">
       <div>
       Department of Architecture & Planning,
@@ -135,10 +119,10 @@ export const contact = () => {
       </div>
 
       <div className="img img-12">
-        <img src="/archy-hod.jpeg" />
+        <img src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=1I91FCwC7s2k0UiOmuzervGK6M5Q_m8CI" alt ="hodImage"/>
         <br />
         <br />
-        <strong>Prof. Manoj kumar</strong>
+        <strong>Prof. Manoj Kumar</strong>
         <br />
         Professor & HOD
       </div>

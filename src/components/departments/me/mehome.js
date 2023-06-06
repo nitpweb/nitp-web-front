@@ -88,7 +88,7 @@ export const contact = () => {
       </div>
 
       <div className="img img-12">
-        <img src="/mechanical-hod.jpg" />
+        <img src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=1ZTd8RKh4GeeBHokdnK0q01hw2sqo9uXB"  alt ="hodImage"/>
         <br />
         <br />
         <strong>Prof. Prakash Chandra</strong>

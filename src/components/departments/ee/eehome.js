@@ -123,7 +123,7 @@ export const vision = () => {
 
 export const contact = () => {
   return (
-      <div className="img-11">
+    <div className="img-11">
       <div>
       Department of Electrical Enggineering
       <br />
@@ -133,14 +133,14 @@ export const contact = () => {
       <br />
       <br /> Email: head.ee@nitp.ac.in <br />
       <br />
-      Extn: +91-612-(2371715/2715/2371929/ <br /> 2370419/2370843/2371930) * 153	
+      Extn: +91-612-(2371715/2715/2371929/ <br /> 2370419/2370843/2371930) * 153
       </div>
 
       <div className="img img-12">
-        <img src="/electrical-hod.jpg" />
+        <img src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=1Q0TgCyX0bpbtiKhYiqtDBQ0N_7JzwiQI" alt ="hodImage" />
         <br />
         <br />
-        <strong>Dr. Rajib Kumar Mandal</strong>
+        <strong>Dr. Rajib kumar Mandal </strong>
         <br />
         Associate Professor & HOD
       </div>

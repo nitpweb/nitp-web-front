@@ -102,12 +102,12 @@ export const contact = () => {
       </div>
 
       <div className="img img-12">
-        <img src="/hss-hod.jpg" />
+        <img src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=1SNizQP1nCCmog6hjxw3AwhsX0ROXQsu9" alt ="hodImage"/>
         <br />
         <br />
         <strong>Dr. Deepak Kumar Behera</strong>
         <br />
-         Associate Professor & HOD
+        Associate Professor & HOD
       </div>
     </div>
   )

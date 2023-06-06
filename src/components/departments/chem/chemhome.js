@@ -85,25 +85,25 @@ export const vision = () => {
 export const contact = () => {
   return (
     <div className="img-11">
-    <div >
-    Department of Chemistry,
+      <div>
+      Department of Chemistry,
       <br />
       <br />
       National Institute Of Technology Patna, Ashok Rajpath, Patna - 800005.
       <br />
       <br />
       Email: head.ch@nitp.ac.in
-    </div>
+      </div>
 
-    <div className="img img-12">
-      <img src="/chem-hod.jpg" />
-      <br />
-      <br />
-      <strong>Dr. Subrata Das</strong>
-      <br />
-      Associate Professor & HOD
+      <div className="img img-12">
+        <img src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=1JDx-0LS5pxsMcYpcyAFBbq3If3Kfubcg" alt ="hodImage"/>
+        <br />
+        <br />
+        <strong>Dr. Subrata Das</strong>
+        <br />
+        Associate Professor & HOD
+      </div>
     </div>
-  </div>
   )
 }
 

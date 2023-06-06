@@ -119,7 +119,7 @@ export const contact = () => {
       </div>
 
       <div className="img img-12">
-        <img src="/cse-hod.jpg" />
+        <img src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=1f2bFo1KIY1xF6MOmTAjM3gNYZcUySBaG" alt ="hodImage" />
         <br />
         <br />
         <strong>Prof. Maheshwari Prasad Singh</strong>

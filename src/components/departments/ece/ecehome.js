@@ -156,7 +156,7 @@ export const vision = () => {
 export const contact = () => {
   return (
     <div className="img-11">
-    <div>
+      <div>
       Department of Electronics & Communications Engg.,
       <br />
       <br />
@@ -171,17 +171,17 @@ export const contact = () => {
       Extn: +91-612-(2371715/2715/2371929/
       <br />
       2370419/2370843/2371930) * 177
-    </div>
+      </div>
 
-    <div className="img img-12">
-      <img src="/ece-hod.jpg" />
-      <br />
-      <br />
-      <strong>Prof. Bharat Gupta</strong>
-      <br />
-      Professor & HOD
+      <div className="img img-12">
+        <img src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=1sj6PJ0DyjOOMlZvfgerow2riwZonI9z0" alt ="hodImage" />
+        <br />
+        <br />
+        <strong>Prof. Bharat Gupta</strong>
+        <br />
+        Professor & HOD
+      </div>
     </div>
-  </div>
   )
 }
 
