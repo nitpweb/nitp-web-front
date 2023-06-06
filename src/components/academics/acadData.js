@@ -288,130 +288,39 @@ const DataNotice = [
 // ]
 
 const Admissions = [
+  
   {
     heading: "Admissions",
-    title: "JoSAA-2022/CSAB-2022/DASA-2022",
+    title: "CCMT Counselling 2023",
     data: [
       {
-        para: "Information for Admission to B.Tech./B.Arch./Dual Degree (B.Tech+M.Tech) Programmes through JoSAA-2022/CSAB-2022/DASA-2022",
-        link: "http://web.nitp.ac.in/uploads22/Admission Notice_ 2022-23_B.Tech_B.Arch_Dual DegreeB.Tech_M.Tech.pdf",
+        para: "CCMT 2023",
+        link: "https://ccmt.admissions.nic.in/",
       },
       {
-        para: " UG Admission 2022-23:The dates of physical reporting at the institute shall be according to the schedule of CSAB-2022",
-      },
-    ],
-  },
-  {
-    heading: "Admissions",
-    title: "CCMT-2021:",
-    data: [
-      {
-        para: "Official website of CCMT 2021 for M/Tech/MURP/MArch admission for the Academic session 2021-22. ",
-        link: "https://ccmt.nic.in/",
-      },
-    ],
-  },
-  {
-    heading: "Admissions",
-    title: "B.Tech./B.Arch. Programmes:",
-    data: [
-      {
-        para: "DETAILS OF ADMISSION PROCESS FOR FIRST SEMESTER (B.Tech./B.Arch.) 2020-21",
-        link: "http://www.nitp.ac.in/uploads20/Notice%20Provisional%20Admission%20Procedure%20through%20JoSAA%20CSAB%2025%20Nov%20to%201%20Dec-25.11.2020.pdf",
-      },
-    ],
-  },
-  {
-    heading: "Admissions",
-    title: "PhD Admission Jan-June 2021:",
-    data: [
-      {
-        para: "PhD admission notice Jan-June 2021",
-        link: "http://www.nitp.ac.in/uploads20/Ph.D%20Admission%20notice-Jan-June'2021,WebSite-1.pdf",
+        para: "Schedule for CCMT 2023",
+        link:
+          "https://drive.google.com/file/d/1lTs8RdH_gPJ9jv1oG9-_Zp2-AuDU7lhV/view?usp=share_link",
       },
       {
-        para: "Interview list for PhD amission Jan-June 2021.",
-        link: "http://www.nitp.ac.in/uploads20/Interview%20List%20PhD%20Admission%20jan%202021.pdf",
+        para:
+          "Contact Details:(Email ID: acad.help@nitp.ac.in Contact: 0612 2371715 Extension no 172)",
+        link: "",
       },
       {
-        para: "Result of interview for for PhD admission ( Ref. 1099/Acad. /20-21 dt.: 05.01.2021).",
-        link: "http://nitp.ac.in/uploads20/Interview-Result-Admission-Jan%202021%20with%20Sign.pdf",
+        para: "Fee Details: Link-1",
+        link:
+          "https://drive.google.com/file/d/1lW4q5JzzeTgzCU7U3KTMUdnVkQRos3rl/view?usp=share_link",
       },
       {
-        para: "Information for Provisional Admission to PhD programme (Ref. 1099/Acad. /20-21 dt.: 05.01.2021). ",
-        link: "http://nitp.ac.in/uploads20/Online%20Admission%20Notice%20With%20Signature.pdf",
+        para: "Fee Details: Link-2",
+        link:
+          "https://drive.google.com/file/d/129jTHCY8iNvkSqg6QQz3y12otgsSco32/view?usp=share_link",
       },
       {
-        para: 'Fees payment link (choose "PHD NEW ADMISSION 2021" from drop down. ',
-        link: "https://www.eduqfix.com/PayDirect/#/student/pay/mnYv9Q6+C+3lIMqghRCwdaqVZusPrJtq2RGJrJFnKnmtz3KBqtsEFPVrZFvoPubG/3466",
-      },
-    ],
-  },
-  {
-    heading: "Admissions",
-    title: "PhD Admission July-Dec 2020:",
-    data: [
-      {
-        para: "Advertisement of Ph.D admission July-Dec'2020 (Odd Sem.).",
-        link: "http://www.nitp.ac.in/uploads20/Final_PhD_Admission_July-Dec-2020-09.09.2020.pdf",
-      },
-      {
-        para: "Notice regarding PhD admission test (Ref: 61/Acad./20-21 dt.03.07.2020).",
-        link: "http://www.nitp.ac.in/uploads/Ph.D%20Admission%20Notice_30_07_2020.pdf",
-      },
-      {
-        para: "Online Interview Schedule for PhD Admission.",
-        link: "http://www.nitp.ac.in/uploads/PhD%20Admission%20Notice-31.07.2020.pdf",
-      },
-      {
-        para: "Change in credentials of applicants w.r.t Notice No.61/Acad/20-21 dated 03.07.2020 for Ph.D admission.",
-        link: "http://www.nitp.ac.in/uploads20/color_phd_05_08_2020.pdf",
-      },
-      {
-        para: "Selection criteria for admission to PhD program.",
-        link: "http://www.nitp.ac.in/uploads20/PhDAdmissionCriteria_05.08.20.pdf",
-      },
-      {
-        para: "List of selected candidates for the admission to PhD programme Odd Semester (July- December' 2020 ) under Full Time/ Part-Time/Sponsored Scheme of PhD and JRF/SRF against admission notice vide Ref. 61/Acad./20-21 dt. 03.07.2020.",
-        link: "http://nitp.ac.in/downloads/academics/phd-admission/Interview-Result-Admission-July'2020_31_08_2020.pdf",
-      },
-      {
-        para: "Information for Provisional Admission to PhD programme through Institute notice no. 61/Acad. /20-21 dt.: 03.07.2020",
-        link: "http://www.nitp.ac.in/uploads20/Final_PhD_Admission_July-Dec-2020-09.09.2020.pdf",
-      },
-      {
-        para: "Notice for PhD students provisionally admitted in the First Semester (July-Dec2O20)",
-        link: "http://www.nitp.ac.in/uploads20/PhD%20students.pdf",
-      },
-    ],
-  },
-  {
-    heading: "Admissions",
-    title: "CCMT 2020:",
-    data: [
-      {
-        para: "Information for Provisional Admission to M.Tech./MURP/M.Arch. Programmes under CCMT 2020 Process.",
-        link: "http://nitp.ac.in/downloads/academics/pg-admission/PG%20Admission%20Academic%20Sesion%202020-21%20through%20CCMT%202020_31_08_2020.pdf",
-      },
-      {
-        para: "Important notice regarding hostel and stipend/scholarship/Assistanceship",
-        link: "http://nitp.ac.in/downloads/academics/pg-admission/NOTICE-NIT%20Patna_18_05_2020.pdf",
-      },
-      {
-        para: "Notice regarding Tuition fee Waiver for SC/ST/PH M.Tech students",
-        link: "http://www.nitp.ac.in/uploads/Tution%20fee%20waiver%2004_06_2020.pdf",
-      },
-      {
-        para: "Provisionally admitted students in PG programme in Academic Section 2020-21 (July-Dec'2020)",
-        link: "http://www.nitp.ac.in/uploads20/CCMT%202020-09.11.2020.jpg",
-      },
-      {
-        para: "Notice for M.Tech/M.Arch/IVIURP students provisionally admitted in the First Semester (July-Dec 2020) ",
-        link: "http://www.nitp.ac.in/uploads20/M.Tech%20students.pdf",
-      },
-      {
-        para: "Notice for M.Tech/M.Arch/MURP & PhD students admitted in July-Dec-2020 semester regarding submission of documents",
-        link: "http://www.nitp.ac.in/uploads20/NOTICE%20M.Tech%20MURP%20M.ARCH%20AND%20Ph.D%202020%20(1).jpg",
+        para: "M.Tech/MURP (PG) REGULATION",
+        link:
+          "https://drive.google.com/file/d/1tQ528Hqf7wP3ZFUdiurzdJQeiVd8QPKL/view?usp=share_link",
       },
     ],
   },
