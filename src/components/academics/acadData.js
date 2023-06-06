@@ -1,4 +1,3 @@
-
 const Datad = [
   {
     heading: "Digital Initiatives of NIT Patna",
@@ -309,164 +308,159 @@ const DataNotice = [
 // ]
 
 const Admissions = [
+  // {
+  //   heading: "Admissions",
+  //   title: "JoSAA-2022/CSAB-2022/DASA-2022",
+  //   data: [
+  //     {
+  //       para: "Information for Admission to B.Tech./B.Arch./Dual Degree (B.Tech+M.Tech) Programmes through JoSAA-2022/CSAB-2022/DASA-2022",
+  //       link:
+  //         "http://web.nitp.ac.in/uploads22/Admission Notice_ 2022-23_B.Tech_B.Arch_Dual DegreeB.Tech_M.Tech.pdf",
+  //     },
+  //     {
+  //       para:
+  //         " UG Admission 2022-23:The dates of physical reporting at the institute shall be according to the schedule of CSAB-2022",
+  //     },
+  //   ],
+  // },
+  // {
+  //   heading: "Admissions",
+  //   title: "CCMT-2021:",
+  //   data: [
+  //     {
+  //       para:
+  //         "Official website of CCMT 2021 for M/Tech/MURP/MArch admission for the Academic session 2021-22. ",
+  //       link: "https://ccmt.nic.in/",
+  //     },
+  //   ],
+  // },
+  // {
+  //   heading: "Admissions",
+  //   title: "B.Tech./B.Arch. Programmes:",
+  //   data: [
+  //     {
+  //       para:
+  //         "DETAILS OF ADMISSION PROCESS FOR FIRST SEMESTER (B.Tech./B.Arch.) 2020-21",
+  //       link:
+  //         "http://www.nitp.ac.in/uploads20/Notice%20Provisional%20Admission%20Procedure%20through%20JoSAA%20CSAB%2025%20Nov%20to%201%20Dec-25.11.2020.pdf",
+  //     },
+  //   ],
+  // },
+  // {
+  //   heading: "Admissions",
+  //   title: "PhD Admission Jan-June 2021:",
+  //   data: [
+  //     {
+  //       para: "PhD admission notice Jan-June 2021",
+  //       link:
+  //         "http://www.nitp.ac.in/uploads20/Ph.D%20Admission%20notice-Jan-June'2021,WebSite-1.pdf",
+  //     },
+  //     {
+  //       para: "Interview list for PhD amission Jan-June 2021.",
+  //       link:
+  //         "http://www.nitp.ac.in/uploads20/Interview%20List%20PhD%20Admission%20jan%202021.pdf",
+  //     },
+  //     {
+  //       para:
+  //         "Result of interview for for PhD admission ( Ref. 1099/Acad. /20-21 dt.: 05.01.2021).",
+  //       link:
+  //         "http://nitp.ac.in/uploads20/Interview-Result-Admission-Jan%202021%20with%20Sign.pdf",
+  //     },
+  //     {
+  //       para:
+  //         "Information for Provisional Admission to PhD programme (Ref. 1099/Acad. /20-21 dt.: 05.01.2021). ",
+  //       link:
+  //         "http://nitp.ac.in/uploads20/Online%20Admission%20Notice%20With%20Signature.pdf",
+  //     },
+  //     {
+  //       para:
+  //         'Fees payment link (choose "PHD NEW ADMISSION 2021" from drop down. ',
+  //       link:
+  //         "https://www.eduqfix.com/PayDirect/#/student/pay/mnYv9Q6+C+3lIMqghRCwdaqVZusPrJtq2RGJrJFnKnmtz3KBqtsEFPVrZFvoPubG/3466",
+  //     },
+  //   ],
+  // },
+  // {
+  //   heading: "Admissions",
+  //   title: "PhD Admission July-Dec 2020:",
+  //   data: [
+  //     {
+  //       para: "Advertisement of Ph.D admission July-Dec'2020 (Odd Sem.).",
+  //       link:
+  //         "http://www.nitp.ac.in/uploads20/Final_PhD_Admission_July-Dec-2020-09.09.2020.pdf",
+  //     },
+  //     {
+  //       para:
+  //         "Notice regarding PhD admission test (Ref: 61/Acad./20-21 dt.03.07.2020).",
+  //       link:
+  //         "http://www.nitp.ac.in/uploads/Ph.D%20Admission%20Notice_30_07_2020.pdf",
+  //     },
+  //     {
+  //       para: "Online Interview Schedule for PhD Admission.",
+  //       link:
+  //         "http://www.nitp.ac.in/uploads/PhD%20Admission%20Notice-31.07.2020.pdf",
+  //     },
+  //     {
+  //       para:
+  //         "Change in credentials of applicants w.r.t Notice No.61/Acad/20-21 dated 03.07.2020 for Ph.D admission.",
+  //       link: "http://www.nitp.ac.in/uploads20/color_phd_05_08_2020.pdf",
+  //     },
+  //     {
+  //       para: "Selection criteria for admission to PhD program.",
+  //       link:
+  //         "http://www.nitp.ac.in/uploads20/PhDAdmissionCriteria_05.08.20.pdf",
+  //     },
+  //     {
+  //       para:
+  //         "List of selected candidates for the admission to PhD programme Odd Semester (July- December' 2020 ) under Full Time/ Part-Time/Sponsored Scheme of PhD and JRF/SRF against admission notice vide Ref. 61/Acad./20-21 dt. 03.07.2020.",
+  //       link:
+  //         "http://nitp.ac.in/downloads/academics/phd-admission/Interview-Result-Admission-July'2020_31_08_2020.pdf",
+  //     },
+  //     {
+  //       para:
+  //         "Information for Provisional Admission to PhD programme through Institute notice no. 61/Acad. /20-21 dt.: 03.07.2020",
+  //       link:
+  //         "http://www.nitp.ac.in/uploads20/Final_PhD_Admission_July-Dec-2020-09.09.2020.pdf",
+  //     },
+  //     {
+  //       para:
+  //         "Notice for PhD students provisionally admitted in the First Semester (July-Dec2O20)",
+  //       link: "http://www.nitp.ac.in/uploads20/PhD%20students.pdf",
+  //     },
+  //   ],
+  // },
   {
     heading: "Admissions",
-    title: "JoSAA-2022/CSAB-2022/DASA-2022",
+    title: "CCMT Counselling 2023",
     data: [
       {
-        para: "Information for Admission to B.Tech./B.Arch./Dual Degree (B.Tech+M.Tech) Programmes through JoSAA-2022/CSAB-2022/DASA-2022",
+        para: "CCMT 2023",
+        link: "https://ccmt.admissions.nic.in/",
+      },
+      {
+        para: "Schedule for CCMT 2023",
         link:
-          "http://web.nitp.ac.in/uploads22/Admission Notice_ 2022-23_B.Tech_B.Arch_Dual DegreeB.Tech_M.Tech.pdf",
+          "https://drive.google.com/file/d/1lTs8RdH_gPJ9jv1oG9-_Zp2-AuDU7lhV/view?usp=share_link",
       },
       {
         para:
-          " UG Admission 2022-23:The dates of physical reporting at the institute shall be according to the schedule of CSAB-2022",        
+          "Contact Details:(Email ID: acad.help@nitp.ac.in Contact: 0612 2371715 Extension no 172)",
+        link: "",
       },
-    ],
-  },
-  {
-    heading: "Admissions",
-    title: "CCMT-2021:",
-    data: [
       {
-        para:
-          "Official website of CCMT 2021 for M/Tech/MURP/MArch admission for the Academic session 2021-22. ",
-        link: "https://ccmt.nic.in/",
-      },
-    ],
-  },
-  {
-    heading: "Admissions",
-    title: "B.Tech./B.Arch. Programmes:",
-    data: [
-      {
-        para:
-          "DETAILS OF ADMISSION PROCESS FOR FIRST SEMESTER (B.Tech./B.Arch.) 2020-21",
+        para: "Fee Details: Link-1",
         link:
-          "http://www.nitp.ac.in/uploads20/Notice%20Provisional%20Admission%20Procedure%20through%20JoSAA%20CSAB%2025%20Nov%20to%201%20Dec-25.11.2020.pdf",
+          "https://drive.google.com/file/d/1lW4q5JzzeTgzCU7U3KTMUdnVkQRos3rl/view?usp=share_link",
       },
-    ],
-  },
-  {
-    heading: "Admissions",
-    title: "PhD Admission Jan-June 2021:",
-    data: [
       {
-        para: "PhD admission notice Jan-June 2021",
+        para: "Fee Details: Link-2",
         link:
-          "http://www.nitp.ac.in/uploads20/Ph.D%20Admission%20notice-Jan-June'2021,WebSite-1.pdf",
+          "https://drive.google.com/file/d/129jTHCY8iNvkSqg6QQz3y12otgsSco32/view?usp=share_link",
       },
       {
-        para: "Interview list for PhD amission Jan-June 2021.",
+        para: "M.Tech/MURP (PG) REGULATION",
         link:
-          "http://www.nitp.ac.in/uploads20/Interview%20List%20PhD%20Admission%20jan%202021.pdf",
-      },
-      {
-        para:
-          "Result of interview for for PhD admission ( Ref. 1099/Acad. /20-21 dt.: 05.01.2021).",
-        link:
-          "http://nitp.ac.in/uploads20/Interview-Result-Admission-Jan%202021%20with%20Sign.pdf",
-      },
-      {
-        para:
-          "Information for Provisional Admission to PhD programme (Ref. 1099/Acad. /20-21 dt.: 05.01.2021). ",
-        link:
-          "http://nitp.ac.in/uploads20/Online%20Admission%20Notice%20With%20Signature.pdf",
-      },
-      {
-        para:
-          'Fees payment link (choose "PHD NEW ADMISSION 2021" from drop down. ',
-        link:
-          "https://www.eduqfix.com/PayDirect/#/student/pay/mnYv9Q6+C+3lIMqghRCwdaqVZusPrJtq2RGJrJFnKnmtz3KBqtsEFPVrZFvoPubG/3466",
-      },
-    ],
-  },
-  {
-    heading: "Admissions",
-    title: "PhD Admission July-Dec 2020:",
-    data: [
-      {
-        para: "Advertisement of Ph.D admission July-Dec'2020 (Odd Sem.).",
-        link:
-          "http://www.nitp.ac.in/uploads20/Final_PhD_Admission_July-Dec-2020-09.09.2020.pdf",
-      },
-      {
-        para:
-          "Notice regarding PhD admission test (Ref: 61/Acad./20-21 dt.03.07.2020).",
-        link:
-          "http://www.nitp.ac.in/uploads/Ph.D%20Admission%20Notice_30_07_2020.pdf",
-      },
-      {
-        para: "Online Interview Schedule for PhD Admission.",
-        link:
-          "http://www.nitp.ac.in/uploads/PhD%20Admission%20Notice-31.07.2020.pdf",
-      },
-      {
-        para:
-          "Change in credentials of applicants w.r.t Notice No.61/Acad/20-21 dated 03.07.2020 for Ph.D admission.",
-        link: "http://www.nitp.ac.in/uploads20/color_phd_05_08_2020.pdf",
-      },
-      {
-        para: "Selection criteria for admission to PhD program.",
-        link:
-          "http://www.nitp.ac.in/uploads20/PhDAdmissionCriteria_05.08.20.pdf",
-      },
-      {
-        para:
-          "List of selected candidates for the admission to PhD programme Odd Semester (July- December' 2020 ) under Full Time/ Part-Time/Sponsored Scheme of PhD and JRF/SRF against admission notice vide Ref. 61/Acad./20-21 dt. 03.07.2020.",
-        link:
-          "http://nitp.ac.in/downloads/academics/phd-admission/Interview-Result-Admission-July'2020_31_08_2020.pdf",
-      },
-      {
-        para:
-          "Information for Provisional Admission to PhD programme through Institute notice no. 61/Acad. /20-21 dt.: 03.07.2020",
-        link:
-          "http://www.nitp.ac.in/uploads20/Final_PhD_Admission_July-Dec-2020-09.09.2020.pdf",
-      },
-      {
-        para:
-          "Notice for PhD students provisionally admitted in the First Semester (July-Dec2O20)",
-        link: "http://www.nitp.ac.in/uploads20/PhD%20students.pdf",
-      },
-    ],
-  },
-  {
-    heading: "Admissions",
-    title: "CCMT 2020:",
-    data: [
-      {
-        para:
-          "Information for Provisional Admission to M.Tech./MURP/M.Arch. Programmes under CCMT 2020 Process.",
-        link:
-          "http://nitp.ac.in/downloads/academics/pg-admission/PG%20Admission%20Academic%20Sesion%202020-21%20through%20CCMT%202020_31_08_2020.pdf",
-      },
-      {
-        para:
-          "Important notice regarding hostel and stipend/scholarship/Assistanceship",
-        link:
-          "http://nitp.ac.in/downloads/academics/pg-admission/NOTICE-NIT%20Patna_18_05_2020.pdf",
-      },
-      {
-        para:
-          "Notice regarding Tuition fee Waiver for SC/ST/PH M.Tech students",
-        link:
-          "http://www.nitp.ac.in/uploads/Tution%20fee%20waiver%2004_06_2020.pdf",
-      },
-      {
-        para:
-          "Provisionally admitted students in PG programme in Academic Section 2020-21 (July-Dec'2020)",
-        link: "http://www.nitp.ac.in/uploads20/CCMT%202020-09.11.2020.jpg",
-      },
-      {
-        para:
-          "Notice for M.Tech/M.Arch/IVIURP students provisionally admitted in the First Semester (July-Dec 2020) ",
-        link: "http://www.nitp.ac.in/uploads20/M.Tech%20students.pdf",
-      },
-      {
-        para:
-          "Notice for M.Tech/M.Arch/MURP & PhD students admitted in July-Dec-2020 semester regarding submission of documents",
-        link:
-          "http://www.nitp.ac.in/uploads20/NOTICE%20M.Tech%20MURP%20M.ARCH%20AND%20Ph.D%202020%20(1).jpg",
+          "https://drive.google.com/file/d/1tQ528Hqf7wP3ZFUdiurzdJQeiVd8QPKL/view?usp=share_link",
       },
     ],
   },
@@ -524,7 +518,8 @@ const Fee = [
         link: "http://web.nitp.ac.in/uploads/Fee_Structure_All.pdf",
       },
       {
-        para: "UG/PG Dual Degree: Fee notification for B.Tech and M.Tech Dual Degree",
+        para:
+          "UG/PG Dual Degree: Fee notification for B.Tech and M.Tech Dual Degree",
         link: "http://web.nitp.ac.in/uploads22/FeeNotification_Dual.pdf",
       },
     ],
@@ -574,30 +569,32 @@ const Format = [
       {
         para:
           "3-SOP for Refund of DRCC Education Loan under Bihar Student Credit Card Scheme",
-        link:
-          "http://web.nitp.ac.in/uploads22/DRCC_Refund_SOP.pdf",
+        link: "http://web.nitp.ac.in/uploads22/DRCC_Refund_SOP.pdf",
       },
       {
         para:
           "4-SOP for Adjustment of DRCC Education Loan under Bihar Student Credit Card Scheme",
-        link:
-          "http://web.nitp.ac.in/uploads22/DRCC_Adjustment_SOP.pdf",
+        link: "http://web.nitp.ac.in/uploads22/DRCC_Adjustment_SOP.pdf",
       },
       {
         para: "5-Application for Demand Letter.",
-        link: "http://web.nitp.ac.in/uploads23/Application%20for%20Demand%20Letter.pdf",
+        link:
+          "http://web.nitp.ac.in/uploads23/Application%20for%20Demand%20Letter.pdf",
       },
       {
         para: "6-Application for Hostel & Mess Fee Receipt.",
-        link: "http://web.nitp.ac.in/uploads23/Application%20for%20Hostel%20&%20Mess%20Fee%20Receipt.pdf",
+        link:
+          "http://web.nitp.ac.in/uploads23/Application%20for%20Hostel%20&%20Mess%20Fee%20Receipt.pdf",
       },
       {
         para: "7-SOP for Educational Verification of Students.",
-        link: "http://web.nitp.ac.in/uploads23/Educational%20Verification_SOP.pdf",
+        link:
+          "http://web.nitp.ac.in/uploads23/Educational%20Verification_SOP.pdf",
       },
       {
         para: "8-SOP for Cancellation of Admission",
-        link: "http://web.nitp.ac.in/uploads22/Application for Cancellation of Admission.pdf",
+        link:
+          "http://web.nitp.ac.in/uploads22/Application for Cancellation of Admission.pdf",
       },
     ],
   },
@@ -848,7 +845,8 @@ const NIRF = [
     data: [
       {
         para: "NIRF 2023 Data",
-        link: "http://web.nitp.ac.in/uploads23/NIRF%20Overall%20data%202023.pdf",
+        link:
+          "http://web.nitp.ac.in/uploads23/NIRF%20Overall%20data%202023.pdf",
       },
       // {
       //   para: "Enterpreneurship Students.",
@@ -999,10 +997,8 @@ const Depts = [
     heading: "Departments",
     data: [
       {
-        para:
-          "Architecture",
-        link:
-          "/arch",
+        para: "Architecture",
+        link: "/arch",
       },
       {
         para: "Chemistry",
@@ -1098,7 +1094,6 @@ const CentreOfExcellence = [
       // },
     ],
   },
-  
 ]
 
 const Convocation = [
@@ -1114,11 +1109,14 @@ const Convocation = [
       {
         link:
           "https://drive.google.com/file/d/1bTEXmXWTCPdMTXcjI_e7hW9wht6MFFQi/view",
-        para: "Video message for graduands from Dr. Subhas Sarkar, Honorable Union Minister of State, Ministry of Education",
+        para:
+          "Video message for graduands from Dr. Subhas Sarkar, Honorable Union Minister of State, Ministry of Education",
       },
       {
-        link: "https://drive.google.com/file/d/1GhjpEr-Z6dzbZjUuFw4KwSkdl9-i7a9F/view",
-        para: "Video message for graduands from Dr G. Satheesh Reddy, Honorable Secretary, Department of Defence R&D and Chairman, DRDO",
+        link:
+          "https://drive.google.com/file/d/1GhjpEr-Z6dzbZjUuFw4KwSkdl9-i7a9F/view",
+        para:
+          "Video message for graduands from Dr G. Satheesh Reddy, Honorable Secretary, Department of Defence R&D and Chairman, DRDO",
       },
       {
         link: "https://www.youtube.com/watch?v=QZeLU_QKr6I",
@@ -1134,8 +1132,7 @@ const Magazine = [
     title: "Special Edition: Institute Coffee-Table Booklet",
     data: [
       {
-        para:
-          "Click here to download (English Version)",
+        para: "Click here to download (English Version)",
         link: "http://web.nitp.ac.in/uploads23/Coffee-Table_NITP.pdf",
       },
     ],
@@ -1145,21 +1142,20 @@ const Magazine = [
     title: "Magazine Vol. 5 (Jan 2023)",
     data: [
       {
-        para:
-          "Click here to download (English Version)",
-        link: "https://drive.google.com/file/d/1FAhIZPthEMvSyceX5ASOAO-yI-BiTQ7Y/view?usp=share_link",
+        para: "Click here to download (English Version)",
+        link:
+          "https://drive.google.com/file/d/1FAhIZPthEMvSyceX5ASOAO-yI-BiTQ7Y/view?usp=share_link",
       },
     ],
-  },  
+  },
   {
     heading: "Magazine of NIT Patna",
     title: "Special Edition: 5 Years Report",
     data: [
       {
-        para:
-          "Click here to download (English Version)",
+        para: "Click here to download (English Version)",
         link: "http://web.nitp.ac.in/uploads23/5_years_Report.pdf",
-      }
+      },
     ],
   },
   {
@@ -1167,9 +1163,9 @@ const Magazine = [
     title: "Magazine Vol. 4 (March 2022)",
     data: [
       {
-        para:
-          "Click here to download (English Version)",
-        link: "http://web.nitp.ac.in/uploads20/Pratibimb/Pratibimb%20Vol.%204,%20March%202022,%20online%20version-16.03.2022.pdf",
+        para: "Click here to download (English Version)",
+        link:
+          "http://web.nitp.ac.in/uploads20/Pratibimb/Pratibimb%20Vol.%204,%20March%202022,%20online%20version-16.03.2022.pdf",
       },
     ],
   },
@@ -1214,7 +1210,6 @@ const Magazine = [
         link:
           "http://web.nitp.ac.in/uploads20/Pratibimb/NIT%20Patna%20E-Magazine.pdf",
       },
-      
     ],
   },
 ]
@@ -1223,78 +1218,68 @@ const AnnualReports = [
     heading: "Annual Reports",
     data: [
       {
-        para:
-          "Annual Report 2019-20(Hindi Version)",
-        link: "http://old.nitp.ac.in/downloads/NIT%20Patna_AR%20Hindi%2019-20-updated.pdf",
+        para: "Annual Report 2019-20(Hindi Version)",
+        link:
+          "http://old.nitp.ac.in/downloads/NIT%20Patna_AR%20Hindi%2019-20-updated.pdf",
       },
       {
-        para:
-          "Annual Report 2019-20(English Version)",
-        link: "http://old.nitp.ac.in/downloads/Annual%20Report%20AR%20%20English%20NIT%20Patna%2019-20-20.04.2021.pdf",
+        para: "Annual Report 2019-20(English Version)",
+        link:
+          "http://old.nitp.ac.in/downloads/Annual%20Report%20AR%20%20English%20NIT%20Patna%2019-20-20.04.2021.pdf",
       },
       {
-        para:
-          "Annual Report 2018-19(Hindi Version)",
-        link: "http://old.nitp.ac.in/downloads/annual_report/Annual%20Report%20Hindi.pdf",
+        para: "Annual Report 2018-19(Hindi Version)",
+        link:
+          "http://old.nitp.ac.in/downloads/annual_report/Annual%20Report%20Hindi.pdf",
       },
       {
-        para:
-          "Annual Report 2018-19(English Version)",
-        link: "http://old.nitp.ac.in/downloads/annual_report/Annual%20Report.pdf",
+        para: "Annual Report 2018-19(English Version)",
+        link:
+          "http://old.nitp.ac.in/downloads/annual_report/Annual%20Report.pdf",
       },
       {
-        para:
-          "Annual Report 2017-18",
-        link: "http://old.nitp.ac.in/downloads/annual_report/AR_17-18.pdfhttp://old.nitp.ac.in/downloads/annual_report/AR_16-17.pdf",
+        para: "Annual Report 2017-18",
+        link:
+          "http://old.nitp.ac.in/downloads/annual_report/AR_17-18.pdfhttp://old.nitp.ac.in/downloads/annual_report/AR_16-17.pdf",
       },
       {
-        para:
-          "Annual Report 2016-17",
+        para: "Annual Report 2016-17",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_16-17.pdf",
       },
       {
-        para:
-          "Annual Report 2015-16",
+        para: "Annual Report 2015-16",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_15-16.pdf",
       },
       {
-        para:
-          "Annual Report 2014-15",
+        para: "Annual Report 2014-15",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_14-15.pdf",
       },
       {
-        para:
-          "Annual Report 2013-14",
+        para: "Annual Report 2013-14",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_13-14.pdf",
       },
       {
-        para:
-          "Annual Report 2012-13",
+        para: "Annual Report 2012-13",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_12-13.pdf",
       },
       {
-        para:
-          "Annual Report 2011-12",
+        para: "Annual Report 2011-12",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_11-12.pdf",
       },
       {
-        para:
-          "Annual Report 2010-11",
+        para: "Annual Report 2010-11",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_10-11.pdf",
       },
       {
-        para:
-          "Annual Report 2009-10",
+        para: "Annual Report 2009-10",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_09-10.pdf",
       },
       {
-        para:
-          "Annual Report 2008-09",
+        para: "Annual Report 2008-09",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_08-09.pdf",
       },
       {
-        para:
-          "Annual Report 2007-08",
+        para: "Annual Report 2007-08",
         link: "http://old.nitp.ac.in/downloads/annual_report/AR_07-08.pdf",
       },
     ],
@@ -1307,10 +1292,8 @@ const Patents = [
     title: `List of Granted Patents`,
     data: [
       {
-        para:
-          "Click here to download the list of Granted Patents.",
-        link:
-          "http://web.nitp.ac.in/uploads23/ListOfGrantedPatents.pdf",
+        para: "Click here to download the list of Granted Patents.",
+        link: "http://web.nitp.ac.in/uploads23/ListOfGrantedPatents.pdf",
       },
     ],
   },
@@ -1319,10 +1302,8 @@ const Patents = [
     title: `List of Published Patents`,
     data: [
       {
-        para: 
-          "Click here to download the list of Published Patents.",
-        link:
-          "http://web.nitp.ac.in/uploads23/ListOfPublishedPatents.pdf",
+        para: "Click here to download the list of Published Patents.",
+        link: "http://web.nitp.ac.in/uploads23/ListOfPublishedPatents.pdf",
       },
     ],
   },
@@ -1351,7 +1332,7 @@ const acadData = {
   centreOfExcellence: CentreOfExcellence,
   convocation: Convocation,
   magazine: Magazine,
-  annualreports:AnnualReports,
+  annualreports: AnnualReports,
   patents: Patents,
 }
 export default acadData
