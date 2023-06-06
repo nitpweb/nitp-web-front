@@ -1,44 +1,44 @@
 .float {
-  position: fixed;
-  display: flex;
-  right: 0;
-  top: 30vh;
-  z-index: 10;
-  transition: all 1s;
+ position: fixed;
+ display: flex;
+ right: 0;
+ top: 30vh;
+ z-index: 10;
+ transition: all 1s;
 }
 #float-menu {
-  max-height: 30vh;
-  overflow: hidden;
-  overflow-y: scroll;
-  scrollbar-width: none;
+ max-height: 30vh;
+ overflow: hidden;
+ overflow-y: scroll;
+ scrollbar-width: none;
 }
 #float-menu::-webkit-scrollbar {
-  display: none;
+ display: none;
 }
 #floatimg {
-  align-self: flex-start;
+ align-self: flex-start;
 }
 .float-card {
-  background: #ff9350;
-  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-  width: 275px;
-  height: 54px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-  transition: all 1s;
+ background: #ff9350;
+ box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.25);
+ border-radius: 8px;
+ width: 275px;
+ height: 54px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 10px;
+ transition: all 1s;
 }
 .float-card > a {
-  text-decoration: none;
-  color: #ffffff;
+ text-decoration: none;
+ color: #ffffff;
 }
 #float-menu {
-  display: none;
+ display: none;
 }
 @media (max-width: 768px) {
-  .float {
-    display: none;
-  }
+ .float {
+  display: none;
+ }
 }

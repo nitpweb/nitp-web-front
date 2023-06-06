@@ -6,20 +6,16 @@ import { useQueryParam } from "use-query-params"
 import ReadInn from "../components/readinn"
 
 const Innovation = () => {
-  const [id] = useQueryParam("id")
+ const [id] = useQueryParam("id")
 
-  return (
-    <Layout>
-      <SEO title="Innovation" />
-      <div className="InnovationPage">
-        {id && String(id).length != 0 ? (
-          <ReadInn id={id} />
-        ) : (
-          <Innovationpage />
-        )}
-      </div>
-    </Layout>
-  )
+ return (
+  <Layout>
+   <SEO title="Innovation" />
+   <div className="InnovationPage">
+    {id && String(id).length != 0 ? <ReadInn id={id} /> : <Innovationpage />}
+   </div>
+  </Layout>
+ )
 }
 
 export default Innovation

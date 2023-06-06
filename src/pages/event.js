@@ -4,10 +4,10 @@ import SEO from "../components/seo"
 import Eventpage from "../components/event"
 
 const Event = () => (
-  <Layout>
-    <SEO title="Events" />
-    <Eventpage />
-  </Layout>
+ <Layout>
+  <SEO title="Events" />
+  <Eventpage />
+ </Layout>
 )
 
 export default Event

@@ -4,10 +4,10 @@ import SEO from "../components/seo"
 import Noticepage from "../components/noticepage"
 
 const Jobs = () => (
-  <Layout>
-    <SEO title="Jobs@NITP" />
-    <Noticepage type="facultystaffjob" title="Jobs@NITP" />
-  </Layout>
+ <Layout>
+  <SEO title="Jobs@NITP" />
+  <Noticepage type="facultystaffjob" title="Jobs@NITP" />
+ </Layout>
 )
 
 export default Jobs
