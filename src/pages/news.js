@@ -6,14 +6,14 @@ import { useQueryParam } from "use-query-params"
 import ReadNews from "../components/readnews"
 
 const News = () => {
-  const [id] = useQueryParam("id")
+ const [id] = useQueryParam("id")
 
-  return (
-    <Layout>
-      <SEO title="News" />
-      {id && String(id).length != 0 ? <ReadNews id={id} /> : <Newspage />}
-    </Layout>
-  )
+ return (
+  <Layout>
+   <SEO title="News" />
+   {id && String(id).length != 0 ? <ReadNews id={id} /> : <Newspage />}
+  </Layout>
+ )
 }
 
 export default News

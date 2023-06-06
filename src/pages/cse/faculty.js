@@ -4,10 +4,10 @@ import SEO from "../../components/seo"
 import Facultypage from "../../components/departments/faculty"
 
 const Csefacultypage = () => (
-  <Layout>
-    <SEO title="CSE|Faculty" />
-    <Facultypage url="cse" dept="Computer Science and Engineering" />
-  </Layout>
+ <Layout>
+  <SEO title="CSE|Faculty" />
+  <Facultypage url="cse" dept="Computer Science and Engineering" />
+ </Layout>
 )
 
 export default Csefacultypage

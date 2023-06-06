@@ -4,10 +4,10 @@ import SEO from "../components/seo"
 import Placementpage from "../components/placements"
 
 const Placement = () => (
-  <Layout>
-    <SEO title="Placements" />
-    <Placementpage />
-  </Layout>
+ <Layout>
+  <SEO title="Placements" />
+  <Placementpage />
+ </Layout>
 )
 
 export default Placement

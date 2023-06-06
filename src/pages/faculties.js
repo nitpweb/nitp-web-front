@@ -4,10 +4,10 @@ import SEO from "../components/seo"
 import Facultypage from "../components/departments/faculty"
 
 const Facultiespage = () => (
-  <Layout>
-    <SEO title="Faculties" />
-    <Facultypage url="faculties" title="Faculty of NIT Patna" />
-  </Layout>
+ <Layout>
+  <SEO title="Faculties" />
+  <Facultypage url="faculties" title="Faculty of NIT Patna" />
+ </Layout>
 )
 
 export default Facultiespage

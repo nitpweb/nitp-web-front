@@ -4,10 +4,10 @@ import SEO from "../../components/seo"
 import Cesyllabus from "../../components/departments/ce/cesyllabus"
 
 const Cesyllabuspage = () => (
-  <Layout>
-    <SEO title="CE|Syllabus" />
-    <Cesyllabus />
-  </Layout>
+ <Layout>
+  <SEO title="CE|Syllabus" />
+  <Cesyllabus />
+ </Layout>
 )
 
 export default Cesyllabuspage
