@@ -4,12 +4,12 @@ import SEO from "../components/seo"
 import MainGallery from "../components/home/Extendedgallery"
 
 const ExtendedGallery = () => {
-  return (
-    <Layout>
-      <SEO title="Gallery" />
-      <MainGallery />
-    </Layout>
-  )
+ return (
+  <Layout>
+   <SEO title="Gallery" />
+   <MainGallery />
+  </Layout>
+ )
 }
 
 export default ExtendedGallery

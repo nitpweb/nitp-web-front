@@ -4,10 +4,10 @@ import SEO from "../../components/seo"
 import Chemsyllabus from "../../components/departments/chem/chemsyllabus"
 
 const Chemsyllabuspage = () => (
-  <Layout>
-    <SEO title="Chemistry|Syllabus" />
-    <Chemsyllabus />
-  </Layout>
+ <Layout>
+  <SEO title="Chemistry|Syllabus" />
+  <Chemsyllabus />
+ </Layout>
 )
 
 export default Chemsyllabuspage

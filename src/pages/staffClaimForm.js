@@ -4,10 +4,10 @@ import SEO from "../components/seo"
 import StaffClaimForms from "../components/StaffClaimForms"
 
 const StaffClaim_Forms = () => (
-  <Layout>
-    <SEO title="Faculties" />
-    <StaffClaimForms />
-  </Layout>
+ <Layout>
+  <SEO title="Faculties" />
+  <StaffClaimForms />
+ </Layout>
 )
 
 export default StaffClaim_Forms

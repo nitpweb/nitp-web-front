@@ -4,10 +4,10 @@ import SEO from "../../components/seo"
 import Mathsyllabus from "../../components/departments/math/mathsyllabus"
 
 const Mathsyllabuspage = () => (
-  <Layout>
-    <SEO title="Mathematics|Syllabus" />
-    <Mathsyllabus />
-  </Layout>
+ <Layout>
+  <SEO title="Mathematics|Syllabus" />
+  <Mathsyllabus />
+ </Layout>
 )
 
 export default Mathsyllabuspage
