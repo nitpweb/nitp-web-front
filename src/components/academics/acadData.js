@@ -430,6 +430,11 @@ const Format = [
   //   link:
   //    "http://web.nitp.ac.in/downloads/Guidelines%20cum%20checklist%20to%20get%20process%20of%20academic%20document.pdf",
   // },
+  {
+    para: "Guidelines cum checklist to get process of academic document",
+    link:
+     "http://web.nitp.ac.in/downloads/Guidelines%20cum%20checklist%20to%20get%20process%20of%20academic%20document.pdf",
+   },
    {
     para:
      "Format for issue of Grade Card / Provisional / Transcript from Exam Section",
