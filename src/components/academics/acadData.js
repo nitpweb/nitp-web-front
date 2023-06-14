@@ -429,14 +429,19 @@ const Format = [
   //   para: "SOP to issue Original Degree Certificate",
   //   link:
   //    "http://web.nitp.ac.in/downloads/Guidelines%20cum%20checklist%20to%20get%20process%20of%20academic%20document.pdf",
-  //  },
-  //  {
-  //   para:
-  //    "Format for issue of Grade Card / Provisional / Transcript from Exam Section",
-  //   link:
-  //    // "http://web.nitp.ac.in/uploads22/REQUEST_LETTER_CUM_DOCUMENT_ISSUE_FORM.pdf",
-  //    "https://web.nitp.ac.in//uploads23/Bilingual%20Request%20Letter%20Cum%20Document%20Issue%20Form.pdf",
-  //  },
+  // },
+  {
+    para: "Guidelines cum checklist to get process of academic document",
+    link:
+     "http://web.nitp.ac.in/downloads/Guidelines%20cum%20checklist%20to%20get%20process%20of%20academic%20document.pdf",
+   },
+   {
+    para:
+     "Format for issue of Grade Card / Provisional / Transcript from Exam Section",
+    link:
+     // "http://web.nitp.ac.in/uploads22/REQUEST_LETTER_CUM_DOCUMENT_ISSUE_FORM.pdf",
+     "https://web.nitp.ac.in//uploads23/Bilingual%20Request%20Letter%20Cum%20Document%20Issue%20Form.pdf",
+   },
    {
     para: "1-SOP to issue Original Degree Certificate",
    // link: "http://web.nitp.ac.in/uploads22/Degree_SOP (6).pdf",
