@@ -312,11 +312,11 @@ const Admissions = [
     para: "CCMT 2023",
     link: "https://ccmt.admissions.nic.in/",
    },
-   //  {
-   //   para: "Schedule for CCMT 2023",
-   //   link:
-   //    "https://drive.google.com/file/d/1lTs8RdH_gPJ9jv1oG9-_Zp2-AuDU7lhV/view?usp=share_link",
-   //  },
+   {
+    para: "Schedule for CCMT 2023",
+    link:
+     "https://drive.google.com/file/d/1lTs8RdH_gPJ9jv1oG9-_Zp2-AuDU7lhV/view?usp=share_link",
+   },
    {
     para:
      "Contact Details:(Email ID: acad.help@nitp.ac.in Contact: 0612 2371715 Extension no 172)",
