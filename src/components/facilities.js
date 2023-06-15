@@ -484,7 +484,7 @@ const Facilitiespage = () => {
          <br />
          <br />
          For any type of Electrical Complaint kindly fill the{" "}
-         <a href="http://old.nitp.ac.in/downloads/Electrical%20Complaint%20Form.pdf">
+         <a href="https://drive.google.com/file/d/11RBaXl7bN9s-YU9jsW4Yxuc3wLCiWAuZ/view?usp=sharing">
           form.
          </a>
         </p>
