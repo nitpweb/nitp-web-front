@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 const centreOfExcellence = () => (
  <Layout>
   <SEO title="Centre of Excellence" />
-  <CentreOfExcellence />
+  <CentreOfExcellence /> 
  </Layout>
 )
 
