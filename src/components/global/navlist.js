@@ -254,11 +254,16 @@ const Academics = [
     title: "TSSC",
     data: "centreOfExcellence",
    },
+//    {
+//     url: "/academics",
+//     title: "ISRO RACS",
+//     data: "centreOfExcellence",
+//    },
    {
-    url: "/academics",
+    url: "/isro-racs",
     title: "ISRO RACS",
-    data: "centreOfExcellence",
-   },
+    data: "isro-racs",
+  },
   ],
  },
  {
