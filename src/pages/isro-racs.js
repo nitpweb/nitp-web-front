@@ -1,10 +1,14 @@
-import React from "react";
-import{navigate}from "gatsby"
+import React, { useEffect } from "react"
 
 function isroRAC() {
-  navigate("https://sites.google.com/view/isroracs/home")
-return(
-  <></>
-)
+ useEffect(() => {
+  window.location.replace("https://sites.google.com/view/isroracs/home")
+ }, [])
+
+ return (
+  <>
+   <h1>ISRO RACs</h1>
+  </>
+ )
 }
 export default isroRAC
