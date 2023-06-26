@@ -10,9 +10,9 @@ const Footer = () => {
      <h3>
       National Institute of Technology Patna
       <br /> Patna, Bihar (800005), India
-      <br /> Phone: +91-0612-237 1715 / 237 2715
+      <br /> Phone: +91-0612-237 2715
       <br />
-      FAX : +91-0612-2670631 , 0612-2660480
+      FAX : +91-0612-2660480
      </h3>
      <div className="social-link">
       <span>
