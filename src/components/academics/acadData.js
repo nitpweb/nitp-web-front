@@ -959,7 +959,8 @@ const CentreOfExcellence = [
  },
  {
   heading: "Centre",
-  title: "2. Centre of Excellence set up by ISRO RACS at NIT Patna :",
+  title: "2. Centre of Excellence set up by ISRO RACS at NIT Patna",
+  link:"https://sites.google.com/view/isroracs/home",
   data: [
    {
     para:
@@ -979,14 +980,19 @@ const CentreOfExcellence = [
    },
    {
     para:
-     "  The short-term projects will be for NITP and other institutes' B. Tech and M. Tech students. The center will also provide Ph.D. scholars and faculty members with long-term research and development projects. The projects can be individual projects or projects in collaboration with another institute. The projects will be scrutinized twice, first by the NITP and subsequently by the ISRO.",
+     "The short-term projects will be for NITP and other institutes' B. Tech and M. Tech students. The center will also provide Ph.D. scholars and faculty members with long-term research and development projects. The projects can be individual projects or projects in collaboration with another institute. The projects will be scrutinized twice, first by the NITP and subsequently by the ISRO.For website visit:",
+     },
+   {
+      para:"For Website follow the link:",  
+      link:"https://sites.google.com/view/isroracs/home",
    },
+   
    // {
    //   imageLink:
    //   "/news.jpg"
    // },
   ],
- },
+ }, 
 ]
 
 const Convocation = [
