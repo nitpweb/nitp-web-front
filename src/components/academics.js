@@ -800,10 +800,11 @@ const Academicspage = () => {
          {acadData.centreOfExcellence.map(e => (
           <div className="row rowmarr3 digital">
            <div>
-            <h3>{e.title}</h3>
+            <h3>{e.title}{e.link && <a href={e.link} style={{fontWeight:'bold',fontSize:'1.2rem',color:'#941b0c'}}>(Website Link):</a>}</h3>
             {e.data.map(item => (
              <>
-              <li>{item.para}</li>
+              <li>{item.para} {item.link && <a href={item.link} style={{color:'blue'}}>Link</a>}</li>
+              
               {/* </a> */}
               {/* <img src={item.imageLink}></img> */}
              </>
