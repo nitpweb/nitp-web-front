@@ -1,14 +1,40 @@
-import React, { useEffect } from "react"
+import React from "react"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import Dephomepage from "../components/departments/dephome"
+import {
+ routeName,
+ title,
+ titleDescription,
+ about,
+ MoU,
+ Administration,
+ RCC,
+ CallForProposal,
+ AssociateInstitutes,
+ Gallery,Contact,datalist
+    
+} from "../components/academics/IsroRac"
+import IsroHome from "../components/academics/isroHome"
 
-function isroRAC() {
- useEffect(() => {
-  window.location.replace("https://sites.google.com/view/isroracs/home")
- }, [])
+const isroRacs = () => (
+ <Layout>
+  <SEO title="ISRO" />
+  <IsroHome
+   routeName={routeName}
+   title={title}
+   TitleDescription={titleDescription}
+   About={about}
+   Administration={Administration}
+   MoU={MoU}
+   RCC={RCC}
+   CallForProposal={CallForProposal}
+   AssociateInstitutes={AssociateInstitutes}
+   Gallery={Gallery}
+   Contact={Contact}
+   datalist={datalist}
+  />
+ </Layout>
+)
 
- return (
-  <>
-   <h1>ISRO RACs</h1>
-  </>
- )
-}
-export default isroRAC
+export default isroRacs;
