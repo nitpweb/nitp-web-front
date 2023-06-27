@@ -24,7 +24,7 @@ export const titleDescription = () => {
 export const about = () => {
  return (
   <>
-   The ISRO's research and development operations in the Eastern India region (including Bihar, Jharkhand, West Bengal, Odisha, Andaman, the Nicobar Islands, and Sikkim) would be coordinated Regional Academic Centre for Space (RAC-S). The RAC-S is a joint collaborative initiative of ISRO and NIT Patna. The Centre aims to act as a facilitator for the promotion of Space Technology related activities in the northern region of the country and to become an ambassador for the capacity building, awareness creation and R & D activities of ISRO.
+  <b>The ISRO's research and development operations in the Eastern India region (including Bihar, Jharkhand, West Bengal, Odisha, Andaman, the Nicobar Islands, and Sikkim) would be coordinated Regional Academic Centre for Space (RAC-S). The RAC-S is a joint collaborative initiative of ISRO and NIT Patna. The Centre aims to act as a facilitator for the promotion of Space Technology related activities in the northern region of the country and to become an ambassador for the capacity building, awareness creation and R & D activities of ISRO.</b>
   </>
  )
 }
@@ -132,7 +132,7 @@ export const Gallery = () => {
          src="https://lh4.googleusercontent.com/Es-TeUA2zkoCXqVLar98vlow6Accf-Q9zMJ-syTnXn1ixHDNiQOlR8vi8HSsQujoXQblsvnWQhIl5eGfvcX51GkextJ-Lfv6DG_8RQpPcchlIqlMVB4Q3N7IvIjFN7jHkA=w1280"
          alt="isro page"
          className="img-wrap"
-         style={{width:'700px',height:'400px',display:'block'}}
+         
         /> 
        </div>
     )
