@@ -46,7 +46,7 @@ export const Administration = () => {
 
     <div>
     <img
-     src="https://lh5.googleusercontent.com/YDyxd76dyA2l-AdUjI6oHEXr_XZVFDw9uxX_CNfjgz423R_S8gAGZyV46iNw_X9Jdu5KtP8n_0i5ktLSMGX8WMtRanqFxmAnUN4Bg1h8DAMCJYZN48NhJmpxTnBkHpXdDg=w1280"
+     src= "https://web.nitp.ac.in/isro-rac/administationCom.png" 
      alt="not valid"
     />
    </div>
@@ -56,7 +56,7 @@ export const RCC = () => {
  return (
     <div style={{paddingTop:'2rem'}}>
     <img
-     src="https://lh3.googleusercontent.com/B_DJu8UFWskRm2OYdGtyOkggdpvEkA7Uwi59Li2L-wQ-_RCKxg-IEehC1avbJnGRRujUBk8XGiIv4C5DUDtOPjlzjsC_tNflEqRMu1bUupjbDp-jPMJiQdtnTWQdKPTLVQ=w1280"
+     src="https://web.nitp.ac.in/isro-rac/RCC.png"
      alt="not valid"
     />
    </div>
@@ -82,9 +82,9 @@ Call for Project Proposal RAC-S ISRO NIT Patna</h2>
  <br></br>
  <strong>Research Areas:</strong>
  <ol>
-   <li> RESEARCH AREAS IN SPACE-2023 of ISRO comprises a set of most urgent and immediate research areas for the academia to select and prepare detailed proposals under this programme.
+   <li> RESEARCH AREAS IN SPACE-2023 of ISRO comprises a set of most urgent and immediate research areas for the academia to select and prepare detailed proposals under this programme.<br/>
 <a href="https://www.isro.gov.in/media_isro/pdf/programme/Research_Areas_in_Space_for_web2023.pdf" style={{color:'blue'}}>https://www.isro.gov.in/media_isro/pdf/programme/Research_Areas_in_Space_for_web2023.pdf</a></li>
-   <li>Please specify the sub-research areas in the domain of (i) Launch Vehicle (ii) Human Space Programme (iii) Satellite Communications (iv) Earth Observations (v) Space Sciences in the " RESEARCH AREAS IN SPACE-2023 of ISRO".</li>
+  <br/> <li>Please specify the sub-research areas in the domain of (i) Launch Vehicle (ii) Human Space Programme (iii) Satellite Communications (iv) Earth Observations (v) Space Sciences in the " RESEARCH AREAS IN SPACE-2023 of ISRO".</li>
  </ol>
 <br/>
 <strong>Selection & Mode of Application:</strong>
@@ -100,8 +100,8 @@ Call for Project Proposal RAC-S ISRO NIT Patna</h2>
    <li>“Application for Grant of Funds including the project proposal” and “Form-C” shall be submitted in the prescribed formats only. Formats are given in the Annexure -1 & 2 in the “RESEARCH AREAS IN SPACE-2023”.</li>
    <li>Endorsement letter from the head of the institute and Certificate from the Investigator form should be duly signed and submitted.</li>
    <li>Proposals submitted must be original in ideation and content. Plagiarism in any form will not be acceptable. All submitted proposals would be subjected to a similarity check and proposals are liable to be rejected if found plagiarized. Any text taken verbatim from other source needs to be identified using quotation marks and proper reference. Applicants are requested to pre-check their proposals for plagiarism before uploading. Proposals found containing plagiarized content will be rejected.</li>
-   <li>The last date for submitting the proposals under this scheme is July 15th, 2023.</li>
-   <li>Proposals can be submitted online available at <a href="www.nitp.ac.in/racs" style={{color:'blue'}}>www.nitp.ac.in/racs</a></li>
+   <li>The last date for submitting the proposals under this scheme is July 27th,2023.</li>
+   <li>Proposals can be submitted online available at <a href="https://www.nitp.ac.in/isro-racs/" style={{color:'blue'}}>https://www.nitp.ac.in/isro-racs/</a></li>
    <li>Any queries can be addressed at <a href="racs@nitp.ac.in" style={{color:'blue'}}>racs@nitp.ac.in</a>.</li>
 </ol>
 <br/>
@@ -109,7 +109,7 @@ Call for Project Proposal RAC-S ISRO NIT Patna</h2>
 <p style={{paddingLeft:'2rem'}}>Please find the Project Template on this <a href="https://drive.google.com/file/d/1sFGU9D7k_MkKHeAC1wBKfrhAiddYq1Ws/view" style={{color:'blue'}}>link</a>.</p> 
 <br></br>
 <strong>Project Submission:</strong><br/><br/>
-<p style={{paddingLeft:'2rem'}}>For project submission, use following<a href="https://docs.google.com/forms/d/e/1FAIpQLSfMr3w-o6RONzjAWBSILRNBdRhZzR9KEuqup0u1Y_P30NvbJg/viewform?pli=1" style={{color:'blue'}}>link</a>.</p> 
+<p style={{paddingLeft:'2rem'}}>For project submission, use following <a href="https://docs.google.com/forms/d/e/1FAIpQLSfMr3w-o6RONzjAWBSILRNBdRhZzR9KEuqup0u1Y_P30NvbJg/viewform?pli=1" style={{color:'blue'}}>link</a>.</p> 
 </p>
 <br/>
 </div>
@@ -119,7 +119,7 @@ export const AssociateInstitutes = () => {
  return (
     <div style={{paddingTop:'2rem'}} >
     <img
-     src="https://lh4.googleusercontent.com/LKmimz9cTQnofIVztcfEHjuC6xKIeWOiQJ9OpYdnqWicyEJBBk1cTNtNTxMAvl5JUHsI-WnWO9aA9qlS0tcKbKHCyJBZVk6bpDYARddYPx7IUZV_08WyghfTpe6Wdnt0DA=w1280"
+     src="https://web.nitp.ac.in/isro-rac/AssociatedInstitue.png"
      alt="not valid" 
     />
     </div>
@@ -129,7 +129,7 @@ export const Gallery = () => {
     return (
         <div className="img" style={{paddingTop:'2rem'}} > 
         <img
-         src="https://lh4.googleusercontent.com/Es-TeUA2zkoCXqVLar98vlow6Accf-Q9zMJ-syTnXn1ixHDNiQOlR8vi8HSsQujoXQblsvnWQhIl5eGfvcX51GkextJ-Lfv6DG_8RQpPcchlIqlMVB4Q3N7IvIjFN7jHkA=w1280"
+         src="https://web.nitp.ac.in/isro-rac/racisro.png"
          alt="isro page"
          className="img-wrap"
          
@@ -160,7 +160,7 @@ export const Gallery = () => {
        // img: "/department/activities.svg",
       },
       {
-       title: "Call For Proposal",
+       title: `**Call For Proposal`,
        data: "CallForProposal",
        // img: "/department/contact.svg",
       },

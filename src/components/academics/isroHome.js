@@ -123,8 +123,8 @@ const IsroHome = ({
       <>
        <div className="layoutrow" id ="CallForProposal">
         <div className="layoutabout">
-         <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
-          Call For Proposal
+        <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
+           Call For Proposal
          </h1>
          <br/>
         </div>
