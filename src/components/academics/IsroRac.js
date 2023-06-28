@@ -46,7 +46,7 @@ export const Administration = () => {
 
     <div>
     <img
-     src="https://lh5.googleusercontent.com/YDyxd76dyA2l-AdUjI6oHEXr_XZVFDw9uxX_CNfjgz423R_S8gAGZyV46iNw_X9Jdu5KtP8n_0i5ktLSMGX8WMtRanqFxmAnUN4Bg1h8DAMCJYZN48NhJmpxTnBkHpXdDg=w1280"
+     src= "https://web.nitp.ac.in/isro-rac/administationCom.png" 
      alt="not valid"
     />
    </div>
@@ -56,7 +56,7 @@ export const RCC = () => {
  return (
     <div style={{paddingTop:'2rem'}}>
     <img
-     src="https://lh3.googleusercontent.com/B_DJu8UFWskRm2OYdGtyOkggdpvEkA7Uwi59Li2L-wQ-_RCKxg-IEehC1avbJnGRRujUBk8XGiIv4C5DUDtOPjlzjsC_tNflEqRMu1bUupjbDp-jPMJiQdtnTWQdKPTLVQ=w1280"
+     src="https://web.nitp.ac.in/isro-rac/RCC.png"
      alt="not valid"
     />
    </div>
@@ -119,7 +119,7 @@ export const AssociateInstitutes = () => {
  return (
     <div style={{paddingTop:'2rem'}} >
     <img
-     src="https://lh4.googleusercontent.com/LKmimz9cTQnofIVztcfEHjuC6xKIeWOiQJ9OpYdnqWicyEJBBk1cTNtNTxMAvl5JUHsI-WnWO9aA9qlS0tcKbKHCyJBZVk6bpDYARddYPx7IUZV_08WyghfTpe6Wdnt0DA=w1280"
+     src="https://web.nitp.ac.in/isro-rac/AssociatedInstitue.png"
      alt="not valid" 
     />
     </div>
@@ -129,7 +129,7 @@ export const Gallery = () => {
     return (
         <div className="img" style={{paddingTop:'2rem'}} > 
         <img
-         src="https://lh4.googleusercontent.com/Es-TeUA2zkoCXqVLar98vlow6Accf-Q9zMJ-syTnXn1ixHDNiQOlR8vi8HSsQujoXQblsvnWQhIl5eGfvcX51GkextJ-Lfv6DG_8RQpPcchlIqlMVB4Q3N7IvIjFN7jHkA=w1280"
+         src="https://web.nitp.ac.in/isro-rac/racisro.png"
          alt="isro page"
          className="img-wrap"
          
