@@ -1,6 +1,7 @@
 const { createRemoteFileNode } = require("gatsby-source-filesystem")
 
 const galleryImages = require("./src/components/home/images/images.json")
+const homeBannerImages = require("./src/components/home/nitpBackImages/images.json")
 
 exports.sourceNodes = async ({
  actions,
@@ -9,6 +10,7 @@ exports.sourceNodes = async ({
 }) => {
  const { createNode } = actions
  const NODE_TYPE = "galleryImage"
+
  galleryImages.forEach((image, index) => {
   createNode({
    id: createNodeId(`${NODE_TYPE}-${index}`),
@@ -26,6 +28,26 @@ exports.sourceNodes = async ({
    },
   })
  })
+
+ const HOME_BANNER_NODE_TYPE = "homeBannerImages"
+
+ homeBannerImages.forEach((image, index) => {
+  createNode({
+   id: createNodeId(`${HOME_BANNER_NODE_TYPE}-${index}`),
+   imgData: {
+    id: image,
+    imgUrl: `http://web.nitp.ac.in/home/images/${image}`,
+   },
+   featuredImage: null,
+   parent: null,
+   children: [],
+   internal: {
+    type: HOME_BANNER_NODE_TYPE,
+    content: JSON.stringify(image),
+    contentDigest: createContentDigest(image),
+   },
+  })
+ })
 }
 
 exports.createSchemaCustomization = ({ actions }) => {
@@ -38,6 +60,16 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
 
     type galleryImageData {
+      id: String
+      imgUrl: String
+    }
+
+    type homeBannerImages implements Node {
+      imgData: homeBannerImageData
+      featuredImg: File @link(from: "fields.localImage")
+    }
+
+    type homeBannerImageData {
       id: String
       imgUrl: String
     }
@@ -61,6 +93,23 @@ exports.onCreateNode = async ({
   })
 
   // if the file was created, extend the node with "localFile"
+  if (fileNode) {
+   createNodeField({ node, name: "localImage", value: fileNode.id })
+  }
+ }
+
+ if (
+  node.internal.type === "homeBannerImages" &&
+  node.imgData.imgUrl !== null
+ ) {
+  const fileNode = await createRemoteFileNode({
+   url: node.imgData.imgUrl,
+   parentNodeId: node.id,
+   createNode,
+   createNodeId,
+   getCache,
+  })
+
   if (fileNode) {
    createNodeField({ node, name: "localImage", value: fileNode.id })
   }
