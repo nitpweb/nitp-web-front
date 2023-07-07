@@ -123,7 +123,18 @@ const Csesyllabus = props => {
        </div>
       </div>
      </div>
-
+     {syllabus === Coursepg && (
+      <ul className="rowmarl3 layoutrow">
+       <li>
+        <a
+         href="https://drive.google.com/file/d/10lMN1S9iJlBIf8iJfvlx4stTA6j0fQfN/view?usp=drivesdk"
+         target="_blank"
+        >
+         <h3>PG(M.Tech/MURP) syllabus course</h3>
+        </a>
+       </li>
+      </ul>
+     )}
      {/* {
               (syllabus === Coursedd) &&
               <ul>
