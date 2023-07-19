@@ -29,6 +29,10 @@ const studentexchange =
  " National Institute of Technology (NIT), Patna has recently signed a memorandum of understanding (MoU) with the Handong Global University, Pohang, South Korea for exchange of students, faculty and research. The first six-month exchange programme will be funded by UNICEF. The research areas in focus are urban planning, urban development, infrastructure development and electrical engineering, all of which relate most directly to Bihar’s immediate needs. South Korea is known the world over for its highly advanced monorail system which also has a low impact on traffic flow on roads under construction. Automated driverless trains are another feature of the monorail; an Indian student may want to study. Apart from the concrete advantages, exchange of students and faculty and exposure to the teaching practices in South Korea is likely to have enormous impact on engineering education as being imparted at NIT Patna in the coming days."
 
 const nss = `The National Service Scheme (NSS) was launched in 1969 and is an Indian government-sponsored public service program conducted by the Department of Youth Affairs and Sports of the Government of India aimed at developing student's personality through community service, NSS is a voluntary association of young people in Colleges, Universities and at +2 level working for a campus-community linkage. The NSS chapter at NIT Patna follows the cardinal principle of the NSS programme which is aimed at organising events by the students themselves such that both students and teachers get a sense of involvement in the tasks of nation building through their combined participation in community service. The programme aims to inculcate social welfare in students, and to provide service to society without bias. NSS volunteers work to ensure that everyone who is needy gets help to enhance their standard of living and lead a life of dignity.`
+
+const Ecell = `
+Entrepreneurship Cell, NIT Patna is a non-profit college club run by students of NIT Patna, founded in 2013 with the objective of increasing the spirit of Entrepreneurship among students of National Institute of Technology Patna. Entrepreneurship Cell NIT Patna helps the aspiring entrepreneurs to start and grow their businesses by creating a pathway of various opportunities like interactive sessions with professionals and founders, business competitions, business quizzes and financial awareness programs. This helps foster entrepreneurial thinking, promote business knowledge and increase confidence in students. Our vision is to help students who have an idea, product and burning desire by providing convincing skills, market exposure and investors for their start-up. This cell helps students to understand the business world by actually working in a start-up.
+`
 const firstYear = [
  {
   heading: `Welcome! 1st Year`,
@@ -282,6 +286,26 @@ const Studentpage = () => {
        </div>
        <div className="row imgcolstyle backgroundimage">
         <img src={exchange} className="img-fluid" loading="lazy" />
+       </div>
+      </div>
+     )}
+     {view == "Ecell" && (
+      <div className="layoutrow digital" id="sep">
+       <div className="row imgcolstyle backgroundimage">
+        <img src={exchange} className="img-fluid" loading="lazy" />
+       </div>
+       <div className="row rowmarl3">
+        <h1>Entrepreneurship Cell, NIT Patna </h1>
+       </div>
+       <div className="row rowmarl3">
+        <div className="row">
+         <h3>(Making Dreamers into Entrepreneurs)</h3>
+        </div>
+        <div className="row">
+         <h2>Prof.-In-Charge: Dr. Om Ji Shukla</h2>
+        </div>
+        <h3>Email: ecell@nitp.ac.in</h3>
+        <p>{Ecell}</p>
        </div>
       </div>
      )}
