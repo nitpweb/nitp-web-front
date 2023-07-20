@@ -254,16 +254,16 @@ const Academics = [
     title: "TSSC",
     data: "centreOfExcellence",
    },
-//    {
-//     url: "/academics",
-//     title: "ISRO RACS",
-//     data: "centreOfExcellence",
-//    },
+   //    {
+   //     url: "/academics",
+   //     title: "ISRO RACS",
+   //     data: "centreOfExcellence",
+   //    },
    {
     url: "/isro-racs",
     title: "ISRO RACS",
     data: "isro-racs",
-  },
+   },
   ],
  },
  {
@@ -470,6 +470,11 @@ const Students = [
     url: "/students",
     title: "NSS@NITP",
     data: "nss",
+   },
+   {
+    url: "/students",
+    title: "E-cell",
+    data: "Ecell",
    },
   ],
  },
