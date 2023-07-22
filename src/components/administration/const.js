@@ -131,18 +131,18 @@ BCD, Govt. of Bihar`,
 
 const IDC = [
  {
-  name: "Prof. Prakash Chandra",
+  name: "Prof. Samrat Mukherjee",
   designation: "Dean(Student Welfare)",
   type: "Chairman",
  },
  {
-  name: "Prof. A. R. Quaff",
+  name: "Prof. Prakash Chandra",
   designation: "Director's Nominee",
   type: "Member",
  },
  {
-  name: "Prof. Samrat Mukherjee",
-  designation: "Chairman Hostel Management Committee",
+  name: "Dr. Bambam Kumar",
+  designation: "Asst. Chairman Hostel Management Committee",
   type: "Member",
  },
  {
@@ -158,12 +158,12 @@ const IDC = [
  },
  {
   name:
-   "Mr. Anurag Pandey, Roll No. 1906030, CSE Ms. Surapaneni Vipanchika, Roll No. - 1901111, MED",
+   "Mr. Rajeev Ranjan, Roll No. 2006201, CSE Ms. Madduri Hemadruthi, Roll No. - 2003087, CE",
   designation: "Students Representative nominated by Dean (Student Welfare)",
   type: "Member",
  },
  {
-  name: "",
+  name: "Dr. Asit Narayan",
   designation: "Registrar, NIT Patna",
   type: "Member Secretary",
  },
