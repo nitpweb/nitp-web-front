@@ -35,22 +35,27 @@ export const about = () => {
     non-teaching staff members in the first phase. Research and academic
     programmes (bachelor's, master's and doctoral) at NIT Patna are driven by a
     well-known faculty, many of whom are reputed for their research
-    contributions internationally. Members of the faculty of the institute have
-    won many prestigious awards and recognitions, including the word ranking of
-    top 2% scientist given by Stanford University, USA, Royal Society
-    fellowships and awards, AD Scientific Index etc. At present the Institute
-    has seven disciplines viz. Architecture and planning, Civil Engg., Compute
-    Science & Engg., Electrical Engg., Electronics & Communication Engg.,
-    Mechanical Engg., Physics and Mathematics and well established departments
-    of Humanities and Social Science. The Institute alumni have distinguished
-    themselves through their achievements in and contributions to leading
-    researchers, industry, academics, business, government and social domains.
-    Located at on the south bank of holy river Ganges behind Gandhi Ghat, one of
-    the most important and reverential place of Patna. The Gandhi Ghat is
-    associated with the immersion of ashes of father of the Nation Mahatma
-    Gandhi in the river Ganges. The campus has a picturesque river view with
-    historic building presenting a spectacle of architectural delight and
-    natural beauty. Refer the link for more detail: https://www.nitp.ac.in/
+    contributions internationally.
+    <br />
+    Members of the faculty of the institute have won many prestigious awards and
+    recognitions, including the word ranking of top 2% scientist given by
+    Stanford University, USA, Royal Society fellowships and awards, AD
+    Scientific Index etc. At present the Institute has seven disciplines viz.
+    Architecture and planning, Civil Engg., Compute Science & Engg., Electrical
+    Engg., Electronics & Communication Engg., Mechanical Engg., Physics and
+    Mathematics and well established departments of Humanities and Social
+    Science. The Institute alumni have distinguished themselves through their
+    achievements in and contributions to leading researchers, industry,
+    academics, business, government and social domains. Located at on the south
+    bank of holy river Ganges behind Gandhi Ghat, one of the most important and
+    reverential place of Patna. The Gandhi Ghat is associated with the immersion
+    of ashes of father of the Nation Mahatma Gandhi in the river Ganges. The
+    campus has a picturesque river view with historic building presenting a
+    spectacle of architectural delight and natural beauty. <br />
+    Refer the link for more detail:{" "}
+    <a href="https://www.nitp.ac.in/" style={{ color: "blue" }}>
+     https://www.nitp.ac.in/
+    </a>
    </b>
   </>
  )
