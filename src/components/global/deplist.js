@@ -23,3 +23,10 @@ export const DepListr = {
  "Electrical Engineering": "ee",
  "Mechanical Engineering": "me",
 }
+
+export const international = {
+ "International Affairs": "internationalAffairs",
+}
+export const interList = {
+ internationalAffairs: "International Affairs",
+}

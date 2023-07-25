@@ -30,6 +30,7 @@ export const ImportantLinkStyle = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    white-space: nowrap;
     color: #696969;
     overflow: hidden;
     /* filter: grayscale(100%); */
