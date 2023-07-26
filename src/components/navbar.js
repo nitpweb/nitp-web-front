@@ -14,7 +14,7 @@ import sidedropicon from "./home/img/dropdown.svg"
 import { NavbarStyle } from "./styles/navbar"
 import { Dropdown } from "./global/dropdown"
 import Navlist from "./global/navlist"
-import { Deplist, DepListr } from "./global/deplist"
+import { Deplist, DepListr, international, interList } from "./global/deplist"
 import Dropnew from "./global/dropnew"
 import DynamicLink from "./global/dynamicurl"
 import { isBrowser } from "./isBrowser"
@@ -286,6 +286,33 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
       >
        Faculty
       </Link>
+     </div>
+    </div>
+   )}
+   {(international[department] || interList[pathname]) && (
+    <div className="dep-nav-row">
+     <div className="col-6">
+      <Link
+       className="dep-nav-col dep-link-item"
+       to={`/${department ? international[department] : pathname}`}
+      >
+       {department ? department : interList[pathname]}
+      </Link>
+     </div>
+     <div className="col-6">
+      <Link
+       to={`/${department ? international[department] : pathname}/events`}
+       className="dep-link-item"
+      >
+       Events
+      </Link>
+      {/* 
+      <Link
+       to={`/${department ? international[department] : pathname}/`}
+       className="dep-link-item"
+      >
+       Contact
+      </Link>*/}
      </div>
     </div>
    )}

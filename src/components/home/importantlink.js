@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import notice from "./img/notice.png"
+import { Link } from "gatsby"
 import event from "./img/event.png"
 import news from "./img/news.png"
 import innovation from "./img/innovation.png"
@@ -51,10 +52,24 @@ const Importantlink = () => {
       <h3>ALUMNI</h3>
      </div>
     </a>
-    <a href="#one">
+    <a href="/internationalAffairs">
      <div className="implink">
       <img className="linkimg" src={innovation} alt="teqip" />
-      <h3>INNOVATION</h3>
+      <Link href="/internationalAffairs">
+       <h3 style={{ fontSize: "0.83rem", paddingBottom: "10px" }}>
+        INTERNATIONAL <br />
+        <span
+         style={{
+          textAlign: "center",
+          paddingLeft: "22px",
+          fontSize: "0.8rem",
+          paddingBottom: "5px",
+         }}
+        >
+         AFFAIRS
+        </span>
+       </h3>
+      </Link>
       {/* <div className="lead">
               <p>Information of all the innovations</p>
             </div> */}
