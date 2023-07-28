@@ -312,11 +312,11 @@ const Admissions = [
     para: "CCMT 2023",
     link: "https://ccmt.admissions.nic.in/",
    },
-  //  {
-  //   para: "Schedule for CCMT 2023",
-  //   link:
-  //    "https://drive.google.com/file/d/1lTs8RdH_gPJ9jv1oG9-_Zp2-AuDU7lhV/view?usp=share_link",
-  //  },
+   //  {
+   //   para: "Schedule for CCMT 2023",
+   //   link:
+   //    "https://drive.google.com/file/d/1lTs8RdH_gPJ9jv1oG9-_Zp2-AuDU7lhV/view?usp=share_link",
+   //  },
    {
     para:
      "Contact Details:(Email ID: acad.help@nitp.ac.in Contact: 0612 2371715 Extension no 172)",
@@ -425,12 +425,12 @@ const Format = [
  {
   heading: "Format",
   data: [
-  //  {
-  //   para: "SOP to issue Original Degree Certificate",
-  //   link:
-  //    "http://web.nitp.ac.in/downloads/Guidelines%20cum%20checklist%20to%20get%20process%20of%20academic%20document.pdf",
-  // },
-  {
+   //  {
+   //   para: "SOP to issue Original Degree Certificate",
+   //   link:
+   //    "http://web.nitp.ac.in/downloads/Guidelines%20cum%20checklist%20to%20get%20process%20of%20academic%20document.pdf",
+   // },
+   {
     para: "Guidelines cum checklist to get process of academic document",
     link:
      "http://web.nitp.ac.in/downloads/Guidelines%20cum%20checklist%20to%20get%20process%20of%20academic%20document.pdf",
@@ -444,56 +444,65 @@ const Format = [
    },
    {
     para: "1-SOP to issue Original Degree Certificate",
-   // link: "http://web.nitp.ac.in/uploads22/Degree_SOP (6).pdf",
-    link:"https://drive.google.com/file/d/1ojThnsLJgSUHY4Zr0QCTGHdxOUvLfY6t/view?usp=sharing",
+    // link: "http://web.nitp.ac.in/uploads22/Degree_SOP (6).pdf",
+    link:
+     "https://drive.google.com/file/d/1ojThnsLJgSUHY4Zr0QCTGHdxOUvLfY6t/view?usp=sharing",
    },
    {
     para: "2-SOP to issue Institute Leaving/Transfer Cum Migration Certificate",
     //link: "http://web.nitp.ac.in/uploads22/Migration_SOP (1).pdf",
-    link:"https://drive.google.com/file/d/1AymHBdkagkjfUfklSer4pg-3iaqlXhjN/view?usp=sharing",
+    link:
+     "https://drive.google.com/file/d/1AymHBdkagkjfUfklSer4pg-3iaqlXhjN/view?usp=sharing",
    },
    {
     para:
      "3-SOP for Refund of DRCC Education Loan under Bihar Student Credit Card Scheme",
     //link: "http://web.nitp.ac.in/uploads22/DRCC_Refund_SOP.pdf",
-    link:"https://drive.google.com/file/d/1zNu1j024LSJfHPmrktPLs4ci6SL5O-C4/view?usp=sharing",
+    link:
+     "https://drive.google.com/file/d/1zNu1j024LSJfHPmrktPLs4ci6SL5O-C4/view?usp=sharing",
    },
    {
     para:
      "4-SOP for Adjustment of DRCC Education Loan under Bihar Student Credit Card Scheme",
-   // link: "http://web.nitp.ac.in/uploads22/DRCC_Adjustment_SOP.pdf",
-    link:"https://drive.google.com/file/d/1t7NsBr6xqNqgUyuuxW-l-vFE35zrc3vi/view?usp=sharing",
+    // link: "http://web.nitp.ac.in/uploads22/DRCC_Adjustment_SOP.pdf",
+    link:
+     "https://drive.google.com/file/d/1t7NsBr6xqNqgUyuuxW-l-vFE35zrc3vi/view?usp=sharing",
    },
    {
     // para: "5-Application for Demand Letter.",
-    para: '5-SOP for Educational Verification',
+    para: "5-SOP for Educational Verification",
     // link:
     //  "http://web.nitp.ac.in/uploads23/Application%20for%20Demand%20Letter.pdf",
-      link:" https://drive.google.com/file/d/1m5VB8SMkkllmXRZjaxWi8xc8E7PMGfkB/view?usp=sharing",
+    link:
+     " https://drive.google.com/file/d/1m5VB8SMkkllmXRZjaxWi8xc8E7PMGfkB/view?usp=sharing",
    },
    {
     // para: "6-Application for Hostel & Mess Fee Receipt.",
-    para:'6-Format of Application to Dean(Academic)',
+    para: "6-Format of Application to Dean(Academic)",
     // link:
     //  "http://web.nitp.ac.in/uploads23/Application%20for%20Hostel%20&%20Mess%20Fee%20Receipt.pdf",
-     link:"https://drive.google.com/file/d/19ZBDsaDluGRBJO-LgBtdKYqo_8CQrbmx/view?usp=sharing",
+    link:
+     "https://drive.google.com/file/d/19ZBDsaDluGRBJO-LgBtdKYqo_8CQrbmx/view?usp=sharing",
    },
    {
     // para: "7-SOP for Educational Verification of Students.",
-    para:'7-Format of Application for Demand Letter',
+    para: "7-Format of Application for Demand Letter",
     //link: "http://web.nitp.ac.in/uploads23/Educational%20Verification_SOP.pdf",
-    link:"https://drive.google.com/file/d/18F1po6Nxh7ashYBG4C4A9exOaaB5-Jy2/view?usp=sharing",
+    link:
+     "https://drive.google.com/file/d/18F1po6Nxh7ashYBG4C4A9exOaaB5-Jy2/view?usp=sharing",
    },
    {
     // para: "8-SOP for Cancellation of Admission",
-    para:'8-Format of Application for Hostel & Mess Fee Receipt',
+    para: "8-Format of Application for Hostel & Mess Fee Receipt",
     // link:
     //  "http://web.nitp.ac.in/uploads22/Application for Cancellation of Admission.pdf",
-     link:"https://drive.google.com/file/d/1Rao4M6a0iKYvyZxQK-Ijo5U5--78zqlE/view?usp=sharing",
+    link:
+     "https://drive.google.com/file/d/1Rao4M6a0iKYvyZxQK-Ijo5U5--78zqlE/view?usp=sharing",
    },
    {
-    para:'9-Format of Application for Cancellation of Admission',
-    link:"https://drive.google.com/file/d/1p60py5fKWJ_iWn9s17NCtStlhfOTRqea/view?usp=sharing",
+    para: "9-Format of Application for Cancellation of Admission",
+    link:
+     "https://drive.google.com/file/d/1p60py5fKWJ_iWn9s17NCtStlhfOTRqea/view?usp=sharing",
    },
   ],
  },
@@ -960,7 +969,7 @@ const CentreOfExcellence = [
  {
   heading: "Centre",
   title: "2. Centre of Excellence set up by ISRO RACS at NIT Patna",
-  link:"https://sites.google.com/view/isroracs/home",
+  link: "https://sites.google.com/view/isroracs/home",
   data: [
    {
     para:
@@ -981,18 +990,18 @@ const CentreOfExcellence = [
    {
     para:
      "The short-term projects will be for NITP and other institutes' B. Tech and M. Tech students. The center will also provide Ph.D. scholars and faculty members with long-term research and development projects. The projects can be individual projects or projects in collaboration with another institute. The projects will be scrutinized twice, first by the NITP and subsequently by the ISRO.For website visit:",
-     },
-   {
-      para:"For Website follow the link:",  
-      link:"https://sites.google.com/view/isroracs/home",
    },
-   
+   {
+    para: "For Website follow the link:",
+    link: "https://sites.google.com/view/isroracs/home",
+   },
+
    // {
    //   imageLink:
    //   "/news.jpg"
    // },
   ],
- }, 
+ },
 ]
 
 const Convocation = [
@@ -1026,6 +1035,17 @@ const Convocation = [
 ]
 
 const Magazine = [
+ {
+  heading: "Magazine of NIT Patna",
+  title: "Magazine Vol. 6 (Jan 2023)",
+  data: [
+   {
+    para: "Click here to download (English Version)",
+    link:
+     "https://drive.google.com/file/d/1v94mM-W9xegDIJ3ZOjTznL2FgioDSCaq/view?usp=sharing",
+   },
+  ],
+ },
  {
   heading: "Magazine of NIT Patna",
   title: "Special Edition: Institute Coffee-Table Booklet",
