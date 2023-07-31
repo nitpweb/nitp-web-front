@@ -310,7 +310,7 @@ export const TimeTable = [
     link:"http://web.nitp.ac.in/uploads23/FirstYearTimeTable_AllSubjectsByCSED_July-Dec2022.pdf",
   },*/
  {
-  title: "Click here for the time table of CSED (all semesters)",
+  title: "Click here for the time table of CSED (for all semesters)",
   link:
    "https://www.dropbox.com/sh/76m1ukfspklwuip/AABfILH6jGMDc9F8y4BefvRaa?dl=0",
  },
