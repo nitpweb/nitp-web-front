@@ -13,6 +13,13 @@ const Footer = () => {
       <br /> Phone: +91-0612-237 2715
       <br />
       FAX : +91-0612-2660480
+      <br />
+      Academic section: acad.help@nitp.ac.in
+      <br />
+      Exam department: exam.help@nitp.ac.in
+      <br />
+      Mis section: mis.help@nitp.ac.in
+      <br />
      </h3>
      <div className="social-link">
       <span>
