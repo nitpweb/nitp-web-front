@@ -55,15 +55,15 @@ const Importantlink = () => {
     <a href="/internationalAffairs">
      <div className="implink">
       <img className="linkimg" src={innovation} alt="teqip" />
-      <Link
+      {/* <Link
        href="/internationalAffairs"
        style={{ fontSize: "0.7rem", paddingBottom: "5px" }}
-      >
-       <h3 style={{ fontSize: "0.7rem" }}>
-        INTERNATIONAL <br />
-        AFFAIRS
-       </h3>
-      </Link>
+      > */}
+      <h3 style={{ fontSize: "0.7rem" }}>
+       INTERNATIONAL <br />
+       AFFAIRS
+      </h3>
+      {/* </Link> */}
       {/* <div className="lead">
               <p>Information of all the innovations</p>
             </div> */}
