@@ -306,17 +306,6 @@ const DataNotice = [
 const Admissions = [
  {
   heading: "Admissions",
-  title: "JoSAA/CSAB/DASA-2023",
-  data: [
-   {
-    para: "Information",
-    link:
-     "https://drive.google.com/file/d/1OFDiYWI4jFwNjpsq6TkiZVjUndOJ6fKl/view?usp=sharing",
-   },
-  ],
- },
- {
-  heading: "Admissions",
   title: "CCMT Counselling 2023",
   data: [
    {
