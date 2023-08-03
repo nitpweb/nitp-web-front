@@ -313,6 +313,16 @@ const Admissions = [
     link:
      "https://drive.google.com/file/d/1OFDiYWI4jFwNjpsq6TkiZVjUndOJ6fKl/view?usp=sharing",
    },
+   {
+    para: "Change of  Branch for the session 2023-24",
+    link:
+     "https://drive.google.com/file/d/1jZjEWDvel7YN5l_zafci7w8uddAHK9fO/view?usp=sharing",
+   },
+   {
+    para: "Minor Program for B.TECH Students ",
+    link:
+     "https://drive.google.com/file/d/1oCHfZkuNzFvYrp8y3n6HhPyK4UT_FJ8k/view?usp=sharing",
+   },
   ],
  },
  {
