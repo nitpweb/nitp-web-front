@@ -103,7 +103,7 @@ const Importantlink = () => {
             </div> */}
      </div>
     </a>
-    <a href="https://www.nitp.ac.in/magazine">
+    <a href="/magazine">
      <div className="implink">
       <img className="linkimg" src={magazine} alt="magazine" />
       <h3>MAGAZINE</h3>
