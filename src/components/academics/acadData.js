@@ -1047,7 +1047,7 @@ const Convocation = [
 
 const Magazine = [
  {
-  heading: "Magazine of NIT Patna",
+  heading: "Magazine of NIT Patna.",
   title: "Magazine Vol. 6 (june 2023)",
   data: [
    {
