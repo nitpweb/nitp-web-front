@@ -328,6 +328,11 @@ const Admissions = [
     link:
      "https://drive.google.com/file/d/1OFDiYWI4jFwNjpsq6TkiZVjUndOJ6fKl/view?usp=sharing",
    },
+   {
+    para: "FAQs and General Instructions for UG Admission",
+    link:
+     "https://drive.google.com/file/d/1NR9AKG0yh1-u8guizpPnpwiLXsUIOxr3/view?usp=drivesdk",
+   },
   ],
  },
  {
