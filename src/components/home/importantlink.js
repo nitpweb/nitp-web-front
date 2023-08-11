@@ -11,6 +11,7 @@ import highlight from "./img/highlight.svg"
 import magazine from "./img/magazine.svg"
 import alumni from "./img/alumni.svg"
 import { ImportantLinkStyle } from "../styles/home/importantlink"
+import airplane from "./img/airplane.png"
 
 const Importantlink = () => {
  const [offsetY, setOffsetY] = useState(0)
@@ -54,15 +55,12 @@ const Importantlink = () => {
     </a>
     <a href="/internationalAffairs">
      <div className="implink">
-      <img className="linkimg" src={innovation} alt="teqip" />
+      <img className="linkimg" src={airplane} alt="teqip" />
       {/* <Link
        href="/internationalAffairs"
        style={{ fontSize: "0.7rem", paddingBottom: "5px" }}
       > */}
-      <h3 style={{ fontSize: "0.7rem" }}>
-       INTERNATIONAL <br />
-       AFFAIRS
-      </h3>
+      <h3>INTL.AFFAIRS</h3>
       {/* </Link> */}
       {/* <div className="lead">
               <p>Information of all the innovations</p>
