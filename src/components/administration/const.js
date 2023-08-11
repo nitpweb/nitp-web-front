@@ -372,7 +372,7 @@ const ServiceUnit = [
  {
   designation: "Central Library",
   type: "Prof. In-charge",
-  name: "Prof. Anshuman Singh",
+  name: "Dr. S. K. Mandal",
  },
  {
   designation: "IT Services",
@@ -397,7 +397,7 @@ const ServiceUnit = [
  {
   designation: "EMU",
   type: "Prof. In-charge",
-  name: "Dr. R. K. Mandal",
+  name: "Dr. Vimlesh Verma",
  },
  {
   designation: "WEBSITE",
