@@ -3,7 +3,7 @@ import notice from "./img/notice.png"
 import { Link } from "gatsby"
 import event from "./img/event.png"
 import news from "./img/news.png"
-import innovation from "./img/innovation.png"
+import airplane from "./img/airplane.png"
 import chanakya from "./img/chanakya.svg"
 import firstyear from "./img/firstyear.svg"
 import startup from "./img/startup.svg"
@@ -54,15 +54,12 @@ const Importantlink = () => {
     </a>
     <a href="/internationalAffairs">
      <div className="implink">
-      <img className="linkimg" src={innovation} alt="teqip" />
+      <img className="linkimg" src={airplane} alt="teqip" />
       {/* <Link
        href="/internationalAffairs"
        style={{ fontSize: "0.7rem", paddingBottom: "5px" }}
       > */}
-      <h3 style={{ fontSize: "0.7rem" }}>
-       INTERNATIONAL <br />
-       AFFAIRS
-      </h3>
+      <h3>INTL . AFFAIRS</h3>
       {/* </Link> */}
       {/* <div className="lead">
               <p>Information of all the innovations</p>

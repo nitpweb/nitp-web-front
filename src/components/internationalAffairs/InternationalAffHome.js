@@ -36,15 +36,52 @@ const InternationalAffHome = ({
       <>
        <div className="layoutrow" id="about">
         <div className="layoutabout">
-         <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
-          About
-         </h1>
-
-         <div className="row">
+         <div>
+          <div>
+           <h1
+            data-aos="zoom-in"
+            style={{
+             fontSize: `3rem`,
+             textAlign: "center",
+             marginBottom: "40px",
+             marginTop: "20px",
+            }}
+           >
+            Welcome To International Affairs,NIT Patna
+           </h1>
+          </div>
+          <div
+           className="imgcolstyle"
+           style={{ width: "100%", height: "275px" }}
+          >
+           {" "}
+           <img
+            src="https://web.nitp.ac.in/intl-affair/nitp-home.jpg"
+            style={{ width: "100%", height: "300px", paddingBottom: "10px" }}
+           ></img>
+          </div>
+          <div
+           style={{
+            fontSize: `2rem`,
+            textAlign: "left",
+            paddingTop: "8px",
+            paddingBottom: "",
+           }}
+          >
+           <h1
+            data-aos="zoom-in"
+            style={{ fontSize: "2rem", paddingTop: "15px" }}
+           >
+            About
+           </h1>
+          </div>
+         </div>
+         <div className="row" style={{ paddingTop: "5px" }}>
           <p>{About()}</p>
          </div>
         </div>
        </div>
+       {/* </div> */}
       </>
      )}
 
