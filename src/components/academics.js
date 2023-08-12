@@ -8,6 +8,8 @@ import acadData from "./academics/acadData"
 import { useQueryParam } from "use-query-params"
 import Navlist from "./global/navlist"
 import DynamicLink from "./global/dynamicurl"
+import flag from "../components/home/img/flag.svg"
+import { NoticeStyle } from "./styles/notice"
 
 const Academicspage = () => {
  const [tab] = useQueryParam("tab")
@@ -73,6 +75,15 @@ const Academicspage = () => {
           <div className="row rowmarr3 digital">
            <div>
             <h3>{e.title}</h3>
+
+            {e.notice && (
+             <NoticeStyle>
+              <p style={{ paddingRight: "24px" }}>
+               <img id="flag" src={flag} alt="f" />
+               <a style={{ color: "OrangeRed" }}>{e.notice}</a>
+              </p>
+             </NoticeStyle>
+            )}
             {e.data.map(item => (
              <>
               <a
@@ -800,11 +811,33 @@ const Academicspage = () => {
          {acadData.centreOfExcellence.map(e => (
           <div className="row rowmarr3 digital">
            <div>
-            <h3>{e.title}{e.link && <a href={e.link} style={{fontWeight:'bold',fontSize:'1.2rem',color:'#941b0c',textDecorationLine:'underline'}}>(Website Link):</a>}</h3>
+            <h3>
+             {e.title}
+             {e.link && (
+              <a
+               href={e.link}
+               style={{
+                fontWeight: "bold",
+                fontSize: "1.2rem",
+                color: "#941b0c",
+                textDecorationLine: "underline",
+               }}
+              >
+               (Website Link):
+              </a>
+             )}
+            </h3>
             {e.data.map(item => (
              <>
-              <li>{item.para} {item.link && <a href={item.link} style={{color:'blue'}}><u>Link</u></a>}</li>
-              
+              <li>
+               {item.para}{" "}
+               {item.link && (
+                <a href={item.link} style={{ color: "blue" }}>
+                 <u>Link</u>
+                </a>
+               )}
+              </li>
+
               {/* </a> */}
               {/* <img src={item.imageLink}></img> */}
              </>

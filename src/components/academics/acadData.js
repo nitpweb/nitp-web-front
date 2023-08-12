@@ -322,7 +322,14 @@ const Admissions = [
  {
   heading: "Admissions",
   title: "JoSAA/CSAB/DASA-2023",
+  notice:
+   "Notice: There will be NO physical reporting for UG admission through JoSAA/CSAB/DASA-2023 on 15.08.2023 (Independence Day)",
   data: [
+   {
+    para: "Fee Payment",
+    link:
+     "https://paydirect.eduqfix.com/app/mnYv9Q6+C+3lIMqghRCwdaqVZusPrJtq2RGJrJFnKnmtz3KBqtsEFPVrZFvoPubG/3466",
+   },
    {
     para: "Information",
     link:
