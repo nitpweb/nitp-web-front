@@ -400,7 +400,7 @@ const ServiceUnit = [
   name: "Dr. Vimlesh Verma",
  },
  {
-  designation: "WEBSITE",
+  designation: "Website",
   type: "Prof. In-charge",
   name: "Dr. Amitesh Kumar",
  },
