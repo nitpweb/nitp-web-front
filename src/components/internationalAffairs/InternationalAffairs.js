@@ -296,10 +296,89 @@ export const Gallery = () => {
              style={{ border: "2px solid #333" }}
             ></img>
            </div>
+           <div className="col-6 imgcolstyle">
+            <img
+             src="https://web.nitp.ac.in/intl-affair/cse-dep.jpg"
+             style={{ border: "2px solid #333", height: "246px" }}
+            ></img>
+           </div>
+          </div>
+          <div className="layoutrow layoutrow1 digital">
+           <div className="col-6 imgcolstyle">
+            <img
+             src="https://web.nitp.ac.in/intl-affair/chem-dep.jpg"
+             style={{ border: "2px solid #333" }}
+            ></img>
+           </div>
+           <div className="col-6 imgcolstyle">
+            <img
+             src="https://web.nitp.ac.in/intl-affair/architecture-dep.jpg"
+             style={{ border: "2px solid #333" }}
+            ></img>
+           </div>
+          </div>
+          {/* <div className="layoutrow layoutrow1 digital">
+           <div className="col-6 imgcolstyle">
+            <img
+             src="https://web.nitp.ac.in/intl-affair/maths-dep.jpg"
+             style={{ border: "2px solid #333" }}
+            ></img>
+           </div>
+           <div className="col-6 imgcolstyle">
+            <img
+             src="https://web.nitp.ac.in/intl-affair/civil-dep.jpg"
+             style={{ border: "2px solid #333", height: "246px" }}
+            ></img>
+           </div>
+          </div> */}
+          {/* <div className="layoutrow layoutrow1 digital">
+           <div className="col-6 imgcolstyle">
+            <img
+             src="https://web.nitp.ac.in/intl-affair/phy-dep.jpg"
+             style={{ border: "2px solid #333" }}
+            ></img>
+           </div>
+           <div className="col-6 imgcolstyle">
+            <img
+             src="https://web.nitp.ac.in/intl-affair/humanity-dep.jpg"
+             style={{ border: "2px solid #333", height: "246px" }}
+            ></img>
+           </div>
+          </div> */}
+         </>
+        )}
+        {course === "photos" && (
+         <>
+          <div className="layoutrow layoutrow1 digital">
+           <div className="col-6 imgcolstyle">
+            <img
+             src="https://web.nitp.ac.in/intl-affair/ece-lab.jpg"
+             style={{ border: "2px solid #333" }}
+            ></img>
+           </div>
+           <div className="col-6 imgcolstyle">
+            <img
+             src="https://web.nitp.ac.in/intl-affair/cse-lab.jpg"
+             style={{ border: "2px solid #333" }}
+            ></img>
+           </div>
+          </div>
+          <div className="layoutrow layoutrow1 digital">
+           <div className="col-6 imgcolstyle">
+            <img
+             src="https://web.nitp.ac.in/intl-affair/ee-lab.jpg"
+             style={{ border: "2px solid #333", height: "246px" }}
+            ></img>
+           </div>
+           <div className="col-6 imgcolstyle">
+            <img
+             src="https://web.nitp.ac.in/intl-affair/lib.jpg"
+             style={{ border: "2px solid #333" }}
+            ></img>
+           </div>
           </div>
          </>
         )}
-        {course === "photos" && <></>}
        </div>
       </div>
      </div>
