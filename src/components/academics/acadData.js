@@ -331,7 +331,7 @@ const Admissions = [
      "https://paydirect.eduqfix.com/app/mnYv9Q6+C+3lIMqghRCwdaqVZusPrJtq2RGJrJFnKnmtz3KBqtsEFPVrZFvoPubG/3466",
    },
    {
-    para: "Click here for filing online Admission form",
+    para: "Click here for filling online Admission form",
     link:
      "https://docs.google.com/forms/d/e/1FAIpQLSfbCiOLvFmvNfrxS1pQA-dwbKcuVBAZXJTET_cPVEVLBwy_Kg/viewform?usp=sharing",
    },
