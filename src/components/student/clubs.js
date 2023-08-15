@@ -3,7 +3,7 @@ export const clubs = [
   url: "/hackslash2.png",
   Title: "HackSlash",
   description:
-   "A community of NIT Patna that was created with the sole purpose of bringing people with similar interests in technology together where they can begin and master their coding and development skills.HackSlash gives a platform where you get to work on collaborative projects and help each other grow as a team. It is an initiative taken that will go a long way in maintaining the coding culture of NIT Patna in the years to come.",
+   "As an organization affiliated with Mozilla, HackSlash Student Developers Group shares the club's mission of promoting openness, innovation, and user empowerment on the web. HackSlash aims to foster a vibrant community of student developers to thrive in a rapidly evolving tech landscape through hands-on projects, workshops, and networking opportunities,It serves as a platform for students to learn, experiment, and make meaningful contributions to tech-savvy projects, particularly focusing on Machine Learning, Web and Application Development and existing relevant technological advancements. Through community engagement via workshops, webinars, and real-world relevant projects, students have had the opportunity to enhance their technical abilities and stay updated with the latest advancements across the vast technologies spanning in computer science.",
   link: "https://hackslash.co.in/",
  },
  {
@@ -48,8 +48,7 @@ We believe in bringing out one's true creative self and building the courage to 
   link: "http://www.nitp.ac.in/php/expresso/",
  },
  {
-  url:
-   "https://d1fdloi71mui9q.cloudfront.net/OhipotRVqHEDuG0i6fgE_FTsSE1w0fdiX3jI2",
+  url: "https://d1fdloi71mui9q.cloudfront.net/OhipotRVqHEDuG0i6fgE_FTsSE1w0fdiX3jI2",
   Title: "SAPTAK - Music Club NIT Patna",
   description:
    "Saptak is a group of music enthusiasts learning-living through different forms of music🎶🎼🎵",

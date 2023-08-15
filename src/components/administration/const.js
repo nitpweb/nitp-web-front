@@ -360,6 +360,11 @@ const ServiceUnit = [
   name: "Prof. Prakash Chandra",
  },
  {
+  designation: "Procurement",
+  type: "Add. Professor Incharge",
+  name: "Prof. Amit Kumar Singh",
+ },
+ {
   designation: "TEQIP-III",
   type: "Coordinator",
   name: "Prof. M. P. Singh",
