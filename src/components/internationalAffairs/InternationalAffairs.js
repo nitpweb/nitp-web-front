@@ -217,9 +217,7 @@ export const Partnership = () => {
         {course === "ongoing" && (
          <>
           <div className="layoutrow">
-           <h1 className="rowmarl3" data-aos="zoom-in-right">
-            MoU Documents:
-           </h1>
+           <h1 className="rowmarl3" data-aos="zoom-in-right"></h1>
           </div>
           <div className="syllabus-bullets">
            <ul className="rowmarl3">
@@ -228,7 +226,7 @@ export const Partnership = () => {
               href="https://drive.google.com/file/d/1avWRhDy5-sXe6gaBkFi6edrfWQyi6XTl/view?usp=sharing"
               style={{ color: "blue" }}
              >
-              MoU documents can be found here (click)
+              MoU between Pennsylvania State University, USA & NIT Patna.
              </a>
             </li>
            </ul>
