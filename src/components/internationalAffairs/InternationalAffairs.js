@@ -185,6 +185,7 @@ export const NewsAnnouncements = () => {
 }
 
 export const Partnership = () => {
+ const [course, setCourse] = useState("ongoing")
  return (
   <>
    <PageLayout style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
@@ -194,11 +195,62 @@ export const Partnership = () => {
        <div className="digital">
         <h1 style={{ marginBottom: `1rem` }}>Partnerships</h1>
         <div className="probutton">
-         <button>Ongoing MoUs</button>
-         <button>Pre-approved</button>
+         <button
+          onClick={() => {
+           setCourse("ongoing")
+          }}
+          className={course == "ongoing" ? "btnactive" : ""}
+         >
+          Ongoing MoUs
+         </button>
+         <button
+          onClick={() => {
+           setCourse("approved")
+          }}
+          className={course == "approved" ? "btnactive" : ""}
+         >
+          Pre-approved
+         </button>
          <button>Past MoUs</button>
          <button>Joint academic and research activities</button>
         </div>
+        {course === "ongoing" && (
+         <>
+          <div className="layoutrow">
+           <h1 className="rowmarl3" data-aos="zoom-in-right">
+            MoU Documnets:
+           </h1>
+          </div>
+          <div className="syllabus-bullets">
+           <ul className="rowmarl3">
+            <li>
+             <a
+              href="https://drive.google.com/file/d/1avWRhDy5-sXe6gaBkFi6edrfWQyi6XTl/view?usp=sharing"
+              style={{ color: "blue" }}
+             >
+              MoU documents can be found here (click)
+             </a>
+            </li>
+           </ul>
+          </div>
+         </>
+        )}
+        {course === "approved" && (
+         <>
+          <div className="layoutrow">
+           <h1 className="rowmarl3" data-aos="zoom-in-right"></h1>
+          </div>
+          <div className="syllabus-bullets">
+           <ul className="rowmarl3">
+            <li>
+             <a href="" style={{ color: "blue" }}>
+              {/* link. */}
+             </a>
+            </li>
+           </ul>
+          </div>
+         </>
+        )}
        </div>
       </div>
      </div>
