@@ -218,7 +218,7 @@ export const Partnership = () => {
          <>
           <div className="layoutrow">
            <h1 className="rowmarl3" data-aos="zoom-in-right">
-            MoU Documnets:
+            MoU Documents:
            </h1>
           </div>
           <div className="syllabus-bullets">
