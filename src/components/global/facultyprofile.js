@@ -405,11 +405,16 @@ const Facultyprofile = ({ url }) => {
         <>
          <div className="fac-card" data-aos="fade-up">
           <h3>Journals</h3>
-          {data.article.map(item => (
-           <p className="text-justify" style={{ maxWidth: `1000px` }}>
-            <li>{`${item.authors}, "${item.title}", ${item.journal_name} (${item.year})`}</li>
-           </p>
-          ))}
+          <ol style={{ listStyleType: "decimal" }}>
+           {data.article
+            .slice()
+            .sort((a, b) => b.year - a.year)
+            .map(item => (
+             <p className="text-justify" style={{ maxWidth: `1000px` }}>
+              <li>{`${item.authors}, "${item.title}", ${item.journal_name} (${item.year})`}</li>
+             </p>
+            ))}
+          </ol>
          </div>
         </>
        )}
