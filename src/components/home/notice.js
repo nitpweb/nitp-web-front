@@ -22,10 +22,27 @@ const Notice = props => {
    <NoticeStyle>
     <p className="noticecarddetail">
      {props.imp == 1 ? <img id="flag" src={flag} alt="f" /> : ""}
-     <a href={props.link} rel="noopener noreferrer" target="_blank">
-      {" "}
-      {props.detail}
-     </a>
+     {props.imp == 1 ? (
+      <a
+       href={props.link}
+       rel="noopener noreferrer"
+       target="_blank"
+       style={{ color: "#941b0c", fontWeight: "bold" }}
+      >
+       {" "}
+       {props.detail}
+      </a>
+     ) : (
+      ""
+     )}
+     {props.imp != 1 ? (
+      <a href={props.link} rel="noopener noreferrer" target="_blank">
+       {" "}
+       {props.detail}
+      </a>
+     ) : (
+      ""
+     )}
     </p>
     <div>
      {props.attachments.map(elem => {
