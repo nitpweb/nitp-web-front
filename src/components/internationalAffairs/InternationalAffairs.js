@@ -111,6 +111,14 @@ export const Events = () => {
          >
           Magazine
          </button>
+         <button
+          onClick={() => {
+           setCourse("Others")
+          }}
+          className={course == "Others" ? "btnactive" : ""}
+         >
+          Others
+         </button>
         </div>
         {course === "visit" && (
          <>
