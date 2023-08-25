@@ -102,6 +102,9 @@ const Footer = () => {
        <a href="/convocation">
         <h3>Convocation 2021</h3>
        </a>
+       <Link to="https://drive.google.com/file/d/1EdgaqKGB0zlB1LUmypjpnV9QAkXmpjBu/view">
+        <h3>Sexual Harassment of Women at Work place</h3>
+       </Link>
       </div>
      </div>
 
