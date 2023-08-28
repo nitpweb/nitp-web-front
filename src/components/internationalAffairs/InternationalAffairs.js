@@ -179,6 +179,24 @@ export const Events = () => {
           </div>
          </>
         )}
+        {course === "Others" && (
+         <>
+          <div className="layoutrow layoutrow1 digital">
+           <div className="col-6 imgcolstyle">
+            <img
+             src="https://web.nitp.ac.in/intl-affair/taiwan.jpg"
+             style={{ border: "2px solid #333" }}
+            ></img>
+            <br></br>
+            <strong>
+             An online meeting on "Higher Education Opportunities for Indian
+             Students" with Dr. Rushikesh Khire, Providence University, Taiwan
+             on August 22, 2023.
+            </strong>
+           </div>
+          </div>
+         </>
+        )}
        </div>
       </div>
      </div>
@@ -339,12 +357,14 @@ export const Gallery = () => {
              src="https://web.nitp.ac.in/intl-affair/ece-dep.jpg"
              style={{ border: "2px solid #333" }}
             ></img>
+            <strong>Electronics and Communication Department</strong>
            </div>
            <div className="col-6 imgcolstyle">
             <img
              src="https://web.nitp.ac.in/intl-affair/electrical-dep.jpg"
              style={{ border: "2px solid #333", height: "246px" }}
             ></img>
+            <strong>Electrical Department</strong>
            </div>
           </div>
           <div className="layoutrow layoutrow1 digital">
@@ -353,12 +373,14 @@ export const Gallery = () => {
              src="https://web.nitp.ac.in/intl-affair/mech-dep.jpg"
              style={{ border: "2px solid #333" }}
             ></img>
+            <strong>Mechanical Department</strong>
            </div>
            <div className="col-6 imgcolstyle">
             <img
              src="https://web.nitp.ac.in/intl-affair/cse-dep.jpg"
              style={{ border: "2px solid #333", height: "246px" }}
             ></img>
+            <strong>Computer Science Department</strong>
            </div>
           </div>
           <div className="layoutrow layoutrow1 digital">
@@ -367,12 +389,14 @@ export const Gallery = () => {
              src="https://web.nitp.ac.in/intl-affair/chem-dep.jpg"
              style={{ border: "2px solid #333" }}
             ></img>
+            <strong>Chemistry Department</strong>
            </div>
            <div className="col-6 imgcolstyle">
             <img
              src="https://web.nitp.ac.in/intl-affair/architecture-dep.jpg"
              style={{ border: "2px solid #333" }}
             ></img>
+            <strong>Architecture Department</strong>
            </div>
           </div>
           {/* <div className="layoutrow layoutrow1 digital">
@@ -413,12 +437,14 @@ export const Gallery = () => {
              src="https://web.nitp.ac.in/intl-affair/ece-lab.jpg"
              style={{ border: "2px solid #333" }}
             ></img>
+            <strong>Microwave Lab</strong>
            </div>
            <div className="col-6 imgcolstyle">
             <img
              src="https://web.nitp.ac.in/intl-affair/cse-lab.jpg"
              style={{ border: "2px solid #333" }}
             ></img>
+            <strong>Computer Lab</strong>
            </div>
           </div>
           <div className="layoutrow layoutrow1 digital">
@@ -427,12 +453,14 @@ export const Gallery = () => {
              src="https://web.nitp.ac.in/intl-affair/ee-lab.jpg"
              style={{ border: "2px solid #333", height: "246px" }}
             ></img>
+            <strong>Electrical Lab</strong>
            </div>
            <div className="col-6 imgcolstyle">
             <img
              src="https://web.nitp.ac.in/intl-affair/lib.jpg"
              style={{ border: "2px solid #333" }}
             ></img>
+            <strong>Library</strong>
            </div>
           </div>
          </>
