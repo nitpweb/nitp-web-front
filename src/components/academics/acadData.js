@@ -428,6 +428,11 @@ const Fee = [
   title: `UG/PG/PhD`,
   data: [
    {
+    para: "UG fee structure effective from session 2023-24 and onwards",
+    link:
+     "https://drive.google.com/file/d/1lIsCdDSI9KwTybR6yZWLZLb4QyaVRsn_/view?usp=sharing",
+   },
+   {
     para: "UG : Fee refund policy notification",
     link:
      "https://web.nitp.ac.in//uploads23/UG%20Refund%20Policy%20Notification.pdf",
