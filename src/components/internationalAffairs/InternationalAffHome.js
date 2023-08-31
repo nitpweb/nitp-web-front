@@ -56,7 +56,7 @@ const InternationalAffHome = ({
           >
            {" "}
            <img
-            src="https://web.nitp.ac.in/intl-affair/nitp-home.jpg"
+            src="https://web.nitp.ac.in/home/images/homebg-22.jpg"
             style={{ width: "100%", height: "300px", paddingBottom: "10px" }}
            ></img>
           </div>
