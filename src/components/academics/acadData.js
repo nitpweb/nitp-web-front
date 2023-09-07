@@ -1265,7 +1265,8 @@ const Patents = [
   data: [
    {
     para: "Click here to download the list of Granted Patents.",
-    link: "http://web.nitp.ac.in/uploads23/ListOfGrantedPatents.pdf",
+    link:
+     "https://drive.google.com/file/d/1Uq0mDJOSmTwhpdioxb18V_5ekVGFWtex/view?usp=sharing",
    },
   ],
  },
@@ -1275,7 +1276,8 @@ const Patents = [
   data: [
    {
     para: "Click here to download the list of Published Patents.",
-    link: "http://web.nitp.ac.in/uploads23/ListOfPublishedPatents.pdf",
+    link:
+     "https://drive.google.com/file/d/16AD7GUwmCReVdSAuHg1wdjtb2fxMnTIX/view?usp=sharing",
    },
   ],
  },
