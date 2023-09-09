@@ -499,8 +499,17 @@ export const ContactDetails = () => {
      Tel: (+91) 612-2371715 extn. 225
     </p>
     <br />
+    <strong>Reach to NIT Patna</strong>
+    <br />
+    <iframe
+     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.521975435267!2d85.1719948!3d25.6207961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58dce6732867%3A0x4059f39a1ac82f06!2sNational%20Institute%20of%20Technology%2C%20Patna!5e0!3m2!1sen!2sin!4v1694061936308!5m2!1sen!2sin"
+     width="520"
+     height="400"
+     style={{ border: "0" }}
+     allowfullscreen=""
+     loading="lazy"
+    ></iframe>
    </div>
-
    <div className="img img-12">
     <img
      src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=1v2jlADs0iPttRin4thdy38Dge9g-ibB3"
