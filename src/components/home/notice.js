@@ -2,6 +2,24 @@ import React from "react"
 import { NoticeStyle } from "../styles/notice"
 import downimg from "./img/download.svg"
 import flag from "./img/flag.svg"
+import styled, { keyframes } from "styled-components"
+
+const blinkAnimation = keyframes`
+  0% {
+    color:   #941B0C;
+  }
+  50% {
+    color:#FFD700 ;
+  }
+  100% {
+    color:  #941B0C;
+  }
+`
+
+const BlinkingText = styled.span`
+ animation: ${blinkAnimation} 0.7s linear infinite;
+`
+
 const Notice = props => {
  // const newtime = new Date().getTime()
 
@@ -30,7 +48,7 @@ const Notice = props => {
        style={{ color: "#941b0c", fontWeight: "bold" }}
       >
        {" "}
-       {props.detail}
+       <BlinkingText>{props.detail}</BlinkingText>
       </a>
      ) : (
       ""
