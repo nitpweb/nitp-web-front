@@ -89,7 +89,7 @@ const Home = () => {
        // data-aos-duration="200"
        className="notice-head"
       >
-       Notice
+       Lecture Materials
        <Link id="notice-head-p" className="home_heading-p" to="/notice">
         View all
        </Link>
@@ -191,7 +191,7 @@ const Home = () => {
        // data-aos-duration="200"
        className="notice-head"
       >
-       Academics
+       Exam Notices
        <Link id="notice-head-p" to="academics?tab=Notices">
         View all
        </Link>
@@ -247,7 +247,7 @@ const Home = () => {
      className="news-head"
      id="news"
     >
-     Highlights
+     For Students
      <Link id="news-head-p" to="/news">
       View all
      </Link>
