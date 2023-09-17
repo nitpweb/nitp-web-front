@@ -114,7 +114,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
             {` | `}
           </span> */}
      <span style={{ marginLeft: `8px` }}>
-      <a href="http://old.nitp.ac.in/php/home.php">Old Website</a>
+      <a href="https://www.nitp.ac.in/">New Website</a>
      </span>
     </div>
     <div className="col-6 end">
@@ -172,9 +172,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
       {/* {change == 0
               ? "NATIONAL INSTITUTE OF TECHNOLOGY PATNA"
               : "राष्ट्रीय प्रौद्योगिकी संस्थान पटना"} */}
-      राष्ट्रीय प्रौद्योगिकी संस्थान पटना
+      राष्ट्रीय प्रौद्योगिकी संस्थान पटना (इंट्रानेट पोर्टल)
       <br />
-      NATIONAL INSTITUTE OF TECHNOLOGY PATNA
+      NATIONAL INSTITUTE OF TECHNOLOGY PATNA (INTRANET PORTAL)
      </span>
     </div>
     <div className="nav-col end">
