@@ -1266,7 +1266,7 @@ const Patents = [
    {
     para: "Click here to download the list of Granted Patents.",
     link:
-     "https://drive.google.com/file/d/1Uq0mDJOSmTwhpdioxb18V_5ekVGFWtex/view?usp=sharing",
+     "https://drive.google.com/file/d/1K9JmThmOYp51h_0x5P7ktaH0Re6XSCYh/view?usp=sharing",
    },
   ],
  },
