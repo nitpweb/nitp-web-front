@@ -210,3 +210,30 @@ export const Scholarship = [
   amount: 5214882,
  },
 ]
+export const tabledata = [
+ {
+  no: "1.",
+  village: "Sabalpur",
+  district: "Patna",
+ },
+ {
+  no: "2.",
+  village: "Juthli",
+  district: "Patna",
+ },
+ {
+  no: "3.",
+  village: "Panapur",
+  district: "patna",
+ },
+ {
+  no: "4.",
+  village: "Nakta Diara",
+  district: "Patna",
+ },
+ {
+  no: "5.",
+  village: "Nadauri",
+  district: "Patna",
+ },
+]
