@@ -35,6 +35,11 @@ const Floatmenu = () => (
       <h3>First Year</h3>
      </a>
     </div>
+    <div className="float-card">
+     <a href="#sac">
+      <h3>rani</h3>
+     </a>
+    </div>
    </div>
    <img
     src={float}

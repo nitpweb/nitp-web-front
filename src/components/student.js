@@ -10,7 +10,7 @@ import Floatmenu from "./student/floatmenu"
 import StudentSlide from "./student/StudentSlide"
 import { PageLayout } from "./styles/pagelayout"
 import { TabPage } from "./styles/tabpage"
-import { Scholarship } from "./student/const"
+import { Scholarship, tabledata } from "./student/const"
 import Navigate from "./global/Navigate"
 import { useQueryParam } from "use-query-params"
 import woman from "./facilities/img/woman.svg"
@@ -32,6 +32,10 @@ const nss = `The National Service Scheme (NSS) was launched in 1969 and is an In
 
 const Ecell = `
 Entrepreneurship Cell, NIT Patna is a non-profit college club run by students of NIT Patna, founded in 2013 with the objective of increasing the spirit of Entrepreneurship among students of National Institute of Technology Patna. Entrepreneurship Cell NIT Patna helps the aspiring entrepreneurs to start and grow their businesses by creating a pathway of various opportunities like interactive sessions with professionals and founders, business competitions, business quizzes and financial awareness programs. This helps foster entrepreneurial thinking, promote business knowledge and increase confidence in students. Our vision is to help students who have an idea, product and burning desire by providing convincing skills, market exposure and investors for their start-up. This cell helps students to understand the business world by actually working in a start-up.
+`
+
+const Unnatbharat = `
+Unnat Bharat Abhiyan is inspired by the vision of transformational change in rural development processes by leveraging knowledge institutions to help build the architecture of an Inclusive India.
 `
 const firstYear = [
  {
@@ -306,6 +310,108 @@ const Studentpage = () => {
         </div>
         <h3>Email: ecell@nitp.ac.in</h3>
         <p>{Ecell}</p>
+       </div>
+      </div>
+     )}
+     {view == "Unnatbharat" && (
+      <div className="layoutrow digital" id="sep">
+       <div className="row imgcolstyle backgroundimage">
+        <img src={exchange} className="img-fluid" loading="lazy" />
+       </div>
+       <div className="row rowmarl3">
+        <h1>Unnat Bharat Abhiyaan </h1>
+       </div>
+       <div className="row rowmarl3">
+        <div className="row">
+         <h3>(A flagship program of Ministry of Education, GoI)</h3>
+        </div>
+        <div className="row">
+         <h2>Regional Coordinating Institute-NIT Patna</h2>
+        </div>
+        <h3>Regional Coordinator: Dr. Om Ji Shukla</h3>
+        <div className="row">
+         <h2>Vision</h2>
+        </div>
+        <p>{Unnatbharat}</p>
+        <div className="row">
+         <h2>Mission</h2>
+        </div>
+        <p>
+         The Mission of Unnat Bharat Abhiyan is to enable higher educational
+         institutions to work with the people of rural India in identifying
+         development challenges and evolving appropriate solutions for
+         accelerating sustainable growth. It also aims to create a virtuous
+         cycle between society and an inclusive academic system by providing
+         knowledge and practices for emerging professions and to upgrade the
+         capabilities of both the public and the private sectors in responding
+         to the development needs of rural India.
+        </p>
+        <div className="row">
+         <h2>Goals</h2>
+        </div>
+        <p>
+         • To build an understanding of the development agenda within institutes
+         of Higher Education and an institutional capacity and training relevant
+         to national needs, especially those of rural India.<br></br>• To
+         re-emphasize the need for field work, stake-holder interactions and
+         design for societal objectives as the basis of higher education.
+         <br></br>• To stress on rigorous reporting and useful outputs as
+         central to developing new professions.<br></br>• To provide rural India
+         and regional agencies with access to the professional resources of the
+         institutes of higher education, especially those that have acquired
+         academic excellence in the field of science, engineering and
+         technology, and management.<br></br>• To improve development outcomes
+         as a consequence of this research. To develop new professions and new
+         processes to sustain and absorb the outcomes of research.<br></br>• To
+         foster a new dialogue within the larger community on science, society
+         and the environment and to develop a sense of dignity and collective
+         destiny
+        </p>
+        <div className="row">
+         <h2>As Regional Coordinating Institute </h2>
+        </div>
+        <p>
+         The Regional Coordinating Institutions (RCIs) are identified on the
+         basis of their earlier experience and infrastructural competence etc.
+         Our institute is also identified as Regional Coordinating Institute in
+         Bihar and we have 42 Participating Institutes (PIs) under our region.
+         NIT Patna act as a nodal center for promoting and facilitate UBA
+         network in the region. We are responsible for grooming the other
+         participating institutions in their region in addition to carrying out
+         their own village cluster activities. As RCI, we have our own login
+         credential to view and review the work of PIs in their region.
+         Additionally, the RCIs have a strategic role to play, they have to
+         identify a challenge relevant in their region / states in collaboration
+         with PIs and State government.
+        </p>
+        <div className="row">
+         <h2>As Participating Institute</h2>
+        </div>
+        <p>
+         As per the guidelines of Unnat Bharat Abhiyan (UBA) each participating
+         institute (PI) must adopt five rural villages in their region. The role
+         of participating institute is to use the simple and people friendly
+         technology to uplift their socio-economic status with the use of
+         available human resource and natural resource in the adopted villages.
+         Our institute has also adopted the five rural villages and giving its
+         best for their well-being. The details of these adopted villages are
+         given below.
+        </p>
+        <br></br>
+        <Table>
+         <tr>
+          <th>SL No.</th>
+          <th>Adopted village</th>
+          <th>District </th>
+         </tr>
+         {tabledata.map(item => (
+          <tr>
+           <td>{item.no}</td>
+           <td>{item.village}</td>
+           <td>{item.district}</td>
+          </tr>
+         ))}
+        </Table>
        </div>
       </div>
      )}
