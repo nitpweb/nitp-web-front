@@ -129,6 +129,10 @@ const Home = [
     url: "/officers",
     title: "Officers of NIT Patna",
    },
+   {
+    url: "/otherEmployees",
+    title: "Other Employees of NIT Patna",
+   },
   ],
  },
  {
