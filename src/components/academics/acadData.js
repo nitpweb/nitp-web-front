@@ -430,7 +430,7 @@ const Fee = [
    {
     para: "UG fee structure effective from session 2023-24 and onwards",
     link:
-     "https://drive.google.com/file/d/1lIsCdDSI9KwTybR6yZWLZLb4QyaVRsn_/view?usp=sharing",
+     "https://drive.google.com/file/d/10zxZd3mxCp-ypZhgAY1ShcagD_NweXbe/view?usp=drivesdk",
    },
    {
     para: "UG : Fee refund policy notification",
