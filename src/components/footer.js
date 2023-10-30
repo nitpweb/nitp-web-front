@@ -85,12 +85,13 @@ const Footer = () => {
        <Link to="/acadnotice">
         <h3>Academics Notice</h3>
        </Link>
-       <a
+       {/* <a
         href="http://www.nitp.ac.in/php/downloads/Grievance%20Cell%20Constituted%20by%20Council%20of%20NITs.pdf"
         target="_blank"
-       >
-        <h3>Grievance Cell</h3>
-       </a>
+       > */}
+       <Link to="/grievance">
+        <h3>SC/ST Grievance Cell</h3>
+       </Link>
        <Link to="/nit_act">
         <h3>NIT Act and Statutes</h3>
        </Link>
