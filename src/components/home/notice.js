@@ -9,7 +9,7 @@ const blinkAnimation = keyframes`
     color:   #941B0C;
   }
   50% {
-    color:#FFD700 ;
+    color:#140402 ;
   }
   100% {
     color:  #941B0C;
@@ -17,7 +17,7 @@ const blinkAnimation = keyframes`
 `
 
 const BlinkingText = styled.span`
- animation: ${blinkAnimation} 0.7s linear infinite;
+ animation: ${blinkAnimation} 1.5s linear infinite;
 `
 
 const Notice = props => {
