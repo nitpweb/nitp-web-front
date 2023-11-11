@@ -42,6 +42,34 @@ const medicaldetail =
  " Two permanent doctor has a fixed chamber within the institute premises. He can be consulted by the students and employees for any health related problems on every working day free of cost.<br/><br/>Profile of the health consultants:<br/>Dr.Vikas Kumar Raj<br/>Senior Medical Officer<br/>MBBS, MD, MBA(HCA)<br/>PGD in DP & R and Family Medicine<br/>PGC in Hospital Management Dr.V K Raj<br/><br/>Dr.Santosh Kumar Sudhakar<br/>Medical Officer<br/>MBBS<br/>Ex - Resident of DR.RML Hospital<br/>New Delhi Dr.S K Sudhakar<br/><br/>The institute also maintains a 24x7 ambulance which is used for transferring patients from the institute to Patna Medical College and Hospital(PMCH) in case of any emergency."
 const emudetail =
  "To provide Electric power supply to the Institute. EMU maintains all electrical equipment such as Lights, Fans, AC, etc. which are installed in NIT Patna campus. EMU is having an 11KV/415V Electrical Substation (commonly Known as POWER HOUSE), equipped with 02 Nos. 1250KVA Transformer, 02 Nos. 750 KVA Diesel Generator and Separate Electricals Panels for each feeder pillars/Buildings. <br/><br/>Land line- 0612-2371715 Extension No.-116 <br/>br/>For any type of Electrical Complaint kindly fill the form."
+const scstcell = (
+ <>
+  <p>
+   The Institute is committed to maintain a work environment wherein faculty
+   members, staff and students from different communities can work in a coherent
+   environment. It is the Institute's endeavor to ensure that no discrimination
+   takes place at the workplace or inside the Institute campus.
+  </p>
+
+  <p>
+   The Institute has appointed a Liaison Officer who can be contacted in the
+   event of any incident of discrimination. Particulars of Liaison Officer are
+   as under:
+  </p>
+
+  <p>Liaison Officer</p>
+  <p> Prof. Fulena Rajak</p>
+  <p>Professor, Department of Architecture & Planning</p>
+  <p>Email: sc.st.cell@nitp.ac.in</p>
+  <p>
+   For reporting any grievance related to SC / ST community of NIT Patna, kindly
+   use this email ID:
+  </p>
+  <span style={{ fontWeight: "latin", color: "blue" }}>
+   sc.st.cell@nitp.ac.in{" "}
+  </span>
+ </>
+)
 const itservicedetail = (
  <>
   <p>
@@ -456,6 +484,19 @@ const Facilitiespage = () => {
        </div>
        <div className="row rowmarl3">
         <p>{womancell}</p>
+       </div>
+       <div className="row imgcolstyle backgroundimage">
+        <img src={woman} className="img-fluid" loading="lazy" />
+       </div>
+      </div>
+     )}
+     {view == "scstcell" && (
+      <div className="layoutrow digital" id="wc">
+       <div className="row rowmarl3">
+        <h1>SC/ST Cell</h1>
+       </div>
+       <div className="row rowmarl3">
+        <p>{scstcell}</p>
        </div>
        <div className="row imgcolstyle backgroundimage">
         <img src={woman} className="img-fluid" loading="lazy" />
