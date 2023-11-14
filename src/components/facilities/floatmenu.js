@@ -40,11 +40,11 @@ const Floatmenu = () => (
       <h3>Laboratories</h3>
      </a>
     </div>
-    <div className="float-card">
+    {/* <div className="float-card">
      <a href="#wifi">
       <h3>Wifi</h3>
      </a>
-    </div>
+    </div> */}
     <div className="float-card">
      <a href="#bank">
       <h3>Bank</h3>
