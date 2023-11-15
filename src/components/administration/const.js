@@ -370,9 +370,9 @@ const ServiceUnit = [
   name: "Prof. M. P. Singh",
  },
  {
-  designation: "Computer Center",
+  designation: "Centre for Computing and Information Services (CCIS)",
   type: "Prof. In-charge",
-  name: "Prof. M. P. Singh",
+  name: "Prof. Prabhat Kumar",
  },
  {
   designation: "Central Library",
