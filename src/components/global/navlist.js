@@ -614,6 +614,11 @@ const Facilities = [
    },
    {
     url: "/facilities",
+    title: "SC/ST Cell",
+    data: "scstcell",
+   },
+   {
+    url: "/facilities",
     title: "EMU",
     data: "emu",
    },
