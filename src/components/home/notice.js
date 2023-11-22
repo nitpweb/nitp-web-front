@@ -17,7 +17,7 @@ const blinkAnimation = keyframes`
 `
 
 const BlinkingText = styled.span`
- animation: ${blinkAnimation} 1.5s linear infinite;
+ animation: ${blinkAnimation} 0.8s linear infinite;
 `
 
 const Notice = props => {
