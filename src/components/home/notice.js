@@ -21,52 +21,42 @@ const BlinkingText = styled.span`
 `
 
 const Notice = props => {
- // const newtime = new Date().getTime()
-
- // let d = Math.round((newtime - props.time) / 3600000)
- // if (d > 48) {
- //   d = new Date(props.time).toLocaleDateString()
- // } else if (d > 24) {
- //   d = `${Math.round(d / 24)} days ago`
- // } else if (d < 1) {
- //   d = `Just now`
- // } else if (d < 2) {
- //   d = `${d} hour ago`
- // } else {
- //   d = `${d} hours ago`
- // }
  return (
   <>
    <NoticeStyle>
     <p className="noticecarddetail">
-     {props.imp == 1 ? <img id="flag" src={flag} alt="f" /> : ""}
-     {props.imp == 1 ? (
-      <a
-       href={props.link}
-       rel="noopener noreferrer"
-       target="_blank"
-       style={{ color: "#941b0c", fontWeight: "bold" }}
-      >
-       {" "}
-       <BlinkingText>{props.detail}</BlinkingText>
-      </a>
-     ) : (
-      ""
-     )}
-     {props.imp != 1 ? (
+     {props.imp === 1 ? <img id="flag" src={flag} alt="f" /> : ""}
+     {props.imp === 1 ? (
+      props.link ? (
+       <a
+        href={props.link}
+        rel="noopener noreferrer"
+        target="_blank"
+        style={{ color: "#941b0c", fontWeight: "bold" }}
+       >
+        {" "}
+        <BlinkingText>{props.detail}</BlinkingText>
+       </a>
+      ) : (
+       <span style={{ color: "#941b0c", fontWeight: "bold" }}>
+        {" "}
+        <BlinkingText>{props.detail}</BlinkingText>
+       </span>
+      )
+     ) : props.link ? (
       <a href={props.link} rel="noopener noreferrer" target="_blank">
        {" "}
        {props.detail}
       </a>
      ) : (
-      ""
+      <span>{props.detail}</span>
      )}
     </p>
     <div>
-     {props.attachments.map(elem => {
+     {props.attachments.map((elem, index) => {
       if (elem.url)
        return (
-        <ul>
+        <ul key={index}>
          <img id="notdownimg" src={downimg} alt="c" />
          <a
           className="notdown"
@@ -80,13 +70,12 @@ const Notice = props => {
          </a>
         </ul>
        )
+      return null
      })}
-     {/* <div>
-            <p className="notet">{d}</p>
-          </div> */}
     </div>
    </NoticeStyle>
   </>
  )
 }
+
 export default Notice
