@@ -494,7 +494,13 @@ const Format = [
      "Format for issue of Grade Card / Provisional / Transcript from Exam Section",
     link:
      // "http://web.nitp.ac.in/uploads22/REQUEST_LETTER_CUM_DOCUMENT_ISSUE_FORM.pdf",
-     "https://web.nitp.ac.in//uploads23/Bilingual%20Request%20Letter%20Cum%20Document%20Issue%20Form.pdf",
+     "https://drive.google.com/file/d/1AhtQCtdBLB-FG-JldD3_j8NPTsj4EONp/view?usp=drivesdk",
+   },
+   {
+    para: "Attestation form for grade cards",
+    link:
+     // "http://web.nitp.ac.in/uploads22/REQUEST_LETTER_CUM_DOCUMENT_ISSUE_FORM.pdf",
+     "https://drive.google.com/file/d/1AjHBBA3ca9s-T_jgtocOz5EYaJOzhbHa/view?usp=drivesdk",
    },
    {
     para: "1-SOP to issue Original Degree Certificate",
