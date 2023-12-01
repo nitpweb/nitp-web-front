@@ -256,7 +256,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
      <a
       className="nav-link-item "
       activeClassName="nav-link-item-active"
-      href="https://tnp.nitp.ac.in"
+      href="https://tpc.nitp.ac.in/"
       target="_blank"
      >
       <span>Placements</span>
@@ -688,7 +688,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
        </div>
       </div>
       <a
-       href="https://tnp.nitp.ac.in"
+       href="https://tpc.nitp.ac.in/"
        target="_blank"
        className="nav-sidebar-div"
       >
@@ -1043,7 +1043,7 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
       </div>
      </div>
      <a
-      href="https://tnp.nitp.ac.in"
+      href="https://tpc.nitp.ac.in/"
       target="_blank"
       className="nav-sidebar-div"
      >
