@@ -519,7 +519,7 @@ const Format = [
      "3-SOP for Refund of DRCC Education Loan under Bihar Student Credit Card Scheme",
     //link: "http://web.nitp.ac.in/uploads22/DRCC_Refund_SOP.pdf",
     link:
-     "https://drive.google.com/file/d/1zNu1j024LSJfHPmrktPLs4ci6SL5O-C4/view?usp=sharing",
+     "https://drive.google.com/file/d/1KXs3dru2FJZ5q_kV1h36TK6E7EkOO0n9/view?usp=drivesdk",
    },
    {
     para:
