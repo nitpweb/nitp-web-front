@@ -30,7 +30,7 @@ const Deansinfo = [
 ]
 const BOG = [
  {
-  name: "Prof. Pradip Kumar Jain",
+  name: "Shri Ashok Kumar Modi",
   designation: "Chairperson(Actg.) BOG, Ex-Officio Member, NIT Patna",
   type: "chairperson",
  },
