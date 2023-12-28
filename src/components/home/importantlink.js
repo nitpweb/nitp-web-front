@@ -46,7 +46,7 @@ const Importantlink = () => {
       
           </div>
         </a> */}
-    <a href="https://web.nitp.ac.in/alumni/html/index.html">
+    <a href="https://alumini-nitp.vercel.app/">
      <div className="implink">
       <img className="linkimg" src={alumni} alt="alumni" />
       <h3>ALUMNI</h3>
