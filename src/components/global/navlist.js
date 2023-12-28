@@ -293,8 +293,7 @@ const Academics = [
    },
    {
     // url: "https://web.nitp.ac.in/uploads22/Academic_cal._Even_2022_23.pdf",
-    url:
-     "https://web.nitp.ac.in//uploads23/Academic_calendar_2023_24%20_Odd_sem.pdf",
+    url: "https://drive.google.com/file/d/1bMJqI6ZOVZTBan5Ik_KfttWTlwVKiEui/view?usp=drivesdk",
     title: "Academic Calendar",
     data: "",
    },
@@ -401,8 +400,7 @@ const Faculty = [
     data: "",
    },
    {
-    url:
-     "https://docs.google.com/forms/d/e/1FAIpQLSedy0aZLXXj709zQjAejWvLQOs4_6ESIciPe0IV199kMr_D1g/viewform?usp=sf_link",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSedy0aZLXXj709zQjAejWvLQOs4_6ESIciPe0IV199kMr_D1g/viewform?usp=sf_link",
     title: "Employee I-Card",
     data: "",
    },
@@ -506,8 +504,7 @@ const Students = [
     title: "Chanakya Portal",
    },
    {
-    url:
-     "https://docs.google.com/forms/d/e/1FAIpQLSc5_x34TMtQdMaW2Ad9Nvsmz1N8YXdAGJHtAM5kn3a850Ekyw/viewform?usp=sf_link",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSc5_x34TMtQdMaW2Ad9Nvsmz1N8YXdAGJHtAM5kn3a850Ekyw/viewform?usp=sf_link",
     title: "Student I-Card",
    },
    {
@@ -542,8 +539,7 @@ const Students = [
     title: "Academic Calendar",
    },
    {
-    url:
-     "https://paydirect.eduqfix.com/app/mnYv9Q6+C+3lIMqghRCwdaqVZusPrJtq2RGJrJFnKnmtz3KBqtsEFPVrZFvoPubG/3466",
+    url: "https://paydirect.eduqfix.com/app/mnYv9Q6+C+3lIMqghRCwdaqVZusPrJtq2RGJrJFnKnmtz3KBqtsEFPVrZFvoPubG/3466",
     title: "Fee Payment",
    },
   ],
