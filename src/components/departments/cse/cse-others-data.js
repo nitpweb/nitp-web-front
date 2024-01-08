@@ -312,7 +312,7 @@ export const TimeTable = [
  {
   title: "Click here for the time table of CSED (for all semesters)",
   link:
-   "https://www.dropbox.com/sh/76m1ukfspklwuip/AABfILH6jGMDc9F8y4BefvRaa?dl=0",
+   "https://www.dropbox.com/scl/fo/kmdu6u1erwn18lwo0qe4p/h?rlkey=rl1xo6nzihg0j5yc9zvfidfr0&dl=0",
  },
 ]
 export const Activities = [
