@@ -9,7 +9,7 @@ import main from "../img/book.svg"
 import { PageLayout } from "../../styles/pagelayout"
 
 const Csesyllabus = props => {
- const [course, setCourse] = useState("programmesug")
+ const [course, setCourse] = useState("programmesimsc")
  const [syllabus, setSyllabus] = useState(CourseImsc)
  return (
   <>
@@ -50,15 +50,15 @@ const Csesyllabus = props => {
         </ul>
 
         <div className="probutton">
-         <button
-          onClick={() => {
-           setCourse("programmesug")
-           setSyllabus(CourseUg)
-          }}
-          className={course == "programmesug" ? "btnactive" : ""}
-         >
-          UG Courses
-         </button>
+         {/* <button
+                    onClick={() => {
+                      setCourse("programmesug")
+                      setSyllabus(CourseUg)
+                    }}
+                    className={course == "programmesug" ? "btnactive" : ""}
+                  >
+                    UG Courses
+                  </button> */}
          <button
           onClick={() => {
            setCourse("programmesimsc")
@@ -138,18 +138,40 @@ const Csesyllabus = props => {
        </div>
       )}
 
-      {course === "programmesug" && (
-       <div className="layoutrow">
-        <h1 className="rowmarl3" data-aos="zoom-in-right">
-         UG Course Structure
-        </h1>
-       </div>
-      )}
+      {/* {course === "programmesug" && (
+                <div className="layoutrow">
+                  <h1 className="rowmarl3" data-aos="zoom-in-right">
+                    UG Course Structure
+                  </h1>
+                </div>
+            )} */}
       {course === "programmesphd" && (
        <div className="layoutrow">
         <h1 className="rowmarl3" data-aos="zoom-in-right">
          PhD Course Structure
         </h1>
+        <Table>
+         <tr className="syllabus-table-head">
+          <th>Semester</th>
+          <th>Course Code</th>
+          <th>Course Title</th>
+          <th>L</th>
+          <th>T</th>
+          <th>P</th>
+          <th>Credits</th>
+         </tr>
+         {syllabus.map(elem => (
+          <tr className="syllabus-table-row">
+           <td>{elem.semester}</td>
+           <td>{elem.course_code}</td>
+           <td>{elem.course_title}</td>
+           <td>{elem.l}</td>
+           <td>{elem.t}</td>
+           <td>{elem.p}</td>
+           <td>{elem.credit}</td>
+          </tr>
+         ))}
+        </Table>
        </div>
       )}
      </div>
