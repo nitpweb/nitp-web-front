@@ -23,12 +23,18 @@ const Footer = () => {
      </h3>
      <div className="social-link">
       <span>
-       <a href="http://www.facebook.com/nitpatnaofficial" target="_blank">
+       <a
+        href="https://www.facebook.com/story.php?story_fbid=704954328428607&id=100067421393593&mibextid=K8Wfd2"
+        target="_blank"
+       >
         <img src="/facebook.png" alt="facebook" />
        </a>
       </span>
       <span>
-       <a href="https://twitter.com/NITPatna1" target="_blank">
+       <a
+        href="https://twitter.com/nitpatna1/status/1749690769500430475?s=48"
+        target="_blank"
+       >
         <img src="/twitter.svg" alt="twitter" />
        </a>
       </span>
