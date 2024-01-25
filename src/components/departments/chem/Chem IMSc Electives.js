@@ -3,86 +3,35 @@ import React from "react"
 const ChemElectives = [
  {
   course_code: `  `,
-  course_title: ` Group 1(Physical Chemistry): `,
+  course_title: (
+   <strong>Group 1(Polymer, Petroleum & Petrochemical Technology): </strong>
+  ),
   l: `  `,
   t: `  `,
   p: `  `,
   credits: `  `,
  },
  {
-  course_code: `CH621 `,
-  course_title: ` Advance QUANTUM Mechanics `,
+  course_code: ` - `,
+  course_title: ` Advanced polymer Processing Technologies
+    `,
   l: ` 3 `,
   t: ` 0 `,
   p: ` 0 `,
   credits: ` 3 `,
  },
  {
-  course_code: ` CH622 `,
-  course_title: ` Biophysical Chemistry `,
+  course_code: ` - `,
+  course_title: ` Thermal & Catalytic Processes
+    `,
   l: ` 3 `,
   t: ` 0 `,
   p: ` 0 `,
   credits: ` 3 `,
  },
-
  {
-  course_code: ` CH623 `,
-  course_title: ` Photophysics `,
-  l: ` 3 `,
-  t: ` 0 `,
-  p: ` 0 `,
-  credits: ` 3 `,
- },
-
- {
-  course_code: ` CH624 `,
-  course_title: ` Plasmonic Nanomaterials: properties and application `,
-  l: ` 3 `,
-  t: ` 0 `,
-  p: ` 0 `,
-  credits: ` 3 `,
- },
-
- {
-  course_code: `-`,
-  course_title: ` Group 2(Organic Chemistry): `,
-  l: `-`,
-  t: `-`,
-  p: `-`,
-  credits: `-`,
- },
-
- {
-  course_code: ` CH631 `,
-  course_title: ` Chemistry of natural products `,
-  l: ` 3 `,
-  t: ` 0 `,
-  p: ` 0 `,
-  credits: ` 3 `,
- },
-
- {
-  course_code: ` CH632 `,
-  course_title: ` Medicinal Chemistry `,
-  l: ` 3 `,
-  t: ` 0 `,
-  p: ` 0 `,
-  credits: ` 3 `,
- },
-
- {
-  course_code: ` CH633 `,
-  course_title: ` Art in organic synthesis `,
-  l: ` 3 `,
-  t: ` 0 `,
-  p: ` 0 `,
-  credits: ` 3 `,
- },
-
- {
-  course_code: ` CH634 `,
-  course_title: ` Chemistry of heterocyclic compounds `,
+  course_code: ` - `,
+  course_title: ` Petrochemicals `,
   l: ` 3 `,
   t: ` 0 `,
   p: ` 0 `,
@@ -91,7 +40,45 @@ const ChemElectives = [
 
  {
   course_code: `  `,
-  course_title: ` Group 3(Inorganic Chemistry): `,
+  course_title: <strong> Group 2(Renewable Energy Technology): </strong>,
+  l: ``,
+  t: ``,
+  p: ``,
+  credits: ``,
+ },
+
+ {
+  course_code: ` - `,
+  course_title: ` Solar Energy Engineering `,
+  l: ` 3 `,
+  t: ` 0 `,
+  p: ` 0 `,
+  credits: ` 3 `,
+ },
+
+ {
+  course_code: ` - `,
+  course_title: ` Electrochemical Energy Conversion and Storage `,
+  l: ` 3 `,
+  t: ` 0 `,
+  p: ` 0 `,
+  credits: ` 3 `,
+ },
+
+ {
+  course_code: ` - `,
+  course_title: ` Hydrogen and Bio Energy `,
+  l: ` 3 `,
+  t: ` 0 `,
+  p: ` 0 `,
+  credits: ` 3 `,
+ },
+
+ {
+  course_code: `  `,
+  course_title: (
+   <strong> Group 3(Pharmaceutical & Fine Chemical Technology): </strong>
+  ),
   l: `  `,
   t: `  `,
   p: `  `,
@@ -99,8 +86,8 @@ const ChemElectives = [
  },
 
  {
-  course_code: ` CH641 `,
-  course_title: ` Supramolecular Chemistry `,
+  course_code: ` - `,
+  course_title: ` Medicinal Chemistry `,
   l: ` 3 `,
   t: ` 0 `,
   p: ` 0 `,
@@ -108,8 +95,8 @@ const ChemElectives = [
  },
 
  {
-  course_code: ` CH642 `,
-  course_title: ` Chemistry of Materials`,
+  course_code: ` - `,
+  course_title: ` Drug Delivery Technology`,
   l: ` 3 `,
   t: ` 0 `,
   p: ` 0 `,
@@ -117,17 +104,9 @@ const ChemElectives = [
  },
 
  {
-  course_code: ` CH643 `,
-  course_title: ` Coordination Chemistry `,
-  l: ` 3 `,
-  t: ` 0 `,
-  p: ` 0 `,
-  credits: ` 3 `,
- },
-
- {
-  course_code: ` CH644 `,
-  course_title: ` Frontiers in Bioinorganic Chemistry `,
+  course_code: ` - `,
+  course_title: ` Fine Chemicals Production Processes
+    `,
   l: ` 3 `,
   t: ` 0 `,
   p: ` 0 `,
