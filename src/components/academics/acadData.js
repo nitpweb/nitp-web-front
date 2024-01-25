@@ -73,6 +73,11 @@ const DataPHD = [
   data: [
    {
     link:
+     "https://drive.google.com/file/d/1c7AUJbIH3J7Bh0KBfk2lgIKFngZ5CwwF/view?usp=sharing",
+    para: "PhD updated D-1 to D-10 forms",
+   },
+   {
+    link:
      "http://web.nitp.ac.in/uploads22/Notice_Thesis printing on both sides_19_10_22.pdf",
     para: "Notice regarding printing of Ph.D thesis on both sides of the paper",
    },
