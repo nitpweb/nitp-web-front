@@ -119,12 +119,12 @@ export const contact = () => {
 
    <div className="img img-12">
     <img
-     src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=1I91FCwC7s2k0UiOmuzervGK6M5Q_m8CI"
+     src="https://drive.google.com/thumbnail?id=1BWMZj4bg_zzLcIRlXyZ5dkqQh-M41jNq"
      alt="hodImage"
     />
     <br />
     <br />
-    <strong>Prof. Manoj Kumar</strong>
+    <strong>Dr.Fulena Rajak</strong>
     <br />
     Professor & HOD
    </div>

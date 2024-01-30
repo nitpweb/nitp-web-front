@@ -435,7 +435,7 @@ const ServiceUnit = [
   name: "Sri J P Sharma",
  },
  {
-  designation: "Finance & Accounts",
+  designation: "Research & Consulatancy",
   type: "Assistant Registrar",
   name: "Sri Sunny Choudhary",
  },
