@@ -1204,66 +1204,77 @@ const AnnualReports = [
    {
     para: "Annual Report 2019-20(Hindi Version)",
     link:
-     "http://old.nitp.ac.in/downloads/NIT%20Patna_AR%20Hindi%2019-20-updated.pdf",
+     "https://drive.google.com/file/d/143anlPYa2GdEsRDNT6APGEX7RXYUgXuK/view?usp=drive_link",
    },
    {
     para: "Annual Report 2019-20(English Version)",
     link:
-     "http://old.nitp.ac.in/downloads/Annual%20Report%20AR%20%20English%20NIT%20Patna%2019-20-20.04.2021.pdf",
+     "https://drive.google.com/file/d/1MnuYPPEln2UNVeYNDS137Bd9uAks6_Q-/view?usp=drive_link",
    },
    {
     para: "Annual Report 2018-19(Hindi Version)",
     link:
-     "http://old.nitp.ac.in/downloads/annual_report/Annual%20Report%20Hindi.pdf",
+     "https://drive.google.com/file/d/1ibIlfkbI8tScyCfxuokrjVKYfVhr9g1S/view?usp=drive_link",
    },
    {
     para: "Annual Report 2018-19(English Version)",
-    link: "http://old.nitp.ac.in/downloads/annual_report/Annual%20Report.pdf",
+    link:
+     "https://drive.google.com/file/d/1CgoyEykM4YkqMMK-WbvuWfvGyQ3i_6JM/view?usp=drive_link",
    },
    {
     para: "Annual Report 2017-18",
     link:
-     "http://old.nitp.ac.in/downloads/annual_report/AR_17-18.pdfhttp://old.nitp.ac.in/downloads/annual_report/AR_16-17.pdf",
+     "https://drive.google.com/file/d/1IDk_1u0nLQw6cNBGk51aynWuXZhq4Tsb/view?usp=drive_link",
    },
    {
     para: "Annual Report 2016-17",
-    link: "http://old.nitp.ac.in/downloads/annual_report/AR_16-17.pdf",
+    link:
+     "https://drive.google.com/file/d/1hz-gKnduzkMo_H8Gl-F9GMTJ9bj842d3/view?usp=drive_link",
    },
    {
     para: "Annual Report 2015-16",
-    link: "http://old.nitp.ac.in/downloads/annual_report/AR_15-16.pdf",
+    link:
+     "https://drive.google.com/file/d/1yk0zhlx6E_jrVadEg_La_n8z_FRVsDF7/view?usp=drive_link",
    },
    {
     para: "Annual Report 2014-15",
-    link: "http://old.nitp.ac.in/downloads/annual_report/AR_14-15.pdf",
+    link:
+     "https://drive.google.com/file/d/14ssl9RbPeXntGANv7m5UY1D4y5Yxlshz/view?usp=drive_link",
    },
    {
     para: "Annual Report 2013-14",
-    link: "http://old.nitp.ac.in/downloads/annual_report/AR_13-14.pdf",
+    link:
+     "https://drive.google.com/file/d/1rKl-x5GAmWGADz2U7OvU1T5UMIaGC7jB/view?usp=drive_link",
    },
    {
     para: "Annual Report 2012-13",
-    link: "http://old.nitp.ac.in/downloads/annual_report/AR_12-13.pdf",
+    link:
+     "https://drive.google.com/file/d/12ucyxJAIfwC1B3mGBHz95CUmXBeWGDlX/view?usp=drive_link",
    },
    {
     para: "Annual Report 2011-12",
-    link: "http://old.nitp.ac.in/downloads/annual_report/AR_11-12.pdf",
+    link:
+     "https://drive.google.com/file/d/1MXCJJXeCI_kVc_MkveUieZPrrBuJneWg/view?usp=drive_link",
    },
    {
     para: "Annual Report 2010-11",
-    link: "http://old.nitp.ac.in/downloads/annual_report/AR_10-11.pdf",
+    link:
+     "https://drive.google.com/file/d/1ILUTChm2aZ_Y45dJkllizd5IPNtH_oL8/view?usp=drive_link",
    },
    {
     para: "Annual Report 2009-10",
-    link: "http://old.nitp.ac.in/downloads/annual_report/AR_09-10.pdf",
+    link:
+     "https://drive.google.com/file/d/1FoJy3nITB3j5SBzCIYTuN9H6ngK6NN-k/view?usp=drive_link",
    },
    {
     para: "Annual Report 2008-09",
-    link: "http://old.nitp.ac.in/downloads/annual_report/AR_08-09.pdf",
+    link:
+     "https://drive.google.com/file/d/1Od5lXthly7izI7d_OGiL8HltmyflA4iY/view?usp=drive_link",
    },
    {
     para: "Annual Report 2007-08",
-    link: "http://old.nitp.ac.in/downloads/annual_report/AR_07-08.pdf",
+    link:
+     "https://drive.google.com/file/d/1BiQszH1Z_x7ntx8Jw0GiQJrmW1ofYGei/view?usp=drive_link",
    },
   ],
  },
