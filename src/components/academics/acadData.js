@@ -1288,7 +1288,7 @@ const Patents = [
    {
     para: "Click here to download the list of Granted Patents.",
     link:
-     "https://drive.google.com/file/d/1K9JmThmOYp51h_0x5P7ktaH0Re6XSCYh/view?usp=sharing",
+     "https://docs.google.com/spreadsheets/d/1XNgQ5lVxFDjfW5TdQq1U-YuCsZVn-u7D/edit?usp=sharing&ouid=110446457812712094222&rtpof=true&sd=true",
    },
   ],
  },
@@ -1299,7 +1299,7 @@ const Patents = [
    {
     para: "Click here to download the list of Published Patents.",
     link:
-     "https://drive.google.com/file/d/16AD7GUwmCReVdSAuHg1wdjtb2fxMnTIX/view?usp=sharing",
+     "https://docs.google.com/spreadsheets/d/1LXIWS5AOrCHjidQ92SpuXgV4XlKf8pkG/edit?usp=sharing&ouid=110446457812712094222&rtpof=true&sd=true",
    },
   ],
  },
