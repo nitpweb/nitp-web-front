@@ -1,18 +1,21 @@
 import React from "react"
 import Slider from "../../Slider/Slider"
+import "./CheStyle.css"
 
 import {
  Achievements,
  Activity,
- ActivityImages,
- LabImages,
+ //  ActivityImages,
+ LabImages1,
+ LabImages2,
+ LabImages3,
  Labs,
  Others,
 } from "./chem-others-data"
 
 export const routeName = "che"
 export const title = "Chemistry Department"
-console.log(LabImages)
+console.log(LabImages1)
 export const titleDescription = () => {
  return (
   <>
@@ -86,22 +89,26 @@ export const about = () => {
 export const mission = () => {
  return (
   <>
-   To develop and promote innovations in Education at all levels, and generate
-   fundamental and applied knowledge by engaging in scientific research by
-   adopting suitable steps.
-   <br />
-   <br />
-   To promote academic growth by offering state-of-the-art education in
-   undergraduate, postgraduate and doctoral programmes.
-   <br />
-   <br />
-   To pursue quality research output by developing necessary and adequate
-   research facilities and undertaking collaborative / sponsored research
-   projects.
-   <br />
-   <br />
-   Maintaining and enhancing the diversity of students, staff, faculty and
-   curricula.
+   <ul>
+    <li>
+     To develop and promote innovations in Education at all levels, and generate
+     fundamental and applied knowledge by engaging in scientific research by
+     adopting suitable steps.
+    </li>
+    <li>
+     To promote academic growth by offering state-of-the-art education in
+     undergraduate, postgraduate and doctoral programmes.
+    </li>
+    <li>
+     To pursue quality research output by developing necessary and adequate
+     research facilities and undertaking collaborative / sponsored research
+     projects.
+    </li>
+    <li>
+     Maintaining and enhancing the diversity of students, staff, faculty and
+     curricula.
+    </li>
+   </ul>
   </>
  )
 }
@@ -109,12 +116,17 @@ export const mission = () => {
 export const vision = () => {
  return (
   <>
-   To serve the country through this institution by pursuing excellence in
-   scientific and technical education and research.
-   <br />
-   <br />
-   To make this department a center of excellence for cutting edge fundamental
-   and applied research.
+   <ul>
+    <li>
+     To serve the country through this institution by pursuing excellence in
+     scientific and technical education and research.
+    </li>
+
+    <li>
+     To make this department a center of excellence for cutting edge fundamental
+     and applied research.
+    </li>
+   </ul>
   </>
  )
 }
@@ -154,8 +166,17 @@ export const labs = () => {
     className="row rowmarl3"
     style={{ flexDirection: "column", alignItems: "center" }}
    >
+    <div className="Headg">Teaching Lab</div>
     <div className="col-6" style={{ width: "90%" }}>
-     <Slider dataSlider={LabImages} />
+     <Slider dataSlider={LabImages1} showDots={true} />
+    </div>{" "}
+    <div className="Headg">Instrumental Lab</div>
+    <div className="col-6" style={{ width: "90%" }}>
+     <Slider dataSlider={LabImages2} showDots={true} />
+    </div>{" "}
+    <div className="Headg">Research Lab</div>
+    <div className="col-6" style={{ width: "90%" }}>
+     <Slider dataSlider={LabImages3} showDots={true} />
     </div>{" "}
     <div className="col-6" style={{ width: "100%" }}>
      {Labs.content}
@@ -168,9 +189,9 @@ export const labs = () => {
 export const activities = () => {
  return (
   <>
-   <div className="row rowmarl3">
+   {/* <div className="row rowmarl3">
     <Slider dataSlider={ActivityImages} showDots={true} />
-   </div>
+   </div> */}
    <div className="row rowmarl3">{Activity.content}</div>
   </>
  )
