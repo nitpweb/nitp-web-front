@@ -119,7 +119,7 @@ export const contact = () => {
 
    <div className="img img-12">
     <img
-     src="https://drive.google.com/thumbnail?id=1BWMZj4bg_zzLcIRlXyZ5dkqQh-M41jNq"
+     src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=1CKQd0i9upET-06HtxIX8OekY7pWh26Zy"
      alt="hodImage"
     />
     <br />
