@@ -1,8 +1,39 @@
+import { number } from "prop-types"
 import React from "react"
+import "./CheStyle.css"
 
-// const home = "http://www.nitp.ac.in/php/"
-const home = process.env.GATSBY_BASE_URL + "chem/labs/"
-const activity = process.env.GATSBY_BASE_URL + "chem/"
+const home = "http://www.nitp.ac.in/php/"
+//const home = process.env.GATSBY_BASE_URL + "chem/labs/"
+
+const activity = process.env.GATSBY_BASE_URL + "chem/activities/"
+
+const LabImages = process.env.GATSBY_BASE_URL + "chem/labs/"
+
+// ------------------------------ LAB ----------------------------
+
+export const LabImages1 = [
+ <img src={`${LabImages}tl_01.jpg`} alt="image" />,
+ <img src={`${LabImages}tl_02.jpg`} alt="image" />,
+ <img src={`${LabImages}tl_03.jpg`} alt="image" />,
+ <img src={`${LabImages}tl_04.jpg`} alt="image" />,
+]
+
+export const LabImages2 = [
+ <img src={`${LabImages}il_01.jpg`} alt="image" />,
+ <img src={`${LabImages}il_02.jpg`} alt="image" />,
+ <img src={`${LabImages}il_03.jpg`} alt="image" />,
+]
+
+export const LabImages3 = [
+ <img src={`${LabImages}rl_01.jpg`} alt="image" />,
+ <img src={`${LabImages}rl_02.jpg`} alt="image" />,
+ <img src={`${LabImages}rl_03.jpg`} alt="image" />,
+ <img src={`${LabImages}rl_04.jpg`} alt="image" />,
+ <img src={`${LabImages}rl_05.jpg`} alt="image" />,
+ <img src={`${LabImages}rl_06.jpg`} alt="image" />,
+ <img src={`${LabImages}rl_07.jpg`} alt="image" />,
+ <img src={`${LabImages}rl_08.jpg`} alt="image" />,
+]
 
 export const Labs = {
  content: (
@@ -24,434 +55,670 @@ export const Labs = {
   </>
  ),
 }
-// export const LabImages = [
-//   <>
-//     <img src={`${home}cheimg/Dr. Parvin Lab.jpg`} alt="image" />
-//     <div className="text">Dr. Parvin Lab</div>
-//   </>,
-//   <>
-//     <img src={`${home}cheimg/Dr. Jha Lab.png`} alt="image" />
-//     <div className="text">Dr. Jha Lab</div>
-//   </>,
-//   <>
-//     <img src={`${home}cheimg/Dr. Dasgupta Lab.jpg`} alt="image" />
-//     <div className="text">Dr. Dasgupta Lab</div>
-//   </>,
-//   <>
-//     <img src={`${home}cheimg/subrata.jpg`} alt="image" />
-//     <div className="text">Dr. Das Lab</div>
-//   </>,
-//   <>
-//     <img src={`${home}cheimg/Dr. Chowdhury Lab.jpg`} alt="image" />
-//     <div className="text">Dr. Chowdhury Lab</div>
-//   </>,
-//   <>
-//     <img src={`${home}cheimg/Dr. Thakur Lab.png`} alt="image" />
-//     <div className="text">Dr. Thakur Lab</div>
-//   </>,
-//   <>
-//     <img src={`${home}cheimg/pic-3_BTech lab.JPG`} alt="image" />
-//     <div className="text">B.Tech Lab</div>
-//   </>,
-//   <>
-//     <img src={`${home}cheimg/pic-4_MSc Synthesis lab.JPG`} alt="image" />
-//     <div className="text">M.Sc Synthesis Lab</div>
-//   </>,
-//   <>
-//     <img src={`${home}cheimg/pic-5_MSc Characterization lab.jpg`} alt="image" />
-//     <div className="text">M.Sc Characterization lab</div>
-//   </>,
-//   <>
-//     <img
-//       src={`${home}cheimg/pic-6_Departmental Instrument Lab.jpg`}
-//       alt="image"
-//     />
-//     <div className="text">Departmental Instrument Lab</div>
-//   </>,
-//   <>
-//     <img
-//       src={`${home}cheimg/pic-7_Departmental Individual Faculty Research Lab.jpg`}
-//     />
-//     <div className="text">Dep. Of Faculty Research Lab</div>
-//   </>,
-// ]
 
-export const LabImages = [
- <>
-  <img src={`${home}subrata.jpg`} alt="image" />
- </>,
- <>
-  <img src={`${home}Dr. Jha Lab.png`} alt="image" />
- </>,
- <>
-  <img src={`${home}Dr. Parvin Lab.jpg`} alt="image" />
- </>,
- <>
-  <img src={`${home}Dr. Chowdhury Lab.jpg`} alt="image" />
- </>,
- <>
-  <img src={`${home}Dr. Dasgupta Lab.jpg`} alt="image" />
- </>,
- <>
-  <img src={`${home}pic-3_BTech lab.jpg`} alt="image" />
- </>,
- <>
-  <img src={`${home}pic-4_MSc Synthesis lab.jpg`} alt="image" />
- </>,
- <>
-  <img src={`${home}pic-5_MSc Characterization lab.jpg`} alt="image" />
- </>,
- <>
-  <img src={`${home}pic-6_Departmental Instrument Lab.jpg`} alt="image" />
- </>,
- <>
-  <img
-   src={`${home}pic-7_Departmental Individual Faculty Research Lab.jpg`}
-   alt="image"
-  />
- </>,
-]
-
-export const ActivityImages = [
- <img src={`${activity}02.jpg`} alt="image" />,
- <img src={`${activity}01.jpg`} alt="image" />,
- <img src={`${activity}06.jpg`} alt="image" />,
- <img src={`${activity}03.jpg`} alt="image" />,
- <img src={`${activity}04.jpg`} alt="image" />,
- <img src={`${activity}05.jpg`} alt="image" />,
- <img src={`${activity}07.jpg`} alt="image" />,
- <img src={`${activity}08.jpg`} alt="image" />,
- <img src={`${activity}10.jpg`} alt="image" />,
- <img src={`${activity}09.jpg`} alt="image" />,
- <img src={`${activity}11.jpg`} alt="image" />,
-]
-
+// ------------------------------ ACHIEVEMENTS ----------------------------
 const SponseredProjectsTable = [
  {
-  "Sl. No.": 1,
-  "Name of Faculty": "Dr. Subrata Das",
+  "Sr. No.": 1,
+  "Name of PI": "Dr. Rima Thakur",
   "Title of Project":
-   'Metallosupramolecular complexes with bioactive pyrimidine derivatives: Materials for advanced applications{" "}',
-  "Sponsored Agency": "DST-SERB, Govt. of India, Ongoing (2019-2022)",
-  "Amount (Rs.)": "42.85 Lacs",
+   "Radical Mediated Glycal Functionalization towards Synthesis of C2-Modified Sugars.",
+  "Project No./Time Period": "SPG/2021/004607 July 2022 - July 2025",
+  "Amount (Rs.)": "45.21 Lakhs",
+  Agency: "SERB-DST",
+ },
+
+ {
+  "Sr. No.": 2,
+  "Name of PI": "Dr. Niki Sweta Jha",
+  "Title of Project":
+   "Tunable loading of oligonucleotide with gold and magnetic silica sphere derived gold nanostructured materials as sensing probe for detection of Target DNA. ",
+  "Project No./Time Period": "01(3071)/21/EMR-II March 2022 – March 2025",
+  "Amount (Rs.)": "21.25 Lakhs",
+  Agency: "CSIR",
  },
  {
-  "Sl. No.": 2,
-  "Name of Faculty": "Dr. Tasneem Parvin",
+  "Sr. No.": 3,
+  "Name of PI": "Dr. Suvankar Dasgupta",
   "Title of Project":
-   "Exploration of bifunctional thiourea-amine organocatalysts in asymmetric multicomponent reactions",
-  "Sponsored Agency": "DST-SERB, Govt. of India. Completed(2016-2019)",
-  "Amount (Rs.)": "51.95 Lakh",
+   "Analysis of Stopper Size for Smaller Crown Ethers in MIM. ",
+  "Project No./Time Period": "R21-1196462483August 2021 – August 2023",
+  "Amount (Rs.)": "3.92 Lakhs",
+  Agency: "RSC Research fund",
  },
  {
-  "Sl. No.": 3,
-  "Name of Faculty": "Dr. Suvankar Dasgupta",
-  "Title of Project": "Host-Guest Chemistry for Stimuli-Responsive System",
-  "Sponsored Agency": "DST-SERB, Govt. of India, (2016-)",
-  "Amount (Rs.)": "36.21 Lacs",
+  "Sr. No.": 4,
+  "Name of PI": "Dr. Subrata Das",
+  "Title of Project":
+   "Bio-sensing application of Graphene (GR) analogous systems: Estimating device potential. ",
+  "Project No./Time Period":
+   "54/14/15/2020-BRNS/35054 September 2020 – September 2023",
+  "Amount (Rs.)": "32.00 Lakhs",
+  Agency: "BRNS-DAE",
  },
  {
-  "Sl. No.": 4,
-  "Name of Faculty": "Dr. Aniruddha Paul",
+  "Sr. No.": 5,
+  "Name of PI": "Dr. Subrata Das",
   "Title of Project":
-   "Surface-Immobilized Growth of Anisotropic Noble Metal Nanoparticles: Spectroscopic Investigation and Application",
-  "Sponsored Agency": "DST-SERB, Govt. of India, (2016-)",
-  "Amount (Rs.)": "45.16 Lacs",
+   "Metallosupramolecular complexes with bioactive pyrimidine derivatives: Materials for advanced applications. ",
+  "Project No./Time Period": "EEQ/2019/000294 December 2019 – December 2022",
+  "Amount (Rs.)": "43.00 Lakhs",
+  Agency: "SERB-DST",
  },
  {
-  "Sl. No.": 5,
-  "Name of Faculty": "Dr. Rima Thakur",
-  "Title of Project":
-   "Stereoselective Strategies towards beta-glycosylation: En route synthesis of bioactive compounds",
-  "Sponsored Agency": "DST-SERB, Govt. of India, completed (2016-2019)",
-  "Amount (Rs.)": "37.62 Lacs",
+  "Sr. No.": 6,
+  "Name of PI": "Dr. Suvankar Dasgupta",
+  "Title of Project": "Host-Guest Chemistry for Stimuli-Responsive Systems. ",
+  "Project No./Time Period": "ECR/2016/001724 Feb 2017 – June 2020",
+  "Amount (Rs.)": "36.21 Lakhs",
+  Agency: "SERB-DST",
  },
  {
-  "Sl. No.": 6,
-  "Name of Faculty": "Dr. Mukesh Choudhary",
+  "Sr. No.": 7,
+  "Name of PI": "Dr. Aniruddha Paul",
   "Title of Project":
-   "Synthesis, characterization, crystal structure, superoxide dismutase and antimicrobial activities of some new copper(II) and nickel(II) complexes containing ONN donor Schiff bases and bidentate N, N, donor co-ligands",
-  "Sponsored Agency": "CSIR, New Delhi, Completed (2016-2019)",
-  "Amount (Rs.)": "8 Lacs",
+   "Surface-Immobilized Growth of Anisotropic Noble Metal Nanoparticles: Spectroscopic Investigation and Application. ",
+  "Project No./Time Period": "ECR/2016/001597 Feb 2017 – Feb 2020",
+  "Amount (Rs.)": "45.16 Lakhs",
+  Agency: "SERB-DST",
  },
  {
-  "Sl. No.": 7,
-  "Name of Faculty": "Dr. Niki Sweta Jha",
+  "Sr. No.": 8,
+  "Name of PI": "Dr. Rima Thakur",
   "Title of Project":
-   "Biophysical and electrochemical characterization of G-quadruplex and small molecules binding",
-  "Sponsored Agency": "DST-SERB, Govt. of India, Completed",
-  "Amount (Rs.)": "20.76 lacs",
+   "Stereoselective Strategies Towards b-glycosylation: En route Synthesis of Bioactive Compounds. ",
+  "Project No./Time Period": "ECR/2016/000623 Nov 2016 – Nov 2019",
+  "Amount (Rs.)": "37.62 Lakhs",
+  Agency: "SERB-DST",
  },
  {
-  "Sl. No.": 8,
-  "Name of Faculty": "Dr. Subrata Das",
+  "Sr. No.": 9,
+  "Name of PI": "Dr. Tasneem Parvin",
   "Title of Project":
-   "Nitroso-Diels-Alder (NDA) reactions for the synthesis of some heterocyclic compounds",
-  "Sponsored Agency": "DST-SERB, New Delhi, Completed (2013-2017)",
-  "Amount (Rs.)": "12 Lacs",
+   "Exploration of bifunctional thiourea-amine orgnocatalysts in asymmetric multicomponent ",
+  "Project No./Time Period": "EMR/2016/000960 Sept 2016 – Sept 2019",
+  "Amount (Rs.)": "51.95 Lakhs",
+  Agency: "SERB-DST",
  },
  {
-  "Sl. No.": 9,
-  "Name of Faculty": "Dr. Tasneem Parvin",
+  "Sr. No.": 10,
+  "Name of PI": "Dr. Subrata Das",
   "Title of Project":
-   "Design and development of multifunctional organocatalysts for asymmetric synthesis",
-  "Sponsored Agency": "DST-SERB, New Delhi, Completed (2010-2014)",
-  "Amount (Rs.)": "19.90 Lacs",
+   "Nitroso-Diels-Alder (NDA) reaction for the synthesis of some heterocyclic compounds. ",
+  "Project No./Time Period": "SB/FT/CS-133/2012 April 2013 – March 2017",
+  "Amount (Rs.)": "13.00 Lakhs",
+  Agency: "SERB-DST",
  },
 ]
 
-export const Activity = {
+export const Achievements = {
  content: (
-  <>
-   <h2>Conference and Workshop</h2>
-
-   <p style={{ display: "block", width: `100%` }}>
-    The Department has an active conference and workshop program that features
-    eminent faculty and researchers from various reputed institutes. PhD
-    scholars and Integrated MSc students are particularly encouraged to
-    participate in such activities and have interactive sessions with the
-    speakers to broaden their research thinking.
-   </p>
-   <ul>
-    <li>
-     Workshop on &ldquo;Recent Trends in Green Chemistry and Technology&rdquo;,
-     27-28<sup>th</sup> November 2015:
-    </li>
-   </ul>
-   <p style={{ display: "block", width: `100%` }}>
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Coordinator: Dr. Tasneem Parvin
-   </p>
-   <p style={{ display: "block", width: `100%` }}>
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Co-Coordinator: Dr. Subrata Das
-   </p>
-   <p style={{ display: "block", width: `100%` }}>
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Co-Coordinator: Dr. Khursheed
-    Ahmad
-   </p>
-   <ul>
-    <li>
-     Workshop on &ldquo;Recent Trends in Synthetic Chemistry and its
-     Relevance&rdquo;, 10-11<sup>th</sup> December 2015:
-    </li>
-   </ul>
-   <p style={{ display: "block", width: `100%` }}>
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Coordinator: Dr. Mukesh Choudhary
-   </p>
-   <p style={{ display: "block", width: `100%` }}>
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Co-Coordinator: Prof. Sitaram
-    Sharma
-   </p>
-   <p style={{ display: "block", width: `100%` }}>
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Co-Coordinator: Dr. Khursheed
-    Ahmad
-   </p>
-   <ul>
-    <li>
-     Workshop on &ldquo;Strengthening of Institute-Industry Interaction&rdquo;,
-     24<sup>th</sup> October 2016:
-    </li>
-   </ul>
-   <p style={{ display: "block", width: `100%` }}>
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Convener: Dr. Subrata Das
-   </p>
-   <p style={{ display: "block", width: `100%` }}>
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Co-Convener: Dr. Pradip Kr. Sukul
-   </p>
-   <ul>
-    <li>
-     Workshop on &ldquo;Fundamentals and Applications in Biomolecular
-     Spectroscopy&rdquo;, 25-26<sup>th</sup> October 2016:
-    </li>
-   </ul>
-   <p style={{ display: "block", width: `100%` }}>
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Convener: Dr. Niki Sweta Jha, Dr.
-    Tasneem Parvin &amp; Dr. Pradip Kr. Sukul
-   </p>
-   <ul>
-    <li>
-     Foundation Day Lecture given by Prof. S. P. Rath (IIT Kanpur) on
-     &ldquo;Metals in Biology&rdquo;, 27<sup>th</sup> January 2017.
-    </li>
-    <li>
-     Six Day Short Term course on &ldquo;Strengthening of Institute-Industry
-     Interaction-II&rdquo;, 30<sup>th</sup> Jan-4
-     <sup>th</sup> February 2017:
-    </li>
-   </ul>
-   <p style={{ display: "block", width: `100%` }}>
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Convener: Dr. Pradip Kr. Sukul
-   </p>
-   <p style={{ display: "block", width: `100%` }}>
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Co-Convener: Dr. Subrata Das
-   </p>
-   <ul>
-    <li>
-     Conference on &ldquo;Recent Advancement in Functional Materials and
-     Nanotechnology (<em>RAFMN-2017</em>)&rdquo;, 15-17<sup>th</sup> February
-     2017:
-    </li>
-   </ul>
-   <p style={{ display: "block", width: `100%` }}>
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Convener: Dr. Subrata Das &amp; Dr.
-    Aniruddha Paul
-   </p>
-   <p style={{ display: "block", width: `100%` }}>
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Secretary: Dr. Pradip Kr. Sukul
-   </p>
-   <p style={{ display: "block", width: `100%` }}>
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Treasurer: Dr. Suvankar Dasgupta
-   </p>
-   <ul>
-    <li>
-     Five Day Short Term course on “Strengthening of Institute-Industry
-     Interaction-III”, 08-12<sup>th</sup>October 2018:
-    </li>
-   </ul>
-   <p style={{ display: "block", width: `100%` }}>
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Coordinator: Dr. Subrata Das
-   </p>
-   <p style={{ display: "block", width: `100%` }}>
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Convener: Dr. Pradip Kr.Sukul
-   </p>
-
-   <h2>Sponsored Projects / Status</h2>
+  <div>
+   <div className="Headg">Externally Sponsored Projects:</div>
    <table className="table-act">
     <thead>
      <tr className="syllabus-table-head">
-      <th>Sl. No.</th>
-      <th>Name of Faculty</th>
+      <th>Sr. No.</th>
+      <th>Name of PI</th>
       <th>Title of Project</th>
-      <th>Sponsored Agency</th>
-      <th>Amount (Rs.)</th>
+      <th>Project No./ Time Period</th>
+      <th>Amount Sactioned(₹)</th>
+      <th>Funding Agency</th>
      </tr>
     </thead>
     <tbody>
      {SponseredProjectsTable.map((row, idx) => {
       return (
        <tr key={idx}>
-        <td>{row["Sl. No."]}</td>
-        <td>{row["Name of Faculty"]}</td>
+        <td>{row["Sr. No."]}</td>
+        <td>{row["Name of PI"]}</td>
         <td>{row["Title of Project"]}</td>
-        <td>{row["Sponsored Agency"]}</td>
+        <td>{row["Project No./Time Period"]}</td>
         <td>{row["Amount (Rs.)"]}</td>
+        <td>{row["Agency"]}</td>
        </tr>
       )
      })}
     </tbody>
    </table>
 
-   <div>
-    <h3>News</h3>
-    <p>
-     <h3>
-      <ul>
-       <li>
-        Department of Chemistry welcomes applications for PhD from NET/GATE
-        qualified MSc./M.Tech. students.
-       </li>
-      </ul>
-     </h3>
-    </p>
-   </div>
-  </>
+   <ol id="Achievements-List" type="1">
+    <div className="Headg">Patents:</div>
+    <li>
+     <span className="List-red">Subrata Das</span>, P. K. Sukul and A. Mondal.{" "}
+     <strong>
+      “Superhydrophobic Photostable Dye Coated Magnetic Nano Materials for
+      Separating Contaminated Oil”.
+     </strong>{" "}
+     <span className="blue">
+      Indian Patent. 2017. Patent No: 332217 (Granted).
+     </span>
+    </li>
+
+    <li>
+     <span className="List-red">Subrata Das</span>, Shibu Naskar, S. Mal, T. Das
+     and P. Kumar. <strong>“An Improved Batch-flow photo-reactor”.</strong>{" "}
+     <span className="blue">
+      Indian Patent. 2022. Patent no: 412866 (Granted).
+     </span>
+    </li>
+
+    <li>
+     <span className="List-red">Subrata Das</span>, A. Sarkar and Abhimunya.{" "}
+     <strong>
+      “Method and system for reducing pollutants in exhaust emissions of
+      internal combustion engine”.
+     </strong>{" "}
+     <span className="blue">
+      Indian Patent. 2014. Patent App. No: 1455/MUM/2014. (Published).
+      (Examination report submitted on July 2019).
+     </span>
+    </li>
+
+    <li>
+     <span className="List-red">Subrata Das</span>, Parmanand Kumar, Raj Kumar,
+     Susital Mal, Tushar Das and Shubham Raj.{" "}
+     <strong>
+      “Violuric acid functionalized reduced graphene oxide as an adsorbent for
+      the removal of toxic metal ions”.
+     </strong>{" "}
+     <span className="blue">
+      Indian Patent. 2023. Indian Patent App. no: 202331006034. (Published).
+      Examination report submitted.
+     </span>
+    </li>
+
+    <li>
+     <span className="List-red">Subrata Das</span>, Tushar Das, Susital Mal,
+     Prakash Kumar, Debabrata Mandal.{" "}
+     <strong>
+      “Graphene quantum dots as nanozymes for neuronal stress suppression”.
+     </strong>{" "}
+     <span className="blue">
+      2023. Indian Patent App. no: 202331025091. (Published).
+     </span>
+    </li>
+
+    <li>
+     <span className="List-red">Tasneem Parvin</span>, Darakshan, Ujjain
+     Chaurasia and Aatka Mehar,{" "}
+     <strong>
+      “Indole linked benzo indoledione derivatives and one-pot synthesis method
+      thereof.”
+     </strong>{" "}
+     <span className="blue">
+      Indian Patent, 2023, Application No. 202331043395. (Published).
+     </span>
+    </li>
+   </ol>
+  </div>
  ),
 }
 
-export const Achievements = {
+// ------------------------------- ACTIVITY -------------------------------
+
+export const Activity = {
  content: (
-  <ul>
-   <li>
-    Patent granted on "A METHOD FOR CONTAMINATED WATER USING PHOTOSTABLE
-    SUPERPARAMAGNETIC NANOMATERIAL."
-   </li>
-  </ul>
+  <div>
+   <div className="Headg">Upcoming Events:</div>
+   <div className="Headg">Recent Activities:</div>
+   <ol className="Activity-list" type="1">
+    <li>
+     <h3>Department Lecture Series 7</h3>
+     <p>
+      <strong>Date: </strong>5th January, 2024 <strong>Venue :</strong>Computer
+      Center
+     </p>
+     <p>
+      <strong>Speaker: </strong>Prof. Raja Shanmugam, Professor, Department of
+      Chemistry, IISER Kolkata{" "}
+     </p>
+     <p>
+      <strong>Title: </strong>Designing Norbornene Based Functional Polymers
+     </p>
+     <img className="ac-images" src={`${activity}ac_01.jpg`} alt="image" />
+    </li>
+
+    <li>
+     <h3>Department Lecture Series 6 </h3>
+     <p>
+      <strong>Date: </strong> 28th November, 2023 <strong>Venue :</strong>
+      Computer Center
+     </p>
+     <p>
+      <strong>Speaker: </strong>Prof. Partha Hazra, Professor, Department of
+      Chemistry, IISER Pune{" "}
+     </p>
+     <p>
+      <strong>Title: </strong>Triplet Exciton Harvesting in Novel Organic
+      Luminogens for New Generation OLED Applications
+     </p>
+     <img className="ac-images" src={`${activity}ac_02.jpg`} alt="image" />
+    </li>
+
+    <li>
+     <h3>Department Lecture Series 5</h3>
+     <p>
+      <strong>Date: </strong>4th October, 2023 <strong>Venue :</strong> Computer
+      Center
+     </p>
+     <p>
+      <strong>Speaker: </strong>Prof. (Dr.) Partha Basu, Department Chair
+      Professor of Chemistry, Indiana University, Indianapolis, USA{" "}
+     </p>
+     <p>
+      <strong>Title: </strong>Bio-organic Chemistry
+     </p>
+     <img className="ac-images" src={`${activity}ac_03.jpg`} alt="image" />
+    </li>
+
+    <li>
+     <h3>Department Lecture Series 4</h3>
+     <p>
+      <strong>Date: </strong>25th July, 2023 <strong>Venue :</strong> Computer
+      Center
+     </p>
+     <p>
+      <strong>Speaker: </strong>Prof. Krishna Nand Singh, Professor, Department
+      of Chemistry, Banaras Hindu University, Varanasi{" "}
+     </p>
+     <p>
+      <strong>Title: </strong>Organic Synthesis: Challenges and Remedies
+     </p>
+    </li>
+
+    <li>
+     <h3>Department Lecture Series 3</h3>
+     <p>
+      <strong>Date: </strong> 4th July, 2023 <strong>Venue :</strong> Computer
+      Center
+     </p>
+     <p>
+      <strong>Speaker: </strong>Prof. Vinod K. Tiwari, Professor, Department of
+      Chemistry, Banaras Hindu University, Varanasi{" "}
+     </p>
+     <p>
+      <strong>Title: </strong>Synthetic Chemists and Our Society
+     </p>
+     <img className="ac-images" src={`${activity}ac_04.jpg`} alt="image" />
+    </li>
+
+    <li>
+     <h3>Department Lecture Series 2</h3>
+     <p>
+      <strong>Date: </strong>12th June, 2023 <strong>Venue :</strong> Computer
+      Center
+     </p>
+     <p>
+      <strong>Speaker: </strong>Prof. Suvarn S. Kulkarni, Institute Chair
+      Professor, Department of Chemistry, IIT Bombay{" "}
+     </p>
+     <p>
+      <strong>Title: </strong>Simple Solutions to Complex Problems
+     </p>
+     <img className="ac-images" src={`${activity}ac_05.jpg`} alt="image" />
+    </li>
+
+    <li>
+     <h3>Department Lecture Series 1</h3>
+     <p>
+      <strong>Date: </strong>3rd May, 2023 <strong>Venue :</strong> Computer
+      Center
+     </p>
+     <p>
+      <strong>Speaker: </strong>Dr. Sumanta Kumar Sahu, Associate Professor, IIT
+      (ISM) Dhanbad{" "}
+     </p>
+     <p>
+      <strong>Title: </strong>: Multicolor Emissive Carbon Dots for White Light
+      Emitting Diode: A Prospective
+     </p>
+    </li>
+   </ol>
+  </div>
  ),
 }
+
+// ------------------------------ More Info ----------------------------
 
 export const Others = {
  content: (
-  <>
-   <div>
-    <p style={{ fontSize: `1.3rem` }}>
-     <strong>PhD students:</strong>
-    </p>
-    <ol>
-     <li>Sangeeta (PhD guide: Dr. Khursheed Ahmad)</li>
-     <li>Mosidur Rahaman Molla (PhD guide: Dr. Rima Thakur)</li>
-     <li>Pramanand Kumar (PhD guide: Dr. Subrata Das)</li>
-     <li>Manisha Prakashini (PhD guide: Dr. Suvankar Dasgupta)</li>
-     <li>Sweta (PhD guide: Prof. Sitaram Sharma)</li>
-     <li>Vedeshwar Narayan Singh (PhD guide: Prof. Sitaram Sharma)</li>
-     <li>Rajeev Kumar Shandilya (PhD guide: Dr. Aniruddha Paul)</li>
-     <li>Awdhesh Dwivedi (PhD guide: Dr. Niki Sweta Jha)</li>
-     <li>Pradeep Das (PhD guide: Dr. Rima Thakur)</li>
-     <li>Mukesh Kumar Mishra (PhD guide: Dr. Khursheed Ahmad)</li>
-     <li>Krishna Kumar Mahto (PhD guide: Dr. Khursheed Ahmad)</li>
-     <li>Darakshan (PhD guide: Dr. Tasneem Parvin)</li>
-     <li>Rasendra Shukla (Project guide: Dr. Suvankar Dasgupta)</li>
-     <li>Susital Mal (Project guide: Dr. Subrata Das)</li>
-    </ol>
-    <p style={{ fontSize: `1.3rem` }}>
-     <strong>PhD Alumni:</strong>
-    </p>
-    <ol>
-     <li>Sulakshna Bharti(PhD guide: Dr. Mukesh CHoudhary)</li>
-     <li>Ruchi Bharti, 2016 (PhD guide: Dr. Tasneem Parvin)</li>
-     <li>Debojyoti Chakraborty, 2015 (PhD guide: Prof. Sitaram Sharma)</li>
-     <li>Madhu Bala, 2014 (PhD guide: Dr. Khursheed Ahmad)</li>
-     <li>Pooja Kumari (PhD guide: Dr. Tasneem Parvin)</li>
-     <li>Mahesh Kumar Mishra (PhD guide: Prof. Sitaram Sharma)</li>
-     <li>Noorussabah (PhD guide: Dr. Khursheed Ahmad) </li>
-     <li>Brajesh Kumar (PhD guide: Dr. Subrata Das)</li>
-     <li>Bharti Mohan (PhD guide: Dr. Mukesh Choudhary)</li>
-     <li>Rahul Yadav (PhD guide: Dr. Tasneem Parvin)</li>
-    </ol>
-   </div>
-   <div>
-    <p style={{ fontSize: `1.3rem` }}>
-     <strong>MSc Students:</strong>
-    </p>
-    <p style={{ fontSize: `1.3rem` }}>
-     <strong>&nbsp; &nbsp;2015 Batch:</strong>
-    </p>
-    <ol>
-     <li>RAJNI KUMARI (1508001)</li>
-     <li>SHUBHAM RAJ (1508003)</li>
-     <li>SIVA DEEPTHI MACHIRAJU (1508010)</li>
-     <li>MUKESH JAISAWAL (1508014)</li>
-     <li>NITISH KUMAR (1508015)</li>
-     <li>AJEET KUMAR (1508017)</li>
-     <li>ALKA KUMARI (1508020)</li>
-     <li>MUKESH KUMAR (1508021)</li>
-     <li>ANIKET RAJ (1508023)</li>
-     <li>ANUBHAV KUMAR (1508024)</li>
-     <li>RITESH BHARTI (1508026)</li>
-    </ol>
-    <p style={{ fontSize: `1.3rem` }}>
-     <strong>2016 Batch:</strong>
-    </p>
-    <ol>
-     <li>Prakash Kumar Sahu (1608001)</li>
-     <li>Arya Kumari (1608005)</li>
-     <li>Pushpa Kumari (1608006)</li>
-     <li>Shravan Kumar (1608003)</li>
-     <li>Aman Raj (1608004)</li>
-     <li>Himanshu Kumar (1608008)</li>
-     <li>Yogendra Pal&nbsp; Singh&nbsp; (1608007)</li>
-     <li>Gopal Kumar&nbsp; Chaudhary (1508022)</li>
-    </ol>
-   </div>
+  <div>
+   <div className="Headg">Ph.D. Alumini:</div>
 
-   <div>
-    <p style={{ fontSize: `1.3rem` }}>
-     <strong>Non-Teaching Staff</strong>
-    </p>
-    <ol>
-     <li>Biswanath Yadav (Casual LDC)</li>
-     <li>Randhir Bharti (Manpower Clerk)</li>
-     <li>Ramphal Kamti (Peon)</li>
-    </ol>
-   </div>
-  </>
+   <div className="Headg">Ph.D. Thesis Awarded:</div>
+   <ol type="1" className="phd-thesis-awarded-list">
+    <li>
+     <p>
+      <strong>Scholar: </strong>Manisha Prakashni{" "}
+      <span>
+       <strong>Supervisor: </strong>Dr. Suvankar Dasgupta{" "}
+      </span>{" "}
+      <span>
+       <strong>Year: </strong>2024
+      </span>
+     </p>
+     <p>
+      <strong>Thesis Title: </strong> Templated Synthesis of Mechanically
+      Interlocked Molecules (MIMs) Involving Dialkylammonium Salts and [23]Crown
+      Ethers
+     </p>
+     {/* <p><strong>Current Status: </strong></p> */}
+    </li>
+
+    {/* 2 */}
+    <li>
+     <p>
+      <strong>Scholar: </strong>Dr. Pramanand Kumar{" "}
+      <span>
+       <strong>Supervisor: </strong>Dr. Subrata Das
+      </span>{" "}
+      <span>
+       <strong>Year: </strong>2023
+      </span>
+     </p>
+     <p>
+      <strong>Thesis Title: </strong>Graphene oxide/Reduced graphene oxide-based
+      Nanomaterials and Their Applications
+     </p>
+     <p>
+      <strong>Current Status: </strong>Assistant Professor (Guest) in Motihari
+      College of Engineering
+     </p>
+    </li>
+
+    {/* 3 */}
+
+    <li>
+     <p>
+      <strong>Scholar: </strong>Dr. Padma Sharma{" "}
+      <span>
+       <strong>Supervisor: </strong>Dr. Niki S. Jha
+      </span>{" "}
+      <span>
+       <strong>Year: </strong>2023
+      </span>
+     </p>
+     <p>
+      <strong>Thesis Title: </strong>Biophysical Aspects of Binding of
+      Synthesized Ligands as G-Quadruplex Binder
+     </p>
+     {/* <p><strong>Current Status: </strong></p> */}
+    </li>
+
+    {/* 4 */}
+    <li>
+     <p>
+      <strong>Scholar: </strong> Dr. Mosidur Rahman Molla{" "}
+      <span>
+       <strong>Supervisor: </strong> Dr. Rima Thakur
+      </span>{" "}
+      <span>
+       <strong>Year: </strong>2023
+      </span>
+     </p>
+     <p>
+      <strong>Thesis Title: </strong> Design and Development of New Glycosyl
+      Donors Bearing Orthogonal Ether-Linked Protecting Groups Towards
+      Stereoselective 1,2-trans--O-Glycosylation
+     </p>
+     <p>
+      <strong>Current Status: </strong>Post-doc at University of Florida, USA
+     </p>
+    </li>
+
+    {/* 5 */}
+
+    <li>
+     <p>
+      <strong>Scholar: </strong>Dr. Vedeshwar Narayan Singh{" "}
+      <span>
+       <strong>Supervisor: </strong>Prof. Sita Ram Sharma (Retd.)
+      </span>{" "}
+      <span>
+       <strong>Year: </strong>2023
+      </span>
+     </p>
+     <p>
+      <strong>Thesis Title: </strong>Synthesis and Characterization of Novel
+      Monocyclic -Lactams
+     </p>
+     <p>
+      <strong>Current Status: </strong>Post-doc at IIT Guwahati (NPDF, SERB)
+     </p>
+    </li>
+
+    {/* 6 */}
+    <li>
+     <p>
+      <strong>Scholar: </strong>Dr. Rahul Yadav{" "}
+      <span>
+       <strong>Supervisor: </strong>Dr. Tasneem Parvin{" "}
+      </span>{" "}
+      <span>
+       <strong>Year: </strong>2022
+      </span>
+     </p>
+     <p>
+      <strong>Thesis Title: </strong>Synthesis of Pyrazole Fused Polycyclic
+      Heterocycles by Multicomponent Reactions
+     </p>
+     <p>
+      <strong>Current Status: </strong>Assistant Professor in Government
+      Engineering College Lakhisarai, Bihar
+     </p>
+    </li>
+
+    {/* 7 */}
+    <li>
+     <p>
+      <strong>Scholar: </strong>Dr. Brajesh Kumar{" "}
+      <span>
+       <strong>Supervisor: </strong> Dr. Subrata Das
+      </span>{" "}
+      <span>
+       <strong>Year: </strong>2022
+      </span>
+     </p>
+     <p>
+      <strong>Thesis Title: </strong>Synthesis, structure and spectroscopic
+      analysis of metal complexes of bio-active pyrimidine derivatives
+     </p>
+     <p>
+      <strong>Current Status: </strong>Assistant Professor in Nalanda College of
+      Engineering, Chandi
+     </p>
+    </li>
+
+    {/* 8 */}
+    <li>
+     <p>
+      <strong>Scholar: </strong>Dr. Bharti Mohan{" "}
+      <span>
+       <strong>Supervisor: </strong>Dr. Mukesh Choudhary{" "}
+      </span>
+      <span>
+       <strong>Year: </strong>2022
+      </span>
+     </p>
+     {/* <p><strong>Thesis Title: </strong></p>
+      <p><strong>Current Status: </strong></p> */}
+    </li>
+
+    {/* 9 */}
+    <li>
+     <p>
+      <strong>Scholar: </strong>Dr. Noorussabah{" "}
+      <span>
+       <strong>Supervisor: </strong>Dr. Khursheed Ahmad{" "}
+      </span>
+      <span>
+       <strong>Year: </strong>2022
+      </span>
+     </p>
+     <p>
+      <strong>Thesis Title: </strong>Synthesis, Structural Characterization and
+      Biological Activities on Some New Transition Metal Complexes Containing
+      Nitrogen, Oxygen and Sulfur Donor Ligands
+     </p>
+     {/* <p><strong>Current Status: </strong></p> */}
+    </li>
+
+    {/* 10 */}
+    <li>
+     <p>
+      <strong>Scholar: </strong> Dr. Mahesh Kumar Mishra{" "}
+      <span>
+       <strong>Supervisor: </strong>Prof. Sita Ram Sharma (Retd.){" "}
+      </span>
+      <span>
+       <strong>Year: </strong>2022
+      </span>
+     </p>
+     {/* <p><strong>Thesis Title: </strong></p>
+      <p><strong>Current Status: </strong></p> */}
+    </li>
+
+    {/* 11 */}
+    <li>
+     <p>
+      <strong>Scholar: </strong> Dr. Pooja Kumari{" "}
+      <span>
+       <strong>Supervisor: </strong> Dr. Tasneem Parvin{" "}
+      </span>{" "}
+      <span>
+       <strong>Year: </strong>2020
+      </span>
+     </p>
+     <p>
+      <strong>Thesis Title: </strong>Exploration of multicomponent reactions
+      (MCRs) for the synthesis of bioactive heterocycles.
+     </p>
+     {/* <p><strong>Current Status: </strong></p> */}
+    </li>
+
+    {/* 12 */}
+    <li>
+     <p>
+      <strong>Scholar: </strong>Dr. Sulakshana Bharti{" "}
+      <span>
+       <strong>Supervisor: </strong>Dr. Mukesh Choudhary{" "}
+      </span>{" "}
+      <span>
+       <strong>Year: </strong>2018
+      </span>
+     </p>
+     <p>
+      <strong>Thesis Title: </strong>Synthesis, Spectroscopic Characterization,
+      Crystal Structure and Biological Studies of Some New Mixed Ligand Copper
+      (II) and Nickel (II) Complexes Possessing Nitrogen, Oxygen and Sulphur
+      Donor Atoms
+     </p>
+     <p>
+      <strong>Current Status: </strong>Assistant Professor, Department of
+      Chemistry, Govt. Engineering College, Phojpur, (Bihar){" "}
+     </p>
+    </li>
+
+    {/* 13 */}
+    <li>
+     <p>
+      <strong>Scholar: </strong>Dr. Ruchi Bharti{" "}
+      <span>
+       <strong>Supervisor: </strong>Dr. Tasneem Parvin{" "}
+      </span>{" "}
+      <span>
+       <strong>Year: </strong>2016
+      </span>
+     </p>
+     <p>
+      <strong>Thesis Title: </strong>Synthesis of functionalized heterocycles
+      using organocatalyzed multicomponent reactions.
+     </p>
+     <p>
+      <strong>Current Status: </strong>: Associate Professor, Chandigarh
+      University
+     </p>
+    </li>
+
+    {/* 14 */}
+    <li>
+     <p>
+      <strong>Scholar: </strong>Dr. Debojyoti Chakraborty{" "}
+      <span>
+       <strong>Supervisor: </strong>Prof. Sita Ram Sharma (Retd.)
+      </span>
+     </p>
+     {/* <p><strong>Thesis Title: </strong></p>
+      <p><strong>Current Status: </strong></p> */}
+    </li>
+
+    {/* 15 */}
+    <li>
+     <p>
+      <strong>Scholar: </strong> Dr. Madhu Bala{" "}
+      <span>
+       <strong>Supervisor: </strong> Dr. Khursheed Ahmad{" "}
+      </span>
+     </p>
+     {/* <p><strong>Thesis Title: </strong></p>
+      <p><strong>Current Status: </strong></p> */}
+    </li>
+   </ol>
+
+   <div className="Headg">Thesis Submitted:</div>
+   <ol type="1" className="phd-thesis-awarded-list">
+    {/* 1 */}
+    <li>
+     <p>
+      <strong>Scholar: </strong> Aprajita{" "}
+      <span>
+       <strong>Supervisor: </strong>Dr. Mukesh Choudhary{" "}
+      </span>
+      <span>
+       <strong>Year: </strong>2023
+      </span>
+     </p>
+     <p>
+      <strong>Thesis Title: </strong>Synthesis, Characterization And Properties
+      Of Copper(II)/Nickel(II) Coordination Complexes
+     </p>
+     <p>
+      <strong>Current Status: </strong> Assistant Professor, Department of
+      Chemistry, Govt. College of Engineering, Bhagalpur Bihar.
+     </p>
+    </li>
+
+    {/* 2 */}
+    <li>
+     <p>
+      <strong>Scholar: </strong> Sunil Kumar{" "}
+      <span>
+       <strong>Supervisor: </strong>Dr. Mukesh Choudhary{" "}
+      </span>
+      <span>
+       <strong>Year: </strong>2023
+      </span>
+     </p>
+     <p>
+      <strong>Thesis Title: </strong>Synthesis, Characterization And Antivirus
+      Potential Of Novel Copper(II) And Nickel(II) Complexes{" "}
+     </p>
+    </li>
+
+    {/* 3 */}
+    <li>
+     <p>
+      <strong>Scholar: </strong> Darakshan{" "}
+      <span>
+       <strong>Supervisor: </strong>Dr. Tasneem Parvin{" "}
+      </span>
+      <span>
+       <strong>Year: </strong>2023
+      </span>
+     </p>
+    </li>
+   </ol>
+  </div>
  ),
 }

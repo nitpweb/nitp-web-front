@@ -1,0 +1,74 @@
+
+.Headg{
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #941b0c;
+   
+}
+
+/* ------------ Achievements -------------*/
+
+#Achievements-List li{
+    font-size: 1.15rem;
+    margin-top: 11px;
+}
+
+#Achievements-List li span{
+    font-weight: bold;
+    color: #941b0c;
+}
+
+#Achievements-List li .blue{
+    font-weight: 500;
+    color: rgb(99, 31, 171);
+}
+
+
+
+
+
+/* ------------- Activities --------------*/
+.Activity-list li strong:not(:first-child){
+    margin-left: 2.1rem;
+}
+
+.ac-images{
+    width: 40rem;
+}
+
+
+
+/* -------------More Info --------------*/
+.phd-thesis-awarded-list li:not(:first-child){
+    margin: 2.1rem 0;
+}
+.phd-thesis-awarded-list li p{
+    font-size: 1.2rem;
+    position: relative;
+    margin-top: 1.1rem;
+
+}
+.phd-thesis-awarded-list li p:first-child strong:not(:first-child){
+    margin-left: 5rem;
+}
+
+.phd-thesis-awarded-list li p:first-child span:nth-child(2){
+    position: absolute;
+    left: 32%;
+}
+.phd-thesis-awarded-list li p:first-child span:nth-child(3){
+    position: absolute;
+    right: 5rem;
+}
+
+@media (max-width:1024px){
+    .phd-thesis-awarded-list li p:first-child span:nth-child(2){
+        display: block;
+        left: 0;
+    }
+    .phd-thesis-awarded-list li p:first-child span:nth-child(3){
+        display: none;
+        left: 0;
+    }
+}
