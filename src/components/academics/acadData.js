@@ -558,11 +558,12 @@ const Format = [
    },
    {
     // para: "8-SOP for Cancellation of Admission",
-    para: "8-Format of Application for Hostel & Mess Fee Receipt",
+    para:
+     "8-Format of Application for Fee Receipt for Bank Loan and DRCC Adjustment Only",
     // link:
     //  "http://web.nitp.ac.in/uploads22/Application for Cancellation of Admission.pdf",
     link:
-     "https://drive.google.com/file/d/1Rao4M6a0iKYvyZxQK-Ijo5U5--78zqlE/view?usp=sharing",
+     "https://drive.google.com/file/d/1XHKMmDhheGwL67m-q42FqPMAU-a4X0Hu/view?usp=sharing",
    },
    {
     para: "9-Format of Application for Cancellation of Admission",
@@ -812,8 +813,9 @@ const NIRF = [
   title: "NIRF",
   data: [
    {
-    para: "NIRF 2023 Data",
-    link: "http://web.nitp.ac.in/uploads23/NIRF%20Overall%20data%202023.pdf",
+    para: "NIRF 2024 Data",
+    link:
+     "https://drive.google.com/file/d/1F85taARFc0uM-NX4Dg8CIbe8m9HwcRi1/view?usp=sharing",
    },
    // {
    //   para: "Enterpreneurship Students.",
