@@ -80,7 +80,7 @@ const Admin = [
     data: "suh",
    },
    {
-    url: "http://www.nitp.ac.in/uploads/ORG_CHART_NITP.pdf",
+    url: "https://drive.google.com/file/d/1yvZjylqZbxiwn3kEqmUSHSQeiJuU4bHw/view?usp=sharing",
     title: "Organization Chart",
     data: "",
    },
@@ -141,7 +141,7 @@ const Home = [
   data: "Resources",
   sub: [
    {
-    url: "http://www.nitp.ac.in/uploads/PAN_NITP.pdf",
+    url: "https://drive.google.com/file/d/1Njk4q-iZudKaNHgZ7eYprCfaFKd1BroC/view?usp=sharing",
     title: "PAN/ GST",
    },
    {
