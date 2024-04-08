@@ -70,14 +70,16 @@ export const about = () => {
 export const mission = () => {
  return (
   <>
-   To provide a high-quality educational experience for undergraduate and
-   graduate students that enables them to become leaders in their chosen
-   professions and to make them globally competitive mechanical engineers.
+   1. To provide education that transforms young minds through rigorous teaching
+   and thought process to fulfil the needs of the society and Industry.
    <br />
-   To create, explore, and develop innovations in engineering and science
-   through undergraduate and graduate research. To develop linkages with world
-   class R&D organizations and educational institutions in India and abroad for
-   excellence in teaching, research and consultancy practices.
+   2. To collaborate with leading Industry partners and other academic and
+   research Institutes around the world to strengthen the education and research
+   ecosystem.
+   <br />
+   3. To prepare students with life-long learning for their career by fostering
+   in them the ethical & technical capabilities pertinent to mechanical and
+   allied engineering.
   </>
  )
 }
@@ -85,17 +87,8 @@ export const mission = () => {
 export const vision = () => {
  return (
   <>
-   To contribute to the society through excellence in scientific and technical
-   education and research
-   <br />
-   <br />
-   To contribute the country by providing globally competent Mechanical
-   Engineers capable of working in an inter-disciplinary environment which
-   foster spirits of innovation, entrepreneurship and leadership.
-   <br />
-   <br />
-   To support industry for growth, being the valuable resource for them, and
-   remain a role model for others in the field of Mechanical Engineering.
+   “To create well trained and skilled technocrats with life-long learning in
+   the area of Mechanical Engineering”
   </>
  )
 }
@@ -192,6 +185,11 @@ export const datalist = [
   // img: "/department/about.svg",
  },
  {
+  title: "Mission & Vision",
+  data: "missionvision",
+  // img: "/department/mission.svg",
+ },
+ {
   title: "Syllabus",
   relPath: "/me/syllabus",
   // img: "/department/syllabus.svg",
@@ -225,10 +223,5 @@ export const datalist = [
   title: "Activities",
   data: "activities",
   // img: "/department/activities.svg",
- },
- {
-  title: "Mission & Vision",
-  data: "missionvision",
-  // img: "/department/mission.svg",
  },
 ]

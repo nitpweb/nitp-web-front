@@ -25,165 +25,50 @@ const Mesyllabus = props => {
        <div className="digital">
         <h1 style={{ marginBottom: `1rem` }}>Syllabus</h1>
         <h2 data-aos="zoom-in-right"> -Mechanical Engineering</h2>
-        <br />
-        <div className="probutton">
-         <button
-          onClick={() => {
-           setCourse("programmesug")
-           setSyllabus(Courseug)
-          }}
-          className={course == "programmesug" ? "btnactive" : ""}
-         >
-          UG Courses
-         </button>
-         <button
-          onClick={() => {
-           setCourse("programmespg1")
-           setSyllabus(Coursepg1)
-          }}
-          className={course == "programmespg1" ? "btnactive" : ""}
-         >
-          M.tech - Design Engineering
-         </button>
-         <button
-          onClick={() => {
-           setCourse("programmespg2")
-           setSyllabus(Coursepg2)
-          }}
-          className={course == "programmespg2" ? "btnactive" : ""}
-         >
-          M.tech - Production Engineering
-         </button>
-         <button
-          onClick={() => {
-           setCourse("programmespg3")
-           setSyllabus(Coursepg3)
-          }}
-          className={course == "programmespg3" ? "btnactive" : ""}
-         >
-          M.tech - Thermal Engineering
-         </button>
-         <button
-          onClick={() => {
-           setCourse("programmesphd")
-           setSyllabus(PhdCourse)
-          }}
-          className={course == "programmesphd" ? "btnactive" : ""}
-         >
-          PhD Courses
-         </button>
-         <button
-          onClick={() => {
-           setCourse("programmesdd")
-           setSyllabus(Coursedd)
-          }}
-          className={course == "programmesdd" ? "btnactive" : ""}
-         >
-          Dual Degree
-         </button>
-        </div>
+        <ul className="rowmarl3">
+         <li>
+          <a href="https://drive.google.com/file/d/1dQQR-i9mGoj6QdnEE7fTQieG4q9Sy8MC/view?usp=sharing">
+           B.Tech_Course Structure_2021-Modified.
+          </a>
+         </li>
+         <li>
+          <a href="https://drive.google.com/file/d/19oiSnssWgxThMoNtDzQrKASD1p7KXxOU/view?usp=sharing">
+           B.Tech_Course Structure_2022 Onwards.
+          </a>
+         </li>
+         <li>
+          <a href="https://drive.google.com/file/d/1s42tWWitU86Ezu2bGOTmPrnkDnhrERWJ/view?usp=sharing">
+           B.Tech_Detailed Syllabus_3rd Semester Onwards.
+          </a>
+         </li>
+         <li>
+          <a href="https://drive.google.com/file/d/1xUykTxPcv-mk2y3-sSXRt7BLczMZ_vVe/view?usp=sharing">
+           Dual Degree (B.Tech + M.Tech) _ Course Structure _ 2022 Onwards.
+          </a>
+         </li>
+         <li>
+          <a href="https://drive.google.com/file/d/10a4fvU12B-ZD7e6qkrHkKHrl_1Y180kc/view?usp=sharing">
+           Dual Degree ( B.Tech + M.Tech) _ Detailed Syllabus _ 3rd Semester
+           Onwards.
+          </a>
+         </li>
+         <li>
+          <a href="https://drive.google.com/file/d/1_B0-MakBnJ2vTNKZHsiD8hKM0aZ2c4E-/view?usp=sharing">
+           M.Tech _ Course Structure _ All Specializations.
+          </a>
+         </li>
+         <li>
+          <a href="https://drive.google.com/file/d/1DeGz_0NB4AteNBmTYEJxSueZaXlONqXq/view?usp=sharing">
+           M.Tech _ Detailed Syllabus _ All Specializations.
+          </a>
+         </li>
+        </ul>
        </div>
       </div>
-
-      {syllabus === Coursedd && (
-       <ul>
-        <li>
-         <a href="/">
-          Mechanical Engineering with Specialization in Manufacturing and
-          Industrial Engineering (5 Years, Bachelor and Master of Technology
-          (Dual Degree))
-         </a>
-        </li>
-       </ul>
-      )}
-      {syllabus === Coursedd || (
-       <Table style={{ width: "100%", marginTop: "20px" }}>
-        <br />
-        <tr className="syllabus-table-head">
-         <th>Dept.</th>
-         <th>Sem/Electives</th>
-         <th>Course Code</th>
-         <th>Course Title</th>
-         <th>L</th>
-         <th>T</th>
-         <th>P</th>
-         <th>Credits</th>
-        </tr>
-        {syllabus.map(elem => (
-         <tr className="syllabus-table-row">
-          <td>{elem.deptt}</td>
-          <td>{elem.sem_elect}</td>
-          <td>{elem.course_code}</td>
-          <td>
-           <a href={elem.url}>{elem.course_title}</a>
-          </td>
-          <td>{elem.l}</td>
-          <td>{elem.t}</td>
-          <td>{elem.p}</td>
-          <td>{elem.credits}</td>
-         </tr>
-        ))}
-       </Table>
-      )}
      </div>
     </TabPage>
-    {course === "programmesphd" && (
-     <h3 align="center">
-      Other credit courses can be opted from PG course Section.(
-      <a href="./mech/syllabus/PG/MTechupdtedcoursestructure_DesignEngineering_modified.pdf">
-       Click here to select Courses.
-      </a>
-      )
-     </h3>
-    )}
    </PageLayout>
   </>
  )
-}
-{
- /* return (
-    <>
-      <PageLayout style={{ marginTop: `10vh`, marginBottom: `15vh` }}>
-        <div className="syllabus-page">
-          <div className="layoutrow layoutrowmain syllabus-page-head">
-            <div className="col-6">
-              <div className="row rowmarl3">
-                <h1 data-aos="zoom-in-right">Syllabus</h1>
-              </div>
-              <div className="row rowmarl3">
-                <h2 data-aos="zoom-in-right"> -Mechanical Engineering</h2>
-              </div>
-            </div>
-          </div>
-          <Table>
-            <tr className="syllabus-table-head">
-              <th>Deptt.</th>
-              <th>Sem/Electives</th>
-              <th>Course Code</th>
-              <th>Course Title</th>
-              <th>L</th>
-              <th>T</th>
-              <th>P</th>
-              <th>Credits</th>
-              <th>Dept.</th>
-            </tr>
-            {Course.map(elem => (
-              <tr className="syllabus-table-row">
-                <td>{elem.deptt}</td>
-                <td>{elem.sem_elect}</td>
-                <td>{elem.course_code}</td>
-                <td>{elem.course_title}</td>
-                <td>{elem.l}</td>
-                <td>{elem.t}</td>
-                <td>{elem.p}</td>
-                <td>{elem.credits}</td>
-                <td>{elem.dept}</td>
-              </tr>
-            ))}
-          </Table>
-        </div>
-      </PageLayout>
-    </>
-  ) */
 }
 export default Mesyllabus
