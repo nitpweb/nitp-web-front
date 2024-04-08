@@ -133,18 +133,6 @@ const Dephomepage = ({
 
      {view == "missionvision" && (
       <>
-       <div className="layoutrow" id="mission" style={{ paddingBottom: `0` }}>
-        <div className="row">
-         <div className="row rowmarl3 rowmarr3">
-          <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
-           Mission
-          </h1>
-         </div>
-         <div className="row rowmarl3 rowmarr3">
-          <p>{Mission()}</p>
-         </div>
-        </div>
-       </div>
        <div className="layoutrow" id="vision" style={{ paddingBottom: `0` }}>
         <div className="row">
          <div className="row rowmarl3 rowmarr3">
@@ -157,6 +145,19 @@ const Dephomepage = ({
          </div>
         </div>
        </div>
+       <div className="layoutrow" id="mission" style={{ paddingBottom: `0` }}>
+        <div className="row">
+         <div className="row rowmarl3 rowmarr3">
+          <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
+           Mission
+          </h1>
+         </div>
+         <div className="row rowmarl3 rowmarr3">
+          <p>{Mission()}</p>
+         </div>
+        </div>
+       </div>
+
        {Outcomes && (
         <div className="layoutrow" id="Outcomes">
          <div className="row rowmarr3">{Outcomes()}</div>
@@ -182,7 +183,7 @@ const Dephomepage = ({
         <div className="col-6" style={{ width: `100%` }}>
          <div className="row rowmarr3">
           <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
-           Contact & HOD
+           Contact
           </h1>
          </div>
          <br />

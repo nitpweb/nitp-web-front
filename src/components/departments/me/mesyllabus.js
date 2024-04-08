@@ -62,6 +62,11 @@ const Mesyllabus = props => {
            M.Tech _ Detailed Syllabus _ All Specializations.
           </a>
          </li>
+         <li>
+          <a href="https://drive.google.com/file/d/1tov1rQO4_fA65l_IcjMMN-_4cyLA3nCk/view?usp=sharing">
+           PHD.
+          </a>
+         </li>
         </ul>
        </div>
       </div>
