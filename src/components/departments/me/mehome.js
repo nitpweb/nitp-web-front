@@ -107,9 +107,9 @@ export const contact = () => {
     Email: head.me@nitp.ac.in
     <br />
     <br />
-    Extn: +91-612-(2371715/2715/2371929/
+    Phone: +91-612-(2371715/2715/2371929/
     <br />
-    2370419/2370843/2371930) * 441
+    2370419/2370843/2371930) Extn.441
    </div>
 
    <div className="img img-12">
@@ -185,7 +185,7 @@ export const datalist = [
   // img: "/department/about.svg",
  },
  {
-  title: "Mission & Vision",
+  title: "Vision & Mission",
   data: "missionvision",
   // img: "/department/mission.svg",
  },
@@ -205,7 +205,7 @@ export const datalist = [
   // img: "/department/activities.svg",
  },
  {
-  title: "Contact & HOD",
+  title: "Contact",
   data: "contact",
   // img: "/department/contact.svg",
  },
