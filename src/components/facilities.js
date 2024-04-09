@@ -240,12 +240,34 @@ const Facilitiespage = () => {
        <div className="col-6 imgcolstyle">
         <Ccimg />
        </div>
+
        <div className="col-6">
         <div className="row rowmarr3">
          <h1>Centre for Computing and Information Services(CCIS)</h1>
         </div>
         <div className="row rowmarr3">
          <p>{ccdetail}</p>
+         <br />
+        </div>
+       </div>
+       <div className="col-6 imgcolstyle">
+        <img src="https://www.nitp.ac.in/static/93dd1c9418abd80c357b3f6142c9d419/8b23a/prabhat-kumar.png"></img>
+       </div>
+
+       <div className="col-6">
+        <div className="row rowmarr3">
+         <h1>Head (CCIS)</h1>
+        </div>
+        <br></br>
+        <div className="row rowmarr3">
+         <p>
+          Prof. PRABHAT KUMAR
+          <br></br>प्रो. प्रभात कुमार<br></br>
+          Professor (Computer Science and Engineering Dept.)<br></br> &
+          प्राध्यापक (कंप्यूटर विज्ञान और इंजीनियरिंग विभाग)<br></br>
+          Head, Centre for Computing and Information Services (CCIS)<br></br>
+          विभागाध्यक्ष, कम्प्यूटिंग और सूचना सेवा केंद्र (सीसीआईएस)
+         </p>
          <br />
         </div>
        </div>

@@ -51,7 +51,7 @@ const SCF = {
    Downloads: "Half Pay Leave (HPL) ",
    DLink: `${home}/staffForm/4.%20Commuted,%20HPL,%20Maternity,%20Paternity%20Leave.pdf`,
    "Office order": "Guest House Requisition Form",
-   OLink: `${home}/staffForm/Guest%20House%20Requisition%20Form.pdf`,
+   OLink: `https://drive.google.com/file/d/1CLiYVUjw7VnOgFq4W-M6Ext7Ccu8XRz2/view`,
   },
   {
    Downloads: "Maternity Leave",
