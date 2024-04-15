@@ -1,5 +1,5 @@
 import React from "react"
-import { Achievements, Activities, Labs } from "./me-others-data"
+import { Achievements, Activities, Labs, Staff } from "./me-others-data"
 
 import { LabImages } from "./me-others-data"
 import Slider from "../../Slider/Slider"
@@ -178,6 +178,45 @@ export const activities = () => {
  )
 }
 
+// export const staff = () => {
+//   return (
+//    <div className="img-11">
+//     <div>
+//     List of Non-Teaching Staff
+//     </div>
+
+//     {/* <div className="img img-12">
+//      <img
+//       src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=1ZTd8RKh4GeeBHokdnK0q01hw2sqo9uXB"
+//       alt="hodImage"
+//      />
+//      <br />
+//      <br />
+//      <strong>Prof. Prakash Chandra</strong>
+//      <br />
+//      Professor & HOD
+//     </div> */}
+//    </div>
+//   )
+//  }
+
+export const staff = () => {
+ return (
+  <>
+   {" "}
+   <div className="row rowmarl3">
+    {Staff.map((acht, idx) => (
+     <React.Fragment key={idx}>
+      <div className="row">{acht.title}</div>
+
+      <div className="row">{acht.content}</div>
+     </React.Fragment>
+    ))}
+   </div>
+  </>
+ )
+}
+
 export const datalist = [
  {
   title: "About",
@@ -197,6 +236,11 @@ export const datalist = [
  {
   title: "Faculty",
   relPath: "/me/faculty",
+  // img: "/department/faculty.svg",
+ },
+ {
+  title: "Staff",
+  data: "staff",
   // img: "/department/faculty.svg",
  },
  {
