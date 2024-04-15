@@ -22,6 +22,7 @@ const Dephomepage = ({
  Activities,
  Vision,
  Contact,
+ Staff,
  Extras,
  TimeTable,
  datalist,
@@ -193,6 +194,34 @@ const Dephomepage = ({
                       <img src={hod} alt="HOD Image" height="250"/>
                     </div> */}
           <p>{Contact()}</p>
+         </div>
+        </div>
+       </div>
+       {/* <div className="row imgcolstyle backgroundimage">
+                <img data-aos="zoom-in" src={map} className="img-fluid" />
+              </div> */}
+      </>
+     )}
+     {view == "staff" && (
+      <>
+       <div
+        className="layoutrow layoutrow1"
+        style={{ position: `relative`, zIndex: 1 }}
+        id="contact"
+       >
+        <div className="col-6" style={{ width: `100%` }}>
+         <div className="row rowmarr3">
+          <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
+           List of Non-Teaching Staff
+          </h1>
+         </div>
+         <br />
+         <div className="row rowmarr3">
+          {/* <div className="row" style={{justifyContent: "space-between"}}> */}
+          {/* <div className="rowmarl3">
+                      <img src={hod} alt="HOD Image" height="250"/>
+                    </div> */}
+          <p>{Staff()}</p>
          </div>
         </div>
        </div>

@@ -30,46 +30,78 @@ export const titleDescription = () => {
 export const about = () => {
  return (
   <>
-   The Department of Electrical Engineering was established in 1945 under Patna
-   University with an intake of 20 students leading to Bachelor of
-   Science(Engineering) degree of four year duration.The four year course was
-   later changed to five year integrated course in 1960 with intake of 30
-   students and it continued up to 1972. Again four year course was introduced
-   in 1972 with the same intake capacity of 30 students. The intake was
-   increased from 30 to 40 students in 2005-06 sessions and further in 2006-07
-   the intake capacity has been increased to 60 students.
+   The Department of Electrical Engineering in National Institute of Technology
+   Patna (Formerly known as Bihar College of Engineering) was established in
+   1945 under Patna University with an intake of 45 students leading to a
+   Bachelor of Science (Engineering) degree of four-year duration. In the year
+   1978 AICTE approved Post Graduate (PG) course leading to M.Sc. (Engg.) Degree
+   in two specializations: (i) Power System Engineering and (ii) Control System
+   Engineering. The department is also offering the Ph.D. research program since
+   2009
+   <br />
+   The Department offers the following academic programs:
+   <br />
+   1. B. Tech. in Electrical Engineering (151 Seats)
+   <br />
+   2. Dual Degree (B.Tech.+M. Tech. (Power System)) (10 Seats)
+   <br />
+   3. M. Tech.
+   <br />
+   ● Control Systems Engineering -22 seats
+   <br />
+   ● Power Systems Engineering-10 seats
+   <br />
+   4. Ph.D. program since 2009.
    <br />
    <br />
-   In the year 1978 AICTE approved Post Graduate (PG) course leading to M. Sc.
-   (Engg) Degree in two specializations: (i) Power System Engineering and (ii)
-   Control System Engineering with an intake capacity of 10 in each
-   specialization.The intake in PG program was further increased to 18 students
-   per specialization in 2004-05.The Microprocessor Laboratory and Power
-   electronics laboratory were setup to meet the requirement of course
-   curriculum and research activity.The advancement and application of
-   electronics and microcomputer in the field of electrical engineering
-   necessitated a major revision of the syllabus for the UG program in 1977. A
-   course in Microprocessor was introduced along with many subjects in
-   electronics leading to orientation required for the modem technology, such as
-   Analog Electronics, Digital Electronics, Introduction to Communication and
-   Digital Signal Processing.
+   The department has undergone following major upgrades in the last five years:
+   <br />
+   1. Curriculum upgradation in accordance with New Education policy (NEP-2020)
+   in 2021.
+   <br />
+   2. Introduction of new courses like five years B. Tech. Dual Degree
+   Specialization in Power System Engineering from 2021.
+   <br />
+   3. Introduction of M. Tech. in power system engineering from 2023.
+   <br />
+   4. UG program accredited with NBA status since 2021
+   <br />
+   The Electrical Engineering department has well-qualified faculty with
+   specializations in the field of electrical power systems, electrical machines
+   and drives, power electronics, renewable energy devices, control & robotics,
+   and sensors & instrumentation. The department has an excellent laboratory
+   infrastructure with 10 UG-PG labs, and three state of art research labs to
+   provide good academic lab setup and high-end research facilities. The number
+   of Ph. D. students working in the department is approximately 150. The
+   faculty members of the department published more than 500 research reports,
+   filed more than 20 patents and have 8 patents granted.
    <br />
    <br />
-   The Electrical Engineering department has well qualified faculty, majority of
-   them are with Ph. D and M. Tech degree with specialization in the field of
-   electrical power, control system and microcomputer based instrumentation &
-   control. The department has well qualified panel of visiting faculty from
-   academics and industry. They visit to the department at regular interval to
-   deliver expert lectures and discuss recent trends in the field of Electrical
-   Engg, Power system -generation, transmission and distribution, Thyristorised
-   controlled electrical drives used in industry, microcomputer applications in
-   instrumentation and control etc. In recent past, the faculty and students of
-   the department have many publications in journals and conferences (Approx.
-   Forty). Many books on different electrical engineering subjects have been
-   authored by the faculties of the department. Till date the department has
-   produces five Ph. Ds under Patna University. From 2009 Doctoral program
-   started under NIT Act 2007 and students have been admitted and are continuing
-   research.
+   The Department of Electrical Engineering carries out research and consultancy
+   projects from Government and private organizations. In the last five years,
+   the faculty members of the department completed sponsored research projects
+   of total value 427 lacs. Research projects of approximately 212 lacs is
+   running in the department. Apart from that, the department also completed
+   consultancy projects amounting to approximately 53 lacs. The Department of
+   Electrical Engineering, NIT Patna has been awarded with the DST-FIST project
+   for improving research facilities in the domain of power systems, power
+   electronics and Industrial drives, and Control systems on 31.10.2023 for a
+   period of five years. The sanctioned amount of 82 Lacs will facilitate
+   teaching and research activities in the state of art technologies in power
+   transmission and distribution systems, active power filters, multilevel
+   inverters, advanced fault tolerant control techniques, renewable energies,
+   and electric vehicles. The Department envisages to develop new courses,
+   patentable technologies, training programs, quality publications, and extend
+   the developed facilities to the researchers of other institutes with the
+   received support. The department also contributes in the upbringing of
+   society and other educational institutes by providing training, workshops,
+   faculty development program, and awareness programs. The department organizes
+   the “International conference on Emerging Frontiers in Electrical and
+   Electronic Technologies (ICEFEET)” regularly to deliberate, exchange ideas,
+   and produce research collaborations for the technologies those have the
+   potential to significantly impact the domains of Power system, Power
+   Converters, Control systems, Machine Drives, Embedded systems, Measurement
+   and instrumentation technologies.
   </>
  )
 }
@@ -78,8 +110,6 @@ export const mission = () => {
   <>
    To achieve sustainable growth towards academic excellence in the field of
    Electrical Engineering.
-   {/* To create and maintain a sustainable development in infrastructure,
-      academic environment human resources and governance. */}
   </>
  )
 }
@@ -207,6 +237,8 @@ export const Outcomes = () => {
  return (
   <>
    <div className="row rowmarl3 rowmarr3 digital">
+    <br />
+    <h1>B.Tech</h1>
     <h3 style={{ width: `100%` }}>
      Programme Educational Objectives (PEO) for UG (B.Tech - EE)
     </h3>
@@ -322,6 +354,69 @@ export const Outcomes = () => {
      <b>PSO3:</b> Design and development of Instrumentation, Control and
      Automation systems for industries and intelligent systems.
     </p>
+    <br />
+    <h1>M.Tech</h1>
+    <br />
+    <h3 style={{ width: `100%` }}>PG (M. Tech. – Control System)</h3>
+    <h3 style={{ width: `100%` }}>Program Educational Objectives (PEO)</h3>
+    <p>
+     1. To impart learning and understanding towards different segments of
+     Control System Engineering so that Graduates of the program will have
+     successful careers in Instrumentation, automation, and inter-disciplinary
+     fields.
+     <br />
+     2. To empower graduates of the program to excel in research, and contribute
+     to technological developments in control and instrumentation.
+     <br />
+     3. To prepare the graduates to effectively collaborate with different
+     sectors of the field that shall lead to innovation for solving social,
+     technical, and business challenges in an optimized and environment friendly
+     manner. 4. To encourage students to pursue lifelong learning and
+     professional development through continuing education and self-improvement.
+    </p>
+    <br />
+    <h3 style={{ width: `100%` }}>Program Outcomes (PO)</h3>
+    <p>
+     PO1: An ability to independently carry out research /investigation and
+     development work to solve practical problems
+     <br />
+     PO2: An ability to write and present a substantial technical
+     report/document
+     <br />
+     PO3: Students should be able to demonstrate a degree of mastery over the
+     area as per the specialization of the program. The mastery should be at a
+     level higher than the requirements in the appropriate bachelor program.
+     <h3 style={{ width: `100%` }}>PG (M. Tech. – Power System)</h3>
+     <h3>Program Educational Objectives (PEO) </h3>
+     1. To impart learning and understanding towards different segments of the
+     Power System; which at present, is one of the important pillars of the
+     modern world, and aims to produce postgraduates in power systems, who are
+     employable in Industries and/or can pursue higher studies.
+     <br />
+     2. To provide the students with the opportunity to learn and use the
+     advanced techniques, skills, and modern scientific and engineering tools to
+     explore new problems in the energy sector.
+     <br />
+     3. To empower students to effectively collaborate with different sectors of
+     the field that shall lead to innovation for solving social, technical, and
+     business challenges in an optimized and environment friendly manner.
+     <br />
+     4. To encourage students to pursue life-long learning and professional
+     development through continuing education and self-improvement.
+     <h3 style={{ width: `100%` }}>Program Outcomes (PO)</h3>
+     After the successful completion of the two years’ postgraduate program,
+     students should be able to:
+     <br />
+     PO1: An ability to independently carry out research /investigation and
+     development work to solve practical problems
+     <br />
+     PO2: An ability to write and present a substantial technical
+     report/document
+     <br />
+     PO3: Students should be able to demonstrate a degree of mastery over the
+     area as per the specialization of the program. The mastery should be at a
+     level higher than the requirements in the appropriate bachelor program
+    </p>
    </div>
   </>
  )
@@ -365,6 +460,16 @@ export const datalist = [
   // img: "/department/about.svg",
  },
  {
+  title: "Mission & Vision",
+  data: "missionvision",
+  // img: "/department/mission.svg",
+ },
+ {
+  title: "Contact & HOD",
+  data: "contact",
+  // img: "/department/contact.svg",
+ },
+ {
   title: "Syllabus",
   relPath: "/ee/syllabus",
   // img: "/department/syllabus.svg",
@@ -374,21 +479,22 @@ export const datalist = [
   relPath: "/ee/faculty",
   // img: "/department/faculty.svg",
  },
+ //  {
+ //   title: "Staff",
+ //   data: "staff",
+ //   // img: "/department/faculty.svg",
+ //  },
+ {
+  title: "Laboratories",
+  data: "labs",
+  // img: "/department/labs.svg",
+ },
  {
   title: "Notice",
   data: "happening",
   // img: "/department/activities.svg",
  },
- {
-  title: "Contact & HOD",
-  data: "contact",
-  // img: "/department/contact.svg",
- },
- {
-  title: "Labs",
-  data: "labs",
-  // img: "/department/labs.svg",
- },
+
  {
   title: "Achievements",
   data: "achievements",
@@ -398,10 +504,5 @@ export const datalist = [
   title: "Activities",
   data: "activities",
   // img: "/department/activities.svg",
- },
- {
-  title: "Mission & Vision",
-  data: "missionvision",
-  // img: "/department/mission.svg",
  },
 ]

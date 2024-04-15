@@ -143,6 +143,90 @@ const Tables = {
    "Resource Persons": "Prof. S.K Sinha (Retd. Prof. IISc Bangalore)",
   },
  ],
+
+ //  staffmember: [
+ //   {
+ //    "S.No.": 1,
+ //    Name: "Sri Atul Kumar",
+ //    Designation: "Sr. Technical Assistant",
+ //    "Contact details": "atulkumar@nitp.ac.in",
+ //    Qualification: "B.Tech in Mechanical Engineering",
+ //    //Status: "completed"
+ //   },
+ //   {
+ //    "S.No.": 2,
+ //    Name: "Shad Ali Sabari ",
+ //    Designation: "Sr. Technical Assistant ",
+ //    "Contact details": "shad@nitp.ac.in  ",
+ //    Qualification: " B.Tech in Mechanical Engineering",
+ //    //Status: "Completed",
+ //   },
+ //   {
+ //    "S.No.": 3,
+ //    Name: "Md. Wahajul Haque ",
+ //    Designation: " Sr. Technical Assistant",
+ //    "Contact details": "wahajul@nitp.ac.in ",
+ //    Qualification:
+ //     "B.Tech in Mechanical Engineering and Pursuing Ph.D. at NIT Patna ",
+ //    //Status: "Completed",
+ //   },
+ //   {
+ //    "S.No.": 4,
+ //    Name: " Sri Surendra Kumar",
+ //    Designation: "Technical Assistant ",
+ //    "Contact details": "surendra.me@nitp.ac.in ",
+ //    Qualification: "B.E in Mechanical Engineering ",
+ //    Status: "Completed",
+ //   },
+ //   {
+ //    "S.No.": 5,
+ //    Name: "Sri Amresh kumar ",
+ //    Designation: "Technical Assistant ",
+ //    "Contact details": "amresh.me@nitp.ac.in ",
+ //    Qualification: " Diploma in Mechanical Engineering & I.Sc",
+ //    Status: "Completed",
+ //   },
+ //   {
+ //    "S.No.": 6,
+ //    Name: " Sri Vaidhnath Kumar",
+ //    Designation: " Technical Assistant",
+ //    "Contact details": "vaidhnath.me@nitp.ac.in ",
+ //    Qualification: "B.Tech in Mechanical Engineering ",
+ //    Status: "Completed",
+ //   },
+ //   {
+ //    "S.No.": 7,
+ //    Name: "Sri Subodh Kumar ",
+ //    Designation: " Junior Assistant",
+ //    "Contact details": "subodh.ja@nitp.ac.in",
+ //    Qualification: " B.A. ( Honours ) in History",
+ //    Status: "Completed",
+ //   },
+ //   {
+ //    "S.No.": 8,
+ //    Name: "Sri UpendraLal ",
+ //    Designation: "Sr. Technician ",
+ //    "Contact details": " upendralalnit@gmail.com",
+ //    Qualification: "Intermediate  ",
+ //    Status: "Completed",
+ //   },
+ //   {
+ //    "S.No.": 9,
+ //    Name: " Sri Bharat Bhushan Sharma",
+ //    Designation: " Sr. Office Attendant",
+ //    "Contact details": " ",
+ //    Qualification: " ",
+ //    Status: "Completed",
+ //   },
+ //   {
+ //    "S.No.": 10,
+ //    Name: "Sri Birendra Singh ",
+ //    Designation: "Office Attendant, SG-II ",
+ //    "Contact details": "Birendrasinghnitp@gmail.com",
+ //    Qualification: " ",
+ //    Status: "Completed",
+ //   },
+ //  ],
 }
 // export const Labs = [
 //   {
@@ -232,7 +316,7 @@ const Tables = {
 export const Labs = {
  content: (
   <>
-   <h2>Laboratory Facilities Available in the Department:-</h2>
+   <h3>Laboratory Facilities Available in the Department:-</h3>
 
    <ol type="1">
     <li>Elements of Electrical Engg. Lab.</li>
@@ -246,7 +330,58 @@ export const Labs = {
     <li>Measurement Lab</li>
     <li>High Voltage Lab</li>
     <li>SCADA Lab</li>
+    <li>Industrial Drives and Control Lab</li>
+    <li>
+     Advanced Instrumentation Lab
+     <li>Power system Lab (upcoming) </li>
+    </li>
    </ol>
+   <h3>Research Laboratories</h3>
+   <p>
+    The Department of Electrical Engineering has multiple
+    laboratories/facilities which are engaged in interesting and cutting-edge
+    research projects. The details of those laboratories are as follows:
+    <br />
+    1. Advanced Instrumentation Lab: Dr. Arunangshu Ghosh with his team of
+    students is working towards the development of a portable electronic tongue
+    for estimation of tea quality and spoilage detection of food samples. The
+    other work in progress is development of the Potentiostat System for General
+    Purpose Electro-Chemical Applications. These systems are developed to
+    develop automated systems for quality analysis of different agricultural and
+    food samples. Besides, technology using near infrared spectroscopy based
+    development (NIR) is also being carried out for developing non-invasive,
+    portable and optical solutions for quality analysis of food samples.
+    Software like Matlab, LABView, and MPLAB are regularly used to train
+    students for carrying out researches in this lab. Two externally sponsored
+    research projects have been completed successfully in this laboratory.
+    <br />
+    2. Control Lab: A project design and development of low-cost BLDC motor
+    drive for solar PV based irrigation system. One externally sponsored
+    research project has been completed successfully in this laboratory
+    <br />
+    3. Industrial Drives and Control Lab: The group of students led by Dr.
+    Vimlesh Verma works towards the development of control techniques for
+    electrical machine drives. High end hardware simulators like HIL, and
+    software like DSpace are a part of this lab. One externally sponsored
+    research project has been completed successfully in this laboratory.
+    <br />
+    4. SCADA Lab: This space is equipped with the facilities where Interfacing
+    of wind turbines with power systems and realization of hardware of grid
+    using supervisory control can be done by masters and PhD students.
+    <br />
+    5. NIT Patna campus smart metered distribution system: This enables us to
+    get the real time measurement of power, current, frequency, voltage and
+    other electrical parameters throughout the system at different nodes. The
+    dataset created acts as an asset and allows us to work further on load
+    forecasting, demand side management, generation and distribution planning,
+    also renewable generation planning). One externally sponsored research
+    project under Dr. Mala De has been completed successfully in this
+    laboratory.
+    <br />
+    6. Power electronics Lab: A team of students along with Dr. Ambarisha Mishra
+    is working on a six-phase induction motor drive.
+    <br /> 
+   </p>
   </>
  ),
 }
@@ -517,7 +652,7 @@ export const Achievements = [
      <li>
       <strong>Dileep Kumar</strong>, Ashiwani Kumar, Modelling,Control and
       Simulation of Integrated photovoltaic cell-Fuel cell &ndash; Battery based
-      Distribution system, EEC 2012(International conference on advances in
+      Distribution system, EEC 2012(International )conference on advances in
       Electrical ,Electronics and computer Engineering. Dehradun, India,july -
       2012, .
      </li>
@@ -574,6 +709,43 @@ export const Achievements = [
   ),
  },
 ]
+
+// export const Staff = [
+//   {
+//    title: <h2>Non</h2>,
+//    content: (
+//     <table className="table-act">
+//      <thead>
+//       <tr className="syllabus-table-head">
+//        <th>S.No.</th>
+//        <th>Name</th>
+//        <th>Designation</th>
+//        <th>Contact details</th>
+//        <th>Qualification</th>
+//        {/* <th>Photo</th> */}
+//       </tr>
+//      </thead>
+//      <tbody>
+//       {Tables.staffmember.map((row, idx) => (
+//        <tr key={idx}>
+//         <td>{row["S.No."]}</td>
+//         <td>{row["Name"]}</td>
+//         <td>{row["Designation"]}</td>
+//         <td>{row["Contact details"]}</td>
+//         <td>{row["Qualification"]}</td>
+//         {/* <td>{
+//            <img
+//       src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=1ZTd8RKh4GeeBHokdnK0q01hw2sqo9uXB"
+//       alt="hodImage"
+//     />
+//      }</td> */}
+//        </tr>
+//       ))}
+//      </tbody>
+//     </table>
+//    ),
+//   },
+//  ]
 export const Activities = [
  {
   content: (

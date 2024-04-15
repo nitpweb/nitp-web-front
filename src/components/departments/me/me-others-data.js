@@ -150,6 +150,192 @@ const Tables = {
     "Online FDP on Universal Human Values for DEEKSHARAMBH (Student Induction Program)",
    Duration: "September 21-25, 2020",
   },
+  {
+   "S.No.": 10,
+   "Name of the Faculty": {
+    Secretary: "Dr. Abhishek Singh",
+   },
+   "Organized Workshop/FDP/STC/Conference/GIAN program":
+    "International   Conference   on   Industrial and Manufacturing System (CIMS 2020), Venue: NIT Jalandhar",
+   Duration: "October 09-11, 2020",
+  },
+  {
+   "S.No.": 11,
+   "Name of the Faculty": {
+    Coordinator: "Dr. Abhishek Singh",
+   },
+   "Organized Workshop/FDP/STC/Conference/GIAN program":
+    "One week short term course on “Micro Manufacturing:	Challenges	and Opportunities”; Venue: PEC Chandigarh",
+   Duration: "January 04-08, 2021",
+  },
+  {
+   "S.No.": 12,
+   "Name of the Faculty": {
+    Coordinator: "Dr. Abhishek Singh",
+   },
+   "Organized Workshop/FDP/STC/Conference/GIAN program":
+    "AICTE   Training   And   Learning (ATAL) Academy Online FDP on Novel Materials",
+   Duration: "February 08-12, 2021",
+  },
+  {
+   "S.No.": 13,
+   "Name of the Faculty": {
+    Secretary: "Dr. Abhishek Singh",
+   },
+   "Organized Workshop/FDP/STC/Conference/GIAN program":
+    "International Conference on “Progressive Research in Industrial & Mechanical Engineering” (PRIME - 2021)",
+   Duration: "August 05-07, 2021",
+  },
+  {
+   "S.No.": 14,
+   "Name of the Faculty": {
+    Coordinator: "Dr. Sonu Rajak",
+   },
+   "Organized Workshop/FDP/STC/Conference/GIAN program":
+    "“Industry 4.0 Technologies: Application in Manufacturing Supply Chain” under the “Scheme of financial assistance for setting up of Electronics and ICT Academies” by the Ministry of Electronics and Information Technology (MeitY), Government of India.",
+   Duration: "May 02–13, 2022",
+  },
+  {
+   "S.No.": 15,
+   "Name of the Faculty": {
+    Coordinator: "Dr. Sonu Rajak",
+   },
+   "Organized Workshop/FDP/STC/Conference/GIAN program":
+    "“Additive Manufacturing and 3D Printing (AM & 3DP)” under the “Scheme of financial assistance for setting up of Electronics and ICT Academies” by the Ministry of Electronics and Information Technology (MeitY), Government of India.",
+   Duration: "July 18 - 29, 2022",
+  },
+  {
+   "S.No.": 16,
+   "Name of the Faculty": {
+    Coordinator: "Dr. Sonu Rajak",
+   },
+   "Organized Workshop/FDP/STC/Conference/GIAN program":
+    "“Digital Transformations in Operations & Supply Chain Management” under the “Scheme of financial assistance for setting up of Electronics and ICT Academies” by the Ministry of Electronics and Information Technology (MeitY), Government of India.",
+   Duration: "September 06 - 15, 2022",
+  },
+  {
+   "S.No.": 17,
+   "Name of the Faculty": {
+    Coordinator:
+     "Prof. Amit Kumar, MED , Dr. Ashish Ranjan Sinha, HSS ,Dr. Zeeshan Ali, HSS, Dr. Zeeshan Ali, HSS,Dr. Amitesh Kumar, EED",
+   },
+   "Organized Workshop/FDP/STC/Conference/GIAN program":
+    "Online FDP on Universal Human Values for DEEKSHARAMBH (Student Induction Program)",
+   Duration: "September 21-25, 2020",
+  },
+  {
+   "S.No.": 18,
+   "Name of the Faculty": {
+    Convener: "Dr. Shailesh Mani Pandey",
+    Convener: "Dr. Om Ji Shukla",
+   },
+   "Organized Workshop/FDP/STC/Conference/GIAN program":
+    "SERB Sponsored Symposium on Graphene: The Wonder Material of the Future",
+   Duration: "July 10 - 16, 2023",
+  },
+  {
+   "S.No.": 19,
+   "Name of the Faculty": {
+    Coordinator:
+     "Prof. Amit Kumar, MED,Dr. Ashish Ranjan Sinha, HSS, Prof. Abhishek Singh, MED, Dr. Zeeshan Ali, HSS",
+   },
+   "Organized Workshop/FDP/STC/Conference/GIAN program":
+    "Emerging Trends and Commercialization of Intellectual Property Rights (ETCIPR 2024)",
+   Duration: "January 08 - 12, 2024",
+  },
+  {
+   "S.No.": 20,
+   "Name of the Faculty": {
+    Coordinator: "Prof. Amit Kumar, MED",
+   },
+   "Organized Workshop/FDP/STC/Conference/GIAN program":
+    "The Faculty Sensitisation Programme on BIS Activities",
+   Duration: "April 04, 2024",
+  },
+ ],
+
+ staffmember: [
+  {
+   "S.No.": 1,
+   Name: "Sri Atul Kumar",
+   Designation: "Sr. Technical Assistant",
+   "Contact details": "atulkumar@nitp.ac.in",
+   Qualification: "B.Tech in Mechanical Engineering",
+   //Status: "completed"
+  },
+  {
+   "S.No.": 2,
+   Name: "Shad Ali Sabari ",
+   Designation: "Sr. Technical Assistant ",
+   "Contact details": "shad@nitp.ac.in  ",
+   Qualification: " B.Tech in Mechanical Engineering",
+   //Status: "Completed",
+  },
+  {
+   "S.No.": 3,
+   Name: "Md. Wahajul Haque ",
+   Designation: " Sr. Technical Assistant",
+   "Contact details": "wahajul@nitp.ac.in ",
+   Qualification:
+    "B.Tech in Mechanical Engineering and Pursuing Ph.D. at NIT Patna ",
+   //Status: "Completed",
+  },
+  {
+   "S.No.": 4,
+   Name: " Sri Surendra Kumar",
+   Designation: "Technical Assistant ",
+   "Contact details": "surendra.me@nitp.ac.in ",
+   Qualification: "B.E in Mechanical Engineering ",
+   Status: "Completed",
+  },
+  {
+   "S.No.": 5,
+   Name: "Sri Amresh kumar ",
+   Designation: "Technical Assistant ",
+   "Contact details": "amresh.me@nitp.ac.in ",
+   Qualification: " Diploma in Mechanical Engineering & I.Sc",
+   Status: "Completed",
+  },
+  {
+   "S.No.": 6,
+   Name: " Sri Vaidhnath Kumar",
+   Designation: " Technical Assistant",
+   "Contact details": "vaidhnath.me@nitp.ac.in ",
+   Qualification: "B.Tech in Mechanical Engineering ",
+   Status: "Completed",
+  },
+  {
+   "S.No.": 7,
+   Name: "Sri Subodh Kumar ",
+   Designation: " Junior Assistant",
+   "Contact details": "subodh.ja@nitp.ac.in",
+   Qualification: " B.A. ( Honours ) in History",
+   Status: "Completed",
+  },
+  {
+   "S.No.": 8,
+   Name: "Sri UpendraLal ",
+   Designation: "Sr. Technician ",
+   "Contact details": " upendralalnit@gmail.com",
+   Qualification: "Intermediate  ",
+   Status: "Completed",
+  },
+  {
+   "S.No.": 9,
+   Name: " Sri Bharat Bhushan Sharma",
+   Designation: " Sr. Office Attendant",
+   "Contact details": " ",
+   Qualification: " ",
+   Status: "Completed",
+  },
+  {
+   "S.No.": 10,
+   Name: "Sri Birendra Singh ",
+   Designation: "Office Attendant, SG-II ",
+   "Contact details": "Birendrasinghnitp@gmail.com",
+   Qualification: " ",
+   Status: "Completed",
+  },
  ],
 }
 
@@ -175,7 +361,7 @@ export const Labs = [
      <p>Heat and Mass Transfer Lab.</p>
     </li>
     <li>
-     <p>Renewable Energy Lab.</p>
+     <p>Applied Thermodynamics Lab.</p>
     </li>
     <li>
      <p>Applied Thermodynamics Lab.</p>
@@ -190,25 +376,31 @@ export const Labs = [
      <p>Fuel Cell Lab.</p>
     </li>
     <li>
-     <p>CAM Lab.</p>
+     <p> Renewable Energy Lab.</p>
     </li>
     <li>
      <p>Flexible Manufacturing System Lab.</p>
     </li>
     <li>
-     <p>Welding Shop.</p>
+     <p>
+      <li>
+       <p>Flexible Manufacturing System Lab.</p>
+      </li>
+     </p>
     </li>
     <li>
-     <p>Fitting Shop.</p>
-    </li>
-    <li>
-     <p>Carpentry Shop.</p>
-    </li>
-    <li>
-     <p>Black Smithy Shop.</p>
-    </li>
-    <li>
-     <p>Machine Shop.</p>
+     <p>
+      Workshop:
+      <br />
+      - Machine Shop
+      <br />
+      - Welding Shop
+      <br />
+      - Carpentry Shop
+      <br />
+      - Fitting Shop
+      <br />- Black Smithy Shop
+     </p>
     </li>
    </ol>
   ),
@@ -323,6 +515,42 @@ export const Achievements = [
     </li>
     <li>2nd Rank in the design Event in HPVC 2015.</li>
    </ul>
+  ),
+ },
+]
+export const Staff = [
+ {
+  title: <h2></h2>,
+  content: (
+   <table className="table-act">
+    <thead>
+     <tr className="syllabus-table-head">
+      <th>S.No.</th>
+      <th>Name</th>
+      <th>Designation</th>
+      <th>Contact details</th>
+      <th>Qualification</th>
+      {/* <th>Photo</th> */}
+     </tr>
+    </thead>
+    <tbody>
+     {Tables.staffmember.map((row, idx) => (
+      <tr key={idx}>
+       <td>{row["S.No."]}</td>
+       <td>{row["Name"]}</td>
+       <td>{row["Designation"]}</td>
+       <td>{row["Contact details"]}</td>
+       <td>{row["Qualification"]}</td>
+       {/* <td>{
+          <img
+     src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=1ZTd8RKh4GeeBHokdnK0q01hw2sqo9uXB"
+     alt="hodImage"
+   />
+    }</td> */}
+      </tr>
+     ))}
+    </tbody>
+   </table>
   ),
  },
 ]

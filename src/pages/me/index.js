@@ -13,6 +13,7 @@ import {
  vision,
  contact,
  datalist,
+ staff,
 } from "../../components/departments/me/mehome"
 import Layout from "../../components/layout"
 const Me = () => (
@@ -25,6 +26,7 @@ const Me = () => (
    About={about}
    Mission={mission}
    Vision={vision}
+   Staff={staff}
    Contact={contact}
    Labs={labs}
    Achievements={achievements}
