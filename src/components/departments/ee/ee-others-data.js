@@ -6,34 +6,100 @@ const home = process.env.GATSBY_BASE_URL + "ee/labs/"
 const Tables = {
  studentSelectedForInternships: [
   {
-   "Roll No": 1422014,
-   Name: "SRIRAM RANGARAJAN",
+   "Roll No": 2002079,
+   Name: "Om Kumar",
+   "Academic / Industrial": "Industrial",
+   Organisation: "NALCO, Anugul",
+  },
+  {
+   "Roll No": 2002023,
+   Name: "Sujeet Kumar",
+   "Academic / Industrial": "Industrial",
+   Organisation: "NTPC, Muzaffarpur",
+  },
+  {
+   "Roll No": 2002021,
+   Name: " Chandan Kumar",
+   "Academic / Industrial": "Industrial",
+   Organisation: "NTPC, Muzaffarpur",
+  },
+  {
+   "Roll No": 2002028,
+   Name: "Mallela Srujana ",
+   "Academic / Industrial": "Industrial",
+   Organisation: "BHEL",
+  },
+  {
+   "Roll No": 2002110,
+   Name: "Akash Kumar ",
+   "Academic / Industrial": "Industrial",
+   Organisation: "IOCL, Barauni",
+  },
+  {
+   "Roll No": 2002063,
+   Name: "Ankunj Suraj",
    "Academic / Industrial": "Academic",
-   Organisation: "IIT Bombay",
+   Organisation: "IIT Hyderabad",
   },
   {
-   "Roll No": 1421001,
-   Name: "MUNJI LALITHA KUMARI",
+   "Roll No": 2102021,
+   Name: "Ayush Raj",
    "Academic / Industrial": "Industrial",
-   Organisation: "KPIT Technologies, Bangalore",
+   Organisation: "NTPC, Bhagalpur",
   },
   {
-   "Roll No": 1421005,
-   Name: "SUBHRA CHANDAN BEHERA",
+   "Roll No": 2102046,
+   Name: " Ratan deep",
    "Academic / Industrial": "Industrial",
-   Organisation: "KPIT Technologies",
+   Organisation: "IOCL, Baruni",
   },
   {
-   "Roll No": 1421006,
-   Name: "DEBASISH MOHAPATRA",
+   "Roll No": 2102059,
+   Name: "Shatrughan Kasaudhan ",
    "Academic / Industrial": "Industrial",
-   Organisation: "KPIT Technologies",
+   Organisation: "NTPC, Tanda",
   },
   {
-   "Roll No": 1421017,
-   Name: "KISHAN KUMAR",
+   "Roll No": 2102097,
+   Name: " Abhishek Kumar Sudhanshu",
    "Academic / Industrial": "Industrial",
-   Organisation: "KPIT Technologies",
+   Organisation: "PGCIL, Patna",
+  },
+  {
+   "Roll No": 2102125,
+   Name: "Anubhav Kumar ",
+   "Academic / Industrial": "Industrial",
+   Organisation: "PGCIL, Patna",
+  },
+  {
+   "Roll No": 2102128,
+   Name: "Mayank Kumar",
+   "Academic / Industrial": "Industrial",
+   Organisation: "Damodar Velley Corporation Ltd.",
+  },
+  {
+   "Roll No": 2102027,
+   Name: "Ankur Kumar ",
+   "Academic / Industrial": "Industrial",
+   Organisation: "NTPC, Patna",
+  },
+  {
+   "Roll No": 2102079,
+   Name: "Praveen kumar ",
+   "Academic / Industrial": "Industrial",
+   Organisation: "E.C Railway Danapur",
+  },
+  {
+   "Roll No": 2102098,
+   Name: "Vedansh Kumar Srivastava ",
+   "Academic / Industrial": "Industrial",
+   Organisation: "BHEL, Bhopal",
+  },
+  {
+   "Roll No": 2102004,
+   Name: "Utsav Kumar ",
+   "Academic / Industrial": "Industrial",
+   Organisation: "PGCIL, Patna",
   },
  ],
  projectSanctioned: [
@@ -645,44 +711,64 @@ export const Labs = {
     laboratories/facilities which are engaged in interesting and cutting-edge
     research projects. The details of those laboratories are as follows:
     <br />
-    1. Advanced Instrumentation Lab: Dr. Arunangshu Ghosh with his team of
-    students is working towards the development of a portable electronic tongue
-    for estimation of tea quality and spoilage detection of food samples. The
-    other work in progress is development of the Potentiostat System for General
-    Purpose Electro-Chemical Applications. These systems are developed to
-    develop automated systems for quality analysis of different agricultural and
-    food samples. Besides, technology using near infrared spectroscopy based
-    development (NIR) is also being carried out for developing non-invasive,
-    portable and optical solutions for quality analysis of food samples.
-    Software like Matlab, LABView, and MPLAB are regularly used to train
-    students for carrying out researches in this lab. Two externally sponsored
-    research projects have been completed successfully in this laboratory.
     <br />
-    2. Control Lab: A project design and development of low-cost BLDC motor
-    drive for solar PV based irrigation system. One externally sponsored
-    research project has been completed successfully in this laboratory
+    <h3>
+     <strong>1. Advanced Instrumentation Lab: </strong>
+    </h3>
     <br />
-    3. Industrial Drives and Control Lab: The group of students led by Dr.
-    Vimlesh Verma works towards the development of control techniques for
-    electrical machine drives. High end hardware simulators like HIL, and
-    software like DSpace are a part of this lab. One externally sponsored
-    research project has been completed successfully in this laboratory.
+    Dr. Arunangshu Ghosh with his team of students is working towards the
+    development of a portable electronic tongue for estimation of tea quality
+    and spoilage detection of food samples. The other work in progress is
+    development of the Potentiostat System for General Purpose Electro-Chemical
+    Applications. These systems are developed to develop automated systems for
+    quality analysis of different agricultural and food samples. Besides,
+    technology using near infrared spectroscopy based development (NIR) is also
+    being carried out for developing non-invasive, portable and optical
+    solutions for quality analysis of food samples. Software like Matlab,
+    LABView, and MPLAB are regularly used to train students for carrying out
+    researches in this lab. Two externally sponsored research projects have been
+    completed successfully in this laboratory.
     <br />
-    4. SCADA Lab: This space is equipped with the facilities where Interfacing
-    of wind turbines with power systems and realization of hardware of grid
-    using supervisory control can be done by masters and PhD students.
     <br />
-    5. NIT Patna campus smart metered distribution system: This enables us to
-    get the real time measurement of power, current, frequency, voltage and
-    other electrical parameters throughout the system at different nodes. The
-    dataset created acts as an asset and allows us to work further on load
-    forecasting, demand side management, generation and distribution planning,
-    also renewable generation planning). One externally sponsored research
-    project under Dr. Mala De has been completed successfully in this
-    laboratory.
+    <h3>
+     <strong>2. Control Lab: </strong>
+    </h3>
+    A project design and development of low-cost BLDC motor drive for solar PV
+    based irrigation system. One externally sponsored research project has been
+    completed successfully in this laboratory
     <br />
-    6. Power electronics Lab: A team of students along with Dr. Ambarisha Mishra
-    is working on a six-phase induction motor drive.
+    <h3>
+     <strong> 3. Industrial Drives and Control Lab:</strong>
+    </h3>
+    The group of students led by Dr. Vimlesh Verma works towards the development
+    of control techniques for electrical machine drives. High end hardware
+    simulators like HIL, and software like DSpace are a part of this lab. One
+    externally sponsored research project has been completed successfully in
+    this laboratory.
+    <br />
+    <h3>
+     <strong>4.SCADA Lab:</strong>
+    </h3>
+    This space is equipped with the facilities where Interfacing of wind
+    turbines with power systems and realization of hardware of grid using
+    supervisory control can be done by masters and PhD students.
+    <br />
+    <h3>
+     <strong> 5. NIT Patna campus smart metered distribution system:</strong>
+    </h3>
+    This enables us to get the real time measurement of power, current,
+    frequency, voltage and other electrical parameters throughout the system at
+    different nodes. The dataset created acts as an asset and allows us to work
+    further on load forecasting, demand side management, generation and
+    distribution planning, also renewable generation planning). One externally
+    sponsored research project under Dr. Mala De has been completed successfully
+    in this laboratory.
+    <br />
+    <h3>
+     <strong> 6. Power electronics Lab:</strong>
+    </h3>
+    A team of students along with Dr. Ambarisha Mishra is working on a six-phase
+    induction motor drive.
     <br /> 
    </p>
   </>
@@ -703,27 +789,57 @@ export const Achievements = [
   content: (
    <>
     <h2>
-     <strong>STUDENT ACHIEVEMENTS </strong>
+     <strong>Notable achievements by students: </strong>
+    </h2>
+    <ul>
+     <li>Abhash Kumar – secured All India Rank 1 in GATE EE 2020.</li>
+     <li>
+      Sudhakar Kumar – secured All India Rank 9th Engineering Service
+      Examination (ESE 2015).
+     </li>
+     <li>
+      Amratansh Gupta – secured All India Rank 88 in GATE 2020 and currently he
+      is a Ph.D. researcher with Department of Electronics and Informatics of
+      Vrije Universiteit Brussel.
+     </li>
+    </ul>
+    <h2>
+     <strong>Consistent performance in GATE</strong>
     </h2>
     <ul>
      <li>
-      Exceptional achievements in <strong>GATE</strong>, with AIR 300 in GATE
-      '15, AIR 334 in GATE &lsquo;16.
+      GATE 2024 Performers
+      <ul>
+       <li>
+        {" "}
+        Mayank Jaiman (Roll No. Graduating Year: 2022) secured AIR 25 in the
+        discipline of EE.
+       </li>
+       <li>
+        Manish Choudhary (Roll No.1802113 Graduating Year: 2022) AIR 519.
+       </li>
+       <li>
+        {" "}
+        Jitendra Kumar (Roll No.1802102, Graduating Year: 2022) (Maruti Suzuki
+        India Ltd.) AIR 600{" "}
+       </li>
+       <li> Adarsh Kumar (Roll No.1802005, Graduating Year: 2022) AIR 711.</li>
+      </ul>
      </li>
      <li>
-      <strong>Sudhakar Kumar</strong> &ndash; A PG Student secured{" "}
-      <strong>
-       9<sup>th</sup> Rank
-      </strong>{" "}
-      in Indian Engineering Service (<strong>IES 2015</strong>).
+      {" "}
+      Lakshay Narnauli (Roll No. 1402023, Graduating Year: 2018) (IOCL) AIR 288
+      in GATE 2023.{" "}
      </li>
      <li>
-      Students Selected for higher studies in reputed institute like IIT
-      Kharagpur, IIT Guwahati, IT-BHU etc.
+      {" "}
+      Manish Bajya (Roll No. 1802109, Graduating Year: 2022) (KRIBHCO) secured
+      AIR-887 Rank in GATE-EE 2022.
      </li>
      <li>
-      Students take part in various fests across the country showcasing their
-      skills in robotics, paper presentations and public speaking.
+      {" "}
+      Rajan Kumar Pandey (Roll No.1802023 Graduating Year: 2022) at Capgemini as
+      Associate -II Software Engineer cleared GATE 2021.
      </li>
     </ul>
    </>
@@ -733,25 +849,52 @@ export const Achievements = [
   content: (
    <>
     <h2>
-     <strong>Some of the students&rsquo; awards and achievements:</strong>
+     <strong>Performers at their workplace </strong>
     </h2>
     <ul>
      <li>
-      Adarsh Tiwari &ndash; A student of EE Department is a group member of the
-      team that successfully managed to create a racing car for SUPRA' 15.
+      Anjali (Roll No. 1902045; Graduating Year:2023) working as Pre-Sales
+      Consultant at O9 Solutions Management Pvt Ltd received SPOT Award
      </li>
      <li>
-      Saurabh Dubey - A student of EE Department Selected among top 10 national
-      finalists in <strong>National Engineering Challenge 2016</strong>{" "}
-      Organized by - The Gate Academy, Prizes -- Certificate of appreciation + 1
-      Tablet ( TabGATE)
+      Tanishq Singh (Roll No. 1802100 Graduating Year: 2022) Winner of Tata
+      Crucible Hackathon 2022 East Region, Winner of IMS case study challenge
+      2022, Applause/Spot Awards in Deloitte for exceptional performance.
      </li>
      <li>
-      Saurabh Dubey - A student of EE Department awarded and recognized as one
-      of the top 10 in KTH Master's Challenge 2015 Summer Edition 2015,
-      organized by - KTH Royal Institute of Technology , Sweden for the track of
-      "Electric Power Engineering" <br /> Prize - Certificate of Appreciation
-      and dinner event with KTH Institute's officials
+      Akansh Omar (Roll No. 1802117 Graduating Year: 2022) Received Applause
+      Award and Spot Award.
+     </li>
+     <li>
+      Digvijay Verma (Roll No. 1702033 Graduating Year: 2021) working at Maruti
+      Suzuki India Limited as Assistant Manager bagged Star Executive Award in
+      Tata Power Delhi Distribution Limited for reducing commercial loss by 12%.
+      He also won Gold Award in ICQC 2023- For project of curbing Theft in
+      village area distribution network.
+     </li>
+     <li>
+      Rashika Singh (Roll No. 1702101 Graduating Year: 2021) working at Alstom
+      Transport India Limited as V&V Designer won Bronze Award in December 2022
+      for exceptional work in NCRTC-RRTS Project of India.
+     </li>
+     <li>
+      Amratansh Gupta (Roll No. 1402061 Graduating Year: 2018) as Semiconductor
+      Research at IMEC; He received JN Tata Scholar Award (2023), Secured All
+      India Rank 88 in GATE-EC 2020, and published Two IEEE Transactions on
+      Electron Devices Journal Papers from Master thesis at IISc Bangalore.
+     </li>
+     <li>
+      Tarkeshwer Narayan Gaur (Roll No. 140061 Graduating Year: 2018) at
+      Highradius Technologies Pvt Ltd as Senior Consultant- II (Solution
+      Architect) emerged as Employee of the quarter (HighFlyer Award).
+     </li>
+     <li>
+      Pranjal Kumar (Roll no. 1702084 Graduating Year: 2021) at L&T Construction
+      as Senior Engineer- Electrical Rated as top performer in the FY22-23.
+     </li>
+     <li>
+      Anil Kumar (Roll no. 1802088 Graduating Year: 2022) at Zetwerk
+      manufacturing private limited as SDE-1 received Appreciation award.
      </li>
     </ul>
     <h2>
@@ -793,7 +936,7 @@ export const Achievements = [
      <strong>List of Publications by Students:</strong>
     </h2>
     <ol type="1">
-     <li>
+     {/* <li>
       Saragdhara Bhattacharya, MunjiLalithaKumari,
       <strong>M MChoudhary</strong>;{" "}
       <strong>
@@ -801,211 +944,225 @@ export const Achievements = [
        state-space method&rdquo;
       </strong>
       ; <em>IEEE ISCO16 Coimbatore Feb 02, 2016</em>
+     </li> */}
+     <li>
+      {" "}
+      Kamakshi Prashadini Swain, Prakash Lakhara, Kapish Khetan, Siddhant
+      Mishra, Mala De, “Efficient hybrid pricing for optimal DSM of home energy
+      management system utilizing load precedence” International Transactions on
+      Electrical Energy Systems, volume 31, No. 3, Jan. 2021.
      </li>
      <li>
-      Jayanti Choudhary<strong>, D</strong>
-      <em>
-       .K. Singh, S.N. Verma, <strong>Kamil Ahmad</strong> &ldquo;
-      </em>
-      <strong>
-       Artificial Intelligence Based Control of a Shunt Active Power
-       Filter&rdquo;{" "}
-      </strong>{" "}
-      <em>2nd International Conference on Intelligent</em>
-      <em>Computing,Communication Convergence (ICCC-2016)</em>
+      {" "}
+      Shweta Kumari, Pulakraj Aryan and G. Lloyds Raja, Design and simulation of
+      a novel FOIMC-PD/P double-loop control structure for CSTRs and
+      bioreactors, Int. J. Chem. React. Eng., 2021,
+      doi.org/10.1515/ijcre-2021-0140.{" "}
      </li>
      <li>
-      <strong>Munji Lalitha Kumari, Sragdhara Bhattacharya</strong> , U.S Triar
-      <strong>
-       ; &ldquo;Stabilization of boost convertor with output filter using LQR
-       based state-feedback controller&rdquo;,
-      </strong>{" "}
-      <em>IEEE ISCO16, Coimbatore Feb 02, 2016</em>
+      {" "}
+      Prakash, A., & Meena, G. (2021). Observer design for apex height and
+      vertical velocity of a single-leg hopping robot during stance phase.
+      Robotica, Cambridge University Press, 1-12. doi:10.1017/S0263574721001429.{" "}
      </li>
      <li>
-      <strong>Subhra Chandan Behera</strong>, G. K. Choudhary, R.K Mandal;{" "}
-      <strong>
-       &ldquo;PID Controller Based Automatic Reactive Power Control of a
-       Wind-Diesel Hybrid Power System&rdquo;
-      </strong>
-      ,{" "}
-      <em>
-       {" "}
-       International Journal of Advanced Research in Electrical, Electronics and
-       Instrumentation Engineering (An ISO 3297: 2007 Certified Organization)
-       Vol. 4, Issue 11, November 2015{" "}
-      </em>
+      {" "}
+      B. S. Shiva, C. D. Kumar & V. Verma, “Single Sensor Based Vector
+      Controlled PMSM Drive”, IEEE -PEDES, Jaipur, Dec. – 2020.{" "}
      </li>
      <li>
-      <strong>Subhra Chandan Behera</strong> , G.K Choudhary, R.K Mandal;
-      <strong>
-       &ldquo;Fuzzy based vector PI controller to mitigate the harmonics issue
-       of a distribution system using Three-phase hybrid&rdquo;
-      </strong>
-      ;{" "}
-      <em>
-       International Conference on Advances in Electrical, Electronics,
-       Information, Communication and Bio-Informatics (AEEICB16)
-      </em>
+      {" "}
+      B. S. Shiva, C. D. Kumar & V. Verma, “Speed Sensorless Vector Controlled
+      PMSM Drive with A Single Current Sensor”, IEEE -PEDES, Jaipur, Dec. –
+      2020.{" "}
      </li>
      <li>
-      <strong>D Bharti</strong> , M De; <strong>&ldquo;</strong>{" "}
-      <a
-       href="https://scholar.google.co.in/citations?view_op=view_citation&amp;hl=en&amp;user=c-cVLgEAAAAJ&amp;sortby=pubdate&amp;citation_for_view=c-cVLgEAAAAJ:eQOLeE2rZwMC"
-       target="_blank"
-      >
-       {" "}
-       <strong>
-        A new graph theory based loss allocation framework for bilateral power
-        market using diakoptics
-       </strong>{" "}
-      </a>{" "}
-      <strong>&rdquo;; </strong>{" "}
-      <em>
-       International Journal of Electrical Power &amp; Energy Systems 77, 2016,
-       395-403.
-      </em>
+      {" "}
+      C. D. Kumar, B. S. Shiva & V. Verma, “Vector Control of PMSM Drive with
+      Single Current Sensor”, In the Conf. Proc. of SCES 2020, MNNIT Allahabad,
+      India.
      </li>
      <li>
-      <strong>Kumar Shahid</strong>, M De; <strong>&ldquo;</strong>{" "}
-      <a
-       href="https://scholar.google.co.in/citations?view_op=view_citation&amp;hl=en&amp;user=c-cVLgEAAAAJ&amp;sortby=pubdate&amp;citation_for_view=c-cVLgEAAAAJ:WF5omc3nYNoC"
-       target="_blank"
-      >
-       {" "}
-       <strong>
-        Short Term Reactive Power Dispatch Using a Novel Pricing Structure for
-        Synchronous Condenser
-       </strong>{" "}
-      </a>{" "}
-      <em>
-       &rdquo;,INDICON 2015, Proceedings of the 12th Annual IEEE India
-       Conference, 17-20th December 2015, JamiaMiliaIslamia, New Delhi.
-      </em>
+      {" "}
+      Y. A. Khan, I. S. Twinkle, S. Kumar & V. Verma, “Comparative Analysis of
+      Different Converter Topologies for an SRM Drive with Conventional and
+      Vector Control Schemes”, In the Conf. Proc. of IEEE-ICEFEET 2020, NIT
+      Patna, India.
      </li>
      <li>
-      <strong>Kumar Sagar</strong> , Manjima Bhattacharya;{" "}
-      <strong>
-       &ldquo;A classical approach to find the optimal location and size of DG
-       along with a proposed on-off controller
-      </strong>
-      &rdquo;; <em>IEEE conference, ICPEICES, DTU, July -2016</em>
+      {" "}
+      Sweta Kumari and Rajib Kumar Mandal, Effectiveness of Space Vector PWM in
+      Three-Phase Inverter, ICEFEET-2020
      </li>
      <li>
-      <strong>Alpana Sinha, </strong> M De, &ldquo;Load Shifting Technique for
-      reduction of Peak Generation Capacity Requirement in Smart Grid&rdquo;,{" "}
-      <em>IEEE conference, ICPEICES, DTU, July -2016.</em>
+      {" "}
+      Ashutosh Kumar Singh, Rajib Kumar Mandal, Ravi Raushan and Pratyush Gauri,
+      Design and Analysis of the Gate Driver Circuit for Power Semiconductor
+      Switches, ICEFEET 2020
      </li>
      <li>
-      <strong>Shashank Shekhar Kashyap, </strong> M De, &ldquo;A Novel Loss
-      Allocation Method for Radial Distribution System with Distributed
-      Generations&rdquo;,
-      <em>IEEE conference, ICPEICES, DTU, July -2016.</em>
+      {" "}
+      Ashutosh Kumar Singh, Rajib Kumar Mandal, Ravi Raushan and Pratyush Gauri,
+      Grid Connected Photovoltaic Systems with Multilevel Inverter, ICEFEET 2020{" "}
      </li>
      <li>
-      <strong>Md.Hasmat</strong> <strong>Ali</strong>, A.K.Sahani, Study,
-      Implementation and comparison of Different Multipliers based on Array KCM
-      and Vedic Mathematics Using EDA Tools.. IJSRP. vol 3 (Issue-6), June -
-      2013,ISSN 2250-3153.
+      {" "}
+      Md Irfan Ahmed, Prateem Pan, Ramesh Kumar and R. K. Mandal, Wind
+      Generation Forecasting Using Python, ICEFEET-2020{" "}
      </li>
      <li>
-      <strong>Devendra Kumar</strong>, Ashiwani Kumar, Unit Commitment Of
-      Thermal Power Plant In Integration with Wind and Solar Plant Using Genetic
-      Algorithm. International Journal of Engineering Research &amp;Technology
-      (IJERT). Volume-3(Issue-7), July - 2014,page-664-669, ISSN:2278-0181.
+      AK Singh, RK Mandal, V Raj, P Gauri, Design of Autonomous Electric Vehicle
+      Detecting the Roadside Buildings, 2020 IEEE First International Conference
+      on Smart Technologies for Power{" "}
      </li>
      <li>
-      <strong>Dileep kumar</strong>, Ashiwani Kumar, Control and Simulation of
-      Smart Backup System for photovoltaic System in Matlab. International
-      Journal of Engineering Research &amp;Technology (IJERT).
-      Volume-3(Issue-7), July - 2014,page- 1312-1315, ISSN:2278-0181.
+      {" "}
+      Sariki Murali, Ravi Shankar, Shivam Shrivastav, Utkarsh Dhawal and Vishal
+      Kannaujia, LFC Scheme for A Deregulated Multi-Area Power System using
+      Cascaded Fractional Order Controller, ICEFEET-2020{" "}
      </li>
      <li>
-      <strong>Lokesh Kumar Yadav</strong>, Ashiwani Kumar, Comparative Analysis
-      of Voltage Stability using Classical Methods and Particle Swarm
-      Optimization. International Journal of Engineering Research
-      &amp;Technology(IJERT). Volume-3(Issue-7), July - 2014,Page - 262 -268,
-      ISSN:2278-0181.
+      {" "}
+      A. Mishra, Anita Bharti, Anjali Kumari, Apurba Paul, “Transmission Line
+      Inspection Robot:A Novel Approach,” 6th International Conference on
+      Nanoelectronics Circuits & Communication Systems (NCCS-2020), IETE & ISVE
+      Ranchi Centre, 19-20 Dec 2020.{" "}
      </li>
      <li>
-      <strong>Digamber Singh</strong>, Ashiwani Kumar, Bidding Strategy For
-      Competitive Electricity Market By Using Optimization Technique (PSO &amp;
-      APSO). International Journal of Engineering Research &amp;Technology
-      (IJERT). Volume-3(Issue-5), May - 2014,Page- 1541- 1548, ISSN:2278-0182.
+      {" "}
+      M. S. Ahmed and A. Mishra, "Analysis of 5-Phase IM Drive with Reduced
+      Switch 5-Level Inverter," 2020 IEEE Students Conference on Engineering &
+      Systems (SCES), Prayagraj, India, 2020, pp. 1-5.
      </li>
      <li>
-      <strong>Dileep kumar</strong>, Ashiwani Kumar, Modelling,Control and
-      Simulation of Integrated photovoltaic cell-Fuel cell &ndash; Battery based
-      Distribution system. UACEE International journal of Advancements in
-      Electronics and Electrical Engineering. Volume-1(Issue-2), December -
-      2012,Page- 68-73, ISSN:2319-7498.
+      {" "}
+      S. Ahmad and A. Mishra, "Mathematical Modelling, Simulation and Control of
+      Five-Phase Induction Motor Drives," 2020 International Conference on
+      Emerging Frontiers in Electrical and Electronic Technologies (ICEFEET),
+      Patna, India, 2020, pp. 1-4.{" "}
      </li>
      <li>
-      <strong>Digamber Singh</strong>, Ashiwani Kumar, Optimization Technique
-      (PSO &amp; APSO) To Crack Bidding Problem For Participant In Electricity
-      Market, International Conference on Industrial Electronics and Electrical
-      Engineering (ICIEEE-2014). Singapore,September - 2014, .
+      {" "}
+      A. Mishra, Sartaj Ahmed, Vikram Kuma, “Performance Investigation of
+      Multi-phase IM Drive with Five-level Inverter under Fault Conditions”, 6th
+      International Conference on Nanoelectronics Circuits & Communication
+      Systems (NCCS-2020), IETE & ISVE Ranchi Centre, 19-20 Dec 2020.{" "}
      </li>
      <li>
-      <strong>Dileep Kumar</strong>, Ashiwani Kumar, Control and Simulation of
-      Integrated Photovalitic cell-battery-Fuel based distribution system for
-      Controlled Ac loads, ICEECS,International Conference on Electrical,
-      Electronics and Computer Science. Bhuneshwar, India,September - 2012, .
+      {" "}
+      Dibya Bharti, Meera Sinha, Sukanya, Mala De, “Multiobjective Optimization
+      Based Resource Utilization with Loss Minimization in Microgrid”, IEEE
+      region 10 Symposium (Tensymp 2019), Tensymp, IEEE PES Society,
+      (Piscataway, NJ, USA) Jun. 2019.
      </li>
      <li>
-      <strong>Dileep Kumar</strong>, Ashiwani Kumar, Modelling,Control and
-      Simulation of Integrated photovoltaic cell-Fuel cell &ndash; Battery based
-      Distribution system, EEC 2012(International )conference on advances in
-      Electrical ,Electronics and computer Engineering. Dehradun, India,july -
-      2012, .
+      {" "}
+      Madhusudan Kumar and M. De, Optimal Load Scheduling for Industrial
+      Load-Analysis for a Generalized Industrial Load Model, 8th International
+      Conference ICPS 2019. Jaipur, December - 2019,
+      DOI:10.1109/ICPS48983.2019.9067735.{" "}
      </li>
      <li>
-      <strong>Raushan Kumar, Amrita Sinha</strong>, G K Choudhary , Dynamic
-      modeling and simulation of an autonomous Hybrid power system. Int. J. of
-      Renewable Energy Technology -2015 . , Accepted - 2015,.
+      {" "}
+      R. Kumar, V. Verma, Y.A. Khan, B. S. Shiva, “Q-MRAS Based Speed Sensorless
+      Vector Controlled Synchronous Reluctance Motor Drive”, 1st International
+      Conference on International Conference on Power Electronics Applications
+      and Technology in Present Energy Scenario (PETPES-2019).{" "}
      </li>
      <li>
-      <strong>Yadav Sushma,</strong> Choudhary G.K, R.K Mandal, Review on Fault
-      Current Limiter. International journal of engineering Research &amp;
-      technology. - 2014,.
+      {" "}
+      Sanjeev Kumar, Manish Kumar, Arunangshu Ghosh, A New Approach of Modeling
+      the Electronic Tongue Sensors for Classification, IEEE Sensors 2018
+      Conference, New Delhi, India, October 28-31, 2018, DOI:
+      10.1109/ICSENS.2018.8589601.{" "}
      </li>
      <li>
-      <strong>Meena, Gagan Deep</strong>, Choudhary, G. K. and Gupta, Manoj,
-      Neural Network Based Recognition of Partial Discharge Patterns.
-      International Journal of Advanced Engineering Research and Studies
-      (E-ISSN2249-8974). IJAERS/. 1(2), March - 2012,121-126, .
+      {" "}
+      Manish Kumar, Sanjeev Kumar, Amratansh Gupta, Arunangshu Ghosh,
+      Development of Electronic Interface for Sensing Applications with
+      Voltammetric Electronic Tongue, IEEE Sensors 2018 Conference, New Delhi,
+      India, October 28-31, 2018, DOI: 10.1109/ICSENS.2018.8589506,{" "}
      </li>
      <li>
-      <strong>Kumar, Ankur</strong>, Choudhary, G. K. and Sinha, Amrita,
-      Adaptive Noise Suppression in Voice communication using ASSNFIS System.
-      International Journal of Electrical &amp; Electronics Engineering (IJEEE),
-      ISSN(print):2231-5284. 1(4) - 2012,79-83, .
+      {" "}
+      Sanjeev Kumar, Prince Kumar, Arunangshu Ghosh, Independent Component
+      Regression for the Development of Prediction Model for Analysis of
+      Electronic Tongue Response, Fifth International Conference on Emerging
+      Applications of Information Technology (EAIT), IIEST, Shibpur, Howrah,
+      12-13 Jan, 2018, Pages:1-4, 10.1109/EAIT.2018.8470427, DOI:
+      10.1109/EAIT.2018.8470427
      </li>
      <li>
-      <strong>Yadav Sushma</strong>, Choudhary G.K ,&amp;Mandal R.K,
-      Determination of Appropriate location of Superconducting Fault Current
-      Limiter in the Smart grid, International Conference on Industrial
-      Electronics and Electrical Engineering ICIEEE. - 2014,.
+      {" "}
+      Vibhas K Vats, Sneha Rai, Suddhasil De, Mala De, “Very Short-Term,
+      Short-Term and Mid-Term Load Forecasting for Residential Academic
+      Institute: A Case Study”, Nanoelectronics, Circuits and Communication
+      Systems (NCCS 2018), LNEE Springer Verlag (Berlin/ Heidelberg, Germany),
+      Nov.2018.
      </li>
      <li>
-      <strong>Kumar Ranjeet</strong>, Sinha Amrita &amp;Choudhary, G. K., A new
-      digital distance relaying algorithm for first-zone protection for
-      series-compensated double-circuit transmission lines&rdquo; Proceeding,
-      IEEE Computer Society, 3rd International Conference on Advances in
-      Computing and Communications. 102-106, - 2013,.
+      {" "}
+      Vibhas K Vats, Sneha Rai, Dibya Bharti, Mala De, “Mitigating Eect of
+      Communication Link Failure in Smart Meter based Load Forecasting”, ICCCA
+      2018, IEEE (Piscataway, NJ, USA), Dec. 2018.{" "}
      </li>
      <li>
-      <strong>SushmaYadav</strong>, Rajib Kumar Mandal and Girish Kumar
-      Choudhary , &ldquo;Determination of Appropriate Location of
-      Superconducting Fault Current Limiter in the Smart Grid&rdquo;, Smart
-      Electric Grid (ISEG), 2014 International Conference(IEEE). Page(s): 1
-      &ndash; 9, - 2014, .
+      {" "}
+      S. S. Kashyap and M. De, “Loss Allocation and Loss Minimization for Radial
+      Distribution System including DGs”, IET Renewable Power Generation, In
+      Press, 2017.{" "}
      </li>
      <li>
-      <strong>Pritanjali Kumari</strong>, U. S. Triar, AN EFFICIENT METHOD FOR
-      PAPR REDUCTION IN OFDM SYSTEMS WITH REDUCED COMPLEXITY. International
-      Journal of Electrical &amp; Electronics Engg., . 1(4) - 2012,92-98, ISSN
-      (PRINT): 2231 &ndash; 5284.
+      {" "}
+      Ambuj Saxena, M. De, Demand Response Management of Residential Loads with
+      Integrated Temperature Dependent Appliances, 5th International Conference
+      on Emerging Applications of Information Technology (EAIT’18), 1-4, IEEE,
+      New York, NY, USA, 2017.{" "}
+     </li>
+     <li>
+      {" "}
+      Navjeet Singh, M. De, Kamakshi P. Swain, Analysis of a PV System under
+      Partially Shaded Condition using Enhanced PV Model, 7th International
+      Conference on Power Systems (ICPS’17), 1-6, IEEE, New York, NY, USA, 2017.{" "}
+     </li>
+     <li>
+      {" "}
+      A. Sinha and M. De, "Load shifting technique for reduction of peak
+      generation capacity requirement in smart grid," 2016 IEEE 1st
+      International Conference on Power Electronics, Intelligent Control and
+      Energy Systems (ICPEICES), 2016, pp. 1-5, doi:
+      10.1109/ICPEICES.2016.7853528.
+     </li>
+     <li>
+      {" "}
+      Md S. Alam and M. De, “Optimal Reactive Power Dispatch using Hybrid
+      Loop-Genetic based Algorithm”, Proc. 19th National Power System Conference
+      (NPSC) 2016, Bhubaneswar, Odisha (December 19-21, 2016).{" "}
+     </li>
+     <li>
+      {" "}
+      K. P. Swain and M. De, “Loss Allocation Method Independent of Dynamic Load
+      Variation”, Proc. IEEE 7th India International Conference on Power
+      Electronics (IICPE) 2016, Patiala, Punjab (November 17-19, 2016).{" "}
+     </li>
+     <li>
+      S. S. Kashyap and M. De, “A Novel Loss Allocation Method for Radial
+      Distribution System with Distributed Generations”, Proc. 1st IEEE
+      International Conference on Power Electronics, Intelligent Control and
+      Energy Systems (PEICES) 2016, New Delhi (July 4-6, 2016).{" "}
+     </li>
+     <li>
+      {" "}
+      A. Sinha and M. De, “Load Shifting Technique for Reduction of Peak
+      Generation Capacity Requirement in Smart Grid”, Proc. 1st IEEE
+      International Conference on Power Electronics, Intelligent Control and
+      Energy Systems (PEICES) 2016, New Delhi (July 4-6, 2016).{" "}
+     </li>
+     <li>
+      {" "}
+      K. Shahid and M. De, “Short Term Reactive Power Dispatch Using a Novel
+      Pricing Structure for Synchronous Condenser”, Proc. 12th Annual IEEE India
+      Conference (INDICON) 2015, New Delhi (December 17-20, 2015).{" "}
      </li>
     </ol>
    </>
