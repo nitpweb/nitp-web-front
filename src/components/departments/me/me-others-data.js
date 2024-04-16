@@ -514,6 +514,11 @@ export const Achievements = [
      and IITs.
     </li>
     <li>2nd Rank in the design Event in HPVC 2015.</li>
+    <li>
+     <a href="https://drive.google.com/file/d/1okvTL-Z5qFtV5WeqTCnGwLNZtlWW7luu/view?usp=sharing">
+      ASME-recent achievement
+     </a>
+    </li>
    </ul>
   ),
  },

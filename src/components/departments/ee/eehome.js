@@ -54,6 +54,13 @@ export const about = () => {
    4. Ph.D. program since 2009.
    <br />
    <br />
+   <li>
+    <a href="https://docs.google.com/spreadsheets/d/1cLbd7aYSImOAz_7GpMMt1MPifE9erSGf_TI2qglHzis/edit?usp=sharing_eip_se_dm&ts=661c01da">
+     VIDEO{" "}
+    </a>
+   </li>
+   <br />
+   <br />
    The department has undergone following major upgrades in the last five years:
    <br />
    1. Curriculum upgradation in accordance with New Education policy (NEP-2020)
@@ -231,6 +238,48 @@ export const achievements = () => {
     ))}
    </div>
   </>
+ )
+}
+export const uselink = () => {
+ return (
+  <div className="row rowmarl3">
+   <div className="digital">
+    <li>
+     <a href="https://docs.google.com/spreadsheets/d/1cLbd7aYSImOAz_7GpMMt1MPifE9erSGf_TI2qglHzis/edit?usp=sharing_eip_se_dm&ts=661c01da">
+      Study Materials{" "}
+     </a>
+    </li>
+
+    <li>
+     <a
+      href="https://drive.google.com/drive/folders/13AA_X_5qbcNRD0ni-ZQnvIOY3Ko1pgOJ?usp=drive_link
+
+"
+     >
+      {" "}
+      Sample Question Papers
+     </a>
+    </li>
+    <li>
+     <a href="https://electricallab.in/">Lab Manuals </a>
+    </li>
+    <li>
+     <a
+      href="https://drive.google.com/file/d/1UMNojontWLypMfbavmYk8ZwMV2KiKcuw/view?usp=drive_link
+
+"
+     >
+      {" "}
+      Placement
+     </a>
+    </li>
+    <li>
+     <a href="https://drive.google.com/file/d/1QXYr176K2TnlxSfJIJD2bdyjXtvL7nvz/view">
+      E-Learning Resources{" "}
+     </a>
+    </li>
+   </div>
+  </div>
  )
 }
 export const Outcomes = () => {
@@ -503,6 +552,11 @@ export const datalist = [
  {
   title: "Activities",
   data: "activities",
+  // img: "/department/activities.svg",
+ },
+ {
+  title: "Useful Links",
+  data: "uselink",
   // img: "/department/activities.svg",
  },
 ]
