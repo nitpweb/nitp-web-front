@@ -55,8 +55,8 @@ export const about = () => {
    <br />
    <br />
    <li>
-    <a href="https://docs.google.com/spreadsheets/d/1cLbd7aYSImOAz_7GpMMt1MPifE9erSGf_TI2qglHzis/edit?usp=sharing_eip_se_dm&ts=661c01da">
-     VIDEO{" "}
+    <a href="https://drive.google.com/file/d/1koo4nKZPA_BhWIhL87yh692l0FELbzPe/view?usp=sharing_eip_se_dm&ts=661999f1">
+     Department Video Tour{" "}
     </a>
    </li>
    <br />
