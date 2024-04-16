@@ -9,6 +9,7 @@ import Notice from "../home/notice"
 import { PageLayout } from "../styles/pagelayout"
 import { TabPage } from "../styles/tabpage"
 import Navigate from "../global/Navigate"
+import { uselink } from "./ee/eehome"
 
 const Dephomepage = ({
  routeName,
@@ -227,6 +228,24 @@ const Dephomepage = ({
        </div>
        {/* <div className="row imgcolstyle backgroundimage">
                 <img data-aos="zoom-in" src={map} className="img-fluid" />
+              </div> */}
+      </>
+     )}
+     {view == "uselink" && (
+      <>
+       <div className="layoutrow" id="about">
+        <div className="layoutabout">
+         <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
+          Useful Links
+         </h1>
+
+         <div className="row">
+          <p>{uselink()}</p>
+         </div>
+        </div>
+       </div>
+       {/* <div className="row imgcolstyle backgroundimage">
+                <img data-aos="zoom-in" src="/bulb.svg" className="img-fluid" />
               </div> */}
       </>
      )}
