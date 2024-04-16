@@ -10,7 +10,7 @@ const Tables = {
    "Name of the PI": "Dr. Anand Bhushan",
    "Sponsoring Agency": "Science and Engineering Research Board",
    "Sanctioned Amount(in lakh)": 12.9275,
-   Status: "Completed",
+   Status: "Completed (2016-2019)",
   },
   {
    "S.No.": 2,
@@ -28,33 +28,255 @@ const Tables = {
    "Name of the PI": "Dr. Nimai Pada Mandal",
    "Sponsoring Agency": "DST",
    "Sanctioned Amount(in lakh)": 24.2468,
-   Status: "Ongoing",
+   Status: "Completed (2017-2021)",
   },
   {
    "S.No.": 4,
-   "Name of the Project": "SEED Project",
-   "Name of the PI": "Dr. Anindya Malas",
-   "Sponsoring Agency": "NIT Patna, TEQIP III",
-   "Sanctioned Amount(in lakh)": 6,
-   Status: "Ongoing",
-  },
-  {
-   "S.No.": 5,
    "Name of the Project":
     "Studies on hard-facing of Inconel 718 on stainless steel 321 and 347 grades for nuclear reactor components",
    "Name of the PI": "Dr. A. Karpagaraj",
    "Sponsoring Agency": "SERB",
    "Sanctioned Amount(in lakh)": 29.74,
-   Status: "Ongoing",
+   Status: "Completed  (2020-2023)",
   },
   {
-   "S.No.": 6,
+   "S.No.": 5,
    "Name of the Project":
-    'Wire Arc Additive Manufacturing (WAAM) of Stainless Steel 316L Components for Nuclear Plant Applications.{" "}',
+    "Wire Arc Additive Manufacturing (WAAM) of Stainless Steel 316L Components for Nuclear Plant Applications.",
    "Name of the PI": "Dr. A. Karpagaraj",
    "Sponsoring Agency": "TEQIP-III/NITP",
    "Sanctioned Amount(in lakh)": 10,
-   Status: "Ongoing",
+   Status: "Completed  (2020-2023)",
+  },
+  {
+   "S.No.": 6,
+   "Name of the Project": "SEED Project",
+   "Name of the PI": "Dr. Anindya Malas",
+   "Sponsoring Agency": "NIT Patna, TEQIP III",
+   "Sanctioned Amount(in lakh)": 6,
+   Status: "Completed  (2019-2022)",
+  },
+  {
+   "S.No.": 7,
+   "Name of the Project":
+    "Surface Modification of Stainless steel by additive manufacturing for high temperature applications",
+   "Name of the PI": "Dr. Anil Kumar Das",
+   "Sponsoring Agency": "DST-SERB",
+   "Sanctioned Amount(in lakh)": 31.69,
+   Status: "Ongoing (2024-2026)",
+  },
+  {
+   "S.No.": 8,
+   "Name of the Project":
+    "Development and Characterization of Hybrid Green Composites from Agro Waste Banana Stem fiber",
+   "Name of the PI": "Dr. Abhishek Singh (CO-PI)",
+   "Sponsoring Agency": "BSCT, DST, Bihar",
+   "Sanctioned Amount(in lakh)": 2,
+   Status: "Ongoing (2023)",
+  },
+  {
+   "S.No.": 9,
+   "Name of the Project":
+    "Assessment of E-waste Management Practices in select areas of Bihar under Swachh Bharat Abhiyan ",
+   "Name of the PI": "Dr. Om Ji Shukla (PI) Dr. S.M.Pandey (Co-PI)",
+   "Sponsoring Agency": "ICSSR, New Delhi",
+   "Sanctioned Amount(in lakh)": 14,
+   Status: "Ongoing (2023-2024)",
+  },
+  {
+   "S.No.": 10,
+   "Name of the Project":
+    "Experimental and Numerical Vibroacoustic Performance Evaluation of Honeycomb Core Sandwich Structure",
+   "Name of the PI": "Dr. Shailesh M. Pandey (PI)",
+   "Sponsoring Agency": "SUPRA- DST",
+   "Sanctioned Amount(in lakh)": 183,
+   Status: "Ongoing (2023)",
+  },
+  {
+   "S.No.": 11,
+   "Name of the Project":
+    " Development of Graphene and HfO2 doped Nd2Ce2O7 as a Novel Thermal Barrier Coating Material for Ultra-Critical High-Temperature Applications",
+   "Name of the PI": "Dr. Shailesh M. Pandey (PI)",
+   "Sponsoring Agency": " TDP/DST",
+   "Sanctioned Amount(in lakh)": 153,
+   Status: "Approved(2023)",
+  },
+  {
+   "S.No.": 12,
+   "Name of the Project": "FIST Engineering Science Level B",
+   "Name of the PI": "Mechanical Engineering Department",
+   "Sponsoring Agency": "FIST DST ",
+   "Sanctioned Amount(in lakh)": 115,
+   Status: "Ongoing (2023)",
+  },
+  {
+   "S.No.": 13,
+   "Name of the Project":
+    "Development of Robust and Super Hydrophobic Plasma Sprayed Graphene reinforced TiAl Intermetallic membranes with improved Desalination in Membrane Distillation",
+   "Name of the PI": "Dr. Shailesh M. Pandey (CO-PI)",
+   "Sponsoring Agency": "DST",
+   "Sanctioned Amount(in lakh)": 58,
+   Status: "Ongoing (2023)",
+  },
+  {
+   "S.No.": 14,
+   "Name of the Project":
+    "Advance wear and corrosion resistance coating development and commercialisation In India",
+   "Name of the PI": "Dr. Shailesh M. Pandey (CO-PI)",
+   "Sponsoring Agency": "AMT/DST",
+   "Sanctioned Amount(in lakh)": "587.97022 NITP:10 Lakh",
+   Status: "Ongoing (2023)",
+  },
+  {
+   "S.No.": 15,
+   "Name of the Project":
+    "Low cost gram scale high quality and defect free Graphene by scalable Plasma spraying",
+   "Name of the PI": "Dr. Shailesh M. Pandey (CO-PI)",
+   "Sponsoring Agency": "DST",
+   "Sanctioned Amount(in lakh)": "120.00,000 NITP:20 Lakh",
+   Status: "Ongoing (2024)",
+  },
+  {
+   "S.No.": 16,
+   "Name of the Project":
+    "Experimental Improved Dynamic Behavior Analysis of Shape Memory Polymer Composite for Space Application",
+   "Name of the PI": "Dr. Chetan Kumar Hirwani",
+   "Sponsoring Agency": "SERB-SRG",
+   "Sanctioned Amount(in lakh)": 23,
+   Status: "Ongoing (2022)",
+  },
+  {
+   "S.No.": 17,
+   "Name of the Project": "Development of Space Qualified vapor Chamber",
+   "Name of the PI": "Dr. Md. Qaisar Raza",
+   "Sponsoring Agency": "ISRO",
+   "Sanctioned Amount(in lakh)": 23,
+   Status: "Ongoing (2023)",
+  },
+  {
+   "S.No.": 18,
+   "Name of the Project":
+    "Investigation of Capillary-fed Boiling in porous wicks with Ionic Liquids and Surfactants, File No. SRG/2023/001383",
+   "Name of the PI": "Dr. Md. Qaisar Raza",
+   "Sponsoring Agency": "SERB-SRG",
+   "Sanctioned Amount(in lakh)": 31.5753,
+   Status: "Ongoing (2023)",
+  },
+  {
+   "S.No.": 19,
+   "Name of the Project":
+    "Development of Robot-based Incremental Sheet Hydro-forming Machine",
+   "Name of the PI": "Dr. Yogesh Kumar",
+   "Sponsoring Agency": "SERB-SRG",
+   "Sanctioned Amount(in lakh)": 21.39,
+   Status: "Completed (2021-2023)",
+  },
+  {
+   "S.No.": 20,
+   "Name of the Project":
+    "Manufacturing of Plasma transferred arc coated surface on magnesium alloy for Tribological applications",
+   "Name of the PI": "Dr. Anil Kumar das",
+   "Sponsoring Agency": "DST-SERB",
+   "Sanctioned Amount(in lakh)": 38.7174,
+   Status: "Completed (2021-2023)",
+  },
+  {
+   "S.No.": 21,
+   "Name of the Project":
+    "Thermomechanical Analysis and modelling of forming and welding of thin metal sheets at micro and macro scales using continous and pulsed laser",
+   "Name of the PI": "Dr. Kuntal Maji",
+   "Sponsoring Agency": "DST-SERB",
+   "Sanctioned Amount(in lakh)": 12.3,
+   Status: "Completed",
+  },
+ ],
+
+ grantedPatents: [
+  {
+   "S.No.": 1,
+   "Application No.": "202131052394",
+   Title:
+    "METHOD AND APPARATUS FOR MEASURING THE ABSORPTIVITY OF MATERIALS WITH DIFFERENT CONTOUR SURFACE",
+   "Filling Date": "November 15, 2021",
+   "Patent No.": "408905",
+   "Grant Date": "October 12, 2022",
+   "Inventors Name": "1.SURESH KANT VERMA  2.RAVI  KANT RANJAN",
+  },
+  {
+   "S.No.": 2,
+   "Application No.": "202231026831",
+   Title: "A DENTAL IMPLANT ASSEMBLY WITH IMPROVED LOCKING MECHANISM",
+   "Filling Date": "May 9, 2022",
+   "Patent No.": "434134",
+   "Grant Date": "June 8, 2023",
+   "Inventors Name": "1. SAROJ KUMAR SARANGI 2. SAMBHRANT  SRIVASTAVA",
+  },
+  {
+   "S.No.": 3,
+   "Application No.": "202231036212",
+   Title: "A PLANTAR PRESSURE BASED INSOLE AND A MANUFACTURING METHOD THEREOF",
+   "Filling Date": "June 23, 2022",
+   "Patent No.": "434431",
+   "Grant Date": "June 13, 2023",
+   "Inventors Name": "1. SAROJ KUMAR SARANGI 2. RAVI KUMAR",
+  },
+  {
+   "S.No.": 4,
+   "Application No.": "202231054468",
+   Title: "AN EXHAUST FAN BASED POWER GENERATION SYSTEM",
+   "Filling Date": "September 23, 2022",
+   "Patent No.": "435580",
+   "Grant Date": "June 26, 2023",
+   "Inventors Name": "1.NITIN KUMAR   2.OM PRAKASH",
+  },
+  {
+   "S.No.": 5,
+   "Application No.": "202331001902",
+   Title: "A SYSTEM FOR WASTE HEAT RECOVERY FROM AN ENGINE",
+   "Filling Date": "January 10, 2023",
+   "Patent No.": "442327",
+   "Grant Date": "August 1, 2023",
+   "Inventors Name":
+    "1. AMIT KUMAR 2. ABHISHEK SINGH 3. AMIT KUMAR TIWARY 4. SWARNAMBUJ SUMAN  5. AJIT KUMAR PANDEY",
+  },
+  {
+   "S.No.": 6,
+   "Application No.": "201831047287",
+   Title:
+    "STEERABLE DRIVE WHEEL ASSEMBLY AND PERSONAL CONVEYANCE DETACHABLY EQUIPPED WITH THE SAME",
+   "Filling Date": "December 14, 2018",
+   "Patent No.": "477242",
+   "Grant Date": "December 5, 2023",
+   "Inventors Name":
+    "1. ASHOK DE 2. PRAKASH CHANDRA 3. PARAKH SETHI 4. KUMAR TANMAY 5. SWATANTRA KUMAR 6. SUMAN YADAV 7. KUMAR YASH KESHARWANI 8. ASHISH KUSHWAHA 9. GOVIND YADAV 10. ATUL PARASHAR 11. DIVYANSHU SHAHI",
+  },
+  {
+   "S.No.": 7,
+   "Application No.": "201711011951",
+   Title: "ROBOT ASSISTED HIGH SPEED INCREMENTAL SHEET HYDROFORMING MACHINE",
+   "Filling Date": "April 3, 2017",
+   "Patent No.": "486952",
+   "Grant Date": "December 21, 2023",
+   "Inventors Name": "1. Dr. YOGESH KUMAR",
+  },
+  {
+   "S.No.": 8,
+   "Application No.": "201831030260",
+   Title: "DESIGN AND FABRICATION OF GRANULAR FERTILIZER SPREADING MACHINE",
+   "Filling Date": "August 11,2018",
+   "Patent No.": "493394",
+   "Grant Date": "January 3, 2024",
+   "Inventors Name": "1. OM PRAKASH 2. ANURAG SINGH 3. SHEKHAR KUMAR NIRALA",
+  },
+  {
+   "S.No.": 9,
+   "Application No.": "202331050550",
+   Title:
+    "AN AUTO- ROBOTIC VACUUM BASED SCREWING SYSTEM FOR A CLUSTER ASSEMBLY",
+   "Filling Date": "July 26, 2023",
+   "Patent No.": "528591",
+   "Grant Date": "March 15, 2024",
+   "Inventors Name": "1. SAURABH PRIYADARSHI 2. NILAMBER KUMAR SINGH",
   },
  ],
  shortTermCourse: [
@@ -485,6 +707,37 @@ export const Achievements = [
        <td>{row["Sponsoring Agency"]}</td>
        <td>{row["Sanctioned Amount(in lakh)"]}</td>
        <td>{row.Status}</td>
+      </tr>
+     ))}
+    </tbody>
+   </table>
+  ),
+ },
+ {
+  title: <h2>List of Granted Patents: </h2>,
+  content: (
+   <table className="table-act">
+    <thead>
+     <tr className="syllabus-table-head">
+      <th>S.No.</th>
+      <th>Application</th>
+      <th>Title</th>
+      <th>Filling Date</th>
+      <th>Patent No.</th>
+      <th>Grant Date</th>
+      <th>Inventors Name</th>
+     </tr>
+    </thead>
+    <tbody>
+     {Tables.grantedPatents.map((row, idx) => (
+      <tr key={idx}>
+       <td>{row["S.No."]}</td>
+       <td>{row["Application No."]}</td>
+       <td>{row["Title"]}</td>
+       <td>{row["Filling Date"]}</td>
+       <td>{row["Patent No."]}</td>
+       <td>{row["Grant Date"]}</td>
+       <td>{row["Inventors Name"]}</td>
       </tr>
      ))}
     </tbody>

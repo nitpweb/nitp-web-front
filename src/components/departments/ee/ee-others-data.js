@@ -38,23 +38,326 @@ const Tables = {
  ],
  projectSanctioned: [
   {
-   "Name of the Project":
-    "Fault Tolerant Control of Permanent Magnet Synchronous Motor Drive in Electric Vehicles",
-   "Name of the PI": "Dr. Vimlesh Verma",
-   Collaboration: "None",
-   "Sponsoring Agency": "SERB - DST",
-   "Sanctioned Amount(in lakh)": "32 Lakhs",
-   Status: "Sanctioned",
+   "Sr. No.": 1,
+   "Project Scheme and Sponsoring Agency":
+    "Department of Science and Technology (DST)",
+   "File Number": "89830",
+   "Title of the Project": "DST-FIST 2023",
+   "Amount (INR)": "82,76,000",
+   "Name of Investigator": "Dr. Rajib Kumar Mandal",
+   Status: "Approved October 2023",
+   "Start Date": "-",
+   "End Date": "-",
+   Duration: "5.0",
   },
   {
-   "Name of the Project":
+   "Sr. No.": 2,
+   "Project Scheme and Sponsoring Agency":
+    "Science and Engineering Research Board (SERB)",
+   "File Number": "EEQ/2022/000555",
+   "Title of the Project":
+    "Design of Switched-Capacitor Based Boosting Inverter for PV Applications with Fewer Components",
+   "Amount (INR)": "33,93,434",
+   "Name of Investigator": "Dr. Rajib Kumar Mandal",
+   Status: "Ongoing",
+   "Start Date": "14.02.2023",
+   "End Date": "13.02.2026",
+   Duration: "3.0",
+  },
+  {
+   "Sr. No.": 3,
+   "Project Scheme and Sponsoring Agency":
+    "Bihar Council on Science and Technology (BCST)",
+   "File Number": "BCST-RD-01/2022-797",
+   "Title of the Project":
+    "A smart and connected Electrochemical device for quality analysis of agricultural products",
+   "Amount (INR)": "2,00,000",
+   "Name of Investigator": "Dr. Arunangshu Ghosh,",
+   Status: "Ongoing",
+   "Start Date": "14.10.2023",
+   "End Date": "3.10.2025",
+   Duration: "2.0",
+  },
+  {
+   "Sr. No.": 4,
+   "Project Scheme and Sponsoring Agency": "Department of Biotechnology (DBT)",
+   "File Number": "BT/PR49634/MED/32/851/2023",
+   "Title of the Project":
+    "Development of a novel soft -robotic joint for potential assistive applications using piezoelectric composite elastomer based synthetic muscle fibres",
+   "Amount (INR)": "32,76,000 ",
+   "Name of Investigator": "Dr. Arunangshu Ghosh",
+   Status: "Approved on July 2023",
+   "Start Date": "-",
+   "End Date": "-",
+   Duration: "1.5",
+  },
+  {
+   "Sr. No.": 5,
+   "Project Scheme and Sponsoring Agency": "Startup Research grants",
+   "File Number": "SRG/2021/001837",
+   "Title of the Project":
+    "Design and development of indigenous low-cost phasor measurement unit ",
+   "Amount (INR)": "32,17,000",
+   "Name of Investigator": "Dr. M Senthil Kumar",
+   Status: "Ongoing",
+   "Start Date": "14.11.2021",
+   "End Date": "13.11.2024",
+   Duration: "3.0",
+  },
+  {
+   "Sr. No.": 6,
+   "Project Scheme and Sponsoring Agency": "Startup Research grants",
+   "File Number": "SRG/2021/002110",
+   "Title of the Project":
+    "Bio-inspired electronic synaptic cells for neuromorphic and bio-medical applications",
+   "Amount (INR)": "29,00,000",
+   "Name of Investigator": "Dr. Amitesh Kumar",
+   Status: "Ongoing",
+   "Start Date": "14.11.2021",
+   "End Date": "13.11.2024",
+   Duration: "3.0",
+  },
+  {
+   "Sr. No.": 7,
+   "Project Scheme and Sponsoring Agency":
+    "Biotechnology Ignition Grant (BIG), BIRAC, DBT, Govt. of India",
+   "File Number": "BIRAC/KIIT01201/BIG-17/20",
+   "Title of the Project":
+    "Development of portable spectroscopic instruments for on-site estimation of quality compounds in tea",
+   "Amount (INR)": "49,55,000",
+   "Name of Investigator": "Dr. Arunangshu Ghosh-CoPI",
+   Status: "Completed",
+   "Start Date": "20.12.2021",
+   "End Date": "19.12.2023",
+   Duration: "2.0",
+  },
+  {
+   "Sr. No.": 8,
+   "Project Scheme and Sponsoring Agency":
+    "Early Career Research Award, SERB, DST, Govt. of India",
+   "File Number": "ECR/2017/001027",
+   "Title of the Project":
+    "Sustainable Smart Grid Framework for Energy Management Sytem Incorporating available Renewable Resources",
+   "Amount (INR)": "20,19,600",
+   "Name of Investigator": "Dr. Mala De",
+   Status: "Completed",
+   "Start Date": "15.07.2017",
+   "End Date": "14.01.2021",
+   Duration: "3.5",
+  },
+  {
+   "Sr. No.": 9,
+   "Project Scheme and Sponsoring Agency":
+    "Early Career Research Award, SERB, DST, Govt. of India",
+   "File Number": "ECR/2016/000900",
+   "Title of the Project":
+    "Fault Tolerant Control of Permanent Magnet Synchronous Motor Drive in Electric Vehicles ",
+   "Amount (INR)": "29,45,180",
+   "Name of Investigator": "Dr. Vimlesh Verma",
+   Status: "Completed",
+   "Start Date": "29.09.2016",
+   "End Date": "28.03.2020",
+   Duration: "3.5",
+  },
+  {
+   "Sr. No.": 10,
+   "Project Scheme and Sponsoring Agency":
+    "Early Career Research Award, SERB, DST, Govt. of India",
+   "File Number": "ECR/2016/001547",
+   "Title of the Project":
+    "Design and development of a low cost BLDC motor drive for solar PV based irrigation system",
+   "Amount (INR)": "42,17,530",
+   "Name of Investigator": "Dr. Nishat Anwar",
+   Status: "Completed",
+   "Start Date": "28.03. 2017",
+   "End Date": "27.09. 2020",
+   Duration: "3.5",
+  },
+  {
+   "Sr. No.": 11,
+   "Project Scheme and Sponsoring Agency":
+    "TEQIP Collaborative Research Scheme, NPIU, Govt. of India",
+   "File Number": "-",
+   "Title of the Project":
+    "Development of portable and industry viable torsional vibration measurement system",
+   "Amount (INR)": "13,35,000",
+   "Name of Investigator": "Dr. Nishat Anwar",
+   Status: "Completed",
+   "Start Date": "8.06.2019",
+   "End Date": "30.09.2020",
+   Duration: "1.25",
+  },
+  {
+   "Sr. No.": 12,
+   "Project Scheme and Sponsoring Agency": "Seed Project Grant, NIT Patna",
+   "File Number": "NITP/3040/19",
+   "Title of the Project":
+    "High Performance Vector Controlled Multiphase AC Machines",
+   "Amount (INR)": "10,00,000",
+   "Name of Investigator": "Dr. Ambarisha Mishra",
+   Status: "Completed",
+   "Start Date": "02.09. 2019",
+   "End Date": "01.09.2021",
+   Duration: "2.0",
+  },
+  {
+   "Sr. No.": 13,
+   "Project Scheme and Sponsoring Agency":
+    "TEQIP-AICTE, Collaborative research scheme",
+   "File Number": "-",
+   "Title of the Project":
+    "Investigation into QoS for Next Generation Networks",
+   "Amount (INR)": "10,62,000",
+   "Name of Investigator": "Dr. Ravi Shankar",
+   Status: "Completed",
+   "Start Date": "-",
+   "End Date": "-",
+   Duration: "2.25",
+  },
+  {
+   "Sr. No.": 14,
+   "Project Scheme and Sponsoring Agency":
+    "Instrument Development Program, DST, Govt. of India",
+   "File Number": "IDP/SEN/05/2015",
+   "Title of the Project":
     "Development of Potentiostat System for General Purpose Electro-Chemical Applications",
-   "Name of the PI":
-    "PI - Prof. Rajib Bandhyopadhyay(JU)Co-PI – Dr Arunangshu Ghosh (NITP)",
-   Collaboration: "Jadavpur University",
-   "Sponsoring Agency": "DST",
-   "Sanctioned Amount(in lakh)": "23 Lakh",
-   Status: "On-going",
+   "Amount (INR)": "23,33,600",
+   "Name of Investigator": "Dr.Arunangshu Ghosh-CoPI ",
+   Status: "Completed",
+   "Start Date": "21.07. 2016",
+   "End Date": "20.07. 2019",
+   Duration: "3.0",
+  },
+  {
+   "Sr. No.": 15,
+   "Project Scheme and Sponsoring Agency":
+    "Early Career Research Award, SERB, DST, Govt. of India",
+   "File Number": "CR/2016/001813",
+   "Title of the Project":
+    "Development of a portable electronic tongue for estimation of tea quality and spoilage detection of food samples",
+   "Amount (INR)": "15,95,000",
+   "Name of Investigator": "Dr. Arunangshu Ghosh",
+   Status: "Completed",
+   "Start Date": "17.03.2017",
+   "End Date": "6.09.2020",
+   Duration: "3.5",
+  },
+ ],
+ totalAmount: [
+  {
+   "Total Project Value": "TOTAL VALUE OF PROJECTS (INR)",
+   "Amount (INR)": "42,725,344/-",
+  },
+ ],
+ consultancy: [
+  {
+   "Name of the faculty": "Prof. Ramesh Kumar, Dr. Rajib Kumar Mandal",
+   "Project Title":
+    "Vetting of electrical design of new electrical distribution system of Chanakya National Law University, Patna (07.04.2021)",
+   "Funding Agency": "Chanakya National Law University, Patna, Bihar",
+   "Amount (INR)": "4,60,200",
+  },
+  {
+   "Name of the faculty": "Dr. Rajib Kumar Mandal, Dr. Nishat Anwar",
+   "Project Title":
+    "Vetting for MEP schemes/drawings for the construction of 240 bedded hospital building of Dr. Radha Krishan Medical College and Hospital, Hamirpur ( 27.04.2021)",
+   "Funding Agency": "Ahluwalia Contracts (India) Limited, New Delhi",
+   "Amount (INR)": "5,36,900",
+  },
+  {
+   "Name of the faculty": "Dr. Rajib Kumar Mandal, Dr. Ravi Shankar",
+   "Project Title":
+    "Vetting of MEP services design and drawing of all buildings at the proposed permanent campus of IIIT bhagalpur, Bihar ( 13.04.2021)",
+   "Funding Agency": "DDF Consultants, Pitampura, New Delhi",
+   "Amount (INR)": "5,98,260",
+  },
+  {
+   "Name of the faculty": "Dr. Rajib Kumar Mandal, Dr. Ravi Shankar",
+   "Project Title":
+    "Upgradation of Jawaharlal Nehru medical college and Hospital, Bhagalpur, Bihar ( 20.05.2019)",
+   "Funding Agency": "Tribeni Constructions Limited, Guwahati, Assam",
+   "Amount (INR)": "4,44,860",
+  },
+  {
+   "Name of the faculty": "Dr. Rajib Kumar Mandal, Dr. Ravi Shankar",
+   "Project Title": "Upgradation of PMCH, Patna ( 28.10.2020)",
+   "Funding Agency": "C.K. Constructions, Noida, Uttar Pradesh",
+   "Amount (INR)": "5,67,580",
+  },
+  {
+   "Name of the faculty": "Prof. Ramesh Kumar, Dr. Rajib Kumar Mandal",
+   "Project Title":
+    "Proof checking and E & M works regarding the construction of academic and residential complexes for the campus of IIT Patna, Bihta ( 05.02.2019)",
+   "Funding Agency": "NCC Limited, Bihta, Patna, Bihar",
+   "Amount (INR)": "3,54,000",
+  },
+  {
+   "Name of the faculty": "Dr. Rajib Kumar Mandal",
+   "Project Title":
+    "To examine the executed work of supply, installation, testing and commissioning of air-conditioners and associated electrical work at SCI building",
+   "Funding Agency": "IGIMS Patna",
+   "Amount (INR)": "3,06,800",
+  },
+  {
+   "Name of the faculty": "Dr. Rajib Kumar Mandal",
+   "Project Title":
+    "Vetting drawings/ documents of internal and external, electrical civil and mechanical design and drawing for the 240 bedded hospital, academic block, service block, department work and specialized services for Radhakrishnan medical college and hospital at Hamirpur, Himachal Pradesh.",
+   "Funding Agency": "Ahulwalia Contracts (Inda, Ltd.)",
+   "Amount (INR)": "5,36,900",
+  },
+  {
+   "Name of the faculty": "Dr. Rajib Kumar Mandal",
+   "Project Title":
+    "Vetting of MEP services, design and drawings of permanent campus of IIM Sambalpur, Orissa.",
+   "Funding Agency": "Dee Vee Projects Ltd., IIM Sambalur",
+   "Amount (INR)": "6,37,000",
+  },
+  {
+   "Name of the faculty": "Dr. Ambrisha Mishra",
+   "Project Title":
+    "Vetting of design and drawing related to Nikrish Pump Canal Project, Buxar, Bihar",
+   "Funding Agency": "Flowmore Ltd.",
+   "Amount (INR)": "3,01,600",
+  },
+  {
+   "Name of the faculty": "Dr. Ambrisha Mishra",
+   "Project Title":
+    "Design and drawing related to Jaitpura Pump Canal Project, Kaimur, Bihar ",
+   "Funding Agency": "Flowmore Ltd.",
+   "Amount (INR)": "2,71,440",
+  },
+  {
+   "Name of the faculty": "Dr. Rajib Kumar Mandal",
+   "Project Title":
+    "To examine the executed work of supply, installation, testing and commissioning of air-conditioners and associated electrical work at SCI building",
+   "Funding Agency": "IGIMS Patna",
+   "Amount (INR)": "3,06,800",
+  },
+ ],
+ confrences: [
+  {
+   "Name of confrences":
+    "3rd International Conference on Emerging Frontiers in Electrical and Electronic Technologies (ICEFEET)",
+   Duration: "21-22 Dec. 2023",
+   "International/National": "International",
+   Publisher: "IEEE",
+   Proceedings: "https://ieeexplore.ieee.org/xpl/conhome/10452149/proceeding",
+  },
+  {
+   "Name of confrences":
+    "2nd International Conference on Emerging Frontiers in Electrical and Electronic Technologies (ICEFEET)",
+   Duration: "24-25 June 2022",
+   "International/National": "International",
+   Publisher: "IEEE",
+   Proceedings: "https://ieeexplore.ieee.org/xpl/conhome/9847617/proceeding",
+  },
+  {
+   "Name of confrences":
+    "International Conference on Emerging Frontiers in Electrical and Electronic Technologies (ICEFEET)",
+   Duration: "10-11 July 2020",
+   "International/National": "International",
+   Publisher: "IEEE",
+   Proceedings: "https://ieeexplore.ieee.org/xpl/conhome/9177228/proceeding",
   },
  ],
  shortTermCourse: [
@@ -750,27 +1053,91 @@ export const Activities = [
  {
   content: (
    <>
-    <h2>List of Projects Sanctioned / On-going:&nbsp;-</h2>
+    <h2>List of Research Projects Sanctioned / On-going:&nbsp;-</h2>
+    <h5>
+     The list of sponsored Research projects carried out by the faculty members
+     of the department are provided in the following table:
+    </h5>
     <table className="table-act">
      <thead>
       <tr className="syllabus-table-head">
-       <th>Name of the Project</th>
-       <th>Name of the PI</th>
-       <th>Collaboration</th>
-       <th>Sponsoring Agency</th>
-       <th>Sanctioned Amount(in lakh)</th>
-       <th>Status</th>{" "}
+       <th>Sr. No.</th>
+       <th>Project Scheme and Sponsoring Agency</th>
+       <th>File Number</th>
+       <th>Title of the Project</th>
+       <th>Amount (INR)</th>
+       <th>Name of Investigator</th>
+       <th>Status</th> <th>Start Date</th>
+       <th>End Date</th>
+       <th>Duration (Years)</th>
       </tr>
      </thead>{" "}
      <tbody>
       {Tables.projectSanctioned.map((row, idx) => (
        <tr key={idx}>
-        <td>{row["Name of the Project"]}</td>
-        <td>{row["Name of the PI"]}</td>
-        <td>{row.Collaboration}</td>
-        <td>{row["Sponsoring Agency"]}</td>
-        <td>{row["Sanctioned Amount(in lakh)"]}</td>
+        <td>{row["Sr. No."]}</td>
+        <td>{row["Project Scheme and Sponsoring Agency"]}</td>
+        <td>{row["File Number"]}</td>
+        <td>{row["Title of the Project"]}</td>
+        <td>{row["Amount (INR)"]}</td>
+        {/* <td>{row.Collaboration}</td> */}
+        <td>{row["Name of Investigator"]}</td>
         <td>{row.Status}</td>
+        <td>{row["Start Date"]}</td>
+        <td>{row["End Date"]}</td>
+        <td>{row.Duration}</td>
+       </tr>
+      ))}
+     </tbody>
+     <tbody>
+      {Tables.totalAmount.map((row, idx) => (
+       <tr key={idx}>
+        <td>{row["Total Project Value"]}</td>
+        <td>{row["Amount (INR)"]}</td>
+       </tr>
+      ))}
+     </tbody>
+    </table>
+    <h2>Consultancy Projects:&nbsp;-</h2>
+    <table className="table-act">
+     <thead>
+      <tr className="syllabus-table-head">
+       <th>Name of the faculty</th>
+       <th>Project Title</th>
+       <th>Funding Agency</th>
+       <th>Amount (INR)</th>
+      </tr>
+     </thead>{" "}
+     <tbody>
+      {Tables.consultancy.map((row, idx) => (
+       <tr key={idx}>
+        <td>{row["Name of the faculty"]}</td>
+        <td>{row["Project Title"]}</td>
+        <td>{row["Funding Agency"]}</td>
+        <td>{row["Amount (INR)"]}</td>
+       </tr>
+      ))}
+     </tbody>
+    </table>
+    <h2>Conferences:&nbsp;-</h2>
+    <table className="table-act">
+     <thead>
+      <tr className="syllabus-table-head">
+       <th>Name of confrences</th>
+       <th>Duration</th>
+       <th>International/National</th>
+       <th>Publisher</th>
+       <th>Proceedings</th>
+      </tr>
+     </thead>{" "}
+     <tbody>
+      {Tables.confrences.map((row, idx) => (
+       <tr key={idx}>
+        <td>{row["Name of confrences"]}</td>
+        <td>{row["Duration"]}</td>
+        <td>{row["International/National"]}</td>
+        <td>{row["Publisher"]}</td>
+        <td>{row["Proceedings"]}</td>
        </tr>
       ))}
      </tbody>
