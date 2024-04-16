@@ -39,6 +39,7 @@ export const about = () => {
    Engineering. The department is also offering the Ph.D. research program since
    2009
    <br />
+   <br />
    The Department offers the following academic programs:
    <br />
    1. B. Tech. in Electrical Engineering (151 Seats)
@@ -47,21 +48,26 @@ export const about = () => {
    <br />
    3. M. Tech.
    <br />
-   ● Control Systems Engineering -22 seats
-   <br />
-   ● Power Systems Engineering-10 seats
+   <ul>
+    <li>Control Systems Engineering -22 seats</li>
+    <br />
+    <li>Power Systems Engineering-10 seats</li>
+   </ul>
    <br />
    4. Ph.D. program since 2009.
    <br />
    <br />
-   <li>
-    <a href="https://drive.google.com/file/d/1koo4nKZPA_BhWIhL87yh692l0FELbzPe/view?usp=sharing_eip_se_dm&ts=661999f1">
-     Department Video Tour{" "}
-    </a>
-   </li>
+   <ul>
+    <li>
+     <a href="https://drive.google.com/file/d/1koo4nKZPA_BhWIhL87yh692l0FELbzPe/view?usp=sharing_eip_se_dm&ts=661999f1">
+      Department Video Tour{" "}
+     </a>
+    </li>
+   </ul>
    <br />
    <br />
    The department has undergone following major upgrades in the last five years:
+   <br />
    <br />
    1. Curriculum upgradation in accordance with New Education policy (NEP-2020)
    in 2021.
@@ -72,6 +78,7 @@ export const about = () => {
    3. Introduction of M. Tech. in power system engineering from 2023.
    <br />
    4. UG program accredited with NBA status since 2021
+   <br />
    <br />
    The Electrical Engineering department has well-qualified faculty with
    specializations in the field of electrical power systems, electrical machines
@@ -115,8 +122,11 @@ export const about = () => {
 export const mission = () => {
  return (
   <>
+   <br />
    To achieve sustainable growth towards academic excellence in the field of
    Electrical Engineering.
+   <br />
+   <br />
   </>
  )
 }
@@ -142,17 +152,33 @@ export const vision = () => {
       equipped to meet the challenges in education, profession and life
       <br />
       To instill moral and ethical values among the faculty and students */}
-   To offer quality education in electrical engineering to meet the requirements
-   of industry, society and nation.
    <br />
-   To provide contemporary technical knowhow by regular upgradation of
-   curriculum as per the needs of industry and educative exposures like short
-   term courses, conferences, etc.
    <br />
-   To establish state-of-the-art infrastructural facilities in the arena of
-   academics and research.
+   <li>
+    {" "}
+    To offer quality education in electrical engineering to meet the
+    requirements of industry, society and nation.
+   </li>
+
    <br />
-   To inculcate leadership, moral and ethical values among the students.
+   <li>
+    {" "}
+    To provide contemporary technical knowhow by regular upgradation of
+    curriculum as per the needs of industry and educative exposures like short
+    term courses, conferences, etc.
+   </li>
+
+   <br />
+   <li>
+    {" "}
+    To establish state-of-the-art infrastructural facilities in the arena of
+    academics and research.
+   </li>
+   <br />
+   <li>
+    To inculcate leadership, moral and ethical values among the students.
+   </li>
+
    <br />
   </>
  )
@@ -403,6 +429,7 @@ export const Outcomes = () => {
      <b>PSO3:</b> Design and development of Instrumentation, Control and
      Automation systems for industries and intelligent systems.
     </p>
+    <br />
     <br />
     <h1>M.Tech</h1>
     <br />
