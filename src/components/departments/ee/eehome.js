@@ -57,13 +57,16 @@ export const about = () => {
    4. Ph.D. program since 2009.
    <br />
    <br />
-   <ul>
-    <li>
-     <a href="https://drive.google.com/file/d/1koo4nKZPA_BhWIhL87yh692l0FELbzPe/view?usp=sharing_eip_se_dm&ts=661999f1">
-      Department Video Tour{" "}
-     </a>
-    </li>
-   </ul>
+   <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/8OXz7jmPPQ4?si=SHDxt865H7U8dNVB&amp;start=2"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+   ></iframe>
    <br />
    <br />
    The department has undergone following major upgrades in the last five years:
