@@ -571,7 +571,7 @@ export const Labs = [
   content: (
    <ol type="1" style={{ fontSize: `1.2rem` }}>
     <li>
-     <p>Strength of Material.</p>
+     <p>Strength of Materials Lab.</p>
     </li>
     <li>
      <p>Internal Combustion Gas Turbine Lab.</p>
@@ -581,9 +581,6 @@ export const Labs = [
     </li>
     <li>
      <p>Heat and Mass Transfer Lab.</p>
-    </li>
-    <li>
-     <p>Applied Thermodynamics Lab.</p>
     </li>
     <li>
      <p>Applied Thermodynamics Lab.</p>
@@ -601,14 +598,10 @@ export const Labs = [
      <p> Renewable Energy Lab.</p>
     </li>
     <li>
-     <p>Flexible Manufacturing System Lab.</p>
+     <p>Computer Aided Manufacturing Lab.</p>
     </li>
     <li>
-     <p>
-      <li>
-       <p>Flexible Manufacturing System Lab.</p>
-      </li>
-     </p>
+     <p>Flexible Manufacturing System Lab.</p>
     </li>
     <li>
      <p>
