@@ -1,4 +1,5 @@
 import React from "react"
+import { title } from "./eehome"
 
 // const home = "http://www.nitp.ac.in/"
 const home = process.env.GATSBY_BASE_URL + "ee/labs/"
@@ -512,7 +513,93 @@ const Tables = {
    "Resource Persons": "Prof. S.K Sinha (Retd. Prof. IISc Bangalore)",
   },
  ],
-
+ staffmember: [
+  {
+   "S.No.": 1,
+   Name: "Mr. Pawan Kumar",
+   Designation: "Sr. Technical Assistant",
+   "Contact details": "pk.elec@nitp.ac.in",
+   Qualification: "B.Tech in Electrical Engineering",
+  },
+  {
+   "S.No.": 2,
+   Name: "Mr. Pintu Kumar",
+   Designation: "Sr. Technical Assistant",
+   "Contact details": "pintu.ee@nitp.ac.in",
+   Qualification: "B.Tech & Diploma in Electrical Engineering",
+  },
+  {
+   "S.No.": 3,
+   Name: "Mr. Abhishek Kumar Sah",
+   Designation: "Technical Assistant",
+   "Contact details": "a.k.sah.ee@nitp.ac.in",
+   Qualification: "Diploma in Electrical Engineering ",
+  },
+  {
+   "S.No.": 4,
+   Name: "Mr. Ratikanta Behera",
+   Designation: "Technical Assistant",
+   "Contact details": "r.behera.ee@nitp.ac.in",
+   Qualification:
+    "Diploma in Electrical Engineering and Bachelor Degree in Arts",
+  },
+  {
+   "S.No.": 5,
+   Name: "Mr. Ashish Kumar Baranwal",
+   Designation: "Technical Assistant",
+   "Contact details": "ashish.k.ee@nitp.ac.in",
+   Qualification: "B.Tech & Diploma in Electrical Engineering",
+  },
+  {
+   "S.No.": 6,
+   Name: "Mr. Amresh Kumar",
+   Designation: "Technical Assistant",
+   "Contact details": "amresh.ta@nitp.ac.in",
+   Qualification: "Diploma in Electrical Engineering & CITS from NSTI, Howrah",
+  },
+  {
+   "S.No.": 7,
+   Name: "Mr. Akash Lal",
+   Designation: "Technical Assistant",
+   "Contact details": "amresh.ta@nitp.ac.in",
+   Qualification: "Diploma in Electrical Engineering & CITS from NSTI, Howrah",
+  },
+  {
+   "S.No.": 8,
+   Name: "Mr. Pushkar",
+   Designation: "Technical Assistant (Contract)",
+   "Contact details": "pushkar24feb89@gmail.com",
+   Qualification: "M.Sc in Physics",
+  },
+  {
+   "S.No.": 9,
+   Name: "Mr. Umesh Prasad",
+   Designation: "Office Attendant (SG-II)",
+   "Contact details": "",
+   Qualification: "Matriculation",
+  },
+  {
+   "S.No.": 10,
+   Name: "Mr. Ashok Kumar",
+   Designation: "Office Attendant (SG-II)",
+   "Contact details": "",
+   Qualification: "Matriculation",
+  },
+  {
+   "S.No.": 11,
+   Name: "Mr. Rajesh Goswami",
+   Designation: "Computer Operator (Manpower)",
+   "Contact details": "rajeshgoswamilk@gmail.com",
+   Qualification: "ITI in Electrical & ADCA",
+  },
+  {
+   "S.No.": 12,
+   Name: "Mr. Aditya Kumar",
+   Designation: "Lab Assistant (Manpower)",
+   "Contact details": "kumaradityanitp@gmail.com",
+   Qualification: "Bachelor Degree in Arts and ITI in Electrical",
+  },
+ ],
  //  staffmember: [
  //   {
  //    "S.No.": 1,
@@ -1170,42 +1257,45 @@ export const Achievements = [
  },
 ]
 
-// export const Staff = [
-//   {
-//    title: <h2>Non</h2>,
-//    content: (
-//     <table className="table-act">
-//      <thead>
-//       <tr className="syllabus-table-head">
-//        <th>S.No.</th>
-//        <th>Name</th>
-//        <th>Designation</th>
-//        <th>Contact details</th>
-//        <th>Qualification</th>
-//        {/* <th>Photo</th> */}
-//       </tr>
-//      </thead>
-//      <tbody>
-//       {Tables.staffmember.map((row, idx) => (
-//        <tr key={idx}>
-//         <td>{row["S.No."]}</td>
-//         <td>{row["Name"]}</td>
-//         <td>{row["Designation"]}</td>
-//         <td>{row["Contact details"]}</td>
-//         <td>{row["Qualification"]}</td>
-//         {/* <td>{
-//            <img
-//       src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=1ZTd8RKh4GeeBHokdnK0q01hw2sqo9uXB"
-//       alt="hodImage"
-//     />
-//      }</td> */}
-//        </tr>
-//       ))}
-//      </tbody>
-//     </table>
-//    ),
-//   },
-//  ]
+export const Staff = [
+ {
+  title: <h2></h2>,
+  content: (
+   <>
+    <h2>List of Non-teaching Staff</h2>
+    <table className="table-act">
+     <thead>
+      <tr className="syllabus-table-head">
+       <th>S.No.</th>
+       <th>Name</th>
+       <th>Designation</th>
+       <th>Contact details</th>
+       <th>Qualification</th>
+       {/* <th>Photo</th> */}
+      </tr>
+     </thead>
+     <tbody>
+      {Tables.staffmember.map((row, idx) => (
+       <tr key={idx}>
+        <td>{row["S.No."]}</td>
+        <td>{row["Name"]}</td>
+        <td>{row["Designation"]}</td>
+        <td>{row["Contact details"]}</td>
+        <td>{row["Qualification"]}</td>
+        {/* <td>{
+           <img
+      src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=1ZTd8RKh4GeeBHokdnK0q01hw2sqo9uXB"
+      alt="hodImage"
+    />
+     }</td> */}
+       </tr>
+      ))}
+     </tbody>
+    </table>
+   </>
+  ),
+ },
+]
 export const Activities = [
  {
   content: (

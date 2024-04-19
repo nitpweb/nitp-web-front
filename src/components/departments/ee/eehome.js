@@ -7,7 +7,9 @@ import {
  Labs,
  News_Events,
  LabImages,
+ Staff,
 } from "./ee-others-data"
+// import { Staff } from "./ee-others-data"
 import Slider from "../../Slider/Slider"
 import React from "react"
 
@@ -263,6 +265,22 @@ export const achievements = () => {
       </div>
 
       <br />
+     </React.Fragment>
+    ))}
+   </div>
+  </>
+ )
+}
+export const staff = () => {
+ return (
+  <>
+   {" "}
+   <div className="row rowmarl3">
+    {Staff.map((acht, idx) => (
+     <React.Fragment key={idx}>
+      <div className="row">{acht.title}</div>
+
+      <div className="row">{acht.content}</div>
      </React.Fragment>
     ))}
    </div>
@@ -558,11 +576,11 @@ export const datalist = [
   relPath: "/ee/faculty",
   // img: "/department/faculty.svg",
  },
- //  {
- //   title: "Staff",
- //   data: "staff",
- //   // img: "/department/faculty.svg",
- //  },
+ {
+  title: "Staff",
+  data: "staff",
+  // img: "/department/faculty.svg",
+ },
  {
   title: "Laboratories",
   data: "labs",
