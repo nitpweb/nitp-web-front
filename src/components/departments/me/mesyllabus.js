@@ -43,12 +43,12 @@ const Mesyllabus = props => {
          </li>
          <li>
           <a href="https://drive.google.com/file/d/1L80sZVY6WqN4UNIq0TKYMNq20RLHbi3-/view?usp=sharing">
-           Btech 1st Year Even Semester Syllabus
+           B.Tech 1st Year Even Semester Syllabus
           </a>
          </li>
          <li>
           <a href="https://drive.google.com/file/d/1ikNuJvwpozLSPVLNR_Rpaa-VqJZpu9Yu/view?usp=sharing">
-           Btech 1st Year Odd Semester Syllabus
+           B.Tech 1st Year Odd Semester Syllabus
           </a>
          </li>
          <li>
