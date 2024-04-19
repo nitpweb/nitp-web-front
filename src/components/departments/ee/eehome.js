@@ -514,20 +514,20 @@ export const activities = () => {
      justifyContent: "center",
     }}
    >
-    <img
+    {/* <img
      src="http://www.nitp.ac.in/images/elec_acti.jpg"
      alt="image"
      style={{ width: "90%" }}
-    />
+    /> */}
    </div>
-   <div className="row rowmarl3">
+   {/* <div className="row rowmarl3">
     <h1 data-aos="zoom-in-right" style={{ fontSize: `3rem` }}>
      News & Events
     </h1>
    </div>
    <div className=" row rowmarl3" style={{ fontSize: `1.2rem` }}>
     {News_Events.content}
-   </div>{" "}
+   </div>{" "} */}
   </>
  )
 }
