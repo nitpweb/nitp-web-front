@@ -512,6 +512,286 @@ const Tables = {
    "Resource Persons": "Prof. S.K Sinha (Retd. Prof. IISc Bangalore)",
   },
  ],
+ shortTermCourse2: [
+  {
+   "Sr.No.": 1,
+   Title:
+    "FDP on “Recent Trends in Research & Opportunities in Electrical and Electronic Engineering” ",
+   "Developed/Organized By": "Dr. Moina Ajmeri",
+   Duration: "15.3.2021 to 23.03.2021",
+   "Other detail": "Faculties from IITs and NITs",
+  },
+  {
+   "Sr.No.": 2,
+   Title:
+    "FDP course “Research Methodology For Social Sciences, Engineering and Management: NEP 2020 (RMSSEM 2023)” ",
+   "Developed/Organized By": "Dr. Amitesh Kumar",
+   Duration: "10 July-14 July 2023",
+   "Other detail": "Faculties from IITs and NITs",
+  },
+  {
+   "Sr.No.": 3,
+   Title:
+    "FDP course “Blockchain Technology for Next-Generation Applications” ",
+   "Developed/Organized By": "Dr. Amitesh Kumar",
+   Duration: "19 June-24 June 2023 ",
+   "Other detail": "Faculties from IITs and NITs",
+  },
+  {
+   "Sr.No.": 4,
+   Title:
+    "FDP course Next-generation Applications in Electrical and Electronics Engineering”",
+   "Developed/Organized By": "Dr. Amitesh Kumar",
+   Duration: "24-01-2022 to 04-02-2022",
+   "Other detail": "Faculties from IITs and NITs",
+  },
+  {
+   "Sr.No.": 5,
+   Title: "FDP course “Electrical Vehicles and Mobility “",
+   "Developed/Organized By": "Dr. Amitesh Kumar",
+   Duration: "24-01-2022 to 04-02-2022",
+   "Other detail": "jointly organized by NIT Patna, MNIT Jaipur, IIIT Jabalpur",
+  },
+  {
+   "Sr.No.": 6,
+   Title: "FDP course “Renewable Energy: Research to Industry “ ",
+   "Developed/Organized By": "Dr. Amitesh Kumar",
+   Duration: "22Aug- 13th Sep. 2020",
+   "Other detail": "Faculties from IITs and NITs",
+  },
+  {
+   "Sr.No.": 7,
+   Title:
+    "FDP on Next-Generation Semiconductor Devices for high-end applications ",
+   "Developed/Organized By": "Dr. Amitesh Kumar",
+   Duration: "22 -27 June 2020",
+   "Other detail": "Faculties from IITs and NITs",
+  },
+  {
+   "Sr.No.": 8,
+   Title: "FDP on Recent Trends in Robotics ",
+   "Developed/Organized By": "Dr. Gagan Deep Meena ",
+   Duration: "04.07.2022 to 15.07.2022",
+   "Other detail":
+    "in association with EICT academies of IIITDM Jabalpur, MNIT Jaipur, IIT Roorkee and NIT Patna",
+  },
+  {
+   "Sr.No.": 9,
+   Title:
+    "Online FDP on Recent Trends in Control System Engineering (ReTreCSE-2021) ",
+   "Developed/Organized By": "Dr. Gagan Deep Meena Dr. G. Lloyds Raja",
+   Duration: "31.05.2021 to 06.06.2021",
+   "Other detail":
+    "Resource Persons: Prof. Hassan K. Khalil, Michigan State Univ., USA,  Prof. Francesco Bullo, UC Santa Barbara, USA, Prof. Simone Baldi, TU Delft, The Netherlands,  Prof. Ramon Vilanova, Univ. of Barcelona, Spain, Prof. Hanamoto Tsuyoshi, Kyushu Inst. of Tech., Japan, Prof. Utkal Mehta, Univ. of South Pacific, Fiji, Prof  Manuel Mera HernÃ¡ndez, IPN Mexico, Prof. Kazuto Takashima, Kyushu Inst. of Tech., Japan, Dr. M. Shamsuzzoha, Norner AS, Norway, Prof. Bidyadhar Subudhi, IIT Goa , Prof. Arun Tangirala, IIT Madras, Prof. Sandip Ghosh, IIT (BHU) Varanasi, Dr. Rames Chandra Panda, CSIR-CLRI, Chennai, Prof. Shubhendu Bhasin, IIT Delhi, Prof. Sheshagiri Rao, NIT Warangal, Prof. Manas Kumar Bera, NIT Silchar, Prof. Neeli Satyanarayana, MNIT Jaipur Website Link: https://sites.google.com/nitp.ac.in/retrecse2021/home?authuser=0",
+  },
+  {
+   "Sr.No.": 10,
+   Title:
+    "Online FDP on Deep Learning for Visual Computing and Communication- DELVICCO 2020 ",
+   "Developed/Organized By":
+    "Dr. Gagan Deep Meena Dr. R. K. Karsh (NIT Silchar) Co-Coordinator",
+   Duration: "15 October, 2020 to 21 October, 2020.",
+   "Other detail":
+    "jointly by Dept of ECE, NIT Silchar and Electronics and ICT Academy, NIT Patna",
+  },
+  {
+   "Sr.No.": 11,
+   Title:
+    "Global FDPs, G10: Digital Tools for writing, Authoring and Reviewing Manuscripts",
+   "Developed/Organized By":
+    "Dr. Gagan Deep Meena as Academy Level Coordinator",
+   Duration: "Sept 21 to Oct 02 , 2020",
+   "Other detail":
+    "Jointly organized by EICT Academies of NIT Patna, MNIT Jaipur, and IIT Guwahati Resource Persons were Faculties from IITs and NITs ",
+  },
+  {
+   "Sr.No.": 12,
+   Title:
+    "Online FDP on Recent Trends in Control System Engineering (ReTreCSE-2020) ",
+   "Developed/Organized By": "Dr. Gagan Deep Meena Dr. G. Lloyds Raja",
+   Duration: "22-28 June 2020",
+   "Other detail":
+    "Resource Persons: - Dr. Shubhendu Bhasin, IIT Delhi, Dr. Ahmad Ali, IIT Patna,  Dr. Abhinoy Kumar Singh, IIT Indore,  Dr. Vidya Sagar Yellapu, SJTU, China, Dr. Neeli Satyanaraya, MNIT Jaipur, Dr. Sumit Jha, MNNIT Allahabad,  Dr. Rahul Radhakrishnan, SVNIT Surat and Control group faculty members of NIT Patna Funded by EICT NIT Patna",
+  },
+  {
+   "Sr.No.": 13,
+   Title: "FDP on Theory and Simulations in Robotics (TheSiR-2020)  ",
+   "Developed/Organized By": "Dr. Gagan Deep Meena",
+   Duration: "01 June to 07 2020",
+   "Other detail":
+    "Resource Persons: Prof. S. K. Saha, IIT Delhi,  Dr. Suril Shah, IIT Jodhpur, Dr. Amit IIT Jodhpur, Dr. Anup IIT Jodhpur,  Dr. Arun Dayal Udai, IIT(ISM) Dhanbad,  Dr. Aamir Hayat, SUTD Singapore Funded by EICT NIT Patna",
+  },
+  {
+   "Sr.No.": 14,
+   Title:
+    "Faculty Development Programme on “Advances in Industrial Automation” ",
+   "Developed/Organized By": "Dr. D. K. Dheer",
+   Duration: "10-14/12/2018",
+   "Other detail": "at NSIT, Amhara, Bihta",
+  },
+  {
+   "Sr.No.": 15,
+   Title:
+    "Five days Faculty Development Program on Advances in Electrical System ",
+   "Developed/Organized By": "Dr. Ravi Shankar",
+   Duration: "July, 2018",
+   "Other detail": "at BIT Sindri",
+  },
+  {
+   "Sr.No.": 16,
+   Title: "Workshop on “LabView and its Application”",
+   "Developed/Organized By": "Dr. Vimlesh Verma",
+   Duration: "14th-18th March 2016",
+   "Other detail": "Faculties from IITs and NITs",
+  },
+  {
+   "Sr.No.": 17,
+   Title:
+    "Workshop on “Control Design, Simulation and Data Acquisition using Labview and Sensor Interfacing”",
+   "Developed/Organized By": "Dr. Vimlesh Verma",
+   Duration: "5th – 6th April 2016",
+   "Other detail": "Faculties from IITs and NITs",
+  },
+  {
+   "Sr.No.": 18,
+   Title: "Short Term Course on “Institute-Industry Interaction” ",
+   "Developed/Organized By": "Dr. Vimlesh Verma",
+   Duration: "5th – 9th Dec. 2016",
+   "Other detail": "Faculties from IITs and NITs",
+  },
+  {
+   "Sr.No.": 19,
+   Title: "Faculty Development Program Through NKN",
+   "Developed/Organized By": "Dr. Vimlesh Verma",
+   Duration: "11 – 20 Dec. - 2017",
+   "Other detail": "Faculties from IITs and NITs",
+  },
+  {
+   "Sr.No.": 20,
+   Title: "Faculty Development Program Through NKN",
+   "Developed/Organized By": "Dr. Vimlesh Verma",
+   Duration: "01st June - 2018",
+   "Other detail": "Faculties from IITs and NITs",
+  },
+  {
+   "Sr.No.": 21,
+   Title: "DSP Applications on ARM Platform",
+   "Developed/Organized By": "Dr. Arunangshu Ghosh",
+   Duration: "7 days (26/08/2016 to 01/09/2016)",
+   "Other detail":
+    "Prof. S K Sinha (Retd. Prof. IISc Bangalore) Prof. Donald Reay (Heriot-Watt University; Edinburgh, UK.",
+  },
+  {
+   "Sr.No.": 22,
+   Title:
+    "Short term course(Intelligent sensing technologies and Instrumentation)",
+   "Developed/Organized By": "Dr. Arunangshu Ghosh",
+   Duration: "5 days (05/0l/2016 to 09/01/2016)",
+   "Other detail": "IITs, JU, NIT and Industries (CDAC)",
+  },
+  {
+   "Sr.No.": 23,
+   Title:
+    "Short term course(Advanced Power Electronics converters for renewable energy and Industrial Drives)",
+   "Developed/Organized By": "Dr. Vimlesh Verma",
+   Duration: "5 days (14/12/2015 to 18/12/2015)",
+   "Other detail": "Faculties from IITs, NITs and Industries (ABB)",
+  },
+  {
+   "Sr.No.": 24,
+   Title: "Short term course(Advances in Industrial Control)",
+   "Developed/Organized By": "Dr. Nishat Anwar",
+   Duration: "5 days (27/l 1/2015 to 1/12/2015)",
+   "Other detail": "Faculties from IITs , AMU, NITs and Foreign University.",
+  },
+  {
+   "Sr.No.": 25,
+   Title:
+    "Short term course Reliability, Availability, Maintainability and Safety (RAMS)",
+   "Developed/Organized By": "Dr. Mala De",
+   Duration: "2 days (18/04/2015 to 19/04/2015)",
+   "Other detail": "Dr. Ajeet Kr PandeyDr. Mukul Verma,Experts from Industries",
+  },
+  {
+   "Sr.No.": 26,
+   Title: "Summer School",
+   "Developed/Organized By": "Dr. G. K. Choudhury",
+   Duration: "1 week (19/10/2012 to 23/10/2012)",
+   "Other detail": "Faculties from IITs and NITs",
+  },
+ ],
+
+ renownedacad: [
+  {
+   "Sr.No.": 1,
+   Title:
+    "Introduction to Advanced Distribution Management Systems (ADMS) Organized by IEEE PES Society of EED on Women’s Day",
+   "Duration/Venue": "8 March 2024 Online Mode",
+   "Resource Persons":
+    "Dr. Kamakshi P. Swain, Senior Power Systems Engineer, Synergy Systems and Solutions. ",
+  },
+  {
+   "Sr.No.": 2,
+   Title:
+    "Robot Demonstration of Robotnik Spain's Mobile Manipulator Integrated with Sensors",
+   "Duration/Venue": "20.10.2021 at T&P Cell Seminar Hall SAC NIT Patna",
+   "Resource Persons": "Mr. Aditya Marathe, Founder, Nugenix Robotics ",
+  },
+  {
+   "Sr.No.": 3,
+   Title: "The Rise of Reconfigurable Robots",
+   "Duration/Venue":
+    "01.11.2021,Venue: Control Lab, 2nd Floor, New Extension Building",
+   "Resource Persons": "Dr. Aamir Abdullah Hayat, SUTD Singapore",
+  },
+  {
+   "Sr.No.": 4,
+   Title:
+    "Expert classes and discussion session on Power Electronics and Industrial Drives & control",
+   "Duration/Venue": "4 days (25/02/2016 to 28/02/2016)",
+   "Resource Persons": "Prof. S. K Sinha (Retd Professor IISC Banglore)",
+  },
+  {
+   "Sr.No.": 5,
+   Title:
+    "DC Motor Speed Control Problem and Discussion on end-to-end Controller Design",
+   "Duration/Venue": "4 days (25/02/216 to 28/02/2016)",
+   "Resource Persons": "Prof. S.K Sinha (Retd. Prof. IISc Bangalore)",
+  },
+  {
+   "Sr.No.": 6,
+   Title: "Power Electronics & Industrial Drive Control",
+   "Duration/Venue": "5 days (03/02/2015 to 09/02/2015)",
+   "Resource Persons": "J R P Gupta(Professor, DTU)",
+  },
+  {
+   "Sr.No.": 7,
+   Title:
+    "General overview on Aerospace Industries and equipment and Information on higher studies requirement in USA",
+   "Duration/Venue": "1 day on 20/03/2015",
+   "Resource Persons":
+    "Mr. Fariz Kalim, Manager Project Management and Hardware Development, TELEDYNE CONTROLS",
+  },
+  {
+   "Sr.No.": 8,
+   Title: "Commercial Aspects of Solar Energy in Indian Market",
+   "Duration/Venue": "1 day on18/03/2015",
+   "Resource Persons": "Mr. S. Talapatra(Industry Expert)",
+  },
+  {
+   "Sr.No.": 9,
+   Title: "Microcontrollers/ PIC processor/ ARM Processor",
+   "Duration/Venue": "1 day on 12/03/2015",
+   "Resource Persons": "Radha Narayan Rao(Industry Expert)",
+  },
+  {
+   "Sr.No.": 10,
+   Title:
+    "Embedded System Design and implementation – case study and discussion",
+   "Duration/Venue": "1 day on 29/01/2015",
+   "Resource Persons": "Prof. S.K Sinha (Retd. Prof. IISc Bangalore)",
+  },
+ ],
 
  //  staffmember: [
  //   {
@@ -1343,64 +1623,113 @@ export const Activities = [
       ))}
      </tbody>
     </table>
+    <h2>The List of Short-Term Courses organized::-</h2>
+
+    <table className="table-act">
+     <thead>
+      <tr className="syllabus-table-head">
+       <th>Sr.No.</th>
+       <th>Title</th>
+       <th>Developed/Organized By</th>
+       <th>Duration</th>
+       <th>Other detail</th>
+      </tr>
+     </thead>
+     <tbody>
+      {Tables.shortTermCourse2.map((row, idx) => (
+       <tr key={idx}>
+        <td>{row["Sr.No."]}</td>
+        <td>{row["Title"]}</td>
+        <td>{row["Developed/Organized By"]}</td>
+        <td>{row["Duration"]}</td>
+        <td>{row["Other detail"]}</td>
+       </tr>
+      ))}
+     </tbody>
+    </table>
+    <h2>
+     List of Expert Lectures by Renowned Academicians and Industry
+     Representatives:-
+    </h2>
+
+    <table className="table-act">
+     <thead>
+      <tr className="syllabus-table-head">
+       <th>Sr.No.</th>
+       <th>Title</th>
+       <th>Duration/Venue</th>
+       <th>Resource Persons</th>
+      </tr>
+     </thead>
+     <tbody>
+      {Tables.renownedacad.map((row, idx) => (
+       <tr key={idx}>
+        <td>{row["Sr.No."]}</td>
+        <td>{row["Title"]}</td>
+        <td>{row["Duration/Venue"]}</td>
+        <td>{row["Resource Persons"]}</td>
+       </tr>
+      ))}
+     </tbody>
+    </table>
    </>
   ),
  },
 ]
-export const News_Events = {
- content: (
-  <>
-   <h2>Workshop/Short Term Courses Organized:</h2>
-   <ul type="circle">
-    <li>
-     Organized Faculty Development Program on <q>Power Electronics</q> through
-     NKN during 11th to 20th Dec. 2017 at NIT Patna.
-    </li>
-    <br />
-    <br />
+// export const News_Events = {
+//  content: (
+//   <>
+//    <h2>Workshop/Short Term Courses Organized:</h2>
+//    <ul type="circle">
+//     <li>
+//      Organized Faculty Development Program on <q>Power Electronics</q> through
+//      NKN during 11th to 20th Dec. 2017 at NIT Patna.
+//     </li>
+//     <br />
+//     <br />
 
-    <li>
-     Organized a Short Term Course on{" "}
-     <q>Design of Switched Mode Power Converters</q> during 6th to 8th Feb. 2017
-     at NIT Patna.
-    </li>
-    <br />
-    <br />
+//     <li>
+//      Organized a Short Term Course on{" "}
+//      <q>Design of Switched Mode Power Converters</q> during 6th to 8th Feb. 2017
+//      at NIT Patna.
+//     </li>
+//     <br />
+//     <br />
 
-    <li>
-     Organized a Short Term Course on <q>Institute-Industry Interaction</q>{" "}
-     during 5th to 9th Dec. 2016 at NIT Patna.
-    </li>
-    <br />
-    <br />
+//     <li>
+//      Organized a Short Term Course on <q>Institute-Industry Interaction</q>{" "}
+//      during 5th to 9th Dec. 2016 at NIT Patna.
+//     </li>
+//     <br />
+//     <br />
 
-    <li>
-     Organized a Workshop on{" "}
-     <q>
-      Control Design, Simulation and Data Acquisition using Labview and Sensor
-      Interfacing
-     </q>{" "}
-     during 5th to 6th April 2016 at NIT Patna.
-    </li>
-    <br />
-    <br />
+//     <li>
+//      Organized a Workshop on{" "}
+//      <q>
+//       Control Design, Simulation and Data Acquisition using Labview and Sensor
+//       Interfacing
+//      </q>{" "}
+//      during 5th to 6th April 2016 at NIT Patna.
+//     </li>
+//     <br />
+//     <br />
 
-    <li>
-     Organized a Workshop on <q>LabView and its Application</q>during 14th to
-     18th March 2016 at NIT Patna.
-    </li>
-    <br />
-    <br />
+//     <li>
+//      Organized a Workshop on <q>LabView and its Application</q>during 14th to
+//      18th March 2016 at NIT Patna.
+//     </li>
+//     <br />
+//     <br />
 
-    <li>
-     Organized a short term course on{" "}
-     <q>
-      Advanced Power Electronic Converters for Renewable Energy and Industrial
-      Drives
-     </q>{" "}
-     during 14th to 18th Dec. 2015 at NIT Patna
-    </li>
-   </ul>
-  </>
- ),
-}
+//     <li>
+//      Organized a short term course on{" "}
+//      <q>
+//       Advanced Power Electronic Converters for Renewable Energy and Industrial
+//       Drives
+//      </q>{" "}
+//      during 14th to 18th Dec. 2015 at NIT Patna
+//     </li>
+//    </ul>
+//   </>
+//  ),
+// }
