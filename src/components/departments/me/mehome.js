@@ -199,7 +199,9 @@ export const activities = () => {
 //    </div>
 //   )
 //  }
-
+export const research = () => {
+ return <></>
+}
 export const staff = () => {
  return (
   <>
@@ -237,6 +239,11 @@ export const datalist = [
   title: "Faculty",
   relPath: "/me/faculty",
   // img: "/department/faculty.svg",
+ },
+ {
+  title: "Research Highlights",
+  data: "research",
+  // img: "/department/mission.svg",
  },
  {
   title: "Staff",

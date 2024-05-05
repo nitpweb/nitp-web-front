@@ -15,6 +15,7 @@ import {
  vision,
  contact,
  datalist,
+ research,
 } from "../../components/departments/chem/chemhome"
 const Chemistry = () => (
  <Layout>
@@ -25,6 +26,7 @@ const Chemistry = () => (
    TitleDescription={titleDescription}
    About={about}
    Mission={mission}
+   Research={research}
    Vision={vision}
    Contact={contact}
    Labs={labs}

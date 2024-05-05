@@ -13,6 +13,7 @@ import {
  vision,
  contact,
  datalist,
+ research,
 } from "../../components/departments/phy/phyhome"
 
 const Phy = () => (
@@ -26,6 +27,7 @@ const Phy = () => (
    Mission={mission}
    Vision={vision}
    Contact={contact}
+   Research={research}
    Achievements={achievements}
    Activities={activities}
    datalist={datalist}

@@ -500,7 +500,9 @@ export const Outcomes = () => {
   </>
  )
 }
-
+export const research = () => {
+ return <></>
+}
 export const activities = () => {
  return (
   <>
@@ -557,6 +559,11 @@ export const datalist = [
   title: "Faculty",
   relPath: "/ee/faculty",
   // img: "/department/faculty.svg",
+ },
+ {
+  title: "Research Highlights",
+  data: "research",
+  // img: "/department/mission.svg",
  },
  //  {
  //   title: "Staff",
