@@ -158,7 +158,9 @@ export const contact = () => {
   </div>
  )
 }
-
+export const research = () => {
+ return <></>
+}
 export const labs = () => {
  return (
   <>
@@ -230,6 +232,11 @@ export const datalist = [
   title: "Faculty",
   relPath: "/chem/faculty",
   // img: "/department/faculty.svg",
+ },
+ {
+  title: "Research Highlights",
+  data: "research",
+  // img: "/department/mission.svg",
  },
  {
   title: "Notice",

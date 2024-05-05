@@ -12,6 +12,7 @@ import {
  activities,
  vision,
  contact,
+ research,
  datalist,
 } from "../../components/departments/ce/cehome"
 const Ce = () => (
@@ -21,6 +22,7 @@ const Ce = () => (
    routeName={routeName}
    title={title}
    TitleDescription={titleDescription}
+   Research={research}
    About={about}
    Mission={mission}
    Vision={vision}

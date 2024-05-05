@@ -16,6 +16,7 @@ import {
  contact,
  timetable,
  datalist,
+ research,
 } from "../../components/departments/hss/hsshome"
 const Hss = () => (
  <Layout>
@@ -25,6 +26,7 @@ const Hss = () => (
    title={title}
    TitleDescription={titleDescription}
    About={about}
+   Research={research}
    Outcomes={Outcomes}
    Mission={mission}
    Vision={vision}

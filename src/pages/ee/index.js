@@ -15,6 +15,7 @@ import {
  contact,
  datalist,
  Outcomes,
+ research,
 } from "../../components/departments/ee/eehome"
 const Ee = () => (
  <Layout>
@@ -27,6 +28,7 @@ const Ee = () => (
    Mission={mission}
    Vision={vision}
    Contact={contact}
+   Research={research}
    Labs={labs}
    Achievements={achievements}
    Activities={activities}

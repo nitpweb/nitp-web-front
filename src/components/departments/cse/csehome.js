@@ -81,6 +81,9 @@ export const vision = () => {
   </>
  )
 }
+export const research = () => {
+ return <></>
+}
 
 export const Outcomes = () => {
  return (
@@ -234,6 +237,11 @@ export const datalist = [
   title: "Faculty",
   relPath: "/cse/faculty",
   // img: "/department/faculty.svg",
+ },
+ {
+  title: "Research Highlights",
+  data: "research",
+  // img: "/department/mission.svg",
  },
  {
   title: "Notice",

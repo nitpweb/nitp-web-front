@@ -224,7 +224,9 @@ export const achievements = () => {
   </>
  )
 }
-
+export const research = () => {
+ return <></>
+}
 export const activities = () => {
  return (
   <>
@@ -257,6 +259,11 @@ export const datalist = [
   title: "Faculty",
   relPath: "/ece/faculty",
   // img: "/department/faculty.svg",
+ },
+ {
+  title: "Research Highlights",
+  data: "research",
+  // img: "/department/mission.svg",
  },
  {
   title: "Notice",

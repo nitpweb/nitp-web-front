@@ -73,7 +73,9 @@ export const vision = () => {
   </>
  )
 }
-
+export const research = () => {
+ return <></>
+}
 export const contact = () => {
  return (
   <div className="img-11">
@@ -133,6 +135,11 @@ export const datalist = [
   title: "Faculty",
   relPath: "/math/faculty",
   // img: "/department/faculty.svg",
+ },
+ {
+  title: "Research Highlights",
+  data: "research",
+  // img: "/department/mission.svg",
  },
  {
   title: "Notice",

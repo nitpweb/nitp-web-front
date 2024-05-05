@@ -27,6 +27,7 @@ const Dephomepage = ({
  Extras,
  TimeTable,
  datalist,
+ Research,
 }) => {
  const [notices, setnotices] = useState()
  const [view, setView] = useState("about")
@@ -196,6 +197,34 @@ const Dephomepage = ({
                     </div> */}
           <p>{Contact()}</p>
          </div>
+        </div>
+       </div>
+       {/* <div className="row imgcolstyle backgroundimage">
+                <img data-aos="zoom-in" src={map} className="img-fluid" />
+              </div> */}
+      </>
+     )}
+     {view == "research" && (
+      <>
+       <div
+        className="layoutrow layoutrow1"
+        style={{ position: `relative`, zIndex: 1 }}
+        id="contact"
+       >
+        <div className="col-6" style={{ width: `100%` }}>
+         <div className="row rowmarr3">
+          <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
+           Research Highlights
+          </h1>
+         </div>
+         <br />
+         {/* <div className="row rowmarr3"> */}
+         {/* <div className="row" style={{justifyContent: "space-between"}}> */}
+         {/* <div className="rowmarl3">
+                      <img src={hod} alt="HOD Image" height="250"/>
+                    </div> */}
+         <p>{Research()}</p>
+         {/* </div> */}
         </div>
        </div>
        {/* <div className="row imgcolstyle backgroundimage">

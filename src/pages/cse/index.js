@@ -8,6 +8,7 @@ import {
  titleDescription,
  about,
  mission,
+ research,
  labs,
  achievements,
  activities,
@@ -29,6 +30,7 @@ const Cse = () => (
    Mission={mission}
    Vision={vision}
    Contact={contact}
+   Research={research}
    Labs={labs}
    Achievements={achievements}
    Activities={activities}

@@ -143,7 +143,9 @@ export const activities = () => {
   </>
  )
 }
-
+export const research = () => {
+ return <></>
+}
 export const timetable = () => {
  console.log(TimeTable)
  return (
@@ -191,6 +193,11 @@ export const datalist = [
   title: "Faculty",
   relPath: "/hss/faculty",
   // img: "/department/faculty.svg",
+ },
+ {
+  title: "Research Highlights",
+  data: "research",
+  // img: "/department/mission.svg",
  },
  {
   title: "Notice",

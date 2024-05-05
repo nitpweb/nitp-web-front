@@ -12,6 +12,7 @@ import {
  vision,
  contact,
  datalist,
+ research,
 } from "../../components/departments/arch/archhome"
 const Arch = () => (
  <Layout>
@@ -22,6 +23,7 @@ const Arch = () => (
    TitleDescription={titleDescription}
    About={about}
    Mission={mission}
+   Research={research}
    Vision={vision}
    Contact={contact}
    Labs={labs}

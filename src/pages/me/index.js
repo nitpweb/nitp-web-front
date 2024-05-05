@@ -14,6 +14,7 @@ import {
  contact,
  datalist,
  staff,
+ research,
 } from "../../components/departments/me/mehome"
 import Layout from "../../components/layout"
 const Me = () => (
@@ -25,6 +26,7 @@ const Me = () => (
    TitleDescription={titleDescription}
    About={about}
    Mission={mission}
+   Research={research}
    Vision={vision}
    Staff={staff}
    Contact={contact}
