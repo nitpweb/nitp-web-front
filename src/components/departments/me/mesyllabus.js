@@ -42,6 +42,16 @@ const Mesyllabus = props => {
           </a>
          </li>
          <li>
+          <a href="https://drive.google.com/file/d/1L80sZVY6WqN4UNIq0TKYMNq20RLHbi3-/view?usp=sharing">
+           B.Tech 1st Year Even Semester Syllabus
+          </a>
+         </li>
+         <li>
+          <a href="https://drive.google.com/file/d/1ikNuJvwpozLSPVLNR_Rpaa-VqJZpu9Yu/view?usp=sharing">
+           B.Tech 1st Year Odd Semester Syllabus
+          </a>
+         </li>
+         <li>
           <a href="https://drive.google.com/file/d/1xUykTxPcv-mk2y3-sSXRt7BLczMZ_vVe/view?usp=sharing">
            Dual Degree (B.Tech + M.Tech) _ Course Structure _ 2022 Onwards.
           </a>
