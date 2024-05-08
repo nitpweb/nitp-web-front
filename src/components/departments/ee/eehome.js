@@ -76,7 +76,7 @@ export const about = () => {
    in 2021.
    <br />
    2. Introduction of new courses like five years B. Tech. Dual Degree
-   Specialization in Power System Engineering from 2021.
+   Specialization in Power System Engineering from 2022.
    <br />
    3. Introduction of M. Tech. in power system engineering from 2023.
    <br />
