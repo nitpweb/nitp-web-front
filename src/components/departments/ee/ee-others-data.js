@@ -792,7 +792,20 @@ const Tables = {
    "Resource Persons": "Prof. S.K Sinha (Retd. Prof. IISc Bangalore)",
   },
  ],
-
+ research: [
+  {
+   "Sr.No.": 1,
+   Title: "Hello",
+  },
+ ],
+ faculty: [
+  {
+   "Name of the faculty": "Amitesh Sir",
+   Mail: "amistesh@gmail.com",
+  },
+ ],
+ //  <th>Name of the faculty</th>
+ //  <th>Mail</th>
  //  staffmember: [
  //   {
  //    "S.No.": 1,
@@ -1486,6 +1499,52 @@ export const Achievements = [
 //    ),
 //   },
 //  ]
+export const Research = [
+ {
+  content: (
+   <>
+    <h2>List of Research Projects Sanctioned / On-going:&nbsp;-</h2>
+    <h5>
+     The list of sponsored Research projects carried out by the faculty members
+     of the department are provided in the following table:
+    </h5>
+    <table className="table-act">
+     <thead>
+      <tr className="syllabus-table-head">
+       <th>Sr. No.</th>
+       <th>Title of the Project</th>
+      </tr>
+     </thead>{" "}
+     <tbody>
+      {Tables.research.map((row, idx) => (
+       <tr key={idx}>
+        <td>{row["Sr.No."]}</td>
+        <td>{row["Title"]}</td>
+       </tr>
+      ))}
+     </tbody>
+    </table>
+    <h2>Faculty Details:&nbsp;-</h2>
+    <table className="table-act">
+     <thead>
+      <tr className="syllabus-table-head">
+       <th>Name of the faculty</th>
+       <th>Mail</th>
+      </tr>
+     </thead>{" "}
+     <tbody>
+      {Tables.faculty.map((row, idx) => (
+       <tr key={idx}>
+        <td>{row["Name of the faculty"]}</td>
+        <td>{row["Mail"]}</td>
+       </tr>
+      ))}
+     </tbody>
+    </table>
+   </>
+  ),
+ },
+]
 export const Activities = [
  {
   content: (

@@ -5,6 +5,7 @@ import {
  Achievements,
  Activities,
  Labs,
+ Research,
  News_Events,
  LabImages,
 } from "./ee-others-data"
@@ -501,7 +502,13 @@ export const Outcomes = () => {
  )
 }
 export const research = () => {
- return <></>
+ return (
+  <>
+   <div className="rowmarl3" style={{ overflow: "auto" }}>
+    {Research[0].content}
+   </div>
+  </>
+ )
 }
 export const activities = () => {
  return (
