@@ -7,6 +7,7 @@ import {
  Labs,
  News_Events,
  LabImages,
+ Research,
 } from "./ee-others-data"
 import Slider from "../../Slider/Slider"
 import React from "react"
@@ -501,7 +502,13 @@ export const Outcomes = () => {
  )
 }
 export const research = () => {
- return <></>
+ return (
+  <>
+   <div className="rowmarl3" style={{ overflow: "auto" }}>
+    {Research[0].content}
+   </div>
+  </>
+ )
 }
 export const activities = () => {
  return (
