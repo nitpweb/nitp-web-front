@@ -1,6 +1,6 @@
 export const routeName = "arch"
 export const title = "Architecture & Planning Department"
-import { Labs, LabImages } from "./arch-others-data"
+import { Labs, LabImages, Research } from "./arch-others-data"
 import Slider from "../../Slider/Slider"
 import React from "react"
 
@@ -132,7 +132,12 @@ export const contact = () => {
  )
 }
 export const research = () => {
- return <></>
+ return (
+  <>
+   {" "}
+   <div className="">{Research.content}</div>
+  </>
+ )
 }
 export const labs = () => {
  return (

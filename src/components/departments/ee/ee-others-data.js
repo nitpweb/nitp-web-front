@@ -792,7 +792,380 @@ const Tables = {
    "Resource Persons": "Prof. S.K Sinha (Retd. Prof. IISc Bangalore)",
   },
  ],
-
+ research: [
+  {
+   "Sr.No.": 1,
+   "Specialization of the Research": "Power and Energy System",
+   "Descriptive Key-word":
+    "a)	Power System Protection & PMU b)	Real & Reactive Power Management, Optimal Power Flow c)Renewable energy integration, Operation control & Stability d)Microgrid, Smart-Grid, Restructered Power System, AGC Resiliency & Reliability of Hybrid Power System e)Cyber Security, high performance Computing, Optimization, HVDC & FACTS device application to te Power System.",
+  },
+  {
+   "Sr.No.": 2,
+   "Specialization of the Research": "Electrical Machine & Drives",
+   "Descriptive Key-word":
+    "a)	Sensorless Control of AC Drives.b)	Vector Controlled AC Drives.c)	DTC Controlled AC Drives.d)	Multilevel Converter Fed AC Drives.e)	Multiphase AC motor drive.f)	Dob based control of machine.",
+  },
+  {
+   "Sr.No.": 3,
+   "Specialization of the Research": "Control Theory & Practices",
+   "Descriptive Key-word":
+    "a)	Nonlinear and advanced control techniques (SMC, ADRC, adaptive control, learning based control, non-linear control, optimal control, DOB based control).b)	Applications oriented control (such as control for power electronics, load frequency regulations with cyber security, robotics, radar, dc microgrid, altitude control of flight).c)	Biomedical applications of control, controller design for industrial processes, chemical process control.d)	Digital Control, Discretization techniques, Microprocessor based control.e)	Process modelling and identification, control of waste water treatment plant.",
+  },
+  {
+   "Sr.No.": 4,
+   "Specialization of the Research": "Power Electronics & its Application",
+   "Descriptive Key-word":
+    "a)    Electric Vehicle Chargers & Charging Stations, Converter Control of Motors, Solid State Transformers.b) Analysis, Modelling, and Control of Power Electronics Converters.c)    Renewable Energy & Its Integration; DC, AC, and Hybrid Microgrids; Grid Connected Converters.d)      Multilevel Inverters, Reduced Sensor-based SAPF.e)   Shunt Active Power Filter, Series Active Power Filter.f) UPQC, STATCOM, D-STATCOM, UPFC, DPFC and Power Quality Improvement Techniques.",
+  },
+  {
+   "Sr.No.": 5,
+   "Specialization of the Research":
+    "Electric Vehicles & Energy Storage System",
+   "Descriptive Key-word":
+    "a)	Electric Powertrain, Drives and Control.b)	Battery Management and Energy Storage Systems.c)	Charging Infrastructure and Converters.d)	Grid and Renewable Energy Integration",
+  },
+  {
+   "Sr.No.": 6,
+   "Specialization of the Research": "Robotics & Automation",
+   "Descriptive Key-word":
+    "a)	Unmanned aerial and ground vehicles.b)	Bio inspired and Reconfigurable robots.c)	Vision based control and Path planning algorithms.d)	Multi agent systems.e)	Assistive service robots.",
+  },
+  {
+   "Sr.No.": 7,
+   "Specialization of the Research": "Instrumental & Signal Processing",
+   "Descriptive Key-word":
+    "a) Multivariate signal modelling using AI/ML techniques.b)  Sensor array based instrumentation.c)  Sensors and actuators.d) System identification of biochemical processes",
+  },
+  {
+   "Sr.No.": 8,
+   "Specialization of the Research": "Semi-Conductor Devices & Circuit System",
+   "Descriptive Key-word":
+    "a) Design and Fabrication of VLSI and Semiconductor devices.b)  Analog and Mixed Signal Integrated Circuit Design.c)  Fractional-order Circuits and Systems.d) Microelectronics Circuits and Nanotechnology devices.e)  Biosensors, Memory and Neuromorphic Computing.f) Energy Harvesting/Storage Devices, including Solar cells, batteries and fuel cells.",
+  },
+ ],
+ faculty: [
+  {
+   "Sr.No.": 1,
+   Name: "Prof. (Dr.) Girish Kumar Choudhary",
+   "Specialization of the Research(Serial No.)": "On-lien",
+   "No. of Publications in SCI/SCIE indexed Journal": "",
+   "No. of Phd Guided": "",
+   "No. of Patent Granted": "",
+   "No. of externally Sponsored Project (Completed/ongoing)": "",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=girish@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 2,
+   Name: "Prof. (Dr.) Ramesh Kumar ",
+   "Specialization of the Research(Serial No.)": "1 & 3",
+   "No. of Publications in SCI/SCIE indexed Journal": "",
+   "No. of Phd Guided": "02",
+   "No. of Patent Granted": "00",
+   "No. of externally Sponsored Project (Completed/ongoing)": "",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=ramesh@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 3,
+   Name: "Dr. Rajib Kumar Mandal ",
+   "Specialization of the Research(Serial No.)": "1, 4 & 5",
+   "No. of Publications in SCI/SCIE indexed Journal": "25",
+   "No. of Phd Guided": "03",
+   "No. of Patent Granted": "00",
+   "No. of externally Sponsored Project (Completed/ongoing)": "01",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=rajib@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 4,
+   Name: "Dr. Mala De ",
+   "Specialization of the Research(Serial No.)": "1",
+   "No. of Publications in SCI/SCIE indexed Journal": "28",
+   "No. of Phd Guided": "04",
+   "No. of Patent Granted": "02",
+   "No. of externally Sponsored Project (Completed/ongoing)": "01",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=mala@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 5,
+   Name: "Dr. Vimlesh Verma ",
+   "Specialization of the Research(Serial No.)": "2, 4, & 5",
+   "No. of Publications in SCI/SCIE indexed Journal": "25",
+   "No. of Phd Guided": "05",
+   "No. of Patent Granted": "04",
+   "No. of externally Sponsored Project (Completed/ongoing)": "02",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=vimlesh.verma@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 6,
+   Name: "Dr. Jayanti Choudhary ",
+   "Specialization of the Research(Serial No.)": "2, 4, & 5",
+   "No. of Publications in SCI/SCIE indexed Journal": "01",
+   "No. of Phd Guided": "00",
+   "No. of Patent Granted": "00",
+   "No. of externally Sponsored Project (Completed/ongoing)": "00",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=jayanti@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 7,
+   Name: "Dr. Md Nishat Anwar ",
+   "Specialization of the Research(Serial No.)": "1, 2, 3 & 5",
+   "No. of Publications in SCI/SCIE indexed Journal": "30",
+   "No. of Phd Guided": "02",
+   "No. of Patent Granted": "03",
+   "No. of externally Sponsored Project (Completed/ongoing)": "02",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=nishat@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 8,
+   Name: "Dr. Arunangshu Ghosh ",
+   "Specialization of the Research(Serial No.)": "6 & 7",
+   "No. of Publications in SCI/SCIE indexed Journal": "26",
+   "No. of Phd Guided": "01",
+   "No. of Patent Granted": "02",
+   "No. of externally Sponsored Project (Completed/ongoing)": "04",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=arunangshu.ghosh@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 9,
+   Name: "Dr. Sanjeev Kumar Mallik ",
+   "Specialization of the Research(Serial No.)": "1, 4 & 5",
+   "No. of Publications in SCI/SCIE indexed Journal": "04",
+   "No. of Phd Guided": "02",
+   "No. of Patent Granted": "0",
+   "No. of externally Sponsored Project (Completed/ongoing)": "00",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=skmallik@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 10,
+   Name: "Dr. Ravi Shankar ",
+   "Specialization of the Research(Serial No.)": "1 & 5",
+   "No. of Publications in SCI/SCIE indexed Journal": "27",
+   "No. of Phd Guided": "05",
+   "No. of Patent Granted": "02",
+   "No. of externally Sponsored Project (Completed/ongoing)": "00",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=ravi@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 11,
+   Name: "Dr. Dharmendra Kumar Dheer ",
+   "Specialization of the Research(Serial No.)": "1,3,5 & 6",
+   "No. of Publications in SCI/SCIE indexed Journal": "27",
+   "No. of Phd Guided": "02",
+   "No. of Patent Granted": "00",
+   "No. of externally Sponsored Project (Completed/ongoing)": "00",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=dkdheer@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 12,
+   Name: "Dr. Ashiwani Kumar ",
+   "Specialization of the Research(Serial No.)": "1 & 5",
+   "No. of Publications in SCI/SCIE indexed Journal": "05",
+   "No. of Phd Guided": "00",
+   "No. of Patent Granted": "01",
+   "No. of externally Sponsored Project (Completed/ongoing)": "00",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=ashwani@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 13,
+   Name: "Dr. Ambarisha Mishra ",
+   "Specialization of the Research(Serial No.)": "2,4 & 5",
+   "No. of Publications in SCI/SCIE indexed Journal": "06",
+   "No. of Phd Guided": "02",
+   "No. of Patent Granted": "00",
+   "No. of externally Sponsored Project (Completed/ongoing)": "00",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=ambrish.mishra@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 14,
+   Name: "Dr. Moina Ajmeri ",
+   "Specialization of the Research(Serial No.)": "3,4 & 6",
+   "No. of Publications in SCI/SCIE indexed Journal": "06",
+   "No. of Phd Guided": "01",
+   "No. of Patent Granted": "01",
+   "No. of externally Sponsored Project (Completed/ongoing)": "00",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=moina@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 15,
+   Name: "Dr. M SENTHIL KUMAR ",
+   "Specialization of the Research(Serial No.)": "1",
+   "No. of Publications in SCI/SCIE indexed Journal": "05",
+   "No. of Phd Guided": "00",
+   "No. of Patent Granted": "02",
+   "No. of externally Sponsored Project (Completed/ongoing)": "01",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=msk.ee@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 16,
+   Name: "Dr. G. Lloyds Raja ",
+   "Specialization of the Research(Serial No.)": "3",
+   "No. of Publications in SCI/SCIE indexed Journal": "25",
+   "No. of Phd Guided": "01",
+   "No. of Patent Granted": "01",
+   "No. of externally Sponsored Project (Completed/ongoing)": "00",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=lloyds.ee@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 17,
+   Name: "Dr. Gagan Deep Meena ",
+   "Specialization of the Research(Serial No.)": "3, 5,6 & 7",
+   "No. of Publications in SCI/SCIE indexed Journal": "01",
+   "No. of Phd Guided": "00",
+   "No. of Patent Granted": "00",
+   "No. of externally Sponsored Project (Completed/ongoing)": "00",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=gagandeep.ee@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 18,
+   Name: "Dr. Amitesh Kumar ",
+   "Specialization of the Research(Serial No.)": "1,5 & 8",
+   "No. of Publications in SCI/SCIE indexed Journal": "35",
+   "No. of Phd Guided": "02",
+   "No. of Patent Granted": "02",
+   "No. of externally Sponsored Project (Completed/ongoing)": "01",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=amitesh.ee@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 19,
+   Name: "Dr. Trilochan Penthia ",
+   "Specialization of the Research(Serial No.)": "4 & 5",
+   "No. of Publications in SCI/SCIE indexed Journal": "09",
+   "No. of Phd Guided": "00",
+   "No. of Patent Granted": "00",
+   "No. of externally Sponsored Project (Completed/ongoing)": "00",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=trilochan.ee@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 20,
+   Name: "Dr. Ajit Kumar ",
+   "Specialization of the Research(Serial No.)": "1 & 3",
+   "No. of Publications in SCI/SCIE indexed Journal": "07",
+   "No. of Phd Guided": "00",
+   "No. of Patent Granted": "00",
+   "No. of externally Sponsored Project (Completed/ongoing)": "00",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=ajitk.ee@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 21,
+   Name: "Dr. Ruchi Agarwal ",
+   "Specialization of the Research(Serial No.)": "4",
+   "No. of Publications in SCI/SCIE indexed Journal": "01",
+   "No. of Phd Guided": "01",
+   "No. of Patent Granted": "01",
+   "No. of externally Sponsored Project (Completed/ongoing)": "00",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=ruchi.agarwal@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 22,
+   Name: "Dr. Aasim ",
+   "Specialization of the Research(Serial No.)": "1 & 5",
+   "No. of Publications in SCI/SCIE indexed Journal": "04",
+   "No. of Phd Guided": "00",
+   "No. of Patent Granted": "00",
+   "No. of externally Sponsored Project (Completed/ongoing)": "00",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=aasim.ee@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 23,
+   Name: "Dr. Ajishek Raj ",
+   "Specialization of the Research(Serial No.)": "3 & 8",
+   "No. of Publications in SCI/SCIE indexed Journal": "25",
+   "No. of Phd Guided": "00",
+   "No. of Patent Granted": "00",
+   "No. of externally Sponsored Project (Completed/ongoing)": "00",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=ajishek.ee@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 24,
+   Name: "Dr. Saran Satsangi ",
+   "Specialization of the Research(Serial No.)": "1 & 5",
+   "No. of Publications in SCI/SCIE indexed Journal": "07",
+   "No. of Phd Guided": "00",
+   "No. of Patent Granted": "01",
+   "No. of externally Sponsored Project (Completed/ongoing)": "00",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=saran.ee@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 25,
+   Name: "Dr. Pawan kumar ",
+   "Specialization of the Research(Serial No.)": "2,4 & 5",
+   "No. of Publications in SCI/SCIE indexed Journal": "00",
+   "No. of Phd Guided": "00",
+   "No. of Patent Granted": "00",
+   "No. of externally Sponsored Project (Completed/ongoing)": "00",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=pawan.ee@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 26,
+   Name: "Dr. Dhruba Kumar ",
+   "Specialization of the Research(Serial No.)": "1",
+   "No. of Publications in SCI/SCIE indexed Journal": "04",
+   "No. of Phd Guided": "00",
+   "No. of Patent Granted": "01",
+   "No. of externally Sponsored Project (Completed/ongoing)": "00",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=dhruba.ee@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 27,
+   Name: "Dr. Bineeta Mukhopadhyay",
+   "Specialization of the Research(Serial No.)": "1,4 & 5",
+   "No. of Publications in SCI/SCIE indexed Journal": "",
+   "No. of Phd Guided": "NA",
+   "No. of Patent Granted": "NA",
+   "No. of externally Sponsored Project (Completed/ongoing)": "NA",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=contract.faculty1.ee@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 28,
+   Name: "Dr. Sanjeev Kumar",
+   "Specialization of the Research(Serial No.)": "6 & 7",
+   "No. of Publications in SCI/SCIE indexed Journal": "",
+   "No. of Phd Guided": "NA",
+   "No. of Patent Granted": "NA",
+   "No. of externally Sponsored Project (Completed/ongoing)": "NA",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=contract.faculty2.ee@nitp.ac.in",
+  },
+  {
+   "Sr.No.": 29,
+   Name: "Dr. Pankaj Sahu",
+   "Specialization of the Research(Serial No.)": "2,4 & 5",
+   "No. of Publications in SCI/SCIE indexed Journal": "",
+   "No. of Phd Guided": "NA",
+   "No. of Patent Granted": "NA",
+   "No. of externally Sponsored Project (Completed/ongoing)": "NA",
+   "More Details (Home Page Link)":
+    "https://www.nitp.ac.in/profile?id=contract.faculty3.ee@nitp.ac.in",
+  },
+ ],
+ //  <th>Name of the faculty</th>
+ //  <th>Mail</th>
  //  staffmember: [
  //   {
  //    "S.No.": 1,
@@ -899,7 +1272,7 @@ const Tables = {
 //       </>
 //     ),
 //     // image: (
-//     //   <img src={`${home}images/image_ele.jpg`} style={{ width: "100%" }}></img>
+//     //   <img src={${home}images/image_ele.jpg} style={{ width: "100%" }}></img>
 //     // ),
 //   },
 //   {
@@ -1061,7 +1434,7 @@ export const LabImages = [
  <img src={`${home}DSC_0058.jpg`} />,
  <img src={`${home}DSC_0061.jpg`} />,
  <img src={`${home}DSC_0063.jpg`} />,
- // <img src={`${home}images/a_model.jpg`} />,
+ // <img src={${home}images/a_model.jpg} />,
 ]
 
 export const Achievements = [
@@ -1486,6 +1859,75 @@ export const Achievements = [
 //    ),
 //   },
 //  ]
+export const Research = [
+ {
+  content: (
+   <>
+    <h3>
+     Broadly research area of Electrical Engineering department are classified
+     as below::&nbsp;-
+    </h3>
+
+    <table className="table-act">
+     <thead>
+      <tr className="syllabus-table-head">
+       <th>Sr. No.</th>
+       <th>Specialization of the Research</th>
+       <th>Descriptive Key-word</th>
+      </tr>
+     </thead>{" "}
+     <tbody>
+      {Tables.research.map((row, idx) => (
+       <tr key={idx}>
+        <td>{row["Sr.No."]}</td>
+        <td>{row["Specialization of the Research"]}</td>
+        <td>{row["Descriptive Key-word"]}</td>
+       </tr>
+      ))}
+     </tbody>
+    </table>
+    <h3>
+     Research area of Faculty wise for the Electrical Engineering
+     Department:&nbsp;-
+    </h3>
+    <table className="table-act">
+     <thead>
+      <tr className="syllabus-table-head">
+       <th>Sr.No.</th>
+       <th>Name</th>
+       <th>Specialization of the Research (Serial No.)</th>
+       <th>No. of Publications in SCI/SCIE indexed Journal</th>
+       <th>No. of Phd Guided</th>
+       <th>No. of Patent Granted </th>
+       <th>No. of externally Sponsored Project (Completed/ongoing)</th>
+       <th>More Details (Home Page Link)</th>
+      </tr>
+     </thead>{" "}
+     <tbody>
+      {Tables.faculty.map((row, idx) => (
+       <tr key={idx}>
+        <td>{row["Sr.No."]}</td>
+        <a href={row["More Details (Home Page Link)"]}>
+         <td>{row["Name"]}</td>
+        </a>
+        <td>{row["Specialization of the Research(Serial No.)"]}</td>
+        <td>{row["No. of Publications in SCI/SCIE indexed Journal"]}</td>
+        <td>{row["No. of Phd Guided"]}</td>
+        <td>{row["No. of Patent Granted"]}</td>
+        <td>
+         {row["No. of externally Sponsored Project (Completed/ongoing)"]}
+        </td>
+        <a href={row["More Details (Home Page Link)"]}>
+         <td>{row["More Details (Home Page Link)"]}</td>
+        </a>
+       </tr>
+      ))}
+     </tbody>
+    </table>
+   </>
+  ),
+ },
+]
 export const Activities = [
  {
   content: (
