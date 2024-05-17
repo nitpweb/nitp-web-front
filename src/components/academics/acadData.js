@@ -391,6 +391,10 @@ const Admissions = [
     link:
      "https://drive.google.com/file/d/1tQ528Hqf7wP3ZFUdiurzdJQeiVd8QPKL/view?usp=share_link",
    },
+   {
+    para: "CCMT Web Portal",
+    link: "https://ccmt.admissions.nic.in/",
+   },
   ],
  },
 ]
