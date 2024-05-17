@@ -27,13 +27,13 @@ const Mesyllabus = props => {
         <h2 data-aos="zoom-in-right"> -Mechanical Engineering</h2>
         <ul className="rowmarl3">
          <li>
-          <a href="https://drive.google.com/file/d/1dQQR-i9mGoj6QdnEE7fTQieG4q9Sy8MC/view?usp=sharing">
-           B.Tech_Course Structure_2021-Modified.
+          <a href="https://docs.google.com/document/d/1pxbOvI1TdzjxQuFC5EHvV6aUoif3-bqR/edit?usp=sharing&ouid=110446457812712094222&rtpof=true&sd=true">
+           B.Tech_Course_Structure_2021 onwards - (2024 April update)
           </a>
          </li>
          <li>
-          <a href="https://drive.google.com/file/d/19oiSnssWgxThMoNtDzQrKASD1p7KXxOU/view?usp=sharing">
-           B.Tech_Course Structure_2022 Onwards.
+          <a href="https://docs.google.com/document/d/1FraVT4Es8O1UgdmTafqyKd8NLzeTweE5/edit?usp=drive_link&ouid=110446457812712094222&rtpof=true&sd=true">
+           B.Tech_Course_Structure_2022 onwards - (2024 April update)
           </a>
          </li>
          <li>
