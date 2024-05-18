@@ -293,7 +293,7 @@ const Academics = [
    },
    {
     // url: "https://web.nitp.ac.in/uploads22/Academic_cal._Even_2022_23.pdf",
-    url: "https://drive.google.com/file/d/1bMJqI6ZOVZTBan5Ik_KfttWTlwVKiEui/view?usp=drivesdk",
+    url: "https://drive.google.com/file/d/1tVgQSygS8GRTZIglbVWVClasegdd6BCi/view?usp=sharing",
     title: "Academic Calendar",
     data: "",
    },
@@ -535,7 +535,7 @@ const Students = [
     data: "concession",
    },
    {
-    url: "https://web.nitp.ac.in/uploads22/Academic_cal._Even_2022_23.pdf",
+    url: "https://drive.google.com/file/d/1tVgQSygS8GRTZIglbVWVClasegdd6BCi/view?usp=sharing",
     title: "Academic Calendar",
    },
    {
