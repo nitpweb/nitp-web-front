@@ -311,6 +311,45 @@ const DataNotice = [
 const Admissions = [
  {
   heading: "Admissions",
+  title:
+   "For Admissions in M.Tech./M.Arch./M.Plan. (CCMT-2024),CCMT Counselling 2024",
+  data: [
+   {
+    para:
+     "The prospective candidates are advised to visit the CCMT website regularly for updates and other details regarding the online counseling process.",
+    link: "https://ccmt.admissions.nic.in/",
+   },
+   //  {
+   //   para: "Schedule for CCMT 2023",
+   //   link:
+   //    "https://drive.google.com/file/d/1lTs8RdH_gPJ9jv1oG9-_Zp2-AuDU7lhV/view?usp=share_link",
+   //  },
+   {
+    para:
+     "Contact Details: (Email ID: acad.help@nitp.ac.in Contact: 0612 2371715 Extension no 172) PI In-charge: Prof. M. P. Singh Contact: 0612-2372715 (Ext. 172), acad.help@nitp.ac.in PI Co In-charge: Prof. A R Quaff, 0612-2372715 (Ext. 171), arquaff@nitp.ac.in",
+    link: "",
+   },
+   {
+    para: "Fee Details: Link-1",
+    link:
+     "https://drive.google.com/file/d/1qSQMYVRWFoWXad4Z765LtsPMXBofYKzK/view",
+   },
+   //  {
+   //   para: "Fee Details: Link-2",
+   //   link:
+   //    "https://drive.google.com/file/d/129jTHCY8iNvkSqg6QQz3y12otgsSco32/view?usp=share_link",
+   //  },
+   //  {
+   //   para: "M.Tech/MURP (PG) REGULATION",
+   //   link:
+   //    "https://drive.google.com/file/d/1tQ528Hqf7wP3ZFUdiurzdJQeiVd8QPKL/view?usp=share_link",
+   //  },
+  ],
+ },
+ ,
+ {
+  heading: "Admissions",
+  title: "Miscellaneous",
   data: [
    {
     para: "Change of  Branch for the session 2023-24",
@@ -432,6 +471,16 @@ const Fee = [
   heading: "Fee Structures",
   title: `UG/PG/PhD`,
   data: [
+   {
+    para: "PhD: Fee Structure",
+    link:
+     "https://drive.google.com/file/d/1b6bsHkVHfPa0gsG3Z9vhUKrsrGb3Sw4h/view",
+   },
+   {
+    para: "PG: Fee Structure",
+    link:
+     "https://drive.google.com/file/d/1qSQMYVRWFoWXad4Z765LtsPMXBofYKzK/view",
+   },
    {
     para: "UG fee structure effective from session 2023-24 and onwards",
     link:
