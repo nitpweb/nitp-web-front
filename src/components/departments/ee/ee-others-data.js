@@ -796,8 +796,7 @@ const Tables = {
   {
    "Sr.No.": 1,
    "Specialization of the Research": "Power and Energy System",
-   "Descriptive Key-word":
-    "a)	Power System Protection & PMU b)	Real & Reactive Power Management, Optimal Power Flow c)Renewable energy integration, Operation control & Stability d)Microgrid, Smart-Grid, Restructered Power System, AGC Resiliency & Reliability of Hybrid Power System e)Cyber Security, high performance Computing, Optimization, HVDC & FACTS device application to te Power System.",
+   "Descriptive Key-word": `a)	Power System Protection & PMU b)	Real & Reactive Power Management, Optimal Power Flow c)Renewable energy integration, Operation control & Stability d)Microgrid, Smart-Grid, Restructered Power System, AGC Resiliency & Reliability of Hybrid Power System e)Cyber Security, high performance Computing, Optimization, HVDC & FACTS device application to te Power System.`,
   },
   {
    "Sr.No.": 2,
@@ -1863,6 +1862,45 @@ export const Research = [
  {
   content: (
    <>
+    <div
+     style={{
+      paddingRight: "80px",
+     }}
+    >
+     The Electrical Engineering Department, NIT Patna is a one of the nucleus of
+     academic excellence, research and technological innovation in its domain.
+     With the faculty comprising 29 dedicated members, the department has
+     established itself as a formidable force in the realm of electrical
+     engineering education and research. Their collective expertise spans a
+     diverse array of specialties, reflecting the department's commitment to
+     both breadth and depth in its academic offerings. One of the hallmarks of
+     the department is its robust research ecosystem, characterized by eight
+     broad research groups. These groups delve into areas of critical importance
+     such as Power and Energy Systems, Electrical Machine & Drives, Control
+     Theory & Practices, Power Electronics & its Application, Electric Vehicles
+     & Energy Storage System, Instrumental & Signal Processing, Semi-Conductor
+     Devices & Circuit System and Robotics & Automation. Through their
+     pioneering research endeavours, faculty members have amassed an impressive
+     track record, boasting more than 330 publications in SCI/SCIE indexed
+     Journals and securing 23 patents to date. Beyond the realm of pure
+     research, the department actively engages with industry partners through 12
+     externally sponsored projects, which serve as conduits for translating
+     theoretical knowledge into practical applications. These projects, whether
+     ongoing or completed, represent the department's commitment to bridging the
+     gap between academia and industry, fostering innovation that resonates
+     beyond the confines of the university campus. Moreover, the department's
+     influence resonates worldwide as it mentored 33 Ph.D scholars who have
+     attained their degrees, with many more in pipeline, embodying the forefront
+     of future innovation in electrical engineering. Through rigorous academic
+     training and personalized guidance, these scholars are equipped with the
+     tools and knowledge necessary to address the pressing challenges of the
+     21st century. In essence, the Electrical Engineering Department, NIT Patna
+     serves as a beacon of excellence, driving forward the frontiers of
+     knowledge and innovation in the field of electrical engineering. Through
+     its multifaceted approach to education, research, and industry
+     collaboration, the department continues to make profound contributions to
+     both academia and society at large.
+    </div>
     <h3>
      Broadly research area of Electrical Engineering department are classified
      as below::&nbsp;-
