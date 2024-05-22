@@ -391,7 +391,7 @@ const Faculty = [
    },
    {
     url: "http://mis.nitp.ac.in:81/",
-    title: "Chanakya Portal",
+    title: "Academic Portal",
     data: "",
    },
    {
@@ -501,7 +501,7 @@ const Students = [
    },
    {
     url: "http://exam.nitp.ac.in:9001/",
-    title: "Chanakya Portal",
+    title: "Academic Portal",
    },
    {
     url: "https://docs.google.com/forms/d/e/1FAIpQLSc5_x34TMtQdMaW2Ad9Nvsmz1N8YXdAGJHtAM5kn3a850Ekyw/viewform?usp=sf_link",

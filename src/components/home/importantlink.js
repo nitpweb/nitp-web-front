@@ -77,8 +77,8 @@ const Importantlink = () => {
     </a>{" "}
     {/* <a href="http://exam.nitp.ac.in/">
           <div className="implink">
-            <img className="linkimg" src={chanakya} alt="chanakya" />
-            <h3>CHANAKYA</h3>
+            <img className="linkimg" src={chanakya} alt="Academic Portal" />
+            <h3>Academic Portal</h3>
             
           </div>
         </a> */}
