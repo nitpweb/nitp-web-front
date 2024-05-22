@@ -293,7 +293,7 @@ const Academics = [
    },
    {
     // url: "https://web.nitp.ac.in/uploads22/Academic_cal._Even_2022_23.pdf",
-    url: "https://drive.google.com/file/d/1bMJqI6ZOVZTBan5Ik_KfttWTlwVKiEui/view?usp=drivesdk",
+    url: "https://drive.google.com/file/d/1tVgQSygS8GRTZIglbVWVClasegdd6BCi/view?usp=sharing",
     title: "Academic Calendar",
     data: "",
    },
@@ -391,7 +391,7 @@ const Faculty = [
    },
    {
     url: "http://mis.nitp.ac.in:81/",
-    title: "Chanakya Portal",
+    title: "Academic Portal",
     data: "",
    },
    {
@@ -501,7 +501,7 @@ const Students = [
    },
    {
     url: "http://exam.nitp.ac.in:9001/",
-    title: "Chanakya Portal",
+    title: "Academic Portal",
    },
    {
     url: "https://docs.google.com/forms/d/e/1FAIpQLSc5_x34TMtQdMaW2Ad9Nvsmz1N8YXdAGJHtAM5kn3a850Ekyw/viewform?usp=sf_link",
@@ -535,7 +535,7 @@ const Students = [
     data: "concession",
    },
    {
-    url: "https://web.nitp.ac.in/uploads22/Academic_cal._Even_2022_23.pdf",
+    url: "https://drive.google.com/file/d/1tVgQSygS8GRTZIglbVWVClasegdd6BCi/view?usp=sharing",
     title: "Academic Calendar",
    },
    {
